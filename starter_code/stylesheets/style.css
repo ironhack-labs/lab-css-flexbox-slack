@@ -127,7 +127,7 @@ header p:last-of-type {
   font-size: 1.4em;
 }
 
-header button {
+.right button {
   width: 170px;
   height: 57px;
   margin-top: 1.5em;
@@ -141,7 +141,7 @@ header button {
   transition: 0.15s background-color linear;
 }
 
-header button:hover {
+.right button:hover {
   background-color: #1c299d;
 }
 
@@ -254,7 +254,7 @@ main>div>button:hover {
   color: black;
 }
 
-.title > p:nth-child(2) {
+.title>p:nth-child(2) {
   font-size: 1.4em;
 }
 
@@ -266,6 +266,11 @@ main>div>button:hover {
   padding: 11px;
   background-color: #3f46ad;
   color: white;
+  transition: 0.15s background-color linear;
+}
+
+.call-to-action button:hover {
+  background-color: #1c299d;
 }
 
 .title, .call-to-action {
@@ -285,11 +290,13 @@ footer {
   background-color: white;
 }
 
-.featured { /* slack logo */
+.featured {
+  /* slack logo */
   flex-basis: 40%;
 }
 
-.links { /* 4 columns of 15*/
+.links {
+  /* 4 columns of 15*/
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -336,7 +343,7 @@ footer ul li:first-child {
   text-align: center;
 }
 
-.status ul li{
+.status ul li {
   display: inline-block;
   font-weight: bold;
   margin: 0em 1em;
@@ -349,7 +356,7 @@ footer ul li:first-child {
 }
 
 .corner {
-  display:block;
+  display: block;
   margin-top: 4em;
   margin-right: 2em;
 }
@@ -365,12 +372,15 @@ footer ul li:first-child {
   margin-bottom: -5px;
   margin-right: 1em;
 }
+
 .toggle-mobile-nav {
   display: none;
 }
+
 .mobile-img {
   display: none;
 }
+
 .toggle-mobile-nav {
   position: absolute;
   display: none;
@@ -384,22 +394,22 @@ footer ul li:first-child {
   nav ul {
     display: none;
   }
-
   .toggle-mobile-nav {
     display: block;
   }
-
   header {
     flex-flow: row wrap;
   }
   .right {
-    order: 1; /* We use this to make our picture display first*/
+    order: 1;
+    /* We use this to make our picture display first*/
     flex-basis: 100%;
     min-height: auto !important;
     padding: 5em 10%;
   }
   .left {
-    order: 2; /* our text displays below order 1 */
+    order: 2;
+    /* our text displays below order 1 */
     flex-basis: 100%;
     padding: 0 10% 5em;
     min-height: auto !important;
@@ -409,7 +419,7 @@ footer ul li:first-child {
   }
 }
 
-@media (max-width: 960px){
+@media (max-width: 960px) {
   nav ul {
     display: none;
   }
@@ -422,9 +432,12 @@ footer ul li:first-child {
   .links ul {
     flex-basis: 20% !important;
   }
+  .flex-grid .item {
+    border: unset !important;
+  }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   button {
     width: 100% !important;
   }
@@ -435,7 +448,7 @@ footer ul li:first-child {
     flex-basis: 100%;
     border-bottom: 1px solid #ebebeb;
   }
-  .flex-grid .item:last-child{
+  .flex-grid .item:last-child {
     border-bottom: 0px solid #ebebeb;
   }
   .links ul {
