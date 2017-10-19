@@ -14,6 +14,7 @@ body {
   font-size: 10px;
   font-family: sans-serif;
   color: #5b5e6d;
+  box-sizing: border-box;
 }
 
 h1, h2, p {
@@ -32,7 +33,7 @@ button:hover {
 /* Navigation */
 
 nav {
-  position: relative;
+  position: fixed;
   height: 69px;
   background-color: white;
   border-bottom: 1px solid #ebebeb;
@@ -91,7 +92,7 @@ header {
   display: flex;
   justify-content: space-around;
   width: 100vw;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh + 70px);
   background-color: white;
 }
 
@@ -102,6 +103,7 @@ header img {
 
 header .left, header .right {
   width: 50%;
+  min-height: calc(100vh + 70px);
 }
 
 .left {
@@ -118,7 +120,7 @@ header h1 {
   font-family: 'Times New Roman', cursive;
   font-size: 8em;
   line-height: 1em;
-  margin-top: 1em;
+  margin-top: 1.5em;
   color: #323648;
 }
 
@@ -281,21 +283,22 @@ main>div>button:hover {
 
 footer {
   font-size: 1.4em;
-  height: 400px;
+  min-height: 300px;
   background-color: white;
 }
 
 footer div {
   display: flex;
+  padding: 3em;
   flex-flow: row wrap;
+  flex-basis: 15%;
 }
 
 footer ul {
-  flex-basis: 15%;
+  order: 2;
+  min-width: 150px;
   list-style: none;
-  margin: auto;
-  align-items: stretch;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 footer ul li {
@@ -306,13 +309,11 @@ footer ul li:first-child {
   font-weight: bolder;
 }
 
-footer img {
-  align-self: center;
-}
-
 .slack-logo {
-  flex-grow: 3;
-  align-items: center;
+  flex-grow: 4;
+  max-width: 120px;
+  max-height: 120px;
+  align-self: center;
 }
 
 .american-flag {
@@ -320,11 +321,13 @@ footer img {
 }
 
 .white {
-  height: 400px;
+  min-height: 400px;
 }
 
 .status {
+  align-items: stretch;
   display: inline-block;
+  text-align: right;
   width: 100%;
   height: 170px;
   bottom: 0;
@@ -333,28 +336,55 @@ footer img {
 
 .status ul {
   text-align: center;
-  padding-top: 2em;
-  flex-grow: 1;
 }
 
 .status ul li{
   display: inline-block;
+  font-weight: bold;
+  margin: 0em 1em;
 }
+
+/* American flag and Social networks */
 
 .corner {
   display:block;
-  bottom: 3em;
-  right: 3em;
+  margin-top: 4em;
+  margin-right: 2em;
 }
 
 .corner i {
-  font-size: 1.8em;
+  font-size: 1.4em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
 .corner img {
   padding-top: 20px;
-  margin-bottom: -7px;
+  margin-bottom: -5px;
   margin-right: 1em;
+}
+.toggle-mobile-nav {
+  display: none;
+}
+.mobile-img {
+  display: none;
+}
+@media screen and (max-width: 1024px) and (min-width: 960px) {
+  nav ul {
+    display: none;
+  }
+  .toggle-mobile-nav {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+  }
+  header .left {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
