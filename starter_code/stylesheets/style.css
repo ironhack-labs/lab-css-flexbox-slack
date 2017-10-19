@@ -30,6 +30,7 @@ nav {
   background-color: white;
   border-bottom: 1px solid #ebebeb;
   width: 100%;
+  z-index: 10;
 }
 
 nav>img {
@@ -276,10 +277,13 @@ footer {
 
 .links { /* 4 columns of 15*/
   display: flex;
-  flex-basis: 15%;
   flex-flow: row wrap;
   justify-content: space-around;
-  padding: 6em 3em;
+  padding: 6em 2em;
+}
+
+.links ul {
+  flex-basis: 10%;
 }
 
 .slack-logo {
@@ -353,25 +357,77 @@ footer ul li:first-child {
 .mobile-img {
   display: none;
 }
+.toggle-mobile-nav {
+  position: absolute;
+  display: none;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  right: 25px;
+}
 
-@media screen and (max-width: 1024px) and (min-width: 960px) {
+@media screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .toggle-mobile-nav {
+    display: block;
+  }
+
+  header {
+    flex-flow: row wrap;
+  }
+  .right {
+    order: 1; /* We use this to make our picture display first*/
+    flex-basis: 100%;
+    min-height: auto !important;
+    padding: 5em 10%;
+  }
+  .left {
+    order: 2; /* our text displays below order 1 */
+    flex-basis: 100%;
+    padding: 0 10% 5em;
+    min-height: auto !important;
+  }
+  .links ul {
+    flex-basis: 10%;
+  }
+}
+
+@media (max-width: 960px){
   nav ul {
     display: none;
   }
   .toggle-mobile-nav {
-    position: absolute;
     display: block;
-    width: 30px;
-    height: 30px;
-    top: 20px;
-    right: 20px;
-    background-color: black;
-  }
-  .left {
-    order: 2;
-    flex-basis: 100%;
   }
   .flex-grid .item {
     flex-basis: 50%;
+  }
+  .featured {
+    flex-basis: 100% !important;
+  }
+  .links ul {
+    flex-basis: 20% !important;
+  }
+}
+
+@media (max-width: 768px){
+  nav ul {
+    display: none;
+  }
+  .toggle-mobile-nav {
+    display: block;
+  }
+  .flex-grid .item {
+    flex-basis: 100%;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .flex-grid .item:last-child{
+    border-bottom: 0px solid #ebebeb;
+  }
+  .links ul {
+    flex-basis: 40% !important;
   }
 }
