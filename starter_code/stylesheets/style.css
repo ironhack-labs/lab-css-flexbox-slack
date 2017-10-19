@@ -1,11 +1,3 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
-
 /* Resets and generics */
 
 body {
@@ -77,13 +69,6 @@ nav ul li:last-of-type {
 
 nav ul li:last-of-type:hover {
   border: 1px solid #3f46ad;
-}
-
-.mobile-navfix {
-  /* to fix offset from our fixed header, it hides 70px*/
-  display: none;
-  width: 100%;
-  height: 70px;
 }
 
 /* Header */
@@ -214,13 +199,12 @@ main>div>button:hover {
 
 .flex-grid .item {
   display: flex;
-  justify-content: space-between;
   flex-flow: column wrap;
-  width: 30%;
+  flex-basis: 33%;
+  justify-content: space-between;
   padding: 30px;
   text-align: center;
   box-sizing: border-box;
-  align-self: center;
 }
 
 .flex-grid .item:nth-child(1) {
@@ -283,22 +267,33 @@ main>div>button:hover {
 
 footer {
   font-size: 1.4em;
-  min-height: 300px;
+  padding-top: 5em;
   background-color: white;
 }
 
-footer div {
+.featured { /* slack logo */
+  flex-basis: 40%;
+}
+
+.links { /* 4 columns of 15*/
   display: flex;
+  flex-basis: 15%;
   padding: 3em;
   flex-flow: row wrap;
-  flex-basis: 15%;
+  justify-content: space-around;
+}
+
+.slack-logo {
+  display: flex;
+  flex-basis: 40%;
+  max-width: 120px;
+  max-height: 120px;
+  align-self: center;
 }
 
 footer ul {
   order: 2;
-  min-width: 150px;
   list-style: none;
-  justify-content: space-around;
 }
 
 footer ul li {
@@ -309,12 +304,7 @@ footer ul li:first-child {
   font-weight: bolder;
 }
 
-.slack-logo {
-  flex-grow: 4;
-  max-width: 120px;
-  max-height: 120px;
-  align-self: center;
-}
+/* Bottom footer copyright */
 
 .american-flag {
   max-width: 20px;
@@ -369,6 +359,7 @@ footer ul li:first-child {
 .mobile-img {
   display: none;
 }
+
 @media screen and (max-width: 1024px) and (min-width: 960px) {
   nav ul {
     display: none;
@@ -382,9 +373,11 @@ footer ul li:first-child {
     right: 20px;
     background-color: black;
   }
-  header .left {
+  .left {
+    order: 2;
     flex-basis: 100%;
-    flex-wrap: wrap;
-    flex-direction: column;
+  }
+  .flex-grid .item {
+    flex-basis: 50%;
   }
 }
