@@ -9,7 +9,7 @@ nav grey: #5b5e6d;
 body {
   margin: 0px;
   padding: 0px;
-  font-size:20px;
+  font-size: 20px;
 }
 
 /* css to nav tag*/
@@ -42,8 +42,15 @@ nav {
 .nav-link ul {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
+.nav-link ul :last-child{
+  border: 1px solid black;
+  border-radius:5px;
+  padding: 5px;
+
+}
 nav li {
   display: inline-block;
   list-style-type: none;
@@ -54,33 +61,39 @@ nav li {
 
 header {
   /*background-color: red;*/
-  width:100%;
+  width: 100%;
   display: flex;
   /*flex-direction: row;*/
   justify-content: space-around;
   align-items: center;
 }
-.header-left{
+
+.header-left {
   width: 40%;
-  margin-left:10%;
+  margin-left: 10%;
 }
+
 .header-left img {
   width: 100%;
 }
-.header-right h1{
-  color:#5b5e6d;
+
+.header-right h1 {
+  color: #5b5e6d;
 }
-.header-right{
+
+.header-right {
   width: 20%;
-  margin-right:10%;
+  margin-right: 10%;
 }
+
 .header-right button {
-  background-color:#192592;
+  background-color: #192592;
   height: 50px;
   border-style: hidden;
   color: #fff;
-  border-radius:5px;
-  width: 30%;
+  border-radius: 5px;
+  width: 40%;
+    font-weight: bold;
 }
 
 header h1 {
@@ -88,36 +101,61 @@ header h1 {
 }
 
 /*css to main tag*/
+
 main {
-  width:100%;
+  width: 100%;
   background-color: #F4F3F4;
 }
 
 .main-header {
-text-align:center;
-padding-top:3%;
+  text-align: center;
+  padding-top: 3%;
 }
-.main-header button{
-  background-color:#fff;
+
+.main-header button {
+  background-color: #fff;
   width: 10%;
   height: 50px;
-  border-radius:5px;
+  border-radius: 5px;
   border: 1px solid #000;
-  color:#192592;
+  color: #192592;
   font-weight: bold;
 }
 
 .main-images-wrap {
-    display:flex;
-    align-items:center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-images {
   width: 60%;
   margin-left: 20%;
 }
+
 .main-images img {
   width: 10%;
   padding: 11%;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.main-footer button{
+  background-color: #192592;
+  height: 50px;
+  border-style: hidden;
+  color: #fff;
+  border-radius: 5px;
+  width: 10%;
+    font-weight: bold;
+}
+
+.main-footer-left p:first-child  {
+  font-size: 1.5em;
+  font-weight:bold;
+  margin-bottom:0;
 }
