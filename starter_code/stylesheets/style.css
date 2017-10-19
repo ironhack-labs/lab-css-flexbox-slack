@@ -22,6 +22,10 @@ button:hover {
   cursor: pointer;
 }
 
+ul {
+  -webkit-padding-start: 0px;
+}
+
 /* Navigation */
 
 nav {
@@ -144,8 +148,10 @@ header button:hover {
 /* You're in good company */
 
 main>div {
-  text-align: center;
   width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 4em 4em 0px;
 }
 
 main>div>h2 {
@@ -168,15 +174,12 @@ main>div>button {
   background-color: white;
   margin: 2em 0em 3em;
   box-sizing: border-box;
+  box-shadow: inset 0 0 0 1px #9ba0d3;
   transition: 0.15s box-shadow linear;
   color: #1c299d;
   font-size: 1.3em;
   font-weight: bold;
   letter-spacing: 0.5px;
-}
-
-main>div>button:first-child {
-  box-shadow: inset 0 0 0 1px #9ba0d3;
 }
 
 main>div>button:hover {
@@ -234,34 +237,45 @@ main>div>button:hover {
 
 .try-for-free {
   width: 100%;
-  height: 157px;
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  justify-content: center;
   background-color: white;
-  position: relative;
   border-bottom: 1px solid #ebebeb;
+  text-align: left;
+  padding: 5em;
 }
 
-.try-for-free>p:first-child {
-  position: absolute;
-  top: 1.8em;
-  left: 2em;
+.title p:first-child {
   font-weight: bold;
   font-family: 'Times New Roman', serif;
   font-size: 2.8em;
   color: black;
 }
 
-.try-for-free>p:nth-child(2) {
-  position: absolute;
-  top: 5.8em;
-  left: 4em;
+.title > p:nth-child(2) {
+  font-size: 1.4em;
 }
 
-.try-for-free>button {
-  position: absolute;
-  top: 2em;
-  right: 4em;
+.call-to-action button {
+  width: 10em;
+  height: 4.5em;
+  border: none;
+  border-radius: 5px;
+  padding: 11px;
   background-color: #3f46ad;
   color: white;
+}
+
+.title, .call-to-action {
+  flex-basis: 50%;
+  position: relative;
+}
+
+.call-to-action {
+  text-align: right;
+  margin-right: 10em;
 }
 
 /* Footer */
@@ -363,7 +377,7 @@ footer ul li:first-child {
   width: 30px;
   height: 30px;
   top: 25px;
-  right: 25px;
+  right: 75px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -391,16 +405,13 @@ footer ul li:first-child {
     min-height: auto !important;
   }
   .links ul {
-    flex-basis: 10%;
+    flex-basis: 15%;
   }
 }
 
 @media (max-width: 960px){
   nav ul {
     display: none;
-  }
-  .toggle-mobile-nav {
-    display: block;
   }
   .flex-grid .item {
     flex-basis: 50%;
@@ -414,11 +425,11 @@ footer ul li:first-child {
 }
 
 @media (max-width: 768px){
+  button {
+    width: 100% !important;
+  }
   nav ul {
     display: none;
-  }
-  .toggle-mobile-nav {
-    display: block;
   }
   .flex-grid .item {
     flex-basis: 100%;
@@ -428,6 +439,20 @@ footer ul li:first-child {
     border-bottom: 0px solid #ebebeb;
   }
   .links ul {
-    flex-basis: 40% !important;
+    flex-basis: 38% !important;
+    margin-left: 10px;
+  }
+  .try-for-free {
+    flex-direction: column;
+    text-align: center;
+  }
+  .try-for-free .title {
+    margin-bottom: 2em;
+  }
+  .call-to-action {
+    margin-right: unset;
+  }
+  main button {
+    width: 100% !important;
   }
 }
