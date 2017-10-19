@@ -5,3 +5,187 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+nav{
+  background: white;
+  border-bottom: 1px solid red;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav ul li{
+  list-style: none;
+  display: inline;
+  padding-left: 1%;
+}
+nav img{
+  width: 20%;
+  padding-left: 3%;
+}
+main>div:nth-of-type(2) p:nth-of-type(2) a{
+  text-decoration: none;
+}
+header{
+  margin-top: 150px;
+}
+header>img{
+  width: 100%;
+}
+header>div{
+  text-align: center;
+}
+header>div h1{
+  font-size: 4em;
+}
+main>div:first-of-type h2{
+  font-size: 2em;
+}
+header>div p{
+  font-size: 2.5em;
+  text-align: left;
+  padding: 0 3%;
+}
+header>div button, main>div:first-of-type button, main>div:nth-of-type(2) button{
+  background: #192592;
+  padding: 20px 10% ;
+  color: white;
+}
+main>div:first-of-type button{
+  background: white;
+  color: #192592;
+  margin: 0 auto;
+}
+header>div p:nth-of-type(2){
+  font-size: 1em;
+}
+main>div:first-of-type{
+  background: #F4F3F4;
+  text-align: center;
+  padding: 20px 0;
+}
+main>div:first-of-type p{
+  font-size: 1.7em;
+}
+main>div:first-of-type img{
+  width: 30%;
+  padding: 30px 0;
+  margin: 0 auto;
+  display: block;
+}
+main>div:nth-of-type(2){
+  text-align: center;
+}
+main>div:nth-of-type(2) p{
+  font-size: 2em;
+}
+main>div:nth-of-type(2) p:nth-of-type(2){
+  font-size: 1.5em;
+  color: #5b5e6d;
+}
+footer>img{
+  width: 30%;
+}
+footer>div:first-of-type ul{
+  display: inline-block;
+  vertical-align: top;
+}
+footer>div:first-of-type ul li {
+  list-style: none;
+  color:#5b5e6d;
+  padding: 5px 0;
+}
+footer>div:first-of-type ul li:first-of-type{
+  font-weight: bold;
+  font-size: 1.3em;
+}
+footer>div:nth-of-type(2), footer div:last-of-type{
+  text-align: center;
+}
+footer>div:nth-of-type(2) ul li{
+  display: inline-block;
+  list-style: none;
+  font-weight: bold;
+  padding-left: 3%;
+}
+footer div:last-of-type img{
+width: 10%;
+}
+footer span{
+  font-size: 1.3em;
+}
+footer .fa{
+  margin: 20px 0;
+  font-size: 2em;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+header>div a{
+  text-decoration: none;
+}
+nav ul li a:hover, header>div a:hover{
+  color: red;
+}
+
+/*
+ RESPONSIVE
+   ========================================================================= */
+
+ /*Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  nav ul{
+    margin-right: 3%;
+    float: right;
+  }
+  nav ul li{
+    padding-bottom: 10px;
+    display: block;
+  }
+  header {
+    margin-top: 200px;
+}
+}
+
+ /*Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  nav ul{
+    margin-right: 0;
+  }
+  nav ul li{
+    display: inline;
+    padding-bottom: 0;
+  }
+  main>div:first-of-type p {
+    padding: 0 4%;
+}
+}
+
+ /*Escritorios muy anchos
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  nav ul{
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 30%;
+  }
+  nav ul li{
+    font-size: 2em;
+  }
+  header>img {
+    margin-top: 100px;
+}
+  footer>div:first-of-type {
+    text-align: center
+  }
+  footer div:last-of-type img {
+    width: 5%;
+}
+ }
