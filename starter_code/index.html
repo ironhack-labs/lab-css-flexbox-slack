@@ -5,48 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
+  <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Quicksand" rel="stylesheet">
+  <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
-      <li>Why Slack?</li>
-      <li>Pricing</li>
-      <li>About Us</li>
-      <li>Your Workspaces</li>
+  <nav class="fixed-bar flex-container">
+    <img src="./images/slack-logo.png" alt="slack_logo" class="brand-logo">
+    <button class="main-menu-toggler"><i class="fa fa-bars"aria-hidden="true"></i></button>
+    <ul class="main-menu">
+      <li><a href="#">Why Slack?</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Your Workspaces</a></li>
     </ul>
   </nav>
-  <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+  <header class="flex-container landing-header header-section">
+    <img src="./images/home_talking.png" alt="home_work_happening" class="landing-image">
+    <div class="header-copy">
+      <h1>Where Work Happens</h1>
+      <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+      <a href="#" class="primary call-to-action button block">GET STARTED</a>
+      <p class="secondary-text">Already using Slack? <a href="#">Sign in</a></p>
+    </div>
   </header>
   <main>
-    <div>
+    <div class="companies-section paneled text-center">
       <h2>You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
+      <a href="#" class="secondary call-to-action button">DISCOVER WHY</a>
+      <div class="logo-grid flex-container">
+        <img src="./images/airbnb-logo.png" alt="">
+        <img src="./images/capital-one-logo.png" alt="">
+        <img src="./images/harvard-logo.png" alt="">
+        <img src="./images/los-angeles-times-logo.png" alt="">
+        <img src="./images/oracle-logo.png" alt="">
+        <img src="./images/ticketmaster-logo.png" alt="">
+      </div>
     </div>
-    <div>
-      <p>Try it for free</p>
+    <div class="test-drive-section text-center">
+      <h2>Try it for free</h2>
       <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+      <a href="#" class="primary call-to-action button block">GET STARTED</a>
     </div>
   </main>
-  <footer>
-    <div>
-      <img src="./images/iso-slack.png" alt="">
+  <footer class="flex-container">
+    <div class="sitemap-section flex-container">
+      <div>
+        <img src="./images/iso-slack.png" alt="Slack symbol" class="brand-symbol">
+      </div>
       <ul>
         <li>COMPANY</li>
         <li>About Us</li>
@@ -80,19 +89,29 @@
         <li>Slack Fund</li>
       </ul>
     </div>
-    <div>
-      <ul>
+    <div class="utility-links last-section paneled flex-container text-center secondary-text">
+      <ul class="legal-links">
         <li>Status</li>
-        <li>Privacy & Terms</li>
+        <li>Privacy &amp; Terms</li>
         <li>Contact Us</li>
       </ul>
-      <div>
-        <img src="./images/us-flag.png" alt="">
+      <div class="language selector">
+        <img src="./images/us-flag.png" alt="USA flag" class="mini-flag">
         <span>English (US)</span>
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </div>
+      <div class="social-links">
+        <ul>
+          <li>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
