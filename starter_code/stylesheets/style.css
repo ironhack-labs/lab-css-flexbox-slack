@@ -57,6 +57,13 @@ nav ul li {
   padding: 5px;
 }
 
+.toggleMenu {
+  width: 10%;
+  font-size: 3rem;
+  font-weight: bold;
+  display: none;
+}
+
 header {
   width: 100%;
   height: 40%;
@@ -220,7 +227,6 @@ footer img {
 }
 
 .pie ul {
-/*  width: 100%;*/
   list-style: none;
   padding-top: 80px;
   text-align: center;
@@ -251,4 +257,52 @@ footer img {
 .pieLinks i {
   margin-right: 2%;
   margin-bottom: 1%;
+}
+
+/* Responsive for medium screen: 1024px > width > 960px */
+@media (min-width: 960px) and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .toggleMenu {
+    display: block;
+  }
+
+  header {
+    flex-direction: column-reverse;
+  }
+  .headImg {
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  .headTxt {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Responsive for small screen: 961px > width > 767px */
+@media (min-width: 767px) and (max-width: 961px) {
+  nav ul {
+    display: none;
+  }
+
+  .toggleMenu {
+    display: block;
+  }
+
+  header {
+    flex-direction: column-reverse;
+  }
+  .headImg {
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  .headTxt {
+    width: 100%;
+    margin-left: 0;
+  }
 }
