@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
@@ -18,35 +19,63 @@
       <li>About Us</li>
       <li>Your Workspaces</li>
     </ul>
+    <div class="toggle-mobile-nav">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" aria-label="" class="svg-replaced" shape-rendering="geometricPrecision"><path d="M0 0h24v3H0zm0 7h24v3H0zm0 7h24v3H0z" fill-rule="evenodd"></path></svg>
+    </div>
   </nav>
+
   <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+    <!-- Image -->
+    <div class="left">
+      <img class="center" src="./images/home_talking.png" alt="home_work_happening">
+    </div>
+
+    <!-- Texts & button-->
+    <div class="right">
+      <h1>Where Work Happens</h1>
+      <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+      <button type="button" name="button">GET STARTED</button>
+      <p>Already using Slack? <a href="#">Sign in</a></p>
+    </div>
   </header>
+
   <main>
+    <!-- Small text block 1 -->
     <div>
       <h2>You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
       <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
     </div>
-    <div>
-      <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+
+    <!-- Logos grid -->
+    <div class="flex-grid">
+      <div class="item"><img src="./images/airbnb-logo.png" alt=""></div>
+      <div class="item"><img src="./images/capital-one-logo.png" alt=""></div>
+      <div class="item"><img src="./images/harvard-logo.png" alt=""></div>
+      <div class="item"><img src="./images/los-angeles-times-logo.png" alt=""></div>
+      <div class="item"><img src="./images/oracle-logo.png" alt=""></div>
+      <div class="item"><img src="./images/ticketmaster-logo.png" alt=""></div>
+    </div>
+
+    <!-- Small text block 2 -->
+    <div class="try-for-free">
+      <div class="title">
+        <p>Try it for free</p>
+        <p>Already using Slack? <a href="">Sign in</a></p>
+      </div>
+      <div class="call-to-action">
+        <button type="button" name="button">GET STARTED</button>
+      </div>
     </div>
   </main>
+
   <footer>
-    <div>
-      <img src="./images/iso-slack.png" alt="">
+    <div class="links">
+      <!-- Slack logo-->
+      <div class="featured">
+        <img class="slack-logo" src="./images/iso-slack.png" alt="">
+      </div>
+      <!-- Links -->
       <ul>
         <li>COMPANY</li>
         <li>About Us</li>
@@ -80,14 +109,15 @@
         <li>Slack Fund</li>
       </ul>
     </div>
-    <div>
+    <!-- Small gray copyright rectangle -->
+    <div class="status">
       <ul>
         <li>Status</li>
         <li>Privacy & Terms</li>
         <li>Contact Us</li>
       </ul>
-      <div>
-        <img src="./images/us-flag.png" alt="">
+      <div class="corner">
+        <img class="american-flag" src="./images/us-flag.png" alt="">
         <span>English (US)</span>
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
         <i class="fa fa-twitter" aria-hidden="true"></i>

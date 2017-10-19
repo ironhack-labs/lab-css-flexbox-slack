@@ -1,7 +1,471 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+/* Resets and generics */
+
+body {
+  margin: 0;
+  background-color: #F4F3F4;
+  font-size: 10px;
+  font-family: sans-serif;
+  color: #5b5e6d;
+  box-sizing: border-box;
+}
+
+h1, h2, p {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+a {
+  color: #3f46ad;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+}
+
+/* Navigation */
+
+nav {
+  position: fixed;
+  height: 69px;
+  background-color: white;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  z-index: 10;
+}
+
+nav>img {
+  position: absolute;
+  width: 94px;
+  top: 1.1em;
+  left: 5.5em;
+}
+
+nav ul {
+  list-style: none;
+  top: 0.8em;
+  right: 6.8em;
+  position: absolute;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 0.75px;
+  padding: 0.5em 1em;
+  transition: 0.15s color linear;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  color: #3f46ad;
+  text-decoration: underline;
+}
+
+nav ul li:last-of-type {
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: 0.15s border linear;
+}
+
+nav ul li:last-of-type:hover {
+  border: 1px solid #3f46ad;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  min-height: calc(100vh + 70px);
+  background-color: white;
+}
+
+header img {
+  display: block;
+  max-width: 80%;
+}
+
+header .left, header .right {
+  width: 50%;
+  min-height: calc(100vh + 70px);
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  display: block;
+}
+
+header h1 {
+  font-family: 'Times New Roman', cursive;
+  font-size: 8em;
+  line-height: 1em;
+  margin-top: 1.5em;
+  color: #323648;
+}
+
+header p {
+  font-family: sans-serif;
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: lighter;
+  line-height: 1.6em;
+  max-width: 90%;
+}
+
+header p:last-of-type {
+  font-size: 1.4em;
+}
+
+.right button {
+  width: 170px;
+  height: 57px;
+  margin-top: 1.5em;
+  /* background-color: #192592; outdated purple took new one from site */
+  background-color: #3f46ad;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  transition: 0.15s background-color linear;
+}
+
+.right button:hover {
+  background-color: #1c299d;
+}
+
+/* You're in good company */
+
+main>div {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 4em 4em 0px;
+}
+
+main>div>h2 {
+  font-size: 3.6em;
+  font-family: 'Times New Roman', serif;
+  margin: 1em 0em 0.5em;
+  color: #323648;
+}
+
+main>div>p {
+  font-size: 1.5em;
+  letter-spacing: 0.3px;
+}
+
+main>div>button {
+  width: 190px;
+  height: 55px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  margin: 2em 0em 3em;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 1px #9ba0d3;
+  transition: 0.15s box-shadow linear;
+  color: #1c299d;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+main>div>button:hover {
+  box-shadow: inset 0 0 0 2px #1c299d;
+}
+
+.flex-grid {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 5em;
+}
+
+.flex-grid img {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.flex-grid .item {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 33%;
+  justify-content: space-between;
+  padding: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.flex-grid .item:nth-child(1) {
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.flex-grid .item:nth-child(2) {
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.flex-grid .item:nth-child(3) {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.flex-grid .item:nth-child(4) {
+  border-right: 1px solid #ebebeb;
+}
+
+.flex-grid .item:nth-child(5) {
+  border-right: 1px solid #ebebeb;
+}
+
+/* Try it for free */
+
+.try-for-free {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  border-bottom: 1px solid #ebebeb;
+  text-align: left;
+  padding: 5em;
+}
+
+.title p:first-child {
+  font-weight: bold;
+  font-family: 'Times New Roman', serif;
+  font-size: 2.8em;
+  color: black;
+}
+
+.title>p:nth-child(2) {
+  font-size: 1.4em;
+}
+
+.call-to-action button {
+  width: 10em;
+  height: 4.5em;
+  border: none;
+  border-radius: 5px;
+  padding: 11px;
+  background-color: #3f46ad;
+  color: white;
+  transition: 0.15s background-color linear;
+}
+
+.call-to-action button:hover {
+  background-color: #1c299d;
+}
+
+.title, .call-to-action {
+  flex-basis: 50%;
+  position: relative;
+}
+
+.call-to-action {
+  text-align: right;
+  margin-right: 10em;
+}
+
+/* Footer */
+
+footer {
+  font-size: 1.4em;
+  background-color: white;
+}
+
+.featured {
+  /* slack logo */
+  flex-basis: 40%;
+}
+
+.links {
+  /* 4 columns of 15*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 6em 2em;
+}
+
+.links ul {
+  flex-basis: 10%;
+}
+
+.slack-logo {
+  max-width: 100px;
+  margin-top: -25px;
+  marign-left: 25px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  font-weight: lighter;
+  margin-bottom: 1em;
+}
+
+footer ul li:first-child {
+  font-weight: bolder;
+}
+
+/* Bottom Footer copyright */
+
+.status {
+  align-items: stretch;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  height: 170px;
+  bottom: 0;
+  background-color: #ebebeb;
+}
+
+.status ul {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.status ul li {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0em 1em;
+}
+
+/* American flag and Social networks */
+
+.american-flag {
+  max-width: 20px;
+}
+
+.corner {
+  display: block;
+  margin-top: 4em;
+  margin-right: 2em;
+}
+
+.corner i {
+  font-size: 1.4em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.corner img {
+  padding-top: 20px;
+  margin-bottom: -5px;
+  margin-right: 1em;
+}
+
+.toggle-mobile-nav {
+  display: none;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.toggle-mobile-nav {
+  position: absolute;
+  display: none;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  right: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+  .toggle-mobile-nav {
+    display: block;
+  }
+  header {
+    flex-flow: row wrap;
+  }
+  .right {
+    order: 1;
+    /* We use this to make our picture display first*/
+    flex-basis: 100%;
+    min-height: auto !important;
+    padding: 5em 10%;
+  }
+  .left {
+    order: 2;
+    /* our text displays below order 1 */
+    flex-basis: 100%;
+    padding: 0 10% 5em;
+    min-height: auto !important;
+  }
+  .links ul {
+    flex-basis: 15%;
+  }
+}
+
+@media (max-width: 960px) {
+  nav ul {
+    display: none;
+  }
+  .flex-grid .item {
+    flex-basis: 50%;
+  }
+  .featured {
+    flex-basis: 100% !important;
+  }
+  .links ul {
+    flex-basis: 20% !important;
+  }
+  .flex-grid .item {
+    border: unset !important;
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    width: 100% !important;
+  }
+  nav ul {
+    display: none;
+  }
+  .flex-grid .item {
+    flex-basis: 100%;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .flex-grid .item:last-child {
+    border-bottom: 0px solid #ebebeb;
+  }
+  .links ul {
+    flex-basis: 38% !important;
+    margin-left: 10px;
+  }
+  .try-for-free {
+    flex-direction: column;
+    text-align: center;
+  }
+  .try-for-free .title {
+    margin-bottom: 2em;
+  }
+  .call-to-action {
+    margin-right: unset;
+  }
+  main button {
+    width: 100% !important;
+  }
+}
