@@ -5,3 +5,258 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+html,body{
+  font-size: 19px;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: #5b5e6d;
+  line-height: 1.7em;
+}
+.full-container{
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+}
+h1,h2,h3{
+  color: #2C303F;
+  font-family: 'Times New Roman', Georgia,serif;
+}
+h2{
+  font-size: 1.8em;
+}
+h3{
+  font-size: 1.4em;
+  margin-bottom: 0px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #F4F3F4;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+nav img{
+  width: 110px;
+  height: auto;
+}
+nav ul{
+  display: flex;
+}
+nav li {
+  list-style: none;
+  flex-wrap: wrap;
+
+}
+nav li a{
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 1em;
+  text-decoration: none;
+  color:#5b5e6d;
+   border: 1px solid white;
+}
+nav li a.nav-button{
+ border-color: #2C303F;
+ border-radius: 4px;
+ margin-left: 30px;
+}
+header{
+  padding-top:85px;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+
+}
+header img{
+  width: 100%;
+  height: auto;
+}
+.text-header{
+  display: flex;
+  flex-direction:column;
+}
+.text-header h1{
+  font-size: 4.6em;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+.text-header h1+p{
+    padding:20px 0px;
+}
+button{
+  padding: 20px 20px;
+  max-width: 200px;
+  border-radius: 4px;
+  border: none;
+  background-color: #192592;
+  color:white;
+  font-weight: bold;
+}
+.text-header button+p, .tryFree p{
+  font-size: 0.75em;
+}
+  .text-header button+p a, .tryFree p a{
+  color: #192592;
+}
+main{
+width: 100%;
+}
+.goodCompany-div{
+  background-color: #F4F3F4;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  border-top: 1px solid #ebebeb;
+
+}
+.goodCompany{
+  flex-wrap: wrap;
+  padding:25px 0px;
+
+}
+.goodCompany button{
+  background-color: white;
+  color: #192592;
+  transition: 0.5s;
+border: solid 2px white;
+}
+.goodCompany button:hover{
+border: solid 2px #192592;
+transition: 0.5s;
+}
+.goodCompany-header{
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 50px;
+}
+.tryFree{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #ebebeb;
+  padding: 25px 0px;
+}
+.tryFree p{
+  margin-top:0px ;
+}
+.goodCompany-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  align-content: stretch;
+  align-items: stretch;
+  padding:25px 0px;
+}
+
+.goodCompany-img .item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  order: 1;
+  flex-basis:450px;
+padding: 50px;
+}
+.goodCompany-img .item:nth-child(-1n+2),.goodCompany-img .item:nth-child(4),.goodCompany-img .item:nth-child(5) {
+  border-right: 1px solid #ebebeb;
+}
+.goodCompany-img .item:nth-child(-1n+3){
+  border-bottom: 1px solid #ebebeb;
+}
+.goodCompany-img img{
+  width: 170px;
+  height: auto;
+}
+footer{
+  width: 100%;
+}
+.footer-menu{
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 100%;
+    align-content: stretch;
+    align-items: stretch;
+    font-size: 0.8em;
+
+}
+.footer.menu .footer-menu__img{
+    flex-basis:450px;
+}
+.footer-menu ul{
+  flex-basis:180px;
+}
+.footer-menu li{
+  list-style: none;
+}
+.footer-menu ul li:nth-child(1){
+  font-weight: bold;
+  font-size: 1.02em;
+}
+.footer-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+    background-color: #F4F3F4;
+}
+.info1{
+    display: flex;
+}
+.info1 ul{
+  display: flex;
+}
+.info1 li{
+  list-style: none;
+  flex-wrap: wrap;
+font-weight: bold;
+  padding: 10px;
+  font-size: 0.75em;
+}
+.info2{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.info2-content{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.75em;
+  width: 100%;
+  padding: 20px 30px;
+  flex-basis:1200px;
+}
+.info2 i{
+    padding: 10px;
+}
+.info2 img{
+  width: 25px;
+  height: auto;
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 64rem){
+
+  header{
+  max-width: 100%;
+  width: 100%;
+  }
+nav li a{
+  padding: 5px;
+  font-size: 0.8em;
+}
+.goodCompany-img .item {
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+}
+
+}
