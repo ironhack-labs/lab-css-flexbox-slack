@@ -48,19 +48,7 @@ nav {
   margin-top: 20px;
 }
 
-/*Iteration 2- Medium SIze */
 
-@media (max-width: 1024px>width>960px) {
-  .navidagtion {
-    max-width: 0;
-    max-height:
-  }
-  .headerimage {
-    width: 100%;
-    margin: 10% 10% 10% 10%;
-  }
-  .work {}
-}
 
 .navbutton {
   border: 1px solid black;
@@ -115,11 +103,14 @@ h1 {
   height: 57px;
 }
 
+/*Iteration 2- Medium SIze */
+
 @media (max-width: 1024px) {
   .header {
     display: flex;
-    flex-flow: column-reverse nowrap;
+    flex-flow: column-reverse wrap;
     align-items: center;
+    width: 100%;
   }
   .work {
     width: 50%;
@@ -127,7 +118,28 @@ h1 {
   .headerimage {
     width: 50%;
   }
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
 }
+  .containerLogos {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+  }
+
+.try {
+  flex-flow: column;
+}
+
+  footer {
+    flex-flow: column;
+  }
+}
+
 
 .linkHeader {
   font-size: 0.8em;
@@ -136,9 +148,13 @@ h1 {
 main {
   background-color: #F4F3F4;
   width: 100%;
-  height: 550px;
+  height: auto;
   text-align: center;
   padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+
 }
 
 .discoverButton {
@@ -205,17 +221,20 @@ h1 {
 .try {
   border: 1px solid #ebebeb;
   width: 100%;
-  height: 100px;
+  height: auto;
   margin-top: 22px;
   text-align: left;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+
+
 }
 
-padding-left: 30px;
-padding-top: 10px;
-position: relative;
-top: 20px;
 .tryText {
-  width: 100px;
+  width: 40%;
+  height: auto;
   margin-left: 60px;
 }
 
@@ -225,6 +244,7 @@ top: 20px;
 
 .button3 {
   display: flex;
+
 }
 
 footer {
@@ -232,7 +252,7 @@ footer {
   width: 100%;
   height: 510px;
   position: relative;
-  top: 200px;
+  top: 100px;
 }
 
 h3 {
