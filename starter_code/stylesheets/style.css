@@ -70,7 +70,7 @@ header {
   height: 90vh;
   display: flex;
   padding: 50px;
-    margin-top: 50px;
+  margin-top: 50px;
   box-sizing: border-box;
   align-self: stretch;
   justify-content: space-between;
@@ -89,7 +89,6 @@ img {
   width: 48%;
   flex-direction: column;
   align-self: flex-start;
-
 }
 
 h1 {
@@ -316,4 +315,70 @@ footer {
 .fa, span {
   color: #5b5e6d;
   font-size: 0.8em;
+}
+
+.menu-bar-icon {
+  display: none;
+}
+
+/*@media ()(max-width: 600px) {}*/
+
+@media (max-width: 600px) {
+  body {
+    font-size: 20pt;
+  }
+  .container{
+
+  }
+  .menu-bar-icon {
+    display: flex;
+    align-content: center;
+    background-color: lime;
+  }
+  .fa-bars {
+    align-content: center;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+  }
+  nav ul {
+    display: none;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 0px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+    align-content: space-around;
+  }
+
+  .container img {
+    width: 100vw;
+    align-content: center;
+    order: 2;
+  }
+
+  img {
+    display: block;
+  }
+
+  .headers {
+    width: 100vw;
+    height: 50vh;
+    align-self: flex-start;
+    order: 1;
+    text-align: center;
+    padding-top: 50px;
+    align-content: center;
+    line-height: 50px;
+  }
+  h1, header p{
+    text-align: left;
+  }
+  button{
+    width: 90vw;
+  }
 }
