@@ -36,6 +36,7 @@ ul {
   background-color: #fff;
   border-bottom: 1px solid #5b5e6d;
   justify-content: space-between;
+  flex
 }
 
 .navbar ul {
@@ -45,14 +46,15 @@ ul {
 
 .hamburger {
   align-self: flex-end;
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.logo {
+  flex-basis: 90%;
 }
 
 .navbar img {
-  min-width: 30%;
   max-height: 60px;
-  /* align-self: flex-start; */
-  padding: 2%;
 }
 
 /* -- header --*/
@@ -73,21 +75,29 @@ header {
   font-family: 'Times New Roman';
 }
 
-.header-text p {
+/*.header-text p {
   color: #5b5e6d;
   font-size: 1.2em;
+}*/
+
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
 }
 
 .get-started {
   background-color: #192592;
   border-radius: 5px;
   color: #fff;
-  width: 100%;
+  /* width: 100%; */
   font-weight: bold;
   font-size: 1em;
   border: none;
-  padding: 7% 0;
+  padding: 4% 8%;
   margin-bottom: 17px;
+  /* max-width: 300px; */
 }
 
 .header-text p:nth-child(4) {
@@ -105,7 +115,7 @@ header {
 
 /* -- main content --*/
 
-main {
+.main-content {
   background-color: #f4f3f4;
 }
 
@@ -113,6 +123,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .main-content img {
@@ -121,27 +132,33 @@ main {
   margin: 5% 0;
 }
 
+.main-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-content h2 {
   font-size: 2em;
   margin: 15% 0 0;
   font-family: 'Times New Roman';
 }
 
-.main-content p {
+p {
   color: #5b5e6d;
   font-size: 1.2em;
-  padding: 0 7%;
 }
 
 .discover-btn {
   border-radius: 5px;
-  width: 60%;
+  width: auto;
   max-width: 600px;
   background-color: #fff;
   border: 1px solid #192592;
   color: #192592;
   font-weight: bold;
-  padding: 4% 0;
+  padding: 2% 6%;
+  font-size: 1em;
 }
 
 .try-it {
@@ -153,6 +170,13 @@ main {
 .main-bottom {
   text-align: center;
   padding: 0 7%;
+}
+
+.main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 0 5% 0;
 }
 
 .question {
@@ -192,27 +216,125 @@ main {
   align-items: center;
   flex-direction: column;
   background-color: #f4f3f4;
-  margin-bottom: 20px;
 }
 
 .bottom-links img {
-  width: 5%;
+  width: 50px;
 }
 
 .bottom-links ul {
   list-style: none;
   display: inline-flex;
-}
-
-.bottom-links ul li {
-  padding: 0 2%
-}
-
-.bottom-links div {
-  width: 100%;
   text-align: center;
 }
 
-.bottom-links i {
-  padding: 0 3%;
+.bottom-links ul li,
+i,
+img {
+  padding: 0 1.1em;
+}
+
+.bottom-icons {
+  padding: 1em;
+}
+
+/* -- for screen size 767px to 961px --*/
+
+@media (min-width: 767px) and (max-width: 961px) {
+  .main-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: initial;
+  }
+}
+
+/* -- for screen size 960px to 1024px -- */
+
+@media (min-width: 960px) and (max-width: 1024px) {
+  .main-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: initial;
+  }
+  .footer-links ul {
+    font-size: 2em;
+  }
+  p {
+    font-size: 2em;
+  }
+}
+
+/* -- for screen size 1200px --*/
+
+@media (min-width: 1200px) {
+  .navbar .hamburger {
+    display: none;
+  }
+  .logo {
+    flex-basis: auto;
+  }
+  .navbar-links {
+    width: 40%;
+    margin: 0 30px;
+  }
+  .navbar-links ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar-links li {
+    width: 100%;
+  }
+  .navbar-links ul li:last-child {
+    border: 1px solid #5b5e6d;
+    padding: 2%;
+    border-radius: 7px;
+  }
+  .navbar img {
+    margin: 10%;
+  }
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .header-text, .header-img {
+    width: 50%;
+  }
+  .main-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: initial;
+  }
+  .main-img img {
+    width: 28%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5%;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .footer-img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .bottom-links {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+  }
+
+  .bottom-legal {
+    flex-basis: 60%;
+  }
 }
