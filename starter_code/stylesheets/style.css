@@ -1,12 +1,3 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
-
-
 /* Global */
 
 html {
@@ -135,6 +126,10 @@ header.container {
 
 /* Main */
 
+main {
+    text-align: center;
+}
+
 .grey-container {
     background-color: #F3F3F3;
     padding: 50px 0;
@@ -142,7 +137,7 @@ header.container {
 
 main p {
     color: #464A59;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 .white-button {
@@ -153,7 +148,14 @@ main p {
     background-color: white;
 }
 
-main img {
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-container img {
     width: 30%;
     height: auto;
     margin: 50px auto;
@@ -170,15 +172,24 @@ main h3 {
 
 /* Footer */
 
+footer .img-container {
+    margin-right: 80%;
+}
+
 footer .logo {
-    width: 30%;
+    width: 100%;
     height: auto;
     margin-top: 30px;
 }
 
+.footer-list-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .footer-list-links ul, .footer-links ul {
     list-style: none;
-    margin-right: 35px;
+    margin-right: 30px;
     padding-left: 0;
     line-height: 2.5;
 }
@@ -241,18 +252,147 @@ footer .grey-container li, span, i {
     .header-img-desktop {
         display: none;
     }
+    hr {
+        display: none;
+    }
 }
 
-@media (min-width: 960px) {
-  header.container {
-    margin-top: 150px;
-  }
+@media (min-width: 600px) {
+    /* Navbar */
+    .nav-icon {
+        display: inline;
+    }
+    .nav-links {
+        display: none;
+    }
+    h2 {
+        margin-bottom: 0;
+    }
+    .button {
+        width: 25%;
+        height: auto;
+    }
+    hr {
+        display: block;
+    }
+    /* Header */
+    header.container {
+        margin-top: 150px;
+    }
+    header p {
+        font-size: 1.2rem;
+    }
+    /* Main */
+    main .white-container .container {
+        flex-direction: unset;
+    }
+    main h3 {
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    main .small-text {
+        font-size: 0.7rem;
+        margin-top: 0;
+    }
+    .blue-button {
+        height: auto;
+        padding: 25px;
+        margin: 50px 0 10px auto;
+    }
+    .img-container {
+        flex-direction: row;
+    }
+    .img-container img {
+        margin: auto 60px;
+    }
+    /* Footer */
+    footer .img-container {
+        margin-right: 0;
+        width: 20%;
+    }
+    footer .logo {
+        width: 50%;
+        height: auto;
+        margin: 0 auto auto 0;
+    }
+    footer .grey-container {
+        display: flex;
+        align-items: center;
+    }
+    .footer-list-links {
+        margin-left: auto;
+    }
+    .footer-links ul {
+        margin: 0 auto 0 30px;
+    }
+    .footer-lang {
+        margin-top: 0;
+        width: 25%;
+    }
+    .footer-icons {
+        width: 13%;
+        margin-top: 0;
+    }
+}
 
-  header p {
-    font-size: 1.2rem;
-  }
-
-  .blue-button {
-    width: 25%;
-  }
+@media (min-width: 1200px) {
+    /* Navbar */
+    .nav-icon {
+        display: none;
+    }
+    .transp-button {
+        width: 25%;
+        background-color: white;
+        font-weight: normal;
+        border: 1px solid;
+        color: #9193A0;
+        padding: 10px;
+    }
+    .nav-links {
+        display: inline-block;
+        list-style: none;
+        width: 50%;
+        text-align: right;
+    }
+    .nav-links li {
+        margin-right: 30px;
+        display: inline;
+    }
+    /* Header */
+    .blue-button {
+        width: 13%;
+        height: auto;
+        font-size: 0.8rem;
+    }
+    .img-container img {
+        width: 20%;
+    }
+    header .flex-column {
+        display: flex;
+        flex-direction: row;
+    }
+    header .img-container {
+        width: 50%;
+        display: inline;
+    }
+    header .blue-button {
+        width: 30%;
+        margin-bottom: 0;
+    }
+    .img-container .header-img-desktop {
+        display: block;
+        width: 80%;
+    }
+    .header-img-phone {
+        display: none;
+    }
+    .header-text {
+        display: inline-block;
+        width: 50%;
+    }
+    /* Main */
+    main .img-container img {
+        margin-top: 20px;
+    }
 }
