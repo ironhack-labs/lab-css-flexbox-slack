@@ -34,7 +34,7 @@ div{
 }
 */
 
-/* ------ITERATION 4 - width < 768px // 430px - 750px------ */
+/* ------ITERATION 4 (Extra-small Screen)- width < 768px // 430px - 750px------ */
 
 /*------NAV------*/
 nav > img {
@@ -265,6 +265,8 @@ footer{
   position: relative;
   font-size: 1.1em;
   font-family: "Roboto";
+  color: #636363;
+  list-style-type: none;
 }
 
 footer > .cols{
@@ -272,10 +274,13 @@ footer > .cols{
   margin-left: 5%;
   margin-right: 5%;
   position: relative;
-  top: 230px;
+  top: 180px;
+  height: 780px;
   column-count: 2;
   column-width: 50%;
   height: 780px;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .slack-brand{
@@ -283,31 +288,41 @@ footer > .cols{
   padding: 0;
   margin: 0;
   position: relative;
-  right: 11%;
+  right: 5%;
+  top: 200px;
 }
 
-footer > div > ul {
-  list-style: none;
+
+.col-right-1, .col-right-2, .col-left-1, .col-left-2{
+  list-style-type: none;
   padding: 0;
+  flex-direction: column;
 }
 
-footer > div > ul > li {
+
+.cols > ul > li {
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #636363;
+  width: 100%;
 }
 
-footer > div > ul > .col-right{
-  clear: left;
-  width: 50%;
+
+.right-shit > ul > li {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.right-shit{
   position: relative;
-  top: 30px;
+  bottom: 67px;
 }
 
-footer > div > ul > .col-left{
-  clear: right;
-  width: 50%;
+.col-left-2{
+  height: 380px;
 }
+
+/*------RE-FOOTER------*/
 
 
 .re-footer-color{
@@ -316,26 +331,67 @@ footer > div > ul > .col-left{
   background-color: #f5f5f5;
   margin: 0;
   color: #636363;
+  position: relative;
+  top: 140px;
 }
 
 .re-footer-margins{
   display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 
-.re-footer-margins > ul{
-  display: inline;
-  margin: 0;
-  padding: 0;
+.profile-stuff > ul{
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.profile-stuff > ul > li{
+  flex-direction: row;
+  margin: 0 10px;
+  font-family: "Roboto-Black"
+}
+
+.country{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
 
 }
 
-.re-footer-margins > ul > li{
-flex-direction: row;
+.country > img{
+  width: 33px;
+  justify-content: center;
 }
 
 
-/* ------ITERATION 3 - width 961px>width>767px // 430px - 750px------ */
+.country > i{
+  margin-left: 17px;
+
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social > i{
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+/* ------ITERATION 3 (Small Screen) - width 961px>width>767px ------ */
 
 
 @media (min-width: 767px) {
@@ -347,12 +403,36 @@ flex-direction: row;
   }
 
 .logos{
-  width: 30%;
+  width: 80%;
   flex-shrink: 2;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin: 0 auto;
+}
+
+.logos > img{
+  padding: 0;
+  margin: 0;
+  width: 60%;
+}
+
+.airbnb-logo, .oracle-logo, .ticketmaster-logo, .losangelestimes-logo, .harvard-logo, .capitalone-logo {
+width: 60%;
+}
 
 
+.losangelestimes-logo, .capitalone-logo {
+  margin-bottom: 84px;
+}
 
-  }
+/* ------ITERATION 2 (Medium Screen)- width 1024px > width > 960px------ */
+
+@media (min-width: 960px) {
+
+header > button{
+  width: 21%;
+}
 
 
 }
