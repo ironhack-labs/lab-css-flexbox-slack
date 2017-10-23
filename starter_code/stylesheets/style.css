@@ -1,7 +1,295 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+/* div,
+section,
+footer,
+nav {
+  border: 1px solid black;
+  overflow: auto;
+} */
+
+/* -- typography -- */
+
+/* -- reset -- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+  line-height: 2em;
+  font-size: 1.5em;
+  color: #5b5e6d;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Lato", sans-serif;
+  margin: auto;
+  background-color: #f4f3f4;
+}
+p {
+  color: #5b5e6d;
+  font-size: 2em;
+}
+h1,
+h2 {
+  color: #2c303f;
+  font-family: "Times New Roman";
+  margin-top: 0px;
+}
+
+/* -- layout -- */
+.container {
+  margin: 0 20px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.darker {
+  background-color: #e6e6e6;
+}
+
+/* -- components -- */
+
+/* -- components - buttons -- */
+.btn {
+  border-radius: 4px;
+  border: none;
+  padding: 25px;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+.btn-main {
+  background-color: #3f46ad;
+  color: #f4f3f4;
+  width: 100%;
+}
+.btn-second {
+  background-color: #f4f3f4;
+  color: #3f46ad;
+  border: 1px solid #3f46ad;
+  width: 100%;
+}
+
+/* HEADER */
+.site-header .navbar {
+  background-color: #ffffff;
+  color: #5b5e6d;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  border-bottom: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+.site-header .navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header .navbar .link-list {
+  display: none;
+}
+.site-header .navbar .logo {
+  height: 60px;
+}
+
+/* -- MAIN -- */
+.site-main .landing {
+  padding-bottom: 20px;
+  padding-top: 100px;
+}
+.site-main .landing #main-title {
+  font-size: 6em;
+}
+.site-main .marketing {
+  text-align: center;
+}
+.site-main .section .large-subtitle {
+  font-size: 4em;
+}
+.site-main .responsive {
+  max-width: 60%;
+}
+.site-main .responsive-companies {
+  width: 40%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.site-main .left-image,
+.site-main .company-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.try-slack .call-to-action {
+  width: 100%;
+}
+
+/* -- FOOTER -- */
+.site-footer .bottom-multilinks {
+  flex-basis: 50%;
+}
+.site-footer .site-map li:first-child {
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 900;
+}
+.site-footer .logo {
+  width: 20%;
+  margin: 0;
+}
+.site-footer .slack-links {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+}
+.site-footer .bottom {
+  display: flex;
+  flex-direction: row;
+}
+.site-footer .links {
+  justify-content: space-around;
+  color: grey;
+  font-weight: 900;
+  font-size: 2em;
+}
+.site-footer .change-language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  margin: 0 auto;
+}
+.site-footer .language {
+  color: grey;
+  font-size: 2em;
+  padding: 10px;
+}
+.site-footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3em;
+  width: 40%;
+  margin: 0 auto;
+  color: grey;
+}
+.site-footer img.flag {
+  width: 30px;
+}
+/* ----------- Tablet Screens ----------- */
+@media screen and (min-device-width: 768px) {
+  .site-main .company-logos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .site-main .company-logo {
+    flex-basis: 50%;
+  }
+  .site-main .landing .btn-main {
+    width: 25%;
+  }
+  .site-main .darker .btn-second {
+    width: 25%;
+  }
+  .site-main .try-slack .call-to-action {
+    width: 25%;
+  }
+  .site-footer .logo {
+    width: 15%;
+  }
+}
+
+/* ----------- Desktop/Laptop Screens ----------- */
+@media screen and (min-device-width: 1024px) {
+  .site-header .navbar .top-menu-hamburger {
+    display: none;
+  }
+  .site-header .navbar .link-list {
+    display: flex;
+  }
+  .site-header .navbar .link-list li {
+    padding-right: 20px;
+  }
+  .site-header .navbar .link-list a {
+    text-decoration: none;
+    color: #5b5e6d;
+  }
+  .site-header .navbar .button-nav {
+    padding: 10px;
+    box-shadow: inset 0 0 0 1px #323648;
+    border-radius: 5px;
+    border: none;
+    line-height: 0.7em;
+    background-color: white;
+    font-size: 1em;
+  }
+  .site-main .company-logo {
+    flex-basis: 33%;
+  }
+  .site-main .landing {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .site-main .right-text {
+    flex-basis: 50%;
+  }
+  .site-main .landing .btn-main {
+    width: 50%;
+  }
+  .site-main .try-slack {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-footer .bottom-multilinks {
+    flex-basis: 25%;
+  }
+  .site-footer .site-map {
+    padding-right: 20px;
+  }
+  .site-footer .site-map li {
+    font-size: 0.8em;
+  }
+  .site-footer .logo {
+    width: 90%;
+  }
+  .site-footer .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+  }
+  .site-footer .darker .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-footer .footer-links {
+    flex-grow: 5;
+  }
+  .site-footer .links {
+    justify-content: flex-start;
+  }
+  .site-footer .links li {
+    padding-right: 30px;
+  }
+  .site-footer .change-language {
+    width: 10%;
+    flex-grow: 1;
+  }
+  .site-footer .social-icons {
+    width: 5%;
+    flex-grow: 1;
+  }
+}
