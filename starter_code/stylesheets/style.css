@@ -1,19 +1,3 @@
-/* -- reset -- */
-
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
 /* div,
 section,
 footer,
@@ -24,21 +8,34 @@ nav {
 
 /* -- typography -- */
 
+/* -- reset -- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+  line-height: 2em;
+  font-size: 1.5em;
+  color: #5b5e6d;
+}
 html {
   font-size: 10px;
 }
-
 body {
   font-family: "Lato", sans-serif;
   margin: auto;
   background-color: #f4f3f4;
 }
-
 p {
   color: #5b5e6d;
   font-size: 2em;
 }
-
 h1,
 h2 {
   color: #2c303f;
@@ -46,22 +43,24 @@ h2 {
   margin-top: 0px;
 }
 
-ul {
-  line-height: 2em;
-  font-size: 1.5em;
-  color: #5b5e6d;
-}
-
 /* -- layout -- */
-
 .container {
   margin: 0 20px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.darker {
+  background-color: #e6e6e6;
 }
 
 /* -- components -- */
 
-/* -- components / buttons -- */
-
+/* -- components - buttons -- */
 .btn {
   border-radius: 4px;
   border: none;
@@ -69,23 +68,20 @@ ul {
   font-size: 1.8em;
   font-weight: 700;
 }
-
 .btn-main {
   background-color: #3f46ad;
   color: #f4f3f4;
   width: 100%;
 }
-
 .btn-second {
   background-color: #f4f3f4;
   color: #3f46ad;
   border: 1px solid #3f46ad;
-  width: 60%;
+  width: 100%;
 }
 
-/* -- components / navbar -- */
-
-.navbar {
+/* HEADER */
+.site-header .navbar {
   background-color: #ffffff;
   color: #5b5e6d;
   position: fixed;
@@ -96,129 +92,92 @@ ul {
   border-bottom: none;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
-
-.navbar .container {
+.site-header .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.navbar .link-list {
+.site-header .navbar .link-list {
   display: none;
 }
-
-.navbar .logo {
+.site-header .navbar .logo {
   height: 60px;
 }
 
-.landing {
-  margin-bottom: 20px;
+/* -- MAIN -- */
+.site-main .landing {
+  padding-bottom: 20px;
   padding-top: 100px;
 }
-
-.landing #main-title {
+.site-main .landing #main-title {
   font-size: 6em;
 }
-
-.marketing {
+.site-main .marketing {
   text-align: center;
 }
-
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.darker {
-  background-color: #e6e6e6;
-}
-
-.section .large-subtitle {
+.site-main .section .large-subtitle {
   font-size: 4em;
 }
-.left-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.responsive {
+.site-main .responsive {
   max-width: 60%;
 }
-
-.responsive-companies {
-  width: 50%;
+.site-main .responsive-companies {
+  width: 30%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.company-logos {
-  justify-content: center;
-}
-.company-logos .company-logo {
+.site-main .left-image,
+.site-main .company-logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.try-slack .call-to-action {
+  width: 100%;
+}
 
-/* -- footer -- */
-
+/* -- FOOTER -- */
 .site-footer .bottom-multilinks {
   flex-basis: 50%;
 }
-.site-footer .site-map {
-  padding-right: 40px;
-}
-
 .site-footer .site-map li:first-child {
   text-transform: uppercase;
   color: grey;
   font-weight: 900;
 }
-
 .site-footer .logo {
-  width: 30%;
+  width: 20%;
   margin: 0;
 }
-
-.site-footer .main {
+.site-footer .slack-links {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   font-size: 1.5em;
 }
-
 .site-footer .bottom {
   display: flex;
   flex-direction: row;
 }
-
 .site-footer .links {
+  justify-content: space-around;
   color: grey;
   font-weight: 900;
   font-size: 2em;
-  justify-content: space-around;
 }
-.site-footer .links li {
-  padding-right: 10px;
-}
-
 .site-footer .change-language {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
 }
-
 .site-footer .language {
   color: grey;
   font-size: 2em;
+  padding: 10px;
 }
-
 .site-footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -227,74 +186,48 @@ ul {
   margin: 0 auto;
   color: grey;
 }
-
-img.flag {
+.site-footer img.flag {
   width: 30px;
 }
-
-/* ----------- Mobile Screens ----------- */
-/*
-@media only screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-  body {
-    background-color: blue;
-  }
-}
-*/
-
 /* ----------- Tablet Screens ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1084px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* body {
-    background-color: blue;
-  } */
-  .company-logos {
+  .site-main .company-logos {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
   }
-  .company-logo {
+  .site-main .company-logo {
     flex-basis: 50%;
   }
-  .landing .btn-main {
+  .site-main .landing .btn-main {
     width: 25%;
   }
-  .last-container .btn-second {
-    width: 30%;
+  .site-main .darker .btn-second {
+    width: 25%;
+  }
+  .site-main .try-slack .call-to-action {
+    width: 25%;
   }
   .site-footer .logo {
-    width: 25%;
-    margin: 0;
+    width: 15%;
   }
 }
 
 /* ----------- Desktop/Laptop Screens ----------- */
 @media screen and (min-device-width: 1084px) and (-webkit-min-device-pixel-ratio: 1) {
-  /* body {
-    background-color: red;
-  } */
-  .company-logos {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .company-logo {
-    flex-basis: 33%;
-  }
-  .navbar .top-menu-hamburger {
+  .site-header .navbar .top-menu-hamburger {
     display: none;
   }
-
-  .navbar .link-list {
+  .site-header .navbar .link-list {
     display: flex;
   }
-  .navbar .link-list li {
+  .site-header .navbar .link-list li {
     padding-right: 10px;
   }
-
-  .navbar .link-list a {
+  .site-header .navbar .link-list a {
     text-decoration: none;
     color: #5b5e6d;
   }
-
-  .navbar .button-nav {
+  .site-header .navbar .button-nav {
     padding: 10px;
     transition: all 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow: inset 0 0 0 1px #323648;
@@ -304,58 +237,63 @@ img.flag {
     background-color: white;
     font-size: 1em;
   }
-
-  .landing {
+  .site-main .company-logos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .site-main .company-logo {
+    flex-basis: 33%;
+  }
+  .site-main .landing {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
   }
-
-  .right-text {
+  .site-main .right-text {
     flex-basis: 50%;
   }
-  .left-image {
+  .site-main .left-image {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
-  .left-image .responsive {
+  .site-main .left-image .responsive {
     width: 80%;
   }
-
-  .landing .btn-main {
+  .site-main .landing .btn-main {
     width: 50%;
   }
-  .last-container .btn-second {
+  .site-main .darker .btn-second {
     width: 30%;
   }
-  .try-slack {
+  .site-main .try-slack {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+  .site-main .try-slack .call-to-action {
+    width: 25%;
+  }
   .site-footer .bottom-multilinks {
     flex-basis: 25%;
   }
-
   .site-footer .site-map {
     padding-right: 20px;
   }
   .site-footer .site-map li {
     font-size: 0.8em;
   }
-
+  .site-footer .logo {
+    width: 90%;
+  }
   .site-footer .container {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
-  .site-footer .logo {
-    width: 90%;
-  }
-  .site-footer .last-container .container {
+  .site-footer .darker .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -363,15 +301,12 @@ img.flag {
   .site-footer .footer-links {
     flex-grow: 5;
   }
-
   .site-footer .links {
     justify-content: flex-start;
   }
-
-  .site-footer .links > li {
+  .site-footer .links li {
     padding-right: 30px;
   }
-
   .site-footer .change-language {
     width: 10%;
     flex-grow: 1;
