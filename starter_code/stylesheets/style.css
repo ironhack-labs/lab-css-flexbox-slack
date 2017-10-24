@@ -5,3 +5,139 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+  *{
+    font-family: sans-serif;
+  }
+  p{
+    color: #5b5e6d;
+  }
+  h1, h2{
+    color:#2C303F;
+  }
+  nav{
+    position: fixed;
+    display: flex;
+    height: auto;
+    top: 0;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    background-color: white;
+    color: #5b5e6d;
+    border-bottom: 1px solid #F4F3F4;
+    border-top: 1px solid #F4F3F4;
+  }
+  nav ul{
+    display: flex;
+    flex-flow: nowrap row;
+  }
+  nav ul li{
+    list-style: none;
+    padding-right: 20px;
+  }
+  nav img{
+    width: 90px;
+    height: 50px;
+    padding-left: 20px;
+  }
+  header{
+    height: 500px;
+    padding-top: 5%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  header > *{
+    width: 32%;
+
+  }
+  h1{
+    font-size: 300%;
+  }
+  header button{
+    width: 7%;
+    background-color: #192592;
+    color: white;
+  }
+  main{
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    text-align: center;
+  }
+main button{
+  color:#192592;
+  padding: 1%
+}
+main img{
+  height:20%;
+  width: 20%;
+  padding: 40px;
+}
+  main button{
+    background-color: #192592;
+    color: white;
+  }
+  .main1{
+    background-color: #F4F3F4;
+
+  }
+  .company-logos{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main2{
+    height: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    border-bottom: 2px solid #F4F3F4;
+  }
+  .free-title{
+    font-size: 150%;
+    -webkit-column-rule: #2C303F;
+    column-rule: #2C303F;
+  }
+  @media (max-width: 1024px) {
+    nav ul{
+      border-top: 2px solid #5b5e6d;
+      border-bottom: 2px solid #5b5e6d;
+      margin-right: 20px;
+      height: 10px;
+    }
+    nav ul li{
+      display: none;
+    }
+    header{
+      height: auto;
+    }
+    header > *{
+      width: auto;
+    }
+    header > img {
+      order: 1;
+    }
+  }
+@media (max-width:961px) {
+  main img{
+    height: 40%
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  header button{
+    width: auto;
+  }
+  .company-logos{
+    flex-flow: column nowrap;
+  }
+  .main2{
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+}
