@@ -28,11 +28,19 @@ nav {
   align-items: center;
   padding: 0 50px;
   border-bottom: 1px solid #c8c9ce;
+  position: fixed;
+  background-color: white;
 }
 
 nav img {
   width: 11%;
   height: 100%;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: #71747d;
 }
 
 nav li, a {
@@ -48,6 +56,10 @@ nav li, a {
   border: 1px solid #c8c9ce;
   border-radius: 5%;
   padding: 10px 10px;
+}
+
+.wrapper {
+  padding-top: 70px;
 }
 
 header {
@@ -162,6 +174,14 @@ h3 {
     display: none;
   }
 
+  .hamburger {
+    display: flex;
+  }
+
+  .wrapper {
+    padding-top: 40px;
+  }
+
   header {
     flex-flow: column-reverse nowrap;
     padding-top: 80px;
@@ -176,13 +196,24 @@ h3 {
     width: 15%;
   }
 
+
+
 }
 
 /*SMALL SCREEN*/
 
 @media (max-width: 961px) and (min-width: 768px) {
+
   .company-container img {
     width: 20%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .wrapper {
+    padding-top: 40px;
   }
 }
 
@@ -196,6 +227,15 @@ h3 {
 
   nav ul {
     display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    width: 0%;
+  }
+
+  .wrapper {
+    padding-top: 40px;
   }
 
   header {
