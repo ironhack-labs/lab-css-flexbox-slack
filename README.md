@@ -1,6 +1,6 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# CSS | Slack Clone with Flexbox
+# CSS | Slack Clone with Flexbox | Test
 
 ## Introduction
 
