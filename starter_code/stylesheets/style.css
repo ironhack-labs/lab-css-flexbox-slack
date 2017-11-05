@@ -14,7 +14,7 @@ nav grey: #5b5e6d;
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   box-sizing: border-box;
-  /*border: 1px solid lightgrey;*/
+  border: 1px solid lightgrey;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -343,6 +343,10 @@ a {
 
 @media (max-width: 1075px) and (min-width: 960px) {
   /*nav - bar*/
+  .nav-bar {
+    padding: 0 85px 0 35px;
+  }
+
   .nav-bar ul {
     display: none;
   }
@@ -378,11 +382,103 @@ a {
     height: 400px;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .front-image-container img {
     max-width: 50%;
     height: 100%;
     padding-bottom: 50px;
+    align-self: center;
   }
+}
+
+/* media queries small screen*/
+
+@media (max-width: 961px) and (min-width: 767px) {
+  /*nav - bar*/
+  .nav-bar {
+    padding: 0 85px 0 35px;
+  }
+
+  .nav-bar ul {
+    display: none;
+  }
+  .nav-bar {
+    padding-right: 35px;
+  }
+  .toggle {
+    display: inline-block;
+    width: 26px;
+    float: right;
+    color: grey;
+    padding-top: 16px;
+  }
+  .toggle img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*header*/
+  .header-container {
+    height: 900px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-right-container h1 {
+    letter-spacing: -2px;
+    font-size: 8vw;
+    font-weight: 400;
+    line-height: 70px;
+    padding-bottom: 30px;
+    transform: scale(1, 1.1);
+  }
+
+  .header-right-container {
+    width: 100%;
+    height: 500px;
+    padding: 100px 35px 0;
+  }
+
+  .logo-container {
+    width: 50%;
+  }
+
+  .front-image-container {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .front-image-container img {
+    max-width: 50%;
+    height: 100%;
+    padding-bottom: 50px;
+    align-self: center;
+  }
+
+  .logo-link {
+    width: 100px;
+    margin: 0;
+  }
+
+  .flag-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+.discover {
+  width: 80%;
+}
+
 }
