@@ -13,6 +13,7 @@ nav grey: #5b5e6d;
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   box-sizing: border-box;
+  /*border: 1px solid lightgrey;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,24 +36,40 @@ a {
   color: #757575;
 }
 
+/*.clearfix:after {
+  display: block;
+  clear: both;
+}*/
 
 /*navigation*/
+
 .nav-container {
+  z-index: 500;
+  background-color: white;
+  width: 100%;
   height: 70px;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
 }
 
 .nav-bar {
   border-bottom: 1px solid #dddddd;
   height: 70px;
   padding: 0 85px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav-bar img {
+  margin: 10px 0;
   width: auto;
   height: 50px;
+}
+
+.nav-bar ul {
+  display: inline-block;
+  float: right;
+  margin: 17px 0;
+
 }
 
 .nav-bar li {
@@ -79,7 +96,8 @@ a {
 
 /*navigation*/
 .header-container {
-height: 750px;
+height: 680px;
+margin-top: 70px;
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -139,4 +157,90 @@ align-items: center;
   font-size: 0.9em;
   color: #192592;
   text-decoration: underline;
+}
+
+/* main */
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.references-container {
+  width: 100%;
+  background-color: #F4F3F4;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 50px 0;
+}
+
+.references-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.references-top h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.references-top p {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.discover {
+  color: #192592;
+  background-color: white;
+  border: 1px solid #192592;
+  font-size: 0.9em;
+  letter-spacing: normal;
+  padding: 20px 40px;
+  margin: 15px auto 40px auto;
+  border-radius: 5px;
+}
+
+.references-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 33.3%;
+  height: 100px;
+}
+
+.logo-container img {
+  align-self: center;
+  width: 150px;
+  height: auto;
+}
+
+/*lower section main*/
+
+.try-it {
+  height: 150px;
+  padding: 0 85px;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.try-it h4 {
+  font-size: 1.8em;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
