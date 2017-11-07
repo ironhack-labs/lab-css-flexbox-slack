@@ -5,3 +5,289 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #2C303F;
+}
+
+h1 {
+  font-size: 44px;
+  color: #2C303F;
+}
+
+p {
+  color: #5b5e6d;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  color: #5b5e6d;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #5800AC;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+  width: 160px;
+}
+
+nav>img {
+  height: 80px;
+  padding-left: 30px;
+}
+
+nav>ul {}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.nav-list{
+  display: block;
+}
+.nav-list-small{
+  display: none;
+}
+header {
+  padding-top: 100px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+header>img {
+  height: 350px;
+  padding-top: 40px;
+  display: block;
+}
+
+header>div {
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header-div {
+  height: 300px;
+}
+
+.header-div>h1 {
+  width: 300px;
+}
+
+.div1-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 40px;
+  padding: 30px 0;
+}
+.div1-main> h2,p,button{
+  margin-bottom: 15px;
+}
+.div1-main>button {
+  background-color: white;
+  color: #5800AC;
+  border: 1px solid #5b5e6d;
+}
+
+.main-div-images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-div-images>img {
+  width: 32%;
+  box-sizing: border-box;
+  padding: 40px 90px;
+}
+
+.div2-main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+.try-it-p {
+  color: #2C303F;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.img-slack {
+  flex-grow: 4;
+}
+
+.img-slack>img {
+  height: 100px;
+}
+
+.footer-list>ul {
+  flex-grow: 1;
+  margin: 35px 0 0 0;
+}
+
+.footer-list li {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.footer-bottom {
+  background-color: rgb(235, 232, 232);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer-bottom li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-bottom-icons{
+  display: flex;
+  align-items: center;
+}
+.footer-bottom img{
+  height: 20px;
+}
+.footer-bottom-icons img,span,i{
+  margin-right: 10px;
+}
+@media(max-width:1024px){
+  .nav-list{
+    display: none;
+  }
+  .nav-list-small{
+    display: block;
+    padding-right: 30px;
+  }
+  header{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 700px;
+  }
+  header>img{
+    padding-top: 0px;
+  }
+}
+@media (max-width:960px) {
+  .main-div-images>img {
+    width: 48%;
+    box-sizing: border-box;
+    padding: 20px 50px;
+  }
+  .header-div> button{
+    padding-bottom: 25px;
+  }
+}
+@media (max-width:767px) {
+  header{
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 360px;
+    padding-bottom: 40px;
+  }
+  header>img {
+    display: none;
+  }
+  header>div {
+    box-sizing: border-box;
+    padding-left: 40px;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .header-div>h1 {
+    font-size: 60px;
+    width: 200px;
+  }
+  main{
+    text-align: center;
+  }
+  .div1-main{
+    padding: 0 10px;
+  }
+  .main-div-images>img {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 20px 80px;
+  }
+  .div2-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .img-slack {
+    width: 100%
+  }
+
+  .img-slack>img {
+    height: 100px;
+  }
+
+  .footer-list>ul {
+    width: 35%;
+    margin-left: 20px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }.footer-bottom>ul{
+    margin-bottom: 15px;
+  }
+  .footer-bottom li {
+    margin-left: 10px;
+  }
+  .footer-bottom-icons{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+  }
+
+  .footer-bottom-icons img,span,i{
+    margin-bottom: 10px;
+  }
+}
