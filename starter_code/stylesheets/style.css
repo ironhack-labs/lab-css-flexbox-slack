@@ -9,7 +9,7 @@
 }
 
 /*
-background-grey: #F4F3F4;
+
 button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
@@ -17,21 +17,21 @@ nav grey: #5b5e6d;
 */
 
 @media (min-width: 1200px) {
-  .nav-bar, header {
+  .nav-bar, header, .section1-text .section1-logos {
   margin: 0 calc((100% - 1200px)/2);
   background-color: yellowgreen;
   }
 }
 
 @media (min-width: 800px) and (max-width: 1199px) {
-  .nav-bar, header {
+  .nav-bar, header, .section1-text .section1-logos {
   margin: 0 auto;
   background-color: yellow;
   }
 }
 
 @media (min-width: 650px) and (max-width: 999px) {
-  .nav-bar, header {
+  .nav-bar, header, .section1-text .section1-logos {
     margin: 0 auto;
     background-color: orangered;
     }
@@ -91,39 +91,44 @@ header {
   margin-top: 50px;
 }
 
-.header-block {
-  display: flex;
-  justify-content:flex-end;
-  background-color: white;
+.header-image {
   width: 50%;
   border: 1px solid pink;
+  display: flex;
+  justify-content: center;
 }
-.header-image { 
-  object-fit: contain ;
+.header-image img{ 
+  width: 100%;
+  object-fit: scale-down ;
 }
 
 .header-text{
   display: flex;
   flex-direction: column;
-  background-color: white;
+ 
   width: 50%;
   border: 1px solid blue;
 }
 
-.header-text  h1 {
+.header-text h1 {
     font-family:  Slack-Tiempos;
     color: #2C303F;
     font-size: 76.8px;
+    margin-top: 0;
     margin-bottom: 32px;
     }
 
-.headerTextBlock  p {
+.header-text p {
   font-family:  Slack-Averta;
   color: #5b5e6d;
-  font-size: 1em;
+  font-size: 20px;
   }
 
-.headerTextBlock  button {
+  .header-text p:last-of-type {
+    font-size: 10px;
+  }
+
+.button-purple {
   background-color: #192592;
   font-family: Slack-Averta;
   font-size: 1em;
@@ -133,3 +138,58 @@ header {
   border: none;
   border-radius: 7px;
 }
+
+/*
+//
+SECTION: 1;//
+*/
+.section1 {
+  background-color: #F4F3F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.section1-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section1 h2 {
+  font-family:  Slack-Tiempos;
+  color: #2C303F;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  }
+
+.section1 p {
+font-family:  Slack-Averta;
+color: #5b5e6d;
+font-size: 16px;
+}
+
+.button-white {
+  background-color: white;
+  color: #192592;
+  font-family: Slack-Averta;
+  font-size: 1em;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #192592;
+  border-radius: 7px;
+  margin: 20px;
+}
+
+.section1-logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section1-logos img{
+  width: 41px;
+  height: 41px;
+}
+
