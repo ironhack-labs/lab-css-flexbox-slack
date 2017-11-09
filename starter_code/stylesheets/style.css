@@ -31,12 +31,18 @@ MEDIA
   margin: 0 calc((100% - 1200px)/2);
   background-color: yellowgreen;
   }
+  .nav-menu{
+    visibility: visible; 
+  }
 }
 
 @media (min-width: 800px) and (max-width: 1199px) {
-  .nav-bar, header, .section1-text, .section1-logos, section2, .footer-main, .footer-end {
+  .nav-bar, header, .section1-text, .section1-logos, section2, .footer-main, .footer-end  {
   margin: 0 auto;
   background-color: yellow;
+  }
+  .nav-menu{
+    visibility: hidden; 
   }
 }
 
@@ -45,14 +51,32 @@ MEDIA
     margin: 0 auto;
     background-color: orangered;
     }
+    .nav-menu{
+      visibility: hidden; 
+    }
 }
 
+/* 
+ //
+ //
+ GENERAL
+ //
+ //
+ */ 
 
 body {
     margin: 0;
-    padding: 0;  
+    padding: 0; 
+    font-family: Slack-Averta; 
+    font-size:14px;
+    color: #5b5e6d;
+    font-weight: 400;
   }
 
+ul{
+  list-style:none;
+  padding-left: 0;
+  }
 
  /* 
  //
@@ -66,10 +90,20 @@ body {
     border-bottom: 1px solid #a0a0a0;
   }
 
+  .menu-icon{
+    position: relative;
+    top: 0;
+    left: 20px
+  }
+
   .nav-bar{
     display: flex;
     justify-content:space-between;
     align-items: center;
+  }
+
+  .nav-bar div{
+    background-color: blue
   }
 
   .nav-logo {
@@ -82,14 +116,14 @@ body {
     display: flex;
     padding: 0;
     margin: 0 20px 0 0;
+
   }
   
   .nav-item {
     display: flex;
     vertical-align: center;
     margin: 0 10px;
-    font-family: Slack-Averta;
-    color: #5b5e6d;
+    font-size: 16px;
   }
 
 
@@ -284,12 +318,11 @@ footer{
   border-top: 1px solid #a0a0a0;
 }
 
-
-
 .footer-main, .footer-end{
   display: flex;
   justify-content:space-between;
   align-items: flex-start;
+  margin-top: 50px;
 }
 
 .footer-main-logo{
@@ -298,19 +331,40 @@ footer{
 .footer-main-logo img{
   height: 100%;
   object-fit: contain ;
-  background-color: red;
 }
 
 .footer-main-menus{
   display: flex;
-  flex-direction: row;
+  align-items: flex-start;
+}
+.footer-main-menus div{
+  width: 100px;
+  margin: 0 20px;
+  vertical-align: top;
+}
+
+.footer-main-menus ul li:first-child{
+  font-weight: 700;
 }
 
 
-.footer-end {
-  background-color: #F4F3F4;
+
+.footer-end-gray {
+  background-color:#F4F3F4;
 }
 
-.footer-end-menu {
+.footer-end-menu ul{
   display: flex;
+  flex-direction: row;
+  font-weight: 700;
+}
+.footer-end-menu li{
+  margin-right: 20px;
+}
+.footer-end-icons img{
+  margin-top: 5px;
+  max-width: 25px;
+}
+.footer-end-icons i{
+  margin-left: 10px;
 }
