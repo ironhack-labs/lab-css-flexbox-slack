@@ -1,3 +1,11 @@
+/*
+//
+//
+FUENTES
+//
+//
+*/
+
 @font-face{
   font-family: Slack-Averta;
   src: url(https://a.slack-edge.com/436da/marketing/fonts/averta/averta-regular.woff2) 
@@ -8,30 +16,32 @@
   src: url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-headline/tiempos-headline-semibold.woff2);
 }
 
-/*
 
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
+
+/*
+//
+//
+MEDIA
+//
+//
 */
 
 @media (min-width: 1200px) {
-  .nav-bar, header, .section1-text .section1-logos {
+  .nav-bar, header, .section1-text, .section1-logos, .section2 {
   margin: 0 calc((100% - 1200px)/2);
   background-color: yellowgreen;
   }
 }
 
 @media (min-width: 800px) and (max-width: 1199px) {
-  .nav-bar, header, .section1-text .section1-logos {
+  .nav-bar, header, .section1-text, .section1-logos, section2 {
   margin: 0 auto;
   background-color: yellow;
   }
 }
 
 @media (min-width: 650px) and (max-width: 999px) {
-  .nav-bar, header, .section1-text .section1-logos {
+  .nav-bar, header, .section1-text, .section1-logos, section2 {
     margin: 0 auto;
     background-color: orangered;
     }
@@ -46,7 +56,9 @@ body {
 
  /* 
  //
+ //
  NAVIGATION BAR
+ //
  //
  */ 
   nav {
@@ -80,9 +92,13 @@ body {
     color: #5b5e6d;
   }
 
+
+
 /* 
 //
+//
 HEADER
+//
 //
 */ 
 header {
@@ -132,6 +148,7 @@ header {
   background-color: #192592;
   font-family: Slack-Averta;
   font-size: 1em;
+  font-weight: bold;
   color: white;
   width: 200px;
   height: 50px;
@@ -139,9 +156,14 @@ header {
   border-radius: 7px;
 }
 
+
+
 /*
 //
-SECTION: 1;//
+//
+SECTION1
+//
+//
 */
 .section1 {
   background-color: #F4F3F4;
@@ -152,6 +174,8 @@ SECTION: 1;//
 }
 
 .section1-text {
+  margin-top: 50px;
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,7 +185,6 @@ SECTION: 1;//
   font-family:  Slack-Tiempos;
   color: #2C303F;
   font-size: 32px;
-  margin-top: 0;
   margin-bottom: 16px;
   }
 
@@ -184,13 +207,66 @@ font-size: 16px;
 }
 
 .section1-logos {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+.section1-logos div{
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 100px;
+  background-color: yellow;
+  margin: auto 32px ;
 }
 
 .section1-logos img{
-  width: 41px;
-  height: 41px;
+  width: 100%;
+  object-fit: contain ;
+}
+
+
+
+/*
+//
+//
+SECTION2
+//
+//
+*/
+.section2{
+  margin-top: 50px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  border-bottom: 1px solid #a0a0a0;
+  
+}
+.section2 div{
+  display: flex;
+  flex-direction:  column; 
+  justify-content: flex-start;
+  background-color: pink;
+}
+
+.section2 p:first-of-type {
+  font-family:  Slack-Tiempos;
+  color: #2C303F;
+  font-size: 24px;
+  margin: 0px; 
+  /*PREGUNTA: de donde herada un margen top y bottom de 24px???? que por eso le he puesto o */
+  }
+
+.section2 p:last-of-type {
+font-family:  Slack-Averta;
+color: #5b5e6d;
+font-size: 14px;
+margin: 0px; 
+
 }
 
 
