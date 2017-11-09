@@ -5,3 +5,266 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+p, li {
+  color: #5b5e6d;
+}
+h1, h2 {
+  color: #2C303F;
+}
+nav {
+  background-color: white;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.logo {
+  height: 90%;
+}
+
+/* hidden in large screens */
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2%;
+}
+.hide-large {
+  width: 35px;
+  height: 5px;
+  background-color: #5b5e6d;
+  margin: 3px 0;
+}
+
+/* END OF hidden in large screens */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1% 0 0;
+}
+nav ul li {
+  padding: .5em;
+}
+#box {
+  border: black;
+  border-style: solid;
+  border-width: thin;
+}
+header {
+  padding: 6% 5%;
+  display: flex;
+  height: 600px;
+  justify-content: center;
+}
+.img-header{
+  border: 2% 2%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 390%;
+}
+header button {
+  width: 20%;
+  height: 7%;
+  background-color: #192592;
+  border-color: #192592;
+  border-radius: 5px;
+  color: white;
+}
+main {
+  height: 500px;
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: column;
+  align-content:space-around;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.main-button-one {
+  color: blue;
+  border-color: black;
+  background-color: white;
+  display: flex;
+  margin: auto;
+}
+main img {
+  height: 20%;
+  width: 20%;
+  padding: 2% 5% 2% 7%;
+}
+.main-button-two {
+  color: white;
+  border-color: #192592;
+  border-radius: 5px;
+  background-color: #192592;
+  display: flex;
+  margin-left: 90%;
+}
+footer {
+  height:400px;
+  padding: 0% 5%;
+}
+.footer-menu{
+  display: flex;
+  justify-content: space-between;
+}
+.logo-footer {
+  padding-right: 20%;
+  height: 100px;
+}
+footer ul {
+  padding: 0 2%;
+}
+.footer-ul{
+  display: flex;
+}
+footer li {
+  list-style: none;
+  padding: 0 10px 10px 0;
+  font-size: 0.8em;
+}
+.two-columns{
+  display: flex;
+}
+.bold {
+  font-weight: bold;
+}
+.footer-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-links-left{
+  display: flex;
+  flex-direction: row;
+}
+.footer-links img {
+   width: 8%;
+}
+.footer-links-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer span, i {
+  padding: 0 0.5em;
+}
+.footer-links li {
+  padding: 0 0.5em;
+}
+
+/* Screen adaptions */
+
+@media (min-width: 1024px) {
+  .hamburger-menu{
+    display: none;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+  header {
+    flex-direction:column-reverse;
+  }
+  .img-header{
+    height: 50%;
+    width: 50%;
+    align-self: center;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 961px) {
+  nav ul {
+    display: none;
+  }
+  header {
+    flex-direction:column-reverse;
+  }
+  .img-header{
+    height: 50%;
+    width: 50%;
+    align-self: center;
+  }
+  main img {
+    height: 20%;
+    width: 20%;
+    padding: 2% 0% 2% 20%;
+  }
+}
+
+@media (min-width: 50px) and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  header {
+    height: 1000px;
+    flex-direction:column-reverse;
+  }
+  header button {
+    width: 100%;
+  }
+  .img-header{
+    width: 90%;
+    align-self: center;
+    padding-top: 10%;
+  }
+  main {
+    height: 1000px;
+  }
+  main img {
+    height: 20%;
+    width: 40%;
+    padding: 4% 15% 4% 30%;
+  }
+  .main-button-one {
+    height: 30px;
+  }
+  .main-button-two {
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    height: 50px;
+  }
+  .text-main {
+    display: flex;
+    justify-content: center;
+    padding: auto;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+  .footer-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-ul{
+    display: inline;
+  }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-links-right {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-links-right div {
+    padding: 5% 10%;
+  }
+}
