@@ -1,3 +1,13 @@
+@font-face{
+  font-family: Slack-Averta;
+  src: url(https://a.slack-edge.com/436da/marketing/fonts/averta/averta-regular.woff2) 
+}
+
+@font-face {
+  font-family: Slack-Tiempos;
+  src: url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-headline/tiempos-headline-semibold.woff2);
+}
+
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
@@ -5,3 +15,103 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@media (min-width: 1000px) {
+  nav {
+    
+  }
+}
+
+@media (min-width: 650px) and (max-width: 999px) {
+  nav {
+    
+  }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+ /* 
+ NAVIGATION BAR
+ */ 
+  nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #a0a0a0;
+  }
+  
+  .logo {
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+  }
+  
+  .menuNav {
+    display: flex;
+    padding: 0;
+    margin: 0 20px 0 0;
+  }
+  
+  .menuNavItem {
+    display: flex;
+    vertical-align: center;
+    margin: 0 10px;
+    font-family: Slack-Averta;
+    color: #5b5e6d;
+  }
+
+
+/* 
+HEADER
+ */ 
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.headerImageBlock {
+  display: flex;
+  justify-content:flex-end;
+  background-color: white;
+  width: 40%;
+  padding: 40px;
+}
+.headerImage { 
+  object-fit: contain ;
+}
+
+.headerTextBlock{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+  padding: 40px;
+}
+
+.headerTextBlock  h1 {
+    font-family:  Slack-Tiempos;
+    color: #2C303F;
+    font-size: 3em;
+    }
+
+.headerTextBlock  p {
+  font-family:  Slack-Averta;
+  color: #5b5e6d;
+  font-size: 1em;
+  }
+
+.headerTextBlock  button {
+  background-color: #192592;
+  font-family: Slack-Averta;
+  font-size: 1em;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 7px;
+}
