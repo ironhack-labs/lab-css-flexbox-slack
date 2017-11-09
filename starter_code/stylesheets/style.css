@@ -16,48 +16,63 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
-@media (min-width: 1000px) {
-  nav {
-    
+@media (min-width: 1200px) {
+  .nav-bar, header {
+  margin: 0 calc((100% - 1200px)/2);
+  background-color: yellowgreen;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1199px) {
+  .nav-bar, header {
+  margin: 0 auto;
+  background-color: yellow;
   }
 }
 
 @media (min-width: 650px) and (max-width: 999px) {
-  nav {
-    
-  }
+  .nav-bar, header {
+    margin: 0 auto;
+    background-color: orangered;
+    }
 }
+
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0;  
   }
 
 
  /* 
+ //
  NAVIGATION BAR
+ //
  */ 
   nav {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
     height: 50px;
     border-bottom: 1px solid #a0a0a0;
   }
-  
-  .logo {
+
+  .nav-bar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
     height: 50px;
     background-color: rgb(255, 255, 255);
     margin-left: 20px;
   }
   
-  .menuNav {
+  .nav-menu {
     display: flex;
     padding: 0;
     margin: 0 20px 0 0;
   }
   
-  .menuNavItem {
+  .nav-item {
     display: flex;
     vertical-align: center;
     margin: 0 10px;
@@ -65,38 +80,41 @@ body {
     color: #5b5e6d;
   }
 
-
 /* 
+//
 HEADER
- */ 
+//
+*/ 
 header {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
-.headerImageBlock {
+.header-block {
   display: flex;
   justify-content:flex-end;
   background-color: white;
-  width: 40%;
-  padding: 40px;
+  width: 50%;
+  border: 1px solid pink;
 }
-.headerImage { 
+.header-image { 
   object-fit: contain ;
 }
 
-.headerTextBlock{
+.header-text{
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 40%;
-  padding: 40px;
+  width: 50%;
+  border: 1px solid blue;
 }
 
-.headerTextBlock  h1 {
+.header-text  h1 {
     font-family:  Slack-Tiempos;
     color: #2C303F;
-    font-size: 3em;
+    font-size: 76.8px;
+    margin-bottom: 32px;
     }
 
 .headerTextBlock  p {
