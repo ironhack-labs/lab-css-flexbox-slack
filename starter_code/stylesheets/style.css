@@ -5,3 +5,292 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* General style_______________________________________ */
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  line-height: 1.2;
+  color: #2c303f;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 1.3em;
+  color: #2c303f;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #5b5e6d;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+.link {
+  text-decoration: none;
+  color: #5b5e6d;
+}
+
+.button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.6em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.button-purple {
+  background-color: #192592;
+  color: #fff;
+}
+
+.button-white {
+  color: #192592;
+  background-color: #fff;
+  border: 1px solid #192592;
+}
+
+.caption-text {
+  font-size: 0.7em;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.fa, .fabars {
+  display: none;
+}
+
+/*_______________________________________________________*/
+
+/* Navegation bar style__________________________________*/
+
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.navbar .logo {
+  width: 100px;
+  margin-left: 50px;
+}
+
+.navbar .menu {
+  display: inline-flex;
+  margin-right: 50px;
+}
+
+.menu-item {
+  list-style: none;
+  padding: 5px;
+  margin: 0 10px;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.navbar .menu .link:last-child .menu-item {
+  border: 1px solid #5b5e6d;
+  border-radius: 4px;
+}
+
+.navbar .menu .link:hover .menu-item {
+  font-weight: 600;
+}
+
+.navbar .menu .link:last-child:hover .menu-item {
+  background-color: #5b5e6d;
+  color: #fff;
+  transition-duration: 0.5s;
+  font-weight: 400;
+}
+
+/*_______________________________________________________*/
+
+/* Header style__________________________________________*/
+
+.intro {
+  margin-top: 60px;
+  padding-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-around;
+  border-top: 1px solid #5b5e6d;
+}
+
+.left-content {
+  width: 40%;
+}
+
+.img-intro {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.right-content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  margin-right: 100px;
+  width: 40%;
+}
+
+/*_______________________________________________________*/
+
+/* Clients section style__________________________________________*/
+
+.clients {
+  background-color: #f4f3f4;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.subtitle {
+  font-size: 0.8em;
+}
+
+.clients .clients-img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.clients .clients-img .client-logo {
+  width: 200px;
+  flex: initial;
+  margin: 20px 6% 50px 6%;
+}
+
+/*_______________________________________________________*/
+
+/* Try it for free section style__________________________________________*/
+
+.tryit {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #f4f3f4;
+}
+
+.tryit-left {
+  margin-left: 50px;
+}
+
+.tryit-right {
+  margin-right: 50px;
+}
+
+.great-text {
+  font-family: 'Playfair Display', sans-serif;
+  color: #000;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.tryit-right .button-purple {
+  margin-top: 0;
+}
+
+/*_______________________________________________________*/
+
+/* Footer section style__________________________________________*/
+
+.footer-first {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px 0;
+}
+
+.logo-footer {
+  flex-grow: 1;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+
+.menu-footer {
+  flex-grow: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-footer .slack-logo-footer {
+  width: 100px;
+}
+
+.menu-footer .menu-column {
+  list-style: none;
+}
+
+.title-column {
+  font-size: 0.7em;
+  color: #5b5e6d;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.menu-column li:not(.title-column) {
+  color: #5b5e6d;
+  font-size: 0.7em;
+  padding: 10px 0;
+}
+
+.footer-second {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f3f4;
+}
+
+.menu-legal {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+}
+
+.menu-legal .menu-item {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #5b5e6d;
+}
+
+.menu-language {
+  flex-grow: 0.1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+  color: #5b5e6d;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.flag {
+  width: 20px;
+}
+
+/*_______________________________________________________*/
