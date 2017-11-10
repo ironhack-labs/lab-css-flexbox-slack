@@ -1,11 +1,3 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
-/*font-family: 'PT Serif', serif;*/
 * {
   margin: 0;
   padding: 0;
@@ -52,9 +44,9 @@ nav .nav-menu {
   display: none;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1085px) {
   nav {
-    width: 80%;
+    justify-content: space-around;
   }
   nav .fa {
     display: none;
@@ -136,6 +128,12 @@ header {
   color: rgba(255, 255, 255, 0.9);
   border: none;
   background: #3f46ad;
+  cursor: pointer;
+}
+
+.header-content .header-content-up .form-content button:hover {
+  background: #1c299d;
+  transition: box-shadow 420ms cubic-bezier(0.165, 0.84, 0.44, 1), color 420ms cubic-bezier(0.165, 0.84, 0.44, 1), background 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .header-content .header-content-up .cta {
@@ -179,6 +177,7 @@ header {
     margin: 10px 0px 0 10px;
   }
   .header-content .header-content-up .cta {
+    margin-top: 0;
     text-align: left;
   }
 }
@@ -201,6 +200,18 @@ header {
   }
   .header-content .header-content-up .cta {
     text-align: left;
+  }
+  .header-content .header-content-down img {
+    height: 329px;
+    margin-top: 40px;
+    padding-top: 139px;
+    padding-right: 57px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .header-content .header-content-down img {
+    height: auto;
   }
 }
 
@@ -238,12 +249,18 @@ main .main-message button {
   font-size: 15px;
   border-radius: 4px;
   text-align: center;
-  color: #3f46ad;
+  color: #1c299d;
   border: none;
   background: #fff;
   border: 1px solid #3f46ad;
   width: 100%;
   font-weight: 700;
+  cursor: pointer;
+}
+
+main .main-message button:hover {
+  box-shadow: inset 0 0 0 2px #1c299d;
+  transition: box-shadow 420ms cubic-bezier(0.165, 0.84, 0.44, 1), color 420ms cubic-bezier(0.165, 0.84, 0.44, 1), background 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 main .main-images {
@@ -253,18 +270,9 @@ main .main-images {
   background: #f4f3f4;
 }
 
-main .main-images .first {
-  margin-top: 25px;
-}
-
-main .main-images .special-item {
-  width: 184px;
-  height: 24px;
-}
-
 main .main-images .last {
   border: none;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 main .main-images figure {
@@ -280,7 +288,7 @@ main .main-images figure {
 
 main .main-images figure img {
   border: 0;
-  width: 150px;
+  width: 160px;
   height: auto;
 }
 
@@ -334,6 +342,12 @@ main .cta .cta-form button {
   color: rgba(255, 255, 255, 0.9);
   border: none;
   background: #3f46ad;
+  cursor: pointer;
+}
+
+main .cta .cta-form button:hover {
+  background: #1c299d;
+  transition: box-shadow 420ms cubic-bezier(0.165, 0.84, 0.44, 1), color 420ms cubic-bezier(0.165, 0.84, 0.44, 1), background 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -359,13 +373,12 @@ main .cta .cta-form button {
   main .main-images .even {
     border-right: 1px solid #ebebeb;
   }
-  main .main-images .last-left {
-    padding-top: 50px;
-    padding-bottom: 58px;
+  main .main-images .special-item {
+    border-bottom: none;
+    padding: 0;
   }
-  main .main-images .last {
-    padding-bottom: 80px;
-    padding-top: 50px;
+  main .main-images .last img {
+    padding-bottom: 40px;
   }
   main .cta {
     display: flex;
@@ -376,6 +389,12 @@ main .cta .cta-form button {
     align-items: left;
     display: flex;
     flex-direction: column;
+  }
+  main .cta .cta-text h2 {
+    font-size: calc(1.25rem + (4 * (100vw - 400px)/ 624));
+  }
+  main .cta .cta-text a {
+    font-size: calc(1rem + (0 * (100vw - 400px)/ 624));
   }
   main .cta .cta-form {
     display: flex;
@@ -389,6 +408,24 @@ main .cta .cta-form button {
     margin: 10px 0px 0 10px;
     height: 58px;
     padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .main-images figure {
+    width: 30%;
+  }
+  main .main-images .special-item {
+    border-bottom: none;
+  }
+  main .main-images .last {
+    border-bottom: none;
+  }
+  main .main-images .last img {
+    margin-top: 40px;
+  }
+  main .main-images .even-last {
+    border-right: none;
   }
 }
 
@@ -443,6 +480,24 @@ footer .footer-content ul li {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: 0 60px;
+  }
+  footer .footer-content ul {
+    list-style: none;
+    width: auto;
+    margin-left: 30px;
+    font-size: 16px;
+  }
+  footer .footer-content ul .first-item {
+    margin-top: 0;
+  }
+}
+
 .footer-social {
   background: #f5f5f5;
   text-align: center;
@@ -460,37 +515,44 @@ footer .footer-content ul li {
   font-size: 14px;
   font-weight: 700;
   color: #6d6f7b;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
 .footer-social .footer-social-content ul li {
-  margin-left: 20px;
+  margin-left: 18px;
   color: #6d6f7b;
+  font-weight: 700;
 }
 
 .footer-social .footer-social-content .language-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   padding-top: 15px;
-  margin-top: 30px;
+  margin-top: 13px;
 }
 
-.footer-social .footer-social-content .language-container p {
+.footer-social .footer-social-content .language-container .lang-select {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-social .footer-social-content .language-container .lang-select p {
   margin: 0 10px;
   font-size: 14px;
   font-weight: 700;
   color: #5b5e6d;
 }
 
-.footer-social .footer-social-content .language-container img {
+.footer-social .footer-social-content .language-container .lang-select img {
   width: 20px;
   height: 20px;
   margin-top: -2px;
 }
 
-.footer-social .footer-social-content .language-container i {
+.footer-social .footer-social-content .language-container .lang-select i {
   color: grey;
   font-weight: 100;
 }
@@ -509,15 +571,25 @@ footer .footer-content ul li {
 }
 
 @media screen and (min-width: 768px) {
+  .footer-social {
+    width: 100%;
+  }
   .footer-social .footer-social-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 5px;
+  }
+  .footer-social .footer-social-content ul {
+    align-items: flex-start;
+    margin: 10px 0 0 0;
   }
   .footer-social .footer-social-content .language-container {
-    margin-top: 6px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
   }
   .footer-social .footer-social-content .rrss {
-    margin-top: 28px;
+    margin: 0 20px;
   }
 }
