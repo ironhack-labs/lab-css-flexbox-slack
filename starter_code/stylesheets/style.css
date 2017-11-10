@@ -29,7 +29,6 @@ MEDIA
 @media (min-width: 1200px) {
   .nav-bar, header, .section1-text, .section1-logos, .section2, .footer-main, .footer-end {
   margin: 0 calc((100% - 1200px)/2);
-  background-color: yellowgreen;
   }
   .menu-icon{
   display: none;
@@ -40,36 +39,42 @@ MEDIA
   .header-image, .header-text{
   width: 50%;
   }
+  .section1-logos div{
+  margin: 15px 32px ;
+  }
+
 }
 
 @media (min-width: 800px) and (max-width: 1199px) {
   .nav-bar, header, .section1-text, .section1-logos, section2, .footer-main, .footer-end  {
   margin: 0 auto;
-  background-color: yellow;
   }
-  .menu-text, .menu-text li{
-    display: none; 
-  }
+  .menu-icon{
+    display: none;
+    }
   header {
   flex-direction: column-reverse;
   }
-  .header-text{
-  padding: 0 140px 0 40px; 
+  .section1-logos div{
+    margin: 15px 55px ;
   }
   
 }
 
-@media (min-width: 650px) and (max-width: 999px) {
+@media (max-width: 799px) {
   .nav-bar, header, .section1-text, .section1-logos, section2, .footer-main, .footer-end {
     margin: 0 auto;
-    background-color: orangered;
     }
-    .menu-text{
+    .menu-text, .menu-text li{
       display: none; 
     }
-    .menu-icon{
-      display: none;
-      }
+    header {
+    flex-direction: column-reverse;
+    }
+    .section1-logos div{
+      margin: 15px 120px ;
+    }
+  
 }
 
 /* 
@@ -92,6 +97,7 @@ body {
 ul{
   list-style:none;
   padding-left: 0;
+  margin: 0;
   }
 
  /* 
@@ -110,18 +116,17 @@ ul{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    padding: 0 30px;
   }
 
   .nav-logo {
     height: 50px;
     background-color: rgb(255, 255, 255);
-    margin-left: 20px;
   }
   
   .nav-menu {
     display: flex;
-    padding: 0;
-    background-color: gray;
+
   }
   
   .menu-text {
@@ -133,6 +138,11 @@ ul{
   .menu-text li {
     margin: 0 20px 0 0;
     font-size: 16px;
+  }
+
+  .menu-text li:last-of-type {
+    border: 1px solid #5b5e6d;
+    padding: 2px 15px;
   }
 
   .menu-icon{
@@ -151,10 +161,10 @@ HEADER
 header {
   display: flex;
   margin-top: 50px;
+  padding: 0 30px;
 }
 
 .header-image {
-  border: 1px solid pink;
   display: flex;
   justify-content: center;
 }
@@ -166,22 +176,26 @@ header {
 .header-text{
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
 }
 
 .header-text h1 {
-    font-family:  Slack-Tiempos;
-    color: #2C303F;
-    font-size: 76.8px;
-    margin-top: 0;
-    margin-bottom: 32px;
-    }
+  font-family:  Slack-Tiempos;
+  color: #2C303F;
+  margin-top: 0;
+}
+@media (min-width: 800px) {.header-text h1 {font-size: 76px; margin-bottom: 32px;}}
+@media (max-width: 799px) {.header-text h1 {font-size: calc(26px + 6vw); margin-bottom: 4vw;}}
 
 .header-text p {
   font-family:  Slack-Averta;
   color: #5b5e6d;
-  font-size: 20px;
-  }
+}
+@media (min-width: 800px) {.header-text p {font-size: 20px; }}
+@media (max-width: 799px) {.header-text p {font-size: calc(12px + 1vw); }}
+
+.header-text p:last-of-type {
+  font-size: 12px;
+}
 
 .button-purple {
   background-color: #192592;
@@ -189,12 +203,12 @@ header {
   font-size: 1em;
   font-weight: bold;
   color: white;
-  width: 200px;
   height: 50px;
   border: none;
   border-radius: 7px;
 }
-
+@media (min-width: 800px) {.button-purple {width: 200px; }}
+@media (max-width: 799px) {.button-purple {width: 100%; }}
 
 
 /*
@@ -210,11 +224,11 @@ SECTION1
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  padding: 0 30px;
 }
 
 .section1-text {
   margin-top: 50px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,7 +262,6 @@ font-size: 16px;
 .section1-logos {
   margin-top: 50px;
   margin-bottom: 50px;
-  border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -257,10 +270,8 @@ font-size: 16px;
 .section1-logos div{
   display: flex;
   align-items: center;
-  width: 250px;
-  height: 100px;
-  background-color: yellow;
-  margin: auto 32px ;
+  width: 275px;
+  height: 125px;
 }
 
 .section1-logos img{
@@ -282,13 +293,17 @@ SECTION2
   display: flex;
   justify-content:space-between;
   align-items: center;
+  padding: 0 30px;
 }
+@media (min-width: 800px) {.section2 {flex-direction:  row; }}
+@media (max-width: 799px) {.section2 {flex-direction:  column; }}
+@media (max-width: 799px) {.section2 div{margin-bottom: 30px; }}
 
 .section2 div{
   display: flex;
   flex-direction:  column; 
   justify-content: flex-start;
-  background-color: pink;
+  
 }
 
 .section2 p:first-of-type {
@@ -324,11 +339,23 @@ footer{
 }
 
 .footer-main, .footer-end{
-  display: flex;
-  justify-content:space-between;
-  align-items: flex-start;
   margin-top: 50px;
+  padding: 0 30px;
 }
+
+.footer-main, .footer-end, .footer-main-menus, .footer-end-menu ul, .footer-end-icons {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (min-width: 800px) {.footer-main, .footer-end, .footer-end-icons {flex-direction:  row; }}
+@media (max-width: 799px) {.footer-main, .footer-end, .footer-end-icons {flex-direction:  column; }}
+
+
+@media (min-width: 800px) {.footer-main-menus {justify-content:space-between; }}
+@media (max-width: 799px) {.footer-main-menus {flex-wrap: wrap }}
+
+
 
 .footer-main-logo{
   height: 100px;
@@ -338,29 +365,32 @@ footer{
   object-fit: contain ;
 }
 
-.footer-main-menus{
-  display: flex;
-  align-items: flex-start;
-}
 .footer-main-menus div{
-  width: 100px;
-  margin: 0 20px;
+  margin: 0 20px 20px;
   vertical-align: top;
 }
 
+@media (min-width: 1200px) {.footer-main-menus div  {width: 150px; }}
+@media (min-width: 800px) and (max-width: 1199px) {.footer-main-menus div  {width: 15vw; }}
+@media (max-width: 799px) {.footer-main-menus div  {width: 30vw; }}
+
+.footer-main-menus ul li{
+  margin-bottom: 10px;
+}
 .footer-main-menus ul li:first-child{
   font-weight: 700;
 }
 
-
+@media (min-width: 800px) {.footer-end {justify-content:space-between; }}
+@media (max-width: 799px) {.footer-end {align-items:center;}}
 
 .footer-end-gray {
   background-color:#F4F3F4;
+  padding-top: 1px;
+  padding-bottom: 25px;
 }
 
 .footer-end-menu ul{
-  display: flex;
-  flex-direction: row;
   font-weight: 700;
 }
 .footer-end-menu li{
