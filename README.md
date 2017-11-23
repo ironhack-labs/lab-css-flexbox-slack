@@ -33,46 +33,73 @@ git push origin master
 
 The **starter_code** contains the basic structure of an HTML & CSS project to start working. You will also find and **images** folder where all the images you will need for the project are stored.
 
-:::info
-In the HTML you find all the text needed! Focus on give it some style!
-:::
+**In the HTML you find all the text needed! Focus on give it some style!**
 
-### Iteration 1 | Large Screen (width > 1200px)
+### Iteration 1 | Extra Small Screen (width < 768px)
 
-First, we need to clone the design we see on our laptops! :laptop: 💻  Oh! Remember to use **flexbox**, because it will be really helpful later on when we need to adapt it!
+Mobile first right? :wink: 
 
-You should have something like this:
+Firs, we are going to clone the mobile design of the webpage! 📱 Oh! Remember to use **flexbox**, because it will be really helpful later on when we need to adapt it to different screen-size!
+ 
+After doing your magic, you should have something like this:
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_ed779e54fa07d95e6e16d76095719273.png)
-
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_19f1bac47554e9f27f308c4c426727dc.png)
-
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a9b8858ed069685d5a9b29a83cdd5bd6.png)
-
-### Iteration 2 | Medium Screen (1024px > width > 960px)
-
-This one is really simple, we just need small changes.
-
-1. The menu on our top nav-bar is replaced by a toggle button. We just need to make the `list` disappears and show the toggle menu button. Not necessary to make the button work, remember we are practicing our design skills here :wink:
-
-2. Change the main header layout. Instead of having them one beside the other, now we need the text on top and the image below it.
-
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_695d94534fc503eba55bf6283909732f.png)
+<img src="https://user-images.githubusercontent.com/23629340/33178991-38f26dcc-d068-11e7-8ebd-3e0ef8d72ad4.gif" alt="mobile-1" style="width:23%">
 
 
-### Iteration 3 | Small Screen (961px > width > 767px)
+<img src="https://user-images.githubusercontent.com/23629340/33178659-3a19db82-d067-11e7-85a5-62eeb67a0645.png" alt="mobile-1" style="width:23%">
 
-On small screens, we just need one change. The companies logo, instead of 3 per row, we should display them in pairs, that means we will have 3 rows of 2 logos each.
+<img src="https://user-images.githubusercontent.com/23629340/33178689-508d3b48-d067-11e7-9b9f-e6548b71cecd.png" alt="mobile-1" style="width:23%">
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_40c4d1eac1bd1ccb0adb7a7609f8e1de.png)
+<img src="https://user-images.githubusercontent.com/23629340/33178733-685542ac-d067-11e7-8a72-39ac499bf0f4.png" alt="mobile-1" style="width:23%">
 
-### Iteration 4 | Extra Small Screen (width < 768px)
+<img src="https://user-images.githubusercontent.com/23629340/33178749-6e4442bc-d067-11e7-9d0b-b141b790baa0.png" alt="mobile-1" style="width:23%">
 
-Last one! On extra small screens we will have a lot of changes! If you notice, this is the width apply to smartphones, so our web will have some changes! Take a look of the following screenshoots and adapt your code to clone it! :muscle: :iphone:
+<img src="https://user-images.githubusercontent.com/23629340/33178753-74a135de-d067-11e7-8e96-6b27ea3f258f.png" alt="mobile-1" style="width:23%">
 
-<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_0ee511e294b5b917e709d55850cc3f07.png" alt="" style="width:46%"/>
-<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c812bd17dd765972a3a5452bbf6b4e7d.png" alt="" style="width:46%"/><br><br><br>
-<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_bba75f0660ec59c8af87d5bf1f792dd7.png" alt="" style="width:46%"/>
-<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_65907972107d5fe7d2d410944fff8e03.png" alt="" style="width:46%"/><br><br><br>
-<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_5f46e018d968f92e2a4a7e1a46c9ead3.png" alt="" style="width:46%"/>
-<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_ce37bd622ab94fd83a4a1ea3059568ae.png" alt="" style="width:46%"/>
+<img src="https://user-images.githubusercontent.com/23629340/33178771-7cf0f440-d067-11e7-9676-0a61eb7c8568.png" alt="mobile-1" style="width:23%">
+
+
+### Iteration 2 | Small Screen (961px > width > 767px)
+
+Let's start growing our screen size. Focus on small screens (iPads, tablets or bigger smartphones). Notice we have some changes. You need to work on the following ones: 
+
+1. The buttons and inputs stop occupying 100%.
+
+2. Now we have 2 companies logos on each row.
+
+3. The **subfooter** goes from 2 columns, to display all the 4 columns in the same row.
+
+4. The **footer** goes from 3 different rows of content to a simple row displaying some info at the left and some to the right.
+
+<img src="https://user-images.githubusercontent.com/23629340/33179399-8b29965a-d069-11e7-881a-667a1ca65f09.gif" alt="small-1" style="width:30%">
+
+<img src="https://user-images.githubusercontent.com/23629340/33179329-53cf51fe-d069-11e7-8445-fd29ea7f72b7.png" alt="small-1" style="width:30%">
+
+<img src="https://user-images.githubusercontent.com/23629340/33179319-4baeedc2-d069-11e7-8b93-9faf914bf856.png" alt="small-1" style="width:30%">
+
+<img src="https://user-images.githubusercontent.com/23629340/33179312-433f1374-d069-11e7-86e9-cc329b545dbc.png" alt="small-1" style="width:30%">
+
+<img src="https://user-images.githubusercontent.com/23629340/33179339-5a8e8f28-d069-11e7-909b-045ee2f6126b.png" alt="small-1" style="width:30%">
+
+### Iteration 3 | Medium Screen (1024px > width > 960px)
+
+The easiest change we will have. You should display 3 logos per row on the **"You're in good company"** section. Easy peasy!
+
+<img src="https://user-images.githubusercontent.com/23629340/33180156-17eac5e4-d06c-11e7-85b6-60197aa9ec48.gif" alt="medium-1" style="width:50%">
+
+
+### Iteration 4 | Large Screen (width > 1200px)
+
+Last one! Some small changes and we are done! 
+
+1. Our **nav-bar** starts to show all the menu links, so go ahead, remove the collapse icon and add the list.
+
+2. On the top of the webpage, the image is displayed in line with the "Where work happens" text. If you are using `flex-box` (you must :wink: ), this should be super easy!
+
+<img src="https://user-images.githubusercontent.com/23629340/33180433-f5016870-d06c-11e7-96d4-ac6e08ccd008.gif" alt="medium-1" style="width:48%">
+
+<img src="https://user-images.githubusercontent.com/23629340/33180340-a19dc6f6-d06c-11e7-9ab6-a6090940d613.png" alt="medium-1" style="width:48%">
+
+<img src="https://user-images.githubusercontent.com/23629340/33180353-b49700b0-d06c-11e7-9e87-e54735699ad5.png" alt="medium-1" style="width:48%">
+
+<img src="https://user-images.githubusercontent.com/23629340/33180357-bda7665e-d06c-11e7-8a2f-4d647de32944.png" alt="medium-1" style="width:48%">
