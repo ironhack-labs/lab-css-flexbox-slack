@@ -46,12 +46,32 @@ a {
   
   
 /* ---- typography ---- */
-  
-  
-  
+body{
+    color: #5b5e6d;
+}
+h1{
+    color: #2C303F;
+    font-size: 36px;
+}
+h2{
+    color: #2C303F;
+    font-size: 32px;
+}
+
+.plain-text{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+.plain-text-small{
+    font-size: 14px;
+    line-height: 1.3;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
 /* -------------- layout ------------- */
 .container{
-    margin: 0 10px;
+    margin: 0 25px;
 }
 /*-- NAV BAR --*/
 .nav-bar{
@@ -66,17 +86,42 @@ a {
 .nav-menu, .nav-logo{
     flex: 1 0 50%;   
 }
+.nav-menu{
+    text-align: right;
+    line-height: 57px;
+    font-size: 18px;
+}
+.nav-menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.nav-menu li:last-child{
+    margin-right: 0;
+}
 /*-- HEADER MAIN --*/
 .header-main{
+    padding-top:100px;
+}
+.h-m-container{
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
 }
-.h-m-img{
+.h-m-info, .h-m-img{
+    margin-bottom: 50px;
+}
+.h-m-img img{
+   width: 325px; 
+}
+@media (min-width: 768px){
+    .nav-menu {
+        flex: 1 0 75%;   
+    }
+    .nav-logo{
+        flex: 1 0 25%;
+    }
+}
 
-}
-.h-m-img{
-    
-}
  
 /* ---- components ---- */
 .nav-bar{
@@ -93,8 +138,32 @@ a {
     font-size: 32px;
     color: #2C303F;
 }
-
-
-nav {
-    display: none;
+.plain-text{
+    margin-bottom: 20px;
+}
+.h-m-info input{
+    width: 100%;
+    height: 55px;
+    border: 1px solid #5b5e6d;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.h-m-info button{
+    width: 100%;
+    height: 55px;
+    background: #192592;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .burger-icon{
+        display: none;
+    }
+    .nav-menu{
+        display: block;
+    }
 }
