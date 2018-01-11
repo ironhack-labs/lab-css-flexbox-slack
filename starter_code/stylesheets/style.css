@@ -5,3 +5,182 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+/* @media (min-width: 768px) {
+
+    .featured {
+        display: flex;
+    }
+
+    .featured-story,
+    .stories {
+        flex: 1 0 50%;
+    }
+
+    .story {
+        display: flex;
+    }
+
+    .thumb {
+        flex: 1 0 25%;
+    }
+
+    .content {
+        flex: 1 0 75%;
+    }
+} */
+/* ---- reset ---- */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body,ul,ol,p{
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+} 
+  
+  
+/* ---- typography ---- */
+body{
+    color: #5b5e6d;
+}
+h1{
+    color: #2C303F;
+    font-size: 36px;
+}
+h2{
+    color: #2C303F;
+    font-size: 32px;
+}
+
+.plain-text{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+.plain-text-small{
+    font-size: 14px;
+    line-height: 1.3;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+/* -------------- layout ------------- */
+.container{
+    margin: 0 25px;
+}
+/*-- NAV BAR --*/
+.nav-bar{
+    position: fixed;
+    width: 100%;
+}
+.nav-container{
+    display: flex;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.nav-menu, .nav-logo{
+    flex: 1 0 50%;   
+}
+.nav-menu{
+    text-align: right;
+    line-height: 57px;
+    font-size: 18px;
+}
+.nav-menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.nav-menu li:last-child{
+    margin-right: 0;
+}
+/*-- HEADER MAIN --*/
+.header-main{
+    padding-top:100px;
+}
+.h-m-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.h-m-info, .h-m-img{
+    margin-bottom: 50px;
+}
+.h-m-img img{
+   width: 325px; 
+}
+@media (min-width: 768px){
+    .container{
+        margin: 0 50px;
+    }
+    .nav-menu {
+        flex: 1 0 75%;   
+    }
+    .nav-logo{
+        flex: 1 0 25%;
+    }
+}
+
+ 
+/* ---- components ---- */
+.nav-bar{
+    border-bottom: 1px solid #2C303F;
+    background: #fff;
+}
+.nav-logo img{
+    width: 100px;
+}
+.nav-menu{
+    display: none;
+}
+.burger-icon{
+    font-size: 32px;
+    color: #2C303F;
+}
+.plain-text{
+    margin-bottom: 20px;
+}
+.h-m-info input{
+    width: 100%;
+    height: 55px;
+    border: 1px solid #5b5e6d;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.h-m-info button{
+    width: 100%;
+    height: 55px;
+    background: #192592;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .burger-icon{
+        display: none;
+    }
+    .nav-menu{
+        display: block;
+    }
+    /*------------------*/
+    .h-m-info input{
+        width: 350px;
+    }
+    .h-m-info button{
+        width: 200px;
+    }
+    .plain-text-small{
+        text-align: left;
+    }
+    .h-m-img img{
+        width: 550px; 
+     }
+}
