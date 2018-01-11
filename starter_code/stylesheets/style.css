@@ -15,7 +15,10 @@ html {
     box-sizing: inherit;
   } 
   
-body, p, ul, li
+body, 
+p, 
+ul, 
+li
   {
     margin: 0;
     padding: 0;
@@ -25,7 +28,7 @@ body, p, ul, li
 /* ---- typography ---- */
 
 body {
-    font-family: sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -34,17 +37,31 @@ h1 {
     line-height: 45px;
 }
 
-h2 {}
+h2 {
+    font-family: serif;
+    font-size: 30px;
+    text-align: center;
+}
 
-h3 {}
+h3 {
+    font-family: serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+p, 
+li {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+}
 
 
 
 
 /* ---- layout ---- */
 
-
-#site-header {}
 
 nav {
     display: flex;
@@ -72,6 +89,16 @@ nav {
 header {
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
+}
+
+main {
+    background-color: #F4F3F4;
+    padding: 20px;
+}
+
+footer {
+    padding: 20px;
 }
 
 @media (max-width: 768px) {
@@ -101,46 +128,80 @@ header {
     }
 }
 
-#site-footer {}
-
-#site-main {}
-  
-  
-  
   
 /* ---- components ---- */
 
 
 /*  navigation  */
 
-.slack-logo {}
-
 .slack-logo img {
     width: 40%;
 }
 
-.burger {}
-
-.menu {}
-
 
 /*  header  */
 
-.header-text {}
+.header-text p {
+    margin-bottom: 30px;
+}
 
-.header-img {}
+.mail {
+    width: 100%;
+    padding: 10px;
+    border: 0.5px solid lightgrey;
+    margin: 10px 0 20px 0;
+    font-size: 18px;
+}
+
+.subscribe {
+    background-color: #192592;
+    text-align: center;
+    color:  white;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.log-in {
+    font-size: 18px;
+    text-align: center;
+}
 
 .header-img img {
     width: 100%;
 }
 
+.companies p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.companies button {
+    background-color: white;
+    text-align: center;
+    color: #192592;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    border-color: #192592;
+    border-width: 0.5px;
+    margin-bottom: 60px;
+}
+
 .logo-box {
     display: flex;
     flex-direction: column;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .logo-box img {
-    width: 100%;    
+    width: 100%; 
+    margin-bottom: 60px;   
 }
 
 
