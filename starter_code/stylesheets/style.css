@@ -9,6 +9,7 @@ html,body{
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
 }
 .topbar{
   box-sizing: border-box;
@@ -32,12 +33,20 @@ html,body{
   margin: 0 10px;
   display: inline-block;
 }
-.cover,main{
+.cover,
+main,
+.links-lists{
   box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+}
+.cover{
+  margin-top: 80px;
+}
+main{
+  background-color:  #F4F3F4;
   margin-top: 80px;
 }
 .cover-img{
@@ -47,7 +56,6 @@ html,body{
 }
 .cover-img img{
   width: 100%;
-  height: auto;
 }
 .companies{
   display: flex;
@@ -68,4 +76,66 @@ html,body{
 .company-logo img{
   width: 200px;
   margin: 30px 0;
+}
+.footer-links{
+  display: flex;
+  flex-direction: column;
+}
+.slack-icon img{
+  height: 120px;
+}
+.links-lists{
+  display: flex;
+  flex-direction: column;
+}
+.links-lists ul{
+  list-style-type: none;
+  margin-top: 0;
+  padding-left: 4%;
+}
+.links-lists ul li{
+  margin: 16px 0;
+  font-weight: 100;
+}
+.links-lists ul li:first-child{
+  font-weight: 600;
+}
+.footer-bottom{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #eee;
+  color: #5b5e6d;
+}
+.footer-bottom ul{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+.footer-bottom ul li{
+  margin: 16px 0 40px 0;
+  font-weight: 600;
+}
+.language{
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+  font-weight: 600;
+}
+.language img{
+  width: 20px;
+  margin-right: 7px;
+}
+.language i{
+  margin-left: 10px;
+  font-size: 26px;
+}
+.social{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.social i{
+  margin: 0 10px;
 }
