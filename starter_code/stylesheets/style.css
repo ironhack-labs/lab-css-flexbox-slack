@@ -5,3 +5,152 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  } 
+  
+body, p, ul, li
+  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }  
+  
+/* ---- typography ---- */
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 50px;
+    line-height: 45px;
+}
+
+h2 {}
+
+h3 {}
+
+
+
+
+/* ---- layout ---- */
+
+
+#site-header {}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 0.5px solid lightgrey;
+}
+
+.burger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, 
+.bar2, 
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .burger {
+        display: none;
+    }
+    .menu {
+        display: initial;
+    }
+}
+
+#site-footer {}
+
+#site-main {}
+  
+  
+  
+  
+/* ---- components ---- */
+
+
+/*  navigation  */
+
+.slack-logo {}
+
+.slack-logo img {
+    width: 40%;
+}
+
+.burger {}
+
+.menu {}
+
+
+/*  header  */
+
+.header-text {}
+
+.header-img {}
+
+.header-img img {
+    width: 100%;
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-box img {
+    width: 100%;    
+}
+
+
+/*  footer  */
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-buttons img {
+    width: 10%;
+}
