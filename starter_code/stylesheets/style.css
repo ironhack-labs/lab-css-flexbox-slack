@@ -36,8 +36,6 @@ body, p, ul, li {
     border-top: solid 1px rgba(230, 223, 223, 0.5);
 }
 
-
-
 .main-logo {
     height: 50px;
 
@@ -59,7 +57,8 @@ margin-top: 10px;
 /* --------- components ---------- */
 
 .work-happening {
-    display: none;
+    justify-content: normal;
+    height: 300px;
 }
 
 .main-nav {
@@ -87,6 +86,8 @@ margin-right: 50px;
 
 .main-header {
     margin-left: 30px;
+    display: flex;
+    justify-content: normal;
 }
 
 .email-input {
@@ -100,16 +101,75 @@ margin-right: 50px;
 margin: 10px 50px
 }
 
-@media (min-width: 768) {
+@media (min-width: 768px) {
 
+    .main-logo {
+        height: 50px;
+    
+    }
+    
+    .scroll-container {
+    flex: auto;
+    margin-left: 30px;
+    margin-top: 10px;
+    }
+    
+    .burger {
+        font-size: 25px;
+        margin-right: 20px;
+        margin-top: 20px;
+        color: #5b5e6d;
+        display: none;
+    }
+
+    .main-scroll {
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: solid 1px rgba(230, 223, 223, 0.5);
+        border-top: solid 1px rgba(230, 223, 223, 0.5);
+    }
     .work-happening {
-       margin-left: 50px;
+            
     }
     
     .main-nav {
         
     }
 
+
+    .work-happeningYa h1{
+        color: #2C303F;
+        margin-right: 70px;
+    }
+    .work-happeningYa p{
+        color: #5b5e6d;
+        line-height: 1.8em;
+        margin-right: 50px;
+    }
+
+    .work-happeningYa button {
+        background: #192592;
+        color: white;
+        border-radius: 2px;
+        text-align: center;
+        padding: 10px 100px;
+        border-color: #192592;
+    }
+
+    .main-header {
+        margin-left: 30px;
+    }
+
+    .email-input {
+        border: 2px solid;
+        border-radius: 2px;
+        padding-left: 10px;
+        margin: 20px 0px;
+        border: solid 1px rgba(230, 223, 223, 0.5);
+    }
+    .sign-in{
+       margin: 10px 50px
+    }
 
 }
 /*  -- site header -- */
