@@ -5,3 +5,90 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* ----- reset ----- */
+
+html {
+    box-sizing: border-box;   
+}   *, *:before, *:after {     box-sizing: inherit;   }
+
+/* --------- typography ---------- */
+
+/* --------- layout ---------- */
+
+body {
+    color: grey;
+}
+
+.nav {
+    display: flex;
+    max-width: 100%;
+    border-bottom: solid; 
+    justify-content: space-between;
+}
+
+.slack-logo {
+    max-width: 30%;    
+}
+
+.nav-list {
+    max-width: 70%;
+    display: none;
+}
+
+header {
+    text-align: center; 
+    padding: 10%;
+}
+
+/* --------- components ---------- */
+
+.slack-logo img {
+    max-width: 100%;
+}
+
+.burger-button {
+    max-width: 20%;
+    float: right;
+    padding: 5% 5% 0% 0%;
+    
+}
+
+h1 {
+    color: black;
+}
+
+.work-happening-img {
+    max-width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+button {
+    background-color: lightblue;
+    padding: 2% 42%;
+    border-radius: 10px;
+    color: white;
+}
+
+/* --------- responsive ---------- */
+
+@media (min-width: 768px) {
+    .nav-list {
+        display: inline;
+    }
+
+    li {
+        display: inline;
+        padding: auto 0;
+    }
+
+    .burger-button {
+        display: none;
+    }
+}
+
+/* --------- TEMP ---------- */
+div, header, section, footer, nav, article, p {
+	border: 1px solid red;
+}
