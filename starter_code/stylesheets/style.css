@@ -104,15 +104,24 @@ footer {
     padding: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .menu {
         display: none;
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .menu {
         display: none;
+    }
+    .user-input {
+        flex-direction: row;
+    } 
+    .mail {
+        width: 50%;
+    }  
+    .subscribe {
+        width: 50%;
     }
 }
 
@@ -120,6 +129,15 @@ footer {
     .menu {
         display: none;
     }
+    .user-input {
+        flex-direction: row;
+    } 
+    .mail {
+        width: 50%;
+    }  
+    .subscribe {
+        width: 50%;
+    } 
 }
 
 @media (min-width: 1200px) {
@@ -129,6 +147,23 @@ footer {
     .menu {
         display: initial;
     }
+    .mail {
+        width: 50%;
+    }  
+    .subscribe {
+        width: 50%;
+    }
+    .header-content {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .header-text {
+        flex: 1 0 50%;
+    }
+    .header-image {
+        flex: 1 0 50%;
+    }
+
 }
 
   
@@ -146,6 +181,11 @@ footer {
 
 .header-text p {
     margin-bottom: 30px;
+}
+
+.user-input  {
+    display: flex;
+    flex-direction: column;
 }
 
 .mail {
