@@ -5,3 +5,263 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+h1,h2,h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #2c303f;
+}
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3em;
+}
+h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+}
+h3{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.6em;
+  margin: 0;
+}
+p{
+  font-size: 1.2em;
+  line-height: 1.8em;
+  color: #5b5e6d;
+  margin: 0;
+}
+button{
+  background: #3f46ad;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 1em;
+  font-weight: 600;
+}
+.white-btn{
+  color: #3f46ad;
+  background: #fff;
+  border: 1px solid #3f46ad;
+}
+.topbar{
+  box-sizing: border-box;
+  height: 80px;
+  padding: 15px 7%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.topbar-logo{
+  height: 50px;
+}
+.topbar-menu{
+  list-style-type: none;
+  display: none;
+}
+.topbar-menu li{
+  margin: 0 10px;
+  display: inline-block;
+}
+.cover,
+main,
+.links-lists{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cover{
+  margin-top: 80px;
+  padding: 20px 7%;
+}
+main{
+  background-color:  #F4F3F4;
+  text-align: center;
+}
+.cover-img{
+  width: 100%;
+  height: auto;
+  order: 1;
+  text-align: center;
+}
+.cover-img img{
+  width: 340px;
+}
+.cover-text{
+  margin-bottom: 40px;
+}
+.cover-text button{
+  margin: 50px 0 10px 0;
+}
+.small-text{
+  font-size: 1em;
+}
+.small-text a{
+  color: #3f46ad;
+}
+.companies{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 40px 0;
+}
+.company-text{
+  padding: 20px 7%;
+}
+.company-logo{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+.company-logo:first-child{
+  border-top: 0px;
+}
+.company-logo img{
+  width: 200px;
+  margin: 30px 0;
+}
+.try-container{
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 50px 7%;
+  display: flex;
+  flex-direction: column;
+}
+.footer-links{
+  display: flex;
+  flex-direction: column;
+}
+.slack-icon img{
+  height: 120px;
+  padding-left: 7%;
+  margin-left: -35px;
+}
+.links-lists{
+  display: flex;
+  padding: 10px 7%;
+}
+.links-lists ul{
+  list-style-type: none;
+  margin-top: 0;
+  padding-left: 0;
+  width: 50%;
+}
+.links-lists ul li{
+  margin: 16px 0;
+  font-weight: 100;
+}
+.links-lists ul li:first-child{
+  font-weight: 600;
+}
+.footer-bottom{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #eee;
+  color: #5b5e6d;
+}
+.footer-bottom ul{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+.footer-bottom ul li{
+  margin: 16px 0 40px 0;
+  font-weight: 600;
+}
+.language{
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+  font-weight: 600;
+}
+.language img{
+  width: 20px;
+  margin-right: 7px;
+}
+.language i{
+  margin-left: 10px;
+  font-size: 1.8em;
+}
+.social{
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+.social i{
+  margin: 0 10px;
+}
+
+@media(min-width: 768px){
+  button{
+    width: 180px;
+  }
+  .try-container{
+    flex-direction: row;
+    text-align: left;
+    align-content: space-between;
+    align-items: center;
+  }
+  .try-container div{
+    width: 100%;
+  }
+  .try-container button{
+    margin-top: 0;
+  }
+  .company-logo{
+    width: 50%;
+  }
+  .footer-links{
+    flex-direction: row;
+    padding-top: 14px;
+  }
+  .slack-icon img{
+    margin-left: 0;
+  }
+  .links-lists{
+    padding-left: 5%;
+    padding-right: 2%;
+  }
+  .links-lists ul{
+    width: 25%;
+  }
+  .footer-bottom{
+    flex-direction: row;
+    padding: 30px 5%;
+  }
+  .footer-bottom > div,
+  .footer-bottom ul{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    align-content: space-between;
+  }
+  .footer-bottom ul{
+    text-align: left;
+  }
+  .footer-bottom ul li{
+    margin: 0 10px 0 0;
+  }
+  .footer-bottom div{
+    text-align: right;
+    margin-bottom: 0;
+  }
+}
