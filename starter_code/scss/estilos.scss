@@ -1,0 +1,88 @@
+/* para compilar a css y minificar:
+sass --watch scss:css --style compressed
+en el directorio del proyecto*/
+
+/*
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+
+@import 'reset';
+@import 'helpers';
+
+body {
+    font-size: 18px;
+}
+
+.flex-container {
+    display: flex;
+    &.space-between {
+        justify-content: space-between;
+    }
+    &.flex-wrap {
+        flex-wrap: wrap;
+    }
+    &.flex-column {
+        flex-direction: column;
+    }
+    .order-before {
+        order: -1;
+    }
+    .order-after {
+        order: 1;
+    }
+}
+
+@media screen and (max-width:767px) {
+    nav {
+        height: 45px;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        img {
+            padding: 0 5px;
+            width: 80px;
+        }
+        ul {
+            display: none;
+        }
+        .mobile-toggle {
+            font-size: 1.5em;
+            opacity: .8;
+        }
+    }
+    header {
+        &.flex-container {
+            flex-direction: column;
+            img {
+                order: 1;
+            }
+            
+        }
+    }
+    main {
+        .img-wrapper {
+            border-right: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img {
+                width:50%;
+            }
+        }
+        .details {
+            order: -1;
+        }
+    }
+    footer {
+        .flex-container {
+            ul {
+                width: 50%;
+                list-style: none;
+            }
+        }
+    }
+}
