@@ -5,3 +5,204 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/*======= Reset ==========*/
+
+p, h1, h2, h3, div, ol, ul, li {
+margin: 0;
+padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/*========= Typography ==========*/
+
+h1 {
+    font-family: "Vollkorn";
+    font-size: 3.8em;
+    line-height: 1.1em;
+    color: rgb(43, 43, 43);
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-family: "Vollkorn";
+    font-size: 2em;
+    line-height: 1.1em;
+    color: rgb(43, 43, 43);
+    margin-bottom: 20px;
+}
+
+
+p {
+    font-family: "Open Sans";
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+
+
+}
+
+/*=========== Navigation ==========*/
+#top {
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    
+    background-color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.navbar {
+    display: none;
+}
+
+#top img {
+    width: 150px;
+}
+
+
+
+i.fa-bars::before {
+    font-size: 2em;
+    color: grey;
+    padding-right: 15px;
+    
+}
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 130px; 
+    padding: 0 10px;
+}
+
+
+
+
+.picture {
+    width: 100%;
+}
+
+
+.normal-text {
+    margin-bottom: 10px;
+}
+
+.button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(56, 56, 233);
+
+}
+
+.signin {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+
+}
+
+.button-text {
+    text-align: center;
+    align-self: center;
+}
+
+
+p.sign-in-cta {
+    text-align: center;
+    font-size: 0.8em;
+    color: darkgray;
+
+}
+
+.headline-text-centered {
+    padding: 15px 10px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 130px; 
+        padding: 0 10px;
+    }
+    
+    
+    
+    
+    .picture {
+        width: 100%;
+    }
+    
+    
+    .normal-text {
+        margin-bottom: 10px;
+    }
+    
+    .button{
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        background-color: rgb(56, 56, 233);
+        flex: 1 0 30%;
+    
+    }
+    
+    .signin {
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+        flex: 1 0 60%;
+    
+    }
+    
+    .button-text {
+        text-align: center;
+        align-self: center;
+    }
+    
+    
+    p.sign-in-cta {
+        text-align: center;
+        font-size: 0.8em;
+        color: darkgray;
+    
+    }
+}
