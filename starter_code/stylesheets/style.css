@@ -1,12 +1,3 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
-
-
 /* ---- reset ---- */
 
 html {
@@ -72,13 +63,13 @@ body {
 
 #top-bar {
     display: flex;
-    padding: 10px 0;
     justify-content: space-between;
+    padding: 5px 0;
     border-bottom: #ebebeb 1px solid;
 }
 
 .logo-div img {
-    width: 30%;
+    width: 100px;
     margin-left: 25px;
 }
 
@@ -89,11 +80,6 @@ body {
 .hamburger-menu i {
     color: grey;
     margin: 10px 23px;
-}
-
-.header-fixer {
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -211,8 +197,9 @@ body {
 
 /* --- Footer --- */
 
-footer img {
-    width: 30%;
+#footer-shortcuts img {
+    width: 130px;
+    
 }
 
 #footer-shortcuts {
@@ -221,8 +208,12 @@ footer img {
     flex-wrap: wrap;
 }
 
-#footer-shortcuts div {
+#footer-shortcuts>div {
     flex: 1 0 50%;
+}
+
+#footer-shortcuts .bottom-logo {
+    flex: 1 0 100%;
 }
 
 #footer-shortcuts div ul li {
@@ -244,7 +235,7 @@ footer img {
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     padding-left: 0;
 }
 
@@ -301,21 +292,73 @@ footer img {
         flex: 1 0 50%;
     }
     #footer-shortcuts div {
-        flex: 1 0 25%;
+        flex: 1 0 20%;
+    }
+    #footer-shortcuts .bottom-logo {
+        flex: 1 0 20%;
     }
     #footer-foot {
         flex-direction: row;
         justify-content: space-between;
     }
-    #companies>div:last-child {
-        border-bottom: #EBEBEB 1px solid;
+    #companies>div:nth-child(5) {
+        border-bottom: none;
+        border-right: #EBEBEB 1px solid;
     }
+    #companies>div:nth-child(1) {
+        border-right: #EBEBEB 1px solid;
+    }
+    #companies>div:nth-child(3) {
+        border-right: #EBEBEB 1px solid;
+    }
+    #footer-foot {
+        padding: 20px 0;
+        background-color: #F5F5F5;
+        
+    }
+    #footer-foot>div {
+        margin: 0 15px;
+    }
+    #footer-foot ul li {
+        padding-right: 15px;
+    }
+
+    #language-selection .flag-icon {
+        justify-content: space-evenly;
+    }
+    
+    .use-links {
+        flex: 1 0 50%;
+    }
+    .flag-icon {
+        margin-bottom: 0px;
+    }
+    
 }
 
 @media (min-width: 961px) {
     #companies>div {
         flex: 1 0 33%;
     }
+
+    #companies>div:nth-child(2) {
+        border-right: #EBEBEB 1px solid;
+    }
+
+    #companies>div:nth-child(3) {
+        border-right: none;
+    }
+
+    #companies>div:nth-child(4) {
+        border-right: #EBEBEB 1px solid;
+        border-bottom: none;
+    }
+
+    #companies>div:nth-child(5) {
+        border-right: #EBEBEB 1px solid;
+        border-bottom: none;
+    }
+    
 }
 
 
