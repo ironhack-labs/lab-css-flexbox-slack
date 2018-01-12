@@ -1,7 +1,150 @@
 /*
 background-grey: #F4F3F4;
-button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+ 
+  
+  /* ---- typography ---- */
+  
+  body {
+      padding: 0;
+      margin: 0;
+      font-family: Slack-Averta,appleLogo,sans-serif;
+  }
+  
+  p {
+      font-size: 20px;
+  }
+  h1 {
+    font-family: 'Merriweather', serif;
+  }
+  
+  h1, p  {
+      padding: 15px;
+      color: #2C303F
+  }
+
+  
+  
+  
+  /* ---- layout ---- */
+
+  .container {
+    width: 100%;
+  }
+  
+
+  .navbar img {
+      width: 100px;
+      align-items: center;
+      margin-left: 10px;
+      
+  }
+  
+  .navbar #hamburger {
+      width:60px;
+      padding: 5px;
+      position: absolute;
+      top: 0;
+      right: 15px;
+
+  }
+  
+  ul {
+      display: none;
+  }
+  
+  
+  
+  /* ---- components ---- */
+  
+  button {
+      border: 1px solid #192592;
+      background-color: #192592;
+      color: white;
+      padding: 15px 35px;
+      margin: 15px 12px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      width: 90%
+  }
+
+    #pics-talking img {
+    width: 500px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  #emailAddress {
+      border: 1px solid #F4F3F4;
+      width: 90%;
+      padding: 15px 35px;
+      margin: 0px 12px;
+  }
+
+  #sign-in {
+      text-align: center;
+  }
+
+  #confidants img {
+    width: 50%;
+    padding: 17px 70px 23px 148px;
+    background-color: #F4F3F4;
+  }
+
+  #confidants-background {
+    background-color: #F4F3F4;
+  }
+
+ 
+
+/* featured stories 
+@media (min-width: 768px) {
+
+    .featured {
+        display: flex;
+    }
+
+    .featured-story,
+    .stories {
+        flex: 1 0 50%;
+    }
+
+    .story {
+        display: flex;
+    }
+
+    .thumb {
+        flex: 1 0 25%;
+    }
+
+    .content {
+        flex: 1 0 75%;
+    }
+}
+*/
+
+@media all and (max-width: 961px) {
+    .responsive-input, confidants { 
+        display:flex;
+}
+
+.confidants {
+    flex: 1 0 50%;
+}
