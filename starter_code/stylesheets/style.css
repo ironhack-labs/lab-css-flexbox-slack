@@ -16,7 +16,7 @@ html {
     box-sizing: inherit;
   }
   
-  body, nav,p, ul, li, h1 {
+  body, nav,p, ul, li{
     padding:1em 0;
     margin: 0;
     font-family:sans-serif,'Times New Roman', Times, serif;
@@ -33,32 +33,41 @@ html {
   p{
       
       line-height: 180%;
-      font-size: 1.2em;
+      font-size: calc(1em + 1vw);
   }
-
+  h1{
+    font-size: calc(2em + 1vw);
+  }
+  
   /*navigation */
   #navigation {
+
       display: flex;
       flex: 1 0 100%;
       border-bottom: 1px grey solid;
-
+      height:130px;
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      padding:0 10%;
   }
 
   .nav-left{
-      flex: 1 0 30%;
+      flex: 1 0 40%;
   }
   .nav-left img{
-        width:100%;
+        height:100%;
   }
 
   .browse-menu{
-    flex: 1 0 70%;
+    flex: 1 0 60%;
   }
 
   .navbar {
     width: 4em;
     display: block;
-    margin: 1em 5% 1em 70%;
+    margin: 2.5em 5% 1em 70%;
     padding: 8px 10px;
     }
     .navbar div{
@@ -68,7 +77,13 @@ html {
     }   
 
     /* header*/
-
+    header{
+        margin-top: 130px;
+    }
+    header h1{
+        line-height: 130%;
+    }
+    
     .mail-request{
         padding:1.5em;
         border: solid 1pt grey;
@@ -81,6 +96,8 @@ html {
         color: white;
         border: 1px solid rgb(57, 57, 187);
         text-align:center;
+        text-transform: uppercase;
+
     }
     .action{
         width: 100%;
@@ -135,7 +152,54 @@ html {
         padding: 0 10%;
     }
 
+
+
+    @media (min-width: 767px) {
+        .responsive-input {
+          display:flex;
+          margin-right:25%
+        }
+        .responsive-activity{
+            text-align:left;
+        }
+        .responsive-button{
+            width:50%;
+        }
+        .responsive-started{
+            margin-bottom:0;
+            margin-right: 1em;
+        }
+        .logo-collection{
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction:row;
+            padding:0;
+        }
+        .logo-collection div {
+            display: flex;   
+            justify-content: center;
+            flex-direction: column;
+            width:50%;
+            padding: 3em;
+            border:1pt solid grey;
+        }
+        .logo-collection img{
+            width:100%;
+        }
+        header h1 div{
+            display:inline;
+        }
+
+      }
+
+
+
+
+
+
+
   /* --------- TEMP ---------x*/
+  /*
 div,nav, header, footer, nav, article {
 	border: 1px solid black;
-}
+}*/
