@@ -19,7 +19,10 @@ html {
  
 /* ---- typography ---- */
  
-body {}
+body {
+    margin: 0;
+   
+}
  
 h1 {}
  
@@ -28,6 +31,44 @@ h2 {}
 h3 {}
  
 /* ---- layout ---- */
+
+.container{
+    margin: 0 30px;
+}
+
+.nav-bar{
+    position: fixed;
+    top: 0;    
+    width: 100vw;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    border-bottom: 2px solid lightgrey;
+
+}
+
+.nav-bar-logo-image{
+    width: 123px;
+}
+
+.nav-bar-menu-wrapper{
+    display: none;
+}
+
+.nav-bar li{
+    display: inline;
+}
+
+@media (min-width: 767px) {
+    .nav-bar-menu-wrapper {
+      display:block;
+    }
+
+    .nav-bar-burger-wrapper{
+        display: none;
+    }
+  }
  
 #site-header {}
  
