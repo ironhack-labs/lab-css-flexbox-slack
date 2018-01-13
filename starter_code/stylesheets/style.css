@@ -60,10 +60,8 @@ p {
 }
 
 .nav-main i{
-    color: #5b5e6d;
     margin-right: 25px;
 }
-
 .nav-list ul {
     list-style: none;
 }
@@ -75,6 +73,15 @@ p {
 .super-container {
     margin: 0px;
     margin-top: 60px;
+}
+
+.nav-main>.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-main i{
+    color: #5b5e6d;
 }
 
 /** Header **/
@@ -122,6 +129,7 @@ p {
 .main-part {
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
 .content {
@@ -129,13 +137,18 @@ p {
     flex-direction: column;
     background-color: #F4F3F4;
     background-size: 100%;
+}
+
+.content h2 {
+    display: flex;
     justify-content: center;
 }
 
-.content h2,
-.content p{
-    padding-left: 10%;
-    padding-right: 10%;
+.content p {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
 }
 
 .button-wrapper {
@@ -149,16 +162,27 @@ p {
     padding-left: 10%;
     padding-right: 10%;
     background-color: #F4F3F4;
+    padding-bottom: 15%;
+}
+
+.img-set div {
+    margin-left: 30%;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .img-set hr {
-    height: 1px;
-    width: 80%;
-    border: 1px solid lightgrey;
+    height: 0.5px;
+    width: 90%;;
+    border: .3px solid #5b5e6d;
+    background-color: #5b5e6d;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: .4px;
 }
 
 .brand{
-    width:80%;
+    width: 55%;
 }
 
 .discover {
@@ -169,7 +193,7 @@ p {
     justify-content: center;
     color: #192592;
     font-weight: 900;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 /**  Footer **/
@@ -187,7 +211,7 @@ p {
 .footer-list-last ul {
     list-style: none;
     padding-right: 50px;
-    marging-top: 50px;
+    margin-top: 50px;
 }
 .footer-list-last li{
     display: inline;
