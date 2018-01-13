@@ -74,6 +74,29 @@ nav {
     border-bottom: 0.5px solid lightgrey;
 }
 
+.menu {
+    overflow: hidden;
+}
+
+.menu-list {
+    float: right;
+}
+
+.menu-list1,
+.menu-list2,
+.menu-list3 {
+    float: left;
+    padding: 20px;
+}
+
+.menu-list4 {
+    float: left;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px 20px;
+    margin: 15px 20px;
+}
+
 .burger {
     display: inline-block;
     cursor: pointer;
@@ -108,6 +131,24 @@ footer {
     .menu {
         display: none;
     }
+    .header-img img {
+        width: 100%;
+    }
+    .subscribe {
+        width: 100%;
+    }
+    .log-in {
+        text-align: center;
+    }
+    .discover {
+        width: 100%;
+    }
+    .logo-box {
+        flex-direction: column;
+    }
+    .logo-box img {
+        padding: 50px 150px; 
+    }
 }
 
 @media (min-width: 768px) {
@@ -117,6 +158,9 @@ footer {
     .user-input {
         flex-direction: row;
     } 
+    .header-img img {
+        width: 100%;
+    }
     .mail {
         width: 50%;
     }  
@@ -132,6 +176,9 @@ footer {
     .user-input {
         flex-direction: row;
     } 
+    .header-img img {
+        width: 100%;
+    }
     .mail {
         width: 50%;
     }  
@@ -147,15 +194,11 @@ footer {
     .menu {
         display: initial;
     }
-    .mail {
-        width: 50%;
-    }  
-    .subscribe {
-        width: 50%;
-    }
     .header-content {
         display: flex;
         flex-direction: row-reverse;
+        margin-top: 70px;
+        margin-bottom: 70px;
     }
     .header-text {
         flex: 1 0 50%;
@@ -163,7 +206,44 @@ footer {
     .header-image {
         flex: 1 0 50%;
     }
-
+    .header-img img {
+        width: 90%;
+    }
+    h1 {
+        font-size: 90px;
+        line-height: 90px;
+        margin: 10px 0 30px 0;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    .slack-logo {
+        width: 40%;
+    }
+    .mail {
+        display: none;
+    }  
+    .subscribe {
+        width: 50%;
+    }
+    .log-in {
+        text-align: left;
+    }
+    .discover {
+        width: 30%;
+        display: block;
+        margin: auto;
+    }
+    .logo-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .logo-box img {
+        padding: 50px 70px; 
+    }
+    .logo-img {
+        width: 33%;
+    }
 }
 
   
@@ -201,7 +281,6 @@ footer {
     background-color: #192592;
     text-align: center;
     color:  white;
-    width: 100%;
     padding: 20px;
     font-size: 18px;
     border-radius: 4px;
@@ -211,11 +290,6 @@ footer {
 
 .log-in {
     font-size: 18px;
-    text-align: center;
-}
-
-.header-img img {
-    width: 100%;
 }
 
 .companies p {
@@ -223,11 +297,10 @@ footer {
     margin-bottom: 30px;
 }
 
-.companies button {
+.discover {
     background-color: white;
     text-align: center;
     color: #192592;
-    width: 100%;
     padding: 20px;
     font-size: 18px;
     border-radius: 4px;
@@ -238,14 +311,12 @@ footer {
 
 .logo-box {
     display: flex;
-    flex-direction: column;
-    margin-left: 50%;
-    transform: translateX(-50%);
 }
 
 .logo-box img {
     width: 100%; 
-    margin-bottom: 60px;   
+    display: block;
+    margin: auto;
 }
 
 
