@@ -134,8 +134,16 @@ footer {
     .header-img img {
         width: 100%;
     }
+    .user-input {
+        flex-direction: column;
+    }
+    .mail {
+        width: 100%;
+        margin: 10px 0 20px 0;
+    }
     .subscribe {
         width: 100%;
+        margin-bottom: 10px;
     }
     .log-in {
         text-align: center;
@@ -175,23 +183,78 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .slack-logo {
+        width: 50%;
+    }
     .menu {
         display: none;
     }
     .user-input {
         flex-direction: row;
+        flex-wrap: wrap;
     } 
     .header-img img {
-        width: 100%;
+        width: 70%;
+        display: block;
+        margin: auto;
     }
     .mail {
         width: 50%;
     }  
     .subscribe {
+        width: 30%;
+        margin-left: 10px;
+    }
+    .logo-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .logo-box img {
+        padding: 50px 70px; 
+    }
+    .logo-img {
         width: 50%;
     }
+    .discover {
+        display: block;
+        margin: auto auto 60px auto;
+    }
+    .trial {
+        display: flex;
+        align-items: center;
+        margin-bottom: 140px;
+    }
+    .trial-text {
+        flex: 1 0 36%;
+    }
+    .trial input {
+        flex: 1 0 30%;
+    }
+    .trial button {
+        flex: 1 0 30%;
+    }
+    .trial h3 {
+        text-align: left;
+        margin-left: 0px;
+    }
+    .slack-hash {
+        flex: 1 0 20%;
+    }
+    .slack-hash img {
+        width: 100%;
+    }
+    .footer-company,
+    .footer-product,
+    .footer-resources,
+    .footer-extras {
+        flex: 1 0 20%;
+    }
+    .footer-bottom {
+        flex-direction: row;
+        margin-top: 140px; 
+    }
     .footer-flag {
-        margin: auto;
+        margin: 0 0 0 auto;
     }
 }
 
@@ -214,6 +277,9 @@ footer {
 }
 
 @media (min-width: 1200px) {
+    .slack-logo {
+        width: 40%;
+    }
     .burger {
         display: none;
     }
@@ -243,14 +309,15 @@ footer {
     h2 {
         font-size: 45px;
     }
-    .slack-logo {
-        width: 40%;
+    .user-input {
+        flex-direction: column;
     }
     .mail {
         display: none;
     }  
     .subscribe {
         width: 50%;
+        margin-bottom: 10px;
     }
     .log-in {
         text-align: left;
@@ -325,14 +392,11 @@ footer {
 
 .user-input  {
     display: flex;
-    flex-direction: column;
 }
 
 .mail {
-    width: 100%;
     padding: 20px;
     border: 0.5px solid lightgrey;
-    margin: 10px 0 20px 0;
     font-size: 20px;
     border-radius: 4px;
 }
@@ -345,7 +409,6 @@ footer {
     font-size: 18px;
     border-radius: 4px;
     border: none;
-    margin-bottom: 10px;
 }
 
 .log-in {
