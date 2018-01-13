@@ -21,6 +21,7 @@ html {
  
 body {
     margin: 0;
+    font-family: Lato;
    
 }
  
@@ -33,8 +34,13 @@ h3 {}
 /* ---- layout ---- */
 
 .container{
-    margin: 0 30px;
+    margin: 0 40px;
 }
+
+
+
+
+/* navbar------------------------------ */
 
 .nav-bar{
     position: fixed;
@@ -45,6 +51,8 @@ h3 {}
     align-items: center;
     padding: 0px 30px;
     border-bottom: 2px solid lightgrey;
+    background-color: white;
+    margin-bottom: 300px;
 
 }
 
@@ -57,7 +65,14 @@ h3 {}
 }
 
 .nav-bar li{
-    display: inline;
+    display: inline-block;
+    padding: 10px;
+    border: 10px;
+}
+
+.nav-bar li:hover{
+    border: 1px solid black;
+    border-radius: 10%;
 }
 
 @media (min-width: 767px) {
@@ -69,6 +84,66 @@ h3 {}
         display: none;
     }
   }
+
+/* header-------------------- */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;    
+    font-size: 1.5rem;    
+}
+
+.header-message-wrapper{
+    text-align: left;
+}
+
+.header-input-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.header-input-group p{
+    text-align: center;
+}
+
+.header-img{
+    width: 90vw;
+}
+
+.header input{
+    display: block;
+    height: 10vh; 
+    font-size: 1.5rem; 
+    font-family: Lato;
+    padding: 5vh; 
+    border-radius: 5px; 
+    margin-bottom: 3vh;  
+     
+}
+
+.header button{
+    display: block;
+    height: 10vh; 
+    background-color: blue;
+    color: white;
+    font-family: Lato;
+    font-size: 1.5rem; 
+    border-radius: 5px;
+    border: 1px solid blue; 
+    text-align: center;  
+}
+
+
+.footer{
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+}
  
 #site-header {}
  
