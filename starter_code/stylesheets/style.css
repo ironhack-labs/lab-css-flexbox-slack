@@ -129,8 +129,15 @@ p {
 
 .header-like .header-pic {
     width: 300px;
+    height: 300px;
     display: flex;
-    align-self: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header-like .header-container-pic {
+    display: flex;
+    justify-content: space-around;
 }
 
 /** Main **/
@@ -307,7 +314,9 @@ p strong{
    margin-bottom: 20px;
    text-align: center'
 }
+
 /****************** Ipad Size *************************/
+
 @media (min-width: 768px) {
     .switch-bottom{
         display: flex;
@@ -322,7 +331,7 @@ p strong{
     .button-get-started{
         padding-left: 3vw;
         padding-right: 3vw;
-        margin-top: 21px;
+        margin-top: 20px;
         margin-left: 8px;
     }
 
@@ -357,8 +366,7 @@ p strong{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-bottom: 5%;
-        margin-bottom: 5%;
+        justify-content: space-around;
     }
     
     div .img-set-div {
@@ -367,6 +375,7 @@ p strong{
         padding: 0%;
         width: 50%;
         align-content: center;
+        text-align: center;
     }
 
     .brand {
@@ -378,12 +387,24 @@ p strong{
 
     .content-bottom-1 .button-get-started{
         width: 25%;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .footer-col-3 {
         padding-right: 12px;
         padding-left: 36px;
-    }
+    }   
 
+    .content-bottom-1 .button-get-started{
+        margin-top: 0;
+    }
 }
 
+/****************** Ipad Size *************************/
+
+@media (min-width: 961px) {
+    div .img-set-div {
+        width: 33%;
+    }
+}
