@@ -5,3 +5,108 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+html {
+    box-sizing: border-box; 
+}
+
+nav {   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100vw;
+    height: 10vw;
+    padding: 0;
+    margin: 2vw;
+}
+
+#break1 {
+    margin: 0;
+    padding: 0;
+    width: 120%;
+    border-bottom: 1px solid #F4F3F4;
+
+}
+
+nav #slack_logo {
+    width: 20%;
+    height: 85%; 
+}
+
+header {
+    margin: 2vw;
+}
+
+header h1 {
+    font: Slack-Tiempos;
+    font-size: 2.5em;
+    color: #2C303F
+}
+
+header p {
+    font: Slack-Tiempos;
+    color: #5b5e6d;
+    font-size:1em;
+    margin-bottom: 1.67em
+}
+
+/* <768PX SCREEN SIZE FORMATTING*/
+
+@media screen and (max-width: 768px) {
+header{
+    display:flex;
+    flex-direction: column;
+    }
+
+    input{
+        height: 7.5vh;
+        width: 97.5%;
+        padding-left:2.5%;
+        border: 1px solid #F4F3F4;
+        border-radius: 4px;
+        color: #5b5e6d;
+        font-size: 1em;
+        font: Slack-Tiempos;
+        margin-bottom: 1em;
+    }
+    
+    button {
+        height: 7.5vh;
+        width: 100%;
+        border: 1px solid;
+        border-radius: 4px;
+        color:white; 
+        background-color: #192592;
+        font-size: 1em;
+        font: Slack-Tiempos;
+        margin: 0;
+    }    
+
+    .sign-in {
+        font: Slack-Tiempos;
+        color: #5b5e6d;
+        font-size:1em;
+        text-align: center;
+    }
+    
+    #talking{
+        width: 100%;
+    }
+}
+
+/* >1200PX SCREEN SIZE FORMATTING*/
+@media screen and (min-width: 1024px) {
+
+    header {
+        display:flex;
+        flex-flow:column wrap;
+        height: 33vh;
+        }
+    .header-image {order:-6;}
+
+    #talking {
+        width:40vw;
+    }
+    
+        
+    }
