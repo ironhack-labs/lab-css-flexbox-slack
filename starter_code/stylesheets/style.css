@@ -5,3 +5,369 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+p, h1, h2, li, .footerBottom div span {
+  font-family: averta, sans-serif;
+}
+
+h1, h2, p {
+  color: #2C303F;
+}
+
+.topNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding: 5px;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+}
+
+.topNav ul li {
+    display: inline;
+}
+
+.topNavMenu {
+  border-right: 50px;
+}
+
+.emailBox input  {
+  width: 100%;
+  font-size: 2rem;
+  height: 5rem;
+}
+
+header button  {
+  width: 100%;
+  font-size: 2rem;
+  height: 6rem;
+}
+
+/*Hide the collapsed_menu items until width > 1200*/
+@media (max-width: 961px) {
+  .topNav ul li {
+    display: none;
+  }
+}
+
+/*Display the collapsed_menu (3 bars) until width > 1200*/
+@media (min-width: 961px) {
+  .topNavMenu {
+    display: none;
+  }
+}
+
+/* media part for the smallest screen <761px*/
+@media (max-width: 760px) {
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    color: #5b5e6d;
+  }
+
+  .emailBox input  {
+    width: 100%;
+  }
+
+  main div button {
+    width: 100%;
+    font-size: 2rem;
+    height: 6rem;
+  }
+
+  header button  {
+    width: 100%;
+  }
+
+  footer div .lists {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 2rem;
+    margin: 0 10%;
+  }
+
+  .footerBottom ul li{
+    font-size: 1.8rem;
+  }
+
+  .getStarted {
+    width: 100%;
+  }
+
+  .emailAndButton {
+    flex-direction: column;
+  }
+
+  .emailBox {
+    padding-bottom: 30px;
+  }
+
+  .signIn {
+    text-align: center;
+  }
+
+  .imagesContainer {
+    flex-direction: column;
+  }
+
+  .goodCompanyFooter {
+    padding: 0 50px;
+    flex-direction: row;
+  }
+
+  .goodCompanyFooterText {
+    text-align: center;
+  }
+
+  .goodCompanyFooterBoxes {
+    width: 100%;
+  }
+
+}
+
+/* media part for the screens: 761px < screenWidth < 961px*/
+
+@media (min-width: 760px) and (max-width: 960px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .emailBox input  {
+    width: 30rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .getStarted {
+    width: 15rem;
+    height: 5.5rem;
+  }
+
+  .emailBox {
+    padding-right: 40px;
+  }
+
+  .emailAndButton {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .signIn {
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  main div button {
+    width: 12rem;
+    font-size: 1rem;
+    height: 4rem;
+    margin-left: 37.5%;
+  }
+
+  .imagesContainer {
+    flex-wrap: wrap;
+  }
+
+  .imagesContainer div {
+    width: 50%;
+  }
+
+  .goodCompanyFooter {
+    padding: 0 50px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .goodCompanyFooterText {
+    text-align: left;
+  }
+
+  .goodCompanyFooterBoxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .goodCompanyFooterBoxes input {
+    width: 100%;
+    margin: 0;
+  }
+
+  .goodCompanyFooterBoxes button {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer div .lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+
+  footer div .lists ul li {
+    padding: 5px;
+  }
+
+  .footerBottom ul li{
+    font-size: 1.2rem;
+  }
+
+  .listsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .slackLogoBottom {
+    height: 200px;
+  }
+
+
+}
+
+.imagesContainer div {
+  padding: 30px 0;
+}
+
+header {
+  margin-top: 75px;
+  padding: 0 20px 50px;
+}
+
+.goodCompany {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #F4F3F4;
+  padding: 30px 50px;
+}
+
+.imagesContainer {
+  display: flex;
+}
+
+.getStarted {
+  background-color: #4049aa;
+  color: white;
+  border-radius: 10px;
+}
+
+.discoverWhy {
+  background-color: white;
+  color: #1E2F9A;
+  border-radius: 10px;
+  border: 2px solid #9BA1D2;
+}
+
+.emailAndButton {
+  margin: 20px 0;
+  display: flex;
+  padding: 20px 0;
+}
+
+.emailBox {
+  font: times;
+}
+
+.emailBox input {
+  border-radius: 5px;
+}
+
+a {
+  color: #192592;
+}
+
+main div div img {
+  vertical-align: middle;
+}
+
+.goodCompanyFooter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blackP {
+  color: #2C303F;
+  margin-bottom: 0;
+}
+
+.alreadyBanner {
+  margin-top: 0;
+}
+
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  color: #5b5e6d;
+}
+
+ul li  {
+  list-style: none;
+}
+
+footer div .lists ul {
+  padding: 0;
+}
+
+.goodCompany div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerBottom {
+  background-color: #F4F3F4;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footerBottom ul li{
+  display: inline;
+  padding: 20px;
+  color: #5b5e6d;
+}
+
+.footerBottom div img {
+  height: 2rem;
+}
+
+.footerBottom div span {
+  font-size: 2rem;
+  color: #5b5e6d;
+}
+
+.dropDownLanguage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
