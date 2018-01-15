@@ -1,32 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang='en'>
+ 
+<head>
+  <title>Slack clone</title>
+ <meta charset='utf-8'>
+ <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+  <link rel='stylesheet' href='./stylesheets/style.css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <script src="https://use.fontawesome.com/f22f21b6f3.js"></script>
+</head>
+ 
+<body>
+  <!-- navbar -->
+  <div class="nav-bar">
+      <div class="nav-bar-logo-wrapper">
+        <img class="nav-bar-logo-image" src="./images/slack-logo.png" alt="slack logo">
+      </div>
+      <div class="nav-bar-menu-wrapper">
+          <ul class="nav-bar-menu">
+              <li>Why Slack?</li>
+              <li>Pricing</li>
+              <li>About Us</li>
+              <li>Your Workspaces</li>
+            </ul>
+      </div>
+      <div class="nav-bar-burger-wrapper">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+  </div>
+  <!-- header -->
+  <div class="header container">
+    <div class="header-message-form">
+        <div class="header-message-wrapper">
+            <h1>
+              Where Work Happens
+            </h1>
+            <p>
+              When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.
+            </p>
+        </div>    
+        <div class="header-input-group">
+          <input class="in-put" type="email" placeholder="Email address">
+          <button class="btn btn-primary">GET STARTED</button>
+          <p>Already using Slack? <a href="#">Sign in.</a></p>
+        </div>
+    </div>    
+    <div class="header-image-wrapper">
+      <img class="header-img" src="./images/home_talking.png" alt="Nothing to see here...">
+    </div>
+  </div>
+
+  <!-- clients -->
+  <div class="clients-section">
+    <div class="clients container">  
+      <div class="clients-message">
+        <h2>You´re in good company</h2>
+        <p>Millions of people around the world have already made Slack the place where their work happens.</p>
+      </div>
+      <button class="btn btn-default">DISCOVER</button>
+      <div class="clients-images">
+      <div class="clients-img-outer-wrap">
+          <div class="clients-img-wrapper">
+              <img class="clients-logo" src="./images/airbnb-logo.png" alt="">
+          </div>  
+      </div> 
+      <div class="clients-img-outer-wrap">
+          <div class="clients-img-wrapper">
+              <img class="clients-logo" src="./images/capital-one-logo.png" alt="">
+          </div>  
+      </div> 
+      <div class="clients-img-outer-wrap">
+          <div class="clients-img-wrapper">
+              <img class="clients-logo" src="./images/harvard-logo.png" alt="">
+          </div>  
+      </div> 
+      <div class="clients-img-outer-wrap">
+          <div class="clients-img-wrapper">
+              <img class="clients-logo" src="./images/los-angeles-times-logo.png" alt="">
+          </div>  
+      </div>   
+      <div class="clients-img-outer-wrap">
+          <div class="clients-img-wrapper">
+              <img class="clients-logo" src="./images/oracle-logo.png" alt="">
+          </div>  
+      </div>  
+      <div class="clients-img-outer-wrap">
+          <div class="clients-img-wrapper">
+              <img class="clients-logo" src="./images/ticketmaster-logo.png" alt="">
+          </div>  
+      </div> 
+    </div>      
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-element">   
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Status</a></li>
+          <li><a href="#">Privacy & Terms</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+   </div>
+    <div class="footer-element">
+      <div class="footer-lng-selector">
+          <img src="./images/us-flag.png" alt="">
+          <span>English (US)</span>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>      
+    </div>
+    <div class="footer-element">     
+      <div class="footer-social-btns">
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </div> 
+    </div>    
+  </div> 
+</body>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./stylesheets/style.css">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
 </head>
 
 <body>
-  <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
+  <nav class="nav-bar">
+    <div><img id="nav-logo" src="./images/slack-logo.png" alt="slack_logo"></div> 
+    <div class="burger">
+      <i class="fa fa-bars fa-4x"></i>
+    </div>   
+    <ul class="nav-bar-menu">
       <li>Why Slack?</li>
       <li>Pricing</li>
       <li>About Us</li>
       <li>Your Workspaces</li>
     </ul>
   </nav>
-  <header>
+  <header class="main-header">
     <img src="./images/home_talking.png" alt="home_work_happening">
     <h1>Where Work Happens</h1>
     <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
     <button type="button" name="button">GET STARTED</button>
     <p>Already using Slack? <a href="#">Sign in</a></p>
   </header>
-  <main>
+  <main class="main-content">
     <div>
       <h2>You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
@@ -98,4 +230,7 @@
   </footer>
 </body>
 
-</html>
+</html> -->
+
+
+
