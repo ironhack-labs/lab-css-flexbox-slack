@@ -1,7 +1,446 @@
 /*
 background-grey: #F4F3F4;
-button-purple: #192592
+button-purple: #192592;
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/************* Reset ******************/
+
+/* div {
+    border: 1px solid red;
+} */
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/************* Typography ******************/
+
+body {
+    font-family: sans-serif;
+    width: 100vw;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: #2C303F;
+}
+
+p {
+    font-size: 1rem;
+    color: #5b5e6d;
+}
+
+/**************************** Layout & Components *********************************/
+/** Nav **/
+.nav-main {
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.nav-logo{
+    width: 100px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: -5px;
+}
+
+.nav-main i{
+    margin-right: 25px;
+}
+.nav-list ul {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.super-container {
+    margin: 0px;
+    margin-top: 60px;
+}
+
+.nav-main>.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-main i{
+    color: #5b5e6d;
+}
+
+.nav-list{
+    display: none;
+}
+
+
+/** Header **/
+
+.header-like {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.input-email{
+    height: 5vh;
+    font-family: lato;
+    margin-bottom: 5vw;
+    width: 100%;
+    text-indent: 2%;
+    margin-top: 3vh;
+}
+
+.form-buttom {
+    flex-direction: row;
+}
+
+.button-get-started{
+    border: 1px solid #192592;
+    background-color: #192592;
+    border-radius: 3px;
+    color: #ffffff;
+    width: 100%;
+    height: 35px;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.slack-user p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.header-like .header-pic {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header-like .header-container-pic {
+    display: flex;
+    justify-content: space-around;
+}
+
+/** Main **/
+
+.main-part {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F3F4;
+    background-size: 100%;
+}
+
+.content h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.content p {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.img-set {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #F4F3F4;
+    padding-bottom: 10%;
+}
+
+.img-set div {
+    margin-left: 30%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.img-set hr {
+    height: 0.5px;
+    width: 90%;;
+    border: .3px solid #5b5e6d;
+    background-color: #5b5e6d;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: .4px;
+}
+
+.brand{
+    width: 55%;
+}
+
+.discover {
+    background-color:white;
+    width:100%;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    color: #192592;
+    font-weight: 900;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.content-bottom {
+    margin-left: 10%;
+    margin-right: 10%;
+    align-content: center;
+    background-color: white;
+    text-align: center;
+    font-weight:400;
+}
+
+p strong{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.input-email2{
+    justify-content: flex-start;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    padding-right: 60%;
+}
+
+
+/**  Footer **/
+
+
+.footer-images {
+    width:30%;
+}
+
+
+.footer-list ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-col li {
+    list-style: none;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.main-footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+}
+
+.footer-col-3{
+    padding-top: 0;
+}
+
+.footer-col-3 li {
+    list-style: none;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.footer-col-3 ul {
+    padding-right: 24px;
+    padding-left: 16px;
+}
+
+.footer-inline{
+    height: 50px;;
+}
+
+.footer-list-last ul {
+    list-style: none;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.footer-list-last li{
+    display: inline;
+    text-decoration: none;
+}
+
+.footer-last-img{
+    width: 5%;
+}
+
+.footer-last{
+    text-align: center;
+}
+
+.footer-last-first{
+    margin-bottom: 20px;
+}
+
+.footer-last i{
+   margin-bottom: 20px;
+   text-align: center'
+}
+
+/****************** Ipad Size *************************/
+
+@media (min-width: 768px) {
+    .switch-bottom{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-email{
+        width:45vw;
+        margin-bottom: 4vw;
+    }
+
+    .button-get-started{
+        padding-left: 3vw;
+        padding-right: 3vw;
+        margin-top: 20px;
+        margin-left: 8px;
+    }
+
+    .slack-user p{
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .content{
+        text-align: center;
+    }
+    
+    .content p {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+
+    .discover{
+        width: 20%;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        margin-bottom: 0;
+    }
+
+    .img-set hr {
+        display: none;
+    }
+
+    .img-set{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    div .img-set-div {
+        display: block;
+        margin: 0%;
+        padding: 0%;
+        width: 50%;
+        align-content: center;
+        text-align: center;
+    }
+
+    .brand {
+        padding-bottom: 5vw;
+        padding-top: 5vw;
+        width: 230px;
+        margin-left:10%;
+    }
+
+    .content-bottom-1 .button-get-started{
+        width: 25%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .footer-col-3 {
+        padding-right: 12px;
+        padding-left: 36px;
+    }   
+
+    .content-bottom-1 .button-get-started{
+        margin-top: 0;
+    }
+}
+
+/****************** Laptop Size *************************/
+
+@media (min-width: 961px) {
+    div .img-set-div {
+        width: 33%;
+    }
+
+    .nav-logo{
+    width: 120px;
+    height: 65px;
+    }
+
+    .nav-main i{
+        display: none;
+    }
+
+    .nav-main{
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+
+    .nav-list {
+        display: initial;
+        margin-right: 25px;
+    }
+
+    .nav-list li{
+        margin-right: 2vw;
+    }
+
+    .nav-list-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .special-list{
+        border: 1px solid black;
+        border-radius: 2px;
+        background-color: white;
+        font-size: .9em;
+    }
+
+}
