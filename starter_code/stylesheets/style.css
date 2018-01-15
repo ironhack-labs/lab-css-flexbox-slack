@@ -1,3 +1,4 @@
+
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
@@ -5,3 +6,254 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+/* ---- layout ---- */ 
+
+
+body{
+    margin: 120px 0;
+}
+.nav-bar{
+    display: flex;
+    width: 100%;
+}
+.container{
+    margin: 0 20px;
+}
+.main-ctn{
+    display: flex;
+    width: 100%;
+}
+.main-bckgn{
+    background-color: #F4F3F4;
+}
+
+
+
+/* ---- Typography ---- */
+
+a {
+	color: #4C9CF1;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: #444;
+}
+.head-txt h1{
+    width: 60%;
+    color: #2C303F;
+}
+.head-txt p{
+    font-size: 19px;
+    color: #5b5e6d;
+}
+.sign-btn{
+    text-align: center;
+}
+.sign-btn a{
+    text-decoration: underline;
+    color: #192592;
+    font-weight: lighter;
+}
+.main-input h1{
+    font-size: 20px;
+}
+.main-input p{
+    font-size: 19px;
+    color: #5b5e6d;
+    margin-top: -10px;
+}
+.main-input a{
+    text-decoration: underline;
+    color: #192592;
+    font-weight: lighter;
+}
+
+
+/* ------------------------------ Components ----------------------------------- */
+
+/* ------------- Navigation Bar ------------- */
+nav{
+}
+.nav-img{
+    margin: 0 20px;
+}
+.nav-img img{
+    width: 40%;
+    margin: 10px 0;
+}
+.fa-bars {
+    display: inline-block;
+    margin: 20px 20px;
+    font-size: 35px;
+    color: #5b5e6d;
+}
+a:hover.fa-bars {
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+}
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    float: left;
+}
+.current {
+	color: #2C303F;
+}
+.border{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    border-bottom: 1px solid rgb(231, 226, 226);
+}
+
+@media only screen and (min-width : 640px){
+    .fa-bars {
+        display:none;
+    }
+}
+
+
+
+/* ------------- Header  ------------- */
+
+.head-img img{
+    width: 100%;
+}
+.main-header input{
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    color: #5b5e6d;
+    border: 1px solid gray;
+    border-radius: 3px; 
+    margin-bottom: 20px;
+}
+.main-header button{
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+    background-color: #192592;
+    border: 1px solid #192592;
+    border-radius: 3px;
+}
+
+/* --------------- Main ------------- */
+
+.main-cnt h2{
+    font-size: 26px;
+    width: 100%;
+    color: #2C303F;
+    text-align: center;
+    margin-bottom: -5px;
+}
+.main-bckgn{
+    padding-top: 10px;
+    border-top: 1px solid rgb(231, 226, 226);
+    border-bottom: 1px solid rgb(231, 226, 226);
+}
+.main-cnt p{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 17px;
+    color: #5b5e6d;
+}
+.main-cnt button{
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 15px;
+    color: #192592;
+    background-color: white;
+    border: 1px solid #192592;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.main-img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.main-cnt hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgb(231, 226, 226);
+}
+.main-img img{
+    width: 60%;
+    margin-left: 20%;
+    padding: 30px;
+}
+.main-input{
+    text-align: center;
+    margin-top: 40px;
+}
+.main-input button{
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+    background-color: #192592;
+    border: 1px solid #192592;
+    border-radius: 3px;
+}
+.main-input input{
+        width: 100%;
+        font-size: 18px;
+        padding: 15px;
+        color: #5b5e6d;
+        border: 1px solid gray;
+        border-radius: 3px; 
+        margin-bottom: 20px;
+}
+#main-ft{
+    color: #5b5e6d;
+}
+
+/* ------ Media Query ----- */
+
+@media only screen and (max-width : 640px){
+    
+    nav ul, nav:active ul { 
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #fff;
+        border: 5px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 4px 0 4px 4px;
+    }
+    
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+    
+    nav:hover ul {
+        display: block;
+    }
+    }
