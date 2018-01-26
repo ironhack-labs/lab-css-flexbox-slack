@@ -5,3 +5,73 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+@media (max-width: 768px) {
+    #nav-ul {
+      background-color: blue;
+      display: none; 
+    }
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+nav {
+    display: flex;
+    position: sticky;
+    height: 5%;
+    background-color: red;
+    width: 100%;
+}
+
+nav img{
+    width: auto;
+    height: 200px;
+}
+
+#nav-ul {
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: auto;
+    height: auto;
+    order: 2;
+}
+
+#header-h1 {
+    order: 0;
+}
+#header  p {
+    order: 2;
+    align-self: flex-end;
+}
+#header  button {
+    order: 1;
+}
+
+  .border-menu {
+    position: relative;
+    padding-left: 1.25em;
+  }
+  .border-menu:before {
+    content: "";
+    position: absolute;
+    top: 0.25em;
+    left: 0;
+    width: 1em;
+    height: 0.125em;
+    border-top: 0.375em double #000;
+    border-bottom: 0.125em solid #000;
+  }
