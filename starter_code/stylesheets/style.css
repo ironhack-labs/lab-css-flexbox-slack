@@ -62,10 +62,13 @@ html, body {
   }
 /* header */
   header {
-   
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+  }
+
+  .text-align {
+      text-align: center;
   }
 
   header img {
@@ -125,11 +128,11 @@ main img {
 
 .good-company h2 {
     color: #2C303F;
-    padding: 0 10vw;
+    margin: 0 10vw;
     text-align: center;
 }
 .good-company p {
-    margin: 0 6vw 10vh 6vw;
+    margin: 2vh 10vw ;
     text-align: center;
 }
 
@@ -149,9 +152,11 @@ main img {
 }
 
 .try-for-free {
-padding: 10vw;
-text-align: center;
-
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items: center;
+ 
 }
 
 .try-for-free p:nth-child(1){
@@ -278,12 +283,73 @@ text-align: center;
         display: flex;
         width: 70vw;
     }
-      .nav i {
+    .nav i {
         display: none;
-      }
+    }
 
+    header {
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
    
+    header img {
+        width: 40vw;
+        order: 0; 
+        margin: 15vh 0 0 0;
+    }
 
-      
+    header h1 {
+        margin: 10vh 0 0 0;
+        width: 30vw;
+        text-align: center;
+
+    }
+    
+    header p {
+        width: 30vw;
+    }
+
+    .btn {
+        height: 5vw;
+    }
+
+    .logo-small, .logo-big{
+        padding: 5vh 10.5vw;
+        width: 12vw;
+        border: #e1dfe1 solid 1px;
+       
+    }
+
+    .try-for-free {
+        flex-direction:row;
+        justify-content: space-between;
+        margin: auto 5vw;
+        }
+    .logo-slack {
+        width: 10vw;
+    }
+
+    .column-1 {
+        display: flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:center;
+        order: 2;
+        width: 30vw;
+        padding: 0 2vw;
+       
+    }
+    .col-try {
+        display: flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .btn-blue {
+        margin: 0
+    }
+
   }
   
