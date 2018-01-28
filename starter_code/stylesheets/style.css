@@ -5,3 +5,351 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300;700');
+@import url('https://fonts.googleapis.com/css?family=Adamina');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #5b5e6d;
+    box-sizing: border-box;
+}
+/* Nav*/
+.nav {
+    display: flex;
+    width: 100vw;
+    flex-wrap:wrap;
+    background-color: white;
+    color: #5b5e6d;
+    padding: 2vh 6vw;
+    border-bottom: #F4F3F4 solid 2px;
+    justify-content:space-between;
+    align-items:center;
+    position: fixed;
+    box-sizing: border-box;
+    
+}
+
+.nav i {
+    font-size: 24px;
+}
+
+.nav ul {
+    width: 80vw;
+    list-style: none;
+    justify-content: flex-end;
+    float: right;
+    align-items:baseline;
+    display: none;
+  }
+
+  .nav img {
+    height: 50px;
+
+  }
+  .nav li:nth-child(4) {
+    border: #5b5e6d solid 1px;
+    padding: 0.5vw;
+    border-radius: 5px;
+  }
+
+  .nav li {
+    margin-right: 3vw;
+    
+  }
+/* header */
+  header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-align {
+      text-align: center;
+  }
+
+  header img {
+      width: 80vw;
+      order: 5;
+      /*display: none;*/
+  }
+
+  header, main {
+      padding: 2vh 10vw;
+  }
+
+  header h1 {
+    margin-top: 20vh;
+    line-height: 120%;
+    color:#2C303F;
+    font-family: 'Adamina', serif;
+  }
+
+
+.btn {
+    width: 80vw;
+    height: 8vh; 
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+ .btn-blue {
+    background-color: #192592;
+    color: #F4F3F4;
+ }
+
+/* main */
+
+main {
+    padding: 0;
+}
+
+main img {
+    height: 5vh;
+    
+}
+
+.text-center {
+    text-align: center;
+    width: 80vw;
+}
+
+.good-company {
+    background-color: #F4F3F4;
+    width: 100vw;
+    padding: 6vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.good-company h2 {
+    color: #2C303F;
+    margin: 0 10vw;
+    text-align: center;
+}
+.good-company p {
+    margin: 2vh 10vw ;
+    text-align: center;
+}
+
+.btn-purple {
+    background-color: white;
+    color: #192592;
+    border: 1px solid #192592;
+    margin: 0 10vw;
+}
+
+.logo-small, .logo-big {
+    
+    padding: 10vh 30vw;
+    width: 40vw;
+    border-bottom: #e1dfe1 solid 1px;
+
+}
+
+.try-for-free {
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items: center;
+ 
+}
+
+.try-for-free p:nth-child(1){
+    line-height: 1;
+}
+.logo-slack {
+    width: 30vw;
+    padding-right: 65vw;
+}
+
+.footer {
+  
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:flex-start;
+    
+}
+
+.footer ul {
+    width: 30vw;
+   
+
+}
+.footer  li {
+    list-style: none;
+    line-height: 2;
+    
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-bottom img{
+    width: 5vh
+}
+
+.footer-bottom {
+    background-color: #F4F3F4;
+}
+.social-media {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.footer-bottom ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding:2vh 5vw;
+}
+.footer-bottom li {
+    list-style: none;
+    font-size: 0.9rem;
+    padding: 1vw;
+
+}
+
+.footer-bottom-sm {
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content:center;
+    padding: 5vh 10vh;
+    font-size: 1.2rem
+}
+.social-media i{
+    margin: 0 2vh;
+}
+
+@media (min-width:961px){
+    .btn , .btn-purple, .btn-blue{
+        width: 20vw;
+        margin: 0 auto;
+    }
+
+    .text-center {
+        text-align: left;
+    }
+
+    header img {
+        width: 40vw;
+        margin: 0 auto;
+    }
+
+    .good-company {
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+
+    }
+
+    .btn-purple {
+        margin: 0 40vw 10vh 40vw;
+    }
+
+    .logo-small, .logo-big{
+        padding: 10vh 14.9vw;
+        width: 20vw;
+        border: #e1dfe1 solid 1px;
+       
+    }
+    .footer ul {
+        width: 15vw;
+    }
+
+    .logo-slack {
+        width: 10vh;
+        padding: 0;
+    }
+}
+
+@media (min-width:1200px){
+
+    .nav ul {
+        display: flex;
+        width: 70vw;
+    }
+    .nav i {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+   
+    header img {
+        width: 40vw;
+        order: 0; 
+        margin: 15vh 0 0 0;
+    }
+
+    header h1 {
+        margin: 10vh 0 0 0;
+        width: 30vw;
+        text-align: center;
+
+    }
+    
+    header p {
+        width: 30vw;
+    }
+
+    .btn {
+        height: 5vw;
+    }
+
+    .logo-small, .logo-big{
+        padding: 5vh 10.5vw;
+        width: 12vw;
+        border: #e1dfe1 solid 1px;
+       
+    }
+
+    .try-for-free {
+        flex-direction:row;
+        justify-content: space-between;
+        margin: auto 5vw;
+        }
+    .logo-slack {
+        width: 10vw;
+    }
+
+    .column-1 {
+        display: flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:center;
+        order: 2;
+        width: 30vw;
+        padding: 0 2vw;
+       
+    }
+    .col-try {
+        display: flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .btn-blue {
+        margin: 0
+    }
+
+  }
+  
