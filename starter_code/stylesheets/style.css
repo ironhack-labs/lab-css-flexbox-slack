@@ -5,3 +5,187 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #5b5e6d;
+  margin: 0;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 25px;
+  color: #5b5e6d;
+}
+#ham-icon {
+  display: none;
+}
+
+header {
+  display: flex;
+  margin: 0 30px 0 30px;
+  padding-top: 80px;
+}
+
+header h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #2C303F;
+  font-size: 2.6em;
+  width: 70%;
+  padding-right: 120px;
+}
+
+.get-started {
+  background-color: #192592;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+header p {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-flow: wrap;
+  background-color: #F4F3F4;
+}
+
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  color: #2C303F;
+  font-size: 2em;
+}
+#discover-why {
+  background-color: white;
+  color: #192592;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  border: 1px solid #192592;
+}
+
+
+@media (max-width: 768px) {
+  nav{
+    position: fixed;
+  }
+  nav ul {
+    display: none;
+  }
+  
+  #ham-icon {
+    display: flex;
+    height: 30px;
+    width: 30px;
+  }
+
+  #slack-logo {
+    height: 30%;
+    width: 30%;
+  }
+
+  header {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  header img {
+    width: 100%;
+    height: 100%;
+    order: 1;
+  }
+
+  .get-started, #discover-why {
+    padding: 20px 180px;
+    margin: 20px 0;
+    padding: 15px 170px;
+  }
+  main div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  main div img {
+    display: inline-flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+    border-bottom: 1px solid lightgray;
+    width: 38%;
+  }
+
+  #bottom-lists img {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 400px;
+    width: 25%;
+    height: 25%;
+  }
+
+  #bottom-lists {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: #FFFFFF;
+  }
+
+  #bottom-lists ul {
+    list-style: none;
+    margin: 30px;
+  }
+
+  #bottom-lists ul li {
+    margin: 20px 0;
+  }
+  #bottom-container {
+    background-color: #F4F3F4;
+    color: #5b5e6d;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #bottom-container ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  #bottom-container ul li {
+    margin: 0 15px;
+    font-size: 1em;
+  }
+
+  #last-line {
+    justify-content: center;
+  }
+
+  #flag {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    width: 10%;
+    align-content: flex-end;
+  }
+
+  @media ()
