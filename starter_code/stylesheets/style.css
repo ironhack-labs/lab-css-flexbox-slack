@@ -27,6 +27,7 @@ nav {
     position: fixed;
 }
 
+
 nav img {
     width: 30%;
 }
@@ -39,7 +40,7 @@ nav li {
 }
 
 nav li:hover {
-    background-color: rgb(111, 143, 245);
+    background-color: #192592;
     color: white;
 }
 
@@ -133,7 +134,7 @@ main img{
     width: 40%;
     padding: 5% 15%;
     margin: 5% 15% 5% 15%;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: .5px solid lightgrey;
 }
 
 .second-div{
@@ -198,6 +199,7 @@ main img{
 .fifth-div{
     display: flex;
     flex-direction: column;
+    background-color: #F4F3F4;
 }
 
 .fifth-div ul{
@@ -240,5 +242,246 @@ main img{
 }
 
 .eigth-div i{
-    padding: 10px;
+    padding: 5% 10px;
 }
+
+@media screen and (min-width: 767px){
+
+    body{
+        font-size: 20px;
+    }
+
+    nav img {
+        width: 20%;
+    }
+
+    header h1{
+        color: #2C303F;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    .input-div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    header input {
+        font-size: .8em;
+        width: 40%;
+        height: 20%;
+        padding: 20px;
+    }
+    
+    header button{
+        width: 30%;
+        margin: 0 2%;
+        padding: 20px;
+    }
+
+    .sign-in{
+        text-align: left;
+        font-size: 0.7em;
+    }
+
+    .first-div button{
+        width: 30%;
+        margin: 5% 35%;
+
+    }
+
+    main{
+        border-bottom: 1px solid lightgrey;
+    }
+
+    main img{
+        /* Se está completando el 100% del width con el padding y margin */
+        width: 30%;
+        margin: 0;
+        padding: 5%;
+    }
+
+    .logo-div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 15%;
+    }
+
+    .logo-div img{
+        height: 90px;
+        width: 30%;
+    }
+
+    .left-border{
+        border-left: 1px solid lightgrey;
+    }
+
+    .second-div{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .for-free{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    .for-free p{
+        margin: 0;
+        font-size: .9em;
+    }
+
+    .second-div{
+        margin: 6% 0;
+        
+    }
+
+    .second-div input{
+        width: 20%;
+        padding: 3%;
+        font-size: .7em;
+    }
+    
+    .second-div button{
+        width: 25%;
+        margin: 0 2%;
+        padding: 3%;
+        font-size: .7em;
+    }
+
+    .third-div img{
+    width: 15%;
+    height: 15%;
+    
+    }
+
+    .third-div{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .fourth-div ul{
+        width: 17%;
+    }
+    
+    .fourth-div li{
+        font-size: 0.6em;
+        padding: 5%;
+    }
+
+    .fifth-div{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .fifth-div li{
+        font-size: 0.6em;
+        padding: 0 0.5em;
+    }
+
+    .sixth-div{
+        flex-direction: row;
+    }
+
+    .seventh-div{
+        align-items: center;
+        font-size: 0.6em;
+    }
+
+    .eigth-div{
+        align-items: center;
+    }
+
+    .seventh-div img{
+        width: 10%;
+        height: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    nav img {
+        width: 15%;
+    }
+
+    .logo-div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 15%;
+    }
+
+    .logo-div img{
+        height: 90px;
+        width: 20%;
+    }
+
+    .logo-div img:nth-child(3), .logo-div img:nth-child(5) {
+        border-left: 1px solid lightgrey;
+    }
+
+    .logo-div img:nth-child(4) {
+        border-left: none;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    
+    nav img {
+        width: 10%;
+    }
+
+    nav ul{
+        display: inline;
+        list-style-type: none;
+        width: 40%;
+    }
+
+    nav ul li:nth-child(4) {
+        border: 1px solid lightgray;
+        padding: 2%; 
+        border-radius: 5px;
+    }
+
+    nav li{
+        display: inline;
+        border: none;
+        padding: 0 4%;
+    }
+
+    nav:hover > ul{
+        display: none;
+    }
+
+    nav i{
+        opacity: 0;
+    }
+
+    #home-talking {
+        order: 0;
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    .last-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    input{
+        display: none;
+    }
+
+}
+
