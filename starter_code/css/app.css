@@ -1,0 +1,172 @@
+/*
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+<style>
+* {
+  box-sizing: border-box;
+}
+#main{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+.logo {
+  width: 120px;
+}
+.container-nav{
+    display: flex;
+    height: 54px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    background-color: #fff;
+ }
+
+ ul{
+  display: flex;
+  flex:1;
+}
+
+/*
+Media-queries
+*/
+@media screen and (max-width:768px){
+
+body {
+  display: flex;
+  flex-direction: column;
+  color:#5b5e6d;
+}
+
+header {
+  order:0;
+}
+.logo {
+  width: 120px;
+ }
+ #main {
+   display: block;
+ }
+
+ nav{
+    height: 54px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+   }
+   .container-nav ul {
+     display: none;
+   }
+
+   header p {
+    font-size: 1.2em;
+   }
+
+   header h1 {
+     font-size: 3em;
+     font-weight: 700;
+   }
+
+   .btn-start {
+     background-color: #192592;
+     border-radius:4px;
+     color: #fff;
+     width: 100%;
+     height: 50px;
+     font-weight: 700;
+
+   }
+.email{
+color: #fff;
+width: 97%;
+height: 40px;
+font-weight: lighter;
+margin-bottom: 15px;
+font-size: 1em;
+padding-left: 10px;
+
+   }
+.slackUser{
+    text-align: center;
+
+   }
+ .main {
+  display: block;
+  margin-bottom: 2em;
+
+}
+.main {
+  order:2;
+}
+.companies {
+  width: 100%;
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  order: 3;
+  background-color: #F4F3F4;
+  padding: 10px;
+
+}
+.companies h2 {
+  font-size: 2.2em;
+
+}
+.companies p {
+  font-size: 1em;
+  font-weight: 500;
+
+  }
+
+.companie-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    height: 3em;
+
+}
+
+.companies img{
+
+  width: 30%;
+  height:30%;
+}
+.signup {
+  align-items: center;
+}
+
+
+aside{
+  order:1;
+  max-width: 50%;
+}
+
+footer {
+ order: 4;
+ display: flex;
+ align-items: center;
+
+}
+footer ul {
+  list-style: none;
+  flex-direction: column;
+  flex: 1 1 0;
+
+}
+footer li{
+  display: inline;
+}
+footer img {
+height: 150px;
+width: 150px;
+}
+
+
+}
