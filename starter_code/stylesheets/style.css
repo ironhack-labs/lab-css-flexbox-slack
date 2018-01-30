@@ -5,3 +5,108 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.clear{
+    clear: both;
+}
+.containerNav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    border-bottom: 2px solid #5b5e6d;
+}
+header p{
+    color: #5b5e6d;
+}
+nav ul{
+    display: flex;
+}
+nav img{
+    width: auto;
+    height: 50px;
+}
+
+.border{
+    border: 1px solid black;
+}
+.hamburguer{
+    width: auto;
+    height: 30px;
+}
+header{
+    padding-top: 100px;   
+}
+input{
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    margin-left: 50px;   
+    border-radius: 5%;
+}
+button{
+    justify-content: center;
+    
+}
+
+
+
+
+@media (max-width: 767px){
+    .containerNav, header{
+        width:100%;
+    }
+
+    nav ul{
+        display:none;
+    }
+  
+    .containerNav{
+        justify-content: space-between;
+    }
+    .hamburguer{
+        margin-right: 30px;
+    }
+    header img{
+        width: 0 auto;
+        height: 500px;
+    }
+ 
+
+    
+}
+
+@media (max-width:961px) and (min-width:768px) {
+    body{
+        max-width:961px;
+        min-width:768px;
+        background-color:green;
+    }
+    .hamburguer{
+        display:none;
+    }
+     nav ul li{
+        list-style: none;
+        padding-right: 30px;
+     }
+    
+}
+
+@media (max-width:1024px) and (min-width:962px) {
+    body{
+        max-width:1024px;
+        min-width:962px;
+        background-color:blue;
+    }
+}
+@media (min-width:1025px) {
+    body{
+        min-width:1025px;
+        background-color:red;
+    }
+}
+
