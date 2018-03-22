@@ -5,3 +5,83 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body { margin: 0; padding: 0; font-size: 16px; }
+
+h1 { color: #2C303F; }
+
+p {
+  color: #5b5e6d;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
+
+@media (max-width: 768px) {
+
+  nav{
+    max-width: 768px;
+    /*position: fixed;*/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+  }
+
+  nav img {
+    object-fit: contain;
+    height: 70px;
+    width: 16%;
+    margin-left: 4%;
+  }
+
+  nav ul {
+    background-color: red;
+    margin-right: 4%;
+  }
+
+  nav li {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    order: 1;
+  }
+
+  header h1, header p, button {
+    max-width: calc(768px - 12%);
+  }
+
+  header h1 {
+    font-size: 5rem;
+  }
+
+  header p {
+    font-size: 2rem;
+  }
+
+
+  #boton-header {
+    background-color: #4046b1;
+  }
+
+  button {
+    width: 100%;
+    line-height: 4rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+
+
+
+}
