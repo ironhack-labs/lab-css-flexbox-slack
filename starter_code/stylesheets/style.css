@@ -8,8 +8,11 @@ nav grey: #5b5e6d;
 * {
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
-body {
+
+
+.container {
   width: 90%;
   margin: 0 auto;
 }
@@ -25,6 +28,7 @@ nav {
   color: #5b5e6d;
   position:  fixed;
   width: 100%;
+  padding: 0 5%;
 }
 nav > img {
   max-width:  100%;
@@ -43,36 +47,79 @@ nav ul {
 header {
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
+  padding: 80px 0;
+  
 
+}
+header h1 {
+  font-size: 2.3em;
+}
+header p {
+  padding: 20px 0;
+  font-size: 1.2em;
+}
 header > img {
   order: 1;
+  max-width: 100%;
 }
-
+#email {
+  border: 1px solid lightgray;
+  padding: 0.8em;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+#btn-get-started {
+  background-color: #192592;
+  text-align: center;
+  align-self: center;
+  color: white;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 3px;
+}
+header p:nth-child(6) {
+  font-size: 1.3em;
+  align-self: center;
+}
 main {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   justify-content:  center;
+  margin: 0 auto;
+
 }
 
 main img {
   max-width: 100%;
   width:  50%;
-  height: 30px;
+  height: 40px;
 }
 .partners {
   display: flex;
   flex-direction: column;
   background-color: #F4F3F4;
-  padding: 80px 0;
+  padding: 50px 35px;
+  justify-content: center;
+  text-align: center;
+}
+.btn-discover {
+  background-color: white;
+  border: 1px solid #192592;
+  color:#192592;
+  padding: 20px;
+  border-radius: 3px;
+  margin: 25px 0;
 }
 .partners > img {
   align-self: center;
   padding: 20px 0;
+  max-width: 100%;
 }
-
+.partners > img:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
 .footer {
   width: 100%;
 }
