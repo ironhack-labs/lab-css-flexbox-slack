@@ -106,53 +106,25 @@ p {
 /* ---- site-header ---- */
 
 
-#main-nav {
+#main-nav nav{
 position: fixed;
 background-color: white;
 width: 90vw;
 display: flex;
-align-content: space-between
-}
-
-#main-nav li,
-#main-nav ul {
-  display: inline;
-  list-style-type: none;
-}
-
-#main-nav li {
-margin-right: 12px; 
-}
-
-#main-nav li:last-child {
-  margin-right: 0;
-}
-#main-nav a {
-  background-color: pink;
-  color: black;
-  padding: 6px 24px;
-}
-
-#main-nav a:hover {
-  background-color: purple;
-}
-
-#main-nav a[disabled] {
-  background-color: silver;
-  color: black;
-  padding: 6px 24px;
-  cursor: default;
+flex-wrap: nowrap;
 }
 
 .header-logo {
  width: 30vw; 
- float: left;
+ 
 }
 
-.nav-menu {
-  float: right;
+.nav-menu { 
 }
 
+.burger-menu {
+  width: 3vw;
+}
 /*----------main section----------------*/
 
 .intro {
@@ -160,9 +132,35 @@ margin-right: 12px;
   position: relative;  
 }
 
+.intro >h1 {
+  text-align: left;
+  margin-bottom: 4vh;
+}
+
+.partners-div {
+  text-align: center;
+}
+
+.partners-div button {
+  color: #192592;
+  border: 1px solid #192592;
+  padding: 2vh 25vw;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 10vh;
+}
+/*---------------partners images-----------*/
+
+
+
+.partners-img-container {
+  padding-top: 2vh; 
+  border-bottom: 1px solid lightgrey; 
+
+}
 .partners-img {
-width: 50vw; 
-margin: 0 auto; 
-margin-bottom: 5vh;
-text-align: center;
+  width: 50vw; 
+  margin: 0 auto; 
+  margin-bottom: 4vh;
+  text-align: center;
 }
