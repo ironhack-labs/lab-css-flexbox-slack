@@ -5,3 +5,142 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* ---- reset browser stylesheets---- */
+
+html {
+  box-sizing: border-box;
+  /*IMPORTANT! Resets box model*/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+  color: #5b5e6d;
+}
+
+/* ---- typography ---- */
+
+body {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: calc(30px + .1vw);
+  line-height: 1.1em;
+  color: #2C303F;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: calc(20px + .2w);
+  color: #2C303F;
+  text-align: center;
+}
+
+#already-using-text {
+  font-size: 12px;
+}
+
+header a {
+  color: #192592;
+}
+
+nav ul {
+  font-size: 15px;
+}
+
+/* ---- layout ---- */
+
+nav {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px; 
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  border-bottom: 0.5px solid #E5E5E5;
+  background-color: white;
+}
+
+header {
+  padding: 15vh 5vh 5vh 5vh;
+  width: 100%;
+}
+
+header button {
+  color: white;
+  font-size: 15px;
+}
+
+/* ---- components ---- */
+nav img {
+  height: 60px;
+}
+
+#hamburger-nav {
+  display: initial;
+}
+
+.nav-hamburger-line {
+  width: 35px;
+  height: 5px;
+  background-color: #5b5e6d;
+  margin: 6px 0;
+}
+
+nav ul {
+  display: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 15px;
+}
+
+#workspace-button {
+  border: 1px solid #5b5e6d;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    display: initial;
+  }
+
+#hamburger-nav {
+  display: none;
+}
+
+header img {
+  width: 100%;
+}
+
+header button {
+  padding: 20px;
+  background-color: #192592;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+main {
+  padding: 5vh 5vh 5vh 5vh;
+  background-color: #F4F3F4;
+}
+
+.logo {
+  display: block;
+  width: 60%;
+  padding: 20px 20px;
+  margin: 0 auto;
+  border-bottom: 0.5px solid #E5E5E5;
+}
