@@ -20,12 +20,13 @@ body {
   padding: 0;
 }
 
+
 /* -------------------------- typography -------------------------- */
 
 body {
   color: #333646;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 147%;
 }
 
@@ -73,16 +74,14 @@ li, span {
 }
 
 
-
 /* -------------------------- layout -------------------------- */
 
+/* ---- General ---- */
 .container {
   margin: 0 20px;
 }
 
-
 /* ---- Site Navigation Bar ---- */
-
 #site-nav {
   background-color: white;
   position: fixed;
@@ -123,7 +122,6 @@ li, span {
 }
 
 /* ---- Site Header ---- */
-
 #site-header {
   padding-top: 7rem;
 }
@@ -141,7 +139,7 @@ li, span {
   text-align: center;
 }
 
-#site-header p:nth-child(5) {
+#site-header p:nth-child(4) {
   text-align: center;
 }
 
@@ -150,13 +148,8 @@ li, span {
 }
 
 /* ---- Site Main ---- */
-
 #site-main {
   text-align: center;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column; */
 }
 
 #site-main .clients {
@@ -188,7 +181,6 @@ li, span {
 }
 
 /* ---- Site Footer ---- */
-
 #site-footer {
   border-top: 2px solid #EBEBEB; 
   background: white;
@@ -245,23 +237,9 @@ li, span {
 }
 
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 728px;
-    margin: 0 auto;
-  }
-  #site-nav .nav-links {
-    display: initial;
-  }
-  #site-nav .hamburger-menu {
-    display: none;
-  }
-}
-
 /* -------------------------- Components -------------------------- */
 
 /* ---- Buttons ---- */
-
 .btn-started {
   background-color: #414BA4;
   border-radius: 5px;;
@@ -284,7 +262,6 @@ li, span {
 }
 
 /* ---- Forms ---- */
-
 .email-form {
   border: 1px solid #999;
   border-radius: 5px;
@@ -295,3 +272,162 @@ li, span {
   font-size: 20px;
 }
 
+
+/* -------------------------- Media Queries -------------------------- */
+ 
+/* ---- IPad ---- */
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+  
+  .container {
+    max-width: 729px;
+    margin: 0 auto;
+  }
+  
+  #site-header h1 {
+    font-size: 60px;
+  }
+
+  #site-header form {
+    display: flex;
+    align-items: flex-start;
+    width: 75%;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  
+  #site-header form input {
+    margin-right: 20px;
+    height: 100%;
+    flex: 1 0 70%;
+  }
+
+  #site-header form button {
+    flex: 1 0 30%;
+    height: 100%;
+  }
+
+  #site-header img {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+
+  .btn-discover {
+    width: 200px;
+  }
+
+  #site-main .clients img {
+    width: 300px;
+    padding: 35px;
+    border-bottom: 2px solid #EBEBEB; 
+  }  
+
+  #site-main .clients-logos img:nth-child(5) {
+    border-bottom: none;
+    border-right: 2px solid #EBEBEB;
+  }
+
+  #site-main .clients-logos img:nth-child(3) {
+    border-right: 2px solid #EBEBEB;
+  }
+
+  #site-main .clients-logos img:nth-child(1) {
+    border-right: 2px solid #EBEBEB;
+  }
+
+  #site-main .try-it {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #site-main form {
+    display: flex;
+  }
+
+  #site-main form input {
+    margin-right: 20px;
+  }
+
+  #site-footer .footer-links ul {
+    flex: 0 0 25%;
+    padding-left: 30px;
+  }
+
+  #site-footer .footer-legal {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #site-footer .footer-legal ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #site-footer .footer-legal li {
+    display: inline;
+    margin: 0
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    max-width: none;
+    margin: 0 auto;
+  }
+  #site-nav .hamburger-menu {
+    display: none;
+  }
+
+  #site-nav .nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #site-nav .nav-links li {
+    margin-right: 10px;
+    border: 1px solid white;
+    padding: 5px 10px;
+  }
+
+  #site-nav .nav-links li:hover {
+    border: 1px solid #2C303F;
+    border-radius: 4px;
+    transition: ease-in-out;
+  }
+
+  #site-header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #site-header .header-image {
+    width: 100%;
+  }
+  
+  #site-main .clients-logos {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+
+  }
+  
+  #site-main .clients-logos img {
+    width: 100%;
+  }
+
+  #site-main .clients-logos .client-logo {
+    flex: 1 0 auto;
+  }
+
+  #site-main .try-it {
+    margin: auto 30px;
+  }
+
+
+}
