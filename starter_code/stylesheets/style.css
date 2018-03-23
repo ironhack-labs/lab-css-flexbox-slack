@@ -5,3 +5,164 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ---- typography ---- */
+
+body {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {
+  margin: 24px 0 12px;
+  font-size: 28px;
+}
+
+h2 {
+  margin: 18px 0 12px;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 12px 0 12px;
+  font-size: 20px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+
+
+/* ---- layout ---- */
+
+#site-header {
+  padding: 30px 0;
+  color: yellow;
+  background: #111;
+}
+
+
+#site-footer {
+  color: yellow;
+  padding: 60px 0;
+  background: #111;
+}
+
+#site-main {
+  margin-bottom: 60px;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+/* ---- components ---- */
+
+
+/* ---- site-header ---- */
+#site-header {
+  overflow: hidden;
+}
+
+#site-header .logo {
+  float: left;
+  margin: 0;
+}
+
+.header-image {
+  width: 90vw;
+}
+/* ---- site-header ---- */
+
+
+#main-nav {
+position: fixed;
+background-color: white;
+width: 90vw;
+display: flex;
+align-content: space-between
+}
+
+#main-nav li,
+#main-nav ul {
+  display: inline;
+  list-style-type: none;
+}
+
+#main-nav li {
+margin-right: 12px; 
+}
+
+#main-nav li:last-child {
+  margin-right: 0;
+}
+#main-nav a {
+  background-color: pink;
+  color: black;
+  padding: 6px 24px;
+}
+
+#main-nav a:hover {
+  background-color: purple;
+}
+
+#main-nav a[disabled] {
+  background-color: silver;
+  color: black;
+  padding: 6px 24px;
+  cursor: default;
+}
+
+.header-logo {
+ width: 30vw; 
+ float: left;
+}
+
+.nav-menu {
+  float: right;
+}
+
+/*----------main section----------------*/
+
+.intro {
+  text-align: center;
+  position: relative;  
+}
+
+.partners-img {
+width: 50vw; 
+margin: 0 auto; 
+margin-bottom: 5vh;
+text-align: center;
+}
