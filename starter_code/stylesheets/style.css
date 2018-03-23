@@ -5,3 +5,127 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- typography ---- */
+
+body {
+  font-size: 18px;
+}
+
+/* ---- layout ---- */
+
+header, #main-footer, #main-bottom {
+  margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+
+/* ---- components ---- */
+
+button {
+border: 1px solid;
+border-radius: 8px;
+line-height: 50px;
+width:100%;
+font-weight: bold;
+padding: 0;
+}
+
+/* Flex */
+
+.discover-why, footer {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* ---- Nav ---- */
+
+nav {
+  background-color: white;
+  width: 100%;
+  position: sticky;
+  top:0;
+}
+
+nav img {
+  width:120px;
+}
+
+/* Header */
+
+header img {
+  width:100%;
+}
+
+.get-started-button {
+  background-color: #192592;
+  color:white;
+}
+
+header p:last-child {
+  text-align: center;
+}
+
+/* Discover why section */
+
+.discover-why {
+  padding: 0 20px;
+  background-color: #F4F3F4;
+  text-align: center;
+  justify-content: center;
+}
+
+.discover-why img {
+  width: 200px;
+  padding: 20px 10px;
+}
+
+.discover-why button {
+  border-color: #192592;
+  color: #192592;
+  background-color: white;
+}
+
+/* Footer */
+
+footer ul {
+  list-style: none;
+  display:inline-block;
+  line-height: 50px;
+  color: #5b5e6d;;
+}
+
+footer {
+  justify-content: space-between;
+}
+
+#slack-logo-footer {
+  width: 150px;
+}
+
+.footer-bottom {
+  background-color:  #F4F3F4;
+}
