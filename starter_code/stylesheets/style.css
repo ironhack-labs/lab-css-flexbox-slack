@@ -41,7 +41,7 @@ nav > img {
 }
 nav ul {
   list-style-type: none;
-
+  width:0%;
 }
 .fa {
   padding-right: 10%;
@@ -50,16 +50,19 @@ nav ul {
 
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   padding: 80px 7%;
 }
 header h1 {
   font-size: 2.3em;
+  align-self: flex-end;
+  color:  #2C303F;
 }
 header p {
   padding: 20px 0;
   font-size: 1.2em;
-  align-self: flex-start;
+  align-self: flex-end;
+  /* width: 50%; */
 }
 header > img {
   order: 1;
@@ -222,7 +225,6 @@ main p {
 }
 .legal-content * {
   padding: 5px;
-
 }
 .legal-content > img[alt*="usa"]{
   max-width: 100%;
@@ -365,6 +367,9 @@ main p {
 }
 
 @media screen and (min-width: 961px) and (max-width: 1023px) {
+  nav ul {
+
+  }
   .get-started {
     flex-wrap: nowrap;
     align-content:  center;
@@ -381,7 +386,7 @@ main p {
     width: 40%;
     align-self: center;
   }
-
+  
   header > img {
     width: 65%;
     align-self: center;
@@ -442,9 +447,7 @@ main p {
     margin: 0;
   }
 
-  .footer {
-    
-  }
+
 
   .footer-main {
     display: flex;
@@ -485,4 +488,180 @@ main p {
     justify-content: space-between;
     padding-right: 2%;
   }
-}
+} 
+ 
+@media screen and (min-width: 1024px) {
+  nav ul {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  nav li {
+    padding: 0 20px;
+  }
+  nav li:last-child {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  header p {
+    color: #5b5e6d;
+  }
+  nav i{
+    width: 0%;
+    display: none;
+    color: white;
+  }
+  .right-header {
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  header div:first-child {
+    width: 40%;
+    display: flex;
+  }
+  header div:nth-child(2) {
+    width: 60%;
+    padding-left: 70px;
+  }
+  #email {
+    width: 0%;
+    border: 0px;
+    position: absolute;
+    display: none;
+  }
+  .partners h2 {
+    font-size: 2em;
+  }
+  .get-started {
+    flex-wrap: wrap;
+    align-content: flex-end;
+    box-sizing: border-box;
+    /* flex-direction: column; */
+  }
+
+
+  #btn-get-started {
+    width: 40%;
+    align-self: flex-start;
+  }
+
+  header img {
+    /* width: 40%; */
+    align-self: flex-end;
+    max-width: 100%;
+    height: 412px;
+    justify-self:  flex-end;
+  }
+
+  .btn-discover {
+    width: 30%;
+    align-self: center;
+  }
+
+  .partners-img {
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .partners-img > img {
+    width: 15%;
+    padding: 5%;
+    max-width:  100%;
+  }
+
+  .partners-img img:nth-child(3n+2) {
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+  }
+
+  .partners-img > img:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .partners-img >img:not(:nth-last-child(-n+3)) {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .try-it {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .try-it-signin-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 40%;
+  }
+
+  #email2 {
+    display: flex;
+    width: 0%;
+    height: 40px;
+    margin-right: 3px;
+    border: 0px;
+  }
+
+  .btn-start {
+    width: 60%;
+    height: 60px;
+    margin: 0;
+    justify-content: flex-end;
+  }
+
+
+
+  .footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-main img {
+    margin: 0;
+    width: 5%;
+    padding: 1% 1% 1% 7%;
+    align-self: flex-start;
+  }
+
+  .links {
+    width: 80%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .links ul {
+    width: 50%;
+  }
+
+  .legal {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2% 0;
+  }
+
+  .bottom-right {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2%;
+  }
+
+  header h1 {
+    color: #2C303F;
+    font-size: 5em;
+  }
+} 
