@@ -5,3 +5,294 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* 
+ * Extra small screen 
+ * ------------
+ */
+                                          /* REMOVE WINDOW SCROLLING BARS */
+@media (max-width: 768px) {
+  html {
+    /* background-color: red; */
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  .container {
+  margin: 40px; 
+}
+
+
+  h1 {
+  font-size: 65px;
+  padding-top: 150px;
+}
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    border-bottom: 2px solid grey;
+    /* left border fuck up AND no border on the right  */
+  } 
+
+  nav img {
+    width: auto;
+    height: 100px;
+
+  }
+
+  .small-hiding {
+    display: none;
+  }
+
+  /* hr {
+    color: grey; DOESN'T WORK ??
+  } */
+
+  .center {
+    display: flex;
+    margin: auto;
+  }
+
+  .first-text {
+    color: #5b5e6d;
+    font-size: 30px;
+    /* Text move when resize the window */
+  }
+
+  .company {
+    background-color: #F4F3F4;
+  }
+
+  .p-text{
+    text-align: center;
+    font-size: 30px;
+    color: #5b5e6d;
+  }
+
+  header {
+    margin-top: 100px;
+  }
+
+  input {
+    height: 8vh;
+    width: 60vw;
+    font-size: 25px;
+    font-weight: 200;
+  }
+
+  .get-started-button {
+    background-color: #192592;
+    border: #192592;
+    /* border-radius: ; Cannot set this, otherwise the button will looks cut */
+    padding: 0px 180px;  /* Using this to get the text center  */
+    color: white;
+    height: 8vh;
+    width: 60vw;
+    font-weight: 600;
+    font-size: 20px; /*Get text on the same line*/
+    }
+
+  header a {
+    color: #192592;
+  }
+
+  header > img {
+    width: auto;
+    height: 600px;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #2C303F;
+  }
+  .other-button {
+    border: 1px solid #192592;
+    /* border-radius: 5%;    SAME PROBLEM*/ 
+    /* padding: 12px; */
+    color: #192592;
+    background-color: white;
+    padding: 0px 180px; /* Using this to get the text center  */
+    height: 8vh;
+    width: 60vw;
+    /* text-align: center;          DON'T WORK ??*/ 
+  }
+
+  .brand-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brand-logo img {
+    width: 45vw;
+    height: auto;
+    padding: 70px 0;
+    border-bottom: 2 solid gray; /*Cannot use this to create an underline between each img ??*/
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ * Large screen 
+ * ------------
+ */
+/* REMOVE WINDOW SCROLLING BARS */
+@media (min-width: 1024px) {
+  html {
+    /* background-color: red;  */
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  .container {
+  margin: 40px; 
+}
+
+
+  h1 {
+  font-size: 65px;
+  padding-top: 50px;
+  color : #2C303F;
+}
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    border-bottom: 2px solid grey;
+    /* left side border weird   */
+  } 
+
+  nav img {
+    width: auto;
+    height: 100px;
+
+  }
+
+  .company {
+    background-color: #F4F3F4;
+    padding-top: 100px;
+  }
+
+  hr {
+    color: grey;
+  }
+
+  .center {
+    display: flex;
+    margin: auto;
+  }
+
+  .first-text {
+    color: #5b5e6d;
+    font-size: 30px;
+    /* Text move when resize the window */
+  }
+
+  .p-text{
+    text-align: center;
+    font-size: 30px;
+    color: #5b5e6d;
+  }
+
+  header {
+    padding-top: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  input { 
+    height: 8vh;
+    width: 30vw;
+    font-size: 25px;
+    font-weight: 200;
+  }
+
+  .get-started-button {
+    background-color: #192592;
+    border: #192592;
+    /* border-radius: ; Cannot set this, otherwise the button will looks cut */
+    padding: 0px 180px;  /* Using this to get the text center  */
+    color: white;
+    height: 9vh;
+    width: 30vw;
+    font-weight: 600;
+    font-size: 20px; /*Get text on the same line*/
+    }
+
+  header a {
+    color: #192592;
+  }
+
+  header img {
+    width: auto;
+    height: 800px;
+    padding-top: 100px;
+  }
+
+  .img-hide {
+    display: none;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .other-button {
+    border: 1px solid #192592;
+    /* border-radius: 5%;    SAME PROBLEM*/ 
+    /* padding: 12px; */
+    color: #192592;
+    background-color: white;
+    padding: 0px 180px; /* Using this to get the text center  */
+    height: 8vh;
+    width: 27vw;
+    /* text-align: center;          DON'T WORK ??*/ 
+  }
+
+  .brand-logo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brand-logo2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brand-logo img {
+    width: 20vw;
+    height: auto;
+    padding: 60px 80px;
+  }
+
+  hr {
+    display: none;
+  }
+}
