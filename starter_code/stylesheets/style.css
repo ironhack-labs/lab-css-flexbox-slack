@@ -5,3 +5,390 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body p{
+  color: #5b5e6d;
+}
+
+.nav-container {
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid #f4f3f4;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+
+.logo {
+  height: 100%;
+}
+
+.nav-links {
+  display: none;
+}
+
+h1 {
+  color: #2C303F;
+  width: 60vw;
+  font-size: 2.4em;
+}
+
+.header-p {
+  width: 100%;
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+header input, .main-second input {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 1em;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 1em;
+  border: 1px solid #f4f3f4;
+}
+
+header div {
+  text-align: center;
+  width: 100%;
+}
+
+header button, .main-second button {
+  background-color: #192592;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  height: 4em;
+  font-weight: bold;
+  margin: 1.8em auto 0px;
+}
+
+.already-comment {
+  text-align: center;
+  width: 100%;
+}
+
+.already-comment a {
+  text-decoration: none;
+  border-bottom: #192592 solid 1px;
+  padding-bottom: 2px;
+}
+
+header img {
+  text-align: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.main-first {
+  background-color: #F4F3F4;
+  text-align: center;
+  padding: 2em 7%;
+}
+
+.main-first h2 {
+  text-align: center;
+  font-size: 1.6em;
+  color: #2C303F;
+}
+
+.main-first p {
+  text-align: center;
+  font-size: 1.25em;
+  margin: 0px 7%;
+}
+
+.main-first button {
+  background-color: white;
+  border: 1px solid #192592;
+  border-radius: 5px;
+  color: #192592;
+  height: 4em;
+  font-weight: bold;
+  margin-top: 1.8em;
+  margin-bottom: 1.8em;
+  width: 100%;
+}
+
+.main-first img {
+  max-height: 50px;
+  max-width: 80%;
+  display: block;
+  margin: 8px auto 0px;
+  /* border-bottom: 1px solid black; */
+  padding: 35px;
+}
+
+.main-second {
+  text-align: center;
+}
+
+.main-second p:first-of-type {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #2C303F;
+  margin-bottom: -10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.footer-container li {
+  list-style-type: none;
+}
+
+.footer-logo {
+  height: 100px;
+}
+
+footer ul {
+  flex-grow: 1;
+  width: 30%;
+  color: #5b5e6d;
+}
+
+footer ul li:first-child {
+  font-weight: bold;
+}
+
+footer ul li {
+  line-height: 3em;
+}
+
+.footer-bottom {
+  background-color: #F4F3F4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.footer-bottom ul {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-bottom li{
+  list-style-type: none;
+  display: inline;
+  margin: 0px 7px;
+}
+
+.footer-bottom img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.footer-bottom i {
+  margin: 0 7px;
+  color: #5b5e6d;
+}
+
+.footer-bottom div span {
+  line-height: 40px;
+  color: #5b5e6d;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.container div:first-of-type {
+  height: 60px;
+}
+
+/*
+* CSS rules for small screens
+*--------------------------------------------------------------------------------
+*/
+@media (min-width: 767px) {
+  body {
+    padding: 25px;
+  }
+
+  header input {
+    width: 50%;
+  }
+
+  header div:first-of-type {
+    width: 25%;
+    display: inline-block;
+  }
+  
+  header button {
+    height: 4.6em;
+    box-sizing: border-box;
+  }
+
+  .already-comment {
+    text-align: left;
+  }
+
+  header img {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .main-first button {
+    width: 25%;
+  }
+
+  .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .img-container div {
+    width: 40%;
+  }
+
+  .main-first img {
+    max-width: 70%;
+  }
+
+  .main-second {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #F4F3F4;
+    padding-bottom: 30px;
+  }
+
+  .main-second div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+  }
+
+  .main-second p:first-of-type {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .main-second input, .main-second button {
+    width: 25%;
+    flex-shrink: 1;
+    margin: auto 3px;
+  }
+
+  .footer-logo {
+    float: left;
+  }
+
+  .footer-container {
+    padding-bottom: 30px;
+  }
+
+  .footer-container ul {
+    width: 15%;
+  }
+
+  .footer-container li {
+    line-height: 2em;
+  }
+
+  .footer-bottom {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-left: 25px;
+  }
+
+  .footer-bottom li {
+    font-weight: bold;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    align-items: baseline;
+    padding-top: 20px;
+  }
+
+  .container div:first-of-type {
+    margin-right: 20px;
+  }
+
+  .footer-bottom img {
+    height: 20px;
+  }
+
+  .footer-bottom span {
+    height: 60px;
+  }
+}
+
+/*
+* CSS rules for medium screens
+*-------------------------------------------------------------------------------
+*/
+@media (min-width: 961px) {
+  .img-container div {
+    width: 28%;
+  }
+}
+
+/*
+* CSS rules for large screens
+*-------------------------------------------------------------------------------
+*/
+@media (min-width: 1200px) {
+
+  .nav-links {
+    display: block;
+    list-style-type: none;
+    position: absolute;
+    right: 20px;
+    top: -10px;
+  }
+
+  .nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.2em;
+    color: #5b5e6d;
+  }
+
+  .nav-links li:last-of-type {
+    border: solid 1px #5b5e6d;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  input {
+    display: none;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  .header-p {
+    width: 100%;
+  }
+
+  header img {
+    max-height: 450px;
+  }
+}
