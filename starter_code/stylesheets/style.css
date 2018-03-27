@@ -5,3 +5,126 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body{
+    background: #f4f3f4;
+    margin: 0;
+}
+
+button{
+    color: #192592;
+}
+
+p{
+    color: #5b5e6d;
+}
+
+nav{
+    color: #fb5e6d;
+    border: 1px solid rgba(100, 100, 100, .2);
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    background-color: #f4f3f4;
+    
+}
+
+title{
+    color: #2c303f;
+}
+button{
+    background-color: rgb(148, 42, 224);
+    color: white;
+}
+.companies img{
+    border-top: 1px solid rgba(100, 100, 100, .2);
+    padding: 50px 0px;
+}
+
+nav ul{
+    display: none;
+}
+nav img{
+    width: 20vw;
+    padding-left: 15px;
+}
+
+header{
+    padding-top: 80px;
+    
+}
+
+footer ul{
+    list-style-type: none;
+    color: gray;
+}
+@media (max-width: 767px) {
+    .companies,
+    header,
+    footer{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .companies *,
+    header *,
+    main,
+    footer *{
+        margin: 0 auto;
+        width: 80vw;
+        padding: 10px 0;
+    }
+    
+    
+    footer ul{
+        width: 50%;
+        float: left;
+    }
+    
+    button{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 961px) {
+    button{
+        width: auto;
+        padding: 15px;
+    }
+
+    header,
+    footer{
+        margin: auto 35px;
+    }
+
+    footer :first-child ul,
+    footer :first-child img{
+        width: 20%;
+        float: left;
+        padding: 0;
+        height: 150px;
+        line-height: 35px;
+    }
+
+    footer :first-child{
+        overflow: auto;
+    }
+
+    .companies{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+    .companies button{
+        margin: 20px 40%;
+    }
+    .companies img{
+        width: 48%;
+        height: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
