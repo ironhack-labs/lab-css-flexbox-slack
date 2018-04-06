@@ -5,3 +5,103 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* Iteration 1 | Extra Small Screen (width < 768px) */
+
+@media (min-width: 768px ){
+  html,body {
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    color: ##333646;
+    margin: auto;
+  }
+
+
+/* font styling */
+h1 {
+ padding-top: 100px;
+}
+
+p {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5em;
+}
+
+/* image styling */
+.logo {
+  max-height: 100px;
+}
+
+.homeTalking {
+  max-width: 336px;
+}
+
+.brandLogos {
+  max-width: 150px;
+}
+
+/* structure */
+.navMenu {
+display: flex;
+justify-content: space-between;
+position: fixed;
+width: 100%;
+height: 100px;
+}
+
+nav ul {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 0.5rem;
+  max-height: 0;
+  display: none;
+  visibility: hidden;
+    /* width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    list-style: none; */
+}
+
+nav ul li {
+  padding: 0 5px;
+}
+
+header .center{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-self: center;
+}
+
+header h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+header .homeTalking {
+ width: 600px;
+ max-height: 600px;
+ align-self: center;
+}
+
+.goodCompany {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.buttonGetStarted {
+  text-transform: uppercase;
+  background-color: #192592;
+  text-decoration: none;
+  word-wrap: break-word;
+  color: #FFFFFF;
+  padding: 2em;
+  border-radius: .5em;
+  width: 100%;
+  margin: 1em;
+  align-self: center;
+}
+
+}
