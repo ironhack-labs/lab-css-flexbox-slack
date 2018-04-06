@@ -5,3 +5,58 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+.flex-container {
+display: flex;
+flex-direction: column;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  box-sizing: border-box;
+  border-bottom: 1px solid grey;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.my-slack {
+  display:flex;
+  width: 150px;
+  align-items: center;
+}
+
+.my-slack img{
+  width: 200px;
+}
+
+.head-img{
+  order: 1;
+  flex-basis: 50%;
+}
+
+
+.burger {
+    display: flex;
+    margin-left: auto;
+    width: 4rem;
+    height: 4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: padding 100ms ease;
+}
+@media screen and (max-width: 767px){
+  header{
+    flex-direction: column;
+  }
+  
+}
