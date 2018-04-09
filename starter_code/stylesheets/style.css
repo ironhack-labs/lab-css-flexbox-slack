@@ -15,9 +15,21 @@ nav grey: #5b5e6d;
   display: flex;
 }
 
+h1, h2{
+  text-align: center;
+}
+
+p {
+  color: #5b5e6d;
+}
+
+.clearfix {
+  clear: both;
+}
+
 @media (max-width: 768px) {
   nav {
-    position: sticky;
+    position: sticky; /*fixed pos should be used, but I cannot clear it*/
     height: fit-content;
     justify-content: space-around;
   }
@@ -30,5 +42,43 @@ nav grey: #5b5e6d;
   .glyphicon {
     margin-top: 25px
   }
-}
 
+  header {
+    flex-direction: column;
+  }
+
+  .talking {
+    order: 1;
+    width: 40%;
+    height: 40%;
+    align-self: center;
+  }
+
+  p {
+    padding: 0 20%;
+  }
+
+  header button {
+    vertical-align: middle;
+    background-color: #192592;
+    color: white;
+    margin: 0 20%;
+    content: hide;
+    position: relative;
+  }
+  
+  header button:after {
+    content:"GET SLACK FOR ANDROID";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #192592;
+    font-size: 0.8em;
+  }
+
+  .sign-in {
+    visibility: hidden
+  }
+}
