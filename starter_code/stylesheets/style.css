@@ -47,7 +47,7 @@ p {
     margin-top: 25px
   }
 
-  header, .good-company, .try-it {
+  header, .good-company, .try-it, .links {
     flex-direction: column;
   }
 
@@ -116,15 +116,55 @@ p {
   }
 
   .pound {
-    width: 10%;
+    width: 15%;
+    margin: auto 9em;
   }
 
-  .wrap {
-    flex-wrap: wrap;
+  .left-col, .right-col{
+    align-items: flex-start;
+    flex-basis: 35%;
+  }
+
+  .lists{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    font-size: 1em;
+    line-height: 2.5em;
+    color: #323747;
+    margin: auto auto 2em 8em;
+  }
+
+  .head-link {
+    font-size: 1.4em;
+  }
+
+  footer {
+    box-sizing: border-box;
+  }
+
+  footer > div + div ul {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
   }
 
   ul {
     list-style-type: none;
     line-height: 1.8em;
+    color: #5b5e6d;
+  }
+
+  .flag-section {
+    text-align: center;
+    margin: 1em auto;
+    background-color: #F4F3F4;
+  }
+
+  #us-flag {
+    width: 2%;
+    height: 2%;
+    margin: 1.6em auto;
   }
 }
