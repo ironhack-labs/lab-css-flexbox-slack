@@ -5,3 +5,661 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    color: #5b5e6d;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 2px solid rgba(1,1,1,.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+    position: fixed;
+}
+
+
+nav img {
+    width: 30%;
+}
+
+nav li {
+    border-bottom: 2px solid lightgrey;
+    font-family: 'Open Sans';
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+nav li:hover {
+    background-color: #192592;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul{
+    display: none;
+    list-style-type: none;
+    transition:all .6s ease-in;
+}
+
+.hamburguer{
+    font-size: 40px;
+    float: right;
+    margin: 13px;
+    padding: 5px;
+    color: grey;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 8% 0 8%
+}
+
+header h1{
+    color: #2C303F;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+header input {
+    border: 1px solid lightgray;
+    padding: 1em;
+    border-radius: 5px;
+    color: grey;
+}
+
+header button{
+    margin-top: 5%;
+    background-color: #323ea9;
+    border-radius: 5px;
+    color: white;
+    padding: 1em;
+}
+
+.sign-in{
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#home-talking {
+    order: 5;
+    width: 100%;
+    margin-top: 10%;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+}
+
+.discover{
+    background-color: #F4F3F4;
+    display: flex;
+    flex-direction: column;
+}
+
+section h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.7em;
+}
+
+.discover p{
+    padding: 0 10%;
+    text-align: center;
+}
+
+.discover button{
+    color: #192592;
+    background-color: white;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    padding: 15px;
+    width: 90%;
+    align-self: center;
+    height: 80px;
+}
+
+.try{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.try p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #2C303F;
+}
+.try form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.try input{
+    border: 1px solid lightgray;
+    padding: 1em;
+    border-radius: 5px;
+    color: grey;
+}
+
+.try button{
+    margin-top: 5%;
+    background-color: #323ea9;
+    border-radius: 5px;
+    color: white;
+    padding: 1em;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+}
+
+.foot img{
+    width: 30%;
+}
+
+.footin{
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F3F4;
+}
+
+.footin ul{
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+.footin li{
+    list-style-type: none;
+    display: inline;
+    font-size: 0.9em;
+    padding: 0 0.5em;
+}
+
+.last{
+    display: flex;
+    flex-direction: column;
+}
+
+.idioma{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.idioma img{
+    width: 7%;
+    height: 2%;
+}
+
+.idioma i {
+    padding: 0 5%;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.redes i{
+    padding: 5% 10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+
+    body{
+        font-size: 20px;
+    }
+
+    nav img {
+        width: 20%;
+    }
+
+    header h1{
+        color: #2C303F;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    header input {
+        font-size: .8em;
+        height: 20%;
+        padding: 20px;
+    }
+    
+    header button{
+        padding: 20px;
+    }
+    .form-header{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .image-header{
+        height: 300px;
+        display: flex;
+        align-self: center;
+    }
+
+    section{
+        border-bottom: 1px solid lightgrey;
+    }
+
+    section img{
+        width: 30%;
+        margin: 0;
+        padding: 5%;
+    }
+
+    .logos{
+        display: flex;
+        flex-direction: column;
+    }
+    .logos div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        align-self: center;
+        border-bottom: .5px solid lightgrey;
+    }
+    .logos div img{
+        width: 300px;
+        margin: 0;
+        padding: 6vh;
+    }
+    .logos div:last-child{
+        border-bottom: none;
+    }
+   
+    .try{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 6% 0;
+    }
+    .try div{
+        width: 85%;
+    }
+
+    .try p:first-child{
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .try input{
+        padding: 3%;
+        font-size: .7em;
+    }
+    
+    .try button{
+        padding: 3%;
+        font-size: .7em;
+    }
+
+    .foot img{
+    width: 15%;
+    height: 15%;
+    
+    }
+
+    .foot{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+   .footer-columns ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+   }
+   .footer-columns p{
+       font-weight: bold;
+   }
+   .footer-columns ul li{
+    padding: 10px 0 10px 0;
+   }
+
+    .footin{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .footin li{
+        font-size: 0.6em;
+        padding: 0 0.5em;
+    }
+
+    .idioma{
+        align-items: center;
+        font-size: 0.6em;
+    }
+
+    .redes{
+        align-items: center;
+    }
+
+    .idioma img{
+        width: 10%;
+        height: 60%;
+    }
+
+}
+@media screen and (min-width: 769px) and (max-width: 961px){
+    body{
+        width: 100%;
+    }
+    .hamburguer{
+        font-size: 38px;
+        margin: 6px;
+        padding: 5px;
+    }
+    nav{
+        z-index: 500;
+    }
+    nav img{
+        width: 15%;
+    }
+    header{
+        padding: 80px 8% 0 8%;
+    }
+    header h1{
+        font-size: 4.5em;
+    }
+    header p{
+        font-size: 1.4em;
+    }
+    header button{
+        padding: 1.2em;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    header input {
+        font-size: 20px;
+        width: 35%;
+        padding: 1.2em;
+    }
+    .sign-in{
+        font-size: 1.7em;
+        text-align: left;
+    }
+    .image-header{
+        display: flex;
+        align-self: center;
+    }
+    section h2{
+        font-size: 3em;
+        font-weight: bold;
+        color: #312f2f;
+        margin-bottom: 0;
+    }
+    .discover p{
+        font-size: 1.2em;
+    }
+    .discover button {
+        font-size: 1.2em;
+        width: 30%;
+    }
+    .logos{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 4vh;
+    }
+    .logos div{
+        text-align: center;
+        height: 100%;
+    }
+    .logos div img{
+        width: 300px;
+        padding: 4em;
+    }
+    .bordebr{
+        border-bottom: 1px solid rgba(1,1,1,.2);
+        border-right: 1px solid rgba(1,1,1,.2);
+    }
+    .bordebot{
+        border-bottom: 1px solid rgba(1,1,1,.2);
+    }
+    .borderi{
+        border-right: 1px solid rgba(1,1,1,.2);
+    }
+    .try{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 20vh;
+    }
+    .try p{
+        font-size: 40px;
+    }
+    .abso{
+        position: absolute;
+        left: 102px;
+        font-size: 33px !important;
+    }
+    .try form{
+        flex-direction: row;
+        display: inherit;
+        margin-top: 5vh;
+    }
+    .footer-columns{
+        width: 30%;
+        float: left;
+    }
+    .footer-columns ul{
+        list-style: none;
+        padding: 0;
+    }
+    .footer-columns ul li{
+        height: 30px;
+    }
+    .footer-columns p{
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .footin{   
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer img{
+        width: 20%;
+        float: left;
+    }
+    .foot{
+        flex-direction: row;
+        width: 76%;
+        float: right;
+        margin: 1vh;
+    }
+    .footin ul {
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+    }
+    .last{
+        flex-direction: row;
+        padding: 2vh;
+        font-size: 2vh;
+    }
+    .idioma{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .idioma img{
+        width: 13%;
+        height: 75%;
+    }
+    .redes{
+        font-size: 2.5vh;
+    }
+}
+
+@media screen and (min-width: 1024px){
+   
+   nav img{
+    width: 15%;
+   }
+   header img{
+    align-self: center;
+   }
+   .hamburguer{
+       display: none;
+   }
+   
+    .logos{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        height: 30vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+   }
+    .logos div img{
+       width: 50%;
+   }
+   .discover button {
+        font-size: 1.2em;
+        width: 30%;
+    }
+    .try{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 20vh;
+    }
+    .try p{
+        font-size: 40px;
+    }
+    .abso{
+        position: absolute;
+        left: 102px;
+        font-size: 33px !important;
+    }
+    .try form{
+        flex-direction: row;
+        display: inherit;
+        margin-top: 5vh;
+    }
+    .footer-columns{
+        width: 30%;
+        float: left;
+    }
+    .footer-columns ul{
+        list-style: none;
+        padding: 0;
+    }
+    .footer-columns ul li{
+        height: 30px;
+    }
+    .footer-columns p{
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .footin{   
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer img{
+        width: 20%;
+        float: left;
+    }
+    .foot{
+        flex-direction: row;
+        width: 76%;
+        float: right;
+        margin: 1vh;
+    }
+    .footin ul {
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+    }
+    .last{
+        flex-direction: row;
+        padding: 2vh;
+        font-size: 2vh;
+    }
+    .idioma{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .idioma img{
+        width: 13%;
+        height: 75%;
+    }
+    .redes{
+        font-size: 2.5vh;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    nav{
+        width: 100%;
+    }
+    nav img {
+        width: 7%;
+    }
+
+    nav ul{
+        display: inline;
+        list-style-type: none;
+        width: 40%;
+    }
+
+    nav ul li:nth-child(4) {
+        border: 1px solid lightgray;
+        padding: 2%; 
+        border-radius: 5px;
+    }
+
+    nav li{
+        display: inline;
+        border: none;
+        padding: 0 4%;
+    }
+    nav i{
+        opacity: 0;
+    }
+
+    #home-talking {
+        order: 0;
+    }
+    header{
+        padding: 110px 8% 0 8%;
+        text-align: center;
+        display: block;
+    }
+    .textohead{
+        width: 50%;
+        margin: 0 auto;
+    }
+    input{
+        display: none;
+    }
+}
