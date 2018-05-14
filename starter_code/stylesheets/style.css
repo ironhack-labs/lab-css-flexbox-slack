@@ -1,7 +1,963 @@
 /*
 background-grey: #F4F3F4;
-button-purple: #192592
+button-purple: #192592;
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+:root {
+    font-size: calc(1vh + 1vw + 0.5vmin);
+}
+body {
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    color: #1A1A1A;
+    margin: 0;
+}
+/*Diseño para móviles < 768px*/
+@media (max-width: 768px) {
+    .navBar{
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        border-bottom: 0.1em solid;
+        border-color:lightgray;
+        z-index: 1;
+    }
+    .navBar img{
+        width: 15vh;
+        position: fixed;
+        float: left;
+        margin-top: 1vh;
+        margin-left: 7vw;
+    }
+    .navBar ul{
+        display: none;
+        float: right;
+        margin-right: 5vw;
+        margin-top: 1vh;
+        font-size: 0.95em;
+    }
+    .navBar i.fa-bars{
+        float: right;
+        margin-right: 10vw;
+        margin-top: 2vh;
+        font-size: 6vh;
+    }
+    .slogan {
+        position: relative;
+        z-index: 0;
+        padding-top: 12vh;
+        width: 100%;
+    }
+    h1{
+        font-size: 2.5em;
+        padding-left: 7vw;
+        width: 84vw;
+    }
+    .pSlogan{
+        font-size: 2.5vh;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+    .signIn{
+        width: 100%;
+        margin-top: 5vh;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .signInElement{
+        width: 90%;
+        height:7vh;
+        margin: 2vh;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+    .signIn button.signInElement{
+        height: 8vh;
+        color:white;
+        background-color: #192592;
+        font-weight: bold;
+        font-size: 2.5vh;
+        margin-bottom: 5vh;
+        border-radius: 1vh;
+    }
+    .slogan div{
+        text-align: center;
+    }
+    .slogan img{
+        width: 340px;
+    }
+    .grayParag{
+        background-color:#F4F3F4;
+        border-top: 0.1em solid;
+        border-color: lightgray;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+    }
+    .grayParag h2.grayParagElement{
+        font-size: 3.5vh;
+        margin-top: 7vh;
+        margin-bottom: 0vh;
+    }
+    .grayParagElement{
+        width: 90%;
+        text-align: center;
+    }
+    .grayParag p.grayParagElement{
+        font-size: 2.4vh;
+        margin-bottom: 5vh;
+    }
+    .grayParag button.grayParagElement{
+        height: 8vh;
+        color:#192592;
+        font-weight: bold;
+        font-size: 2.2vh;
+        margin-bottom: 5vh;
+        border: 0.5px solid #192592;
+        border-radius: 1vh;
+    }
+    .grayParag div{
+        width: 70%;
+        border-bottom: 0.1em solid;
+        border-color: lightgray;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img.grayParagElement{
+        width: 25vh;
+    }
+    .tryItFree{
+        display: flex;
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 5vh;
+        height: 56vw;
+        border-bottom: 0.5px solid lightgray;
+    }
+    .tryItFreeElement{
+        width: 90%;
+        height:7vh;
+        font-size: 2.4vh;
+        text-align: center;
+        margin-top: 3vh;
+    }
+    .tryItFree h3{
+        font-size: 2.8vh;
+        margin-bottom: -5vh;
+    }
+    .tryItFree p{
+        margin-bottom: -5vh;
+    }
+    .tryItFree button.tryItFreeElement{
+        height: 8vh;
+        color:white;
+        background-color: #192592;
+        font-weight: bold;
+        font-size: 2.2vh;
+        margin-bottom: 5vh;
+        border-radius: 1vh;
+    }
+    .infoList{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+        color:#5b5e6d;
+    }
+    .infoListElement{
+        list-style-type: none;
+        font-size: calc(2.8vh + 0.2vw);
+        flex-basis: 30%;
+        padding-right: 6vw;
+    }
+    ul.infoListElement li{
+        padding-bottom: 2vh;
+    }
+    li.infoListElementSection{
+        font-weight: bold;
+    }
+    .slackLogo{
+        height: 20vh;
+        padding-right: 60vw;
+    }
+    .footer{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        background-color:#F4F3F4;
+        font-size: 2.3vh;
+    }
+    .listFooter li{
+        list-style-type: none;
+        display: inline;
+        padding-right: 5vw;
+    }
+    .imgFooter{
+        display: flex;
+        align-items: center;
+        margin-top: 2vh;
+    }
+    .imgFooter img{
+        height: 3.5vh;
+    }
+    .imgFooter span{
+        padding-left: 2vw;
+        padding-right: 4vw;
+    }
+    .iconsFooter{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    .iconsFooter i{
+        font-size: 3.5vh;
+    }
+}
+
+/*Diseño para móviles 768px < 961px*/
+
+@media (min-width: 769px) and (max-width: 960px) {
+    .navBar{
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        border-bottom: 0.1em solid;
+        border-color:lightgray;
+        z-index: 1;
+    }
+    .navBar img{
+        width: 15vh;
+        position: fixed;
+        float: left;
+        margin-top: 1vh;
+        margin-left: 7vw;
+    }
+    .navBar ul{
+        display: none;
+        float: right;
+        margin-right: 5vw;
+        margin-top: 1vh;
+        font-size: 0.95em;
+    }
+    .navBar i.fa-bars{
+        float: right;
+        margin-right: 10vw;
+        margin-top: 2vh;
+        font-size: 6vh;
+    }
+    .slogan {
+        position: relative;
+        z-index: 0;
+        padding-top: 12vh;
+        width: 100%;
+    }
+    h1{
+        font-size: 2.5em;
+        padding-left: 4vw;
+        width: 84vw;
+    }
+    .pSlogan{
+        font-size: 2.5vh;
+        padding-left: 4vw;
+        padding-right: 7vw;
+    }
+    .signIn{
+        width: 100%;
+        margin-top: 5vh;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: flex-start;
+        padding-left: 2vw;
+    }
+    .signInElement{
+        width: 40%;
+        height:7vh;
+        margin: 2vh;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+    .signIn button.signInElement{
+        height: 8vh;
+        color:white;
+        background-color: #192592;
+        font-weight: bold;
+        font-size: 2.5vh;
+        margin-bottom: 5vh;
+        border-radius: 1vh;
+        width: 25%;
+    }
+    p.signInElement{
+        width: 30%;
+        margin-top: -2vh;
+    }
+    .slogan div{
+        text-align: center;
+    }
+    .slogan img{
+        width: 340px;
+    }
+    .grayParag{
+        background-color:#F4F3F4;
+        border-top: 0.1em solid;
+        border-color: lightgray;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .grayParag h2.grayParagElement{
+        font-size: 3.5vh;
+        margin-top: 7vh;
+        margin-bottom: 0vh;
+    }
+    .grayParagElement{
+        width: 90%;
+        text-align: center;
+    }
+    .grayParag p.grayParagElement{
+        font-size: 2.4vh;
+        margin-bottom: 5vh;
+    }
+    .grayParag .grayParagButton{
+        width: 100%;
+        border: 0vh;
+    }
+    .grayParag button.grayParagElement{
+        height: 8vh;
+        color:#192592;
+        font-weight: bold;
+        font-size: 2.2vh;
+        margin-bottom: 5vh;
+        border: 0.5px solid #192592;
+        border-radius: 1vh;
+        width: 51%;
+    }
+    .grayParag div{
+        width: 49%;
+        border-bottom: 0.1em solid;
+        border-right: 0.05em solid;
+        border-left: 0.05em solid;
+        border-color: lightgray;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img.grayParagElement{
+        width: 25vh;
+    }
+    .tryItFree{
+        display: flex;
+        width: 94%;
+        flex-flow: column wrap;
+        margin-top: 5vh;
+        height: 18vh;
+        border-bottom: 0.5px solid lightgray;
+    }
+    .tryItFreeElement{
+        width: 50%;
+        height:7vh;
+        font-size: 2.4vh;
+        text-align: center;
+        margin-top: 3vh;
+    }
+    .tryItFree h3{
+        font-size: 2.8vh;
+        margin-bottom: -5vh;
+    }
+    .tryItFree p{
+        margin-bottom: -5vh;
+    }
+    .tryItFree button.tryItFreeElement{
+        height: 8vh;
+        color:white;
+        background-color: #192592;
+        font-weight: bold;
+        font-size: 2.2vh;
+        margin-bottom: 5vh;
+        border-radius: 1vh;
+        width: 25%
+    }
+    .tryItFree input{
+        width: 25%;
+    }
+    .infoList{
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        padding-top: 4vh;
+        color:#5b5e6d;
+    }
+    .infoListElement{
+        list-style-type: none;
+        font-size: 2.2vh;
+        flex-basis: 16%;
+    }
+    ul.infoListElement li{
+        padding-bottom: 2vh;
+    }
+    li.infoListElementSection{
+        font-weight: bold;
+    }
+    .slackLogo{
+        height: 20vh;
+        margin-top: -2vh;
+    }
+    .footer{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        background-color:#F4F3F4;
+        font-size: 2.1vh;
+        justify-content: space-between;
+    }
+    .listFooter{
+        width: 50%;
+    }
+    .listFooter li{
+        list-style-type: none;
+        display: inline;
+        padding-right: 1.5vw;
+    }
+    .imgFooter{
+        display: flex;
+        align-items: center;
+        width: 20%
+    }
+    .imgFooter img{
+        height: 3.5vh;
+    }
+    .imgFooter span{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .iconsFooter{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    .iconsFooter i{
+        font-size: 3.5vh;
+    }
+}
+
+/*Diseño para móviles 961px < 1024px*/
+
+@media (min-width: 961px) and (max-width: 1024px) {
+    .navBar{
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        border-bottom: 0.1em solid;
+        border-color:lightgray;
+        z-index: 1;
+    }
+    .navBar img{
+        width: 15vh;
+        position: fixed;
+        float: left;
+        margin-top: 1vh;
+        margin-left: 7vw;
+    }
+    .navBar ul{
+        display: none;
+        float: right;
+        margin-right: 5vw;
+        margin-top: 1vh;
+        font-size: 0.95em;
+    }
+    .navBar i.fa-bars{
+        float: right;
+        margin-right: 10vw;
+        margin-top: 2vh;
+        font-size: 6vh;
+    }
+    .slogan {
+        position: relative;
+        z-index: 0;
+        padding-top: 12vh;
+        width: 100%;
+    }
+    h1{
+        font-size: 2.5em;
+        padding-left: 4vw;
+        width: 84vw;
+    }
+    .pSlogan{
+        font-size: 2.5vh;
+        padding-left: 4vw;
+        padding-right: 7vw;
+    }
+    .signIn{
+        width: 100%;
+        margin-top: 5vh;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: flex-start;
+        padding-left: 2vw;
+    }
+    .signInElement{
+        width: 40%;
+        height:7vh;
+        margin: 2vh;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+    .signIn button.signInElement{
+        height: 8vh;
+        color:white;
+        background-color: #192592;
+        font-weight: bold;
+        font-size: 2.5vh;
+        margin-bottom: 5vh;
+        border-radius: 1vh;
+        width: 25%;
+    }
+    p.signInElement{
+        width: 30%;
+        margin-top: -2vh;
+    }
+    .slogan div{
+        text-align: center;
+    }
+    .slogan img{
+        width: 340px;
+    }
+    .grayParag{
+        background-color:#F4F3F4;
+        border-top: 0.1em solid;
+        border-color: lightgray;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .grayParag h2.grayParagElement{
+        font-size: 3.5vh;
+        margin-top: 7vh;
+        margin-bottom: 0vh;
+    }
+    .grayParagElement{
+        width: 90%;
+        text-align: center;
+    }
+    .grayParag p.grayParagElement{
+        font-size: 2.4vh;
+        margin-bottom: 5vh;
+    }
+    .grayParag .grayParagButton{
+        width: 100%;
+        border: 0vh;
+    }
+    .grayParag button.grayParagElement{
+        height: 8vh;
+        color:#192592;
+        font-weight: bold;
+        font-size: 2.2vh;
+        margin-bottom: 5vh;
+        border: 0.5px solid #192592;
+        border-radius: 1vh;
+        width: 51%;
+    }
+    .grayParag div{
+        width: 33%;
+        border-bottom: 0.1em solid;
+        border-right: 0.05em solid;
+        border-left: 0.05em solid;
+        border-color: lightgray;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img.grayParagElement{
+        width: 25vh;
+    }
+    .tryItFree{
+        display: flex;
+        width: 94%;
+        flex-flow: column wrap;
+        margin-top: 5vh;
+        height: 18vh;
+        border-bottom: 0.5px solid lightgray;
+    }
+    .tryItFreeElement{
+        width: 50%;
+        height:7vh;
+        font-size: 2.4vh;
+        text-align: center;
+        margin-top: 3vh;
+    }
+    .tryItFree h3{
+        font-size: 2.8vh;
+        margin-bottom: -5vh;
+    }
+    .tryItFree p{
+        margin-bottom: -5vh;
+    }
+    .tryItFree button.tryItFreeElement{
+        height: 8vh;
+        color:white;
+        background-color: #192592;
+        font-weight: bold;
+        font-size: 2.2vh;
+        margin-bottom: 5vh;
+        border-radius: 1vh;
+        width: 25%
+    }
+    .tryItFree input{
+        width: 25%;
+    }
+    .infoList{
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        padding-top: 4vh;
+        color:#5b5e6d;
+    }
+    .infoListElement{
+        list-style-type: none;
+        font-size: 2.2vh;
+        flex-basis: 16%;
+    }
+    ul.infoListElement li{
+        padding-bottom: 2vh;
+    }
+    li.infoListElementSection{
+        font-weight: bold;
+    }
+    .slackLogo{
+        height: 20vh;
+        margin-top: -2vh;
+    }
+    .footer{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        background-color:#F4F3F4;
+        font-size: 2.1vh;
+        justify-content: space-between;
+    }
+    .listFooter{
+        width: 50%;
+    }
+    .listFooter li{
+        list-style-type: none;
+        display: inline;
+        padding-right: 1.5vw;
+    }
+    .imgFooter{
+        display: flex;
+        align-items: center;
+        width: 20%
+    }
+    .imgFooter img{
+        height: 3.5vh;
+    }
+    .imgFooter span{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .iconsFooter{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    .iconsFooter i{
+        font-size: 3.5vh;
+    }
+}
+
+/*Diseño para móviles 1025px < */
+
+@media (min-width: 1025px){
+    .navBar{
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        background-color: white;
+        border-bottom: 0.1em solid;
+        border-color:lightgray;
+        z-index: 1;
+    }
+    .navBar img{
+        width: 15vh;
+        position: fixed;
+        float: left;
+        margin-top: 1vh;
+        margin-left: 7vw;
+    }
+    .navBar ul{
+        list-style-type: none;
+        float: right;
+        margin-right: 5vw;
+        margin-top: 2.5vh;
+        font-size: 2.4vh;
+    }
+    .navBar ul li{
+        display: inline-block;
+        margin-left: 1.6vw;
+    }
+    .elementInBox{
+        border: 0.1em solid;
+        padding: 1vh;
+        border-color:darkgray;
+        border-radius: 5px;
+    }
+    .navBar i.fa-bars{
+        display: none;
+        float: right;
+        margin-right: 10vw;
+        margin-top: 2vh;
+        font-size: 6vh;
+    }
+    .slogan {
+        position: relative;
+        z-index: 0;
+        padding-top: 12vh;
+        width: 100%;
+        display: flex;
+        height: 85vh;
+        flex-flow: column wrap;
+        background-color: white
+    }
+    h1{
+        font-size: 2.5em;
+        padding-left: 4vw;
+        padding-top: 5vh;
+        width: 44%;
+        order: 2;
+    }
+    .pSlogan{
+        font-size: 2.5vh;
+        padding-left: 4vw;
+        padding-right: 7vw;
+        width: 44%;
+        order: 3;
+    }
+    .slogan div.signIn{
+        width: 30%;
+        margin-top: 5vh;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: flex-start;
+        padding-left: 2vw;
+        order: 4;
+    }
+    .signInElement{
+        width: 40%;
+        height:7vh;
+        margin: 2vh;
+        font-size: 2.1vh;
+        text-align: center;
+    }
+    .signIn button.signInElement{
+        height: 8vh;
+        color:white;
+        background-color: #192592;
+        font-weight: bold;
+        font-size: 2.5vh;
+        margin-bottom: 5vh;
+        border-radius: 1vh;
+        width: 60%;
+    }
+    .signIn input.signInElement{
+        display: none;
+    }
+    p.signInElement{
+        width: 60%;
+        margin-top: -2vh;
+    }
+    .slogan div{
+        text-align: center;
+        width: 50%;
+        order: 1;
+    }
+    .slogan img{
+        width: 90%;
+        padding-top: 15vh;
+    }
+    .grayParag{
+        background-color:#F4F3F4;
+        border-top: 0.1em solid;
+        border-color: lightgray;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .grayParag h2.grayParagElement{
+        font-size: 3.5vh;
+        margin-top: 7vh;
+        margin-bottom: 0vh;
+    }
+    .grayParagElement{
+        width: 90%;
+        text-align: center;
+    }
+    .grayParag p.grayParagElement{
+        font-size: 2.4vh;
+        margin-bottom: 5vh;
+    }
+    .grayParag .grayParagButton{
+        width: 100%;
+        border: 0vh;
+    }
+    .grayParag button.grayParagElement{
+        height: 8vh;
+        color:#192592;
+        font-weight: bold;
+        font-size: 2.2vh;
+        margin-bottom: 5vh;
+        border: 0.5px solid #192592;
+        border-radius: 1vh;
+        width: 51%;
+    }
+    .grayParag div{
+        width: 33%;
+        border-bottom: 0.1em solid;
+        border-right: 0.05em solid;
+        border-left: 0.05em solid;
+        border-color: lightgray;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img.grayParagElement{
+        width: 25vh;
+    }
+    .tryItFree{
+        display: flex;
+        width: 94%;
+        flex-flow: column wrap;
+        margin-top: 5vh;
+        height: 18vh;
+        border-bottom: 0.5px solid lightgray;
+    }
+    .tryItFreeElement{
+        width: 50%;
+        height:7vh;
+        font-size: 2.4vh;
+        text-align: center;
+        margin-top: 3vh;
+    }
+    .tryItFree h3{
+        font-size: 2.8vh;
+        margin-bottom: -5vh;
+    }
+    .tryItFree p{
+        margin-bottom: -5vh;
+    }
+    .tryItFree button.tryItFreeElement{
+        height: 8vh;
+        color:white;
+        background-color: #192592;
+        font-weight: bold;
+        font-size: 2.2vh;
+        margin-bottom: 5vh;
+        border-radius: 1vh;
+        margin-left: 20vw;
+        width: 25%
+    }
+    .tryItFree input{
+        width: 25%;
+        display: none;
+    }
+    .infoList{
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        padding-top: 4vh;
+        color:#5b5e6d;
+    }
+    .infoListElement{
+        list-style-type: none;
+        font-size: 2.2vh;
+        flex-basis: 18%;
+    }
+    ul.infoListElement li{
+        padding-bottom: 2vh;
+    }
+    li.infoListElementSection{
+        font-weight: bold;
+    }
+    .slackLogo{
+        height: 20vh;
+        margin-top: -2vh;
+    }
+    .footer{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        background-color:#F4F3F4;
+        font-size: 2.1vh;
+        justify-content: space-between;
+    }
+    .listFooter{
+        width: 50%;
+    }
+    .listFooter li{
+        list-style-type: none;
+        display: inline;
+        padding-right: 1.5vw;
+    }
+    .imgFooter{
+        display: flex;
+        align-items: center;
+        width: 20%
+    }
+    .imgFooter img{
+        height: 3.5vh;
+    }
+    .imgFooter span{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .iconsFooter{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    .iconsFooter i{
+        font-size: 3.5vh;
+    }
+}
