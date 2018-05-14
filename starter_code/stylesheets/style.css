@@ -5,3 +5,380 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+p, li, button {
+    font-size: 1em;
+}
+li {
+    list-style: none;
+}
+.nav-menu > li  {
+    display: none;
+}
+
+nav {
+    display: inline-flex;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ebebeb;;
+    position: fixed;
+    top: 0;
+}
+
+nav > .logo {
+    display: flex;
+    width: 200px;
+    align-items: center;
+}
+nav > .logo > img {
+    width: 107px;
+    padding: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu i {
+    font-size: 30px;
+    padding: 20px;
+    color: #5b5e6d;
+}
+/* fin nav */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.intro-image > img {
+    height: 300px;
+}
+.intro-image {
+    order: 2;
+}
+
+header > .intro{
+    padding-top: 5em;
+    margin: 0 1.5rem;
+}
+
+header > .intro > h1,  header > .intro > h1 + p {
+    margin-bottom: 2rem;
+}
+
+header > .intro > p:last-child {
+    margin-bottom: 2rem;
+}
+
+header > h1 {
+    font-size: 2em;
+    text-align: left;
+}
+.intro > p {
+    color: #5b5e6d;
+    text-align: left;
+}
+
+.intro > p > a {
+    color: #192592;
+}
+button {
+    background-color: #192592;
+    border: 1px solid #192592;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+/* fin header */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 0.5px solid #ebebeb;
+}
+ .partners {
+    background-color: #F4F3F4;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+.partners > div {
+    margin: 0 1.5rem;
+}
+main > .partners > div > h2,
+main > .partners > div > p {
+    padding: 0.5em;
+}
+
+main > .partners > div > p {
+color: #5b5e6d;
+}
+
+.partners > div > button {
+    color:#192592;
+    background-color: white;
+    border: 1px solid #192592;
+    text-align: center;
+}
+
+.partners-logos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.partners-logos > div > img {
+    width: 12em;
+    padding: 2rem;
+}
+
+ .partners-logos > div {
+    border-bottom: 0.5px solid #ebebeb;;
+}
+.singin-two {
+    text-align: center;
+    padding: 2rem;
+    }
+    
+.singin-two > h3, p {
+     margin-bottom: 1rem;
+    }
+
+/*fin main*/
+
+.logo-footer > img{
+    width: 8em;
+}
+.footer-links {
+    margin: 0 1.5rem;
+    color: #5b5e6d;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+
+}
+.footer-links > ul > li:first-child{
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.footer-links > ul > li {
+    padding: 0.5rem;
+}
+
+.last-footer {
+    background-color: #F4F3F4;
+    color: #5b5e6d;
+    font-weight: bold;
+}
+
+.legal > ul {
+   display: flex;
+   justify-content: space-around;
+   padding: 1em;
+   width: 100%;
+}
+
+.language > img {
+    width: 1.3rem;
+}
+.language, .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.language > img {
+    margin: 0.5em;
+}
+.social-media > i {
+    padding: 0.5em;
+}
+
+
+@media (min-width: 1200px){
+    .nav-menu > li  {
+        display: inline;
+        margin-right: 2rem;
+    }
+
+    .nav-menu > li:last-child  {
+        border: 1px solid #5b5e6d;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro {
+        width: 50%;
+    }
+    
+    .intro-image > img {
+        height: 420px;
+    }
+    .intro-image {
+        order: 1;
+        padding-top: 5em;
+    }
+    .nav-menu i {
+        display: none;
+    }
+    div.partners-logos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+       }
+       button {
+        width: 30%;
+    }
+    .singin-two {
+     display: flex;
+     width: 100%;
+    }
+    .try-it{
+        width: 55%;
+        text-align: left;
+    }
+    .main-button {
+        width: 50%;
+        text-align: right;
+    }
+    .main-button > button {
+     width: 60%;
+     padding: 1rem;
+    }
+    .footer-links{
+     grid-template-columns: auto auto auto auto;
+    }
+ 
+     .last-footer {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+     }
+     .legal > ul {
+         padding: 2em;
+         margin-left: 0;
+     }
+     .legal > ul > li {
+         margin-right: 1rem;
+     }
+
+}
+@media (min-width: 961px) and (max-width: 1199px){
+    div.partners-logos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+       }
+       button {
+        width: 30%;
+    }
+    .singin-two {
+     display: flex;
+     width: 100%;
+    }
+    .try-it{
+        width: 55%;
+        text-align: left;
+    }
+    .main-button {
+        width: 50%;
+        text-align: right;
+    }
+    .main-button > button {
+     width: 60%;
+     padding: 1rem;
+    }
+    .footer-links{
+     grid-template-columns: auto auto auto auto;
+    }
+ 
+     .last-footer {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+     }
+     .legal > ul {
+         padding: 2em;
+         margin-left: 0;
+     }
+     .legal > ul > li {
+         margin-right: 1rem;
+     }
+}
+@media (min-width: 768px) and (max-width: 960px) { 
+
+   button {
+       width: 30%;
+   }
+   .partners-logos {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+   }
+   .singin-two {
+    display: flex;
+    width: 100%;
+   }
+   .try-it{
+       width: 55%;
+       text-align: left;
+   }
+   .main-button {
+       width: 50%;
+       text-align: right;
+   }
+   .main-button > button {
+    width: 60%;
+    padding: 1rem;
+   }
+   .footer-links{
+    grid-template-columns: auto auto auto auto;
+   }
+
+    .last-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .legal > ul {
+        padding: 2em;
+        margin-left: 0;
+    }
+    .legal > ul > li {
+        margin-right: 1rem;
+    }
+}
+
