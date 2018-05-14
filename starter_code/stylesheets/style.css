@@ -1,7 +1,121 @@
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
+purple main #3f46ad;
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
+primer query 1086x 729;
 */
+/*generales*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+.contenedor-nav{
+ width: 90%;
+ max-width: 1000px;
+ margin: auto;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+
+}
+ .nav-image img{
+    height: 58.59px;
+    width: 125px;
+ }
+
+.nav-ul{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    list-style: none
+}
+
+.nav-ul li{
+    padding: 16px 16px 16px 16px;
+    color: #5b5e6d;
+}
+
+.nav-ul li:last-child{
+    background-color: transparent;
+    border: solid #3f46ad;
+    padding: 10px;
+    border-radius: 4px;
+    line-height: 1;
+    transition: all 420ms;
+    
+}
+
+.nav-ul li:hover{
+    color: #3f46ad;
+    cursor: pointer;
+}
+
+.contenedor-nav .btn-menu{
+    unicode-range: f0c9;
+    display: none;
+    color:#3f46ad;
+    font-size: 3em;
+}
+.main{
+    display: -ms-grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+h1{
+    font-family: fantasy;
+    color: #2C303F;
+    font-size: 5em;
+}
+
+.btn-morado{
+    flex-direction: row;
+    background-color: #3f46ad;
+    text-justify: auto;
+
+}
+/* Extra Small Screen (width < 768px)*/
+
+@media screen and (max-width:768px){
+    .contenedor-nav{
+        flex-direction: column;
+    }
+
+    .nav-image{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .contenedor-nav .nav-image .btn-menu{
+        display: inline-block;
+    }
+
+    .contenedor-nav .nav-ul{
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
