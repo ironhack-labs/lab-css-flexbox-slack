@@ -7,11 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body>
-  <nav>
+  <nav id="main-nav" class="wrapper">
     <img src="./images/slack-logo.png" alt="slack_logo">
+    <i class="fas fa-bars"></i>
     <ul>
       <li>Why Slack?</li>
       <li>Pricing</li>
@@ -19,34 +22,58 @@
       <li>Your Workspaces</li>
     </ul>
   </nav>
-  <header>
+  <header class="wrapper">
+    <article>
+        <h1>Where Work Happens</h1>
+        <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+    </article>
+    <form action="" class="contact flex-res">
+      <input type="text" placeholder="Email adress">
+      <button class="btn" type="button" name="button">GET STARTED</button>
+      <p>Already using Slack? <a href="#">Sign in</a></p>
+    </form>
     <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
   </header>
+
+  
   <main>
-    <div>
+    <article id="company" class="grey-bg grey-line wrapper flex-res">
       <h2>You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
-    </div>
-    <div>
-      <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
-    </div>
+      <button class="btn">DISCOVER WHY</button>
+      <div>
+        <figure>
+            <img class="logo-company" src="./images/airbnb-logo.png" alt="">
+        </figure>
+        <figure>
+            <img class="logo-company" src="./images/capital-one-logo.png" alt="">
+        </figure>
+        <figure>
+            <img class="logo-company" src="./images/harvard-logo.png" alt="">
+        </figure>
+        <figure>
+            <img class="logo-company" src="./images/los-angeles-times-logo.png" alt="">
+        </figure>
+        <figure>
+            <img class="logo-company" src="./images/oracle-logo.png" alt="">
+        </figure>
+        <figure>
+            <img class="logo-company" src="./images/ticketmaster-logo.png" alt="">
+        </figure>        
+      </div> 
+    </article>
+  
+    <article class="wrapper">
+      <form action="" class="contact flex-res">
+          <p>Try it for free</p>
+          <p>Already using Slack? <a href="">Sign in</a></p>
+          <button class="btn" type="button" name="button">GET STARTED</button>
+      </form>
+    </article>
   </main>
-  <footer>
-    <div>
-      <img src="./images/iso-slack.png" alt="">
+  <footer class="">
+    <article id="down-nav" class="wrapper">
+      <img id="slack-ico" src="./images/iso-slack.png" alt="Slack icon">
       <ul>
         <li>COMPANY</li>
         <li>About Us</li>
@@ -79,23 +106,28 @@
         <li>Slack at Work</li>
         <li>Slack Fund</li>
       </ul>
-    </div>
-    <div>
-      <ul>
+    </article>
+    <article class="grey-bg grey-line wrapper">
+      <ul id="legal-nav">
         <li>Status</li>
         <li>Privacy & Terms</li>
         <li>Contact Us</li>
       </ul>
-      <div>
-        <img src="./images/us-flag.png" alt="">
-        <span>English (US)</span>
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-youtube-play" aria-hidden="true"></i>
-      </div>
-    </div>
+      <section id="user-foo">
+        <div id="lang">
+            <img id="icon-flag" src="./images/us-flag.png" alt="">
+            <span>English (US)</span>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <div id="social-links">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube"></i>
+        </div> 
+      </section>
+    </article>
   </footer>
+  
 </body>
 
 </html>
