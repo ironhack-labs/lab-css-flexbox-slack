@@ -5,3 +5,567 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+/* body */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: #5b5e6d;
+    width: 100vw;
+}
+/* nav */
+.outer-menu-nav
+{
+    position: fixed;
+    top:0;
+    left:0;
+    border-bottom:  #eeeeee 2px solid;
+    background-color: white;
+    padding: 20px 80px;
+}
+.menu-nav
+{
+    display: flex;
+    flex-direction: row;
+    /* padding: 20px 80px; */
+    justify-content: space-between;
+    align-items: center;
+    /* width:100%; */
+}
+.menu-nav .icon
+{
+    width: 25%;
+}
+.menu-nav div img
+{
+    width: 100%;
+}
+.menu-nav ul li
+{
+    display: none;
+}
+.menu-nav ul div
+{
+    color: #5b5e6d;
+    font-size: 50px;
+}
+/* header */
+header
+{
+    padding: 80px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+header h1
+{
+    font-size: 60px;
+    font-family: 'Merriweather', serif;
+}
+header h1 + p
+{
+    text-align:left;
+    font-size: 30px;
+    margin: 60px 0;
+    line-height: 50px;
+    /* width: 80%; */
+}
+header input, header button, main button, main input
+{
+    width: 100%;
+    padding: 40px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 30px 0 25px 0;
+    box-sizing: border-box;
+}
+header input, main input
+{
+    border: #dddddd solid 1px;
+}
+header button, main button
+{
+    background-color: #192592;
+    color: white;
+}
+header .already, main .try-it a
+{
+    text-align: center;
+    /* width: 80%; */
+    font-size: 30px;
+}
+header .already a, main .try-it a, header .already a:visited, main .try-it a:visited
+{
+    border-bottom: 2px #192592 solid;
+    text-decoration-color: transparent;     
+    color: #192592;
+}
+header figure
+{
+    text-align: center;
+    margin-top: 100px;
+}
+header figure img
+{
+    width: 100%;
+}
+/* main */
+main
+{
+    text-align: center;
+    border-bottom: 2px solid #eeeeee;
+}
+main .companies
+{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #eeeeee;
+    border-top: 2px solid #eeeeee;
+    background-color: #F4F3F4;   
+    padding-bottom: 200px;
+    padding: 100px 80px 150px 80px;
+}
+main .companies h2
+{
+    font-size: 45px;
+    font-family: 'Merriweather', serif;
+
+}
+main .companies p
+{
+    font-size: 30px;
+    margin: 40px 0;
+}
+main .companies button
+{
+    color: #192592;
+    border: 2px solid #192592;
+    background-color: white;
+    margin-bottom: 80px;
+}
+main .companies .company
+{
+    padding: 60px;
+    border-bottom:  #eeeeee 2px solid;
+    text-align: center;
+}
+main .companies .last-company
+{
+    border-bottom: transparent 2px solid;
+}
+main .companies .company img
+{
+    width: 60%;
+}
+main .try-it
+{
+    padding: 100px 60px 60px 60px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+main .try-it .try-it-for-free, main .try-it .already
+{
+    margin:0;
+}
+main .try-it .try-it-for-free
+{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+}
+/* footer */
+footer .lists
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer .lists .lists-logo-out
+{
+    display: block;
+}
+footer .lists .lists-logo-in
+{
+    display: none;
+}
+footer .lists img
+{
+    margin-top: 30px;
+    width: 30%;
+}
+footer .lists ul
+{
+    width: 40%;
+    text-align: left;
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+footer .lists ul li
+{
+    margin: 15px 0 15px 0;
+    font-size: 30px;
+}
+footer .lists ul > li:first-child
+{
+    font-weight: bold;
+}
+footer .second
+{
+    background-color: #F4F3F4;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+footer .second ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+footer .second ul li
+{
+    margin: 30px 30px;
+}
+footer .second div
+{
+    text-align: center;
+}
+footer .second div img
+{
+    width: 20px;
+}
+footer .second div .social
+{
+    margin-top: 60px;
+}
+footer .second div i
+{
+    margin: 5px 20px;
+    font-size: 40px;
+}
+
+/* @media (min-width: 767px) AND (max-width: 961px) */
+@media (min-width: 767px) 
+{
+    /* header */
+    header input
+    {
+        width: 50%;
+        display: inline-block;
+        font-size: 18px;
+        padding: 20px 40px;
+        margin-right: 10px;
+    }
+    header button
+    {
+        width: 35%;
+        display: inline-block;
+        font-size: 18px;
+        padding: 20px 40px;
+    }
+    header h1 + p
+    {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    header .already
+    {
+        text-align:left;
+        font-size: 18px;        
+    }
+    /* main */
+    main .companies
+    {
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+    main .companies h2
+    {
+        font-size: 28px;
+    }
+    main .companies p
+    {
+        font-size: 18px;
+        margin-top: 25px;
+        margin-bottom: 18px;
+    }
+    main .companies button
+    {
+        width: 40%;
+        font-size: 20px;
+        padding: 20px 30px;
+        margin: auto;
+    }
+    main .companies .companies-logos
+    {
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    main .companies .company
+    {
+        display: inline-block;
+        width: 48%;
+        padding:  5% 0;
+    }
+    main .companies .company:nth-child(even)
+    {
+        flex-wrap: wrap;
+        border-left: #eeeeee 2px solid;
+        border-bottom: #eeeeee 2px solid;
+    }
+    main .companies .company:nth-child(odd)
+    {
+        flex-wrap: wrap;
+        /* border-right: #eeeeee 2px solid; */
+        border-bottom: #eeeeee 2px solid;
+    }
+    main .companies .company:nth-child(6), main .companies .company:nth-child(5)
+    {
+        flex-wrap: wrap;
+        border-bottom: transparent 2px solid;
+    }
+    main .try-it
+    {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    main .inner-try-it
+    {
+        flex-grow:3;
+    }
+    main .inner-try-it .try-it-for-free
+    {
+        font-size: 24px;
+    }
+    main .inner-try-it, main .inner-try-it a
+    {
+        text-align: left;
+        font-size: 18px;
+    }
+    main .try-it input, main .try-it button
+    {
+        font-size: 14px;
+        flex-grow: 1;
+        width: 20%;
+        padding: 22px 32px;
+    }
+    main .try-it input
+    {
+        margin-right: 5px;
+    }
+    /* footer */
+    footer .lists-logo-out
+    {
+        display: none;
+    }
+    footer .lists
+    {
+        /* align-items: flex-start; */
+        margin-top: 50px;
+    }
+    footer .lists ul
+    {
+        width: 20%;
+    }
+    footer .lists ul li
+    {
+        margin: 10px;
+        font-size: 14px;
+    }
+    footer .lists .lists-logo-in
+    {
+        display: block;
+        width: 10%;
+        margin: 0 20px;
+    }
+    footer .lists .lists-logo-in img
+    {
+        width: 100%;
+        margin:0;
+    }
+    footer .second
+    {
+        flex-direction: row;
+        font-size: 16px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 30px;
+    }   
+    footer .second ul
+    {
+        margin-bottom: 0;
+    }
+    footer .second ul li
+    {
+        margin: 0 10px; 
+    }
+    footer .second>div
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer .second div .social
+    {
+        margin-top: 0;
+    }
+    footer .second>div>i
+    {
+        font-size: 20px;
+        margin-right: 50px;
+    }
+    footer .second div .social i
+    {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+}
+/* @media (min-width: 960px) AND (max-width: 1024px) */
+@media (min-width: 960px)
+{
+    main .companies
+    {
+        padding-bottom: 40px;
+    }
+    main .companies .company
+    {
+        width: 25%;
+        display: inline-block;
+        padding: 30px;
+    }
+    main .companies .company
+    {
+        border: transparent 2px solid;
+        margin:0;
+    }
+    main .companies .company:nth-child(3), main .companies .company:nth-child(6)
+    {
+        flex-wrap: wrap;
+    }
+    main .companies .company:nth-child(1), main .companies .company:nth-child(2), main .companies .company:nth-child(3)
+    {
+        border-bottom: #eeeeee 2px solid;
+    }
+    main .companies .company:nth-child(1), main .companies .company:nth-child(2), main .companies .company:nth-child(4),main .companies .company:nth-child(5) 
+    {
+        border-right: #eeeeee 2px solid;
+    }
+    main .companies .company:nth-child(4), main .companies .company:nth-child(5), main .companies .company:nth-child(6)
+    {
+        border-bottom: transparent 2px solid;
+    }
+    main .companies .company:nth-child(2), main .companies .company:nth-child(6)
+    {
+        border-left: transparent 2px solid;
+    }
+}
+@media (min-width: 1200px) 
+{
+    nav.outer-menu-nav
+    {
+        padding: 10px 80px;
+    }
+    nav .menu-nav .icon img
+    {
+        width: 40%;
+    }
+    nav .menu-nav ul div
+    {
+        display: none;
+    }
+    nav .menu-nav ul li
+    {
+        display: inline-block;
+        padding: 10px 20px;        
+    }
+    nav .menu-nav ul li:nth-child(4)
+    {
+        border: 2px #5b5e6d solid;
+        border-radius: 5px;
+    }
+    header
+    {
+        padding: 80px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header figure
+    {
+        order:1;
+    }
+    header .superior
+    {
+        order: 2;
+        width: 50%;
+    }
+    header .superior input
+    {
+        display: none;
+    }
+    header h1
+    {
+        font-size: 60px;
+        font-family: 'Merriweather', serif;
+    }
+    header h1 + p
+    {
+        text-align:left;
+        font-size: 20px;
+        margin: 60px 0 30px 0;
+        line-height: 30px;
+        /* width: 80%; */
+    }
+    header button
+    {
+        width: 60%;
+        padding: 30px;
+        font-size: 30px;
+        border-radius: 10px;
+        margin: 5px 0 25px 0;
+        box-sizing: border-box;
+    }
+    header input
+    {
+        border: #dddddd solid 1px;
+    }
+    header button
+    {
+        background-color: #192592;
+        color: white;
+    }
+    header .already
+    {
+        text-align: left;
+        font-size: 20px;
+    }
+    header .already a, main .try-it a, header .already a:visited, main .try-it a:visited
+    {
+        border-bottom: 2px #192592 solid;
+        text-decoration-color: transparent;     
+        color: #192592;
+    }
+}
