@@ -23,7 +23,15 @@ h1 , h2{
   color: #2C303F;
 }
 
-p {
+h1 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p, li{
   color: #5b5e6d;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
@@ -31,6 +39,10 @@ p {
 
 a {
   color: #192592;
+}
+
+.grey-back {
+  background: #F4F3F4;
 }
 
 .btn-primary {
@@ -65,6 +77,18 @@ a {
 .img-large-max {
   width: 100%;
   max-width: 400px;
+}
+
+.btn, input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+input {
+  box-sizing: border-box;
+  border: 1px solid #e4e4e4;
 }
 
 
@@ -105,9 +129,6 @@ header img {
   width: 200px;
 }
 
-header h1 {
-  font-size: 2em;
-}
 
 header p {
   font-size: 0.9em;
@@ -119,17 +140,7 @@ header .form-wrap {
   flex-direction: column;
 }
 
-.btn, input {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 15px;
-  border-radius: 3px;
-}
 
-header input {
-  box-sizing: border-box;
-  border: 1px solid #e4e4e4;
-}
 
 header p:last-child {
   border: 1px solid black;
@@ -143,20 +154,97 @@ header p:last-child {
 
 /* main */
 .company {
-  background:  #F4F3F4;
   text-align: center;
   padding-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .company img {
-  width: 200px;
-  max-height: 90px;
-  border-bottom: 1px solid lightgray;
+  width: 12em;
+  border-bottom: 0.5px solid #ebebeb;
   padding: 20px;
 }
+
+.tryit {
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.company img:last-child {
+  border: none;
+}
+
+
+/* footer */
+
+.logo-footer{
+  width: 8em;
+}
+
+footer ul{
+  list-style-type: none;
+  padding: 0;
+  color: #5b5e6d;
+}
+
+footer .lists-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  padding-left: 20px;
+}
+
+footer .lists-wrap ul {
+  width:50%;
+}
+
+footer .lists-wrap ul li {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+footer .lists-wrap ul li:first-child {
+  font-weight: bold;
+}
+
+footer .grey-back ul li {
+  padding: 0 5px;
+  font-size: 0.9em;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+}
+
+.language img {
+  height: 20px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0;
+  font-weight: bold;
+  align-content: center;
+}
+
+.wrap * {
+  padding: 0 5px;
+  font-size: 0.9em;
+  color: #5b5e6d;
+}
+
+/*  */
+
+
+
+
+
 
 
 
@@ -186,9 +274,7 @@ nav ul {
   margin: 0 auto;
   display: block;
 }
-.grey-background {
-  background: #F4F3F4;
-}
+
 
 .text-center {
   text-align: center;
