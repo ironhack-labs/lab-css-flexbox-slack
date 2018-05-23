@@ -134,7 +134,7 @@ header p {
   font-size: 0.9em;
 }
 
-header .form-wrap {
+form-wrap {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -153,7 +153,7 @@ header p:last-child {
 
 
 /* main */
-.company {
+.company, .logos {
   text-align: center;
   padding-bottom: 0;
   display: flex;
@@ -164,16 +164,24 @@ header p:last-child {
 
 .company img {
   width: 12em;
-  border-bottom: 0.5px solid #ebebeb;
   padding: 20px;
+}
+
+.logo {
+  border-bottom: 1px solid #e4e4e4;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
 }
 
 .tryit {
   text-align: center;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #e4e4e4;
 }
 
-.company img:last-child {
+.company .logo:last-child {
   border: none;
 }
 
@@ -239,21 +247,6 @@ footer .grey-back ul li {
   color: #5b5e6d;
 }
 
-/*  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* fa */
 .fa-bars {
   font-size:23px;
@@ -268,42 +261,63 @@ nav ul {
 }
 
 
+/* media queries */
 
-
-/* .img-center {
-  margin: 0 auto;
-  display: block;
-}
-
-
-.text-center {
-  text-align: center;
-}
-
-.btn-primary {
-  background: #3c4aa2;
-  color: white;
-  border: 0;
-}
- */
-
-/* html {
-  
-}
-
-img {
-  max-width: 300px;
-}
 
 @media only screen and (min-width:767px) {
-  img {
-    max-width: 500px;
+
+  .btn {
+    width: 200px;
+    margin:0 5px;
   }
+
+  input {
+    width: 50%;
+    max-width: 400px;
+    margin:0;
+  }
+
+  .form-wrap {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .text-left {
+    text-align: left;
+    margin: 16px 0px;
+  }
+
+  .logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+    
+  }
+
+  .logo img {
+    width: 50%;
+    max-width:200px;
+
 }
 
-@media (min-width: 1000px) {
-  img {
-    max-width: 800px;
+  .logo:nth-child(5), 
+  .logo:nth-child(6) {
+    border-bottom: 0px;
   }
+
+  .logo:nth-child(odd) {
+    border-right: 1px solid#e4e4e4;
+  }
+
+  .tryit {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tryit h3 {
+    text-align: left;
+  }
+
+
 }
- */
