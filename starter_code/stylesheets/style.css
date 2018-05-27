@@ -183,50 +183,30 @@ nav img {
 .header {
   clear: both;
   margin-top: 70px;
-  text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
 }
-.header h1, .header p, .header button, .header img {
-  width: 100%;
-}
-/* .header div:last-child {
-  width: 100%;
-} */
 .header h1 {
-  text-align: left;
-  order: 0;
-}
-.header p:first-child {
-  order: 2;
-}
-.header p:last-child {
-  order: 4;
-}
-.header p {
-  text-align: left;
+  width: 100%;
 }
 .header p:last-child {
   text-align: center;
+}
+.header img {
+  order: 2;
+  width: 320px;
 }
 section button {
   width: 100%;
   background-color: #3f46ad;
   color: #fff;
-  order: 3;
+  /* order: 3; */
 }
 section button:hover {
   background-color: #192592;
   transition-property: background-color;
   transition-duration: 500ms;
-}
-.header img {
-  order: 5;
-  margin-right: auto;
-  margin-left: auto;
-  height: auto;
 }
 .main {
   text-align: center;
@@ -344,35 +324,39 @@ footer ul li {
   }
 }
 
-/* BETWEEN 530px AND 767px */
-/* @media (min-width: 530px) and (max-width: 767px) {
-  .main-menu {
-    display: none;
-  }
-  .header img {
-    transition-property: width;
-    transition-duration: 750ms;
-  }
-  .header > div {
-    width: 100%;
-  }
-  .header div:last-child {
-    width: 100%;
-  }
-  .container figure {
-    width: 50%;
-  }
-} */
-
 /* MIN-WIDTH 768px */
 @media (min-width: 768px) {
   .hidden {
     display: none;
   }
-  /* .header {
-    justify-content: space-between;
-    align-items: flex-end;
-  } */
+  .header {
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /*align-items: flex-end; */
+  }
+  .header img {
+    width: 40%;
+  }
+  .header h1, .header p, .header button {
+    width: 50%;
+    margin-left: 50%;
+  }
+  .header h1 {
+    text-align: left;
+    order: 0;
+  }
+  .header p:first-child {
+    order: 2;
+  }
+  .header p:last-child {
+    order: 4;
+  }
+  .header p {
+    text-align: left;
+  }
+  .header p:last-child {
+    text-align: center;
+  }
   .main button {
     width: 30%;
   }
