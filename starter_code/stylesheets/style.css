@@ -275,6 +275,8 @@ footer {
 }
 .lists img {
   width: 100px;
+  height: 100px;
+
 }
 footer ul {
   list-style: none;
@@ -300,7 +302,7 @@ footer ul li {
 .colophon div {
   line-height: 2rem;
 }
-.colophon img, .colophon span, .colophon i:first-child {
+.colophon img, .colophon span {
   height: 2rem;
   width: auto;
   vertical-align: middle;
@@ -329,10 +331,10 @@ footer ul li {
   .hidden {
     display: none;
   }
-  .header {
+  /* .header {
     flex-wrap: wrap;
-    /* justify-content: space-around; */
-    /*align-items: flex-end; */
+    justify-content: space-around;
+    align-items: flex-end;
   }
   .header img {
     width: 40%;
@@ -356,8 +358,8 @@ footer ul li {
   }
   .header p:last-child {
     text-align: center;
-  }
-  .main button {
+  } */
+  section.main button, .header button {
     width: 30%;
   }
   .container figure {
@@ -387,6 +389,25 @@ footer ul li {
   .container figure:nth-child(6n) {
     border-right: none;
     border-bottom: none;
+  }
+  .try-it {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .try-it button {
+    /* width: 50%; */
+  }
+  .lists {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+  .colophon {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .colophon ul li {
+    display: inline;
   }
 }
 
