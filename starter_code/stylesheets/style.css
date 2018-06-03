@@ -5,3 +5,225 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body {
+  margin: 0;
+}
+
+p {
+  font-family: "Helvetica neue", "Slack-Averta","appleLogo","sans-serif";
+}
+h1, h2 {
+  font-family: Slack-Tiempos, "Time New Roman";
+}
+.text-center {
+  text-align: center;
+}
+
+nav {
+  padding: 15px 30px;
+  border-bottom: 1px solid #ebebeb;
+}
+nav img {
+  width: 125px;
+}
+
+header {
+  padding: 0 30px;
+}
+
+form, form input {
+  height: 40px;
+  display: inline-block;
+  width: 250px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.getstartbutton {
+  background-color: #55559e;
+  border-radius: 6px;
+  color: white;
+  height: 50px;
+}
+
+/* Good company */
+section.goodcompany {
+  background-color: #f5f5f5;
+  border-top: 1px solid #ebebeb;
+  padding: 30px 30px;
+}
+section.goodcompany div.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  section.goodcompany figures {
+    width: 100%:
+  }
+  section.goodcompany figure {
+    display: inline-block;
+    border-bottom: 1px solid #ebebeb;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+  }
+
+.discoverwhy-button {
+  display: block;
+  background-color: white;
+  color: #1c299d;
+  border: #545ca4 solid 1px;
+  margin: 0 25px;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 20px 50px;
+  border-radius: 5px;
+}
+
+/* Try it */
+div.tryit {
+  margin: 45px 0px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+div.tryit p:first-child {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+div.tryit p {
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #ebebeb;
+  margin: 40px 0 0 0;
+}
+footer ul {
+  padding: 0;
+  display: inline-block;
+}
+footer ul li {
+  list-style: none;
+  color: grey;
+}
+footer ul li:first-child {
+  font-weight: bold;
+}
+.footer-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+div.footer-bottom div {
+  width: auto;
+}
+.footer-bottom-left span p, .footer-bottom-right > * {
+  padding: 0 10px 0 0;
+  display: inline-block;
+}
+.footer-bottom-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  form, form input {
+    width: 100%;
+  }
+  .getstartbutton {
+    width: 100%;
+  }
+  .discoverwhy-button {
+    padding: 10px 0;
+    width: 90vw;
+  }
+
+  section.goodcompany, div.tryit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.goodcompany figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  div.tryit form, div.tryit input {
+    width: 100%;
+  }
+  .footer-contents {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-elements {
+    display: inline-block;
+    padding: 0 30px;
+  }
+  footer ul {
+    width:40vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  section.goodcompany figure {
+    width: 30vw;
+  }
+  footer ul {
+    width:20vw;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+  section.goodcompany figure {
+    width: 22vw;
+  }
+
+  footer ul {
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {font-size: 4em;}
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+  }
+  header > img {
+    width: 30vw;
+  }
+  header > div {
+    width: 50vw;
+  }
+  section.goodcompany figure {
+    width: 26vw;
+  }
+  footer ul {
+    width:16vw;
+  }
+}
