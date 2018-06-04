@@ -6,72 +6,223 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
-  .slack-logo {
-    width: 20%;
-    height: 20%;
-  }
+h1,h2 {
+  font-family: Slack-Tiempos;
+  color: #2C303F;
+}
 
-  .home-talking {
-    height:80%;
-    width:80%;
-  }
+p{
+  color:#5b5e6d;
+}
 
-  .greylogo {
-    height:45%;
-    width:45%;
-    margin:5px;
-    align-self: center;
-  }
+.button-start {
+  background-color: #55559e;
+  border-radius: 6px;
+  color: white;
+  height: 50px;
+}
 
-  .nav {
+.button-discover {
+  display: block;
+  background-color: white;
+  color: #1c299d;
+  border: #545ca4 solid 1px;
+  margin: 0 25px;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 20px 50px;
+  border-radius: 5px;
+}
+
+.button-start {
+  background-color: #55559e;
+  border-radius: 6px;
+  color: white;
+  height: 50px;
+}
+
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: #5b5e6d;
+  box-shadow: 0 0.25em 0 0 #5b5e6d, 0 0.5em 0 0 #5b5e6d;
+}
+
+.slack-logo {
+  width: 20%;
+  height: 20%;
+}
+
+.home-talking {
+  height: 80%;
+  width: 80%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: none;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+.main-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image {
+  align-items: center;
+  flex: 0 0 100%;
+  margin: 20px auto;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bottom-footer {
+  background-color: #f5f5f5;
+}
+
+footer {
+  border-top: 1px solid #ebebeb;
+  margin: 40px 0 0 0;
+}
+footer ul {
+  padding: 0;
+  margin:0 20px;
+  display: inline-block;
+}
+footer ul li {
+  list-style: none;
+  color: grey;
+}
+footer ul li:first-child {
+  font-weight: bold;
+}
+.footer-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+div.footer-bottom div {
+  width: auto;
+}
+.footer-bottom-left span p,
+.footer-bottom-right > * {
+  padding: 0 10px 0 0;
+  display: inline-block;
+}
+.footer-bottom-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (min-width: 767px) and (max-width: 961px) {
+  .nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    list-style-type: none;
+  }
+
+  .nav ul li {
+    margin: 0 10px;
+  }
+
+  .nav .box-shadow-menu {
+    display: none;
   }
 
   .header {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-  }
-
-  .main{
-    display:flex;
-    flex-direction: column;
-  }
-
-  .main-logo{
-    display:flex;
     flex-wrap: wrap;
-    background-color: #f5f5f5
   }
 
-  .main-text{
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f5f5f5
+.image{
+  flex:1 1 50%;
+}
+
+footer ul {
+  width: 20vw;
+}
+
+}
+
+@media (min-width: 960px) and (max-width: 1400px) {
+  .nav ul {
+    display: flex;
+    list-style-type: none;
   }
 
-.bottom-text{
-    display:flex;
-    flex-direction: column;
-  align-items: center;
+  .nav ul li {
+    margin: 0 10px;
   }
 
-
-.bottom-footer{
-  background-color: #f5f5f5
+  .nav .box-shadow-menu {
+    display: none;
   }
 
+  .header {
+    flex-wrap: wrap;
+  }
 
+  .image{
+    flex:1 1 33%;
+  }
 
-
-
-
-
-
-
-
-
+  footer ul {
+    width:16vw;}
 }
