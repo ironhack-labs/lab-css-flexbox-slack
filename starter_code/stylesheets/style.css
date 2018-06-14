@@ -91,6 +91,14 @@ main{
     #tirapabajo{
          order: 1;
     }
+    .ancho{
+        width: 100vh;
+    }
+
+    .anchobueno{
+        width: 100vh;
+
+    }
 
     .goodInCompany{
         width: 330px;
@@ -102,7 +110,7 @@ main{
 
     button{
         display: flex;
-        width: 200px;
+        width: 100%;
         margin: 0 auto;
         justify-content: center;
         background-color: #192592;
@@ -138,7 +146,7 @@ main{
 
     .slackLogo{
         width: 120px;
-        margin: 0 -70px;
+        margin: 0 -20px;
     }
 
     footer{
@@ -151,9 +159,19 @@ main{
     }
 
     .doscolumnas{
+        text-align: center ;
         display: flex;
-        flex-direction: row
+        flex-direction: column;
+        align-items: left;
 
+    }
+    .doscolumnas ul{
+    }
+
+    .doscolumnas2{
+        display: flex;
+        text-align: left;
+        padding: 0px
     }
 
     .footer2{
@@ -183,4 +201,114 @@ main{
     .saltolinea{
         margin-right: 40px;
     }
+}
+
+
+@media screen and (961px > width > 767px){
+    .navBar{
+    position: fixed;
+    width: 100vh;
+    background: white;
+}
+
+.navBar ul{
+      display: none; 
+}
+
+#tirapabajo{
+     order: 1;
+}
+
+.goodInCompany{
+    width: 330px;
+}
+.textoGood{
+    width: 330px;
+    text-align: center
+}
+
+button{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #192592;
+    color: white;
+    font-family: serif;
+    height: 40px;
+}
+
+.empresas{
+    margin: 35px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.empresas2{
+    padding: 20px;
+    border-bottom: 1px solid #2C303F
+}
+
+
+.try{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.botonGetStarted{
+    margin: 20px 0 
+}
+
+.slackLogo{
+    width: 120px;
+    margin: 0 -70px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #5b5e6d;
+    width: 100%;
+    flex-wrap: wrap
+}
+
+.doscolumnas{
+    display: flex;
+    flex-direction: row
+
+}
+
+.footer2{
+    background-color: #F4F3F4;
+    width: 100%;
+    display: inline-block;
+}
+.footer2 li {
+    justify-content: space-around;
+    display: inline-block;
+    justify-content: space-between;
+    
+}
+
+li{
+    list-style: none;
+}
+
+.eeuu{
+    width: 20px;
+}
+
+.eeuucontainer{
+    display: flex;
+    justify-content: center
+}
+.saltolinea{
+    margin-right: 40px;
+}
+    
 }
