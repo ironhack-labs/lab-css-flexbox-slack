@@ -50,10 +50,6 @@ p {
   line-height: 1.5rem;
 }
 
-.hidden-xs {
-  display: none;
-}
-
 .text-center {
   text-align: center;
 }
@@ -101,6 +97,10 @@ nav {
   color: #6d6e7a;
 }
 
+.full-menu {
+  display: none;
+}
+
 /* Header */
 
 header {
@@ -137,7 +137,7 @@ header img {
 }
 
 .logos-container > div {
-  padding: 0 20px;
+  padding: 0 40px;
   border-bottom: 1px solid #ebebeb;
 }
 
@@ -231,12 +231,128 @@ footer {
 /* Media queries */
 
 @media screen and (min-width: 768px) {
-  .hidden-xs {
-    display: initial;
+  h1 {
+    font-size: 4rem;
+    line-height: normal;
   }
 
-  .visible-xs {
-    display: none;
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+
+  .btn {
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /* Header */
+
+  header p.text-center {
+    text-align: left;
+  }
+
+  header img {
+    width: 55%;
+  }
+
+  /* People */
+  
+  .logos-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .logos-container > div {
+    width: 50%;
+    border-right: 1px solid #ebebeb;
+  }
+  
+  .logos-container > div:nth-child(even) {
+    border-right: none;
+  }
+
+  .logos-container > div:nth-last-of-type(-n+2) {
+    border-bottom: none;
+  }
+
+  /* Try it */
+  
+  #try-it {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  
+  #try-it .btn {
+    margin-top: 0;
+  }
+
+  /* Footer */
+  
+  footer {
+    padding-top: 50px;
+  }
+
+  .footer-top {
+    padding: 0 20px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-top img {
+    margin-left: 0;
+  }
+  
+  .footer-top-links {
+    width: 80%;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+  
+  .footer-top-links > ul {
+    margin-bottom: 0;
+    padding-left: 25px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-bottom > ul {
+    margin-bottom: 0;
+  }
+  
+  .footer-bottom > ul > li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .footer-bottom > div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  
+  .social-icons .icon:last-child {
+    margin-right: 0;
   }
 }
 
