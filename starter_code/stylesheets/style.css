@@ -38,6 +38,12 @@ nav {
   box-shadow: 0 2px 0.8px #CCC;
 }
 
+nav ul li:last-child {
+  border: 1px solid #5b5e6d;
+  border-radius: 5px;
+  padding: 8px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -309,26 +315,198 @@ footer div:last-child {
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main div:first-child {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 8vw;
+    margin: 30px 0;
+    background-color: #F4F3F4;
+    text-align: center;
+    border: 1px solid #CCC;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  main div:last-child {
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    text-align: center;
+  }
+
+  main div:last-child p:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2C303F;
+    margin: 0;
+  }
+
+  main img {
+    margin: 20px 0;
+  }
+
+  .discoverWhyButton {
+    margin-bottom: 20px;
+    font-size: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  footer {
+    border-top: 1px solid #CCC;
+    margin-top: 30px;
+    padding-top: 40px;
+  }
+
+  #footerContent > img {
+    width: 120px;
+    height: 120px;
+  }
+
+  footer div:last-child {
+    text-align: center;
+  }
+
+  footer div:last-child ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer div:last-child ul li {
+    margin: 0 20px;
+    padding: 15px 0;
+    font-weight: bold;
+  }
+
+  footer div:last-child img {
+    width: 25px;
+  }
 }
 
 
 /* Iteration 3 | Medium Screen */
 @media screen and (min-width: 961px) and (max-width: 1023px) {
   nav {
-    height: 90px;
+    height: 80px;
     padding: 0 40px;
   }
 
   nav > img {
-    width: 150px;
+    width: 120px;
   }
 
-  #menuIcon {
+  nav ul {
     display: none;
   }
 
   header {
-    margin-top: 90px;
+    margin-top: 80px;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  header img {
+    width: 50vw;
+  }
+
+  header div {
+    width: 80vw;
+    margin: 30px 0;
+  }
+
+  .getStartedButton {
+    font-size: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main div:first-child {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 8vw;
+    margin: 30px 0;
+    background-color: #F4F3F4;
+    text-align: center;
+    border: 1px solid #CCC;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  main div:last-child {
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    text-align: center;
+  }
+
+  main div:last-child p:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2C303F;
+    margin: 0;
+  }
+
+  main img {
+    margin: 20px 0;
+  }
+
+  .discoverWhyButton {
+    margin-bottom: 20px;
+    font-size: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  footer {
+    border-top: 1px solid #CCC;
+    margin-top: 30px;
+    padding-top: 40px;
+  }
+
+  #footerContent > img {
+    width: 120px;
+    height: 120px;
+  }
+
+  footer div:last-child {
+    text-align: center;
+  }
+
+  footer div:last-child ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer div:last-child ul li {
+    margin: 0 20px;
+    padding: 15px 0;
+    font-weight: bold;
+  }
+
+  footer div:last-child img {
+    width: 25px;
   }
 }
 
@@ -351,5 +529,104 @@ footer div:last-child {
 
   header {
     margin-top: 100px;
+    flex-direction: row;
+    justify-content: center;
   }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  header img {
+    width: 50vw;
+  }
+
+  header div {
+    width: 80vw;
+    margin: 50px 0;
+  }
+
+  .getStartedButton {
+    font-size: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main div:first-child {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 8vw;
+    margin: 30px 0;
+    width: 100%;
+    background-color: #F4F3F4;
+    text-align: center;
+    border: 1px solid #CCC;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  main div:last-child {
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    text-align: center;
+  }
+
+  main div:last-child p:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2C303F;
+    margin: 0;
+  }
+
+  main img {
+    margin: 20px 0;
+  }
+
+  .discoverWhyButton {
+    margin-bottom: 20px;
+    font-size: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  footer {
+    border-top: 1px solid #CCC;
+    margin-top: 30px;
+    padding-top: 40px;
+  }
+
+  #footerContent > img {
+    width: 120px;
+    height: 120px;
+  }
+
+  footer div:last-child {
+    text-align: center;
+  }
+
+  footer div:last-child ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer div:last-child ul li {
+    margin: 0 20px;
+    padding: 15px 0;
+    font-weight: bold;
+  }
+
+  footer div:last-child img {
+    width: 25px;
+  }
+
+
 }
