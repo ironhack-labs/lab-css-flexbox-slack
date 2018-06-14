@@ -5,3 +5,164 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+img {
+    max-width: 100%;;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    width: 100%;
+    background: white;
+}
+.logo-wrapper{
+    width: 200px;
+}
+
+.logo-wrapper img{
+    width:100%;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+/* Modifica el tamaño del icono de font awesome
+ */
+ .svg-inline--fa{
+    font-size: 3em;
+}
+
+
+.header{
+    padding: 100px 50px 0 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 3em;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button[name="button"], textarea{
+    width: 90%;
+    height: 60px;
+}
+
+.text button[name="button"]{
+    border-radius: 10px;
+    color: white;
+    background: blue;
+}
+
+.enterprises {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 800px;
+    background: #F4F3F4;
+    padding: 0 50px 20px 50px;
+}
+.img-enterprise{
+    width: 180px;
+    border-bottom: solid 2px black;
+    padding-bottom: 10px;
+}
+
+.enterprises > img {
+    width:50%;
+}
+
+.footer-info{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.img-footer{
+    width:100%;
+}
+
+.img-footer img{
+    width: 150px;
+}
+
+.item ul {
+    list-style-type: none;
+}
+
+.item li:first-child{
+    color: red;
+}
+
+.nav-bottom {
+    padding-top: 20px;
+    background: #F4F3F4;
+}
+.nav-bottom ul{
+    list-style-type: none;
+}
+
+.nav-bottom li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-languaje{
+    width: 40px;
+}
+
+.img-language img{
+    max-width: 100%;
+}
+
+.svg-inline--fa {
+    height: 0.5em;
+}
+
+.rrss{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+@media screen and (max-width: 767px){
+    nav ul{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: initial;
+    }
+}
