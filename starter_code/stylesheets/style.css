@@ -5,3 +5,166 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+nav{
+  position: fixed;
+  display: flex;
+  background-color: #FFF;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #5b5e6d;
+  width: 100%;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+.logo-img{
+  width: 150px;
+}
+
+/** header **/
+header{
+  max-width: 90%;
+  padding-top: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > img{
+  max-width: 45%;
+}
+
+.col-2{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+/** Main **/
+main{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.company{
+  padding: 20px;
+  background-color: #F4F3F4;
+}
+.company-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
+  margin: 30px auto;
+}
+.company-box-logo{
+  width: 33%;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #5b5e6d;
+  min-height: 50px;
+}
+.company-box img{
+  width: 80%;
+}
+
+.try{
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/** Footer **/
+footer{
+  display: flex;
+  flex-direction: column;
+}
+.info{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.info-content{
+  display: flex;
+}
+.info-content_col2{
+  display: flex;
+}
+.slack img{
+  width: 100px;
+}
+
+/** contact **/
+.contact{
+  background: #F4F3F4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+}
+.contact ul{
+  margin: 0;
+  padding: 0;
+}
+.contact ul li{
+  display: inline-block;
+  margin-left: 15px;
+}
+.rrss{
+  display: flex;
+}
+.rrss img{
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/** Iteration 3 | Medium Screen **/
+@media (max-width: 1024px) and (min-width: 961px) {
+  .company-box-logo{
+    width: 50%;
+  }
+}
+
+/** Iteration 3 | Small Screen **/
+@media (max-width: 960px) and (min-width: 767px) {
+  header{
+    flex-direction: column-reverse;
+  }
+  .company-box-logo{
+    width: 50%;
+  }
+
+}
+
+/** Iteration 1 | Extra Small Screen **/
+@media (max-width: 768px){
+  
+  .company-box-logo{
+    width: 80%;
+  }
+  .info, .info-content_col2, .contact, .rrss{
+    flex-direction: column;
+  }
+  
+}
