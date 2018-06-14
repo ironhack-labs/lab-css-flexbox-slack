@@ -336,11 +336,6 @@ footer {
     margin-bottom: 0;
   }
   
-  .footer-bottom > ul > li {
-    display: inline-block;
-    margin: 0 5px;
-  }
-
   .footer-bottom > div {
     display: flex;
     align-items: center;
@@ -356,3 +351,22 @@ footer {
   }
 }
 
+@media screen and (min-width: 961px) {
+  /* People */
+  
+  .logos-container > div {
+    width: 33.33%;
+  }
+  
+  .logos-container > div:nth-child(even) {
+    border-right: 1px solid #ebebeb;
+  }
+  
+  .logos-container > div:nth-child(3n) {
+    border-right: none;
+  }
+
+  .logos-container > div:nth-last-of-type(-n+3) {
+    border-bottom: none;
+  }
+}
