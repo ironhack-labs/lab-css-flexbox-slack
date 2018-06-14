@@ -1,7 +1,265 @@
 /*
 background-grey: #F4F3F4;
-button-purple: #192592
+button-purple: #1c299d;
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------*/
+
+img {
+  max-width: 100%;
+}
+
+body {
+  color: darkgray;
+  font-family: 'Lato', sans-serif;
+  color: #5b5e6d;
+}
+  
+
+@media screen and (max-width: 767px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 3.5em;
+    background-color: white;
+    padding: 0 1.8em;
+    align-items: center;
+    position:fixed;
+    border-bottom: 1px solid lightgray;
+  }
+  nav ul{
+    display:none;
+  }
+  .logo-wrap {
+    width: 6em;
+  }
+
+  .fas.fa-bars {
+    font-size: 1.8em;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6em 2em;
+    max-width: 100%;
+
+  }
+  h1 {
+    font-size: 2em;
+  
+    line-height: 1.1em;
+    font-family: '';
+    color: #2C303F;
+  }
+
+  button {
+    background: #3f46ad;
+    width: 100%;
+    border: 1px solid #3f46ad;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: 700;
+    line-height: 1.3;
+    padding: 1.5em 4em;
+    text-align: center;
+  }
+
+  .text-wrap {
+    margin: 0 auto;
+  }
+
+  .landing-image-wrap {
+    order: 2;
+  }
+
+  input {
+    border: 1px solid #5b5e6d;
+    border-radius: 0.5em;
+    padding: 0.9em;
+    font-size: 0.8em;
+    width: 100%;
+    margin-bottom: 2.5em;
+  }
+
+
+  p {
+    font-size: 0.8em;
+    line-height: 2em;
+    padding: 2.5em 0;
+  }
+
+  .sign-in {
+    text-align: center;
+  }
+  
+  .gray-background {
+    background-color: #F4F3F4;
+    width: 100%;
+    height: 100%;
+    padding: 2em 4em;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    line-height: 1.1em;
+    font-family: '';
+    color: #2C303F; 
+    
+  }
+
+  .gray-background button{
+    background: white;
+    color: #3f46ad;
+    
+  }
+
+  .brand-logo   {
+    border-bottom: 1px solid lightgray;
+    padding: 2em;
+  }
+
+  .for-free {
+    display: flex;
+    flex-direction: column;
+    padding: 1.7em 2.6em;
+    max-width: 100%;
+    text-align: center;
+    color: #2C303F;
+    border-bottom: 1px solid lightgray;
+  }
+
+  h3 {
+    font-family: '';
+    font-size: 1.6em;
+    margin-top: 2em;
+  }
+
+  .for-free p {
+    padding-top: 0.5em;
+    font-size: 0.9em;
+  }
+
+  a {
+    text-decoration: none;
+    color: #5b5e6d;
+  }
+
+
+  .for-free a {
+    color: #3f46ad;
+  }
+
+  .slack-logo {
+    width: 9em;
+  }
+
+  
+  footer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer ul {
+    margin: 1.2em auto;
+  }
+
+  .footer ul li{
+    font-weight: 700;
+    margin-bottom: 1.5em;
+  }
+
+  .footer ul li a{
+    font-size: 0.9rem;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    height: 100%;
+    padding: 0 3em;
+  }
+
+  .column-4 {
+    width: 50%;
+    margin:0 auto;
+  }
+
+  .footer-cols {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bolder;
+  }
+
+  .languages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.8em;
+  }
+
+  .languages img{
+    width: 3em;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6em;
+    margin-top: 0.6em;
+  }
+
