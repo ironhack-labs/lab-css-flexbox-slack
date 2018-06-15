@@ -23,20 +23,27 @@ html {
 
 
   .main-container {
-      padding: 0 30px;
+
       font-family: serif;
       color:dimgray;  
       text-align: center;
+      display: flex;
+      justify-content: space-between;
     }
 
 
   .top-container{
-      padding-top: 20px;
+    display: flex;  
+    justify-content: space-between;    
+  }
+
+
+  .main-container div{
+      width: 30%;
   }
 
   .slack-logo {
-      float: left;
-      width: 75px;
+      width: 100%;
   }         
 
   .topNav {
@@ -73,19 +80,24 @@ html {
   /******second-container******/
 
   .second-container{
-    padding-top: 40px; 
+    display: flex;
+    justify-content: center;
+    padding: 0 25px;
+  }
+
+  .second-container div{
+
   }
 
 
   .home-talking{
       align-content: center;
-      height: 280px;
+      width: 100%;
   }
 
   .description{
       background-color:honeydew;
       overflow: hidden;
-      margin: 0 -30px;
   }
 
   .description p{
@@ -101,18 +113,46 @@ html {
   }
 
   .logos{
-    display: flow-root;
-    padding: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 40px;
   }
 
-  .airbnb-logo{
-    width: 65%;
-    margin: 40px 0;
+  .logos div{
+    padding: 40px 40px;
+    align-self: center;
+  }
+
+  @media (min-width: 375px) {
+  .logos div{
+    width: 85%;
+  }}
+
+  @media  (min-width: 768px) {
+    .logos div{
+      width: 45%;
+    }}
+
+    @media  (min-width: 1024px) {
+    .logos div{
+      width: 45%;
+     }}
+
+
+
+
+
+
+
+
+  .logo{
+    width: 100%;
+    align-self: center;
   }
 
 
   .capital-one-logo{
-    width: 65%;
+    width: 35%;
     margin: 40px 0;
   }
 
