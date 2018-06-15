@@ -22,7 +22,8 @@ nav{
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #5b5e6d;
-  width: 100%;
+  width: 95%;
+  padding: 0 2.5%;
 }
 
 nav ul li{
@@ -33,6 +34,10 @@ nav ul li{
   width: 150px;
 }
 
+nav i.fa{
+  display: none;
+  font-size: 1.5rem;
+}
 /** header **/
 header{
   max-width: 90%;
@@ -50,7 +55,7 @@ header > img{
 .col-2{
   display: flex;
   flex-direction: column;
-  width: 40%;
+  max-width: 40%;
 }
 
 /** Main **/
@@ -88,7 +93,8 @@ main{
   text-align: left;
   justify-content: space-between;
   width: 90%;
-  margin: 0 auto;
+  padding: 30px 5%;
+  border-bottom: 1px solid #5b5e6d;
 }
 
 /** Footer **/
@@ -98,16 +104,22 @@ footer{
 }
 .info{
   width: 90%;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
 }
-.info-content{
-  display: flex;
+.info ul{
+  list-style: none;
 }
-.info-content_col2{
+.info ul li{
+  margin-bottom: 10px;
+}
+.info ul li:first-child{
+  margin-bottom: 20px;
+}
+.info-content, .info-content_col2{
   display: flex;
 }
 .slack img{
@@ -146,10 +158,17 @@ footer{
   }
 }
 
-/** Iteration 3 | Small Screen **/
-@media (max-width: 960px) and (min-width: 767px) {
+/** Iteration 2 | Small Screen **/
+@media (max-width: 960px){
   header{
     flex-direction: column-reverse;
+  }
+  header > img{
+    max-width: 70%;
+    margin: 35px auto;
+  }
+  .col-2{
+    max-width: 65%;
   }
   .company-box-logo{
     width: 50%;
@@ -158,13 +177,30 @@ footer{
 }
 
 /** Iteration 1 | Extra Small Screen **/
-@media (max-width: 768px){
+@media (max-width: 767px){
+  .center{
+    text-align: center;
+  }
+  nav i.fa{
+    display: block;
+  }
+  nav ul{display: none;}
+  .company{
+    padding: 30px 100px;
+  }
   
   .company-box-logo{
-    width: 80%;
+    width: 100%;
+    min-height: 120px;
+  }
+  .try{
+    flex-direction: column;
+    margin: 20px auto;
   }
   .info, .info-content_col2, .contact, .rrss{
     flex-direction: column;
   }
-  
+  .info-content_col2{
+    margin-right: 50px;
+  }
 }
