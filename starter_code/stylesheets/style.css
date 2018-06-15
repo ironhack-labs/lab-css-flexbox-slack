@@ -5,3 +5,288 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- forms ---- */
+
+.button {
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 1px solid rgba(26, 26, 141, 0.822);
+  margin-top: 20px;
+}
+
+.button.primary {
+  color: white;
+  background-color: rgba(26, 26, 141, 0.822);
+}
+
+.button.secondary {
+  color: rgba(26, 26, 141, 0.822);
+  background-color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  font-size: 1em;
+  border: 1px solid grey;
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* ---- layout ---- */
+
+.container {
+  margin: 0 20px;
+}
+
+/* ---- components ---- */
+
+.sign-in-cta {
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .sign-in-cta {
+    text-align: left;
+  }
+}
+
+@media (min-width: 767px) {
+  .sign-in-box {
+    overflow: hidden;
+  }
+  .sign-in-box input {
+    margin-right: 10px;
+    width: 47%;
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px);
+    float: left;
+  }
+
+  .sign-in-box button {
+    width: 50%;
+    float: left;
+  }
+}
+
+/* ---- header ---- */
+
+.nav-bar {
+  background-color: white;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(170, 168, 168);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.nav-bar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar .logo img {
+  width: 90px;
+}
+
+.nav-bar .burger-menu img {
+  width: 30px;
+}
+
+.nav-bar .menu {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .nav-bar .menu {
+    display: block;
+  }
+}
+
+/* ---- section:intro ---- */
+
+section.intro {
+  clear: both;
+  padding-top: 90px;
+}
+
+section.intro img {
+  margin: 30px 20px 0;
+}
+
+@media (min-width: 767px) {
+  section.intro .sign-in-box {
+    max-width: 400px;
+  }
+}
+
+/* ---- section:our-clients ---- */
+
+section.our-clients {
+  text-align: center;
+  background-color: #f4f3f4;
+}
+
+section.our-clients .container {
+  padding-bottom: 50px;
+}
+
+section.our-clients h2 {
+  padding-top: 20px;
+}
+
+section.our-clients .clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.our-clients .client {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 767px) {
+  section.our-clients .client {
+    width: 50%;
+  }
+
+  section.our-clients .client:nth-of-type(even) {
+    border-left: 1px solid #ccc;
+  }
+}
+
+section.our-clients .logo {
+  width: 150px;
+  margin: 10px;
+}
+section.our-clients hr {
+  width: 200px;
+}
+
+section.our-clients .button {
+  margin-bottom: 20px;
+}
+
+/* ---- section:try-it ---- */
+
+section.try-it.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section.try-it .sign-in-cta,
+section.try-it .sign-in-box {
+  width: 100%;
+}
+
+@media (min-width: 767px) {
+  section.try-it {
+    overflow: hidden;
+  }
+
+  section.try-it .sign-in-cta,
+  section.try-it .sign-in-box {
+    float: left;
+    width: 50%;
+  }
+
+  section.try-it .sign-in-box input {
+    margin: 0 10px 0 0;
+    width: 47%;
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px);
+    float: left;
+  }
+
+  section.try-it .sign-in-box button {
+    margin: 0;
+    width: 50%;
+    float: left;
+  }
+}
+
+/* ---- site-footer ---- */
+
+.site-footer .container {
+  overflow: hidden;
+}
+
+.site-footer .container .link-groups {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-footer .link-group {
+  list-style-type: none;
+  width: 50%;
+  padding: 0 0 0 10px;
+}
+
+@media (min-width: 767px) {
+  .site-footer .logo {
+    float: left;
+  }
+  .site-footer .link-group {
+    width: 25%;
+  }
+}
+
+.site-footer .more-links {
+  text-align: center;
+  background-color: #f4f3f4;
+}
+
+.site-footer .legal {
+  text-align: center;
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+}
+
+.site-footer .legal li {
+  display: inline;
+}
+
+.site-footer .language {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.site-footer .language .flag {
+  width: 20px;
+}
+
+.site-footer .social {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
