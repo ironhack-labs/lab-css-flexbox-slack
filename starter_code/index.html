@@ -6,12 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/style.css">
   <title>Where work happens | Slack</title>
 </head>
 
 <body>
   <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
+    <div id="logo-img">
+      <img src="./images/slack-logo.png" alt="slack_logo">
+    </div>
+    <div id="menu-bars">
+      <img src="images/bars.svg">
+    </div>
+
     <ul>
       <li>Why Slack?</li>
       <li>Pricing</li>
@@ -20,14 +28,23 @@
     </ul>
   </nav>
   <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+    <div class="header-container">
+      <h1>Where Work Happens</h1>
+      <p id="header-text">When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize
+        next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+      <input id="input-field-email" class="input-field" type="text" value="Email address">
+      <button id="input-field-button" class="input-field" type="button" name="button">GET STARTED</button>
+      <p id="sign-in-text">Already using Slack?
+        <a href="#">Sign in</a>
+      </p>
+    </div>
+
   </header>
   <main>
-    <div>
+    <div id="hero-img">
+      <img src="./images/home_talking.png" alt="home_work_happening">
+    </div>
+    <div id="company-claim-container">
       <h2>You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
       <button>DISCOVER WHY</button>
@@ -40,7 +57,9 @@
     </div>
     <div>
       <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
+      <p>Already using Slack?
+        <a href="">Sign in</a>
+      </p>
       <button type="button" name="button">GET STARTED</button>
     </div>
   </main>
