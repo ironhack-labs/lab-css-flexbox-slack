@@ -11,7 +11,10 @@ nav grey: #5b5e6d;
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -40,13 +43,13 @@ body {
 
 .button.secondary {
   color: rgba(26, 26, 141, 0.822);
-  background-color:white;
+  background-color: white;
 }
 
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number] {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
   font-size: 1em;
   border: 1px solid grey;
   border-radius: 4px;
@@ -55,14 +58,11 @@ input[type=number] {
   margin-top: 20px;
 }
 
-
 /* ---- layout ---- */
 
 .container {
   margin: 0 20px;
 }
-
-
 
 /* ---- components ---- */
 
@@ -70,7 +70,11 @@ input[type=number] {
   text-align: center;
 }
 
-
+@media (min-width: 767px) {
+  .sign-in-cta {
+    text-align: left;
+  }
+}
 
 /* ---- header ---- */
 
@@ -106,8 +110,6 @@ input[type=number] {
   }
 }
 
-
-
 /* ---- section:intro ---- */
 
 section.intro {
@@ -121,10 +123,9 @@ section.intro img {
 
 /* ---- section:our-clients ---- */
 
-
 section.our-clients {
   text-align: center;
-  background-color: #F4F3F4;
+  background-color: #f4f3f4;
 }
 
 section.our-clients .container {
@@ -150,6 +151,10 @@ section.our-clients .client {
   section.our-clients .client {
     width: 50%;
   }
+
+  section.our-clients .client:nth-of-type(even) {
+    border-left: 1px solid #ccc;
+  }
 }
 
 section.our-clients .logo {
@@ -166,11 +171,42 @@ section.our-clients .button {
 
 /* ---- section:try-it ---- */
 
-section.try-it h2 {
-  text-align: center;
+section.try-it .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
+section.try-it .sign-in-cta,
+section.try-it .sign-in-box {
+  width: 100%;
+}
 
+@media (min-width: 767px) {
+  section.try-it {
+    overflow: hidden;
+  }
+
+  section.try-it .sign-in-cta,
+  section.try-it .sign-in-box {
+    float: left;
+    width: 50%;
+  }
+
+  section.try-it .sign-in-box input {
+    margin: 0 10px 0 0;
+    width: 47%;
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px);
+    float: left;
+  }
+
+  section.try-it .sign-in-box button {
+    margin: 0;
+    width: 50%;
+    float: left;
+  }
+}
 
 /* ---- site-footer ---- */
 
@@ -178,16 +214,29 @@ section.try-it h2 {
   overflow: hidden;
 }
 
+.site-footer .container .link-groups {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .site-footer .link-group {
-  float: left;
   list-style-type: none;
   width: 50%;
   padding: 0 0 0 10px;
 }
 
+@media (min-width: 767px) {
+  .site-footer .logo {
+    float: left;
+  }
+  .site-footer .link-group {
+    width: 25%;
+  }
+}
+
 .site-footer .more-links {
   text-align: center;
-  background-color: #F4F3F4;
+  background-color: #f4f3f4;
 }
 
 .site-footer .legal {
