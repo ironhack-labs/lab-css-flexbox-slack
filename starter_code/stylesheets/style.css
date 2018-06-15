@@ -5,3 +5,202 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+}
+
+nav{
+  position: fixed;
+  display: flex;
+  background-color: #FFF;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #5b5e6d;
+  width: 95%;
+  padding: 0 2.5%;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+.logo-img{
+  width: 150px;
+}
+
+nav i.fa{
+  display: none;
+  font-size: 1.5rem;
+}
+/** header **/
+header{
+  max-width: 90%;
+  padding-top: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > img{
+  max-width: 45%;
+}
+
+.col-2{
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+/** Main **/
+main{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.company{
+  padding: 20px;
+  background-color: #F4F3F4;
+}
+.company-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
+  margin: 30px auto;
+}
+.company-box-logo{
+  width: 33%;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #5b5e6d;
+  min-height: 50px;
+}
+.company-box img{
+  width: 80%;
+}
+
+.try{
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  width: 90%;
+  padding: 30px 5%;
+  border-bottom: 1px solid #5b5e6d;
+}
+
+/** Footer **/
+footer{
+  display: flex;
+  flex-direction: column;
+}
+.info{
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.info ul{
+  list-style: none;
+}
+.info ul li{
+  margin-bottom: 10px;
+}
+.info ul li:first-child{
+  margin-bottom: 20px;
+}
+.info-content, .info-content_col2{
+  display: flex;
+}
+.slack img{
+  width: 100px;
+}
+
+/** contact **/
+.contact{
+  background: #F4F3F4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+}
+.contact ul{
+  margin: 0;
+  padding: 0;
+}
+.contact ul li{
+  display: inline-block;
+  margin-left: 15px;
+}
+.rrss{
+  display: flex;
+}
+.rrss img{
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/** Iteration 3 | Medium Screen **/
+@media (max-width: 1024px) and (min-width: 961px) {
+  .company-box-logo{
+    width: 50%;
+  }
+}
+
+/** Iteration 2 | Small Screen **/
+@media (max-width: 960px){
+  header{
+    flex-direction: column-reverse;
+  }
+  header > img{
+    max-width: 70%;
+    margin: 35px auto;
+  }
+  .col-2{
+    max-width: 65%;
+  }
+  .company-box-logo{
+    width: 50%;
+  }
+
+}
+
+/** Iteration 1 | Extra Small Screen **/
+@media (max-width: 767px){
+  .center{
+    text-align: center;
+  }
+  nav i.fa{
+    display: block;
+  }
+  nav ul{display: none;}
+  .company{
+    padding: 30px 100px;
+  }
+  
+  .company-box-logo{
+    width: 100%;
+    min-height: 120px;
+  }
+  .try{
+    flex-direction: column;
+    margin: 20px auto;
+  }
+  .info, .info-content_col2, .contact, .rrss{
+    flex-direction: column;
+  }
+  .info-content_col2{
+    margin-right: 50px;
+  }
+}
