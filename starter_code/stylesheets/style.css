@@ -5,3 +5,167 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+/* @media (min-width: 1200px){
+
+
+
+}; */
+
+
+body {
+  margin: 0;
+}
+
+
+
+  div {
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+}
+
+nav {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 2px solid rgba(91, 94, 109, 0.2);
+  position: fixed;
+  width: 100%;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: #5b5e6d;
+}
+
+nav > img {
+  width: 10%;
+  position: relative;
+  left: 8px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 0px 12px 0px 12px
+}
+
+header {
+  padding-top: 100px;
+  display: flex;
+  align-content: center;
+}
+
+
+
+header, .row, .column1, .column2 {
+  height: 600px;
+}
+
+header img {
+  height: 68%;
+  padding-bottom: 5%;
+}
+
+header h1 {
+  color: #2C303F;
+  font-size: 5em;
+  order: -1;
+}
+
+.row {
+  display: flex;
+  flex-flow: column no wrap;
+}
+
+.row p:nth-child(2), .row p:nth-child(4), .row button {
+  position: relative;
+  bottom: 10%;
+}
+
+/*ASK: WHY IS THE P VISIBLE THROUGH THE NAV */
+
+.row p:nth-child(2) {
+  order:1;
+  color: #5b5e6d;
+  font-size: 1.6em;
+  
+}
+
+.row p:nth-child(4){
+color: #5b5e6d;
+order: 4;
+}
+
+.row button {
+  order: 3;
+ background: #192592;
+ width: 150px;
+ height: 50px;
+ color: white;
+ border-radius: 4px;
+}
+
+
+
+
+
+.column1 {
+  align-items: flex-end;
+  justify-content: center;
+  flex: 53%;
+}
+
+
+.column2 {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 47%;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid blue;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.h2div {
+  position: relative;
+  z-index: 2;
+  order: -1;
+  border: 50px solid red;
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagesbox {
+  height: 600px;
+  order: 1;
+  border: 2px solid red;
+  align-self: flex-end;
+  display: flex;
+  flex: 0 1 auto;
+  align-items: space-around;
+  justify-content: space-around;
+
+}
+.imagesbox img {
+  height: 30px;
+}
