@@ -20,19 +20,59 @@ body {
   padding: 0;
 }
 
-/* ---- main ---- */
+/* ---- forms ---- */
 
-.nav-bar .logo {
-  width: 90px;
-  float: left;
-  margin: 10px 0;
+.button {
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 1px solid rgba(26, 26, 141, 0.822);
 }
 
-.nav-bar .burger-menu {
-  width: 30px;
-  float: right;
-  margin: 22px 0;
+.button.primary {
+  color: white;
+  background-color: rgba(26, 26, 141, 0.822);
 }
+
+.button.secondary {
+  color: rgba(26, 26, 141, 0.822);
+  background-color:white;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number] {
+  font-size: 1em;
+  border: 1px solid grey;
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+
+/* ---- layout ---- */
+
+.container {
+  margin: 0 20px;
+}
+
+
+
+/* ---- components ---- */
+
+.sign-in-cta {
+  text-align: center;
+}
+
+
+
+/* ---- header ---- */
 
 .nav-bar {
   background-color: white;
@@ -43,110 +83,136 @@ body {
   top: 0;
 }
 
-.container {
-  margin: 0 20px;
+.nav-bar .container {
+  display: flex;
+  justify-content: space-between;
 }
 
-header {
+.nav-bar .logo img {
+  width: 90px;
+}
+
+.nav-bar .burger-menu img {
+  width: 30px;
+}
+
+.nav-bar .menu {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .nav-bar .menu {
+    display: block;
+  }
+}
+
+
+
+/* ---- section:intro ---- */
+
+section.intro {
   clear: both;
   padding-top: 90px;
 }
 
-.email-input {
-  border: 1px solid grey;
-  border-radius: 4px;
-  width: 100%;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-.text-p {
-  font-size: 1em;
-}
-
-.get-started {
-  border: 1px solid rgba(26, 26, 141, 0.822);
-  padding: 15px;
-  margin-top: 20px;
-  background-color: rgba(26, 26, 141, 0.822);
-  border-radius: 4px;
-  width: 100%;
-}
-
-header button {
-  color: white;
-}
-
-.logos {
-  width: 150px;
-  margin: 10px;
-}
-
-.centered {
-  text-align: center;
-}
-
-.center-img {
+section.intro img {
   margin: 30px 20px 0;
 }
 
-.main-div1 {
+/* ---- section:our-clients ---- */
+
+
+section.our-clients {
+  text-align: center;
   background-color: #F4F3F4;
 }
 
-.discover-why {
-  border: 1px solid rgba(26, 26, 141, 0.822);
-  padding: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color:white;
-  border-radius: 4px;
-  width: 100%;
-  color: rgba(26, 26, 141, 0.822);
+section.our-clients .container {
+  padding-bottom: 50px;
 }
 
-.main-div1 h2 {
+section.our-clients h2 {
   padding-top: 20px;
 }
 
-hr {
+section.our-clients .clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.our-clients .client {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 767px) {
+  section.our-clients .client {
+    width: 50%;
+  }
+}
+
+section.our-clients .logo {
+  width: 150px;
+  margin: 10px;
+}
+section.our-clients hr {
   width: 200px;
 }
 
-.left {
+section.our-clients .button {
+  margin-bottom: 20px;
+}
+
+/* ---- section:try-it ---- */
+
+section.try-it h2 {
+  text-align: center;
+}
+
+
+
+/* ---- site-footer ---- */
+
+.site-footer .container {
+  overflow: hidden;
+}
+
+.site-footer .link-group {
   float: left;
   list-style-type: none;
   width: 50%;
   padding: 0 0 0 10px;
 }
 
-.div-footer {
-  overflow: hidden;
+.site-footer .more-links {
+  text-align: center;
+  background-color: #F4F3F4;
 }
 
-.footer-grey {
+.site-footer .legal {
+  text-align: center;
   list-style-type: none;
   display: inline;
-  width: 80%;
   padding: 0;
 }
 
-.footer-grey li {
+.site-footer .legal li {
   display: inline;
 }
 
-.last-list {
-  text-align: center;
-}
-
-.ii {
-  display: block;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.flag {
+.site-footer .language {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.site-footer .language .flag {
+  width: 20px;
+}
+
+.site-footer .social {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 }
