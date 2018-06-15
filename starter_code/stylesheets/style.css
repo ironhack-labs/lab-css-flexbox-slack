@@ -5,3 +5,241 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+img{width: 100%; height: 100%;}
+p{color: #5b5e6d;}
+
+.navbar{
+    width: 100%;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+    border-bottom: 1px solid #eee;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar .image-container{
+    max-width: 150px;
+    width: 65%;
+}
+
+.navbar a{
+    padding: 8px 10px;
+    margin-left: 5px;
+}
+
+.navbar a:last-child{
+    border: 2px solid #5b5e6d;
+    border-radius: 4px;
+}
+
+.section1{
+    padding: 3em;
+    padding-top: calc(87px + 3em);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section1 .image-container{
+    width: 43%;
+}
+
+.section1 h1{
+    font-size: 4em;
+    line-height: 1;
+}
+
+.section1 p{
+    font-size: 1.5em;
+    margin: 1.3em 0;
+}
+
+.section1 .col-2{
+    width: 40%;
+}
+
+.section1 input{display: none;}
+
+.section1 button{
+    padding: 1.3em 2em;
+    background-color: #192592;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.section2{
+    background-color: #F4F3F4;
+    padding: 2em;
+}
+
+.section2 h2{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.section2 p{
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.section2 button{
+    display: block;
+    padding: 1em 2em;
+    margin: 2em auto;
+
+    background-color: white;
+    border: 1px solid #192592;
+    border-radius: 3px;
+    color: #192592;
+    font-weight: bold;
+}
+
+.brand-container{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.brand-container .image-container{
+    width: 26%;
+    margin-bottom: 4em;
+}
+
+.brand-container img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.section3{
+    padding: 2em 3em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section3 p:first-child{
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.section3 input, .section1 input{
+    padding: 1.3em 2em;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #eee;
+    margin-right: 1em;
+}
+
+.section3 button{
+    padding: 1.3em 2em;
+    background-color: #192592;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer{
+    padding: 3em 3em;
+    border-top: 1px solid #eee;
+}
+
+.footer div{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap
+}
+
+.footer .image-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer .image-container>img{
+    width: 150px;
+    height: 150px;
+}
+
+.footer li{
+    padding: 10px;
+}
+
+.footer2{
+    display: flex;
+    background-color: #eee;
+    padding: 2em 3em;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.footer2 .image-container{
+    width: 20px;
+    margin: 0 10px;
+}
+
+.footer2 ul, .footer2 div{
+    display: flex;
+}
+
+.footer2 span, .footer2 i, .footer2 li{
+    margin: 0 10px;
+    color: #5b5e6d;
+}
+
+@media screen and (max-width: 1024px){
+    .navbar ul{display: none}
+    .section1{flex-wrap: wrap-reverse}
+    .section1 p, .section2 p{font-size: 1.3em}
+    .section1 .image-container{width: 50%}
+    .section1 .col-2{width: 100%;}
+    .section1 input{display: inline-block}
+}
+
+@media screen and (max-width: 961px){
+    .section2 .image-container{width: 50%}
+}
+
+@media screen and (max-width: 768px){
+    .section1 h1{font-size: 2.5em;}
+    .section1 .image-container{width: 80%}
+    .section1 input{width: 100%; margin-bottom: 1em;}
+    .section1 button{width: 100%}
+
+    .section2 button{width: 85%}
+    .section2 h2{font-size: 2em;}
+    .section2 .image-container{width: 100%}
+
+    .section3 div{width: 100%; margin-bottom:1em; text-align: center;}
+    .section3 section{width: 100%}
+    .section3 input{width: 100%; margin-bottom: 1em;}
+    .section3 button{width: 100%}
+
+    .footer .image-container{width: 100%}
+    .footer ul{width: 45%}
+
+    .footer2 {flex-direction: column; align-items: center}
+    .footer2 div{margin-top: 1em;}
+}
