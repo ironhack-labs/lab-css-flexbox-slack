@@ -5,3 +5,431 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body, html {
+    font-family: 'Lato', Helvetica, Arial;
+    color: #2C303F;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, Times New Roman, serif;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.4em;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+    font-weight: 100;
+    color: #5b5e6d;
+}
+
+
+.center {
+    text-align: center;
+}
+
+img {
+    max-width: 90%;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 10px;
+    color: #5b5e6d;
+    box-shadow: 0 1px #F4F3F4;
+}
+
+nav img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type:none;
+    margin-right: 20px;
+}
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li:nth-child(-n+4) {
+        display: none;
+    }
+
+    nav ul li .fas {
+        display: inherit;
+    }
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px 0;
+}
+
+
+button {
+    background-color: #192592;
+    color: white;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: .9em;
+    padding: 20px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+
+.white-button {
+    background-color: white;
+    color: #192592;
+    border: 1px solid #192592;
+    font-weight: bold;
+}
+
+main {
+    background-color: #F4F3F4;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.logo-grid {
+    display: flex;
+    flex-flow:row wrap;
+    padding: 30px 0;
+    align-content: flex-start;
+}
+
+.logo-grid div{
+    height: auto;
+    margin: 30px auto;
+    max-width: 60%;
+}
+
+.try-it {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    padding: 30px 20px;
+    border-bottom: 1px solid #F4F3F4;
+    text-align: center;
+}
+
+    .try-it h3 {
+        padding-top: 20px;
+    }
+
+    .try-it p {
+        margin-top: 0;
+    }
+
+    .try-it div {
+        width: 100%;
+    }
+
+
+.link-columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+    .links ul {
+        list-style: none;
+        padding: 0 30px;
+    }
+
+    .links ul li {
+        margin: 20px 0;
+        color: #5b5e6d;
+        font-size: .8em;
+    }
+
+
+    .links ul li:first-child{
+        font-weight: bold;
+    }
+
+.footer-img {
+    width: 100%;
+}
+
+    .footer-img img {
+        width: 120px;
+    }
+
+.section2, section3 {
+    background-color: #F4F3F4;
+}
+
+.section2 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+    .section2 ul {
+        list-style: none;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    .section2 ul li {
+        display: inline;
+        margin: 0 5px;
+    }
+
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F3F4;
+}
+    
+    .footer2 p {
+    text-align: center;
+    margin-top: 0;
+}
+
+.section3 {
+    width: 145px;
+}
+
+    .section3 img {
+        width: 20px;
+        float: left;
+        margin: 18px 8px 0 0;
+    }
+
+.fa {
+    margin: 20px auto;
+    color: #5b5e6d;
+    padding: 0 7px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+input {
+    border: gray solid 1px;
+    border-radius: 3px;
+    height: 57px;
+    font-family: 'Lato', Helvetica, sans-serif;
+    color: #5b5e6d;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media (min-width:767px) {
+    
+    h2 {
+        font-size: 2em;
+    }
+
+    button {
+        width:200px;
+        height: 57px;
+    }
+
+    input {
+        width: 400px;
+    }
+    
+    header {
+        padding: 80px 50px;
+        flex-wrap: wrap;
+    }
+
+        header h1 {
+            font-size:3.5em;
+            margin-bottom: 10px;
+        }
+        
+        header img {
+        max-width: 400px;
+        margin: 0 auto;
+        }
+
+        header button {
+            margin-left: 10px;
+        }
+
+    p {
+        font-size: 22px;
+    }
+
+    p.center {
+        text-align: left;
+        margin: 0;
+    }
+
+    .main {
+        padding: 20px 50px;
+    }
+
+    .logo-grid div{
+        max-width: 35%;
+        margin: 30px auto;
+    }
+
+    .logo-grid img {
+        padding: 40px 0;
+    }
+
+    .try-it {
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 80px;
+        text-align: left;
+    }
+
+    .try-it input {
+        width: 200px;
+    }
+
+    button.white-button {
+        max-width: 100px:
+    }
+
+    .section1 ul {
+        max-width: 550px;
+        flex-grow: 2;
+    }
+
+    footer {
+        padding: 30px 55px;
+    }
+
+    .links ul {
+        font-size: 1.2em;
+    }
+
+    .footer2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 50px 30px;
+        font-weight: bold;
+    }
+
+    .section2 ul {
+        margin-left: 20px;
+    }
+
+    .section2 ul li {
+        font-weight: bold;
+        margin: 0 10px;
+    }
+
+    .section3 {
+        width: 250px;
+        padding-top: 20px;
+    }
+
+    .section3 div {
+        display: flex;
+        justify-content: center;
+        float: right;
+    }
+    
+}
+
+@media (min-width:961px) {
+
+    .logo-grid {
+        display: flex;
+        flex-flow:row wrap;
+        height: 400px;
+        padding: 30px 0;
+        align-content: flex-start;
+    }
+
+    .logo-grid div{
+        max-width: 27%;
+        height: auto;
+        flex-grow: 1;
+        margin: 30px auto;
+    }
+
+
+@media (min-width:1024px) {
+
+    header {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header div {
+        max-width: 45%;
+    }
+
+    header input {
+    display: none;
+    }
+
+    header button {
+        margin: 0;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    nav ul li:nth-child(-n+4) {
+        display: inline;
+        margin-left: 40px;
+    }
+
+    nav ul li:nth-child(4) {
+        border: 1px solid #5b5e6d;
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+
+    nav ul li .fas {
+        display: none;
+    }
+
+}
