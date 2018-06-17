@@ -40,13 +40,12 @@ nav {
   border-radius: 5px;
   color: white; 
   background-color: #192592;
-  margin: 0 20px;
+
 }
 
 header input {
   margin-bottom: 20px;
   padding: 20px 10px;
-  margin: 0 20px 15px 20px;
   border-radius: 20px;
 }
 
@@ -63,21 +62,37 @@ header p {
   text-align: center;
 }
 
+.user-input {
+  display: flex; 
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.header-text {
+ width: 45%; 
+}
+
 @media (min-width: 767px){
 
-  header input {
-    width: 400px;
-  }
-
-  header .primary-button {
-    width: 150px;
+  .header-text {
+    width: 100%;
   }
 
   .user-input {
-    display: flex;
-    height: 40px
+    flex-direction: row; 
+    height: 50px;
   }
 
+  .user-input input {
+    width: 50%;
+    height: 50px;
+    margin-right: 30px;
+  }
+
+  .sign-in {
+    text-align: unset;
+    padding-left: 20px;
+  }
 
 }
 
@@ -120,18 +135,39 @@ section.images {
 
 .try-it button {
   margin-bottom: 20px;
+  width: 100%;
 }
+
+.try-it input {
+  display: none;
+}
+
+
+
+@media (min-width: 767px){
+  main .secondary-button{
+    width: 20%; 
+    margin: 0 auto; 
+  }
+
+  .images div {
+    width: 50%;
+  }
+
+
+
+}
+
 
 /* ---- Footer ---- */
 
 footer img {
-  width: 25%; 
+  width: 20%; 
 }
 
 .list {
   display: flex;
 
-  
 }
 
 footer ul {
@@ -161,4 +197,24 @@ footer ul {
 .social {
   display: flex; 
   justify-content: space-evenly;
+}
+
+@media (min-width: 767px) {
+
+   .footer-menu img {
+     width: 50%
+   }
+
+  .footer-menu {
+    display: flex; 
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  }
+
+
 }
