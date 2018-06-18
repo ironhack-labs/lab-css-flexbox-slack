@@ -1,7 +1,180 @@
 /*
+* * * * * * * * *
+    Flexbox
+* * * * * * * * *
+
 background-grey: #F4F3F4;
 button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto");
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  color: black;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size: 1.2em;
+}
+
+nav {
+  margin-top: -100px; /*Coloca la navbar al principio de la página */
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  box-shadow: 1px 1px 1px #5b5e6d; /*(desde donde - posicion - que tan marcado - color)*/
+  color: #5b5e6d;
+  /*opacity: 0.5;*/
+}
+
+nav img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  padding: 0.5em;
+  margin-right: 1em;
+  justify-content: space-between; /* *** revisar aqui */
+  flex-flow: row wrap;
+}
+
+li > a {
+  /* Revisar IH learning sobre selectores avanzados */
+  /* quitamos el underline de los li, pero no del resto de los href =) */
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 0;
+}
+
+header {
+  /* coloca el contenido despues de la navbar*/
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px;
+  margin-bottom: 1em;
+}
+
+.input {
+    display:flex;
+    flex-wrap: wrap row;
+    align-items: center;
+}
+input{
+  font-size: 1em;
+  width: 300px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 7px;
+  padding: 1.5em 10px;
+  margin: 1em 1em;
+  letter-spacing: 1px;
+}
+
+button {
+    display:flex;
+    justify-content: center;
+  background-color: #192592;
+  color: white;
+  font-size: 1em;
+  width: 300px;
+  text-align: center;
+  border: 1px solid blakc;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 1.5em 10px;
+  margin: 1em 1em;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3 {
+  color: #2c303f;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  padding-bottom: 2em;
+  color: #5b5e6d;
+  line-height: 1.5em;
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+main {
+  background-color: #f4f3f4;
+  text-align: center;
+}
+
+img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.totalligas {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+}
+
+.footer2 > .status{
+    display: inline;
+        margin: 0 5px;
+    background-color: #f4f3f4;
+}
+    .usFlag img .fa{
+        width: 5em;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+@media (min-width:768px) {
+
+    h3{
+        font-size: 1em;
+    } 
+    button input{
+        width: 5em;
+        height: 2em;;
+    }
+
+    header{
+        width: 4em;
+    }
+    .companies {
+    display: flex;
+    flex-flow: row wrap;
+}
+.totalligas{
+    width: 4em;
+}
+
+.ligas{
+    width: 4em;
+
+}
+
+img {
+    max-width: 400px;
+    margin: 0 auto;
+}
+}
