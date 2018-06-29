@@ -180,8 +180,8 @@ img{
 .fig-container figure:nth-child(3n + 3){
   border-right: none;
 }
-.fig-container figure:nth-child(3) ~ figure{
-  border-bottom: 0;
+.fig-container figure:last-child {
+  border-bottom: none;
 }
 .fig-container figure img{
   width: 70%;
@@ -259,6 +259,10 @@ img{
   .fig-container figure{
     border-right: 1px solid #ebebeb;
   }
+  .fig-container figure:nth-child(3) ~ figure{
+    border-bottom: 0;
+  }
+  
   .item > img{
     max-width: 100%;
     width:33.3333%;
