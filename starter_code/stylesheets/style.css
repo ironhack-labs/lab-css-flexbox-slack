@@ -6,6 +6,9 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
 html {
     box-sizing: border-box;
   }
@@ -16,7 +19,13 @@ html {
   body {
     margin: 0;
     padding: 0;
-    font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Poppins,sans-serif;
+    color: #2C303F;
+  }
+
+  h1,h2  {
+      font-family: 'Playfair Display',sans-serif;
+      color: #2C303F;
   }
 
 .full-nav {
@@ -135,7 +144,7 @@ main img {
 }
 
 .container-half {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -181,4 +190,118 @@ main img {
     border-radius:5px; 
     width: 100%;
     padding: 20px;
+}
+
+.img-toflex {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 968px){
+    .container-half {
+        width: 67%;
+        margin: 0 auto;
+    }
+    .button-center {
+        width: 30%;
+        margin-left: 38%;
+    }
+    .signin-center {
+        text-align: left;
+    }
+    .button-style {
+        width: 20%;
+    }
+
+    .img-toflex{
+        all: unset;
+    }
+    .img-toflex {
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+    }
+
+
+    .sons-width {
+        width: 50%;  
+    }
+
+    .second-main {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin-left: 5%;
+    }
+    .ending {
+        text-align: left;
+    }
+    .button-center{
+        width: 20%;
+        margin-left: 50%;
+    }
+
+    .list-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-color {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+    }
+    .flag-language {
+        margin-left: 300px;
+        margin-top: 20px;
+    }
+    .footer-rrss {
+        margin-left: 102px;
+    }
+
+
+}
+@media (min-width: 1024px){
+    .img-toflex{
+        all: unset;
+    }
+    .img-toflex {
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+    }
+
+
+    .sons-width {
+        width: 33%;  
+    }
+}
+
+
+@media (min-width: 1200px){
+    .full-header {
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .container-half {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .button-center {
+        width: 30%;
+        margin: 0 35%;
+    }
 }
