@@ -60,6 +60,10 @@ nav img {
   padding-left: 50px;
 }
 
+.top-bar-options {
+  display: none;
+}
+
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -80,8 +84,17 @@ header {
   flex-direction: column;
 }
 
-header img {
+.header-content-container {
+  margin: 0 50px;
+}
+
+.header-image {
+  display: flex;
+}
+
+.header-image img {
   width: 80%;
+  height: 80%;
 }
 
 header p {
@@ -111,6 +124,7 @@ button {
   font-size: 1rem;
   height: 70px;
   -webkit-appearance: none;
+  border-radius: 8px;
 }
 
 .contact button {
@@ -162,6 +176,7 @@ main img {
   color: #4049aa;
   font-weight: 700;
   font-size: 1.4rem;
+  border: 1px solid #4049aa;
 }
 
 .bottom-links-container {
@@ -253,6 +268,10 @@ main img {
     font-size: 1rem;
   }
 
+  .main-content p {
+    font-size: 1.4rem;
+  }
+
   .contact {
     flex-direction: row;
     width: 80%;
@@ -263,12 +282,20 @@ main img {
     justify-content: flex-start;
     width: 100%;
     margin: 0;
-    font-size: 1rem;
+  }
+
+  .already-using p {
+    font-size: 1.2rem;
+    margin: 12px 0;
   }
 
   .try-it {
     text-align: left;
     justify-content: flex-start;
+  }
+
+  .try-it p {
+    font-size: 1.6rem;
   }
 
   .centered {
@@ -283,5 +310,145 @@ main img {
   main img {
     width: 34%;
     height: 34%;
+  }
+
+  .header-image {
+    justify-content: center;
+    min-width: 500px;
+  }
+
+  .header-image img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .get-started-container {
+    display: flex;
+  }
+
+  .try-it-container {
+    width: 100%;
+  }
+
+  .social-container {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    height: 20px;
+  }
+
+  .settings {
+    width: 340px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+
+  .social-container ul {
+    justify-content: flex-start;
+    width: 340px;
+  }
+
+  .social-media {
+    margin-left: 20px;
+    justify-content: space-evenly;
+  }
+
+  .language-selection img {
+    width: 30px;
+  }
+
+  .language-selection {
+    padding: 0;
+  }
+}
+@media (min-width: 960px) {
+  .company-logos img {
+    width: 26%;
+  }
+}
+@media (min-width: 1024px) {
+  .top-bar-options {
+    display: flex;
+    list-style: none;
+    width: 430px;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+    color: #5b5e6d;
+  }
+
+  .workspaces {
+    border: 1px solid #5b5e6d;
+    display: inline-block;
+    padding: 12px 10px;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+  }
+
+  header {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .already-using {
+    margin-top: -2 0px;
+  }
+
+  .contact input,
+  .hamburger {
+    display: none;
+  }
+
+  .header-image {
+    justify-content: space-around;
+    min-width: 460px;
+  }
+
+  .header-image img {
+    width: 70%;
+    height: 70%;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    min-width: 600px;
+    line-height: 1.8rem;
+  }
+
+  .header-content-container {
+    margin: 0;
+  }
+
+  button {
+    height: 60px;
+    font-size: 1rem;
+  }
+
+  .sub-footer {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom-links-container ul {
+    width: 190px;
+  }
+
+  .bottom-links-container li {
+    font-size: 0.8rem;
+    margin: 20px 0;
+  }
+
+  .social-container {
+    font-size: 0.9rem;
+  }
+
+  .footer-row {
+    height: 30px;
   }
 }
