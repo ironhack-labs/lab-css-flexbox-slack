@@ -5,3 +5,487 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.8rem;
+  /* line-heigh */
+  text-align: center;
+}
+h3 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+p, span {
+  font-size: 1.1rem;
+  color: #5b5e6d;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav > img {
+  height: 40px;
+}
+.nav-links > li{
+  float: right;
+  margin: 10px;
+  list-style-type: none;
+}
+.clear-fix {
+  clear: both;
+}
+
+
+
+header {
+  display: flex;
+  margin: 0 auto;
+}
+
+.btn-get-started {
+  display: block;
+  padding: 15px 5%; 
+  /* ????????????????????? */
+  margin: 20px 2px;
+  font-size: 1em;
+  background-color: #192592;
+  color: white;
+  font-weight: 700;
+}
+
+header .header-img-div img{
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+/* main */
+main {
+  background-color: #F5F5F5;
+  margin: 0 auto;
+}
+main button {
+  padding: 15px 5%; 
+  display: block;
+  /* ????????????????????? */
+  margin: 20px auto;
+  font-size: 1em;
+  color: #192592;
+  font-weight: 700;
+
+}
+main p {
+  text-align: center;
+}
+main .company-imgs-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .company-imgs {
+  display: flex;
+  height: 15vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+main img {
+  height: 5vh;
+}
+main .try-for-free-container {
+  display: flex;
+}
+
+
+/* footer  */
+footer img {
+  height: 150px;
+}
+footer li {
+  font-size: 1rem;
+  color: #5b5e6d;
+  list-style-type: none;
+  line-height: 2.5em;
+}
+footer ul + li {
+  font-weight: 700;
+}
+footer .footer-container {
+  margin: 0 5vw;
+  display: flex;
+}
+footer .footer-links {
+  width: 30vw;
+}
+
+
+footer .bottom-links {
+  background-color: #F5F5F5;
+  display: flex;
+}
+footer .bottom-links .bottom-container-1 {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+
+
+.language {
+  text-align: center;
+}
+footer .language img {
+  height: 30px;
+  padding-right: 10px;
+}
+.social-media-links {
+  text-align: center;
+  color:#5b5e6d;
+}
+.social-media-links i {
+ font-size: 1.5rem;
+ margin: 0 15px;
+ /* width: 36px !important;
+ height: 36px !important; */
+
+}
+.language span {
+  font-size: 1em;
+  color: green;
+  margin-right: 10px;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  /* header */
+  header {
+    flex-direction: column-reverse;
+  }
+  .email {
+    display: block;
+    padding: 15px 5%; 
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1em;
+  }
+  header button {
+    width: 100%;
+  }
+  .sign-in {
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    text-align: center;
+  }
+
+
+  /* main */
+  main button {
+    width: 100%;
+  }
+  main .company-imgs {
+    width: 100%;
+  }
+  main .try-for-free-container {
+    flex-direction: column;
+  }
+
+  /* footer  */
+  footer .bottom-links {
+    flex-direction: column;
+  }
+  footer img {
+    padding-right: 100px;
+  }
+  footer .footer-container {
+    flex-wrap: wrap;
+  }
+  footer .bottom-links .bottom-container-1 {
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  .social-media-links {
+    margin: 30px 0 0 0;
+    padding-bottom: 30px;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 961px) {
+  /* header {
+    flex-direction: column-reverse;
+  } */
+  header .header-img-div {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .email {
+    /* display: block; */
+    padding: 15px 5%; 
+    width: 30%;
+    font-size: 1em;
+  }
+  header .btn-get-started {
+    display: inline;
+  }
+
+  /* main */
+  main .company-imgs {
+    width: 50%;
+  }
+  main .try-for-free-container {
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px lightgray solid;
+    padding: 40px 0;
+  }
+  main #free-div-1 {
+    padding: 10px 0 10px 10px;
+    flex: 1 0 50%;
+    /* text-align: left; */
+  }
+  main #free-div-1 .sign-in{
+    text-align: left;
+  }
+  main #free-div-2 {
+    flex: 0 1 25%;
+  }
+  main #free-div-2 .email {
+    width: 70%;
+  }
+  main #free-div-3 {
+    flex: 0 1 25%;
+  }
+  main #free-div-3 .btn-get-started {
+    width: 80%;
+  }
+  main #free-div-1 h3 {
+    text-align: left;
+  }
+
+
+  /* footer  */
+  footer .footer-container {
+    margin: 0 5vw;
+    display: flex;
+  }
+  footer .bottom-links {
+    justify-content: space-between;
+  }
+  footer .bottom-links .bottom-container-1 {
+    flex: 1 1 50%;
+  }
+  footer .bottom-links .language {
+    flex: 0 1 18%;
+  }
+  footer .bottom-links .social-media-links {
+    flex: 0 1 18%;
+  }
+
+  footer .language {
+    float: left;
+  }
+
+  footer .bottom-links .bottom-container-1 {
+    justify-content: flex-start;
+    padding: 0;
+  }
+  footer .bottom-links .bottom-container-1 li {
+    font-size: 1rem;
+    flex: 0 1 25%;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+@media (min-width: 960px) and (max-width: 1199px) {
+  header {
+    flex-direction: column-reverse;
+  }
+  header .header-img-div {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .email {
+    /* display: block; */
+    padding: 15px 5%; 
+    width: 30%;
+    font-size: 1em;
+  }
+  header .btn-get-started {
+    display: inline;
+  }
+
+  /* main */
+  main .company-imgs {
+    width: 33%;
+  }
+  main .try-for-free-container {
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px lightgray solid;
+    padding: 40px 0;
+  }
+  main #free-div-1 {
+    padding: 10px 0 10px 10px;
+    flex: 1 0 50%;
+    /* text-align: left; */
+  }
+  main #free-div-1 .sign-in{
+    text-align: left;
+  }
+  main #free-div-2 {
+    flex: 0 1 25%;
+  }
+  main #free-div-2 .email {
+    width: 70%;
+  }
+  main #free-div-3 {
+    flex: 0 1 25%;
+  }
+  main #free-div-3 .btn-get-started {
+    width: 80%;
+  }
+  main #free-div-1 h3 {
+    text-align: left;
+  }
+
+
+  /* footer  */
+  footer .footer-container {
+    margin: 0 5vw;
+    display: flex;
+  }
+  footer .bottom-links {
+    justify-content: space-between;
+  }
+  footer .bottom-links .bottom-container-1 {
+    flex: 1 1 50%;
+  }
+  footer .bottom-links .language {
+    flex: 0 1 18%;
+  }
+  footer .bottom-links .social-media-links {
+    flex: 0 1 18%;
+  }
+
+  footer .language {
+    float: left;
+  }
+
+  footer .bottom-links .bottom-container-1 {
+    justify-content: flex-start;
+    padding: 0;
+  }
+  footer .bottom-links .bottom-container-1 li {
+    font-size: 1rem;
+    flex: 0 1 25%;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    justify-content: space-around;
+  }
+  header .header-img-div {
+    width: 40vw;
+  }
+  header .header-info-div {
+    width: 40vw;
+  }
+  header .email {
+    display: none;
+  }
+  header button {
+    width: 35%;
+  }
+  .sign-in {
+    text-align: left;
+  }
+
+  /* main */
+  main button {
+    width: 30%;
+  }
+  main .company-imgs {
+    width: 33%;
+  }
+  main .try-for-free-container {
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px lightgray solid;
+    padding: 40px 0;
+  }
+  main #free-div-1 {
+    padding: 10px 0 10px 100px;
+    flex: 1 1 50%;
+  }
+  main #free-div-2 {
+    flex: 0 1 18%;
+    margin-right: 20px;
+  }
+  main #free-div-3 {
+    flex: 0 1 18%;
+    padding-right: 100px;
+  }
+  main #free-div-1 h3 {
+    text-align: left;
+  }
+  main .btn-get-started {
+    width: 100%;
+  }
+  main .email {
+    display: block;
+    padding: 15px 5%; 
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1em;
+  }
+
+
+  /* footer  */
+  footer .footer-container {
+    margin: 0 5vw;
+    display: flex;
+  }
+  footer .bottom-links {
+    justify-content: space-between;
+  }
+  footer .bottom-links .bottom-container-1 {
+    flex: 1 1 50%;
+  }
+  footer .bottom-links .language {
+    flex: 0 1 15%;
+  }
+  footer .bottom-links .social-media-links {
+    flex: 0 1 15%;
+  }
+
+  footer .language {
+    float: left;
+  }
+
+  footer .bottom-links .bottom-container-1 {
+    justify-content: flex-start;
+  }
+  footer .bottom-links .bottom-container-1 li {
+    font-size: 1rem;
+    flex: 0 1 17%;
+    font-weight: 700;
+    text-align: center;
+  }
+}
