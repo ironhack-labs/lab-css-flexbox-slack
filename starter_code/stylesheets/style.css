@@ -7,39 +7,431 @@ nav grey: #5b5e6d;
 */
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
-
-*{
+body {
   font-family: 'Lato', sans-serif;
+  color: #5b5e6d;
+  margin: 0;
 }
 
-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-content: space-around
-}
+  #white-bar {
+    height: 8vh;
+  }
 
-header img{
-  width: 50%;
-  height: 50%;
-}
+  nav {
+    background-color: white;
+    color: #5b5e6d;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-size: 0.8em;
+    width: 84vw;
+    height: 8vh;
+    padding: 0 8vw;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    top: 0px;
+  }
+  nav>.btn {
+    color: grey;
+    background-color: white;
+    border: 0px;
+    font-size: 2em;
+  }
+  nav>img {
+    width: auto;
+    height: 6vh;
+  }
+  nav ul {
+    list-style-type: none;
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    padding: 5vh 10vw 0;
+  }
+  header img {
+    order: 1;
+    width: 100%;
+    height: 100%;
+  }
+  header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #2C303F;
+    font-size: 2.5rem;
+    margin: 4vh 0 4vh;
+  }
+  header button {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #3f46ad;
+    border: 0px;
+    border-radius: 4px;
+    height: 10vh;
+    width: 100%;
+    padding: 19px 40px 20px;
+  }
+  #header-content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    margin: 0 0 2vh;
+  }
+  #header-content>p {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 0 0 4vh;
+  }
 
-header button {
-  font-weight: 500;
-  color: white;
-  background-color: #3f46ad;
-  border: 0px;
-  border-radius: 4px;
-  height: 5vh;
-  width: 15vw;
-}
+  #email-button {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0vh;
+  }
 
-#header-content {
-  display: flex;
-  flex-flow: column nowrap;
-  align-content: center;
-}
+  #email-button input {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #5b5e6d;
+    background-color: #ffffff;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 4px;
+    height: 2vh;
+    width: auto;
+    padding: 19px 40px 20px;
+    margin-bottom: 2rem;
+  }
+  main div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    align-items: center;
+    padding: 2rem 2rem;
+  }
+  #customers {
+    background-color: #F4F3F4;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5em;
+    flex-flow: column nowrap;
+  }
+  #customers h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #2C303F;
+    font-size: 1.7rem;
+    margin: 4vh 0 2vh;
+  }
+  #customers button {
+    font-weight: 600;
+    color: #3f46ad;
+    background-color: white;
+    border: 1px solid #3f46ad;
+    border-radius: 4px;
+    height: 10vh;
+    width: 100%;
+    padding: 19px 40px 20px;
+  }
+  #customers img {
+    width: 150px;
+    height: auto;
+    padding: 10vh 20vw;
+    border-bottom: 1px solid #83838338;
+  }
+  #customers img:last-child {
+    border: none;
+  }
+  #try {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5em;
+    flex-flow: column nowrap;
+    align-content: space-around;
+    border-top: 1px solid #83838338;
+    border-bottom: 1px solid #83838338;
+    padding: 4rem 2rem;
+  }
+  #try button {
+    font-weight: 600;
+    color: white;
+    background-color: #3f46ad;
+    border: 0px;
+    border-radius: 4px;
+    height: 9vh;
+    width: 100%;
+    padding: 19px 40px 20px;
+  }
+  #try h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #2C303F;
+    font-size: 1.7rem;
+    margin: 0.3rem;
+  }
+  #try input {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #5b5e6d;
+    background-color: #ffffff;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 4px;
+    height: 2vh;
+    width: auto;
+    padding: 19px 40px 20px;
+    margin-bottom: 2rem;
+  }
+  #try p {
+    margin: 0 0 1rem;
+  }
+  footer ul {
+    list-style-type: none;
+  }
+  #links {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 0 2rem;
+  }
+  #links img {
+    width: 7.5rem;
+  }
+  #link-lists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  #link-lists li {
+    padding: 0.75rem 0;
+  }
+  #link-lists ul {
+    margin: 0;
+    padding: 0 2rem 0 0;
+    width: 30vw;
+  }
+  #link-lists li:first-child {
+    font-weight: 600;
+  }
+  
+  #bottom-links{
+    display: flex;
+    flex-flow: column nowrap;
+    background: #F4F3F4;
+    font-weight: 600;
+  }
+  #bottom-links ul{
+    width: 300px;
+    padding: 1rem 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-self: center;
+  }
 
-main img{
-  width: 20%;
-}
+  #lang{
+    width: 150px;
+    padding: 1rem 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  #lang img{
+    height: 1rem;
+    width: 1rem;
+  }
+
+  #social {
+    width: 100px;
+    padding: 1rem 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  @media only screen and ( min-width: 768px) { 
+
+
+    #header-content{
+      min-width: 200px;
+      margin-right: 5em;
+    }
+
+    #email-button {
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-content: flex-start;
+    }
+    
+    #email-button > input {
+      width: auto;
+      margin: 0 1em 0 0;
+    }
+
+    #email-button > button {
+      width: auto;
+      margin-right: 1em;
+    }
+
+    #customers button {
+      width: auto;
+    }
+
+    #customers img{
+      padding: 10vh 10vw;
+    }
+
+    #logos{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: baseline;
+    }
+
+    #logos img:nth-child(5){
+      border: 0px;
+    }
+
+    #try {
+      flex-flow: row nowrap;
+      padding: 0;
+    }
+
+    #try input {
+      width: auto;
+      margin: 0 1em 0 0;
+    }
+
+    #try button {
+      width: auto;
+    }
+
+    #links {
+      flex-flow: row nowrap;
+      margin-top: 2em;
+    }
+
+    #links img {
+      width: 7.5rem;
+      height: 7.5rem;
+    }
+
+    #link-lists {
+      padding: 0 0 0 2vw;
+    }
+
+    #link-lists ul {
+      margin: 0;
+      padding: 0 2rem 0 0;
+      width: 17vw;
+    }
+
+    #bottom-links {
+      flex-flow: row nowrap;
+      justify-content: center;
+      height: 84px;
+    }
+
+    #lang {
+      margin-left: 10em;
+    }
+
+  }
+
+  @media only screen and ( min-width: 1025px)
+  {
+    header {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-content: space-between;
+      padding: 10vh 0vw;
+      }
+    header img{
+      width: 40%;
+      margin: 0 5em;
+      order: -1
+    }
+    
+    #header-content{
+      margin-right: 2em;
+    }
+    #email-button button{
+      height: 50%;
+    }
+
+    #customers button{
+      height: 50%;
+    }
+
+    #customers img{
+      padding: 7vh 7vw;
+    }
+
+    #logos{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: baseline;
+    }
+
+    #logos img:nth-child(5){
+      border: 0px;
+    }
+
+    #logos img:nth-child(4){
+      border: 0px;
+    }
+
+    #try {
+      justify-content: center
+    }
+    #try input{
+      margin-left: 20em;
+    }
+    #try button{
+      height: 50%;
+    }
+
+      #link-lists ul {
+        width: 16vw;
+      }
+    
+      #link-lists{
+        margin-left: 10em;
+        padding: 0 0 0 2vw;
+      }
+  }
+
+  @media only screen and ( min-width: 1201px){
+    
+    
+    header {
+      align-items: flex-start
+    }
+
+    nav button {
+      display: none;
+    }
+
+    nav ul {
+      display: flex;
+      font-size: 1rem;
+      align-items: center;
+    }
+
+    nav li{
+      margin: 0 1em;
+    }
+
+    nav li:last-child{
+      padding: 7px;
+      border: 1px solid #5b5e6d;
+      border-radius: 5px;
+    }
+
+  }
