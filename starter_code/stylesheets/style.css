@@ -5,3 +5,284 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+html {
+  font-size: 14px;
+}
+
+body {
+  /* background: #eee; */
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #323648;
+}
+
+nav {
+  width: 100vw;
+  height: 8vh;
+  /* position: fixed; */
+  background: white;
+  display: flex;
+  padding: 10px 0 1px 30px;
+}
+
+nav > img {
+  width: 120px;
+}
+
+nav > ul > li {
+  display: inline;
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.child-image {
+  padding: 20px;
+  flex-basis: 40%;
+}
+
+.child-image > img {
+  max-height: 300px;
+  width: auto;
+}
+
+.child-content {
+  width: 95%;
+  padding: 25px;
+  flex-basis: 50%;
+}
+
+.child-content > button {
+  background-color:  #4a39ac;
+  font-size: 1rem;
+  padding: 15px 120px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.child-content > h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.child-content > p {
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+}
+
+.sign-in {
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  background: #f5f5f5;
+  padding-top: 20px;
+  color: #5b5e6d;
+}
+
+main > h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.8rem;
+}
+
+main > button {
+  /* height: 40px; */
+  background-color:  white;
+  font-size: 1rem;
+  padding: 20px 40px;
+  border-radius: 5px;
+  color: #1c299d;
+  border: #3d48b1 solid 1px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+
+
+/*======= Partner-Logo===== */
+
+.partner-logo {
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  background: #eee;
+  padding-top: 3rem;
+  margin: 2px;
+}
+
+.partner-logo > img {
+  width: 12rem;
+}
+
+/*======= "Try it for free" Sign-in ===== */
+
+main > .sign-in {
+  background: #fff;
+  height: 150px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sign-in button {
+  height: 40px;
+  background-color:  #4a39ac;
+  font-size: 1rem;
+  padding: 10px 60px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/*======= Footer ===== */
+
+
+footer > img {
+  width: 80px;
+  margin: 10px 10px;
+  background: #fff;
+  float: left;
+}
+
+.footer-first-0 {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #5b5e6d;
+}
+
+.footer-first-0 > ul{
+  flex-basis: 40%;
+}
+
+.footer-first-0 > ul > li{
+  list-style-type: none;
+  margin: 20px;
+}
+
+.footer-first-0 > ul > li:first-child{
+  font-weight: bold;
+}
+
+.footer-second {
+  background: #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-second > ul {
+  width: 60%;
+}
+
+.footer-second > ul > li {
+  display: inline;
+}
+
+.lang > img {
+  width: 20px;
+}
+
+.lang {
+  width: 20%;
+}
+
+.sns-ion {
+  width: 20%;
+}
+
+
+/* ==================  Media Query ==================  */
+
+/* Extra small devices (phon;es, 600px and down) */
+@media only screen and (max-width: 768px) {
+  body {
+    /* background-color: lightblue; */
+  }
+  header {
+    flex-direction: column-reverse;
+  }
+
+  .sign-in {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .footer-second {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 767px) {
+  body {
+    /* background-color: rgb(212, 80, 80); */
+  }
+  header {
+    flex-direction: column-reverse;
+  }
+
+  main > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .partner-logo {
+    flex-basis: 45%;
+  }
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 961px) {
+  body {
+    /* background-color: rgb(126, 126, 221); */
+  }
+  header {
+    flex-direction: column-reverse;
+  }
+
+  .partner-logo {
+    flex-basis: 30%;
+    height: 90px;
+  }
+
+  .footer-first-0 {
+    width: 85%;
+  }
+
+  .footer-first-0 > ul{
+    flex-basis: 20%;
+  }
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+  body {
+    /* background-color: rgb(110, 158, 110); */
+  }
+  header {
+    flex-direction: row;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* body {
+    background-color: yellow;
+  } */
+}
+
+
+
