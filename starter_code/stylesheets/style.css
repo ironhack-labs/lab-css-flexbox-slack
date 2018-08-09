@@ -5,3 +5,58 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Evita que crezca el tamano al agregar border and padding */
+}
+
+p {
+  color: #5b5e6d;
+}
+
+ul {
+  list-style: none;
+}
+
+body nav ul {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #d2d0d08f;
+    border-top: 1px solid #d2d0d08f;
+    padding-bottom: 10px;
+  }
+
+  body nav img {
+    max-height: 100%;
+    margin: 0 5%;
+    display: inline-block;
+  }
+
+  body nav ul {
+    display: none;
+  }
+
+  #hamburguer {
+    position: absolute;
+    top: 5%;
+    right: 20px;
+    margin: 1% 5%;
+    cursor: pointer;
+    color: #5b5e6d;
+    font-size: 55px;
+  }
+}
