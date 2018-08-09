@@ -5,3 +5,142 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Evita que crezca el tamano al agregar border and padding */
+}
+
+p {
+  color: #5b5e6d;
+}
+
+ul {
+  list-style: none;
+}
+
+body nav ul {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+}
+
+h1 {
+  color: #5b5e6d;
+  font-size: 65px;
+}
+
+h2 {
+  color: #2c303f;
+  font-size: 34px;
+}
+
+p {
+  margin-top: 10%;
+  font-size: 26px;
+}
+
+.form p {
+  text-align: center;
+}
+
+.form img {
+  padding-top: 5%;
+  width: 100%;
+}
+
+.companies {
+  padding: 10%;
+  background-color: #f4f3f4;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.mail {
+  width: 100%;
+  margin-top: 10%;
+  height: 55px;
+  padding-left: 3%;
+  font-size: 20px;
+}
+
+button {
+  margin-top: 4%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  padding: 5%;
+}
+
+button:nth-child(2) {
+  border: none;
+  background-color: #192592;
+  color: white;
+}
+
+button:nth-child(3) {
+  background-color: white;
+  color: #192592;
+  border: 1px solid #192592;
+}
+
+main img {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0;
+  width: 75%;
+}
+
+hr { 
+    display: block;
+    border: 0;
+    color: #e6e6e9;
+    background-color: #e6e6e9;
+    width: 100%;
+    height: 1px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-top: 195px;
+    margin: 0px 13%;
+  }
+  body nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #d2d0d08f;
+    border-top: 1px solid #d2d0d08f;
+    padding-bottom: 10px;
+  }
+
+  body nav img {
+    max-height: 100%;
+    margin: 0 5%;
+    display: inline-block;
+  }
+
+  body nav ul {
+    display: none;
+  }
+
+  #hamburguer {
+    position: absolute;
+    top: 5%;
+    right: 20px;
+    margin: 1% 5%;
+    cursor: pointer;
+    color: #5b5e6d;
+    font-size: 55px;
+  }
+}
