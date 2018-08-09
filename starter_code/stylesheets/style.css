@@ -5,3 +5,251 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+nav {
+  display: flex;
+}
+
+nav > .icon {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  /*Navbar Mobile*/
+  nav {
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  nav > img {
+    width: 30%;
+    height: 50px;
+  }
+
+  nav > ul {
+    display: none;
+  }
+
+  nav > .icon {
+    display: initial;
+    font-size: 25px;
+  }
+
+  /*Header Mobile*/
+
+  header {
+    padding: 8%;
+  }
+
+  header > h1 {
+    font-size: 40px;
+    padding-bottom: 15%;
+  }
+
+  header > p:nth-child(2) {
+    font-size: 15px;
+    padding-bottom: 15%;
+    text-align: left;
+  }
+
+  header > form > input {
+    font-size: 15px;
+    width: 100%;
+    height: 55px;
+    border: 1px solid #f5f5f5;
+    padding: 5%;
+    border-radius: 5%;
+  }
+
+  header > form > button {
+    font-size: 15px;
+    width: 100%;
+    height: 55px;
+    margin: 5% 0;
+    padding: 5%;
+    color: white;
+    background-color: #2800a3;
+    border-radius: 5%;
+  }
+
+  header > p:nth-child(4) {
+    text-align: center;
+  }
+
+  header > img {
+    width: 100%;
+    height: 250px;
+    margin-top: 20%;
+  }
+
+  /* Main Mobile*/
+
+  main {
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    padding: 8%;
+  }
+
+  main h2 {
+    font-size: 25px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  main p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 18px;
+  }
+
+  main button {
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    height: 55px;
+    border: 0.5px solid #2800a3;
+    color: #2800a3;
+    background-color: white;
+    padding: 5%;
+    border-radius: 5%;
+    margin: 15% 0;
+  }
+
+  main figure {
+    display: flex;
+    margin: 12% 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main img {
+    width: 150px;
+    height: 47px;
+  }
+
+  main hr {
+    border: 1px solid #ebebeb;
+  }
+
+  /* Section Mobile */
+
+  section {
+    background-color: white;
+    padding: 8%;
+  }
+
+  section form > input {
+    font-size: 15px;
+    width: 100%;
+    height: 55px;
+    border: 1px solid #f5f5f5;
+    padding: 5%;
+    border-radius: 5%;
+  }
+
+  section form > button {
+    font-size: 15px;
+    width: 100%;
+    height: 55px;
+    margin: 5% 0;
+    padding: 5%;
+    color: white;
+    background-color: #2800a3;
+    border-radius: 5%;
+  }
+
+  section > p:first-child {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  section > p:nth-child(2) {
+    margin: 20px 0;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* Footer Mobile */
+
+  footer > div:first-child ul {
+    padding: 8%;
+    display: flex;
+  }
+
+  footer img {
+    width: 128px;
+    height: 128px;
+  }
+
+  footer > div:first-child ul {
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 2.5em;
+  }
+
+  footer > div:first-child ul li:first-child {
+    color: #525358;
+    font-weight: bold;
+  }
+
+  footer > div:first-child ul li {
+    color: #7e808d;
+  }
+
+  footer > div:nth-child(2) {
+    background-color: #f5f5f5;
+    padding: 8%;
+  }
+
+  footer > div:nth-child(2) ul {
+    color: #525358;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0 7%;
+    font-size: 14px;
+  }
+
+  footer > div:nth-child(2) div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer > div:nth-child(2) div img {
+    width: 20px;
+    height: 20px;
+  }
+
+  footer i {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
