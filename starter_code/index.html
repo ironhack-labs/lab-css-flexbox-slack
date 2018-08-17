@@ -7,47 +7,64 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
-
 <body>
-  <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
-      <li>Why Slack?</li>
-      <li>Pricing</li>
-      <li>About Us</li>
-      <li>Your Workspaces</li>
+<!--NAVBAR-->
+  <nav class="main-nav container">
+    <img class="main-nav__logo" src="./images/slack-logo.png" alt="slack_logo">
+    <ul class="main-nav__list">
+      <li class="main-nav_item">Why Slack?</li>
+      <li class="main-nav_item">Pricing</li>
+      <li class="main-nav_item">About Us</li>
+      <li class="main-nav_item main-nav_item--button">Your Workspaces</li>
     </ul>
   </nav>
-  <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
-  </header>
-  <main>
-    <div>
-      <h2>You´re in good company</h2>
-      <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
+<!--HEADER-->
+  <header class="main-header container">
+    <img class="main-header__image" src="./images/home_talking.png" alt="home_work_happening">
+    <div class="wrapper">
+      <h1 class="main-header__heading">Where Work Happens</h1>
+      <p class="main-header__text">When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+      <button class="main-header__button button" type="button" name="button">GET STARTED</button>
+      <p class="link">Already using Slack? <a href="#">Sign in</a></p>
     </div>
-    <div>
-      <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+  </header>
+<!--MAIN-->
+  <main class="main-content">
+    <!--COLLABORATION-->
+    <div class="collaborations-section">
+    <div class="collaborations container">
+      <h2 class="collaborations__header heading-content">You´re in good company</h2>
+      <p class="collaborations__text">Millions of people around the world have already made Slack the place where their work happens.</p>
+      <button class="button button--white">DISCOVER WHY</button>
+      <div class="collaborations-wrapper">
+        <div class="collaborations__image--non-leftborer"><img class="collaborations__image" src="./images/airbnb-logo.png" alt=""></div>
+        <div><img class="collaborations__image" src="./images/capital-one-logo.png" alt=""></div>
+        <div><img class="collaborations__image" src="./images/harvard-logo.png" alt=""></div>
+        <div class="collaborations__image--non-leftborer collaborations__image--non-bottomborder"><img class="collaborations__image" src="./images/los-angeles-times-logo.png" alt=""></div>
+        <div class="collaborations__image--non-bottomborder"><img class="collaborations__image" src="./images/oracle-logo.png" alt=""></div>
+        <div class="collaborations__image--non-bottomborder"><img class="collaborations__image" src="./images/ticketmaster-logo.png" alt=""></div>
+      </div>
+    </div>
+    </div>
+    <!--ADVERTISMENT-->
+    <div class="advert-section">
+      <div class="advert-wrapper">
+        <p class="heading-content">Try it for free</p>
+        <p class="link">Already using Slack? <a href="#">Sign in</a></p>
+      </div>
+      <div>
+        <input class="advert-section__input" type="text" placeholder="Email address">
+        <button class="button" type="button" name="button">GET STARTED</button>
+      </div>
     </div>
   </main>
-  <footer>
-    <div>
-      <img src="./images/iso-slack.png" alt="">
-      <ul>
+<!--FOOTER-->
+  <footer class="main-footer">
+    <div class="main-footer__navbar main-footer-section">
+      <img class="main-footer__image" src="./images/iso-slack.png" alt="">
+      <ul class="main-footer__list">
         <li>COMPANY</li>
         <li>About Us</li>
         <li>Careers</li>
@@ -55,7 +72,7 @@
         <li>Press</li>
         <li>Brand Guidelines</li>
       </ul>
-      <ul>
+      <ul class="main-footer__list">
         <li>PRODUCT</li>
         <li>Why Slack?</li>
         <li>Enterprise</li>
@@ -63,7 +80,7 @@
         <li>Pricing</li>
         <li>Security</li>
       </ul>
-      <ul>
+      <ul class="main-footer__list">
         <li>RESOURCES</li>
         <li>Download</li>
         <li>Help Center</li>
@@ -72,7 +89,7 @@
         <li>App Directory</li>
         <li>API</li>
       </ul>
-      <ul>
+      <ul class="main-footer__list">
         <li>EXTRAS</li>
         <li>Podcast</li>
         <li>Slack Shop</li>
@@ -80,15 +97,15 @@
         <li>Slack Fund</li>
       </ul>
     </div>
-    <div>
-      <ul>
+    <div class="footer-links">
+      <ul class="footer-link__list">
         <li>Status</li>
         <li>Privacy & Terms</li>
         <li>Contact Us</li>
       </ul>
-      <div>
-        <img src="./images/us-flag.png" alt="">
-        <span>English (US)</span>
+      <div class="social-links">
+        <img class="social-links__flag" img src="./images/us-flag.png" alt="Flag">
+        <span class="social-links_lang">English (US)</span>
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
         <i class="fa fa-twitter" aria-hidden="true"></i>
         <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -97,5 +114,4 @@
     </div>
   </footer>
 </body>
-
 </html>
