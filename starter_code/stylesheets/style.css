@@ -14,9 +14,12 @@ p {
   color: #5b5e6d;
 }
 
+body {
+  margin: 0 auto;
+}
 
 .flexNav {
-  height:10vh;
+  height:8vh;
   justify-content: space-between;
   display: flex;
   position: fixed;
@@ -31,7 +34,6 @@ p {
 .workSpaces {
   border: 1px solid black;
   padding: 0.6vw;
-  padding-right: 0;
   border-radius: 5px;
 }
 
@@ -44,33 +46,46 @@ p {
 
 .slackLogo {
   height: 8vh;
+  margin-left: 1vw;
   
   
+}
+
+.emailInput {
+  display:none;
+}
+
+.hamburger {
+  display: none;
 }
 
 .slackLinks {
   display: flex;
   align-items: center;
+  text-align: center;
+  margin-right: 1vw;
 }
 
 .slackLinks li {
   list-style-type: none;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 29vh;
+  width: 20vh;
   color: #5b5e6d;
 }
 
 .headerLeft {
   justify-content: left;
   align-content: center;
-  width: 118vw;
+  width: 100vw;
+  display:flex;
 }
 
 .headerRight {
   justify-content: right;
   flex-direction: column;
   align-content: space-between;
+  display: flex;
 
 }
 
@@ -80,6 +95,8 @@ p {
   background-color: #192592;
   color: white;
   font-size: 1.2vw;
+  width: 20vw;
+  justify-self: center;
 }
 
 .headerRight h1 {
@@ -90,7 +107,8 @@ margin: 0;
 
 .headerRight p {
   font-size: 1em;
-  color: #5b5e6d
+  color: #5b5e6d;
+  justify-self: left;
 }
 
 main {
@@ -241,4 +259,173 @@ width: 28vw;
 
 .actual-footer-flag {
   width: 2vw;
+}
+
+@media (max-width: 1024px ) {
+
+
+
+
+  .flexNav ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    width: 5vw;
+    margin-right: 1.5vw;
+  }
+
+  .flexHeader {
+    justify-content: space-between;
+    align-content: center;
+   flex-direction: column;
+    padding-top: 10vw;
+    height: 100vh;
+    width: 90vw;
+    margin: 0 2vw;
+  }
+  
+  .headerRight {
+    order: 1;
+    justify-content: center;
+    align-content: center;
+    padding: 5vw 0 0 0;
+  }
+
+  .headerRight h1 {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .headerRight button {
+    padding: 2vw;
+    height: 5.5vw;
+    margin-left: 5vw;
+  }
+
+  .emailInput{
+    display: block;
+    width: 30vw;
+    height: 5vw;
+  }
+
+  .email-input {
+    display:flex;
+    flex-direction: row;
+  }
+
+  .already {
+    display: flex;
+    padding-top: 2vw;
+  }
+  .already p {
+    justify-self: left;
+  }
+  
+
+  .headerLeft {
+    order: 2;
+    justify-content: center;
+    width: 96vw;
+  }
+
+  .headerLeft img {
+    width: 50vw;
+    padding-top: 3vw;
+  }
+ 
+  .boxTop button {
+    padding: 1vw 2vw;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    background-color: white;
+    color: #192592;
+    font-size: 1.5vw;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    font-weight: bold;
+  
+  }
+  
+  .boxImg { 
+    width: 24vw;
+    padding: 4.4vw;
+    height: 6vw;
+  
+  } 
+
+  .middleImg {
+    border: 0px solid lightgray;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
+  .bottomImg {
+    border-top: 0px solid lightgray;
+  }
+  
+  .mediumCenterImg {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+ 
+  }
+  
+  .mediumLeftImg {
+    border-right: 1px solid lightgray;
+  }
+
+  .footer-top-div{
+    height: 40vw;
+  }
+
+  .actual-footer ul {
+    width: 40vw;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  
+  .mediumCenterImg {
+    border: 0;
+  }
+  
+  .mediumLeftImg {
+    border: 0;
+  }
+  
+  .boxImg {
+  
+    width: 48vw;
+    padding: 8vw;
+    height: auto;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .boxtop {
+    justify-content: center;
+  }
+
+  .boxTop h2 {
+
+font-size: 8vw;
+font-family: 'Times New Roman', Times, serif
+  }
+
+  .boxTop p {
+    font-size: 3vw;
+    text-align: center;
+    padding: 0 5vw;
+  }
+
+  .boxTop button {
+    width: 80vw;
+    font-size: 4vw;
+  }
+.greyBox {
+  height: 200vw;
+  align-items: center;
+}
 }
