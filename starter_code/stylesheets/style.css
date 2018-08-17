@@ -5,3 +5,353 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body {
+  margin: 0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: 0;
+  width: 100vw;
+  border-bottom: 1px solid #2C303F;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 2vw;
+  margin-right: 2vw; 
+  align-items: center;
+}
+
+nav img {
+  height: 10vh;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  margin-right: 1vw;
+  /* justify-content: center;
+  flex-direction: row; */
+}
+
+.burger-menu {
+  display: none;
+}
+
+.border {
+  border: 1px solid #2C303F;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+header {
+  padding-top: 18vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20vh;
+  flex-wrap: wrap;
+}
+.header-div1 img {
+  width: 46vw;
+  /* height: 60vh;  */
+  flex-shrink: 1;
+  margin-top: 8vh;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+.header-div2 {
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-width: 40vw;
+  max-width: 46vw;
+}
+
+.header2-text {
+  color: #5b5e6d;
+}
+.button {
+  height: 8vh;
+  width: 18vw;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.blue-button {
+  background-color: #192592;
+  color: white;
+}
+
+.white-button {
+  background-color: white;
+  color: #192592;
+}
+
+/* .company {
+  display: flex;
+  width: 25vw;
+} */
+
+main {
+  width: 100%;
+  margin-right: 0;
+}
+
+.main-content {
+  background-color: #F4F3F4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh;
+}
+h2 {
+  font-size: 2em;
+}
+/* .table-div {
+  padding: 5vw;
+  width: 80vw; 
+}
+table img {
+  width: 23vw;
+}
+table {
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 1px solid #5b5e6d;;
+}
+table tr:first-child td {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
+
+td {
+padding: 5vw;
+} */
+
+.try-it {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vh;
+  align-content: center;
+  height: 15vh;
+  border-bottom: 1px solid lightgray;
+}
+/* .main-footer-div {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+} */
+
+.footer-top-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* height: 30vh; */
+  /* margin: 0; */
+}
+
+.footer-info {
+  display: flex;
+  justify-content: flex-end;
+  width: 60vw;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding: 2vw;
+}
+
+footer {
+  margin-top: 10vh;
+}
+
+.main-images {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.company-images {
+  width: 17vw;
+  padding: 6vw;
+}
+
+.capital-one-logo {
+  border: 1px solid lightgray;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.los-angeles-times-logo {
+  border-top: 1px solid lightgray;
+  margin-bottom: 7vh;
+  width: 27vw;
+  padding: 5.5vw 2vw 5vw 0;
+}
+
+.oracle-logo {
+  border: 1px solid lightgray;
+  border-bottom: 0;
+  margin-bottom: 7vh;
+}
+
+.ticketmaster-logo {
+  border-top: 1px solid lightgray;
+  margin-bottom: 7vh;
+}
+
+
+.actual-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5vh 0;
+  background-color: #F4F3F4;
+  margin-bottom: 7vh;
+}
+
+.actual-footer ul {
+  list-style: none;
+}
+
+.actual-footer-content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 25vw;
+}
+
+.us-flag {
+  width: 2vw;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 961px) {
+.space-between li {
+  display: none
+}
+
+.burger-menu {
+  display: flex;
+  height: 6vh;
+  padding: 2vh;
+  margin-right: 3vw;
+}
+
+header {
+  margin-bottom: 8vh;
+}
+
+.header-div1 img {
+  min-width: 480px;
+}
+
+.header-div2 {
+  min-width: 480px;
+}
+.company-images {
+  width: 34vw;
+  /* border: 1px solid lightgray; */
+  margin: 0;
+  border: none;
+}
+
+.los-angeles-times-logo {
+  width: 38vw;
+  padding: 15.7vh 5vw;
+  margin: 0;
+  border: none;
+  /* border: 1px solid lightgray; */
+}
+.try-it {
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+.actual-footer-content {
+  width: 38vw;
+}
+
+} /* end of max-width: 961px */
+
+@media (max-width: 768px) {
+.button {
+  height: 8vh;
+  width: 80vw;
+}
+
+.try-it {
+  flex-wrap: wrap;
+  height: 25vh;
+  justify-content: center;
+}
+
+.content p {
+  text-align: center;
+  padding: 1vw 10vw;
+}
+
+.company-images {
+  width: 51vw;
+  /* border: 1px solid lightgray; */
+  margin: 0;
+  border: none;
+}
+
+.los-angeles-times-logo {
+  width: 51vw;
+  padding: 15.7vh 5vw;
+  margin: 0;
+  border: none;
+  /* border: 1px solid lightgray; */
+}
+
+.footer-top-div {
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  /* width: 80vw; */
+  margin: 0;
+}
+.footer-info {
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100vw;
+}
+
+.footer-info ul {
+  width: 34vw;
+}
+} /* end of max-width 768 */
