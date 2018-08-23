@@ -4,22 +4,27 @@ button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
+light grey: #dedede;
 */
 body {
 	margin: 0;
+	font-family: 'Nunito', sans-serif;
+	color: #5b5e6d;
 }
 
+/* NAVEGATION */
 nav {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	border-bottom: #5b5e6d;
-	height: 70px;
+	border-bottom: 1px solid #dedede;
+	height: 75px;
     padding-left: 40px;
     padding-right: 30px;
 }
 
 .logo {
-	width: 130px;
+	width: 110px;
 }
 
 .logo img {
@@ -38,13 +43,74 @@ nav ul {
 .hamburger-menu {
 	width: 35px;
 	height: 5px;
-	background-color: black;
+	background-color: #5b5e6d;
 	margin: 6px 0;
 	align-items: center;
 }
 
-nav img, 
-.menu-icon {
+nav img, .menu-icon {
 	align-self: center;
-	border: 1px solid red;
+}
+
+/* HEADER */
+.header {
+	padding: 10px 40px;
+	display: flex;
+	flex-direction: column-reverse;
+}
+header h1 {
+	font-size: 2.875rem;
+	color: #2C303F;
+	font-family: "Times New Roman", Times, serif;
+}
+.header-text {
+	font-size: 1.25rem;
+}
+
+.form-started input, .form-started button {
+	padding: 20px 15px;
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border: 1px solid #dedede;
+}
+
+::placeholder {
+	color: #999;
+}
+
+.form-started input {
+	font-size: 1.125rem;
+}
+
+.form-started button {
+	background-color: #192592;
+	color: #FFF;
+	font-size: 1rem;
+}
+
+.call-to-action {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-size: 1.125rem;
+}
+
+.call-to-action a:link {
+	color: #192592;
+}
+
+.header-pic {
+	width: 100%;
+	margin-top: 45px;
+}
+
+.header-pic img {
+	max-width: 100%;
+	height: auto;
 }
