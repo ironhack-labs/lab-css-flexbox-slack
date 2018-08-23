@@ -5,3 +5,307 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #5b5e6d;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h4 {
+  font-family: "Times New Roman", Georgia, serif;
+  color: #323648;
+}
+
+a {
+  color: #3f46ad;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.home-talking {
+  text-align: center;
+}
+
+.btn {
+  background: #3f46ad;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.btn.btn-white {
+  background: #fff;
+  color: #3f46ad;
+  border: 1px solid #3f46ad;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+  padding: 0 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo-slack {
+  width: 100px;
+}
+
+.menu-mobile {
+  font-size: 1.3rem;
+  color: #6d6e7a;
+}
+
+.fas.fa-bars {
+  font-size: 1.8em;
+}
+
+.bar-menu {
+  display: none;
+}
+
+header {
+  margin-top: 60px;
+  padding: 30px 20px 10px;
+}
+
+.home-work-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+header .btn {
+  margin: 30px 0 10px;
+}
+
+header img {
+  margin-top: 40px;
+}
+
+#slack-users {
+  background: #f5f5f5;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding: 30px 20px;
+}
+
+#slack-users .btn {
+  margin: 20px 0 10px;
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logos-container > div {
+  padding: 0 40px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/*The :last-child selector matches every element that is the last child of its parent.
+  p:last-child is equal to p:nth-last-child(1)*/
+
+.logos-container > div:last-child {
+  border-bottom: none;
+}
+
+.logos-container img {
+  max-height: 50px;
+  margin: 35px 0;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    line-height: normal;
+    font-size: 5.5rem;
+    line-height: 5.6rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+
+  .btn {
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  header p.center {
+    text-align: left;
+  }
+
+  header img {
+    width: 55%;
+  }
+
+  .logos-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logos-container > div {
+    width: 50%;
+    border-right: 1px solid #ebebeb;
+  }
+
+  /*The :nth-child(n) selector matches every element that is the nth child, regardless of type, of its parent.*/
+
+  .logos-container > div:nth-child(even) {
+    border-right: none;
+  }
+
+  /*The :nth-of-type(n) selector matches every element that is the nth child, of a particular type, of its parent.*/
+
+  .logos-container > div:nth-last-of-type(-n + 2) {
+    border-bottom: none;
+  }
+
+  #try-it {
+    padding-top: 60px;
+    text-align: left;
+  }
+
+  #try-it .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #try-it .btn {
+    margin-top: 0;
+  }
+
+  .social-icons {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .social-icons .icon:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .logos-container > div {
+    width: 33.33%;
+  }
+
+  .logos-container > div:nth-child(even) {
+    border-right: 1px solid #ebebeb;
+  }
+
+  .logos-container > div:nth-child(3n) {
+    border-right: none;
+  }
+
+  .logos-container > div:nth-last-of-type(-n + 3) {
+    border-bottom: none;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F4F3F4;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+    line-height: 5.6rem;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .bar-menu {
+    display: initial;
+    list-style-type: none;
+  }
+
+  .bar-menu > li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+
+  .bar-menu > li:last-child {
+    border: 1px solid #5b5e6d;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+
+  header {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .header {
+    flex-direction: row;
+  }
+
+  .header > div {
+    width: 50%;
+  }
+
+  header img {
+    width: 75%;
+  }
+}
