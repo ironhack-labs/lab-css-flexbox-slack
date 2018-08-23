@@ -93,7 +93,7 @@ nav ul li a {
 .container {
   max-width: 1230px;
   box-sizing: border-box;
-  margin: auto;
+  margin: 0px 30px;
   padding: 40px 0px;
 }
 
@@ -177,6 +177,7 @@ img.extra-fix {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .try-section h2 {
@@ -243,15 +244,97 @@ button:active, button:focus {
 .try-section button {
   
 }
+
+@media (min-width: 1024px) {
+
+}
 /*(width < 768px)
 
 (961px > width > 767px)
 
 
-(1024px > width > 960px)*/
+(ma1024px > width > 960px)*/
+@media (max-width: 768px) {
+  /*.container {
+    background-color: green;
+  }*/
+
+  .header-content h1 {
+    font-size: 5rem;
+  }
+
+  .header-content button + p {
+    margin: 16px auto;
+    text-align: center;
+  }
+
+
+  .companies-logos h2 {
+    font-size: 3.3rem;
+  }
+
+  .try-section-content {
+    width: 100%;
+  }
+
+  .try-section-content h2 {
+    text-align: center;
+    margin: auto;
+  }
+
+  .try-section-content p {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .all-the-logos-container img {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 961px) {
+  .people-working {
+    width: 100%;
+  }
+  
+  .header-content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 961px) {
+  .people-working {
+    max-height: 360px;
+  }
+
+  .all-the-logos-container img {
+    width: 50%;
+  }
+
+  .header-content h1 {
+    font-size: 6.2rem;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1024px) {
+  .all-the-logos-container img {
+    width: 50%;
+  }
+}
 
 @media (min-width: 1024px) {
   nav ul {
     display: flex;
+  }
+}
+
+@media (min-width: 1290px) {
+  .container {
+    margin: auto;
   }
 }
