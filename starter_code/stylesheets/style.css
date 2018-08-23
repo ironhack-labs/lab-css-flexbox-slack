@@ -5,3 +5,79 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body,html{
+  margin:0;
+  padding: 0;
+}
+nav{
+  position:fixed;
+  background:#f4f3f4;
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;
+}
+nav img{
+  height: 50px;
+}
+nav ul{
+  background: red;
+  height: 50px;
+  width: 50px;
+}
+nav ul li{
+  display:none
+}
+nav ul:hover li{
+ display:block;
+}
+header,main div,footer div{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}header{
+  padding-top:70px;
+
+}
+header img{
+  width: 90%;
+  order: 1;
+}
+main div img{
+  width: 100%;
+}
+footer div:first-child{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer div img{
+  width: 100%;
+}
+footer div ul{
+  width: 40%;
+}
+footer div:nth-child(2){
+  background-color:#F4F3F4;
+}
+footer div:nth-child(2) ul,footer div:nth-child(2) div{
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content:  space-between;
+  align-content: space-between;
+}
+footer div:nth-child(2) ul{
+  width: 60%;
+}
+footer div:nth-child(2) div{
+  width: 36%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  
+}
+footer div:nth-child(2) div *{
+  padding: 10px;
+}
+footer div div img{
+  width: 10px;
+}
