@@ -7,11 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
+  <link rel="stylesheet" media="(min-width: 769px)" href="./stylesheets/style.css" />
+  <link rel="stylesheet" media="(max-width: 768px)" href="./stylesheets/mobile.css" />
 </head>
 
 <body>
-  <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
+  <nav class="nav-bar container">
+    <img src="./images/slack-logo.png" alt="slack_logo" class="slackNav">
+    <img src="images/menu.png" alt="menu icon" class="hamburger">
     <ul>
       <li>Why Slack?</li>
       <li>Pricing</li>
@@ -19,31 +22,50 @@
       <li>Your Workspaces</li>
     </ul>
   </nav>
-  <header>
+
+<div class="clearfix"></div>
+
+  <header class="container">
     <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+    <div class="header-text">
+      <h1>Where Work Happens</h1>
+        <p class="intro">When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+        <input class="button-email" type="email" placeholder="Email address" size="30"  />
+        <button class="header-button" type="button" name="button">GET STARTED</button>
+        <p class="header-link">Already using Slack? <a href="#">Sign in</a></p>
+  </div>
+    
   </header>
+
+  <div class="clearfix"></div>
+
   <main>
-    <div>
-      <h2>You´re in good company</h2>
+    <div class="section-2 container">
+      <section class ="column">
+        <h2>You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
+      <button class="section-2-button">DISCOVER WHY</button>
+    </section>
+    <section class="companies">
       <img src="./images/airbnb-logo.png" alt="">
       <img src="./images/capital-one-logo.png" alt="">
       <img src="./images/harvard-logo.png" alt="">
       <img src="./images/los-angeles-times-logo.png" alt="">
       <img src="./images/oracle-logo.png" alt="">
       <img src="./images/ticketmaster-logo.png" alt="">
+    </section>  
+      
     </div>
+
+<!--
+
     <div>
       <p>Try it for free</p>
       <p>Already using Slack? <a href="">Sign in</a></p>
       <button type="button" name="button">GET STARTED</button>
     </div>
   </main>
+
   <footer>
     <div>
       <img src="./images/iso-slack.png" alt="">
@@ -96,6 +118,7 @@
       </div>
     </div>
   </footer>
+  -->
 </body>
 
 </html>
