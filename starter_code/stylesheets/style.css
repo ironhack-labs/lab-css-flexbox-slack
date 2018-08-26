@@ -1,7 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
+
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
-main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
+main-titles dark-grey: #2C303F;
 */
+/*Navbar*/
+body{
+    margin:0;
+    padding:0;
+}
+/* Falta: Padding elemento borde. preguntar tema centrar 100% y MARGINS*/
+body{
+    font-family: 'Poppins', Arial, sans-serif;
+}
+@media (min-width:1200px){
+.navbar-fixed{
+    position:fixed;
+    background-color:white;
+    width:100%;
+}
+.navbar-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px grey;  
+}
+.navbar-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 30px;
+    color: #6D6F7B;
+}
+.navbar-list li{
+    list-style-type: none;
+    margin:10px 10px 5px 10px;
+    padding:5px 5px 0 0px;
+    font-size:20px;
+}
+.navbar-list >li:last-of-type{
+    border: solid 1.5px #6D6F7B;
+    border-radius:5%;
+}
+.navbar-logo-section{
+    display: flex;
+    flex-direction:column;
+    align-self: center;
+    margin-left:20px;      
+}
+.nav-logo{
+    width:125px;
+    height:58px;
+}
+/* Header */
+/* Falta: font size font style h1 y p*/
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-image{
+    margin-top:50px;
+    width: 300px;
+    height: 250px;
+}
+.header-container-img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top:130px;
+    width: 40%;
+}
+.header-container-text{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin:130px 100px 20px 10px;
+    width:40%;
+}
+.header-container-text p{
+    max-width:704px;
+    margin-top:-5px;
+}
+.get-started-button{
+    padding:15px;
+    border:none;
+    background-color:#192592;
+    color:white;
+    border-radius:5%; 
+    margin-bottom:10px;
+}
+
+/* Main section */ 
+/* Añadir: font size distinta h2, bajar margin h2 */
+
+.first-main-section{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top:100px;
+    padding-top:60px;
+    background-color: #F4F3F4;
+}
+.first-main-section h2{
+    margin:5px;
+}
+.discover-button{
+    padding:15px 30px;
+    border-radius:4%;
+    background-color: white;
+    border: 1px solid #192592;
+    color:#192592;
+}
+.second-main-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F4F3F4; 
+}
+.second-main-section{
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+.second-main-section .enterprise{
+    margin:20px;
+}
+.enterprise{
+    padding:40px;
+}
+.enterprise-air{
+    width: 180px;
+    height: 55px;
+}
+.enterprise-capital{
+    width: 175px;
+    height: 53px;
+}
+.enterprise-harvard{
+    width: 182px;
+    height: 54px;
+}
+.enterprise-la{
+    width: 350px;
+    height: 54px;
+}
+.enterprise-oracle{
+    width: 195px;
+    height: 29px;
+}
+.enterprise-ticket{
+    width: 195px;
+    height: 26px;
+} 
+/*duda : centar oracle y ticketmaster. Flex basis? */
+/* Duda: volví a utilizar margin. ¿Por qué si align self se refiere a column (cross axis) se coloca en el flex end como si estuviera en row? (inversion de ejes? */
+.try-it-section{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    padding:20px;
+    margin-bottom:80px;
+    margin-top:30px;
+}
+.try-it-section > p{
+    margin-bottom:-10px;
+}
+.try-it-button{
+    align-self:flex-end;
+    margin:-60px 50px 0px 0px;
+    padding:20px;
+    width:150px;
+    background-color:#192592;
+    color:white;
+    border-radius:4%;
+}
+
+/* FOOTER  duda: margin uls footer??? WTF*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-links-section{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    margin-top:20px;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-basis: 10%;
+    color:#5b5e6d;
+}
+.footer-list li{
+    list-style-type: none;
+    padding: 5px;
+    font-size:14px;
+}
+.footer-last-section{
+    width: 100%;
+}
+.footer-logo{
+    width: 80px;
+    height: 80px;
+}
+
+.flag-img{
+    width:20px;
+    height: 14px;
+}
+.footer-last-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ul-last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ul-last li{
+    margin:20px;
+    padding:10px;
+    list-style-type: none;
+}
+.footer-flag-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+}
