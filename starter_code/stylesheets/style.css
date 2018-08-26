@@ -5,40 +5,136 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-
+/*//////GENERAL//////*/
 body{
-    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
-nav{
-    width: 100vw;
+.nav-bar{
     background-color: white;
-    position: fixed;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
     z-index: 30;
+    border-bottom: 1px solid #F4F3F4;
 }
-ul{
-    display: inline-block;
+.nav-bar ul{
+    list-style: none;
     justify-content: flex-end;
 }
-li{
+.nav-bar li{
+    display: inline-block;
+    text-align: left;
+    margin: 0 10px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2C303F;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2C303F;
+    text-align: center;
+}
+p{
+    color: #5b5e6d;
+}
+header{
+    display: flex;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+header p{
     display: inline-block;
 }
 
+main{
+    background-color: #F4F3F4;
+}
+footer{
+
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+footer li{
+    display: inline-block;
+}
+main img {
+    
+}
+
+/*//////MOBILE//////*/
 @media (max-width: 768px){
-    nav{
+
+    .nav-bar{
+        padding: 0 10px;
+    }
+    .logo {
+        height: 80px;
+        width: auto;
+    }
+
+    header{
+        flex-direction: column;
+    }
+    header img{
+        align-self: center;
+    }
+    main{
         
-        height: 200px;
-        padding: 20px;
+    }
+    footer{
 
     }
-    .logo{
-        height: 200px;
+
+}
+
+/*//////DESKTOP//////*/
+@media (min-width: 768px){
+
+    .nav-bar{
+        padding: 0 30px;
     }
-    ul{
-        display: none;
+    .nav-bar ul{
+        padding-right: 30px;
     }
-    li{
-        display: none;
+    .logo {
+        height: 100px;
+        width: auto;
     }
+    header{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    header img{
+        height: auto;
+        width: 500px;
+        align-self: flex-start;
+    }
+    header h1{
+        align-self: flex-end;
+    }
+    header p{
+        display: inline-block;
+        align-self: flex-end;
+    }
+    header button{
+        align-self: flex-end;
+    }
+
+    main{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    main img{
+        
+    }
+    footer{
+
+    }
+
 }
