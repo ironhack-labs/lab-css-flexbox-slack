@@ -5,3 +5,165 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+}
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  #bars {
+    padding-right: 20px;
+  }
+  #bars:hover {
+    background-color: white;
+  }
+  #nav-bar {
+    /* por defecto flex is row */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: 5px solid #f4f3f4;
+  }
+  #nav-bar img {
+    width: auto;
+    height: 75px;
+    padding-left: 25px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  header {
+    padding-top: 70px;
+    padding-left: 30px;
+    text-align: left;
+  }
+  header h1,
+  main h2,
+  main p {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  button {
+    margin: 20px 0 0 180px;
+    background-color: blue;
+    padding: 30px 30px 30px 30px;
+    color: white;
+    font: bold;
+    width: 70%;
+    margin-left: 75px;
+  }
+  #email {
+    width: 80%;
+    padding: 10px;
+  }
+  #signIn {
+    padding-left: 110px;
+  }
+  #goodCompany {
+    background-color: #f4f3f4;
+  }
+  #goodCompany img {
+    width: 50%;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 0.5px solid grey;
+  }
+  #equipo img {
+    width: 100%;
+  }
+  #why {
+    background-color: white;
+    color: blue;
+  }
+  #tryIt {
+    padding-top: 70px;
+    padding-left: 30px;
+    text-align: left;
+  }
+  .column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 50%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  footer {
+    color: grey;
+  }
+  #bottom {
+    background-color: #f4f3f4;
+    display: block;
+  }
+  #bottom h2 {
+    font-size: 20px;
+  }
+  #bottom ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #bottom img {
+    width: 50px;
+  }
+  #secondRow {
+    padding-left: 275px;
+  }
+  #thirdRow {
+    padding-top: 30px;
+    padding-left: 275px;
+  }
+}
+/* small screen */
+@media (max-width: 961px) and (min-width: 767px) {
+}
+/* medium screen */
+@media (max-width: 961px) and (min-width: 767px) {
+}
