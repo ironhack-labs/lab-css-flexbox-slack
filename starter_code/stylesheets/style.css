@@ -16,8 +16,22 @@ body {
 * {
   box-sizing: border-box;
 }
-
-@media (max-width: 768px) {
+/* extra small screen */
+@media (min-width: 768px) {
+  #goodCompany img {
+    width: 50%;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 0.5px solid grey;
+  }
+  #equipo img {
+    width: 100%;
+  }
+}
+/* small screen */
+@media (max-width: 961px) and (min-width: 767px) {
   #bars {
     padding-right: 20px;
   }
@@ -85,23 +99,31 @@ body {
     padding: 30px 30px 30px 30px;
     color: white;
     font: bold;
-    width: 70%;
-    margin-left: 75px;
+    width: 30%;
+    margin-left: 1px;
   }
   #email {
     width: 80%;
     padding: 10px;
   }
   #signIn {
-    padding-left: 110px;
+    padding-left: 1px;
   }
   #goodCompany {
     background-color: #f4f3f4;
   }
+  #goodCompany button {
+    width: 30%;
+    background-color: white;
+    color: blue;
+    margin-left: 250px;
+    margin-bottom: 50px;
+  }
   #goodCompany img {
     width: 50%;
-    padding: 20px;
-    display: block;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     border-top: 0.5px solid grey;
@@ -109,19 +131,15 @@ body {
   #equipo img {
     width: 100%;
   }
-  #why {
-    background-color: white;
-    color: blue;
-  }
   #tryIt {
     padding-top: 70px;
     padding-left: 30px;
-    text-align: left;
+
+    /* text-align: left; */
   }
   .column {
     float: left;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
   }
 
   .left {
@@ -136,6 +154,10 @@ body {
     display: table;
     clear: both;
   }
+  #company {
+    display: flex;
+    justify-content: flex-start;
+  }
   footer {
     color: grey;
   }
@@ -144,7 +166,7 @@ body {
     display: block;
   }
   #bottom h2 {
-    font-size: 20px;
+    font-size: 10px;
   }
   #bottom ul {
     display: flex;
@@ -161,9 +183,9 @@ body {
     padding-left: 275px;
   }
 }
-/* small screen */
-@media (max-width: 961px) and (min-width: 767px) {
-}
 /* medium screen */
 @media (max-width: 961px) and (min-width: 767px) {
+}
+/* large screen */
+@media (max-width: 1200px) {
 }
