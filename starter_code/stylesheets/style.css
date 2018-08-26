@@ -196,6 +196,84 @@ img.extra-fix {
   padding-bottom: 2px;
 }
 
+.columns-footer {
+  display: flex;
+}
+
+.columns-footer div img {
+  width: 110px;
+  margin-left: -30px;
+  margin-top: -10px;
+}
+
+.columns-footer div {
+  flex-grow: 1;
+  padding-right: 30px;
+  flex-shrink: 0;
+}
+
+.columns-footer ul {
+  width: 200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  list-style: none;
+  font-size: 1.4rem;
+  line-height: 2.3;
+}
+
+.columns-footer li:first-child {
+  font-weight: 400;
+  color: #2C303F;
+}
+
+.columns-footer a {
+  text-decoration: none;
+  color: #5b5e6d;
+}
+
+.subfooter {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.subfooter ul {
+  display: flex;
+  list-style: none;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.subfooter li {
+  padding-right: 20px;
+}
+
+.subfooter div {
+}
+
+.subfooter img {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.subfooter span+i {
+  margin-right: 30px;
+  color: #989898;
+}
+
+.subfooter i {
+  font-size: 2rem;
+  margin: 0 8px;
+}
+
+
+
+
 button {
   background-color: #3f46ad;
   display: block;
@@ -248,16 +326,10 @@ button:active, button:focus {
 @media (min-width: 1024px) {
 
 }
-/*(width < 768px)
-
-(961px > width > 767px)
 
 
-(ma1024px > width > 960px)*/
+/* MOBILE */
 @media (max-width: 768px) {
-  /*.container {
-    background-color: green;
-  }*/
 
   .header-content h1 {
     font-size: 5rem;
@@ -292,10 +364,40 @@ button:active, button:focus {
     width: 100%;
   }
 
+  .columns-footer {
+    flex-wrap: wrap;
+  }
+
+  .columns-footer div {
+    width: 100%;
+  }
+
+  .columns-footer ul {
+    width: 50%;
+  }
+
+  .subfooter {
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+
+  .subfooter ul, .subfooter div  {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .subfooter ul, .subfooter ul+div {
+    margin-bottom: 15px;
+  }
+
+
   button {
     width: 100%;
   }
 }
+
+/* MOBILE & TABLET */
 
 @media (max-width: 961px) {
   .people-working {
@@ -306,6 +408,8 @@ button:active, button:focus {
     width: 100%;
   }
 }
+
+/* TABLET */
 
 @media (min-width: 767px) and (max-width: 961px) {
   .people-working {
@@ -321,11 +425,15 @@ button:active, button:focus {
   }
 }
 
+/* SMALL DESKTOP */
+
 @media (min-width: 960px) and (max-width: 1024px) {
   .all-the-logos-container img {
     width: 50%;
   }
 }
+
+/* DESKTOP */
 
 @media (min-width: 1024px) {
   nav ul {
@@ -336,6 +444,8 @@ button:active, button:focus {
     margin-top: 73px;
   }
 }
+
+/* LARGE DESKTOP */
 
 @media (min-width: 1290px) {
   .container {
