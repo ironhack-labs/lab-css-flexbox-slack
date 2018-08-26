@@ -52,7 +52,8 @@ header p{
 main{
     background-color: #F4F3F4;
 }
-footer{
+.footer-menu{
+    display: flex;
 
 }
 footer ul{
@@ -65,6 +66,17 @@ footer li{
 }
 main img {
     
+}
+
+.btn {
+    width: 250px;
+}
+.btn-light{
+    border: 1px solid #F4F3F4;
+}
+.btn-dark{
+    border: 1px solid #192592;
+    color: #192592;
 }
 
 /*//////MOBILE//////*/
@@ -107,6 +119,7 @@ main img {
         width: auto;
     }
     header{
+        flex-direction: row;
         padding-right: 30px;
         padding-left: 30px;
     }
@@ -115,23 +128,26 @@ main img {
         width: 500px;
         align-self: flex-start;
     }
-    header h1{
+    header div{
+        min-width: 260px;
+        max-width: 400px;
         align-self: flex-end;
-    }
-    header p{
-        display: inline-block;
-        align-self: flex-end;
-    }
-    header button{
-        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
     }
 
     main{
         padding-right: 30px;
         padding-left: 30px;
     }
+    .company{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     main img{
-        
+        height: 40px;
     }
     footer{
 
