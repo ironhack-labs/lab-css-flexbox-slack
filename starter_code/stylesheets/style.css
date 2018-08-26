@@ -5,3 +5,337 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+* {
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  height: 10%;
+  top: 0;
+  z-index: 10;
+  border-top: 1px solid #5b5e6d;
+  border-bottom: 1px solid #5b5e6d;
+}
+
+nav img {
+  height: 70px;
+}
+header {
+  display: flex;
+}
+header h1 {
+  color: #2c303f;
+}
+header p {
+  font-size: 20px;
+  color: #5b5e6d;
+}
+.slack-btn {
+  background-color: #192592;
+  border: 1px solid #192592;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 30px 0 15px;
+}
+.partners {
+  background-color: #f4f3f4;
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+.partners h2 {
+  color: #2c303f;
+  padding: 30px 0 15px;
+}
+
+.partners p {
+  color: #5b5e6d;
+  padding: 0 38px;
+}
+
+.partners button {
+  display: block;
+  background-color: #fff;
+  color: #192592;
+  border-color: #192592;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 20px 62px;
+  align-content: center;
+  font-size: 18px;
+  font-weight: 20;
+  float: inherit;
+  margin: 35px auto;
+}
+.more-slack {
+  background-color: #fff;
+  width: 100%;
+  font-size: 20px;
+  color: #2c303f;
+}
+.lists {
+  background-color: #fff;
+  width: 100%;
+}
+.first-ul {
+  list-style: none;
+  height: 200px;
+}
+
+.first-ul li {
+  color: #5b5e6d;
+}
+.ending {
+  background-color: #f4f3f4;
+  width: 100%;
+  text-align: center;
+  color: #5b5e6d;
+}
+
+.ending .other-ul {
+  text-align: center;
+  list-style: none;
+}
+
+.ending .other-ul li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* MEDIA QUERY MOVIL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  nav img {
+    margin-left: 30px;
+  }
+  header {
+    flex-direction: column;
+    margin: 0 30px;
+  }
+
+  header h1 {
+    font-size: 46px;
+    margin-top: 100px;
+    margin-right: 43px;
+    margin-bottom: 30px;
+  }
+
+  header p {
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+  header button {
+    padding: 20px 90px;
+  }
+  header a {
+    color: #192592;
+    justify-content: center;
+  }
+  .header-img {
+    order: 1;
+  }
+  .header-img img {
+    width: 100%;
+  }
+
+
+  .partners h2 {
+    font-size: 30px;
+  }
+
+  .partners p {
+    font-size: 15px;
+  }
+
+  .partners img {
+    width: 50%;
+    margin: 30px 0;
+    float: inherit;
+  }
+
+  .border {
+    border-bottom: 1px solid #5b5e6d81;
+    margin: 0 40px;
+  }
+
+  .more-slack {
+    text-align: center;
+    margin: 30px 0 10px;
+  }
+
+  .more-slack button {
+    background-color: #192592;
+    color: #fff;
+    border-radius: 8px;
+    width: 18em;
+    padding: 0px 20px 0px 20px;
+    height: 60px;
+    align-content: center;
+    font-size: 18px;
+    font-weight: 20;
+    margin-top: 15px;
+  }
+
+  .lists {
+    float: left;
+  }
+
+  .lists img {
+    display: block;
+    height: 120px;
+    align-items: flex-start;
+  }
+
+  .first-ul {
+    order: 1;
+    float: left;
+    height: 200px;
+    width: 30%;
+  }
+
+  .first-ul li {
+    padding: 5px 0;
+  }
+
+  
+  .ending .other-ul {
+    text-align: center;
+  }
+
+
+  .languages {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .ending img {
+    width: 8%;
+    vertical-align: middle;
+  }
+
+  .ending i {
+    margin-bottom: 15px;
+  }
+}
+/* MEDIA QUERY DESCKTOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 769px) {
+  nav ul {
+    display: inline-block;
+    float: right;
+    margin-right: 70px;
+    color: #5b5e6d;
+    font-size: 18px;
+  }
+  nav ul li{
+    display: inline-block;
+    margin-right: 43px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .slack-btn {
+    padding: 20px 53px;
+  }
+  nav img{
+    margin-left: 90px;
+  }
+  .nav-box{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  header {
+    margin-top: 8%;
+    justify-content: center;
+  }
+
+  .header-img {
+    display: inline;
+    width: 45%;
+  }
+  .header-text {
+    display: inline;
+    width: 43%;
+    margin-left: 50px;
+  }
+  .header-text h1 {
+    font-size: 88px;
+    margin-top: 26px;
+    margin-bottom: 30px;
+  }
+  .header-text p{
+    width: 76%;
+  }
+  .partners{
+    height: 544px;
+  }
+  .partners h2 {
+    font-size: 35px;
+}
+.partners p {
+  padding: 8px 38px;
+}
+.partners img {
+  width: 50%;
+  
+}
+.border, .no-border{
+  display: inline;
+  float: left;
+  width: 33%;
+  height: 155px;
+}
+.more-slack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.more-slack-text{
+margin-left: 40px;
+}
+.more-slack-btn{
+  margin-right: 40px;
+}
+.big{
+  font-size: 30px;
+}
+.small{
+  font-size: 15px;
+}
+.lists {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 35px;
+}
+.foot-img{
+  width: 35%;
+}
+.ending{
+  display: flex;
+  justify-content: space-between;
+}
+.languages, .icons{
+  display: inline;
+}
+.languages{
+  margin-right: 15px;
+}
+.languages img{
+  width: 6%;
+  vertical-align: middle;
+}
+.foot-opt{
+  margin: 15px;
+}
+.icons i{
+  margin: 5px;
+}
+}
