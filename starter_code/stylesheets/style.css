@@ -5,7 +5,8 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-@media (max-width:768px){
+
+
 
   *{
     /*box-shadow: inset black 0 0 0 1px;*/
@@ -33,12 +34,13 @@ nav grey: #5b5e6d;
   }
   nav{
     position:fixed;
-    background:#f4f3f4;
+    background:white;
     width: 100%;  
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:10px 30px;
+    border-bottom:1px solid #f1f0f1;
   }
   nav img{
     height: 70px;
@@ -105,6 +107,11 @@ nav grey: #5b5e6d;
   }
   main{
     border-bottom:2px #f1f0f1 solid;
+  }
+  main p+button{
+    background-color:white;
+    color:#192592;
+    border:2px solid #3d469780;
   }
   main div{
     padding-top:60px;
@@ -222,4 +229,124 @@ nav grey: #5b5e6d;
   .fa.fa-chevron-down{
     font-weight: normal;
   }
+
+@media (min-width:767px){
+  h1{
+    font-size:72px;
+  }
+  nav img{
+    height: 60px;
+    padding-top:0;
+    padding-bottom:0; 
+  }
+  nav ul{
+    margin:0;
+  }
+  header {
+    padding-top:135px;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+  }
+  header input{
+    width: 50%;
+  }
+  header button,main button{
+    width: initial;
+  }
+  main button{
+    margin:0 20%;
+  }
+  header img{
+    padding:0 25%;
+    margin:0;
+  }
+  main div{
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+  main div img{
+    width:50%;
+    height:150px;
+    apadding:10px;
+  }
+  main div img:nth-last-of-type(3), main div img:nth-last-of-type(4){
+    height:150px;
+  }
+  main div img:last-child,main div img:nth-last-child(2){
+    height:150px;
+    padding:40px 120px 85px;
+    border:none
+  }
+  main div img:nth-of-type(2n){
+    border-left:1px solid rgb(223, 223, 223);
+  }
+  main div:nth-of-type(2){
+    flex-wrap: wrap;
+    flex-direction:row;
+    padding-top:20px;
+    justify-content: space-between;
+  }
+  main div:nth-of-type(2) > *{
+    awidth:50%;
+  }
+  main input,main div:nth-of-type(2) button{
+    width: 25%;
+    justify-self: right;
+    margin:0;
+    padding:25px;
+    flex-grow:1;
+    font-size:15px;
+  }
+  main div p{
+    order:1;
+  }
+  main div p{
+    aflex-grow:0;
+  }
+  main div h2{
+    flex-grow: 10;
+    text-align:left;
+    padding:10px;
+  }
+  footer div ul{
+    width:19%;
+  }
+  footer div img{
+    width:15%;
+    height:auto;
+    margin:-15px 0 0 -30px;
+    padding:0;
+  }
+  footer div:nth-child(2) ul li{
+    font-size:18px;
+    margin:0px;
+  }
+  footer div:nth-child(2){
+    flex-direction:row;
+    justify-content: space-between;
+  }
+  footer div:nth-child(2) ul,footer div:nth-child(2) div{
+    width: 40%;
+  }
+  footer div:nth-child(2) div{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer div:nth-child(2) div{
+    font-size:15px;
+  }
+  footer div:nth-child(2) div *{
+    margin:0;
+  }
+  footer i.fa {
+    font-size: 25px;
+  }
+  footer div{
+    padding-bottom:30px;
+  }
 }
+@media (min-width:960px){}
