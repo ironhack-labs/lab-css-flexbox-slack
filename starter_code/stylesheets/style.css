@@ -5,3 +5,152 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+/*//////GENERAL//////*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.nav-bar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    border-bottom: 1px solid #F4F3F4;
+}
+.nav-bar ul{
+    list-style: none;
+    justify-content: flex-end;
+}
+.nav-bar li{
+    display: inline-block;
+    text-align: left;
+    margin: 0 10px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2C303F;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2C303F;
+    text-align: center;
+}
+p{
+    color: #5b5e6d;
+}
+header{
+    display: flex;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+header p{
+    display: inline-block;
+}
+
+main{
+    background-color: #F4F3F4;
+}
+.footer-menu{
+    display: flex;
+
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+footer li{
+    display: inline-block;
+}
+main img {
+    
+}
+
+.btn {
+    width: 250px;
+}
+.btn-light{
+    border: 1px solid #F4F3F4;
+}
+.btn-dark{
+    border: 1px solid #192592;
+    color: #192592;
+}
+
+/*//////MOBILE//////*/
+@media (max-width: 768px){
+
+    .nav-bar{
+        padding: 0 10px;
+    }
+    .logo {
+        height: 80px;
+        width: auto;
+    }
+
+    header{
+        flex-direction: column;
+    }
+    header img{
+        align-self: center;
+    }
+    main{
+        
+    }
+    footer{
+
+    }
+
+}
+
+/*//////DESKTOP//////*/
+@media (min-width: 768px){
+
+    .nav-bar{
+        padding: 0 30px;
+    }
+    .nav-bar ul{
+        padding-right: 30px;
+    }
+    .logo {
+        height: 100px;
+        width: auto;
+    }
+    header{
+        flex-direction: row;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    header img{
+        height: auto;
+        width: 500px;
+        align-self: flex-start;
+    }
+    header div{
+        min-width: 260px;
+        max-width: 400px;
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    main{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .company{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main img{
+        height: 40px;
+    }
+    footer{
+
+    }
+
+}
