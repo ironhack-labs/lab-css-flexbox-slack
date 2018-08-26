@@ -14,9 +14,8 @@ body {
 }
 
 /* GENERAL STYLES */
-.title {
-	font-family: "Times New Roman", Times, serif;
-	color: #2C303F;
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1;
 }
 
 p {
@@ -26,6 +25,20 @@ p {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+::placeholder {
+	color: #999;
+}
+
+input[type="email"], .btn-primary {
+	padding: 20px 15px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+input[type="email"] {
+	font-size: 1.125rem;
 }
 
 .btn-primary {
@@ -41,6 +54,11 @@ img {
 	border: 1px solid #192592;
 	font-weight: 600;
 	padding: 25px 15px;
+}
+
+.title {
+	font-family: "Times New Roman", Times, serif;
+	color: #2C303F;
 }
 
 /* NAVEGATION */
@@ -91,11 +109,7 @@ nav img, .menu-icon {
 }
 
 header h1 {
-	font-size: 2.875rem;
-}
-
-input {
-	border: 1px solid #dedede;
+	font-size: 42px;
 }
 
 input, button {
@@ -105,19 +119,26 @@ input, button {
 	box-sizing: border-box;
 }
 
-.form-started input, .form-started button {
+input {
+	border: 1px solid #dedede;
+}
+
+button {
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+/* .form-started input, .form-started button {
 	padding: 20px 15px;
 	margin-top: 20px;
 	margin-bottom: 10px;
-}
+} */
 
-::placeholder {
-	color: #999;
-}
 
+/* 
 .form-started input {
 	font-size: 1.125rem;
-}
+} */
 
 .call-to-action {
 	width: 80%;
@@ -145,34 +166,68 @@ input, button {
 
 /* MAIN */
 .main {
-	background-color: #F4F3F4;
-	padding: 35px 15px;
 	text-align: center;
+	border: 2px solid green;
+}
+.main-bg {
+	padding: 35px;
+	background-color: #F4F3F4;
 }
 
-main h2 {
+.main-intro p {
+	margin-bottom: 30px;
+}
+
+.main h2 {
 	font-size: 2.25rem;
 }
 
 .main-brands {
 	padding-top: 30px;
-	align-self: center;
-	display: flex;
+    /* align-self: center; */
+    display: flex;
     flex-direction: column;
-    align-items: center;
+	align-items: center;
+	/* border: 1px solid black; */
 }
 
 .main-pic {
-	width: 90%;
-	height: 120px;
-	border: 1px solid black;
-	align-self: center;
+    width: 90%;
+    /* max-width: 322px; */
+    height: 140px;
+    position: relative;
+    /* border: 1px solid black; */
+    /* align-self: center; */
 }
 
 .main-pic img {
-    max-width: 50%;
+	max-width: 190px;
+    align-items: unset;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .main-pic:not(:first-child) {
 	border-top: 1px solid #dedede;
+}
+
+.main-pic:nth-child(4) img{
+	max-width: 322px;
+}
+
+.try-free {
+	/* border: 1px solid red; */
+	padding-top: 30px;
+	padding-bottom: 35px;
+}
+
+.try-free h3 {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.try-free p {
+	margin-top: 0;
 }
