@@ -31,7 +31,6 @@ body {
 
   nav img {
     padding: 0 45px;
-
   }
 
   nav ul {
@@ -64,6 +63,14 @@ body {
     width: 100%
   }
 
+  .form-and-button {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: center;
+
+  }
+
   .get-started-button {
    color: white;
    background-color: #192592;
@@ -74,12 +81,17 @@ body {
    width: 100%;
    height: 100px;
   }
+
   .partners {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center
+    align-items: center;
+    background-color: #F4F3F4;
+    margin: 10px -45px;
+    border-top: 1px solid #5b5e6d;
   }
+
 
   h2 {
     font-size: 5.5rem;
@@ -87,15 +99,11 @@ body {
     line-height: 5.5rem;
   }
 
-  .partners img {
-    width: 50%;  
-    margin: 60px 0;
-
-  }
   .partners h2, .partners p, .partners-button {
-  margin: 25px 0;
+    margin: 25px 45px;
+    text-align: center;
   }
-
+  
   .partners-button {
     color: #192592;
     background-color: white;
@@ -107,17 +115,436 @@ body {
     height: 100px;
   }
 
+  .partners-logos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #5b5e6d;
+  }
+
+  .partners-logos img {
+    width: 55%;  
+    margin: 60px auto;
+
+  }
+
+  .partners-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-bottom: 1px solid #5b5e6d;
+
+  }
+    
+  .partners-button {
+    color: #192592;
+    background-color: white;
+    border: 1px solid #192592;
+    display: block;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    width: 300px;
+    height: 100px;
+  }
+
   .try-it {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center
+    align-items: center;
+    padding: 80px 0;
+    border-bottom: 1px solid #5b5e6d;
   }
 
   .try-it * {
-    margin: 10px 0;
+    margin: 5px 0;
+    text-align: center;
   } 
 
   .try-it p:first-child {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #2C303F;
+  }
+
+  .try-it a {
+   color: #192592
+  }
+
+  .form-get-started {
+    width: 100%;
+  }
+  
+  .form-get-started input {
+    color: #F4F3F4;
+    border: 1px solid #F4F3F4;
+    display: block;
+    border-radius: 10px;
+    font-size: 3.1rem;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+
+  .footer-lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start
+  }
+
+  .footer-lists ul {
+    list-style-type: none;
+    width: 280px;
+    margin: 0px auto;
+  }
+
+  .footer-lists li {
+    font-size:  3.1rem;
+    color: #5b5e6d;
+    margin: 50px auto;
+  }
+
+  .list-header {
+    font-weight: 600;
+    font-size: 3.1rem;
+  }
+
+ .slack-image {
+    display: block;
+  }
+
+  .footer-down {
+    background-color: #F4F3F4;
+    margin: 0 -45px;
 
   }
+
+  .terms {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .terms li {
+    font-size: 3.1rem;
+    color: #5b5e6d;
+    padding: 15px;
+    font-weight: 600;
+  }
+
+  .flag-and-icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.1rem;
+    color: #5b5e6d;
+  }
+
+  .flag-and-icon span, .flag-and-icon i, .icons i {
+    padding: 20px;
+  }
+
+  .flag-and-icon img {
+    height: 30px;
+  }
+
+  .flag-and-icon i {
+    font-weight: lighter;
+  }
+  
+  .icons {
+    color: #5b5e6d;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 960px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: white;
+    border-bottom: 1px solid #5b5e6d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav img {
+    padding: 0 45px;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  h1 {
+    font-size: 7.5rem;
+    margin-top: 180px;
+    color: #2c303f;
+    line-height: 5.5rem;
+  }
+  
+  p {
+    font-size: 3.1rem;
+    letter-spacing: 0rem;
+    color: #5b5e6d;
+    line-height: 4rem;
+  }
+  
+  header img {
+    order: 2;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  header p {
+    margin: -15px 0 15px;
+  }
+
+  .form-and-button {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .get-started-button {
+    color: white;
+    background-color: #192592;
+    border: 1px solid #192592;
+    display: block;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 150px;
+    height: 75px;
+  }
+    
+  .form-get-started {
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  .form-get-started input {
+    color: #F4F3F4;
+    border: 1px solid #F4F3F4;
+    display: block;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 50px;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F4F3F4;
+    margin: 10px -45px;
+    border-top: 1px solid #5b5e6d;
+  }
+  
+  h2 {
+    font-size: 5rem;
+    color: #2c303f;
+    line-height: 5.5rem;
+  }
+
+  .partners h2, .partners p, .partners-button {
+    margin: 25px 45px;
+    
+  }
+
+  .partners p {
+    text-align: center;
+  }
+  
+  .partners-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 1px solid #5b5e6d;
+
+  }
+
+  .partners-logos img {
+    height: 90px;;
+    width: 250px;
+    padding: 30px 40px;
+    border: 1px solid #F4F3F4;
+  }
+    
+  .partners-button {
+    color: #192592;
+    background-color: white;
+    border: 1px solid #192592;
+    display: block;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    width: 300px;
+    height: 100px;
+  }
+  
+  .try-it {
+    position: relative;
+    border-bottom: 1px solid #5b5e6d;
+    height: 200px;
+  }
+  
+
+  .try-it p:first-child {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2C303F;
+    margin-top: 50px;
+  }
+  
+  .try-it a {
+    color: #192592
+  }
+
+  .try-it p {
+    font-size: 1.6rem;
+    margin-top: -10px;
+    margin: 20px 0;
+  }
+
+  .try-it .form-and-button {
+    position: absolute;
+    left: 250px;
+    bottom: 40px
+
+  }
+  
+  
+  .footer-lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start
+  }
+  
+  .footer-lists ul {
+    list-style-type: none;
+    width: 280px;
+    margin: 0px auto;
+  }
+  
+  .footer-lists li {
+    font-size:  3.1rem;
+    color: #5b5e6d;
+    margin: 50px auto;
+  }
+  
+  .list-header {
+    font-weight: 600;
+    font-size: 3.1rem;
+  }
+  
+  .slack-image {
+    display: block;
+  }
+  
+  .footer-down {
+    background-color: #F4F3F4;
+    margin: 0 -45px;
+  }
+  
+  .terms {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  .terms li {
+    font-size: 3.1rem;
+    color: #5b5e6d;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .flag-and-icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.1rem;
+    color: #5b5e6d;
+  }
+  
+  .flag-and-icon span, .flag-and-icon i, .icons i {
+    padding: 20px;
+  }
+  
+  .flag-and-icon img {
+    height: 30px;
+  }
+  
+  .flag-and-icon i {
+    font-weight: lighter;
+  }
+    
+  .icons {
+    color: #5b5e6d;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
