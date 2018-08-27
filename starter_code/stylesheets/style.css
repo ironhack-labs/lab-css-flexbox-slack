@@ -5,3 +5,348 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+
+  *{
+    /*box-shadow: inset black 0 0 0 1px;*/
+    box-sizing: border-box;
+  }
+  body,html,h1{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  h1,h2{
+    color:#2C303F;
+    font-family: Slack-Tiempos,"Times New Roman",Georgia,serif;
+  }
+  h1{
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 1em;
+  }
+  h2{
+    font-family: "Times New Roman";
+    font-size: 40px;
+    letter-spacing: -1px;
+    margin:15px 0;
+  }
+  nav{
+    position:fixed;
+    background:white;
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 30px;
+    border-bottom:1px solid #f1f0f1;
+  }
+  nav img{
+    height: 70px;
+  }
+  nav ul{
+    background-image: url("../images/hamburger-icon.png");
+    background-size: 40px 29px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 40px;
+    margin:25px 5px 
+  }
+  nav ul li{
+    display:none
+  }
+
+  header,main div,footer div{
+    padding:30px 40px 0;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  header{
+    padding-top:165px;
+    font-size: 24px;
+    color:#5b5e6d;
+  }
+  header img{
+    width: 100%;
+    order: 1;
+    margin-top:50px;
+  }
+  header p{
+    font-size: 22px;
+    line-height: 1.6em;
+    letter-spacing: 0.6px;
+    margin:40px 0;
+  }
+  header h1,header p:first-of-type{
+    align-self: flex-start;
+  }
+  header button + p{
+    margin:5px;
+  }
+  header button,header input,main button,main input,main button{
+    width: 100%;
+    padding: 30px;
+    margin:10px 0;
+    border-radius: 5px;
+    border:none;
+  }
+  header button,main button{
+    background: #192592;
+    color :white;
+    font-weight: 600;
+    margin:20px;
+    font-size: 20px;
+  }
+  header input,main input{
+    font-size:.9em;
+    border:2px #f1f0f1 solid;
+    padding:25px;
+  }
+  main{
+    border-bottom:2px #f1f0f1 solid;
+  }
+  main p+button{
+    background-color:white;
+    color:#192592;
+    border:2px solid #3d469780;
+  }
+  main div{
+    padding-top:60px;
+    padding-bottom:40px;
+    text-align: center;
+  }
+
+  main div:first-child{
+    background: #f4f3f4;
+    width: 100%;
+    align-content: center;
+    
+  }
+  main div img{
+    padding: 48px 115px;
+    width: 100%;
+    height: 165px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+  }
+  main div img:nth-of-type(3){
+    padding:50px 110px;
+    height: 160px;
+    padding: 50px 110px;
+  }
+  main div img:nth-of-type(4){
+    padding:53px 30px;
+    height: 155px;
+  }
+  main div img:nth-last-child(2){
+    height: 188px;
+    padding:62px 100px 97px;
+  }
+  main div img:last-child{
+    height: 225px;
+    padding:62px 100px 130px;
+    border:none;
+  }
+  main div p{
+    color:#5b5e6d;
+    line-height: 25px;
+    margin:0;
+    font-size:24px;
+    line-height: 1.5em;
+  }
+  footer {
+    width: 100%;
+  }
+  footer div{
+    padding-top: 30px;
+  }
+  footer div:first-child{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+  footer > div > img{
+    width: 100%;
+    height: 170px;
+    margin:-20px 0 0 -20px;
+    padding:0 0 0 0;
+    padding-right: calc(100% - 170px)
+  }
+  footer div ul{
+    width: 40%;
+    padding:0;
+    margin:0px;
+  }
+  footer div ul li {
+    list-style: none;
+    font-size: 22px;
+    color:#5b5e6d;
+    margin:0 0 35px;
+  }
+  footer div:first-child ul li:first-child {
+    margin-top:20px;
+    font-weight: 600;
+  }
+  footer div:nth-child(2){
+    background-color:#F4F3F4;
+    color:#5b5e6d;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  footer div:nth-child(2) ul,footer div:nth-child(2) div{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content:  space-between;
+  }
+  footer div:nth-child(2) ul{
+    padding:0;
+    align-items: baseline;
+  }
+  footer div:nth-child(2) ul li{
+    font-weight: 600;
+  }
+  footer div:nth-child(2) div{
+    width: 65%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    
+  }
+  footer div:nth-child(2) div *{
+    margin: 20px 10px;
+  }
+  footer div div img{
+    width: 25px;
+  }
+  footer i.fa{
+    font-size:30px
+  }
+  .fa.fa-chevron-down{
+    font-weight: normal;
+  }
+
+@media (min-width:767px){
+  h1{
+    font-size:72px;
+  }
+  nav img{
+    height: 60px;
+    padding-top:0;
+    padding-bottom:0; 
+  }
+  nav ul{
+    margin:0;
+  }
+  header {
+    padding-top:135px;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+  }
+  header input{
+    width: 50%;
+  }
+  header button,main button{
+    width: initial;
+  }
+  main button{
+    margin:0 20%;
+  }
+  header img{
+    padding:0 25%;
+    margin:0;
+  }
+  main div{
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+  main div img{
+    width:50%;
+    height:150px;
+    apadding:10px;
+  }
+  main div img:nth-last-of-type(3), main div img:nth-last-of-type(4){
+    height:150px;
+  }
+  main div img:last-child,main div img:nth-last-child(2){
+    height:150px;
+    padding:40px 120px 85px;
+    border:none
+  }
+  main div img:nth-of-type(2n){
+    border-left:1px solid rgb(223, 223, 223);
+  }
+  main div:nth-of-type(2){
+    flex-wrap: wrap;
+    flex-direction:row;
+    padding-top:20px;
+    justify-content: space-between;
+  }
+  main div:nth-of-type(2) > *{
+    awidth:50%;
+  }
+  main input,main div:nth-of-type(2) button{
+    width: 25%;
+    justify-self: right;
+    margin:0;
+    padding:25px;
+    flex-grow:1;
+    font-size:15px;
+  }
+  main div p{
+    order:1;
+  }
+  main div p{
+    aflex-grow:0;
+  }
+  main div h2{
+    flex-grow: 10;
+    text-align:left;
+    padding:10px;
+  }
+  footer div ul{
+    width:19%;
+  }
+  footer div img{
+    width:15%;
+    height:auto;
+    margin:-15px 0 0 -30px;
+    padding:0;
+  }
+  footer div:nth-child(2) ul li{
+    font-size:18px;
+    margin:0px;
+  }
+  footer div:nth-child(2){
+    flex-direction:row;
+    justify-content: space-between;
+  }
+  footer div:nth-child(2) ul,footer div:nth-child(2) div{
+    width: 40%;
+  }
+  footer div:nth-child(2) div{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer div:nth-child(2) div{
+    font-size:15px;
+  }
+  footer div:nth-child(2) div *{
+    margin:0;
+  }
+  footer i.fa {
+    font-size: 25px;
+  }
+  footer div{
+    padding-bottom:30px;
+  }
+}
+@media (min-width:960px){}
