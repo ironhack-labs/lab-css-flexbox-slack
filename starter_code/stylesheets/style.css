@@ -4,4 +4,584 @@ button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
+
+ Extra Small Screen
 */
+
+ * {
+  margin:0;
+}
+p {
+  color: #5b5e6d;
+}
+img {
+  max-width: 60%;
+}
+
+
+nav{
+  position: fixed;
+  background: white;
+  height: 15vh;
+  width: 100vmax; 
+  border-bottom: 2px solid lightgray;
+}
+nav img{
+  position: absolute;
+  height: 13vh;
+  left: 8vw;
+  top:1vh;
+}
+nav ul{
+  display: none;
+  float: right;
+}
+nav i{
+  position: absolute;
+  left: 85vw;
+  top: 5vh;
+  font-size: 7vw;
+  color: #5b5e6d;
+}
+
+
+header{
+  padding: 15vh 0 0 0;
+  margin: 0 auto;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 5vw;
+}
+header img{
+  order: 2;
+}
+header h1{
+margin-top: 7vh;
+margin-bottom: 5vh;
+line-height: 0.9em;
+color: #2C303F
+}
+header p{
+  line-height: 1.3em;
+  font-size: 4.9vw;
+}
+header input {
+  margin-top: 10vh;
+  height: 10vh;
+  padding: 0 2vw;
+  font-family: Avenir;  
+  font-size: 0.9em;
+  border: 1px solid rgba(1, 1, 1, 0.1);
+  margin-bottom:  4vh;
+}
+header button{
+  background-color: #192592;
+  color: white;
+  height: 10vh;
+  border: none;
+}
+.ya-usas-slack{
+  text-align: center;
+  font-size: 0.7em;
+  margin: 3vh 0;
+}
+
+
+main div{
+  background-color: #F4F3F4;
+  border-top: 2px solid rgba(1, 1, 1, 0.05);
+  width: 100vw;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+}
+main article{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main{
+  font-size: 4vw;
+}
+main img{
+  width: auto;
+  max-width: 30%;
+  max-height: 8vh;
+  padding: 5vh 0;
+}
+main article div{
+  width: 80vw;
+  height: 1px;
+  background-color: rgba(1, 1, 1, 0.01) ;
+}
+main div h2, main div p{
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+}
+main h2{
+  margin-top: 5vh;  
+  color: #2C303F;
+
+}
+main div p{
+  margin-top:2vh; 
+  line-height: 1.2em; 
+}
+main button{
+  margin-left: 15vw;
+  width: 70vw;  
+  background-color: white;
+  border: 1px solid rgba(25,37,146, 0.3);
+  color: #192592;
+  height: 10vh;
+  margin-top: 5vh;
+  font-size: 0.9em;
+}
+main button:last-child{
+  background-color: #192592;
+  color: white;
+  height: 10vh;
+  margin-top: 3vh;
+  border: none;
+}
+main b{
+  font-size: 1.2em;
+}
+main input{
+  margin-left: 15vw;
+  width: 66vw;
+  margin-top: 2vh;  
+  height: 10vh;
+  padding: 0 2vw;
+  font-family: Avenir;  
+  font-size: 0.9em;
+  border: 1px solid rgba(1, 1, 1, 0.1);
+}
+.try-it{
+  background: white;
+  padding: 5vh 0;
+  border-top: 2px solid rgba(1, 1, 1, 0.05);  
+  border-bottom: 2px solid rgba(1, 1, 1, 0.05);  
+}
+
+
+.footer-about{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 700px;
+}
+.footer-about b{
+  color: #5b5e6d;
+}
+.footer-about li{
+  display: block;
+  margin: 5vh 0;
+  color: #5b5e6d;
+  width: 30vw;
+}
+footer article img {
+  width: 25vw;
+}
+.footer-links{
+  height: 10vh;
+  background: #F4F3F4;
+}
+.footer-links li{
+  display: inline;
+  margin:  0 5vw;
+}
+.footer-links ul{
+  padding-top: 3vh;
+  color: #2C303F;
+}
+.footer-final{
+  background: #F4F3F4;
+  text-align: center;
+  color: #2C303F;
+}
+.footer-final img{
+  height: 3vh;
+}
+.footer-final div{
+  padding: 4vh 0 0 0; 
+}
+.footer-final i{
+  margin: 0 2vw;
+}
+
+
+/* Small Screen */
+@media (min-width:767px) and (max-width:961px){  
+nav i{
+  left: 95vw;
+  font-size: 3vw;
+}
+
+
+header{
+  font-size: 2.6vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+header p{
+  font-size: 2.5vw;
+}
+header input {
+  width: 40vw;
+}
+header button{
+  width: 25vw;
+  margin: 10vh 0 0 2vh;
+}
+.ya-usas-slack{
+  text-align: left;
+  width: 80vw;
+  font-size: 0.9em;
+}
+header img{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+
+main article{
+  align-items: center;
+  height: 400px;
+  flex-wrap: wrap;
+}
+main{
+  font-size: 3vw;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+main img{
+  padding: 5vh 0;
+}
+main article div{
+  width: 40vw;
+  height: 1px;
+  background-color: rgba(1, 1, 1, 0.01) ;
+}
+main div p{
+  font-size: 0.7em
+}
+main button{
+  margin-left: 35vw;
+  width: 30vw;  
+  font-size: 0.6em;
+}
+main button:last-child{
+  margin-left: 0;
+  width: 20vw;
+  margin-top: 3vh;
+  border: none;
+}
+main b{
+  font-size: 1.2em;
+}
+main input{
+  margin-left: 0;
+  width: 20vw;
+  margin-top: 2vh;  
+}
+.try-it{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+.try-it p{
+  text-align: left;
+  width: 30vw;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-about{
+  height: 60vh;
+}
+.footer-about li{
+  width: 15vw;
+}
+footer article img {
+  width: 15vw;
+}
+.footer-links{
+  width: 100vw;
+}
+.footer-links li{
+  margin:  0 10vw;
+}
+}
+/* Medium Screen  */
+@media (min-width:962px) and (max-width:1024px) {
+  
+nav i{
+  left: 95vw;
+  font-size: 3vw;
+}
+
+
+header{
+  font-size: 2.6vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+header p{
+  font-size: 2.5vw;
+}
+header input {
+  width: 40vw;
+}
+header button{
+  width: 25vw;
+  margin: 10vh 0 0 2vh;
+}
+.ya-usas-slack{
+  text-align: left;
+  width: 80vw;
+  font-size: 0.9em;
+}
+header img{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+
+main article{
+  align-items: center;
+  height: 250px;
+  flex-wrap: wrap;
+}
+main{
+  font-size: 3vw;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+main img{
+  max-width: 30%;
+  padding: 5vh 0;
+}
+main article div{
+  width: 25vw;
+  height: 1px;
+  background-color: rgba(1, 1, 1, 0.01) ;
+}
+main div p{
+  font-size: 0.7em
+}
+main button{
+  margin-left: 35vw;
+  width: 30vw;  
+  font-size: 0.6em;
+}
+main button:last-child{
+  margin-left: 0;
+  width: 20vw;
+  margin-top: 3vh;
+  border: none;
+}
+main b{
+  font-size: 1.2em;
+}
+main input{
+  margin-left: 0;
+  width: 20vw;
+  margin-top: 2vh;  
+}
+.try-it{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+.try-it p{
+  text-align: left;
+  width: 30vw;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-about{
+  height: 60vh;
+}
+.footer-about li{
+  width: 15vw;
+}
+footer article img {
+  width: 15vw;
+}
+.footer-links{
+  width: 100vw;
+}
+.footer-links li{
+  margin:  0 10vw;
+}
+}
+/* Large Screen   */
+@media (min-width:1025px) {
+  nav{
+    height: 8vh;
+  }
+  nav img{
+    height: 6vh;
+  }
+  nav ul{
+    color: #5b5e6d;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    align-items: center;
+    height: 100%;
+  }
+  nav li{
+    display: inline;
+    margin: 0 2vw;
+  }
+  nav li:last-child{
+    padding: 1vh;
+    border: 1px solid grey
+  }
+nav i{
+  display: none;
+  opacity: 0;
+}
+
+
+header{
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 2.5em;
+}
+header h1{
+  width: 40vw;
+  order: -1;
+  position: absolute;
+  left: 51vw;
+}
+header p{
+  margin-top: 30vh;
+  font-size: 0.8em;
+  width: 40vw;
+  order:0;
+}
+header input {
+  width: 40vw;
+}
+header button{
+  width: 25vw;
+  margin: 10vh 0 0 2vh;
+}
+.ya-usas-slack{
+  text-align: center;
+  width: 80vw;
+  font-size: 0.9em;
+}
+header img{
+  max-width: 45vw;
+  margin: 0 0;
+  order:-1;
+}
+
+
+
+main article{
+  align-items: center;
+  height: 250px;
+  flex-wrap: wrap;
+}
+main{
+  font-size: 3vw;
+  flex-direction: row;
+  justify-content: center;
+}
+main img{
+  max-width: 30%;
+  padding: 5vh 0;
+}
+main article div{
+  width: 25vw;
+  height: 1px;
+  background-color: rgba(1, 1, 1, 0.01) ;
+}
+main div p{
+  font-size: 0.7em
+}
+main button{
+  margin-left: 35vw;
+  width: 30vw;  
+  font-size: 0.6em;
+}
+main button:last-child{
+  margin-left: 0;
+  width: 20vw;
+  margin-top: 3vh;
+  border: none;
+}
+main b{
+  font-size: 1.2em;
+}
+main input{
+  margin-left: 0;
+  width: 20vw;
+  margin-top: 2vh;  
+}
+.try-it{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+.try-it p{
+  text-align: left;
+  width: 30vw;
+}
+
+footer{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.footer-about{
+  height: 60vh;
+}
+.footer-about li{
+  width: 15vw;
+}
+footer article img {
+  width: 16vw;
+}
+.footer-links{
+  width: 100vw;
+}
+.footer-links ul{
+  float: left;
+}
+.footer-links li{
+  margin:  0 1vw;
+}
+
+.footer-links{
+  text-align: right;
+}
+}
