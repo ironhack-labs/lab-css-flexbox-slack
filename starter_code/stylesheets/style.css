@@ -1,7 +1,285 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+
+body {
+    margin:0px;
+    padding:0px;
+}
+p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #5b5e6d;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: "Times New Roman",Georgia,serif;
+    color: #2C303F;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 55px;
+    color: #2C303F;
+}
+
+h3 {
+    font-size: 45px;
+    color: #2C303F;
+    margin: 5px 0;
+}
+
+.container {
+    width: 1200px;
+    margin:0 auto;
+}
+
+.main-content {
+    display: flex;
+}
+
+button {
+    background: #192592;
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.header {
+    padding:5px 0;
+    border-bottom:1px solid #d6d6d6d1;
+    position:fixed;
+    width:100%;
+    background:#fff;
+}
+
+.header-top {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 220px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+    color:#5b5e6d;
+    font-size:22px;
+    font-family: 'Lato', sans-serif;
+}
+.menu li:last-child {
+    margin-right: 0px;
+}
+
+.menu button {
+    background: none;
+    border: 1px solid #5b5e6d;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color:#5b5e6d;
+    font-size:22px;
+    text-transform: none;
+    font-weight:400;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 165px 0 40px 0;
+}
+
+.main {
+    background: #F4F3F4;
+    padding:40px; 0;
+}
+
+.discover {
+    text-align: center;
+}
+
+.discover button {
+    background: #fff;
+    color: #192592;
+    border: 1px solid #cacaca;
+}
+
+.buttons-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.logos {
+    width: 320px;
+    text-align: center;
+    margin: 40px;
+}
+
+
+.buttons-content img {
+    width:250px;
+}
+
+
+.try-free {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.sign-in {
+    padding: 35px 0 20px 0;
+    border-bottom: 1px solid #d6d6d6d1;
+    border-top: 1px solid #d6d6d6d1;
+}
+
+footer {
+    padding: 50px 0;
+}
+
+.footer-content {
+    display:flex;
+    justify-content:space-between;
+    padding: 80px 0;
+}
+footer li {
+    list-style: none;
+    color: #5b5e6d;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin: 20px 0;
+ }
+.logo-footer{
+    flex:0.7;
+}
+
+.copyright{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.menu-title {
+    font-weight:700;
+}
+.copyright li {
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+.copyright img {
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.copyright i {
+    margin: 0 10px;
+}
+
+
+@media (max-width: 767px) {
+
+    .footer-content {
+        padding: 10px 0;
+        flex-direction: column;
+    }
+
+    button,.discover button {
+        width: 100%;
+    }
+    .try-free {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main {
+        background: #F4F3F4;
+        padding: 40px 0;
+    }
+
+    .try-free {
+        align-items: inherit;
+    }
+
+    .hero {
+        padding: 130px 0 40px 0;
+    }
+    .sign-in {
+        padding: 35px 0 35px 0;
+    }
+
+}
+
+ @media (max-width: 961px) {
+
+    .logos {
+        width: 290px;
+        margin: 30px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+  }
+
+@media (max-width:1024px) {
+    
+    .hero-image img {
+        width: 400px;
+    }
+
+    .hero {
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .menu {
+        display:none;
+    }
+    
+    .logo img {
+        width: 155px;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    .mobile-menu {display:none;}
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .buttons-content {
+        padding: 0 0;
+    }
+    
+}
