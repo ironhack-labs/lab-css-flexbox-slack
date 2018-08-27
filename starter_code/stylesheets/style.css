@@ -12,7 +12,7 @@ nav grey: #5b5e6d;
   }
   #navbar {
     display: flex;
-    width: 80%;
+    width: 90%;
     position: fixed;
     background-color: white;
     height: 50px;
@@ -30,7 +30,7 @@ nav grey: #5b5e6d;
     right:0;
     size: 3em;
   }
-  .column-flexbox {
+  #header-box {
     display :flex;
     flex-direction: column;
       }
@@ -54,8 +54,11 @@ nav grey: #5b5e6d;
   }
   .email-input {
     padding:7px;
+    width:90%;
     border:1px solid #5b5e6d;
     border-radius:6px;
+    display:block;
+    margin:0 auto;
 }
     
   .get-started-button {
@@ -75,16 +78,21 @@ nav grey: #5b5e6d;
 */
 #clients {
   background-color:#EEE;
+  text-align:center;
+}
+#try-for-free-div {
+  text-align:center;
+  display :flex;
+  flex-direction: column;
 }
 .customer-logo {  
- height: 70px;
+ width: 40%;
 padding:45px 75px 45px 75px;
 border-radius: 20px;
 border-bottom:1px solid #ddd;
  }
-  .centered {
-    text-align:center;
-  }
+ 
+
   .bold {
     font-weight: 700;
     font-size: 1.2em;
@@ -104,6 +112,164 @@ border-bottom:1px solid #ddd;
     width: 75px;
     height:75%;
     margin-right: 60%;
+  } 
+  footer #footer-uls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+  }
+  .ul-title {
+    list-style: none;
+    font-weight:700;
+  }
+  #footer-uls ul {
+    list-style: none;
+    color:#5b5e6d;
+  }
+
+  #footer-links ul {
+    display:flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding:0px 10px;
+  }
+  #us-flag {
+    width: 30px;
+    margin-left: 28%;
+    height: 25px;
+  }
+  #footer1 {
+    display:flex;
+  }
+  #footer1 span {
+    margin-left:10px;
+
+  }
+  #footer2 {
+    justify-content: center;
+    display:flex;
+  }
+
+  #footer2 i {
+    margin:5px 5px;
+  }
+
+}
+@media screen and (min-width: 768px) and (max-width: 961px){
+  body {
+    margin:auto 7%;
+  }
+  #navbar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    height: 50px;
+    top:0px; 
+    justify-content: space-between;
+    align-items: center;
+    /*border: 1px solid black;
+  */
+  }
+   #slacklogo {
+    width : 8em;
+    left:0;
+  }
+  #burger-menu {
+    right:0;
+    size: 3em;
+  }
+  #header-box {
+    display :flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+      }
+
+  #home-talking-img {
+    order:1;
+    width:100%;
+  }
+  #header-box h1 {
+    font-size: 3em;
+    color:#2C303F;
+    margin-top:85px;
+  }
+  #header-box p {
+    color:#5b5e6d;
+    margin-top: 0;
+  }
+  .sign-in-msg {
+    color: #2C303F;
+    margin-top: 0;
+
+  }
+  .email-input {
+    padding:7px;
+    border:1px solid #5b5e6d;
+    border-radius:6px;
+    width:200px;
+    height: 1.5em;
+    margin: 0px 10px 10px 0px;
+}
+    
+  .get-started-button {
+    color:white;
+    background-color: #192592;
+    border:0;
+    font-weight:700;
+    margin: 0px 40% 10px 20px;
+    padding:10px;
+
+  }
+/*
+  main {
+    display:flex;
+    flex-direction: column;
+
+  }
+*/
+#clients {
+  background-color:#EEE;
+}
+#clients p {
+  width:60%;
+  margin: 16px auto;
+}
+
+.customer-logo {  
+ width:40%;
+padding:2% 4% 2% 4%;
+border-bottom:1px solid #ddd;
+ }
+ #try-for-free-div {
+  flex-wrap: wrap;
+  display :flex;
+  flex-direction: column;
+
+  }
+  #try-for-free-div p {
+    width:40%;
+  }
+  .bold {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+  }
+
+  #discover-why-button {
+    color:#192592;
+    background-color: white;
+    border:1px solid #192592;
+    font-weight: 700;
+    display:block;
+    margin:0 auto;
+    padding:10px;
+  }
+
+  #iso-slack {
+    width: 75px;
+    height:75%;
+    margin-right: 75%;
   } 
   footer #footer-uls {
     display: flex;
