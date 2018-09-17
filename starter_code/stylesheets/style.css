@@ -5,3 +5,467 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+
+/* width < 768px*/
+
+h1 {
+    color: #2C303F;
+}
+
+p {
+    color: #5b5e6d;
+}
+
+
+body {
+    margin: 0;
+}
+
+.fixed nav {
+    position: fixed;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    height: 80px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    background: white;
+}
+
+nav ul {
+    display: none;
+}
+
+.slack_logo {
+    width: 20%;
+    padding: 0 10%;
+}
+
+nav i {
+    padding: 0 10%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+
+.cabecera2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.cabecera2 h1 {
+    display: flex;
+    font-size: 60px;
+}
+
+.cabecera2 p {
+    display: flex;
+    font-size: 25px;
+}
+
+input {
+    margin: 30px 0;
+    width: 99%;
+    height: 60px;
+    border-radius: 5px;
+    border-width: thin;
+    font-size: 20px;
+    color: #5f6066;
+    border-color: #9c9da3;
+}
+
+.cabecera2 button, .companieslog button {
+    text-align: center;
+    color: white;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #192592;
+}
+
+.cabecera1 {
+    display: flex;
+    align-items: center;  
+    flex-direction: column;
+    order: 2;
+    margin: 0 5%;
+}
+
+.logs {
+    text-align: center;
+    font-size: 25px;
+}
+
+.logstit {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -20px;
+}
+
+.imgheader {
+    width: 80%;
+}
+
+main .companies {
+    background-color: #F4F3F4;
+    display: flex;
+    align-items: center;  
+    flex-direction: column;
+    padding: 100px 5%;
+    text-align: center;
+}
+
+main .companies h2 {
+    color: #2C303F;
+    font-size: 40px;
+}
+
+main .companies p {
+    color: #5f6066;
+    font-size: 25px;
+}
+
+.companies button {
+    width: 85%;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #192592;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 10px;
+    border-color: #192592;
+    background-color: white;
+}
+
+main .companieslog {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.companylogos {
+    width: 60%;
+}
+
+hr {
+    background-color: rgb(214, 214, 214);
+    height: 1px;
+    width: 90%;
+    margin: 50px;
+}
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.prueva {
+    width: 100%;
+}
+
+.serviceslogo {
+    width: 600px;
+}
+
+.serviceslist {
+    width: 250px;
+}
+
+.serviceslogo img{
+    width: 40%;
+}
+
+ul li {
+    color: #5b5e6d;
+    font-weight: bold;
+    list-style: none;
+    margin: 10px 0;
+    font-size: 25px;
+}
+  
+.serviceslist ul li:first-child {
+    color: #2C303F;
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.signs {
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status p, .status2, .status3 {
+    float: left;
+    margin: 20px 20px;
+    color: #2C303F;
+    font-size: 30px;
+}
+
+.status2 img {
+    width: 18%;
+    vertical-align: middle; 
+}
+
+
+
+/* width > 768px*/
+
+
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding-right: 5%;
+    }
+
+    nav ul li {
+        display: flex;
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    
+    .slack_logo {
+        width: 15%;
+        padding-left: 0 10%;
+    }
+    
+    .workspacebtn {
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .fixed nav i {
+        display: none;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        padding-top: 80px;
+    }
+    
+    .cabecera2 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        order: 2;
+        margin: 0 5%;
+    }
+    
+    .cabecera2 h1 {
+        display: flex;
+        font-size: 70px;
+    }
+    
+    .cabecera2 p {
+        display: flex;
+        font-size: 22px;
+    }
+    
+    input {
+        margin: 30px 0;
+        width: 99%;
+        height: 60px;
+        border-radius: 5px;
+        border-width: thin;
+        font-size: 20px;
+        color: #5f6066;
+        border-color: #9c9da3;
+    }
+    
+    .cabecera2 button, .companieslog button {
+        text-align: center;
+        color: white;
+        height: 60px;
+        font-size: 30px;
+        border-radius: 10px;
+        background-color: #192592;
+    }
+
+    .companieslog button {
+        margin-top: 30px;
+    }
+    
+    .cabecera1 {
+        display: flex;
+        align-items: center;  
+        align-self: center;
+        width: 50%;
+        order: 1;
+        margin: 0 5%;
+    }
+    
+    .logs {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 25px;
+        order: 3;
+    }
+    
+    .logstit {
+        color: black;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: -20px;
+    }
+    
+    .imgheader {
+        width: 90%;
+    }
+    
+    main .companies {
+        background-color: #F4F3F4;
+        display: flex;
+        align-items: center;  
+        flex-direction: column;
+        padding: 100px 5%;
+        text-align: center;
+    }
+
+    main .companies img {
+        background-color: #F4F3F4;
+        display: flex;
+        align-items: center;  
+        flex-direction: column;
+        padding: 100px 5%;
+        text-align: center;
+    }
+    
+    main .companies h2 {
+        color: #2C303F;
+        font-size: 50px;
+    }
+    
+    main .companies p {
+        color: #5f6066;
+        font-size: 30px;
+    }
+    
+    .companies button {
+        width: 35%;
+        margin-bottom: 100px;
+        text-align: center;
+        color: #192592;
+        height: 60px;
+        font-size: 30px;
+        border-radius: 10px;
+        border-color: #192592;
+        background-color: white;
+    }
+    
+    main .companieslog {
+        margin: 0 5%;
+    }
+    
+    .companylogos {
+        width: 90%;
+    }
+
+    .companies hr {
+        display: none;
+    }
+
+    .companiescont {
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .tamanoslogos {
+        width: 300px;
+        padding: 0 40px;
+    }
+
+
+
+
+
+
+    
+    hr {
+        background-color: rgb(214, 214, 214);
+        height: 1px;
+        width: 90%;
+        margin: 50px;
+    }
+    
+    
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 95%;
+    }
+    
+    .prueva {
+        width: 100%;
+    }
+    
+    .serviceslogo {
+        width: 250px;
+        margin-left: 50px;
+    }
+    
+    .serviceslist {
+        width: 250px;
+    }
+    
+    .serviceslogo img{
+        width: 40%;
+    }
+    
+    .serviceslist ul li {
+        color: #5b5e6d;
+        font-weight: bold;
+        list-style: none;
+        margin: 10px 0;
+        font-size: 25px;
+    }
+      
+    .serviceslist ul li:first-child {
+        color: #2C303F;
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    
+    .signs {
+        background-color: grey;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .status p, .status2, .status3 {
+        float: left;
+        margin: 15px 10px;
+        color: #2C303F;
+        font-size: 20px;
+    }
+    
+    .status2 img {
+        flex-direction: row-reverse;
+        width: 14%;
+    }
+    
+  }
