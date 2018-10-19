@@ -5,25 +5,149 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-*{
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+* {
   margin: 0;
   padding: 0;
+  font-family: "Lato";
 }
 
-img{
+img {
   max-width: 100%;
 }
 
 @media (max-width: 768px) {
   .navbar {
     position: fixed;
-    border: 1px solid red;
     display: flex;
-    height: 100px;
+    height: 80px;
     width: 100%;
     background-color: white;
+    border-bottom: 2px solid #d4d1d1;
+    box-sizing: content-box;
   }
   .navbar img {
+    width: 140px;
+    flex-basis: auto;
+    margin-left: 30px;
+  }
+
+  .navbar ul {
+    display: none;
+    list-style: none;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 90px 0px;
+    height: 100%;
+  }
+
+  .header img {
+    order: 1;
+    width: 600px;
+    min-width: 600px;
+    height: 500px;
+    align-self: center;
+  }
+
+  .header h1 {
+    font-weight: 900;
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #2c303f;
+  }
+
+  .header p {
+    font-size: 1.3em;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    color: #5b5e6d;
+    margin-bottom: 50px;
+  }
+
+  #header-mail {
+    margin-bottom: 30px;
+    height: 70px;
+    border: #d4d1d1 1px solid;
+    border-radius: 8px;
+    color: #5b5e6d;
+    padding-left: 20px;
+    font-size: 1.3em;
+  }
+
+  .header button {
+    background: #192592;
+    height: 70px;
+    width: 100%;
+    align-self: center;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  #header-sign {
+    align-self: center;
+  }
+
+  #header-sign a {
+    font-weight: 200;
+    border: 0.2px;
+  }
+
+  .company {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 70px 100px;
+    height: 100%;
+    background: #f4f3f4;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .company h2 {
+    font-weight: 900;
+    font-size: 2em;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    color: #2c303f;
+    align-self: center;
+  }
+
+  .company p {
+    font-size: 1.3em;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    color: #5b5e6d;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .company button {
+    background: white;
+    height: 70px;
+    width: 100%;
+    align-self: center;
+    color: #192592;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-radius: 8px;
+    border: #192592 1px solid;
+    margin-bottom: 60px;
+  }
+
+  .company img {
     width: 200px;
+    height: 60px;
+    align-self: center;
+  }
+
+  .company hr {
+    margin: 50px 0 50px 0;
+    border: 0.5px #d4d1d1 solid;
+    width: 100%;
   }
 }
