@@ -7,7 +7,7 @@ nav grey: #5b5e6d;
 */
 
 * {
-    margin: 0;
+    margin: 0 2px;
     padding: 0;
 }
 
@@ -23,19 +23,54 @@ img {
 .div-nav {
     width: 100%;
     position: fixed;
-    background-color:white;
+    background-color: white;
     border-bottom: 1px solid grey;
+    height: 45px;
+}
+
+
+nav img {
+    height: 45px;
     padding-left: 10px;
 }
 
-@media (max-width: 768px) {
+nav ul {
+    display: none;
+}
 
-    nav img {
-        height: 50px;
-    }
+.flex-header {
+    display: flex;
+    flex-direction: column;
+    padding-top:45px;
+    border: 1px solid black;
+    justify-content:flex-start;
+}
 
-    nav ul {
-        display: none;
-    }
+.flex-header h1 {
+    font-size: 3em;
+    padding-top: 15px;
+}
 
+.flex-header p {
+    font-size: 1em;
+    padding-top: 15px;
+}
+
+.header-email-address {
+    padding-top: 15px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+.header-email-address input {
+    height: 35px;
+    zpadding-left: 10px;
+    width: 100%;
+}
+
+.flex-header button {
+    background-color: #192592;
+    border-radius: 20%;
+    height: 60px;
+    border: 1px solid #192592;
 }
