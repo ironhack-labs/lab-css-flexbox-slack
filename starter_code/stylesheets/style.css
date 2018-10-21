@@ -5,3 +5,94 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #ffffff;
+  border-bottom: 1px solid grey;
+  padding: 0 0 10px 10px;
+  }
+
+nav ul{
+  display: flex;
+  align-items: center;
+  padding: 0 10px 0 0;
+}
+nav li{
+  display: inline;
+  list-style-type: none;
+}
+nav img{
+  height: 120px;
+}
+header{
+  
+}
+
+main{
+  
+}
+
+
+@media (max-width: 768px) {
+  nav{
+      background-color: white;
+   }
+  nav img{
+      height: 80px;
+  }
+  nav ul{
+      display: none;
+  }
+  header{
+    margin-top: 0px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: flex-start;
+  }
+
+header img {
+  width: auto;
+  height: auto;
+}
+
+  main{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: flex-start;
+  }
+  main img{
+    height: 100px;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: space-around;
+    height: 60px;
+    width: auto;
+    padding: 20px;
+}
+  }
+
+
+@media (min-width: 769px) and (max-width: 961px) {
+  nav{
+      position:fixed;
+   }
+  nav img{
+      height: 100px;
+  }
+  nav ul{
+      display: none;
+  }
+  header{
+    display: flex;
+    flex-flow: wrap row;
+    width: 768;
+    justify-content: center;
+}
+}
