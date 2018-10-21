@@ -39,7 +39,7 @@ a{
     text-decoration: none;
     color: rgb(65,74,170);
 }
-p,li,a,span{
+p,li,a,span,select{
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5rem;
 }
@@ -106,18 +106,13 @@ header {
 #discover  button{
     width: 250px;
 }
-#tryIt{
-
-    padding-top: 10%;
-    margin-bottom: 10%;
-}
 
 #tryIt h2,p{
     margin:5px;
 }
 
 #slack-img{
-    width:25vw;
+    width:20vw;
     margin: 0;
 }
 
@@ -128,7 +123,9 @@ header {
 .footer-links > * {
     justify-content: space-around;
   }
-
+.lists{
+    margin-bottom: 30px;
+}
 .lists > ul{
     margin:0px;
     padding: 0;
@@ -150,28 +147,30 @@ header {
     font-weight: bold;
     font-size: 1.5rem;
 }
+
 .us > ul > li{
-    display: inline-block;
-    margin: 10px 15px;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .language{
     display: flex;
-    flex-direction:row;
-    justify-content: space-between;
     align-items: center;
     width:250px;
     margin-top: 50px;
 }
 
 .langSelect{
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    width:200px;
+    white-space:nowrap;
 }
 
 .chev{
-    width:50px;
+    margin-left: 20px;
+    text-align: center;
 }
 
 .social-media{
@@ -185,6 +184,12 @@ header {
     width: 50px;
     margin-right: 10px;
 }
+
+select{
+    border:none;
+    background-color: transparent;
+}
+
 
 @media only screen and (max-width: 768px){
     h1{
@@ -281,14 +286,16 @@ header {
         font-size: 1.2rem;
     }
    .text{
-        flex:1;
+        flex:50%;
     }
     .signup{
-        flex:1;
+        flex:50%;
+        display: flex;
     }
 
-    .signupT{
+    .signup input{
         padding:20px;
+        margin-right: 20px;
         width:200px;
     }
     .signup > button {
