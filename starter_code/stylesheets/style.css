@@ -41,25 +41,24 @@ a{
 }
 p,li,a,span{
     font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+}
+h1{
     font-size: 2rem;
+}
+h1{
+    font-size: 1.8rem;
 }
 
 h1,h2,h3,h4,h5{
     font-family: 'Merriweather', serif;
 }
 
-h1{
-    font-size: 3rem;
-}
-h2{
-    font-size: 2.5rem;
-}
 button{
     border:none;
     background-color: rgb(64,73,170);
     font-family: 'Quicksand', sans-serif;
     color: white;
-    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -72,11 +71,10 @@ button{
 button, .text-input{
     border-radius: 10px;
     margin: 15px 0;
-}
-
-button{
+    font-size: 1.2em;
     padding: 3% 1%;
 }
+
 
 button:hover{
     background-color: rgb(85, 93, 185);
@@ -84,8 +82,6 @@ button:hover{
 }
 
 .text-input{
-    padding: 3%;
-    font-size: 1.5rem;
     font-family: 'Quicksand', sans-serif;
     border: 1px solid rgb(184, 184, 184);
 }
@@ -100,25 +96,16 @@ header {
     padding-top: 20vh;
 }
 .imageContainer {
-    width:30vw;
-}
-#slack_logo {
-    width:30vw;
+    width:20vw;
     height: auto;
-}
-
-#signin{
-    text-align: center;
 }
 
 #discover{
     background-color: #F4F3F4;
 }
 
-.logo{
-    width:50vw;
-}
 #tryIt{
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -201,6 +188,15 @@ header {
 }
 
 @media only screen and (max-width: 768px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    p,li,a,span{
+        font-size: 2rem;
+    }
     .menu{
         display: none;
     }
@@ -208,33 +204,62 @@ header {
     button, .text-input{
         width:80vw;
     }
+
+    #signin{
+        text-align: center;
+    }
+
     .logos{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } 
     .logo{
         padding: 10vh 5vw;
+        width:50vw;
     }
+
     .lists{
         flex: 50%;
     }
     #end{
         flex-direction: column;
     }
-    #tryIt{
-        flex-direction: column;
-    }
+
 }
 
 @media only screen and (min-width: 769px){
     .menu{
         display: none;
     }
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
     button {
         width:20vw;
     }
     .text-input{
         width:50vw;
+    }
+    .people{
+        width: 60%;
+        margin: 50px 0  0 15%;
+    }
+    hr{
+        display:none;
+    }
+    #discover {
+        text-align: center;
+    }
+    .logos{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .logo{
+        margin:50px;
+        width:25vw;
     }
 }
