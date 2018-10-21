@@ -12,6 +12,27 @@ nav grey: #5b5e6d;
   padding: 0;
 }
 
+@media (max-width: 380px) {
+  .footer-about {
+    margin-bottom: 0;
+    box-sizing: border-box;
+    padding: 450px 0 300px 0;
+  }
+  .footer-list li {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .footer-img {
+    position: absolute;
+    top: 2350px;
+    left: 50px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 961px) {
+  
+}
+
 body {
   width: 100%;
   font-family: Slack-Averta, appleLogo, sans-serif;
@@ -19,16 +40,16 @@ body {
   line-height: 1.5;
   letter-spacing: normal;
   text-align: left;
-  padding: 20px;
   box-sizing: border-box;
 }
 
-p{
+p {
   color: #5b5e6d;
 }
 
 img {
   width: 100%;
+  max-width: 600px;
 }
 
 button {
@@ -66,8 +87,15 @@ button {
   fill: #5b5e6d7a;
 }
 
+.padding-rg-lft {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 .header {
-  padding-top: 50px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -83,11 +111,11 @@ button {
 }
 
 .header p {
-    margin-top: 35px;
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-    color: #5b5e6d;
-    margin: 0 20px 30px 20px;
+  margin-top: 35px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #5b5e6d;
+  margin: 0 0 30px 0;
 }
 
 h2 {
@@ -98,39 +126,44 @@ h2 {
 }
 
 .header-form {
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  justify-content: space-between;
+  text-align: center;
 }
 
 input {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 60px 30px 60px;
-    border: 1px solid #5b5e6d4b;
-    border-radius: 5px;
-    height: 50px;
-    align-self: center
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+  border: 1px solid #5b5e6d4b;
+  border-radius: 5px;
+  height: 50px;
+  align-self: center;
+  font-size: 1.5rem;
 }
 
 .header-form .btn {
-    width: 100%;
-    height: 60px;
-    box-sizing: border-box;
-    color: #fff;
-    background-color: #192592;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    margin: 25px 0 15px 0;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #192592;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin: 25px 0 15px 0;
 }
 
 .header-form p {
-    color: #5b5e6d;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 40px;
-    font-size: 1.25rem;
-    align-self: center;
+  color: #5b5e6d;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 1.1rem;
+  align-self: center;
 }
 
 .header-img {
@@ -138,11 +171,9 @@ input {
 }
 
 main {
-    width: 100%;
-    zbox-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-    zpadding: 40px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .partners-section {
@@ -155,8 +186,8 @@ main {
   background-color: #f4f3f4;
   border-top: 1px solid #5b5e6d4d;
   border-bottom: 1px solid #5b5e6d4d;
-  border-left: 30px solid #f4f3f4;
-  margin-bottom: 30px;
+  margin: 30px 0 0 0;
+  padding: 30px 0 0 0;
 }
 
 .partners-section h2 {
@@ -173,30 +204,26 @@ main {
 }
 
 .partner-log:last-child {
-  flex: 0 0;
-  box-sizing: border-box;
-  padding: 25px 50px;
-  zmargin-bottom: -20px;
+  border-bottom: none;
 }
 
 .btn {
-    width: 100%;
-    height: 60px;
-    box-sizing: border-box;
-    color: #192592;
-    background-color: #fff;
-    border: 1px solid #192592;
-    border-radius: 5px;
-    margin: 25px 0 15px 0;
-    margin-right: 30px;
-    font-weight: 600;
-    font-size: 1.15rem;
-    text-align: center;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  color: #192592;
+  background-color: #fff;
+  border: 1px solid #192592;
+  border-radius: 5px;
+  margin: 25px 0 15px 0;
+  font-weight: 600;
+  font-size: 1.15rem;
+  text-align: center;
 }
 
 .signup-section {
-  padding-left: 20px;
   margin: 0 auto;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,26 +248,29 @@ main {
 
 .footer {
   display: flex;
+  width: 100%;
   flex-flow: column nowrap;
   color: #5b5e6d;
+  border-top: 1px solid #5b5e6d4d;
 }
 
 .footer-text-list {
   height: 500px;
+  padding-bottom: 30px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: space-around;
+  align-items: flex-start;
+  align-content: space-around;
 }
 
 .footer-list {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-}
-
-.footer-list:last-child {
-  margin-right: 30px;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin: 0 30px 30px 0;
+  flex: 1 1 calc(45% - 60px);
+  line-height: 2.75rem;
 }
 
 .footer-list li {
@@ -256,42 +286,65 @@ main {
   font-weight: 800;
 }
 
+.footer-img {
+  justify-self: flex-start;
+  align-self: flex-start;
+  padding: 0 0 75px 0;
+}
+
 .footer-img-logo {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 150px;
+  margin: -20px -40px;
 }
 
 .footer-about {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
+  margin: 0 0 30px 0;
 }
 
 .footer-links {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-around;
   align-items: center;
+  padding: 0 0 20px 0;
+}
+
+.center-rg-lft {
+  margin: 0 auto;
 }
 
 .footer-links ul {
+  width: 100%;
   display: flex;
-  flex-flow: row nowrap;
+  flex: row wrap;
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1rem;
   list-style: none;
-  flex-shrink: 1;
+  text-align: center;
+}
+
+.footer-links ul {
+  justify-self: center;
+  align-self: center;
 }
 
 .USA-overloard {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
   font-weight: 800;
   font-size: 1.25rem;
+  margin: 20px auto;
 }
 
 .USA-overloard img {
-  transform: scale(0.3);
-  margin-left: -100px;
+  width: 25px;
+  margin: 0 10px 0 0;
 }
 
 .USA-overloard span {
@@ -301,12 +354,12 @@ main {
 .footer-sm {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-flow: row nowrap;
 }
 
-.footer-sm img {
-  width: 50px;
+.fa {
+  margin: 0 10px;
 }
 
 .footer-links {
