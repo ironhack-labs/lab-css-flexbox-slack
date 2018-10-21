@@ -18,7 +18,7 @@ main{
     border-bottom: 1px solid rgb(160, 158, 158);
 }
 .container {
-    padding: 50px 10vw;
+    padding: 50px 8vw;
     margin:0 0;
 }
 
@@ -72,7 +72,10 @@ button{
 button, .text-input{
     border-radius: 10px;
     margin: 15px 0;
-    padding: 5%;
+}
+
+button{
+    padding: 3% 1%;
 }
 
 button:hover{
@@ -81,6 +84,7 @@ button:hover{
 }
 
 .text-input{
+    padding: 3%;
     font-size: 1.5rem;
     font-family: 'Quicksand', sans-serif;
     border: 1px solid rgb(184, 184, 184);
@@ -115,7 +119,6 @@ header {
     width:50vw;
 }
 #tryIt{
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -185,7 +188,6 @@ header {
     width:50px;
 }
 
-
 .social-media{
     text-align: center;
     height: auto;
@@ -220,10 +222,19 @@ header {
     #end{
         flex-direction: column;
     }
+    #tryIt{
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 769px){
     .menu{
         display: none;
+    }
+    button {
+        width:20vw;
+    }
+    .text-input{
+        width:50vw;
     }
 }
