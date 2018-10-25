@@ -10,6 +10,7 @@ font-family: 'Libre Baskerville', serif;
 
 body{
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 nav{
@@ -91,6 +92,7 @@ nav ul{
     border-radius: 5px; 
     padding: 0.5em;
     border: 0.5px solid #e2e2e6;
+    background: white;
     display: flex;
     flex-direction: column;
     visibility: hidden;
@@ -135,13 +137,6 @@ nav ul{
     display: flex;
 }
 
-/* ul li:hover > ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-} */
-
 .nav-listitem:hover > .dropdown,
 .dropdown:hover{
   visibility: visible;
@@ -156,5 +151,177 @@ header{
 }
 
 .header-container{
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
 
+.header-left, .header-right{
+    /* border: 3px solid green; */
+    width: 45%;
+}
+
+.header-right{
+    padding-right: 12%;
+    box-sizing: border-box;
+}
+
+.header-right h1{
+    color: #1b1d25;
+    font-weight: 600;
+    font-family: "times new roman",'Libre Baskerville', serif;
+    font-size: 4.8rem;
+    margin: 0;
+}
+
+.paragraph{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #5b5e6d;
+    line-height: 1.5;
+}
+
+.header-right button{
+    background: #3f46ad;
+    color: white;
+}
+
+.smalltext{
+    font-size: 0.8em;
+}
+
+.smalltext a{
+    color:#3f46ad;
+}
+
+.header-left img{
+    width: 100%;
+}
+
+main{
+    width: 100%;
+}
+
+.icon-container{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.main-container{
+    text-align: center;
+    width: 100%;
+}
+
+.main-container h2{
+    color: #1d2131;
+    font-weight: 600;
+    font-family: "times new roman",'Libre Baskerville', serif;
+    font-size: 3em;
+}
+
+.btn{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    padding: 1.6em 2.8em;
+    border-radius: 4px;
+    cursor:pointer;
+    box-sizing: border-box;
+    transition-delay: 0.01s;
+    transition-timing-function: linear;
+}
+
+.blue:hover{
+    border-radius: 1px;
+    padding: 1.5em 2.7em;
+    margin: 0.1em 0.1em;
+}
+
+.white:hover{
+    padding: 1.5em 2.7em;
+    border: 2px solid #3f46ad;
+}
+
+.white{
+    background: #fff;
+    color: #3f46ad;
+    border: 1px solid #3f46ad;
+    margin: 2em 0 3em 0;
+}
+
+.main-container .btn{
+   
+}
+
+.icon-container img{
+    height: 50%;
+    width: auto;
+}
+
+/* .main-content{
+    margin-bottom: 5em;
+} */
+
+.bottom-call{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #eeeff3;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.bot-cal-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom-call h3{
+    font-size: 2em;
+    margin: 0em;
+    color: #1d2131;
+    font-weight: 600;
+    font-family: "times new roman",'Libre Baskerville', serif;
+}
+
+footer{
+    text-align: center;
+}
+
+.footlinks{
+    margin: 3em 10% 0;
+    width: 80%;
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+footer img{
+    margin-right: auto;
+    height: 100px;
+}
+
+footer ul{
+    list-style-type:none;
+}
+
+footer ul li:nth-of-type(1){
+    cursor: default;
+    font-weight: 600;
+}
+
+.footlists li{
+    cursor: pointer;
+    line-height: 2.5em;
+    font-size: 0.8em;
+}
+
+.footlists li:hover{
+    color: #192592;
 }
