@@ -5,3 +5,168 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Open+Sans');
+
+/* GENERALES */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+h1, h2 {
+  color: #2C303F;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #5b5e6d;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: #2C303F;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+/* PRODIEDADES */
+.text-center {
+  text-align: center;
+}
+
+/* BUTTON */
+button {
+  padding: 1.5rem;
+  width: 100%;
+  background: white;
+  border: 1px solid #192592;
+  color: #192592;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  button {
+    width: initial;
+  }
+}
+
+/* FORMULARIO NEWSLETTER */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.form button {
+  background-color: #192592;
+  color: #fff;
+}
+
+/* LOGIN LINK */
+.login-link {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* THEMES */
+.background-dark {
+  background-color: #F4F3F4;
+}
+
+/* NAV */
+nav {
+  background-color: #fff;
+  border-bottom: 2px solid #f2f2f2;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+} 
+
+nav i {
+  font-size: 1.6rem;
+}
+
+nav ul {
+  display: none;
+}
+
+/* HEADER */
+header{
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 2rem 2rem;
+}
+
+header .header-image {
+  order: 1;
+}
+
+/* LOGOS */
+.logos {
+  display: flex;
+  flex-direction: column;
+}
+
+.logos div {
+  padding: 2rem 1rem;
+}
+
+.logos img {
+  max-height: 6rem;
+  object-fit: contain;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.logos img:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  .logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logos div {
+    width: 50%;
+  }
+}
