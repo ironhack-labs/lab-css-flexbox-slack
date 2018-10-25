@@ -44,29 +44,33 @@ h1, h2 {
   margin-right: 20px;
 }
 
-header{
-  text-align: left;
-  margin: 0 20px;
-  padding: 30px 0;
-  display: flex;
-
-}
-
-header button{
-  background-color: #192592;
-  color: #fff;
+.btn{
   width: 80%;
   height: 50px;
   border-radius: 7px;
   font-size: 12px;
   font-family: avenir;
+  border: 1px solid #000;
+}
+
+header{
+  text-align: left;
+  margin: 0 20px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header button{
+  background-color: #192592;
+  color: #fff;
+  
 
 }
 
 header input{
-  width: 80%;
-  height: 50px;
-  border: 1px solid #000;
+  
+  
   padding-left: 20px;
   font-size: 18px;
   font-family: avenir;
@@ -74,10 +78,42 @@ header input{
 
 header img{
   width: 100%;
-  border: -1;
-  align-items: flex-end;
+  order: 1;
+  
+  
+}
+
+main div{
+  display: flex;
+  padding: 30px 30px;
+  background-color: beige;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main button{
+  background-color: white;
+  border: 1px solid #192592;
+  border-radius: 7px;
 
 }
+
+main img{
+flex-wrap: wrap;
+align-items: flex-end;
+}
+
 img{
-  width: 30px
+  width: 120px;
+  padding: 10px;
+}
+
+.usingSlack{
+  background-color: white;
+  margin: 0
+}
+
+.usingSlack button{
+  background-color: #192592;
 }
