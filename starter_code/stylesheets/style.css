@@ -8,7 +8,9 @@ nav grey: #5b5e6d;
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Open+Sans');
 
-/* GENERALES */
+/* ------------------------------------- */
+/* ------------ GENERAL ---------------- */
+/* ------------------------------------- */
 * {
   box-sizing: border-box;
 }
@@ -22,6 +24,8 @@ img {
   max-width: 100%;
 }
 
+/* Fonts ------------------------------- */
+/* ------------------------------------- */
 h1, h2 {
   color: #2C303F;
   font-weight: 900;
@@ -53,17 +57,17 @@ a {
   padding: 4rem 2rem;
 }
 
-/* PRODIEDADES */
 .text-center {
   text-align: center;
 }
 
-/* BUTTON */
+/* Buttons ----------------------------- */
+/* ------------------------------------- */
 button {
   padding: 1.5rem;
   width: 100%;
   background: white;
-  border: 1px solid #192592;
+  border: 1px solid #9F91D2;
   color: #192592;
   font-weight: 600;
   font-size: 1.1rem;
@@ -76,7 +80,8 @@ button {
   }
 }
 
-/* FORMULARIO NEWSLETTER */
+/* Newsletter Form --------------------- */
+/* ------------------------------------- */
 .form {
   display: flex;
   flex-direction: column;
@@ -95,19 +100,23 @@ button {
   color: #fff;
 }
 
-/* LOGIN LINK */
+/* Login Link -------------------------- */
+/* ------------------------------------- */
 .login-link {
   text-align: center;
   font-size: 1.1rem;
   margin-top: 1rem;
 }
 
-/* THEMES */
+/* Themes ------------------------------ */
+/* ------------------------------------- */
 .background-dark {
   background-color: #F4F3F4;
 }
 
-/* NAV */
+/* ------------------------------------- */
+/* -------------- NAV ------------------ */
+/* ------------------------------------- */
 nav {
   background-color: #fff;
   border-bottom: 2px solid #f2f2f2;
@@ -128,7 +137,9 @@ nav ul {
   display: none;
 }
 
-/* HEADER */
+/* ------------------------------------- */
+/* ------------- HEADER ---------------- */
+/* ------------------------------------- */
 header{
   display: flex;
   flex-direction: column;
@@ -139,7 +150,9 @@ header .header-image {
   order: 1;
 }
 
-/* LOGOS */
+/* ------------------------------------- */
+/* --------- LOGOS SECTION ------------- */
+/* ------------------------------------- */
 .logos {
   display: flex;
   flex-direction: column;
@@ -147,17 +160,17 @@ header .header-image {
 
 .logos div {
   padding: 2rem 1rem;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.logos div:last-child {
+  border-bottom: none;
 }
 
 .logos img {
-  max-height: 6rem;
+  max-height: 4rem;
+  max-width: 15rem;
   object-fit: contain;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(0,0,0,.2);
-}
-
-.logos img:last-child {
-  border-bottom: none;
 }
 
 @media (max-width: 961px) and (min-width: 767px) {
@@ -169,4 +182,81 @@ header .header-image {
   .logos div {
     width: 50%;
   }
+}
+
+/* ------------------------------------- */
+/* ------------- FOOTER ---------------- */
+/* ------------------------------------- */
+footer {
+  color: #6E6C7A
+}
+
+/* Nav --------------------------------- */
+/* ------------------------------------- */
+footer > div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div .image {
+  flex-basis: 100%;
+}
+
+footer .image img {
+  height: 10rem;
+  width: 10rem;
+}
+
+footer > div ul {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  flex-basis: calc(50% - 2rem);
+}
+
+footer > div li {
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+footer > div ul li:first-child {
+  font-weight: 900;
+}
+
+/* Footer ------------------------------ */
+/* ------------------------------------- */
+footer .bottom {
+  font-weight: 900;
+  padding: 2rem;
+}
+
+footer .bottom ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .lang {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .lang img {
+  height: 1.5rem;
+  
+}
+
+footer .lang span {
+  margin: 0 1rem;
+}
+
+footer .social {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer .social i {
+  margin: 0 .8rem;
 }
