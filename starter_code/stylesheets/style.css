@@ -39,6 +39,9 @@ nav {
     position: fixed;
     z-index: 1;
     background: #fff;
+    border-bottom: solid 2px #e2e2e2a3;
+    height: 13vh;
+    width: 100%;
 }
 
 nav i {
@@ -46,7 +49,6 @@ nav i {
 }
 
 nav img {
-    height: 50%;
     width: 33%;
 }
 
@@ -64,9 +66,15 @@ header {
     display: flex;
     flex-direction: column-reverse;
     padding: 4% 10%;
-    padding-top: 26%;
+    padding-top: 18vh;
+    justify-content: center;
+    align-items: center;
 }
-
+headerContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 header h1 {
     font-size: 2.3em;
     font-weight: bold;
@@ -118,13 +126,21 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    
+}
+.containerLogos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.logo1,.logo2,.logo3,.logo4,.logo5,.logo6{
+    width: 100%;
+    border-bottom: solid 2px #e2e2e2a3;
+}
+.containerLogos img{
+    max-width: 52%;
+    padding:11% 0;
 }
 
-main img {
-    max-width: 52%;
-    padding-top: 11%;
-}
 .spanHr{
     width: 100%;
     height: 2px;
@@ -133,7 +149,8 @@ main img {
 }
 .main__divOne, .main__divTwo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     padding: 4% 10% 10% 10%;
 }
@@ -142,10 +159,15 @@ main img {
     background-color: #F4F3F4;
     border-bottom: solid 2px #e2e2e2a3;
     border-top: solid 2px #e2e2e2a3;
+    justify-content: center;
 
 }
 .main__divTwo{
     border-bottom: solid 2px #e2e2e2a3;
+}
+.mainTwo_text{
+    text-align: center;
+    width: 100%;
 }
 .main__divOne p{
     line-height: 1.2;
@@ -182,7 +204,7 @@ main img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 4% 10% 10% 10%;
+    padding: 4% 10% 4% 10%;
 }
 .ulSeparacion{
     margin-top: 6%;
@@ -227,4 +249,81 @@ main img {
 }
 .footer_sectionTwo .item3,.item4,.item5{
     width: 20%;
+}
+
+/******** MEDIA QUERY TABLET *******/
+@media (min-width: 767px) {
+    nav img {
+        width: 21%;
+    }
+    header h1 {
+        font-size: 3em;
+    }
+    input {
+        width: 50%;
+        padding: 3%;
+    }
+    .btn{
+        width: 30%;
+        padding: 3%;
+    }
+    .header__secondP{
+        text-align: left;
+    }
+    header img{
+        max-width: 65%;
+    }
+    h2{
+        font-size: 1.8em;
+    }
+    .logo1,.logo2,.logo3,.logo4,.logo5,.logo6{
+        max-width: 50%;
+        border-bottom: solid 2px #e2e2e2a3;
+    }
+    .logo1,.logo3,.logo5{
+        border-right: solid 2px #e2e2e2a3;
+    }
+    .main__divTwo {
+        flex-wrap: unset;
+    }
+    .mainTwo_text{
+        text-align: left;
+    }
+    .mainTwo_text h2{
+        padding:0;
+    }
+    .main__divTwo .btn, input{
+        width: 40%!important;
+    }
+    .main__divTwo .btn{
+        margin-left:1%;
+    }
+    .ulSeparacion{
+        margin: 0;
+    }
+    .footer__menu{
+        flex-wrap: unset;
+    }
+    .footer__socialMedia{
+        flex-direction: row;
+        padding: 1% 6% 1% 6%;
+    }
+    .footer_sectionTwo{
+        flex-wrap: unset;
+        width: 75%;
+    }
+    .footer__socialMedia ul{
+        justify-content: start;
+    }
+    .item2{
+        margin: 0;
+    }
+    .item2 i {
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 962px) {
+    header{
+        flex-direction: row;
+    }
 }
