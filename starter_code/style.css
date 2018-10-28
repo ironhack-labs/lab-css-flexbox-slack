@@ -11,9 +11,6 @@ nav grey: #5b5e6d;
     font-family: Helvetica, sans-serif;
   
 }
-img {
-    max-width: 100%;
- }
 
 nav {
     top:0px;
@@ -22,7 +19,7 @@ nav {
     flex-direction: row;
     width: 100%;
     position: fixed;
-    box-shadow: 0px 0px 63px -16px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 50px -16px rgba(0,0,0,0.75);
  }
  .nav-bar{
     display: flex;
@@ -31,60 +28,62 @@ nav {
  }
 
 .slack-logo{
-    width: 190px;
-    height: 100px;
-    margin-left: 30px;
+    height: 45px;
+    margin-left: 10px;
+    margin-top: 4px;
 }
 .spacer
 {
     width: 100%;
-    height: 95px;
+    height: 55px;
 }
 
-ul li {
+nav ul li {
     display: none;
 }
 .menu-icon{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 30px;
-    font-size: 30px;
+    margin-right: 20px;
+    font-size: 25px;
     color: #5b5e6d;
 }
 h1,h2{
     color: #2c303f;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1{
-  font-size: 60px;
+  font-size: 40px;
   text-align: left;
 
 }
 header{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin:0 20px 0 20px;
 }
 
-p{
+p, footer ul, footer, ul li{
     color: #5b5e6d;
 }
 .big-p{
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
 }
 
 .small-p{
     font-size: 14px;
+    margin: 10px auto;
     text-align: center;
 }
 form input{
-    width: 90%;
+    width: 95%;
     border: 1px solid #929292;
     border-radius: 10px;
     margin: 10px;
-    line-height: 30px;
+    line-height: 40px;
 }
 .btn-blue{
     color: white;
@@ -94,8 +93,7 @@ form input{
     border-radius: 10px;
     margin: 10px;
     font-weight: bolder;
-    margin-left: 5px;
-    width: 90%;
+    width: 95%;
 }
 header img{
     order: 1;
@@ -114,15 +112,14 @@ header img{
     border-radius: 10px;
     margin: 10px;
     font-weight: bolder;
-    margin-left: 5px;
-    width: 90%;
+    width: 95%;
 }
 
 main div h2 {
     font-size: 28px;
     font-weight: bolder;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0
 }
 
 .big-p-2{
@@ -130,8 +127,212 @@ main div h2 {
     text-align: center;
 }
 
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
-
+}
 main div img{
-    width: 300px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(199, 199, 199, 0.37);
+    width: 200px;
+    height: 55px;
+    align-self: center;
+    margin: 0 50% 20px;
  }
+.free{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.slack-logo-ft{
+    height: 30%;
+    width: 30%;
+    margin-top:-25px;
+}
+.title-footer {
+    font-weight: 800;
+}
+.footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+footer ul{
+    margin-bottom: 10px;
+}
+
+footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.extras{
+    margin-left: -10px;
+}
+
+.footer-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.flag{
+    width: 10%;
+    height: 10%;
+    margin-top: -9px;
+}
+.icon-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+footer div i {
+    margin:0 20px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.flex{
+    display: flex;
+}
+
+@media (min-width: 767px) and (max-width: 961px) {
+    .btn-blue,.btn-white, form input {
+        width: 40%;
+    }
+    
+.btn-white{
+    margin: 0px 25%;
+}
+    .logos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+    main div img{
+        margin: 0 10px 20px;
+        padding: 20px 50px;
+    }
+    .footer{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .flag{
+        width: 3%;
+        height: 3%;
+
+    }
+}
+
+@media (min-width:1200px){
+    nav ul li{
+        display: inline;
+        font-family: Helvetica, sans-serif;
+        color: #5b5e6d;
+        margin: 0px 20px;
+    }
+    nav ul li:last-child{
+        border: 1px solid #5b5e6d;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .menu-icon{
+        display: none;
+    } 
+    nav{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .btn-blue{
+        width: 25%;
+        margin-top: -61px;
+        align-self: flex-end;
+    }
+    form{
+        align-self: flex-end;
+        margin-right: 65px;
+        width: 45%;
+    }
+    header img{
+        width: 40%;
+        height: 40%;
+        align-self: flex-start;
+        margin-top: -295px;
+        margin-left: 40px;
+    }
+    .small-p{
+        margin-right: 20px;
+    }
+
+    header :nth-child(2), header :nth-child(3), header :last-child{
+        align-self: flex-end;
+        width: 50%;
+        margin: 20px 0px;
+    }
+    .btn-white{
+        width: 25%;
+        margin: 15px 480px;
+    }
+    .logos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    main div img {
+        margin: 0 10px 20px;
+        padding: 20px 85px;
+    }
+    .email{
+        display: none;
+    }
+    main div div p{
+        margin-left: 40px;
+        text-align: left;
+    }
+    main .btn-blue{
+        margin-top:5px;
+    }
+    main .small-p{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid #F4F3F4;
+        padding:10px 0;
+        margin: 20px 20px;
+    }
+    .slack-logo-ft{
+        margin: -23px 0px -85px 70px;
+        width: 10%;
+        height: 10%;
+}
+
+    .footer{
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0px 10px 0px 265px;
+    }
+    footer .grey-bc{
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 20px;
+    }
+    .footer-2 li{
+        padding: 0px 10px;
+        flex-direction: row;
+    }
+    .footer-2{
+        justify-content:space-evenly;
+        margin-right: 235px;
+    }
+    .icon-line{
+        margin-top: -50px;
+        margin-right: -785px;
+    }
+}
