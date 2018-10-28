@@ -64,7 +64,7 @@ a {
 /* Buttons ----------------------------- */
 /* ------------------------------------- */
 button {
-  padding: 1.5rem;
+  padding: 1.5rem 2.5rem;
   width: 100%;
   background: white;
   border: 1px solid #9F91D2;
@@ -100,12 +100,30 @@ button {
   color: #fff;
 }
 
+@media (max-width: 961px) and (min-width: 767px) {
+  .form {
+    display: initial;
+    text-align: right;
+  }
+
+  .form input {
+    width: 15rem;
+  }
+}
+
 /* Login Link -------------------------- */
 /* ------------------------------------- */
 .login-link {
   text-align: center;
   font-size: 1.1rem;
   margin-top: 1rem;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  .login-link {
+    text-align: left;
+    margin-top: .3rem;
+  }
 }
 
 /* Themes ------------------------------ */
@@ -156,6 +174,7 @@ header .header-image {
 .logos {
   display: flex;
   flex-direction: column;
+  margin-top: 1.5rem;
 }
 
 .logos div {
@@ -181,6 +200,30 @@ header .header-image {
 
   .logos div {
     width: 50%;
+  }
+
+  .logos div:nth-last-child(2) {
+    border-bottom: none;
+  }
+
+  .logos div:nth-child(odd) {
+    border-right: 1px solid #EAEAEA;
+  }
+}
+
+/* ------------------------------------- */
+/* ---------- SECTION TRY -------------- */
+/* ------------------------------------- */
+.try {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  .try h2 {
+    text-align: left;
+    margin-bottom: .5rem;
   }
 }
 
@@ -222,6 +265,19 @@ footer > div ul li:first-child {
   font-weight: 900;
 }
 
+@media (max-width: 961px) and (min-width: 767px) {
+  footer > div:first-child {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+
+  footer > div ul, div .image {
+    margin-left: 0;
+    flex-basis: auto;
+  } 
+}
+
 /* Footer ------------------------------ */
 /* ------------------------------------- */
 footer .bottom {
@@ -255,8 +311,29 @@ footer .social {
   font-size: 1.3rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 footer .social i {
   margin: 0 .8rem;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  footer .bottom, footer .bottom > div {
+    display: flex;
+  }
+
+  footer .bottom ul {
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  footer .bottom ul li {
+    margin: 0 .5rem;
+  }
+
+  footer .bottom .lang {
+    margin: 0;
+    margin-right: 1rem;
+  }
 }
