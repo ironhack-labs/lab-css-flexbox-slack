@@ -5,3 +5,221 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif
+}
+.nav{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.nav img{
+    width: 100px;
+}
+
+.nav ul{
+    text-align: center;
+    width: 500px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav ul li{
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-logos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-2{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.col-3{
+    display: flex;
+    align-items: center;
+    flex: 1 1 33%;
+}
+
+.col-3 img{
+    width: 70%;
+    margin: 30px auto;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.icons img{
+    width: 40%;
+}
+.fa{
+    margin: 0 10px;
+}
+
+.col-2 img{
+    width: calc(100% - 30px);
+    margin: 30px;
+}
+
+.col-4{
+    padding: 20px;
+    flex: 1;
+}
+
+.slack{
+    flex: 1;
+}
+.list{
+    display: flex;
+    align-items: center;
+}
+.lists ul{
+    list-style-type: none;
+}
+
+.lists ul li:first-child{
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.title {
+    font-size: 4.5rem;
+    font-weight: 100;
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.good-company{
+    text-align: center;
+}
+.button{
+    padding: 10px 30px;
+    background-color: rgb(69,56,182);
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 5px;
+    margin: 20px 0 10px;
+}
+.why{
+    padding: 10px 30px;
+    background-color: white;
+    color: rgb(69,56,182);
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 5px;
+    margin: 20px 0 10px;
+    border: 1px solid rgb(69,56,182);
+}
+
+.try{
+    margin: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.try-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px 0;
+}
+@media all and (max-width:1200px) {
+  .flex{
+      flex-wrap: wrap;
+  }
+
+  .col-2{
+      padding: 30px;
+      flex: 1 1 100%;
+  }
+}
+
+.hidden{
+    display: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+}
+
+.footer img{
+    height: 40%;
+    padding: 0 10px;
+}
+
+@media all and (max-width: 961px){
+    .col-3{
+    flex: 1 1 50%;
+  }
+}
+
+@media all and (max-width: 768px){
+    .col-3{
+    flex: 1 1 100%;
+  }
+
+  .col-4{
+      flex: 1 1 50%;
+  }
+
+  .button{
+      width: 100%;
+  }
+
+  .slack{
+      display: flex;
+      flex: 1 1 100%;
+  }
+
+  .slack img{
+      margin: 0 auto;
+  }
+  .hidden{
+      display: block;
+      width: 100%;
+      border-radius: 5px;
+      background-color: whitesmoke;
+      padding: 12px;
+      border: 1px solid rgb(69,56,182);
+  }
+
+  .icons div{
+      flex: 1 1 100%;
+  }
+}
+
