@@ -1,7 +1,320 @@
 /*
 background-grey: #F4F3F4;
-button-purple: #192592
+button-purple: #192592;
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+
+#hambur{
+    display: none;
+}
+
+nav {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    top: 0;
+    height: 100px;
+}
+
+nav img{
+    margin: 14px;
+    width: 150px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+list-style: none;
+margin: 14px;
+}
+
+@media (max-width: 961px) {
+    nav ul{
+      display: none;
+    }
+    
+    #hambur{
+        display: block;
+        width: 100px;
+    }
+  }
+
+
+header{
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+header img{
+ width:50%;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 3em;
+    margin: 6% auto;
+}
+
+header p{
+    font-size: 1.3em;
+}
+
+header button {
+    background-color: #192592;
+    color: white;
+    padding: 4%;
+    margin: 4% auto;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header{
+      flex-wrap: wrap-reverse;
+    }
+    header button{
+        width: 70vw;
+        margin: 5% 15%;
+
+    }
+    header  img{
+        margin: 5% auto;
+        width: 100%;
+    }
+    #company button{
+        width: 70vw;
+        margin: 5% 15%;
+    }
+    #company div {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #company div img{
+        width: 100%;
+        max-height: 70px;
+        border-bottom: 1px solid gray;
+    }
+
+    #main-bottom button{
+        width: 70vw;
+        margin: 5% 15%;
+    }
+    #main-bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #greyBar {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    color: #2C303F;
+    flex-wrap: nowrap;
+    height: auto;
+    align-items: center;
+    }
+  }
+
+main{
+    width: 100%;
+}
+
+main div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+main div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#company {
+    background-color: #F4F3F4; 
+    width: 100%;
+    height: auto;
+}
+
+#company h2 {
+    font-family: 'Lora', serif;
+    margin: 3% auto;
+    font-size: 2em;
+}
+
+#company p {
+    font-size: 1.1em;
+    margin: 0 auto 5%;
+}
+
+#company button {
+    background-color: white;
+    color:#192592;
+    border: 1px solid #192592;
+    padding: 2%;
+    margin: 0 auto 2%;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#company div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#company div img {
+    width:300px;
+    padding: 30px;
+}
+
+#main-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 7% 0px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#main-bottom div:firstchild{
+    margin-left: 15px;
+}
+
+#main-bottom div:nth-child(2){
+    margin-right: 15px;
+}
+
+#try {
+    margin-left: 5%;
+    flex-wrap: wrap;
+}
+
+
+#try h3{
+    font-size: 1.3em;
+    font-family: 'Lora', serif;
+    margin-bottom: 7%;
+}
+
+#try p{
+    font-size: 1em;
+}
+
+#try + div {
+    display: flex;
+} 
+
+#main-bottom button {
+    background-color: #192592;
+    color: white;
+    padding: 4%;
+    margin: 4% auto;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%;
+}
+
+#resources {
+    display: flex;  
+    width: 100%; 
+    justify-content: space-around;
+    color: #5b5e6d;
+}
+
+#slack-logo{
+    align-self: flex-start;
+    width: 100px;
+}
+
+#resources div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#resources div ul{
+    margin-top: 30px;
+}
+
+
+#resources div ul li{
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3%;
+}
+
+#greyBar{
+    background-color: #F4F3F4;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    color: #2C303F;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+#greyBar ul{
+    display: flex;
+}
+
+#greyBar ul li{
+    flex-direction: row;
+    list-style: none;
+    padding: 5% 6px;
+    align-content: center;
+}
+
+#greyBar div img{
+    width: 30px;
+    vertical-align: middle;
+    align-content: center;
+}
+
+#greyBar i{
+    padding: 6% 8px;
+}
