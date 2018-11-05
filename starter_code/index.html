@@ -5,66 +5,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <!-- <script src="https://use.fontawesome.com/1fb0eb3889.js"></script> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <title>Where work happens | Slack</title>
 </head>
 
 <body>
+  <!-- Listo, pero falta alinear verticalmente ícono 
+  y armar "iteraciones" de tableta/desktop -->
   <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
+    <div class="container-logo">
+      <img class="navlogo" src="./images/slack-logo.png" alt="slack_logo">
+    </div>
+    <ul class="navbar-items">
       <li>Why Slack?</li>
       <li>Pricing</li>
       <li>About Us</li>
-      <li>Your Workspaces</li>
+      <li class="btn-workspace">Your Workspaces</li>
     </ul>
+    <!-- Iconito de fontAwesome -->
+    <a class="btn-dropdown" href="#">
+      <i class="fas fa-2x fa-bars"></i>
+    </a>
   </nav>
   <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+    <div class="header-noimg"> 
+      <h1>Where Work Happens</h1>
+      <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+      <!-- Esto lo metí porque este botón no servía sin ello -->
+      <div class="btn-container"> 
+        <!-- Aquí iría un form de email address -->
+        <input class="input-email" type="email" placeholder="Email address">
+        <button class="btn btn-getstarted" type="button" name="button">GET STARTED</button>
+      </div>
+      <p class="text-signin">Already using Slack? <a href="#" class="link--purple--beautiful">Sign in</a></p>
+    </div>
+    <img class="header-img--large" src="./images/home_talking.png" alt="home_work_happening">
   </header>
   <main>
-    <div>
-      <h2>You´re in good company</h2>
+    <div class="goodcompany">
+      <h2>You're in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
+      <button class="btn btn-discover">DISCOVER WHY</button>
+      <div class="logos-container">
+        <div class="logo-div logo-div--first"> <img class="logo-customers logo-customers--first" src="./images/airbnb-logo.png" alt=""></div>
+        <div class="logo-div"> <img class="logo-customers" src="./images/capital-one-logo.png" alt=""></div>
+        <div class="logo-div"> <img class="logo-customers" src="./images/harvard-logo.png" alt=""></div>
+        <div class="logo-div"> <img class="logo-customers" src="./images/los-angeles-times-logo.png" alt=""></div>
+        <div class="logo-div"> <img class="logo-customers" src="./images/oracle-logo.png" alt=""></div>
+        <div class="logo-div"> <img class="logo-customers" src="./images/ticketmaster-logo.png" alt=""></div>
+      </div>
     </div>
-    <div>
-      <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+    <div class="tryit">
+      <h2>Try it for free</h2>
+      <div class="btn-container btn-container--lower"> 
+          <!-- Aquí iría un form de email address -->
+          <input class="input-email" type="email" placeholder="Email address">
+          <button class="btn btn-getstarted" type="button" name="button">GET STARTED</button>
+        </div>
+      <p class="text-signin text-signin--lower">Already using Slack? <a href="" class="link--purple--beautiful">Sign in</a></p>
     </div>
   </main>
   <footer>
-    <div>
-      <img src="./images/iso-slack.png" alt="">
-      <ul>
-        <li>COMPANY</li>
+    <div class="footer-links">
+      <div class="container-logo-noname">
+        <img class="logo-noname" src="./images/iso-slack.png" alt="Slack logo">
+      </div>
+      <ul class="footer-ul">
+        <li class="footer-ul-category">COMPANY</li>
         <li>About Us</li>
         <li>Careers</li>
         <li>Blog</li>
         <li>Press</li>
         <li>Brand Guidelines</li>
       </ul>
-      <ul>
-        <li>PRODUCT</li>
+      <ul class="footer-ul">
+        <li class="footer-ul-category">PRODUCT</li>
         <li>Why Slack?</li>
         <li>Enterprise</li>
         <li>Customer Stories</li>
         <li>Pricing</li>
         <li>Security</li>
       </ul>
-      <ul>
-        <li>RESOURCES</li>
+      <ul class="footer-ul">
+        <li class="footer-ul-category">RESOURCES</li>
         <li>Download</li>
         <li>Help Center</li>
         <li>Guides</li>
@@ -72,27 +97,31 @@
         <li>App Directory</li>
         <li>API</li>
       </ul>
-      <ul>
-        <li>EXTRAS</li>
+      <ul class="footer-ul">
+        <li class="footer-ul-category">EXTRAS</li>
         <li>Podcast</li>
         <li>Slack Shop</li>
         <li>Slack at Work</li>
         <li>Slack Fund</li>
       </ul>
     </div>
-    <div>
+    <div class="footer-bottom">
+      <div class="footer-legal">
       <ul>
         <li>Status</li>
         <li>Privacy & Terms</li>
         <li>Contact Us</li>
       </ul>
-      <div>
-        <img src="./images/us-flag.png" alt="">
+      </div>
+      <div class="footer-languages">
+        <img class="us-flag" src="./images/us-flag.png" alt="">
         <span>English (US)</span>
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </div>
+      <div class="footer-social">
+        <i class="fab fa-twitter-square" aria-hidden="true"></i>
+        <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        <i class="fab fa-youtube-square" aria-hidden="true"></i>
       </div>
     </div>
   </footer>

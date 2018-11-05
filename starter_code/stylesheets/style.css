@@ -5,3 +5,592 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* Datos de distintos viewports:
+Extra small screen: width < 768px
+*/
+/* Básicos */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #FFFFFF;
+}
+
+/* Secciones */
+nav {
+  /* ¿Cómo aseguro que se quede bien arriba?
+  Ahorita no es exacto */
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 8vh;
+  width: 100vw;
+  background-color:#FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #F4F3F4;
+}
+
+header { 
+  height: 130vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main {
+  height: 150vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F3F4;
+  color: #5b5e6d;
+}
+
+.goodcompany {
+  height: 70%;
+  padding: 6vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.logos-container {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tryit {
+  height: 30%;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+footer {
+  height: 130vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  color: #5b5e6d;
+}
+
+.footer-links {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-bottom {
+  height: 20%;
+  width: 100%;
+  background-color: #F4F3F4;
+}
+
+.footer-legal {
+  height: 33%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-languages {
+  height: 33%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.footer-social {
+  height: 33%;  /*50% de footer-legal*/
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tags */
+h1, h2 {
+  font-family: serif;
+  color: #2C303F;
+}
+
+h1 {
+  margin: 5vh 0 0;
+  padding: 3vh 5vw 0;
+  width: 60%;
+  align-self: flex-start;
+}
+
+p {
+  color: #5b5e6d;
+}
+
+.btn {
+  height: 50px;
+  width: 75vw;
+  font-family: sans-serif;
+}
+
+/* Elementos */
+/* Elementos - Navbar */
+.navlogo {
+  height: 100%;
+  padding: 0 2vw;
+}
+.container-logo {
+  height: 100%;
+}
+
+/* ¿Cómo puedo alinear este ícono verticalmente? */
+.btn-dropdown {
+  height: 4vh;
+  padding: 0 3vw;
+  align-items: center;
+  /* display: flex; */
+}
+
+.btn-dropdown i {
+  height: 4vh;
+  padding: 0 2vw;
+  /* display: flex; */
+}
+
+.navbar-items {
+  width: 60%;
+  height: 100%;
+  margin: 0;
+  padding: 0 5vw 0 0;
+  font-size: 12pt;
+  list-style-type: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-items li {
+  height: 40%;
+  padding: 0.5vh 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14pt;
+  color: #5b5e6d;
+}
+
+.btn-workspace {
+  border: 1px solid #5b5e6d;
+  border-radius: 2px;
+}
+
+/* Elementos - Header */
+header p {
+  margin: 0;
+  width: 90vw;
+  padding: 2vh 5vw;
+  text-align: left;
+}
+
+.text-signin {
+  text-align: center;
+}
+
+.link--purple--beautiful {
+  color: #192592;
+}
+
+.header-img--large {
+  height: 50vh;
+  /* ¿Hay mejores soluciones para esto? */
+  margin: 0 auto;
+}
+
+.btn-container {
+  height: 18vh;
+  width: 90vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-email {
+  height: 30px;
+  width: 70vw;
+  margin: 0;
+  padding: 1.5vh 5vw;
+  border: 1px solid #DDDDDD;
+  border-radius: 2px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14pt;
+  color: #5b5e6d;
+}
+
+.btn-getstarted {
+  width: 80vw;
+  margin : 0;
+  background-color: #192592;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Elementos - Good Company */
+.btn-discover {
+  width: 80vw;
+  margin: 2vh;
+  background-color: #FFFFFF;
+  border: 1px solid #192592;
+  border-radius: 5px;
+  color: #192592;
+  font-weight: bold;
+}
+
+.goodcompany p {
+  text-align: center;
+  width: 80vw;
+  margin: 2vh;
+}
+
+.logo-customers {
+  width: 33vw;
+  /* padding: 3vh 15vw; */
+}
+
+.logo-div {
+  /* El div ocupa el 33% del espacio del padre, en caso original */
+  height: 10vh;
+  width: 33vw;
+  /* Hay que centrar las imágenes dentro del div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #DDDDDD;
+}
+
+.logo-div--first {
+  border-top: none;
+}
+
+/* Elementos - Try it */
+
+/* Elementos - Footer */
+.container-logo-noname {
+  width: 100%;
+}
+
+.logo-noname {
+  height: 80px;
+  width: 80px;
+}
+
+.footer-ul {
+  padding: 0 1vw;
+  list-style-type: none;
+  width: 40vw;
+}
+
+.footer-ul li {
+  width: 100%;
+  margin: 2vh;
+}
+
+.footer-ul-category {
+  font-weight: bolder;
+}
+
+.footer-legal ul {
+  padding: 0;
+  list-style-type: none;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-legal ul li {
+  padding: 0 2vw;
+}
+
+.footer-social i {
+  padding: 0 4px;
+}
+
+.us-flag {
+  margin: 0;
+  padding: 0;
+  height: 20px;
+}
+
+/* Media queries */
+/*Mobile-first focus */
+@media (max-width: 767px) {
+  .navbar-items {
+    display: none;
+  }
+}
+
+/* Iteration 2 Small Screen */
+@media (min-width: 768px) {
+  .navbar-items {
+    display: none;
+  }
+
+  header {
+    align-items: flex-start;
+  }
+
+  footer {
+    height: 60vh;
+  }
+
+  h1 {
+    width: 80vw;
+    font-size: 40pt;
+    margin: 0;
+  }
+  
+  .text-signin {
+    width: 80vw;
+    padding: 0 0 0 5vw;
+    text-align: left;
+  }
+  
+  .btn {
+    width: 20vw;
+  }
+
+  .btn-container {
+    height: 10vh;
+    width: 70vw;
+    padding: 0 0 0 5vw;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  
+  .header-img--large {
+    height: 65vh;
+  }
+  
+  .logo-customers {
+    width: 20vw;
+  }
+  
+  .logos-container {
+    flex-flow: row wrap;
+    width: 80vw;
+    height: 40%;
+  }
+  /* Estaría chido replicar los bordes de la
+  cuadrícula que se dibuja en modo tableta 
+  en el ejemplo */
+  .logo-div {
+    height: 33%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-div--first {
+    border-top: 1px solid #DDDDDD;
+  }
+
+  .footer-links {
+    height: 75%;
+    width: 100;
+    flex-flow: row nowrap;
+  }
+
+  .container-logo-noname {
+    width: 10vw;
+  }
+
+  .footer-bottom {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-legal {
+    width: 65%;
+    justify-content: flex-start;
+  }
+
+  .footer-legal li {
+    padding: 0 1vw;
+  }
+
+  .footer-languages {
+    width: 20%;
+    justify-content: flex-end;
+  }
+
+  .footer-social {
+    width: 10%;
+  }
+
+}
+
+@media (min-width: 961px) {
+  main {
+    height: 120vh;
+  }
+
+  .goodcompany {
+    height: 65%;
+  }
+
+  .tryit {
+    height: 35%;
+  }
+
+  h2 {
+    font-size: 28pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-customers {
+    width: 20vw;
+  }
+  
+  .logos-container {
+    flex-flow: row wrap;
+    width: 90vw;
+    height: 40%;
+  }
+  /* Estaría chido replicar los bordes de la
+  cuadrícula que se dibuja en modo tableta 
+  en el ejemplo */
+  .logo-div {
+    height: 50%;
+    width: 24vw;
+    padding: 1vh 1vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    height: 100vh;
+  }
+
+  header {
+    height: 100vh;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  
+  .goodcompany {
+    height: 80%;
+  }
+  
+  .tryit {
+    height: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    width: 30vw;
+    font-size: 46pt;
+  }
+  
+  h2 {
+    font-size: 32pt;
+    margin: 0 3vw;
+  }
+  
+  p {
+    /* El texto pierde proporción si no se ajusta */
+    font-size: 16pt;
+  }
+  
+  header p {
+    width: 30vw;
+  }
+
+  .header-noimg {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .header-img--large {
+    height: 50vh;
+    order: -1;
+    margin: 0;
+  }
+
+  .btn {
+    font-size: 14pt;
+  }
+  
+  /* El botón desaparece cuando la pantalla es ancha */
+  .btn-dropdown {
+    display: none;
+  }
+  
+  .navbar-items {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-email {
+    /* Los formularios se ocultan en pantalla grande */
+    display: none;
+  }
+  
+  .btn-container {
+    margin: 4vh 0 0;
+    width: 20vw;
+  }
+  
+  .btn-getstarted {
+    width: 15vw;
+  }
+
+  .btn-getstarted--lower {
+    margin: 0 5vw;
+  }
+
+  .text-signin {
+    margin: 5vh 0 0;
+    padding: 0 5vw;
+    width: 30vw;
+  }
+
+  .text-signin--lower {
+    padding: 0;
+    margin: 0 3vw;
+    width: 94vw;
+  }
+}
