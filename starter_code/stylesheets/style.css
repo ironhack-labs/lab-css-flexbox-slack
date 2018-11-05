@@ -6,143 +6,204 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
-@media only screen and (max-width: 768px) {
-  body {
-    margin: 0;
-    font-family: 'Muli', sans-serif;
-  }
-  p {
-    color: #5b5e6d;
-  }
-  nav {
-    display: flex;
-    max-height: 100px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px 0 20px;
-    border-bottom: 2px solid #eee;
-  }
-  nav .logo {
-    width: 100px;
-  }
-  nav .menu-mobile {
-    width: 35px;
-  }
-  nav ul {
-    display: none;
-  }
-  header {
-    padding: 20px;
-  }
-  header img {
-    width: 100%;
-  }
-  header h1 {
-    max-width: 80%;
-    color: #2C303F;
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+p {
+  color: #5b5e6d;
+}
+nav {
+  display: flex;
+  max-height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 0 20px;
+  border-bottom: 2px solid #eee;
+}
+nav .logo {
+  width: 100px;
+}
+nav .menu-mobile {
+  width: 35px;
+}
+nav ul {
+  display: none;
+}
+header {
+  padding: 20px;
+}
+header img {
+  width: 100%;
+}
+header h1 {
+  max-width: 80%;
+  color: #2C303F;
+}
+button {
+  background: #192592;
+  padding: 18px 0;
+  color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1em;
+}
+form {
+  border: 1px solid gainsboro;
+  margin: 40px 0 20px 0;
+}
+form input {
+  padding: 20px;
+  border: none;
+}
+form input::placeholder {
+  font-size: 1.5em;
+  font-family: 'Muli', sans-serif;
+}
+header .center {
+  text-align: center;
+}
+main {
+  text-align: center;
+}
+main .first-block,.second-block {
+  padding: 20px;
+}
+main .first-block {
+  background-color: #F4F3F4;
+  padding: 20px;
+}
+main .first-block .companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+main .first-block .companies img {
+  max-width: 200px;
+  margin: 30px;
+}
+main button.secondary {
+  background: #fff;
+  padding: 20px 0;
+  color: #192592;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1em;
+  border: 1px solid #192592;
+  margin-top: 20px;
+  font-weight: 700;
+}
+footer .footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+footer img {
+  max-width: 150px;
+}
+footer .footer-info ul {
+  width: 40%;
+  color: #5b5e6d;
+  line-height: 40px;
+  padding: 0;
+}
+footer .footer-info ul li:first-child {
+  font-weight: 700;
+}
+footer ul {
+  list-style-type: none;
+}
+footer .footer-actions {
+  background-color: #F4F3F4;
+  display: flex;
+  flex-direction: column;
+}
+.footer-actions ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-actions .options {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+footer .footer-actions .options img{
+  max-width: 30px;
+}
+footer .footer-actions .options .language,.rrss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-actions .options .language span {
+  margin: 10px;
+}
+footer .footer-actions .options i {
+  margin: 10px;
+  color: #5b5e6d;
+}
+
+@media only screen and (max-width: 961px) and (min-width: 767px) {
+  header form  {
+    width: 50%;
+    float: left;
+    margin: 0 20px 0 0;
   }
   button {
-    background: #192592;
-    padding: 20px 0;
-    color: #fff;
-    width: 100%;
-    border-radius: 4px;
-    font-size: 1em;
+    width: 20%;
   }
-  form {
-    border: 1px solid gainsboro;
-    margin: 40px 0 20px 0;
-  }
-  form input {
-    padding: 20px;
-    border: none;
-  }
-  form input::placeholder {
-    font-size: 1.5em;
-    font-family: 'Muli', sans-serif;
-  }
-  header .center {
-    text-align: center;
-  }
-  main {
-    text-align: center;
-  }
-  main .first-block,.second-block {
-    padding: 20px;
-  }
-  main .first-block {
-    background-color: #F4F3F4;
-    padding: 20px;
-  }
-  main .first-block .companies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-  }
-  main .first-block .companies img {
-    max-width: 200px;
-    margin: 30px;
+  header p.center {
+    text-align: initial;
   }
   main button.secondary {
-    background: #fff;
-    padding: 20px 0;
-    color: #192592;
-    width: 100%;
-    border-radius: 4px;
-    font-size: 1em;
-    border: 1px solid #192592;
-    margin-top: 20px;
-    font-weight: 700;
+    width: 20%;
   }
-  footer .footer-info {
-    display: flex;
+  main .first-block .companies {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
+  main .first-block .companies img {
+    max-width: 295px;
+  }
+  main .second-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .second-block .sign-in {
+    text-align: left;
+  }
+  main .second-block .button-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+  }
+  main .second-block .button-actions form {
+    margin-top: 20px;
+  }
+  main .second-block .button-actions button {
+    width: 50%;
+  }
   footer img {
-    max-width: 150px;
+    float: left;
   }
-  footer .footer-info ul {
-    width: 40%;
-    color: #5b5e6d;
-    line-height: 40px;
-    padding: 0;
-  }
-  footer .footer-info ul li:first-child {
-    font-weight: 700;
-  }
-  footer ul {
-    list-style-type: none;
+  footer .footer-info {
+    flex-wrap: nowrap;
   }
   footer .footer-actions {
-    background-color: #F4F3F4;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
-  .footer-actions ul {
-    display: flex;
-    justify-content: space-around;
+  footer .footer-actions ul li {
+    margin-right: 40px;
   }
   footer .footer-actions .options {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-  }
-  footer .footer-actions .options img{
-    max-width: 30px;
-  }
-  footer .footer-actions .options .language,.rrss {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .footer-actions .options .language span {
-    margin: 10px;
-  }
-  footer .footer-actions .options i {
-    margin: 10px;
-    color: #5b5e6d;
+    flex-direction: row;
   }
 }
