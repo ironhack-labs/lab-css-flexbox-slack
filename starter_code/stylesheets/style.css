@@ -5,3 +5,803 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+nav{
+  position: fixed;
+  top: 0;
+  background-color:#FFF;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+  height: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(109,111,121);
+  font-size: 1em;
+}
+#slack_nav{
+  display: flex;
+}
+#nav_list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+header{
+  padding: 16px;
+  margin: 80px 5% 0 5%;
+  display: flex;
+}
+header > h1{
+  color: rgb(50,55,70);
+}
+.header_text{
+  text-align: left; 
+}
+.button-get{
+  background-color: #424ba4;
+  color: #FFF;
+  border-radius: 3px;
+  padding: 10px;
+}
+.email-input{
+  border:  1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 10px;
+}
+header p{
+  color: rgb(91,94,107);
+  line-height: 1.6;
+}
+main div{
+  padding: 16px;
+}
+main p{
+  color: rgb(91,94,107);
+  line-height: 1.6;
+}
+.button-dis{
+  background-color: #FFF;
+  color: rgb(34,49,148);
+  border: 1px solid rgb(155,162,206);
+  border-radius: 3px;
+  padding: 10px;
+  font-weight: bold;
+  width: 90%;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+#slack_section1{
+  background-color: rgb(245,245,245);
+  display: flex;
+}
+#section2{
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+}
+#section3{
+  display: flex;
+  line-height: 2;
+}
+#section3 > ul{
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#section3 > ul > li{
+  color: rgb(109,111,121);
+}
+.section3t{
+  font-weight: bold;
+}
+#section4{
+  display: flex;
+  background-color: rgb(245,245,245);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(109,111,121);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  img{
+    width: 25%;
+  }
+  #slack_nav{
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  #slack_nav_logo{
+    justify-content: space-around;
+    align-items: center;
+    height: 85%;;
+    width: 20%;
+  }
+  #slack_nav_logo > img{
+    height: 100%;
+    width: 60%;
+  }
+  #nav_list {
+    display: none;
+  }
+  #slack_header{
+    flex-direction: column;
+  }
+  .header_text{
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  #img_header{
+    order: 1;
+    text-align: center;
+  }
+  #slack-p{
+    margin: 30px 0;
+  }
+  nav > span{
+  padding: 2% 0% 0% 0%;
+  font-size: 6em;
+  color: rgb(109,111,121);
+  }
+  header > p{
+    align-self: center;
+    margin-bottom: 25px;
+  }
+  header > div > h1{
+    font-size: 3em;
+  }
+  header > div > img{
+    order: 3;
+    width: 90%;
+    align-self: center; 
+  }
+  header > div > div{
+    display: flex;
+    flex-direction: column;
+  }
+  .email-input{
+    margin-bottom: 15px;
+  }
+  .button-get{
+    margin-bottom: 15px;
+  }
+  #slack_section1{
+    flex-direction: column;
+  }
+  #slack_section1 > p{
+    margin-bottom: 7%;
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+  }
+  main > div > h2{
+    margin: 30px 0 10px 0;
+    align-self: center;
+  }
+  main > div > img{
+    align-self: center;
+    padding: 10px;
+  }
+  .imgs_main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 50px;
+    border-bottom: 1px solid rgb(235,235,235);
+  }
+  .imgs_main > img{
+    width: 55%;
+  }
+  .imgs_main2{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 50px;
+    border-bottom: 1px solid rgb(235,235,235);
+  }
+  .imgs_main2 > img{
+    width: 55%;
+  }
+  main > div > div > p{
+    margin: 10px 5% 15px 5%;
+    align-self: center;
+    text-align: center;
+    width: 85%;
+  }
+  main > div > button{
+    align-self: center;
+    width: 100%;
+  }
+  #section2{
+    align-content: center;
+    flex-direction: column;
+    padding: 5% 10% 5% 10%;
+  }
+  #section2 > p{
+    margin: 0.5%;
+  }
+  #section3{
+    flex-wrap: wrap;
+    padding: 3%;
+  }
+  #section3 > ul {
+    width: 40%;
+    margin: 6% 3% 4% 7%;
+  } 
+  #section4{
+    flex-direction: column;
+  }
+  #section4 > ul{
+    display: inline-flex;
+    list-style: none;
+    align-self: center;
+    margin: 3%;
+  }
+  #section4 > ul > li{
+    padding: 10px;
+  }
+  #us_flag{
+    height: 4%;
+  }
+  #section4 > div{
+    width: 40%;
+    align-self: center;
+    padding: 5% 5%;
+  }
+  #section4 > div > div{
+    margin-bottom: 8%;
+    padding: 5% 5%;
+    display:flex;
+    justify-content: center;
+  } 
+  #section4 > div > div > span{
+    margin:auto;
+  }
+  #section4 > div > div > i{
+    margin:auto;
+} 
+}
+@media (min-width: 767px) and (max-width: 961px) {
+ img{
+  width: 25%;
+  }
+  #nav_list {
+    display: none;
+  }
+  #slack_nav{
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  #slack_nav_logo{
+    justify-content: space-around;
+    align-items: center;
+    height: 85%;;
+    width: 20%;
+  }
+  #slack_nav_logo > img{
+    height: 100%;
+    width: 60%;
+  }
+  nav > span{
+    padding: 2% 0% 0% 0%;
+    font-size: 2em;
+    color: rgb(109,111,121);
+  }
+
+  #slack_header{
+    flex-direction: column;
+  }
+  header > div > p{
+    align-self: center;
+    margin-bottom: 25px;
+  }
+  header > div > h1{
+    font-size: 3.6em;
+  }
+  header >  div >img{
+    order: 3;
+    width: 50%;
+    align-self: center; 
+  }
+  #img_header{
+    order: 1;
+    text-align: center;
+    height: 60%;
+  }
+    .header_text{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: rgb(50,55,70);
+  }
+  #slack_sign_in{
+    text-align: left;
+    width: 100%;
+  }
+  #slack-p{
+    margin: 30px 0;
+  }
+  .email-input{
+    height: 100%;
+    width: 40%;
+  }
+  .button-get{
+    height: 45%;
+    width: 22%;
+    }
+  #slack_section1{
+    flex-direction: column;
+  }
+  main > div >h2{
+    margin: 30px 0 10px 0;
+    align-self: center;
+  }
+  main > div > div{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .imgs_main{
+    flex-direction: row;
+    width: 34%;
+    border-bottom: 1px solid rgb(235,235,235);
+    padding-left: 12%;
+  }
+  .imgs_main2{
+    flex-direction: row;
+    width: 34%;
+    border-left: 1px solid rgb(235,235,235);
+    border-bottom: 1px solid rgb(235,235,235);
+    padding-left: 12%;
+  }
+  .imgs_main > img{
+    height: 90%;
+    width: 60%;
+  }
+  .imgs_main2 > img{
+    height: 90%;
+    width: 60%;
+  }
+  main > div >p{
+    margin: 10px 5% 15px 5%;
+    align-self: center;
+    text-align: center;
+    width: 85%;
+  }
+  main > div > button{
+    align-self: center;
+  }
+  .button-dis{
+    width: 23%;
+    font-size: .8em;
+    padding: 2% 0 2% 0;
+  }
+  #section2{
+    padding: 5% 3% 5% 3%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #section2 > div{
+    padding: 0%;
+    display: flex;
+  }
+  #section2 > div >p{
+    flex-direction: column;
+    height: 50%;
+  }
+  #section2_div1{
+  flex-direction: column;
+
+  }
+  footer > div > img{
+    width: 12%;
+    float: left;
+  }
+  #section3 > ul {
+    width: 40%;
+    margin: 6% 3% 4% 6%;
+  } 
+  #section4 > ul{
+    display: inline-flex;
+    list-style: none;
+    align-self: center;
+    margin: 3%;
+  }
+  #section4 > ul > li{
+    padding: 10px;
+  }
+  #us_flag{
+    height: 4%;
+  }
+  #section4 > div{
+    align-self: center;
+    padding: 0;
+  }
+  #section4 > div > div{
+    padding: 5% 8%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  } 
+  #section4 > div > div > span{
+    margin:auto;
+  }
+  #social_m{
+    float: left;
+  }
+ 
+  #icons_so > i{
+    margin: 65% 45% 35% 45%;
+  }
+
+}
+@media (min-width: 960px) and (max-width: 1024px) {
+  img{
+   width: 25%;
+   }
+   #nav_list {
+     display: none;
+   }
+   #slack_nav{
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: row;
+     width: 100%;
+   }
+   #slack_nav_logo{
+     justify-content: space-around;
+     align-items: center;
+     height: 85%;;
+     width: 20%;
+   }
+   #slack_nav_logo > img{
+     height: 100%;
+     width: 60%;
+   }
+   nav > span{
+     padding: 2% 0% 0% 0%;
+     font-size: 2em;
+     color: rgb(109,111,121);
+   }
+ 
+   #slack_header{
+     flex-direction: column;
+   }
+   header > div > p{
+     align-self: center;
+     margin-bottom: 25px;
+   }
+   header > div > h1{
+     font-size: 3.6em;
+   }
+   header >  div >img{
+     order: 3;
+     width: 50%;
+     align-self: center; 
+   }
+   #img_header{
+     order: 1;
+     text-align: center;
+     height: 60%;
+   }
+     .header_text{
+     margin-top: 15px;
+     margin-bottom: 5px;
+     color: rgb(50,55,70);
+   }
+   #slack_sign_in{
+     text-align: left;
+     width: 100%;
+   }
+   #slack-p{
+     margin: 30px 0;
+   }
+   .email-input{
+    height: 100%;
+    width: 40%;
+
+  }
+  .button-get{
+    height: 45%;
+    width: 22%;
+    }
+   #slack_section1{
+     flex-direction: column;
+   }
+   main > div >h2{
+     margin: 30px 0 10px 0;
+     align-self: center;
+   }
+   main > div > div{
+     display: flex;
+     flex-wrap: wrap;
+   }
+   .imgs_main{
+    flex-direction: row;
+    width: 22%;
+    border-bottom: 1px solid rgb(235,235,235);
+    padding-left: 9%;
+  }
+  .imgs_main2{
+    flex-direction: row;
+    width: 22%;
+    border-bottom: 1px solid rgb(235,235,235);
+    padding-left: 9%;
+  }
+  .imgs_main > img{
+    height: 90%;
+    width: 60%;
+  }
+  .imgs_main2 > img{
+    height: 90%;
+    width: 60%;
+  }
+   main > div >p{
+     margin: 10px 5% 15px 5%;
+     align-self: center;
+     text-align: center;
+     width: 85%;
+   }
+   main > div > button{
+     align-self: center;
+   }
+   .button-dis{
+     width: 23%;
+     font-size: .8em;
+     padding: 2% 0 2% 0;
+   }
+   #section2{
+    padding: 5% 3% 5% 3%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    #section2 > div{
+    padding: 0%;
+    display: flex;
+    }
+    #section2 > div >p{
+    flex-direction: column;
+    height: 50%;
+    }
+    #section2_div1{
+    flex-direction: column;
+    }
+   footer > div > img{
+     width: 12%;
+     float: left;
+   }
+   #section3 > ul {
+     width: 40%;
+     margin: 6% 3% 4% 6%;
+   } 
+   #section4 > ul{
+     display: inline-flex;
+     list-style: none;
+     align-self: center;
+     margin: 3%;
+   }
+   #section4 > ul > li{
+     padding: 10px;
+   }
+   #us_flag{
+     height: 4%;
+   }
+   #section4 > div{
+     align-self: center;
+     padding: 0;
+   }
+   #section4 > div > div{
+     padding: 5% 8%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ 
+   } 
+   #section4 > div > div > span{
+     margin:auto;
+   }
+   #social_m{
+     float: left;
+   }
+   #icons_so > i{
+    margin: 65% 45% 35% 45%;
+  }
+ 
+ }
+@media (min-width: 1023px){
+  img{
+   width: 25%;
+   }
+   #nav_list > li {
+     margin: 0% 0% 0% 2.7%;
+     padding: 0.8%;
+   }
+   #nav_items{
+     width: 41%;
+     padding-left: 30%;
+   }
+   #yw{
+     width: 30%;
+      border: 1px solid rgb(50,55,70);
+      border-radius: 3px;
+      padding: 10% 15% 10% 30%;
+      text-align: center;
+   }
+   #slack_nav{
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  #slack_nav_logo{
+    justify-content: space-around;
+    align-items: center;
+    height: 85%;;
+    width: 20%;
+  }
+  #slack_nav_logo > img{
+    height: 100%;
+    width: 60%;
+  }
+  #icon{
+    display: none;
+  }
+   nav > span{
+     padding: 2% 0% 0% 0%;
+     font-size: 2em;
+     color: rgb(109,111,121);
+   }
+   #slack_header{
+    flex-flow: row ;
+   }
+   #slack_header > h1{
+     height: 30%;
+   }
+   header > div{
+     width: 50%;
+   }
+   header > div > p{
+     align-self: center;
+     margin-bottom: 25px;
+   }
+   header >  div > h1{
+     font-size: 3.6em;
+   }
+   header > div >img{
+     width: 80%;
+     height: 80%;
+     padding: 10%;
+     align-self: center; 
+   }
+     .header_text{
+     margin-top: 15px;
+     margin-bottom: 5px;
+     color: rgb(50,55,70);
+   }
+   #slack_sign_in{
+     text-align: left;
+     width: 100%;
+   }
+   #slack-p{
+     margin: 30px 0;
+   }
+   .email-input{
+    display: none;
+  }
+  .button-get{
+    height: 45%;
+    width: 22%;
+    }
+   #slack_section1{
+     flex-direction: column;
+   }
+   main > div >h2{
+     margin: 30px 0 10px 0;
+     align-self: center;
+   }
+   main > div > div{
+     display: flex;
+     flex-wrap: wrap;
+   }
+   .imgs_main{
+     flex-direction: row;
+     width: 22%;
+     border-bottom: 1px solid rgb(235,235,235);
+     padding-left: 9%;
+   }
+   .imgs_main2{
+     flex-direction: row;
+     width: 22%;
+     border-bottom: 1px solid rgb(235,235,235);
+     padding-left: 9%;
+   }
+   .imgs_main > img{
+     height: 90%;
+     width: 60%;
+   }
+   .imgs_main2 > img{
+     height: 90%;
+     width: 60%;
+   }
+   main > div >p{
+     margin: 10px 5% 15px 5%;
+     align-self: center;
+     text-align: center;
+     width: 85%;
+   }
+   main > div > button{
+     align-self: center;
+   }
+   .button-dis{
+     width: 23%;
+     font-size: .8em;
+     padding: 2% 0 2% 0;
+   }
+   #section2{
+    padding: 5% 3% 5% 3%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    #section2 > div{
+    padding: 0%;
+    display: flex;
+    }
+    #section2 > div >p{
+    flex-direction: column;
+    height: 50%;
+    }
+    #section2_div1{
+    flex-direction: column;
+    }
+   footer > div > img{
+     width: 12%;
+     float: left;
+   }
+   #section3 > ul {
+     width: 40%;
+     margin: 6% 3% 4% 6%;
+   } 
+   #section4 > ul{
+     display: inline-flex;
+     list-style: none;
+     align-self: center;
+     margin: 3%;
+   }
+   #section4 > ul > li{
+     padding: 10px;
+   }
+   #us_flag{
+     height: 4%;
+   }
+   #section4 > div{
+     align-self: center;
+     padding: 0;
+   }
+   #section4 > div > div{
+     padding: 5% 8%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+   } 
+   #section4 > div > div > span{
+     margin:auto;
+   }
+   #social_m{
+     float: left;
+   }
+   #icons_so > i{
+    margin: 65% 45% 35% 45%;
+  }
+ 
+ }
