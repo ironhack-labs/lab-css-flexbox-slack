@@ -4,8 +4,6 @@ button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
-font-family: 'Trirong', serif;
-
 */
 
 html {
@@ -80,32 +78,91 @@ header p {
   margin: 40px 0;
 }
 
-header .generic-box + p {
+header .div-buttons + p {
   margin: 0 0 100px 0;
 }
 
-header img {
+.header-image {
   order: 6;
 }
 
-.generic-box {
-  height: 150px;
+.div-buttons {
   width: 100%;
-  border-radius: 15px;
-  margin: 25px;
-}
-
-.generic-box::placeholder {
-  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .white-input {
+  height: 150px;
+  border-radius: 15px;
+  margin: 25px;
+  width: calc(100% - 100px);
+  padding: 0 50px;
   font-size: 2em;
-  border-bottom: 1px solid #5b5e6d;
+  border: 1px solid #5b5e6d;
 }
 
 .blue-button {
+  height: 150px;
+  border-radius: 15px;
+  margin: 25px;
+  width: 100%;
   background-color: #192592;
+  border: 0px;
   color: #ffffff;
   font-size: 2em;
+}
+
+
+
+@media (min-width: 767px) and (max-width: 961px) {
+
+  header {
+    align-items: flex-start;
+  }
+
+  .header-image {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header .div-buttons + p {
+    margin: 10px 0 30px 0;
+  }
+
+  .div-buttons {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+ 
+
+  .white-input {
+  width: 45%;
+  height: 85px;
+  margin: 0;
+  font-size: 1.5em;
+  padding: 0 25px;
+  border-radius: 10px;
+
+  }
+
+  .blue-button {
+  width: 27%;
+  margin: 0 15px;
+  font-size: 1.3em;
+  padding: 0;
+  height: 87px;
+  border-radius: 10px;
+
+}
+  }
+
+  header p {
+    font-size: 1.3em;
+    line-height: 2em;
+  }
+
 }
