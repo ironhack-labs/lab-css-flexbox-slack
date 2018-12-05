@@ -15,7 +15,6 @@ We want to practice our new **Flexbox** skill, so we are going to implement the 
 
 - [Fork this repo](https://guides.github.com/activities/forking/)
 - Clone this repo into your `~/code/labs`
-- Include both the client and server applications in your submission.
 
 ## Submission
 
@@ -37,10 +36,10 @@ The **starter_code** contains the basic structure of an HTML & CSS project to st
 
 ### Iteration 1 | Extra Small Screen (width < 768px)
 
-Mobile first right? :wink: 
+Mobile first right? :wink:
 
-Firs, we are going to clone the mobile design of the webpage! 📱 Oh! Remember to use **flexbox**, because it will be really helpful later on when we need to adapt it to different screen-size!
- 
+First, we are going to clone the mobile design of the webpage! 📱 Oh! Remember to use **flexbox**, because it will be really helpful later on when we need to adapt it to different screen-size!
+
 After doing your magic, you should have something like this:
 
 <img src="https://user-images.githubusercontent.com/23629340/33178991-38f26dcc-d068-11e7-8ebd-3e0ef8d72ad4.gif" alt="mobile-1" style="width:23%">
@@ -61,7 +60,7 @@ After doing your magic, you should have something like this:
 
 ### Iteration 2 | Small Screen (961px > width > 767px)
 
-Let's start growing our screen size. Focus on small screens (iPads, tablets or bigger smartphones). Notice we have some changes. You need to work on the following ones: 
+Let's start growing our screen size. Focus on small screens (iPads, tablets or bigger smartphones). Notice we have some changes. You need to work on the following ones:
 
 1. The buttons and inputs stop occupying 100%.
 
@@ -90,7 +89,7 @@ The easiest change we will have. You should display 3 logos per row on the **"Yo
 
 ### Iteration 4 | Large Screen (width > 1200px)
 
-Last one! Some small changes and we are done! 
+Last one! Some small changes and we are done!
 
 1. Our **nav-bar** starts to show all the menu links, so go ahead, remove the collapse icon and add the list.
 
