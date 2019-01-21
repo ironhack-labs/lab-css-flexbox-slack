@@ -7,92 +7,117 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 
 <body>
   <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
-      <li>Why Slack?</li>
+    <img class="slack" src="./images/slack-logo.png" alt="slack_logo">
+    <ul class="menu-hide-cellphone">
+      <li class="letra">Why Slack?</li>
       <li>Pricing</li>
       <li>About Us</li>
       <li>Your Workspaces</li>
     </ul>
+    <img class="logo-menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEUAAAD///+lpaWxsbHU1NSEhITk5OSVlZX8/Pz5+fnJyclnZ2ff39/b29vy8vLPz890dHRAQEC3t7cpKSmrq6tdXV29vb2cnJwuLi4TExM2Njbr6+smJiZ6enocHBxxcXGPj49VVVVJSUlDQ0NhYWEWFhZPT08LCwseHh5k9oo6AAAIwklEQVR4nO2d2WKqMBCGQUSDItZ9rWJPq33/JzxgtdWQMJONJLT/tbb5zD5bgrDtCmw3wLj+CP3XH6H/+iP0X3+E/uuP0H/9Efqv5ghJb7yM+i+Lf+v9YRMEweWwX/9bvPSj5bhHDP7fJgizdNp/nxwCvj4mi/403RkBNUyY9KLXSQ3as7Yv8zTR3QSThL35cY2mu2s2nKdaW2GKkAzivTDdXYfXgb6uNEKYDeKLNN5Nr4NMT2P0E5Luy4cq3lWX41jH0qObMJvjFxZY285OuUV6CUdHjXhfGnYV26SLsBxPy5N2vlJvS3L7B1YJwzAS3xmw2s+JPKImQjLVOf2q2kYW+7D819OtUb5S68gaYRh2zcw/Wm9jS4S9l0b4Sg17FghJpzG+UqtEeMVRJBy9NQoYBBPh7VGJkPQb5iuVCx7K5QlJOJK/PahoU3QjwY9VhT5sdgY+qk8EZqMkIQl3Z2uAxcYhsKhKERY/4ODTImBxs1qie1GyD+2N0Lv62KZKESZD23yFFhmuG2UId2ZP2VitcZNRgrC7sc1218AM4dI214OmJgjntqmetNJPmNtmohTrJoxtE1X0qpfQPcAgeNFJ6CJgEBw1ERJXAaGBKtCHuW0SrmoR8YRubRPP6igTErc2+qoi/hkV24dd2wyA+Ac4JOHOmbMoT1zHMYaQhIkbt4k6rXmXKVwfunAfhHRS6EOnl9EfcW79IGFpk7HddqSWsoQ7u0YnvDbMSz9ilNo0G4ppwlprYEL7ZjW8WFMRJBzZbrWQGC5GiJDY8U3I6lJ120CENrxLKqpaNQBCv8Zoqco4BQibdoCqa0uP03pCn9bRu2gDYy1hz3ZrpUTdMmoISdhclIVOLfB96Pqtl6fnxaaOsJlAIP2aYAmntlsqrSfDVA0hHKu2j+fjbrMaRzEcA7l/PIHzCeEunGvPHMApglv2YNHgEhLQNMO+cDYh8Eq+fvjtuYTgDyUbDakuAo+vh22fSwiN9plI1I52QQNs8/NRHiFo4kZHexgReJz88X/zCMG90N4sLAXOxJ89kUMI35pQcRDGBLfv+2DDIYTzJjBhEOYEGzi/T6dswh34B2D/uVHlcAPv2TZsQoyRW1PilZQSRGbVfcNgEsK7fQBHCJgTQfnb77s+k3CM+AOYUBZTwpnHbmshkxB585VMgFAVNr3jttawCDN0/uB2mPebVT7EuzIzLqEvviZISy6hq3EzojpyCZVzeF1RxiFsyyC9nbsYhG0ZpLdhyiD0y9tUKzahn4ZutlImIWzn8Uer4oRXJdSfcG5PC1YfkpntZmnUR8YgbNM0DIIug7BN0/B6SawQvtpulFa9Mwjdj0IU0bq6lma226RZuwphartJmtWtEPrrNGRrXiH0LUIIUlwhXNhukmadK4TtWkpLFxlFSOoq43mphCJs15mt1IgixNmCfdKAInQ790dGEUXYrnN3qQ5F2LbtMAjyJ0JfY/XqdKT6UHDDX+SdppW/izXxRBH+E/nyUaYwlbp2QlfYCUUoUjcPke1vSCJ5WDOKUMAanNuhu2qFb+YnRYg/tH1Y9ePjDYIHihDvdooVylGqC7+rbShC9Bedj6e56yJN6HpM1I+ev4n/nuNxbd+i+1BoHloUfjGl5yF+LT1YCoG+iuD3bXotFdgP7W34QtlK9H4ocqaZ26ELxUye9JlG6FwaqxfbllGWizSSPpeK3S0u7/2oafWHYhXf6btF+++Hbb/j/wY7Tfttbe23l7bf5k30PL7hkGi/Rft9T63zH779Qh9w2/z4ndbHYowrhIiMJ69Ujach5l8baVIzRnxpu24Xi18Zm9iupYYVXyrgEnBfG1aMsBc1ErFixnl7UiQRpxWTsE0TccQkFLB7O6+QTdieSO8hh7A9uWsRhzCx3TBt4uUftmaYXgdpq/OAp1zCDO0nnZ1f42b1esa7x/i53Nj0te3ShpeUDJDWstPX5xVqKtir/YHL471FGrDrYmCuwcMmmShh1sJ9XV0MlBfZjnv0S5iV4l7mSbo+DfAyiGEhxuk9cJJTYwi+QtkrZlYK3tBO949yCOGyl3ZjogTax6v1BZbXtRsTBa722++PelqvDbym/0wiHiFYx3vL+WIzgobYBVEZEvyVphbjS0VGGL/2Jbjr21trwHVm/xDAzK9fCpuGbQXRLsH9/rEILZ8QEf+37i/TXrNKlyv44L1JUIQe2/exdYTFwvgc0vZpCawj9DW45nkJrK0676eB//QM0cK6+iMBQpHsG2eUU6ku9YQevEZGayb2voWHjwdUTlr1hCTMbbdYUHHltAy9pJM4/yzgs6oZdRChZ+OUcRsACb2KdGOlKoGEhPjzXlDlnSAcYdjzptpnyrqUI/rQm/D2KTOtFZ6HoS9TkZMviCL0InL4zGk7jjATyWmzo8NO6S1ZD24ZI17TkYTOe775JngsoeMB4DXZnmhCp++KdS4GNCHuQQI7qn2mAd+H7sbZ1PvbRQgdjQEHAgqECJ2sojwEHERihA4OVDAkRJDQueUGfgtGlNCxx1cRnmhhQqccNpiyDuKEDh3gUNES4oQkTN24aRxGKD+7RB8WlykX3mA9I8POpAhduPWjKwBJEZa2G8uWYrZNRhthqZ5Np802hRuoSkhCYm+kxolALI88YRiOLRlSB9d5YprwqsTGGS4WLGeoRFh0Y9NpwzPhSCxFwjBp1riRi8xAPYRhmAoWhVXQmWsyNEpYDNVmNo6tXKigKuHXmOmYf+dr05EM9tTRh4WSudnT+L4jnZ6jibBccgye4/oKBW+1ERaampmP20gpGFknYbHm6HfDnVRDkfUShuFupXNC7vvqJcN1ExYTcqCrI09asv/0ExbKluqm4+FUUzlt/YRfx/5sqgI5jK54WtIdjPThTelqIV7+7WOxkjmb8WWSsFDW7bzjl57ZYjXWXurdMGEpsuvO47f6ojCzt7gz3hlJwmmA8EskSQdRJz+eJrPPw+YSXDaHz9nkdMw70WCUGEww+g92pZN+B+IdjAAAAABJRU5ErkJggg=="/>
   </nav>
+  
   <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
     <h1>Where Work Happens</h1>
     <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+    <input type="text" placeholder="Email Address" />
+    <button  class="button-start" type="button" name="button">GET STARTED</button>
+    <p class="using-already">Already using Slack? <a href="#">Sign in</a></p>
+    <img src="./images/home_talking.png" alt="home_work_happening">
   </header>
   <main>
-    <div>
+    <div class="company">
       <h2>You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
+      <button class="button-discover">DISCOVER WHY</button>
+      <div class="container-discover">
+        <img class="discover r d" src="./images/airbnb-logo.png" alt="airbnb-logo"/>
+        <img class="discover d" src="./images/capital-one-logo.png" alt="capitalone-logo"/>
+      </div>
+      <div class="container-discover">
+        <img class="discover r d" src="./images/harvard-logo.png" alt="angelestimes-logo">
+        <img class="discover d" src="./images/los-angeles-times-logo.png" alt="harvard-logo">
+      </div>
+      <div class="container-discover">
+        <img class="discover r" src="./images/oracle-logo.png" alt="oracle-logo">
+        <img class="discover" src="./images/ticketmaster-logo.png" alt="ticketmaster-logo">
+      </div> 
     </div>
-    <div>
-      <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+    <div class="container-free">
+      <div class="free">
+        <h3>Try it for free</h3>
+        <p class="using-slack">Already using Slack? <a href="">Sign in.</a></p>
+      </div>
+      <div class="free free-2">
+        <input class="input input-2" type="text" placeholder="Email Address" />
+        <button class="button-start button-start-2" type="button" name="button">GET STARTED</button>
+      </div>
     </div>
   </main>
   <footer>
     <div>
-      <img src="./images/iso-slack.png" alt="">
-      <ul>
-        <li>COMPANY</li>
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Blog</li>
-        <li>Press</li>
-        <li>Brand Guidelines</li>
-      </ul>
-      <ul>
-        <li>PRODUCT</li>
-        <li>Why Slack?</li>
-        <li>Enterprise</li>
-        <li>Customer Stories</li>
-        <li>Pricing</li>
-        <li>Security</li>
-      </ul>
-      <ul>
-        <li>RESOURCES</li>
-        <li>Download</li>
-        <li>Help Center</li>
-        <li>Guides</li>
-        <li>Events</li>
-        <li>App Directory</li>
-        <li>API</li>
-      </ul>
-      <ul>
-        <li>EXTRAS</li>
-        <li>Podcast</li>
-        <li>Slack Shop</li>
-        <li>Slack at Work</li>
-        <li>Slack Fund</li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <li>Status</li>
-        <li>Privacy & Terms</li>
-        <li>Contact Us</li>
-      </ul>
+      <div class="container-footer-slack-logo">
+        <img class="footer-slack-logo" src="./images/iso-slack.png" alt="slack-logo">
+      </div>
       <div>
-        <img src="./images/us-flag.png" alt="">
-        <span>English (US)</span>
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        <ul>
+          <li class="ul-title">COMPANY</li>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>Press</li>
+          <li>Brand Guidelines</li>
+        </ul>
+        <ul>
+          <li class="ul-title">PRODUCT</li>
+          <li>Why Slack?</li>
+          <li>Enterprise</li>
+          <li>Customer Stories</li>
+          <li>Pricing</li>
+          <li>Security</li>
+        </ul>
+        <ul>
+          <li class="ul-title">RESOURCES</li>
+          <li>Download</li>
+          <li>Help Center</li>
+          <li>Guides</li>
+          <li>Events</li>
+          <li>App Directory</li>
+          <li>API</li>
+        </ul>
+        <ul>
+          <li class="ul-title">EXTRAS</li>
+          <li>Podcast</li>
+          <li>Slack Shop</li>
+          <li>Slack at Work</li>
+          <li>Slack Fund</li>
+        </ul>
+      </div>
+    </div>
+    <div  class="gray-footer">
+      <div>
+        <ul class="gray-footer-ul">
+          <li>Status</li>
+          <li>Privacy & Terms</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div>
+        <div class="container-US">
+          <img class="us-flag lft" src="./images/us-flag.png" alt="us-flag">
+          <span class="lft">English (US)</span>
+          <i class="fa fa-chevron-down lft" aria-hidden="true"></i>
+        </div>
+        <div>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>  
       </div>
     </div>
   </footer>
