@@ -10,6 +10,9 @@ html *, body *{
   margin: 0px;
   font-family: CircularPro,"Helvetica Neue",Helvetica
 }
+body{
+  overflow-x: hidden;
+}
 img{
   max-width: 90vw;
 }
@@ -23,7 +26,7 @@ nav {
   justify-content:space-between;
   align-items:center;
   border-bottom:1px solid;
-  border-bottom-color: #5b5e6d;
+  border-bottom-color: rgb(224,224,224);/*#5b5e6d*/
 }
 #slacklogo{
   height:10vw;
@@ -39,6 +42,9 @@ nav ul{
   display:none;
 }
 
+
+
+
 header{
   display:flex;
   width:99vw;
@@ -51,27 +57,41 @@ header{
 header section{
   width:85vw; 
   display:flex;
-  flex-direction: column
+  flex-direction: column;
+
+}
+header img{
+  width:85vw;  
+  margin-top:3vh;  
+  margin-bottom:3vh;
 }
 header h1{
-  font-size:4vh;
+  font-size:5vh;
+  font-weight: bold;
   color:#2C303F;
+  margin-top:3vh;
 }
 header p{
   color:#5b5e6d;
-  line-height: 30px;
+  line-height: 30px;  
+  margin-top:3vh;
 }
-header img{
-  width:85vw;
+header input, header button{
+  height:8vh;
+  max-height: 6vh;
+  width:99%;
+  margin-top:3vh;
 }
-header input{
-  height:6vw;
-  max-height: 4vh;
-  width:80%;
-  margin:0 10%;
+header button{  
+  height:8vh;
+  max-height: 6vh;
+  background: rgb(64,73,170);     /*#192592*/
+  color:white;
+  border:0;
+  border-radius: 4px;
 }
-header button{
-
+#signin {
+  text-align: center;
 }
 
 
@@ -81,5 +101,320 @@ main{
   background: #F4F3F4;
   display:flex;
   flex-flow: column;
-  width:99vw;
+  justify-content: center;
+  align-items: center; 
+  width:99vw; 
+}
+#company{
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;  
+  width:85vw; 
+}
+#company h2{
+  font-size:3.5vh;
+  font-weight: bold;
+  color:#2C303F;
+  margin-top:3vh;
+}
+#company p{
+  color:#5b5e6d;
+  line-height: 30px; 
+  margin-top:3vh;
+}
+#company button{
+  height:8vh;
+  max-height: 6vh;
+  width:99%;
+  margin-top:3vh;
+  background: white;
+  border-color: rgb(64,73,170);     /*#192592*/
+  color:rgb(64,73,170);
+  border:1px solid;
+  border-radius: 4px;
+}
+
+#logos {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  width:85vw;
+  margin:5vh auto;
+}
+#logos div{
+  width:100%;
+  height:10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+#logo1,#logo2,#logo3,#logo4,#logo5,#logo6 {
+  border-bottom: 1px solid;
+  border-bottom-color: rgb(224,224,224);
+}
+#logo6 {
+  border-bottom: 0;
+}
+#logos img{
+  height:8vw;
+  padding:0 8vw;
+  padding-bottom: 3vh;
+  margin-top: 3vh;
+
+}
+#tryfree{
+  margin:0;
+  background: white;
+  width:100vw;
+  text-align: center;
+  line-height: 30px;  
+  padding-bottom: 3vh;
+  border-bottom: 1px solid;
+  border-bottom-color: rgb(224,224,224);/*#5b5e6d*/
+}
+#tryfree h3{  
+  margin-top: 3vh;
+  font-size: 3vh;
+  font-weight: bold;
+}
+#tryfree input, #tryfree button{
+  height:8vh;
+  max-height: 6vh;
+  width:85%;
+  margin-top:3vh;
+}
+input {
+  border: 1px solid;
+  border-color: rgb(224,224,224);  
+  border-radius: 4px;
+}
+#tryfree button{  
+  height:8vh;
+  max-height: 6vh;
+  background: rgb(64,73,170);     /*#192592*/
+  color:white;
+  border:0;
+  border-radius: 4px;
+}
+#footermenus{
+  display:flex;
+  flex-flow: row;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: wrap;
+}
+#footermenus div{
+  width:100%;
+}
+#footermenus img{
+  height: 10vh;
+}
+
+#footermenus ul{  
+  padding: 0;
+  width:35%;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left:15%;
+  padding-bottom:4vh;
+}
+
+#footermenus li{
+  color:#5b5e6d;
+  line-height: 15px; 
+  margin-top:3vh;
+  list-style: none;
+  font-size: 1.5vh;
+}
+
+#footermenus h4{
+  font-size: 2vh;
+  font-weight: bold;
+  color:#2C303F;
+}
+
+#footerlinks {
+  color:#5b5e6d;
+  background: #F4F3F4;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; 
+  width:100vw; 
+}
+
+#footerlinks ul{
+  display:flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;  
+  list-style: none;
+}
+
+#footerlinks li{
+  width:auto;
+  padding:1vh;
+}
+
+#footerlinks div{
+  display:flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footerlinks img{
+  height: 2.5vh;
+}
+
+#footerlinks div *{
+  padding:1vh;
+}
+
+
+@media (min-width: 767px){
+/*
+1. The buttons and inputs stop occupying 100%.
+2. Now we have 2 companies logos on each row.
+3. The subfooter goes from 2 columns, to display all the 4 columns
+  in the same row.
+4. The footer goes from 3 different rows of content to a simple row
+  displaying some info at the left and some to the right.
+*/
+  header{
+    padding-top:100px;
+  }
+  #tryfree input{
+    width:calc(85% / 2);
+  }
+  #tryfree button{
+    width:calc(85% / 4);
+  }
+
+  #company button{
+    width:calc(99% / 4);
+  }
+  header input {    
+    width:calc(99% / 2);
+  }
+  header button{
+    width:calc(99% / 4);
+  }
+  header section {
+  align-items:  flex-start;
+  }
+  #logos{
+    flex-flow: wrap;
+    flex-direction: row;
+  }
+  #logos div{
+    width:45%;
+  }
+
+  #logos img{
+    height:auto;
+    width:50%;
+  }
+  #logo1, #logo3, #logo5{
+    border-right: 1px solid;
+    border-right-color: rgb(224,224,224);
+  }
+  #logo5, #logo6 {
+    border-bottom: 0;
+  }
+  #footermenus div{
+    width:20%;
+  }
+  #footermenus ul{
+    width:20%;    
+    padding-left:0;
+  }
+  #footerlinks {
+    flex-flow: row;    
+    justify-content: flex-end;
+  }
+  #footerlinks ul{
+    justify-self: flex-start;
+    padding: 0;    
+  }
+
+}
+
+@media (min-width: 961px){
+/*
+You should display 3 logos per row on the "You're in good
+company" section. Easy peasy!
+*/
+  #logos{
+    width:95vw;
+  }
+  #logos div{
+    width:calc(33% - 2px);  
+    height:15vh;
+  }
+  #logos img{
+    height:auto;
+    width:65%;
+  }
+  #logo3{
+    border-right:0;
+  }
+  #logo1, #logo2, #logo4, #logo5{
+    border-right: 1px solid;
+    border-right-color: rgb(224,224,224);
+  }
+  #logo4, #logo5, #logo6 {
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px){ 
+/*
+1. Our nav-bar starts to show all the menu links, so go ahead, remove the collapse icon and add the
+list.
+2. On the top of the webpage, the image is displayed in line with the "Where work happens" text. If
+you are using flex-box (you must 😉 ), this should be super easy!
+*/
+  #hamburguer{
+    display:none;
+    height:8vw;
+    max-height: 6vh;
+    padding-right:4vh;
+  }
+  nav ul{
+    display:flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-content: center;  
+    padding-right:4vh;    
+    list-style: none;
+  }
+  nav li{
+    color:#5b5e6d;      
+    padding-right:4vh;    
+    list-style: none;
+    font-size: 1.5vh;
+  }
+  header{
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  header section{
+    width:45%; 
+    display:flex;
+    flex-direction: columnr;
+  
+  }
+  header img{
+    width:45%;  
+    margin-top:3vh;  
+    margin-bottom:3vh;
+  }
 }
