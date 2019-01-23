@@ -7,12 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
   <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
+    <img src="./images/slack-logo.png" id="slack-logo" alt="slack_logo">
+    <i class="fas fa-bars" id="hamburger-menu"></i>
+    <ul id="nav-links">
       <li>Why Slack?</li>
       <li>Pricing</li>
       <li>About Us</li>
@@ -20,82 +23,91 @@
     </ul>
   </nav>
   <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
+    <h1>Where Work Happens</h1><br>
     <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+    <button type="button" class="dark-button" name="button">GET STARTED</button>
+    <p class="centered-text">Already using Slack? <a href="#">Sign in</a></p>
+    <img src="./images/home_talking.png" alt="home_work_happening" id="intro-image">
   </header>
   <main>
-    <div>
-      <h2>You´re in good company</h2>
-      <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
+    <div class="bg-gray">
+      <div class="main-content">
+        <h2 class="centered-text">You´re in good company</h2><br>
+        <p class="centered-text">Millions of people around the world have already made Slack the place where their work happens.</p>
+        <button type="button" class="light-button" name="button">DISCOVER WHY</button>
+        <div class="images-div">
+          <img src="./images/airbnb-logo.png" alt="airbnb" class="main-images"><hr>
+          <img src="./images/capital-one-logo.png" alt="capital one" class="main-images"><hr>
+          <img src="./images/harvard-logo.png" alt="harvard" class="main-images"><hr>
+          <img src="./images/los-angeles-times-logo.png" alt="la times" class="main-images"><hr>
+          <img src="./images/oracle-logo.png" alt="oracle" class="main-images"><hr>
+          <img src="./images/ticketmaster-logo.png" alt="ticketmaster" class="main-images">
+        </div>
+      </div>
     </div>
-    <div>
-      <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+    <div class="main-content">
+      <h2 class="centered-text">Try it for free</h2>
+      <p class="centered-text">Already using Slack? <a href="">Sign in</a></p>
+      <button type="button" class="dark-button" name="button">GET STARTED</button>
     </div>
   </main>
   <footer>
-    <div>
+    <div id="subfooter">
       <img src="./images/iso-slack.png" alt="">
-      <ul>
-        <li>COMPANY</li>
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Blog</li>
-        <li>Press</li>
-        <li>Brand Guidelines</li>
-      </ul>
-      <ul>
-        <li>PRODUCT</li>
-        <li>Why Slack?</li>
-        <li>Enterprise</li>
-        <li>Customer Stories</li>
-        <li>Pricing</li>
-        <li>Security</li>
-      </ul>
-      <ul>
-        <li>RESOURCES</li>
-        <li>Download</li>
-        <li>Help Center</li>
-        <li>Guides</li>
-        <li>Events</li>
-        <li>App Directory</li>
-        <li>API</li>
-      </ul>
-      <ul>
-        <li>EXTRAS</li>
-        <li>Podcast</li>
-        <li>Slack Shop</li>
-        <li>Slack at Work</li>
-        <li>Slack Fund</li>
-      </ul>
+      <div id="bottom-lists">
+        <ul id="company-list">
+          <li class="list-title">COMPANY</li>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>Press</li>
+          <li>Brand Guidelines</li>
+        </ul>
+        <ul id="product-list">
+          <li class="list-title">PRODUCT</li>
+          <li>Why Slack?</li>
+          <li>Enterprise</li>
+          <li>Customer Stories</li>
+          <li>Pricing</li>
+          <li>Security</li>
+        </ul>
+        <ul id="resources-list">
+          <li class="list-title">RESOURCES</li>
+          <li>Download</li>
+          <li>Help Center</li>
+          <li>Guides</li>
+          <li>Events</li>
+          <li>App Directory</li>
+          <li>API</li>
+        </ul>
+        <ul id="extras-list">
+          <li class="list-title">EXTRAS</li>
+          <li>Podcast</li>
+          <li>Slack Shop</li>
+          <li>Slack at Work</li>
+          <li>Slack Fund</li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <ul>
+    <div id="main-footer" class="bg-gray">
+      <ul id="main-footer-list">
         <li>Status</li>
         <li>Privacy & Terms</li>
         <li>Contact Us</li>
       </ul>
-      <div>
-        <img src="./images/us-flag.png" alt="">
-        <span>English (US)</span>
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      <div id="language-social">
+        <div id="language">
+          <img src="./images/us-flag.png" id="us-flag" alt="">
+          <span>English (US)</span>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i><br>
+        </div>
+        <div id="social">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
       </div>
     </div>
   </footer>
 </body>
-
 </html>
