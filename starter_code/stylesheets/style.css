@@ -1,6 +1,17 @@
+.footer-link{
+  display: inline-block;
+
+}
+.footer-social{
+  background: #F4F3F4;
+  text-align: center;
+}
 .footer-container{
-
-
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.3em;
 }
 .main-get-started>input{
   width: 60vw;
@@ -14,7 +25,7 @@
 }
 .brand-img{
   width: 60%;
-  padding: 20px;
+  padding: 20px 20%;
 }
 .dark-bg{
   background: #F4F3F4;
@@ -45,6 +56,11 @@
 .main{
   align-self: center;
 }
+.fa-bars{
+  position: relative;
+  margin-left: auto;
+  padding-top: 8px;
+}
 .header{
   display: flex;
   flex-direction: column;
@@ -53,6 +69,7 @@
 }
 #footer-slack-logo{
   max-height: 100px;
+  padding-right: 200px; /* FIXME: it works */
 }
 #sign-up-in{
   align-self: center;
@@ -66,27 +83,35 @@
   max-height: 7vh;
   max-width: auto;
   overflow: visible;
-  padding: 5px;
+  padding: 5px 10px;
 
 }
 .nav-container{
   display: flex;
   height: 8vh;
+  width: 100vw;
   background: #F4F3F4;
   box-shadow: 0 1px #DBDADB;
   flex-direction: row;
+  position: fixed;
+  top: 0;
 }
 .flex-container{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-
+ul{
+  padding: 1em;
+}
+li-strong{
+  font-weight: bold;
+}
 li{
   list-style: none;
 }
-body{
-
+a{
+  list-style: none;
 }
 *{
   margin: 0;
@@ -94,6 +119,12 @@ body{
   font-family: Roboto,monaco,"Ubuntu Mono";
   line-height: 1.7;
 }
+@media only screen and (min-width: 767px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
 
 
 /*
