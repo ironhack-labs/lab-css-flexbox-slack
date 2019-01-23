@@ -69,7 +69,6 @@ align-self: center;
   display: flex;
   flex-direction: column;
   padding: 8vh 1.3em 0 1.3em;
-  justify-content: space-around;
 }
 #amer-flag{
   height: 50px
@@ -113,6 +112,9 @@ align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.clearfix{
+  clear: both;
 }
 ul{
   padding: 1em;
@@ -188,7 +190,42 @@ a{
   #amer-flag{
     justify-content: space-between;
   }
+@media only screen and (min-width: 1200px){
+  body{
+    overflow-x: hidden;
+  }
+  .header{
+    display: block;
 
+  }
+  .header-img{
+    max-width: 40vw;
+    float: left;
+  }
+  .header-content{
+    float: right;
+    width: 50vw;
+  }
+  .form-container{
+    margin: 1.5em 0;
+  }
+  .form-container>#email-input{
+    position: relative;
+    float: left;
+  }
+  .btn{
+    width: 10vw;
+  }
+  .btn-dark{
+    position: relative;
+    float: left;
+  }
+  #sign-up-in{
+    float: left;
+    margin-top: 1em;
+  }
+
+}
 
 }
 
