@@ -1,6 +1,6 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# CSS | Slack Clone with Flexbox
+# CSS | Slack clone with Flexbox
 
 ## Introduction
 
@@ -8,26 +8,23 @@ You should be reaaaaally familiar with [Slack](https://www.slack.com/) at this p
 
 We use the app almost every day to keep our communications with our classmates and the **Ironhack** team, so we know perfectly the chat interface but today we are going to clone their landing page. [Here](https://www.slack.com/) you can visit the website and check what are we going to do. :stuck_out_tongue_winking_eye:
 
-We want to practice our new **Flexbox** skill, so we are going to implement the *"responsiveness"* of the landing page. No worries, we will show you what we need!
+We want to practice our new **Flexbox** skills, so we are going to implement the *"responsiveness"* of the landing page. No worries, we will show you what we need!
 
 
 ## Requirements
 
-- [Fork this repo](https://guides.github.com/activities/forking/)
-- Clone this repo into your `~/code/labs`
-- Include both the client and server applications in your submission.
+- Fork this repo
+- Clone this repo
 
 ## Submission
 
-- Upon completion, run the following commands
-
+Upon completion, run the following commands:
 ```
-git add .
-git commit -m "done"
-git push origin master
+$ git add .
+$ git commit -m "done"
+$ git push origin master
 ```
-
-- Navigate to your repo and [create a Pull Request](https://help.github.com/articles/creating-a-pull-request/)
+Create Pull Request so your TAs can check up your work.
 
 ## Exercise
 
@@ -39,7 +36,7 @@ The **starter_code** contains the basic structure of an HTML & CSS project to st
 
 Mobile first right? :wink: 
 
-Firs, we are going to clone the mobile design of the webpage! 📱 Oh! Remember to use **flexbox**, because it will be really helpful later on when we need to adapt it to different screen-size!
+First, we are going to clone the mobile design of the webpage! 📱 Oh! Remember to use **flexbox**, because it will be really helpful later on when we need to adapt it to different screen-size!
  
 After doing your magic, you should have something like this:
 
@@ -103,3 +100,6 @@ Last one! Some small changes and we are done!
 <img src="https://user-images.githubusercontent.com/23629340/33180353-b49700b0-d06c-11e7-9e87-e54735699ad5.png" alt="medium-1" style="width:48%">
 
 <img src="https://user-images.githubusercontent.com/23629340/33180357-bda7665e-d06c-11e7-8a2f-4d647de32944.png" alt="medium-1" style="width:48%">
+
+
+Happy coding! ❤️
