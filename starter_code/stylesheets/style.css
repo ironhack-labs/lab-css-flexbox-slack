@@ -198,6 +198,7 @@ main {
 	padding-left: 8vw;
 	padding-right: 8vw;
 	padding-top: 2rem;
+	padding-bottom: 2rem;
 	border-top: 1px solid rgba(0, 0, 0, .2);
 	text-align: center;
 }
@@ -235,6 +236,52 @@ p {
 	letter-spacing: -.2px;
 }
 
+.good-company p {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.companies {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 3rem;
+}
+
+.company {
+	width: 100%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.company:last-child {
+	border-bottom: none;
+}
+
+.companies img {
+	max-height: 45px;
+	max-width: 100%;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.try-free {
+	text-align: center;
+	border-top: 1px solid rgba(0, 0, 0, .2);
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	background-color: white;
+	width: 100%;
+	padding: 1.5rem;
+}
+
+.try-free form {
+	padding-top: .5rem;
+}
+
+.try-free p {
+	font-weight: 600;
+}
+
 @media (min-width: 768px) {
 	header .get-started input {
 		display: none;
@@ -269,11 +316,36 @@ p {
 		line-height: 1.15;
 		font-size: 1.625rem;
 	}
+
+	.company {
+		width: 50%;
+	}
+
+	.company:nth-child(2n+1) {
+		border-right: 1px solid rgba(0, 0, 0, .2);
+	}
+
+	.company:nth-last-child(2) {
+		border-bottom: none;
+	}
 }
 
 @media (min-width: 961px) {
-	header .get-started input {
-		display: none;
+
+	.company {
+		width: 33%;
+	}
+
+	.company {
+		border-right: 1px solid rgba(0, 0, 0, .2);
+	}
+
+	.company:nth-child(3n+0) {
+		border-right: none;
+	}
+
+	.company:nth-last-child(3) {
+		border-bottom: none;
 	}
 }
 
@@ -291,6 +363,7 @@ p {
 
 	main {
 		padding-top: 5rem;
+		padding-bottom: 5rem;
 	}
 	
 	header {
@@ -315,48 +388,6 @@ p {
 	}
 }
 
-
-.good-company p {
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-}
-
-.companies {
-	margin-top: 2rem;
-}
-
-.company {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	border-bottom: 1px solid rgba(0, 0, 0, .2);
-}
-
-.company:last-child {
-	border-bottom: none;
-}
-
-.companies img {
-	max-height: 50px;
-	max-width: 100%;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-}
-
-.try-free {
-	border-top: 1px solid rgba(0, 0, 0, .2);
-	border-bottom: 1px solid rgba(0, 0, 0, .2);
-	background-color: white;
-	width: 100%;
-	padding: 1.5rem;
-}
-
-.try-free form {
-	padding-top: .5rem;
-}
-
-.try-free p {
-	font-weight: 600;
-}
 
 .already-using {
 	display: inline-block;
