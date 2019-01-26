@@ -14,20 +14,37 @@ nav grey: #5b5e6d;
   nav ul {
     display: none;
   }
-  #company-images {
+  header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #company-images  {
+    display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     width: 100%;
     padding: 0;
   }
-  .container {
-    width: 100%;
-    margin: 0 auto;
+
+  #footer, #footer-lists {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  header img {
-    width: 100%;
+  #footer-lists {
+    justify-content: center;
+    align-items: center;
+  }
+  #bottom-bar {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -58,9 +75,9 @@ nav {
 header {
   padding: 60px 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space-around; */
+  justify-content: space-around; 
   margin: 20px;
 }
 
@@ -125,8 +142,7 @@ main {
 
 #footer-lists {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  align-content: center;
   
 }
 
@@ -136,10 +152,12 @@ main {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  /* position: relative; */
 }
 
-#bottom-bar li, #bottom-social {
+#bottom-bar li {
   padding-top:10px;
+  padding-right: 15px;
   display: inline;
 }
 
@@ -156,19 +174,20 @@ main {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  /* position: absolute; */
 }
 
 #bottom-bar img {
   width: 20px;
 }
 
-/* #company-images {
+#company-images {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-} */
+}
 
 #company button {
   background-color: white;
@@ -176,12 +195,18 @@ main {
   border-color: #192592;
 }
 
-/* #company-images img {
-  max-width: 75%;
-  padding: 45px;
-} */
-
 #company-images img {
   width: 100%;
   padding: 30px;
+}
+
+#bottom-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+
+#country {
+  /* justify-content: flex-end; */
 }
