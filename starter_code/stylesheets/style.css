@@ -200,6 +200,7 @@ main {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	border-top: 1px solid rgba(0, 0, 0, .2);
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
 	text-align: center;
 }
 
@@ -265,27 +266,114 @@ p {
 	padding-right: 1.5rem;
 }
 
-.try-free {
+
+
+.get-started {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
-	border-top: 1px solid rgba(0, 0, 0, .2);
-	border-bottom: 1px solid rgba(0, 0, 0, .2);
 	background-color: white;
 	width: 100%;
-	padding: 1.5rem;
-}
-
-.try-free form {
-	padding-top: .5rem;
+	padding-left: 8vw;
+	padding-right: 8vw;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .try-free p {
 	font-weight: 600;
 }
 
+.already-using {
+	display: inline-block;
+	font-size: .7rem;
+	margin-bottom: 1rem; 
+}
+
+
+
+
+footer {
+	border-top: 1px solid rgba(0, 0, 0, .2);
+	color: #5b5e6d;
+}
+
+.menu-container {
+	padding-right: 8vw;
+	padding-left: 8vw;
+}
+
+.menu-content {
+	padding-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.menu-content img {
+	margin-right: 100%;
+	margin-left: -1.5rem;
+	margin-bottom: 1rem;
+	width: 90px;
+	height: 90px;
+}
+
+.menu-content ul {
+	width: 50%;
+	padding-bottom: 2rem;
+}
+
+.menu-content ul li {
+	line-height: 2.5;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: -.2px;
+}
+
+.menu-content span {
+	font-weight: 700;
+}
+
+.socials-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 2rem;
+}
+
+.socials-content ul {
+	margin: 0 auto;
+	display: flex;
+	word-wrap: none;
+	padding-left: .3rem;
+	padding-right: .3rem;
+}
+
+.socials-content ul li, .socials-content > div > span {
+	font-size: .75rem;
+	padding: .3rem;
+	font-weight: 700;
+}
+
+.socials-content div {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: .6rem;
+}
+
+.socials-content img, .socials-content img + span + i {
+	position: relative;
+	top: .15rem;
+	display: inline-block;
+	height: .9rem;
+}
+
+.socials-content > div > i {
+	font-size: 1rem;
+	padding: .6rem;
+}
+
 @media (min-width: 768px) {
-	header .get-started input {
-		display: none;
-	}
 
 	.get-started button {
 		width: auto;
@@ -328,9 +416,22 @@ p {
 	.company:nth-last-child(2) {
 		border-bottom: none;
 	}
+
+	.get-started {
+		flex-direction: row;
+	}
+
+	.menu-content ul {
+		width: auto;
+		flex: 1 1 auto;
+	}
 }
 
 @media (min-width: 961px) {
+
+	header form input {
+		display: none;
+	}
 
 	.company {
 		width: 33%;
@@ -351,7 +452,7 @@ p {
 
 @media (min-width: 1200px) {
 
-	.nav-container, .header-container, main {
+	.nav-container, .header-container, main, .get-started, .menu-container {
 		padding-left: 4vw;
 		padding-right: 4vw;
 	}
@@ -386,94 +487,10 @@ p {
 	h2 {
 		font-size: 3rem;
 	}
+
+	.menu-content img {
+		flex: 0 0 auto;
+		margin-right: 5rem;
+		margin-left: 0;
+	}
 }
-
-
-.already-using {
-	display: inline-block;
-	font-size: .7rem;
-	margin-bottom: 1rem; 
-}
-
-footer {
-	color: #5b5e6d;
-}
-
-.menu-container {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-}
-
-.menu-content {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 auto;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-}
-
-.menu-content img {
-	margin-left: -1.5rem;
-	margin-right: 40%;
-	margin-bottom: 2rem;
-	width: 90px;
-	height: 90px;
-}
-
-.menu-content ul {
-	width: 50%;
-	padding-bottom: 2rem;
-}
-
-.menu-content ul li {
-	line-height: 2.5;
-	font-size: 1rem;
-	font-weight: 400;
-	letter-spacing: -.2px;
-}
-
-.menu-content span {
-	font-weight: 700;
-}
-
-.socials-content {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-}
-
-.socials-content ul {
-	margin: 0 auto;
-	display: flex;
-	word-wrap: none;
-	padding-left: .3rem;
-	padding-right: .3rem;
-}
-
-.socials-content ul li, .socials-content > div > span {
-	font-size: .75rem;
-	padding: .3rem;
-	font-weight: 700;
-}
-
-.socials-content div {
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: .6rem;
-}
-
-.socials-content img, .socials-content img + span + i {
-	position: relative;
-	top: .15rem;
-	display: inline-block;
-	height: .9rem;
-}
-
-.socials-content > div > i {
-	font-size: 1rem;
-	padding: .6rem;
-}
-
-@media 
