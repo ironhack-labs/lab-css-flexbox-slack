@@ -1,29 +1,25 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
-
+/* Custom properties for colors */
 :root{
   --background-grey: #F4F3F4;
   --button-purple: #192592;
   --main-titles-dark-grey: #2C303F;
   --paragraph-grey: #5b5e6d;
   --nav-grey: #5b5e6d;
+  --border-brands: #eaeaea;
 }
 
 /* general selector to override browser defaults */
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Nav bar styles */
 nav{
-  /* position: fixed; */
+  position: fixed;
   height: 15vh;
+  background-color: white;
 }
 
 nav > img{
@@ -31,6 +27,11 @@ nav > img{
   height: 60%;
   padding-left: 8%;
   padding-top: 3%;
+}
+
+/* class to push page */
+.nav-space{
+  height: 15vh;
 }
 
 /* Header styles */
@@ -52,6 +53,7 @@ header h1{
   font-size: 3em;
   font-weight: bold;
   color: var(--main-titles-dark-grey);
+  font-family: 'Times New Roman', Times, serif;
 }
 
 header p:not(:last-child){
@@ -72,6 +74,8 @@ header form > input{
   height: 3.5em;
   margin: 3vh 0;
   border-radius: 8px;
+  font-size: 1.2em;
+  color: var(--paragraph-grey);
 }
 
 header button{
@@ -105,6 +109,7 @@ main div h2{
   color: var(--main-titles-dark-grey);
   margin-top: 10vh;
   margin-bottom: 3vh;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 main div p{
@@ -116,7 +121,7 @@ main div p{
   margin-bottom: 5vh;
 }
 
-main div button:first-child{
+main div button{
   background-color: white;
   height: 3em;
   border: 2px var(--button-purple) solid;
@@ -128,20 +133,14 @@ main div button:first-child{
 
 main img:not(:last-child){
   width: 44%;
-  border-bottom: 2px solid #eaeaea;
+  border-bottom: 2px solid var(--border-brands);
   padding: 6vh 22%;
 }
 
 main img:last-child{
   width: 44%;
-  border-bottom: 2px solid #eaeaea;
+  border-bottom: 2px solid var(--border-brands);
   padding: 6vh 28%;
-}
-
-main div:last-child{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 main div button:last-child{
@@ -154,8 +153,134 @@ main div button:last-child{
   width: 85%;
 }
 
+/* Get started styles */
+main div:last-child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+main div:last-child > p:first-child{
+  line-height: 1.5em;
+  font-size: 2.5em;
+  color: var(--paragraph-grey);
+  width: 80%;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 0;
+  color: var(--main-titles-dark-grey);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+main div:last-child > p:not(:first-child){
+  line-height: 1.5em;
+  font-size: 1.8em;
+  color: var(--paragraph-grey);
+  width: 80%;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+/* Footer styles */
+footer{
+  margin-left: 8vh;
+  margin-right: 8vh;
+}
+
+footer > div{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer div:first-child > img{
+  margin-right: 88%
+}
+
+footer > div:first-child ul{
+  width: 50%;
+  list-style: none;
+}
+
+/* Styles for commpany, product, resources, extras */
+footer div:first-child ul > li:first-child{
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--main-titles-dark-grey);
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+footer div:first-child ul > li:not(:first-child){
+  font-size: 1.5em;
+  color: var(--paragraph-grey);
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+footer > div:last-child{
+  display: flex;
+  flex-flow: column;
+  background-color: var(--background-grey);
+  padding-top: 4vh;
+}
+
+footer > div:last-child > ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+footer > div:last-child > ul > li{
+  width: 30%;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--main-titles-dark-grey);
+  text-align: center;
+}
+
+/* country selector & social media divs*/
+footer > div:last-child > div{
+  height: 4vh;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+footer > div:last-child > div > span{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--main-titles-dark-grey);
+  text-align: center;
+}
+
+footer > div:last-child > div > img{
+  transform: scale(0.4); 
+}
+
+footer > div:last-child > div > i{
+  transform: scale(2);
+  color: var(--main-titles-dark-grey);
+  margin: 0 2vh;
+}
+
 /* hasta maximo 768px */
 @media only screen and (max-width: 768px) {
+  nav ul{
+    display: none;
+  }
+} 
+
+@media only screen and (min-width: 961px) {
   nav ul{
     display: none;
   }
