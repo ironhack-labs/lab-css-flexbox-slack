@@ -5,3 +5,158 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+:root{
+  --background-grey: #F4F3F4;
+  --button-purple: #192592;
+  --main-titles-dark-grey: #2C303F;
+  --paragraph-grey: #5b5e6d;
+  --nav-grey: #5b5e6d;
+}
+
+/* general selector to override browser defaults */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav bar styles */
+nav{
+  /* position: fixed; */
+  height: 15vh;
+}
+
+nav > img{
+  width: 19%;
+  height: 60%;
+  padding-left: 8%;
+  padding-top: 3%;
+}
+
+/* Header styles */
+header{
+  display: flex;
+  flex-direction: column;
+  margin-left: 8vh;
+  margin-right: 8vh;
+}
+
+header > img{
+  /* to order it at the end of the column */
+  order: 1;
+}
+
+header h1{
+  width: 45%;
+  margin-bottom: 5vh;
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--main-titles-dark-grey);
+}
+
+header p:not(:last-child){
+  line-height: 1.5em;
+  font-size: 1.8em;
+  color: var(--paragraph-grey);
+}
+
+header p:last-child{
+  text-align: center;
+  line-height: 3em;
+  font-size: 1.8em;
+  color: var(--paragraph-grey);
+}
+
+header form > input{
+  width: 100%;
+  height: 3.5em;
+  margin: 3vh 0;
+  border-radius: 8px;
+}
+
+header button{
+  background-color: var(--button-purple);
+  height: 3em;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.5em;
+}
+
+/* Main styles */
+main{
+  display: flex;
+  flex-direction: column;
+  margin-left: 8vh;
+  margin-right: 8vh;
+  /* vertical align */
+  align-items: center;
+}
+
+main > div:first-child{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background-grey);
+}
+
+main div h2{
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--main-titles-dark-grey);
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+}
+
+main div p{
+  line-height: 1.5em;
+  font-size: 1.8em;
+  color: var(--paragraph-grey);
+  width: 80%;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+main div button:first-child{
+  background-color: white;
+  height: 3em;
+  border: 2px var(--button-purple) solid;
+  border-radius: 8px;
+  color: var(--button-purple);
+  font-size: 1.5em;
+  width: 85%;
+}
+
+main img:not(:last-child){
+  width: 44%;
+  border-bottom: 2px solid #eaeaea;
+  padding: 6vh 22%;
+}
+
+main img:last-child{
+  width: 44%;
+  border-bottom: 2px solid #eaeaea;
+  padding: 6vh 28%;
+}
+
+main div:last-child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div button:last-child{
+  background-color: var(--button-purple);
+  height: 3em;
+  border: 2px white solid;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.5em;
+  width: 85%;
+}
+
+/* hasta maximo 768px */
+@media only screen and (max-width: 768px) {
+  nav ul{
+    display: none;
+  }
+} 
