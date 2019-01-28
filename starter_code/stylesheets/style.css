@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
@@ -5,3 +7,310 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    background-color:#fff;
+    color: rgb(43, 43, 43);
+    line-height: 30px;
+}
+body p{
+    padding-block-start: 5%;
+    padding-block-end: 10%; 
+}
+
+h1,h2,h3{
+    font-family: 'sans-serif';
+    font-weight:800;
+}
+
+.flex-Navcontainer{
+    height: 75px;
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 20px;
+    background: #fff;
+    border-bottom: 0.5px solid rgb(161, 159, 161);
+}
+.navPosition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 0 2%;
+}
+
+nav img{
+    width: 150px;
+}
+nav ul{
+    padding-top: 35px;
+}
+nav li{
+    display: none;
+}
+header{
+    font-size: 1.5rem;
+    padding: 50px 3% 100px 3%;
+}
+header h1{
+    font-size: 5rem;
+    margin-top: 50px;
+    padding: 20px 0 5px 0;
+    line-height: 120%;
+}
+
+header img {
+    width:100%;
+    padding: 5%;
+}
+.align{
+    text-align: center;
+}
+
+button{
+    font-size: 3.5vw;
+    font-weight:700; 
+    text-align: center;
+    color: #fff;
+    background-color: rgb(68, 42, 212);
+    border-style: none;
+    padding:20px;
+    border-radius: 10px;
+    width: 95%;
+  }
+input{
+    font-size: 3.5vw;
+    font-weight:400; 
+    text-align: left;
+    color: rgb(17, 17, 17);
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgb(156, 156, 156);
+    padding: 20px 15px;
+    border-radius: 10px;
+    width: 95%;
+  }
+form div{
+      padding-bottom: 20px;
+  }
+
+.mainBox{
+      background-color: #F4F3F4;
+      text-align: center;
+      margin-top: 20px;
+      line-height: 30px;
+      padding: 0 3%;
+  }
+main .pa{
+     padding: 0 3%
+  }
+main .pab{
+    padding-bottom: 2%;
+}
+
+main h2{
+      padding: 50px 0;
+      line-height: 50px;
+      font-size: 3.5rem;
+      font-weight: 800;
+  }
+  .fbox1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.fbd3{ flex-basis: 70%; }
+
+
+ main img {
+    width:60%;
+    padding: 15% 0;
+} 
+
+main .btn{
+    font-size: 3.5vw;
+    font-weight:700; 
+    text-align: center;
+    color: rgb(66, 20, 233);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(184, 184, 184);
+    padding:20px;
+    border-radius: 10px;
+    width: 80%;
+  } 
+
+.border{
+    border-top: 0.5px solid rgb(114 114 114);
+}
+main p{
+    font-size: 4vw;
+}
+main h3{
+    padding-top: 50px;
+    font-size: 5vw;
+    font-weight: 800;
+}
+.footerBox{
+    text-align: left;
+    flex-basis: 40%;
+    margin: 10% 0;
+    padding: 0 3%;
+}
+.fbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+}
+.innerBox{
+    flex-basis: 40%;
+    padding-bottom: 30px;
+    padding-left: 5%;
+}
+footer ul{
+    font-size: 1.3rem;
+    color: rgb(114, 114, 114);
+    line-height: 50px;
+}
+footer li{
+    list-style: none;
+}
+ul span{
+    font-weight:900;
+}
+footer .logoImg{
+    width: 150px;
+    margin-left: -2%;
+}
+
+.termsil{
+    display: inline-block;
+    color:rgb(68, 68, 68);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding: 2%;
+}
+footer .flagImg{
+    width:10%;
+    padding-right:2%;
+    margin-bottom: -3%;
+}
+footer .icons{
+    font-size: 150%;
+    padding: 5% 0;
+}
+footer span{
+    padding: 0 3%;
+}
+
+@media(min-width: 767px) /*and (max-width:961px)*/{
+    
+    .fbox2{
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    .fbd{ flex:1; }
+    .fbd1{ flex:2; }
+    .fbd2{ flex:3; } 
+    .fbd3{ flex-basis: 40%; }
+
+    .align{
+        text-align:left;
+    }
+    input{
+        font-size: 2vw;
+        width: 99%;
+        padding:20px 5px;
+        padding:25px 15px;
+        text-align: left;
+        border-radius: 5px;
+
+      }
+    button{
+        font-size: 2vw;
+        width: 55%;
+        padding:25px 2%;
+        border-radius: 5px;
+      }
+
+      main .btn{
+        font-size: 2vw;
+        width: 50%;
+      } 
+
+    main .fbox3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .mainBtn{
+        font-size:2.5vw;
+    }
+    main .pa{
+        padding: 3% 3%
+     }
+     main h3{
+        padding-top: 0px;
+        font-size: 2.2rem;
+        font-weight: 800;
+    }
+    main p{
+        font-size: 2.2vw;
+    }
+    .bdn{
+        border: none;
+    }
+    .inw{width: 30%;}
+    .btw{width: 33%;}
+
+    .innerBox{
+        flex-basis: 20%;
+    }
+    .fr{float:right;}
+    .fl{float: left;}
+    .clear{clear:both;}
+
+    .termsil{
+        font-size: 1.5vw;
+        margin: auto 0;
+    }
+    footer .flagImg{
+        width:10%;
+        padding-top: 10%;
+        margin-bottom: -2%;
+    }
+    footer .icons{
+        font-size: 100%;
+        padding: 0 0 0 0;
+        margin: auto 0;
+    }
+    footer .fbox4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width: 960px) and (max-width:1024px){
+    .fbd3{ flex-basis: 30%; }
+    .bdn1{
+        border: none;
+    }
+
+}
+
