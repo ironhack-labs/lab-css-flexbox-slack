@@ -134,12 +134,6 @@ header {
 	flex-direction: column-reverse;
 }
 
-header > * {
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-top: 2rem;
-}
-
 header > img {
 	max-width: 100%;
 }
@@ -149,6 +143,11 @@ h1 {
 	color: #2C303F;
 	text-align: left;
 	font-size: 2.7rem;
+}
+
+.header-text {
+	padding-bottom: 3rem;
+	text-align: center;
 }
 
 .header-text p {
@@ -162,6 +161,12 @@ h1 {
 }
 
 .get-started {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: white;
+	width: 100%;
+	padding-top: 2rem;
 	padding-bottom: 1rem;
 }
 
@@ -188,10 +193,13 @@ h1 {
 	border-color: #F4F3F4;
 }
 
-.header-text span {
-	font-size: .7rem;
-	text-align: center;
-}
+
+/**
+*
+*
+*	Main content area
+*
+*/
 
 main {
 	background-color: #f5f5f5;
@@ -266,33 +274,34 @@ p {
 	padding-right: 1.5rem;
 }
 
-
-
-.get-started {
-	display: flex;
-	flex-direction: column;
+.try-free-container {
 	text-align: center;
-	background-color: white;
-	width: 100%;
-	padding-left: 8vw;
-	padding-right: 8vw;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+	padding-left: 8vw;
+	padding-right: 8vw;
 }
 
-.try-free p {
+.try-free-container p {
 	font-weight: 600;
 }
 
 .already-using {
 	display: inline-block;
 	font-size: .7rem;
-	margin-bottom: 1rem; 
 }
 
+.try-free-container .get-started {
+	width: inherit;
+}
 
-
-
+/** 
+*
+*
+*	Footer
+*
+*
+*/
 footer {
 	border-top: 1px solid rgba(0, 0, 0, .2);
 	color: #5b5e6d;
@@ -375,18 +384,19 @@ footer {
 
 @media (min-width: 768px) {
 
-	.get-started button {
+	.get-started {
+		flex-direction: row;
+	}
+
+	.get-started input {
 		width: auto;
-		padding: 1.3rem 2.8rem;
+		min-width: 50%;
+		margin-bottom: 0;
+		margin-right: 1rem; 
+		padding: 1.3rem 1.8rem;
 	}
 
-	.header-text span {
-		font-size: .9rem;
-		text-align: left;
-	}
-
-	.good-company button {
-		margin: 0 auto;
+	.get-started button {
 		width: auto;
 		padding: 1.3rem 2.8rem;
 	}
@@ -400,9 +410,23 @@ footer {
 		line-height: 2rem;
 	}
 
+	.header-text {
+		text-align: left;
+	}
+
+	.header-text span {
+		font-size: .9rem;
+	}
+
 	.header-text p {
 		line-height: 1.15;
 		font-size: 1.625rem;
+	}
+
+	.good-company button {
+		margin: 0 auto;
+		width: auto;
+		padding: 1.3rem 2.8rem;
 	}
 
 	.company {
@@ -417,8 +441,19 @@ footer {
 		border-bottom: none;
 	}
 
-	.get-started {
-		flex-direction: row;
+	.try-free-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.try-free {
+		padding-left: 1rem;
+		flex-grow: 1;
+		text-align: left;
+	}
+
+	.try-free p {
+		font-size: 1.4rem;
 	}
 
 	.menu-content ul {
@@ -429,8 +464,12 @@ footer {
 
 @media (min-width: 961px) {
 
-	header form input {
+	.get-started input {
 		display: none;
+	}
+
+	header .header-text .get-started, header .header-text .already-using {
+		padding-left: 2rem;
 	}
 
 	.company {
@@ -452,7 +491,7 @@ footer {
 
 @media (min-width: 1200px) {
 
-	.nav-container, .header-container, main, .get-started, .menu-container {
+	.nav-container, .header-container, main, .get-started, .try-free-container, .menu-container {
 		padding-left: 4vw;
 		padding-right: 4vw;
 	}
