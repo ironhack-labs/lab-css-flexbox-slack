@@ -17,6 +17,8 @@ footer a {
   color: #5b5e6d;
 }
 
+
+
 footer > div:last-of-type{
   background: #F4F3F4;
   display: flex;
@@ -59,7 +61,7 @@ footer > div:last-of-type > ul > li{
   padding: 0 0.45rem;
 }
 
-footer > div > img{
+footer > div > div > img{
     padding-top: 1rem;
     height: 6rem;
     width: auto;
@@ -72,13 +74,20 @@ footer > div > div{
   margin: 0 1.5rem;
 }
 
-footer > div > div > ul{
+footer > div > div > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1 1 auto; 
+}
+
+footer > div > div > div > ul{
   list-style-type: none;
   padding-left: 0;
   flex: 2 1 auto; 
 }
 
-footer > div > div > ul > li{
+footer > div > div > div > ul > li{
   color: #5b5e6d;
   padding-bottom: 1.5rem;
 }
@@ -102,8 +111,11 @@ header{
   flex-wrap: wrap;
 }
 
-header div{
-  order: 3;
+header > div:first-of-type{
+  order: 2;
+}
+header > div:last-of-type{
+  order: 1;
 }
 
 header h1{
@@ -203,11 +215,10 @@ main > div:last-of-type p{
   margin-bottom: 0.25rem;
 }
  
-main > div > div {
+main > div:first-of-type > div {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid lightgrey;
-  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,6 +281,7 @@ nav i{
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%) translateX(-150%);
+  color: #5b5e6d;
 }
 
 nav img{
@@ -291,8 +303,210 @@ nav ul li{
 }
 
 @media (min-width: 768px){
+  
+  footer > div{
+    display: flex;
+  }
+  
+  footer > div > div{
+    flex: auto;
+  }
+  
+  header h1{
+    font-size: 4rem;
+  }
+
+  header img{
+    max-width: 50%;
+    padding: 0 25%;
+  }
+
+  header form input{
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+
+  header form button{
+    width: 25%;
+  }
+
+  header .prevUser{
+    text-align: left;
+    margin-top: 0;
+  }
+
+  main > div:first-of-type{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  main > div:last-of-type{
+    display: flex;
+    padding-top: 2.5rem;
+  }
+
+
+
+  main > div:first-of-type > h2{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  main > div:first-of-type > p{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    
+  }
+
+  main > div:first-of-type button {
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
+  }
+
+  main > div:first-of-type > div{
+    width: 50%;
+    
+  }
+
+  main > div:last-of-type button{
+    width: 49%;
+  }
+
+  main > div:last-of-type input{
+    width: 49%;
+    margin: 0;
+  }
+
+  main > div:first-of-type > div:nth-of-type(5){
+    border-bottom: none;
+  }
+
+  main > div:first-of-type > div:nth-of-type(2n-1){
+    border-right: 1px solid lightgrey;
+    box-sizing: border-box;
+  }
+
+  main form input{
+    width: 25%;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  }
+
+  main #try{
+    border: none;
+    width: 50%;
+    
+  }
+
+  main #try h3{
+    margin: 0;
+    text-align: left;
+  }
+
+  main #try p{
+    margin: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: 961px){
+  main > div > div{
+    width: 33%;
+  }
+  
+  main > div > div:nth-of-type(2){
+    border-right: 1px solid lightgrey;
+    box-sizing: border-box;
+  }
+
+  main > div > div:nth-of-type(4){
+    border-bottom: none;
+    border-right: 1px solid lightgrey;
+    box-sizing: border-box;
+  }
+
+  main > div > div:nth-of-type(5){
+    border-bottom: none;
+    box-sizing: border-box;
+  }
+
+  
+}
+
+@media (min-width: 1024px){
+  
+}
+
+@media (min-width: 1201px){
+  
+  footer > div:last-of-type > div > div{
+    padding: 0;
+  }
+
+  header{
+    flex-wrap: nowrap;
+  }
+
+  header > div:first-of-type{
+    order: 1;
+    float: left;
+    flex: 1;
+  }
+  header > div:last-of-type{
+    order: 2;
+    float: left;
+    flex: 1;
+  }
+
+  header form input{
+    display: none;
+  }
+
+  header form button{
+    width: initial;
+    padding: 1.5rem 3rem;
+  }
+
+  header h1{
+    order: -1;
+    font-size: 6rem;
+  }
+
+  header img{
+    padding-top: 15%;
+  }
+
+  header .prevUser{
+    text-align: left;
+  }
+
+  header .description{
+    order: 1;
+    float: right;
+    font-size: 2rem;
+  }
+
+  nav > i.fas{
+    display: none;
+  }
+  
   nav ul{
     display: block;
     float: right;
   }
+
+  nav ul li{
+    list-style-type: none;
+    padding-right: 1rem;
+  }
+
+  
 }
