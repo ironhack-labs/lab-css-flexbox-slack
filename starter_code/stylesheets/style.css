@@ -24,7 +24,6 @@ nav{
 
 nav > img{
   width: 19%;
-  height: 60%;
   padding-left: 8%;
   padding-top: 3%;
 }
@@ -37,9 +36,15 @@ nav > img{
 /* Header styles */
 header{
   display: flex;
-  flex-direction: column;
   margin-left: 8vh;
   margin-right: 8vh;
+  flex-flow: row wrap;
+  justify-content: center;
+  z-index: 15vh;
+}
+
+header form {
+  width: 100%;
 }
 
 header > img{
@@ -48,7 +53,7 @@ header > img{
 }
 
 header h1{
-  width: 45%;
+  width: 100%;
   margin-bottom: 5vh;
   font-size: 3em;
   font-weight: bold;
@@ -65,7 +70,7 @@ header p:not(:last-child){
 header p:last-child{
   text-align: center;
   line-height: 3em;
-  font-size: 1.8em;
+  font-size: 1.3em;
   color: var(--paragraph-grey);
 }
 
@@ -84,6 +89,7 @@ header button{
   border-radius: 8px;
   color: white;
   font-size: 1.5em;
+  width: 100%;
 }
 
 /* Main styles */
@@ -131,18 +137,21 @@ main div button{
   width: 85%;
 }
 
+/* styles for brands */
 main img:not(:last-child){
   width: 44%;
   border-bottom: 2px solid var(--border-brands);
   padding: 6vh 22%;
 }
 
+/* last brand is different because of border */
 main img:last-child{
   width: 44%;
   border-bottom: 2px solid var(--border-brands);
   padding: 6vh 28%;
 }
 
+/* Discover why button */
 main div button:last-child{
   background-color: var(--button-purple);
   height: 3em;
@@ -191,11 +200,12 @@ footer{
 
 footer > div{
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: center;
 }
 
 footer div:first-child > img{
+  /* margin to occupy all width of container */
   margin-right: 88%
 }
 
@@ -273,15 +283,74 @@ footer > div:last-child > div > i{
   margin: 0 2vh;
 }
 
-/* hasta maximo 768px */
-@media only screen and (max-width: 768px) {
+/* 768px maximum*/
+@media screen and (max-width: 767px) {
+  /* hide links from nav bar */
   nav ul{
     display: none;
   }
 } 
 
-@media only screen and (min-width: 961px) {
+/* between 768px and 961px */
+@media screen and (min-width: 768px) and (max-width: 960px){
+  /* hide links from nav bar */
   nav ul{
     display: none;
   }
+
+  /* styles to change width and positions of input and button */
+  header{
+    /* reset property */
+    justify-content: initial;
+    align-items: center;
+  }
+
+  /* inputs and types stop occupying whole container */
+  header form {
+    width: 45%;
+  }
+
+  header button {
+    width: 25%;
+    margin-left: 2vh;
+  }
+
+  /* change width of brands to generate two columns */
+  main > div:first-child{
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  main img:not(:last-child), main img:last-child{
+    width: 22%;
+    padding: 6vh 14%;
+  }
+  
+  /* change width of button */
+  main div button{
+    width: 25%;
+    margin: 0 14vh;
+  }
+
+  /* Styles for footer */
+  footer div{
+    /* reset property */
+    flex-flow: initial;
+    justify-content: initial;
+  }
+
+  footer div:first-child > img{
+    height: 12vh;
+    /* reset property */
+    margin-right: initial;
+  }
+
+  footer div:first-child ul > li:first-child, footer div:first-child ul > li:not(:first-child){
+    font-size: 1em;
+  }
 } 
+
+/* 1200 minimum */
+/* @media screen and (min-width: 1200px){
+} */
