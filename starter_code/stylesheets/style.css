@@ -8,9 +8,12 @@ nav grey: #5b5e6d;
 body{
     margin:0;
     font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace;
+    margin-top: 50px;
 }
 .container{
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 nav{        
     display: flex;
@@ -29,8 +32,12 @@ nav ul {
     display: none;
 }
 header{
-    margin-top: 50px;
     padding: 20px 20px;
+}
+header img{
+    width: 100%;
+    margin: 20px auto;
+    display: block;
 }
 input {
     border: 1px solid lightgrey;
@@ -38,10 +45,6 @@ input {
     margin: 10px 0;
     box-sizing: border-box;
 }
-    header img {
-        width: 100%;
-        margin: 20px 0;
-    }
     .center{
     text-align: center;
     }
@@ -50,6 +53,7 @@ input {
     }
 
     .section2{
+
     }
     .section3{
     }
@@ -85,6 +89,7 @@ input {
     .footerTitle{
         font-weight: bold;
     }
+
     .subFooter{
         background-color: #F4F3F4;
         font-weight: bold;
@@ -95,69 +100,6 @@ input {
         flex-wrap: wrap;
         justify-content: center;
         /* padding: 10px 20%; */
-    }
-@media only screen and (max-width: 768px) {
-    input {
-        width: 100%;
-    }
-    button{
-        width: 100%;
-    }
-    .section1 img {
-        width: 60%;
-        height: auto;
-        padding: 40px;
-    }
-    footer ul {
-        width: 100%;
-        flex: 1 50%;    
-        box-sizing:border-box;
-        padding-left: 0;
-    }
-    .subFooter div ul{
-        flex: 1 100%;
-        text-align: center;
-        display: flex;
-        margin: 0;
-    }
-    .subFooter ul li{
-        flex: 1;
-        padding: 0;
-    }
-    .subFooter div .language{
-        flex: 1 100%;
-        text-align: center;
-        padding: 0 10px;
-    }
-    .subFooter div .social-media i {
-        flex: 1 30%;
-        text-align: center;
-        padding: 0 5px;
-    }
-    .subFooter div ul, .subFooter div .language, .subFooter div .social-media {
-        padding: 10px;
-    }
-    .subFooter div img{
-        height: 20px;
-    }
-}
-@media (max-width:961px) and (min-width:767px) {
-    input {
-        width: 300px;
-    }
-    button{
-
-    }
-    .section1 img {
-        width: 40%;
-        height: auto;
-        padding: 4%;
-    }
-    footer ul {
-        width: 100%;
-        flex: 1 25%;    
-        box-sizing:border-box;
-        padding-left: 0;
     }
     .subFooter{
         padding: 10px 0;
@@ -188,5 +130,215 @@ input {
     }
     .subFooter div img{
         height: 20px;
+    }
+    .grey-line{
+        border-bottom: 1px solid lightgrey;
+    }
+@media only screen and (max-width: 768px) {
+    header .sign-in{
+        text-align: center;
+    }
+    input {
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+    .section1 img {
+        /* width: 60%;
+        height: auto;
+        padding: 40px; */
+    }
+    footer ul {
+        width: 100%;
+        flex: 1 50%;    
+        box-sizing:border-box;
+        padding-left: 0;
+    }
+    footer .slack-logo{
+        flex: 1 100%;
+    }
+    .subFooter div ul{
+        flex: 1 100%;
+        text-align: center;
+        display: flex;
+        margin: 0;
+    }
+    .subFooter ul li{
+        flex: 1;
+        padding: 0;
+    }
+    .subFooter div .language{
+        flex: 1 100%;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .subFooter div .social-media i {
+        flex: 1 30%;
+        text-align: center;
+        padding: 0 5px;
+    }
+    .subFooter div ul, .subFooter div .language, .subFooter div .social-media {
+        padding: 10px;
+    }
+    .subFooter div img{
+        height: 20px;
+    }
+    .logo-flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo-flex-container img {
+        flex: 1 100%;
+        width: 100%;
+        height: 100%;
+        padding: 50px 100px;
+        box-sizing: border-box;
+    }
+}
+@media (max-width:961px) and (min-width:767px) {
+    button{
+
+    }
+    /* .section1 img {
+        width: 40%;
+        height: auto;
+        padding: 4%;
+    } */
+    header img{
+        width: 80%;
+    }
+    footer ul {
+        width: 100%;
+        flex: 1 10%;    
+        box-sizing:border-box;
+        padding: 0;
+    }
+    footer .slack-logo{
+        flex: 1 10%;
+    }
+    .logo-flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo-flex-container img {
+        width: 50%;
+        height: 100%;
+        padding: 50px 50px; 
+        box-sizing: border-box;
+    }
+    .try-flex-container {
+        display: flex;
+    }
+    .try-content{
+        width: 50%;
+        flex: 1;
+    }
+    .try-button{
+        width: 50%;
+        flex: 1;
+    }
+}
+@media (max-width:1200px) and (min-width:960px) {
+    .section1 img {
+        width: 30%;
+        height: auto;
+        padding: 1%;
+    }
+    header img{
+        width: 60%;
+    }
+    footer ul {
+        width: 100%;
+        flex: 1 20%;    
+        box-sizing:border-box;
+        padding: 0;
+    }
+    footer .slack-logo{
+        flex: 1 20%;
+    }
+    .logo-flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo-flex-container img {
+        width: 33%;
+        height: 100%;
+        padding: 50px 50px; 
+        box-sizing: border-box;
+    }
+    .try-flex-container {
+        display: flex;
+    }
+    .try-content{
+        width: 50%;
+        flex: 1;
+    }
+    .try-button{
+        width: 50%;
+        flex: 1;
+    }
+}
+@media (min-width:1200px) {
+    .section1 img {
+        width: 30%;
+        height: auto;
+        padding: 1%;
+    }
+    header{
+        display: flex;
+    }
+    header img {
+        max-width: 500px;
+        flex: 1;
+        order: 1;
+        padding: 0 50px;
+    }
+    header .header-content {
+        flex: 1;
+        order: 2;
+    }
+    header h1{
+        font-size: 4em;
+    }
+    header input{
+        display: none;
+    }
+    footer ul {
+        width: 100%;
+        flex: 1 20%;    
+        box-sizing:border-box;
+        padding: 0;
+    }
+    footer .slack-logo{
+        flex: 1 20%;
+    }
+    .logo-flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo-flex-container img {
+        width: 33%;
+        height: 100%;
+        padding: 50px 50px; 
+        box-sizing: border-box;
+    }
+    .try-flex-container {
+        display: flex;
+    }
+    .try-content{
+        width: 50%;
+        flex: 1;
+    }
+    .try-button{
+        width: 50%;
+        flex: 1;
     }
 }
