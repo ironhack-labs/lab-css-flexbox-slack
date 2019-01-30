@@ -311,7 +311,22 @@ nav ul li{
   footer > div > div{
     flex: auto;
   }
-  
+
+  footer > div:last-of-type > div{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  footer > div:last-of-type > ul{
+    flex: 2 1 auto;
+    padding-left: 1rem;
+  }
+
+  footer > div:last-of-type > div > div{
+    padding: 0;
+  }
+
   header h1{
     font-size: 4rem;
   }
@@ -385,7 +400,17 @@ nav ul li{
     border-bottom: none;
   }
 
-  main > div:first-of-type > div:nth-of-type(2n-1){
+  main > div:first-of-type > div:nth-of-type(1){
+    border-right: 1px solid lightgrey;
+    box-sizing: border-box;
+  }
+
+  main > div:first-of-type > div:nth-of-type(3){
+    border-right: 1px solid lightgrey;
+    box-sizing: border-box;
+  }
+
+  main > div:first-of-type > div:nth-of-type(5){
     border-right: 1px solid lightgrey;
     box-sizing: border-box;
   }
@@ -418,25 +443,33 @@ nav ul li{
 }
 
 @media (min-width: 961px){
-  main > div > div{
+ 
+  main > div:first-of-type > div{
     width: 33%;
   }
   
-  main > div > div:nth-of-type(2){
+  main > div:first-of-type > div:nth-of-type(1){
     border-right: 1px solid lightgrey;
     box-sizing: border-box;
   }
 
-  main > div > div:nth-of-type(4){
-    border-bottom: none;
+  main > div:first-of-type > div:nth-of-type(2){
     border-right: 1px solid lightgrey;
     box-sizing: border-box;
   }
 
-  main > div > div:nth-of-type(5){
+  main > div:first-of-type > div:nth-of-type(3){
+    border-right: none;
+    box-sizing: border-box;
+  }
+  
+  main > div:first-of-type > div:nth-of-type(4){
+    border-right: 1px solid lightgrey;
     border-bottom: none;
     box-sizing: border-box;
   }
+
+  
 
   
 }
@@ -482,16 +515,30 @@ nav ul li{
 
   header img{
     padding-top: 15%;
+    max-width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   header .prevUser{
     text-align: left;
+    margin-top: 0.5rem;
   }
 
   header .description{
     order: 1;
     float: right;
     font-size: 2rem;
+  }
+
+  main > div > h2{
+    width: 100%;
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+
   }
 
   nav > i.fas{
@@ -501,12 +548,19 @@ nav ul li{
   nav ul{
     display: block;
     float: right;
+    padding-left: 60%;
   }
 
   nav ul li{
     list-style-type: none;
-    padding-right: 1rem;
+    padding-right: 2rem;
+    color: #5b5e6d;
   }
+
+  
+  
+  
+  
 
   
 }
