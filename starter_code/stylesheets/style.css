@@ -28,9 +28,7 @@ nav{
 nav img{
     width: 100px;
 }
-nav ul {
-    display: none;
-}
+
 header{
     padding: 20px 20px;
 }
@@ -134,7 +132,28 @@ input {
     .grey-line{
         border-bottom: 1px solid lightgrey;
     }
+    .nav-flex-container{
+        display: flex;
+        justify-content: flex-end;
+        width: calc(100% - 180px);
+    }
+    .nav-flex-container li{
+        list-style: none;
+        text-align: center;
+        color: grey;
+        padding: 15px;
+    }
+    .nav-button{
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    .nav-flex-container{
+        margin: 0;
+    }
 @media only screen and (max-width: 768px) {
+    nav ul, .nav-flex-container {
+        display: none;
+    }
     header .sign-in{
         text-align: center;
     }
@@ -198,6 +217,9 @@ input {
     }
 }
 @media (max-width:961px) and (min-width:767px) {
+    nav ul {
+        display: none;
+    }
     button{
 
     }
@@ -311,12 +333,12 @@ input {
     }
     footer ul {
         width: 100%;
-        flex: 1 20%;    
+        flex: 1 15%;    
         box-sizing:border-box;
         padding: 0;
     }
     footer .slack-logo{
-        flex: 1 20%;
+        flex: 1 40%;
     }
     .logo-flex-container{
         display: flex;
