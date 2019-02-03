@@ -28,6 +28,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+ul {
+  list-style-type: none;
+}
+@media (min-width: 767px) and (max-width: 961px) {
+  .MainContainer{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid blue;
+  }
+}
 @media (max-width: 768px) {
   .MainContainer{
     width: 90%;
@@ -214,5 +224,81 @@ img {
     padding-bottom: 3px;
     border-bottom: 1px solid #192592;
     color: #192592;
+  }
+  /* Footer */
+  .Footer{
+
+  }
+  .FooterContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .FooterLogo{
+    width: 155px;
+    height: 155px;
+    margin-bottom: 10px;
+  }
+  .FooterList{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .FooterList ul{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 46%;
+    margin-bottom: 25px;
+  }
+  .FooterList ul:nth-child(2n){
+    margin-left: 4%;
+  }
+  .FooterList li{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .FooterList li.FooterList__title{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  .FooterBottom{
+    background-color: #F4F3F4;
+    padding: 15px 0;
+  }
+  .FooterBottom ul{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .FooterBottom ul li{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 8px;
+  }
+  .FooterBottomCopy{
+
+  }
+  .FooterBottomCopy__select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto 20px auto;
+  }
+  .FooterBottomCopy__select img{
+    width: 25px;
+  }
+  .FooterBottom__rrss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .FooterBottom__rrss i {
+    margin: 0 8px;
+    font-size: 1.5rem;
   }
 }
