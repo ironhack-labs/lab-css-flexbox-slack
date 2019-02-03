@@ -1,7 +1,624 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 0.9;
+}
+
+p, input, footer li, footer span, i {
+    font-family: CircularPro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: normal;
+    font-size: 0.9rem;
+    color: #5b5e6d;
+}
+
+p {
+    margin: 0;
+}
+
+.background-grey {
+    background-color: #F4F3F4;
+}
+
+.background-white {
+    background-color: white;
+}
+
+.button {
+    background-color: #192592;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+    padding: 19px 0;
+    margin: 12px 0;
+    width: 100%;
+    font-weight: 700;
+}
+
+.white-button {
+    color: #192592;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 19px 0;
+    margin: 12px 0;
+    width: 100%;
+    font-weight: 700;
+}
+
+.email {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+    margin: 12px 0;
+}
+
+::placeholder {
+    padding-left: 12px;
+}
+
+.main-titles {
+    color: #2C303F;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p.main-titles {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+h1.main-titles, h2.main-titles {
+    padding-top: 20px;
+}
+
+h2.main-titles {
+    text-align: center;
+}
+
+#nav {
+    color: #5b5e6d;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5%;
+    height: 50px;
+    width: 90%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#nav ul {
+    display: none;
+}
+
+.nav-replace {
+    height: 50px;
+}
+
+.nav-logo {
+    height: 40px;
+    width: auto;
+}
+
+.menu-button {
+    height: 30px;
+    width: auto;
+}
+
+.header :nth-child(1) {
+    order: 2;
+}
+
+.header img {
+    padding: 40px 0 0 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    margin: 0 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-title {
+    align-self: flex-start;
+}
+
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-ul {
+    list-style-type: none;
+    width: 40%;
+}
+
+.flex-ul li {
+    padding: 5px 0;
+    font-size: 0.8rem;
+}
+
+.list-title {
+    font-weight: bold;
+}
+
+.flex-container-padding {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 5% 30px 5%;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.flex-footer, .flex-footer2, .flex-footer3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.flex-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-footer2, .flex-footer3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-footer2 img {
+    margin-right: 10px;
+}
+
+.flex-footer2 span {
+    font-size: 0.8rem;
+}
+
+ul {
+    padding: 0;
+}
+
+.flex-footer li {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.flex-footer2 img {
+    width: 20px;
+    height: 20px;
+}
+
+i {
+    padding: 0 10px;
+}
+
+.logo-footer {
+    width: 30%;
+    height: 30%;
+    margin-left: -10px;
+    margin-bottom: -20px;
+    margin-right: 70%;
+}
+
+.companies {
+    width: 100%;
+}
+
+.companies-img1 {
+    width: 50%;
+    padding: 10% 25%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.companies-img2 {
+    width: 70%;
+    padding: 10% 15%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+    text-align: center;
+    padding: 0 0 15px 0;
+}
+
+@media (min-width: 767px) and (max-width: 961px) {
+    .button, .white-button, .email {
+        width: 160px; 
+    }
+
+    .header .email {
+        width: 300px;
+    }
+
+    header.flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .email {
+        padding: 14px 0;
+    }
+
+    main .flex-container-padding {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 50px 5%;
+    }
+
+    p.main-titles {
+        padding: 0;
+        font-size: 1.5em;
+        flex-grow: 2;
+        margin-right: 30%;
+    }
+
+    .secondary-text {
+        order: 1;
+        margin-top: -30px;
+    }
+
+    .flex-container-padding .button {
+        margin: 8px 0 0 7px;
+    }
+
+    .flex-container-padding input {
+        margin: 8px 0 0 0;
+    }
+
+    main .white-button {
+        margin-bottom: 50px;
+    }
+
+    .companies.flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 0 40px 0;
+    }
+
+    .companies-img1, .companies-img2 {
+        width: 20%;
+        padding: 20px 10%;
+    }
+
+    .flex-list {
+        justify-content: flex-end;
+    }
+
+    .flex-ul {
+        width: 20%;
+    }
+
+    .logo-footer {
+        width: 20%;
+        height: 20%;
+        margin-right: 0;
+    }
+
+    .flex-footer, .flex-footer2, .flex-footer3 {
+        width: 25%;
+        float: left;
+    }
+
+    .flex-footer {
+        margin: 0 10% 0 5%;
+    }
+
+    .flex-footer li {
+        display: inline;
+        margin: 0 3px;
+    }
+
+    .header img {
+        width: 50%;
+        height: 50%;
+        margin-left: 30%;
+    }
+
+    .header button {
+        margin: 0 30% 0 7px;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h2 {
+        font-size: 2.1em;
+    }
+
+    .main-text {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1024px) {
+
+    .button, .white-button, .email {
+        width: 160px; 
+    }
+
+    .header .email {
+        width: 300px;
+    }
+
+    header.flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .email {
+        padding: 14px 0;
+    }
+
+    main .flex-container-padding {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 50px 5%;
+    }
+
+    p.main-titles {
+        padding: 0;
+        font-size: 1.5em;
+        flex-grow: 2;
+        margin-right: 30%;
+    }
+
+    .secondary-text {
+        order: 1;
+        margin-top: -30px;
+    }
+
+    .flex-container-padding .button {
+        margin: 8px 0 0 7px;
+    }
+
+    .flex-container-padding input {
+        margin: 8px 0 0 0;
+    }
+
+    main .white-button {
+        margin-bottom: 50px;
+    }
+
+    .companies.flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 0 40px 0;
+    }
+
+    .companies-img1, .companies-img2 {
+        width: 20%;
+        padding: 20px 5%;
+    }
+
+    .flex-list {
+        justify-content: flex-end;
+    }
+
+    .flex-ul {
+        width: 20%;
+    }
+
+    .logo-footer {
+        width: 20%;
+        height: 20%;
+        margin-right: 0;
+    }
+
+    .flex-footer, .flex-footer2, .flex-footer3 {
+        width: 25%;
+        float: left;
+    }
+
+    .flex-footer {
+        margin: 0 10% 0 5%;
+    }
+
+    .flex-footer li {
+        display: inline;
+        margin: 0 3px;
+    }
+
+    .header img {
+        width: 50%;
+        height: 50%;
+        margin-left: 30%;
+    }
+
+    .header button {
+        margin: 0 30% 0 7px;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h2 {
+        font-size: 2.1em;
+    }
+
+    .main-text {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .button, .white-button, .email {
+        width: 160px; 
+    }
+
+    .header .email {
+        width: 300px;
+    }
+
+    header.flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .email {
+        padding: 14px 0;
+    }
+
+    main .flex-container-padding {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 50px 5%;
+    }
+
+    p.main-titles {
+        padding: 0;
+        font-size: 1.5em;
+        flex-grow: 2;
+        margin-right: 30%;
+    }
+
+    .secondary-text {
+        order: 1;
+        margin-top: -30px;
+    }
+
+    .flex-container-padding .button {
+        margin: 8px 0 0 7px;
+    }
+
+    .flex-container-padding input {
+        margin: 8px 0 0 0;
+    }
+
+    main .white-button {
+        margin-bottom: 50px;
+    }
+
+    .companies.flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 0 40px 0;
+    }
+
+    .companies-img1, .companies-img2 {
+        width: 20%;
+        padding: 20px 5%;
+    }
+
+    .flex-list {
+        justify-content: flex-end;
+    }
+
+    .flex-ul {
+        width: 20%;
+    }
+
+    .logo-footer {
+        width: 20%;
+        height: 20%;
+        margin-right: 0;
+    }
+
+    .flex-footer, .flex-footer2, .flex-footer3 {
+        width: 25%;
+        float: left;
+    }
+
+    .flex-footer {
+        margin: 0 10% 0 5%;
+    }
+
+    .flex-footer li {
+        display: inline;
+        margin: 0 3px;
+    }
+
+    .header img {
+        width: 50%;
+        height: 50%;
+        margin-left: 30%;
+    }
+
+    .header button {
+        margin: 0 30% 0 7px;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h2 {
+        font-size: 2.1em;
+    }
+
+    .main-text {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    #nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .header :nth-child(1) {
+        order: 0;
+        margin: 0;
+        padding: 0;
+        width: 600px;
+        height: auto;
+    }
+
+    h1.main-titles {
+        margin: 0;
+        width: 45%;
+    }
+
+    .main-text {
+        width: 45%;
+    }
+
+    header.flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    header .button {
+        margin: 0;
+    }
+}
