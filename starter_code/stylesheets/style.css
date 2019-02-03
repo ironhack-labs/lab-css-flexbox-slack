@@ -31,18 +31,10 @@ img {
 ul {
   list-style-type: none;
 }
-@media (min-width: 767px) and (max-width: 961px) {
+@media (max-width: 961px) {
   .MainContainer{
     width: 90%;
     margin: 0 auto;
-    border: 1px solid blue;
-  }
-}
-@media (max-width: 768px) {
-  .MainContainer{
-    width: 90%;
-    margin: 0 auto;
-    border: 1px solid red;
   }
   /*menu styless*/
   .MainMenu{
@@ -108,7 +100,6 @@ ul {
   .MainContent{
     padding-top: 70px;
   }
-  /* Header styless */
   .Header{
     padding-top: 47px;
   }
@@ -132,17 +123,22 @@ ul {
     line-height: 1.8rem;
     margin-bottom: 35px;
   }
+  .Form {
+    display: flex;
+    width: 70%;
+  }
   .Form input {
     height: 60px;
-    width: 100%;
+    width: 340px;
     border: 1px solid #ccc;
     margin-bottom: 15px;
     font-size: 1rem;
     padding: 0 15px;
+    margin-right: 20px;
   }
   .Form button {
     height: 60px;
-    width: 100%;
+    width: 170px;
     background-color: #192592;
     color: #ffffff;
     border: 0;
@@ -151,7 +147,7 @@ ul {
     margin-bottom: 15px;
   }
   .HeaderContanier__singIn {
-    text-align: center;
+    text-align: left;
     font-size: 1.2rem;
   }
   .HeaderContanier__image{
@@ -181,13 +177,15 @@ ul {
     background-color: #fff;
     font-size: 1rem;
     font-weight: bold;
-    width: 100%;
+    width: 180px;
     height: 60px;
-    margin-bottom: 80px;
+    margin: 0 auto 80px auto;
+    display: block;
   }
   .GoodCompany__imagesContent{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .GoodCompany__images{
     border-bottom: 1px solid #cccccc;
@@ -195,18 +193,22 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 49%;
+  }
+  .GoodCompany__images:nth-child(2n){
+    border-left: 1px solid #cccccc;
   }
   .GoodCompany__images:last-child {
     border-bottom: 0;
   }
   .GoodCompany__images img {
-    height: 50px;
-    width: auto;
+    width: 70%;
+    height: auto;
   }
+  /* TryIt */
   .TryIt{
     border-bottom: 1px solid #cccccc;
     padding: 50px 0;
-    text-align: center;
   }
   .TryIt__title{
     font-family: Helvetica, sans-serif;
@@ -225,11 +227,189 @@ ul {
     border-bottom: 1px solid #192592;
     color: #192592;
   }
-  /* Footer */
-  .Footer{
-
-  }
   .FooterContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .FooterLogo{
+    width: 155px;
+    height: 155px;
+    margin-bottom: 10px;
+  }
+  .FooterList{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .FooterList ul{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+  }
+  .FooterList li{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .FooterList li.FooterList__title{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  .FooterBottom{
+    background-color: #F4F3F4;
+    padding: 15px 0;
+  }
+  .FooterBottom ul{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .FooterBottom ul li{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 8px;
+  }
+  .FooterBottomCopy__select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto 20px auto;
+  }
+  .FooterBottomCopy__select img{
+    width: 25px;
+  }
+  .FooterBottom__rrss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .FooterBottom__rrss i {
+    margin: 0 8px;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 767px) and (max-width: 961px) {
+  .MainContainer{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid blue;
+  }
+  .TryIt{
+    border-bottom: 1px solid #cccccc;
+    padding: 50px 0;
+    text-align: left;
+  }
+  .TryItContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .TryIt .Form {
+    width: 350px
+  }
+  .TryIt .Form input, .TryIt .Form button{
+    width: 48%;
+  }
+  .FooterContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .FooterList {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 87%;
+  }
+  .FooterList ul {
+    width: 20%;
+  }
+  .FooterBottomContent{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .FooterBottomCopy {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .FooterBottom ul {
+    margin-bottom: 0;
+  }
+  .FooterBottomCopy__select{
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .MainContainer{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+  /* Header styless */
+  .Form {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Form input {
+    width: 100%;
+  }
+  .Form button {
+    width: 100%;
+  }
+  .HeaderContanier__singIn {
+    text-align: center;
+  }
+  /* GoodCompany */
+  .GoodCompany button{
+    border: 1px solid #192592;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 80px;
+  }
+  .GoodCompany__imagesContent{
+    display: flex;
+    flex-direction: column;
+  }
+  .GoodCompany__images{
+    border-bottom: 1px solid #cccccc;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .GoodCompany__images:nth-child(2n) {
+    border-right: 0;
+  }
+  .GoodCompany__images img {
+    height: 50px;
+    width: auto;
+  }
+  /* TryIt */
+  .TryIt{
+    text-align: center;
+  }
+  /* Footer */
+  .FooterList{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .FooterList ul{
+    width: 46%;
+  }
+  .FooterList ul:nth-child(2n){
+    margin-left: 4%;
+  }
+  
+  /* .FooterContainer{
     display: flex;
     flex-direction: column;
   }
@@ -278,9 +458,6 @@ ul {
     font-size: 1rem;
     margin: 0 8px;
   }
-  .FooterBottomCopy{
-
-  }
   .FooterBottomCopy__select{
     display: flex;
     flex-direction: row;
@@ -300,5 +477,5 @@ ul {
   .FooterBottom__rrss i {
     margin: 0 8px;
     font-size: 1.5rem;
-  }
+  } */
 }
