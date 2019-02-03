@@ -1,16 +1,19 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
-
 /*** General ***/
+@font-face {
+    font-family: Averta;
+    src: url(../slack-fonts/Averta/AvertaStd-Regular.ttf);
+  }
+@font-face {
+    font-family: Glosa;
+    src: url(../slack-fonts/Glosa/Glosa\ Bold.otf);
+}
 body{
     margin:0;
-    font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace;
+    font-family: Averta;
     margin-top: 50px;
+}
+h1, h2 {
+    font-family: Glosa;
 }
 .container{
     padding: 20px;
@@ -47,6 +50,9 @@ nav{
     padding: 10px 20px;
     border-bottom: 1px solid lightgrey;
 }
+nav a, #mobile-menu a{
+    text-decoration: none;
+}
 nav img{
     width: 100px;
 }
@@ -77,6 +83,7 @@ header img{
     width: 100%;
     margin: 20px auto;
     display: block;
+    height: 100%;
 }
 input {
     border: 1px solid lightgrey;
@@ -89,10 +96,7 @@ input {
 .section1{
     background-color: #F4F3F4;
 }
-.section2{
-}
-.section3{
-}
+
 /*** Logo Section ***/
 .logo-flex-container{
     display: flex;
@@ -104,6 +108,36 @@ input {
     height: 100%;
     padding: 50px;
     box-sizing: border-box;
+}
+
+/*** MOBILE MENU ***/
+#mobile-menu li{
+    width: 200px;
+}
+#mobile-menu{
+    margin-top: 71px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 220px;
+    border-bottom: 1px solid lightgrey;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+}
+#hamburger-button img{
+    width: 30px;
+}
+#hamburger-button a{
+    cursor: pointer;
+}
+#hamburger-button {
+    display: none;
+}
+#mobile-menu{
+    display: none;
 }
 
 /*** Footer ***/
@@ -172,8 +206,15 @@ footer ul li{
 
 
 @media only screen and (max-width: 768px) {
-    .nav-flex-container {
+    #hamburger-button{
+        display: blocK;
+    }
+    .nav-flex-container#desktop-menu li {
         display: none;
+    }
+
+    .nav-flex-container li#hamburger-button {
+        display: block;
     }
     header .sign-in{
         text-align: center;
@@ -223,6 +264,7 @@ footer ul li{
         height: 20px;
     }
 }
+
 @media (max-width:961px) and (min-width:767px) {
     nav ul {
         display: none;
