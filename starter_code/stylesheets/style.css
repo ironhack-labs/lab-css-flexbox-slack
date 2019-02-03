@@ -13,7 +13,7 @@ body {
  }
 
 .spacer {
-    height: 50px;
+    height: 60px;
 }
 
 .align-center {
@@ -29,6 +29,7 @@ button {
     background: white;
     border-radius: 5px;
     border-color: #192592;
+    border-width: 2px 1px;
     width: 100%;
     height: 50px;
 }
@@ -41,68 +42,123 @@ button {
     padding: 25px;
 }
 
+/* navbar */
+
 .topnav {
     display: flex;
     align-items: center;
     position: fixed;
     border-bottom: solid lightgrey 1px;
     background-color: white;
-    height: 50px;
+    height: 60px;
     top: 0;
     width: 100%;
     }
 
 .topnav a.icon {
     color: #5b5e6d;
-    font-size: 2em;
+    font-size: 2.5em;
     position: absolute;
-    right: 5px;
-    top: 10px;
+    right: 20px;
+    top: 6px;
     }
 
 ul {
     list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
 }
     
 
 .topnav .myLinks {
         display: none;
         background: white;
-        position: fixed;
+        position: absolute;
         right: 0;
-        top: 35px;
+        top: 45px;
       }
 
 nav img {
-    width: 100px;
+    width: 120px;
     position: fixed;
     top: 0;
-    left: 20px;
-    height: 50px
+    left: 15px;
+}
+
+/* discover-why-section */
+
+.discover-why-section {
+    background-color:  #F4F3F4;
 }
 
 .discoverwhy-container {
-    background: #F4F3F4;
     text-align: center;
 }
 
-.img img {
+.discover-why-img img {
     max-height: 70px;
     max-width: 60%;
     padding: 30px;
 }
 
-.img {
+.discover-why-img {
     margin: 0 auto;
     text-align: center;
     width: 80%;
+    border-bottom: 1px  lightgray solid;
+}
+
+#ticketmaster-div {
+    border-bottom: 0px;
 }
 
 .hr-bottom {
     display: none;
 }
 
-.footerlinks-container {
+.border-bottom {
+    border-bottom: 1px  lightgray solid;
+}
+
+
+
+/* try it section */
+
+.try-it-container {
+    border-bottom: 1px solid lightgray;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+    border-radius: 5px;
+    border:1px solid #cccccc;
+    box-sizing: border-box; 
+    padding-left: 10px;
+    /* padding-right: -10px; */
+}
+
+
+/* footer */
+
+footer {
+    color: gray;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#slackfootimg {
+    max-width: 120px;
+    height: 120px;
+    }
+
+.link-list-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -112,10 +168,6 @@ nav img {
     font-weight: bold;
 }
 
-#slackfootimg {
-    max-width: 150px;
-    height: 100px;
-    }
 
 .ul-flex-row {
     display: flex;
@@ -149,49 +201,29 @@ nav img {
     max-height: 30px;
 }
 
-input {
-    width: 100%;
-    margin: 10px 0;
-    height: 50px;
-    border-radius: 5px;
-    border:1px solid #cccccc
-}
 
-input::placeholder {
-    padding-left: 10px;
-}
 
-footer {
-    color: gray;
-}
 
  ul li {
      margin: 15px;
  }
 
- .link-list-container {
-     display: flex;
-     flex-wrap: wrap;
- }
-   
 
+   
+/* small screen */
  @media only screen and (min-width: 767px) {
 
+/* general small screen */
+
+button {
+    width: 20%;
+}
+    
 .hr-bottom {
     display: block;
 }    
 
-.img {
-    width: 49%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img img {
-   width: 80%;
-}
+/* discover-why section small screen */
 
 .discoverwhy-container {
     display: flex;
@@ -199,15 +231,13 @@ footer {
     flex-wrap: wrap;
 }
 
-.discoverwhy-container img {
-    text-align: center;
-    }
-
-
-
-.hr {
-    display: none;
- }
+.discover-why-img {
+    width: 49%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
  .border-top {
      border-top: solid lightgrey 1px;
@@ -217,14 +247,9 @@ footer {
      border-left: solid lightgrey 1px;
  }
 
-.oracle-line {
-    display: none;
+#oracle-div {
+    border-bottom: 0px;
 }
-
-button {
-    width: 20%;
-}
-
 
 
 .flex-row {
@@ -234,13 +259,25 @@ button {
 
 }
 
+/* try-it section small screen */
+
 input {
-    width: 60%;
+    width: 45%;
 }
 
 .email-input {
     width: 50%;
     align-items: center;
+}
+
+.email-input button {
+    width: 40%;
+}
+
+/* footer small screen */
+
+.main-footer {
+    flex-direction: row;
 }
 
 .link-list-container {
@@ -268,5 +305,48 @@ input {
 .flag-social > * {
     margin: 10px;
 }
+ }
+
+
+ @media only screen and (min-width: 960px) {
+
+    .discover-why-img {
+        width: 32%;
+        border-top: 0px;
+    }
+    
+    .la-times-div {
+        border: 0px;
+    }
+
+    .oracle-div, .harvard-div {
+        border-left: 1px solid lightgray;
+    }
+
+ }
+
+
+ @media only screen and (min-width: 1200px) {
+
+    .topnav .myLinks {
+        display: flex;
+        top: 0;
+        margin: 5px;
+        }
+
+    .topnav a.icon {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-intro {
+        order: 1;
+        width: 40%;
+    }
+    
 
  }

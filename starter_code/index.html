@@ -13,65 +13,66 @@
 </head>
 
 <body>
+  
   <div class="spacer"></div>
   <nav class="topnav">
     <img src="./images/slack-logo.png" alt="slack_logo">
     <ul class="myLinks" id="myLinks">
-      <li>Why Slack?</li>
-      <li>Pricing</li>
-      <li>About Us</li>
-      <li>Your Workspaces</li>
+      <li><a href="#">Why Slack?</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Your Workspaces</a></li>
     </ul>
     <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
       <i class="fa fa-bars"></i>
     </a>
   </nav>
 
-  <header class="padding">
-      <div class="align-center">
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    </div>
+  <header class="header padding">
+    <div class="header-intro">
     <h1>Where Work Happens</h1>
     <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+    
+        <div class="flex-row email-input">
+            <input placeholder="Email address"/>
+            <button type="button" name="button">GET STARTED</button>
+            </div>  
+
+   <p>Already using Slack? <a href="#">Sign in</a></p>
+    </div>
     <div class="align-center">
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+        <img src="./images/home_talking.png" alt="home_work_happening">
     </div>
   </header>
   <main>
+    <section class="discover-why-section">
       <div class="align-center padding">
       <h2>You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
       <button>DISCOVER WHY</button>
       </div>
       <div class="discoverwhy-container padding">
-        <div class="img" >
+        <div class="discover-why-img border-bottom" >
           <img src="./images/airbnb-logo.png" alt="">
-          <div class="hr"></div>
         </div>
-        <div class="img border-left">
+        <div class="discover-why-img border-left">
           <img src="./images/capital-one-logo.png" alt="">
-          <div class="hr"></div>
         </div>
-        <div class="img border-top">
+        <div class="discover-why-img border-top harvard-div">
           <img src="./images/harvard-logo.png" alt="">
-          <div class="hr"></div>
         </div>
-        <div class="img border-top border-left">
+        <div class="la-times-div discover-why-img border-top border-left">
           <img src="./images/los-angeles-times-logo.png" alt="">
-          <div class="hr"></div>
         </div>
-        <div class="img border-top">
+        <div id="oracle-div" class="discover-why-img border-top oracle-div">
           <img src="./images/oracle-logo.png" alt="">
-          <div class="hr oracle-line"></div>
         </div>
-        <div class="img border-top border-left">
+        <div id="ticketmaster-div" class="discover-why-img border-top border-left ticketmaster-div">
           <img src="./images/ticketmaster-logo.png" alt="">
-          <div class="hr-bottom"></div>
         </div>
       </div>
-      
-    <div class="align-center padding flex-row">
+    </section>
+    <section class="try-it-container align-center padding flex-row">  
       <div>
       <p>Try it for free</p>
       <p>Already using Slack? <a href="">Sign in</a></p>
@@ -80,13 +81,16 @@
       <input placeholder="Email address"/>
       <button type="button" name="button">GET STARTED</button>
       </div>
-    </div>
+  </section>
+    
   </main>
+
   <footer>
     <div class="imglinks-container flex-row align-top">
+      <div class="main-footer">
       <img id="slackfootimg" src="./images/iso-slack.png" alt="">
-      <div class="footerlinks-container">
-        <div class="link-list-container">
+      <div class="link-list-container">
+
       <ul class="linklist">
         <li>COMPANY</li>
         <li>About Us</li>
@@ -121,7 +125,8 @@
       </ul>
     </div>
       </div>
-    <div class="container-end-page padding">
+    </div>
+    <div class="container-end-page">
       <ul class="ul-flex-row">
         <li>Status</li>
         <li>Privacy & Terms</li>
