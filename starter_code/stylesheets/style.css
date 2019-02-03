@@ -14,13 +14,14 @@ body {
   color: #5b5e6d;
   font-size: 16px;
 }
-div, input {
+div, input, button {
   box-sizing: border-box;
+  border-radius: 3px;
 }
 a{
   text-decoration: none;
 }
-input, buttom {
+input, button {
   -webkit-appearance: none;
 }
 img {
@@ -38,7 +39,7 @@ img {
     width: 100%;
     background-color: #fff;
     position: fixed;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #5b5e6d;
     top: 0; 
     left: 0;
   }
@@ -65,7 +66,7 @@ img {
   .MainMenu__menu{
     width: 25px;
     height: 25px;
-    border: 1px solid grey;
+    border: 1px solid #5b5e6d;
     content: "\f0c9"; 
     font-family: FontAwesome;
   }
@@ -121,21 +122,19 @@ img {
     line-height: 1.8rem;
     margin-bottom: 35px;
   }
-  .HeaderContanier__text form input {
+  .Form input {
     height: 60px;
     width: 100%;
     border: 1px solid #ccc;
-    border-radius: 3px;
     margin-bottom: 15px;
     font-size: 1rem;
     padding: 0 15px;
   }
-  .HeaderContanier__text form button {
+  .Form button {
     height: 60px;
     width: 100%;
     background-color: #192592;
     color: #ffffff;
-    border-radius: 3px;
     border: 0;
     font-size: 1rem;
     font-weight: bold;
@@ -147,5 +146,73 @@ img {
   }
   .HeaderContanier__image{
     width: 100%;
+  }
+  /* GoodCompany */
+  .GoodCompany{
+    background-color: #F4F3F4;
+    padding: 55px 0 80px 0;
+  }
+  .GoodCompany__title{
+    width: 90%;
+    margin: 0 auto 35px auto;
+    text-align: center;
+  }
+  .GoodCompany__title h2{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 13px;
+  }
+  .GoodCompany__title p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .GoodCompany button{
+    border: 1px solid #192592;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 80px;
+  }
+  .GoodCompany__imagesContent{
+    display: flex;
+    flex-direction: column;
+  }
+  .GoodCompany__images{
+    border-bottom: 1px solid #cccccc;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .GoodCompany__images:last-child {
+    border-bottom: 0;
+  }
+  .GoodCompany__images img {
+    height: 50px;
+    width: auto;
+  }
+  .TryIt{
+    border-bottom: 1px solid #cccccc;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .TryIt__title{
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .TryIt__subtitle{
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .TryIt__subtitle a {
+    padding-bottom: 3px;
+    border-bottom: 1px solid #192592;
+    color: #192592;
   }
 }
