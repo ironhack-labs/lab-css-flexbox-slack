@@ -5,48 +5,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- used for logo's in footer -->
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 
 <body>
+  <!-- navigation start -->
   <nav>
     <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
+    <ul class="menu">
       <li>Why Slack?</li>
       <li>Pricing</li>
       <li>About Us</li>
       <li>Your Workspaces</li>
     </ul>
+    <img class="hamburger" src="./images/hamburger.png" alt="menu-button">
   </nav>
-  <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
+  <!-- navigation end -->
+
+  <!-- header start -->
+  <header class="perc80">
     <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract,
+      finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+    <form action="post">
+      <!-- <label for="Email address">Email address</label> -->
+      <input type="email" name="email" placeholder="Email address">
+      <button class="button-blue" type="button" name="button">GET STARTED</button>
+    </form>
+    <p class="p-center">Already using Slack? <a href="#">Sign in</a></p>
+    <img src="./images/home_talking.png" alt="home_work_happening">
   </header>
+  <!-- header end -->
+
+  <!-- main incl social proof start -->
   <main>
-    <div>
-      <h2>You´re in good company</h2>
-      <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
+    <div class="main-grey">
+      <div class="perc80">
+        <h2>You´re in good company</h2>
+        <p>Millions of people around the world have already made Slack the place where their work happens.</p>
+        <button class="button-white">DISCOVER WHY</button>
+        <img src="./images/airbnb-logo.png" alt="">
+        <img src="./images/capital-one-logo.png" alt="">
+        <img src="./images/harvard-logo.png" alt="">
+        <img src="./images/los-angeles-times-logo.png" alt="">
+        <img src="./images/oracle-logo.png" alt="">
+        <img src="./images/ticketmaster-logo.png" alt="">
+      </div>
     </div>
-    <div>
-      <p>Try it for free</p>
+    <div class="perc80">
+      <h3>Try it for free</h3>
       <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+      <form action="post">
+        <!-- <label for="Email address">Email address</label> -->
+        <input type="email" name="email" placeholder="Email address">
+        <button class="button-blue" type="button" name="button">GET STARTED</button>
+      </form>
     </div>
   </main>
+  <!-- main incl social proof end -->
+
+  <!-- footer start -->
   <footer>
-    <div>
-      <img src="./images/iso-slack.png" alt="">
+    <img src="./images/iso-slack.png" alt="">
+    <div class="footer-info perc80">
       <ul>
         <li>COMPANY</li>
         <li>About Us</li>
@@ -80,22 +104,27 @@
         <li>Slack Fund</li>
       </ul>
     </div>
-    <div>
-      <ul>
+
+    <div class="footer-contact">
+      <ul class="column-3-center">
         <li>Status</li>
         <li>Privacy & Terms</li>
         <li>Contact Us</li>
       </ul>
-      <div>
-        <img src="./images/us-flag.png" alt="">
+      <div class="column-3-center">
+        <img class="language-img" src="./images/us-flag.png" alt="">
         <span>English (US)</span>
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+      <div class="column-3-center">
         <i class="fa fa-twitter" aria-hidden="true"></i>
         <i class="fa fa-facebook" aria-hidden="true"></i>
         <i class="fa fa-youtube-play" aria-hidden="true"></i>
       </div>
     </div>
   </footer>
+  <!-- footer end -->
+
 </body>
 
 </html>
