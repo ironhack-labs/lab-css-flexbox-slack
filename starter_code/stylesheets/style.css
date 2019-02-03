@@ -31,12 +31,12 @@ img {
 ul {
   list-style-type: none;
 }
-@media (max-width: 961px) {
+
+@media (max-width: 1024px) {
   .MainContainer{
     width: 90%;
     margin: 0 auto;
   }
-  /*menu styless*/
   .MainMenu{
     width: 100%;
     background-color: #fff;
@@ -66,11 +66,16 @@ ul {
     height: auto;
   }
   .MainMenu__menu{
-    width: 25px;
-    height: 25px;
-    border: 1px solid #5b5e6d;
-    content: "\f0c9"; 
-    font-family: FontAwesome;
+    width: 35px;
+    height: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .MainMenu__menu span{
+    width: 100%;
+    height: 5px;
+    background-color: #5b5e6d;
   }
   .MainMenu__list{
     position: absolute;
@@ -153,7 +158,10 @@ ul {
   .HeaderContanier__image{
     width: 100%;
   }
-  /* GoodCompany */
+  .HeaderContanier__image img{
+    display: block;
+    margin: 0 auto;
+  }
   .GoodCompany{
     background-color: #F4F3F4;
     padding: 55px 0 80px 0;
@@ -205,7 +213,6 @@ ul {
     width: 70%;
     height: auto;
   }
-  /* TryIt */
   .TryIt{
     border-bottom: 1px solid #cccccc;
     padding: 50px 0;
@@ -289,6 +296,76 @@ ul {
   .FooterBottom__rrss i {
     margin: 0 8px;
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1024px) {
+  .MainContainer{
+    border: 1px solid orange;
+  }
+  .GoodCompany__images {
+    width: 33%;
+    height: 100px;
+  }
+  .GoodCompany__images:nth-child(2n){
+    border-left: 0;
+  }
+  .GoodCompany__images:nth-child(1){
+    border-right: 1px solid #ccc;;
+  }
+  .GoodCompany__images:nth-child(2){
+    border-right: 1px solid #ccc;;
+  }
+  .GoodCompany__images:nth-child(4){
+    border-right: 1px solid #ccc;;
+  }
+  .GoodCompany__images:nth-child(5){
+    border-right: 1px solid #ccc;;
+  }
+  .TryIt{
+    border-bottom: 1px solid #cccccc;
+    padding: 50px 0;
+    text-align: left;
+  }
+  .TryItContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .TryIt .Form {
+    width: 350px
+  }
+  .TryIt .Form input, .TryIt .Form button{
+    width: 48%;
+  }
+  .FooterContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .FooterList {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 87%;
+  }
+  .FooterList ul {
+    width: 20%;
+  }
+  .FooterBottomContent{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .FooterBottomCopy {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .FooterBottom ul {
+    margin-bottom: 0;
+  }
+  .FooterBottomCopy__select{
+    margin-bottom: 0;
   }
 }
 @media (min-width: 767px) and (max-width: 961px) {
