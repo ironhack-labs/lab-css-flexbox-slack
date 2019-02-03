@@ -30,20 +30,19 @@ p,ul,i {
 }
 
 nav {
-  width: 100%;
+  width: 80%;
   display: flex;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   justify-content: space-between; 
   margin-bottom: 50px;
+  padding: 0 10%;
 }
 
 nav img { 
   max-width: 30%;
   object-fit: contain;
-  max-height: 80px;
-  /* display: inline-block; */
-  margin-left: 10%;
+  max-height: 80px; 
 }
 
 .menu {
@@ -56,7 +55,7 @@ nav img {
 }
 
 /* mobile */
-img {
+.hero-img {
   max-width: 100%;
 }
 
@@ -206,9 +205,13 @@ main  h2 {
   height: 20px;
 }
 
+/* ------------------------------ */
 /* TABLET SIZE */
-@media (min-width: 767px) and (max-width: 961px) {
-  /* Form, button nexto to input */
+/* ------------------------------ */
+@media (min-width: 767px) 
+/* and (max-width: 961px) */
+{ 
+  /* Form, button next to to input */
   form {
     flex-direction: row; 
     margin-top: 25px;
@@ -286,3 +289,67 @@ main  h2 {
   } 
 }
  
+/* ------------------------------ */
+/* PC SIZE */
+/* ------------------------------ */
+@media (min-width: 962px)  {
+    /* social proof images */
+    .main-grey {
+      padding-bottom: 50px;
+    }
+    .proof-images {
+      flex-direction: row;
+      flex-wrap: wrap; 
+      justify-content: center;
+    }
+    .proof-images img {
+      max-width: 20%;
+      height: 60px;
+      padding: 30px 5%;
+      align-self: flex-end;
+    } 
+    .proof-images img:nth-child(n+2) {
+      border-left: 1px solid rgba(212, 212, 212, 0.486);
+    }
+    .proof-images img:nth-child(4) {
+      border-left: none;
+    }
+  .proof-images img:nth-last-child(-n+3) {
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px)  {
+  .menu {
+    display: flex;
+    list-style-type: none; 
+  }
+  .menu li {
+    padding: 5px 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+  nav {
+    align-items: center;
+  }
+  .menu li:last-child {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+  .hero {
+    display: flex;
+  }
+  .hero-img {
+    max-width: 600px; 
+  }
+  .hero-container {
+    order: -1; 
+  } 
+  .hero h1 {
+    font-size: 400%;
+  }
+}
+
