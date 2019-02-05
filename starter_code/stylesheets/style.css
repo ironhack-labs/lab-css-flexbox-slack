@@ -6,23 +6,90 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
+/* ---- FIRST MOBILE ---- */
 
-.box-shadow-menu {
-}
-.box-shadow-menu:before {
-  content: "☰";
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-size: 100%;
+  box-sizing: content-box;
 }
 
-.box-shadow-menu li{
+header, main, footer {
+  padding: 0 5%;
+  font-size: 6.85em;
+}
+
+p{
+  color: #5b5e6d;
+  line-height: 1.5em;
+}
+
+h1, h2, h3 {
+  color: #2C303F;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 5%;
+  line-height: 0.85em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color:#5b5e6d;
+  z-index: 2;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; 
+  flex-wrap: wrap;
+  border-bottom: 1px solid #5b5e6d;
+  border-top: 1px solid #5b5e6d;
+}
+
+nav img {
+  width: 25%;
+  height: 25%;
+  padding-left: 5%;
+}
+
+.menu {
+padding-right: 5%;
+}
+
+.menu li{
   display: none;
 }
 
-.box-shadow-menu:active li {
+header {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.box-shadow-menu:visited li {
-  display: flex;
-  flex-direction: column;
+header img {
+  width: 75%;
+  order: 2;
+  align-self: center;
+}
+
+button {
+  font-size: 1em;
+  align-self: stretch;
+  padding: 5% 0;
 }
