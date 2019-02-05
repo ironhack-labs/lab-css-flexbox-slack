@@ -16,12 +16,16 @@ body {
   box-sizing: content-box;
 }
 
-header, main, footer {
-  padding: 0 5%;
-  font-size: 6.85em;
+.mgn-bttm5 {
+  margin-bottom: 10%;
 }
 
-p{
+header, main, footer {
+  padding: 0 5%;
+  font-size: 6em;
+}
+
+p, li, .footer-second {
   font-family: 'Muli', sans-serif;
   color: #5b5e6d;
   line-height: 1.5em;
@@ -29,10 +33,12 @@ p{
 
 h1, h2, h3 {
   color: #2C303F;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   margin-bottom: 5%;
   line-height: 0.85em;
 }
@@ -56,7 +62,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start; 
+  align-items: stretch; 
   flex-wrap: wrap;
   border-bottom: 1px solid #5b5e6d;
   border-top: 1px solid #5b5e6d;
@@ -68,49 +74,122 @@ nav img {
   padding-left: 5%;
 }
 
-.menu {
+nav ul {
 padding-right: 5%;
 }
 
-.menu li{
+nav ul li{
   display: none;
 }
 
-header {
+header, .main-first, .main-second {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
 }
 
 header img {
   width: 100%;
   order: 2;
-  align-self: center;
 }
 
-header button, header input {
+input, button {
   font-family: 'Muli', sans-serif;
   font-size: 0.8em;
   align-self: stretch;
   padding: 5% 0;
 }
 
-header input {
-  margin: 5% 0 10% 0;
+input {
+  margin-bottom: 5%;
   border: 1px solid #5b5e6d;
   padding-left: 5%;
   padding-right: 5%;
 
 }
 
-button {
+.btn-blue {
   background-color: #192592;
   font-weight: 800;
   color: white;
   border-radius: 25px;
 }
 
-header p:nth-child(6){
+.center {
   align-self: center;
+}
+
+main {
+  padding: 0;
+  text-align: center;
+  border-bottom: 2px solid #5b5e6d;
+}
+
+.main-first {
+  padding: 0 5%;
+  background-color: #F4F3F4;
+}
+.main-second {
+  padding: 0 5%;
+}
+.main-first h2 {
+  align-self: center;
+  margin-bottom: 0;
+}
+.btn-white {
+  background-color: white;
+  font-weight: 800;
+  color: #192592;
+  border: 2px solid #192592;
+  border-radius: 25px;
+  margin: 5% 0;
+}
+
+.main-first img {
+  align-self: stretch;
+  padding: 5% 10%;
+}
+
+.try-it {
+  margin: 10% 0 0 0;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.try-it+p{
+  margin-top:0;
+
+}
+.main-first img~img {
+  border-top: 2px solid #5b5e6d;
+}
+
+.footer-first {
+  display:flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.footer-first img {
+  padding: 2% 75% 2% 2%;
+  width: 25%;
+  height: 100%;
+}
+
+.footer-first ul li {
+    list-style: none;
+    padding: 0 5%;
+}
+
+.footer-first ul li:first-child {
+  font-weight: 900;
+  margin-bottom: 2%;
+}
+
+.footer-second ul li {
+  display: inline;
+  font-weight: 900;
+  padding: 0 5%;
 }
