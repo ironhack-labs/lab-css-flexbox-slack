@@ -1,7 +1,301 @@
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
+/main-titles dark-grey: #2C303F;
+/paragraph grey: #5b5e6d;
+/nav grey: #5b5e6d;
 */
+
+body {
+  
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px 30px;  
+}
+
+body > * {
+  flex: 1 100%;
+}
+h1, h2 {
+  color: #2C303F;
+  font-weight: bold
+}
+
+h1 {
+  font-size: 6vw;
+  min-width: 90%;
+}
+h2 {
+  font-size: 35px;
+}
+
+p, ul, li {
+  color:#5b5e6d;
+  font-size: 18px;
+}
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid #5b5e6d;
+  z-index: 10;
+ 
+}
+
+nav img {
+  object-fit: contain;
+  max-height: 80px;
+  max-width: 30%;
+}
+
+.nav-li {
+  display: none;
+}
+
+
+/* Header */
+
+header {
+  position: relative;
+  top: 80px;
+}
+
+
+.box{
+  width: 100%;
+  margin: 0 auto;
+  height: 65px;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.blue {
+  background-color: #192592;
+  border-radius: 15px;
+  color: white;
+  margin-top: 20px;
+}
+
+.center {
+align-items: center; 
+}
+
+header img {
+  width: 80%;
+  align-items: center; 
+}
+header p {
+  margin: 25px 0;
+}
+
+        /* Main */
+
+.main {
+  position: relative;
+  top: 100px;
+  background-color: #F4F3F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 30px;
+  
+}
+
+.discover-button {
+  font-weight: bold;
+  color: #192592;
+  border-radius: 13px;
+  border: 1px solid #192592;
+  width: 80%;
+  margin: 0 auto;
+  height: 65px;
+  justify-content: center;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.main img {
+  object-fit: contain;
+  max-height: 130px;
+  max-width: 60%;
+  padding: 45px 30px;
+  border-bottom: 1px solid #5b5e6d;
+}
+
+.free {
+  position: relative;
+  top: 100px;
+}
+
+       /* Footer */
+
+ footer {
+  position: relative;
+  top: 100px; 
+  font-size: 18px;
+ }
+
+footer li {
+  list-style: none;
+  width: 300x;
+  margin: 15px, 40px;
+  font-size: 18px;
+  justify-content: center;
+}
+
+footer ul > :first-child{
+  font-weight: bold;  
+}
+footer ul {
+  flex: 0 40%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+      /* Footer's bottom */
+.bottom {
+  font-weight: bold;
+  background: #F4F3F4;
+  padding: 20px auto;
+
+}
+
+.bottom ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px auto 10px;
+}
+
+.bottom img{
+  width: 45px;
+}
+.choose-language {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 30px;
+  padding: 30px 200px;
+}
+ footer i {
+   display: flex;
+ }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+.fa {
+  padding: 30px 20px;
+}
+
+/* ******************** */
+  /* Small screens */
+@media (max-width: 766px) {
+  
+
+}
+
+/* *********************** */
+  /* iPads & Tablets */
+  @media  (min-width: 767px) {
+    body {
+      flex-direction: row;
+    }
+    .center {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: baseline; 
+  }
+  .box  {
+    max-width: 44%;
+  }
+  .discover-button{
+    max-width: 30%;
+  }
+
+  .main img {
+    max-height: 70px;
+  max-width: 40%;
+  padding: 30px 10px;
+  
+
+  }
+  .logos {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .free {
+    display: flex;
+    flex-flow: column wrap;
+    height: 200px;
+    justify-content: baseline;
+  }
+  .free .box {
+    width:25%;
+    justify-content: flex-end;
+    margin: 20px 10px;
+    justify-content: flex-end;
+  }
+/****** Footer**/
+
+  .flex {
+   flex-flow: row wrap;
+   justify-content: space-between;
+  }
+  .flex ul {
+    max-width: 18%;
+  }
+  /** Footer's Bottom***/
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+  }
+  .choose-language {
+    margin: 0 10px;
+    padding: 0;
+  }
+  .fa {
+    padding: 5px 20px;
+  }
+.social-icons {
+  display: inline-flex;
+  justify-content: space-around;
+}
+  }
+
+/********************/
+/** Medium Screens **/
+  @media  (min-width: 1024px){
+    /* the logos already disptribute to 3  in a row*/
+  }
+  
+ 
+  /******************/
+   /****** PC ******/
+  @media  (min-width: 1200px) {
+    .wrapper {
+      
+      
+    }
+    header img{
+      max-width: 40%;
+    }
+
+
+  }
+
+  
+
+
+
+
+
+  }
