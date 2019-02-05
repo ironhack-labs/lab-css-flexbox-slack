@@ -5,88 +5,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./stylesheets/style.css">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
 </head>
 
 <body>
   <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
-      <li>Why Slack?</li>
-      <li>Pricing</li>
-      <li>About Us</li>
-      <li>Your Workspaces</li>
-    </ul>
-  </nav>
-  <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
-  </header>
-  <main>
-    <div>
-      <h2>You´re in good company</h2>
-      <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
+    <div class="container first-section">
+      <div class="logo-container">
+        <img src="./images/slack-logo.png" alt="slack_logo">
+      </div>
+
+      <!-- menu for small size screens (tablet, mobile) -->
+      <ul class="menu-ss">
+        <div><img src="./images/hamburger.png" alt=""></div>
+      </ul>
+
+      <!-- Menu for larger screens -->
+      <ul class="menu-ls">
+        <li><a>Why Slack?</a></li>
+        <li><a>Pricing</a></li>
+        <li><a>About Us</a></li>
+        <li><a>Your Workspaces</a></li>
+      </ul>
     </div>
-    <div>
-      <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+  </nav>
+
+  <header>
+    <div class="container second-section">
+      <h1>Where Work <br> Happens</h1>
+
+      <p>When your team needs to kick off a project, hire a new employee, deploy some
+        code, review a sales contract,
+        finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack
+        has you
+        covered.</p>
+
+      <form action="">
+        <input type="text" name="" value="Email address">
+      </form>
+      <button type="button" name="button" class="get-started">GET STARTED</button>
+      <p class="center-text">Already using Slack? <a href="#">Sign in</a></p>
+    </div>
+    <div id="image-back">
+    </div>
+  </header>
+
+  <main>
+    <div class="container third-section" id="partner">
+      <div id="company">
+        <h2 class="center-text">You´re in good company</h2>
+        <p class="center-text">Millions of people around the world have already made Slack the place where their work
+          happens.</p>
+        <button id="discover-why">DISCOVER WHY</button>
+      </div>
+
+      <div class="partners">
+        <div class="partner-img"><img src="./images/airbnb-logo.png" alt=""></div>
+        <div class="partner-img"><img src="./images/capital-one-logo.png" alt=""></div>
+        <div class="partner-img"><img src="./images/harvard-logo.png" alt=""></div>
+        <div class="partner-img"><img src="./images/los-angeles-times-logo.png" alt=""></div>
+        <div class="partner-img"><img src="./images/oracle-logo.png" alt=""></div>
+        <div class="partner-img"><img src="./images/ticketmaster-logo.png" alt=""></div>
+      </div>
+    </div>
+
+    <div class="container third-section no-back-color">
+      <div>
+        <h2 class="center-text">Try it for free</h2>
+        <p class="center-text">Already using Slack?<a href="#" id="sign-in">Sign in</a></p>
+      </div>
+      <form action="">
+        <input type="text" name="" value="Email address">
+      </form>
+      <button type="button" name="button" class="get-started">GET STARTED</button>
     </div>
   </main>
+
   <footer>
-    <div>
-      <img src="./images/iso-slack.png" alt="">
-      <ul>
-        <li>COMPANY</li>
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Blog</li>
-        <li>Press</li>
-        <li>Brand Guidelines</li>
-      </ul>
-      <ul>
-        <li>PRODUCT</li>
-        <li>Why Slack?</li>
-        <li>Enterprise</li>
-        <li>Customer Stories</li>
-        <li>Pricing</li>
-        <li>Security</li>
-      </ul>
-      <ul>
-        <li>RESOURCES</li>
-        <li>Download</li>
-        <li>Help Center</li>
-        <li>Guides</li>
-        <li>Events</li>
-        <li>App Directory</li>
-        <li>API</li>
-      </ul>
-      <ul>
-        <li>EXTRAS</li>
-        <li>Podcast</li>
-        <li>Slack Shop</li>
-        <li>Slack at Work</li>
-        <li>Slack Fund</li>
-      </ul>
+    <div class="footer-logo"><img src="./images/iso-slack.png" alt=""></div>
+    <div class="container footer-part">
+      <div class="menu-list left">
+        <ul>
+          <li>COMPANY</li>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>Press</li>
+          <li id="brand-li">Brand Guidelines</li>
+        </ul>
+        <ul>
+          <li>PRODUCT</li>
+          <li>Why Slack?</li>
+          <li>Enterprise</li>
+          <li>Customer Stories</li>
+          <li>Pricing</li>
+          <li>Security</li>
+        </ul>
+      </div>
+      <div class="menu-list right">
+        <ul>
+          <li>RESOURCES</li>
+          <li>Download</li>
+          <li>Help Center</li>
+          <li>Guides</li>
+          <li>Events</li>
+          <li>App Directory</li>
+          <li id="API-li">API</li>
+        </ul>
+        <ul>
+          <li>EXTRAS</li>
+          <li>Podcast</li>
+          <li>Slack Shop</li>
+          <li>Slack at Work</li>
+          <li>Slack Fund</li>
+        </ul>
+      </div>
+
     </div>
-    <div>
+    <div class="footer-last-section">
       <ul>
         <li>Status</li>
         <li>Privacy & Terms</li>
         <li>Contact Us</li>
       </ul>
-      <div>
+      <div class="flag">
+        <img src="./images/us-flag.png" alt="">
+        <span>English (US)</span>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+      <div class="icons">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </div>
+
+      <div class="flag-icons-bigscreen container">
         <img src="./images/us-flag.png" alt="">
         <span>English (US)</span>
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
@@ -94,7 +149,12 @@
         <i class="fa fa-facebook" aria-hidden="true"></i>
         <i class="fa fa-youtube-play" aria-hidden="true"></i>
       </div>
+
+
     </div>
+
+
+
   </footer>
 </body>
 

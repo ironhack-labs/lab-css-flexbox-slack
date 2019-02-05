@@ -5,3 +5,522 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #2C303F;
+  font-size: 46px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bigger-screen {
+  display: none;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+p {
+  color: #5b5e6d;
+  font-size: 22px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  padding: 15px 30px 15px 30px;
+  max-width: 100%;
+}
+
+.first-section {
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #dbd9d9;
+}
+
+.logo-container {
+  width: 130px;
+  height: 70px;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-ls {
+  display: none;
+}
+
+header {
+  margin-top: 134px;
+}
+
+.second-section,
+.third-section {
+  flex-direction: column;
+}
+
+form {
+  width: 100%;
+  margin-top: 16px;
+}
+
+input[type=text] {
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 18px;
+  width: 100%;
+  color: #cfd0d1;
+}
+
+.get-started {
+  margin-top: 16px;
+  background-color: #192592;
+  padding: 18px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+}
+
+#image-back {
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/home_talking.png);
+  background-size: 100% 100%;
+
+}
+
+.third-section {
+  background-color: #F4F3F4;
+}
+
+#company {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#discover-why {
+  padding: 18px;
+  border-radius: 4px;
+  border: 1px solid #192592;
+  color: #192592;
+  background-color: white;
+  margin-bottom: 40px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.partner-img {
+  padding: 30px 0 30px 0;
+  text-align: center;
+  border-bottom: 1px solid #dbd9d9;
+  /*height:200px togather with line-height:200px will center div content verticaly */
+  height: 150px;
+  width: 100%;
+  line-height: 120px;
+}
+
+.partner-img img {
+  height: auto;
+  width: 50%;
+}
+
+.partners :nth-child(6) {
+  border: none;
+}
+
+.no-back-color {
+  background-color: white;
+}
+
+.footer-logo {
+  width: 100%;
+  height: 140px;
+  position: relative;
+  z-index: -1;
+}
+
+.footer-logo img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: -10px;
+  background-color: white;
+}
+
+.footer-part {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.footer-part ul {
+  list-style-type: none;
+  width: 152px;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-list li {
+  padding: 10px 0 10px 0;
+}
+
+.menu-list :nth-child(1) {
+  padding-left: 0;
+}
+
+.footer-part ul :nth-child(1) {
+  font-weight: bold;
+}
+
+.footer-last-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F3F4;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+
+.footer-last-section ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-last-section li {
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.footer-last-section img {
+  width: 10%;
+  height: auto;
+}
+
+.flag,
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.flag-icons-bigscreen {
+  display: none;
+}
+
+span {
+  font-size: 20px;
+}
+
+.icons {
+  width: 40%;
+  font-size: 20px;
+}
+
+
+@media only screen and (min-width: 760px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .second-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  form {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .get-started {
+    width: 25%;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  input[type=text] {
+    font-size: 20px;
+  }
+
+  #image-back {
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/home_talking.png);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+  }
+
+  #company {
+    align-items: center;
+  }
+
+  #discover-why {
+    width: 30%;
+    font-size: 20px;
+    display: block;
+  }
+
+  .third-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .partners {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .partners :nth-child(1) {
+    margin-top: 0;
+  }
+
+  .partners :nth-child(5) {
+    border: none;
+  }
+
+  .partner-img {
+    padding: 30px 0 30px 0;
+    text-align: center;
+    border-bottom: 1px solid #dbd9d9;
+    /*height:200px togather with line-height:200px will center div content verticaly */
+    height: 150px;
+    line-height: 150px;
+    width: 50%;
+  }
+
+  .partner-img img {
+    height: auto;
+    width: 50%;
+  }
+
+  .no-back-color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #dbd9d9;
+    height: 150px;
+  }
+
+  .no-back-color :nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .no-back-color :nth-child(1) h2 {
+    width: 100%;
+    font-size: 30px;
+    margin: 0;
+  }
+
+
+  .no-back-color :nth-child(1) p {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+  }
+
+  .no-back-color :nth-child(2) {
+    display: flex;
+    width: 15%;
+    height: 40px;
+    
+  }
+
+
+  .no-back-color .get-started {
+    width: 15%;
+    font-size: 15px;
+    margin: 0;
+    height: 46px;
+    padding: 3px;
+
+  }
+
+  .no-back-color input[type=text] {
+    width: 100%;
+    font-size: 15px;
+    /* padding: 10px; */
+    height: 46px;
+  }
+
+  .no-back-color form {
+    margin: 0;
+    height: 100%;
+  }
+
+  #sign-in {
+    display: inline-block;
+    margin: 0;
+    width: 70px;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-part {
+    flex-direction: row;
+  }
+
+  .footer-logo {
+    width: 20%;
+  }
+
+  .footer-part {
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  .footer-part ul {
+    padding-left: 0;
+  }
+
+  .menu-list {
+    width: 50%;
+    justify-content: space-around;
+    margin-right: 30px;
+  }
+
+  .footer-last-section {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .flag,
+  .icons {
+    display: none;
+  }
+
+  .flag-icons-bigscreen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+
+  .partners {
+    justify-content: space-between;
+  }
+
+  .partner-img {
+    width: 32.5%;
+
+    border: none;
+  }
+
+  .partner-img img {
+    height: 80%;
+
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  header {
+    display: flex;
+  }
+
+  .second-section {
+    order: 0;
+    width: 45%;
+  }
+
+  #image-back {
+    width: 45%;
+    order: -1;
+  }
+
+  .menu-ss {
+    display: none;
+  }
+
+  .menu-ls {
+    display: flex;
+    list-style: none;
+
+  }
+
+  li {
+    margin-left: 10px;
+    color: #2C303F;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  a {
+    background-color: #dbd9d9;
+    border-radius: 4px;
+  }
+
+  a:hover {
+    background-color: #2C303F;
+    color: white;
+  }
+
+  .get-started {
+    height: 60px;
+    width: 30%;
+    font-size: 18px;
+  }
+}
