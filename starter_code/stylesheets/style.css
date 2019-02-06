@@ -12,32 +12,36 @@ nav grey: #5b5e6d;
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   width: 100%;
-  height: 5rem;
   top: 0;
   left: 0;
   margin: 0;
 }
 
 .slack-logo {
-  float: left;
-  width: 15%;
-  height: auto;
-  padding: 1rem;
+  width: 20%;
+  height: 25%;
+  margin: 1rem;
 }
 
 .top-nav-menu {
-  position: relative;
-  height: 5rem;
+  width: 75%;
 }
 .top-nav-list{
-  display: none;
+  width: 90%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-.top-nav-menu li{
+.top-nav-list li{
+  width: 22%;
   padding: 5px;
-  font-size: 1.5rem;
+  margin: 1px;
+  font-size: 1.2rem;
   list-style-type: none;
 }
 
@@ -55,7 +59,7 @@ nav {
 }
 
 .header-content p{
-  font-size: 3rem;
+  font-size: 2.2rem;
   color: #5b5e6d;
   margin: 3rem;
 
@@ -64,6 +68,16 @@ nav {
 .header-content .sign {
   font-size: 1.2rem;
   margin: 0 auto;
+}
+
+.header-content input {
+  background-color: white;
+  height: 4rem;
+  color: grey;
+  border: grey solid 1px;
+  margin: 1rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 2%
 }
 
 .header-button {
@@ -86,7 +100,6 @@ nav {
 
 .company-header-item {
   background-color: #F4F3F4;
-  height: 27rem;
   width: 100%;
 }
 
@@ -129,8 +142,11 @@ nav {
   text-align: center;
 }
 .company-last-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   background-color: white;
-  height: 18rem;
   width: 100%;
 }
 .company-last-item .title {
@@ -147,6 +163,19 @@ nav {
   color: #5b5e6d;
   text-align: center;
 }
+
+.company-last-item input {
+  display: block;
+  background-color: white;
+  height: 4rem;
+  width: 90%;
+  color: grey;
+  border: grey solid 1px;
+  margin: 1.5rem auto;
+  font-size: 1.5rem;
+  border-radius: 2%
+}
+
 .company-last-item button {
   display: block;
   background-color: #192592;
@@ -159,6 +188,7 @@ nav {
   border-radius: 3%;
   width: 90%;
 }
+
 footer {
   display: flex;
   width: 100%;
@@ -243,7 +273,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
 
 
@@ -252,69 +282,96 @@ footer {
 @media (min-width: 769px) and (max-width: 967px) {
   nav {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
-    height: 5rem;
     top: 0;
     left: 0;
     margin: 0;
   }
   
   .slack-logo {
-    float: left;
-    width: 15%;
-    height: auto;
-    padding: 1rem;
+    width: 20%;
+    height: 25%;
+    margin: 1rem;
   }
   
   .top-nav-menu {
-    position: relative;
-    height: 5rem;
+    width: 75%;
   }
   .top-nav-list{
-    display: none;
+    width: 90%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
   
-  .top-nav-menu li{
+  .top-nav-list li{
+    width: 22%;
     padding: 5px;
-    font-size: 1.5rem;
+    margin: 1px;
+    font-size: 1.2rem;
     list-style-type: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   
   .header-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start
+    justify-content: flex-start;
+    align-content: flex-start;
   }
   
   .header-content h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin: 1rem 3rem;
   
   }
   
   .header-content p{
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: #5b5e6d;
     margin: 3rem;
-  
+    line-height: 1.5;
   }
   
   .header-content .sign {
     font-size: 1.2rem;
-    margin: 0 auto;
+    margin: 0 3rem 2rem;
+  }
+  
+  .header-content input {
+    background-color: white;
+    width: 50%;
+    height: 4rem;
+    color: grey;
+    border: grey solid 1px;
+    margin: 1rem 0 1rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 2%
   }
   
   .header-button {
     background-color: #192592;
     height: 4rem;
+    width: 25%;
     color: white;
     border: none;
-    margin: 1.5rem;
+    margin: 1rem 1rem;
     font-size: 1.5rem;
     font-weight: 700;
     border-radius: 3%
+  }
+
+  .header-image {
+    margin: 0 auto;
   }
   
   .main-company {
@@ -345,59 +402,81 @@ footer {
   
   .company-button {
     display: block;
-    width: 90%;
+    width: 25%;
     background-color:white;
-    height: 4rem;
+    padding: 1rem;
     color: #192592;
     border: #192592 solid 1px;
     margin: 2rem auto;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     border-radius: 3%;
   }
   
   .company-header-item h2 {
     margin: 3rem 1rem;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   
   .company-header-item p {
     margin: 3rem 5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #5b5e6d;
     text-align: center;
   }
   .company-last-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
     background-color: white;
-    height: 18rem;
     width: 100%;
+    margin: 1rem 0;
   }
+
+  .company-last-item-text {
+    width: 57%;
+  }
+
   .company-last-item .title {
     margin: 3rem 1rem 0rem;
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    text-align: center;
     color: black;
   }
   
   .company-last-item p {
-    margin: 0.2rem 5rem 3rem;
-    font-size: 2.2rem;
+    margin: 0.2rem 1rem 3rem;
+    font-size: 1.2rem;
     color: #5b5e6d;
-    text-align: center;
   }
+
+  .company-last-item input {
+    display: block;
+    background-color: white;
+    height: 4rem;
+    width: 20%;
+    color: grey;
+    border: grey solid 1px;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    border-radius: 2%;
+    padding: 0 0 0 1rem;
+  }
+
   .company-last-item button {
     display: block;
     background-color: #192592;
     height: 4rem;
     color: white;
     border: none;
-    margin: 1.5rem auto;
-    font-size: 1.5rem;
+    margin: 1.5rem 0 1.5rem 0.5rem;
+    font-size: 1.1rem;
     font-weight: 700;
     border-radius: 3%;
-    width: 90%;
+    width: 20%;
   }
   footer {
     display: flex;
@@ -413,71 +492,80 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: flex-start;
   }
   
   .first-footer-image {
-    width: 18%;
-    margin: 1%;
+    width: 15%;
+  }
+
+  .first-footer-image img {
+    width: 100%;
   }
   
   .first-footer-item{
-    width: 18%;
-    margin: 1%;
-    font-size: 1.5rem;
+    width: 20%;
+    font-size: 1rem;
     color: #5b5e6d;
+    padding: 0;
   }
   
   .first-footer-item li {
     list-style-type: none;
-    margin: 1rem;
+    margin: 1rem 0;
   }
   
   .main-li {
     font-weight: 700;
+    font-size: 1.1rem;
   }
   
   .second-footer {
     background-color: #F4F3F4;
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     color: #5b5e6d;
+    align-items: center;
   }
   
   .second-footer-item{
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
+    width: 20%;
+    font-size: 1rem;
     font-weight: 700;
+  }
+  .first-second-footer-item {
+    width: 60%;
   }
   
   .footer-list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
   
   .footer-list li{
     list-style-type: none;
-    margin: 1rem;
+    margin: 1rem 0.5rem;
   }
   
   .flag {
-    width: 5%;
-    height: 4%;
+    width: 10%;
+    height:10%;
   }
   
   .footer-lan-styles {
-    margin: 1rem;
+    margin: 0.5rem;
     display: block;
   }
   
   .footer-icons {
-    width: 5px;
-    margin: 2.5rem;
+    width: 10%;
+    margin: 0.7rem;
+    font-size: 1.5rem;
   }
   
   .last-icons{
