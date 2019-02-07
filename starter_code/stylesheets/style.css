@@ -5,3 +5,88 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100vh;
+}   
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    height: 5rem;
+    padding: 2rem;
+    border-bottom: 1px solid grey;
+}
+    
+.logo {
+    width: 10rem;
+    object-fit: contain;
+}
+    
+.hamburger {
+
+}
+
+header {
+    margin: 1rem;
+    padding: 2rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 1.5rem 15rem 1rem 0;
+    color: #2C303F;
+}
+
+header p {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    color: #5b5e6d;
+}
+
+header input {
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+header button {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    background-color: #192592;
+    color: white;
+}
+
+/* Más grande que móvil */
+
+@media (min-width: 768px) {
+
+    nav {
+        align-items: center;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger li {
+        list-style-type: none;
+        padding: 0 1rem;
+        color: #5b5e6d;
+    }
+}
+
