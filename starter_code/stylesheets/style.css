@@ -1,8 +1,78 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
 
+:root {
+  --background: #F4F3F4;
+  --button: #192592;
+  --main-titles: #2C303F;
+  --paragraph: #5b5e6d;
+  --nav: #5b5e6d;
+  --navbar-height: 3.5rem;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+img {
+  width: 100vw;
+}
+h1, h2{
+  font-size: 4.8rem;
+  font-weight: 700;
+ }
+ h2 {
+   font-size: 3.6rem;
+ }
+ .text-center {
+   text-align: center;
+ }
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0.1rem 0 0.3rem grey;
+  padding: 1rem 1.5rem;
+  height: var(--navbar-height);
+  top: 0;
+  left: 0;
+}
+.logo{
+  height: 3rem;
+  width: 5rem;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header {
+  margin-top: var(--navbar-height);
+  display: flex;
+  flex-direction: column;
+}
+.header h1 {
+  order: -1;
+}
+.header .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input, .form button {
+  display: block;
+  padding: 1rem;
+  border-radius: .2rem;
+  border: none;
+  border: 1px solid black;
+}
+.form button {
+  color: white;
+  background-color: var(--button);
+  margin-top: 1rem;
+}
