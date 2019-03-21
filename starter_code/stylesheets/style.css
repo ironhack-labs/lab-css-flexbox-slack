@@ -16,16 +16,22 @@ html {
 body {
   font-size: 1.6rem;
   padding: 2rem;
+  background-color: var(--background);
 }
-img {
-  width: 100vw;
-}
+
 h1, h2{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
+  color: var(--main-titles);
+ }
+ h1 {
+   margin-bottom: 1.5rem;
  }
  h2 {
-   font-size: 3.6rem;
+   font-size: 1.8rem;
+ }
+ p {
+   color: var(--paragraph);
  }
  .text-center {
    text-align: center;
@@ -37,7 +43,7 @@ h1, h2{
   align-items: center;
   position: fixed;
   background-color: white;
-  box-shadow: 0.1rem 0 0.3rem grey;
+  box-shadow: 0.1rem 0 0.3rem var(--nav);
   padding: 1rem 1.5rem;
   height: var(--navbar-height);
   top: 0;
@@ -77,11 +83,19 @@ h1, h2{
 .header h1 {
   order: -1;
 }
+.header p {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
 .header .form {
   display: flex;
   flex-direction: column;
 }
-
+.header img {
+  order: 10;
+  width: 80%;
+  align-self: center;
+}
 .form input, .form button {
   display: block;
   padding: 1rem;
@@ -93,4 +107,25 @@ h1, h2{
   color: white;
   background-color: var(--button);
   margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main>.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main>.section>img {
+  width: 80%;
+  margin-bottom: 2rem;
+  border-top: 1px solid var(--nav);
+  padding-top: 2rem;;
+}
+
+.main>.section>img:first-child{
+  border-top: none;
 }
