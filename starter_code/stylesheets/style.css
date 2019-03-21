@@ -31,6 +31,7 @@ h1, h2{
    text-align: center;
  }
  .navbar {
+   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +52,23 @@ h1, h2{
   justify-content: flex-end;
   align-items: center;
 }
+.menu>li {
+  display: none;
+}
+.menu-collapsed {
+  display: flex;
+  flex-direction: column;
+  width: 1.5rem;
+  height: 1rem;
+  justify-content: space-between;
+}
+.menu-collapsed>div {
+  border-radius: 1rem;
+  display: block;
+  height: .2rem;
+  background-color: grey;
+}
+
 .header {
   margin-top: var(--navbar-height);
   display: flex;
