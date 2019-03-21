@@ -8,14 +8,13 @@
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <link rel="stylesheet" type="text/css" href="../starter_code/stylesheets/style.css">
-  <script src="../starter_code/javascript/main.js"></script>
+  
   <title>Where work happens | Slack</title>
 </head>
 
 <body>
   <nav>
     <img src="./images/slack-logo.png" alt="slack_logo">
-    <div class="menuCollapser"><i class="fas fa-bars"></i></div>
     <ul class="items">
       <li>Why Slack?</li>
       <li>Pricing</li>
@@ -25,6 +24,7 @@
   </nav>
 
   _________________________________
+
   <div class="Navbar">
     <div class="Navbar__Link Navbar__Link-brand">
        Website title
@@ -52,6 +52,18 @@
      </div>
    </nav>
  </div>
+
+
+ <script> 
+  function classToggle() {
+     const navs = document.querySelectorAll('.Navbar__Items')
+     
+     navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+   }
+   document.querySelector('.Navbar__Link-toggle')
+     .addEventListener('click', classToggle);
+ 
+ </script>
   _________________________________
   <header>
     <img src="./images/home_talking.png" alt="home_work_happening">
