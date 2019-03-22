@@ -14,43 +14,107 @@ body {
     font-size: 2rem;
 }
 
-.Navbar {
-    background-color: #46ACC2;
+nav {
     display: flex;
-    padding: 16px;
-    font-family: sans-serif;
-    color: white;
-  }
-  .Navbar__Link {
-    padding-right: 8px;
-  }
-  .Navbar__Items {
-    display: flex;
-  }
-  .Navbar__Items--right {
-    margin-left:auto;
-  }
-  .Navbar__Link-toggle {
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: red;
+    color: #5b5e6d;
+    height: 100px;
+    width: 100%;
+}
+
+nav img{
+    height: 8vh;
+    width: auto;
+    margin-left: 30px;
+}
+nav div {
+
+}
+
+.items {
     display: none;
-  }
-  @media only screen and (max-width: 768px) {
-    .Navbar__Items,
-    .Navbar {
-      flex-direction: column;
+    
+}
+
+.menuHamburguesa {
+    margin-right: 30px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: blue;
+    margin: 0 auto;
+    width: 80%;
+}
+
+header button {
+    width: 100%;
+    background-color: blueviolet;
+}
+
+header a {
+    color:white;
+}
+
+main{
+    background-color: aquamarine;
+    margin: 0 auto;
+    width: 80%; 
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main div {
+    display: flex;
+    flex-flow: column;
+}
+
+main div img {
+    height: 3em;
+}
+
+footer {
+    background-color: #5b5e6d;
+
+
+}
+
+footer img{
+    background-color: red;
+    height: 6rem;
+    width: 6rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768x) {
+
+
+    .items {
+        display: flex;
+        margin-right: 30px
+    
     }
-  .Navbar__Items {
-      display:none;
-    }
-  .Navbar__Items--right {
-      margin-left:0;
-    }
-  .Navbar__ToggleShow {
-      display: flex;
-    }
-  .Navbar__Link-toggle {
-      align-self: flex-end;
-      display: initial;
-      position: absolute;
-      cursor: pointer;
-     } 
-  }
+    
+
+.menuHamburguesa {
+    display: none;
+}
+
+}
