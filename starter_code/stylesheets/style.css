@@ -263,13 +263,14 @@ p {
   flex-wrap: wrap;
   padding: 1rem 2rem;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .footer .links ul{
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
+  flex-grow: 1;
 }
 
 .footer .links ul li:first-child{
@@ -390,3 +391,74 @@ p {
     height: 10rem;
   }
 }
+
+@media (min-width:425px){
+  .navbar img.logo{
+    height: 4rem;
+    width: auto;
+  }
+
+  .header h1{
+    width: 50%;
+  }
+
+  .main > .section .used-by img{
+    width: 75%;
+  }
+}
+
+@media (min-width: 468px){
+  .header{
+    padding: 3rem;
+  }
+  
+  .header h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .main{
+    padding: 3rem 2.5rem;
+  }
+
+  .try-it{
+    padding: 5rem 4rem 2rem 4rem;
+  }
+
+  .footer .logo,
+  .footer .links{
+    padding: 1rem 4.5rem;
+  }
+
+  .footer .logo{
+    padding-left: 3rem;
+  }
+}
+
+@media (min-width:600px){
+  .header{
+    padding: 5rem;
+  }
+  
+  .header p{
+    text-align: center;
+  }
+
+  .main{
+    padding: 5rem;
+  }
+
+  .try-it{
+    padding: 5rem;
+  }
+
+  .footer .logo,
+  .footer .links{
+    padding: 1rem 5rem;
+  }
+
+  .footer .logo{
+    padding-left: 3rem;
+  }
+} 
