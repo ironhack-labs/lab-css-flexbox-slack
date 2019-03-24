@@ -14,11 +14,14 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
 }
 
 h1,
 h2 {
   font-size: 3.2rem;
+  font-family: 'Times New Romans';
   font-weight: 700;
   color: var(--main-titles);
 }
@@ -45,6 +48,7 @@ p {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: .5rem;
+  font-weight: 700;
 }
 
 .btn--started {
@@ -53,8 +57,8 @@ p {
 }
 
 .btn--discover{
-  border-color: hsla(270, 50%, 20%, .25);
-  color: hsl(270, 50%, 30%);
+  border-color: hsla(240, 70%, 20%, .25);
+  color: hsl(240, 70%, 30%);
   font-weight: 700;
   font-size: 1.2rem;
   padding: 1.5rem 1rem;
@@ -92,6 +96,7 @@ p {
   width: 1.5rem;
   height: 1rem;
   justify-content: space-between;
+  cursor: pointer;
 }
 .menu-collapsed > div {
   border-radius: 1rem;
@@ -125,20 +130,29 @@ p {
   align-self: center;
 }
 
+.form input,
+.form button {
+  display: block;
+  padding: 1.5rem;
+  border-radius: .25rem;
+}
+
 .form input{
   border: 1px solid hsla(0, 0%, 50%, .25);
   border-radius: 0.5rem;
 }
 
-.form input,
-.form button {
-  display: block;
-  padding: 1rem;
-  border-radius: .25rem;
+.form button{
+  background-color: hsl(240, 50%, 40%);
+  border: none;
 }
 
 .form .login{
   margin-top: .5rem;
+}
+
+.form .login a{
+  color: hsl(240, 50%, 50%);
 }
 
 
@@ -261,7 +275,7 @@ p {
 .footer .links ul li:first-child{
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 0;
+  padding-bottom: 1rem;
 }
 
 .footer .links ul li{
@@ -284,6 +298,7 @@ p {
 .footer .related-links ul li{
   padding: 2rem 1rem;
   font-weight: 700;
+  font-size: 1.4rem;
 }
 
 .footer .languages{
@@ -297,11 +312,13 @@ p {
   margin-right: 1rem;
 }
 
-.footer .languages span i{
-  margin-left: .5rem;
-
+.footer .languages span{
+  font-weight: 700;
 }
 
+.footer .languages span i{
+  margin-left: .5rem;
+}
 
 .footer .social-networks{
   display: flex;
@@ -310,4 +327,66 @@ p {
 
 .footer .social-networks i{
   margin: 1rem;
+}
+
+@media (min-width: 375px){
+  :root{
+    --navbar-height: 5rem;
+  }
+
+  .navbar img.logo{
+    margin-left: 1rem;
+  }
+
+  .navbar .menu-collapsed{
+    height: 1.25rem;
+    width: 1.75rem;
+  }
+
+  .header h1{
+    width: 75%;
+  }
+
+  .header p{
+    line-height: 2.5rem;
+  }
+
+  .form input,
+  .form button{
+    padding: 1.5rem;
+  }
+
+  .form button{
+    padding: 2rem;
+    background-color: hsl(240, 30%, 50%);
+    border: none;
+  }
+
+  .main > .section{
+    padding-top: 3rem;
+  }
+
+  .main > .section > p{
+    line-height: 2.5rem;
+  }
+
+  .try-it{
+    padding-top: 5rem;
+  }
+  
+  .try-it p{
+    padding-bottom: .25rem;
+  }
+
+  .try-it .form > button{
+    padding: 2rem;
+    border-radius: .5rem;
+  }
+
+  .footer .logo{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 0rem;
+    height: 10rem;
+  }
 }
