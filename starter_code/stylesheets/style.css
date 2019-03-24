@@ -14,8 +14,6 @@ html {
 }
 body {
   font-size: 1.6rem;
-  padding: 2rem;
-  background-color: var(--background);
 }
 
 h1,
@@ -54,6 +52,14 @@ p {
   color: white;
 }
 
+.btn--discover{
+  border-color: hsla(270, 50%, 20%, .25);
+  color: hsl(270, 50%, 30%);
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 1.5rem 1rem;
+}
+
 .navbar {
   width: 100%;
   display: flex;
@@ -66,6 +72,7 @@ p {
   height: var(--navbar-height);
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 .logo {
   height: 3rem;
@@ -90,13 +97,15 @@ p {
   border-radius: 1rem;
   display: block;
   height: 0.2rem;
-  background-color: grey;
+  background-color: hsl(0, 0%, 50%);
 }
 
 .header {
   margin-top: var(--navbar-height);
   display: flex;
   flex-direction: column;
+  background-color: #f9f9f9;;
+  padding: 2rem;
 }
 .header h1 {
   order: -1;
@@ -104,6 +113,7 @@ p {
 .header p {
   margin-bottom: 2rem;
   font-size: 1.4rem;
+  line-height: 2rem;
 }
 .header .form {
   display: flex;
@@ -111,56 +121,92 @@ p {
 }
 .header img {
   order: 10;
-  width: 80%;
+  width: 100%;
   align-self: center;
 }
+
+.form input{
+  border: 1px solid hsla(0, 0%, 50%, .25);
+  border-radius: 0.5rem;
+}
+
 .form input,
 .form button {
   display: block;
   padding: 1rem;
-  border-radius: 0.2rem;
-  border: none;
+  border-radius: .25rem;
 }
+
+.form .login{
+  margin-top: .5rem;
+}
+
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--background);
+  padding: 3rem 1.5rem;
 }
+
 .main > .section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+}
+
+.main > .section h2{
+  font-size: 2.2rem;
 }
 
 .main > .section > p{
   margin: 1rem 0;
   text-align: center;
-  width: 80%;
-}
-.main > .section > img {
-  width: 80%;
-  margin-bottom: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #3333;
+  width: 100%;
 }
 
-.main > .section > img.no-border-top{
+.main > .section .used-by{
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.main > .section .used-by img{
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 2.5rem 7.5rem .5rem 7.5rem;
+  position: relative;
+  border-top: 1px solid #3331;
+}
+
+.main > .section .used-by img.no-border-top{
   border-top: 0;
 }
 
+
+
 .try-it{
   width: 100%;
+  background-color: #fafafa;;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  border-bottom: 1px solid #0001;
 }
 
 .try-it > .tertiary-heading{
   font-size: 1.8rem;
   font-weight: 700;
   color: #333;
+  text-align: center;
 }
 
 .try-it p{
   color: var(--paragraph);
   margin-bottom: 1.5rem;
+  text-align: center;
+  margin-top: -1rem;
+  font-size: 1.4rem;
 }
 
 .try-it .form{
@@ -171,9 +217,97 @@ p {
   width: 100%;
 }
 
-@media (min-width: 768px){
-  html{
-    font-size: 22px;
-  }
+.try-it .form > button{
+  background-color: hsl(250, 50%, 25%);
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
+.footer{
+  color: var(--paragraph);
+}
+
+.footer div{
+  padding: 1rem 0;
+}
+
+.footer:first-child{
+  padding-bottom: 0;
+}
+
+.footer .logo{
+  height: 7.5rem;
+}
+
+.footer .logo img{
+  height: 100%;
+}
+
+.footer .links{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.footer .links ul{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.footer .links ul li:first-child{
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 0;
+}
+
+.footer .links ul li{
+  padding: 2rem 0;
+  color: var(--paragraph);
+  font-size: 1.4rem;
+}
+
+.footer .related-links,
+.footer .social-networks,
+.footer .languages{
+  background-color: var(--background);
+}
+
+.footer .related-links ul{
+  display: flex;
+  justify-content: center;
+}
+
+.footer .related-links ul li{
+  padding: 2rem 1rem;
+  font-weight: 700;
+}
+
+.footer .languages{
+  display: flex;
+  justify-content: center;
+}
+
+.footer .languages img{
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.footer .languages span i{
+  margin-left: .5rem;
+
+}
+
+
+.footer .social-networks{
+  display: flex;
+  justify-content: center;
+}
+
+.footer .social-networks i{
+  margin: 1rem;
 }
