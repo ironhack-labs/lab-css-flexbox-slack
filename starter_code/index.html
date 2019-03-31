@@ -13,7 +13,7 @@
 <body>
   <!--NAV BAR-->
   
-      <nav id="header" class="header"> 
+      <nav id="nav" class="nav"> 
         <figure class="logotipo"> <!-- logotipo -->
           <img src="./images/slack-logo.png" alt="slack_logo" srcset="./images/slack-logo.png 1x, ./images/slack-logo.png 2x" width="140" height="65">
         </figure>
@@ -41,12 +41,19 @@
       </nav>
   
   <!--HEADER SECTION-->
-  <header>
-    <img src="./images/home_talking.png" alt="home_work_happening" >
+  <header id="header" class="header">
+    <figure class="header_image">
+    <img src="./images/home_talking.png" alt="home_work_happening">
+  </figure>
+  <div>
     <h1>Where Work Happens</h1>
     <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
+    <form action="post" class="forms">
+    <input type="email" name="email" placeholder="Email address" class="input-form">
+    <button type="button" name="button" class="button-form">GET STARTED</button>
+  </form>
     <p>Already using Slack? <a href="#">Sign in</a></p>
+  </div>
   </header>
   <!--INFO SECTION-->
   <main>
