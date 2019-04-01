@@ -5,3 +5,199 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #5b5e6d;
+}
+
+header, 
+#good-company-section,
+#try-section,
+footer {
+  background: rgba(0,0,0,0.2);
+	margin: 20px 0;
+	padding: 20px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.input-get-started {
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 100;
+  border-radius: 5px; 
+  border: 1px solid #F4F3F4;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #192592;
+  color: white;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+/* Flex Container */
+.flex-nav ul {
+	list-style: none;
+	border: 1px solid black;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+@media all and (max-width: 767px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ---------------------NAV BAR-------------------- */
+
+  .parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    background: white;
+  }
+
+  .flex-nav {
+    display: flex;
+    border-bottom: 1px solid #5b5e6d;
+    height: 80px; 
+  }
+
+  .flex-nav img {
+    max-width: 150px;
+    flex-grow: 1;
+  }
+
+  .flex-nav .fantom {
+    flex-grow: 3
+  }
+
+  .flex-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-decoration: none;
+    color: #374380;
+    font-size: 2em;
+  }
+
+  /* Order */
+
+  .flex-nav img {
+    order: 1;
+  }
+
+  .flex-nav .fantom {
+    order: 2
+  }
+
+  .flex-nav a {
+    order: 3;
+  }
+
+  .toggleNav {
+		display: block;
+	}
+
+	.flex-nav ul {
+		display: none;
+  }
+  
+  /* --------------------- HEADER -------------------- */
+
+  header {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  header p {
+    text-align: center;
+  } 
+
+  header p a {
+    color: #192592;
+  }
+
+  header figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header figure img {
+    max-width: 350px;
+  }
+
+}
+
+/* ------------------ GOOD COMPANY SECTION ---------------- */
+
+#good-company-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#good-company-section h2 {
+  color: #2C303F;
+  font-size: 1.5em;
+}
+
+#good-company-section p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 0 20px;
+}
+
+#good-company-section img {
+  padding: 0px 100px 20px 100px;
+  margin: 20px auto;
+  max-width: 200px;
+  border-bottom: 1px solid #5b5e6d;
+}
+
+/* ------------------ GOOD COMPANY SECTION ---------------- */
+
+#try-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#try-section p:first-child {
+  color: #2C303F;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#try-section p:last-child {
+  margin: 0;
+}
