@@ -1,4 +1,4 @@
- /* Developed by Phick Maine */
+ /*  by Phick Maine */
 
 /*
 background-grey: #F4F3F4;
@@ -12,8 +12,42 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  width: 100vw;
 }
-@media (max-width: 768px) {
+.li-header{
+    color: #6d6f7a;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .input-email{
+    color: #757575;
+    padding: 4%;
+    width: 72vw;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    border-radius: 0.3em;
+    border: 1px solid #ebebeb;
+  }
+  .button-blue{
+    background: #4049aa;
+    border: 0px;
+    border-radius: 0.3em;
+    color: white;
+    font-weight: bold;
+    margin-left: 3%;
+    padding: 5%;
+    width: 80vw;
+  }
+  .label-p{
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .label-a{
+    color: #4049aa;
+    text-decoration: none;
+    border-bottom: 1px solid #4049aa;
+  }
+@media (max-width:768px) {
   img{
     width: 100%;
     padding: 2%;
@@ -22,6 +56,7 @@ body {
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
+    height: 12vh;
     position: sticky;
     top: 0;
     background: white;
@@ -31,7 +66,7 @@ body {
     padding-top: 2%;
     margin-left: 5%;
     width: 30vw;
-    max-height: 10vh;
+    max-height: 60vh;
   }
   nav ul{
     display: flex;
@@ -41,9 +76,6 @@ body {
   }
   nav ul li{
     display: none;
-  }
-  nav ul a{
-
   }
   nav ul a span{
     position: relative;
@@ -115,51 +147,60 @@ body {
     padding: 5%;
     width: 80vw;
   }
-  footer div img{
+  footer{
+    margin: 0 auto;
+    padding: 0 auto;;
+    width: 100vw;
     display: flex;
-    justify-content: flex-start;
+  }
+  footer section{
+    width: 100vw;
+    height: 15vh;
+  }
+  footer div{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer section img{
     width: 30vw;
   }
-  footer ul{
-    font-size: 0.8em;
+  footer div ul{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex-direction: column;
-    max-width: 30vw;
+    flex-wrap: nowrap;
+    font-size: 0.8em;
     list-style: none;
   }
-  .li-header{
+  footer div ul li{
+    color: #a2a3aa;
+    font-weight: lighter;
+    padding-bottom: 10%;
+  }
+  footer div:last-of-type{
     color: #6d6f7a;
-    font-size: 1.2em;
     font-weight: bold;
+    background: #ebebeb;
   }
-  .input-email{
-    color: #757575;
-    padding: 4%;
-    width: 72vw;
-    margin-bottom: 5%;
-    margin-left: 3%;
-    border-radius: 0.3em;
-    border: 1px solid #ebebeb;
+  footer div div img{
+    width: 10vw;
   }
-  .button-blue{
-    background: #4049aa;
-    border: 0px;
-    border-radius: 0.3em;
-    color: white;
-    font-weight: bold;
-    margin-left: 3%;
-    padding: 5%;
-    width: 80vw;
+  
+}
+@media (min-width: 769px){
+/* Iteration 2 | Small Screen (961px > width > 767px) */
+  *{
+    background:red;
   }
-  .label-p{
-    font-size: 0.8em;
-    text-align: center;
-  }
-  .label-a{
-    color: #4049aa;
-    text-decoration: none;
-    border-bottom: 1px solid #4049aa;
+
+}
+@media (min-width: 960px){
+/* Iteration 3 | Medium Screen (1024px > width > 960px) */
+
+  *{
+    background: blue;
   }
 }
+/* Is this the real life? 
+Is this just fantasy? */
