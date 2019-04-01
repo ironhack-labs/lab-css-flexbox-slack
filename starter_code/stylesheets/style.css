@@ -138,9 +138,12 @@ header {
 }
 
 header img {
-  order: 1;
   width: 100%;
   margin: 25px 0;
+}
+
+.hero {
+  order: 1;
 }
 
 /* Main styles */
@@ -350,5 +353,65 @@ footer {
   .info-social {
     flex: 1;
     align-self: center;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /* Nav styles */
+
+  nav {
+    padding: 5px 50px;
+  }
+
+  .nav-menu > a {
+    display: none;
+  }
+
+  .nav-menu > ul {
+    display: block;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-menu > ul li {
+    font-size: 1.4em;
+    margin-left: 25px;
+    padding: 10px 20px;
+  }
+
+  .nav-menu > ul li.active {
+    border: 1px solid #5b5e6d;
+    border-radius: 5px;
+  }
+
+  /* Header styles */
+
+  input {
+    display: none;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  header > div:first-child {
+    width: 40%;
+  }
+
+  header > div:last-child {
+    width: 60%;
+  }
+
+  .hero {
+    order: 0;
+  }
+
+  header h1 {
+    font-size: 6em;
+  }
+
+  header p:first-of-type {
+    font-size: 2em;
   }
 }
