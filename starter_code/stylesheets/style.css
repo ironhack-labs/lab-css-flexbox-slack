@@ -5,3 +5,592 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+* {
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(221, 220, 220);
+    border-top: 1px solid rgb(221, 220, 220);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+.borde a{
+    border: 1px solid grey;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px; 
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-content: center;
+
+}
+
+ul li{
+    justify-items: space-between;
+    margin: 0 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: #616060;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: 80px 150px 40px 150px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.header-img{
+    width: 40%;
+    justify-content: space-evenly;
+    padding: 0 5% 0 5%;
+}
+
+.header-img img{
+    margin: 5% auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-txt{
+    width: 50%;
+    align-content: center;
+    padding: 0 50px 0 50px;
+}
+
+.header-txt h1{
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.header-txt p{
+    color: #848484;
+}
+
+.header-txt button{
+    background-color: #192592;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px 25px 15px 25px;
+}
+
+.header-txt .smallletter{
+    font-size: small;
+    color: #848484;
+}
+
+.seccion2{
+    background: white;
+}
+
+.seccion2 hr{
+    border: 1px solid #e7e5e5;
+}
+
+.seccion2-1{
+    background-color: #F4F3F4;
+}
+
+.seccion2-1 h2{
+    margin: 0px auto 0;
+    text-align: center;
+    padding: 50px 0 20px 0;
+    font-size: 32px;
+    
+}
+
+.seccion2-1 p{
+    text-align: center;
+    margin: 5px auto 30px;
+}
+
+.seccion2-1 .boton button{
+    text-align: center;
+    margin: 50px auto 50px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    border: 1px solid #aaabac;
+    color: #192592;
+    font-weight: 700; 
+}
+
+.seccion2-1 .images .col-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 100px 75px 100px;
+}
+
+.cta{
+    margin: 50px 100px 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+}
+
+.cta .cta-1 h3{
+   font-size: 24px;
+   padding-bottom: 10px;
+}
+
+.cta .cta-1 p{
+  font-size: small;
+}
+
+.cta .cta-2 button{
+    background-color: #192592;
+    color: white;
+    padding: 15px 30px 15px 30px;
+}
+
+.seccion3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px 100px 50px 100px;
+}
+
+.s3-logo{
+    justify-content: flex-end;
+}
+
+.seccion3 .s3-footer ul{
+    flex-direction: column;
+    margin: 30px 0 30px 0;
+}
+
+.seccion3 .s3-footer ul li{
+    line-height: 40px;
+    font-weight: 100;
+    color: #848484;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    background-color: #F4F3F4;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 35px 50px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #848484
+}
+
+footer .footer-2 i{
+    padding: 0 10px;
+
+}
+
+/* max-width: 768px */
+
+@media(max-width: 768px) {
+
+    nav{
+        display: flex;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+
+    .header-txt{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .header-txt h1{
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+    
+    .header-txt p{
+        color: #848484;
+    }
+    
+    .header-txt input{
+        width: 100%;
+        font-size: 18px;
+        margin: 30px auto 0px;
+        color: grey;   
+        padding: 15px 0 15px 10px; 
+    }
+
+    .header-txt button{
+        width: 100%;
+        background-color: #192592;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 15px 25px 15px 25px;
+    }
+    
+    .header-txt .smallletter{
+        font-size: small;
+        color: #848484;
+    }
+    
+    .header-img{
+        width: 400px;
+        margin: 50px auto 0;
+    }
+
+    .seccion2-1{
+        margin: 0 0 50px 0;
+    }
+
+    .seccion2-1 p{
+        text-align: center;
+        margin: 5px 20px 30px;
+    }
+
+    .seccion2-1 .boton button{
+        width: 90%;
+        text-align: center;
+        margin: 50px auto 50px;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 15px 25px 15px 25px;
+        border-radius: 5px;
+        border: 1px solid #aaabac;
+        color: #192592;
+        font-weight: 700; 
+    }
+    
+    .seccion2-1 .images .col-3{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 0 0;
+    }
+
+    .logos{
+        margin: 20px auto 20px;
+        padding: 10px 0 10px
+    }
+
+    .cta{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 20px 0 20px;
+        text-align: center;
+        background-color: white;
+    }
+
+    .email input{
+        width: 100%;
+        font-size: 18px;
+        margin: 30px auto 20px;
+        color: grey;   
+        padding: 15px 0 15px 10px; 
+    }
+
+    .cta-2 button{
+        width: 100%;
+        background-color: #192592;
+        color: white;
+        margin:20px auto 20px;
+        padding: 15px 25px 15px 5px;
+    }
+
+    .s3-logo{
+        width: 100%;
+    }
+
+    .s3-footer{
+        width: 50%;
+    }
+
+    footer{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    footer .footer-1{
+        margin: 0 auto 30px;
+    }
+
+    footer .footer-2{
+        margin: 0 auto;
+    }
+
+}
+
+/* min-width: 768 & max-width: 961px */
+
+@media(min-width: 768px) and (max-width: 961px){
+    nav{
+        display: flex;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .header-txt{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .header-txt h1{
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+    
+    .header-txt p{
+        color: #848484;
+    }
+    
+    .header-txt input{
+        width: 40%;
+        font-size: 18px;
+        margin: 30px auto 0px;
+        color: grey;   
+        padding: 15px 0 15px 10px; 
+    }
+
+    .header-txt button{
+        width: 40%;
+        background-color: #192592;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 15px 25px 15px 25px;
+    }
+    
+    .header-txt .smallletter{
+        font-size: small;
+        color: #848484;
+    }
+    
+    .header-img{
+        width: 400px;
+        margin: 50px auto 0;
+    }
+
+    .seccion2-1{
+        margin: 0 0 50px 0;
+    }
+
+    .seccion2-1 p{
+        text-align: center;
+        margin: 5px 20px 30px;
+    }
+
+    .seccion2-1 .boton button{
+        
+        text-align: center;
+        margin: 50px auto 50px;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 15px 25px 15px 25px;
+        border-radius: 5px;
+        border: 1px solid #aaabac;
+        color: #192592;
+        font-weight: 700; 
+    }
+    
+    .col-3{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logos img{
+        margin: 20px 40px 20px 40px;
+    }
+
+    .cta{
+        margin: 50px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 20px 0 20px;
+        text-align: center;
+        
+    }
+
+    .cta-1{
+        padding: 30px;
+    }
+
+    .email input{
+        width: 45%;
+        font-size: 16px;
+        margin: 30px auto 20px;
+        color: grey;   
+        padding: 11px 0 11px 10px; 
+    }
+
+    .cta-2 button{
+        width: 45%;
+        background-color: #192592;
+        color: white;
+        margin:20px auto 20px;
+        padding: 14px 25px 10px 5px;
+        border-radius: 5px;
+    }
+
+    .seccion3{
+        margin: 0px 10px 0 10px;
+        font-size: 14px;
+    }
+
+    .s3-logo{
+        width: 20%;
+    }
+
+    .s3-footer{
+        width: 15%;
+    }
+
+    .s3-footer li{
+        margin: 1px 0px;
+    }
+
+    footer{
+        background-color: #F4F3F4;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 35px 50px 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #848484
+    }
+    
+    footer .footer-2 i{
+        padding: 0 10px;
+    
+    }
+}
+
+/* min-width: 768 & max-width: 961px */
+
+@media(min-width: 961px) and (max-width: 1024px){
+    nav{
+        display: flex;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .container{
+        margin: 0 auto;
+    }
+
+    .header-img{
+        width: 40%;
+        padding: 0 30px;
+    }
+
+    .header-txt{
+        width: 40%;
+        padding: 0 30px; 
+    }
+
+    .header-txt input{
+        width: 40%;
+        font-size: 14px;
+        margin: 30px auto 0px;
+        color: grey;   
+        padding: 12px 0 12px 10px; 
+    }
+
+    .col-3{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logos img{
+        margin: 30px 60px 30px 60px;
+    }
+
+    .email input{
+        width: 45%;
+        font-size: 16px;
+        margin: 30px auto 20px;
+        color: grey;   
+        padding: 11px 0 11px 10px; 
+    }
+}
+
+/* min-width: 768 & max-width: 961px */
+
+@media(min-width: 1025px){
+
+    .menu-mobile{
+        display: none;
+    }
+    
+    .col-3{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logos img{
+        margin: 30px 60px 30px 60px;
+    }
+
+    .header-txt input{
+        display: none;
+    }
+
+    .email input{
+        display: none;
+    }
+
+}
