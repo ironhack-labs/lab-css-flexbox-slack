@@ -14,6 +14,9 @@ body {
   padding: 0;
   width: 100vw;
 }
+img{
+  max-width: 100%;
+}
 .li-header{
     color: #6d6f7a;
     font-size: 1.2em;
@@ -47,11 +50,30 @@ body {
     text-decoration: none;
     border-bottom: 1px solid #4049aa;
   }
-@media (max-width:768px) {
-  img{
-    width: 100%;
-    padding: 2%;
+  .footer-info{
+    color: #6d6f7a;
+    font-weight: lighter;
   }
+  .footer-info ul{
+    list-style: none;
+  }
+  .footer-info li{
+    margin-bottom: 5%;
+  }
+  .footer-bottom{
+    color: #6d6f7a;
+    font-weight: bold;
+    background: #ebebeb;
+  }
+  .footer-bottom ul{
+    font-weight: lighter;
+    list-style: none;
+  }
+  .footer-bottom i:first-of-type{
+    font-weight: lighter;
+  }
+
+
   nav {
     display: flex;
     justify-content: flex-start;
@@ -149,44 +171,23 @@ body {
   }
   footer{
     margin: 0 auto;
-    padding: 0 auto;;
+    padding: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  footer div:first-child{
     width: 100vw;
-    display: flex;
   }
-  footer section{
-    width: 100vw;
-    height: 15vh;
-  }
-  footer div{
-    background: white;
+  footer ul{
     display: flex;
+    flex-direction: row;
+  }
+  footer li{
     flex-direction: column;
-    flex-wrap: wrap;
   }
-  footer section img{
-    width: 30vw;
-  }
-  footer div ul{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 0.8em;
-    list-style: none;
-  }
-  footer div ul li{
-    color: #a2a3aa;
-    font-weight: lighter;
-    padding-bottom: 10%;
-  }
-  footer div:last-of-type{
-    color: #6d6f7a;
-    font-weight: bold;
-    background: #ebebeb;
-  }
-  footer div div img{
-    width: 10vw;
-  }
-  
+@media (max-width:768px) {
+
 }
 @media (min-width: 769px){
 /* Iteration 2 | Small Screen (961px > width > 767px) */
@@ -202,5 +203,10 @@ body {
     background: blue;
   }
 }
-/* Is this the real life? 
+@media (min-width: 1200px){
+  *{
+    background: green;
+  }
+}
+/* Is this the real life?
 Is this just fantasy? */
