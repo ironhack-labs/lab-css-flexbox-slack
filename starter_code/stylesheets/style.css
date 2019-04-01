@@ -39,7 +39,6 @@ button {
 button.primary {
   color: #ffffff;
   background: #192592;
-  width: 100%;
 }
 
 input {
@@ -79,7 +78,7 @@ a {
   color: #192592;
 }
 
-.centered {
+.mobile-centered {
   text-align: center;
 }
 
@@ -154,7 +153,11 @@ main > section {
   padding: 20px;
 }
 
-main > section figure {
+main > section h3 {
+  margin-bottom: 0px;
+}
+
+.companies figure {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,16 +165,12 @@ main > section figure {
   border-bottom: 1px solid #ebebeb;
 }
 
-main > section figure:last-child {
+.companies figure:last-child {
   border-bottom: 0;
 }
 
-main > section img {
+.companies img {
   max-height: 50%;
-}
-
-main > section h3 {
-  margin-bottom: 0px;
 }
 
 /* Footer styles*/
@@ -180,14 +179,18 @@ footer {
   color: #6d6f7a;
 }
 
-footer section > img {
-  width: 150px;
-}
-
 .footer-menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.footer-menu > figure {
+  width: 100%;
+}
+
+.footer-menu > figure img {
+  width: 125px;
 }
 
 .footer-menu > ul {
@@ -200,13 +203,13 @@ footer section > img {
   margin: 25px;
 }
 
+.footer-menu > ul > li:first-child {
+  font-weight: bold;
+}
+
 .footer-menu > ul > li > a {
   color: inherit;
   text-decoration: none;
-}
-
-.footer-menu > ul > li:first-child {
-  font-weight: bold;
 }
 
 .info {
@@ -251,4 +254,101 @@ footer section > img {
   color: inherit;
   font-size: 1.8em;
   margin: 0 15px;
+}
+
+@media screen and (min-width: 767px) {
+  input,
+  button {
+    width: auto;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  button {
+    margin-left: 5px;
+  }
+
+  .tablet-centered {
+    text-align: center;
+  }
+
+  .mobile-centered {
+    text-align: left;
+  }
+
+  /* Header styles */
+
+  header input {
+    width: 360px;
+  }
+
+  /* Main styles */
+
+  .companies {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+
+  .companies figure {
+    width: 50%;
+  }
+
+  .companies figure:nth-child(even) {
+    border-left: 1px solid #ebebeb;
+  }
+
+  .companies figure:nth-child(5) {
+    border-bottom: 0;
+  }
+
+  .companies img {
+    max-width: 70%;
+  }
+
+  .break-horizontally {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  /* Footer styles */
+
+  .footer-menu {
+    justify-content: space-around;
+  }
+
+  .footer-menu > figure {
+    width: auto;
+  }
+
+  .footer-menu > figure img {
+    width: 150px;
+  }
+
+  .footer-menu > ul {
+    width: auto;
+  }
+
+  .info {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .info-menu {
+    flex: 3;
+    align-self: center;
+  }
+
+  .info-language {
+    flex: 1;
+    margin: 0;
+  }
+
+  .info-social {
+    flex: 1;
+    align-self: center;
+  }
 }
