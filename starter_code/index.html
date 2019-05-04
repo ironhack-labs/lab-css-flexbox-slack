@@ -20,7 +20,7 @@
              class="imglogo"
              alt="slack_logo">
     </a>
-    <ul>
+    <ul class="linkMenuTop">
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
@@ -35,11 +35,13 @@
 
 </nav>
 <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
+     <h1>Where Work Happens</h1>
     <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract,
         finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you
         covered.</p>
+
+    <img src="./images/home_talking.png" alt="home_work_happening">
+
     <button type="button" name="button">GET STARTED</button>
     <p>Already using Slack? <a href="#">Sign in</a></p>
 </header>
@@ -123,7 +125,38 @@
         return (n %2 ===0);
     });
 
-    console.log(probando);
+    /* ordenar array de elementos con texto*/
+
+    let listaNombres=[
+        {nombre:"c9999", valor :10},
+        {nombre:"a9999", valor :10},
+        {nombre:"á9999", valor :10},
+        {nombre:"b9999", valor :10},
+    ];
+
+    let listaNombresSinLocale=JSON.parse(JSON.stringify(listaNombres));
+
+    let listaOrdenada= listaNombres.sort( (a,b)=>{
+        return a.nombre.localeCompare(b.nombre, 'en');
+    });
+
+
+     listaNombresSinLocale.sort((a,b)=>{
+
+         if(a.nombre===b.nombre){
+            return 0;
+        }
+
+         if( a.nombre>b.nombre){
+             return 1;
+         }else{
+             return -1;
+         }
+
+    });
+    console.log(listaOrdenada);
+    console.log("sin locale");
+    console.log(listaNombresSinLocale);
 </script>
 </body>
 
