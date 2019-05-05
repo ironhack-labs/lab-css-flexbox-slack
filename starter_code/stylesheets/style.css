@@ -54,9 +54,6 @@ button.cmdMenu {
     height: 40px;
 }
 
-nav.menuTop ul.linkMenuTop {
-    display: none;
-}
 
 .panInput {
     margin-top: 30px;
@@ -101,9 +98,11 @@ button.cmdCallToAction {
     padding: 30px 10px;
 }
 
-.panFondoSecundario p{
-    margin-top: 40px; margin-bottom: 40px;
+.panFondoSecundario p {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
+
 .panFondoSecundario img {
     max-width: 60%;
     margin: 20px;
@@ -152,34 +151,41 @@ button.cmdSec {
 .navfooter ul li:first-child {
     font-weight: bold
 }
-.panFondoGris{
+
+.panFondoGris {
     text-align: center;
     background-color: #F5F5F5;
     margin: 20px -20px 0;
     padding: 20px 10px 10px;
 }
 
-ul.menuCentrado{
+ul.menuCentrado {
     list-style: none;
     display: flex;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
     margin-bottom: 30px;
 }
 
-ul.menuCentrado li{
+ul.menuCentrado li {
     width: 32%;
     flex-grow: 1;
     text-align: center;
-    font-weight: bold; font-size: 14px;
+    font-weight: bold;
+    font-size: 14px;
     padding: 2px;
 }
 
 
-.panBarLinkSocial i{ padding: 5px 10px}
+.panBarLinkSocial i {
+    padding: 5px 10px
+}
 
-.panBarIdioma{
-    display: flex;text-align: center;
-    justify-content:center; align-items: center;
+.panBarIdioma {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -188,19 +194,45 @@ ul.menuCentrado li{
     border-bottom: 1px solid #e3e3e3;
 
 }
+
 /*responsivo*/
 .navfooter ul {
     width: 49%
 }
 
-/* ********************************************** */
-@media(min-width: 650px  ) and (max-width: 999px){
+.centrarEnSmallLeftEnMedium {
+    text-align: center;
+}
 
-    .panContenedorBloqueOnBig{
+/* *********************************************** */
+
+.noDisplayMenu {
+    display: none;
+}
+
+.siDisplayMenu {
+    display: block;
+}
+
+nav.menuTop .linkMenuTop {
+    background-color: #4D1954;
+}
+
+nav.menuTop .linkMenuTop {
+    width: 100%;
+
+    color: #fff;
+    font-size: 20px;
+}
+
+/* ********************************************** */
+@media (min-width: 650px  ) {
+
+    .panContenedorBloqueOnBig {
         margin-top: 30px;
     }
 
-    .panContenedorBloqueOnBig div{
+    .panContenedorBloqueOnBig div {
         display: inline-block;
     }
 
@@ -208,27 +240,54 @@ ul.menuCentrado li{
         margin: 0
     }
 
-    .panTextoSignIn p{
+    .panTextoSignIn p {
         text-align: left;
     }
 
     header .contenedorImg {
         text-align: center;
     }
-    header img { max-width: 60%}
 
-    button.cmdSec{
+    header img {
+        max-width: 60%
+    }
+
+    button.cmdSec {
         width: 300px;
     }
 
-    .panContenedorLogos{
+    .panContenedorLogos {
         margin-top: 50px;
     }
 
-    .panContenedorLogos div{
+    .panContenedorLogos div {
         width: 49%;
         display: inline-block;
+    }
 
+    .panContenedorLogos div img {
+        max-width: 300px;
+    }
+
+    .centrarEnSmallLeftEnMedium {
+        text-align: left;
+    }
+
+    .panItemsFlexOnMedium {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navfooter ul {
+        width: 25%
+    }
+}
+
+@media (min-width: 1200px  ) {
+
+    body {
+        width: 1200px;
+        margin: 0 auto;
     }
 
 }

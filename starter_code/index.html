@@ -17,18 +17,26 @@
 <body>
 
 <nav class="menuTop">
-    <a href="#">
+
+    <a href="#" class="siDisplayMenu" id="linkHome">
         <img src="./images/slack-logo.png"
              class="imglogo"
              alt="slack_logo">
     </a>
-    <ul class="linkMenuTop">
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-    </ul>
-    <button class="cmdMenu">
+
+    <div class="linkMenuTop noDisplayMenu" id="panMenuTop">
+        <ul >
+            <li>Why Slack?</li>
+            <li>Pricing</li>
+            <li>About Us</li>
+            <li>Your Workspaces</li>
+        </ul>
+    </div>
+
+    <button class="cmdMenu siDisplayMenu" id="cmdMenu"
+
+            onclick="onClickMenu()"
+    >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" aria-label=""
              class="svg-replaced" shape-rendering="geometricPrecision">
             <path d="M0 0h24v3H0zm0 7h24v3H0zm0 7h24v3H0z" fill-rule="evenodd"></path>
@@ -98,22 +106,30 @@
 
     </div>
 
-    <div style="padding-top: 10px">
+    <div class="panContenedorBloqueOnBig" style="padding-top: 10px">
 
-        <h3 style="text-align: center">Try it for free</h3>
-        <div class="panTextoSignIn">
-            <p>Already using Slack? <a href="#">Sign in</a></p>
+        <div style="margin-right: 20px">
+            <h3 class="centrarEnSmallLeftEnMedium">Try it for free</h3>
+            <div class="panTextoSignIn">
+                <p>Already using Slack? <a href="#">Sign in</a></p>
+            </div>
         </div>
 
 
-        <div class="panInput">
-            <input type="text" placeholder="Email adress"/>
+        <div class="panContenedorBloqueOnBig">
+
+            <div class="panInput">
+                <input type="text" placeholder="Email adress"/>
+            </div>
+            <div>
+                <button type="button"
+                        class="cmdCallToAction"
+                        name="button">GET STARTED
+                </button>
+            </div>
+
         </div>
 
-        <button type="button"
-                class="cmdCallToAction"
-                name="button">GET STARTED
-        </button>
     </div>
 
 </main>
@@ -154,12 +170,14 @@
             <li>Slack Fund</li>
         </ul>
     </div>
-    <div class="panFondoGris">
+    <div class="panFondoGris panItemsFlexOnMedium ">
+
         <ul class="menuCentrado">
             <li>Status</li>
             <li>Privacy & Terms</li>
             <li>Contact Us</li>
         </ul>
+
 
         <div class="panBarIdioma">
             <div>
@@ -177,9 +195,29 @@
             <i class="fa fa-facebook" aria-hidden="true"></i>
             <i class="fa fa-youtube-play" aria-hidden="true"></i>
         </div>
+
     </div>
 </footer>
 <script>
+
+    var panMenuTop = document.getElementById("panMenuTop");
+    var linkHome = document.getElementById("linkHome");
+    var cmdMenu = document.getElementById("cmdMenu");
+
+
+
+    function onClickMenu(){
+        //cambiar el menu
+        panMenuTop.classList.add("siDisplayMenu");
+
+        linkHome.classList.remove("siDisplayMenu");
+        linkHome.classList.add("noDisplayMenu");
+
+        cmdMenu.classList.remove("siDisplayMenu");
+        cmdMenu.classList.add("noDisplayMenu");
+
+    }
+
     var probando = 1;
 
     var lista = [1, 2, 3, 4, 5];
