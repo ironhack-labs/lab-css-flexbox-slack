@@ -14,6 +14,8 @@ body{
   margin: 0;
 }
 
+
+
 @media (max-width: 768px) {
 
 
@@ -225,6 +227,14 @@ body{
     order: 1;
     margin-top: 2em;
     width: 100%;
+  }
+
+  .container--principal-header{
+    flex-direction: column;
+  }
+
+  .container--header{
+    flex-direction: column;
   }
 
  
@@ -456,6 +466,10 @@ body{
   justify-content: flex-start;
   flex-shrink: 0;
   flex-grow: 1;
+  margin-left: 0;
+}
+
+.container--mail2{
   margin-left: 2em;
 }
 
@@ -486,9 +500,7 @@ body{
   font-size: 1.8em;
 }
 
-.no-margin{
-  margin: 0;
-}
+
 /*----------------------------------------------*\
 
 #NAVBAR
@@ -557,8 +569,12 @@ body{
     width: 100%;
   }
 
-  .container--header-tablet{
-    display: inline-flex;
+  .container--principal-header{
+    flex-direction: column;
+  }
+
+  .container--header{
+    flex-direction: column;
   }
 
  
@@ -922,8 +938,12 @@ body{
       width: 100%;
     }
   
-    .container--header-tablet{
-      display: inline-flex;
+    .container--principal-header{
+      flex-direction: column;
+    }
+  
+    .container--header{
+      flex-direction: column;
     }
   
    
@@ -1073,7 +1093,7 @@ body{
   }
   }
  
-  @media (min-width: 1024px) and (max-width: 1200px) {
+  @media (min-width: 1024px) {
 
 
     /*----------------------------------------------*\
@@ -1087,7 +1107,7 @@ body{
     .footer__title, .footer__item,
     .footer__language,
     .navbar__item{
-      font-size: 1.2em;
+      font-size: 1em;
     }
     
     .p,
@@ -1148,7 +1168,10 @@ body{
     
     /*----------------------------------------------*/
     
-    .button, .input{
+    .button{
+      
+      color: white;
+      background-color: #192592;
       padding: 1em;
       height: 80px;
       font-weight: 600;
@@ -1156,13 +1179,8 @@ body{
       box-sizing: border-box;
     }
     
-    .button{
-      width: 40%;
-      color: white;
-      background-color: #192592;
-    }
-    
     .button--secondary{
+      width: 30%;
       color: #192592;
       border: 1px solid #192592;
       background-color: white;
@@ -1170,11 +1188,7 @@ body{
     }
     
     .input{
-      align-self: flex-start;
-      margin-right: 0.5em;
-      width: 50%;
-      font-weight: 300;
-      border: 2px solid rgba(128, 128, 128, 0.2);
+      display: none;
     }
     
     .container{
@@ -1194,6 +1208,10 @@ body{
       justify-content: flex-start;
       flex-shrink: 0;
       flex-grow: 1;
+      margin-left: 0;
+    }
+    
+    .container--mail2{
       margin-left: 2em;
     }
     
@@ -1224,9 +1242,7 @@ body{
       font-size: 1.8em;
     }
     
-    .no-margin{
-      margin: 0;
-    }
+    
     /*----------------------------------------------*\
     
     #NAVBAR
@@ -1303,13 +1319,17 @@ body{
       }
     
       .header__img{
-        order: 1;
         margin-top: 2em;
-        width: 100%;
+        width: 50%;
+      }
+    
+      .container--principal-header{
+        flex-direction: row;
       }
     
       .container--header{
-       
+        padding: 2.5em;
+        flex-direction: column;
       }
     
      
@@ -1459,3 +1479,6 @@ body{
     }
     }
 
+    .no-margin{
+      margin: 0;
+    }
