@@ -5,3 +5,331 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskannada.css);
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans Kannada', sans-serif;
+}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+
+p{
+  color: #5b5e6d;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+header{
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+  border-top: solid 2px #5b5e6d;;
+  border-bottom: solid 2px#5b5e6d;;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: white;
+}
+
+header nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+header nav ul li {
+  display: inline;
+  text-decoration: none;
+  padding: 15px;
+
+}
+
+header nav ul li a {
+  color:#5b5e6d;
+  font-size: .8em;
+  text-decoration: none;
+  
+}
+
+.nav_item:last-child{
+  border: solid 1px #5b5e6d;
+  border-radius: 4px;
+  padding: 6px;
+  justify-content: center;
+}
+
+.bt-menu{
+  display: none;
+}
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 5em;
+  padding-top: 20px;
+  color: #2C303F;
+}
+
+
+
+.email_input{
+  width: 50%;
+  padding: 10px;
+  border-radius: 4px;
+  border: solid 1px #5b5e6d;
+  margin-bottom: 5%;
+ 
+}
+
+.get{
+  width: 150px;
+  padding: 12px;
+  border: none;
+  background: #192592;
+  border-radius: 4px;
+  color: white;
+  align-items: center;
+ }
+
+.item{
+      display: flex;
+      flex-direction: column;
+}
+
+.title{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: 10px;
+  color: #2C303F;
+}
+
+
+.seccion2{
+  background-color: #F4F3F4;
+  height: 30%;
+}
+.container-icon{
+display: flex;
+flex-wrap: wrap;
+background-color: #F4F3F4;
+justify-content: center;
+
+}
+
+.container-icon > div {
+  width: 300px;
+  height: 50%;
+  margin: 2%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+ }
+.container-icon .icons img {
+ width: 50%;
+
+}
+
+
+ .button{
+  border: none;
+ }
+
+.title-two{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+h3{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+  line-height: 0%;
+}
+
+.title-two a{
+  text-decoration-color: blue;
+  color: blue;
+}
+
+
+section div button{
+  border: solid 1px #192592;
+  border-radius: 4px;
+  padding: 20px;
+  background: white;
+  color: #192592;
+  width: 20%;
+  margin-bottom: 5%;
+
+}
+
+.title-two .div-button{
+  padding: 40px;
+}
+
+.aside-1 img{
+  width: 80%;
+  padding: 15%;
+}
+
+
+body {
+  padding: 2em; 
+}
+
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer  div img{
+   margin: 10%;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-top: 50%;
+}
+
+footer ul li{
+  color: #5b5e6d;
+  font-size: 0.8em;
+  line-height: 2.5em;
+}
+
+.gray{
+  display: flex;
+  justify-content: space-between;
+  background: #F4F3F4;
+  height: 80px;
+  align-items: center;
+}
+
+.gray ul{
+  list-style-type: none;
+
+}
+
+.gray ul li{
+  display: inline;
+  color: #5b5e6d;
+  font-weight: 400;
+  font-size: 1em;
+  padding: 15px;
+}
+
+.flag img{
+  width: 20%;
+}
+
+
+.title-two div h3, .title-two div p{
+  margin-left: 30px;
+}
+
+.gray div{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.gray div i, .gray div span{
+  padding: 10px;
+  color: #5b5e6d;
+}
+
+      @media all and (min-width: 600px) {
+        .aside { flex: 1 0 0; }
+      }
+      
+      @media all and (min-width: 800px) {
+         
+        .aside-1     { order: 1; } 
+        .seccion2    { order: 3; }
+        .aside-2     { order: 2; }
+        .section3    { order: 4; }
+        .footer      { order: 5; }
+        .section4    { order: 6; }
+      }
+
+     @media only screen and (max-width: 600px){
+       header{
+         width: 80%;
+         display: flex;
+         padding: 0%;
+         margin: 0; 
+       }
+
+
+       nav ul {
+        overflow: hidden;
+        position: relative;
+        display: none;
+       }
+
+       nav ul li {
+         padding: 0;
+       }
+
+       nav ul li a{
+         display: block;
+         text-align: right;
+         padding: 0px;
+         color: black;
+       }
+
+       nav ul li a:hover {
+         background-color:#ddd;
+         color: rgb(32, 31, 31);
+         padding: 15px;
+       }
+
+       
+       }
+       .nav_item:last-child{
+         border: none;
+       }
+
+       .bt-menu{
+         display: block;
+         padding: 3%;
+         float: right;
+       }
+       section div button{
+         width: 100%;
+       }
+
+       .get{
+         width: 100%;
+       }
+
+       .title-two{
+         display: flex;
+         flex-flow: row wrap;
+
+       }
+     }
