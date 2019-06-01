@@ -6,233 +6,418 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
+
+
+
+/* COMMON TO ALL SCREENS */
+
+
+/* #################  common to all sections or multiple classes   ################# */
+
 body{
     color:#2C303F; 
     box-sizing: border-box;
+    font-family: 'Montserrat';  
+    margin: 0%; 
+    display: block; 
 }
 
 h1 {
     color: #2C303F;
-    font-size: 2em; 
+    font-family: serif; 
+    font-size: 2.5em; 
 }
 
 h2{
-    font-size: 1.2em; 
+    font-family: serif; 
+    font-size: 1.6em; 
+    font-weight: bold; 
 }
+
 
 p {
     color:#5b5e6d;
-    font-size:0.8em; 
-    line-height: 1.4; 
+    line-height: 1.5; 
+}
+
+.grey{
+    background-color:#F4F3F4; 
+    text-align: center;
+    color:#5b5e6d; 
+}
+
+footer .grey{
+    font-size: 1em; 
+}
+
+.white {
+    background-color: white; 
+}
+
+input[type=email]{
+    padding:15px 0px; /* top and bottom padding added to the box to augment the box*/
+    /* top and bottom margin added to make space between the email box and the following bottom DEPENDS ON THE SIZE OF THE SCREEN*/
+    padding-left: 10%;  /* inside text shifted to the left */
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    color:#757885; 
+    font-size: 0.7em;
+    text-align:left;
+}
+
+button {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 10px;   
+}
+
+ .grey button {
+    border: 1px solid #192592; 
+    background-color: white; 
+    color: #192592;
+    padding: 15px 0px;
+}
+
+ .white button {
+    color:white; 
+    border: 1px solid #ccc; 
+    background-color: #192592;
+    opacity: 0.84;
+    margin: 0px; 
+    padding: 15px 0px;
 }
 
 
+/* ################# Nav ################# */
+
+nav{
+    /* Important depends on the screen size  !!*/
+    background-color: white; 
+    border-bottom: 2px solid #d1d3db;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position : fixed; 
+    top:0;
+}
+
+.dropdown {
+    /*padding:20px 0px; */
+    display: flex;
+    margin : 0px;
+    justify-content: flex-end;
+    width:100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.dropdown .dropbtn {
+    width: 35%;  
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none; 
+}
+
+/* ################## Header ################## */
+
+header img{
+    width:100%; 
+}
+
+/* ################### Main ################### */
+
+main .grey{
+    text-align: center; 
+    padding : 5% 8%; 
+}
+
+main .white{
+    padding : 5% 8%; 
+}
+
+
+main img{
+    width: 50%;
+    padding :  5% 0%; 
+}
+
+main hr{
+    border : 0.5px solid rgb(223, 219, 223); 
+
+}
+
+/* ################### Footer ################### */
+footer{
+    font-family: 'Montserrat';  
+    line-height: 1.5em;  
+    border-top: 2px solid rgb(223, 219, 223); 
+   
+}
+
+footer  li{
+    text-decoration: none; 
+    list-style-type: none;
+}
+
+footer .white img{
+    width: 50px; 
+    padding-left: 4%; 
+}
+
+footer .white .box {
+    font-size: 0.6em; 
+    display: flex;
+    flex-flow: row wrap; 
+}
+
+footer .white ul {
+    flex: auto;
+}
+
+/* ONLY FOR SMALL SCREENS
+footer .grey {
+    padding : 5%; 
+}
+*/
+
+footer .grey ul{
+    display: flex;
+    justify-content : space-around ; 
+    align-items: center; 
+    margin: 0px;
+    padding-inline-start: 0px;
+}
+
+footer .grey ul{
+    justify-content : space-around ; 
+    align-items: center; 
+}
+
+.footer-bold{
+    font-weight: bold; 
+}
+
+footer .grey img {
+    width : 15px; 
+}
+
+footer .grey li{
+    display: inline-flex;
+    flex-flow: row wrap; 
+    justify-content : space-evenly; 
+    align-items: center; 
+}
+
+footer .social{
+    width: 30%;
+    display: inline-flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+
+}
+
+
+
+/* BEGINNING OF SMALL SCREENS */
+
 @media only screen and (max-width: 768px) {
 
-       /* NAV */ 
+/* ############# common in all section for small screens  or in multiple sections############# */
+h1{font-size:2em; }
 
-    nav{
-        background-color: white; 
-        border-bottom: 2px solid #5b5e6d;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        position : fixed; 
-        top:0;
-    }
+h2{font-size: 1.3em; }
 
-    nav img{
-        width:30%;
-        margin-left : 10%;
-        padding : 5% 0px; 
-    }
+button {width: 100%; }
 
-    .dropdown {
-        display: flex;
-        justify-content: center;
-        width:40%;
-        overflow: hidden;
-    }
+input[type=email]{
+    width: 89%; 
+    margin : 5% 0px; 
+}
 
-    .dropdown .dropbtn {
-        width: 100%;  
-        border: none;
-        outline: none;
-        background-color: white;
-    }
+header button, main button {
+    padding:15px 0px; 
+}
 
-    .dropdown-content {
-        display: none; 
-    }
+/*  ############# Nav  ############# */ 
+
+nav{
+    padding: 4% ; 
+}
+
+nav img{
+    width:25%;
+}
+
+/* #############  Header ############# */ 
+header{     
+    padding : 18% 8% 10%;  /* margin top needs to be visible after the fixed nav bar */
+}
 
 
-    /* HEADER */ 
+/* ################## Footer ################## */ 
 
-    header{
-        margin : 10%;
-        margin-top: 30%;/* To be visible after the fixed nav bar */
-    }
+footer .grey{
+    padding: 20px 0%; 
+}
 
-    header img{
-          width:100%; 
-      }
+footer .grey ul{
+    justify-content : space-around ; 
+    align-items: center; 
+}
 
-    header input[type=email]{
+footer .grey{
+    font-size: 0.8em; 
+}
 
-        margin : 10% 0px;
+} /* END OF SMALL SCREEN */
 
-    }
 
-    input[type=email]{
-        width: 90%; 
-        padding:15px 0px; 
-        padding-left: 10%; 
-        border: 1px solid #ccc; 
-        border-radius: 4px; 
-        color:#5b5e6d; 
-        font-size: 0.8em;
-        text-align:left;
-    }
 
-    button {
-        width: 100%;  
-        border-radius: 4px;      
-        text-align: center;
-        padding:15px 5px;
-        font-family: 'Montserrat';
-        font-weight: bold;
-        font-size: 0.7em;
-    }
 
-    header button {
-        border: 1px solid #ccc; 
-        background-color: #192592;
-        color:white; 
-        opacity: 0.84;
-    }
 
-    /* MAIN */ 
 
-    main {
-        text-align: center; 
-    }
 
-    main .grey{
-        background-color:#F4F3F4; 
-    }
+/* MEDIUM SCREENS */
 
-    main section{
-        margin : 5% 10%;
-        padding : 1% 0px; 
-    }
 
-    main button {
-        border: 1px solid #192592; 
-        background-color: white; 
-        color: #192592;
-        margin: 5% 0px; 
-    }
+@media only screen and (min-width: 769px){  /*and (max-width:1024px) {  (max-width: 961px) {*/
+/* ################### Common to all sections for medium screens ################## */
 
-    main img{
+form {
+    margin-right : 50px ; /* separation between the email form and the get started button */
+}
 
-        width: 50%;
-        padding : 5%; 
+input[type=email]{
+    padding-right: 50%; 
+}
 
-    }
+header button, main button {
+    width: 25%; 
+}
 
-    main hr{
-        border : 0.5px solid rgb(223, 219, 223); 
+.get-started{
+    margin: 3% 0%; 
+    width: 100%; 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
 
-    }
+.signin{
+    line-height: 1.5em; 
+    font-size: 1em; 
+    color: #2C303F;
+    line-height: 0%;
+}
 
-    main .text1 {
-        font-size: 1.2em; 
-        font-weight: bold;
-        text-align: center;
-        color: #2C303F;
-    }
+h2 {
 
-    main .text2 {
-        font-size: 1em; 
-        color: #2C303F;
-        line-height: 0%
-    }
-
-    /* FOOTER */ 
-
-    footer{
-        font-family: 'Montserrat';  
-        line-height: 1.5em;  
-    }
-
-    footer  li{
-        text-decoration: none; 
-        list-style-type: none;
+    font-size: 2.2em; 
+}
     
-    }
+/* ################### Nav bar ################## */
 
-    footer .white img{
-        width:25%; 
-    }
+nav{
+    padding: 15px ; 
+}
 
-    footer .white .box {
-        font-size: 0.6em; 
-        display: flex;
-        flex-flow: row wrap; 
-    }
+nav img{
+    width:15%;
+}
 
-    footer .white ul {
-        flex: auto;
-    }
+/* ###################  Header ###################  */ 
 
-    footer .grey{
-        padding: 5%; 
-        background-color:#F4F3F4; 
-        text-align: center;
-        font-size: 0.7em; 
-        color:#5b5e6d; 
-  
-    }
+header{     
+    padding : 10% 8% 10%;  /* margin top needs to be visible after the fixed nav bar */
+}
 
-    footer .grey ul{
-        display: flex;
-        justify-content : space-around ; 
-        align-items: center; 
-        margin: 0px;
-        padding-inline-start: 0px;
-    }
-
-    footer .grey li{
-
-        justify-content : center ; 
-        align-items: center; 
-        padding:  0px 5%; 
-    }
-
-    footer .lang {
-        padding: 5% 0px;
-    }
-
-    footer .social{
-        display: flex;
-        justify-content : space-around ; 
-        align-items: center; 
-        padding: 0% 30%;
-
-    }
-
-    .footer-bold{
-        font-weight: bold; 
-
-    }
+header img{
+    width:100%; 
+}
 
 
-    footer .grey img{
-        width : 5%; 
-    }
+/* ###################  Main ###################  */ 
+.discover-why-button {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 5% 0%;
+}
 
-  
-  }
+main img{
+    width: 25%;
+    height: 25%; 
+    margin : 0% 5%; 
+}
+
+.images-set{
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-around; 
+    align-content: center; 
+}
+
+/* ###################  Footer ###################   */ 
+
+
+/* ################### Footer white part */ 
+
+footer .white .box {
+    font-size: 1em; 
+    line-height: 1.5em;
+    display: flex;
+    flex-flow: row wrap; 
+}
+
+footer .white ul {
+    flex: auto;
+}
+
+/* ################### Footer grey part */
+
+footer .grey{
+    padding: 2%;    
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-evenly;
+    align-items: center; 
+}
+      
+footer .grey ul{
+    justify-content : flex-start ; 
+    align-items: left; 
+}
+
+footer .grey li{
+    padding: 0 10px; 
+}
+
+} /* END OF MEDIUM SCREEN*/
 
 
 
+
+
+
+@media only screen and (min-width: 960px){
+
+
+/* ################### Main - grey ################## */
+
+main img{
+    width: 20%;
+    height: 15%; 
+    margin : 0% 5%; 
+}
+
+
+}
