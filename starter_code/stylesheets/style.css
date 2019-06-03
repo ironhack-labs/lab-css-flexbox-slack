@@ -20,6 +20,7 @@ body{
     font-family: 'Montserrat';  
     margin: 0%; 
     display: block; 
+    padding-top: 10%; /* in order for the content following the nav bar to be visible */
 }
 
 h1 {
@@ -34,7 +35,6 @@ h2{
     font-weight: bold; 
 }
 
-
 p {
     color:#5b5e6d;
     line-height: 1.5; 
@@ -46,20 +46,17 @@ p {
     color:#5b5e6d; 
 }
 
-footer .grey{
-    font-size: 1em; 
-}
-
 .white {
     background-color: white; 
 }
+
 
 input[type=email]{
     padding:15px 0px; /* top and bottom padding added to the box to augment the box*/
     /* top and bottom margin added to make space between the email box and the following bottom DEPENDS ON THE SIZE OF THE SCREEN*/
     padding-left: 10%;  /* inside text shifted to the left */
     border: 1px solid #ccc; 
-    border-radius: 4px; 
+    border-radius: 5px; 
     color:#757885; 
     font-size: 0.7em;
     text-align:left;
@@ -70,7 +67,7 @@ button {
     font-weight: bold;
     font-size: 0.8em;
     text-align: center;
-    border-radius: 10px;   
+    border-radius: 5px;   
 }
 
  .grey button {
@@ -90,6 +87,7 @@ button {
 }
 
 
+
 /* ################# Nav ################# */
 
 nav{
@@ -103,15 +101,6 @@ nav{
     top:0;
 }
 
-.dropdown {
-    /*padding:20px 0px; */
-    display: flex;
-    margin : 0px;
-    justify-content: flex-end;
-    width:100%;
-    overflow: hidden;
-    align-items: center;
-}
 
 .dropdown .dropbtn {
     width: 35%;  
@@ -123,27 +112,21 @@ nav{
     background-color: white;
 }
 
-.dropdown-content {
-    display: none; 
-}
-
 /* ################## Header ################## */
-
 header img{
     width:100%; 
 }
+
+header p{
+    font-size: 1em; 
+}
+
 
 /* ################### Main ################### */
 
 main .grey{
     text-align: center; 
-    padding : 5% 8%; 
 }
-
-main .white{
-    padding : 5% 8%; 
-}
-
 
 main img{
     width: 50%;
@@ -152,58 +135,45 @@ main img{
 
 main hr{
     border : 0.5px solid rgb(223, 219, 223); 
-
 }
 
 /* ################### Footer ################### */
 footer{
     font-family: 'Montserrat';  
-    line-height: 1.5em;  
     border-top: 2px solid rgb(223, 219, 223); 
    
 }
+
+/* ################### Footer WHITE part */
 
 footer  li{
     text-decoration: none; 
     list-style-type: none;
 }
 
-footer .white img{
-    width: 50px; 
-    padding-left: 4%; 
-}
-
-footer .white .box {
-    font-size: 0.6em; 
-    display: flex;
-    flex-flow: row wrap; 
-}
-
-footer .white ul {
+footer .white ul{
     flex: auto;
+    font-size:0.7em; 
+    line-height: 2em; 
 }
 
-/* ONLY FOR SMALL SCREENS
-footer .grey {
-    padding : 5%; 
+
+/* ################### Footer grey part */
+footer .grey{
+    font-size: 0.7em; 
+    line-height: 2em; 
 }
-*/
+
 
 footer .grey ul{
     display: flex;
-    justify-content : space-around ; 
-    align-items: center; 
     margin: 0px;
     padding-inline-start: 0px;
 }
 
-footer .grey ul{
-    justify-content : space-around ; 
-    align-items: center; 
-}
-
 .footer-bold{
     font-weight: bold; 
+    font-size:1em; 
 }
 
 footer .grey img {
@@ -227,6 +197,8 @@ footer .social{
 
 
 
+
+
 /* BEGINNING OF SMALL SCREENS */
 
 @media only screen and (max-width: 768px) {
@@ -243,40 +215,58 @@ input[type=email]{
     margin : 5% 0px; 
 }
 
-header button, main button {
-    padding:15px 0px; 
+.body-padding {
+    padding:  5% 10%;
 }
 
 /*  ############# Nav  ############# */ 
-
-nav{
-    padding: 4% ; 
-}
 
 nav img{
     width:25%;
 }
 
-/* #############  Header ############# */ 
-header{     
-    padding : 18% 8% 10%;  /* margin top needs to be visible after the fixed nav bar */
+.dropdown {
+    display: flex;
+    margin : 0px;
+    justify-content: flex-end;
+    width:100%;
+    overflow: hidden; /* except for big screens */
+    align-items: center;
 }
+
+.dropdown-content {
+    display: none; 
+}
+
+
+
+/* #############  Header ############# */ 
 
 
 /* ################## Footer ################## */ 
 
-footer .grey{
-    padding: 20px 0%; 
-}
 
 footer .grey ul{
     justify-content : space-around ; 
     align-items: center; 
 }
 
-footer .grey{
-    font-size: 0.8em; 
+footer .white .img{
+    width:100%; 
 }
+
+footer .white img{
+    width: 15%; 
+    /*padding-right: 5%; */  
+}
+
+footer .white .box {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+}
+
+
 
 } /* END OF SMALL SCREEN */
 
@@ -289,68 +279,97 @@ footer .grey{
 /* MEDIUM SCREENS */
 
 
-@media only screen and (min-width: 769px){  /*and (max-width:1024px) {  (max-width: 961px) {*/
+@media only screen and (min-width: 769px) {/*and (max-width:1024px) {  (max-width: 961px) {*/
 /* ################### Common to all sections for medium screens ################## */
 
-form {
-    margin-right : 50px ; /* separation between the email form and the get started button */
+.body-padding {
+    padding: 2% 5% ;
 }
 
-input[type=email]{
-    padding-right: 50%; 
-}
 
-header button, main button {
-    width: 25%; 
-}
-
-.get-started{
-    margin: 3% 0%; 
-    width: 100%; 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
+h2 { font-size: 2.2em; 
 }
 
 .signin{
     line-height: 1.5em; 
-    font-size: 1em; 
+    font-size: 0.8em; 
     color: #2C303F;
     line-height: 0%;
 }
 
-h2 {
-
-    font-size: 2.2em; 
+ .get-started{
+    margin: 3% 0%; 
+    width: 70%; 
+    display: flex;
+    flex-flow: row nowrap;
 }
+
+.white button{
+    width: 30%; 
+    font-size: 0.7em; 
+}
+
+header form {
+    width: 80%;
+}
+
+main form {
+    width: 37%; 
+
+}
+
+
     
 /* ################### Nav bar ################## */
 
-nav{
+/*nav{
     padding: 15px ; 
 }
+*/
 
 nav img{
     width:15%;
 }
 
-/* ###################  Header ###################  */ 
-
-header{     
-    padding : 10% 8% 10%;  /* margin top needs to be visible after the fixed nav bar */
+.dropdown {
+    /*padding:20px 0px; */
+    display: flex;
+    margin : 0px;
+    justify-content: flex-end;
+    width:100%;
+    overflow: hidden; /* except for big screens */
+    align-items: center;
 }
+
+.dropdown-content {
+    display: none; 
+}
+
+/* ###################  Header ###################  */ 
 
 header img{
     width:100%; 
 }
 
+header input[type=email]{
+    padding-right: 50%; 
+}
+
+header .get-started{
+    justify-content: flex-start;
+}
+
 
 /* ###################  Main ###################  */ 
-.discover-why-button {
+.discover-why-div{ /* place the button in the middle*/
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    margin: 5% 0%;
+}
+
+.grey button {
+    width: 30%;
+    margin: 2% 0%;
 }
 
 main img{
@@ -365,27 +384,57 @@ main img{
     justify-content: space-around; 
     align-content: center; 
 }
+main h2{
+    font-size: 1.5em; 
+}
+
+main .white {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    align-content: flex-end; 
+    line-height: 1em; 
+}
+
+main .get-started{
+    
+    justify-content: flex-end; 
+}
+
+main input[type=email]{
+    padding-right: 10%; 
+}
+
+
 
 /* ###################  Footer ###################   */ 
 
 
 /* ################### Footer white part */ 
 
-footer .white .box {
-    font-size: 1em; 
-    line-height: 1.5em;
+footer .white {
     display: flex;
     flex-flow: row wrap; 
+    align-items: flex-start; 
+    justify-content: space-between;
 }
 
-footer .white ul {
-    flex: auto;
+footer .white img{
+    width: 50%; 
 }
+
+footer .white .box {
+    display: flex;
+    flex-flow: row wrap;   
+    justify-content: space-between;
+}
+
+
 
 /* ################### Footer grey part */
 
 footer .grey{
-    padding: 2%;    
+    /*padding: 2%;    */
     display: flex; 
     flex-flow: row wrap; 
     justify-content: space-evenly;
@@ -408,7 +457,48 @@ footer .grey li{
 
 
 
-@media only screen and (min-width: 960px){
+/* BEGINNING OF LARGE SCREEN*/
+
+@media only screen and (min-width: 1024px){
+
+nav{
+    display: inline-flex; 
+    align-items: center; 
+}
+
+
+.dropdown-content {
+    width: 100%;
+    display: inline-flex; 
+    justify-content: flex-end; 
+
+}
+
+.dropdown-content a{
+    display: inline-flex;
+    align-items: center; 
+    font-size: 0.9em;   
+    text-decoration: none; 
+    color: #5b5e6d;
+    padding: 0 2%; 
+}
+
+.dropdown{
+    visibility: hidden;
+    width: 0%; 
+}
+
+
+#workspace > button {
+    font-size:0.9em;
+    width:100%; 
+    padding:  5%;
+    background-color:white;
+    color: #5b5e6d;
+}
+
+
+    
 
 
 /* ################### Main - grey ################## */
@@ -418,6 +508,5 @@ main img{
     height: 15%; 
     margin : 0% 5%; 
 }
-
 
 }
