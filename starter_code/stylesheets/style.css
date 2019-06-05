@@ -5,3 +5,141 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body {
+    font-size: 10px;
+    position: relative;
+
+}
+nav {
+    width: 100vw;
+    padding: 1rem;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed; 
+    border-bottom: 0.01rem silver solid;  
+    background: white;  
+}
+
+nav ul{
+    display: none;
+}
+
+.logo{
+    width: 5rem;
+    height: 3rem;
+}
+.nav-switch{
+    font-size: 2rem;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 1rem 2rem;
+    text-align: center;
+    width: 100vw;
+    height: 30rem;
+}
+
+
+header h1,p{
+    margin: 0 auto;
+    max-width: 50rem;
+    margin-bottom: 1rem;
+}
+
+.text{
+    font-size: 2rem;
+    width: 90%;
+    line-height: 5rem;
+    text-align: center;
+
+}
+.text-left{
+    text-align: left;
+    font-size: 1rem;
+}
+header p{
+    color: #5b5e6d;
+    font-size: 1rem;
+    width: 80%;
+    line-height: 1rem;
+    text-align: center;
+
+}
+header img{
+  width: 20rem;
+  height: 20rem;
+  margin-top: 1rem;
+  display: flex;
+
+}
+header div{
+    width: 3rem;
+    height: 1rem;
+    border: 0.03rem;
+}
+header button{
+    background: #192592;
+    border: none;
+    border-radius: 10%;
+    width: 4rem;
+    height: 2rem;
+    color: white;
+    font-size: 0.3rem;  
+}
+main{
+    background: #F4F3F4;
+}
+
+
+.img{
+    width: 20vw;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media (min-width: 401px){
+    nav ul{
+        display: flex;
+        list-style:none;
+    }
+    nav ul li{
+        list-style: none;
+        margin-right: 1rem;
+    }
+    .nav-switch{
+        display:flex;
+        font-size: 4rem;  
+    }
+    .nav-switch {
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-flow: wrap row;
+        padding-top: 6rem;
+        text-align: center;
+        width: 100vw;
+        height: 30rem;
+    }
+    header img{
+        display: flex;
+        flex-flow: wrap column;
+      
+      }
+      .img{
+        flex-grow: 1;
+        flex-flow: wrap row;
+    }
+
+}
+
