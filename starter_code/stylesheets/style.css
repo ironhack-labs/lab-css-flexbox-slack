@@ -8,62 +8,743 @@ nav grey: #5b5e6d;
 * {
   margin: 0;
   padding: 0;
+  font-family: Helvetica;
 }
 
-h1 {
-  font-size: 40px;
-  color: #2c303f;
-}
+/* @media (max-width: 768px) { */
 
-nav {
-  display: flex;
-  justify-content: space-between;
-
-  width: 100%;
-  height: 100px;
-  padding: 0 20px;
-
-  border-bottom: solid #5b5e6d4d 1px;
-
-}
-
-nav img {
-  width: 200px;
-}
-
-nav ul {
-  display: none;
-}
-
-header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-}
-
-header * {
-  width: 85%;
-  padding: 20px 0;
-}
-
-header img{
-    order: 2;
-}
-
-header button {
+button {
+  /* height: 50px; */
+  border-radius: 5px;
+  border: solid 1px #192592;
   background: #192592;
   color: #fff;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
 }
 
-header p {
+input {
+  /* height: 10px; */
+  border-radius: 5px;
+  border: solid 1px #5b5e6d;
+  /* background: #5b5e6d; */
   color: #5b5e6d;
 }
 
+.btn-white {
+  height: 50px;
+  border-radius: 5px;
+  border: solid 1px #192592;
+  background: #fff;
+  color: #192592;
+}
+
+nav {
+  position: fixed;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 50px;
+  padding: 0 9vw;
+
+  background: white;
+  border-bottom: solid #5b5e6d4d 1px;
+  z-index: 10000;
+}
+
+nav img {
+  width: 100px;
+}
+
+nav i {
+  font-size: 25px;
+}
+
+nav li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+nav li:not(:last-child) {
+  display: none;
+}
+
+nav li:nth-child(4) {
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+header {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: 1005px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header h1 {
+  width: 85%;
+  font-size: 42px;
+  color: #2c303f;
+}
+
+header p {
+  margin-top: 20px;
+  width: 85%;
+  font-size: 17px;
+  color: #5b5e6d;
+}
+
+header img {
+  order: 2;
+}
+
+header form {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+header form input {
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 17px;
+  width: 100%;
+  height: 60px;
+  margin: 20px 0;
+}
+
+header form button {
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
 header p:last-child {
+  width: 85%;
   text-align: center;
+}
+
+header > img {
+  margin-top: 40px;
+  width: 350px;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: solid #5b5e6d25 1px;
+}
+
+.good-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+
+  background: #f4f3f4;
+}
+
+.good-company h2 {
+  width: 80vw;
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: #2c303f;
+}
+
+.good-company p {
+  width: 80vw;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.good-company button {
+  width: 80vw;
+  height: 60px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.good-company .brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80vw;
+  height: 700px;
+
+  padding-bottom: 40px;
+}
+
+.brands img {
+  height: calc(width/2);
+  width: 50%;
+}
+.try-it {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.try-it p {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.try-it p:first-child {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.try-it form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.try-it form input {
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 17px;
+  width: 100%;
+  height: 60px;
+  margin: 20px 0;
+}
+
+.try-it form button {
+  font-size: 17px;
+  font-weight: bold;
+  width: 100%;
+  height: 60px;
+  margin: 20px 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > * {
+  width: 85%;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+footer > div:first-child img {
+  height: 120px;
+  align-self: flex-start;
+}
+
+footer .lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer .lists ul {
+  padding-left: 30px;
+  padding-bottom: 20px;
+
+  width: 35%;
+}
+
+footer .lists ul:nth-child(even) {
+  margin-right: 5%;
+}
+
+footer .lists li {
+  padding: 15px 0;
+  font-size: 17px;
+}
+
+footer .lists li:first-child {
+  font-weight: bold;
+}
+
+footer .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f3f4;
+}
+footer .bottom ul {
+  margin-top: 20px;
+}
+footer .bottom li {
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.language > * {
+  margin: 30px 10px 0 10px;
+}
+
+.language img {
+  height: 25px;
+}
+
+.language span {
+  font-weight: bold;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: #5b5e6d;
+}
+
+.social > * {
+  margin: 30px 10px 10px 10px;
+}
+
+@media (min-width: 767px) and (max-width: 961px) {
+  nav {
+    height: 100px;
+  }
+
+  nav img {
+    width: 200px;
+  }
+  header {
+    top: 150px;
+    height: 860px;
+  }
+
+  header h1 {
+    font-size: 62px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  header form {
+    flex-direction: row;
+  }
+
+  header form input {
+    width: 50%;
+  }
+
+  header form button {
+    width: 30%;
+
+    margin: 20px 0 20px 10px;
+  }
+
+  header p:last-child {
+    text-align: left;
+  }
+
+  .good-company h2 {
+    font-size: 35px;
+  }
+
+  .good-company p {
+    font-size: 20px;
+  }
+
+  .good-company button {
+    width: 30%;
+  }
+
+  .good-company .brands {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+    height: 500px;
+  }
+
+  .brands img {
+    width: 40%;
+  }
+
+  .try-it {
+    height: 120px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .try-it form {
+    width: 50%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: auto;
+    height: 100%;
+  }
+
+  .try-it form input {
+    width: 50%;
+  }
+
+  .try-it form button {
+    width: 50%;
+    margin-left: 10px;
+  }
+
+  footer > div:first-child {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  footer .lists {
+    flex-wrap: nowrap;
+  }
+
+  footer .lists ul {
+    padding-left: 10px;
+  }
+
+  footer .lists ul:nth-child(even) {
+    margin-right: 0;
+  }
+
+  footer .bottom {
+    height: 100px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  footer .bottom ul {
+    align-self: flex-start;
+    margin: auto auto auto 20px;
+  }
+
+  .social {
+    margin-right: 20px;
+  }
+
+  .language > * {
+    margin: auto 5px auto 10px;
+  }
+
+  .social > * {
+    margin: auto 5px auto 10px;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1024px) {
+  nav {
+    height: 100px;
+  }
+
+  nav img {
+    width: 200px;
+  }
+  header {
+    top: 150px;
+    height: 860px;
+  }
+
+  header h1 {
+    font-size: 62px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  header form {
+    flex-direction: row;
+  }
+
+  header form input {
+    width: 50%;
+  }
+
+  header form button {
+    width: 30%;
+
+    margin: 20px 0 20px 10px;
+  }
+
+  header p:last-child {
+    text-align: left;
+  }
+
+  .good-company h2 {
+    font-size: 45px;
+    width: 100%;
+  }
+
+  .good-company p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .good-company button {
+    width: 30%;
+  }
+
+  .good-company .brands {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    width: 80%;
+    height: 300px;
+  }
+
+  .brands img {
+    width: 30%;
+  }
+
+  .try-it {
+    height: 120px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .try-it form {
+    width: 50%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: auto;
+    height: 100%;
+  }
+
+  .try-it form input {
+    width: 50%;
+  }
+
+  .try-it form button {
+    width: 50%;
+    margin-left: 10px;
+  }
+
+  footer > div:first-child {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  footer .lists {
+    flex-wrap: nowrap;
+  }
+
+  footer .lists ul {
+    padding-left: 10px;
+  }
+
+  footer .lists ul:nth-child(even) {
+    margin-right: 0;
+  }
+
+  footer .bottom {
+    height: 100px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  footer .bottom ul {
+    align-self: flex-start;
+    margin: auto auto auto 20px;
+  }
+
+  .social {
+    margin-right: 20px;
+  }
+
+  .language > * {
+    margin: auto 5px auto 10px;
+  }
+
+  .social > * {
+    margin: auto 5px auto 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav li:not(:last-child) {
+    display: inline-block;
+  }
+
+  nav li:last-child {
+    display: none;
+  }
+
+  header {
+    height: 430px;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  header h1 {
+    width: 50%;
+  }
+
+  header p {
+    width: 50%;
+  }
+
+  header form {
+    width: 50%;
+    flex-direction: row;
+  }
+
+  header form button {
+    width: 180px;
+  }
+
+  header form input {
+    display: none;
+  }
+
+  header p:last-child {
+    width: 50%;
+    text-align: left;
+    font-size: 10px;
+    margin-top: 0;
+  }
+
+  header > img {
+    margin-top: 0;
+    width: 350px;
+  }
+
+  .good-company h2 {
+    font-size: 45px;
+    width: 100%;
+  }
+
+  .good-company p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .good-company button {
+    width: 30%;
+  }
+
+  .good-company .brands {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    width: 80%;
+    height: 300px;
+  }
+
+  .brands img {
+    width: 30%;
+  }
+
+  .try-it {
+    height: 120px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .try-it form {
+    width: 50%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: auto;
+    height: 100%;
+  }
+
+  .try-it form input {
+    display: none;
+  }
+
+  .try-it form button {
+    width: 180px;
+    margin-left: 10px;
+  }
+
+  footer > div:first-child {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  footer .lists {
+    flex-wrap: nowrap;
+  }
+
+  footer .lists ul {
+    padding-left: 10px;
+  }
+
+  footer .lists ul:nth-child(even) {
+    margin-right: 0;
+  }
+
+  footer .bottom {
+    height: 100px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  footer .bottom ul {
+    align-self: flex-start;
+    margin: auto auto auto 20px;
+  }
+
+  .social {
+    margin-right: 20px;
+  }
+
+  .language > * {
+    margin: auto 5px auto 10px;
+  }
+
+  .social > * {
+    margin: auto 5px auto 10px;
+  }
 }
