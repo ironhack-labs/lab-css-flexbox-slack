@@ -15,8 +15,20 @@ nav {
   border-bottom: 2px solid #5b5e6d;
   position: fixed;
   background: white;
+  width: 100%;
 }
 
+.nav-li {
+ width:23%;
+ color: #5b5e6d;
+ padding-top: 2%;
+}
+
+.work {
+  
+  border: 1px solid #192592;
+  border-radius: 4px;
+}
 
 .slack-logo {
   width: 20%;
@@ -96,7 +108,15 @@ header {
 .main-contain {
   display: flex;
   flex-direction: column;
-  padding: 10% 5%;
+  padding: 10% 5% 0 5%;
+  text-align: center;
+  background:#F4F3F4;
+}
+
+.main-contain2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
   text-align: center;
   background:#F4F3F4;
 }
@@ -162,7 +182,8 @@ hr {
 }
 
 .foot-img {
-  width: 35%;
+  width: 30%;
+  padding-right: 50%;
 }
 
 .comp-col {
@@ -240,4 +261,73 @@ hr {
 .btm-i {
   font-size: 2.5em;
   margin: 10%;
+}
+
+@media (min-width:768px) {
+  .head-contain {
+    display:inherit;
+  }
+
+  .main-contain2 {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 5%;
+      text-align: center;
+      background:#F4F3F4;
+      flex-direction: inherit;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .foot-ul {
+    width: 25%;
+  }
+
+  .btm-contain {
+    flex-direction: inherit;
+  }
+
+  .bottom {
+    margin: 0;
+    display:flex;
+  }
+
+  .fa-chevron-down {
+    margin-right: 5%;
+  }
+
+  .btm-i {
+    margin: 5%;
+  }
+}
+
+@media (min-width:960px) {
+  .main-img {
+    width: 28%;
+  }
+}
+
+@media (min-width:1024px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.slack-logo {
+  width: 12%;
+}
+
+  .collapse {
+    display: none;
+  }
+
+  .nav-links {
+    display: inherit;
+    list-style-type: none;
+    padding: 3% 0 4% 10%;
+    width: 50%;
+    text-align: center;
+  }
 }
