@@ -1,12 +1,33 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+h1, h2, h3 {
+  color: #2C303F;
+}
+
+p {
+  color: #5b5e6d;
+}
+
+.purple-btn {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1.5em 3em;
+  background: #192592;
+  margin-bottom: 20px;
+}
+
+.purple-btn + p {
+  font-size: .9rem;
+}
+
+.sign-in {
+  color: rgb(0, 0, 131);
+  text-decoration: none;
+  border-bottom: 1px solid blue;
+}
 
 * {
   padding: 0;
@@ -20,6 +41,10 @@ body {
 .logo {
   width: 110px;
   height: 60px;
+}
+
+.logo img {
+  width: 100%;
 }
 
 nav {
@@ -49,24 +74,84 @@ nav {
 }
 
 .where-work-happens {
+  margin-top: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 50px 5%;
+  /* border-bottom: 1px solid rgb(192, 192, 192); */
+}
+
+.home-work {
+  margin-top: 50px;
+  width: 550px;
+}
+
+.where-work-happens img {
+  width: 100%;
+}
+
+.where-work-happens h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6rem;
+  line-height: 1em;
+  margin-bottom: .4em;
+}
+
+.slack-has-you-covered {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.8em;
+  margin-bottom: 30px;
+}
+
+.wwh-text {
+  width: 47%;
 }
 
 .good-company {
   text-align: center;
-  padding: 0 10%;
+  /* padding: 0 10%; */
   background: #F4F3F4;
+  /* height: 500px; */
+}
+
+.good-company h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  padding: 3rem 0 1rem;
+}
+
+.discover-why {
+  margin-top: 2.5rem;
+  background: white;
+  border: 1px solid #19259280;
+  color: #192592;
+  font-weight: 700;
+  padding: 1.2em 2.4em;
 }
 
 .companies {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 50px;
 }
 
 .companies a {
-  width: 300px;
+  padding: 3rem;
+}
+
+.airbnb, .capital-one {
+  width: 200px;
+}
+
+.harvard, .oracle, .ticket-master {
+  width: 230px;
+}
+
+.la-times {
+  width: 450px;
 }
 
 .companies > a > img {
@@ -77,33 +162,77 @@ nav {
   border-bottom: 1px solid rgb(230, 230, 230);
   display: flex;
   justify-content: space-between;
+  padding: 50px;
+}
+
+.try-it h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  line-height: 1.5em;
 }
 
 .pre-footer {
-  margin: 0 10%;
+  margin: 50px 5% 50px 1%;
   display: flex;
   justify-content: space-between;
 }
 
+.pre-footer div img {
+  width: 150px;
+}
+
 .pre-footer ul {
+  font-size: .9rem;
+  margin: 50px;
   list-style-type: none;
 }
 
+.lists ul li {
+  line-height: 3em;
+}
+
+.lists ul li:first-child {
+  font-weight: 600;
+}
+
 .lists {
+  color: #5b5e6d;
   display: flex;
   justify-content: space-around;
 }
 
 footer {
+  height: 100px;
+  background: #F4F3F4;
+  color: #5b5e6d;
+  padding: 0 2%;
   display: flex;
   justify-content: space-between;
+  font-weight: 600;
+  font-size: .86rem;
 }
 
 footer ul {
+  line-height: 100px;
   list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer img {
+  width: 25px;
+  height: 25px;
 }
 
 .footer-2 {
   display: flex;
   justify-content: space-around;
+  width: 21%;
+}
+
+.footer-3 {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin-top: 45px;
 }
