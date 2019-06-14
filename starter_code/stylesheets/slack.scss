@@ -7,10 +7,22 @@ nav grey: #5b5e6d
 */
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+}
+
+h1, h2, h3 {
+  color: #2C303F;
+  font-family: 'Merriweather';
+}
+
+p {
+  color: #5b5e6d;
+  font-family: 'Montserrat';
 }
 
 nav {
@@ -43,6 +55,7 @@ header {
   height: 100vh;
   display: flex;
   align-items: center;
+  padding-top: 10%;
   .left {
     text-align: center;
     width: 50%;
@@ -55,33 +68,174 @@ header {
   .right {
     width: 50%;
     h1 {
-      font-size: 90px;
-      color: #2C303F;
-      font-family: 'Merriweather';
+      font-size: 6vw;
     }
     p {
-      color: #5b5e6d;
-      font-family: sans-serif;
-      font-size: 24px;
-      line-height: 40px;
+      font-size: 1.5vw;
+      line-height: 2.5vw;
       padding: 5% 0;
-      padding-right: 10%;
     }
     button {
       background-color: #192592;
       border: none;
       color: white;
-      padding: 2.5% 5%;
+      padding: 1.5vw 3vw;
       border-radius: 3%;
       font-weight: bold;
     }
     .footnote {
       font-size: 16px;
+      padding: 2.5% 0;
     }
   }
 }
 
 main {
   background-color: #F4F3F4;
+  // width: 100%;
+  // height: 100vh;
+  .text {
+    text-align: center;
+    padding: 2.5%;
+    h2 {
+      padding: 2.5% 0;
+      font-family: 'Merriweather';
+      font-size: 2.5vw;
+    }
+    p {
+      padding-bottom: 2.5%;
+    }
+    button {
+      background-color: #fff;
+      border: 1px solid #192592;
+      color: #192592;
+      padding: 1.5vw 3vw;
+      border-radius: 3%;
+      font-weight: bold;
+    }
+  }
 
+  .large-container {
+    padding: 3%;
+  }
+
+  .img-container {
+    display: flex;
+    .img-box {
+      border: 1px solid #ececec;
+      padding: 2.5vw 0;
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.img-top {
+        border-top: none;
+      }
+      &.img-left {
+        border-left: none;
+      }
+      &.img-bottom {
+        border-bottom: none;
+      }
+      &.img-right {
+        border-right: none;
+      }
+      img {
+        width: 33%;
+      }
+      .la {
+        width: 66%;
+      }
+      .ticket {
+        width: 33%;
+      }
+    }
+  }
+  .extra {
+    padding: 3%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      h3 {
+        font-size: 2vw;
+      }
+    }
+    button {
+      background-color: #192592;
+      border: none;
+      color: white;
+      padding: 1.5vw 3vw;
+      border-radius: 3%;
+      font-weight: bold;
+    }
+  }
+}
+
+footer {
+  padding-top: 5%;
+  .list-items {
+    display: flex;
+    justify-content: space-between;
+    .bottom-logo {
+      width: 10%;
+      img {
+        width: 100%;
+      }
+    }
+    .ul-group {
+      width: 66%;
+      display: flex;
+      justify-content: space-around;
+      ul {
+        list-style-type: none;
+        li {
+          font-size: 80%;
+          color: #5b5e6d;
+          font-family: 'Montserrat';
+          padding: 1vw 0;
+          &:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lowest {
+  display: flex;
+  justify-content: space-between;
+  font-size: 80%;
+  padding: 1.5% 3%;
+  color: #5b5e6d;
+  li, span {
+    font-family: 'Montserrat';
+    font-weight: bold;
+  }
+
+  .left {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 25%;
+
+    li {
+      align-self: center;
+    }
+  }
+
+  .right {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    .USA {
+      width: 10%;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
