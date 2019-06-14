@@ -16,12 +16,14 @@ nav grey: #5b5e6d;
   height: 70px;
   padding: 0 50px;
   align-items: center;
-  justify-content: center;
   justify-content: space-between;
 }
 .nav-bar img{
   height: 71px;
   width: 116px;
+}
+.nav-bar img:nth-child(2){
+  display: none;
 }
 .nav-bar ul{
   display: flex;
@@ -196,3 +198,123 @@ nav grey: #5b5e6d;
   width: 33px;
 }
 
+@media (max-width: 1024px){
+  .logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 45px;
+  }
+  .main-companies img{
+    padding: 60px 50px;
+    height: 25%;
+    width: 25%;
+  }
+
+}
+@media (max-width: 768px){
+  .nav-bar{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-bar img:nth-child(2){
+    display: block;
+    height: 50px;
+    width: 70px;
+  }
+  .nav-bar ul{
+    display: none;
+  }
+  .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 1000px;
+    padding-left: 30px;
+  
+  }
+  .main-companies h2{
+    font-size: 3em;
+    width: 88%;
+    text-align: center;
+  }
+  .main-companies p{
+    font-size: 2em;
+    width: 88%;
+  }
+  .main-companies button{
+    width: 88%;
+    height: 75px;
+  }
+  .logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 45px;
+  }
+  .main-companies img{
+    padding: 60px 75px;
+    height: 25%;
+    width: 50%;
+  }
+  .try-it{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 50px;
+    align-items: center;
+    border-bottom: 0.5px solid lightgray;
+  }
+  .try-it *{
+    padding-bottom: 10px;
+  }
+  .try-it button{
+    width: 88%;
+    height: 75px;
+  }
+  .foot{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1000px;
+  }
+  .foot img{
+    align-self: flex-start;
+    padding-top: 50px;
+    height: 150px;
+    width: 170px;
+  }
+  .ul-holder{
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+  .ul-holder ul{
+    padding-bottom: 50px;
+    padding-left: 70px;
+  }
+  .ul-holder li{
+    padding: 15px 20px 15px 20px;
+    color: #5b5e6d;
+  }
+  .bottom{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    padding-top: 15px;
+  }
+  .flag{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    align-content: center;
+    justify-content: center;
+    padding: 15px 0;
+  }
+}
