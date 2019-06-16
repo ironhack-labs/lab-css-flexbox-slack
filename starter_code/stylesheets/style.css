@@ -135,11 +135,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.border-fix, .border-fix-2 {
-  outline: 1px solid #F4F3F4;
-  width: calc(100% - 1350px);
+  width: 1350px;
 }
 
 .padding-companies {
@@ -147,8 +143,6 @@ nav {
   flex-wrap: no-wrap;
   justify-content: center;
   padding-bottom: 50px;
-  flex-grow: 0;
-  flex-shrink: 1;
 }
 
 .companies > div {
@@ -158,6 +152,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .airbnb, .capital-one {
@@ -250,3 +245,23 @@ footer img {
   width: 20%;
   margin-top: 45px;
 }
+
+
+@media (max-width: 1350px) {
+
+  .companies {
+    width: 900px;
+  }
+
+
+  @media (max-width: 900px) {
+
+    .companies {
+      width: 450px;
+    }
+  
+  }
+
+
+}
+
