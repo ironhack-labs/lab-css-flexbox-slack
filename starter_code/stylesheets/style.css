@@ -10,7 +10,7 @@ nav grey: #5b5e6d;
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 0;
   font-family: "Vollkorn", serif;
 }
 
@@ -18,13 +18,18 @@ body {
   display: flex;
   justify-content: space-between;
   height: 50px;
-  padding: 10px 60px;
+  padding: 40px 60px;
   align-items: center;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+  border-bottom: 0.5px solid #bbb;
+  position: fixed;
   color: #2c303f;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 .nav-content {
   display: flex;
+  align-items: center;
 }
 .nav li {
   padding: 10px 20px;
@@ -33,61 +38,64 @@ body {
 
 .nav li:nth-child(4) {
   border: 1px solid #2c303f;
+  border-radius: 5px;
 }
 .logo {
   height: 80px;
 }
 
 .header {
+  padding: 100px 0;
   display: flex;
-  margin: 100px 0;
   justify-content: center;
   color: #2c303f;
 }
 
 .header h1 {
-  font-size: 70px;
-  padding-right: 20%;
+  font-size: 80px;
+  /* padding-right: 30%; */
+  padding-top: 50px;
+  line-height: 1em;
 }
 
 .header img {
-  padding-top: 100px;
-  height: 400px;
+  padding-top: 150px;
+  height: 450px;
 }
 
+.header p {
+  line-height: 2em;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
 .header-content {
   /* padding-right: 30%; */
-  width: 30%;
-  margin: 0 9%;
+  width: 35%;
+  padding-left: 100px;
 }
 
 .header button {
-  padding: 15px 30px;
+  padding: 15px 35px;
   background-color: #192592;
   color: #fff;
   border-radius: 5px;
+  border-width: 0;
   margin-bottom: 10px;
-}
-
-.main .big {
-  height: 70px;
-  margin-bottom: 100px;
-}
-
-.small {
-  height: 40px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .main {
-  padding-top: 80px;
+  padding-top: 60px;
   background-color: #f4f3f4;
-  height: 690px;
-  text-align: center;
+  height: 700px;
   margin-bottom: 100px;
 }
 
 .main-heading {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 1 px;
 }
 
 .main-heading h2 {
@@ -113,22 +121,31 @@ body {
   flex-wrap: wrap;
   height: 200px;
   justify-content: space-around;
-  padding: 0 300px;
+  padding: 0 100px;
+  /* height: auto; */
 }
 
 .main-imgs img {
-  padding: 0 50px;
+  width: 60%;
+}
+
+.main-imgs .img-content {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0;
 }
 
 .free {
   background-color: #fff;
-  margin: 150px 0 0 0;
+  margin: 230px 0 0 0;
   display: flex;
   justify-content: space-between;
   padding: 0 100px;
   text-align: left;
   align-items: center;
-  box-shadow: 0 4px 1px -3.5px gray;
+  border-bottom: 0.8px solid #bbb;
   height: 100px;
 }
 
@@ -137,7 +154,7 @@ body {
   margin-bottom: 20px;
 }
 .free h2 {
-  font-size: 20px;
+  font-size: 30px;
   margin: 0;
 }
 .free button {
@@ -153,9 +170,13 @@ body {
 .links {
   display: flex;
   height: 500px;
-  padding-top: 100px;
+  padding-top: 120px;
   justify-content: space-evenly;
   align-items: flex-start;
+}
+
+.links img {
+  padding-right: 250px;
 }
 
 .more-links li {
@@ -163,6 +184,11 @@ body {
   padding: 10px 0;
   color: #2c303f;
 }
+
+.more-links:nth-child(5) {
+  margin-right: 100px;
+}
+
 .more-links li:nth-child(1) {
   font-size: 20px;
   font-weight: bold;
@@ -201,4 +227,110 @@ body {
 .footer-bar img {
   height: 24px;
   padding-right: 10px;
+}
+
+@media (max-width: 1024px) {
+  .header-content h1 {
+    font-size: 60px;
+  }
+
+  .header-content {
+    padding-left: 0;
+  }
+
+  .main-imgs img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 961px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .header-content {
+    order: 0;
+    width: 85%;
+  }
+
+  .header-content h1 {
+    font-size: 80px;
+  }
+
+  .header img {
+    padding-top: 20px;
+    order: 1;
+    width: 50%;
+  }
+
+  .main-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    /* justify-content: space-around; */
+    padding: 0 40px;
+  }
+
+  .main-imgs .img-content {
+    margin: 50px 50px;
+  }
+
+  .main {
+    margin-bottom: 0px;
+    height: 800px;
+  }
+
+  .free {
+    margin-top: 300px;
+  }
+
+  .links {
+    padding: 150px 50px 0 50px;
+    font-size: 15px;
+  }
+
+  .links img {
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    display: none;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+
+  .header-content button {
+    width: 100%;
+  }
+
+  .header img {
+    width: 95%;
+  }
+
+  .header-content {
+    width: 1000px;
+  }
+
+  .main {
+    padding: 0 40px;
+  }
+
+  .main-imgs img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .img-content {
+    width: 100%;
+  }
 }
