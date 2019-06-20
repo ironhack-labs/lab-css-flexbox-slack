@@ -7,21 +7,25 @@ nav grey: #5b5e6d;
 */
 body{
   margin:0;
+  padding:0;
 }
 
 .slack-logo{
-  width:85px;
+width:100px;
   margin: 0 40px;
-  padding-top:8px;
 }
 nav{
+  position:fixed;
   display:flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   width:100%;
-  height:65px; 
-  border: solid 1.5px #eee;
-
+  height:80px; 
+  border: 1.5px solid #eee;
+  padding: 0 15px;
+  box-sizing: border-box;
+  background-color:white;
+  z-index:1000;
 }
 nav > ul{
   display:flex;
@@ -31,8 +35,8 @@ nav > ul{
 }
 
 nav > ul >li{
-  font-size: 1em;
-  padding: 0 15px;
+  font-size: 1.2em;
+  padding: 0 20px;
   color:#73717B;
   font-weight:lighter;
   letter-spacing: 1px;
@@ -41,27 +45,25 @@ nav > ul >li{
 nav > ul li:nth-child(4){
   border:solid 1px #5b5e6d;
   padding:8px;
-  border-radius: 3px;
+  border-radius: 5px;
+  margin-left:15px;
 }
 
 header{
-  height:650px;
+  height:750px;
+  padding-top: 75px;
+  display:flex;
+  align-items: center;
+  justify-content: space-around
 }
 .talking-img{
-  position:absolute;
-  top:120px;
-  left:45px;
   width:550px;
-}
-.relative{
-  position:relative;
 }
 
 .header-info > h1{
   font-size: 5.7em; 
   color:	#32374A;
   line-height: 80px;
-  margin:0;
 }
 
 .header-info > p{
@@ -75,23 +77,21 @@ header{
   font-size:1em; 
 }
 .header-info{
-  position:absolute;
-  top:100px;
-  right:50px;
-  width:670px;
+  width:630px;
+  margin-right:20px;
+  margin-bottom: 80px;
 }
 
-.start-btn{
-  background-color:	#4A38AD;
+.start-btn, .get-started{
+  background-color:	#192592;
   border-radius: 5px;
   padding:25px 50px;;
   color:white;
   font-size:15px;
   font-weight: bold;
-  margin-top:15px;
 }
 
-main div:nth-child(1){
+.discover-logos{
   background-color:#F5F5F5;
 }
 
@@ -112,28 +112,140 @@ main div:nth-child(1){
 .discover > button{
   border-radius: 5px;
   padding:25px 50px;
-  color:	#4A38AD;
+  color:	#192592;
   font-size:15px;
   font-weight: bold;
   margin-top:15px;
   border: solid 1px #4A38AD;
 }
-.logo-container{
-  width:100%;
- display:flex;
- flex-wrap: wrap;
-}
 
+.logo-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 40px;
+}
 
 .logo-container > div{
-  padding:50px 130px;
-  height:40px;
-  border:solid 1px black;
-  display: flex;
+  width:33%;
+  margin:0;
+  box-sizing: border-box;
+  height:120px;
+  display:flex;
+  align-items: center;
   justify-content: center;
 }
-.logo-container > div img{
-  width:180px;
-  justify-content: center;
+
+.logo-container > div > img{
+  width:180px; 
+}
+
+.logo-container > div:nth-child(2){
+  border-bottom: 1.5px solid #EBEBEB;
+  border-right: 1.5px solid #EBEBEB;
+  border-left: 1.5px solid #EBEBEB;
+}
+.logo-container > div:nth-child(5){
+  border-right: 1.5px solid #EBEBEB;
+  border-left: 1.5px solid #EBEBEB;
+}
+.logo-container > div:nth-child(1){
+  border-bottom: 1.5px solid #EBEBEB;
+}
+.logo-container > div:nth-child(3){
+  border-bottom: 1.5px solid #EBEBEB;
+}
+.logo-container > div:nth-child(4) img{
+  width:350px; 
+}
+.logo-container > div:nth-child(5) img{
+  width:200px; 
+}
+.logo-container > div:nth-child(6) img{
+  width:200px; 
+}
+.try-free{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  border-bottom: 1.5px solid #eee;
+  padding:50px 50px;
+}
+
+.try-free > div p:nth-child(1) {
+  font-size :30px;
+  font-weight: bold; 
+  margin:0;
+ }
+
+ .try-free > div p:nth-child(2) {
+  font-size: 1.2em;
+  margin:5px 0;
+ }
+
+ footer > div {
+   margin:70px 0;
+   display:flex;
+   align-items: start;
+   justify-content: center;
+ }
+
+ footer > div > img {
+  width:140px;
+  margin-right:300px;
+}
+
+footer ul li{
+  list-style-type: none;
+  line-height: 2.5em;
+  margin-right:80px;
+}
+
+footer ul{
+ padding: 10px 30px;
+ color: #5b5e6d;
+}
+
+footer ul li:first-child{
+  font-weight: bold;
+}
+
+
+[src*="flag"]{
+  width:25px;
+  padding: 0 10px;
+}
+
+.legal{
+  display:flex;
+  justify-content: space-between;
+  background-color:#F5F5F5;
+  height:100px;
+  margin:0;
+  padding-right:30px;
+  
+}
+
+.legal ul{
+  display: flex;
+}
+.legal ul li{
+  padding: 0 10px;
+  margin:0;
+  font-weight: bold;
+}
+
+.fa{
+  padding:0px;
+  color:#5b5e6d;
+  font-size: 25px;
+  padding:10px;
+}
+.social-networks{
+margin-top:25px;
+}
+.social-networks > span{
+  color:#5b5e6d;
 }
 
