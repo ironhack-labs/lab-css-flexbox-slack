@@ -15,140 +15,240 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
-  border-width: 1px 0px;
-  /* border-color: #5b5e6d; */
-  border-style: solid;
-  margin: 0;
-  height: 55px;
-  color: #5b5e6d;
+  border-bottom: 0.25px solid #f4f3f4;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background-color: white;
 }
 
-nav img {
-  height: 50px;
+.top-logo {
+  width: 120px;
+  margin-left: 20px;
 }
 
-nav ul {
-  display:flex;
+nav > ul {
   list-style: none;
-  justify-content: space-around;
-  align-items: baseline;
-  width: 450px;
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
 }
 
-nav ul li:nth-child(4){
-  border-width: 1px;
-  border-style: solid;
-  padding: 10px;
-  /* add rounded border */
+nav > ul > li {
+  margin: 10px 20px;
+  color: #5b5e6d;
+  letter-spacing: 1.5px;
+}
+
+nav > ul > li:last-child {
+  border: 1px solid #5b5e6d;
+  border-radius: 3px;
+  padding: 8px;
 }
 
 header {
+  padding-top: 100px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
 }
 
 header img {
-  width: 25%;
+  width: 500px;
 }
 
-.header-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 30%;
+header .col {
+  width: 50%;
 }
 
-h1 {
-  font-size: 60px;
+header .col1 {
+  padding-left: 3%;
+  padding-top: 80px;
 }
 
-.header-info button {
-  width: 170px;
-  padding: 20px 0;
+header .col2 {
+  margin-right: 50px;
+}
+
+header h1 {
+  font-size: 85px;
+  line-height: 0.9em;
+}
+
+header .col2 p {
+  font-size: 20px;
+  color: #5b5e6d;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+header .col2 button,
+.try-free-section button {
+  padding: 20px 40px;
   background-color: #192592;
+  border-radius: 4px;
   color: white;
+  font-size: 15px;
+}
+
+header > .col2 > .already-using {
+  font-size: 12px;
 }
 
 main {
-  background-color: #F4F3F4;
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; */
+  margin-top: 100px;
+  padding-top: 100px;
 }
 
-main div:first-child {
+main section {
+  background-color: #f4f3f4;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.good-company {
+  text-align: center;
+}
+
+.good-company > h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.good-company > p {
+  color: #5b5e6d;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.good-company > button {
+  padding: 20px 40px;
+  background-color: white;
+  border-radius: 4px;
+  color: #192592;
+  font-size: 15px;
+  border: 1px solid #192592;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.brand-images {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.brand-images .img-container {
+  width: 33%;
+  padding: 0 100px;
+  height: 150px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-main div:first-child button {
-  width: 170px;
-  padding: 20px 0;
-  background-color: white;
-  color: #192592;
+.brand-images .img-container:nth-child(1) {
+  border-right: 0.5px solid #ddd;
+  border-bottom: 0.5px solid #ddd;
 }
 
-main div img {
-  width: 20%;
-  height: 100px;
-  /* width: auto;
-  height: auto; */
-  border: 1px solid #5b5e6d;
+.brand-images .img-container:nth-child(2) {
+  border-right: 0.5px solid #ddd;
+  border-bottom: 0.5px solid #ddd;
 }
 
-/* not working as intended */
-main div:last-child {
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  width: 100%;
+.brand-images .img-container:nth-child(3) {
+  border-bottom: 0.5px solid #ddd;
 }
 
-main div:last-child button {
-  width: 170px;
-  padding: 20px 0;
-  background-color: #192592;
-  color: white;
+.brand-images .img-container:nth-child(4) {
+  border-right: 0.5px solid #ddd;
 }
 
-/* main div:last-child p{
-  background-color: red;
-} */
+.brand-images .img-container:nth-child(5) {
+  border-right: 0.5px solid #ddd;
+}
 
-footer div{
+@media (max-width: 1100px) {
+  .brand-images .img-container {
+    width: 50%;
+  }
+}
+
+.brand-images .img-container img {
+  width: 65%;
+}
+
+.try-free-section {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer div:first ul {
-  flex-direction: column;
+.try-free-section div {
+  margin: 0 40px;
+}
+
+.try-free-section h2 {
+  margin-bottom: 30px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.5px solid #ddd;
+  margin-top: 30px;
+  padding-top: 50px;
+}
+
+.main-footer img {
+  width: 120px;
+  margin-left: 30px;
+}
+
+.ul-container {
+  display: flex;
+  padding-right: 120px;
+}
+
+.ul-container > ul {
   list-style: none;
 }
 
-footer div:last-child {
-  background-color: #F4F3F4;
-  justify-content: space-between;
+.ul-container > ul > li {
+  margin: 15px;
+  color: #5b5e6d;
+  letter-spacing: 1px;
 }
 
-footer div:last-child ul {
+.ul-container > ul > li:first-child {
+  font-weight: bold;
+}
+
+.footer {
   display: flex;
-  list-style: none;
-  list-style-type: none;
-  justify-content: space-around;
-  align-items: baseline;
-  width: 450px;
+  justify-content: space-between;
+  background-color: #f4f3f4;
 }
 
-footer div:last-child div {
-  display:flex;
+.footer > ul {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.footer > ul > li {
+  margin: 0 5px;
+}
+
+.footer > div {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width:25%;
+  width: 250px;
 }
 
-footer div:last-child div img {
+.footer > div > img {
   height: 25px;
 }

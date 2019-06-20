@@ -1,0 +1,154 @@
+/*
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  border-width: 1px 0px;
+  /* border-color: #5b5e6d; */
+  border-style: solid;
+  margin: 0;
+  height: 55px;
+  color: #5b5e6d;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav ul {
+  display:flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 450px;
+}
+
+nav ul li:nth-child(4){
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+  /* add rounded border */
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+header img {
+  width: 25%;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.header-info button {
+  width: 170px;
+  padding: 20px 0;
+  background-color: #192592;
+  color: white;
+}
+
+main {
+  background-color: #F4F3F4;
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; */
+}
+
+main div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div:first-child button {
+  width: 170px;
+  padding: 20px 0;
+  background-color: white;
+  color: #192592;
+}
+
+main div img {
+  width: 20%;
+  height: 100px;
+  /* width: auto;
+  height: auto; */
+  border: 1px solid #5b5e6d;
+}
+
+/* not working as intended */
+main div:last-child {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+main div:last-child button {
+  width: 170px;
+  padding: 20px 0;
+  background-color: #192592;
+  color: white;
+}
+
+/* main div:last-child p{
+  background-color: red;
+} */
+
+footer div{
+  display: flex;
+}
+
+footer div:first ul {
+  flex-direction: column;
+  list-style: none;
+}
+
+footer div:last-child {
+  background-color: #F4F3F4;
+  justify-content: space-between;
+}
+
+footer div:last-child ul {
+  display: flex;
+  list-style: none;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 450px;
+}
+
+footer div:last-child div {
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width:25%;
+}
+
+footer div:last-child div img {
+  height: 25px;
+}
