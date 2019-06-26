@@ -29,7 +29,7 @@ nav {
   top: 0;
   color: #5b5e6d;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
   border-bottom:#5b5e6d solid 2px;
@@ -38,9 +38,10 @@ nav {
 .nav-icon {
   display: block;
   float: left;
-  max-width:30%;
-  height:auto;
+  max-height:80px;
+  height: auto;
   object-fit: contain;
+  padding-left: 10%;
 }
 
 nav .hamburger {
@@ -48,6 +49,7 @@ nav .hamburger {
   flex-direction: column;
   align-content: space-between;
   width: 35px;
+  padding-right: 10%;
 }
 
 nav .hamburger span {
@@ -94,28 +96,46 @@ header {
   border: lightgray solid 1px;
   margin: 5px 0;
 }
+
 .sign-in {
   text-align: center;
 }
 
 header img {
+  display: block;
   width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
 }
 
 .main-dark {
   background-color: #F4F3F4;
 }
 
+.company * {
+  padding: 5px 0;
+}
+
 .company {
+  text-align: center;
   padding: 0 10%;
+}
+
+.company-logos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.company * {
-  padding: 5px 0;
+.company-logos div {
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: lightgray solid 1px;
+}
+
+.company-logos div:last-of-type {
+  border: none;
 }
 
 .company h2 {
@@ -158,10 +178,6 @@ header img {
   padding: 0 10%;
 }
 
-.footer-top img {
-  max-width: 30%;
-}
-
 .footer-link-list {
   display: flex;
   flex-wrap: wrap;
@@ -175,6 +191,16 @@ header img {
 .footer-link-list li {
   padding: 5px 0;
   list-style: none;
+}
+
+.footer-link-list img {
+  padding: 5px;
+  width: 100px;
+}
+
+.footer-link-list .img-block {
+  flex-basis: 100%;
+  margin: auto 0;
 }
 
 .footer-link-list .block {
@@ -191,31 +217,170 @@ header img {
   background-color: #F4F3F4;
 }
 
+.footer-contact {
+  padding: 20px 10%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
 footer .select-country img {
-  padding: 0;
-  margin: 0;
   height: 1rem;
 }
 
 footer .select-country {
-  display: flex;
-  align-content: center;
-  justify-content: center;
   padding: 10px 0;
 }
 
-.footer-contact {
-  padding: 0 10%;
-  text-align: center;
+footer .social {
+  display: flex;
+  margin: 0 auto;
+}
+
+footer .social i {
+  padding: 0 10px;
+  margin: auto 0;
 }
 
 .footer-contact ul {
-  padding: 10px 0;
-  width: 100%;
+  display: flex;
+  flex-basis: 100%;
   list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer-contact ul li {
   display: inline;
-  padding: 0 5px;
+  padding: 0 10px;
+  margin: auto 0;
+}
+
+@media (min-width: 767px) {
+  .sign-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .try-it div {
+    padding: 0 5px;
+    flex: 2;
+  }
+
+  .sign-up button {
+    flex: 1;
+    margin: 5px 10px;
+  }
+
+  .sign-up form {
+    flex: 2;
+  }
+
+  .company button {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .company-logos {
+    padding: 15px 0;
+    flex-direction: row;
+    flex-wrap: wrap
+  }
+
+  .company-logos div {
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  .company-logos div:nth-of-type(odd) {
+    border-right: lightgray solid 1px;
+  }
+
+  .company-logos div:nth-last-child(2) {
+    border-bottom: none;
+  }
+
+  .footer-link-list .img-block {
+    flex-basis: 20%;
+  }
+
+  .footer-link-list .block {
+    width: 20%;
+  }
+
+  .footer-contact {
+    flex-direction: row;
+  }
+
+  footer .select-country {
+    align-content: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  footer .social i {
+    padding: 0 5px;
+  }
+
+  .footer-contact ul {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .company-logos div {
+    box-sizing: border-box;
+    width: 33%;
+  }
+
+  .company-logos div:nth-of-type(odd) {
+    border-right: none;
+  }
+
+  .company-logos div:nth-of-type(2),
+  .company-logos div:nth-of-type(5) {
+    border-right: lightgray solid 1px;
+    border-left: lightgray solid 1px;
+  }
+
+  .company-logos div:nth-last-child(3) {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-work {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .flex-work img {
+    padding-right: 15px;
+  }
+
+  nav .hamburger {
+    display: none;
+  }
+
+  nav ul {
+    display: inline;
+    list-style: none;
+    padding: 0 10% 0 0;
+  }
+
+  nav ul li {
+    display: inline;
+    list-style: none;
+    padding: 0 5px;
+  }
+
+  .workspace-link {
+    padding: 12px;
+    border: solid lightgray 1px;
+    border-radius: 3px;
+  }
 }
