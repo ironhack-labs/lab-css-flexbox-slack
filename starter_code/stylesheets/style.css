@@ -70,6 +70,11 @@ a {
   font-size: 2em;
 }
 
+footer ul {
+  font-size: 4em;
+  color: #5b5e6d;
+}
+
 /* Page elements */
 
 nav {
@@ -124,12 +129,13 @@ header p{
   text-align: center;
 }
 
-header form input {
+form input {
   width: 100%;
   height: 60px;
   border: 1px solid;
   border-color: lightgrey;
   border-radius: 5px;
+  box-sizing: border-box;
 
   text-indent: 10px;
   font-size: 2em;
@@ -165,20 +171,101 @@ header form input {
 
 .good-company p {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.good-company-logos {
+.good-company-logos-container {
+	padding: 30px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.good-company-logos-container div {
+	width: 100%;
+	height: 100px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+	align-items: center;
+	justify-content: center;
+  box-sizing: border-box;
+	border-bottom: 1px solid rgb(194, 194, 194);
 }
 
-.good-company-logos img {
-  margin: 30px;
-  width: 50%;
+.good-company-logos-container div:last-of-type {
+	border-bottom: none;
+}
+
+.good-company-logos-container img {
+	width: 50%;
+}
+
+.good-company-logos-container .bigger-img {
+	width: 80%;
+}
+
+
+.spacer{
+  width: 100%;
+  border: solid;
+  border-bottom: 1px;
+  border-color: lightgrey;
 }
 
 .try p {
   text-align: center;
 }
 
+footer {
+  border-top: solid;
+  border: 1px 0 0 0;
+  border-color: lightgrey;
+  margin: 50px 0 0 0 ;
+  padding: 30px 0;
+}
+
+footer img {
+  height: 50px;
+}
+
+.footer-links-container{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+/* @media (min-width: 767px) and (max-width: 959px) {
+	.flex-container div {
+		width: 50%;
+	}
+
+	.flex-container div:nth-of-type(odd) {
+		border-right: 1px solid rgb(194, 194, 194);
+	}
+
+	.flex-container div:nth-last-child(2) {
+		border-bottom: none;
+	}
+}
+
+@media (min-width: 960px) {
+	.flex-container div {
+		width: 33%;
+	}
+
+	.flex-container div:nth-last-child(3),
+	.flex-container div:nth-last-child(2) {
+		border-bottom: none;
+	}
+
+	.flex-container div:nth-of-type(2),
+	.flex-container div:nth-of-type(5) {
+		border-left: 1px solid rgb(194, 194, 194);
+		border-right: 1px solid rgb(194, 194, 194);
+	}
+} */
