@@ -2,6 +2,9 @@
 
 # CSS | Slack clone with Flexbox
 
+## Demo
+https://slack-clone-pujasingh.netlify.com/
+
 ## Introduction
 
 You should be reaaaaally familiar with [Slack](https://www.slack.com/) at this point, but just to make it more clear, **Slack** is a cloud-based set of team collaboration tools and services or in simpler terms, it is a chatting program.
