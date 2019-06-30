@@ -11,6 +11,10 @@ nav grey: #5b5e6d;
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap');
 
+div {
+    border: 1px solid black;
+}
+
 html body {
     margin: 0;
     padding: 0;
@@ -27,6 +31,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    color: #5b5e6d;
 }
 
 h3 {
@@ -42,11 +47,14 @@ h4 {
 
 p {
     font-family: Source Serif Pro;
+    border: 1px solid black;
+    color: #5b5e6d;
 }
 
 img {
     width: 100%;
-    max-width: 600px;
+    max-width: 70%;
+    border: 1px double violet;
 }
 
 li {
@@ -62,12 +70,15 @@ li {
 }
 .flex-item {
     border: 1px dashed red;
+    width: auto;
 }
 
 button {
-    width: 400px;
-    height: 50px;;
-    border-radius: 5px; 
+    width: 200px;
+    height: 56px;
+    display: block;
+    border-radius: 5px;
+
 }
 
 .btn-purple {
@@ -83,10 +94,23 @@ button {
 }
 
 input {
-    width: 396px;
+    width: 400px;
     border-radius: 5px;
     border-color: 1px solid lightgray;
     font-size: 1.2rem;
+    padding: 15px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;  
+}
+
+.mail-plus-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* NAV-BAR */
@@ -126,10 +150,9 @@ nav ul {
 
 header .flex-container {
     flex-direction: column;
-    align-items: left;
 }
 
-header .flex-item {
+header .flex-container div {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -141,28 +164,25 @@ header .header-text {
 
 .home-work {
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 /* MAIN */
+main {
+    background-color: #F4F3F4;
+}
 
 main .flex-container {
     align-items: center;
     flex-direction: column;
 }
 
-main {
-    background-color: #F4F3F4;
+main .flex-container img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
-main img {
-    width: 100%;
-    display: block;
-    margin: 30px auto;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #5b5e6d;
-    max-width: 400px;
-}
 
 .main-last-img {
     border-bottom: none;
@@ -229,6 +249,28 @@ footer .flex-container {
     padding: 0 5px
 }
 
-@media (min-width: 767px) and (max-width: 961px) {
+
+@media(min-width: 767px) and (max-width: 961px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media(min-width: 961px) {
 
 }
