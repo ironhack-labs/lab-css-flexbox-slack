@@ -1,0 +1,424 @@
+/*
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+* {
+  box-sizing: border-box;
+  /*factors border into the total size. does not add excessive padding.  */
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 960px) {
+
+  html {
+    font-size: 8px;
+  }
+  
+  body {
+    padding: 1% 0;
+    margin: 1% 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5b5e6d;
+    padding: 1% 5% 1% 5%;
+    margin: -2% 0 0;
+    border-bottom: 0.5px solid #dddddd;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+  }
+  
+  nav img {
+    width: 18%;
+  }
+
+  nav > ul {display: none;}
+  
+  nav .hamburger-menu {
+    width: 4%;
+    height: 10%;
+  }
+
+  header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding: 5% 5%;
+    line-height: 2em;
+    width: 100%;
+  }
+  
+  header > .header-content-div {
+    width: 98%;
+    align-self: center;
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+  
+  header img {
+    width: 60%;
+    margin: 7% 0 0;
+    align-self: center;
+  }
+  
+  header h1 {
+    width: 100%;
+    font-size: 5em;
+    line-height: 100%;
+    margin: 7% 0 5% 2%;
+  }
+  
+  .header-p1 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    width: 100%;
+    margin: 0 2% 2% 2%;
+    color: #5b5e6d;
+  }
+
+  .header-content-div > p:nth-child(5) {
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  .header-content-div > input {
+    display: inline-flex;
+    color: #a8a8a8;
+    border: .04em solid #e4e4e4;
+    border-radius: 5px;
+    width: 50%;
+    padding: 3% 5% 3% 3%;
+    margin: 2% 1% 0;
+    font-size: 1.25em;
+  }
+
+  .header-content-div button{
+    display: inline-flex;
+    justify-content: center;
+    white-space: nowrap;
+    color: white;
+    background-color: #192592;
+    border: .04em solid #a8a8a8;
+    border-radius: 5px;
+    padding: 3% 15% 3%;
+    font-size: 1.25em;
+    width: 20%;
+    margin: 2% 0 2%;
+  }
+
+  
+  .header-content-div > p:nth-child(5) {
+    font-size: 1.3em;
+    margin-top: 1%;
+    margin-left: 2%;
+    text-align: left;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .icons-gray-background {
+    background-color: #F4F3F4;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .good-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  
+  .good-company > h2 {
+    font-size: 5em;
+    margin: 2% 0 2%;
+  }
+  
+  .good-company > p {
+    color: #5b5e6d;
+    font-size: 2em;
+    align-self: center;
+    width: 78%;
+    letter-spacing: 105%;
+    margin: 0 0 1%;
+  }
+  
+  .good-company button {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    color: #192592;
+    background-color: white;
+    border: 1px solid #192592;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 3% 15%;
+    font-size: 2em;
+    width: 30%;
+    margin: 5% 0 2%;
+
+  }
+  
+  .main-images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 10%;
+    width: 100%;
+  }
+  
+  .main-images img {
+    width: 150px;
+    max-height: 42px;
+    margin: 8% 5%;
+  }
+
+  .main-images .main-image-box:nth-child(1) {
+    border-right: 0.25px solid #eaeaea;
+    border-bottom: 0.25px solid #eaeaea;
+  }
+
+  .main-images .main-image-box:nth-child(2) {
+    border-bottom: 0.25px solid #eaeaea;
+  }
+
+  .main-images .main-image-box:nth-child(3) {
+    border-right: 0.25px solid #eaeaea;
+    border-bottom: 0.25px solid #eaeaea;
+  }
+
+  .main-images .main-image-box:nth-child(4) img {
+    width: 300px;
+  }
+
+  .main-images .main-image-box:nth-child(5) {
+    border-right: 0.25px solid #eaeaea;
+    border-bottom: 0.25px solid #eaeaea;
+  }
+
+  .main-images .main-image-box:nth-child(6) {
+    border-bottom: 0.25px solid #eaeaea;
+  }
+
+  .main-image-box {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.25px solid #eaeaea;
+    align-items: center;
+    box-sizing: content-box;
+    align-items: center; 
+  }
+
+  .try-free {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 90%;
+    margin-bottom: 5%;
+    margin-top: 0;
+  }
+
+  .try-free-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 5%;
+    margin-top: 5%;
+    width: 40%;
+  }
+  
+  .try-free p:first-child {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+  
+  .try-free p:nth-child(2) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 2%;
+  }
+
+  .try-free p:nth-child(2) > span {
+    padding-left: 2%;
+  }
+  
+  .try-free input {
+    color: #a8a8a8;
+    border: .04em solid #e4e4e4;
+    border-radius: 4px;
+    width: 25%;
+    padding: 3% 3% 3% 3%;
+    margin: 1% 2% 0 15%;
+    font-size: 2em;
+  }
+
+  .try-free button {
+    display: flex;
+    color: white;
+    background-color: #192592;
+    border-radius: 4px;
+    padding: 3% 3% 3% 3%;
+    font-size: 2em;
+    width: 20%;
+    margin: 5% 0 2% 0%;
+    white-space: nowrap;
+    justify-content: center;
+  }  
+  
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .with-2-things {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 2%;
+    margin-bottom: 5%;
+    width: 90%;
+    box-sizing: content-box;
+    border-top: .2em solid #F4F3F4;
+  }
+  
+  div .ul-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 0 2%;
+    margin-top: 0;
+  }
+  
+  footer img {
+    width: 15%;
+  }
+  
+  .ul-container > ul {
+    list-style-type: none;
+    color: #5b5e6d;
+    font-size: 2em;
+    line-height: 2em;
+    width: 25%;
+  }
+  
+  .ul-container > ul > li:first-child {
+    font-weight: bold;
+  }
+  
+  .footer-gray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5b5e6d;
+    font-size: 1.9em;
+    font-weight: bold;
+    background-color: #F4F3F4;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-bottom: -3%;
+    width: 100%;
+  }
+  
+  .footer-gray > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 70%;
+  }
+  
+  .footer-gray > ul > li {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    text-align: center;
+    padding: 0 3% 0 3%;
+  }
+  
+  .footer-gray .social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    padding: 0 0 0 0;
+  }
+  
+  .footer-gray .language {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  #flag {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-height: 8%;
+    max-width: 8%;
+  }
+  
+  .footer-gray .social-links-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    flex-wrap: nowrap;
+  }
+
+  .footer-gray .social-links-text i {
+    padding-left: 10%;
+  }
+
+  .footer-gray .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 35%; 
+    padding: 5% 0 5% 0;
+    margin-right: 10%;
+  }
+
+  .footer-gray .social-icons i {
+    padding: 0 5% 0 5%;
+  }
+
+}
