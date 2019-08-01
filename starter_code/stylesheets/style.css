@@ -5,3 +5,247 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+/*
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.barra{
+    padding: 1%;
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border-bottom: 1px solid gray; */
+    background: rgba(241, 240, 240, 0.856);
+    width: 100%;
+    position: fixed; /*Dejar fija la barra de nave */
+    z-index: 10; /*Dejar fija la barra de nave */
+}
+
+.barra img{
+    width: 8%;
+    border: none;
+}
+
+.barra ul{
+    text-align: center;
+    width: 40%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+}
+.barra ul li{
+    height: 30%;
+    padding: 1% 2%;
+    border-radius:6%;
+    display: flex;
+    align-items: center;
+}
+.barra>ul>li:last-child{
+    border: .5% solid gray;
+    color:white;
+    background-color: dimgray;
+}
+/* Hasta aquí para la barra de navegación ***************** */
+
+.header{
+    padding-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex{
+    padding-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-2{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.col-3{
+    display: flex;
+    align-items: center;
+    flex: 1 1 33%;
+}
+
+.col-3 img{
+    width: 70%;
+    margin: 4% auto;
+}
+/* Términa encabezado y estilos a ocupar mas abajo***** */
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.icons img{
+    width: 40%;
+}
+.fa{
+    margin: 0 1%;
+}
+
+.col-2 img{
+    width: calc(100% - 30px);
+    margin: 1.5%;
+}
+
+.col-4{
+    padding: 1%;
+    flex: 1;
+}
+
+.slack{
+    flex: 1;
+}
+.list{
+    display: flex;
+    align-items: center;
+}
+.lists ul{
+    list-style-type: none;
+}
+
+.lists>ul>li:first-child{
+    font-weight: 900;
+    font-size: 110%;
+}
+.title {
+    font-size: 300%;
+    font-weight: 100;
+}
+
+p{
+    font-size: 150%;
+    font-weight: 400;
+    margin: 1% 0;
+}
+
+.good-company{
+    text-align: center;
+}
+.button{
+    padding: .5% 1%;
+    background-color: rgb(69,56,182);
+    color: white;
+    font-size: 95%;
+    font-weight: 300;
+    border-radius: .5%;
+    margin: 1% 0 .4%;
+}
+.why{
+    padding: .3% 2%;
+    background-color: white;
+    color: rgb(69,56,182);
+    font-size: 130%;   
+    font-weight: 300;
+    border-radius: 1%;
+    margin: .5% 0 .2%;
+    border: .2% solid rgb(69,56,182);
+}
+
+.try{
+    margin: 1% 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.try-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3% 0;
+}
+
+
+@media all and (max-width:1200px) {
+  .header{
+      flex-wrap: wrap;
+  }
+  /* .barra {
+      background-color: rgba(107, 201, 201, 0.39);
+  } */
+  .col-2{
+      padding: 3%;
+      flex: 1 1 100%;
+  }
+}
+
+.hidden{
+    display: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+}
+
+.footer img{
+    height: 40%;
+    padding: 0 10px;
+}
+
+@media all and (max-width: 961px){
+    .col-3{
+    flex: 1 1 50%;
+  }
+  .barra{
+    background-color: rgba(64, 64, 143, 0.26);
+  }
+}
+
+@media all and (max-width: 768px){
+    .col-3{
+    flex: 1 1 100%;
+  }
+
+  .barra {
+      background-color: rgba(247, 7, 7, 0.034)
+  }
+  .col-4{
+      flex: 1 1 50%;
+  }
+
+  .button{
+      width: 100%;
+  }
+
+  .slack{
+      display: flex;
+      flex: 1 1 100%;
+  }
+
+  .slack img{
+      margin: 0 auto;
+  }
+  .hidden{
+      display: block;
+      width: 100%;
+      border-radius: 5px;
+      background-color: whitesmoke;
+      padding: 12px;
+      border: 1px solid rgb(69,56,182);
+  }
+
+  .icons div{
+      flex: 1 1 100%;
+  }
+}
