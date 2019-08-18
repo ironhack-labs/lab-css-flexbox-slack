@@ -33,10 +33,15 @@ nav li:last-child{
 ul{
     float: right;
 }
+.bars{
+    display: none;
+}
 /*-------header----------*/
 header{
     display: flex;
     justify-content: space-evenly;
+    align-items: start;
+    padding: 5%;
 }
 h1{
     font-size: 3em;
@@ -44,15 +49,12 @@ h1{
     color: #2C303F;
     margin: 0;
 }
-header > div{
-    width: 35vw;
+header img{
+    width: 50vw;
 }
 header p{
     font-size: 18px;
     font-weight: 300;
-}
-header img{
-    width: 40vw;
 }
 header button, .main-button2{
     background-color: #192592;
@@ -64,6 +66,9 @@ header button, .main-button2{
 }
 header p:last-child{
     font-size: 14px;
+}
+input{
+    display: none;
 }
 /*---------MAIN----------*/
 main{
@@ -80,13 +85,14 @@ main{
     padding: 15px 30px;
     font-weight: 700;
 }
-.companies{
-    display: flex;
+.companies{display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin:10vh;
+    padding: 10vh;
 }
 .companies img{
-    width: 200px;
+    width: 26%;
+    margin-bottom:3%; 
 }
 .tryit{
     display: flex;
@@ -111,7 +117,7 @@ main{
     padding: 10vh 0;
 }
 .menu img{
-    width: 100px;
+    width: 200px;
 }
 .menu li{
     list-style: none;
@@ -145,4 +151,93 @@ main{
 }
 .icons i{
     font-size: 16px;
+}
+@media (min-width: 768px) and (max-width: 961px){
+ .bars{
+     display: inline;
+     float: right;
+ }
+ nav ul{
+    display: none;
+ }
+ header{
+    flex-direction: column-reverse;
+ }
+ header img{
+     margin: 0 auto;
+ }
+ .companies img{
+     width: 35%;
+     padding: 3%;
+ }
+ input{
+     display: inline;
+    border: 1px solid #f4f3f4;
+    border-radius: 3px;
+    padding: 10px;
+    width: 30%;
+    margin-right: 10px;
+    font-weight: 300;
+ }
+} 
+@media (max-width:767px){
+    .bars{
+        display: inline;
+        float: right;
+    }
+    nav ul{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10vh 0;
+    }
+    .menu ul{
+        width: 25%;
+    }
+    .menu img{
+        margin-right: 25%;
+    }
+    header{
+        flex-direction: column-reverse;
+    }
+    header img{
+         margin: 0 auto;
+    }
+    input{
+        display: block;
+        border: 1px solid #f4f3f4;
+        border-radius: 3px;
+        padding: 10px;
+        width: 80%;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    header button, .main-button1, .main-button2{
+        width: 80%;
+    }
+    .companies img{
+        width: 80%;
+        padding: 5% 0px;
+        border-bottom: 1px solid #b5b7bd;
+    }
+    .tryit{
+        display: block;
+    }
+    .tryit p{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .bottom-menu{
+        flex-direction: column;
+        text-align: center;
+    }
+    .icons{
+        margin: 0 auto;
+    }
+}
+@media (min-width:1200px){
+    
 }
