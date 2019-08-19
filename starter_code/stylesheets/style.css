@@ -5,3 +5,116 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+h1 {
+    font-size: 3em;
+    padding: 3em 0 1em 0;
+  }
+  
+  .navBar {
+    background-color:white;
+    position: fixed;
+    min-width: 100%;
+  }
+  
+  .logo {
+    border-radius: 50px;
+    display: inline-block;
+    height: 45px;
+    margin: 1em 0;
+  }
+  
+  .encabezado {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 2%;
+  }
+  
+  /* Full Navigation, including mobile menu*/
+  nav ul {
+      display:flex;
+      justify-content: space-between;
+      list-style-type: none;
+      width: 50%;
+  }
+      
+nav ul a {
+        color:black;
+        text-decoration: none;
+        transition: all .5s ease;
+}
+
+nav ul a :hover{color:black}
+    
+
+nav ul a :hover  li  {
+      display: inline-block;
+    }
+    
+    #menu-toggle {display: none;}
+    
+    .label-toggle {display: none;}
+    
+    .encabezado {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    @media screen and (max-width: 1200px) {
+      nav ul a{color:black}
+
+      ul {
+        background-color: white;
+        display: block;
+        height: 0;
+        list-style-type: none;
+        opacity: 0;
+        text-align: center;
+        transition: all 1s ease;
+        width: 100%;
+        visibility: hidden;
+      }
+      
+      li {
+        border-bottom: 2px solid black;
+        color:pink;
+        display: block;
+        font-size: 1.5em;
+        padding: 2em 0;
+      }
+    
+      #menu-toggle:checked ~ ul {
+        opacity: 1;
+        height: 100vh;
+        visibility: visible;
+      }
+      
+      .label-toggle {
+        background: linear-gradient(to bottom,  black 0%, black 20%, transparent 20%, transparent 40%, black 40%, grey 60%, transparent 60%, transparent 80%,  gray 80%, black 100%); 
+        cursor: pointer;
+        display: block;
+        float: right;
+        height: 35px;
+        margin-top: 1em;
+        width: 35px;
+      }
+      
+      .wrapper {display: block;}
+    }
+
+.logosTabla
+{
+    
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    padding:5px; /* this */
+}
+
+.logosTabla > div
+{
+    flex:1 1 auto;
+    text-align:center;
+    margin:5px;  /* and that, will result in a 10px gap */
+}
+  
