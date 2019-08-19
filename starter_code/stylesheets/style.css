@@ -5,3 +5,292 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+button {
+  outline-style: none;
+}
+
+body {
+  padding-top: 60px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  height: 60px;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #6d6f7a;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+nav div.logo {
+  height: 100%;
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+}
+nav div.logo > img {
+  width: 113px;
+  height: auto;
+}
+nav ul {
+  position: absolute;
+  top: 44px;
+  background-color: white;
+  width: 100%;
+  padding: 0;
+  display: none;
+}
+nav ul li {
+  list-style: none;
+  padding: 4px;
+}
+nav div.hamburguer {
+  padding-top: 8px;
+}
+nav div.hamburguer div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+header img {
+  order: 1;
+}
+header .sign-in {
+  margin-top: 1em;
+  text-align: center;
+}
+header * {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+main * {
+  width: 100%;
+}
+main div:first-child {
+  background-color: #f4f3f4;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+main div:first-child div.company-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  border-bottom: 2px solid #ebebeb;
+  padding: 20px 40px;
+}
+main div:first-child div.company-logo img {
+  align-self: center;
+  height: 50px;
+  width: auto;
+}
+main div:first-child div.company-logo:last-of-type {
+  border: 0;
+}
+main div:last-child {
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+main div:last-child p {
+  text-align: center;
+}
+main div:last-child p:first-child {
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer * {
+  width: 100%;
+}
+footer ul {
+  list-style: none;
+}
+footer > div {
+  padding: 20px 40px;
+}
+footer div:first-child div img {
+  width: 110px;
+  height: auto;
+}
+footer div:first-child ul {
+  align-self: flex-start;
+  display: inline-block;
+  width: 49%;
+}
+footer div:first-child ul li {
+  padding-top: 1em;
+}
+footer div:last-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f3f4;
+}
+footer div:last-child ul {
+  display: flex;
+  text-align: center;
+}
+footer div:last-child div div img {
+  width: 30px;
+  height: auto;
+}
+footer div:last-child div div span {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+footer div:last-child div i {
+  width: calc(45% - 140px);
+}
+
+h1 {
+  font-size: 3em;
+  color: #2c303f;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #9ba1d2;
+  border-radius: 5px;
+  color: #1e2f9a;
+  height: 50px;
+  cursor: pointer;
+}
+
+button.blue {
+  border-color: #4049aa;
+  background-color: #192592;
+  color: #fff;
+}
+
+input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  height: 50px;
+  margin-bottom: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (min-width: 767px) {
+  header button,
+  header input {
+    width: 49%;
+  }
+
+  main button,
+  main input {
+    width: 49%;
+  }
+
+  main div:first-child button {
+    width: 200px;
+  }
+
+  main div:first-child div.company-logo {
+    width: 49%;
+  }
+
+  main div:first-child div.company-logo img {
+    align-self: center;
+    height: 50px;
+    width: auto;
+    max-width: 90%;
+  }
+
+  footer div:first-child > div {
+    display: inline-block;
+    width: 10%;
+  }
+
+  footer div:first-child > div img {
+    width: 100%;
+  }
+
+  footer div:first-child ul {
+    width: 21%;
+  }
+
+  footer div:last-child ul {
+    width: 50%;
+  }
+
+  footer div:last-child div {
+    width: 49%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  main div:first-child div.company-logo {
+    width: 33%;
+  }
+
+  main div:first-child div.company-logo img {
+    align-self: center;
+    height: 50px;
+    width: auto;
+    max-width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+}
