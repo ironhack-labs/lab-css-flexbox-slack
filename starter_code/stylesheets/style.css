@@ -1,7 +1,497 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+@charset "UTF-8";
+/***********************************
+********* CSS VARIABLES ************
+***********************************/
+:root {
+  --background-grey: #f5f5f5;
+  --button-purple: #192592;
+  --button-purple-hover: #020b5c;
+  --main-titles-dark-grey: #2c303f;
+  --paragraph-grey: #5b5e6d;
+  --nav-grey: #5b5e6d;
+  --border-color: #ddd;
+  --serif: 'Merriweather', serif;
+  --sans: 'Lato', sans-serif;
+}
+
+/***********************************
+********** CSS GENERAL *************
+***********************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--sans);
+  color: var(--paragraph-grey);
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+/**********************************************************************
+*************** 1. MOBILE FIRST: ESTILOS PARA TELÉFONO ****************
+**********************************************************************/
+/***********************************
+************ 1.1 NAV ***************
+***********************************/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 0.5rem 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+}
+nav img {
+  height: 2.5rem;
+}
+nav ul {
+  display: none;
+}
+nav button {
+  font-size: 1.25rem;
+  background: transparent;
+  border: none;
+}
+
+/***********************************
+*********** 1.2 HEADER *************
+***********************************/
+header {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 3.5rem;
+  padding: 2.75rem 1.25rem;
+}
+header h1 {
+  font-family: var(--serif);
+  color: var(--main-titles-dark-grey);
+  line-height: 1.125;
+  font-size: 2rem;
+  margin-bottom: 1.75rem;
+}
+header p:first-of-type {
+  margin-bottom: 1.75rem;
+}
+header form {
+  margin-bottom: 0.75rem;
+}
+header form input,
+header form button {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+header form input {
+  border: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+  -webkit-appearance: none;
+}
+header form button {
+  background-color: var(--button-purple);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.825rem;
+}
+header p:last-of-type {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 4rem;
+}
+header p:last-of-type a {
+  color: var(--button-purple);
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--button-purple);
+}
+
+/***********************************
+*********** 1.3 MAIN ***************
+***********************************/
+main {
+  text-align: center;
+}
+main > div:first-of-type {
+  padding: 3rem 1.25rem;
+  background: var(--background-grey);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+main > div:first-of-type h2 {
+  font-family: var(--serif);
+  color: var(--main-titles-dark-grey);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+main > div:first-of-type p {
+  margin-bottom: 1.75rem;
+}
+main > div:first-of-type button {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: 1px solid var(--button-purple);
+  background-color: #fff;
+  color: var(--button-purple);
+  font-weight: 700;
+  font-size: 0.825rem;
+  margin-bottom: 2.5rem;
+}
+main > div:first-of-type div div {
+  border-bottom: 1px solid var(--border-color);
+}
+main > div:first-of-type div div img {
+  height: 40px;
+  max-width: 180px;
+  object-fit: contain;
+  margin: 2rem auto;
+}
+main > div:first-of-type div div:last-child {
+  border: none;
+}
+main > div:last-of-type {
+  padding: 3rem 1.25rem;
+}
+main > div:last-of-type p:first-child {
+  font-family: var(--serif);
+  color: var(--main-titles-dark-grey);
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 0.125rem;
+}
+main > div:last-of-type p:last-of-type {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+main > div:last-of-type p:last-of-type a {
+  color: var(--button-purple);
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--button-purple);
+}
+main > div:last-of-type form {
+  order: 3;
+  margin-bottom: 0.75rem;
+}
+main > div:last-of-type form input,
+main > div:last-of-type form button {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+main > div:last-of-type form input {
+  border: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+  -webkit-appearance: none;
+}
+main > div:last-of-type form button {
+  background-color: var(--button-purple);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.825rem;
+}
+
+/***********************************
+********** 1.4 FOOTER **************
+***********************************/
+footer {
+  font-size: 1rem;
+}
+footer > div:first-of-type {
+  padding: 2.5rem 1.25rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-wrap: wrap;
+}
+footer > div:first-of-type img {
+  width: 100%;
+  max-height: 6rem;
+  object-fit: contain;
+  object-position: -1.5rem -1.5rem;
+}
+footer > div:first-of-type div {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer > div:first-of-type div ul {
+  width: 50%;
+  margin-bottom: 1.75rem;
+}
+footer > div:first-of-type div ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+footer > div:first-of-type div ul li:first-child {
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+footer > div:first-of-type div ul:nth-last-child(2),
+footer > div:first-of-type div ul:last-child {
+  margin-bottom: 0;
+}
+footer > div:last-of-type {
+  background-color: var(--background-grey);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+footer > div:last-of-type ul {
+  margin-bottom: 1.125rem;
+}
+footer > div:last-of-type ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+footer > div:last-of-type ul li:first-child {
+  margin-left: 0;
+}
+footer > div:last-of-type ul li:last-child {
+  margin-right: 0;
+}
+footer > div:last-of-type div {
+  /* Language */
+  /* Íconos de redes sociales */
+}
+footer > div:last-of-type div > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.125rem;
+}
+footer > div:last-of-type div > div:first-child img {
+  width: 1.5rem;
+}
+footer > div:last-of-type div > div:first-child span {
+  padding: 0 0.5rem;
+}
+footer > div:last-of-type div > div:first-child i {
+  font-weight: 300;
+  font-size: 0.725rem;
+}
+footer > div:last-of-type div > div:last-child {
+  font-size: 1.125rem;
+}
+footer > div:last-of-type div > div:last-child i {
+  margin: 0 0.5rem;
+}
+footer > div:last-of-type div > div:last-child i:first-child {
+  margin-left: 0;
+}
+footer > div:last-of-type div > div:last-child i:last-child {
+  margin-right: 0;
+}
+
+/**********************************************************************
+*************** 2. ESTILOS PARA SMALL SCREEN: > 767px ****************
+**********************************************************************/
+@media (min-width: 767px) {
+  /***********************************
+  ********** CSS GENERAL *************
+  ***********************************/
+  html {
+    font-size: 18px;
+  }
+
+  /***********************************
+  *********** 2.2 HEADER *************
+  ***********************************/
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header form {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header form input {
+    margin-bottom: 0;
+    margin-right: 0.75rem;
+  }
+  header form button {
+    width: 300px;
+  }
+  header p:last-of-type {
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  header img {
+    object-fit: cover;
+    height: 350px;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  /***********************************
+  *********** 2.3 MAIN ***************
+  ***********************************/
+  main > div:first-of-type p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main > div:first-of-type button {
+    width: auto;
+  }
+  main > div:first-of-type div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1.25rem;
+  }
+  main > div:first-of-type div div {
+    width: 50%;
+  }
+  main > div:first-of-type div div:nth-child(even) {
+    border-left: 1px solid var(--border-color);
+  }
+  main > div:first-of-type div div:nth-last-child(2) {
+    border: none;
+  }
+  main > div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  main > div:last-of-type form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main > div:last-of-type form input {
+    margin-bottom: 0;
+    margin-right: 0.75rem;
+  }
+
+  /***********************************
+  ********** 1.4 FOOTER **************
+  ***********************************/
+  footer > div:first-of-type {
+    width: 100%;
+    justify-content: space-between;
+  }
+  footer > div:first-of-type img {
+    width: auto;
+  }
+  footer > div:first-of-type div ul {
+    width: auto;
+    margin-right: 2.725rem;
+    font-size: 0.9rem;
+  }
+  footer > div:first-of-type div ul:last-child {
+    margin-right: 0;
+  }
+  footer > div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer > div:last-of-type ul {
+    margin-bottom: 0;
+  }
+  footer > div:last-of-type div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer > div:last-of-type div div:first-of-type {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+}
+/**********************************************************************
+*************** 3. ESTILOS PARA MEDIUM SCREEN: > 961px ****************
+**********************************************************************/
+@media (min-width: 961px) {
+  /***********************************
+  *********** 3.3 MAIN ***************
+  ***********************************/
+  main > div:first-of-type div div {
+    width: 33.3333%;
+    border-right: 1px solid var(--border-color);
+  }
+  main > div:first-of-type div div:nth-child(even) {
+    border-left: none;
+  }
+  main > div:first-of-type div div:nth-last-child(2) {
+    border-right: 1px solid var(--border-color);
+  }
+  main > div:first-of-type div div:nth-child(3) {
+    border-right: none;
+  }
+  main > div:first-of-type div div:nth-child(4) {
+    border-bottom: none;
+  }
+}
+/**********************************************************************
+*************** 4. ESTILOS PARA LARGE SCREEN: > 1200px ****************
+**********************************************************************/
+@media (min-width: 1200px) {
+  /***********************************
+  ************ 4.1 NAV ***************
+  ***********************************/
+  nav {
+    font-size: 0.925rem;
+  }
+  nav ul {
+    display: block;
+  }
+  nav ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 2rem;
+  }
+  nav ul li:last-child {
+    margin-right: 0;
+    border: 1px solid var(--button-purple);
+    color: var(--button-purple);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+  }
+  nav button {
+    display: none;
+  }
+
+  /***********************************
+  *********** 2.2 HEADER *************
+  ***********************************/
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.75rem 1.25rem;
+  }
+  header img,
+  header div {
+    width: 50%;
+  }
+  header img {
+    object-fit: contain;
+  }
+  header h1 {
+    font-size: 4rem;
+  }
+}
+
+/*# sourceMappingURL=/styles.164d45a1.css.map */
