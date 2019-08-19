@@ -5,3 +5,299 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body {
+  width: 90%;
+  margin: 4%;
+  margin-top: 5px;
+  background: white;
+}
+nav {
+  display: flex;
+  text-align: justify;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  background: white;
+  border-bottom: 1px solid darkgray;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #2c303f;
+  margin: 0 2px;
+  line-height: 25px;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.menu a:nth-last-child(1) {
+  color: #575758;
+  border: 1px solid #575758;
+  border-radius: 7%;
+  padding: 4px;
+}
+span {
+  color: darkolivegreen;
+}
+/* para mostrar o no el botón*/
+label {
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+/*para que el boton se muestre de acuerdo al tamaño de pantalla*/
+@media only screen and (max-width: 1200px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 50%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid darkgray;
+    margin: 0%;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+  .menu a:nth-last-child(1) {
+    border: none;
+    border-bottom: 1px solid darkgray;
+  }
+}
+nav > img {
+  width: 15%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+}
+.homeWork {
+  order: 5;
+  width: 90%;
+}
+header > h1 {
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 67px;
+  color: #2c303f;
+  margin-top: 30px;
+}
+
+header :nth-child(3) {
+  font-size: 28px;
+  color: #5b5e6d;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header :nth-child(4) {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+header :nth-child(5) {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: #30398a;
+  color: white;
+  font-weight: bold;
+}
+header :nth-child(6) {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 3%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 28px;
+  color: #5b5e6d;
+}
+main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  width: 92%;
+  margin: 2%;
+}
+
+main > div :first-child {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color: #2c303f;
+  margin-top: 30px;
+  background: white;
+}
+
+main > div :nth-child(2) {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+  color: #5b5e6d;
+  margin-top: 30px;
+}
+
+main > div :nth-child(3) {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #30398a;
+  border-radius: 3.5%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: white;
+  color: #30398a;
+  font-weight: bold;
+  width: 90%;
+}
+main > div > img {
+  margin-top: 90px;
+  width: 50%;
+}
+main :nth-child(2) .prueba {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: #2c303f;
+  margin-top: 30px;
+  background: white;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+main :nth-child(2) > :nth-child(2) {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30x;
+  color: #5b5e6d;
+  margin-top: 0px;
+  background: white;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+main :nth-child(2) > a {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  color: #30398a;
+  margin-top: 0px;
+  background: white;
+}
+main :nth-child(2) > input {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid darkgray;
+}
+main :nth-child(2) > button {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: #30398a;
+  color: white;
+  font-weight: bold;
+  width: 95%;
+}
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+}
+footer :first-child > img {
+  justify-content: flex-start;
+}
+
+footer :first-child .listas {
+  flex-wrap: wrap;
+  padding: 0%;
+  margin: 0;
+  display: flex;
+}
+
+footer :first-child > .listas ul {
+  list-style: none;
+  text-align: left;
+  color: #5b5e6d;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer :first-child > .listas ul :first-child {
+  list-style: none;
+  text-align: left;
+  color: #5b5e6d;
+  font-weight: bold;
+}
+.pie {
+  background: #f4f3f4;
+  display: flex;
+  flex-direction: column;
+}
+.pie ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pie ul li {
+  text-align: center;
+  color: #5b5e6d;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.pie .leng {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5b5e6d;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.pie .leng img {
+  width: 30px;
+  margin: 10px;
+}
+.pie .leng i {
+  width: 30px;
+  margin: 10px;
+}
+.pie .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5b5e6d;
+}
+.pie .social i {
+  margin: 15px;
+  font-size: 33px;
+}
+@media screen and (min-width: 767) {
+  header .homeWork {
+    order: 0;
+  }
+}
