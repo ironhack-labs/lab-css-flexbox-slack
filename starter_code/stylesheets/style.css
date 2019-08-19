@@ -2,6 +2,301 @@
 background-grey: #F4F3F4;
 button-purple: #192592
 main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
+paragraph grey: #F4F3F4;
 nav grey: #5b5e6d;
 */
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #5b5e6d;
+  font-family: 'Open Sans';
+  flex-direction: column;
+}
+
+nav img {
+  width: 10vw;
+}
+
+nav {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  color: #5b5e6d;
+  border: 1px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+nav li:last-child {
+  border: 1px solid #5b5e6d;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bars {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 5%;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Noto Serif';
+  color: #2C303F;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header img {
+  width: 50vw;
+}
+
+header p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+header button,
+.main-button2 {
+  background-color: #192592;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 30px;
+  font-weight: 400;
+}
+
+header p:last-child {
+  font-size: 14px;
+}
+
+input {
+  display: none;
+  padding: 16px 12px 16px 12px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-button1 {
+  background-color: #F4F3F4;
+  color: #192592;
+  border: 1px solid #192592;
+  border-radius: 3px;
+  padding: 15px 30px;
+  font-weight: 700;
+}
+
+.companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.companies img {
+  width: 26%;
+  margin-bottom: 3%;
+}
+
+.tryit {
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh 10vw;
+  background-color: #fff;
+}
+
+.tryit p {
+  text-align: left;
+  margin: 0;
+}
+
+.title {
+  font-family: 'Nono Serif';
+  font-size: 2em;
+  color: #2C303F;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 10vh 0;
+}
+
+.menu img {
+  width: 200px;
+}
+
+.menu li {
+  list-style: none;
+  font-weight: 300;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.menu li:first-child {
+  font-weight: 400;
+}
+
+.bottom-menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 2vh 5vw;
+  background-color: #F4F3F4;
+}
+
+.bottom-menu li,
+.bottom-menu i {
+  display: inline;
+  list-style: none;
+  margin: 0 10px;
+  font-weight: 400;
+}
+
+.bottom-menu img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons i {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 961px) {
+  .bars {
+    display: inline;
+    float: right;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header {
+    flex-direction: column-reverse;
+  }
+
+  header img {
+    margin: 0 auto;
+  }
+
+  .companies img {
+    width: 35%;
+    padding: 3%;
+  }
+
+  input {
+    display: inline;
+    border: 1px solid #f4f3f4;
+    border-radius: 3px;
+    padding: 10px;
+    width: 30%;
+    margin-right: 10px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width:767px) {
+  .bars {
+    display: inline;
+    float: right;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10vh 0;
+  }
+
+  .menu ul {
+    width: 25%;
+  }
+
+  .menu img {
+    margin-right: 25%;
+  }
+
+  header {
+    flex-direction: column-reverse;
+  }
+
+  header img {
+    margin: 0 auto;
+  }
+
+  input {
+    display: block;
+    border: 1px solid #f4f3f4;
+    border-radius: 3px;
+    padding: 10px;
+    width: 80%;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  header button,
+  .main-button1,
+  .main-button2 {
+    width: 80%;
+  }
+
+  .companies img {
+    width: 80%;
+    padding: 5% 0px;
+    border-bottom: 1px solid #b5b7bd;
+  }
+
+  .tryit {
+    display: block;
+  }
+
+  .tryit p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .bottom-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icons {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1200px) {}
