@@ -9,10 +9,12 @@ nav grey: #5b5e6d;
 * {
     margin: 0;
 }
-p{
+
+p {
     color: #5b5e6d;
 }
-li{
+
+li {
     color: #5b5e6d;
 }
 
@@ -54,6 +56,10 @@ nav ul li:last-child {
     border-color: #5b5e6d
 }
 
+.menu a {
+    display: none;
+}
+
 body {
     padding-top: 80px;
     /* Relleno superior igual a la altura de la cabecera*/
@@ -66,6 +72,123 @@ header {
     margin-top: 40px;
 }
 
+@media (max-width: 768px) {
+
+    /*metodos para responsive de navegacion*/
+    nav {
+        align-items: center
+    }
+
+    nav ul {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 20px;
+    }
+
+    .menu a {
+        display: block;
+    }
+
+    .menu a img {
+        display: block;
+        height: 50px;
+        width: 40px;
+    }
+
+    #nav:target {
+        max-height: 800px;
+    }
+
+    .navegacion:target {
+        left: 0;
+    }
+
+    .navegacion {
+        display: none;
+        position: relative;
+    }
+
+    .navegacion li {
+        display: block;
+        position: absolute;
+    }
+
+    .navegacion li:hover {
+        display: inline;
+    }
+
+
+    /* metodos para respnsive del header*/
+    header {
+        flex-direction: column-reverse
+    }
+    .header-container input{
+        width: 100%;
+    }
+
+    .header-container button {
+        width: 100%
+    }
+
+    .header-container p:last-child{
+        text-align: center;
+    }
+
+
+    /*metodos para Main*/
+
+    .principal button{
+        width: 100%
+    }
+
+    .principal-clients{
+    flex-flow: column;
+    align-items: center;
+    }
+
+
+    /* metodos para Sign*/
+    .sign{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sign button{
+        margin-top: inherit;
+    }
+
+
+    /*metodos footer*/
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-container div{
+        flex-direction: column;
+        flex-flow: wrap;
+        padding: 0 17vw;
+    }
+
+    .footer-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-nav ul{
+        padding: 0;
+    }
+
+    .flag{
+        flex-direction: column;
+        padding: 0;
+    }
+    .flag span{
+        margin-bottom: 3vw
+    }
+}
 
 .image-header {
     float: left;
@@ -76,10 +199,16 @@ header {
     padding: 3vw;
 }
 
-.header-container p{
+.header-container p {
     padding-top: inherit;
 }
 
+.header-container input{
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid #19259236;
+    margin-top: 2vw
+}
 .header-container button {
     background: #192592;
     color: #fff;
@@ -105,6 +234,7 @@ main {
 
 .principal {
     flex-direction: column;
+    padding: 3vw;
 }
 
 .principal button {
@@ -164,6 +294,7 @@ footer {
     margin-top: 3vw;
 }
 
+
 .footer-container {
     display: flex;
     justify-content: space-evenly;
@@ -175,17 +306,19 @@ footer {
 }
 
 .footer-container div {
-    display: contents;
+    display: flex;
 }
 
 .footer-container div ul {
     list-style: none;
     margin-bottom: auto;
 }
-.footer-container div ul li{
+
+.footer-container div ul li {
     margin: 2vw;
 }
-.footer-container div ul li:first-child{
+
+.footer-container div ul li:first-child {
     font-weight: bold;
 }
 
@@ -193,7 +326,7 @@ footer {
     display: flex;
     justify-content: space-between;
     background: #F4F3F4;
-    height: 80px;
+    height: 100%;
 }
 
 .footer-nav ul {
