@@ -1,7 +1,435 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+body {
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  font-family: "1fb0eb3889";
+  font-size: 20px;
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  background: white;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  color: #5b5e6d;
+}
+
+nav > p {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: start;
+}
+
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.navegation {
+  border-bottom: 2px solid whitesmoke;
+}
+
+.navegation label {
+  align-content: right;
+  background: white;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 12px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navegation ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegation ul li {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  padding: 14px 10px 0 10px;
+  box-sizing: border-box;
+}
+
+.navegation ul li a {
+  text-decoration: none;
+}
+
+/* Toggle menu removed on larger screens*/
+.navegation label,
+.toggle {
+  display: none;
+}
+
+
+/*Toggle Menu for smaller screens (start being displayed on tablets) */
+@media screen and (max-width: 1200px) {
+  .navegation label {
+    font-style: normal;
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: flex-end;
+    color: #5b5e6d;
+    background: white;
+    
+  }
+
+  .navegation ul li {
+    padding: 14px 10px 14px 10px;
+  }
+
+  .navegation ul {
+    display: none;
+  }
+
+  .navegation input:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.navegation img {
+  width: 85px;
+  height: 40px;
+  margin: 5px 0 0 15px;
+  float: left;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.email-input {
+  width: 100vw;
+  height: 50px;
+  border: 2px solid  rgb(207, 201, 201);
+  color: rgb(207, 201, 201);
+  border-radius: 4px;
+}
+
+.email-button {
+  width: 90vw;
+  height: 50px;
+  margin: 20px;
+  background-color: blue;
+  color: #f4f3f4;
+  border-radius: 5px;
+  border: 0;
+}
+
+.email-link {
+  color: blue;
+}
+
+header img {
+  width: 85%;
+  max-width: 500px;
+}
+
+header h1 {
+  margin: 65px 20px 0 20px;
+  color: #2c303f;
+}
+
+header p {
+  margin: 20px;
+  color: #2c303f;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discover-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discover-button {
+  width: 280px;
+  height: 50px;
+  margin: 15px 0 30px 0;
+  background-color: white;
+  color: blue;
+  border-radius: 4px;
+  border: 2px solid blue;
+}
+
+.logos {
+  background-color: #f4f3f4;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logo-wrapper {
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.logos img {
+  width: 180px;
+  margin: 10px 80px 10px 80px;
+}
+
+main h2 {
+  text-align: center;
+}
+
+main p {
+  margin: 10px 20px;
+  color: #2c303f;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+main h5 {
+  margin: 10px 20px;
+  color: #2c303f;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.try-it-free {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer ul {
+  flex-wrap: wrap;
+}
+
+.small-logo {
+  width: 120px;
+  margin-left: 15vw;
+}
+
+footer li {
+  display: flex;
+  align-content: center;
+  font-size: 12px;
+  color: #5b5e6d;
+  line-height: 2em;
+}
+
+.link-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 14px;
+  color: #5b5e6d;
+  width: 150px;
+}
+
+.link-block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.link-container ul {
+  padding-left: 20px;
+}
+
+.li-header {
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.bottom {
+  background-color: #f4f3f4;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-ul ul {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 0 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.bottom-ul {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.bottom-ul li {
+  display: inline-flex;
+  justify-content: space-around;
+  margin: 0 5px;
+}
+
+.flag {
+  display: flex;
+  flex-direction: row;
+  color: #5b5e6d;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag-container img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 667px) {
+  h1 {
+    font-size: 70px;
+    text-align: left;
+  }
+
+  .headline-p {
+    align-items: flex-start;
+  }
+
+  .button-wrapper {
+    align-items: center;
+  }
+
+  header p {
+    font-size: 1.1em;
+    text-align: left;
+  }
+
+  .logos p {
+    font-size: 1.1em;
+  }
+
+  .logos h2 {
+    font-size: 1.8em;
+  }
+
+  .try-it-free h5 {
+    font-size: 1.8em;
+  }
+
+  .try-it-free p {
+    font-size: 1.1em;
+  }
+
+  .links {
+    flex-direction: row;
+  }
+
+  .button-wrapper {
+    flex-direction: row;
+  }
+
+  .logo-main-wrapper {
+    flex-direction: row;
+  }
+
+  .bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .logo-main-wrapper img {
+    margin: 10px 68px;
+  }
+
+  .email-input {
+    width: 250px;
+  }
+
+  .email-button {
+    width: 200px;
+  }
+
+  .discover-button {
+    width: 200px;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 1201px) {
+  header {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .header-image img {
+    width: 500px;
+    margin: 70px 0
+  }
+
+  .headline {
+    align-items: flex-start;
+  }
+
+  header section {
+    align-items: flex-start;
+  }
+
+  .logo-main-wrapper img {
+    margin: 10px 108px;
+  }
+
+  footer{
+    align-content: space-around;
+  }
+}
