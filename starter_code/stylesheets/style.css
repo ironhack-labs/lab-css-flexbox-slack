@@ -5,6 +5,7 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
 body {
   width: 90%;
   margin: 4%;
@@ -21,7 +22,6 @@ nav {
   background: white;
   border-bottom: 1px solid darkgray;
 }
-
 .menu a {
   text-decoration: none;
   color: #2c303f;
@@ -49,7 +49,7 @@ label {
   display: none;
 }
 /*para que el boton se muestre de acuerdo al tamaño de pantalla*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 960px) {
   label {
     display: block;
     cursor: pointer;
@@ -88,46 +88,49 @@ header {
   order: 5;
   width: 90%;
 }
-header > h1 {
+header :nth-child(2) > h1 {
   text-align: left;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 67px;
+  font-size: 15vw;
   color: #2c303f;
   margin-top: 30px;
 }
 
-header :nth-child(3) {
-  font-size: 28px;
+header :nth-child(2) > p {
+  font-size: 6vw;
   color: #5b5e6d;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header :nth-child(4) {
+header :nth-child(2) input {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 5vw;
   padding: 10px;
   border-radius: 3%;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-header :nth-child(5) {
+header :nth-child(2) button {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px;
   border-radius: 3%;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 5vw;
   background: #30398a;
   color: white;
   font-weight: bold;
 }
-header :nth-child(6) {
+header :nth-child(2) > div {
+  display: none;
+}
+header :nth-child(7) {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   border-radius: 3%;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-size: 28px;
+  font-size: 5vw;
   color: #5b5e6d;
 }
 main {
@@ -139,10 +142,12 @@ main {
   width: 92%;
   margin: 2%;
 }
-
+main :first-child .marcas {
+  display: none;
+}
 main > div :first-child {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 40px;
+  font-size: 10vw;
   color: #2c303f;
   margin-top: 30px;
   background: white;
@@ -150,14 +155,14 @@ main > div :first-child {
 
 main > div :nth-child(2) {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 25px;
+  font-size: 5vw;
   color: #5b5e6d;
   margin-top: 30px;
 }
 
 main > div :nth-child(3) {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 4vw;
   padding: 10px;
   border: 1px solid #30398a;
   border-radius: 3.5%;
@@ -168,7 +173,7 @@ main > div :nth-child(3) {
   font-weight: bold;
   width: 90%;
 }
-main > div > img {
+main > div > .marcasNo {
   margin-top: 90px;
   width: 50%;
 }
@@ -176,7 +181,7 @@ main :nth-child(2) .prueba {
   font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
   color: #2c303f;
-  margin-top: 30px;
+  margin-top: 5vw;
   background: white;
   font-weight: bold;
   margin-bottom: 0px;
@@ -184,7 +189,7 @@ main :nth-child(2) .prueba {
 
 main :nth-child(2) > :nth-child(2) {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 30x;
+  font-size: 3.5vw;
   color: #5b5e6d;
   margin-top: 0px;
   background: white;
@@ -193,14 +198,14 @@ main :nth-child(2) > :nth-child(2) {
 }
 main :nth-child(2) > a {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 30px;
+  font-size: 4vw;
   color: #30398a;
   margin-top: 0px;
   background: white;
 }
 main :nth-child(2) > input {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 3.5vw;
   padding: 10px;
   border-radius: 3%;
   margin-bottom: 10px;
@@ -209,7 +214,7 @@ main :nth-child(2) > input {
 }
 main :nth-child(2) > button {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 3.5vw;
   padding: 10px;
   border-radius: 3%;
   margin-bottom: 10px;
@@ -227,7 +232,10 @@ footer {
   background: white;
 }
 footer :first-child > img {
+  display: flex;
   justify-content: flex-start;
+
+  width: 20vw;
 }
 
 footer :first-child .listas {
@@ -241,7 +249,7 @@ footer :first-child > .listas ul {
   list-style: none;
   text-align: left;
   color: #5b5e6d;
-  font-size: 20px;
+  font-size: 3.5vw;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 footer :first-child > .listas ul :first-child {
@@ -266,7 +274,7 @@ footer :first-child > .listas ul :first-child {
   text-align: center;
   color: #5b5e6d;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 3.6vw;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .pie .leng {
@@ -275,7 +283,7 @@ footer :first-child > .listas ul :first-child {
   justify-content: center;
   color: #5b5e6d;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 3.5vw;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .pie .leng img {
@@ -294,10 +302,206 @@ footer :first-child > .listas ul :first-child {
 }
 .pie .social i {
   margin: 15px;
-  font-size: 33px;
+  font-size: 4vw;
 }
-@media screen and (min-width: 767) {
+@media screen and (min-width: 768) {
   header .homeWork {
     order: 0;
+  }
+}
+
+/*Pantalla medium small*/
+@media screen and (min-width: 769px) {
+  header :nth-child(2) > h1 {
+    font-size: 9vw;
+    margin-bottom: 0px;
+    display: flex;
+  }
+  header :nth-child(2) > p {
+    font-size: 2.5vw;
+    padding: 15px;
+    margin-top: 0px;
+  }
+  header :nth-child(2) > :nth-child(4) {
+    display: none;
+  }
+  header :nth-child(2) > :nth-child(3) {
+    display: none;
+  }
+  header :nth-child(2) :nth-child(5) {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  header :nth-child(2) :nth-child(5) input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5vw;
+    height: 4.5vw;
+    border-radius: 3%;
+    margin-bottom: 1px;
+    margin-top: 10px;
+  }
+  header :nth-child(2) :nth-child(5) button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5vw;
+    padding: 2vw;
+    width: 40vw;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    background: #30398a;
+    color: white;
+    font-weight: bold;
+  }
+  header :nth-child(7) {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 3%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 2.5vw;
+    color: #5b5e6d;
+  }
+  main {
+    background: #f4f3f4;
+  }
+  main :first-child h2 {
+    background: #f4f3f4;
+    font-size: 6vw;
+  }
+  main :first-child p {
+    font-size: 2vw;
+  }
+  main :first-child button {
+    background: white;
+    color: #30398a;
+    font-size: 2vw;
+    width: 50%;
+  }
+  main :first-child .marcasNo {
+    display: none;
+  }
+  main :first-child :nth-child(10) {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+  }
+  main :first-child :nth-child(10) img {
+    background: #f4f3f4;
+    border: none;
+    margin: 3vw 2vw;
+    width: 30vw;
+    height: auto;
+  }
+  main div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    background: white;
+  }
+  main div:nth-child(2) div:first-child {
+    text-align: center;
+    margin: 1vw;
+  }
+  main div:nth-child(2) div:nth-child(2) {
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 3vw;
+    align-content: center;
+  }
+  main div:nth-child(2) div:first-child > :first-child {
+    font-size: 3.5vw;
+  }
+  main div:nth-child(2) div:first-child > :nth-child(2) {
+    font-size: 2vw;
+  }
+  main div:nth-child(2) div:nth-child(2) > :first-child {
+    font-size: 2.5vw;
+  }
+  main div:nth-child(2) div:nth-child(2) > :nth-child(2) {
+    font-size: 2.5vw;
+    background: #30398a;
+    color: white;
+  }
+  footer > :first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer > :first-child img {
+    width: 11vw;
+    height: 11vw;
+  }
+  footer > :first-child .listas ul {
+    font-size: 1.8vw;
+  }
+  footer .pie {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .pie ul {
+    justify-content: flex-start;
+  }
+  footer .pie ul li {
+    flex-direction: row;
+    font-size: 2vw;
+  }
+  footer .pie .social {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  footer .pie .social i {
+    font-size: 2vw;
+  }
+  footer .pie .leng i {
+    font-size: 2vw;
+  }
+  footer .pie .leng img {
+    font-size: 1.5vw;
+  }
+  footer .pie .leng span {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 960px) {
+  main :first-child :nth-child(10) img {
+    width: 20vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .homeWork {
+    order: 0;
+    width: 40vw;
+    height: 40vw;
+  }
+  header div:nth-child(2) {
+    width: 40vw;
+  }
+  header :nth-child(2) :nth-child(5) input {
+    display: none;
+  }
+  header :nth-child(2) h1 {
+    font-size: 4.5vw;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  header :nth-child(2) p {
+    font-size: 1.3vw;
+    text-align: left;
+  }
+  header :nth-child(2) :nth-child(5) button {
+    margin-top: 5px;
+    font-size: 1.3vw;
+    width: 15vw;
+  }
+  header :nth-child(2) :nth-child(6) {
+    font-size: 1.1vw;
   }
 }
