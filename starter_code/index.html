@@ -6,47 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
+  <link rel="stylesheet" href="./stylesheets/style.css">
   <title>Where work happens | Slack</title>
 </head>
 
 <body>
-  <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
+  <nav id="nav-bar">
+    <img src="./images/slack-logo.png" alt="slack_logo" id="logo">
     <ul>
       <li>Why Slack?</li>
       <li>Pricing</li>
       <li>About Us</li>
       <li>Your Workspaces</li>
     </ul>
+    <span>
+        <i class="fa fa-bars"></i>
+    </span>
   </nav>
-  <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
+  <header class="hero">
     <h1>Where Work Happens</h1>
     <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+    <div class="emaillogin">
+        <form action="" id="emailbox"><input type="email" name="email" id="email" placeholder="Email address"></form>
+        <button type="button" name="button">GET STARTED</button>
+    </div>
+    <p class="signin">Already using Slack? <a href="#">Sign in</a></p>
+    <img src="./images/home_talking.png" alt="home_work_happening">
   </header>
   <main>
-    <div>
+    <div id="company">
       <h2>You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
       <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
+      <div class="logos">
+          <img src="./images/airbnb-logo.png" alt="" class="logos">
+          <img src="./images/capital-one-logo.png" alt="" class="logos">
+          <img src="./images/harvard-logo.png" alt="" class="logos">
+          <img src="./images/los-angeles-times-logo.png" alt="" class="logos">
+          <img src="./images/oracle-logo.png" alt="" class="logos">
+          <img src="./images/ticketmaster-logo.png" alt="" class="logos">
+      </div>
     </div>
-    <div>
-      <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+    <div class="try">
+      <div>
+          <h2>Try it for free</h2>
+          <p>Already using Slack? <a href="">Sign in</a></p>
+      </div>
+      <div class="emaillogin">
+          <form action="" id="emailbox"><input type="email" name="email" id="email" placeholder="Email address"></form>
+          <button type="button" name="button">GET STARTED</button>
+      </div>
     </div>
   </main>
   <footer>
-    <div>
-      <img src="./images/iso-slack.png" alt="">
+    <div id="links">
+        <span>
+            <img src="./images/iso-slack.png" alt="" class="smalllogo">
+        </span>
       <ul>
         <li>COMPANY</li>
         <li>About Us</li>
@@ -80,22 +96,29 @@
         <li>Slack Fund</li>
       </ul>
     </div>
-    <div>
+
+    <div class="policies">
       <ul>
         <li>Status</li>
         <li>Privacy & Terms</li>
         <li>Contact Us</li>
       </ul>
-      <div>
+
+      <div class="language">
         <img src="./images/us-flag.png" alt="">
-        <span>English (US)</span>
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        <span>
+            <span>English (US)</span>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </span>
       </div>
+
+        <div class="findus">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>
+
     </div>
   </footer>
 </body>
-
 </html>
