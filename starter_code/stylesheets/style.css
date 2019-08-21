@@ -17,7 +17,8 @@ body {
 }
 nav,
 header,
-div.partners, div.join-us {
+div.partners,
+div.join-us {
   padding: 0 2.5rem;
 }
 nav.menu-bar {
@@ -57,7 +58,7 @@ header h1 {
   line-height: 5rem;
 }
 header p,
-div.partners p {
+div.partners p, {
   line-height: 3rem;
   margin-bottom: 4rem;
   font-size: 2.2rem;
@@ -65,6 +66,7 @@ div.partners p {
 p.botton-adjacent {
   text-align: center;
 }
+
 input,
 button {
   border-radius: 5px;
@@ -99,7 +101,7 @@ h2 {
 }
 div.partners p {
   text-align: center;
-
+  margin-bottom: 2rem;
 }
 button.white {
   color: #192592;
@@ -107,6 +109,9 @@ button.white {
   border-color: #192592;
   font-weight: bold;
   margin-bottom: 1rem;
+  max-width: 25rem;
+  margin: 0 auto;
+  display: block;
 }
 div.partners div.logo-image {
   display: flex;
@@ -115,14 +120,13 @@ div.partners div.logo-image {
   padding-bottom: 2.5rem;
   padding-top: 2.5rem;
   border-bottom: 0.5px solid #d2d1d2;
-  
 }
 div.partners div.logo-image:last-of-type {
-border-bottom: 0;
+  border-bottom: 0;
 }
 
 div.partners .company-logo {
-  width: 50%;
+  width: 20rem;
 }
 div.join-us {
   padding-top: 4rem;
@@ -135,6 +139,41 @@ div.join-us p.join-us-text {
   font-weight: bold;
   text-align: center;
 }
+div.join-us p.join-us-text-small {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
 div.join-us p {
   margin-bottom: 2rem;
+}
+@media (min-width: 767px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  input {
+    width: 56%;
+    margin-right: 2rem;
+  }
+ 
+  p.botton-adjacent {
+    display: block;
+    width: 100%;
+    /* text-align: left; */
+  }
+  header img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  div.image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 0;
+  }
+  div.partners div.logo-image {
+    width: 50%;
+  }
 }
