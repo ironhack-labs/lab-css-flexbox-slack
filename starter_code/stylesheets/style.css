@@ -5,16 +5,24 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,700,900&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   color: #5b5e6d;
-  font-size: 1.2em;
-  line-height: 1.5em;
+  font-family: 'Lato';
 }
 
 h1, h2, h3 {
   color: #2C303F;
+  font-family: 'Playfair Display';
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 1.4em;
 }
 
 /* Iteration 1  (width < 768px)*/
@@ -30,6 +38,8 @@ h1, h2, h3 {
   width: 100vw;
   z-index: 1;
 }
+
+
 #nav-bar ul {
   display: none;
 }
@@ -52,17 +62,25 @@ h1, h2, h3 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 25px;
+  padding: 25px 50px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  line-height: 1em;
+  width: 90%;
 }
 
 #email {
-  width: 400px;
+  width: 70vw;
   padding: 25px;
+  border: 2px solid #F4F3F4;
+  border-radius: 6px;
 }
 
 .hero button {
-  width: 90%;
-  padding: 20px;
+  width: 80vw;
+  padding: 25px;
   border-radius: 8px;
   background-color: #192592;
   color: white;
@@ -71,7 +89,7 @@ h1, h2, h3 {
 }
 
 .hero img {
-  width: 80%;
+  width: 70vw;
   height: auto;
   align-self: center;
 }
@@ -89,22 +107,26 @@ h1, h2, h3 {
   text-align: center;
 }
 
+#company h2 {
+  font-size: 2em;
+}
+
 #company button {
-    width: 90%;
+    width: 80vw;
     padding: 20px;
     border-radius: 8px;
     background-color: white;
     color: #192592;
     font-size: 1em;
     margin-top: 20px;
-    font-weight: bold;
     border-color: #192592;
+    font-weight: bold;
 }
 
 #company img {
   width: 170px;
   height: auto;
-  padding: 50px;
+  padding: 50px 120px;
   border-bottom: 1px solid lightgrey;
 }
 
@@ -122,8 +144,8 @@ h1, h2, h3 {
 }
 
 .try button {
-  width: 90%;
-  padding: 20px;
+  width: 80vw;
+  padding: 25px;
   border-radius: 8px;
   background-color: #192592;
   color: white;
@@ -131,7 +153,7 @@ h1, h2, h3 {
   margin-top: 20px;
 }
 
-#links {
+.link {
   display: flex;
   flex-wrap: wrap;
 }
@@ -143,7 +165,7 @@ h1, h2, h3 {
 
 #links ul {
   list-style: none;
-  width: 40%;
+  width: 40vw;
 }
 
 #links li {
@@ -185,7 +207,7 @@ h1, h2, h3 {
 }
 
 .findus {
-  width: 30%;
+  width: 30vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -195,40 +217,39 @@ h1, h2, h3 {
 
 /* Iteration 2 small Screen (961px > width > 767px)*/
 
-@media (max-width:961px) and (min-width:767px) {
+@media (min-width:767px) {
   .hero {
+    position: relative;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 25px;
+    padding: 25px 50px;
   }
   
-  #email {
+  .hero #email {
     max-width: 300px;
     padding: 25px;
+    width: 70vw;
   }
   
-  .hero button {
+  .hero button,
+  .try button {
     width: 90%;
     max-width: 200px;
-    padding: 20px;
+    padding: 22px 30px;
     border-radius: 8px;
     background-color: #192592;
     color: white;
     font-size: 1em;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .hero h1 {
     font-size: 3em;
   }
-  
-  .hero img {
-    width: 80%;
-    height: auto;
-    align-self: center;
-  }
+
   .signin {
     align-self: flex-start;
   }
@@ -236,20 +257,13 @@ h1, h2, h3 {
   .emaillogin {
     display: flex;
     align-items: baseline;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
+
   #company button {
-    width: 90%;
     max-width: 200px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: white;
-    color: #192592;
-    font-size: 1em;
-    margin-top: 20px;
-    font-weight: bold;
-    border-color: #192592;
-}
+    margin-bottom: 30px;
+  }
 
 #company {
   flex-wrap: wrap;
@@ -270,24 +284,44 @@ h1, h2, h3 {
 }
 .try {
   flex-direction: row;
-  align-content: baseline;
   justify-content: space-around;
+  padding: 25px 0;
 }
-.try > div {
+
+.try #email {
+  max-width: 100px;
+  padding: 25px;
+  width: 70vw;
+}
+
+.policies {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.policies ul {
+  max-width: 40vw;
+}
+
+.bottom {
   display: flex;
-  flex-direction: column;
-  justify-items: center;
+  justify-content: space-between;
   align-content: center;
 }
-.try #email {
-  max-width: 150px;
-  margin-right: 10px;
+
+.findus {
+  max-width: 10vw;
 }
-.try .emaillogin {
+
+.language {
+  padding-bottom: 0;
   display: flex;
   flex-direction: row;
-  justify-content: baseline;
+  align-content: center;
+  justify-content: center;
 }
+
 
 #links span > img {
   height: 150px;
@@ -298,12 +332,15 @@ h1, h2, h3 {
   width: auto;
 }
 
-
-
-
 #links {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link {
   flex-wrap: nowrap;
+  width: 80vw;
 }
 
 #links ul {
@@ -317,15 +354,101 @@ footer {
 
 /* Iteration 3 medium screen (max-width:1024px) and (min-width:962px)  */
 
-@media (max-width:1024px) and (min-width:961px) {
-
+@media (min-width:961px) {
+  #company img:nth-child(n) {
+    border-right: none;
+    border-bottom: none;
+  }
+  #company img:nth-child(-n+2) {
+    border-right:  1px solid lightgrey;
+  }
+  #company img:nth-last-child(2) {
+    border-right:  1px solid lightgrey;
+  }
+  #company img:nth-last-child(3) {
+    border-right:  1px solid lightgrey;
+  }
+  #company img:nth-child(-n+3) {
+    border-bottom:  1px solid lightgrey;
+  }
 }
 
 /* width > 1200px*/
 
 @media (min-width:1200px) {
-  header {
-    background-color: blue;
+
+  #nav-bar div {
+    width: 10px;
+  }
+
+  #nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+    list-style-type: none;
+    margin-right: 25px;
+  }
+
+  #nav-bar a {
+    color: #5b5e6d;
+    text-decoration: none;
+  }
+  .fa-bars {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px 0;
+  }
+  .hero h1 {
+    font-size: 4em;
+  }
+  .hero > div {
+    order: 1;
+    width: 45vw;
+  }
+
+  .emaillogin input {
+    display: none;
+  }
+  .try button {
+    width: 80vw;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #192592;
+    color: white;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+
+
+  .hero img {
+    width: 40vw;
+    height: auto;
+    align-self: center;
+  }
+
+  #company img {
+    width: 170px;
+    height: auto;
+    padding: 50px 120px;
+    max-width: 33vw;
+  }
+
+  .link {
+    width: 60vw;
+  }
+
+  #links {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .policies > ul {
+    width: 25vw;
   }
 }
 
