@@ -16,7 +16,8 @@ body {
   font-size: 2rem;
 }
 nav,
-header {
+header,
+div.partners, div.join-us {
   padding: 0 2.5rem;
 }
 nav.menu-bar {
@@ -26,9 +27,9 @@ nav.menu-bar {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  border-bottom: 0.1rem solid rgb(148, 143, 143);
+  border-bottom: 0.1rem solid rgba(148, 143, 143, 0.783);
   background-color: white;
-  box-shadow: 0 0.5px 0.5px rgba(148, 143, 143, 0.769);
+  box-shadow: 0 0.5px 0.5px rgba(157, 151, 151, 0.488);
 }
 nav.menu-bar i {
   color: #5b5e6d;
@@ -50,11 +51,13 @@ header img {
   order: 2;
 }
 header h1 {
-  font-size: 4.5rem;
+  font-size: 4.7rem;
   font-weight: bold;
   margin-bottom: 3.5rem;
+  line-height: 5rem;
 }
-header p {
+header p,
+div.partners p {
   line-height: 3rem;
   margin-bottom: 4rem;
   font-size: 2.2rem;
@@ -77,4 +80,61 @@ button.purple {
   color: white;
   background-color: #192592;
 }
-header img 
+div.partners {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f4f3f4;
+  padding-top: 6rem;
+  color: #2c303f;
+  border-top: 0.5px solid #d2d1d2;
+  border-bottom: 0.5px solid #d2d1d2;
+}
+h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 4.6rem;
+  text-align: center;
+}
+div.partners p {
+  text-align: center;
+
+}
+button.white {
+  color: #192592;
+  background-color: white;
+  border-color: #192592;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+div.partners div.logo-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  border-bottom: 0.5px solid #d2d1d2;
+  
+}
+div.partners div.logo-image:last-of-type {
+border-bottom: 0;
+}
+
+div.partners .company-logo {
+  width: 50%;
+}
+div.join-us {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  color: #2c303f;
+}
+div.join-us p.join-us-text {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+div.join-us p {
+  margin-bottom: 2rem;
+}
