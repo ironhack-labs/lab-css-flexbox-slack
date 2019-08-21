@@ -5,3 +5,504 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text|Roboto:400,700&display=swap');
+
+/* CSS variables */
+:root {
+  --background-gray: #F4F3F4;
+  --button-purple: #192592;
+  --dark-grey: #2C303F;
+  --grey: #5b5e6d;
+}
+
+/* Basic reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 6rem 0 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.input-container {
+  margin-bottom: 1rem;
+}
+
+/* Button */
+.btn {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: var(--button-purple);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.btn, input[type="email"] {
+  border-radius: 3px;
+}
+
+/* Button light */
+.btn--light {
+  color: var(--button-purple);
+  background-color: #FFF;
+  border: 1px solid var(--button-purple);
+  margin-bottom: 2rem;
+}
+
+.gray-background {
+  background-color: var(--background-gray);
+}
+
+/* Titles */
+h1,
+h2 {
+  font-family: 'DM Serif Text', serif;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: var(--dark-grey);
+}
+
+/* Links */
+a {
+  color: var(--button-purple);
+}
+
+p,
+input[type="email"],
+a {
+  font-size: 1rem;
+}
+
+/* Paragraphs */
+p {
+  color: var(--grey);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Inputs */
+input[type="email"] {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #DDD;
+  margin-bottom: 1rem;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+}
+
+/* Main nav */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+  z-index: 100;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Slack's logo */
+nav img {
+  width: 100px;
+}
+
+/* Hamburguer menu */
+nav .hamburguer {
+  display: block;
+  width: 24px;
+  height: 16px;
+  position: relative;
+}
+
+.hamburguer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 6px;
+  box-shadow: 0 7px #333, 0 14px #333;
+}
+
+/* Navigation menu */
+nav ul {
+  display: none;
+}
+
+/* navigation items */
+nav li {
+
+}
+
+/* Main header */
+header {
+  padding: 0 2rem;
+}
+
+/* Container of the header. This div has display: flex
+to send the image to the end */
+header .container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main title  */
+header h1 {
+  margin-bottom: 2rem;
+}
+
+/* Paragraphs inside the header */
+header p {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+/* Button inside the header */
+header .btn {
+  /* margin-bottom: 1rem; */
+}
+
+/* Paragraph right next to the button */
+header .btn + p {
+  text-align: center;
+}
+
+/* Image inside the header */
+header img {
+  order: 1;
+  max-width: 400px;
+  align-self: center;
+}
+
+/* Sections */
+section {
+  padding: 3rem 0;
+}
+
+section.center {
+  text-align: center;
+}
+
+/* Paragraphs inside sections */
+section p {
+
+}
+
+/* Companies */
+.companies {
+  /* padding-bottom: 2rem; */
+}
+
+/* Divs that contain the companies images */
+.companies div {
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #DDD;
+}
+
+.companies div:last-child {
+  border-bottom: none;
+}
+
+/* Images of the companies */
+.companies img {
+  max-height: 50px;
+}
+
+.companies img[src*=oracle],
+.companies img[src*=ticketmaster] {
+  max-height: 25px;
+}
+
+.try-it-free {
+  
+}
+
+.try-it-free .container {
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+
+}
+
+/* Slack logo */
+footer .slack-logo {
+  width: 50px;
+  margin-bottom: 2rem;
+}
+
+/* Footer articles */
+.footer-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Articles of the footer */
+.footer-articles article {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+/* Title of the articles inside the footer */
+footer h3 {
+  margin-bottom: 1rem;
+  color: #888;
+}
+
+/* Lists inside footer-articles */
+.footer-articles ul {
+
+}
+
+/* List items inside footer-articles */
+.footer-articles li {
+  margin-bottom: 1rem;
+  color: #AAAAAA;
+}
+
+/* Footer ending */
+.footer-ending {
+  padding: 1rem 0;
+  color: #888;
+  font-weight: 700;
+}
+
+/* List inside the .footer-ending */
+.footer-ending ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* List items inside the list contained in .footer-ending */
+.footer-ending li {
+  margin-right: 1rem;
+}
+
+.footer-ending:last-child {
+  margin-right: 0;
+}
+
+.footer-ending img {
+  width: 30px;
+}
+
+footer .language,
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .language {
+  margin-bottom: 2rem;
+}
+
+footer .language img,
+footer .language span {
+  margin-right: .5rem;
+}
+
+footer .social i:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+/* Styles from tablet (786px) */
+@media screen and (min-width: 768px) {
+
+  nav .hamburguer {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 1rem;
+    color: #888;
+  }
+
+  nav li:last-child {
+    margin-right: 0;
+  }
+
+  .btn {
+    display: inline-block;
+  }
+
+  input[type="email"] {
+    margin-bottom: 0;
+  }
+  
+  .input-container {
+    display: flex;
+  }
+
+  .try-it-free h2 {
+    margin-bottom: 0;
+    position: relative;
+    left: -4px;
+  }
+
+  .try-it-free .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .input-container input {
+    width: 50%;
+    margin-right: 1rem;
+  }
+
+  .input-container--last {
+    justify-content: flex-end;
+  }
+
+  .input-container--last input {
+    width: 200px;
+  }
+
+  .companies {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .companies::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #DDD;
+    left: 50%;
+  }
+
+  .companies div {
+    width: 50%;
+    padding: 3rem;
+  }
+
+  .companies div:nth-last-child(2) {
+    border-bottom: none;
+  }
+
+  footer .container {
+    text-align: center;
+  }
+
+  .footer-articles {
+    justify-content: center;
+  }
+  
+  /* Articles of the footer */
+  .footer-articles article {
+    width: 33%;
+  }
+}
+
+/* Styles from desktop (1024px) */
+@media screen and (min-width: 1024px) {
+
+  header .container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  header img {
+    position: relative;
+    left: -4rem;
+  }
+
+  header h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  footer .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer-articles {
+    width: 85%;
+  }
+  
+  .footer-articles article {
+    width: 25%;
+    text-align: left;
+  }
+
+  .footer-ending ul {
+    margin-bottom: 0;
+  }
+
+  .footer-ending {
+    padding: 2rem 0;
+  }
+
+  .footer-ending .container {
+    align-items: center;
+  }
+
+  footer ul + div {
+    display: flex;
+    align-items: center;
+  }
+
+  footer .language {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+  
+}
