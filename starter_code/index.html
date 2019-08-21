@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/brands.min.css" >
+  <link rel="stylesheet" href="stylesheets/style.css" >
   <title>Where work happens | Slack</title>
 </head>
 
@@ -18,35 +21,54 @@
       <li>About Us</li>
       <li>Your Workspaces</li>
     </ul>
+    <div class="mobilemenu">
+      <i class="fas fa-bars"></i>
+    </div>
   </nav>
-  <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
-  </header>
-  <main>
+  <header class="padding">
     <div>
-      <h2>You´re in good company</h2>
-      <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
+      <img src="./images/home_talking.png" alt="home_work_happening">
     </div>
     <div>
-      <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+      <h1>Where Work Happens</h1>
+      <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+      <form>
+        <input type="text" placeholder="Email Address" />
+        <button type="button" name="button">GET STARTED</button>
+      </form>
+      <p>Already using Slack? <a href="#">Sign in</a></p>
+    </div>
+  </header>
+  <main>
+    <div id="good" class="padding">
+      <h2>You´re in good company</h2>
+      <p>Millions of people around the world have already made Slack the place where their work happens.</p>
+      <button class="btn-white">DISCOVER WHY</button>
+      <ul class="companies">
+          <li><img src="./images/airbnb-logo.png" alt=""></li>
+          <li><img src="./images/capital-one-logo.png" alt=""></li>
+          <li><img src="./images/harvard-logo.png" alt=""></li>
+          <li><img src="./images/los-angeles-times-logo.png" alt=""></li>
+          <li><img src="./images/oracle-logo.png" alt=""></li>
+          <li><img src="./images/ticketmaster-logo.png" alt=""></li>
+      </ul>
+    </div>
+    <div id="free" class="padding">
+      <div class="text">
+        <h3>Try it for free</h3>
+        <p>Already using Slack? <a href="">Sign in</a></p>
+      </div>
+      <form>
+        <input type="text" placeholder="Email Address" />
+        <button type="button" name="button">GET STARTED</button>
+      </form>
     </div>
   </main>
   <footer>
-    <div>
-      <img src="./images/iso-slack.png" alt="">
+    <div id="menus" class="padding">
+      <div class="footerLogo">
+          <img src="./images/iso-slack.png" alt="">
+      </div>
       <ul>
         <li>COMPANY</li>
         <li>About Us</li>
@@ -80,19 +102,22 @@
         <li>Slack Fund</li>
       </ul>
     </div>
-    <div>
-      <ul>
+    <div id="footer" class="padding">
+      <ul class="footerMenu">
         <li>Status</li>
         <li>Privacy & Terms</li>
         <li>Contact Us</li>
       </ul>
-      <div>
-        <img src="./images/us-flag.png" alt="">
-        <span>English (US)</span>
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      <div class="settingSocial">
+        <div class="language">
+          <img src="./images/us-flag.png" alt="">
+          <span>English (US)  <i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+        </div>
+        <div class="social">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+          <i class="fab fa-facebook" aria-hidden="true"></i>
+          <i class="fab fa-youtube" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
   </footer>
