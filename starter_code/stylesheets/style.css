@@ -10,7 +10,7 @@ html{
   font-size: 16px;
   color: #5b5e6d;
   padding: 0;
-  margin: 0px;
+  margin: 0;
 }
 
 .slack-logo img{
@@ -41,6 +41,26 @@ nav{
   border: none
 }
 
+.logo {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.logo div{
+  box-sizing: border-box;
+  align-items: center;
+  flex-basis: 33%;
+  padding: 2rem;
+  height: auto;
+  
+}
+
+.logo div img{
+  width: 70%;
+}
+
 h1, h2, h3{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #2C303F
@@ -53,7 +73,8 @@ h1{
 header{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 header img{
@@ -80,4 +101,30 @@ header img{
 
 .footer ul{
   list-style-type: none;
+}
+.footer span{
+  flex-grow: 1;
+}
+.footer img{
+  align-self: flex-start;
+  width: 55px;
+}
+.footer div{
+  flex: 1;
+  flex-basis: 45%;
+  justify-content: space-around;
+  display: flex;
+}
+.footer ul li{
+  list-style: none;
+  padding: 0.55rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer ul li:first-child {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #6D6F7B;
 }
