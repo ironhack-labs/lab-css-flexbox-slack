@@ -8,6 +8,7 @@
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
   <link rel="stylesheet" href="stylesheets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,43 +18,51 @@
       <li>Why Slack?</li>
       <li>Pricing</li>
       <li>About Us</li>
-      <li>Your Workspaces</li>
+      <li id="workspace">Your Workspaces</li>
     </ul>
     <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
   </nav>
   <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <div>  
-      <h1>Where Work Happens</h1>
-      <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-      <input type="text" name="Email" id="Email" placeholder="Email address">
-      <button type="button" name="button" class="button1">GET STARTED</button>
-      <p class="signin">Already using Slack? <a href="#">Sign in</a></p>
+    <img src="./images/home_talking.png" alt="home_work_happening" id="header_img">
+    <div class="header_info">  
+      <h1 class="responsive_h1">Where Work Happens</h1>
+      <p class="responsive_header_p">When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+      <div class="flex">
+        <input type="text" name="Email" id="Email" placeholder="Email address" class="responsive_input">
+        <button type="button" name="button" class=" responsive_button button1">GET STARTED</button>
+      </div>
+      <p class="responsive_signin">Already using Slack? <a href="#">Sign in</a></p>
     </div>  
   </header>
   <main>
-    <div class="backgroundgray">
-      <h2>You´re in good company</h2>
-      <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button class="button2">DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="" id="ticketmasterlogo">
+    <div class="flexcenter backgroundgray">
+      <h2 class="responsive_h2">You´re in good company</h2>
+      <p class="responsive_main_p">Millions of people around the world have already made Slack the place where their work happens.</p>
+      <button class="responsive_button button2">DISCOVER WHY</button>
+      <div class="flex"> 
+        <img src="./images/airbnb-logo.png" alt="" class="responsive_main_img border_right_tablet border_right_desktop">
+        <img src="./images/capital-one-logo.png" alt="" class="responsive_main_img border_right_desktop">
+        <img src="./images/harvard-logo.png" alt="" class="responsive_main_img border_right_tablet">
+        <img src="./images/los-angeles-times-logo.png" alt="" class="responsive_main_img border_right_desktop no_border_bottom_desktop fix_padding_logos">
+        <img src="./images/oracle-logo.png" alt="" class="responsive_main_img no_border_bottom_tablet border_right_tablet border_right_desktop no_border_bottom_desktop fix_padding_logos">
+        <img src="./images/ticketmaster-logo.png" alt="" class="responsive_main_img no_border_bottom_phone no_border_bottom_tablet no_border_bottom_desktop fix_padding_logos">
+      </div>  
     </div>
-    <div class="backgroundwhite">
-      <h3>Try it for free</h3>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <input type="text" name="Email" id="Email" placeholder="Email address">
-      <button type="button" name="button" class="button1">GET STARTED</button>
+    <div class="flexspacebet backgroundwhite">
+      <div class="responsive_width">
+        <h3 class="responsive_h3">Try it for free</h3>
+        <p class="responsive_signin">Already using Slack? <a href="">Sign in</a></p>
+      </div>
+      <div class="flex">
+        <input type="text" name="Email" id="Email" placeholder="Email address" class="responsive_input">
+        <button type="button" name="button" class=" responsive_button button1">GET STARTED</button>
+      </div>
     </div>
   </main>
   <footer>
-    <div class="flex backgroundwhite">
-      <img src="./images/iso-slack.png" alt="" id="slackicon">
-      <ul>
+    <div class="flexnostretch backgroundwhite">
+      <img src="./images/iso-slack.png" alt="" id="responsive_slackicon">
+      <ul class="responsive_footer_list">
         <li class="list_title">COMPANY</li>
         <li>About Us</li>
         <li>Careers</li>
@@ -61,7 +70,7 @@
         <li>Press</li>
         <li>Brand Guidelines</li>
       </ul>
-      <ul>
+      <ul class="responsive_footer_list">
         <li class="list_title">PRODUCT</li>
         <li>Why Slack?</li>
         <li>Enterprise</li>
@@ -69,7 +78,7 @@
         <li>Pricing</li>
         <li>Security</li>
       </ul>
-      <ul>
+      <ul class="responsive_footer_list">
         <li class="list_title">RESOURCES</li>
         <li>Download</li>
         <li>Help Center</li>
@@ -78,7 +87,7 @@
         <li>App Directory</li>
         <li>API</li>
       </ul>
-      <ul>
+      <ul class="responsive_footer_list">
         <li class="list_title">EXTRAS</li>
         <li>Podcast</li>
         <li>Slack Shop</li>
@@ -86,22 +95,22 @@
         <li>Slack Fund</li>
       </ul>
     </div>
-    <div class="backgroundgray">
-      <ul class="flex_nowrap">
-        <li class="list_title">Status</li>
-        <li class="list_title">Privacy & Terms</li>
-        <li class="list_title">Contact Us</li>
+    <div class="flex_TermsLanguagesIcons backgroundgray">
+      <ul class=" flex_terms responsive_terms">
+        <li class="padding5"><b>Status</b></li>
+        <li class="padding5"><b>Privacy & Terms</b></li>
+        <li class="padding5"><b>Contact Us</b></li>
       </ul>
-      <div>
-        <div class="flexcenter">
+      <div class="flex_languagesIcons">
+        <div class="flex_languages responsive_languages">
           <img src="./images/us-flag.png" alt="" id="eua_flag">
-          <span class="list_title padding10">English (US)</span>
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <span class="padding5"><b>English (US)</b></span>
+          <i class="fa fa-chevron-down padding5" aria-hidden="true"></i>
         </div>
-        <div class="flexcenter">  
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <i class="fa fa-facebook padding10" aria-hidden="true"></i>
-          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        <div class="responsive_icons">
+          <i class="fa fa-twitter padding5" aria-hidden="true"></i>
+          <i class="fa fa-facebook padding5" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play padding5" aria-hidden="true"></i>
         </div>
       </div>
     </div>

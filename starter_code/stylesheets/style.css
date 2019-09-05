@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather:700&display=swap');
-
 body {
     font-family: 'Merriweather', serif; 
 }
@@ -25,20 +23,22 @@ nav {
 }
 
 nav ul {
+    color: #5b5e6d;
     position: absolute;
-    display: none;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    box-sizing: content-box;
+}
+
+#workspace {
+    border: solid #5b5e6d 1px;
 }
 
 nav li {
     list-style-type: none;
     padding: 10px;
-    font-size: 1.8em;
-
-}
-
-nav i {
-    visibility: visible;
+    font-size: 1.2rem;
 }
 
 .slack_logo {
@@ -46,132 +46,66 @@ nav i {
 }
 
 header {
-    padding-top: 120px;
+    padding: 120px 5% 30px 5%;
     display: flex;
     flex-wrap: wrap-reverse;
+    align-items: center;
     width: 100%;
     color: #5b5e6d;
 }
 
-header img {
-    width: 80%;
-    margin: 30px auto 30px auto;
-}
-
-header div {
-    padding: 30px 30px 0 30px;
-}
-
-h1 {
-    padding-bottom: 20px;
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    padding: 0 0 30px 0;
-}
-
 input {
-    width: 100%;
-    padding: 20px 0 20px 10px;
-    margin: 15px 0;
+    padding: 20px 0 20px 10px;    
 }
 
 .button1 {
-    width: 100%;
-    padding: 20px 0 20px 10px;
-    margin: 15px 0;
+    padding: 20px 40px;
     background-color: #4252aa;
     font-weight: 700;
     color: white;
-    border: none;
-}
-
-.signin {
-    padding: 0;
-    text-align: center;
+    border: solid 2px #4252aa;
+    border-radius: 5%;
 }
 
 .backgroundgray {
     background-color: #F4F3F4;
-    padding: 30px 30px 0 30px;
+    padding: 30px 5% 30px 5%;
 }
 
 .backgroundwhite {
     background-color: white;
-    padding: 30px 30px 30px 30px;
-}
-
-main div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 30px 5% 30px 5%;
 }
 
 h2 {
     color: #2C303F;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
     width: 100%;
     text-align: center;
 }
 
 h3 {
     color: #2C303F;
-    font-size: 1.4rem;
     margin: 0 auto 5px auto;
-    width: 100%;
-    text-align: center;
-}
-
-main p {
-    text-align: center;
-    font-size: 1.2rem;
 }
 
 .button2 {
-    width: 100%;
-    padding: 20px 0 20px 10px;
+    padding: 20px 40px;
     margin: 15px 0;
     background-color: white;
     color: #4252aa;
     font-weight: 700;
-    border: solid 2px  #4252aa;
-}
-
-
-main div img {
-    width: 100%;
-    padding: 30px 50px;
-    border-bottom: solid 1px;
-    border-color: lightgray;
-}
-
-#ticketmasterlogo {
-    border: none;
+    border: solid 2px #4252aa;
+    border-radius: 5%;
 }
 
 footer {
-    border-top: solid 2px  lightgray;
-    font-size: 1.2rem;
+    border-top: solid 1px  lightgray;
     color: #5b5e6d;
-}
-
-#slackicon {
-    width: 20%;
-    margin-right: 80%;
 }
 
 .flex {
     display: flex;
     flex-wrap: wrap;
-}
-
-.flex_nowrap {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%
 }
 
 .flexcenter {
@@ -181,18 +115,26 @@ footer {
     align-items: center;
 }
 
-footer ul {
-    list-style-type: none;
-    width: 50%;
-
+.flexspacebet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.padding10 {
-    padding: 20px;
+.flexspaceeven {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
 }
 
-#eua_flag {
-    width: 30px;
+.flexnostretch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
 }
 
 footer li {
@@ -202,33 +144,381 @@ footer li {
 .list_title {
     font-weight: 700;
     padding-top: 15px;
+    list-style-type: none;
 }
 
-@media (max-width: 768px) {
-    body {
+.flex_languages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+@media (max-width: 767px) {
+    #header_img {
+        width: 80%;
+        margin: 30px auto 30px auto;
+    }
+    
+    .responsive_h1 {
+        padding-bottom: 20px;
+        font-size: 2.5rem;
+    }
+
+    .responsive_header_p {
+        font-size: 1.2rem;
+        padding: 0 0 30px 0;
+    }
+
+    .responsive_input {
+        width: 100%;
+        margin: 15px 0px;
+    }
+
+    .responsive_button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .responsive_signin {
+        text-align: center;
     }
 
     nav ul {
-        visibility: hidden;
+        display: none;
     }
+
+    .responsive_h2{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .responsive_main_p {
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .responsive_main_img {
+        width: 100%;
+        padding: 30px 50px;
+        border-bottom: solid 1px;
+        border-color: lightgray;
+    }
+
+    .no_border_bottom_phone {
+        border: none;
+    }
+
+    .responsive_h3 {
+        font-size: 1.4rem;    
+        text-align: center;
+    }
+
+    .responsive_width {
+        width: 100%;
+    }
+
+    #responsive_slackicon {
+        width: 20%;
+        margin-right: 80%;
+    }
+
+    .responsive_footer_list {
+        list-style-type: none;
+        width: 50%;
+    }
+
+    .flex_terms {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .responsive_terms {
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .responsive_languages {
+        width: 100%;
+        text-align: center;
+    }
+
+    #eua_flag {
+        width: 15%;
+        padding: 10px;
+    }
+
+    .responsive_icons{
+        width: 100%;
+        text-align: center;
+    }
+
+    .padding5 {
+        padding: 10px;
+    }
+
+    
 }
 
 @media (min-width: 768px) and (max-width: 961px) {
+    #header_img {
+        width: 80%;
+        margin: 30px auto 30px auto;
+    }
+
+    .responsive_h1 {
+        padding-bottom: 20px;
+        font-size: 4.5rem;
+    }
+    
+    .responsive_header_p {
+        font-size: 1.2rem;
+        padding: 0 0 30px 0;
+    }
+
+    .responsive_input {
+        width: 40%;
+        margin: 15px 2% 15px 0;        
+    }
+
+    .responsive_button {
+        margin: 15px;        
+    }
+
+    .responsive_signin {
+        text-align: left;
+    }
+
     nav ul {
-        visibility: hidden;
+        display: none;
+    }
+
+    .responsive_h2{
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+    
+    .responsive_main_p {
+        text-align: center;
+        font-size: 1.2rem;
+        margin:10px 0;
+    }
+    
+    .responsive_main_img {
+        width: 50%;
+        padding: 40px 70px;
+        border-bottom: solid 1px;
+        border-color: lightgray;
+    }
+
+    .no_border_bottom_tablet {
+        border: none;
+    }
+
+    .border_right_tablet {
+        border-right: solid 1px;
+        border-color: lightgray;
+    }
+
+    .responsive_h3 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    #responsive_slackicon {
+        width: 20%;
+        height: 20%;
+    }
+
+    .responsive_footer_list {
+        list-style-type: none;
+        width: 20%;
+    }
+
+    .flex_TermsLanguagesIcons {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .flex_terms {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex_languagesIcons {
+        display: flex;
+    }
+
+    .responsive_terms {
+        width: 50%;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .flex_languagesIcons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .responsive_languages {
+        width: 60%;
+        text-align: center;
+    }
+
+    #eua_flag {
+        width: 15%;
+    }
+
+    .responsive_icons{
+        width: 40%:
+        text-align: center;
+    }
+
+    .padding5 {
+        padding: 10px;
     }
 }
 
-
-@media (min-width: 961px) {
+@media (min-width: 962px) {
     nav i {
         visibility: hidden;
     }
-
-    nav ul {
+    
+    #header_img {
+        width: 50%;
+        margin: 30px auto 30px auto;
     }
-}
+
+    .header_info{
+        width: 45%;
+        margin-left: 5%;
+    }
+
+    .responsive_h1 {
+        padding-bottom: 20px;
+        font-size: 5.5rem;
+    }
+
+    .responsive_header_p {
+        font-size: 1.5rem;
+        padding: 0 0 30px 0;
+    }
+
+    .responsive_input {
+        display: none;
+    }
+
+    .responsive_button {
+        margin: 15px 0;        
+    }
+
+    .responsive_h2{
+        font-size: 3.5rem;
+        margin: 20px 0;
+    }
+    
+    .responsive_main_p {
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin:10px 0;
+    }
+    
+    .responsive_main_img {
+        width: 33.333%;
+        padding: 100px 100px;
+        border-bottom: solid 1px;
+        border-color: lightgray;
+    }
+
+    .fix_padding_logos {
+        padding: 150px 100px;
+    }
+
+    .no_border_bottom_desktop {
+        border: none;
+    }
+
+    .border_right_desktop {
+        border-right: solid 1px;
+        border-color: lightgray;
+    }
+
+    .responsive_h3 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .responsive_signin {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    #responsive_slackicon {
+        width: 10%;
+        height: 10%;
+        margin-right: 20%;
+    }
+
+    .responsive_footer_list {
+        list-style-type: none;
+        width: 10%;
+    }
+
+    .flex_TermsLanguagesIcons {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .flex_terms {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .flex_languagesIcons {
+        display: flex;
+    }
+
+    .responsive_terms {
+        width: 50%;
+        list-style-type: none;
+        text-align: left;
+    }
+
+    .flex_languagesIcons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+    }
+
+    .responsive_languages {
+        text-align: center;
+    }
+
+    #eua_flag {
+        width: 25% ;
+        padding: 20px;
+    }
+
+    .responsive_icons{
+        text-align: center;
+    }
+
+    .padding5 {
+        padding: 10px;
+    }
 
 
 /*
