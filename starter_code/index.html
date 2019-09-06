@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <link rel='stylesheet' href='./stylesheets/style.css'>
+  <link rel='stylesheet' media='(min-width: 768px, max-width: 960px)' href='./stylesheets/style.css'>
   <title>Where work happens | Slack</title>
 </head>
 
@@ -30,13 +31,17 @@
     <header class='block'>
       <h1>Where Work Happens</h1>
       <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-      <label for="email1"></label>
-      <input class='email' id="email1" type="text" name="email" placeholder="Email address">
-      <button class='button' id="get-started" type="button" name="button">GET STARTED</button>
-      <div class='sign-in' id='first-sign'>
-        <p>Already using Slack? <a href="#">Sign in</a></p>
+      <div class='mail1-section'>
+        <label for="email1"></label>
+        <input class='email' id="email1" type="text" name="email" placeholder="Email address">
+        <button class='button' id="get-started" type="button" name="button">GET STARTED</button>
+        <div class='sign-in' id='first-sign'>
+          <p>Already using Slack? <a href="#">Sign in</a></p>
+        </div>
       </div>
-      <img src="./images/home_talking.png" alt="home_work_happening">
+      <div class='work-people'>
+        <img src="./images/home_talking.png" alt="home_work_happening">
+      </div>
     </header>
   </section>
 
@@ -44,25 +49,29 @@
    <div class='block'>
       <h2>You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button class='button' id="discover" type="button" name="button">DISCOVER WHY</button>
-      <div class='companies'>
-        <img id='airbnb' src="./images/airbnb-logo.png" alt="">
+      <div class='discover-button'>
+        <button class='button' id="discover" type="button" name="button">DISCOVER WHY</button>
       </div>
-      <div class='companies'>
-        <img id='capital-one' src="./images/capital-one-logo.png" alt="">
-      </div>
-      <div class='companies'>
-        <img id='harvard' src="./images/harvard-logo.png" alt="">
-      </div>
-      <div class='companies'>
-        <img id='la-times' src="./images/los-angeles-times-logo.png" alt="">
-      </div>
-      <div class='companies'>
-        <img id='oracle' src="./images/oracle-logo.png" alt="">
-      </div>
-      <div class='companies' id='companies-tm'>
-        <img id='ticketmaster' src="./images/ticketmaster-logo.png" alt="">
-      </div>
+      <div class='company-list'>
+        <div class='companies' id='airbnb-block'>
+          <img id='airbnb' src="./images/airbnb-logo.png" alt="">
+        </div>
+        <div class='companies' id='capital-block'>
+          <img id='capital-one' src="./images/capital-one-logo.png" alt="">
+        </div>
+        <div class='companies' id='harvard-block'>
+          <img id='harvard' src="./images/harvard-logo.png" alt="">
+        </div>
+        <div class='companies' id='times-block'>
+          <img id='la-times' src="./images/los-angeles-times-logo.png" alt="">
+        </div>
+        <div class='companies' id='oracle-block'>
+          <img id='oracle' src="./images/oracle-logo.png" alt="">
+        </div>
+        <div class='companies' id='tm-block'>
+          <img id='ticketmaster' src="./images/ticketmaster-logo.png" alt="">
+        </div>
+    </div>
     </div>
   </section>  
 
@@ -80,7 +89,9 @@
 
   <section class='section' id='section4'>
     <div class='block' id='link-block'>
-      <img id='iso-slack' src="./images/iso-slack.png" alt="">
+      <div class='slack-icon'>
+        <img id='iso-slack' src="./images/iso-slack.png" alt="">
+      </div>
       <div class="lists">
         <ul>
           <li id="list-title">COMPANY</li>
@@ -119,24 +130,26 @@
   </section>
 
   <section class='section' id='section5'>
-    <footer class='block'>
+    <footer class='block' id='footer-block'>
       <div>
         <ul>
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-      </div>    
-      <div class="language">
-        <img src="./images/us-flag.png" alt="">
-        <span>English (US)</span>
-        <i id="chevron-down" class="fa fa-chevron-down" aria-hidden="true"></i>
-      </div>
-      <div class='social-media'>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-youtube-play" aria-hidden="true"></i>
-      </div>
+      </div>  
+      <div class='footer-part2'>
+        <div class="language">
+          <img src="./images/us-flag.png" alt="">
+          <span>English (US)</span>
+          <i id="chevron-down" class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <div class='social-media'>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>
+     </div>  
     </footer>
   </section>
 

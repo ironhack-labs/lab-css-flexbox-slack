@@ -59,6 +59,17 @@ li {
     font-size: 1.1em;
 }
 
+@media (min-width: 768px) and (max-width: 960px) {
+    html {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 3.8em;
+    }
+}
+
+
 .section {
     width: 100vw;
     display: flex;
@@ -73,6 +84,12 @@ li {
     flex-direction: column;
 }
 
+@media (min-width: 768px) and (max-width: 960px) {
+    .block {
+        width: 90%;
+    }
+}
+
 .email {
     width: 100%;
     padding: 20px 18px;
@@ -81,6 +98,18 @@ li {
     font-family: 'Sarabun';
     border: 1px solid rgb(218, 218, 218);
     border-radius: 4px;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .email {
+        width: 50%;
+        padding: 20px 18px;
+        box-sizing: border-box;
+        font-size: 1.15em;
+        font-family: 'Sarabun';
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 4px;
+    }
 }
 
 .sign-in {
@@ -93,7 +122,7 @@ li {
 
 .button {
     width: 100%;
-    padding: 24px 18px;
+    padding: 24.5px 18px;
     border-radius: 4px;
     font-size: 1em;
     font-weight: 700;
@@ -104,6 +133,19 @@ li {
     background-color: rgb(64, 73, 170);
     border: none;
     color: white;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    #get-started {
+        height: 50%;
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .button {
+        width: 25%;
+    }
 }
 
 /*            Nav-bar           */
@@ -142,11 +184,42 @@ nav ul{
     margin: 5px 0;
 }
 
+@media (min-width: 768px) and (max-width: 960px) {
+    #slack-logo {
+        width: 13%;
+        padding: 0 45px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    #hamburger {
+        width: 3.2%;
+        padding: 0 45px;
+    }
+    
+    #hamburger div{
+        width: 100%;
+        height: 3.5px;
+        background-color: #5b5e6d;
+        margin: 5px 0;
+    }
+}
+
 /*            Header           */
 
 #section1 {
-    margin-top: 100px;
+    margin-top: 110px;
     width: 100vw;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    #section1 { 
+        margin-top: 100px;
+    }
+
+    header h1 { 
+        margin: 60px 0 30px 0;
+    }
 }
 
 header p {
@@ -154,17 +227,60 @@ header p {
     line-height: 1.6;
 }
 
+@media (min-width: 768px) and (max-width: 960px) {
+    header p {
+        margin: 0 0 40px 0;
+    }
+}
+
+.mail1-section {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .mail1-section {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
 #email1 {
     margin: 25px 0;
 }
 
+@media (min-width: 768px) and (max-width: 960px) {
+    #email1 {
+        margin: 0;
+    }
+}
+
 #first-sign {
-    margin: 15px 0 15px 0;
+    margin: 15px 0;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    #first-sign p {
+        font-size: 1.07em;
+    }
 }
 
 header img {
     width: 100%;
     margin: 20px 0 0 0;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    header img {
+        width: 52%;
+        margin: 10px 0 0 0;
+    }
+
+    .work-people {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /*            Section 2           */
@@ -180,11 +296,40 @@ header img {
     margin: 50px 0 0 0;
 }
 
+@media (min-width: 768px) and (max-width: 960px) {
+    .section h2 {
+        font-size: 2em;
+        margin: 60px 0 0 0;
+    }
+
+    #section2 p {
+        font-size: 1.1em;
+    }
+}
+
+.disover-button {
+    display: flex;
+    justify-content: center;
+}
+
 #discover {
     background-color: white;
-    border: 1px solid rgb(64, 73, 170);
+    border: 1px solid rgb(104, 117, 184);
     color:  rgb(64, 73, 170);
     margin: 20px 0 30px;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    #discover {
+        margin: 30px 0 30px 0;
+    }
+}
+
+.company-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .companies {
@@ -194,6 +339,19 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .companies {
+        width: 49%;
+        height: 170px;
+    }
+
+    .company-list {
+        margin: 10px 0 60px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 #airbnb, #capital-one, #harvard {
@@ -208,8 +366,18 @@ header img {
     width: 55%
 }
 
-#companies-tm {
+#tm-block {
     border-bottom: none;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    #airbnb-block, #harvard-block, #oracle-block {
+        border-right: 1px solid rgb(228, 227, 227);
+    }
+
+    #oracle-block {
+        border-bottom: none;
+    }
 }
 
 /*            Section 3           */
@@ -235,10 +403,39 @@ header img {
     margin: 12px 0 25px 0;
 }
 
+@media (min-width: 768px) and (max-width: 960px) {
+    #try-it {
+        margin: 75px 0;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #email2 {
+        width: 25%;
+        margin: 0 0 0 130px;
+    }
+
+    .sign-in h3 {
+        text-align: left; 
+        font-size: 1.85em;
+    }
+
+    #get-started {
+        margin: 0 0 0 10px; 
+    }
+
+}
+
 /*            Section 4           */
 
 #link-block {
     margin: 35px 0;
+}
+
+.slack-icon {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 #iso-slack {
@@ -265,6 +462,26 @@ header img {
 .lists li {
     padding: 10px 17px;
     font-weight: 300;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    #link-block {
+        margin: 20px 0;
+        flex-direction: row;
+    }
+    
+    .slack-icon {
+        width: 20%;
+    }
+    #iso-slack {
+        width: 105%;
+        margin: 0 0 0 -45px;
+    }
+
+    .lists {
+        width: 80%;
+        flex-wrap: nowrap;
+    }
 }
 
 /*            Footer           */
@@ -301,4 +518,31 @@ footer img {
 
 .social-media i {
     padding: 20px 10px;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    #footer-block {
+        margin: 30px 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer li {
+        margin: 0 20px 0 0;
+    }
+
+    .footer-part2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .language {
+        width: 50%;
+    }
+
+    footer img {
+        width: 15%;
+    }
 }
