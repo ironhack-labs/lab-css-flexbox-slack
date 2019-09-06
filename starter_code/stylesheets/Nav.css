@@ -1,0 +1,99 @@
+/*            Nav-bar           */
+
+nav {
+    width: 100vw;
+    padding: 20px 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px rgb(228, 227, 227);
+}
+
+nav ul{
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    nav ul {
+     margin: 0 60px 0 0;
+     display: inline-block;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+    }
+
+    nav li {
+        margin: 0 20px;
+        font-size: 1.15em;
+        font-weight: 300;
+    }
+
+    #workspaces {
+        border: 1.4px solid rgb(50, 55, 71);
+        border-radius: 4px;
+        padding: 8px 13px;
+    }
+}
+
+#slack-logo {
+    width: 121px;
+    height: 64px;
+    padding: 0 30px;
+}
+
+#hamburger {
+    width: 27.5px;
+    height: 29px;
+    padding: 0 25px;
+}
+
+#hamburger div{
+    width: 100%;
+    height: 3px;
+    background-color: #5b5e6d;
+    margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+    nav {
+        padding: 15px 0;
+    }
+
+    #slack-logo {
+        width: 113.5px;
+        height: 64px;
+        padding: 0 45px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #slack-logo {
+        padding: 0 70px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #hamburger {
+        width: 28px;
+        height: 29px;
+        padding: 0 45px;
+    }
+    
+    #hamburger div{
+        width: 100%;
+        height: 3.5px;
+        background-color: #5b5e6d;
+        margin: 5px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    #hamburger {
+        display: none;
+    }
+}
