@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="./stylesheets/style.css">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
 </head>
@@ -12,7 +14,9 @@
 <body>
   <nav>
     <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
+    <button class="mobile"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" aria-label="" class="svg-replaced" shape-rendering="geometricPrecision"><path d="M0 0h24v3H0zm0 7h24v3H0zm0 7h24v3H0z" fill-rule="evenodd"></path></svg>
+    </button>
+    <ul class="desktop">
       <li>Why Slack?</li>
       <li>Pricing</li>
       <li>About Us</li>
@@ -22,7 +26,9 @@
   <header>
     <img src="./images/home_talking.png" alt="home_work_happening">
     <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract,
+      finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.
+    </p>
     <button type="button" name="button">GET STARTED</button>
     <p>Already using Slack? <a href="#">Sign in</a></p>
   </header>
@@ -38,10 +44,17 @@
       <img src="./images/oracle-logo.png" alt="">
       <img src="./images/ticketmaster-logo.png" alt="">
     </div>
-    <div>
-      <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
+    <div class="flexcontainer">
+      <div class="flexitem">
+          <p>Try it for free</p>
+          <p>Already using Slack? <a href="">Sign in</a></p>
+      </div>
+      
+      <div class="flexitem">
+        <input type="text" placeholder="Email address">
+        <button type="button" name="button">GET STARTED</button>
+      </div>
+
     </div>
   </main>
   <footer>
