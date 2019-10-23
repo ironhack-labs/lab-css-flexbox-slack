@@ -98,6 +98,9 @@ body {
     margin-left: 2rem;
     border-bottom: 0.05rem solid grey;
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: white;
 }
 
 .logo {
@@ -107,23 +110,22 @@ body {
 
 }
 
-.list {
+.navlist {
     display: none;
-
-
 }
 
-/* .fas fa-bars {
+.fas fa-bars {
     color: black;
     height: 50px;
-} */
+}
 
 header {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: flex-start;
-    margin-left: 2rem;
+    justify-content: center;
+    width: 100%;
+    padding: 10rem 2.5rem;
+    max-width: 85rem;
 }
 
 .container {
@@ -156,10 +158,22 @@ button {
     color: white;
     border-radius: 0.2rem;
     display: flex;
-    width: 36rem;
-    height: 5rem;
+    width: 100%;
     text-align: center;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem 4rem;
+
+}
+
+.form {
+    width: 100%;
+}
+
+.email {
+    width: 100%;
+    border: 0.1 rem solid grey;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
 
 }
 
@@ -172,6 +186,7 @@ input {
 
 .hero-img {
     width: 100%;
+    max-width: 100vw;
 }
 
 .hero-img img {
@@ -238,11 +253,8 @@ input {
         flex-direction: row;
     }
 
-    .child-img {
-        display: flex;
-    }
-
-    .child-img img {
+    .imagenes .child-img img {
         flex-wrap: wrap;
+        flex-direction: row;
     }
 }
