@@ -120,10 +120,17 @@ main {
     width: 100%;
 }
 
-.gallery-clients img {
-    width: 70%;
-    height: 70%;
+.client-globo {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
     border-bottom: 0.1rem solid #5b5e6d42;
+}
+
+.gallery-clients img {
+    width: 85%;
     margin: 0 auto;
     padding: 3rem;
     object-fit: contain;
@@ -137,7 +144,9 @@ main {
     background: white;
     width: 100%;
     height: 20rem;
-    border-bottom: 0.1rem solid #5b5e6d42;}
+    border-bottom: 0.1rem solid #5b5e6d42;
+    padding: 2rem;
+}
 
 .getstart-class button {
     padding: 1.5rem 3rem;
@@ -164,17 +173,29 @@ main {
         flex-wrap: wrap;
     }
 
-    .gallery-clients img {
-        width: 50%;
-        object-fit: contain;
+    .client-globo {
+        margin-bottom: none;
     }
 
-    .getstart-class div {
-        align-items: flex-start;
+    .client-globo:nth-child(odd){
+        border-right: 1px solid #5b5e6d42;
+    }
+
+    .client-globo {
+        width: 50%;
+    }
+
+    .getstart-class {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .getstart-class button {
-        align-items: flex-end;
+        width: 60%;
+        max-width: 400px;
     }
 
 }
@@ -184,11 +205,29 @@ main {
         flex-wrap: wrap;
     }
 
-    .gallery-clients img {
+    .client-globo {
+        border-bottom: none;
+    }
+
+    .client-globo:nth-child(odd) {
+        border-right: none;
+    }
+
+    .client-globo:nth-child(1), 
+    .client-globo:nth-child(2),
+    .client-globo:nth-child(3){
+        border-bottom: 1px solid #5b5e6d42;
+    }
+
+    .client-globo:nth-child(1), 
+    .client-globo:nth-child(2),
+    .client-globo:nth-child(4), 
+    .client-globo:nth-child(5){
+        border-right: 1px solid #5b5e6d42;
+    }
+
+    .client-globo{
         width: 33.3%;
     }
-
-    .getstart-class {
-
-    }
 }
+
