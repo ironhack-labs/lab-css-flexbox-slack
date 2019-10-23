@@ -10,7 +10,7 @@ We use the app almost every day to keep our communications with our classmates a
 
 We want to practice our new **Flexbox** skills, so we are going to implement the *"responsiveness"* of the landing page. No worries, we will show you what we need!
 
-ssss
+
 ## Requirements
 
 - Fork this repo
