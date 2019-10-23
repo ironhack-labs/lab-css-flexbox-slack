@@ -5,3 +5,68 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    border-bottom: 0.1rem solid rgb(219, 219, 219);
+    width: 100%;
+    position: fixed;
+    background: white;
+    color: #5b5e6d;
+}
+
+nav img {
+    height: 5rem;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+.menu-mobile {
+    font-size: 4rem;
+    color: grey;
+}
+
+@media (min-width: 780px){
+    .menu-desktop {
+        display: flex;
+    }
+    
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop li {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .menu-desktop li:last-child{
+        border: 0.1rem solid black;
+        border-radius: 0.5rem;
+        margin-left: 2.5rem;
+    }
+}
