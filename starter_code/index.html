@@ -6,39 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <title>Where work happens | Slack</title>
 </head>
 
 <body>
-  <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
+  <nav class="first">
+    <img class="slack-logo" src="./images/slack-logo.png" alt="slack_logo">
+    <i class="material-icons">reorder</i>
+    <ul class="nav-buttons">
       <li>Why Slack?</li>
       <li>Pricing</li>
       <li>About Us</li>
-      <li>Your Workspaces</li>
+      <li id="btn-nav">Your Workspaces</li>
     </ul>
   </nav>
-  <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+  <header class="work-hdr">
+    <div class="block-one">
+      <div class="top-text">
+        <h1>Where Work Happens</h1>
+        <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract,
+          finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you
+          covered.</p>
+      </div>
+      <div class="get-st">
+        <input type="text" placeholder="Email adress">
+        <button type="button" name="button">GET STARTED</button>
+      </div>
+      <p class="sign-in">Already using Slack? <a href="#">Sign in</a></p>
+    </div>
+    <div class="people-image">
+      <img src="./images/home_talking.png" alt="home_work_happening">
+    </div>
   </header>
   <main>
-    <div>
-      <h2>You´re in good company</h2>
+    <div class="second">
+      <h2 class="you">You´re in good company</h2>
       <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
+      <button class="discover">DISCOVER WHY</button>
+      <div class="logos">
+        <img src="./images/airbnb-logo.png" class="logo" alt="airbnb">
+        <img src="./images/capital-one-logo.png" class="logo" alt="capital one">
+        <img src="./images/harvard-logo.png" class="logo" alt="harvard">
+        <img src="./images/los-angeles-times-logo.png" class="logo2" alt="latimes">
+        <img src="./images/oracle-logo.png" class="logo2" alt="oracle">
+        <img src="./images/ticketmaster-logo.png" class="logo2" alt="ticketmaster">
+      </div>
     </div>
-    <div>
+    <!-- <div>
       <p>Try it for free</p>
       <p>Already using Slack? <a href="">Sign in</a></p>
       <button type="button" name="button">GET STARTED</button>
@@ -95,7 +112,7 @@
         <i class="fa fa-youtube-play" aria-hidden="true"></i>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </body>
 
 </html>
