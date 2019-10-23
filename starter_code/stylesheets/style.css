@@ -32,9 +32,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 3rem;
+    padding: 0.7rem 3rem;
     border: 1px solid #F4F3F4;
     width: 100%;
+    position: fixed;
+    background: #fff;
+    z-index: 1;
 }
 
 p{
@@ -54,6 +57,7 @@ nav img{
 nav ul{
     display: flex;
     color: #5b5e6d;
+    align-items: center;
 }
 
 nav li{
@@ -63,13 +67,25 @@ nav li{
 .desktop{
     display: none;
 }
+nav ul li{
+    margin-right: 3rem;
+}
+nav ul li:last-child{
+    margin-right: 0;
+}
+.cta{
+    border:1px solid #5b5e6d;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
 
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem;
-    max-width: 140rem;
+    padding: 10rem 3rem 3rem;
+    max-width: 85rem;
+    margin: 0 auto;
     width: 100%;
 }
 header > div{
@@ -84,7 +100,7 @@ header > div{
  
  h1{
      font-family: 'Source Serif Pro';
-     font-size: 3.2rem;
+     font-size: 7vw;
      text-align: left;
      margin-bottom: 2.4rem;
      align-self: flex-start;
@@ -128,15 +144,20 @@ header > div{
  }
 
  .brand {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem;
-    max-width: 140rem;
     width: 100%;     
     background: #F4F3F4;
     border-top: 1px solid rgb(210, 210, 210);
     border-bottom:1px solid rgb(210, 210, 210);
+ }
+
+ .brand .inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    max-width: 85rem;
+    margin: 0 auto;
  }
 
  h2{
@@ -180,7 +201,8 @@ header > div{
     flex-direction: column;
     justify-content: center;
     padding: 4rem 3rem;
-    max-width: 140rem;
+    max-width: 85rem;
+    margin: 0 auto;
     width: 100%;
     border-bottom: 1px solid rgb(210, 210, 210);
  }
@@ -195,3 +217,146 @@ header > div{
      text-align: center;
      margin-bottom: 0.5rem;
  }
+ 
+ footer .whitefooter{
+     background: #fff;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     padding: 3rem;
+     align-items: flex-start;
+ }
+ footer .whitefooter img{
+    position: relative;
+    left: -13%;
+    margin-top: -34px;
+    height: 15rem;
+ }
+
+ footer .whitefooter div{
+     display: flex;
+     flex-wrap: wrap;
+     
+ }
+
+ footer .whitefooter div ul{
+     width: 50%;
+     margin-bottom: 2.5rem;
+ }
+
+ footer .whitefooter div li{
+     margin-bottom: 1.8rem;
+ }
+
+ footer .whitefooter ul li:first-child{
+     text-transform: uppercase;
+     font-weight: 700;
+
+ }
+
+ footer .greyfooter{
+     background: #F4F3F4;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ footer .greyfooter ul{
+
+    display: flex;
+ }
+
+ footer .greyfooter ul li{
+     margin-right: 1.5rem
+ }
+
+ @media (min-width:766px){
+    .large{
+    font-size: 2rem;
+    }
+    .btn{
+        width: auto;
+        max-width: 25rem;
+    }
+    h1{
+        max-width: none;
+    }
+    h2{
+        font-size: 3.2rem;
+    }
+    header{
+        align-items: center;
+    }
+    header .flexitem{
+        flex-direction: row;
+    }
+    header > div{
+        align-items: flex-start;
+    }
+    header .flexitem input{
+        width: 50vw;
+    }
+    .brand .flexcontainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .brand .flexcontainer li{
+        width: 50%;
+        height: 15rem;
+    }
+    .brand .flexcontainer li img {
+        width: 60%;
+    }
+    
+    .brand .flexcontainer li:nth-child(odd){
+        border-right:1px solid rgb(210, 210, 210);
+    }
+    .brand .flexcontainer li:nth-last-child(2){
+        border-bottom: 0;
+    }
+ }
+
+ @media (min-width:960px){
+    body{
+        font-size: 1.3rem;
+
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop {
+        display:flex;
+    }
+    .large{
+        font-size:1.6rem
+    }
+      
+    h1{
+        max-width: 42vw;
+        font-size: 6.4rem;
+    }
+    header{
+        flex-direction: row-reverse;
+        padding-top:13rem;
+    }
+
+
+    header img{
+        max-width: 37vw;
+        margin-right: 6rem;
+    }
+    header, .brand .inner, .try{
+        max-width: 100rem;
+    }
+
+    .brand .flexcontainer li{
+        width: 33%;
+        height: 15rem;
+        border-right:1px solid rgb(210, 210, 210);
+ }
+    .brand .flexcontainer li:nth-child(3n){
+        border-right:none;
+    }
+    .brand .flexcontainer li:nth-last-child(3){
+        border-bottom: 0;
+    }
+}
