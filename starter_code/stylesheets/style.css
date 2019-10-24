@@ -5,3 +5,191 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* General*/
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.shown {
+    display: initial;
+  }
+  
+.hidden {
+    display: none;
+}
+
+.align {
+    align-items: center;
+}
+
+.align ul {
+    padding-top: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 1em;
+}
+
+/* NAV */
+
+.menu {
+    padding: 0 20px;
+}
+
+.menu img {
+    width: 120px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.menu ul li {
+    margin: 8px;
+}
+
+/* HEADER */
+
+.elem1 {
+    order: 5;
+}
+
+.elem2 {
+    order: 1;
+}
+
+/* MAIN */ 
+
+.elem0 {
+    padding: 20px 0;
+}
+
+.elem0 img {
+    width: 200px;
+}
+
+.grey-background {
+    background-color: #F5F5F5;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+  /* COMPONENTS */
+
+  button {
+    border: 2px solid rgb(64, 73, 170);
+    background-color: rgb(64, 73, 170);
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    margin: 29px 0;
+    border-radius: 2px;
+  }
+
+  button.white-button {
+    background-color: white;
+    color: rgb(64, 73, 170);   
+  }
+
+/* Media queries */
+
+@media (max-width: 767px) {
+    .hidden {
+      display: initial;
+    }
+  
+    .shown {
+      display: none;
+    }
+
+   
+  }
+
+@media (min-width: 768px) and (max-width: 961px) {
+    .hidden {
+        display: initial;
+      }
+    
+      .shown {
+        display: none;
+      }
+
+      .text-center {
+        text-align: start;
+      }
+    button {
+        width: 200px;
+    }
+
+    button.white-button {
+        margin: 0 auto;   
+      }
+
+    .home-work {
+        width: 70%;
+        display: block;
+        margin: 10px auto;
+
+    }
+    
+}
+
+@media (min-width: 962px) {
+    .hidden {
+        display: none;  
+      }
+    
+    .shown {
+        display: initial;
+      }
+
+    .text-center {
+        text-align: start;
+    }
+
+    .elem1 {
+        order: 0;
+    }
+
+    .flexbox-lg {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button {
+        width: 200px;
+    }
+
+    button.white-button {
+        margin: 0 auto;   
+    }
+}
+
+
+
+
+
+
