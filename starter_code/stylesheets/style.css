@@ -7,26 +7,71 @@ nav grey: #5b5e6d;
 */
 
 nav {
+body {
+    margin:0;
+    padding: 0;
+font-family:Helvetica;
+}
+button:hover {
+    background-color:  rgb(122, 67, 121);
+    border: 2px solid  rgb(37, 11, 37);
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+}
+.nav-expand {
+    
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+   
 }
-nav img {
+.nav-expand img {
     height: 6vh;
     width: 6vw;
 }
-nav ul{
+.nav-expand ul{
 list-style-type: none;
 }
-nav li {
+.nav-expand li {
     display: inline-block;
     padding: 10px;
 }
-nav button {
-    height: 3vh;
-    width: 5vw;
+.nav-expand button {
+    height: 5vh;
+    width: 15vw;
+    background-color: rgb(68, 17, 66);
+    color: white;
+    font-size:12px;
+    font-weight:bold;
+    border-radius:10px;
+    align-items: center;
+    white-space: nowrap;
 }
-@media (max-width : 768px){
+.nav-shrink{
+    display: none;
+}
+header{
+    padding: 5em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+.page-description {
+    margin: 100px;
+   text-align: center;
+}
+.common-button {
+    height: 5vh;
+    width: 30vw;
+    background-color: rgb(68, 17, 66);
+    color: white;
+    border-radius: 10px;
+}
 
 }
 
@@ -79,10 +124,48 @@ footer ul{
 }
 
 .navfoot{
+.symbols {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.symbol-description {
+    display: flex;
+    justify-content: center;
+}
+.symbol-description div {
+    text-align: center;
+}
+.symbol-images{
+    display: flex;
+    margin: 40px;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.symbol-images div {
+    padding:30px;
+    height: 30vh;
+    width: 50vw;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.symbol-images img{
+height: 10vh;
+width: 10vw;
+}
+@media only screen and (max-width : 768px){
+.nav-expand {
+    display: none;
+}
+.nav-shrink {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+<<<<<<< HEAD
  .navfoot img{
      width: 20px;
  }
@@ -90,4 +173,32 @@ footer ul{
 .navfoot ul{
     display: flex;
     justify-content: stretch;
+=======
+.nav-shrink img {
+    height: 8vh;
+    width: 8vw;
+}
+.nav-shrink button {
+    border: none;
+    background-color: white;
+}
+header{
+    flex-direction: column;
+}
+.symbol-images {
+    flex-wrap: wrap;
+}
+.symbol-images img{
+    height: 10vh;
+    width: 10vw;
+    }
+.symbol-images div {
+    height: 20vh;
+    width: 30vw;
+}
+.page-description button {
+    height: 5vh;
+    width: 30vw;
+}
+>>>>>>> 175189270094dfec96dbe0776a5863aa063ed9b9
 }
