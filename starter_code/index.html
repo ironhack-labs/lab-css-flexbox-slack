@@ -8,6 +8,7 @@
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
   <title>Where work happens | Slack</title>
   <link rel='stylesheet' href="./stylesheets/style.css">
+  <script src="./scripts/script.js"></script>
 </head>
 
 <body>
@@ -24,15 +25,25 @@
     </div>
     <div class="nav-shrink">
       <img src="./images/slack-logo.png" alt="slack_logo">
-      <button><img src="./images/PikPng.com_vaporwave-png_1029606.png"></button>
+      <button class="menu" onclick = toggleMenu()><img src="./images/PikPng.com_vaporwave-png_1029606.png"></button>
     </div>
   </nav>
+      <section class="menu-list">
+          <ul>
+              <li>Why Slack?</li>
+              <li>Solutions</li>
+              <li>Pricing</li>
+              <li>About Us</li>
+              <li><button class="common-button">Your Workspaces</button></li>
+              <li><button class="common-button">Download Slack</button></li>
+            </ul>
+        </section>
+        <div class="modal-overlay" id="modal-overlay" > 
+        </div>
   <section class="animation">
-
     <div class="promo">
       <h2>Put collaboration at your fingertips</h2>
     </div>
-
     <div class="bottom">
       <img class="g-drive" src="./images/drivehero2.jpg">
       <img class="d-box" src="./images/dropbox-icon.png">
@@ -135,12 +146,16 @@
         <li>Contact Us</li>
       </ul>
       <div class='lang-links'>
-        <img src="./images/us-flag.png" alt="">
-        <span>English (US)</span>
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        <div>
+            <img src="./images/us-flag.png" alt="">
+            <span>English (US)</span>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <div class="social-network">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
   </footer>

@@ -20,7 +20,7 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     background-color: white;
 }
 
@@ -50,7 +50,9 @@ nav {
 .nav-shrink {
     display: none;
 }
-
+.menu-list{
+    display: none;
+}
 .animation {
     padding-top: 5em;
     height: 20vh;
@@ -185,6 +187,12 @@ header {
     justify-content: space-between;
     margin: 20px;
 }
+.first-foot li{
+    padding-bottom: 10px;
+}
+.first-foot li:nth-child(1) {
+    font-weight: bold;
+}
 .first-foot img {
     width: 50px;
     height: 60px;
@@ -229,8 +237,18 @@ footer ul {
     padding: 20px;
 }
 .lang-links {
-    display: inline-block;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.lang-links div {
+    padding: 10px;
+}
+.social-network i {
+    padding: 5px;
+    opacity: 0.5;
 }
 @keyframes top-bottom {
     0% {
@@ -305,6 +323,42 @@ footer ul {
         justify-content: space-between;
         align-items: center;
     }
+   
+    .menu-list {
+        padding: 2vh;
+        margin-top: 11vh;
+        background-color: white;
+        display:none;
+        height: 50vh;
+        width: 40vw;
+        position: fixed;
+        left: 40vh;
+        border: 1px solid rgb(37, 11, 37);
+        z-index:3;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .menu-list ul {
+        margin:0;
+        padding:0;
+    }
+    .menu-list li {
+        list-style-type: none;
+        padding: 20px;
+    }
+    .menu-list button {
+        width: 25vw;
+    }
+    .modal-overlay {
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      display:none;
+      background-color: rgba(0,0,0,0.5);
+      }
     .navfoot img {
         width: 20px;
     }
@@ -360,5 +414,13 @@ footer ul {
         opacity: 0.5;
         font-weight: bold;
         padding: 5px;
+    }
+    .navfoot {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .lang-links {
+        flex-direction: column;
     }
 }
