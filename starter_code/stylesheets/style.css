@@ -5,3 +5,274 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+h1 {
+  color: #2c303f;
+}
+
+nav li,
+p {
+  color: #5b5e6d;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 8px #5b5e6d;
+  padding: 4px 16px;
+}
+
+nav img {
+  max-height: 60px;
+}
+
+nav ul {
+  display: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+  padding: 12px 16px;
+}
+
+nav li:last-child {
+  border: 1px solid #5b5e6d;
+  border-radius: 4px;
+  margin: 0 32px;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: stretch;
+}
+
+header {
+  align-items: center;
+  padding: 16px;
+}
+
+header form,
+main form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+header form input,
+header form button,
+main form input,
+main form button {
+  width: 90%;
+}
+
+header form input,
+main form input {
+  border: 1px solid #5b5e6d;
+  margin: 16px 0;
+  padding: 16px;
+  font-size: 125%;
+}
+
+button {
+  margin: 16px 0;
+  padding: 16px;
+  font-size: 125%;
+  border-radius: 4px;
+}
+
+header form button,
+main > :last-child button {
+  background-color: #192592;
+  color: white;
+}
+
+main > * {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+main > :first-child {
+  background-color: #f4f3f4;
+}
+
+main button {
+  background-color: white;
+  border: 1px solid #192592;
+  color: #192592;
+}
+
+main h2 {
+  margin: 36px 0 0;
+}
+
+main img {
+  padding: 64px 0;
+  max-width: 320px;
+  border: 1px solid transparent;
+}
+
+main img:not(:last-child) {
+  border-bottom-color: rgba(91, 94, 109, 0.25);
+}
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+.footer-nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  border: 1px solid transparent;
+  border-top-color: rgba(91, 94, 109, 0.25);
+  margin-top: 36px;
+}
+
+.iso-slack {
+  width: 100%;
+}
+
+.footer-nav ul {
+  flex: 0 1 45%;
+}
+
+li {
+  list-style: none;
+  margin: 16px 0;
+}
+
+.footer-nav li:first-child {
+  font-weight: bold;
+}
+
+footer > :not(.footer-nav) {
+  background-color: #f4f3f4;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: #5b5e6d;
+  font-weight: bold;
+}
+
+footer > :not(.footer-nav) > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+footer > :not(.footer-nav) li {
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.lang-select {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 36px;
+}
+
+.lang-select img {
+  width: 36px;
+}
+
+.lang-select span {
+  padding: 0 12px;
+}
+
+.lang-select + div i {
+  font-size: 150%;
+  padding: 12px;
+}
+
+@media only screen and (min-width: 767px) {
+  header form,
+  main form {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  form > * {
+    flex: 0 1 47%;
+  }
+
+  main > :first-child {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  main > :first-child > *:not(img) {
+    flex: 0 1 90%;
+  }
+
+  main > :first-child > img {
+    flex: 0 1 50%;
+    border-bottom-color: transparent;
+  }
+
+  .footer-nav .iso-slack {
+    width: 150px;
+  }
+
+  .footer-nav ul {
+    flex-basis: 14%;
+  }
+
+  footer > :not(.footer-nav) {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 18px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  main > :first-child button {
+    margin: 0 40%;
+  }
+
+  main > :first-child > img {
+    flex: 0 1 33%;
+    border-bottom-color: transparent;
+    padding: 36px;
+    max-width: 24vw;
+  }
+
+  .footer-nav .iso-slack {
+    width: initial;
+  }
+
+  .footer-nav ul {
+    flex-basis: 16%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    flex-flow: row-reverse nowrap;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
