@@ -77,6 +77,12 @@ header form{
     justify-content: center;
 }
 
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header input {
     width: 60%;
     height: 3em;
@@ -91,9 +97,8 @@ header input {
     padding-left: 1em;
 }
 
-header button{
+header div button{
     width: 60%;
-    margin: 0 auto;
     padding-top: 1em;
     padding-bottom: 1em;
     font-family: 'Lato', sans-serif;
@@ -178,8 +183,14 @@ main{
     border-radius: 0.4em;
 }
 
+#imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .div-imgs{
-    width: 90%;
+    width: 90vw;
     border-bottom: 0.01em solid #e3e1e3;
     height: 10em;
     display:flex;
@@ -188,7 +199,7 @@ main{
 }
 
 .img-main{
-    width:50%;
+    width:16em;
     height: auto;
 }
 
@@ -303,4 +314,91 @@ footer {
     height: auto;
     display: inline-block;
 }
+
+@media (min-width:767px) and (max-width:961px) {
+    
+    #header {
+        flex-direction: row;
+        align-content: flex-start;
+        padding-left: 1.3em;
+    }
+
+    #header form{
+        width: 15em;
+        margin: 0 0;
+        margin-right: 0.3em;
+    }
+    
+    #header input {
+        width: 18em;
+        margin: 0 0;
+        padding: 0 0;
+    }
+    
+    #header button{
+       width: 15em;
+    }
+
+    #sec-p{
+        margin-left: 1.5em;
+        text-align: left;
+    }
+
+    #imgs {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: center;
+        margin-top: 1.2em;
+    }
+
+    .div-imgs {
+        width: 45vw;
+    }
+
+    .odd-imgs{
+        border-right: 0.01em solid #e3e1e3;
+    }
+    
+    #slack-logo-foot{
+        width: 15vw;
+        height: auto;
+    }
+
+    #firs-foot{
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items:flex-start;
+    }
+
+    #foot-ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #foot-ul ul{
+        width:auto;
+    }
+
+    #sec-footer{
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    #end{
+        flex-direction: row;
+        align-items: center;
+        margin-right: 1em;
+    }
+
+    #last-image{
+        margin: auto 1em;
+    }
+
+}
+
 
