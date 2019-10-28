@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+/*Nav Bar */
+.nav-container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 80px;
+	padding-left: 50px;
+}
+
+.logo {
+	background-color: yellow;
+	grid-column-start: 1;
+	height: 50px;
+	width: 125px;
+	align-self: center;
+}
+
+.logo > img {
+	width: auto;
+	height: 100%;
+	text-align: center;
+}
+
+.menu {
+	border: solid;
+	background-color: red;
+	grid-column-start: 4;
+	grid-column-end: 7;
+	align-self: center;
+}
+
+.menu-list {
+	list-style: none;
+}
+
+li {
+	display: inline;
+	margin-left: 30px;
+}
+/*Main container*/
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 800px 800px 800px;
+}
+
+/*Header*/
+.item-3 {
+	display: grid;
+	background-color: blue;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(6, 1fr);
+}
+
+.item-3 > .header-image {
+	grid-column-start: 2;
+	height: 75%;
+	width: auto;
+	text-align: center;
+}
+
+.item-3 > .header-description {
+	grid-column-start: 4;
+}
+
+/*Main content*/
+.item-4 {
+	display: grid;
+	background-color: green;
+	grid-template-columns: 1fr;
+	grid-template-rows: 200px 400px 200px;
+}
+
+.item-4 > .main-top-text {
+	text-align: center;
+	align-self: center;
+}
+
+.main-images {
+	display: grid;
+	background-color: purple;
+	grid-template-columns: repeat(3, minmax(200px, 1fr));
+	grid-gap: 1rem;
+	text-align: center;
+	align-self: center;
+	height: 100%;
+	width: 100%;
+}
+
+.main-images > img {
+	width: auto;
+	height: 50%;
+}
+
+.item-4 > .main-bottom-text {
+	text-align: center;
+}
+
+/*Footer*/
+.item-5 {
+	display: grid;
+	background-color: red;
+	grid-template-columns: 1fr;
+	grid-template-rows: 400px 50px;
+}
+
+.row-1 {
+	background-color: #fff;
+	display: grid;
+	grid-template-columns: repeat(14, 1fr);
+	grid-row: 300px;
+}
+
+.row-1 > img {
+	align-self: center;
+	text-align: center;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	justify-self: start;
+}
+
+.row-1 > .company {
+	grid-column-start: 3;
+	grid-column-end: 5;
+	height: 200px;
+}
+
+.row-1 > .product {
+	grid-column-start: 6;
+	grid-column-end: 8;
+}
+
+.row-1 > .resources {
+	grid-column-start: 9;
+	grid-column-end: 10;
+}
+
+.row-1 > .extras {
+	grid-column-start: 11;
+	grid-column-end: 13;
+}
+
+.row-2 {
+	background-color: yellow;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-row: 200px;
+}
+
+.footer-list {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.footer-social {
+	grid-column-start: 5;
+	grid-column-end: 7;
+}
+
+.footer-social > img {
+	height: 25px;
+	width: 25px;
+	align-self: center;
+	text-align: center;
+}
