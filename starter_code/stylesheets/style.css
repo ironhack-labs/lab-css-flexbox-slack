@@ -5,3 +5,352 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body{
+    font-family: "Helvetica Neue",Helvetica,"Segoe UI";
+    margin: 0;
+    padding: 0;
+    font-size: 110%;
+}
+
+nav{
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 85px;
+}
+
+.navigation li{
+    display: none;
+}
+
+.logo{
+    height: 80px;
+}
+
+.menu{
+    width: 50px;    
+}
+
+nav .logo{ 
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+nav .menu{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+header{
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+       
+}
+header input{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    align-content: center;
+    color: gray;
+    margin: 0 0 8px 0;
+}
+
+
+header h1{
+    text-align: start;
+    padding: 0 30px;
+}
+
+header .p1{
+    text-align: start;
+    padding: 0 30px;
+}
+
+
+header button{
+    align-self: center;
+    width: 90%;
+    height: 40px;
+    background: #192592;
+    border-radius: 5px;
+    color: white;
+
+}
+
+
+
+
+main{
+    background-color: #F4F3F4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+}
+
+main .sdiv{
+    background-color: white;
+}
+
+main img{
+    width: 40%;
+}
+
+main button{
+    background: white;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    width: 90%;
+    height: 35px;
+    color: #192592;
+    font-size: 15px;
+    margin: 0 0 8px 0;  
+}
+
+.secondbutton{
+    background-color:#192592;
+    color: white;
+    margin: 0 0 25px 0;
+}
+
+main input{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    align-content: center;
+    color: gray;
+    margin: 0 0 8px 0;
+}
+
+.product{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        align-items: center;  
+        align-self: center;
+}
+
+
+footer li{
+    list-style: none;
+}
+
+.fsdiv{
+    flex-direction: column;
+    width: 100%;
+    background-color: #F4F3F4;
+    padding: 3px;
+}
+
+.status{
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+}
+
+.status li{
+    padding: 1em;
+    align-self: center;
+}
+
+.english{
+    padding: 0 0 50px 0;
+    display:flex;
+    justify-content: center;
+}
+
+.flag{
+    height: 30px;
+}
+
+.lack{
+    position: absolute;
+}
+
+.logos{
+    display:flex;
+    justify-content: center;
+}
+
+
+@media (min-width: 767px) and (max-width: 960px){
+    nav{
+        background-color: red;
+    }
+
+    .mdiv img{
+        width: 50%;
+    }
+    body button{
+        width: 60%;
+        height: 40px;
+        right: 50px;
+    }
+    body input{
+        width: 60%;
+        height: 30px;
+    }
+    
+    header section{
+        display: grid;
+        grid-template-columns:  repeat(2, 50%);
+        grid-template-rows: repeat(2, 40%);
+        align-content: center;
+        padding: 5% 0 5% 20%;
+    }
+    .sdiv div{
+            flex-direction: column;
+    }
+    
+    .images{
+        display: grid;
+        grid-template-columns:  repeat(2, 50%);
+        grid-template-rows: repeat(3, 80%);
+        align-content: center;
+        padding: 10% 0 5% 20%;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .sdiv{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        grid-auto-rows: 200px;
+        text-align: center;
+        padding: 20px 0 0 40px;
+    }
+    .product ul{
+        display: inline-block;
+        flex-direction: row;  
+    }
+    
+}
+
+@media (min-width: 961px) and (max-width: 1024px){
+    nav{
+        background-color: blue;
+    }
+    header section{
+        display: grid;
+        grid-template-columns:  repeat(2, 50%);
+        grid-template-rows: repeat(2, 40%);
+        align-content: center;
+        padding: 5% 0 5% 20%;
+    }
+    body button{
+        width: 60%;
+    }
+    body input{
+        width: 60%;
+    }
+    .images{
+        display: grid;
+        grid-template-columns:  repeat(3, 30%);
+        grid-template-rows: repeat(2, 200%);
+        align-content: center;
+        padding: 10% 0 0 20%;
+    }
+    hr{
+        display: none;
+    }
+    .sdiv{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        grid-auto-rows: 200px;
+        text-align: center;
+        padding: 20px 0 0 40px;
+    }
+}
+
+@media (min-width: 1025px){
+   
+    .menu{
+        display: none;
+    }
+
+    .navigation{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        border: 0 0 5px 0;
+        
+    }
+    .navigation a{
+        text-decoration: none;    
+    }
+
+
+    .navigation li{
+        display: block;
+        padding: 1em;
+        align-self: center;
+        
+    }
+
+    .navigation button{
+        background: white;
+        border-radius: 5px;
+        height: 30px;
+    }
+    
+    header button{
+        width: 30%;
+    }
+    main button{
+        width: 30%;
+    }
+
+    main input{
+        width: 30%;
+    }
+
+    header input{
+        width: 30%
+    }
+    .images{
+        display: grid;
+        grid-template-columns:  repeat(3, 30%);
+        grid-template-rows: repeat(2, 200%);
+        align-content: center;
+        padding: 10% 0 0 20%;
+    }
+    hr{
+        display: none;
+    }
+    .sdiv{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        grid-auto-rows: 200px;
+        text-align: center;
+        padding: 20px 0 0 40px;
+    }
+
+    header{
+        padding: 90px 0 0 0;
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center;
+           
+    }
+    body input{
+        display: none;
+    }
+    header section{
+        position: absolute;
+        padding: 25% 20%;
+    }
+    header button{
+        height: 80px;
+        width: 100%;
+    }
+}
