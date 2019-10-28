@@ -5,3 +5,379 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size:5em;
+    color:#2C303F;
+}
+
+h2 {
+    font-size: 4em;
+    color:#2C303F;
+}
+
+h3 {
+    font-size: 1.5em;
+    color:#2C303F;
+}
+
+p {
+    font-size:1.5em;
+    color:#5b5e6d;
+    line-height: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+input[type="text"]{ 
+    padding: 10px ; 
+    line-height: 28px; 
+    color: #5b5e6d;
+    font-size: 1.2em;
+    margin-right:10px;
+}
+/* NAV */
+nav {
+    width: 100%;
+    border-bottom: solid thin gainsboro;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: #fff;
+    position: fixed;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+#slack-logo{
+    width: 150px;
+    padding: 25px 50px;
+}
+
+#hamburger {
+    display: none;
+}
+
+nav ul > li {
+    display: inline;
+    padding-right: 40px;
+}
+
+
+
+nav ul > li:hover {
+    cursor:pointer;
+}
+
+/* HEADER */
+
+header {
+    display:flex;
+    /* width: 100%; */
+    justify-content: space-evenly;
+    padding:100px 0;
+}
+
+#header-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+img[alt="home_work_happening"]{
+    width:500px;
+    height: auto;
+    padding: 50px 120px 0 0;
+}
+
+
+#header-info {
+    width:700px;
+    padding: 50px;
+}
+
+button {
+    margin:20px 0 0 0;
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 7px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #17288a;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+  
+button:hover {
+    background: #0e5e8f;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    text-align: center;
+}
+
+main > div > button {
+    background: #ececf1;
+    color:#17288a;
+    margin: 0 0 100px 0;
+}
+main > div > button:hover {
+    background:#dadae0;
+}
+
+#companies {
+    background-color: #F4F3F4;
+    padding: 50px 100px 100px 50px;
+}
+
+#companies >p {
+    padding-bottom:50px;
+}
+
+#companies-logos {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;  
+    flex-wrap: wrap;
+}
+
+#companies-logos img{
+    width: 180px;
+    display: block;
+    padding: 50px 0;
+}
+
+#companies-logos img[alt="los angeles times logo"] {
+    width: 300px;
+}
+
+#logos-2 img[alt="harvard logo"]{
+    margin: 0 auto;
+}
+
+#try-it{
+    padding: 50px 0;
+} 
+
+#try-it > div {
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom:0.5px solid; 
+    flex-wrap:wrap;
+    padding-bottom: 50px;
+}
+
+#try-form:first-child {
+    padding-left: 50px;
+}
+
+#try-form:last-child {
+    padding-right: 50px;
+}
+
+.try-it-for-free{
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 0.2em;
+}
+/* form {
+    display: flex;
+    align-items:center;
+    font-size:2em;
+} */
+.already-using-it{
+    font-size:1em;
+}
+
+/* Footer */
+footer div { 
+    display:flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+ 
+
+#footer-extras ul li{ 
+    list-style: none;
+    font-size: 1.2em;
+    color:#5b5e6d;
+    padding: 10px;
+}
+
+#footer-extras ul li:hover {
+    cursor:pointer;
+}
+
+#footer-extras ul li:first-child{ 
+    font-weight: bold;
+}
+
+img[alt="iso slack"]{
+    position: relative;
+    width: auto;
+    height:130px;
+    /* left:-100px; */
+}
+
+.contact-footer ul li{
+    display: inline;
+    padding:0 20px;
+}
+
+#footer-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size:0.9em;
+    background-color:#F4F3F4;
+    margin: 0;
+}
+
+#footer-bar:hover{
+    cursor:pointer;
+}
+
+.icon-footer{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+} 
+
+.icon-footer i{
+    padding: 0 10px;
+}
+
+img[alt="us flag"] {
+    width: auto;
+    height:30px;
+    padding: 0 5px;
+}
+
+
+
+@media(max-width:961px) {
+    nav ul > li {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+        width: 40px;
+        padding: 25px 50px;
+    }
+    header {
+        flex-wrap: wrap-reverse;
+    }
+    #header-info {
+        font-size: 1.3em;
+    }
+    header input[type="text"]{
+        width:60%;
+    }
+    #header-img{
+        display: flex;
+        margin: 0 100px;
+    }
+    img[alt="iso slack"]{
+        position: relative;
+        left: 10px;
+        top:0px;
+    }
+
+    #companies{
+        font-size: 1.3em;
+    } 
+    #logos-3{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #logos-3 img[alt="oracle logo"]{
+        margin: 0 -60px;
+    }
+
+}
+
+@media(max-width: 768px){
+    
+    #header-img {
+        display:flex;
+        justify-content: flex-start;
+        align-content: initial;
+    }
+    img[alt="home_work_happening"]{
+        margin: 0 auto;
+    }
+    #footer-info{
+        display: flex;
+        justify-content: space-between;
+    }
+    .column1{
+        width: 100%;
+        padding: 0 5%;
+    }
+    .column2{
+        width: 100%;
+        padding: 0 5%;
+    }
+    #companies-logos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #logos-3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #try-it {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    .already-using-it {
+        font-size: 1.6em;
+    }
+    #try-form:first-child {
+        display: block;
+    }
+    #try-form:last-child {
+        padding: 40px;
+    }
+
+    #try-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    input[type="text"] {
+        width:100%;
+        padding: 30px;
+    }
+
+    header input[type="text"] {
+        width:100%;
+        padding: 30px;
+    }
+}
