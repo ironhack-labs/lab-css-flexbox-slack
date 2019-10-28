@@ -153,6 +153,7 @@ nav ul {
 
 img {width: 100%; height: auto;}
 
+
 .grey-background {
     background-color: #F4F3F4;
     position: absolute;
@@ -337,7 +338,6 @@ img {width: 100%; height: auto;}
     font-weight: bolder;
 }
 
-
 footer {
     position: relative;
     top: 800px;
@@ -365,12 +365,62 @@ footer img.footer-img {
 
 /* Mobile-First */
 @media all and (max-width: 767px) {
+
+}
+/* max-width from Tablet for Menu Navbar Hambuger */
+@media all and (max-width: 960px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-header .menu {
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  .nav-header .menu-icon .navicon {
+    display: block;
+  }
+  .nav-header .menu-icon .navicon:before,
+.nav-header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+  .nav-header li {
+    display: block;
+  }
+  .nav-header .menu-icon {
+    display: block;
+  }
+}
+/* Tablet */
+@media all and (min-width: 768px) and (max-width: 960px) {
+
+}
+/*Desktop*/
+@media all and (min-width: 961px) and (max-width: 1024px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+@media only screen and (min-width: 1025px) {
+}
+
+
+
+/* Mobile-First */
+@media all and (max-width: 767px) {
     .flexbox {
         width: 100%;
         flex-wrap: wrap;
     }
     .flexbox ul {
-        width: 39%;
+        width: 45%;
     }
 }
 /* Tablet */
