@@ -5,3 +5,1220 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+*{
+    margin:0;
+    font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace!important;
+}
+/* MOBILE!!!!!!!!
+!
+!
+!
+!
+!*/
+
+@media (max-width: 767px){ 
+    /* Estructura de la barra del navegador*/
+    nav{
+        display:flex;
+        justify-content:space-between;
+        border-bottom: 1px solid #F4F3F4;
+        border-top: 1px solid black;
+        flex-direction:row;
+        width:100vw;
+        position:fixed;
+        background-color:white;
+        margin-top: -15%;
+    }
+    /* Primera imagen navegador*/
+
+    nav img[alt='slack_logo']{
+        max-width: 200px;
+        width: auto;
+        height:auto;
+        align-self: flex-start;
+        margin: 3% 8%;
+    }
+    /*Ender los elementos de la lista de navegador*/
+    nav ul{
+        display:none;
+    }
+
+    /* TRANSICIÓN!
+    
+    Hay que desplegar un rectángulo blanco donde
+    salga el menú al clicar*/
+
+    /*HAMBURGUESA*/
+
+    nav img[alt='menu']{
+        max-width: 12%;
+        max-height: 6%;
+        width:auto;
+        margin: 3% 8%;
+    }
+
+    /*PRIMERA SECCIÓN*/
+
+    header{
+        margin-top: 15%;/*SINO SE LA COME LA BARRA*/
+        display:flex;
+        flex-direction: column;
+        border-bottom: 1px solid #2C303F;
+    }
+    header h1{
+        padding-top:10%;
+        margin: 7% 8%;
+        font-size: 4rem;
+        color: #2C303F;
+    }
+    header p{
+        margin: 5% 8% auto 8%;
+        font-size: 2.2em;
+        color:#5b5e6d;
+    }
+
+    /*VALUE E-MAIL ADDRESS PARA CAJA EN HTML
+    value="Email address"*/
+
+    input{
+        border: 1px solid #F4F3F4;
+        margin: 3% 5% 0 5%;
+        width: 84%;
+        align-self:center;
+        height: 5%;
+        font-size:1.2em;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        border-radius: 6px;
+        color: #5b5e6d;
+    }
+    header button{
+        background-color: #192592;
+        align-self: center;
+        margin: 3% 8% auto 8%;
+        width: 84%;
+        color:white;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-top:3%;
+        padding-bottom:3%;
+        border-radius: 6px;
+    }
+    button ~p{
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
+    header img[alt="home_work_happening"]{
+        width: 100%;
+        margin: auto 8% auto 8%;
+        align-self:center;
+    }
+    /*Primera sección
+    You're in good company y logos*/
+    main>div{
+        padding-top: 10%;
+        background-color: #F4F3F4;
+        display:flex;
+        flex-direction: column;
+    }
+    main>div>h2{
+        font-size:3em;
+        color: #2C303F;
+        width:100%;
+        margin: auto 8% auto 8%;
+        text-align:center;
+        align-self:center;
+    }
+    main>div>p{
+        color: #5b5e6d;
+        text-align:center;
+        align-self:center;
+        margin: auto 8% auto 8%;
+        font-size:2em;
+    }
+    main>div>button{
+        border: 2px solid#192592;
+        background-color:white;
+        color: #192592;
+        width: 90vw;
+        align-self:center;
+        margin: 5% 8% 5% 8%;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-top:3%;
+        padding-bottom:3%;
+
+    }
+    main > div > hr{
+        width: 75%;
+        align-self:center;
+    }
+    main > div:first-of-type > img {
+        max-width:50%;
+        max-height: 3%;
+        align-self:center;
+        margin: 10% auto 10% auto;
+        
+    }
+    /*TRY IT FOR FREE*/
+    main>div:last-child {
+        background-color:white;
+        margin-top:3%;
+        text-align:center;
+    }
+    main>div:last-child h4{
+        color: #2C303F;
+        font-size: 2.5em;
+    }
+    main>div:last-child p{
+        color: #2C303F;
+        font-size: 1.8em;
+    }
+    main>div:last-child button{
+        border-top: 1px solid #2C303F;
+        background-color: #192592;
+        color:white;
+        width: 84%;
+    }
+
+    /*FOOTER*/
+
+    /*Primer DIV*/
+
+    footer {
+        margin:0
+    }
+
+    footer > div:first-of-type{
+        margin: auto 8% auto 8%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        height:80%;
+        display:flex;
+        flex-direction:row;
+        margin-bottom:8%;
+    }
+    footer > div:first-of-type img{
+        margin-left: -6.7%;
+        margin-top: -7.9%;
+        width:25%;
+        margin-right: 75%;
+        
+    }
+    footer> div:first-of-type ul{
+        list-style-type: none;
+        padding:0;
+        color: #5b5e6d;
+        font-size: 1.5em;
+        width:50%;
+    }
+    /*Letra más grande del primero de cada lista*/
+    footer> div:first-of-type > ul > li:first-of-type{
+        font-size: 1.1em;
+    }
+    footer> div:first-of-type li{
+        margin: 8% auto 8%;
+        font-size:.8em;
+    }
+
+    /* HAY QUE RESOLVER ESTO
+    footer:first-child li{
+        font-weight: 500;
+        font-size: 1.2em;
+        margin: 15% auto 15%;
+    }*/
+    footer > div:nth-child(2){
+        padding-top: 5%;
+        background-color: #F4F3F4;
+        display:flex;
+        flex-direction:column;
+    }
+
+    footer > div:nth-child(2) ul{
+        list-style-type: none;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size:1.2em;
+        align-content:space-between;
+        margin-left: 15%;
+        margin-right:15%;
+        color:#5b5e6d;
+    }
+
+    footer > div:nth-child(2) > div{
+        padding-top: 5%;
+        padding-bottom:5%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    footer > div:nth-child(2) > div img{
+        margin-left:35%;
+        height:25px;
+        width:25px;
+    }
+    footer > div:nth-child(2) > div > span{
+        margin-right: 6%;
+        width:17%;
+    }
+
+    footer > div:nth-child(2) > div > i:first-of-type{
+        margin-left:-7%;
+        width:10%;
+    }
+    footer > div:nth-child(2) > div > i:nth-of-type(2){
+        margin-left: 45%;
+    }
+    
+}
+
+/* SMALL SCREEN 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+
+@media (min-width: 768px)and (max-width: 960px){
+    /* Estructura de la barra del navegador*/
+    nav{
+        display:flex;
+        justify-content:space-between;
+        border-bottom: 1px solid #F4F3F4;
+        border-top: 1px solid black;
+        flex-direction:row;
+        width:100vw;
+        position:fixed;
+        background-color:white;
+        margin-top: -15%;
+    }
+    /* Primera imagen navegador*/
+
+    nav img[alt='slack_logo']{
+        max-width: 200px;
+        width: auto;
+        height:auto;
+        align-self: flex-start;
+        margin: 3% 8%;
+    }
+    /*Ender los elementos de la lista de navegador*/
+    nav ul{
+        display:none;
+    }
+
+    /* TRANSICIÓN!
+    
+    Hay que desplegar un rectángulo blanco donde
+    salga el menú al clicar*/
+
+    /*HAMBURGUESA*/
+
+    nav img[alt='menu']{
+        max-width: 12%;
+        max-height: 6%;
+        width:auto;
+        margin: 3% 8%;
+    }
+
+    /*PRIMERA SECCIÓN*/
+
+    header{
+        margin-top: 15%;/*SINO SE LA COME LA BARRA*/
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        border-bottom: 1px solid #2C303F;
+    }
+    header h1{
+        padding-top:10%;
+        margin: 7% 8%;
+        font-size: 4rem;
+        color: #2C303F;
+    }
+    header p{
+        margin: 5% 8% auto 8%;
+        font-size: 2.2em;
+        color:#5b5e6d;
+    }
+
+    /*VALUE E-MAIL ADDRESS PARA CAJA EN HTML
+    value="Email address"*/
+
+    input{
+        border: 1px solid #F4F3F4;
+        margin: 3% 0 0 8%;
+        width: 50%;
+        height: 5%;
+        font-size:1.2em;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        border-radius: 6px;
+        color: #5b5e6d;
+    }
+    header button{
+        background-color: #192592;
+        margin: 3% 8% auto 3%;
+        width: 30%;
+        color:white;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-top:3%;
+        padding-bottom:3%;
+        border-radius: 6px;
+    }
+    button ~p{
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
+    header img[alt="home_work_happening"]{
+        width: 100%;
+        margin: auto 8% auto 8%;
+        align-self:center;
+    }
+    /*Primera sección
+    You're in good company y logos*/
+    main>div{
+        padding-top: 10%;
+        background-color: #F4F3F4;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    main>div>h2{
+        font-size:3em;
+        color: #2C303F;
+        width:100%;
+        margin: auto 8% auto 8%;
+        text-align:center;
+        align-self:center;
+        justify-content:space-between;
+    }
+    main>div>p{
+        color: #5b5e6d;
+        text-align:center;
+        align-self:center;
+        margin: auto 8% auto 8%;
+        font-size:2em;
+    }
+    main>div:first-of-type>button{
+        border: 2px solid#192592;
+        background-color:white;
+        color: #192592;
+        width: 35%;
+        align-self:center;
+        margin: 5% 35% 5% 35%;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-top:3%;
+        padding-bottom:3%;
+    }
+    main > div:first-of-type > img{
+        max-width:20%;
+        height: auto;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        border-bottom: 1px solid grey;
+    }
+    main > div:first-of-type > img:nth-of-type(odd){
+        border-right: 1px solid grey;
+        margin: 0 0 0 8%;
+        width: 42%;
+        padding: 5% 10% 5% 10%;
+        
+    }
+    main > div:first-of-type > img:nth-of-type(even){
+        margin-left: 0;
+        margin: 0 8% 0 0;
+        width: 50%;
+        padding: 5% 10% 5% 10%;
+    }
+    main > div:first-of-type > img:nth-of-type(even){
+        margin-left: 0;
+        margin: 0 8% 0 0;
+        width: 50%;
+        padding: 5% 10% 5% 10%;
+    }
+    main > div:first-of-type > img:nth-last-child(1){
+        border-bottom: none;
+        margin-bottom: 10%;
+    }
+    main > div:first-of-type > img:nth-last-child(2){
+        border-bottom: none;
+        margin-bottom: 10%;
+    }
+    /*TRY IT FOR FREE*/
+    main>div:last-child {
+        background-color:white;
+        margin-top:3%;
+        text-align:left;
+        display:flex;
+        flex-wrap: wrap;
+        height:40%;
+    }
+    main>div:last-child > p:first-of-type{
+        color: #2C303F;
+        font-size: 1.5em;
+    }
+    main>div:last-child input{
+        color: #2C303F;
+        font-size: 1em;
+    }
+    main>div:last-child button{
+        border-top: 1px solid #2C303F;
+        background-color: #192592;
+        color:white;
+        width: 30%;
+        align-self:center;
+        margin: 5% 35% 5% 35%;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-top:3%;
+        padding-bottom:3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    /*FOOTER*/
+
+    /*Primer DIV*/
+
+    footer {
+        margin:0
+    }
+
+    footer > div:first-of-type{
+        margin: auto 8% auto 8%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        height:80%;
+        display:flex;
+        flex-direction:row;
+        margin-bottom:8%;
+    }
+    footer > div:first-of-type img{
+        margin-left: -6.7%;
+        margin-top: -4%;
+        width:20%;
+        margin-right: 5%;
+        height: 20%;
+        
+    }
+    footer> div:first-of-type ul{
+        list-style-type: none;
+        padding:0;
+        color: #5b5e6d;
+        font-size: 1em;
+        width:15%;
+    }
+    /*Letra más grande del primero de cada lista*/
+    footer> div:first-of-type > ul > li:first-of-type{
+        font-size: 1.1em;
+    }
+    footer> div:first-of-type li{
+        margin: 8% auto 8%;
+        font-size:.8em;
+    }
+
+    footer > div:nth-child(2){
+        padding-top: 5%;
+        background-color: #F4F3F4;
+        display:flex;
+        flex-direction:column;
+    }
+
+    footer > div:nth-child(2) ul{
+        list-style-type: none;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size:1.2em;
+        align-content:space-between;
+        margin-left: 15%;
+        margin-right:15%;
+        color:#5b5e6d;
+    }
+
+    footer > div:nth-child(2) > div{
+        padding-top: 5%;
+        padding-bottom:5%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    footer > div:nth-child(2) > div img{
+        margin-left:35%;
+        height:25px;
+        width:25px;
+    }
+    footer > div:nth-child(2) > div > span{
+        margin-right: 6%;
+        width:17%;
+    }
+
+    footer > div:nth-child(2) > div > i:first-of-type{
+        margin-left:-7%;
+        width:10%;
+    }
+    footer > div:nth-child(2) > div > i:nth-of-type(2){
+        margin-left: 45%;
+    }
+
+
+}
+/* MEDIM SCREEN 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+
+@media (min-width: 961px) and (max-width: 1024px){
+    /* Estructura de la barra del navegador*/
+    nav{
+        display:flex;
+        justify-content:space-between;
+        border-bottom: 1px solid #F4F3F4;
+        border-top: 1px solid black;
+        flex-direction:row;
+        width:100vw;
+        position:fixed;
+        background-color:white;
+        margin-top: -15%;
+    }
+    /* Primera imagen navegador*/
+
+    nav img[alt='slack_logo']{
+        max-width: 200px;
+        width: auto;
+        height:auto;
+        align-self: flex-start;
+        margin: 3% 8%;
+    }
+    /*Ender los elementos de la lista de navegador*/
+    nav ul{
+        display:none;
+    }
+
+    /* TRANSICIÓN!
+    
+    Hay que desplegar un rectángulo blanco donde
+    salga el menú al clicar*/
+
+    /*HAMBURGUESA*/
+
+    nav img[alt='menu']{
+        max-width: 12%;
+        max-height: 6%;
+        width:auto;
+        margin: 3% 8%;
+    }
+
+    /*PRIMERA SECCIÓN*/
+
+    header{
+        margin-top: 15%;/*SINO SE LA COME LA BARRA*/
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        border-bottom: 1px solid #2C303F;
+    }
+    header h1{
+        padding-top:10%;
+        margin: 7% 8%;
+        font-size: 4rem;
+        color: #2C303F;
+    }
+    header p{
+        margin: 5% 8% auto 8%;
+        font-size: 2.2em;
+        color:#5b5e6d;
+    }
+
+    /*VALUE E-MAIL ADDRESS PARA CAJA EN HTML
+    value="Email address"*/
+
+    input{
+        border: 1px solid #F4F3F4;
+        margin: 3% 0 0 8%;
+        width: 50%;
+        height: 5%;
+        font-size:1.2em;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        border-radius: 6px;
+        color: #5b5e6d;
+    }
+    header button{
+        background-color: #192592;
+        margin: 3% 8% auto 3%;
+        width: 30%;
+        color:white;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-top:3%;
+        padding-bottom:3%;
+        border-radius: 6px;
+    }
+    button ~p{
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
+    header img[alt="home_work_happening"]{
+        width: 100%;
+        margin: auto 8% auto 8%;
+        align-self:center;
+    }
+    /*Primera sección
+    You're in good company y logos*/
+    main>div{
+        padding-top: 10%;
+        background-color: #F4F3F4;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+    main>div>h2{
+        font-size:2.5em;
+        color: #2C303F;
+        width:100%;
+        margin: auto 8% auto 8%;
+        text-align:center;
+        align-self:center;
+    }
+    main>div>p{
+        color: #5b5e6d;
+        text-align:center;
+        align-self:center;
+        margin: auto 8% auto 8%;
+        font-size: 1.2em;
+    }
+    main>div:first-of-type>button{
+        border: 2px solid#192592;
+        background-color:white;
+        color: #192592;
+        width: 35%;
+        align-self:center;
+        margin: 5% 35% 5% 35%;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-top:3%;
+        padding-bottom:3%;
+    }
+    main > div:first-of-type > img{
+        max-width:15%;
+        height: auto;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin:0
+    }
+    main > div:first-of-type > img:nth-of-type(n+4){
+        border:none;
+    }
+    main > div:first-of-type > img:nth-of-type(1){
+        margin-left: 8%;
+        border-bottom: 1px solid grey;
+        padding: 3% 6% 3% 6%;
+    }
+    main > div:first-of-type > img:nth-of-type(2){
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+        border-bottom: 1px solid grey;
+        padding: 3% 7.4% 3% 7.4%;
+    }
+    main > div:first-of-type > img:nth-of-type(3){
+        margin-right: 8%;
+        border-bottom: 1px solid grey;
+        padding: 3% 6% 3% 6%;
+    }
+    main > div:first-of-type > img:nth-of-type(4){
+        margin-left: 8%;
+        padding: 3% 6% 3% 6%;
+        margin-bottom: 5%;
+    }
+    main > div:first-of-type > img:nth-of-type(5){
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+        padding: 3% 7.4% 3% 7.4%;
+        margin-bottom: 5%;
+    }
+    main > div:first-of-type > img:nth-of-type(6){
+        padding: 3% 6% 3% 6%;
+        margin: 0 8% 5% 0;
+    }
+    
+    /*TRY IT FOR FREE*/
+    main>div:last-child {
+        background-color:white;
+        margin-top:3%;
+        text-align:left;
+        display:flex;
+        flex-wrap: wrap;
+        height:40%;
+    }
+    main>div:last-child > p:first-of-type{
+        color: #2C303F;
+        font-size: 1.5em;
+    }
+    main>div:last-child input{
+        color: #2C303F;
+        font-size: 1em;
+    }
+    main>div:last-child button{
+        border-top: 1px solid #2C303F;
+        background-color: #192592;
+        color:white;
+        width: 30%;
+        align-self:center;
+        margin: 5% 35% 5% 35%;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-top:3%;
+        padding-bottom:3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    /*FOOTER*/
+
+    /*Primer DIV*/
+
+    footer {
+        margin:0
+    }
+
+    footer > div:first-of-type{
+        margin: auto 8% auto 8%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        height:80%;
+        display:flex;
+        flex-direction:row;
+        margin-bottom:8%;
+    }
+    footer > div:first-of-type img{
+        margin-left: -6.7%;
+        margin-top: -4%;
+        width:20%;
+        margin-right: 5%;
+        height: 20%;
+        
+    }
+    footer> div:first-of-type ul{
+        list-style-type: none;
+        padding:0;
+        color: #5b5e6d;
+        font-size: 1em;
+        width:20%;
+    }
+    /*Letra más grande del primero de cada lista*/
+    footer> div:first-of-type > ul > li:first-of-type{
+        font-size: 1.1em;
+    }
+    footer> div:first-of-type li{
+        margin: 8% auto 8%;
+        font-size:.8em;
+    }
+
+    /* HAY QUE RESOLVER ESTO
+    footer:first-child li{
+        font-weight: 500;
+        font-size: 1.2em;
+        margin: 15% auto 15%;
+    }*/
+    footer > div:nth-child(2){
+        padding-top: 5%;
+        background-color: #F4F3F4;
+        display:flex;
+        flex-direction:column;
+    }
+
+    footer > div:nth-child(2) ul{
+        list-style-type: none;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size:1.2em;
+        align-content:space-between;
+        margin-left: 15%;
+        margin-right:15%;
+        color:#5b5e6d;
+    }
+
+    footer > div:nth-child(2) > div{
+        padding-top: 5%;
+        padding-bottom:5%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    footer > div:nth-child(2) > div img{
+        margin-left:35%;
+        height:25px;
+        width:25px;
+    }
+    footer > div:nth-child(2) > div > span{
+        margin-right: 6%;
+        width:17%;
+    }
+
+    footer > div:nth-child(2) > div > i:first-of-type{
+        margin-left:-7%;
+        width:10%;
+    }
+    footer > div:nth-child(2) > div > i:nth-of-type(2){
+        margin-left: 45%;
+    }
+}
+@media (min-width: 1024px){
+    /* Estructura de la barra del navegador*/
+    nav{
+        display:flex;
+        justify-content:space-between;
+        border-bottom: 1px solid #F4F3F4;
+        border-top: 1px solid black;
+        flex-direction:row;
+        width:100vw;
+        position:fixed;
+        background-color:white;
+        margin-top: -15%;
+        height: 150px;
+    }
+    /* Primera imagen navegador*/
+
+    nav img[alt='slack_logo']{
+        max-width: 200px;
+        width: auto;
+        height:auto;
+        align-self: flex-start;
+        margin: 3% 8%;
+    }
+    /*Ender los elementos de la lista de navegador*/
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-self:center;
+        margin-right: 8%;
+    }
+    nav > ul > li{
+        margin: 0 2% 0 2%;
+    }
+    nav > ul > li:last-of-type{
+        border: 1px solid blue;
+        border-radius: 4px;
+        padding: 3% 3% 3% 3%;
+    }
+
+    /* TRANSICIÓN!
+    
+    Hay que desplegar un rectángulo blanco donde
+    salga el menú al clicar*/
+
+    /*HAMBURGUESA*/
+
+    nav img[alt='menu']{
+        display:none;
+    }
+
+    /*PRIMERA SECCIÓN*/
+
+    header{
+        margin-top: 15%;/*SINO SE LA COME LA BARRA*/
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        border-bottom: 1px solid #2C303F;
+    }
+    header h1{
+        padding-top:10%;
+        margin: 7% 8%;
+        font-size: 4rem;
+        color: #2C303F;
+    }
+    header p{
+        margin: 5% 8% auto 8%;
+        font-size: 2.2em;
+        color:#5b5e6d;
+    }
+
+    /*VALUE E-MAIL ADDRESS PARA CAJA EN HTML
+    value="Email address"*/
+
+    input{
+        border: 1px solid #F4F3F4;
+        margin: 3% 0 0 8%;
+        width: 50%;
+        height: 5%;
+        font-size:1.2em;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        border-radius: 6px;
+        color: #5b5e6d;
+    }
+    header button{
+        background-color: #192592;
+        margin: 3% 8% auto 3%;
+        width: 30%;
+        color:white;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-top:3%;
+        padding-bottom:3%;
+        border-radius: 6px;
+    }
+    button ~p{
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
+    header img[alt="home_work_happening"]{
+        width: 100%;
+        margin: auto 8% auto 8%;
+        align-self:center;
+    }
+    /*Primera sección
+    You're in good company y logos*/
+    main>div{
+        padding-top: 10%;
+        background-color: #F4F3F4;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+    main>div>h2{
+        font-size:2.5em;
+        color: #2C303F;
+        width:100%;
+        margin: auto 8% auto 8%;
+        text-align:center;
+        align-self:center;
+    }
+    main>div>p{
+        color: #5b5e6d;
+        text-align:center;
+        align-self:center;
+        margin: auto 8% auto 8%;
+        font-size: 1.2em;
+    }
+    main>div:first-of-type>button{
+        border: 2px solid#192592;
+        background-color:white;
+        color: #192592;
+        width: 35%;
+        align-self:center;
+        margin: 5% 35% 5% 35%;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-top:3%;
+        padding-bottom:3%;
+    }
+    main > div:first-of-type > img{
+        max-width:15%;
+        height: auto;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin:0
+    }
+    main > div:first-of-type > img:nth-of-type(n+4){
+        border:none;
+    }
+    main > div:first-of-type > img:nth-of-type(1){
+        margin-left: 8%;
+        border-bottom: 1px solid grey;
+        padding: 3% 6% 3% 6%;
+    }
+    main > div:first-of-type > img:nth-of-type(2){
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+        border-bottom: 1px solid grey;
+        padding: 3% 7.4% 3% 7.4%;
+    }
+    main > div:first-of-type > img:nth-of-type(3){
+        margin-right: 8%;
+        border-bottom: 1px solid grey;
+        padding: 3% 6% 3% 6%;
+    }
+    main > div:first-of-type > img:nth-of-type(4){
+        margin-left: 8%;
+        padding: 3% 6% 3% 6%;
+        margin-bottom: 5%;
+    }
+    main > div:first-of-type > img:nth-of-type(5){
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+        padding: 3% 7.4% 3% 7.4%;
+        margin-bottom: 5%;
+    }
+    main > div:first-of-type > img:nth-of-type(6){
+        padding: 3% 6% 3% 6%;
+        margin: 0 8% 5% 0;
+    }
+    
+    /*TRY IT FOR FREE*/
+    main>div:last-child {
+        background-color:white;
+        margin-top:3%;
+        text-align:left;
+        display:flex;
+        flex-wrap: wrap;
+        height:40%;
+    }
+    main>div:last-child > p:first-of-type{
+        color: #2C303F;
+        font-size: 1.5em;
+    }
+    main>div:last-child input{
+        color: #2C303F;
+        font-size: 1em;
+    }
+    main>div:last-child button{
+        border-top: 1px solid #2C303F;
+        background-color: #192592;
+        color:white;
+        width: 30%;
+        align-self:center;
+        margin: 5% 35% 5% 35%;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-top:3%;
+        padding-bottom:3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    /*FOOTER*/
+
+    /*Primer DIV*/
+
+    footer {
+        margin:0
+    }
+
+    footer > div:first-of-type{
+        margin: auto 8% auto 8%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        height:80%;
+        display:flex;
+        flex-direction:row;
+        margin-bottom:8%;
+    }
+    footer > div:first-of-type img{
+        margin-left: -6.7%;
+        margin-top: -4%;
+        width:20%;
+        margin-right: 5%;
+        height: 20%;
+        
+    }
+    footer> div:first-of-type ul{
+        list-style-type: none;
+        padding:0;
+        color: #5b5e6d;
+        font-size: 1em;
+        width:20%;
+    }
+    /*Letra más grande del primero de cada lista*/
+    footer> div:first-of-type > ul > li:first-of-type{
+        font-size: 1.1em;
+    }
+    footer> div:first-of-type li{
+        margin: 8% auto 8%;
+        font-size:.8em;
+    }
+
+    /* HAY QUE RESOLVER ESTO
+    footer:first-child li{
+        font-weight: 500;
+        font-size: 1.2em;
+        margin: 15% auto 15%;
+    }*/
+    footer > div:nth-child(2){
+        padding-top: 5%;
+        background-color: #F4F3F4;
+        display:flex;
+        flex-direction:column;
+    }
+
+    footer > div:nth-child(2) ul{
+        list-style-type: none;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size:1.2em;
+        align-content:space-between;
+        margin-left: 15%;
+        margin-right:15%;
+        color:#5b5e6d;
+    }
+
+    footer > div:nth-child(2) > div{
+        padding-top: 5%;
+        padding-bottom:5%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    footer > div:nth-child(2) > div img{
+        margin-left:35%;
+        height:25px;
+        width:25px;
+    }
+    footer > div:nth-child(2) > div > span{
+        margin-right: 6%;
+        width:17%;
+    }
+
+    footer > div:nth-child(2) > div > i:first-of-type{
+        margin-left:-7%;
+        width:10%;
+    }
+    footer > div:nth-child(2) > div > i:nth-of-type(2){
+        margin-left: 45%;
+    }
+}
+/*
+div>div{
+    width:50px;
+    height: 50px;
+    background-color: crimson;
+    border-radius: 50%;
+    bottom: 0;
+    position: absolute;
+    left: 90px;
+    animation: bounce 2s infinite
+  }
+
+  @keyframes bounce {
+    0%{
+      bottom: calc(100% - 55px);
+    }
+    10%{
+      bottom: 0;
+    } */
