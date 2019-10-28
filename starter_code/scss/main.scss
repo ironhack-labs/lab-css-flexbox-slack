@@ -34,6 +34,7 @@ nav{
     display: none;
   }
 }/*end of nav*/
+/*----------------------------------------------------------------------------*/
 
 /*HEADER*/
 header{
@@ -73,6 +74,7 @@ form{
     background-color: $color-blue;
   }
 }/*end of header*/
+/*----------------------------------------------------------------------------*/
 
 /*UNIVERSAL BUTTON STYLES*/
 .button-style{
@@ -88,6 +90,8 @@ img[alt="home_work_happening"]{
   width: 100%;
   padding-top: 30px;
 }
+
+/*----------------------------------------------------------------------------*/
 /*MAIN*/
 main{
   #container-main{
@@ -122,11 +126,12 @@ main{
     font-size: 1.6em;
   }
 } /*end of main*/
+/*----------------------------------------------------------------------------*/
 
 hr{
   border: 1px solid #EBEBEB;
 }
-
+/*FOOTER*/
 footer{
   padding-top: 40px;
   font-size: 1.3em;
@@ -172,7 +177,8 @@ footer{
       display: inline;
     }
     img[alt="flag"]{
-      width: 8%;
+      width: 40px;
+      height: 40px;
     }
     div{
       margin: 0 auto;
@@ -182,7 +188,6 @@ footer{
       justify-content: space-between;
       width: 44%;
       padding-top: 40px;
-
     }
     div > div:last-of-type{
       display: flex;
@@ -198,9 +203,142 @@ footer{
 /*----------------------------------------------------------------------------*/
 /*Ipad Version*/
 @media (min-width: 767px){
+  /*Section header*/
+  header{
+    .button-style{
+      width: 30%;
+    }
+    form{
+      display: flex;
+      input{
+        width: 50%;
+        margin: 20px 10px 20px 0;
+      }
+    }
+    p:last-of-type{
+      text-align: left;
+    }
+  }   /*End header*/
+  /*Section Main*/
+  main{
+    img[alt*="clients"]{
+      width: 34%;
+      height: auto;
+      margin: 40px auto;
+      display: inline-block;
+    }
+    #la-img{
+      width: 34%;
+      height: 34%;
+    }
+    #logo-container{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    /*clients form*/
+    #container-form-two{
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      div{
+        width: 50%;
+        p{
+          font-size: 1em;
+        }
+      }
+      h3,p{
+        text-align: left;
+      }
+      p{
+        padding: 0;
+      }
+    }
+    #form-two {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      input{
+        width: 45%;
+        margin: 20px 0;
+      }
+      button{
+        width: 45%;
+        margin-left: 10px;
+      }
+    }
+  }/*End of main*/
 
-  
-}
+  footer{
+    #footer-top{
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      ul{
+        width: 24%;
+        font-size: 0.8em;
+        padding: 0;
+      }
+      #footer-links{
+        width: 80%;
+        box-sizing: border-box;
+        padding-top: 0;
+      }
+      img[alt="logo-simple"]{
+        width: 80px;
+        height: 80px;
+      }
+      li{
+        padding: 8px 0;
+        margin-right: 10px;
+      }
+    }
+    #footer-bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      padding: 0 30px;
+      ul{
+        padding: 0;
+        margin: 0;
+        width: 40%
+      }
+      li{
+        padding: 0 8px;
+        font-size: .8em;;
+      }
+      div{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 400px;
+        margin: 0;
+      }
+      div > div:first-of-type{
+        width: 40%;
+        padding-top:0;
+        span{
+          font-size: .8em;
+        }
+      }
+      div > div:last-of-type{
+        width: 30%;
+        padding:0;
+        margin-left: 50px;
+      }
+      img[alt="flag"]{
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+
+  }/*End of footer*/
+}/*--END IPAD VERSION MEDIA QUERY---------------------------------------------*/
+
 
 
 
@@ -211,6 +349,6 @@ footer{
 /*Mobile Version*/
 @media (min-width: 960px){
  body{
-   background-color: blue;
+   background-color: salmon;
  }
 }

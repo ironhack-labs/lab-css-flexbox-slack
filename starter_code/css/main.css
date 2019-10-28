@@ -28,6 +28,7 @@ nav #main-nav {
 }
 
 /*end of nav*/
+/*----------------------------------------------------------------------------*/
 /*HEADER*/
 header {
   padding: 100px 30px 40px 30px;
@@ -68,6 +69,7 @@ form button {
 }
 
 /*end of header*/
+/*----------------------------------------------------------------------------*/
 /*UNIVERSAL BUTTON STYLES*/
 .button-style {
   width: 100%;
@@ -83,6 +85,7 @@ img[alt=home_work_happening] {
   padding-top: 30px;
 }
 
+/*----------------------------------------------------------------------------*/
 /*MAIN*/
 main #container-main {
   background-color: #F4F3F4;
@@ -117,10 +120,12 @@ main div:last-child > div > h3 {
 }
 
 /*end of main*/
+/*----------------------------------------------------------------------------*/
 hr {
   border: 1px solid #EBEBEB;
 }
 
+/*FOOTER*/
 footer {
   padding-top: 40px;
   font-size: 1.3em;
@@ -168,7 +173,8 @@ footer #footer-bottom li {
   display: inline;
 }
 footer #footer-bottom img[alt=flag] {
-  width: 8%;
+  width: 40px;
+  height: 40px;
 }
 footer #footer-bottom div {
   margin: 0 auto;
@@ -191,13 +197,149 @@ footer #footer-bottom div > div:last-of-type {
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 /*Ipad Version*/
+@media (min-width: 767px) {
+  /*Section header*/
+  header .button-style {
+    width: 30%;
+  }
+  header form {
+    display: flex;
+  }
+  header form input {
+    width: 50%;
+    margin: 20px 10px 20px 0;
+  }
+  header p:last-of-type {
+    text-align: left;
+  }
+
+  /*End header*/
+  /*Section Main*/
+  main {
+    /*clients form*/
+  }
+  main img[alt*=clients] {
+    width: 34%;
+    height: auto;
+    margin: 40px auto;
+    display: inline-block;
+  }
+  main #la-img {
+    width: 34%;
+    height: 34%;
+  }
+  main #logo-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main #container-form-two {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main #container-form-two div {
+    width: 50%;
+  }
+  main #container-form-two div p {
+    font-size: 1em;
+  }
+  main #container-form-two h3, main #container-form-two p {
+    text-align: left;
+  }
+  main #container-form-two p {
+    padding: 0;
+  }
+  main #form-two {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  main #form-two input {
+    width: 45%;
+    margin: 20px 0;
+  }
+  main #form-two button {
+    width: 45%;
+    margin-left: 10px;
+  }
+
+  /*End of main*/
+  footer #footer-top {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  footer #footer-top ul {
+    width: 24%;
+    font-size: 0.8em;
+    padding: 0;
+  }
+  footer #footer-top #footer-links {
+    width: 80%;
+    box-sizing: border-box;
+    padding-top: 0;
+  }
+  footer #footer-top img[alt=logo-simple] {
+    width: 80px;
+    height: 80px;
+  }
+  footer #footer-top li {
+    padding: 8px 0;
+    margin-right: 10px;
+  }
+  footer #footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 30px;
+  }
+  footer #footer-bottom ul {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+  }
+  footer #footer-bottom li {
+    padding: 0 8px;
+    font-size: 0.8em;
+  }
+  footer #footer-bottom div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 400px;
+    margin: 0;
+  }
+  footer #footer-bottom div > div:first-of-type {
+    width: 40%;
+    padding-top: 0;
+  }
+  footer #footer-bottom div > div:first-of-type span {
+    font-size: 0.8em;
+  }
+  footer #footer-bottom div > div:last-of-type {
+    width: 30%;
+    padding: 0;
+    margin-left: 50px;
+  }
+  footer #footer-bottom img[alt=flag] {
+    width: 30px;
+    height: 30px;
+  }
+
+  /*End of footer*/
+}
+/*--END IPAD VERSION MEDIA QUERY---------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 /*Mobile Version*/
 @media (min-width: 960px) {
   body {
-    background-color: blue;
+    background-color: salmon;
   }
 }
 
