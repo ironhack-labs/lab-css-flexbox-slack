@@ -12,6 +12,7 @@ nav grey: #5b5e6d;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+/*     outline: 1px solid red */
 }
 
 body {
@@ -20,13 +21,31 @@ body {
     letter-spacing: 0.15em;
 }
 
-nav {
+#navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+    border-bottom: 1px solid #c3c7d8;
+    background: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + #header {
+    padding-top: 13em;
+  }
+
+/* nav {
     display: flex;
     justify-content: space-between;
     padding: 0.8em;
     border-bottom: 1px solid #5e5f66;
-
-}
+} */
 
 nav img {
     width: 27%;
@@ -60,23 +79,149 @@ nav img {
 
 .using-slack {
     text-align: center;
+    padding-top: 2em;
+    font-size: 2em;
+    line-height: 1.5em;
+    padding-right: 1em
 }
 
 button {
     display: block;
     background-color: #192592;
     border: none;
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     color: white;
     font-size: 2em;
     padding: 1.2em;
     width: 80vw;
     margin: 0 auto;
-/*     display: flex;
-    justify-content: center; */
-    
+    margin-top: 1.8em;
+    margin-bottom: -1.2em;
+    font-weight: bold;
 }
 
+.mail-box {
+    display: block;
+    width: 80vw;
+    background-color: white;
+    border: 2px solid lightgray;
+    padding: 1.2em;
+    font-size: 2em;
+    border-radius: 0.3em;
+    margin: 0 auto;
+    margin-top: 1.8em;
+}
+
+#header img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5em;
+    width: 100%;
+}
+
+#partners button {
+    background: white;
+    color: #192592;
+    border: 1.5px solid #355fb8;
+    margin-bottom: 3.6em;
+}
+
+#partners {
+    border-top: 1px solid #c3c7d8; /* Can't quite get the color */
+    background: #F4F3F4;
+    padding-bottom: 8em;
+}
+
+h2 {
+    margin-top: 2em;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3em;
+    color: #2C303F;
+}
+
+#partners p {
+    text-align: center;
+    padding-top: 1.2em;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.partners-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#partners img {
+    width: 40vw;
+}
+
+#partners hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 80vw;               
+    background-color:#c3c7d8;
+    height: 1px;
+    margin: 4em 0;
+}
+
+#buttons2 h2 {
+    margin-bottom: -1em;
+}
+
+#buttons2 hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 80vw;               
+    background-color:#c3c7d8;
+    height: 1px;
+    margin-top: 8em;
+}
+
+
+#footer > div > img {
+    margin-left: 1em;
+}
+
+ul {
+    list-style: none;
+    color: #2C303F;
+    font-weight: bolder;
+}
+
+#footer li {
+    font-weight: 400;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: 10em;
+    margin-right: 10em;
+    font-size: 1em;
+    line-height: 3em;
+    padding-right: 1em;
+}
+
+#real-footer img {
+    width: 15%;
+}
+
+#real-footer {
+    background: #F4F3F4;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+/*     justify-content: space-between; */
+    align-items: center;
+}
 
 @media (min-width: 769px) {
     body {
