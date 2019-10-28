@@ -5,3 +5,461 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    
+} 
+img {
+    width: 100%;
+}
+#container {
+    width: 100vw;
+}
+/*Titles*/
+h1 {
+    font-family: 'PT Serif', serif;
+    color: #2C303F;
+    font-size: 5em;
+}
+h2 {
+    font-family: 'PT Serif', serif;
+    color: #2C303F;
+    font-size: 3em;
+    padding: 10% 0 5%;
+}
+p {
+    font-size: 2.5em;
+    color: #5b5e6d;
+}
+
+
+
+
+/*Mobile First*/
+/*NAV*/
+nav {
+    width: 100%;
+    border-bottom: gainsboro solid thin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+}
+nav img{
+    width: 30%;
+    padding: 4% 0% 0% 6%;
+}
+nav ul {
+    display: none;
+}
+nav svg {
+    width: 6%;
+    color: #5b5e6d;
+    padding-right: 5%;
+} 
+
+/*HEADER*/
+header {
+    display: flex; 
+    flex-flow: column wrap;
+}
+header div {
+    width: 90%;
+    padding: 0% 0%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+header img {
+    order: 1;
+    margin: 10% 0;
+    width: 85%;
+}
+
+header h1 {
+    padding: 10% 0;
+    margin-top: 20%;
+
+}
+form{
+    width: 100%;
+    margin-top: 10%;
+}
+
+form label {
+    display: block;
+    border: thin solid lightgrey;
+    border-radius: 10px;
+    padding: 4%;
+    width: 88%;
+    font-size: 2.1em;
+    color: #5b5e6d;
+}
+ header button {
+     background-color: #192592;
+     width: 97%;
+     color: white;
+     font-size: 2.2em;
+     padding: 4% ;
+     border-radius: 10px;
+     margin: 5% 0;
+}
+
+header div p:last-child {
+     align-self: center;
+}
+
+
+ /*MAIN*/
+main p{
+    width: 80%;
+    font-size: 1.8em;
+    font-weight: 100;
+    text-align: center;
+}
+main div {
+    width: 100%;
+    margin: 0% auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div form button {
+    width: 97%;
+    padding: 4% ;
+    border-radius: 10px;
+    margin: 5% 0;
+    font-size: 2.2em;
+}
+main > div:nth-child(1) > form > button {
+    width: 88%;
+    margin: 3% auto;
+    display: block;
+
+}
+main div:first-child {
+    background-color: lightgray;
+    border-bottom: solid thin gray;
+    border-top: solid thin gray;
+    
+}
+
+
+main div:first-child button {
+    border: solid thin #192592;
+    background-color: #ffffff;
+    color: #192592;
+    
+}
+
+main div:first-child img {
+    width: 40%;
+    margin: 5% 0%;
+    padding: 10% 20%;
+    border-bottom: solid thin gray;
+}
+
+main div:first-child img:last-child {
+    border-bottom: none;
+} 
+
+main div:nth-child(2) button {
+    background-color: #192592;
+    color: #ffffff;
+}
+
+main div:nth-child(2) form {
+    width: 80%;
+}
+
+
+/*-----FOOTER-----*/
+footer {
+    font-size: 2em;
+    color: #5b5e6d;
+}
+footer div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer div:first-child img{
+    width: 40%;
+    padding-right: 40%;
+}
+
+footer div:first-child ul li:first-child {
+    font-weight: 900;
+}
+
+footer ul {
+    width: 40%;
+    margin-left: 8%;
+}
+
+footer li {
+    list-style: none;
+    padding: 10% 0%;
+}
+footer div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer div:nth-child(2) ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+footer div:nth-child(2) li {
+    font-weight: 900;
+    display: inline;
+}
+
+footer span {
+    font-weight: 900;
+}
+#lenguage {
+    width: 80%;
+    margin: 0 auto;
+    
+    align-items: center;
+}
+#lenguage img {
+    width: 10%;
+    padding: 0% 5%;
+}
+
+#lenguage i{ 
+    margin: 5%;
+}
+
+#lenguage div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#lenguage div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.fa-twitter, .fa-facebook, .fa-youtube-play {
+    font-size: 1.5em;
+    margin: 5%;
+}
+
+@media (min-width: 961px) {
+    nav img{
+        width: 15%;
+    }
+    nav svg {
+        width: 3%;
+    }
+    p {
+        font-size: 1.4em;
+    }
+
+    /*HEADER*/
+    header {
+       flex-flow: row wrap; 
+    }
+    form {
+        width: 50%;
+        margin-top: 5%;
+    }
+    form label {
+        font-size: 1.2em;
+        padding: 4%;
+    }
+    header button {
+        width: 25%;
+        font-size: 1.2em;
+        padding: 2%;
+    }
+    header img {
+        display: flex;
+        align-self: center;
+        margin: 10% auto;
+        width: 69%;
+    }
+
+    /*MAIN*/
+    main div:first-child {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    main p {
+        font-size: 1.2em;
+    }
+    main div button {
+        width: 25%;
+        font-size: 1.2em;
+        padding: 2%;
+        margin: 3% 20%;
+    }
+    main > div:nth-child(1) > form{
+        width: 100%;
+    }
+    main > div:nth-child(1) > form > button {
+        width: 30%;
+        font-size: 1.2em;
+        padding: 2%;
+    }
+    main div:first-child img  {
+        width: 20%;
+        margin: 5% 0;
+        padding: 7% 8%;
+        border: none;
+    }
+    main div:nth-child(2) {
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: solid thin gray;
+        padding-bottom: 4%;
+    }
+    main div:nth-child(2) span {
+        margin-left: 5%;
+    }
+    main div:nth-child(2) h2{
+        font-size: 2em;
+    }
+    
+    main div:nth-child(2) form {
+        width: 60%;
+        margin-right: 5% ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    main div:nth-child(2) label{
+        width: 30%;
+        height: fit-content;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+    main div:nth-child(2) p {
+        width: fit-content;
+        display: block;
+    }
+    main div:nth-child(2) input {
+        width: 5%;
+    }
+    main div:nth-child(2) form button {
+        width: 30%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        font-size: 1.2em;
+    }
+    /*FOOTER*/
+    footer {
+        font-size: 1.2em;
+        margin-top: 5%;
+    }
+    footer  div:first-child {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 5%;
+    }
+    footer div:first-child img {
+        width: 15%;
+        padding-right: 0%;
+        margin-left: 4%;
+    }
+    footer li {
+        padding: 5% 0%;
+    }
+    footer ul {
+        width: 13%;
+        margin-left: 6%;
+    }
+    
+    footer div:nth-child(1) ul:nth-child(2){
+        margin-left: 2%;
+    }
+
+    footer div:nth-child(2) {
+        background-color: lightgrey;
+        padding: 2% 0;
+
+    }
+    footer div:nth-child(2) ul {
+        width: 46%;
+        flex-direction: row;
+    }
+    #lenguage {
+        width: 49%;
+    }
+    #lenguage div:nth-child(1) {
+        width: 50%;
+    }
+    #lenguage div:nth-child(2) {
+        width: 45%;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    main div:first-child img {
+        width: 18%;
+        margin: 2% 0;
+        padding: 5% 5%;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav ul {
+        display: block;
+        list-style: none;
+        width: 45%;
+    }
+    nav ul li {
+        display: inline-block;
+        margin-left: 2%;
+        color: #5b5e6d;
+        font-size: 1.2em;
+    }
+    nav img {
+        padding: 1% 0% 1% 4%
+    }
+    nav svg {
+        display: none;
+    }
+    header {
+        flex-flow: row wrap;
+        margin-bottom: 5%;
+    }
+    header div {
+        width: 50%;
+    }
+    header img {
+        width: 40%;
+        order: 0;
+        margin: 0;
+        display: flex;
+        align-self: flex-start;
+        margin-top: 20%;
+    }
+    header form {
+        display: none;
+    }
+    header div p:last-child {
+        align-self: inherit;
+    }
+}
