@@ -30,6 +30,7 @@ nav{
       list-style: none;
     }
   }
+
   #main-nav{
     display: none;
   }
@@ -346,9 +347,103 @@ footer{
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
-/*Mobile Version*/
+/*Desktop Version*/
 @media (min-width: 960px){
- body{
-   background-color: salmon;
+
+ nav{
+   i[id="burger-menu"]{
+     display: none;
+   }
+   div{
+     height: 90px;
+     align-items: center;
+     padding: 0 70px;
+
+   }
+   #main-nav{
+     padding: 0;
+     display: flex;
+     ul{
+       font-family: 'Muli', sans-serif;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+       li{
+         margin: 10px;
+         font-size: 1.2em;
+       }
+       li:last-of-type{
+         padding: 10px;
+         border: 1px solid $color-header-gray;
+         border-radius: 6px;
+       }
+     }
+   }/*end of main nav*/
+ }/*end of nav*/
+ header{
+   padding: 140px 70px 40px 70px;
+   display: flex;
+   flex-direction: row-reverse;
+   div{
+     padding-left: 40px;
+     h1{
+       font-size: 6.4em;
+       line-height: 100px;
+     }
+   }
+ }/*end of header*/
+ main{
+   #container-main{
+     padding: 90px 70px;
+     button{
+       width: 20%;
+       margin-top: 30px;
+     }
+   }
+   img[alt*="clients"]{
+     width: 24%;
+     height: 24%;
+     margin: 40px auto;
+     padding: 20px;
+   }
+   #la-img{
+     width: 24%;
+     height: 24%;
+   }
+   #container-form-two{
+     padding: 80px 70px;
+   }
+   #form-two {
+     input{
+       width: 45%;
+       margin: 20px 0;
+     }
+     button{
+       width: 28%;
+       margin-left: 10px;
+     }
+   }
+ } /*End of main*/
+
+ footer{
+  #footer-top{
+    margin: 0 70px;
+  }
+  #footer-links{
+    width: 70%;
+    justify-content: flex-end;
+    ul{
+      width: 20%;
+    }
+  }
+  #footer-bottom{
+    padding: 0 70px;
+    ul{
+      text-align: left;
+    }
+  }
+
  }
-}
+
+
+}/*--END OF DESKTOP-----------------------------------------------------------*/
