@@ -5,7 +5,7 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Montserrat', sans-serif;
 }
@@ -16,7 +16,7 @@ body, html {
 img {width: 100%; height: auto;}
 nav {
   width: 100%;
-  height: 90px;
+  /* height: 90px; */
   position: fixed;
   top: 0;
   left: 0;
@@ -143,10 +143,54 @@ header {
 .header-img, .header-content {
   width: 50%;
 }
-
+.header-content h1 {
+  color: #2C303F;
+  font-family: serif;;
+  font-size: 3em;
+}
+.header-content p {
+  color: #5b5e6d;
+  font-weight: lighter;
+  line-height: 30px;
+  margin-bottom: 45px;
+}
+.email-submit {
+  width: 100%;
+  display: flex;
+}
+.email-submit input[type = email] {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 15px 10px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: #757575;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+::placeholder {
+  color: #757575;
+  opacity: 1; /* Firefox */
+}
+.email-submit button {
+  position: relative;
+  width: 250px;
+  height: 55px;
+  background-color: #192592;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 10px;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+p.slack-sign {
+  text-align: center;
+}
 .grey-background {
     background-color: #F4F3F4;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .grey-background h2 {
@@ -177,7 +221,7 @@ header {
     font-weight: bolder;
 }
 
-.grey-background img:nth-child(1) {
+/* .grey-background img:nth-child(1) {
     animation-name: airbnb;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -314,7 +358,7 @@ header {
     100% {
         top: 0px;
     }
-}
+} */
 
 .bottom {
     display: flex;
@@ -330,7 +374,7 @@ header {
 
 footer {
     position: relative;
-    top: 800px;
+    /* top: 800px; */
     width: 100%
 }
 
@@ -350,12 +394,29 @@ footer img.footer-img {
 }*/
 
 .flexbox ul {
-    text-decoration: none;
+    list-style: none;
+    width: 45%;
+    position: relative;
+    margin: 0 0 15px;
+    padding: 0;
+}
+.flexbox ul li:first-child {
+  font-weight: bold;
+}
+.footerFlex {
+  flex-wrap: wrap;
 }
 
 /* Mobile-First */
 @media all and (max-width: 767px) {
-
+  .email-submit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .email-submit button {
+    width: 100%;
+  }
 }
 /* max-width from Tablet for Menu Navbar Hambuger */
 @media all and (max-width: 960px) {
@@ -363,8 +424,11 @@ footer img.footer-img {
     flex-direction: column;
     align-items: flex-start;
   }
+  nav img {
+    padding-top: 15px;
+  }
   .nav-header .menu {
-    max-height: 0;
+    max-height: 15px;
     transition: max-height .2s ease-out;
   }
   .nav-header .menu-icon .navicon {
@@ -385,10 +449,11 @@ footer img.footer-img {
   }
   .nav-header .menu-icon {
     display: block;
+    top: 15px;
   }
   .headerflex {
     flex-direction: column;
-    padding: 30px 0;
+    padding: 20px 0;
   }
   .header-img, .header-content {
     width: 100%;
@@ -403,10 +468,10 @@ footer img.footer-img {
     /*.flexbox {
         width: 100%;
         flex-wrap: wrap;
-    }*/
+    }
     .flexbox ul {
         width: 45%;
-    }
+    }*/
 }
 /* Tablet */
 @media all and (min-width: 768px) and (max-width: 960px) {
