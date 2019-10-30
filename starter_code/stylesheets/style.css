@@ -6,7 +6,7 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, footer {
   font-family: 'Montserrat', sans-serif;
 }
 body, html {
@@ -190,7 +190,9 @@ p.slack-sign {
 }
 .grey-background {
     background-color: #F4F3F4;
-    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .grey-background h2 {
@@ -210,7 +212,8 @@ p.slack-sign {
 .grey-background button {
     border-color: blue;
     border-radius: 2px;
-    width: 150px;
+    width: 300px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,144 +224,23 @@ p.slack-sign {
     font-weight: bolder;
 }
 
-/* .grey-background img:nth-child(1) {
-    animation-name: airbnb;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-    position: relative;
-    top: 0 auto;
+.grey-background hr {
+  width: 80%;
 }
 
-@keyframes airbnb {
-    0% {
-        top: 0px;
-    }
-
-    50% {
-        top: 50px; 
-    }
-
-    100% {
-        top: 0px;
-    }
+.customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
 }
 
-.grey-background img:nth-child(2) {
-    animation-name: capitalone;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-delay: 0.5s;
-    position: relative;
-    top: 0 auto;
+.customers img{
+  width: 60%;
+  padding: 50px;
+
 }
 
-@keyframes capitalone {
-    0% {
-        top: 50px;
-    }
-
-    50% {
-        top: -50px; 
-    }
-
-    100% {
-        top: 50px;
-    }
-}
-
-.grey-background img:nth-child(3) {
-    animation-name: harvard;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    position: relative;
-    top: 0 auto;
-}
-
-@keyframes harvard {
-    0% {
-        top: 50px;
-    }
-
-    50% {
-        top: -50px; 
-    }
-
-    100% {
-        top: 50px;
-    }
-}
-
-.grey-background img:nth-child(4) {
-    animation-name: latimes;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-delay: 1.5s;
-    position: relative;
-    top: 0 auto;
-}
-
-@keyframes latimes {
-    0% {
-        top: 50px;
-    }
-
-    50% {
-        top: -50px; 
-    }
-
-    100% {
-        top: 50px;
-    }
-}
-
-.grey-background img:nth-child(5) {
-    animation-name: oracle;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-    position: relative;
-    top: 0 auto;
-}
-
-@keyframes oracle {
-    0% {
-        top: 50px;
-    }
-
-    50% {
-        top: -50px; 
-    }
-
-    100% {
-        top: 50px;
-    }
-}
-
-
-.grey-background img:nth-child(6) {
-    animation-name: ticket;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-    position: relative;
-    top: 0 auto;
-}
-
-@keyframes ticket {
-    0% {
-        top: 0px;
-    }
-
-    50% {
-        top: -50px; 
-    }
-
-    100% {
-        top: 0px;
-    }
-} */
 
 .bottom {
     display: flex;
@@ -366,10 +248,22 @@ p.slack-sign {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 800px;
+    font-size: 20px;
 }
+
 .bottom p:nth-child(1) {
     font-weight: bolder;
+}
+
+.bottom button {
+  width: 250px;
+  height: 55px;
+  background-color: #192592;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 10px;
+  font-size: 1em;
+  letter-spacing: 1px;
 }
 
 footer {
@@ -382,11 +276,49 @@ footer {
     width: 100%
 }*/
 
-footer img.footer-img {
-    height: 100px;
-    width: 100px;
+footer > div:nth-child(1) {
+    display: flex;
+    height: 300px;
+    align-items: flex-start;
 
 }
+
+footer > div:nth-child(1) > img {
+  width: 300px;
+  height: 300px;
+}
+
+.flexbox1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flexbox1 > ul > li {  
+  list-style-type: none;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.flexbox1 > ul > li:nth-child(1) {  
+  font-weight: bolder;
+}
+
+.flexbox2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flexbox2 > ul > li {  
+  list-style-type: none;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.flexbox2 > ul > li:nth-child(1) {  
+  font-weight: bolder;
+}
+
+
 
 /*.flexbox {
     display: flex;
