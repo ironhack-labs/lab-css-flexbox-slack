@@ -134,6 +134,9 @@ header {
   width: 85%;
   margin: 0 auto;
 }
+.container2 {
+  padding: 0 7.5%;
+}
 .flexbox {
   display: flex;
 }
@@ -145,7 +148,7 @@ header {
 }
 .header-content h1 {
   color: #2C303F;
-  font-family: serif;;
+  font-family: serif;
   font-size: 3em;
 }
 .header-content p {
@@ -200,6 +203,9 @@ p.slack-sign {
     justify-content: center;
     align-items: flex-end;
     padding-top: 30px;
+    color: #2C303F;
+    font-family: serif;
+    font-size: 1.8em;
 }
 
 .grey-background p {
@@ -207,6 +213,11 @@ p.slack-sign {
     justify-content: center;
     text-align: center;
     padding: 0px 40px 20px 40px;
+    color: #5b5e6d;
+    font-weight: lighter;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 45px;
 }
 
 .grey-background button {
@@ -241,20 +252,55 @@ p.slack-sign {
 
 }
 
-
 .bottom {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     position: relative;
-    font-size: 20px;
+    padding: 40px 0;
+    border-bottom: 1px solid #999;
 }
-
-.bottom p:nth-child(1) {
-    font-weight: bolder;
+.bottom-content, .bottom-submit {
+  width: 100%;
 }
-
+.bottom h3 {
+  color: #2C303F;
+  font-family: serif;
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+.bottom p {
+  color: #5b5e6d;
+  font-weight: lighter;
+  text-align: center;
+}
+.bottom p a {
+  text-decoration: none;
+  padding-bottom: 3px;
+  color: #1264a3;
+  border-bottom: 1px solid #1264a3;
+}
+.bottom-submit {
+  display: flex;
+}
+.bottom-submit input[type = email] {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 15px 10px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: #757575;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+::placeholder {
+  color: #757575;
+  opacity: 1; /* Firefox */
+}
 .bottom button {
   width: 250px;
   height: 55px;
@@ -276,27 +322,33 @@ footer {
     width: 100%
 }*/
 
-footer > div:nth-child(1) {
+footer .flexbox {
     display: flex;
-    height: 300px;
+    justify-content: space-between;
     align-items: flex-start;
+    padding: 40px 0;
 
 }
-
-footer > div:nth-child(1) > img {
-  width: 300px;
-  height: 300px;
+footer .slack-icon {
+  width: 25%;
+}
+footer .slack-icon img {
+  width: 150px;
+  height: 150px;
 }
 
 .flexbox1 {
   display: flex;
   justify-content: flex-start;
+  width: 65%;
 }
 
 .flexbox1 > ul > li {  
   list-style-type: none;
-  font-size: 20px;
-  padding: 20px;
+  font-size: 1em;
+  padding-bottom: 20px;
+  color: #5b5e6d;
+  font-weight: lighter;
 }
 
 .flexbox1 > ul > li:nth-child(1) {  
@@ -310,8 +362,10 @@ footer > div:nth-child(1) > img {
 
 .flexbox2 > ul > li {  
   list-style-type: none;
-  font-size: 20px;
-  padding: 20px;
+  font-size: 1em;
+  padding-bottom: 20px;
+  color: #5b5e6d;
+  font-weight: lighter;
 }
 
 .flexbox2 > ul > li:nth-child(1) {  
@@ -320,56 +374,60 @@ footer > div:nth-child(1) > img {
 
 .grey-background2 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
 }
 
 .grey-background2 > ul {
   display: flex;
   flex-direction: row;
+  padding: 0;
 }
 
-.grey-background2 div:nth-child(2) {
+.grey-background2 .bottom-footer-flexbox {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 50px;
 }
-
-.grey-background2 > div:nth-child(3) {
+.english-ln {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
 }
 
-.grey-background2 > div:nth-child(3) > i {
-  height: 100%;
-  width: 100%;
+.grey-background2 .social-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grey-background2 .social-media i {
+  font-size: 1.5em;
+  padding-right: 25px;
+}
+.grey-background2 .social-media i:last-child {
+  padding-right: 0;
 }
 
 .grey-background2 > ul > li {  
   list-style-type: none;
-  font-size: 20px;
-  font-weight: bolder;
-  padding: 20px;
+  font-size: 1em;
+  padding-right: 10px;
+}
+.grey-background2 > ul > li:last-child {
+  padding-right: 0;
 }
 
 .grey-background2 img {
-  width: 50px;
-  height: 50px
+  width: 30px;
+  height: 30px;
+  padding-right: 5px;
 }
-
-
-/*.flexbox {
-    display: flex;
-    justify-content: flex-start;
-}*/
+.grey-background2 span {
+  padding-right: 10px;
+}
 
 .flexbox ul {
     list-style: none;
-    width: 45%;
+    width: 50%;
     position: relative;
     margin: 0 0 15px;
     padding: 0;
@@ -384,19 +442,53 @@ footer > div:nth-child(1) > img {
 .grey-background2 {
   background-color: #F4F3F4;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 
 /* Mobile-First */
 @media all and (max-width: 767px) {
-  .email-submit {
+  .email-submit, .bottom-submit {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .email-submit button {
+  .email-submit button, .bottom-submit button {
     width: 100%;
+  }
+  .bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .flexbox {
+    flex-direction: column;
+  }
+  footer .slack-icon {
+    width: 100%;
+    margin-left: -15px;
+  }
+  .flexbox1 {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .grey-background2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-footer-flexbox {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .english-ln {
+    padding-right: 0;
+  }
+  .grey-background2 .social-media {
+    padding: 50px 0;
   }
 }
 /* max-width from Tablet for Menu Navbar Hambuger */
@@ -442,24 +534,4 @@ footer > div:nth-child(1) > img {
   .header-img {
     order: 1;
   }
-}
-
-/* Mobile-First */
-@media all and (max-width: 767px) {
-    /*.flexbox {
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    .flexbox ul {
-        width: 45%;
-    }*/
-}
-/* Tablet */
-@media all and (min-width: 768px) and (max-width: 960px) {
-}
-/*Desktop*/
-@media all and (min-width: 961px) and (max-width: 1024px) {
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1025px) {
 }
