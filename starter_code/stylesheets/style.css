@@ -195,12 +195,15 @@ nav grey: #5b5e6d;
     line-height: 1.2;
     font-family: 'Times New Roman', Times, serif;
     background: #f4f3f4;
-  }
+    }
 
   html p {
     color: #5b5e6d;
   }
-
+  #sec-1 {
+    height: 100vh;
+    padding-bottom: 6vw;
+  }
   nav {
     position: fixed;
     top: 5px;
@@ -213,7 +216,6 @@ nav grey: #5b5e6d;
   }
   nav img {
     width: 7vw;
-    /* height: 5vw; */
   }
   nav ul {
     display: flex;
@@ -221,13 +223,13 @@ nav grey: #5b5e6d;
     padding-right: 10vw;
   }
   nav li {
-    padding: 0.5vw 1vw;
+    padding: 1.1vh 1.5vh;
     color: #5b5e6d;
     font-size: 1.5vw;
   }
   nav li:hover {
     border: 1px solid rgb(5, 5, 5, 0.2);
-    padding: 1vh 1vw;
+    padding: 1vh 1vh;
     border-radius: 5px;
   }
   header {
@@ -241,8 +243,6 @@ nav grey: #5b5e6d;
     padding-top: 5vw;
     width: 45vw;
     height: 45vw;
-    /* padding-top: 5vw; */
-    background: yellow;
 
     display: flex;
     justify-content: center;
@@ -251,21 +251,22 @@ nav grey: #5b5e6d;
   header #work-div{
     width: 45vw;
     height: 45vh;
-    /* padding-bottom: 3vw; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
   }
   header div p:nth-child(2) {
-    font-size: 1.7vw;
-    line-height: 2vw;
+    font-size: 1.6vw;
+    line-height: 2.2vw;
     width: 40vw;
     
   }
+  header div p:nth-last-child(1) {
+    font-size: 1.2vw;
+  }
   header img {
     width: 35vw;
-    /* height: 50vh; */
     display: flex;
     align-self: center;
   }
@@ -289,18 +290,20 @@ nav grey: #5b5e6d;
   /* ============main section================= */
 
   main {
-    height: 550px;
+    height: 100vh;
     border-bottom: 1px solid rgb(5, 5, 5, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
   main h2 {
-    font-size: 30px;
+    font-size: 2.7vw;
+    margin: 0;
+    color: rgb(0, 0, 0, 0.7);
   }
   main h2 + p {
-    padding-bottom: 20px;
-    font-size: 18px;
+    padding-bottom: 1.7vw;
+    font-size: 1.3vw;
   }
   .main-div {
     display: flex;
@@ -312,27 +315,50 @@ nav grey: #5b5e6d;
   }
 
   main img {
-    width: 150px;
-    margin: 30px 120px;
+    width: 12vw;
+    padding: 5vw 0;
   }
-
+  .main-imges{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+  }
+  #main3 img:nth-child(1) {
+    font-size: 55vw;
+  }
   #discover-btn {
-    padding: 10px 20px;
+    padding: 1.5vw 3vw;
+    font-size: 1vw;
+    font-weight: bolder;
     background: #f4f3f4;
     color: #192592;
-    border: 1px solid #192592;
+    border: 2px solid rgb(5, 5, 238,0.3);
+    border-radius: 5px;
   }
   .main-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 3vw 3vw;
+  }
+  .main-bottom div p:nth-child(1){
+    font-size: 2.2vw;
+    color: rgb(0, 0, 0, 0.7);
+    font-weight: bolder;
+  }
+  .main-bottom div p:nth-child(2){
+    font-size: 1.2vw;
+    
   }
 
   /* ==============footer================ */
+  /* footer {
+    height: 30vw;
+  } */
   footer ul {
     list-style: none;
-    line-height: 2.5;
+    line-height: 2.5vw;
     opacity: 0.6;
   }
   .footer-top ul li:nth-child(1) {
@@ -340,12 +366,20 @@ nav grey: #5b5e6d;
   }
   .footer-top {
     display: flex;
-    justify-content: space-between;
-    padding: 50px 100px 50px 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vw;
+    font-size: 1.2vw;
+    padding-right: 5vw;
+  }
+  .footer-img {
+    width:20vw;
+    display: flex;
+    align-self: flex-start;
   }
   footer img {
-    width: 100px;
-    height: 100px;
+    width: 9vw;
+    padding-top: 10vw;
   }
 
   .footer-bottom {
@@ -353,25 +387,35 @@ nav grey: #5b5e6d;
     justify-content: space-between;
     align-items: center;
     background: rgb(163, 161, 161, 0.2);
+    font-size: 1.3vw;
+    height: 7vw;
   }
   .footer-bottom ul {
     display: flex;
     justify-content: space-between;
   }
   .footer-bottom li {
-    padding-right: 25px;
+    padding-right: 2.5vw;
   }
 
   .footer-bottom2 {
-    width: 300px;
-    height: 20px;
+    width: 22vw;
+    height: 1.3vw;
+    padding-right: 2.5vw;
     position: relative;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    color: #5b5e6d;;
+  }
+  .footer-bottom2 i {
+    font-size: 1.6vw;
   }
   #us-flag {
     position: absolute;
-    top: 0;
-    left: -40px;
-    width: 20px;
-    height: 20px;
+    top: -10vw;
+    left: -1vw;
+    width: 1.5vw;
+    /* height: 20px; */
   }
 }
