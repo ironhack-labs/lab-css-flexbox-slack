@@ -5,11 +5,32 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+.relative {
+  position: relative;
+}
+nav {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background: white;
+  z-index: 99;
+  border-bottom: 2px solid #F4F3F4;
+}
 nav ul {
-  display: inline;
+  display: inline-flex;
+  position: absolute;
+  right: 50px;
+  top: 50px;
 }
 nav img {
-  width: 300px
+  position: absolute;
+  left: 50px;
+  width: 150px;
+  padding: 20px 0;
 }
 
 @media (max-width: 768px){
