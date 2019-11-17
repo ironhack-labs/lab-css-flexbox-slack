@@ -5,3 +5,140 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: grey;
+}
+
+a {
+  color: black;
+}
+
+.logo {
+  width: 90px;
+  height: 50px;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px black;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.header ul a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.header ul a:hover {
+  background-color: #5b5e6d;
+  color: white;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 5px 30px;
+  cursor: pointer;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background: grey;
+  display: block;
+  height: 2px;
+  width: 19px;
+  position: relative;
+  transition: background 2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+  background: grey;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  background: grey;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 230px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/* Iteration 1 | Extra Small Screen (width < 768px) */
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+}
