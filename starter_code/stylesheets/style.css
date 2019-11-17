@@ -20,7 +20,7 @@ nav {
 	top: 0;
 	background-color: white;
 	padding-top: 0.3em;
-	border-bottom: 0.1em solid #f4f3f4;
+	border-bottom: 0.1em solid #ebebeb;
 }
 nav > img {
 	width: 6em;
@@ -41,7 +41,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	margin-top: 6em;
-	padding: 1.5em 2em;
+	padding: 1.5em 2em 0;
+	border-bottom: 0.1em solid #ebebeb;
 }
 header > h1 {
 	color: #2c303f;
@@ -54,10 +55,9 @@ header > p {
 	font-size: 1.06em;
 	color: #5b5e6d;
 	margin: 2em 0;
-	align-self: center;
 }
 header input {
-	border: 0.1em solid #f4f3f4;
+	border: 0.1em solid #ebebeb;
 	padding: 1.5em;
 	border-radius: 0.4em;
 	margin-bottom: 2em;
@@ -72,7 +72,7 @@ header > button {
 	color: white;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	border: none;
 	border-radius: 0.4em;
 }
@@ -83,8 +83,57 @@ header a {
 }
 header > p:nth-of-type(2) {
 	margin: 1em 0 3em;
+	text-align: center;
 }
 header > img {
 	order: 2;
 	width: 100%;
+}
+
+/* CLIENTS SECTION */
+.clients {
+	display: flex;
+	flex-direction: column;
+	padding: 3em 2em;
+	background-color: #f4f3f4;
+	text-align: center;
+}
+.clients > h2 {
+	color: #2c303f;
+	font-size: 1.9em;
+}
+.clients > p {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 1.06em;
+	color: #5b5e6d;
+	margin: 0.8em 0 1.5em;
+}
+.clients > button {
+	padding: 1.5em;
+	background-color: white;
+	color: #4048aa;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 0.9em;
+	border: 0.1em solid #4048aa;
+	border-radius: 0.4em;
+}
+.img-box {
+	display: flex;
+	justify-content: center;
+	padding: 3em 0;
+	align-self: center;
+}
+.first {
+	padding-top: 5em;
+}
+.img-box:not(.first) {
+	border-top: 0.1em solid #ebebeb;
+}
+.img-box > img {
+	width: 50%;
+}
+.img-box.los-angeles > img {
+	width: 80%;
 }
