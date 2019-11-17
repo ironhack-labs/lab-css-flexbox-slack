@@ -1,7 +1,162 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+:root {
+  --background-color: #F4F3F4;
+  --button-color: #192592;
+  --main-titles-color: #2C303F;
+  --paragraph-color: #5b5e6d;
+  --nav-color: #5b5e6d;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, p, li, button, input {
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+  color: var(--main-titles-color);
+}
+
+p {
+  color: var(--paragraph-color);
+  line-height: 1.5em;
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--button-color);
+}
+
+button {
+  background-color: var(--button-color);
+  color: var(--background-color);
+  border: 1px solid var(--button-color);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1em 0;
+  margin: 0.8em 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button-light {
+  color: var(--button-color);
+  background-color: white;
+  border-color: var(--button-color);
+}
+
+input {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1em;
+  margin: 0.8em 0;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  color: var(--paragraph-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section {
+  padding: 2em 1.5em;
+  border-bottom: 1px solid lightgray;
+}
+
+.dark-back {
+  background-color: var(--background-color);
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+.big-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.no-margin {
+  margin: 0;
+}
+
 /*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
+Navigation
 */
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  background-color: white;
+  color: var(--nav-color);
+  /*border-bottom: 1px solid lightgray;*/
+  box-shadow: 0 1px 3px lightgray;
+  font-size: 1.4rem;
+}
+
+#slack-logo {
+  max-height: 50px;
+}
+
+nav ul {
+  display: none;
+}
+
+/*
+Header
+*/
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+#home-work-happening {
+  order: 1;
+  max-width: 100%;
+  margin-top: 2em;
+}
+
+#header-form {
+  margin-top: 1em;
+}
+
+/*
+Main
+*/
+
+#logo-images {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0 0 0;
+}
+
+#logo-images div {
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+  width: 100%;
+  padding: 1.7em 0;
+  display: flex;
+  justify-content: center;
+}
+
+#logo-images div:last-child {
+  border: none;
+  padding-bottom: 1em;
+}
+
+#logo-images img {
+  height: 100%;
+}
