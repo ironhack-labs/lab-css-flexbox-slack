@@ -5,3 +5,239 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+/* GENERAL RULES */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* NAVBAR */
+nav {
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	padding-top: 0.3em;
+	border-bottom: 0.1em solid #ebebeb;
+}
+nav > img {
+	width: 6em;
+	padding-left: 2em;
+}
+nav > ul > li {
+	visibility: hidden;
+}
+nav:after {
+	content: '\002261';
+	font-size: 3.5em;
+	color: #5b5e6d;
+	padding-right: 0.5em;
+}
+
+/* HEADER */
+header {
+	display: flex;
+	flex-direction: column;
+	margin-top: 6em;
+	padding: 1.5em 2em 0;
+	border-bottom: 0.1em solid #ebebeb;
+}
+header > h1 {
+	color: #2c303f;
+	font-size: 2.4em;
+	line-height: 1em;
+}
+header > p {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 1.06em;
+	color: #5b5e6d;
+	margin: 2em 0;
+}
+header input {
+	border: 0.1em solid #ebebeb;
+	padding: 1.5em;
+	border-radius: 0.4em;
+	margin-bottom: 2em;
+}
+header input::placeholder {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2em;
+}
+header > button {
+	padding: 1.5em;
+	background-color: #4048aa;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 0.9em;
+	border: none;
+	border-radius: 0.4em;
+}
+header a {
+	color: #4048aa;
+	text-decoration: none;
+	border-bottom: 0.08em solid #4048aa;
+}
+header > p:nth-of-type(2) {
+	margin: 1em 0 3em;
+	text-align: center;
+}
+header > img {
+	order: 2;
+	width: 100%;
+}
+
+/* CLIENTS SECTION */
+.clients {
+	display: flex;
+	flex-direction: column;
+	padding: 3em 2em;
+	background-color: #f4f3f4;
+	text-align: center;
+	border-bottom: 0.1em solid #ebebeb;
+}
+.clients > h2 {
+	color: #2c303f;
+	font-size: 1.9em;
+}
+.clients > p {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 1.06em;
+	color: #5b5e6d;
+	margin: 0.8em 0 1.5em;
+}
+.clients > button {
+	padding: 1.5em;
+	background-color: white;
+	color: #4048aa;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 0.9em;
+	border: 0.1em solid #4048aa;
+	border-radius: 0.4em;
+}
+.img-box {
+	display: flex;
+	justify-content: center;
+	padding: 3em 0;
+	align-self: center;
+}
+.first {
+	padding-top: 5em;
+}
+.img-box:not(.first) {
+	border-top: 0.1em solid #ebebeb;
+}
+.img-box > img {
+	width: 50%;
+}
+.img-box.los-angeles > img {
+	width: 80%;
+}
+
+/* JOIN SECTION */
+.join {
+	display: flex;
+	flex-direction: column;
+	padding: 3em 2em;
+	text-align: center;
+	border-bottom: 0.1em solid #ebebeb;
+}
+.join > p:first-of-type {
+	color: #2c303f;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+.join > p:last-of-type {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 1.06em;
+	color: #2c303f;
+	margin-bottom: 0.5em;
+}
+.join a {
+	color: #4048aa;
+	text-decoration: none;
+	border-bottom: 0.08em solid #4048aa;
+}
+.join > input {
+	border: 0.1em solid #ebebeb;
+	padding: 1.5em;
+	border-radius: 0.4em;
+	margin-bottom: 2em;
+}
+.join > input::placeholder {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2em;
+}
+.join > button {
+	padding: 1.5em;
+	background-color: #4048aa;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 0.9em;
+	border: none;
+	border-radius: 0.4em;
+}
+
+/* FOOTER */
+.aditional-info > img {
+	width: 30%;
+}
+.aditional-info > .columns {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 0 2em 2em;
+	border-bottom: 0.1em solid #ebebeb;
+}
+.columns > ul {
+	color: #5b5e6d;
+	font-family: 'Poppins', sans-serif;
+	list-style-type: none;
+	flex-basis: 50%;
+}
+.columns > ul > li:first-child {
+	font-weight: 500;
+	margin-top: 1em;
+	font-size: 1em;
+}
+.columns > ul > li {
+	margin-bottom: 1em;
+	font-size: 0.8em;
+}
+.terms {
+	padding: 1em;
+	background-color: #f4f3f4;
+	text-align: center;
+	color: #5b5e6d;
+}
+.terms li {
+	display: inline;
+	margin: 0.5em;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 0.8em;
+}
+.flag {
+	margin: 1.5em;
+}
+.flag > img {
+	vertical-align: middle;
+	width: 1em;
+	margin-right: 0.5em;
+}
+.flag > span {
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.8em;
+	font-weight: 600;
+	margin-right: 1em;
+}
+.social-media > i {
+	margin-right: 1em;
+}
