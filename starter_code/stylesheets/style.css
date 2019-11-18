@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 h1, h2, p, li, button, input, span {
   font-family: 'Montserrat', sans-serif;
 }
@@ -115,6 +119,14 @@ nav {
 
 nav ul {
   display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.6em;
+}
+
+nav ul li {
+  padding: 0.5em;
 }
 
 /* -----------------------------------------
@@ -130,6 +142,10 @@ header {
   order: 1;
   max-width: 100%;
   margin: 2em auto 0 auto;
+}
+
+#header-info {
+  flex-direction: column;
 }
 
 #header-form {
@@ -266,6 +282,14 @@ MEDIA QUERIES
 ----------------------------------------- */
 
 @media (min-width: 676px) {
+  h1{
+    font-size: 4rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
   .form {
     display: flex;
   }
@@ -333,11 +357,13 @@ MEDIA QUERIES
 
   #footer-links {
     margin-top: 20px;
+    justify-content: flex-end;
   }
   
   #footer-links ul {
       width: 25%;
-  }
+      max-width: 200px;
+    }
 
   #footer-bottom {
     flex-direction: row;
@@ -376,5 +402,34 @@ MEDIA QUERIES
   #logo-images div:nth-child(3n+2) {
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    flex-direction: row;
+  }
+
+  #home-work-happening {
+    order: 0;
+    margin-right: 5em;
+    width: 45%;
+  }
+
+  nav .menu-bars {
+    display: none;
+  }
+
+  nav ul {
+    display: inline-flex;
+  }
+
+  nav ul li:not(:last-child) {
+    margin-right: 2em;
+  }
+
+  nav ul li:last-child {
+    border: 1px solid lightgray;
+    border-radius: 4px;
   }
 }
