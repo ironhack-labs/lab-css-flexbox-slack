@@ -5,63 +5,53 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+/*@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");*/
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 html {
-  font: 400 normal 10px/1.45rem "Lato", sans-serif, Arial, Helvetica, sans-serif;
-}
-body {
-  background: coral;
+  font: 400 normal 10px/1.45rem 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
 }
 .wrapper {
   display: flex;
-  padding: 4rem 4vw;
+  padding: 0rem 4vw;
   box-sizing: border-box;
 }
 .headline-1 {
   font-family: "Playfair Display", serif;
-  font-size: 5.6rem;
+  font-size: 4.3rem;
   margin-bottom: 5rem;
   color: #2c303f;
 }
 .headline-2 {
-  font-size: 3.2rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
   font-weight: 700;
   color: #2c303f;
+  margin-bottom: 2.5rem;
 }
 .headline-3 {
-  font-size: 2.2rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
   font-weight: 700;
   color: #2c303f;
+  margin-bottom: 2rem;
 }
 .sub-headline {
-  font-size: 2.4rem;
-  margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
   letter-spacing: 0.05rem;
   line-height: 3rem;
   color: #5b5e6d;
 }
-.text {
-  font-size: 1.6rem;
-  margin-bottom: 1.6rem;
+.paragraph {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
 }
-.menu-section {
-  width: 100vw;
-  height: 7rem;
-  padding: 1rem 2rem;
-  box-sizing: border-box;
-  background: lightseagreen;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-}
-
 .hamburguer {
   width: 3rem;
   height: 2rem;
-  background: red;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -72,54 +62,8 @@ body {
   background: #151515;
   height: 0.3rem;
 }
-.logo img {
-  height: 5.5rem;
-}
-.main-nav {
-}
-
-.main-section {
-  background: cornflowerblue;
-  padding-top: 11rem;
-  flex-flow: column-reverse nowrap;
-  justify-content: center;
-  align-items: flex-start;
-}
-.illustration img {
-  padding: 5rem 0;
-  box-sizing: border-box;
-  width: 100%;
-}
-.about-us-section {
-  background: lightskyblue;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
-}
-.clients {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: space-between;
-}
-.client-logo {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  max-height: 6rem;
-  width: 90%;
-  max-width: 30rem;
-}
-.clients .client-logo img {
-  width: 100%;
-}
-.try-section {
-  background: cyan;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+a{
+  cursor: pointer;
 }
 .btn {
   text-transform: uppercase;
@@ -129,7 +73,7 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .btn-dark {
   background: #192592;
@@ -141,12 +85,13 @@ body {
   background: #ffffff;
   border: solid 0.1rem #192592;
 }
-.c2a-link {
+.link {
   font-size: 1.8rem;
   color: #5b5e6d;
   margin-bottom: 2rem;
+  text-align: center;
 }
-.c2a-link .link {
+.link > a{
   color: #192592;
   text-decoration: underline;
 }
@@ -156,16 +101,114 @@ input {
   box-sizing: border-box;
   border-radius: 0.5rem;
   font-size: 1.8rem;
-font-weight: 400;
+  font-weight: 400;
   width: 100%;
   border: solid 0.1rem #c4c4c4;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
-
-.info-section{
+.dark-theme{
+  border-bottom: solid 0.2rem #ebebeb;
+  background: #f4f3f4;
+  padding: 5rem 4vw;
+}
+.light-theme{
+  border-bottom: solid 0.2rem #ebebeb;
+  background: #ffffff;
+  padding: 5rem 4vw;
+}
+.module-menu {
+  width: 100vw;
+  height: 7rem;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  background: #ffffff;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  box-shadow: 0 0.1rem 0.1rem rgba(0,0,0,.15);
+}
+.module-main {
+  padding-top: 11rem;
+  flex-flow: column-reverse nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.module-about {
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.module-about .module-text{
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.module-about .module-text .paragraph{
+  text-align: center;
+}
+.module-clients {
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+}
+.client-logo {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  margin: 1rem;
+  border-bottom: solid 0.2rem #ebebeb;
+}
+.module-clients .client-logo img {
+  width: 100%;
+}
+.module-try {
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 4vw;
+}
+.module-try .module-text{
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.module-footer-info{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
+}
+.module-legal{
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+.module-legal .legal-nav ul{
+  flex-flow: row nowrap;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.module-legal .legal-nav ul li a{
+  color: #5b5e6d;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+.illustration img {
+  padding: 5rem 0 0 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+.logo img {
+  height: 5.5rem;
 }
 .slack-symbol img{
     height: 15rem;
@@ -175,6 +218,38 @@ font-weight: 400;
     flex-flow: row wrap;
     align-items: flex-start;
 }
-.secondary-nav div{
+.secondary-nav .col{
     width: 50%;
+    margin-bottom: 1rem;
+}
+.secondary-nav .col ul li a{
+  color: #5b5e6d;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  text-decoration: none;
+}
+.secondary-nav .col ul li a.title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.region{
+  flex-flow: row nowrap;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+.region img{
+  height: 2.5rem;
+  margin: 0 0.5rem;
+}
+.region span{
+  color: #5b5e6d;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+.region span:before{
 }
