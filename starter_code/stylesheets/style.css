@@ -6,7 +6,7 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 html {
   font-size: 10px;
@@ -14,56 +14,66 @@ html {
 }
 
 body {
-  padding: 5vw;
-  font-family: 'Lato Light', sans-serif;
-  font-weight:320;
+  margin: 0;
+  font-family: "Lato Light", sans-serif;
+  font-weight: 320;
   color: #5b5e6d;
 }
 
 nav {
+  padding: 0 5vw;
   position: fixed;
-  display:flex;
-  align-content:center;
+  display: flex;
+  align-content: center;
   height: 10vh;
   top: 0;
   background: white;
   width: 100%;
+  border-bottom: 1px solid #5b5e6d44;
 }
 
 nav img {
-  width: 30vw;
+  width: 140px;
   margin-left: 2vw;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  font-family: "Playfair Display Black", serif;
+  line-height: 2.6rem;
+  color: #2c303f;
 }
 
 h1 {
   font-size: 2.7rem;
-  font-weight: 600;
-  font-family: "Playfair Display Black", serif;
-  line-height: 2.6rem;
-  color: #2C303F;
 }
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 600;
-  font-family: "Playfair Display Black", serif;
-  line-height: 2.6rem;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin-bottom:0;
 }
 
 header {
+  padding: 0 10vw;
   display: flex;
   flex-direction: column;
+  align-items:center;
   background: white;
-  margin-top: 5vh;
+  margin-top: 7vh;
 }
-header p {
-    padding-right: 22%;
+header p:first-of-type {
+  padding-right: 22%;
 }
 
 p {
-    line-height: 1.35rem;
-    font-size: 0.80em;
-    
+  line-height: 1.35rem;
+  font-size: 1em;
 }
 
 header img {
@@ -72,22 +82,62 @@ header img {
 }
 
 .info {
+  padding: 0 5vw;
   background: #f4f3f4;
-  width: 100%;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
+
 }
 
 .info img {
   width: 60%;
+  margin: 10% 0;
 }
 
+.try {
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button, input {
+    padding:3%;
+    margin: 2%;
+    border-radius: 8px;
+    font-family: "Lato Light", sans-serif;
+    font-weight: 320;
+    font-size: 1em;
+    width: 85%;
+
+}
+
+input {
+    width: 80%;
+    border:2px solid rgb(179, 179, 179);
+    color: rgb(179, 179, 179,0.8)
+}
+
+button {
+  background-color: #192592;
+  border-radius: 8px;
+  border:2px solid #192592;
+  color: white;
+
+}
+.info button {
+    background-color:white;
+    color: #192592;
+}
+
+
 .col-box {
+  padding: 0 5vw;
   display: flex;
   flex-wrap: wrap;
-  padding-left:5%;
-  padding-right:20%;
+  padding-left: 5%;
+  padding-right: 20%;
   justify-content: space-between;
 }
 
@@ -95,17 +145,48 @@ header img {
   list-style: none;
   width: 25vw;
   line-height: 1.7em;
-  padding-left:0;
+  padding-left: 5%;
+  padding-right: 10%;
 }
 
 .col-box li:first-child {
-    font-weight: 550;
+  font-weight: 550;
 }
 
+footer {
+    border-top: 1px solid #5b5e6d44;
+}
+
+.menu img:first-of-type {
+  width: 30%;
+  padding-left: 1%;
+}
+
+
 .unten {
-    background-clip: content-box;
-    background: #F4F3F4;
-    padding:0vw;
+  background-clip: content-box;
+  background: #f4f3f4;
+  padding: 0vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unten ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.unten li {
+  list-style: none;
+  padding: 2%;
+}
+
+.unten img {
+  width: 1em;
 }
 
 /*iteration 1*/
