@@ -5,19 +5,42 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text|Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text|Public+Sans:200,300,400&display=swap');
 
+* {
+  box-sizing: border-box;
+}
 .relative {
   position: relative;
+}
+.divider {
+  border-bottom: 1px solid #ebebeb;
+}
+h1, h2 {
+  font-family: "DM Serif Text";
+  color: #333648;
+  text-align: center;
+}
+h1 {
+  font-size: 3.3em;
+  margin: 180px 0 30px 0;
+}
+h2 {
+
+}
+p,
+input {
+  font-family: "Public Sans";
+  color: #5c5e6d;
+  line-height: 1.7em;
 }
 nav {
   position: fixed;
   top: 0;
-  height: 100px;
+  height: 70px;
   width: 100%;
   background: white;
   z-index: 99;
-  border-bottom: 2px solid #F4F3F4;
 }
 nav ul {
   display: inline-flex;
@@ -27,13 +50,66 @@ nav ul {
 }
 nav img {
   position: absolute;
-  left: 50px;
-  width: 150px;
-  padding: 20px 0;
+  left: 55px;
+  width: 95px;
+  padding: 12px 0;
+}
+header {
+  padding: 0 50px;
+}
+header p {
+  margin-bottom: 40px;
+}
+.signup-box {
+  width: 100%;
+  height: 56px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.signin {
+  text-align: center;
+  font-size: 0.9em;
+}
+header input {
+  border: 1px solid #ebebeb;
+  padding-left: 15px;
+  font-size: 1em;
+}
+header button {
+  background: #3f46ad;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 500;
+  border: none;
+}
+.work-image {
+  display: flex;
+  justify-content: center;
+}
+.work-image img {
+  height: 300px;
+}
+main {
+  background: #F5F5F5;
+  padding: 3rem 0;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   nav ul {
     display: none;
+  }
+}
+@media screen and (min-width: 25rem) {
+  h1 {
+    font-size: calc(2.2rem + (41.599999999999994 * (100vw - 400px) / 624));
+  }
+  h2 {
+    font-size: calc(1.625rem + (6 * (100vw - 400px)/ 624));
+  }
+  header p {
+    font-size: calc(1.0625rem + (3 * (100vw - 400px)/ 624));
+  }
+  main p, main ul {
+    font-size: calc(1rem + (0 * (100vw - 400px)/ 624));
   }
 }
