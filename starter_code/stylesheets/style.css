@@ -96,6 +96,7 @@ a {
   text-decoration: underline;
 }
 input {
+  font-family: "Montserrat", sans-serif, Arial, Helvetica;
   color: #5b5e6d;
   padding: 2.2rem;
   box-sizing: border-box;
@@ -166,6 +167,11 @@ input {
   justify-content: center;
   align-items: center;
 }
+
+.module-about .module-info {
+  width: 100%;
+  text-align: center;
+}
 .module-about .module-text {
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -175,6 +181,7 @@ input {
   text-align: center;
 }
 .module-clients {
+  width: 100%;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
@@ -202,6 +209,9 @@ input {
   align-items: center;
   padding: 5rem 4vw;
 }
+.module-try .module-info {
+  width: 100%;
+}
 .module-try .module-text {
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -212,6 +222,9 @@ input {
   justify-content: center;
   align-items: flex-start;
   border-bottom: 0;
+}
+.module-footer-info nav {
+  width: 100%;
 }
 .module-legal {
   flex-flow: column nowrap;
@@ -251,6 +264,9 @@ input {
   color: #5b5e6d;
   padding: 1.2rem;
   box-sizing: border-box;
+}
+.illustration {
+  width: 100%;
 }
 .illustration img {
   padding: 5rem 0 0 0;
@@ -312,4 +328,127 @@ input {
   position: absolute;
   right: -2.2rem;
   top: 1.2rem;
+}
+@media (min-width: 768px) and (max-width: 960px) {
+  .headline-1 {
+    font-size: 6rem;
+  }
+  .headline-2 {
+    font-size: 3.4rem;
+  }
+  .btn {
+    padding: 2.2rem 4.5rem;
+    width: auto;
+  }
+  input {
+    font-size: 1.6rem;
+  }
+  .link {
+    text-align: left;
+    font-size: 1.6rem;
+  }
+  .form > form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .form > form input {
+    max-width: 50%;
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
+  }
+  .illustration img {
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+  .module-clients {
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
+    height: 36rem;
+    padding: 0;
+  }
+  .module-clients div:nth-child(1),
+  .module-clients div:nth-child(2),
+  .module-clients div:nth-child(3) {
+    border-right: solid 0.2rem #ebebeb;
+  }
+  .module-clients div:nth-child(3),
+  .module-clients div:nth-child(6) {
+    border-bottom: 0;
+  }
+  .module-try .module-info {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .module-try .module-text {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .module-try .module-form form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .module-try .module-form form input {
+    width: auto;
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+  .module-try .module-form form .btn {
+    margin-bottom: 0;
+  }
+  .client-logo {
+    width: 50%;
+  }
+  .module-footer-info {
+    flex-flow: row nowrap;
+  }
+  .module-legal {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+  .module-legal .legal-nav {
+    width: auto;
+    flex-grow: 2;
+  }
+  .module-legal .legal-nav ul {
+    flex-flow: row nowrap;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .region {
+    width: auto;
+    flex-grow: 1;
+    padding: 0;
+    justify-content: flex-end;
+  }
+  .module-social {
+    flex-grow: 1;
+    margin-top: 1.5rem;
+    width: auto;
+  }
+  .module-social ul {
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .slack-symbol img {
+    height: 12rem;
+  }
+  .secondary-nav {
+    flex-flow: row nowrap;
+  }
 }
