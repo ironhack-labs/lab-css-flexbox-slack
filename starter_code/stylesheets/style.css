@@ -19,7 +19,10 @@ nav grey: #5b5e6d;
 .body-margin {
   margin: 0 60px;
 }
-h1, h2 {
+.text-center {
+  text-align: center;
+}
+h1, h2, h3 {
   font-family: "DM Serif Text";
   color: #333648;
 }
@@ -28,7 +31,6 @@ h1 {
 }
 h2 {
   margin-bottom: 20px;
-  text-align: center;
 }
 p,
 input {
@@ -80,10 +82,9 @@ header p {
   font-weight: 500;
 }
 .signin {
-  text-align: center;
   font-size: 0.9em;
 }
-header button {
+header button, .tryit button {
   background: #3f46ad;
   color: white;
   border: none;
@@ -100,7 +101,6 @@ header button {
   padding: 3rem 0;
 }
 .company p {
-  text-align: center;
   margin-bottom: 20px;
 }
 .company button {
@@ -119,6 +119,9 @@ header button {
   display: inherit;
   justify-content: center;
 }
+.tryit {
+  padding: 3rem 0;
+}
 
 @media (max-width: 768px) {
   nav ul {
@@ -131,6 +134,9 @@ header button {
   }
   h2 {
     font-size: calc(1.625rem + (6 * (100vw - 400px)/ 624));
+  }
+  h3 {
+    font-size: calc(1.25rem + (4 * (100vw - 400px)/ 624));
   }
   header p {
     font-size: calc(1.0625rem + (3 * (100vw - 400px)/ 624));
