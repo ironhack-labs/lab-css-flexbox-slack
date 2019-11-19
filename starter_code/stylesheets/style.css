@@ -56,18 +56,18 @@ header > p {
 	color: #5b5e6d;
 	margin: 2em 0;
 }
-header input {
+header > input {
 	border: 0.1em solid #ebebeb;
-	padding: 1.5em;
+	padding: 2.1em;
 	border-radius: 0.4em;
 	margin-bottom: 2em;
 }
-header input::placeholder {
+header > input::placeholder {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.2em;
 }
 header > button {
-	padding: 1.5em;
+	padding: 1.4em;
 	background-color: #4048aa;
 	color: white;
 	font-family: 'Poppins', sans-serif;
@@ -83,10 +83,9 @@ header a {
 }
 header > p:nth-of-type(2) {
 	margin: 1em 0 3em;
-	text-align: center;
+	align-self: center;
 }
 header > img {
-	order: 2;
 	width: 100%;
 }
 
@@ -96,12 +95,13 @@ header > img {
 	flex-direction: column;
 	padding: 3em 2em;
 	background-color: #f4f3f4;
-	text-align: center;
 	border-bottom: 0.1em solid #ebebeb;
 }
 .clients > h2 {
 	color: #2c303f;
 	font-size: 1.9em;
+	text-align: center;
+	margin: 0 auto;
 }
 .clients > p {
 	font-family: 'Poppins', sans-serif;
@@ -109,9 +109,10 @@ header > img {
 	font-size: 1.06em;
 	color: #5b5e6d;
 	margin: 0.8em 0 1.5em;
+	text-align: center;
 }
 .clients > button {
-	padding: 1.5em;
+	padding: 1.4em 4em;
 	background-color: white;
 	color: #4048aa;
 	font-family: 'Poppins', sans-serif;
@@ -122,23 +123,22 @@ header > img {
 }
 .img-box {
 	display: flex;
-	justify-content: center;
-	padding: 3em 0;
+	flex-direction: column;
+	align-items: center;
+	width: 70%;
 	align-self: center;
 }
-.first {
+.img-box > img {
+	width: 100%;
+	padding: 3em;
+	border-bottom: 0.1em solid #ebebeb;
+}
+.img-box > .first-img {
 	padding-top: 5em;
 }
-.img-box:not(.first) {
-	border-top: 0.1em solid #ebebeb;
+.img-box > .last-img {
+	border-bottom: none;
 }
-.img-box > img {
-	width: 50%;
-}
-.img-box.los-angeles > img {
-	width: 80%;
-}
-
 /* JOIN SECTION */
 .join {
 	display: flex;
