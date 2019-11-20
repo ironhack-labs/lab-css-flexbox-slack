@@ -74,6 +74,8 @@ nav ul{
 
 #title {
   padding: 100px 30px 0 30px;
+  display: flex;
+  flex-flow: column;
 }
 
 #title .text{
@@ -91,7 +93,7 @@ nav ul{
 
 #title h1 {
   padding: 40px 0 0 0;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 #header-img {
@@ -153,7 +155,15 @@ nav ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: solid 1px #dddddd;
+}
+
+.border-bottom {
+  border-bottom: solid 1px #dddddd;
+}
+
+.border-both {
+  border-right: solid 1px #dddddd;
+  border-left: solid 1px #dddddd;
 }
 
 #first-box {
@@ -172,11 +182,17 @@ nav ul{
   border-top: solid 1px #ddd;
 }
 
+#try-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-top: 3em;
+}
+
 #try-it #try-title{
   font-family: Times;
   font-weight: 700;
   font-size: 1.5em;
-  padding-top: 1.5em;
   text-align: center;
 }
 
@@ -254,4 +270,137 @@ footer {
 
 .icon-box .icon-2 {
   padding: 0 .5em;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+  #title h1 {
+    max-width: none;
+    font-size: 4em;
+  }
+
+  #title {
+    align-items: flex-start;
+  }
+
+  #title form {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-content: center;
+  }
+
+  #title .button {
+    width: 35%;
+    margin: 0;
+  }
+
+  #title .mail {
+    width: 63%;
+  }
+  
+  #header-img {
+    width: 692px;
+    align-self: center;
+  }
+
+  #companies {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  #companies p {
+    width: auto;
+    padding: 0 30px;
+  }
+
+  #discover {
+    width: 400px;
+    margin: 2em 30px;
+  }
+
+  .border-right {
+    border-right: solid 1px #dddddd;
+  }
+
+  #oracle {
+    border-bottom: none;
+  }
+
+  .img-box {
+    width: 40%;
+  }  
+
+  #try-it {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+  }
+
+  #try-it #try-title {
+    text-align: left;
+  }
+
+  #try-content {
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+  }
+
+  #try-it form{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: 40px 0;
+  }
+
+  #try-it button {
+    width: 48%;
+    margin: 0;
+  }
+
+  #try-it input {
+    width: 48%
+  }
+
+  #white-footer {
+    padding: 30px 0;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #links {
+    width: 80%;
+    justify-content: space-around;
+    padding: 10px 0 0 0;
+  }
+
+  #links .link-box {
+    width: auto;
+  }
+
+  #grey-footer {
+    justify-content: space-between;
+  }
+
+  #grey-footer ul {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    padding: 1.5em 0;
+  }
+
+  #icons {
+    width: auto;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #icons .icon-box {
+    width: auto;
+    padding: 0 0 0 1em;
+  }
+
 }
