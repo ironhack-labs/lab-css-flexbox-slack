@@ -130,7 +130,22 @@ header button,
   padding: 3rem 0;
 }
 footer li:first-child {
-  font-weight: 500;
+  font-weight: bold;
+}
+.footer-links {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 40px;
+}
+footer img {
+  margin: 10px -10px -7px 30px;
+  width: 115px;
+}
+.footer-box {
+  width: max-content;
+}
+.footer-box li {
+  margin: 15px;
 }
 
 @media (max-width: 768px) {
@@ -152,7 +167,9 @@ footer li:first-child {
     font-size: calc(1.0625rem + (3 * (100vw - 400px) / 624));
   }
   main p,
-  main ul {
+  main ul,
+  .tryit li,
+  .footer-box li {
     font-size: calc(1rem + (0 * (100vw - 400px) / 624));
   }
 }
