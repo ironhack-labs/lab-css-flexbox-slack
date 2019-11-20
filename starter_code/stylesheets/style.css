@@ -1,10 +1,3 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
@@ -450,6 +443,11 @@ input {
   }
   .secondary-nav {
     flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .secondary-nav .col {
+    width: auto;
   }
 }
 @media (min-width: 960px) {
@@ -470,5 +468,52 @@ input {
   }
   .module-clients div:nth-of-type(2n + 1) {
     border-bottom: solid 0.2rem #ebebeb;
+  }
+}
+@media (min-width: 1200px) {
+  .hamburguer {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  .module-menu {
+    height: 8rem;
+  }
+  .menu {
+    display: block;
+    position: relative;
+    height: 5rem;
+    width: auto;
+  }
+  .menu ul {
+    height: 5rem;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .module-main {
+    padding-top: 11rem;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+  .module-main > div {
+    width: 46%;
+  }
+  .illustration img {
+    max-width: 100%;
+  }
+  .module-clients {
+    margin: 7rem 0;
+  }
+  .module-footer-info {
+    justify-content: space-between;
+  }
+  .module-footer-info nav {
+    width: 70%;
   }
 }
