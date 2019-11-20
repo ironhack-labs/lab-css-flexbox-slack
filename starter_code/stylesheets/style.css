@@ -121,24 +121,24 @@ header > img {
 	border: 0.1em solid #4048aa;
 	border-radius: 0.4em;
 }
-.img-box {
+.img-container {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 70%;
-	align-self: center;
+	flex-wrap: wrap;
+	margin-top: 1em;
+}
+.img-box {
+	flex-basis: 100%;
+	padding: 3em;
+}
+.img-box:not(.last-img) {
+	border-bottom: 0.1em solid #ebebeb;
 }
 .img-box > img {
 	width: 100%;
-	padding: 3em;
-	border-bottom: 0.1em solid #ebebeb;
+	margin: 0 auto;
+	display: block;
 }
-.img-box > .first-img {
-	padding-top: 5em;
-}
-.img-box > .last-img {
-	border-bottom: none;
-}
+
 /* JOIN SECTION */
 .join {
 	display: flex;
@@ -248,7 +248,8 @@ header > img {
 }
 
 /* RESPONSIVE DESIGN */
-@media (min-width: 767px) and (max-width: 961px) {
+/* Small screens */
+@media (min-width: 767px) {
 	/* HEADER */
 	header {
 		display: block;
@@ -266,30 +267,24 @@ header > img {
 
 	/* CLIENTS SECTION */
 	.clients {
-		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+	.img-container {
+		margin-top: 2em;
 	}
 	.img-box {
-		width: 100%;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: baseline;
-		margin-bottom: 1.3em;
+		flex-basis: 50%;
+		box-sizing: border-box;
 	}
-	.img-box > img {
-		width: 30%;
-		padding: 2em;
-	}
-	.img-box > .col-2 {
+	.img-box.col-2 {
 		border-left: 0.1em solid #ebebeb;
 	}
-	.img-box > .harvard {
+	.img-box.harvard {
 		border-right: 0.1em solid #ebebeb;
 	}
-	.img-box > .last-row {
+	.img-box.last-row {
 		border-bottom: none;
 	}
 
@@ -335,5 +330,33 @@ header > img {
 	}
 	.subfooter {
 		justify-content: space-between;
+	}
+}
+
+/* Medium screens */
+@media (min-width: 960px) {
+	/* CLIENTS SECTION */
+	.img-box {
+		flex-basis: 33%;
+		box-sizing: border-box;
+		align-self: baseline;
+	}
+	.img-box.los-angeles {
+		border: none;
+	}
+	.img-box.last-row {
+		border-bottom: none;
+	}
+	.img-box.last-img,
+	.img-box.img-box.harvard {
+		border-left: none;
+		border-right: none;
+	}
+	.img-box.capital {
+		border-right: 0.1em solid #ebebeb;
+	}
+	.img-box.oracle {
+		border-left: 0.1em solid #ebebeb;
+		border-right: 0.1em solid #ebebeb;
 	}
 }
