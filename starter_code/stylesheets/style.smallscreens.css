@@ -5,7 +5,7 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-@import url("./_nav.css");
+@import url("./_nav.smallscreens.css");
 
 /* fix to have no margin at the top */
 body {
@@ -25,7 +25,7 @@ header {
 }
 
 header input {
-    width:100%;
+    width:70%;
     margin-left:8px;
     margin-right:16px;
 }
@@ -55,10 +55,10 @@ header button {
     text-align:center;
 }
 .discoverslack button {
-    width:100%;
+    width:70%;
 }
 .discoverslack img {
-    height:60px;
+    height:50px;
     padding-bottom:8px;
     /* border-bottom:1px solid black; */
     margin-top:8px;
@@ -72,12 +72,14 @@ header button {
 }
 .discoverslack .images {
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items:center;
+    justify-content:center;
     width:100%;
 }
 .discoverslack .images .image {
-    width:80%;
+    width:49%;
     border-bottom:1px solid darkgray;
 }
 
@@ -87,11 +89,11 @@ header button {
     margin-left:8px;
 }
 .tryitforfree input {
-    width:100%;
+    width:70%;
     margin-right:16px;
 }
 .tryitforfree button {
-    width:100%;
+    width:70%;
     margin-right:8px;
 }
 
@@ -102,41 +104,46 @@ header button {
     /* flex:2; */
 }
 .footerlists ul {
-    min-width:40%; /* pretty lame that this did the trick, and 50% did not */
+    min-width:19%; /* changed from 40% to 20%  */
     list-style-type: none;
 }
 
 /* FINALE */
 .finale {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:center;
+    position:relative;
+    width:100%;
 }
 .finale ul {
+    position:absolute;
+    left:0px;
     display:flex;
     list-style-type: none;
     width:100%;
 }
 .finale ul li {
-    width:33%; /* to make the 3 items spread out over the entire width */
+    /* width:33%;  to make the 3 items spread out over the entire width */
+    margin-right:8px;
 }
 .finale img {
     height:50px;
 }
-.finale .localandsocialmedia{
+.finale .localeandsocialmedia{
+    position:absolute;
+    top:0px;
+    right:0px;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    align-items: center;
 }
+/*
 .finale .socialmedia {
     width:40%;
     margin:auto;
 }
+*/
 .finale .locale {
+    margin-right:8px;
     display:flex;
-     align-items:center; /* did the trick in getting the text centered vertically next to the flag */
+    align-items:center; /* did the trick in getting the text centered vertically next to the flag */
 }
 
 
