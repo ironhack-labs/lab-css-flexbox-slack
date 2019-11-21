@@ -62,9 +62,15 @@ input::placeholder {
     margin-top: 150px;
   }
 
+  .headerMail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   header img {
     order: 1;
-    width: 90%;
+    width: 50%;
     padding: 2rem 0;
     height: auto;
   }
@@ -98,8 +104,8 @@ input::placeholder {
   }
 
   header button {
-    background-color: blue;
-    border: solid 1px blue;
+    background-color: #192592;
+    border: solid 1px #192592;
     border-radius: 0.2rem;
     font-weight: bold;
     color: white;
@@ -132,7 +138,6 @@ input::placeholder {
     width: 80%;
     display: flex;
     justify-content: center;
-
   }
 
   main h2 {
@@ -154,12 +159,18 @@ input::placeholder {
     border: solid 1px #192592;
     border-radius: 0.2rem;
     font-weight: bold;
-    color: blue;
+    color: #192592;
     padding: 1rem;
     width: 100%;
   }
 
-
+  .companiesImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
   main img {
     height: 50px;
     padding: 2rem;
@@ -196,12 +207,18 @@ input::placeholder {
     font-family: "Raleway", sans-serif;
   }
   .mainBot button {
-    background-color: blue;
-    border: solid 1px blue;
+    background-color: #192592;
+    border: solid 1px #192592;
     border-radius: 0.2rem;
     font-weight: bold;
     color: white;
     padding: 1rem;
+  }
+
+  .bot1, .bot2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   footer img{
@@ -331,9 +348,15 @@ input::placeholder {
     margin-top: 150px;
   }
 
+  .headerMail{
+    display: flex;
+    width: 100%;
+    height: 50px;
+  }
+
   header img {
     order: 1;
-    width: 90%;
+    width: 50%;
     padding: 2rem 0;
     height: auto;
   }
@@ -357,9 +380,9 @@ input::placeholder {
     border: solid 1px #d4d4d4;
     border-radius: 0.2rem;
     padding: 1rem;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
-    margin-bottom: 2rem;
+    margin: 0 1.5rem;
   }
 
   header input::placeholder {
@@ -367,17 +390,18 @@ input::placeholder {
   }
 
   header button {
-    background-color: blue;
-    border: solid 1px blue;
+    background-color: #192592;
+    border: solid 1px #192592;
     border-radius: 0.2rem;
     font-weight: bold;
     color: white;
     padding: 1rem;
-    width: 100%;
+    width: 25%;
   }
 
   .signinText {
-    text-align: center;
+    text-align: left;
+    width: 100%;
   }
 
   main {
@@ -404,25 +428,40 @@ input::placeholder {
     padding: 3rem 2rem;
   }
 
-  main p {
-    font-size: 2rem;
-    padding: 0 2rem;
-    text-align: center;
-  }
-
   .mainGrey button {
     background-color: white;
     border: solid 1px #192592;
     border-radius: 0.2rem;
     font-weight: bold;
-    color: blue;
-    padding: 1rem;
+    color: #192592;
+    padding: 1.5rem;
+    width: 25%;
+  }
+  
+  .mainGrey p{
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .companiesImg{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
     width: 100%;
+    margin-top: 20px;
+  }
+
+  .borderImg{
+    border-bottom: 1px solid #d4d4d4;
+    width: 45%;
+    display: flex;
+    justify-content: center;
   }
 
   main img {
-    height: 50px;
+    height: 50%;
     padding: 2rem;
+    width: 60%;
   }
 
   main hr {
@@ -433,58 +472,73 @@ input::placeholder {
 
   .mainBot {
     display: flex;
-    flex-flow: column;
-    text-align: center;
+    justify-content: center;
     width: 100%;
-    padding: 2rem;
+    padding: 3rem 2rem;
     box-sizing: border-box;
   }
   .mainBot h3 {
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
     font-size: 2.5rem;
+    margin: 0 1.5rem;
   }
   .mainBot input {
     border: solid 1px #d4d4d4;
     border-radius: 0.2rem;
     padding: 1rem;
-    margin: 2rem 0;
+    margin: 0 1rem;
   }
 
   .mainBot input::placeholder {
     font-family: "Raleway", sans-serif;
   }
   .mainBot button {
-    background-color: blue;
-    border: solid 1px blue;
+    background-color: #192592;
+    border: solid 1px #192592;
     border-radius: 0.2rem;
     font-weight: bold;
     color: white;
     padding: 1rem;
   }
 
+  .bot1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
   }
-  footer img{
-    max-width: 150px;
-    height: auto;
+
+  .bot2 {
+    display: flex;
+    justify-content: flex-end;    
+    width: 50%;
+    padding: 2rem;
+  }
+  
+    .footerWhite{
+    display: flex;
+    border-top: solid 1px lightgrey;
+    justify-content: space-evenly;
   }
 
   .footerImgBox{
-    border-top: solid 1px lightgrey;
+    width: auto;
+  }
+
+  .footerImgBox img{
+    width: 150px;
+    height: auto;
   }
 
   .footerCol{
     display: flex;
     justify-content: center;
-    flex-flow: wrap;
+    margin-bottom: 2rem;
   }
 
   .col{
-    width: 50%
-  }
-
-  .col ul{
-    margin: 1rem 3rem;
+    width: 50%;
+    padding: 2.5rem 0;
   }
 
   .col li, p{
@@ -501,7 +555,7 @@ input::placeholder {
   .footerGrey{
     background: #f4f3f4;
     display: flex;
-    flex-flow: column;
+    justify-content: space-between;
     align-items: center;
     padding: 2rem;
   }
@@ -514,12 +568,12 @@ input::placeholder {
 
   .footerGrey li{
     font-weight: bold;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .footerSocial{
     display: flex;
-    flex-flow: column;
+    justify-content: center;
     align-items: center;
   }
 
