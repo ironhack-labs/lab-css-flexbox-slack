@@ -5,12 +5,13 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
-
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 nav{
     display: flex;
     position: fixed;
-    border: 1px solid red;
     background: #F4F3F4;
     width: 768px;
     align-items: center;
@@ -28,31 +29,65 @@ nav ul{
 /* <!-- ----------------------------------------------------------------------------- --> */
 header{
     display:flex;
-    border: 1px solid green;
     flex-direction: column;
     width: 768px;
 }
 
 h1{
-    margin-top: 115px;
+    font-size: 73px;
     order: 1;
+    margin-left: 23px;
+    margin-top: 58px;
 }
 
 #orden{
     order:2;
+    margin: 25px;
+    font-size: 37px;
+    
+}
+
+.email{
+    color:#F4F3F4;
+    background-color:white;
+    border:1px solid #F4F3F4;
+    width: 675px;
+    padding: 10px;
+    margin: 25px;
+    order:3;
+    border-radius: 7px;
+    padding: 20px;
 }
 
 .boton{
     color:#F4F3F4;
     background-color:#192592;
+    border:1px solid #192592;
     width: 700px;
     padding: 10px;
     margin: 25px;
     order:3;
+    border-radius: 7px;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.boton1{
+    color:#192592;
+    border: 1px solid #192592;
+    background-color:white;
+    width: 700px;
+    padding: 10px;
+    margin: 25px;
+    order:3;
+    border-radius: 7px;
+    font-weight: 600;
 }
 
 #orden1{
     order:4;
+    text-align: center;
+    font-size: 37px;
 }
 
 #imagen{
@@ -61,48 +96,64 @@ h1{
 /* <!-- ----------------------------------------------------------------------------- --> */
 main{
     display: flex;
-    border: 1px solid blue;
     width: 768px;
     flex-direction: column;
 }
+
+h2{
+    font-size: 49px;
+    text-align: center;
+}
+
+.text{
+    margin: 25px;
+    font-size: 37px;
+    text-align: center;
+}
+
 .divimg{
     background: #F4F3F4;
     margin: 50px;
     text-align: center;
     border-bottom:1px solid #2C303F;
 }
+
 .div1{
-    border: 1px solid purple;
+    background: #F4F3F4;
 }
 
 .div2{
-    border: 1px solid orange;
+    text-align: center;
 }
+
+h3{
+    font-size: 49px;
+}
+
 /* <!-- ----------------------------------------------------------------------------- --> */
 
 footer{
+    display: flex;
     flex-direction: column;
 }
 
 footer ul{
     list-style: none;
-
 }
 
 .title{
-    color:#2C303F;
-    font-weight: 900;
+    font-weight: 800;
+    color:#5b5e6d;
     margin:20px;
-
 }
 
-.text{
+.line{
     margin: 20px;
     color:#5b5e6d;
+    font-weight: 600;
 }
 
 .paragraph{
-    border:1px solid pink;
     display: flex;
     width: 768px;
     flex-wrap: wrap;
@@ -117,23 +168,39 @@ footer ul{
 }
 
 .finallDiv{
-    display: flex;
+    background-color:#F4F3F4 ;
     flex-direction: column;
-    text-align: center;
     width: 768px;
 }
 
-.finallDiv li{
-    flex-direction: row;
-    
+.firstDiv{
+    color:#5b5e6d;
+    font-size: 22px;
+    width: 705px;
+    text-align: center;
+    font-weight: 600;
 }
 
-.fin{
-    border:1px solid black;
+.seconDiv{
+    color:#5b5e6d;
     display: flex;
+    width: 768px;
+    justify-content: center;
     align-items: center;
+    font-weight: 600;
 }
 
-.fin img{
-    align-items: center;
+.thirDiv{
+    color:#5b5e6d;
+    width: 768px;
+    text-align: center;
+    font-size: 20px;
+    margin:10px;
+}
+
+@media all and (min-width: 767px)and(max-width:961px){
+
+    nav{
+        background: red;
+    }
 }
