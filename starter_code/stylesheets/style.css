@@ -72,7 +72,7 @@ header {
   padding-top: 10rem;
 }
 header p {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .input {
   border: 1px solid #ebebeb;
@@ -92,6 +92,7 @@ header p {
 }
 .signin {
   font-size: 0.9em;
+  text-align: center;
 }
 header button,
 .tryit button {
@@ -119,18 +120,20 @@ header button,
 }
 .logo-grid {
   display: flex;
-  align-items: center;
-  flex-flow: column;
+  flex-flow: row wrap;
   margin: 20px 0;
 }
 .logo-item {
-  padding: 2em;
+  padding: 2.2em;
   width: 100%;
   display: inherit;
   justify-content: center;
 }
 .tryit {
   padding: 3rem 0;
+}
+.try-text div {
+  text-align: center;
 }
 footer section:first-child li:first-child {
   font-weight: bold;
@@ -179,9 +182,61 @@ i {
   color: #6C6D79;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
   nav ul {
     display: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 1961px){
+  nav ul {
+    display: none;
+  }
+  .email-box {
+    display: flex;
+  }
+  .email-box input {
+    width: 340px;
+    margin-right: 10px;
+  }
+  .box {
+    width: 200px;
+  }
+  .body-margin {
+    margin: 0 40px;
+  }
+  .signin {
+    text-align: left;
+  }
+  header p {
+    width: 80%;
+  }
+  .discover-button {
+    display: flex;
+    justify-content: center;
+  }
+  .logo-item {
+    width: 50%;
+  }
+  .try-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .try-text div:first-child {
+    text-align: left;
+  }
+  .email2 button {
+    width: 170px;
+  }
+  .email2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    align-self: flex-end;
+  }
+  .email2 input {
+    margin-right: 10px;
+    width: 55%;
   }
 }
 @media screen and (min-width: 25rem) {
