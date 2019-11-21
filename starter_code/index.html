@@ -6,44 +6,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://use.fontawesome.com/1fb0eb3889.js"></script>
+  <link rel="stylesheet" href="stylesheets/reset.css">
   <title>Where work happens | Slack</title>
 </head>
 
 <body>
   <nav>
-    <img src="./images/slack-logo.png" alt="slack_logo">
-    <ul>
-      <li>Why Slack?</li>
-      <li>Pricing</li>
-      <li>About Us</li>
-      <li>Your Workspaces</li>
-    </ul>
+    <div>
+      <div class="logo">
+        <img src="./images/slack-logo.png" alt="slack_logo">
+      </div>
+      <ul>
+        <li><a href="#" title="Why Slack?"> Why Slack?</a></li>
+        <li><a href="#" title="Pricing">Pricing</a></li>
+        <li><a href="#" title="About Us">About Us</a></li>
+        <li><a href="#" title="Your Workspaces">Your Workspaces</a></li>
+      </ul>
+      <div class="burguer">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
   </nav>
+
+  <!-- Header -->
   <header>
-    <img src="./images/home_talking.png" alt="home_work_happening">
-    <h1>Where Work Happens</h1>
-    <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
-    <button type="button" name="button">GET STARTED</button>
-    <p>Already using Slack? <a href="#">Sign in</a></p>
+
+    <div class="box-image">
+      <img src="./images/home_talking.png" alt="home_work_happening">
+    </div>
+    <div class="box-text">
+      <h1 class="title">Where Work Happens</h1>
+    
+      <p>When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</p>
+
+      <form action="post">
+        <input type="text" name="email" placeholder="Email address">
+      </form>
+
+      <button class="button" type="button" name="button">GET STARTED</button>
+      
+      <p class="text">Already using Slack? <a href="#">Sign in</a></p>
+    </div>
+
   </header>
+
   <main>
-    <div>
-      <h2>You´re in good company</h2>
-      <p>Millions of people around the world have already made Slack the place where their work happens.</p>
-      <button>DISCOVER WHY</button>
-      <img src="./images/airbnb-logo.png" alt="">
-      <img src="./images/capital-one-logo.png" alt="">
-      <img src="./images/harvard-logo.png" alt="">
-      <img src="./images/los-angeles-times-logo.png" alt="">
-      <img src="./images/oracle-logo.png" alt="">
-      <img src="./images/ticketmaster-logo.png" alt="">
-    </div>
-    <div>
-      <p>Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <button type="button" name="button">GET STARTED</button>
-    </div>
+
+    <!-- Section 1: You´re in good company -->
+    <section class="company">
+      <h2 class="title">You´re in good company</h2>
+
+      <p class="text">Millions of people around the world have already made Slack the place where their work happens.</p>
+
+      <button class="button">DISCOVER WHY</button>
+
+      <div class="logo-company">
+        <div class="box-image">
+          <img src="./images/airbnb-logo.png" alt="airbnb-logo">
+        </div>
+
+        <div class="box-image">
+          <img src="./images/capital-one-logo.png" alt="capital-one-logo">
+        </div>
+
+        <div class="box-image">
+          <img src="./images/harvard-logo.png" alt="harvard-logo">
+        </div>
+
+        <div class="box-image">
+          <img src="./images/los-angeles-times-logo.png" alt="los-angeles-times-logo">
+        </div>
+
+        <div class="box-image">
+          <img src="./images/oracle-logo.png" alt="oracle-logo">
+        </div>
+
+        <div class="box-image">
+          <img src="./images/ticketmaster-logo.png" alt="">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ection 2: Try it for free -->
+    <section class="section-try">
+
+       <div class="box-text">
+        <p class="title">Try it for free</p>
+        <p class="text">Already using Slack? <a href="">Sign in</a></p>
+      </div>
+
+      <form action="post">
+        <input type="email" name="email" placeholder="Email address">
+      </form>
+
+      <buttonclass="button" type="button" name="button">GET STARTED</button>
+
+    </section>
   </main>
+
+  <!-- Footer -->
   <footer>
     <div>
       <img src="./images/iso-slack.png" alt="">
