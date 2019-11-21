@@ -11,6 +11,11 @@ h1 {
   color: #2C303F;
 }
 
+h2 {
+  font-size: 2em;
+  color: #2C303F;
+}
+
 p {
   font-size: 1.5em;
   margin-top: 5%;
@@ -18,17 +23,20 @@ p {
 }
 
 nav {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 5%;
   padding: 3% 5%;
   border-bottom: 1px solid  #F4F3F4;
+  background-color: white;
   /* border: 1px solid red; */
 }
 
 nav #logo {
-  width: 20%;
+  width: 25%;
 }
 
 nav #menu-icon {
@@ -43,6 +51,7 @@ nav ul {
 header {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
   padding: 5%;
 }
 
@@ -50,7 +59,7 @@ header h1{
   width: 60%;
 }
 
-header form {
+form {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -58,7 +67,7 @@ header form {
   
 }
 
-header input {
+form input {
   border: 1px solid #F4F3F4;
   border-radius: 5px;
   font-size: 1.2em;
@@ -68,12 +77,12 @@ header input {
   box-sizing: border-box;
 }
 
-header input::placeholder {
+form input::placeholder {
   color:#5b5e6d;
   padding-left: 10px;
 }
 
-header button {
+form button {
   background-color: #192592;
   color: #F4F3F4;
   font-size: 1.2em;
@@ -82,11 +91,11 @@ header button {
   border-radius: 5px;
 }
 
-header p#sign-in {
+header p.sign-in {
   align-self: center;
 }
 
-header p#sign-in a, header p#sign-in a:visited {
+ p.sign-in a, p.sign-in a:visited {
   color: #192592;
   text-decoration-color: #192592;
 }
@@ -98,6 +107,64 @@ header img {
   max-width:100%;
 }
 
-main {
+main div#main-discover{
+  display: flex;
+  flex-direction: column;
   background-color: #F4F3F4;
+  border-top: 1px solid #5b5e6d;
+  border-bottom: 1px solid #5b5e6d;
+  margin-top: 10%;
+  padding: 10% 5%;
+}
+
+main h2, main p {
+  text-align: center;
+}
+
+main div#main-discover button {
+  font-size: 1.2em;
+  margin-top: 10%;
+  height: 70px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+main button#discover {
+  background-color: #FFF;
+  color: #192592;
+  border: 1px solid #192592;
+  margin-bottom: 10%;
+}
+
+main img {
+  margin-top: 10%;
+  align-self: center;
+  max-width: 50%;
+  padding: 10% 20%;
+  border-bottom: 1px solid #5b5e6d;
+}
+
+main img:last-child {
+  border: none;
+}
+
+main div#main-try {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  padding: 5%;
+  border-bottom: 1px solid #5b5e6d;
+}
+
+main div#main-try p:first-child{
+ font-size: 1.8em;
+ font-weight: bold;
+}
+
+main div#main-try p {
+  margin-top: 10px;
+}
+
+main div#main-try form {
+  margin-bottom: 10%;
 }
