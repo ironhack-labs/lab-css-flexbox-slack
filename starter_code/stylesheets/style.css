@@ -54,7 +54,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid 1px #F4F3F4;
+  border-bottom: solid 1px #ddd;
   color: #5b5e6d;
 }
 
@@ -82,13 +82,14 @@ nav ul{
   width: 95%;
 }
 
-#title .text p{
+#title .text #intro{
   padding: 40px 0 0 0;
   width: 90%;
 }
 
 #title form{
   padding-top: 40px;
+  font-size: 12px;
 }
 
 #title h1 {
@@ -104,7 +105,7 @@ nav ul{
 .button {
   width: 100%;
   border-radius: .5em;
-  padding: 2em 0;
+  padding: 1.5em 0;
   margin-top: 1.5em; 
   text-align: center;
   background-color: #192592;
@@ -122,7 +123,7 @@ nav ul{
   box-sizing: border-box;
 }
 
-.sign-in {
+#title .text .sign-in {
   text-align: center;
   padding: 1em 0 1.5em 0;
 }
@@ -200,6 +201,12 @@ nav ul{
   width: 100%;
   padding: 0;
   margin: .5em auto 2em;
+  font-size: 12px;
+}
+
+.sign-in {
+  text-align: center;
+  font-size: 14px;
 }
 
 footer {
@@ -283,6 +290,7 @@ footer {
     justify-content: space-between;
     width: 80%;
     align-content: center;
+    max-width: 600px;
   }
 
   #title .button {
@@ -294,6 +302,11 @@ footer {
     width: 63%;
   }
   
+  #title .text .sign-in {
+    text-align: left;
+    padding: 1em 0 1.5em 0;
+  }
+
   #header-img {
     width: 692px;
     align-self: center;
@@ -347,8 +360,10 @@ footer {
   #try-it form{
     display: flex;
     width: 50%;
+    max-width: 550px;
     justify-content: space-around;
     margin: 40px 0;
+    font-size: 12px;
   }
 
   #try-it button {
@@ -364,12 +379,14 @@ footer {
     padding: 30px 0;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
   }
 
   #links {
     width: 80%;
     justify-content: space-around;
-    padding: 10px 0 0 0;
+    padding: 10px 30px 0 0;
+    max-width: 900px;
   }
 
   #links .link-box {
@@ -383,6 +400,7 @@ footer {
   #grey-footer ul {
     display: flex;
     width: 35%;
+    max-width: 300px;
     justify-content: space-between;
     padding: 1.5em 0;
   }
@@ -417,5 +435,79 @@ footer {
 
   #latimes {
     border-bottom: none;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .fa.fa-bars { 
+    display: none;
+  } 
+
+  nav ul{
+    display: flex;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    width: 500px;
+    justify-content: space-evenly;
+    padding: 0 30px 0 0;
+    align-items: center;
+  }
+
+  #workspaces {
+    border: solid 1px #5b5e6d;
+    border-radius: 0.5em;
+    padding: 1em
+  }
+
+  #title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 130px 0 30px;
+  }
+
+  #title .text h1 {
+    padding: 0;
+    max-width: 600px;
+    font-size: 5em;
+  }
+
+
+  #title #img-box {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #title #header-img {
+    width: 400px
+  }
+
+  #title .text {
+    order: 1;
+    width: 50%
+  }
+
+  #title .text form{
+    width: 200px;
+    padding: 35px 0 0 0;
+  }
+
+  #title .text button{
+    width: 100%;
+  }
+
+  .mail {
+    display: none;
+  }
+
+  #try-it .button {
+    width: 100%;
+  }
+
+  #try-it form {
+    width: 200px;
   }
 }
