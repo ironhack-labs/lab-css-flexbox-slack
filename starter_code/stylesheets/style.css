@@ -1,11 +1,3 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 .open-sans {
@@ -17,7 +9,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 5%;
+  padding: 0% 5%;
   background: #fff;
 }
 
@@ -56,7 +48,7 @@ nav {
 }
 
 header {
-  padding: 22% 10% 0 10%;
+  padding: 20% 5% 0 5%;
 }
 
 .main-title {
@@ -272,11 +264,7 @@ header {
   padding: 0 5%;
 }
 
-@media (min-width: 768px) and (max-width: 960px) {
-  header {
-    padding: 20% 5% 0 5%;
-  }
-
+@media (min-width: 768px) {
   .main-title {
     width: 100%;
   }
@@ -293,14 +281,15 @@ header {
 
   .form-input-header {
     width: 40%;
-    padding: 4% 3%;
+    padding: 2%;
     margin-right: 2%;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .form-btn-header {
-    padding: 4% 5%;
+    padding: 2% 5%;
     margin: 0;
+    font-size: 1em;
   }
 
   .wrapper-link {
@@ -340,7 +329,7 @@ header {
     padding: 5%;
   }
 
-  .lateral-border {
+  .wrapper-logo:nth-child(odd) {
     border-right: 1px solid #e7e4e4;
   }
 
@@ -369,7 +358,7 @@ header {
   }
 
   .form-email-main {
-    width: 69%;
+    width: 65%;
     justify-content: flex-end;
     flex-direction: row;
   }
@@ -461,4 +450,42 @@ header {
   .container-footer-info-social > * {
     padding: 0;
   }
+}
+
+@media (min-width: 960px) {
+  .wrapper-brands-logo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .wrapper-logo {
+    width: 20%;
+    padding: 5%;
+  }
+
+  .wrapper-logo:nth-last-child(1n+3) {
+    border-bottom: 1px solid #e7e4e4;
+  }
+
+  .wrapper-logo:nth-child(odd) {
+    border-right: none;
+  }
+
+  .wrapper-logo:nth-child(1n + 4) {
+    border-bottom: none;
+  }
+
+  .wrapper-logo:nth-child(3n + 2) {
+    border-right: 1px solid #e7e4e4;
+    border-left: 1px solid #e7e4e4;
+  }
+
+  .wrapper-logo img {
+    width: 60%;
+    height: 8vh;
+  }
+}
+
+@media (min-width: 1024px) {
+
 }
