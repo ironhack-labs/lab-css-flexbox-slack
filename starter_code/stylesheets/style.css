@@ -8,6 +8,12 @@ nav grey: #5b5e6d;
 
 html {
     font-size: 16px;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 p, a {
@@ -137,10 +143,10 @@ header {
     border-radius: 5px;
     width: 100%;
     cursor: pointer;
-    font-size: 16px;
     height: 50px;
     padding: 15px;
     box-sizing: border-box;
+    font-size: 1rem;
 }
 
 .email-form {
@@ -162,6 +168,89 @@ header {
     margin-bottom: 40px;
 }
 
+.logos-bg {
+    background-color: #F4F3F4;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.logos-bg h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.logos-bg p {
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+    padding: 0px 5%;
+}
+
+.logos-bg button {
+    background: #FFF;
+    border: 1px solid #192592;
+    color: #192592;;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 18px;
+    box-sizing: border-box;
+    margin: 30px auto;
+    display: block;
+    width: 200px;
+    font-size: 1rem
+}
+
+.cont-logos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 5%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.logo-cont {
+    width: 100%;
+    margin: auto;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo-cont:nth-child(-n+5) {
+    border-bottom: 2px solid #EBEBEB;
+}
+
+.logo-item {
+    height: 50px;
+    max-width: auto;
+}
+
+.resp2 {
+    height: 100%;
+    width: auto;
+    margin: auto;
+}
+
+.resp3 {
+    height: 60%;
+    width: auto;
+    margin: auto;
+}
+
+.resp4 {
+    height: 80%;
+    width: auto;
+    margin: auto;
+}
+
+
 
 @media (min-width: 768px) {
 
@@ -181,10 +270,48 @@ header {
         width: 29%;
     }
 
+    .logo-cont {
+        width: calc(50% - 1px);
+        
+    }
+
+    .logo-cont:nth-child(-n+5) {
+        border-bottom: 0px solid #EBEBEB;
+    }
+
+    .logo-cont:nth-child(-n+4) {
+        border-bottom: 2px solid #EBEBEB;
+    }
+
+    .logo-cont:nth-child(odd) {
+        border-right: 2px solid #EBEBEB;
+    }
+
+
 }
 
 @media (min-width: 1024px) {
 
+    .logo-cont {
+        width: calc(33.33% - 1.33px);    
+    }
+
+    .logo-cont:nth-child(-n+4) {
+        border-bottom: 0px solid #EBEBEB;
+    }
+
+    .logo-cont {
+        border-right: 2px solid #EBEBEB;
+    }
+
+    .logo-cont:nth-child(3n) {
+        border-right: 0px solid #EBEBEB;
+    }
+
+    .logo-cont:nth-child(-n+3) {
+        border-bottom: 2px solid #EBEBEB;
+    }
+    
 
 
 }
