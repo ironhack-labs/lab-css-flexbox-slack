@@ -17,8 +17,9 @@ nav {
   padding: 0 4vh;
   position: fixed;
   min-height: 10vh;
+  border-bottom: 1px solid rgba(103,106,123,0.2);
+  color:#5b5e6d;
   background-color: white;
-border-bottom: 1px solid(#5b5e6d);
 }
 
 .slack-logo {
@@ -41,12 +42,21 @@ border-bottom: 1px solid(#5b5e6d);
 .nav-menu i {
   font-size: 1.8rem;
   margin-left: 60vh;
+  color: black;
 }
 
 .nav-menu li {
   list-style: none;
   padding: 1rem;
   font-size: 1rem;
+}
+
+.nav-menu li a{
+    border: 1px solid #5b5e6d;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #5b5e6d;
 }
 
 /* HEADER */
@@ -335,6 +345,13 @@ header {
   margin-right: 10px;
   vertical-align: text-top;
 }
+.container-footer ul:last-child i{
+    color: #5b5e6d;
+}
+
+.container-footer ul:last-child span{
+    color: #5b5e6d;
+}
 
 /* MEDIA QUERY*/
 
@@ -421,5 +438,90 @@ header {
     display: flex;
     justify-content: center;
 }
+
+}
+
+@media (max-width: 960px){
+
+.nav-menu ul li{
+    display: none;
+}
+    .logo-container div{
+    flex-basis: 50%;
+}
+
+}
+
+@media (max-width: 1024px)
+{
+    header{
+        flex-direction: column;
+    }
+    .nav-menu li{
+        display: none;
+    }
+    .nav-menu i{
+        display: inline-block;
+        margin-left: 350vh;
+    }
+    .container-home{
+        order:3;
+    }
+    .container-home img{
+        order:1;
+    }
+    .container-home-texto input{
+        width: 40%;
+        flex-basis: 50%;
+    }
+    .container-home-texto button{
+        width: 20%;
+    }
+
+    .container-company-logo div{
+        flex-basis: 50%;
+    }
+   .container-try input {
+       width: 20%;
+       margin-right: 10px;
+   }
+   .container-try button{
+       margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 8px;
+   }
+
+}
+
+
+@media (min-width: 1200px){
+
+    .nav-menu{
+        margin-left: 110vh;
+    }
+    .nav-menu div i {
+        display: none;
+    }
+    .nav-menu ul li{
+        display: inline;
+    }
+.container-home-texto{
+    order:1;
+}
+.container-home-texto input {
+    display: none;
+}
+.container-home-texto button{
+    width: 40%;
+}
+.container-home img{
+order: 2;
+}
+.container-try input{
+    display: none;
+}
+
+
+
 
 }
