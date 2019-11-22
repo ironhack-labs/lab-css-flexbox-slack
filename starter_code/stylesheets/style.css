@@ -5,7 +5,7 @@
 }
 
 nav {
-  position: fixed;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +26,7 @@ nav {
 }
 
 .menu-list {
-  visibility: hidden;
+  display: none;
 }
 
 .menu-btn {
@@ -48,7 +48,16 @@ nav {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   padding: 20% 5% 0 5%;
+}
+
+.wrapper-img-header {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
 }
 
 .main-title {
@@ -100,12 +109,6 @@ header {
   color: #192592;
 }
 
-.wrapper-img-header {
-  display: flex;
-  justify-content: center;
-  margin-top: 10%;
-}
-
 .wrapper-img-header img {
   width: 85%;
 }
@@ -133,8 +136,7 @@ header {
 }
 
 .btn-discovery {
-  width: 100%;
-  padding: 6% 0;
+  padding: 4% 5%;
   margin-bottom: 5%;
   background: white;
   color: #192592;
@@ -314,8 +316,7 @@ header {
   }
 
   .btn-discovery {
-    width: 40%;
-    padding: 4%;
+    padding: 3% 4%;
     font-size: 1.3em;
   }
 
@@ -365,13 +366,13 @@ header {
 
   .form-input-main {
     width: 35%;
-    padding: 5% 3%;
+    padding: 3% 2%;
     margin-right: 2%;
     font-size: 1.5em;
   }
 
   .form-btn-main {
-    padding: 5% 7%;
+    padding: 3% 6%;
     margin: 0;
     font-size: 1.3em;
   }
@@ -411,7 +412,7 @@ header {
 
   .container-footer-info {
     margin-top: 0;
-    padding: 5%;
+    padding: 2%;
     font-size: 1.3em;
     display: flex;
     justify-content: space-between;
@@ -453,6 +454,19 @@ header {
 }
 
 @media (min-width: 960px) {
+  #slack-logo {
+    width: 10%;
+  }
+
+  header {
+    padding: 10% 5% 0 5%;
+  }
+
+  .btn-discovery {
+    padding: 2% 3%;
+    font-size: 1.3em;
+  }
+
   .wrapper-brands-logo {
     display: flex;
     flex-wrap: wrap;
@@ -463,7 +477,7 @@ header {
     padding: 5%;
   }
 
-  .wrapper-logo:nth-last-child(1n+3) {
+  .wrapper-logo:nth-last-child(1n + 3) {
     border-bottom: 1px solid #e7e4e4;
   }
 
@@ -484,8 +498,77 @@ header {
     width: 60%;
     height: 8vh;
   }
+
+  .form-input-main {
+    width: 55%;
+    padding: 2% 1%;
+    margin-right: 2%;
+    font-size: 1.2em;
+  }
+
+  .form-btn-main {
+    padding: 2% 6%;
+    margin: 0;
+    font-size: 1.3em;
+  }
+
+  .container-footer-info {
+    font-size: 1em;
+  }
+
+  .container-footer-info-list {
+    width: 33%;
+  }
+
+  .wrapper-footer-info-box {
+    width: 33%;
+  }
 }
 
 @media (min-width: 1024px) {
+  .menu-btn {
+    display: none;
+  }
 
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+  }
+
+  .menu-list li:last-child {
+    border: 1px solid #2c303f;
+    border-radius: 5px;
+    padding: 2%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .wrapper-img-header {
+    justify-content: flex-start;
+    width: 50%;
+    order: 0;
+    margin-top: 0;
+  }
+
+  .wrapper-info-header {
+    width: 50%;
+  }
+
+  .form-input-header {
+    display: none;
+  }
+
+  .form-btn-header {
+    padding: 4% 6%;
+  }
+
+  .wrapper-link {
+    font-size: 1em;
+  }
 }
