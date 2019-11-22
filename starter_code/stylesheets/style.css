@@ -124,7 +124,7 @@ html {
   }
 
   header img {
-    order: 1;
+    order: 3;
     margin-top: 70px;
   }
 
@@ -1121,13 +1121,15 @@ span {
       width: 190px;
       height: 300px;
       height: 98.8px;
-      margin-left: 70px;
+      margin-left: -50px;
     }
     
     nav ul {
       display: flex;
       flex-flow: row nowrap;
-      /* justify-content: center; */
+      justify-content: space-around;
+      align-items: baseline;
+      width: 47vw;
     }
     
     nav li {
@@ -1137,6 +1139,13 @@ span {
       color: #5b5e6d;
       list-style: none;
       
+    }
+
+    .nav-li-border {
+      border: 1px solid #5b5e6d;
+      padding: 10px;
+      border-radius: 5px;
+
     }
     
     header {
@@ -1156,21 +1165,31 @@ span {
       align-self: flex-start;
       width: 32.6vw;
     } */
-    
+
+
+    .full-header {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .header-div-1 {
       display: flex;
       flex-flow: column wrap;
-      /* justify-content: stretch; */
+      align-items: baseline;
+      margin-left: 110px;
     }
     
     header h1 {
       font-size: 6rem;
       font-weight: bolder;
-      width: 72vw;
+      width: 36vw;
       line-height: 5.2rem;
       order: -1;
       margin-top: 200px;
       letter-spacing: 0px;
+      margin-right: 70px; 
     }
     
     .header-p1 {
@@ -1179,6 +1198,7 @@ span {
       margin-top: 7px;
       width: 80.3vw;
       line-height: 4rem;
+      width: 100%;
     }
     
     .button {
@@ -1199,23 +1219,15 @@ span {
     }
     
     .input {
-      display: flex;
-      align-self: flex-start;
-      height: 60px;
-      width: 40vw;
-      border-radius: 5px;
-      font-size: 1.5rem;
-      font-family: Arial, Helvetica, sans-serif;
-      padding-left: 15px;
-      border: 2px solid rgb(228, 226, 226);
+      display: none;
     }
     
     .header-p2 {
       order: 2;
       display: flex;
-      width: 25vw;
+      width: 16.5vw;
       align-content: center;
-      justify-content: flex-start;
+      justify-content: flex-end;
       font-size: 1.5rem;
       font-family: Arial, Helvetica, sans-serif;
     }
@@ -1225,8 +1237,16 @@ span {
     }
     
     header img {
-      order: 3;
-      margin-top: 70px;
+      order: -5;
+      margin-top: 450px;
+      width: 40%;
+      height: 80%
+    }
+
+    .sign-in {
+      display: flex;
+      flex-direction: column;
+      margin-left: 502px;
     }
     
     main {
