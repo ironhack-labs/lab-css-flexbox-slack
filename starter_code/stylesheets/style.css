@@ -16,11 +16,15 @@ body {
     padding: 0;
 }
 
-p, a {
+p, .menu a, .block ul li, .links-footer , .flag {
     font-family: 'Roboto', sans-serif;
     color: #5b5e6d;
     line-height: 25px;
     font-size: 1rem;
+}
+
+a {
+    color: #192592;
 }
 
 .slab {
@@ -113,7 +117,8 @@ header {
 
 .img-header {
     order: 1;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 .email-form {
@@ -124,9 +129,12 @@ header {
 }
 
 .email-form input {
+    width: 100%;
+}
+
+.email {
     border-radius: 5px;
     border: 2px solid #EBEBEB;
-    width: 100%;
     font-size: 16px;
     height: 50px;
     padding: 15px;
@@ -135,13 +143,16 @@ header {
 }
 
 .email-form button {
+    width: 100%;
+}
+
+.button-blue {
     background: #192592;
     border: 2px solid #192592;
     color: #FFF;
     text-align: center;
     font-weight: 600;
     border-radius: 5px;
-    width: 100%;
     cursor: pointer;
     height: 50px;
     padding: 15px;
@@ -158,10 +169,6 @@ header {
 
 .content-header p:nth-of-type(2) {
     text-align: center;
-}
-
-.content-header p:nth-of-type(2) a {
-    color: #192592;
 }
 
 .content-header p {
@@ -250,6 +257,134 @@ header {
     margin: auto;
 }
 
+.try {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 50px 5%;
+    box-sizing: border-box;
+    align-items: center;
+    border-bottom: 2px solid #EBEBEB;
+}
+
+.try-left p:first-child {
+    color: #2C303F;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.try-left {
+    text-align: center;
+    width: 100%;
+}
+
+.try-right {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.try-right input, .try-right button {
+    width: 100%;
+}
+
+.footer-blocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 5%;
+    box-sizing: border-box;
+}
+
+.cont-blocks {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.block {
+    width: 50%;
+}
+
+.block ul {
+    list-style-type: none;
+}
+
+.block ul li {
+    line-height: 35px;
+}
+
+.block ul li:first-child {
+    font-weight: 600;
+    color: #2C303F;
+}
+
+.footer-dark {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #F4F3F4;
+    padding: 30px 0px 20px 0px;
+    box-sizing: border-box;
+}
+
+.links-footer {
+   width: 100%;
+}
+
+.links-footer ul {
+    max-width: 400px;
+   margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.links-footer li, .flag span  {
+    font-weight: 600;
+}
+
+.social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 350px;
+    margin: 30px auto;
+}
+
+.flag img {
+    width: 25px;
+    height: auto;
+}
+
+.flag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   width: 100%;
+   justify-content: center;
+}
+
+.links-soc {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.fa-twitter, .fa-facebook, .fa-youtube-play {
+    color: #5b5e6d;
+    font-size: 30px;
+}
+
+
 
 
 @media (min-width: 768px) {
@@ -287,6 +422,58 @@ header {
         border-right: 2px solid #EBEBEB;
     }
 
+    .try-right {
+        width: 70%;
+    }
+    
+    .try-right input, .try-right button {
+        width: 200px;
+    }
+
+    .try-left {
+        text-align: left;
+        width: 30%;
+    }
+
+    .try-right input {
+        margin-right: 10px;
+    }
+
+    .logo-footer {
+        width: 25%;
+    }
+
+    .cont-blocks {
+        width: 75%;
+    }
+    
+    .block {
+        width: 25%;
+    }
+
+    .footer-dark {
+        padding: 0;
+    }
+
+    .links-footer {
+        width: 350px;
+     }
+
+     .social {
+         width: 370px;
+         margin: 0;
+         align-items: center;
+         height: 100px;
+     }
+
+     .flag {
+         width: auto;
+     }
+
+     .links-soc {
+        
+        width: 150px;
+    }
 
 }
 
@@ -313,7 +500,6 @@ header {
     }
     
 
-
 }
 
 @media (min-width: 1200px) {
@@ -333,11 +519,16 @@ header {
 
     .img-header {
         width: 45%;
+        margin: 0;
     }
 
     .content-header {
         width: 45%;
         order: 1;
+    }
+
+    .cont-blocks {
+        width: 790px;
     }
 
 }
