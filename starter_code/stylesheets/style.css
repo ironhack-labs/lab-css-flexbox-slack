@@ -19,13 +19,15 @@ nav {
   border-bottom: 1px solid #ddd;
   width: 100%;
 }
+.nav-list {
+  display: none;
+}
 
 #top-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 
 .hamburger {
   width: 6%;
@@ -43,7 +45,7 @@ header {
 
 header h1 {
   color: #2c303f;
-  font-size: 3.1em;
+  font-size: 3em;
   text-align: left;
 }
 
@@ -55,26 +57,21 @@ header p {
   margin-bottom: 40px;
   line-height: 150%;
   margin-bottom: 5px;
+  margin-right: 0px;
 }
 
-.contact-box {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.email {
+.email-first {
   text-align: justify;
   width: 100%;
   font-size: 0.93em;
   min-height: 50px;
-  border: 1px solid #5b5e6d;
+  border: 1px solid #f4f3f4;
   border-radius: 4px;
   padding-left: 10px;
   margin-bottom: 20px;
   width: 100%;
 }
-.button {
+.button1 {
   background-color: #192592;
   border: none;
   color: white;
@@ -89,6 +86,7 @@ header p {
 .log-in {
   max-width: 100vw;
   width: 100%;
+  margin-top: 30px;
 }
 
 .main-info {
@@ -154,17 +152,43 @@ h2 {
   margin-left: 40px;
   margin-right: 40px;
 }
+hr {
+  background: #f4f3f4;
+  margin-top: 40px;
+}
 
 .second-button p {
   color: #2c303f;
   font-family: Arial, Helvetica, sans-serif;
 }
+.email-second {
+  text-align: justify;
+  width: 100%;
+  font-size: 0.93em;
+  min-height: 50px;
+  border: 1px solid #f4f3f4;
+  border-radius: 4px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.buttontab {
+  background-color: #192592;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 104%;
+}
 
 .img-company {
-  display: flex;
-  justify-content: center;
-  padding: 3em 0;
-  align-self: center;
+  padding: 5em;
+
+  width: 50%;
 }
 
 .img-footer {
@@ -246,16 +270,22 @@ ul {
   header {
     margin-top: 150px;
   }
+  header h1 {
+    font-size: 4em;
+  }
+  .nav-list {
+    display: none;
+  }
 
   .contact-box {
     display: flex;
     flex-direction: row;
   }
 
-  .email {
+  .email-first {
     width: 45%;
   }
-  .button {
+  .button1 {
     width: 30%;
     height: 50%;
     margin-left: 10px;
@@ -277,7 +307,7 @@ ul {
 
   .second-button {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: row;
     margin: 0px;
   }
@@ -287,11 +317,15 @@ ul {
     margin-left: 0px;
   }
   .buttontab {
-    width: 35%;
+    width: 40%;
   }
-  .emailtab {
+  .email-second {
     width: 30%;
     margin-left: 110px;
+  }
+  .img-company {
+    padding: 5em;
+    width: 25%;
   }
 
   .tablet-foot {
@@ -319,20 +353,124 @@ ul {
 
 @media (min-width: 960px) {
   .img-company {
-    width: 33%;
+    width: 26%;
+    padding: 5em;
+  }
+  .nav-list {
+    display: none;
+  }
+  .second-button {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {
   .hamburger {
     display: none;
   }
- 
 
+  .logo {
+    width: 20%;
   }
-  .logo{
-    width:20%;
-
-
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5b5e6d;
   }
-  
+
+  .l-box {
+    border: 0.5px solid #2c303f;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+
+  .email-first,
+  .email-second {
+    display: none;
+  }
+  .work {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .work-img {
+    order: 1;
+    width: 50%;
+    display: flex;
+  }
+  .text-work {
+    order: 2;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  header {
+    margin-top: 250px;
+  }
+  .button1 {
+    background-color: #192592;
+    border: none;
+    color: white;
+    padding: 25px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 33%;
+    margin-top: 15px;
+  }
+
+  header p {
+    color: #5b5e6d;
+    font-size: 1.4em;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    line-height: 150%;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    font-size: 5em;
+    margin-top: 0px;
+  }
+  #company button {
+    width: 17%;
+  }
+  .img-company {
+    width: 18%;
+    padding: 5em;
+  }
+  .buttontab {
+    background-color: #192592;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  .second-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .text-foot {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .tablet-foot ul {
+    margin-left: 5em;
+  }
 }
