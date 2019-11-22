@@ -63,6 +63,13 @@ p{
 }
 .header-mobile .img{
   display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.header-mobile img{
+  width: 85%;
+  height: auto;
 }
 .button{
   background-color:#192592 ;
@@ -109,12 +116,17 @@ input{
   align-items: center;
   justify-content:center ;
 }
+.container-img{
+  display: flex;
+  justify-content: center;
+}
 .mobile-top img{
-  width: 30%;
+  width: 50%;
   height: auto;
   padding: 20px 0;
 }
 .mobile-top hr{
+  display: flex;
   color:#F4F3F4;
   width: 100%;
 }
@@ -175,13 +187,73 @@ input{
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
-
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 .footer-box div{
   padding: 20px;
+}
+@media (min-width:767px) and (max-width:961px){
+  h1{
+    font-size: 3.5em;
+  }
+  .header-mobile{
+    margin: 0 40px;
+    padding: 14px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    }
+    .ipad-input{
+      width: 50%;
+    }
+    .ipad-button{
+      margin-left: 15px;
+      width: 30%;
+    }
+    .header-mobile p{
+      justify-content: flex-start;
+      width: 100%;
+    }
+    .header-mobile img{
+      width: 50%;
+      height: auto;
+    }
+    .mobile-top button{
+      width: 30%;
+    }
+    .mobile-top p{
+      text-align: center;
+    }
+    .container{
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content:center ;
+    }
+    .container-img{
+      width: 50%;
+    }
+    .mobile-top hr{
+      display: none;
+    }
+    .mobile-top img{
+      width: 50%;
+      height: auto;
+      padding: 20px 0;
+    }
+    .mobile-bottom{
+      flex-flow: row nowrap;
+    }
+    .ipad-main{
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      width: 50%;
+    }
+
 }
 
 @media (max-width: 1200px) {
