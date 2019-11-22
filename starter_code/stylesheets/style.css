@@ -96,6 +96,11 @@ header p{
    
 }
 
+.register{
+    display: flex;
+    flex-direction: column;
+}
+
 input {
     height: 2em;
     border: 1px  solid;
@@ -128,9 +133,15 @@ button {
 
 /* After 1º Image */
 
-.discover{
+.discover-container{
     display: flex;
     background-color: #F4F3F4; 
+    width: 100%;
+}
+
+.discover{
+    display: flex;
+    margin: 0 auto;
     flex-direction: column;
     width: 90%;
 }
@@ -175,7 +186,7 @@ button {
 }
 
 .logos-business div img{
-    width: 15em;
+    height: 2.4em;
 }
 
 
@@ -186,16 +197,25 @@ button {
     width: 90%;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .test-free p{
     align-self: center;
 }
 
-.test-free button{
-    width: 90%;
-    margin: 1em auto;
+
+.text-free{
+    display: flex;
+    flex-direction: column;
 }
+
+.register-free{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .bold-text{
     font-size: 1.5em;
@@ -389,6 +409,12 @@ button {
        
     }
     
+
+    .register{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     input {
         height: 2em;
         border: 1px  solid;
@@ -401,19 +427,24 @@ button {
     }
     
     button {
+        display: flex;
+        justify-content: center;
+        width: 30vw;
+        margin: 1.4em 0.4em;
         background-color: #192592;
         font-size: 1.2em;
         color: white;
         font-weight: 800;
-        height: 4em;
+        height: 4.3em;
         border-radius: 7px;
         border: 1px solid;
         margin-bottom: 1em;
+
     }
     
     .sign-in{
         display: flex;
-        align-self: center;
+        align-self: flex-start;
         margin-bottom: 2em;
     }
     
@@ -421,10 +452,15 @@ button {
     
     /* After 1º Image */
     
-    .discover{
+    .discover-container{
         display: flex;
         background-color: #F4F3F4; 
+        width: 100%;
+    }
+    .discover{
+        display: flex;
         flex-direction: column;
+        margin: 0 auto;
         width: 90%;
     }
     
@@ -437,6 +473,7 @@ button {
     
     .discover p{
         margin-bottom: 1.5em;
+        text-align: center;
     }
     
     
@@ -445,30 +482,40 @@ button {
         margin: 0 auto;
         background-color: white;
         color: #192592;
-        width: 90%;
+        width: 35%;
+        height: 3.5em;
     
     }
     
     .logos-business{
         display: flex;
         flex-wrap: wrap;
-        
+        margin: 3em 0;
+
     }
     
     .logos-business div{
         display: flex;
         justify-content: center;
-        width: 80%;
+        width: 40%;
         padding: 2em;
         border-bottom: 1px solid #c7c7c7;
     }
     
+    .logos-business-izq{
+        border-right: 1px solid #c7c7c7;
+    }
+
+    .logos-business-izq.no-botton{
+        border-bottom: none;
+    }
+
     .logos-business div:last-child{
         border-bottom: none;
     }
     
     .logos-business div img{
-        width: 15em;
+        height: 2.4em;
     }
     
     
@@ -476,18 +523,35 @@ button {
     /* After of business logos */
     
     .test-free {
-        width: 90%;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        margin: 0em 1em;
     }
     
     .test-free p{
-        align-self: center;
+        align-self: flex-start;
     }
     
-    .test-free button{
-        width: 90%;
-        margin: 1em auto;
+
+    .text-free{
+        display: flex;
+        flex-direction: column;
+        width: 35%
+    }
+    
+    .register-free{
+        width: 100%;
+        display: flex;
+        width:55%;
+    }
+
+    .register-free input{
+        width: 40%;
+    }
+
+    .register-free button{
+
+        margin: 1.4em 0em 1.4em 0.5;
     }
     
     .bold-text{
@@ -509,16 +573,20 @@ button {
     .menu-footer{
         display: flex;
         flex-wrap: wrap;
-        width: 90%;
+        width: 100%;
     }
     
     .img-logo-pre{
-        width: 100%;
+        width: 25%;
+    }
+
+    .img-logo-pre img{
+        height: 9em;
     }
     
     .menu-footer ul{
         margin: 0 auto;
-        width: 40%;
+        width: 15%;
         color: black;
         
     }
@@ -535,39 +603,39 @@ button {
     
     .contact-footer{
         display: flex;
-        flex-direction: column;
         background-color:#F4F3F4;
-        align-self: center;
-        padding-bottom: 2em;
+        justify-content: space-between;
+        padding: 1.5em 0;
     }
     
     .contact-menu{
-        width: 100%;
+        width: 50%;
     
     }
     
     .contact-menu ul{
         display: flex;
-        justify-content: space-evenly;
-        width: 80%;
         font-size: 0.9em;
+        align-items: center;
         margin: 0 auto;
         
     } 
     
     .contact-menu ul li{
         font-weight: bold;
-        padding: 1em 0.1em;
+        padding: 1em 0.5em;
         color: #545661;
     }
     
     .language-social{
-        width: 100%;
+        display: flex;
+        align-items: center;
+        width: 50%;
     }
     
     .language{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         width: 100%;
         margin: 1em 0;
@@ -594,7 +662,7 @@ button {
     .social {
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 50%;
         
     
     }
@@ -607,8 +675,3 @@ button {
     
     }  
 
-
-
-
-
-}
