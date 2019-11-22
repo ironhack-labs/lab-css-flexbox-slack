@@ -7,7 +7,16 @@ nav grey: #5b5e6d;
 */
 body {
     margin: 0 auto;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    color: #5b5e6d;
+    font-size: 32px;
+    letter-spacing: 1px;
 }
+
+a {
+    color: #192592;
+}
+
 /*Logo and menu*/
 nav {
     display: flex;
@@ -45,16 +54,48 @@ header {
 .image-header {
     order: 1;
     width: 100%;
+    padding-top:60px;
 }
 .slack-signin {
     text-align: center;
+    font-size: 28px;
+}
+h1 {
+    font-size: 65px;
+    line-height: 1em;
+    color: #2C303F;
+}
+
+header p {
+    padding-bottom: 30px;
+}
+button {
+    background-color: #192592;
+    color: #fff;
+    width: 100%;
+    padding: 30px 0px;
+    font-size: 24px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+button.discover {
+    border: 1px solid #192592;
+    background-color: #fff;
+    color: #192592;
 }
 /*MAIN*/
-main {
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
+h2 {
+    font-size: 55px;
+    color: #2C303F;
+    margin-bottom: 0px;
+}
+
+main p {
+    text-align: center;
 }
 .main-elements {
+    border: 1px solid #e6e6e6;
     background-color: #F4F3F4;
     display: flex;
     justify-content: center;
@@ -64,21 +105,37 @@ main {
     align-items: center;
     padding: 50px;
 }
+.main-elements button {
+    margin: 20px 0px 40px;
+}
 .company-logos {
-    height: 50px;
+    height: 65px;
     padding: 30px;
 }
-
 hr {
     width: 100%;
     height: 0px;
     border: 1px solid #e6e6e6;
     }
+.try-it {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 50px;
+}
+.try-it .slack-signin {
+    margin-top: 0px;
+}
+.free {
+    color: #2C303F;
+    font-size: 45px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
 /*FOOTER*/
 .footer-menus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 30px;
 }
 .icon-footer {
     width: 20%;
@@ -101,7 +158,56 @@ hr {
 }
 .aditional-links {
     background-color: #F4F3F4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    align-items: center;
 }
+.menu-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-top: 0px;
+}
+.menu-footer li {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+}
+.flag {
+    order: 0;
+    width: 40px;
+}
+.us {
+    order: 1;
+    font-size: 25px;
+    margin: 0px 20px;
+    font-weight: 500;
+}
+i.fa.fa-chevron-down {
+    order: 2;
+    margin-left: 10px;
+}
+i.fa.fa-twitter, i.fa.fa-facebook, i.fa.fa-youtube-play {
+    margin: 35px 10px 0px;
+}
+i.fa.fa-twitter {order:3;}
+i.fa.fa-facebook {order: 4;}
+i.fa.fa-youtube-play {order: 5;}
+
 /*@media (max-width: 768px){
     .logo{
         width: 40%;
