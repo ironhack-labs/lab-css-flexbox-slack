@@ -13,14 +13,24 @@ nav grey: #5b5e6d;
 .relative {
   position: relative;
 }
-.divider {
+.divider,
+main {
   border-bottom: 1px solid #ebebeb;
 }
-.airbnb, .capital-one, .harvard, .latimes, .oracle, .ticketmaster {
+.height100 {
+  height: 100%;
+}
+.airbnb,
+.capital-one,
+.harvard,
+.latimes,
+.oracle,
+.ticketmaster {
   border-bottom: 1px solid #ebebeb;
   border-right: 1px solid #ebebeb;
 }
-.airbnb img, .capital-one img {
+.airbnb img,
+.capital-one img {
   width: 150px;
 }
 .harvard img {
@@ -29,7 +39,8 @@ nav grey: #5b5e6d;
 .latimes img {
   width: 300px;
 }
-.oracle img, .ticketmaster img {
+.oracle img,
+.ticketmaster img {
   width: 170px;
 }
 .body-margin {
@@ -56,7 +67,8 @@ h3 {
 p,
 input,
 li,
-span {
+span,
+.large-nav button {
   font-family: "Public Sans";
   color: #5c5e6d;
   line-height: 1.7em;
@@ -72,11 +84,27 @@ nav {
   background: white;
   z-index: 99;
 }
-nav ul {
-  display: inline-flex;
-  position: absolute;
-  right: 50px;
-  top: 50px;
+.large-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 200;
+  margin-right: 40px;
+}
+.large-nav ul {
+  display: flex;
+  margin-right: 2%;
+  justify-content: space-between;
+  width: 650px;
+  align-items: center;
+}
+.large-nav button {
+  background: none;
+  border: 1px solid #333648;
+  border-radius: 5px;
+  padding: 4px 15px;
+  font-size: 1rem;
+  font-weight: 200;
 }
 nav img {
   position: absolute;
@@ -136,7 +164,7 @@ header button,
 }
 .company {
   background: #f5f5f5;
-  padding: 3rem 0;
+  padding: 3rem 0 1rem;
 }
 .company p {
   margin-bottom: 20px;
@@ -216,13 +244,18 @@ i {
 .footer-links div:first-child {
   flex: 1 1 100%;
 }
-@media (max-width: 768px){
-  .airbnb, .capital-one, .harvard, .latimes, .oracle, .ticketmaster {
+@media (max-width: 768px) {
+  .airbnb,
+  .capital-one,
+  .harvard,
+  .latimes,
+  .oracle,
+  .ticketmaster {
     border-right: none;
   }
 }
 @media (max-width: 1023px) {
-  nav ul {
+  .large-nav {
     display: none;
   }
 }
@@ -240,21 +273,27 @@ i {
   .logo-item {
     width: 50%;
   }
-  .capital-one, .latimes, .ticketmaster {
+  .capital-one,
+  .latimes,
+  .ticketmaster {
     border-right: none;
   }
-  .oracle, .ticketmaster {
+  .oracle,
+  .ticketmaster {
     border-bottom: none;
   }
 }
-@media (min-width: 960px) and (max-width: 1024px) {
+@media (min-width: 960px) {
   .logo-item {
     width: 33%;
   }
-  .latimes, .oracle, .ticketmaster {
+  .latimes,
+  .oracle,
+  .ticketmaster {
     border-bottom: none;
   }
-  .harvard, .ticketmaster {
+  .harvard,
+  .ticketmaster {
     border-right: none;
   }
   .latimes img {
