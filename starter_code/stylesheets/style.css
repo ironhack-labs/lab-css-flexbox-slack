@@ -221,14 +221,19 @@ i {
     border-right: none;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   nav ul {
     display: none;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .burger-nav {
     display: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  header p {
+    width: 80%;
   }
 }
 @media (min-width: 767px) and (max-width: 961px) {
@@ -256,7 +261,26 @@ i {
     width: 250px;
   }
 }
-@media (min-width: 767px) and (max-width: 1024px){
+@media (min-width: 1023px) {
+  header {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+  .work-image {
+    flex: 1 1 50%;
+    margin-right: 40px;
+  }
+  .work-image img {
+    height: 400px;
+  }
+  .work-text {
+    flex: 1 1 50%;
+  }
+}
+@media (min-width: 767px) {
   .email-box {
     display: flex;
   }
@@ -272,9 +296,6 @@ i {
   }
   .signin {
     text-align: left;
-  }
-  header p {
-    width: 80%;
   }
   .discover-button {
     display: flex;
@@ -324,7 +345,7 @@ i {
 }
 @media screen and (min-width: 25rem) {
   h1 {
-    font-size: calc(2.2rem + (41.599999999999994 * (100vw - 400px) / 624));
+    font-size: calc(2.1rem + (41.599999999999994 * (100vw - 400px) / 624));
   }
   h2 {
     font-size: calc(1.625rem + (6 * (100vw - 400px) / 624));
@@ -333,7 +354,7 @@ i {
     font-size: calc(1.25rem + (4 * (100vw - 400px) / 624));
   }
   header p {
-    font-size: calc(1.0625rem + (3 * (100vw - 400px) / 624));
+    font-size: calc(1rem + (3 * (100vw - 400px) / 624));
   }
   main p,
   main ul,
