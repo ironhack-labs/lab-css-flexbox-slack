@@ -1,5 +1,4 @@
-    .two_columns,
-    .two_columns_footer {
+    .two_columns {
         box-sizing: border-box;
         width: 100%;
         display: flex;
@@ -7,6 +6,12 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: flex-start;
+        list-style-type: none;
+    }
+    
+    .two_columns_footer {
+        box-sizing: border-box;
+        width: 100%;
         list-style-type: none;
     }
     
@@ -26,7 +31,8 @@
         justify-content: space-between;
         align-content: center;
         text-align: center;
-        margin: 40px 0 0 0;
+        margin-top: 40px;
+        padding-right: 7%;
     }
     
     .flag {
@@ -138,6 +144,9 @@
     }
     
     @media(min-width:1025px) {
+        .footer {
+            justify-content: space-between;
+        }
         .five_columns_footer {
             display: flex;
             justify-content: space-between;
@@ -153,7 +162,6 @@
         }
         .slack_logo {
             height: 150px;
-            padding-right: 50%;
         }
         /* Privacy*/
         .privacy {
