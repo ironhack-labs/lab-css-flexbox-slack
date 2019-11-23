@@ -53,7 +53,7 @@ h2, .box-bottom .letter{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 650px;
+  height: auto;
   
 }
 p{
@@ -72,6 +72,12 @@ p{
 .header-mobile img{
   width: 85%;
   height: auto;
+}
+.header-text{
+  padding: 15px 0;
+}
+.forms .button{
+  margin-top:15px;
 }
 .button{
   background-color:#192592 ;
@@ -207,12 +213,17 @@ input{
     flex-flow: row wrap;
     justify-content: flex-start;
     }
-    .ipad-input{
-      width: 50%;
+    .forms{
+      display: flex;
+
     }
-    .ipad-button{
-      margin-left: 15px;
+    .forms input{
+      width: 50%;
+      margin-top:15px;
+    }
+    .forms button{
       width: 30%;
+      margin-left:15px;
     }
     .header-mobile p{
       justify-content: flex-start;
@@ -255,6 +266,10 @@ input{
       align-items: flex-start;
       width: 50%;
     }
+    .box-bottom {
+      width: 30%;
+      margin-left: 10px;
+  }
     .footer-img{
       width: 10%;
     }
@@ -286,11 +301,31 @@ input{
     }
 
 }
-@media (min-width: 767px) and (max-width:961px){
+@media (min-width: 961px){
   .container-img {
     width: 33%;
   }
 
+}
+@media(min-width:1200px){
+  .menu{
+    display:none;
+  }
+  .header-mobile .img {
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    order: 1;
+  }
+  .header-box{
+    order:2;
+    width: 50%;
+  }
+  .header-mobile img{
+    width: 50%;
+    height: auto;
+  }
 }
 @media (max-width: 1200px) {
   .list{
