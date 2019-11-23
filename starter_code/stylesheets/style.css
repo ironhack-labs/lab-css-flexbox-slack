@@ -31,7 +31,7 @@ a {
 // -------------------------------------------------- */
 
 .content-wrapper {
-    max-width: 990px;
+    width: 100%;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
@@ -121,6 +121,7 @@ header .content-wrapper {
 .main-nav .btn-mobile-menu {
     width: 28px;
     height: 20px;
+    border: none;
     position: relative;
 }
 
@@ -147,7 +148,24 @@ header .content-wrapper {
 }
 
 .main-nav ul {
-    display: none;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.main-nav ul li:not(:last-child) {
+    margin-right: 30px
+}
+
+.main-nav ul a {
+    color: #212331;
+    text-decoration: none;
+}
+
+.main-nav ul li:last-child {
+    border: 1px solid #212331;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
 
 
@@ -339,15 +357,8 @@ footer {
 @media (min-width: 767px) {
 
     body {
-        font-size: 20px;
+        font-size: 16px;
     }
-
-    /* General Classes
-    // --------------- */
-        .content-wrapper {
-            width: 100%;
-            max-width: initial;
-        }
 
     /* Header Classes
     // -------------- */
@@ -435,7 +446,7 @@ footer {
         }
 
         .try-it__text {
-            flex: 1 0 50%;
+            flex: 1 0 40%;
             text-align: left;
         }
 
@@ -449,7 +460,7 @@ footer {
         }
 
         .try-it__form {
-            flex: 1 0 50%;
+            flex: 1 0 60%;
             justify-content: flex-end;
             display: flex;
         }
@@ -485,10 +496,6 @@ footer {
             }
 
             .footer__bottom__lang-sns {
-                flex: 1 0 50%;
-            }
-
-            .footer__bottom__lang-sns {
                 display: flex;
                 flex: 1 0 50%;
                 align-items: center;
@@ -514,6 +521,10 @@ footer {
 
 @media (min-width: 960px) {
 
+    body {
+        font-size: 15px;
+    }
+
     /* Section - Good Company
     // ---------------------- */
         .good-company__logo {
@@ -531,5 +542,105 @@ footer {
 
         .good-company__logo img {
             transform: scale(1);
+        }
+}
+
+
+/*
+// Media Query Large Screens
+// -------------------------------------------------- */
+
+@media (min-width: 1024px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    .visible-mobile {
+        display: none;
+    }
+
+    .visible-desktop {
+        display: block;
+    }
+
+    /*
+    // Header Classes
+    // ------------------------ */
+        .main-nav ul {
+            display: flex;
+        }
+
+    /*
+    // General Classes
+    // ------------------------ */
+        .content-wrapper {
+            max-width: 1200px;
+        }
+
+    /* Section - Where Work Happens
+    // ---------------------- */
+        .where-work-happens {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .where-work-happens .content-wrapper {
+            display: flex;
+        }
+
+        .where-work-happens__text-wrapper {
+            flex: 1 0 50%;
+            padding-left: 90px;
+        }
+
+        .where-work-happens__main-img {
+            flex: 1 0 50%;
+            align-self: center;
+            order: -1;
+        }
+
+    /* Section - Good Company
+    // ---------------------- */
+        .good-company__logos {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .good-company__logo {
+            border: none;
+        }
+
+        .good-company__logo:nth-child(3n+2) {
+            border-left: 1px solid #E6E6E6;
+            border-right: 1px solid #E6E6E6;
+        }
+
+    /* Footer
+    // ------ */
+        footer {
+            font-size: .8rem;
+        }
+
+        .footer__bottom__small-nav ul {
+            justify-content: flex-start;
+        }
+
+        .footer__bottom__small-nav ul li:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        .footer__bottom__lang-sns {
+            justify-content: flex-end;
+        }
+
+        .footer__bottom__lang-sns__lang {
+            margin-right: 35px;
+        }
+
+        .footer__bottom__lang-sns__sns i,
+        .footer__bottom__lang-sns__sns i:nth-child(2) {
+            font-size: 1.2rem;
         }
 }
