@@ -10,7 +10,7 @@ nav {
     width: 100vw;
     height: 60px;
     margin: 0 auto;
-    padding: 0 8vw;
+    padding: 0 7%;
     border-bottom: 1px solid #eeeeee;
 }
 
@@ -26,6 +26,29 @@ nav ul {
     display: none;
 }
 
-.spacer {
+.spacer_nav {
     height: 70px;
+}
+
+@media(min-width:1025px) {
+    .spacer_nav {
+        height: 130px;
+    }
+    #burger {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+    .spacer_nav_menu {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .spacer_nav_menu:hover {
+        border: 1px solid #5b5e6d;
+    }
 }
