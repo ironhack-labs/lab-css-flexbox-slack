@@ -5,3 +5,303 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+main { 
+  border-bottom: 1px solid rgb(160, 158, 158);
+}
+.container {
+  margin: 0 0;
+  padding: 50px 8vw;
+}
+
+nav > .container {
+  padding:0 10vw;
+}
+
+
+.flex-container {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(65,74,170);
+}
+p,li,a,span,select { 
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h1 {
+  font-size: 1.8rem;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Merriweather', serif;
+}
+
+button {
+  border:none;
+  background-color: rgb(64,73,170);
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+#discover button {
+  background-color: white;
+  border: 1px solid #192592;
+  color: #192592;
+}
+
+button, .text-input {
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: rgb(85, 93, 185);
+  cursor: pointer;
+}
+
+.text-input {
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid rgb(184, 184, 184);
+}
+
+nav {
+  border-bottom: 1px solid rgb(160, 158, 158);
+  background-color: white;
+  position: fixed;
+}
+
+header {
+  padding-top: 20vh;
+}
+.imageContainer {
+  width: 20vw;
+  height: auto;
+}
+
+#discover {
+  background-color: #F4F3F4;
+}
+
+#discover  button{
+  width: 250px;
+}
+
+#try h2,p{
+  margin: 5px;
+}
+
+#slack-img{
+  width: 20vw;
+  margin: 0;
+}
+
+.footer-links{
+  flex-flow: row wrap;
+}
+
+.footer-links > * {
+  justify-content: space-around;
+}
+.lists{
+  margin-bottom: 30px;
+  font color: #2C303F;
+}
+.lists > ul{
+  margin: 0px;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.lists > ul > li:nth-child(1){
+  font-weight: bold;
+}
+
+#end{
+  background-color: #F4F3F4;
+  padding: 30px 50px;
+  align-items: center;
+  justify-content: center;
+  color:#6d6f7a;
+}
+#end li, span{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.us > ul > li{
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#language{
+  display: flex;
+  align-items: center;
+  width:250px;
+  margin-top: 50px;
+}
+
+.langSelect{
+  align-items: center;
+  justify-content: space-between;
+  width:180px;
+  white-space:nowrap;
+}
+
+.chev{
+  margin-left: 20px;
+  text-align: center;
+}
+
+.social-media{
+  text-align: center;
+  height: auto;
+  margin-top:50px;
+  margin-bottom: 50px;
+  font-size: 3em;
+}
+#usa-img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+select{
+  border:none;
+  background-color: transparent;
+}
+
+
+@media only screen and (max-width: 768px){
+  h1{
+      font-size: 3rem;
+  }
+  h2{
+      font-size: 2.5rem;
+  }
+  p,li,a,span{
+      font-size: 2rem;
+  }
+  .menu{
+      display: none;
+  }
+
+  button, .text-input{
+      width:80vw;
+      margin: 15px 0;
+      font-size: 1.2em;
+      padding: 3% 1%;
+  }
+
+  #signin{
+      text-align: center;
+  }
+
+  .logos{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  } 
+  .logo{
+      padding: 10vh 5vw;
+      width:50vw;
+  }
+
+  .lists{
+      flex: 50%;
+  }
+  #end{
+      flex-direction: column;
+  }
+  #try{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 769px){
+  .menu{
+      display: none;
+  }
+  h1{
+      font-size: 4rem;
+  }
+  h2{
+      font-size: 2.5rem;
+  }
+  button {
+      width:20vw;
+  }
+  .text-input{
+      width:50vw;
+  }
+  .people{
+      width: 60%;
+      margin: 50px 0 0 15%;
+  }
+  hr{
+      display:none;
+  }
+  #discover {
+      text-align: center;
+  }
+  .logos{
+      flex-flow: row wrap;
+      justify-content: space-around;
+  }
+  .logo{
+      margin:50px;
+      width:25vw;
+  }
+  #try {
+      margin-bottom: 0;
+  }
+  #try h2{
+      font-size: 1.6rem;
+  }
+  #try p, #try a {
+      font-size: 1.2rem;
+  }
+ .text{
+      flex: 50%;
+  }
+  .signup{
+    display: flex:  
+    flex: 50%;
+  }
+
+  .signup input{
+      padding: 20px;
+      margin-right: 20px;
+      width: 200px;
+  }
+  .signup > button {
+      padding: 20px;
+  }
