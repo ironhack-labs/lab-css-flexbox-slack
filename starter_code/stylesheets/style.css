@@ -14,14 +14,15 @@ h1, h2, .serif {
 }
 
 h1 {
-  font-size: 2.6em;
+  font-size: 3.2em;
   line-height: 120%;
   font-weight: bold;
   color: #2C303F;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: bold;
   color: #2C303F;
 }
 
@@ -35,6 +36,8 @@ p {
 nav {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,18 +105,21 @@ form button {
 }
 
 header p.sign-in {
-  align-self: center;
+  text-align: center;
 }
 
- p.sign-in a, p.sign-in a:visited {
+p.sign-in a, p.sign-in a:visited {
   color: #192592;
   text-decoration-color: #192592;
 }
 
-header img {
+header div:first-child {
   order: 1;
   margin-top: 10%;
   align-self: center;
+}
+
+header img {
   max-width:100%;
 }
 
@@ -125,6 +131,10 @@ main div#main-discover{
   border-bottom: 1px solid #C3C2C3;
   margin-top: 10%;
   padding: 10% 5%;
+}
+
+main div#main-discover #main-discover-logos {
+  text-align: center;
 }
 
 main h2, main p {
@@ -144,6 +154,10 @@ main button#discover {
   color: #192592;
   border: 1px solid #192592;
   margin-bottom: 10%;
+}
+
+main #main-discover-logos div:nth-child(-n+5) {
+  border-bottom: 1px solid #C3C2C3;
 }
 
 main img {
@@ -184,16 +198,25 @@ footer #footer-links {
   flex-wrap: wrap;
 }
 
-footer #footer-links ul{
+footer #footer-links div {
   width: 40%;
-  padding-top: 5%;
   padding-left: 8%;
+}
+
+footer #footer-links div:nth-child(4), 
+footer #footer-links div:nth-child(5) {
+  padding-top: 5%;
+}
+
+footer #footer-links div:first-child {
+  width: 100%;
 }
 
 footer #footer-links ul li{
   padding-top: 10%;
   font-size: 1.3em;
   color: #5b5e6d;
+  white-space: nowrap;
 }
 
 footer #footer-links ul li:first-child{
@@ -202,9 +225,9 @@ footer #footer-links ul li:first-child{
 }
 
 footer #iso-slack {
-  width: 25%;
+  width: 20%;
   margin-right: 50%;
-  padding-left: 5%;
+  
 }
 
 footer #footer-end {
@@ -278,7 +301,7 @@ footer #icons i {
   }
 
   header p.sign-in {
-    align-self: flex-start;
+    text-align: left;
   }
 
   main div#main-try {
@@ -287,9 +310,7 @@ footer #icons i {
    align-items: center;
    margin-top: 0;
    padding: 2%;
-   
   }
-
 
   main div#main-try p {
     text-align: left;
@@ -319,18 +340,31 @@ footer #icons i {
     border-right: 1px solid #C3C2C3;
   }
 
-  main #main-discover-logos div:nth-child(-n+4) {
+  main #main-discover-logos div:nth-child(-n+3) {
     border-bottom: 1px solid #C3C2C3;
   }
 
+  main #main-discover-logos div:nth-child(5) {
+    border-bottom: none;
+  }
+
   footer #footer-links {
-    align-items: flex-start;
     margin-top: 5%;
   }
 
   footer #footer-links div {
     width: 20%;
+    padding-left: 0;
   }
+
+  footer #footer-links div:first-child {
+    width: 20%;
+  }
+
+  footer #footer-links div:nth-child(4), 
+  footer #footer-links div:nth-child(5) {
+  padding-top: 0;
+}
 
   footer #footer-links ul{
     width: 100%;
@@ -338,7 +372,7 @@ footer #icons i {
   }
 
   footer #footer-links ul li {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-top: 1em;
     padding: 3%;
   }
@@ -354,8 +388,8 @@ footer #icons i {
     justify-content: space-between;
     align-items: flex-start;
     font-size: 1em;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   footer #footer-end > * {
@@ -368,5 +402,77 @@ footer #icons i {
 
   footer #footer-social div {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  main #main-discover-logos div {
+    width: 33%;
+    border: none !important;
+    
+  }
+  main #main-discover-logos div:nth-child(-n+3) {
+    border-bottom: 1px solid #C3C2C3 !important;
+  }
+
+  main #main-discover-logos div:nth-child(1),
+  main #main-discover-logos div:nth-child(2),
+  main #main-discover-logos div:nth-child(4),
+  main #main-discover-logos div:nth-child(5) {
+    border-right: 1px solid #C3C2C3 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav #menu-icon  {
+    display: none;
+  }
+
+  nav #logo {
+    width: 15%;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    padding-right: 3%;
+  }
+
+  nav ul li {
+    padding-right: 2em;
+    white-space: nowrap;
+  }
+
+  nav ul li:last-child {
+    border: 1px solid #5b5e6d;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header div {
+    width: 50%;
+  }
+
+  header div:first-child {
+    padding-right: 20px;
+    order: 0;
+  }
+
+  header div:last-child {
+    padding-left: 20px;
+  }
+
+  header h1{
+    font-size: 3.5em;
+    width: 90%;
+  }
+
+  form button {
+    width: 50%;
   }
 }
