@@ -24,12 +24,12 @@
                 <img src="./images/slack-logo.png" alt="slack logo">
             </div>
             <nav class="main-nav d-flex">
-                <button class="btn-mobile-menu">
+                <button class="btn-mobile-menu visible-mobile">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <ul>
+                <ul class="visible-desktop">
                     <li><a href="#">Why Slack?</a></li>
                     <li><a href="#">Pricing</a></li>
                     <li><a href="#">About Us</a></li>
@@ -52,9 +52,14 @@
                         <input class="btn btn--primary" type="submit" value="Get started">
                         <p>Already using Slack? <a href="#">Sign in</a></p>
                     </form>
-                    <button class="btn btn--primary visible-desktop" type="button" name="button">GET STARTED</button>
+                    <div class="visible-desktop">
+                        <button class="btn btn--primary" type="button" name="button">GET STARTED</button>
+                        <p>Already using Slack? <a href="#">Sign in</a></p>
+                    </div>
                 </div>
-                <img class="where-work-happens__main-img" src="./images/home_talking.png" alt="home_work_happening">
+                <div class="where-work-happens__main-img">
+                    <img src="./images/home_talking.png" alt="home_work_happening">
+                </div>
             </div>
         </section>
 
@@ -96,6 +101,7 @@
                     <input class="input-text" type="email" placeholder="Email address">
                     <input class="btn btn--primary" type="submit" value="Get started">
                 </form>
+                <button class="btn btn--primary visible-desktop" type="button" name="button">GET STARTED</button>
             </div>
         </section>
     </main>
