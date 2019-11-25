@@ -14,14 +14,16 @@ html {
 }
 
 body {
+  max-width:100%;
   margin: 0;
   font-family: "Lato Light", sans-serif;
   font-weight: 320;
   color: #5b5e6d;
 }
 
+
 nav {
-  padding: 0 5vw;
+  width:100%;
   position: fixed;
   display: flex;
   align-content: center;
@@ -29,12 +31,11 @@ nav {
   height: 75px;
   top: 0;
   background: white;
-  width: 100%;
   border-bottom: 1px solid #5b5e6d44;
 }
 
 .burger {
-  margin-right: 10%;
+  padding-right: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +52,8 @@ nav {
 
 nav img {
   width: 140px;
-  margin-left: 2vw;
+  margin-left: vw;
+  padding-left: 7vw;
 }
 
 h1,
@@ -78,7 +80,8 @@ h3 {
 }
 
 header {
-  padding: 0 10vw;
+  width:80vw;
+  padding: 0 8vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,8 +102,12 @@ p {
 }
 
 header img {
-  width: 90%;
+  width: 70%;
   order: 1;
+}
+
+main {
+  width:100vw;
 }
 
 .info {
@@ -113,7 +120,7 @@ header img {
 
 .info img {
   width: 60%;
-  margin: 10% 0;
+  padding: 10% 0;
 }
 
 .try {
@@ -125,7 +132,7 @@ header img {
 }
 
 .try-buttons {
-  width:80vw;
+  width: 80vw;
 }
 
 button,
@@ -173,7 +180,7 @@ button {
 
 .col-box ul {
   list-style: none;
-  width: 25vw;
+  width: 20vw;
   line-height: 1.7em;
   padding-left: 5%;
   padding-right: 10%;
@@ -299,15 +306,15 @@ footer {
   }
 
   .try-buttons {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    width:50vw;
-    height:12vh;
+    width: 50vw;
+    height: 12vh;
   }
 
-.try-text p{
-  margin-top:0;
-}
+  .try-text p {
+    margin-top: 0;
+  }
 
   .menu {
     display: flex;
@@ -371,4 +378,133 @@ footer {
     white-space: nowrap;
     padding: 0 3%;
   }
+}
+
+/*iteration 3*/
+@media (min-width: 960px) and (max-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header {
+    margin-top: 13vh;
+  }
+
+  h1 {
+    white-space: nowrap;
+  }
+
+  header p:first-of-type {
+    padding-right: 5%;
+  }
+  header p:nth-of-type(2) {
+    width: 80vw;
+    text-align: left;
+    padding-bottom: 8vh;
+  }
+  .get-started {
+    width: 100vw;
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .get-started button {
+    width: 25vw;
+  }
+
+  .get-started input {
+    width: 30vw;
+  }
+
+  .try {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .try-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 12vh;
+  }
+
+  .try-text p {
+    margin-top: 0;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu img:first-of-type {
+    width: 15%;
+    height: 15%;
+    padding-left: 1%;
+  }
+
+  .info button {
+    width: 25vw;
+  }
+
+  .info .container-logos {
+    margin:5vh 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .info .container-logos img {
+    width: 25vw;
+    padding: 8vh 2vw;
+  }
+
+  .col-box {
+    padding: 0;
+  }
+  .col-box ul {
+    width: 12vw;
+    padding: 0;
+    padding-right: 8vw;
+    line-height: 2.5rem;
+  }
+
+  .unten {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+
+  .unten ul {
+    width: 40%;
+    padding-left: 5vw;
+  }
+
+  .unten .container-lang-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .unten .lang,
+  .social {
+    margin: 10px;
+  }
+
+  .unten ul li {
+    white-space: nowrap;
+    padding: 0 3%;
+  }
+
+
+
+
 }
