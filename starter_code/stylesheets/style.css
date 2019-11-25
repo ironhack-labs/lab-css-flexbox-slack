@@ -10,11 +10,11 @@ nav grey: #5b5e6d;
 
 html {
   font-size: 10px;
+  max-width:100vw;
   /* use rem units */
 }
 
 body {
-  max-width:100%;
   margin: 0;
   font-family: "Lato Light", sans-serif;
   font-weight: 320;
@@ -28,7 +28,6 @@ nav {
   display: flex;
   align-content: center;
   justify-content: space-between;
-  height: 75px;
   top: 0;
   background: white;
   border-bottom: 1px solid #5b5e6d44;
@@ -51,8 +50,7 @@ nav {
 }
 
 nav img {
-  width: 140px;
-  margin-left: vw;
+  width: 10vw;
   padding-left: 7vw;
 }
 
@@ -251,7 +249,7 @@ footer {
 /*iteration 1*/
 @media (max-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 9px;
   }
   nav ul {
     display: none;
@@ -383,7 +381,7 @@ footer {
 /*iteration 3*/
 @media (min-width: 960px) and (max-width: 1024px) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   nav ul {
@@ -406,6 +404,150 @@ footer {
     text-align: left;
     padding-bottom: 8vh;
   }
+  .get-started {
+    width: 100vw;
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .get-started button {
+    width: 25vw;
+  }
+
+  .get-started input {
+    width: 30vw;
+  }
+
+  .try {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .try-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 12vh;
+  }
+
+  .try-text p {
+    margin-top: 0;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu img:first-of-type {
+    width: 15%;
+    height: 15%;
+    padding-left: 1%;
+  }
+
+  .info button {
+    width: 25vw;
+  }
+
+  .info .container-logos {
+    margin:5vh 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .info .container-logos img {
+    width: 25vw;
+    padding: 8vh 2vw;
+  }
+
+  .col-box {
+    padding: 0;
+  }
+  .col-box ul {
+    width: 12vw;
+    padding: 0;
+    padding-right: 8vw;
+    line-height: 2.5rem;
+  }
+
+  .unten {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+
+  .unten ul {
+    width: 40%;
+    padding-left: 5vw;
+  }
+
+  .unten .container-lang-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .unten .lang,
+  .social {
+    margin: 10px;
+  }
+
+  .unten ul li {
+    white-space: nowrap;
+    padding: 0 3%;
+  }
+
+
+}
+
+/*iteration 4*/
+@media (min-width: 1024px){
+  html {
+    font-size: 20px;
+  }
+
+  nav .burger {
+    display: none;
+  }
+
+  nav ul {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    padding-right:2%;
+  }
+
+  nav ul li {
+    padding:0 1vw;
+  }
+
+  header {
+    margin-top: 13vh;
+    flex-direction: row;
+  }
+
+  h1 {
+    white-space: nowrap;
+  }
+
+  header p:first-of-type {
+    padding-right: 5%;
+  }
+  header p:nth-of-type(2) {
+    width: 80vw;
+    text-align: left;
+    padding-bottom: 8vh;
+  }
+
+  header img {
+    order:-1;
+  }
+
   .get-started {
     width: 100vw;
     padding-left: 15vw;
