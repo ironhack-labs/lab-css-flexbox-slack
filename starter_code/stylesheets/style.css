@@ -69,11 +69,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-bottom: 0;
 }
 
@@ -92,6 +92,10 @@ header p:first-of-type {
 p {
   line-height: 1.35rem;
   font-size: 1em;
+}
+
+.get-started {
+  width: 85vw;
 }
 
 header img {
@@ -118,6 +122,10 @@ header img {
   flex-direction: column;
   align-items: center;
   margin-bottom: 7%;
+}
+
+.try-buttons {
+  width:80vw;
 }
 
 button,
@@ -148,10 +156,10 @@ button {
   color: #192592;
 }
 
-.info br {
-    height: 1px;
-    width: 50px;
-    border-top: 7px solid black;
+.info .container-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .col-box {
@@ -206,10 +214,17 @@ footer {
 .unten li {
   list-style: none;
   padding: 2%;
+  white-space: nowrap;
 }
 
 .unten img {
   width: 1em;
+}
+.unten .lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  white-space: nowrap;
 }
 
 .unten .lang,
@@ -218,12 +233,12 @@ footer {
 }
 
 .unten .social {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .unten .social i {
-    margin: 0 15%;
+  margin: 0 15%;
 }
 
 /*iteration 1*/
@@ -233,5 +248,127 @@ footer {
   }
   nav ul {
     display: none;
+  }
+}
+
+/*iteration 2*/
+@media (min-width: 768px) and (max-width: 961px) {
+  html {
+    font-size: 18px;
+  }
+  nav ul {
+    display: none;
+  }
+
+  header {
+    margin-top: 13vh;
+  }
+
+  h1 {
+    white-space: nowrap;
+  }
+
+  header p:first-of-type {
+    padding-right: 5%;
+  }
+  header p:nth-of-type(2) {
+    width: 80vw;
+    text-align: left;
+    padding-bottom: 8vh;
+  }
+  .get-started {
+    width: 100vw;
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .get-started button {
+    width: 25vw;
+  }
+
+  .get-started input {
+    width: 30vw;
+  }
+
+  .try {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .try-buttons {
+    display:flex;
+    flex-direction: row;
+    width:50vw;
+    height:12vh;
+  }
+
+.try-text p{
+  margin-top:0;
+}
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu img:first-of-type {
+    width: 15%;
+    height: 15%;
+    padding-left: 1%;
+  }
+
+  .info button {
+    width: 25vw;
+  }
+
+  .info .container-logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .info .container-logos img {
+    width: 40vw;
+  }
+
+  .col-box {
+    padding: 0;
+  }
+  .col-box ul {
+    width: 12vw;
+    padding: 0;
+    padding-right: 8vw;
+    line-height: 2.5rem;
+  }
+
+  .unten {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+
+  .unten ul {
+    width: 40%;
+    padding-left: 5vw;
+  }
+
+  .unten .container-lang-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .unten .lang,
+  .social {
+    margin: 10px;
+  }
+
+  .unten ul li {
+    white-space: nowrap;
+    padding: 0 3%;
   }
 }
