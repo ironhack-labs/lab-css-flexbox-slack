@@ -8,8 +8,6 @@ nav grey: #5b5e6d;
 
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Open+Sans");
 
-
-
 /*------------------------------------*\
   #GENERAL
 \*------------------------------------*/
@@ -78,6 +76,11 @@ button {
   border-radius: 5px;
 }
 
+.btn {
+  border: 1px solid #9f91d2;
+  border-radius: 5px;
+}
+
 @media (max-width: 961px) and (min-width: 767px) {
   button {
     width: initial;
@@ -136,9 +139,6 @@ button {
   background-color: #f4f3f4;
 }
 
-
-
-
 /*------------------------------------*\
   #NAV
 \*------------------------------------*/
@@ -152,6 +152,7 @@ nav {
   justify-content: space-between;
   padding: 1rem;
   position: fixed;
+  color: #5b5e6d;
 }
 
 nav i {
@@ -162,8 +163,19 @@ nav ul {
   display: none;
 }
 
+@media (min-width: 1200px) {
+  nav ul {
+    display: inline-flex;
+  }
 
+  nav ul li {
+    padding: 1rem 1.5rem;
+  }
 
+  nav i {
+    visibility: hidden;
+  }
+}
 
 /*------------------------------------*\
   #HEADER
@@ -177,9 +189,6 @@ header {
 header .header-image {
   order: 1;
 }
-
-
-
 
 /*------------------------------------*\
   #LOGOS
@@ -224,8 +233,24 @@ header .header-image {
   }
 }
 
+@media (min-width: 960px) {
+  .logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
+  .logos div {
+    width: 33%;
+  }
 
+  .logos div:nth-last-child(2) {
+    border-bottom: none;
+  }
+
+  .logos div:nth-child(odd) {
+    border-right: 1px solid #eaeaea;
+  }
+}
 
 /*------------------------------------*\
   #SECTION TRY
@@ -242,9 +267,6 @@ header .header-image {
     margin-bottom: 0.5rem;
   }
 }
-
-
-
 
 /*------------------------------------*\
   #FOOTER
@@ -284,7 +306,7 @@ footer > div ul li:first-child {
   font-weight: 900;
 }
 
-@media (max-width: 961px) and (min-width: 767px) {
+@media (min-width: 767px) {
   footer > div:first-child {
     flex-wrap: nowrap;
     justify-content: space-between;
