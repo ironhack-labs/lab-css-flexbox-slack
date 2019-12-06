@@ -5,3 +5,355 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Open+Sans");
+
+
+
+/*------------------------------------*\
+  #GENERAL
+\*------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* Fonts ------------------------------ */
+
+h1,
+h2 {
+  color: #2c303f;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #5b5e6d;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: #2c303f;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Buttons --------------------------- */
+
+button {
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+  background: white;
+  border: 1px solid #9f91d2;
+  color: #192592;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  button {
+    width: initial;
+  }
+}
+
+/* Newsletter Form -------------------- */
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.form button {
+  background-color: #192592;
+  color: #fff;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  .form {
+    display: initial;
+    text-align: right;
+  }
+
+  .form input {
+    width: 15rem;
+  }
+}
+
+/* Login Link ------------------------- */
+
+.login-link {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  .login-link {
+    text-align: left;
+    margin-top: 0.3rem;
+  }
+}
+
+/* Themes ----------------------------- */
+
+.background-dark {
+  background-color: #f4f3f4;
+}
+
+
+
+
+/*------------------------------------*\
+  #NAV
+\*------------------------------------*/
+nav {
+  background-color: #fff;
+  border-bottom: 2px solid #f2f2f2;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+}
+
+nav i {
+  font-size: 1.6rem;
+}
+
+nav ul {
+  display: none;
+}
+
+
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 2rem 2rem;
+}
+
+header .header-image {
+  order: 1;
+}
+
+
+
+
+/*------------------------------------*\
+  #LOGOS
+\*------------------------------------*/
+.logos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.logos div {
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.logos div:last-child {
+  border-bottom: none;
+}
+
+.logos img {
+  max-height: 4rem;
+  max-width: 15rem;
+  object-fit: contain;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  .logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logos div {
+    width: 50%;
+  }
+
+  .logos div:nth-last-child(2) {
+    border-bottom: none;
+  }
+
+  .logos div:nth-child(odd) {
+    border-right: 1px solid #eaeaea;
+  }
+}
+
+
+
+
+/*------------------------------------*\
+  #SECTION TRY
+\*------------------------------------*/
+.try {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  .try h2 {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+footer {
+  color: #6e6c7a;
+}
+
+/* Nav -------------------------------- */
+
+footer > div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div .image {
+  flex-basis: 100%;
+}
+
+footer .image img {
+  height: 10rem;
+  width: 10rem;
+}
+
+footer > div ul {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  flex-basis: calc(50% - 2rem);
+}
+
+footer > div li {
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+footer > div ul li:first-child {
+  font-weight: 900;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  footer > div:first-child {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+
+  footer > div ul,
+  div .image {
+    margin-left: 0;
+    flex-basis: auto;
+  }
+}
+
+/* Footer ----------------------------- */
+
+footer .bottom {
+  font-weight: 900;
+  padding: 2rem;
+}
+
+footer .bottom ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .lang {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .lang img {
+  height: 1.5rem;
+}
+
+footer .lang span {
+  margin: 0 1rem;
+}
+
+footer .social {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social i {
+  margin: 0 0.8rem;
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+  footer .bottom,
+  footer .bottom > div {
+    display: flex;
+  }
+
+  footer .bottom ul {
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  footer .bottom ul li {
+    margin: 0 0.5rem;
+  }
+
+  footer .bottom .lang {
+    margin: 0;
+    margin-right: 1rem;
+  }
+}
