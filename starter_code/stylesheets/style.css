@@ -69,12 +69,12 @@ h2{
 }
 
 .image-xs{
-    width: 50%;
+    width: 40%;
     margin: 20px;
 }
 
 .image-xxs{
-    width: 40%;
+    width: 30%;
     margin: 20px;
 }
 
@@ -150,6 +150,11 @@ main *{
     padding: 9px;
 }
 
+.pre-sitemap{
+    display: flex;
+    flex-direction: column;
+}
+
 .sitemap ul :first-child{
     font-size: 20px;
     font-weight: bold;
@@ -165,6 +170,8 @@ main *{
 .footerlinks{
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -189,4 +196,76 @@ main *{
 .extra-info{
     margin: 15px;
     color: dimgray;
+}
+
+.try-it{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-align-div{
+    text-align: right;
+}
+
+@media (min-width: 767px) and (max-width: 961px) {
+    
+    .btn{
+        width: 180px;
+        height: 49px;
+    }
+    .input{
+        max-width: 300px;
+    }
+    
+    .image-xs{
+        width: 30%;
+        margin: 20px;
+    }
+
+    .business-images{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 100%;
+        justify-content: center;
+    }
+
+    .try-it{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        
+    .try-it p {
+        text-align: left;
+    }
+    
+            
+    .try-it input {
+        width: 30%;
+    }
+
+    .image-xxs{
+        width: 15%;
+        height: 15%;
+    }
+
+    .pre-sitemap{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footerlinks{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .langsocial *{
+        display: inline;
+    }
+
+
 }
