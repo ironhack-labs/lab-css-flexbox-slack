@@ -23,26 +23,38 @@ li{
     list-style: none;
 }
 
+
+
 .flex-row-space-between{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.flex-row-half{
+.flex-row{
     display:flex;
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.logos-row, .cta-row{
+    flex: 0 0 100%;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction: column;
 }
 
 .flex-item-half{
     flex:0 0 50%;
 }
 
-
 body{
-    max-width: 768px;
+    min-width: 320px;
     margin: 0 auto;
     padding: 1rem;
     padding-top: 0;
@@ -52,7 +64,6 @@ body{
 nav{
     position: fixed;
     z-index: 100;
-    max-width: 768px;
     margin: 0 auto;
     background-color: #fff;
     max-height: 100px;
@@ -75,13 +86,16 @@ header{
     padding-top: 100px;
 }
 
-input, button{
+header img{
     width: 100%;
+}
+
+input, button{
+    flex: 0 0 100%;
     font-size: 2rem;
     padding: 1.15rem 1rem;
     border-radius: 4px;
     border: 1px solid #192592;
-    max-width: 768px;
     box-sizing: border-box;
     margin-bottom: 1rem;
 }
@@ -97,7 +111,7 @@ input, button{
     border:1px solid #192592;
 }
 
-header p{
+.centered{
     text-align: center;
 }
 
@@ -111,16 +125,23 @@ header p{
 }
 
 .companies-section img{
-    display: block;
-    padding: 3rem 10rem;
-    border-bottom: 1px solid #5b5e6d;
     width: 100%;
-    box-sizing: border-box;
+}
+
+.img-container{
+    padding: 3rem;
+    border-bottom: 1px solid #5b5e6d;
+    max-width: 400px;
     margin: 0 auto;
+    min-width: 150px;
 }
 
 .companies-section img:last-child{
     border: 0;
+}
+
+footer{
+    font-size: 1.5rem;
 }
 
 .footer-bottom{
@@ -140,4 +161,48 @@ header p{
 
 .footer-bottom div.flex-row-space-between{
     width: 40%;
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 1.5rem;
+    }
+    input, button{
+        font-size: 1.5rem;
+    }
+    input{
+        flex:0 0 320px;
+    }
+    button{
+        flex:0 0 270px;
+        margin-left: 1rem;
+    }
+    header .centered{
+        text-align: left;
+        margin-top: 0;
+        font-size: 1rem;
+    }
+    .logos-row{
+        flex: 0 0 50%;
+    }
+    .cta-row-big{
+        flex: 0 0 70%;
+    }
+    .cta-row-small{
+        flex: 0 0 30%;
+        text-align: left;
+        font-size: 1rem;
+    }
+    .cta-row-small h2{
+        font-size: 1.5rem;
+    }
+    .img-container{
+        height: 50px;
+    }
+    .img-container img{
+        max-width: 200px;
+    }
+    .cta-section h2{
+        margin: 0;
+    }
 }
