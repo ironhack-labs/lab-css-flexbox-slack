@@ -26,12 +26,16 @@ border-bottom: #000 1px solid;
 }
 .main-logo {
     width: 20%;
-    height: 10%;
+    padding-right: 30%;
 }
 .menu-list {
     list-style: none;
-    display: inline;
+    display: none;
     font-family:Tahoma, Arial, sans-serif;
+}
+.menu-burger{
+    width: 20%;
+    margin: 3px
 }
 .header-hero {
     display: flex;
@@ -167,6 +171,9 @@ border-bottom: #000 1px solid;
 
 
 @media screen and (min-width: 767px) and (max-width: 961px) {
+    .menu-burger{
+        width: 15%;
+    }
     .flex-btn{
         display: flex;
         justify-content: flex-start;
@@ -233,7 +240,10 @@ border-bottom: #000 1px solid;
     }
 }
 @media screen and (min-width: 960px) and (max-width: 1024px) {
-
+    .menu-burger {
+        width: 10%;
+        margin: 20px;
+    }
     .flex-btn {
         display: flex;
         justify-content: flex-start;
@@ -327,6 +337,9 @@ border-bottom: #000 1px solid;
 
 
 @media screen and (min-width: 1200px) {
+    .menu-burger{
+        display: none;
+    }
     .menu-sticky {
         justify-content: space-between;
         align-items: center;
@@ -432,13 +445,18 @@ border-bottom: #000 1px solid;
     .footer-list-2 {
         padding: 0;
     }
-
+    .footer-list-2 li {
+        width: max-content;
+    }
     .last-footer {
         flex-direction: row;
         margin-block-start: 1em;
         margin-block-end: 1em;
     }
 
+    .language{
+        width: max-content;
+    }
     .footer-list-3 {
         display: flex;
         justify-content: space-evenly;
