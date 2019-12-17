@@ -42,14 +42,11 @@ header{
     margin-top: 5px;
 }  
 #burger{
-    display: inline;
-    margin-left: 17%;
+    float: right;
+    margin-top: 13px;
+    margin-right: 28px;
 }
-h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-left: 30px;
-}
+
 h1 > p{
     width: 100%;
 }
@@ -60,41 +57,16 @@ h2{
     padding-top: 28px;
     padding-bottom: 20px;
 }
-.get-started{
-    background-color: blue;
-    color: white;
-    width: 60%;
-    padding: 12px;
-    margin-left: 20%;
-    margin-bottom: 12px;
+/*.brand ul{
+    display: flex;
+    flex-wrap: wrap;
 }
-#discover-why{
-    width: 80%;
-    height: 45px;
-    margin-left: 10%;
-    background-color: white;
-    color: blue;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.brand-logos{
-    width: 35%;
-    margin-left: 30%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-}
-.brand hr{
-    width: 80%;
-    opacity: 0.4;
-}
-.signin{
-    background-color: white;
-}
-.signin p{
-    text-align: center;
-    font-size: 22px;
-}
+.brand ul li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} no consigo que los logos queden en cuadros :( */
+
 .bold{
     padding-top: 4%;
     font-weight: bold;
@@ -102,39 +74,16 @@ h2{
 footer{
     background-color: white;
 }
-.final-bar{
-    background-color:#F4F3F4;
-    color:#5b5e6d;
-    font-size: 24px;
-    font-weight: bold;
-}
-.final-bar ul{
-    margin-left: 20%;
-    padding-top: 20px;
-}
-.final-bar ul li{
-    display: inline;
-    text-align: center;
-    margin-right: 3%;
-}
-.language{
-    height: 35px;
-}
+
 /*span{
     margin-left: 20%;
 }*/
-.social{
-    margin-left: 38%;
+.language{
+    height: 35px;
 }
-.social i{
-    margin-left: 3%;
-}
-/*.links-slack{ así para pantallas más grandes.
-    display: flex;
-    flex-direction:row;
 
-}*/
-@media (max-width: 768px) {
+
+@media (max-width: 768px) { /*hasta tablets*/
     body {
       background:#F4F3F4;
       width: 100%;
@@ -146,25 +95,176 @@ footer{
     }
     .footer-image{
         height: 450px;
-        width: 50%;
-        margin-left: 20%;
+        width: 90%;
+        margin: 5%;
+    }
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-left: 30px;
+        text-align: center;
     }
     #email{
         height: 30px;
         width: 60%;
         margin: 20px 0 20px 20%
     }
+    .get-started{
+        background-color: blue;
+        color: white;
+        width: 60%;
+        padding: 12px;
+        margin-left: 20%;
+        margin-bottom: 12px;
+    }
+    #discover-why{
+        width: 80%;
+        height: 45px;
+        margin-left: 10%;
+        background-color: white;
+        color: blue;
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .brand-logos{
+        width: 35%;
+        margin-left: 30%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .brand hr{
+        width: 80%;
+        opacity: 0.4;
+    }
     .center{
         text-align: center;
     } 
+    .signin{
+        background-color: white;
+    }
+    .signin p{
+        text-align: center;
+        font-size: 22px;
+    }
     .links-slack{ 
         display: flex;
-        flex-direction: column;  
+        flex-direction: row;  
         flex: 0 1 auto;
-        justify-content: space-between;
         margin-left: 8%;
         font-size: 22px;
         color:#5b5e6d;
+    }
+    .icon-slack{
+        height: 150px;
+        width: 150px;
+    }
+    .links-slack ul{
+        margin-left: 5%;
+        width: 40%;  
+        display: flex;  
+        flex: 0 1 auto;
+        flex-wrap: wrap;
+        align-content: space-between;
+        flex-direction: row;  
+        align-items: stretch;
+        list-style:none;
+        padding: 0px;
+    }
+    .links-slack ul li{
+        display: inline-block;
+        width: auto;
+        margin: 10px;
+    }
+    .links-slack li:first-child{
+        font-weight: bold;
+    }
+    .final-bar{
+        background-color:#F4F3F4;
+        color:#5b5e6d;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .final-bar ul{
+        margin-left: 20%;
+        padding-top: 20px;
+    }
+    .final-bar ul li{
+        display: inline;
+        text-align: center;
+        margin-right: 3%;
+    }
+    .social{
+        margin-left: 38%;
+    }
+    .social i{
+        margin-left: 3%;
+    }
+  }
+
+/*@media screen and (min-width: 769px) and (max-width: 961px) porque esto no funciona? */
+@media screen and (min-width: 960px){
+    body {
+        background:#F4F3F4;
+        width: 100%;
+        display: flex;
+        font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+    .content{
+        width: 100%;
+    }
+    h1 {
+        font-size: 42px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #email{
+        height: 30px;
+        width: 30%;
+        margin: 20px 0 20px 20%
+    }
+    .get-started{
+        background-color: blue;
+        color: white;
+        width: 30%;
+        padding: 9px;
+
+        margin-bottom: 12px;
+    }
+    #discover-why{
+        width: 20%;
+        height: 45px;
+        margin-left: 40%;
+        background-color: white;
+        color: blue;
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .brand-logos{
+        width: 30%;
+        margin-left: 30%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .brand hr{
+        width: 80%;
+        opacity: 0.4;
+    }
+    .signin{
+        background-color: white;
+    }
+    .signin p{
+        font-size: 22px;
+        white-space: nowrap;
+    }
+    .get-started{
+        background-color: blue;
+        color: white;
+        width: 20%;
+        padding: 12px;
+        margin-left: 5%;
+        margin-bottom: 12px;
     }
     .icon-slack{
         height: 150px;
@@ -191,5 +291,30 @@ footer{
     .links-slack li:first-child{
         font-weight: bold;
     }
-  }
+    .final-bar{
+        background-color:#F4F3F4;
+        color:#5b5e6d;
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        flex: 0 1 auto;
+        
+    }
+    .final-bar ul{
+        width: 50%;
+        margin-left: 5%;
+        padding-top: 20px;
+    }
+    .final-bar ul li{
+        display: inline;
 
+    }
+    .social{
+        display: inline;
+        margin-left: 10%;
+    }
+    .social i{
+        margin-left: 3%;
+    }
+}
