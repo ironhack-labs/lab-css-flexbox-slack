@@ -20,6 +20,12 @@ html {
   font-size:10px;
 }
 
+.container {
+  padding: 0;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 .navigation-bar {
   border-bottom: 2px solid #dfe4ea;
   /* position: fixed; */
@@ -38,6 +44,7 @@ html {
 .header {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .header p, .section-with-logos p {
@@ -52,7 +59,7 @@ html {
   order: 5;
   height: 330px;
   width: 300px;
-  text-align: center;
+  margin: 0 auto;  
 }
 
 .header h1, .section-with-logos h2, .try-it-section h2 {
@@ -81,14 +88,7 @@ html {
   margin: 0 2.5rem;
 }
 
-.email-capture-one {
-  padding: 1.5rem;
-  margin-bottom: 1.2rem;
-  border-radius: 6px;
-  border-style: solid 0.5px #dfe4ea;
-}
-
-.email-capture-two {
+.email-capture-one, .email-capture-two {
   padding: 1.5rem;
   margin-bottom: 1.2rem;
   border-radius: 6px;
@@ -166,6 +166,13 @@ html {
   font-weight: 900;
 }
 
+.social-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .social-footer ul {
   list-style: none;
   display: flex;
@@ -176,15 +183,16 @@ html {
 }
 
 .social-footer ul li {
-  margin: 30px 10px 20px;
+  margin: 20px 10px 20px;
 }
 
 .language-selection {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: space-around;
   font-size: 1.7rem;
   font-weight: 900;
+  margin-bottom: 25px;
 }
 
 .language-selection img {
@@ -195,11 +203,7 @@ html {
 .social-icons {
   display: flex;
   flex-direction: row;
-  width: 30px;
-  height: auto;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 
-.social-icons i {
-  width: 70px;
-  height: 50px;
-}
