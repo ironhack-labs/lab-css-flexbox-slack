@@ -327,13 +327,27 @@ para poder hacer el burger menu */
   margin-bottom: 20px;
 }
 
-@media (min-width: 767px) and (max-width: 961px) {
-  .btn-get-started-one, .btn-get-started-two, .btn-discover {
+.last-separator-line {
+  visibility: hidden;
+}
+
+@media (min-width: 767px) {
+  .btn-get-started-one, .btn-discover {
     width: 25%;
   }
+
+  .btn-get-started-two {
+    width: 14em;
+    height: 4.7em;
+  }
   
-  .email-capture-one, .email-capture-two {
+  .email-capture-one {
     width: 35%;
+  }
+
+  .email-capture-two {
+    width: 12em;
+    height: 2.1em;
   }
   
   .header p {
@@ -348,10 +362,24 @@ para poder hacer el burger menu */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: flex-start;
   }
 
   .logo-icons img:nth-child(5) {
     border-bottom: none;
+  }
+
+  .try-it-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .try-it-section div {
+    margin-right: 20em;
+  }
+
+  .try-it-section h2 {
+    font-size: 2.6rem;
   }
 
   .footer-links {
@@ -388,6 +416,7 @@ para poder hacer el burger menu */
     justify-content:center;
     margin-left: 0;
     padding-left: 0;
+    font-size: 1.4em;
   }
   
   .social-footer ul li {
@@ -397,6 +426,52 @@ para poder hacer el burger menu */
   .language-and-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .language-selection {
+    margin-right: 40px;
+  }
+
+  .language-selection span {
+    font-size: 0.8em;
+  }
+
+  .social-icons i {
+    margin-right: 20px;
+  }
+
+  .last-separator-line {
+    margin: 20px 0px 20px 50px;
+    visibility: visible;
+    color: rgb(221, 219, 219);
+  }
+}
+
+@media (min-width: 961px){
+  .logo-icons {
+    margin: 5% 0;
+  }
+
+  .logo-icons img:nth-child(4) {
+    border-bottom: none;
+  }
+
+  .logo-icons img {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header img {
+    order: 0;
+    margin: 0px; 
   }
 }
