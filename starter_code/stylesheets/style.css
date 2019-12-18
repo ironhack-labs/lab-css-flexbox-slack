@@ -190,8 +190,14 @@ para poder hacer el burger menu */
   text-align: center;
 }
 
+.logo-icons {
+  display: flex;
+  flex-direction: column;
+}
+
 .header h1 {
   font-size: 3.7rem;
+  margin-right: 35rem;
 }
 
 .section-with-logos, .social-footer {
@@ -234,7 +240,7 @@ para poder hacer el burger menu */
   width: 50%;
   height: 60px;
   padding-bottom: 70px;
-  margin: 0px 20%;
+  margin: 0px auto;
   border-bottom: 1px solid #5b5e6d;
 }
 
@@ -321,3 +327,31 @@ para poder hacer el burger menu */
   margin-bottom: 20px;
 }
 
+@media (min-width: 767px) and (max-width: 961px) {
+  .btn-get-started-one, .btn-get-started-two, .btn-discover {
+    width: 25%;
+  }
+  
+  .email-capture-one, .email-capture-two {
+    width: 35%;
+  }
+  
+  .header p {
+    font-size: 1.8rem;
+  }
+
+  .section-with-logos h2 {
+    font-size: 3.5rem;
+  }
+  
+  .logo-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logo-icons img:nth-child(5) {
+    border-bottom: none;
+  }
+
+}
