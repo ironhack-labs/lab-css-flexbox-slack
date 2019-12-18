@@ -26,25 +26,137 @@ html {
   margin: 0 auto;
 }
 
+/* A partir de aquí y hasta el siguiente comentario he copiado el código de https://codepen.io/mutedblues/pen/MmPNPG
+para poder hacer el burger menu */
+
 .navigation-bar {
-  border-bottom: 2px solid #dfe4ea;
-  /* position: fixed; */
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top:0;
+}
+
+.navigation-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.navigation-bar li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navigation-bar .logo {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+}
+
+.navigation-bar .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.navigation-bar .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.navigation-bar .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navigation-bar .menu-icon .navicon:before,
+.navigation-bar .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
   width: 100%;
 }
+
+.navigation-bar .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.navigation-bar .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.navigation-bar .menu-btn {
+  display: none;
+}
+
+.navigation-bar .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.navigation-bar .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.navigation-bar .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.navigation-bar .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navigation-bar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navigation-bar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 48em) {
+  .navigation-bar li {
+    float: left;
+  }
+  .navigation-bar li a {
+    padding: 20px 30px;
+  }
+  .navigation-bar .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .navigation-bar .menu-icon {
+    display: none;
+  }
+}
+
+/* Hasta aquí */
 
 .navigation-bar img {
   width: 100px;
   height: 50px;
 }
 
-.menu li {
-  list-style: none;
-}
-
 .header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 70px 2.5rem 0;
 }
 
 .header p, .section-with-logos p {
@@ -84,7 +196,7 @@ html {
   background-color: #F4F3F4;
 }
 
-.header, .try-it-section, .footer-links {
+.try-it-section, .footer-links {
   margin: 0 2.5rem;
 }
 
