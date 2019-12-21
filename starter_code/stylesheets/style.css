@@ -3,5 +3,256 @@ background-grey: #F4F3F4;
 button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
 */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Unna:700');
+
+* {
+    box-sizing: border-box;
+}
+
+body, input, button {
+    margin: 0;
+    font-family: "Lato", Verdana, sans-serif;
+    line-height: 1.5; 
+}
+
+h1, h2, h3 {
+    font-family: "Unna", "Times New Roman", serif;
+    font-weight: 700;
+    line-height: 1;
+    color: #2C303F;
+}
+
+h1 {
+    margin: 0;
+    font-size: 45px;
+}
+
+p {
+    font-weight: 300;
+}
+
+p, ul, i, span {
+    color: #5b5e6d;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+a {
+    font-weight: 400;
+    color: #192592;
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 100vw;
+        padding: 10px 25px;
+        border-bottom: 1px solid #F4F3F4;
+    }
+
+    nav img {
+        width: 110px;
+    }
+
+    nav a.icon {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 24px;
+    }
+
+    nav ul {
+        display: none;
+        margin: 0;
+        text-align: right;
+    }
+
+    header img {
+        order: 4;
+    }
+
+    main img {
+        width: 100%;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+    padding: 120px 0 0 0;
+}
+
+header img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+header p {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.email-input-form {
+    margin: 0;
+    padding: 0;
+}
+
+#email-input-box {
+    width: 100%;
+    height: 60px;
+    padding-left: 15px;
+    border: 2px solid #F4F3F4;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.email-input-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 22px 0;
+    border: 0;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #192592;
+    color: white;
+}
+ 
+#sign-in {
+    text-align: center;
+}
+
+#sign-in a {
+    color: #192592;
+}
+
+#social-proof {
+    background-color: #F4F3F4;
+}
+
+main div {
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+}
+
+main p {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 19px;
+}
+
+main button {
+    width: 100%;
+    margin: 20px 0;
+    padding: 18px 0;
+    background-color: #FFF;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #192592;
+}
+
+main img {
+    margin: 40px 0;
+}
+
+#airbnb-logo, #cap-one-logo {
+    width: 170px;
+}
+
+#harvard-logo {
+    width: 190px;
+}
+
+#la-times-logo {
+    width: 310px;
+}
+
+#oracle-logo, #ticketmaster-logo {
+    width: 200px;
+}
+
+main hr {
+    width: 100%;
+    margin: 0;
+    border: 1px solid rgba(200, 200, 200, .2);
+}
+
+main h3 {
+    margin: 0;
+    font-size: 25px;
+}
+
+footer img {
+    width: 120px;
+}
+
+#company-links {
+    margin: 0 25px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+}
+
+#company-links h4 {
+    margin: 0;
+    font-size: 17px;
+}
+
+#company-links ul {
+    width: 50%;
+    line-height: 2.5;
+}
+
+#footer-links {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #F4F3F4;
+    font-weight: 700;
+}
+
+#footer-links ul, #footer-links div {
+    flex-basis: 100%;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer-links ul {
+    margin: 0 25px;
+}
+
+#footer-links div {
+    margin: 0 100px;
+}
+
+#flag {
+    width: 20px;
+}
