@@ -14,20 +14,16 @@ paragraph grey: #5b5e6d;
 
 body, input, button {
     margin: 0;
-    font-family: "Lato", Verdana, sans-serif;
     line-height: 1.5; 
+    font-family: "Lato", Verdana, sans-serif;
 }
 
 h1, h2, h3 {
+    margin: 0;
+    line-height: 1;
     font-family: "Unna", "Times New Roman", serif;
     font-weight: 700;
-    line-height: 1;
     color: #2C303F;
-}
-
-h1 {
-    margin: 0;
-    font-size: 45px;
 }
 
 p {
@@ -39,9 +35,9 @@ p, ul, i, span {
 }
 
 ul {
+    padding: 0;
     list-style: none;
     text-decoration: none;
-    padding: 0;
 }
 
 a {
@@ -54,15 +50,35 @@ nav {
     background-color: white;
 }
 
-@media (max-width: 768px) {
-    nav {
-        width: 100vw;
-        padding: 10px 25px;
-        border-bottom: 1px solid #F4F3F4;
-    }
+nav {
+    width: 100vw;
+    padding: 10px 25px;
+    border-bottom: 1px solid #F4F3F4;
+}
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 25px;
+    padding: 120px 0 0 0;
+}
+
+header img {
+    margin: 20px 0;
+}
+
+header p {
+    margin: 30px 0;
+}
+
+@media (max-width: 961px) {
     nav img {
         width: 110px;
+    }
+
+    header img {
+        order: 4;
     }
 
     nav a.icon {
@@ -77,37 +93,161 @@ nav {
         margin: 0;
         text-align: right;
     }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    header {
+        align-items: stretch;
+    }
+
+    header p {
+        font-size: 20px;
+    }
 
     header img {
-        order: 4;
-    }
-
-    main img {
         width: 100%;
     }
+ 
+    #sign-in {
+        text-align: center;
+    }
+    
+    #email-input-box, .email-input-form button {
+        width: 100%;
+    }
+
+    main img, main button {
+        width: 100%;
+    }
+
+    main hr {
+        width: 100%;
+    }
+
+    footer div {
+        width: 100%;
+    }
+
+    #company-links {
+        flex-wrap: wrap;
+    }
+
+    #company-links ul {
+        width: 50%;
+    }
+
+    #footer-links {
+        flex-flow: wrap;
+    }
+
+    #footer-links ul, #footer-links div {
+        margin: 0;
+        flex-basis: 100%;
+    }
+
+    #footer-links div {
+        margin: 0 100px;
+    }
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    margin: 0 25px;
-    padding: 120px 0 0 0;
-}
+@media (min-width: 768px) and (max-width: 961px) {
+    h1 {
+        font-size: 70px;
+    }
 
-header img {
-    width: 100%;
-    margin: 20px 0;
-}
+    header p {
+        font-size: 22px;
+    }
 
-header p {
-    margin: 30px 0;
-    font-size: 20px;
+    header img {
+        align-self: center;
+        width: 50%;
+    }
+
+    header #email-input-box {
+        width: 50%;
+    }
+
+    header .email-input-form button {
+        width: 25%;
+    }
+
+    #sign-in {
+        margin: 15px 0;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    main button {
+        width: 30%;
+    }
+
+    #try-slack .email-input-form {
+        width: 50%;
+    }
+
+    #try-slack #email-input-box {
+        width: 45%;
+    }
+
+    #try-slack .email-input-form button {
+        margin-left: 5px;
+        width: 45%;
+    }
+
+    main hr {
+        width: 50%;
+    }
+
+    #logos {
+        height: 450px;
+        align-content: space-evenly;
+    }
+
+    #logos div {
+        width: 50%;
+        height: 130px;
+    }
+
+    #logos div:nth-child(-n+3) {
+        border-right: 1px solid rgba(200, 200, 200, .2);
+    }
+
+    #try-slack {
+        height: 150px;
+    }
+
+    #try-slack h3, #try-slack p {
+        text-align: left;
+    }
+
+    #try-slack form {
+        align-self: flex-end;
+    }
+
+    #company-links {
+        justify-content: space-around;
+    }
+
+    #company-links ul {
+        padding-right: 25px;
+    }
+
+    #footer-links ul {
+        flex-grow: 2;
+        margin-right: 150px;
+    }
+    
+    #footer-links div {
+        flex-grow: 1;
+    }
 }
 
 #email-input-box {
-    width: 100%;
     height: 60px;
     padding-left: 15px;
     border: 2px solid #F4F3F4;
@@ -117,9 +257,8 @@ header p {
 }
 
 .email-input-form button {
-    width: 100%;
     margin-top: 20px;
-    padding: 22px 0;
+    padding: 17px 0;
     border: 0;
     border-radius: 5px;
     font-size: 17px;
@@ -127,42 +266,59 @@ header p {
     background-color: #192592;
     color: white;
 }
- 
-#sign-in {
-    text-align: center;
-}
 
 #sign-in a {
     color: #192592;
 }
 
 #social-proof {
-    background-color: #F4F3F4;
-}
-
-main div {
     padding: 40px 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
+    background-color: #F4F3F4;
 }
 
 main h2 {
     margin: 0 0 10px 0;
-    font-size: 30px;
     align-self: center;
+    font-size: 30px;
 }
 
 main p {
     margin: 10px 0;
+    text-align: center;
     font-size: 19px;
+}
+
+#logos {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#logos div {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(200, 200, 200, .2);
+}
+
+main h3 {
+    margin: 20px 0 0 0;
+    font-size: 25px;
     text-align: center;
 }
 
+main img {
+    margin: 40px 0;
+    align-self: center;
+}
+
+
 main button {
-    width: 100%;
-    margin: 20px 0;
+    margin-top: 20px;
     padding: 18px 0;
     background-color: #FFF;
     border: 1px solid #192592;
@@ -170,11 +326,6 @@ main button {
     font-size: 17px;
     font-weight: 700;
     color: #192592;
-}
-
-main img {
-    margin: 40px 0;
-    align-self: center;
 }
 
 #airbnb-logo, #cap-one-logo {
@@ -186,34 +337,28 @@ main img {
 }
 
 #la-times-logo {
-    width: 310px;
+    width: 300px;
 }
 
 #oracle-logo, #ticketmaster-logo {
     width: 200px;
 }
 
-main hr {
-    width: 100%;
-    margin: 0;
-    border: 1px solid rgba(200, 200, 200, .2);
+#try-slack {
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-main h3 {
-    margin: 0;
-    font-size: 25px;
-    align-self: center;
-}
-
-footer img {
+#slack-icon {
     width: 120px;
 }
 
 #company-links {
     margin: 0 25px;
     display: flex;
-    flex-flow: row wrap;
-    align-content: space-around;
+    flex-direction: row;
 }
 
 #company-links h4 {
@@ -222,33 +367,24 @@ footer img {
 }
 
 #company-links ul {
-    width: 50%;
     line-height: 2.5;
 }
 
 #footer-links {
+    margin: 0;
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     background-color: #F4F3F4;
     font-weight: 700;
 }
 
 #footer-links ul, #footer-links div {
-    flex-basis: 100%;
     padding: 15px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-}
-
-#footer-links ul {
-    margin: 0 25px;
-}
-
-#footer-links div {
-    margin: 0 100px;
 }
 
 #flag {
