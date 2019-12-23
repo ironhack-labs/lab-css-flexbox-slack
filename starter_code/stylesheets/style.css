@@ -72,15 +72,96 @@ header p {
     margin: 30px 0;
 }
 
-@media (max-width: 1024px) {
+nav img {
+    width: 110px;
+}
+
+@media (min-width: 1200px) {
     nav img {
-        width: 110px;
+        float: left;
+    }
+
+    nav a.icon {
+        display: none;
+    }
+
+    nav ul {
+        margin: 0;
+        float: right;
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    nav li {
+        font-size: 18px;
+    }
+
+    nav li:last-of-type {
+        padding: 10px;
+        border: 1px solid rgba(200, 200, 200, 1);
+        border-radius: 10px;
+    }
+
+    header {
+        flex-direction: row;
+        margin-bottom: 50px;
     }
 
     header img {
-        order: 4;
+        width: 500px;
+        height: auto;
+        align-self: center;
+        margin: 0 50px;
     }
 
+    h1 {
+        font-size: 80px;
+    }
+    
+    header p {
+        font-size: 22px;
+        margin-right: 50px;
+    }
+
+    header #email-input-box {
+        display: none;
+    }
+
+    .email-input-form button {
+        width: 150px;
+    }
+
+    #sign-in {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    main button {
+        width: 150px;
+    }
+
+    #company-links div {
+        flex-grow: 2;
+    }
+
+    #company-links ul {
+        flex-grow: 1;
+    }
+
+    #footer-links ul {
+        flex-grow: 2;
+        margin-right: 500px;
+    }
+    
+    #footer-links div {
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 1200px) {
     nav a.icon {
         position: absolute;
         top: 20px;
@@ -92,6 +173,14 @@ header p {
         display: none;
         margin: 0;
         text-align: right;
+
+    }
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        order: 4;
     }
 }
 
@@ -154,7 +243,7 @@ header p {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     h1 {
         font-size: 70px;
     }
@@ -186,6 +275,33 @@ header p {
         width: 30%;
     }
 
+    #footer-links ul {
+        flex-grow: 2;
+        margin-right: 150px;
+    }
+    
+    #footer-links div {
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    #logos {
+        height: 450px;
+        align-content: space-evenly;
+    }
+
+    #logos div {
+        width: 50%;
+        height: 130px;
+    }
+
+    #logos div:nth-child(-n+3) {
+        border-right: 1px solid rgba(200, 200, 200, .2);
+    }
+}
+
+@media (min-width: 768px) {
     #try-slack .email-input-form {
         width: 50%;
     }
@@ -222,34 +338,9 @@ header p {
     #company-links ul {
         padding-right: 25px;
     }
-
-    #footer-links ul {
-        flex-grow: 2;
-        margin-right: 150px;
-    }
-    
-    #footer-links div {
-        flex-grow: 1;
-    }
 }
 
-@media (min-width: 768px) and (max-width: 960px) {
-    #logos {
-        height: 450px;
-        align-content: space-evenly;
-    }
-
-    #logos div {
-        width: 50%;
-        height: 130px;
-    }
-
-    #logos div:nth-child(-n+3) {
-        border-right: 1px solid rgba(200, 200, 200, .2);
-    }
-}
-
-@media (min-width: 960px) and (max-width: 1024px) {
+@media (min-width: 960px) {
     #logos {
         height: 300px;
         align-content: space-evenly;
