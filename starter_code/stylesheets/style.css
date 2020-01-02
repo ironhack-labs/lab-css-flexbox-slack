@@ -158,6 +158,15 @@ main button {
     width: 100%;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.logo:last-child {
+    border: none;
+}
+
+.logos {
+    margin-top: 40px;
 }
 
 .logos img {
@@ -267,6 +276,10 @@ footer > div {
         text-align: left;
     }
 
+    .top-footer img {
+        margin-right: 80px;
+    }
+
     /* Grey Section */
     .grey-section {
         text-align: center;
@@ -274,12 +287,25 @@ footer > div {
     }
 
     .grey-section button {
-        width: 25%;
+        width: 30%;
     }
 
     .logo {
         width: 50%;
         float: left;
+    }
+
+    .logos {
+        height: 480px;
+    }
+
+    .logo:nth-child(1), .logo:nth-child(3){
+        border-right: 1px solid lightgray;
+    }
+
+    .logo:nth-child(5) {
+        border-bottom: none;
+        border-right: 1px solid lightgray;
     }
 
     .logos img {
@@ -303,7 +329,6 @@ footer > div {
 
     .white-section p {
         text-align: left;
-        
     }
 
     .white-section > div:nth-child(2) {
@@ -335,7 +360,8 @@ footer > div {
     }
 
     .top-footer ul {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin-right: 15px;
     }
 
     .bottom-footer {
@@ -367,6 +393,23 @@ footer > div {
 @media only screen and (min-width: 961px) {
     .logo {
         width: 33.33333333%;
+        border-right: 1px solid lightgray;
+    }
+
+    .logos {
+        height: 340px;
+    }
+
+    .logo:nth-child(3) {
+        border-right: none;
+    }
+
+    .logo:nth-child(4) {
+        border-bottom: none;
+    }
+
+    .grey-section button {
+        width: 25%;
     }
 }
 
@@ -375,8 +418,38 @@ footer > div {
         display: flex;
     }
 
+    nav li:last-child {
+        border: 1px solid #5b5e6d;
+        padding: 8px;
+        border-radius: 5px;
+    }
+
     nav span {
         display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .container div {
+        width: 50%;
+        margin: 0 10px;
+    }
+
+    .container input {
+        display: none;
+    }
+
+    .container button {
+        width: 30%;
+        margin: 0;
+    }
+
+    .header-img img {
+        width: 80%;
+        margin-top: 30px;
     }
 }
 
