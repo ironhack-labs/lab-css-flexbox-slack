@@ -5,3 +5,76 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+    margin:0;
+    padding:0;
+    width: 100vw;
+    font-family: 'Work Sans', sans-serif;
+}
+p { margin:5px 0 10px 0; }
+
+
+@media(max-width: 768px){
+
+    nav{
+        display: flex;
+        background-image: url(../images/burgericon.png);
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-position: 18rem;
+        border-bottom: 1px solid #5b5e6d;
+    }
+
+    nav img{
+        padding: 4%;
+        order: -1;
+        width: 30%;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header h1{
+        justify-content: center;
+        font-family: 'Gelasio', serif;
+        width: 60%;
+        color: #2C303F;
+    }
+
+    header img{
+        order: 1;
+    }
+
+    header p{
+        margin: 0;
+        width: 70%;
+        color: #5b5e6d;
+    }
+
+    header button{
+        border: 1px solid #192592;
+        background-color: #192592;
+        color: white;
+        width: 80vw;
+        height: 5%;
+        border-radius: 2vw;
+        font-weight: bold;
+    }
+
+    header p:last-of-type{
+        width: 45%;
+        align-self: center;
+        font-size: .8rem;
+    }
+}
+
