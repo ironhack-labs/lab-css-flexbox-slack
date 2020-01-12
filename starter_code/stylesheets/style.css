@@ -15,250 +15,327 @@ html {
     width: 100vw;
     font-family: 'Work Sans', sans-serif;
 }
+
 p { margin:5px 0 10px 0;
     color: #5b5e6d;}
 
+body{
+    font-size: 1rem;
+}
 
-@media(max-width: 768px){
-
-    header h1, div:first-of-type h2, main div:last-of-type p:first-of-type{
+header h1, div:first-of-type h2, main div:last-of-type p:first-of-type{
         font-family: 'Gelasio', serif;
         color: #2C303F;
+}
 
+nav{
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    background-image: url(../images/burgericon.png);
+    background-repeat: no-repeat;
+    background-size: 10vw;
+    background-position: right;
+    border-bottom: 1px solid #BBBBBB;
+}
+
+nav img{
+    padding: 4%;
+    order: -1;
+    width: 16vw;
+}
+
+nav ul{
+    display: none;
+}
+
+header{
+    margin-top: 20%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+header h1, header p{
+    width: auto;
+    padding-top: 3%;
+    padding-left:10%;
+}
+
+header button, header input{
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+header h1{ /*Checar esto y juntarlo con el p*/
+    padding-top: 5%;
+    justify-content: flex-start;
+    width: 60%;
+}
+header img{
+    width: 80vw;
+    align-self: center;
+    order: 1;
+    padding-bottom: 1%;
+    padding-top: 4%;
+}
+header p{
+    margin: 0;
+    width: 70%;
+}
+
+button{
+    border: 1px solid #192592;
+    background-color: #192592;
+    color: white;
+    width: 75vw;
+    padding: 3%;
+    border-radius: 1vw;
+    font-weight: bold;
+}
+
+input{
+    border: 1px solid #E2E2E2;
+    background-color: white;
+    color: #C1C1C1 ;
+    width: 70vw;
+    padding: 3%;
+    border-radius: 1vw;
+}
+
+header p:last-of-type{
+    width: 45%;
+    align-self: center;
+    font-size: .8rem;
+}
+main{
+    display: flex;
+    background: #F4F3F4;
+    height: auto;
+    flex-direction: column;
+}
+main div:first-of-type{
+    border-top: .5px solid #BBBBBB;
+    border-bottom: .5px solid #BBBBBB;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+div:first-of-type h2{
+    padding-top: 5%;
+}
+div:first-of-type p{
+    margin: 0;
+    padding-top: 4%;
+    padding-bottom: 7%;
+    width: 80vw;
+}
+div:first-of-type button{ /*Boton fondo blando*/
+    border: 1px solid #192592;
+    background-color: white;
+    color: #192592;
+    width: 80vw;
+    padding: 3%;
+    border-radius: 1vw;
+    font-weight: bold;
+}
+div:first-of-type img{
+    width: 40vw;
+    padding: 10%;
+    border-bottom: .5px solid #BBBBBB;
+}
+div:first-of-type img:last-of-type{
+    border-bottom: none;
+}
+main div:last-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100vw;
+}
+main div:last-of-type p{
+    padding: 1%;
+    text-align: center;
+    margin: 0;
+    color: #2C303F;
+}
+main div:last-of-type p:last-of-type{
+    padding-bottom: 4% ;
+}
+main div:last-of-type div>p:first-of-type{
+    border: 0;
+    padding-top: 5%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* main div:last-of-type button{
+    border: 1px solid #192592;
+    background-color: white;
+    color: #192592;
+    width: 80vw;
+    padding: 3%;
+    border-radius: 1vw;
+    font-weight: bold;
+} */
+footer{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+}
+footer div:first-of-type img{
+    display: block;
+    display: flex;
+    margin-right: auto;
+    /* width: 20vw; */
+}
+footer div:first-of-type{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-grow: initial;
+    color: #5b5e6d;
+}
+footer div:first-of-type li{
+    padding: 5%;
+    width: auto;
+    margin: auto;
+}
+footer div:first-of-type>ul{
+    margin-top: 0;
+    padding: 5%;
+    list-style-type: none;
+    width: 40vw;
+}
+.bold{
+    font-weight: bold;
+}
+footer div:last-of-type{
+    display: flex;
+    background-color: #F4F3F4;
+    color: #5b5e6d;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div:last-of-type ul{
+    font-size: .7rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+}
+footer div:last-of-type li{
+    width: auto;
+    padding: 3%;
+}
+footer div:last-of-type img, footer div:last-of-type span{
+    display: flex;
+    display: inline-block;
+    flex-direction: row;
+}
+footer div:last-of-type span{
+    width: auto;
+}
+footer div:last-of-type img{
+    margin: 0;
+    width: auto;
+}
+footer div:last-of-type i{
+    display: inline-block;
+    display: flex;
+    flex: 0 1 auto;
+}
+
+
+@media(max-width: 768px){
+/*Como diseñe primero para cel la veda no se que poner aqui porque todo esta arriba*/
+}
+
+@media(max-width: 961px) and (min-width: 767px){
+
+    body{
+        font-size: 1.5rem;
     }
 
-    nav{
-        display: flex;
-        background-image: url(../images/burgericon.png);
-        background-repeat: no-repeat;
-        background-size: 20%;
-        background-position: 18rem;
-        border-bottom: 1px solid #BBBBBB;
+    header button{ 
+        margin-left: 0;
     }
 
-    nav img{
-        padding: 4%;
-        order: -1;
-        width: 30%;
-    }
-
-    nav ul{
-        display: none;
-    }
-
-    header{
-        display: flex;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    header h1{ /*Checar esto y juntarlo con el p*/
-        justify-content: center;
-        width: 60%;
-    }
-
-    header img{
-        order: 1;
-        padding-bottom: 1%;
-    }
-
-    header p{
-        margin: 0;
-        width: 70%;
-    }
-
-    header button{
+    button{
         border: 1px solid #192592;
         background-color: #192592;
         color: white;
-        width: 80vw;
-        height: 5%;
-        border-radius: 2vw;
-        font-weight: bold;
-    }
-
-    header p:last-of-type{
-        width: 45%;
-        align-self: center;
-        font-size: .8rem;
-    }
-
-    main{
-        display: flex;
-        background: #F4F3F4;
-        height: auto;
-        flex-direction: column;
-    }
-
-    main div:first-of-type{
-        border-top: .5px solid #BBBBBB;
-        border-bottom: .5px solid #BBBBBB;
-        padding-top: 3%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    div:first-of-type h2{
-        padding-top: 5%;
-    }
-
-    div:first-of-type p{
-        margin: 0;
-        padding-top: 4%;
-        padding-bottom: 7%;
-        width: 80vw;
-    }
-
-    div:first-of-type button{
-        border: 1px solid #192592;
-        background-color: white;
-        color: #192592;
-        width: 80vw;
+        width: 15vw;
         padding: 3%;
         border-radius: 1vw;
         font-weight: bold;
+        margin-top: 3%;
+        margin-left: 1%;
+        align-self: flex-end;
     }
 
-    div:first-of-type img{
-        width: 40vw;
-        padding: 10%;
-        border-bottom: .5px solid #BBBBBB;
-    }
-
-    div:first-of-type img:last-of-type{
-        border-bottom: none;
-    }
-
-    main div:last-of-type{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    div:first-of-type button{ /*Boton fondo blando*/
+        border: 1px solid #192592;
         background-color: white;
-        width: 100vw;
+        color: #192592;
+        width: 20vw;
+        padding: 3%;
+        border-radius: 1vw;
+        font-weight: bold;
+        align-self: center;
     }
-
-    main div:last-of-type p{
-        padding: 1%;
-        text-align: center;
-        margin: 0;
-        color: #2C303F;
-    }
-
-    main div:last-of-type p:last-of-type{
-        padding-bottom: 4% ;
+    
+    input{
+        border: 1px solid #E2E2E2;
+        background-color: white;
+        color: #C1C1C1 ;
+        width: 30vw;
+        padding: 3%;
+        border-radius: 1vw;
+        align-self: flex-start;
+        margin-left: 5%;
     }
 
     main div:last-of-type p:first-of-type{
         padding-top: 5%;
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 2.5rem;
+    }
+    header p:last-of-type{
+        align-self: flex-start;
+        margin: 0;
+        width: 70%;
     }
 
-    main div:last-of-type button{
-        border: 1px solid #192592;
-        background-color: white;
-        color: #192592;
-        width: 80vw;
-        padding: 3%;
-        border-radius: 1vw;
-        font-weight: bold;
-    }
-
-
-    footer{
-        display: flex;
-        text-decoration: none;
-        flex-direction: column;
-    }
-
-    footer div:first-of-type img{
-        display: block;
-        display: flex;
-        margin-right: auto;
-        /* width: 20vw; */
-    }
-
-    footer div:first-of-type{
-        display: flex;
+    main div:last-of-type{
         flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        flex-grow: initial;
-        color: #5b5e6d;
-    }
-
-    footer div:first-of-type li{
-        padding: 5%;
         width: auto;
-        margin: auto;
-    }
-
-    footer div:first-of-type>ul{
-        margin-top: 0;
-        padding: 5%;
-        list-style-type: none;
-        width: 40vw;
-    }
-
-    .bold{
-        font-weight: bold;
-    }
-
-    footer div:last-of-type{
-        display: flex;
-        background-color: #F4F3F4;
-        color: #5b5e6d;
-        flex-direction: column;
-        text-align: center;
-        justify-content: space-around;
         align-items: center;
     }
 
-    footer div:last-of-type ul{
-        font-size: .7rem;
-        list-style-type: none;
+    main div:last-of-type div{
+        font-size: 1rem;
+        border: none;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-weight: bold;
+        width: 30vw;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
-    footer div:last-of-type li{
-        width: auto;
-        padding: 3%;
+    main div:last-of-type div p{
+        font-size: 1.5rem;
     }
-
-    footer div:last-of-type img, footer div:last-of-type span{
-        display: flex;
-        display: inline-block;
-        flex-direction: row;
-    }
-    footer div:last-of-type span{
-        width: auto;
-    }
-
-    footer div:last-of-type img{
-        margin: 0;
-        width: auto;
-    }
-
-    footer div:last-of-type i{
-        display: inline-block;
-        display: flex;
-        flex: 0 1 auto;
-    }
-
-}
-
-@media (max-width: 961px) and (min-width: 767px){
-    header {
-        background-color: blue;
-    };
 
 }
 
