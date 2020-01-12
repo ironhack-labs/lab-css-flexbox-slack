@@ -5,6 +5,9 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+html {
+    width: 100vw;
+}
 
 * {
     margin:0;
@@ -82,6 +85,7 @@ p { margin:5px 0 10px 0;
         display: flex;
         background: #F4F3F4;
         height: auto;
+        flex-direction: column;
     }
 
     main div:first-of-type{
@@ -102,16 +106,19 @@ p { margin:5px 0 10px 0;
     }
 
     div:first-of-type p{
+        margin: 0;
+        padding-top: 4%;
+        padding-bottom: 7%;
         width: 80vw;
     }
 
     div:first-of-type button{
         border: 1px solid #192592;
-        background-color: #192592;
-        color: white;
+        background-color: white;
+        color: #192592;
         width: 80vw;
-        height: 5%;
-        border-radius: 2vw;
+        height: 6%;
+        border-radius: 1vw;
         font-weight: bold;
     }
 
@@ -125,6 +132,49 @@ p { margin:5px 0 10px 0;
         border-bottom: none;
     }
 
+    main div:last-of-type{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100vw;
+    }
 
+    footer{
+        display: flex;
+        text-decoration: none;
+        flex-direction: column;
+    }
+
+    footer div:first-of-type img{
+        display: block;
+        display: flex;
+        margin-right: auto;
+        /* width: 20vw; */
+    }
+
+    footer div:first-of-type{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-grow: initial;
+        /*justify-content: flex-end; NO SIRVE ESTO ALV!*/
+    }
+
+    footer div:first-of-type li{
+        width: auto;
+        margin: auto;
+    }
+
+    footer div:first-of-type>ul{
+        margin-top:auto;
+        padding: 5%;
+        list-style-type: none;
+        width: 40vw;
+    }
+
+    .bold{
+        font-weight: bold;
+    }
 }
 
