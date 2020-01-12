@@ -203,7 +203,7 @@ nav grey: #5b5e6d;
     }
 
     #footer > ul {
-        width: 20vh;
+        width: 19vh;
         text-align: left;
         margin-bottom: 20px;
     }
@@ -278,12 +278,15 @@ nav grey: #5b5e6d;
         padding: 5px 20px;
     }
 
+    #help-logo {
+        display: none;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 961px) {
 
     * {
-        border: 1px solid lawngreen;
         margin: 0;
         padding: 0;
     }
@@ -329,14 +332,14 @@ nav grey: #5b5e6d;
     }
 
     header > h1 {
-        font-size: 4rem;
+        font-size: 5.5rem;
         width: 85vw;
         padding: 30px 0;
         color: #2C303F;
     }
 
     header > p {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         width: 85vw;
         font-family: 'Lato';
         color: #5b5e6d;
@@ -345,7 +348,7 @@ nav grey: #5b5e6d;
     }
 
     .input {
-        width: 85vw;
+        width: 40vw;
         height: 50px;
         border-radius: 5px;
         font-family: 'Lato';
@@ -353,11 +356,12 @@ nav grey: #5b5e6d;
         font-size: 1.7rem;
         padding-left: 15px;
         box-sizing: border-box;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
+        margin-right: 1vw;
     }
 
     .button {
-        width: 85vw;
+        width: 20vw;
         height: 50px;
         border-radius: 5px;
         font-family: 'Lato';
@@ -366,35 +370,42 @@ nav grey: #5b5e6d;
         font-size: 1.25rem;
         margin-bottom: 15px;
         border: 1px solid lightgray;
+        margin-right: 24vw;
     }
 
     .center-text {
         text-align: center;
     }
 
+    .left-text {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
     header > img {
-        width: 85vw;
+        width: 40vw;
         order: 1;
     }
 
     #main {
         background: #F4F3F4;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         width: 100vw;
-        align-items: center;
+        justify-content: center;
         padding-bottom: 50px;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
         width: 85vw;
         padding: 30px 0 20px;
         color: #2C303F;
     }
 
     #main > p {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         width: 85vw;
         font-family: 'Lato';
         color: #5b5e6d;
@@ -403,49 +414,75 @@ nav grey: #5b5e6d;
     }
 
     #main > button {
-        width: 85vw;
+        width: 20vw;
         height: 50px;
         border-radius: 5px;
         font-family: 'Lato';
         background: white;
         color: #192592;
         font-size: 1.25rem;
-        margin-bottom: 30px;
+        margin: 0 30vw 30px;
         border: 1px solid #192592;
     }
 
     #main > img {
-        width: 50vw;
-        padding: 50px 0;
+        height: 50px;
+        padding: 50px 70px;
+        width: 200px;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .border-right {
+        border-right: 1px solid lightgray;
     }
 
     #main > hr {
-        width: 85vw;
-        border: 1px solid lightgray;
+        display: none;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #below-m {
         display: flex;
         flex-direction: column;
-        width: 100vw;
-        align-items: center;
+        width: 80vw;
+        justify-content: space-evenly;
     }
 
     #free {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
         font-weight: 600;
-        width: 85vw;
+        width: 40vw;
         padding: 30px 0 5px;
         color: #2C303F;
     }
 
     #alredy {
         font-size: 1.7rem;
-        width: 85vw;
+        width: 40vw;
         font-family: 'Lato';
         color: #5b5e6d;
         line-height: 2.5rem;
         padding-bottom: 10px;
+    }
+
+    #get-button {
+        width: 15vw;
+        position: absolute;
+        margin-left: 64vw;
+    }
+
+    #email-btn {
+        position: absolute;
+        width: 18vw;
+        margin-left: 45vw;
     }
 
     #footer-division {
@@ -457,13 +494,13 @@ nav grey: #5b5e6d;
     footer {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
     }
 
     #footer {
         display: flex;
         flex-wrap: wrap;
-        width: 85vw;
+        width: 100vw;
         justify-content: space-around;
     }
 
@@ -473,13 +510,11 @@ nav grey: #5b5e6d;
 
     footer > img {
         width: 120px;
-        margin-right: 200px;
-        align-self: flex-start;
-        margin-left: 7vw;
+        display: none;
     }
 
     #footer > ul {
-        width: 20vh;
+        width: 15vh;
         text-align: left;
         margin-bottom: 20px;
     }
@@ -501,6 +536,8 @@ nav grey: #5b5e6d;
     #bottom {
         width: 100vw;
         background: #F4F3F4;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     #bottom > ul {
@@ -554,45 +591,10 @@ nav grey: #5b5e6d;
         padding: 5px 20px;
     }
 
-}
-
-@media (min-width: 768px) and (max-width: 961px) {
-
-    * {
-        border: 1px solid lawngreen;
-        margin: 0;
-        padding: 0;
-    }
-
-    html {
-        font-size: 10px;
-    }
-
-    nav {
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        height: 60px;
-        background: white;
-        border-bottom: 2px solid lightgray;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 7vw;
-        box-sizing: border-box;
-    }
-    
-    nav > img {
-        height: 50px;
-    }
-
-    nav > ul {
-        display: none;
-    }
-
-    .fa-bars {
-        font-size: 30px;
-        color: #5b5e6d;
+    #help-logo {
+        width: 70px;
+        height: 70px;
+        margin-left: 7vw;
     }
 
 }
