@@ -21,6 +21,12 @@ p { margin:5px 0 10px 0;
 
 @media(max-width: 768px){
 
+    header h1, div:first-of-type h2, main div:last-of-type p:first-of-type{
+        font-family: 'Gelasio', serif;
+        color: #2C303F;
+
+    }
+
     nav{
         display: flex;
         background-image: url(../images/burgericon.png);
@@ -48,11 +54,9 @@ p { margin:5px 0 10px 0;
         align-items: center;
     }
 
-    header h1{
+    header h1{ /*Checar esto y juntarlo con el p*/
         justify-content: center;
-        font-family: 'Gelasio', serif;
         width: 60%;
-        color: #2C303F;
     }
 
     header img{
@@ -101,8 +105,6 @@ p { margin:5px 0 10px 0;
 
     div:first-of-type h2{
         padding-top: 5%;
-        color: #2C303F;
-        font-family: 'Gelasio', serif;
     }
 
     div:first-of-type p{
@@ -117,7 +119,7 @@ p { margin:5px 0 10px 0;
         background-color: white;
         color: #192592;
         width: 80vw;
-        height: 6%;
+        padding: 3%;
         border-radius: 1vw;
         font-weight: bold;
     }
@@ -135,9 +137,38 @@ p { margin:5px 0 10px 0;
     main div:last-of-type{
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: white;
         width: 100vw;
     }
+
+    main div:last-of-type p{
+        padding: 1%;
+        text-align: center;
+        margin: 0;
+        color: #2C303F;
+    }
+
+    main div:last-of-type p:last-of-type{
+        padding-bottom: 4% ;
+    }
+
+    main div:last-of-type p:first-of-type{
+        padding-top: 5%;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    main div:last-of-type button{
+        border: 1px solid #192592;
+        background-color: white;
+        color: #192592;
+        width: 80vw;
+        padding: 3%;
+        border-radius: 1vw;
+        font-weight: bold;
+    }
+
 
     footer{
         display: flex;
@@ -155,19 +186,20 @@ p { margin:5px 0 10px 0;
     footer div:first-of-type{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        align-items: flex-start;
         flex-wrap: wrap;
         flex-grow: initial;
-        /*justify-content: flex-end; NO SIRVE ESTO ALV!*/
+        color: #5b5e6d;
     }
 
     footer div:first-of-type li{
+        padding: 5%;
         width: auto;
         margin: auto;
     }
 
     footer div:first-of-type>ul{
-        margin-top:auto;
+        margin-top: 0;
         padding: 5%;
         list-style-type: none;
         width: 40vw;
@@ -176,5 +208,57 @@ p { margin:5px 0 10px 0;
     .bold{
         font-weight: bold;
     }
+
+    footer div:last-of-type{
+        display: flex;
+        background-color: #F4F3F4;
+        color: #5b5e6d;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer div:last-of-type ul{
+        font-size: .7rem;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    footer div:last-of-type li{
+        width: auto;
+        padding: 3%;
+    }
+
+    footer div:last-of-type img, footer div:last-of-type span{
+        display: flex;
+        display: inline-block;
+        flex-direction: row;
+    }
+    footer div:last-of-type span{
+        width: auto;
+    }
+
+    footer div:last-of-type img{
+        margin: 0;
+        width: auto;
+    }
+
+    footer div:last-of-type i{
+        display: inline-block;
+        display: flex;
+        flex: 0 1 auto;
+    }
+
+}
+
+@media (max-width: 961px) and (min-width: 767px){
+    header {
+        background-color: blue;
+    };
+
 }
 
