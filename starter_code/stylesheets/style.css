@@ -5,3 +5,174 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body {
+ 
+    font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    color: grey;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 0;
+    background-color: #fff;
+
+}
+nav ul{
+    display: none;
+}
+main img{
+    width: 100vw;
+    flex-flow: row wrap;
+
+    
+}
+main>div:first-of-type {
+    background-color:#F4F3F4;
+}
+    
+nav img{
+    width: 15vw;
+    margin-left: 10px;
+}
+nav img:last-of-type{
+    width: 30px;
+    margin: 0 20px;
+}
+nav li {
+    list-style: none;
+    display: inline;
+    text-align: right;
+    padding-left: 15px;
+}
+
+header{
+    background-color:#fff;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+header img{
+    order: 1;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+input{
+      margin-top: 10vw;
+      border-radius:5px;
+      width: 50vw;
+      height: 10vw;
+      margin: 0 auto 15px;
+    }
+button{
+    border-radius:5px;
+    background-color:  #192592;
+    color: #fff;
+    width: 50vw;
+    height: 10vw;
+    margin: 0 auto;
+}
+main>div:first-of-type button{
+    border-radius:10px;
+    background-color:  #fff;
+    color: #192592;
+    width: 50vw;
+    height: 10vw;
+    margin: 0 auto;
+}
+footer{
+   display: flex;
+   flex-flow: row wrap;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: wrap;
+   font-size: small;
+   
+}
+footer ul{
+    list-style: none;
+    display: inline;
+    padding-left: 15px;
+      
+}
+footer>div:first-of-type ul{
+    width: 30vw;
+    margin-right: 20px;
+    
+}
+footer>div:first-of-type{
+    display: flex;
+    flex-flow: row wrap;
+}
+footer li{
+    width: 50vw;
+}
+footer img{
+    width: 20vw;
+    margin-left: 10px;
+    margin-right: 60vw;
+}
+footer>div:last-of-type img{
+    width: 30px;
+
+}
+footer>div:last-of-type{
+    background-color:#F4F3F4;
+    display: flex;
+    flex-direction: column;
+
+}
+footer>div:last-of-type ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* No logro cambiar el tamaño de los iconos    i{
+        font-size: 50rem;
+        background-color: red;
+    }*/
+
+    @media (min-width: 768px) {
+    footer>div:first-of-type{
+        display: flex;
+        flex-direction: row;
+    }
+    footer>div:first-of-type ul{
+        width: 15vw;
+        margin-right: 20px;
+    }
+    footer>div:first-of-type img{
+        width: 10vw;
+        margin-right: 10px;
+    }
+    main img{
+        width: 40vw;
+        flex-flow: row wrap;
+        margin: 15px;  
+    }
+    main>div:first-of-type{
+        margin-left: 80px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    footer>div:last-of-type{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
+          }
+ 
