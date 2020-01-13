@@ -5,3 +5,168 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ----- */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav img{
+    height: 100%;
+    width: auto;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+/* ----- */
+header{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+    order: 3;
+}
+
+button[name="button"]{
+    border: none;
+    background: #192592;
+    color: #fff;
+    padding: 10px;
+}
+
+button + p{
+    text-align: center;
+}
+
+/* ----- */
+main div{
+    text-align: center;
+}
+
+main div:first-child{
+    background: #f4f3f4;
+    padding: 40px 20px;
+}
+
+main button{
+    background: #fff;
+    border: 1px solid #192592;
+    color: #192592;
+    margin-bottom: 30px;
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+main img{
+    display: block;
+    padding: 15px;
+    margin: 0 auto 15px auto;
+    width: 50%;
+    height: auto;
+}
+
+main div + div{
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+
+main div + div > p:first-child{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* ----- */
+footer div{
+    padding: 0 20px;
+}
+
+footer div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-size: 100px 100px;
+    padding: 100px 20px 0 20px;
+}
+
+footer div:first-child img{
+    display: none;
+    visibility: hidden;
+}
+
+footer div:first-child ul{
+    flex-basis: 50%;
+    align-self: flex-start;
+    justify-content: space-evenly;
+    margin: 0 0 20px 0;
+}
+
+footer div:first-child ul li:first-child{
+    font-weight: bold;
+}
+
+footer div:first-child ul li{
+    margin: 0 0 20px 0;
+}
+
+footer div + div{
+    background: #f4f3f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div + div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+}
+
+footer div + div > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 165px;
+    margin: 20px auto;
+    line-height: 120%;
+}
+
+footer div + div > div *{
+    margin: 5px 0;
+}
+
+footer div + div > div img{
+    height: 20px;
+    width: auto;
+}
