@@ -23,9 +23,9 @@ body{
     font-size: 1rem;
 }
 
-header h1, div:first-of-type h2, main div:last-of-type p:first-of-type{
-        font-family: 'Gelasio', serif;
-        color: #2C303F;
+header h1, div:first-of-type h2, main div:last-of-type div>p:first-of-type{
+    font-family: 'Gelasio', serif;
+    color: #2C303F;
 }
 
 nav{
@@ -118,6 +118,12 @@ main{
     height: auto;
     flex-direction: column;
 }
+
+main div:first-of-type div{
+    background: none;
+    border: 0;
+}
+
 main div:first-of-type{
     border-top: .5px solid #BBBBBB;
     border-bottom: .5px solid #BBBBBB;
@@ -128,9 +134,17 @@ main div:first-of-type{
     justify-content: space-around;
     align-items: center;
 }
+
 div:first-of-type h2{
+    font-size: 3rem;
     padding-top: 5%;
 }
+
+main div:last-of-type div{
+    background: none;
+    border: 0;
+}
+
 div:first-of-type p{
     margin: 0;
     padding-top: 4%;
@@ -265,76 +279,128 @@ footer div:last-of-type i{
 @media(max-width: 961px) and (min-width: 767px){
 
     body{
+        font-size: 1rem;
+    }
+
+    header{
         font-size: 1.5rem;
     }
 
-    header button{ 
+    header button{
         margin-left: 0;
     }
 
     button{
-        border: 1px solid #192592;
-        background-color: #192592;
-        color: white;
         width: 15vw;
         padding: 3%;
-        border-radius: 1vw;
-        font-weight: bold;
         margin-top: 3%;
         margin-left: 1%;
         align-self: flex-end;
     }
 
     div:first-of-type button{ /*Boton fondo blando*/
-        border: 1px solid #192592;
-        background-color: white;
-        color: #192592;
+        margin-top: 0;
         width: 20vw;
         padding: 3%;
-        border-radius: 1vw;
-        font-weight: bold;
         align-self: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
+
     input{
-        border: 1px solid #E2E2E2;
-        background-color: white;
-        color: #C1C1C1 ;
         width: 30vw;
         padding: 3%;
-        border-radius: 1vw;
         align-self: flex-start;
         margin-left: 5%;
     }
 
-    main div:last-of-type p:first-of-type{
-        padding-top: 5%;
-        font-weight: bold;
-        font-size: 2.5rem;
-    }
     header p:last-of-type{
         align-self: flex-start;
         margin: 0;
         width: 70%;
     }
 
+    main div:first-of-type{
+        flex-flow: row wrap;
+    }
+
+    main div:first-of-type img{
+        width: 30vw;
+    }
+
+    main div:first-of-type p{
+        color: #5b5e6d;
+        padding-top: 2%;
+        font-size: 1.3rem;
+    }
+
+
     main div:last-of-type{
         flex-direction: row;
         width: auto;
-        align-items: center;
+        align-items: flex-start;
     }
 
     main div:last-of-type div{
-        font-size: 1rem;
         border: none;
         display: flex;
         width: 30vw;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-items: center;
     }
 
-    main div:last-of-type div p{
+    main div:last-of-type div>p{
+        width: 30vw;
+        flex-direction: row;
+    }
+
+    main div:last-of-type div p:first-of-type{
         font-size: 1.5rem;
+    }
+
+}
+
+@media(max-width: 1024px) and (min-width: 960px){
+
+    div:first-of-type button{ /*Boton fondo blando*/
+        margin-top: 0;
+        width: 20vw;
+        padding: 3%;
+        align-self: center;
+        margin-bottom: 5%;
+    }
+
+    main div:first-of-type{
+        justify-content: center;
+        align-items: stretch;
+        flex-flow: row wrap;
+    }
+
+    main div:first-of-type img{
+        display: block;
+        width: 25vw;
+        padding: 5% 3%;
+        border-bottom: 1px solid #BBBBBB;
+        border-right: 1px solid #BBBBBB;
+    }
+
+    main div:first-of-type img:nth-child(1){
+        padding-left: 2%;
+    }
+
+    main div:first-of-type img:nth-child(4){
+        padding-top: 7%;
+        padding-right: 3%;
+        border-right: none;
+    }
+
+    main div:first-of-type img:nth-child(7){
+        border-right: none;
+    }
+
+    main div:first-of-type img:nth-child(5), main div:first-of-type img:nth-child(6), main div:first-of-type img:nth-child(7){
+        margin-bottom: 4%;
+        border-bottom: none;
     }
 
 }
