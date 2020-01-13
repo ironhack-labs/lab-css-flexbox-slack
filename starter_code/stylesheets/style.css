@@ -41,6 +41,7 @@ html {
         background-color: white;
         display: flex;
         border-bottom: 1px solid #BBBBBB;
+        justify-content: space-between;
     }
 
     nav img {
@@ -53,10 +54,7 @@ html {
     }
 
     #burger {
-        display: flex;
         width: 8vw;
-        margin: 0px 0px 0px 220px;
-        padding: 5%;
     }
 
     header {
@@ -85,14 +83,6 @@ html {
         padding-top: 5%;
         justify-content: flex-start;
         width: 60%;
-    }
-
-    header img {
-        width: 80vw;
-        align-self: center;
-        order: 1;
-        padding-bottom: 1%;
-        padding-top: 4%;
     }
 
     header p {
@@ -179,10 +169,6 @@ html {
         width: 40vw;
         padding: 10%;
         border-bottom: .5px solid #BBBBBB;
-    }
-
-    div:first-of-type img:last-of-type {
-        border-bottom: none;
     }
 
     main div:last-of-type {
@@ -297,6 +283,87 @@ html {
 }
 
 @media(max-width: 961px) and (min-width: 767px){
+     body {
+         font-size: 1rem;
+     }
+
+     header {
+         font-size: 1.5rem;
+     }
+
+     header button {
+         margin-left: 0;
+     }
+
+     button {
+         width: 15vw;
+         padding: 3%;
+         margin-top: 3%;
+         margin-left: 1%;
+         align-self: center;
+     }
+
+     div:first-of-type button {
+         margin-top: 0;
+         width: 20vw;
+         padding: 3%;
+         align-self: center;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     input {
+         width: 30vw;
+         padding: 3%;
+         align-self: flex-start;
+         margin-left: 5%;
+     }
+
+     header p:last-of-type {
+         align-self: flex-start;
+         margin: 0;
+         width: 70%;
+     }
+     
+     main div:first-of-type {
+         flex-flow: row wrap;
+     }
+
+     main div:first-of-type img {
+         width: 30vw;
+     }
+
+     main div:first-of-type p {
+         color: #5b5e6d;
+         padding-top: 2%;
+         font-size: 1.3rem;
+     }
+
+
+     main div:last-of-type {
+         flex-direction: row;
+         width: auto;
+         align-items: center;
+     }
+
+     main div:last-of-type div {
+         border: none;
+         display: flex;
+         width: 30vw;
+         flex-direction: column;
+         justify-items: center;
+     }
+
+     main div:last-of-type div>p {
+         width: 30vw;
+         flex-direction: row;
+     }
+
+     main div:last-of-type div p:first-of-type {
+         font-size: 1.5rem;
+     }
+
+     }
 
 }
 
