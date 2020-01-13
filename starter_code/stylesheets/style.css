@@ -10,6 +10,11 @@ nav grey: #5b5e6d;
 hacer una media querie para especificar el tamaño de pantalla 
 extra-small*/
 
+
+body {
+    margin: 0px;
+} 
+
 h1, h2{
     color: #2C303F;
 }
@@ -17,14 +22,7 @@ h1, h2{
 p, li, span {
     color: #5b5e6d
 }
-
-
-
-@media screen and (max-width: 767px) {
-
-body {
-    margin: 0px;
-}    
+   
 nav {
     position: fixed;
     display: flex;
@@ -71,7 +69,6 @@ header h1 {
 
 header p {
     font-size: 2rem;
-    
 }
 
 header input {
@@ -162,19 +159,32 @@ footer{
     flex-direction: column;
 }
 
+.footer-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.footer-1 img {
+    padding-right: 200px;
+}
 
 .footer-1  ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 40vw;
+    padding: 10px 70px 20px 40px;
+    
 }
 
 .footer-1 li {
     font-size: 2rem;
     list-style-type: none;
     padding:10px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
  .footer-2 {
@@ -223,11 +233,145 @@ footer{
      padding: 10px;
  }
  
-}
+
 
 
 @media screen and (min-width: 768px) and (max-width: 960px){
 
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header h1 {
+    
+        font-size: 4rem;
+        padding: 10px;
+    }
+
+    header input {
+        width: 500px;
+        height: 70px;
+        border: 1.5px solid #F4F3F4;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        color: #5b5e6d;
+        
+    }
+
+    header button {
+        background-color: #192592;
+        color: whitesmoke;
+        width: 200px;
+        height: 70px;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+    header p {
+        font-size: 1.4rem;
+    }
+
+    header  img {
+        width: 70vw;
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-section-1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    .main-section-1 img {
+        width: 110px;
+        /*border: 0.5px solid #5b5e6d;*/
+        padding: 80px 170px;
+    }
+    .main-section-1 button {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        width: 300px;
+        height: 75px;
+        margin: 20px 100px 50px;
+    }
+
+    .main-section-1 h2 {
+        font-size: 3rem;
+    }
+    
+    .main-section-1 p {
+        font-size: 1.5rem;
+        padding-left: 20px;;
+    }
+
+    .main-section-2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+       
+    }
+
+    .main-section-2 p {
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-section-2 input {
+        width: 200px;
+        height: 80px;
+        border: 1.5px solid #F4F3F4;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        color: #5b5e6d;
+    }
+    
+    .main-section-2 button {
+        background-color: #192592;
+        color: whitesmoke;
+        width: 200px;
+        height: 80px;
+        border-radius: 10px;
+        font-size: 1.5rem;
+    }
+
+    .footer-1 {
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+
+    .footer-1 img {
+        
+        padding-right: 20px;
+    }
+
+    .footer-1  ul {
+        display: flex;
+        flex-direction: column;
+       /* flex-wrap: wrap;*/
+        padding: 15px;
+        
+    }
+
+    .footer-1 li {
+        font-size: 1rem;
+        list-style-type: none;
+        padding:10px;
+    }
+
+    
 }
 
 @media screen and (min-width: 961px) and (max-width: 1023px){
