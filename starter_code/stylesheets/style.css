@@ -5,3 +5,256 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+*{
+   box-sizing: border-box; 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+.main-navigation{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;; 
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    z-index: 201;
+  }
+
+  .main{
+    padding-top: 140px;
+    position: relative;
+    z-index: 100;
+  }
+
+  .main-container{
+      /* background-color: green; */
+      height: 133px;
+      width: 768px;
+      position: fixed; 
+      z-index: 200;
+  }
+
+  .main-navigation i{
+    margin-right: 50px;
+    display: block;
+  } 
+
+  .logo{
+    width: 250px;
+    margin-left: 50px;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* background-color: yellow; */
+  }
+
+  header img{
+    display: flex;
+    order: 4;
+  }
+
+  h1{
+    font-size: 60px;
+    font-family: 'Merriweather', serif;
+  }
+
+  header p{
+    margin: 20px 0;
+    font-size: 40px;
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+  }
+
+  header input{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: grey;
+    border: 0;
+  }
+
+  header button{
+    padding: 20px;
+    background-color: #192592;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 20px;
+  }
+
+  .sign-in{
+      text-align: center;
+      font-size: 30px;
+  }
+
+  .block-company{
+      background-color: lightgrey;
+  }
+
+  .block-tryfree{
+      background-color: white;
+  }
+
+  .block-footer{
+      background-color: lightgrey;
+  }
+
+/* Media Queries */
+@media only screen and (min-width: 1025px) {
+    body {
+      /* background-color: rgb(228, 187, 228); */
+    }
+    h1{
+        font-size: 90px;
+      }
+    .contact{
+        display: flex;
+        flex-direction: row;
+    }
+    header input{
+        display: none;
+    }
+    .sign-in{
+        text-align: left;
+        font-size: 40px;
+    }
+    .nav-menu{
+        display: block;
+        display: flex;
+        font-size: 32px;
+        margin-right: 20px;
+        color: #2C303F;
+    }
+    .nav-menu li{
+        margin-right: 20px;
+    }
+    .main-navigation i{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+    header img{
+        display: flex;
+        order: -1;
+        width: 672px; 
+        height: 600px;
+    }
+    .header-big{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        color: #2C303F;
+    }
+  }  
+
+@media only screen and (max-width: 1024px) {
+    body {
+      /* background-color: lightgreen; */
+    }
+    h1{
+        font-size: 80px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: row;
+    }
+    header button{
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .sign-in{
+        text-align: left;
+        font-size: 40px;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .main-navigation i{
+        margin-right: 50px;
+        display: block;
+    }
+    header img{
+        width: 300px; 
+        height: 268px;
+    }
+  }  
+
+@media only screen and (max-width: 961px) {
+    body {
+      /* background-color: yellow; */
+    }
+    h1{
+        font-size: 70px;
+    }
+    header button{
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .sign-in{
+        text-align: left;
+        font-size: 40px;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .main-navigation i{
+        margin-right: 50px;
+        display: block;
+    }
+    header img{
+        width: 300px; 
+        height: 268px;
+    }
+  }  
+
+@media only screen and (max-width: 768px) {
+    body {
+      /* background-color: lightblue; */
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 60px;
+    }
+    header button{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .sign-in{
+        text-align: center;
+        font-size: 30px;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .main-navigation i{
+        margin-right: 50px;
+        display: block;
+    }
+    header img{
+        width: 300px; 
+        height: 268px;
+    }
+  }
+
+ 
+
