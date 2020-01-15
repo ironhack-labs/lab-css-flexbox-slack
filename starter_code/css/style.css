@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    max-width: 768px;
+    width: 100%;
+    height: 100px;
+}
+
+nav img {
+    width: 20%;
+}
+
+nav div i {
+    font-size: 30px;
+    padding-right: 60px;
+}
+
+nav ul {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+
+    nav {
+        max-width: 961px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        text-transform: uppercase;
+        font-size: 1em;
+        margin-right: 15px;
+    }
+    nav div {
+        display: none;
+    }
+  }
+  
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header img {
+    width: 70%;
+    order: 4;
+}
+
+header h1 {
+    width: 70%;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+header p {
+    width: 70%;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header div button {
+    width: 70%;
+    height: 10vh;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(61, 61, 204);
+    color: white;
+    font-weight: bold;
+}
+
+header div input {
+    width: 70%;
+    height: 10vh;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: 1px solid rgb(202, 198, 198);
+    padding: 10px;
+
+}
+
+header div p{
+    header p {
+    width: 70%;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+
+    
+    header div {
+        border: 1px solid black;
+        width: 100vw;
+        flex-direction: row; 
+        justify-content: flex-start;
+    }
+
+    header div button {
+        width: 100%;
+        margin: 60px;
+    }
+
+    header div {
+        width: 40%;
+    }
+  }
+
+
+
+
