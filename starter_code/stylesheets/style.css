@@ -5,3 +5,151 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 170px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  background: white;
+  border-bottom: 2px solid grey;
+}
+
+.top-bar img {
+  width: 120px;
+}
+
+.header-menu {
+  display: none;
+}
+
+.hero {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero h1 {font-size: 40px;
+margin-bottom: 30px;}
+
+button {
+  border: none;
+  padding: 10px;
+20px;}
+
+.hero button {background-color: #192592;
+color: white;
+margin: 10px 0px;
+width: 100%
+}
+
+.hero img {width: 400px;}
+
+
+.main-top {background-color: #F4F3F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100vw;
+}
+
+.main-top img {margin:20px;}
+
+.main-bottom {
+  text-align:center;
+display: flex;
+flex-direction: column;
+align-items: center;}
+
+.main-top h2 {font-size: 25px;
+font-weight: bold;}
+
+.main-top button {color: #192592;
+background-color: white; }
+
+.logos {display:flex;
+flex-direction: column;}
+
+.main-bottom button {background-color: #192592;
+color: white;}
+
+.main-bottom h3 {font-weight: bold;}
+
+.company {display: flex;
+flex-direction: row;
+width: 300px;
+flex-wrap: wrap;}
+
+
+.contact {background-color: #F4F3F4;
+display:flex;
+align-items: center;
+flex-direction: column;}
+
+.contact img {width: 30px;}
+.contact ul {display: flex;}
+
+@media screen and (min-width: 768px) {
+
+  .header-menu li {
+    padding-right:20px;
+  }
+
+  .header-menu li:last-child {
+    padding-right: 0px;
+  }
+
+
+
+  .hero h1 {font-size: 60px;}
+
+  .hero p {width: 768px;}
+
+  .hero button {width: 300px;}
+
+  .logos {display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 510px;}
+
+    .main-bottom {
+      text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  align-items: center;}
+  
+  footer {display: flex;
+  flex-direction: row;}
+
+  .company {width: 800px;}
+    .contact {flex-direction: row;
+    justify-content: space-between;
+  align-items: center;}
+}
+
+@media screen and (min-width: 1024px) {
+  .header-menu {
+    display: flex;
+  }
+  .fas.fa-bars {display: none;}
+  .hero {flex-direction: row;}
+  .hero img {order: -2;}
+
+  .logos {max-width: 800px;}
+}
