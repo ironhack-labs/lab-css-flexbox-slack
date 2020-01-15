@@ -5,11 +5,14 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 120px;
     position: relative;
     z-index: 100;
     width: 100%;
 }
+
+/*  nav  */
 
 nav {
     padding: 20px;
@@ -20,7 +23,7 @@ nav {
     position: fixed;
     z-index: 500;
     top: 0;
-    max-width: 768px;
+    max-width: 1024px;
     width: 100%;
     height: 100px;
 }
@@ -31,19 +34,20 @@ nav img {
 
 nav div i {
     font-size: 30px;
-    padding-right: 60px;
+    padding-right: 40px;
 }
 
 nav ul {
     display: none;
 }
 
-@media only screen and (min-width: 768px) {
+/* nav media queries */
 
+@media only screen and (min-width: 1024px) {
 
 
     nav {
-        max-width: 961px;
+        max-width: 100vw;
     }
 
     nav ul {
@@ -55,12 +59,20 @@ nav ul {
         text-transform: uppercase;
         font-size: 1em;
         margin-right: 15px;
+        padding: 5px;
     }
+
+    nav ul li:last-child {
+        border: 1px solid black;
+        border-radius: 2px;
+    }
+
     nav div {
         display: none;
     }
   }
   
+/*  header */
 
 header {
     display: flex;
@@ -69,10 +81,13 @@ header {
     width: 100%;
 }
 
-header img {
-    width: 70%;
-    order: 4;
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
+
 
 header h1 {
     width: 70%;
@@ -122,34 +137,191 @@ header div input {
 
 }
 
-header div p{
-    header p {
+header div p {
     width: 70%;
     text-align: left;
     margin-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
+
+header img {
+    width: 70%;
 }
+
+/* header query */
 
 @media only screen and (min-width: 768px) {
 
-    
     header div {
-        border: 1px solid black;
-        width: 100vw;
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    header div {
+        width: 70%;
+    }
+
+    header div input {
+        width: 30%;
+        margin-right: 5vw;
+    
     }
 
     header div button {
-        width: 100%;
-        margin: 60px;
+        width: 30%;
     }
 
-    header div {
-        width: 40%;
+    header div p {
+        width: 100%;
+        padding-left: 0;
     }
-  }
+
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header img {
+        order:  -1;
+    }
+
+
+}
+
+/* main */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(209, 200, 200);
+}
+
+main div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+main div h2 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+main div p {
+    width: 70%;
+    text-align: center;
+}
+
+main button {
+    width: 70%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 10vh;
+    border-radius: 4px;
+    border: 1px solid rgb(61, 61, 204);
+    padding: 10px;
+    background-color: white;
+    color: rgb(61, 61, 204);
+    font-weight: bold;
+}
+
+main img {
+    width: 70%;
+    height: 30vh;
+    padding: 5vh;
+    border-bottom: 1px solid grey;
+}
+
+.main2 {
+    background-color: white;
+}
+
+div.main2>p{
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main2 button {
+    width: 70%;
+    height: 10vh;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(61, 61, 204);
+    color: white;
+    font-weight: bold;
+}
+
+.main2 input {
+    width: 70%;
+    height: 10vh;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: 1px solid rgb(202, 198, 198);
+    padding: 10px;
+
+}
+
+
+/* foooter */
+
+footer {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+footer img {
+    width: 30%;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20vw;
+    width: 100%;
+
+}
+
+footer div ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+
+footer div:last-child {
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+}
+
+
+
+
+
+
+
 
 
 
