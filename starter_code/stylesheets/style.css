@@ -5,3 +5,446 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    z-index: 10;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav ul {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 30px;
+    
+}
+
+header h1 {
+    align-self: flex-start;
+    font-size: 2em;
+    color: #2C303F;
+    width: 70%;
+}
+
+header p {
+    margin: 40px 0;
+    font-size: 0.9em;
+    font-weight: 200;
+    line-height: 1.7;
+}
+
+.grey-text {
+    color: #5b5e6d;
+}
+
+.small-text {
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+header img {
+    order: 2;
+    width: 70%;
+}
+
+.email-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-form > * {
+    height: 40px;
+}
+
+.email-form input {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.email-form button {
+    color: #fff;
+    background-color: #192592;
+    border-radius: 5px;
+}
+
+main .company {
+    background-color: #F4F3F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+main .company h2 {
+    font-size: 1.4em;
+    color: #2C303F;
+}
+
+main .company p {
+    text-align: center;
+    margin: 30px 0;
+}
+
+main .company button {
+    color: #192592;
+    background-color: #fff;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px;
+}
+
+main .company-logos { 
+    align-items: center;
+    width: 100%;
+    padding: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .logo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+main .logo-box:last-child {
+    border-bottom: 0;
+}
+
+main .logo-box img {
+    max-width: 160px;
+    min-width: 110px;
+}
+
+main .try {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 0 0;
+}
+
+main .try p:nth-of-type(1) {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #2C303F;
+}
+
+main .try p:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
+main .email-form {
+    padding: 0 40px 40px 40px;
+}
+
+footer .logo {
+    width: 100%;
+}
+
+footer .logo img {
+    width: 120px;
+    position: relative;
+    left: -35px;
+}
+
+footer .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+footer .menu ul {
+    width: 50%;
+}
+
+footer .menu li {
+    line-height: 40px;
+    color: #5b5e6d;
+    font-size: 0.8em;
+}
+
+footer .menu ul li:first-child {
+    font-weight: bold;
+}
+
+.subfooter {
+    background-color: #F4F3F4;
+    color: #5b5e6d;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 20px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subfooter ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.subfooter img {
+    width: 20px;
+}
+
+.subfooter > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0;
+}
+
+.subfooter .country, .subfooter .social {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    header .email-form {
+        flex-direction: row;
+    }
+
+    header .email-form input {
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    header .email-form button {
+        width: 25%;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    main .company button {
+        width: 200px;
+    }
+
+    main .company-logos {
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+
+    main .logo-box {
+        width: 50%;     
+    }
+
+    main .logo-box:nth-of-type(5) {
+        border: 0;
+    }
+
+    main .logo-box:nth-child(even) {
+        border-left: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+
+    main .try-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    main .try {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    main .try p:nth-of-type(2) {
+        margin: 0;    
+    }
+
+    main .email-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 45%;
+        padding: 0;
+    }
+
+    main .email-form > * {
+        width: 45%;
+        margin: 0;
+    }
+
+    footer .menu {
+        justify-content: flex-end;
+        padding-top: 40px;
+    }
+
+    footer .logo {
+        width: 20%;
+    }
+
+    footer .logo img {
+        top: -20px;
+    }
+
+    footer .menu ul {
+        width: 20%;
+    }
+
+    .subfooter {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .subfooter ul {
+        width: 40%;
+        padding-bottom: 10px;
+    }
+
+    .subfooter > div {
+        flex-direction: row;
+        width: 40%;
+    }
+
+    .subfooter .country, .subfooter .social {
+        width: 50%; 
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    nav .icon {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 30px;
+        padding: 10px;
+    }
+
+    nav li:last-child {
+        margin: 0;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .email-form input {
+        display: none;
+    }
+
+    .email-form button {
+        width: 200px;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 40px;
+    }
+
+    header img {
+        order: 0;
+        width: 30%;
+    }
+
+    header .header-text {
+        width: 50%;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    main .company-logos {
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+
+    main .logo-box {
+        width: 33%;     
+    }
+
+    main .logo-box:nth-of-type(4) {
+        border: 0;
+    }
+
+    main .logo-box:nth-child(3) {
+        border-right: 0;
+        border-left: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+
+    main .logo-box:nth-child(5) {
+        border-left: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+
+    main .email-form {
+        justify-content: flex-end;
+    }
+
+    footer .menu .logo {
+        width: 30%;
+    }
+
+    footer .menu ul {
+        width:  17.50%
+    }
+
+    .subfooter ul, .subfooter > div {
+        width: 30%;
+    }
+}
+
