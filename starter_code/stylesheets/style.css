@@ -5,3 +5,234 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+/* GLOBAL */
+
+body {
+    font-family: 'montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    padding-top: 50px;
+}
+
+h1,
+h2 {
+    font-family: serif;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    color: gray;
+    padding: 10px;
+}
+
+
+/* HEADER */
+.slackheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    border-bottom: .5px solid gray;
+    position: fixed;
+    width: 100%;
+    background-color: inherit;
+    z-index: 324;
+}
+
+.slackheader img {
+    width: 100px
+}
+
+.slacknav {
+    margin-top: 20px;
+}
+
+.slacknav ul {
+    display: flex;
+    list-style: none;
+}
+
+.slacknav li {
+    padding: 20px;
+}
+
+#navicon {
+    width: 30px;
+}
+
+#navicon img {
+    width: 100%
+}
+
+/* HERO */
+
+
+
+/* SECTION BRAND */
+
+.sctbrand {
+    background-color: #F4F3F4;
+    text-align: center;
+}
+
+.sctbrand img {
+    padding: 50px;
+    width: 80%
+}
+
+.logoborder {
+    border: 0.5px solid lightgray;
+}
+
+.logoborder img {
+    padding: 30px;
+}
+
+/* ASIDE */
+
+aside {
+    padding: 20px
+}
+
+/* INFOSLACK */
+
+.infoslack img {
+    width: 120px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    background-color: #F4F3F4;
+}
+
+footer p {
+    display: inline;
+}
+
+footer img {
+    width: 20px
+}
+
+footer i {
+    color: gray;
+    padding: 10px;
+}
+
+/* estilos particulares */
+.mk-flex-col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mk-text-center {
+    text-align: center;
+}
+
+.mk-none {
+    display: none;
+}
+
+/* BUTTONS */
+
+.mkformat {
+    padding: 15px;
+    margin: 10px 10px;
+    border-style: none;
+    border-radius: 3%;
+}
+
+.mkformat.blue {
+    background-color: #192592;
+    color: white;
+}
+
+.mkformat.white {
+    background-color: white;
+    color: #192592;
+    border: 1px solid #192592;
+    margin-bottom: 50px;
+}
+
+.mkformat.email {
+    background-color: transparent;
+    border: 1px solid gray;
+    color: gray;
+}
+
+@media screen and (min-width: 768px) {
+
+    footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .mk-flex-col {
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .mk-text-center {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .mkformat {
+        padding: 20px 15px;
+    }
+
+    #big-email {
+        padding-right: 70px;
+    }
+
+    #good-company {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #good-company a {
+        margin: 0 auto;
+        width: 200px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .mkformat.email {
+        display: none;
+    }
+
+    #navicon {
+        display: none;
+    }
+
+    .mk-none {
+        display: flex;
+    }
+
+    main {
+        padding-top: 120px;
+    }
+
+}
