@@ -159,7 +159,7 @@ input {
 
 /* media query */
 
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 960px) {
   .get-started {
   }
   .get-started input {
@@ -170,22 +170,21 @@ input {
     width: 20%;
   }
   .try .tryit {
-    display: inline-block;
     width: 45%;
+    margin: 0 auto; /* no consigo que se posicione en los cambios a la izquierda*/
   }
 }
-@media (min-width: 960px) {
-  /* no se por qué los logos se reordenan a partir de 992px */
+@media (min-width: 961px) and (max-width: 1024px) {
   .navbar .logo {
     width: 150px;
   }
-  .get-started .center{
+  .get-started .center {
     text-align: start;
   }
-  .get-started input{
+  .get-started input {
     width: auto;
   }
-  .work .button{
+  .work .button {
     display: inline-block;
     width: auto;
     padding: 1em 2em;
