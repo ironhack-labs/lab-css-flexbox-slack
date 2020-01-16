@@ -11,26 +11,37 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:#5b5e6d;
     min-width: 350px;
+    z-index: 100;
+    
     
 }
-
 nav {
+    position:fixed;
+    z-index: 200;
+    padding:10px 0;
+    background-color: white;
+    border-bottom: 1px solid #a6a7a8;
+    margin-top: -10px;
+
+}
+
+#nav-fixed {
     display:flex;
     justify-content: space-between;
+    width:100vw;
     align-items: center;
-    border-bottom: 1px solid #a6a7a8;
 }
 
 nav .logo {
-    height: 40px;
-    padding-left: 20px;
+    height: 50px;
+    padding-left: 40px;
 
 }
 .mobile {
     display: flex;
     color: #5b5e6d;
-    font-size: 1.5em;
-    padding-right: 20px;
+    font-size: 1.8em;
+    padding-right: 40px;
 }
 
 .desktop {
@@ -48,27 +59,32 @@ nav .logo {
 
 }
 
-.desktop li:last-of-type{
-    border: 0.5px solid #5b5e6d;
+.desktop li:last-of-type {
+    border: 0.7px solid #5b5e6d;
     border-radius: 5px;
     margin-right: 0;
 }
 
 header {
-    position: relative;
     display: flex;
     flex-direction: column-reverse;
-    padding: 5px 12px 5px 12px;
+    padding: 100px 12px 5px 12px;
     flex-wrap: wrap;
     font-size: 0.8em;
 }
-
-header h1 {
-    font-size: 2.3em;
+h1,h2 {
     color: #2C303F;
+}
+h1 {
+    font-size: 2.3em;
+   
 
 }
+h2 {
+    font-size: 1.8em;
 
+
+}
 header p {
     line-height: 2em;
     padding-bottom: 20px;
@@ -88,22 +104,15 @@ input{
     border-radius:  5px;
 }
 
-#blue-btn {
+.blue-btn {
     color:white;
     background-color: #192592;
     font-weight: bold;
     border:0 ;
-    border-radius:  5px;
+    border-radius: 5px;
     padding: 15px;
 }
 
-#discover-btn {
-    color: #192592;
-    background-color: white;
-    font-weight: bold;
-    border-radius:  5px;
-    padding: 15px;
-}
 
 .sign {
     text-align: center;
@@ -114,25 +123,114 @@ input{
     width: 300px;
 }
 
-main {
-    display:flex;
-    flex-direction: column;
-    text-align: center;
 
-    background-color: #F4F3F4;
+#discover-btn {
+    color: #192592;
+    background-color: white;
+    font-weight: bold;
+    border-radius:  5px;
+    padding: 15px;
+    margin:20px 0;
 }
+
 #companies {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
+    align-content: center;
+    text-align: center;
+    width: 350px;
 }
-
 #companies img {
-    display: block;
-    width:250px;
+    padding: 20px 0;
+    width:50%;
+}     
+
+
+.section-companies {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    background-color: #F4F3F4;
+    padding: 0px 20px 10px 20px;
+}
+#companies div {   
+     
+    height:100px;
+    width: 350px;
+    margin-left: auto ;
+    margin-right: auto ;
+    border-bottom: 0.7px solid #a6a7a8; 
+    
+}
+#companies  ul {
+    list-style: none;
 }
 
+.try-free {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    margin: 20px 20px;
+}
+
+.title{
+    font-size: 1.2em;
+    color:black;
+    font-weight: bold;
+}
+footer img{
+    width:150px;
+
+}
+
+@media screen and (min-width: 767px) {
+    h1 {
+        font-size: 6em; 
+    }
+    h2 {
+        font-size: 2.3em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    input  {
+        width:300px;
+        height:25px;
+    }
+
+    .blue-btn {
+        width:170px;
+        height:55px;
+        margin-left: 10px;
+    }
+
+    .text-intro {
+        flex-direction: row;
+    }
+    #discover-btn{
+        width:150px;
+        align-self: center;
+    }
+
+    #companies {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 600px;
+        width: auto;
+    }
+    .try-free {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        align-content: center;
+        margin: 20px 20px;
+    }
+
+    }
 @media screen and (min-width: 1200px) {
     .desktop {
         display:flex;
