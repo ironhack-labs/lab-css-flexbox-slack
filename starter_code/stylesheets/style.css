@@ -5,3 +5,156 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+nav > img{
+    height: 100px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: #5b5e6d;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header img{
+    height: 450px;
+
+}
+
+body {
+    padding: 0 100px;
+    width: 100%;
+}
+
+header > h1{
+    font-size: 4rem;
+    margin: 45px 0 30px 0;
+}
+
+header p{
+    font-size: 1.8rem;
+    color: #5b5e6d;
+    line-height: 2.2rem;
+    margin-bottom: 45px;
+}
+
+header > div {
+    border: 2px solid red;
+}
+
+.config-div > input{
+    width: 100%;
+    height: 70px;
+    border: 2px solid lightgrey;
+    font-size: 1.4rem;   
+    padding-left: 20px; 
+}
+
+.config-div > button {
+    margin: 40px 0 40px 0;
+    width: 100%;
+    height: 70px;
+    background-color: #192592;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.align-div {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+main{
+   
+}
+
+.main-div1{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    background-color: #F4F3F4;
+}
+
+.main-div1 h2{
+    margin-top: 55px;
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+}
+
+.main-div1 p{
+    font-size: 2.5rem;
+    width: 75%;
+    color: #5b5e6d;
+    line-height: 3.5rem;
+}
+.main-div1 img {
+    height: 70px;
+    margin: 40px 0;
+}
+
+.main-div1 > div {
+    width: 80%;
+    text-align: center;
+}
+
+.main-div1 > div > div{
+    border-bottom: 2px solid lightgrey;
+    width: 100%;
+
+}
+
+.main-div1 button{
+    border: 2px solid #192592;
+    background-color: white;
+    color: #192592;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 90%;
+    height: 70px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+@media (min-width: 767px) and (max-width: 999px) {
+    .config-div {
+        display: flex;
+        align-items: center;
+    }
+
+    .config-div > input{
+        width: 500px;
+    }
+    .config-div > button{
+        width: 200px;
+        margin: 0;
+    }
+    .align-div{
+        text-align: left;
+    }
+
+    .main-div1 > div{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-div1 img{
+        height: 35px
+    }
+}
