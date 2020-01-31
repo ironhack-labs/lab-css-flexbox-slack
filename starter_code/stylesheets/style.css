@@ -5,3 +5,269 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    z-index: 4;
+}
+
+nav img {
+    width: 20vw;
+    margin-left: 5vw;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.menu .fas {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: #5b5e6d;
+    font-size: 8vw;
+    margin-right: 5vw;
+}
+
+.menu li {
+    display: none;
+}
+
+header {
+    position: relative;
+    top: 10vh;
+    width: 100vw;
+    height: fit-content;
+    padding: 5vh 5vw 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #2C303F;
+}
+
+
+header > p {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.input {
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 7vh;
+    padding: 2vw;
+    border-radius: 5px;
+    border: solid 1px lightgrey;
+}
+
+.btn {
+    width: 100%;
+    height: 7vh;
+    background-color: #192592;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+header p:last-child {
+    width: 100%;
+    text-align: center;
+}
+
+#home-talking {
+    position: relative;
+    margin: 10vh 5vw 5vh 5vw;
+    width: 90%;
+}
+
+main div:first-child {
+    background-color: #F4F3F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding: 5vh 7vw 2vh 7vw;
+    border-bottom: 1px solid lightgray;
+}
+
+main div:first-child p {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.white {
+    color: #192592;
+    border: solid 1px #192592;
+    background-color: white;
+}
+
+main div:first-child img {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    max-height: 8vh;
+    max-width: 60vw;
+}
+
+main div:first-child ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main div:first-child li {
+    border-bottom: 1px solid lightgray;
+    width: 90vw;
+    height: 15vh;
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main div:first-child li:last-child {
+    border-bottom: none;
+}
+
+main div:last-child {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding: 5vh 7vw;
+    border-bottom: 1px solid lightgray;
+}
+
+main div:last-child p:first-child {
+    font-weight: bold;
+}
+
+footer {
+    position: relative;
+}
+
+footer img {
+    position: relative;
+    width: 20vw;
+}
+
+footer > div:first-of-type {
+    width: 100%;
+    padding: 0vh 7vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer > div:first-of-type ul {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 3vh;
+    margin-right: 2vw;
+}
+
+footer > div:first-of-type li {
+    list-style-type:none;
+    margin-bottom: 1vh;
+}
+
+footer > div:first-of-type li:first-child {
+    font-weight: bold;
+}
+
+footer > div:last-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F3F4 ;
+    padding: 5vh 7vw;
+    align-items: center;
+}
+
+footer > div:last-child ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer > div:last-child li {
+    font-size: 2vh;
+    list-style-type:none;
+    font-weight: bold;
+}
+
+footer > div:last-child div {
+    width: 90%;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div:last-child img {
+    width: 8vw;
+}
+
+footer > div:last-child div :nth-child(2) {
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+
+@media only screen and (min-width: 767px) {
+
+
+    footer > div:first-of-type {
+        position: absolute;
+        top: 5vh;
+        left: 20vw;
+    }
+
+    footer > div:first-of-type ul {
+        width: 20%;
+    }
+
+}
