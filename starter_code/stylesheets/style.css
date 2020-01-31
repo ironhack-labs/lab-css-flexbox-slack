@@ -20,6 +20,7 @@ nav {
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid lightgray;
     position: relative;
 }
@@ -55,10 +56,6 @@ header h1 {
     margin-bottom: 2rem;
 }
 
-header p:nth-of-type(2) {
-    text-align: center;
-}
-
 header img {
     width: 100%;
     margin: 2rem 0;
@@ -70,7 +67,6 @@ main>div:nth-child(1) {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
 }
 
 main>div:nth-child(1) h2,
@@ -91,18 +87,31 @@ main>div:nth-child(1) button {
     margin: 2rem 0;
 }
 
-main>div:nth-child(1) img {
-    width: 50%;
-    padding-bottom: 1rem;
-    margin: 1rem auto;
+.client-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.client-logos li {
+    flex: 1 0 auto;
     border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-logos li img {
+    width: 100%;
+    margin: 2rem;
+    padding: 2rem;
 }
 
 main>div:nth-child(2) {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
 }
 
 main>div:nth-child(2) p {
@@ -114,15 +123,22 @@ main>div:nth-child(2) p:first-of-type {
     ;
 }
 
+.get-started {
+    display: flex;
+    flex-direction: column;
+}
+
 input[type="text"] {
     border: 1px solid #5b5e6d;
     border-radius: 4px;
     padding: 1rem;
     margin-top: 1rem;
+    margin-right: .5rem;
 }
 
 button[type="button"] {
     background-color: #192592;
+    border: 1px solid #192592;
     color: white;
     border-radius: 4px;
     padding: 1rem;
@@ -139,12 +155,18 @@ footer>div:nth-child(1) {
     flex-wrap: wrap;
 }
 
-footer>div:nth-child(1) img {}
+footer>div:nth-child(1) div {
+    flex: 1 1 100%;
+}
+
+footer>div:nth-child(1) img {
+    width: 100px;
+}
 
 footer>div:nth-child(1) ul {
     display: flex;
     flex-direction: column;
-    flex: 1 0 auto;
+    flex: 1 0 50%;
     list-style: none;
     margin-bottom: 1rem;
 }
@@ -184,4 +206,114 @@ footer>div:nth-child(2)>div {
 
 footer>div:nth-child(2)>div i {
     padding: .5rem;
+}
+
+@media (min-width:767px) {
+    main>div:nth-child(2) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .get-started {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .get-started.heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button[type="button"],
+    input[type="text"] {}
+
+    .client-logos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: initial;
+    }
+
+    .client-logos li {
+        flex: 0 0 50%;
+        border: none;
+    }
+
+    .client-logos li:nth-child(3),
+    .client-logos li:nth-child(4) {
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .client-logos li:nth-child(odd) {
+        border-right: 1px solid lightgray;
+    }
+
+    footer>div:nth-child(1) div {
+        flex: 1 0 20%;
+    }
+
+    footer>div:nth-child(1) ul {
+        flex: 1 0 20%;
+    }
+
+    footer>div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer>div:nth-child(2) ul {
+        justify-content: flex-start;
+        flex: 1 0 50%;
+    }
+}
+
+@media (min-width:960px) {
+
+    .client-logos li {
+        flex: 1 0 33%;
+    }
+
+    .client-logos li:nth-child(odd),
+    .client-logos li:nth-child(even) {
+        border: none;
+    }
+
+    .client-logos li:nth-child(-n+3) {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .client-logos li:nth-child(2),
+    .client-logos li:nth-child(5) {
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+    }
+}
+
+@media (min-width:1200px) {
+    nav::after {
+        content: "";
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li {
+        padding-left: 1rem;
+    }
+
+    header {
+        padding: 2rem;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    header>div:first-child {
+        flex: 1 0 50%;
+    }
+
 }
