@@ -17,99 +17,149 @@
   </head>
 
   <body>
-    <nav>
-      <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-      </ul>
-    </nav>
+    <div class="container">  
+        <nav>
+            <img src="./images/slack-logo.png" alt="slack_logo" />
+            <a href="javascript:void(0);" class="icon" onclick="deployNav()">
+              <i class="fa fa-bars"></i>
+            </a>           
+            <ul>
+                <li><a href="">Why Slack?</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Your Workspace</a></li>
+            </ul>
+        </nav>
+        <div id="myLinks">
+            <ul >
+                <li><a href="">Why Slack?</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Your Workspace</a></li>
+            </ul>        
+        </div>    
     <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
-      <h1>Where Work Happens</h1>
-      <p>
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+      <img src="./images/home_talking.png"  class="first-occurence" alt="home_work_happening"/>  
+      <div class="wwh">
+        <h1>Where Work Happens</h1>
+        <p>
+          When your team needs to kick off a project, hire a new employee, deploy
+          some code, review a sales contract, finalize next year's budget, measure
+          an A/B test, plan your next office opening, and more, Slack has you
+          covered.
+        </p>      
+        <div class="header-no-mobile">    
+            <input type="text" name="email" placeholder="email">
+            <button type="button" name="button">GET STARTED</button>
+        </div> 
+        <div class="header-mobile">    
+            <input type="text" name="email" placeholder="email">
+            <button type="button" name="button">GET STARTED</button>
+        </div>        
+        <p id="secondP">Already using Slack? <a href="#">Sign in</a></p>
+      </div>
+      <img src="./images/home_talking.png" class="second-occurence"  alt="home_work_happening"/>
     </header>
     <main>
-      <div>
         <h2>You're in good company</h2>
         <p>
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
-      </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
-      </div>
-    </main>
-    <footer>
-      <div>
-        <img src="./images/iso-slack.png" alt="" />
-        <ul>
-          <li>COMPANY</li>
-          <li>About Us</li>
-          <li>Careers</li>
-          <li>Blog</li>
-          <li>Press</li>
-          <li>Brand Guidelines</li>
-        </ul>
-        <ul>
-          <li>PRODUCT</li>
-          <li>Why Slack?</li>
-          <li>Enterprise</li>
-          <li>Customer Stories</li>
-          <li>Pricing</li>
-          <li>Security</li>
-        </ul>
-        <ul>
-          <li>RESOURCES</li>
-          <li>Download</li>
-          <li>Help Center</li>
-          <li>Guides</li>
-          <li>Events</li>
-          <li>App Directory</li>
-          <li>API</li>
-        </ul>
-        <ul>
-          <li>EXTRAS</li>
-          <li>Podcast</li>
-          <li>Slack Shop</li>
-          <li>Slack at Work</li>
-          <li>Slack Fund</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Status</li>
-          <li>Privacy & Terms</li>
-          <li>Contact Us</li>
-        </ul>
-        <div>
-          <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
+        <div class="discover-center"><button>DISCOVER WHY</button></div>
+    
+        <div class="logo-block">
+            <img src="./images/airbnb-logo.png" alt="home_work_happening"/>
+            <img src="./images/oracle-logo.png" alt="home_work_happening"/>
+            <img src="./images/ticketmaster-logo.png" alt="home_work_happening"/>
+            <img src="./images/capital-one-logo.png" alt="home_work_happening"/>
+            <img src="./images/harvard-logo.png" alt="home_work_happening"/>
+            <img src="./images/los-angeles-times-logo.png" alt="home_work_happening"/>
         </div>
-      </div>
+    </main>
+  
+    <div class="header">        
+        <div class="header-no-mobile"> 
+            <p id="secondP">Already using Slack? <a href="#">Sign in</a></p>
+            <input type="text" name="email" placeholder="email">
+            <button type="button" name="button">GET STARTED</button>
+        </div> 
+        <div class="header-mobile">    
+            <p id="secondP">Already using Slack? <a href="#">Sign in</a></p>
+            <input type="text" name="email" placeholder="email">
+            <button type="button" name="button">GET STARTED</button>
+        </div>       
+    </div>    
+        
+    <footer>
+        <img src="./images/iso-slack.png" alt=""  class="footer-slack-mobile" />
+        <div class="footerOne">
+            <ul class="footer-slack-no-mobile">
+              <li><img src="./images/iso-slack.png" alt="" class="footer-slack-no-mobile-img" /></li>
+            </ul>
+            <ul>
+              <li>COMPANY</li>
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Blog</li>
+              <li>Press</li>
+              <li>Brand Guidelines</li>
+            </ul>
+            <ul>
+              <li>PRODUCT</li>
+              <li>Why Slack?</li>
+              <li>Enterprise</li>
+              <li>Customer Stories</li>
+              <li>Pricing</li>
+              <li>Security</li>
+            </ul>
+            <ul>
+              <li>RESOURCES</li>
+              <li>Download</li>
+              <li>Help Center</li>
+              <li>Guides</li>
+              <li>Events</li>
+              <li>App Directory</li>
+              <li>API</li>
+            </ul>
+            <ul>
+              <li>EXTRAS</li>
+              <li>Podcast</li>
+              <li>Slack Shop</li>
+              <li>Slack at Work</li>
+              <li>Slack Fund</li>
+            </ul>
+        </div>
+        <div  class="footerTwo">
+            <ul>
+              <li>Status</li>
+              <li>Privacy & Terms</li>
+              <li>Contact Us</li>
+            </ul>
+            <div class="english">    
+                <span><img src="./images/us-flag.png" alt="kk" width=40 /></span>
+                <span>English (US)</span>
+                <i class="fas fa-chevron-down"></i>  
+            </div>
+            <ul>
+                <li><i class="fab fa-twitter"></i><li>
+                <li><i class="fab fa-facebook-f"></i><li>
+                <li><i class="fab fa-youtube"></i><li>
+            </ul>
+        </div>       
     </footer>
+    </div>   
+      
+    <script>          
+      function deployNav() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+     </script>     
+      
   </body>
 </html>
