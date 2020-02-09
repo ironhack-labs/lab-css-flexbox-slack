@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+ul {
+  list-style: none;
+}
+
 /** GENERAL **/
 h1,h2 { color:#2C303F; margin:20px 0; }
 
@@ -119,6 +123,9 @@ p { color:#5b5e6d; line-height:1.5rem; }
 
 /** MAIN SECTIONS **/
 #header-main { padding:0 20px; }
+
+#home-talking-img { display:flex; margin:0 auto; }
+
 #good-company { padding:0 20px; width:100%; }
 
 /* Companies references logos */
@@ -149,6 +156,7 @@ footer { color:#5b5e6d; }
   list-style-type: none;
   display:block;
   margin:10px;
+  padding:20px;
 }
 
 #footer-links ul > li { line-height: 1.5rem; }
@@ -165,3 +173,72 @@ footer { color:#5b5e6d; }
 #footer-bye ul { list-style-type: none; }
 #footer-bye ul > li { font-weight: bold; }
 #footer-bye img { height:30px; }
+
+@media (min-width: 767px) {
+
+  .invite-block { display:flex; flex-wrap: wrap; }
+  .invite-block input { width:40%; }
+  .invite-block p { flex-basis: 30%; }
+  .invite-block button {
+    width: 30%;
+    margin-left: 20px;
+    font-size: 1.2rem;
+  }
+
+
+  #good-company button { width:40%; font-size: 1.2rem; }
+
+  #references-logo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:100%;
+    margin:50px 0;
+  }
+
+  #references-logo div { border-bottom:1px solid #99999963; padding:15px;  }
+  #references-logo div:nth-child(odd) { border-right:1px solid #99999963; }
+  #references-logo div:nth-child(5) { border-bottom:none; }
+
+  #footer-links { grid-template-columns: 25% 25% 25% 25%; }
+
+  #footer-bye {
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px 20px;
+  }
+
+  #footer-bye div:nth-child(2){ margin-left:auto; }
+
+}
+
+@media (min-width: 961px) {
+  #references-logo {
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  #references-logo div { border:none; }
+  #references-logo div{ border-bottom:1px solid #99999963; border-right:1px solid #99999963; }
+  #references-logo div:nth-child(1n+4) { border-bottom: none; }
+  #references-logo div:nth-child(3n+0) { border-right: none; }
+
+}
+
+@media (min-width: 1200px) {
+  #nav-main i {display:none;}
+  #nav-main ul { display:inline-flex; align-items: center; }
+  #nav-main li { margin-left:20px; }
+  #nav-main li:last-of-type { padding: 5px; border:1px solid #999; border-radius: 5px; }
+
+  #header-main {
+    display:flex;
+    flex-direction: row-reverse;
+    padding:40px 20px;
+  }
+
+  #header-text h1 { font-size:4rem; }
+
+  #header-text .invite-block { display:block; }
+  #header-text .invite-block input { display:none; }
+  #header-text .invite-block button { width:50%; }
+  #header-text .invite-block p { width:50%; margin-left: 20px;}
+}
