@@ -6,40 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- link the font awesome CDN -->
-    <link
-      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css">
 
     <!-- link your styles -->
-    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css"/>
+    <script src="main.js"></script>
     <title>Where work happens | Slack</title>
   </head>
 
   <body>
-    <nav>
+    <nav id="topNav">
       <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-      </ul>
+      <div id="menuLinksContainer">
+        <ul id="topNavLinks">
+          <li>Why Slack?</li>
+          <li>Pricing</li>
+          <li>About Us</li>
+          <li>Your Workspaces</li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </nav>
     <header>
       <img src="./images/home_talking.png" alt="home_work_happening" />
       <h1>Where Work Happens</h1>
-      <p>
+      <p id="paragraph">
         When your team needs to kick off a project, hire a new employee, deploy
         some code, review a sales contract, finalize next year's budget, measure
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+      <button class="btn" type="button" name="button">GET STARTED</button>
+      <p id="paraph2">Already using Slack? <a href="#">Sign in</a></p>
     </header>
     <main>
-      <div>
+      <div id="section1">
         <h2>You're in good company</h2>
         <p>
           Millions of people around the world have already made Slack the place
@@ -53,61 +56,66 @@
         <img src="./images/oracle-logo.png" alt="" />
         <img src="./images/ticketmaster-logo.png" alt="" />
       </div>
-      <div>
+      <div id="section2">
         <p>Try it for free</p>
         <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+        <button class="btn" type="button" name="button">GET STARTED</button>
       </div>
     </main>
     <footer>
-      <div>
+      <div id="down-menu">
         <img src="./images/iso-slack.png" alt="" />
-        <ul>
-          <li>COMPANY</li>
-          <li>About Us</li>
-          <li>Careers</li>
-          <li>Blog</li>
-          <li>Press</li>
-          <li>Brand Guidelines</li>
-        </ul>
-        <ul>
-          <li>PRODUCT</li>
-          <li>Why Slack?</li>
-          <li>Enterprise</li>
-          <li>Customer Stories</li>
-          <li>Pricing</li>
-          <li>Security</li>
-        </ul>
-        <ul>
-          <li>RESOURCES</li>
-          <li>Download</li>
-          <li>Help Center</li>
-          <li>Guides</li>
-          <li>Events</li>
-          <li>App Directory</li>
-          <li>API</li>
-        </ul>
-        <ul>
-          <li>EXTRAS</li>
-          <li>Podcast</li>
-          <li>Slack Shop</li>
-          <li>Slack at Work</li>
-          <li>Slack Fund</li>
-        </ul>
+        <div class="lists">
+            <ul>
+              <li>COMPANY</li>
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Blog</li>
+              <li>Press</li>
+              <li>Brand Guidelines</li>
+            </ul>
+            <ul>
+              <li>PRODUCT</li>
+              <li>Why Slack?</li>
+              <li>Enterprise</li>
+              <li>Customer Stories</li>
+              <li>Pricing</li>
+              <li>Security</li>
+            </ul>
+            <ul>
+              <li>RESOURCES</li>
+              <li>Download</li>
+              <li>Help Center</li>
+              <li>Guides</li>
+              <li>Events</li>
+              <li>App Directory</li>
+              <li>API</li>
+            </ul>
+            <ul>
+              <li>EXTRAS</li>
+              <li>Podcast</li>
+              <li>Slack Shop</li>
+              <li>Slack at Work</li>
+              <li>Slack Fund</li>
+            </ul>
       </div>
-      <div>
+      </div>
+      <div id="last-items">
         <ul>
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-        <div>
+        <div id="language">
           <img src="./images/us-flag.png" alt="" />
           <span>English (US)</span>
           <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="icons">
           <i class="fab fa-twitter"></i>
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-youtube"></i>
+        </div>
         </div>
       </div>
     </footer>
