@@ -5,3 +5,252 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.navbar-container {
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #5b5e6d;
+}
+.logo-img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+}
+.menu {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+}
+.bars {
+  color: #5b5e6d;
+  padding-right: 50px;
+}
+header {
+  position: relative;
+  margin-top: 120px;
+  padding: 70px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+}
+.header-title {
+  color: #2c303f;
+  font-size: 5em;
+}
+.header-txt {
+  color: #2c303f;
+  font-size: 2em;
+  padding-top: 20px;
+}
+header input {
+  font-size: 1.2em;
+  border: 2px solid #f4f3f4;
+  border-radius: 5px;
+  padding: 20px 150px 20px 20px;
+  margin-bottom: 20px;
+}
+header button {
+  background-color: #192592;
+  border: none;
+  text-align: center;
+  padding: 20px 40px;
+  color: white;
+  font-size: 1em;
+  font-weight: bolder;
+  border-radius: 5px;
+  width: 410px;
+  height: 60px;
+}
+
+main {
+  background-color: #f4f3f4;
+  text-align: center;
+}
+.main-title {
+  font-size: 3em;
+  color: #2c303f;
+}
+.main-txt {
+  color: #5b5e6d;
+  font-size: 1.5em;
+  padding: 40px;
+}
+.main-button {
+  background-color: white;
+  border: none;
+  text-align: center;
+  padding: 20px 40px;
+  color: #192592;
+  font-size: 1em;
+  font-weight: bolder;
+  border: 1px solid #192592;
+  border-radius: 5px;
+  height: auto;
+  width: 60vw;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.logos img {
+  width: 60%;
+  height: 100%;
+  border-bottom: 1px solid #5b5e6d;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+.try-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 0px;
+}
+.try-title {
+  font-weight: bold;
+  font-size: 2em;
+  color: #2c303f;
+}
+.try-txt {
+  font-size: 1.5em;
+}
+.try-input {
+  font-size: 1em;
+  border: 2px solid #f4f3f4;
+  border-radius: 5px;
+  padding: 20px 0px 20px 20px;
+  height: auto;
+  width: 60vw;
+  margin-top: 20px;
+}
+
+.try-button {
+  background-color: #192592;
+  border: none;
+  text-align: center;
+  padding: 20px 40px;
+  color: white;
+  font-size: 1em;
+  font-weight: bolder;
+  border-radius: 5px;
+  height: auto;
+  width: 60vw;
+  margin-top: 20px;
+}
+.footer-content {
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 40px;
+}
+.footer-content ul {
+  margin: 5vw;
+  list-style-type: none;
+  color: #5b5e6d;
+  font-size: 1.5em;
+}
+.li-title {
+  font-weight: bold;
+}
+.footer-content ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bottom-content {
+  background-color: #f4f3f4;
+  color: #5b5e6d;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+.bottom-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  list-style-type: none;
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+.bottom-img {
+  max-width: 40px;
+  width: 100%;
+  height: auto;
+}
+.very-bottom {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .menu ul.hidden {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 961px) {
+  .menu ul.hidden {
+    display: none;
+  }
+  .header-input-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-input-flex input {
+    margin-right: 10px;
+  }
+  .header-input-flex button {
+    width: 200px;
+  }
+  .logos img {
+    width: 45%;
+    height: auto;
+    margin: 10px;
+    padding: 70px 10px 70px 10px;
+  }
+  .try-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .try-input {
+    width: 20%;
+    padding-right: 5px;
+  }
+  .try-button {
+    width: 20%;
+  }
+  .try-sub-section {
+    width: 30%;
+  }
+}
