@@ -30,7 +30,8 @@ nav grey: #5b5e6d;
 
     --mobile-ft-size-title: 2.2rem;
     --mobile-ft-size-text: 1rem;
-    --mobile-ln-height: 28px;
+    --mobile-ln-height: 25px;
+    --mobile-ln-height-title: 35px;
 
     /* Measures */
 
@@ -43,6 +44,7 @@ body {
 
 h1 {
     font-size: var(--mobile-ft-size-title);
+    line-height: var(--mobile-ln-height-title);
 }
 
 /* h2 {
@@ -57,6 +59,10 @@ h1, h2 {
     margin: 20px 0;
     font-family: var(--font-title);
     color: var(--title-gray);
+}
+
+a {
+    color: var(--btn-purple);
 }
 
 img {
@@ -102,11 +108,14 @@ img {
 /* Global Header */
 
 .main-header {
+    display:flex;
+    align-items: center;
     margin-top: 70px;
 }
 
 .email-input {
-    padding-left: 50px;
+    margin-top: 40px;
+    padding-left: 20px;
     border: .5px solid var(--p-gray)
 }
 
@@ -116,8 +125,9 @@ img {
 }
 
 .btn-input-styles {
-    margin: 10px 0;
-    height: 50px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
     border-radius: 5px;
 }
 
@@ -148,14 +158,14 @@ img {
     /* Header mobile */
 
     .main-header {
-        outline: yellow solid 1px;
         padding: var(--main-padding);
 
-        display:flex;
         flex-direction: column;
     }
 
     .main-header-img {
+        width: 100%;
+        margin: 40px 0px;
         order: 1;
     }
 
