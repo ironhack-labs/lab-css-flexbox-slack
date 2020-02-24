@@ -5,3 +5,119 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+    /* outline: red solid 2px; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-text);
+    color: var(--nav-gray);
+    
+    /* Colors */
+    --bg-gray: #F4F3F4;
+    --btn-purple: #192592;
+    --title-gray: #2C303F;
+    --p-gray: #5b5e6d;
+    --nav-gray:#5b5e6d;
+
+    /* Font */
+    --menu-icon: 25px;
+    --font-title: 'Times New Roman', Times, serif;
+    --font-text: "Helvetica Neue", Helvetica, sans-serif;
+
+    /* Measures */
+
+    --main-padding: 20px 50px;
+}
+
+h1 {
+    font-family: var(--font-title);
+    color: var(--title-gray);
+}
+
+img {
+    width: 100px;;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 80px;
+    padding: var(--main-padding);
+    background-color: #fff;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-nav .menu-icon {
+    display:none;
+}
+
+.main-nav ul {
+    display: flex;
+    background-color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main-nav ul li {
+    margin: 10px;
+}
+
+.slack-logo {
+    width: 100px;
+}
+
+/* Global Header */
+
+.main-header {
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Global */
+
+    /* Nav mobile */
+
+    .main-nav {
+        justify-content: space-between;
+    }
+    .main-nav ul {
+        display:none;
+        /* width: 100vw;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in; */
+    }
+
+    .main-nav .menu-icon{
+        display: block;
+        font-size: var(--menu-icon);
+    }
+
+    /* Header mobile */
+
+    .main-header {
+        outline: yellow solid 1px;
+        padding: var(--main-padding);
+
+        display:flex;
+        flex-direction: column;
+    }
+
+    .main-header-img {
+        order: 1;
+    }
+
+    
+}
