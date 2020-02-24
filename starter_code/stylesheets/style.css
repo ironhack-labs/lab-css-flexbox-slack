@@ -11,7 +11,9 @@ nav grey: #5b5e6d;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 17px;
     font-family: var(--font-text);
+    line-height: var(--mobile-ln-height);
     color: var(--nav-gray);
     
     /* Colors */
@@ -26,12 +28,33 @@ nav grey: #5b5e6d;
     --font-title: 'Times New Roman', Times, serif;
     --font-text: "Helvetica Neue", Helvetica, sans-serif;
 
+    --mobile-ft-size-title: 2.2rem;
+    --mobile-ft-size-text: 1rem;
+    --mobile-ln-height: 28px;
+
     /* Measures */
 
-    --main-padding: 20px 50px;
+    --main-padding: 20px 30px;
 }
 
+body {
+    font-size: var(--mobile-ft-size-text);
+}
+
+h1 {
+    font-size: var(--mobile-ft-size-title);
+}
+
+/* h2 {
+    font-size: var(--mobile-ft-size-text);
+}
+
+p {
+    font-size: var(--mobile-ft-size-text);
+} */
+
 h1, h2 {
+    margin: 20px 0;
     font-family: var(--font-title);
     color: var(--title-gray);
 }
@@ -49,6 +72,7 @@ img {
     height: 80px;
     padding: var(--main-padding);
     background-color: #fff;
+    border-bottom: 1px solid #5b5e6d;
 
     display:flex;
     justify-content: space-between;
@@ -79,6 +103,22 @@ img {
 
 .main-header {
     margin-top: 70px;
+}
+
+.email-input {
+    padding-left: 50px;
+    border: .5px solid var(--p-gray)
+}
+
+.get-started-btn {
+    background-color:var(--btn-purple);
+    color: #fff;
+}
+
+.btn-input-styles {
+    margin: 10px 0;
+    height: 50px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
