@@ -109,8 +109,15 @@ img {
 
 .main-header {
     display:flex;
+    flex-direction: column;
     align-items: center;
     margin-top: 70px;
+}
+
+.get-started-form {
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .email-input {
@@ -130,6 +137,8 @@ img {
     margin-bottom: 20px;
     border-radius: 5px;
 }
+
+/* Media Queries */
 
 @media screen and (max-width: 768px) {
     /* Global */
@@ -159,8 +168,6 @@ img {
 
     .main-header {
         padding: var(--main-padding);
-
-        flex-direction: column;
     }
 
     .main-header-img {
@@ -169,5 +176,30 @@ img {
         order: 1;
     }
 
+    .get-started-form {
+        flex-direction: column;
+    }
+
     
+}
+
+/* (961px > width > 767px) */
+@media (min-width:767px) and (max-width:961px) {
+    * {
+        /* outline: sienna solid 2px; */
+    }
+
+    .btn-input-styles {
+        margin:20px 10px;
+    }
+
+    .get-started-btn {
+        width:50%;
+    }
+}
+
+@media (min-width:960px) and (max-width:1024px) {
+    * {
+        outline: red solid 2px;
+    }
 }
