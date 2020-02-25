@@ -1,7 +1,262 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+:root {
+    --nav-grey: #5b5e6d;
+    --titles-gray: #2C303F;
+    --paragraph-gray: #5b5e6d;
+    --background-grey: #F4F3F4;
+    --button-purple: #4049aa;
+    --viewport: 90vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 5.625rem;
+    color: var(--titles-gray);
+}
+
+h2 {
+    font-size: 2.827rem;
+    color: var(--titles-gray);
+}
+
+h3 {
+    font-size: 1.99rem;
+    color: var(--titles-gray);
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: var(--paragraph-gray);
+    margin-top: 2.5rem;
+}
+
+button+p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+h3+p {
+    margin-top: 1rem;
+}
+
+a {
+    color: var(--button-purple);
+}
+
+ul {
+    list-style: none;
+    color: var(--nav-grey);
+}
+
+i {
+    color: var(--nav-grey);
+}
+
+button {
+    display: block;
+    border-radius: 6px;
+    padding: 24px 48px;
+    margin-top: 2.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 0;
+    outline: none;
+}
+
+.button--primary {
+    color: #FFF;
+    background: var(--button-purple);
+}
+
+.button--secondary {
+    color: var(--button-purple);
+    background: #FFF;
+    border: solid 1px var(--button-purple);
+}
+
+section {
+    padding: 4rem 4%;
+    background: var(--background-grey);
+}
+
+/* Nav */
+nav {
+    border-bottom: solid 1px #f1f1f1;
+    padding: 16px 4%;
+    background: #FFF;
+    font-size: 1rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 108px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 2.5rem;
+}
+
+nav ul li:last-child {
+    border: solid 1px var(--titles-gray);
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(var(--viewport) - 80px);
+    padding: 0 4%;
+}
+
+header img {
+    width: 100%;
+    max-width: 470px;
+}
+
+.header__info {
+    width: 100%;
+    max-width: 630px;
+}
+
+header p {
+    font-size: 1.375rem;
+}
+
+/* Main */
+main {
+    text-align: center;
+}
+
+main button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.logos figure {
+    width: 33%;
+    padding: 40px 0;
+    height: 92px;
+}
+
+.logos figure:nth-child(1),
+.logos figure:nth-child(2),
+.logos figure:nth-child(3) {
+    border-bottom: solid 1px #cecece;
+}
+
+.logos figure:not(:nth-child(3n)) {
+    border-right: solid 1px #cecece;
+}
+
+figure img {
+    width: 190px;
+}
+
+.cta {
+    background: #FFF;
+    border-bottom: solid 1px #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 4%;
+}
+
+.cta button {
+    margin: 0;
+}
+
+/* Footer */
+.footer__top {
+    padding: 6.5rem 4%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer__top__logo {
+    width: 33%;
+}
+
+.footer__top img {
+    width: 120px;
+    margin-top: -37px;
+}
+
+.footer__top ul {
+    width: 16%;
+}
+
+.footer__top ul li {
+    margin-top: 1.5rem;
+}
+
+.footer__top ul li:first-child {
+    margin-top: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer__bottom {
+    background: var(--background-grey);
+    padding: 2.5rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__bottom ul {
+    display: flex;
+    font-weight: 600;
+}
+
+.footer__bottom ul li:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.footer__bottom img {
+    width: 24px;
+    display: inline-block;
+    line-height: 2em;
+    margin-bottom: -7px;
+    margin-right: 4px;
+}
+
+.footer__bottom i {
+    margin-left: 1rem;
+}
+
+.footer__bottom span i {
+    color: var(--titles-gray);
+    margin-left: 4px;
+}
