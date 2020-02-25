@@ -1,0 +1,344 @@
+       
+* {margin: 0 auto;
+   padding: 0;
+   box-sizing: border-box;
+ }
+body {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    min-width: 960px;
+    max-width: 1024px;
+    
+    margin: 15px;
+}
+
+nav {
+    box-sizing: border-box;
+    width: 100%;
+    height: 10%;
+    display: flex; /* de img y colapsible menu */
+    position: fixed;
+    background-color:#F4F3F4;
+    margin: -20px
+    
+}
+nav span {
+    
+    margin 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: flex-start;
+  
+}
+nav span img {
+   
+    width: 120px;
+    height: auto;
+    
+    display: flex;
+    align-items: flex-start;
+    
+    position: fixed;
+    left:20px;
+    top; 0
+    
+}
+label img {
+    margin: 0 auto;
+    padding: 0;
+    width:auto;
+}
+
+.collapsible-menu {
+    width: 100;
+    height: auto;
+    position: fixed;
+    right: 2px;
+    
+}
+.collapsible-menu label {
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    display: flex;
+
+    position: relative;
+
+}
+.menu-content {
+    width: 100%;
+    max-height: 0;
+    overflow:hidden;
+    
+    margin-top: 5px;
+    border:  1px;
+    background-color: #F4F3F4;
+
+}
+input#menu {display: none;}
+input:checked ~ .menu-content {
+    min-height: 150px;
+    max-height: 150px;}
+
+.collapsible-menu li {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #F4F3F4;
+
+}
+.collapsible-menu a {
+    display:inline-block;
+    display: flex;
+    width: 100%;
+    
+    color: #5b5e6d;
+    text-decoration: none;
+    
+   
+    margin: 10px;
+    z-index: 200;
+}
+
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+    padding-top: 60px;
+    
+    
+}
+
+header div h1 {
+    color: #2C303F;
+    font-size: 2.5em;
+    padding-right: 100px;   
+}
+
+header p {
+    color: #5b5e6d;
+    padding: 25px 0;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Se agrego header div */ 
+
+header .header1 {   
+    width: 100%;
+    display: flex;
+    flex-direction: column;}
+
+header .header2 {
+    width: 100%;
+}
+
+/* Input y bottom cambiaron a 50% y abarcaron la mitad, se les puso el mismo padding y margin para que coincidan */
+header input {
+    width: 48%;
+    padding: 15px;  
+}
+header button {
+    width: 48%;
+    color:white;
+    background-color: #192592;
+    border: solid;
+
+    padding: 15px;
+    border-radius: 10px;
+   
+}
+
+
+header img {
+    width: 100%;
+}
+main {
+    width: 100%;
+    height: auto;
+    background-color: #F4F3F4;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    padding: 0 50px;  
+}
+section .art-bef-img {
+    color: #2C303F; 
+    margin: 20px 0 0 0;
+}
+section .art-bef-img h2 {
+    font-size: 2em        ;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+section .art-bef-img p {
+    font-size: 1.3em;
+    color: #5b5e6d;
+    margin-bottom: 20px;
+  
+}
+section article.art-bef-img button {
+    width: 100%;
+    background-color: white;
+    color: #192592;
+
+    border: 0.5px solid #192592;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+section strong {
+    font-weight: 800; 
+}
+section .aft-logos {
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+ /* se mod para que sean tres 3  img por renglon   */
+
+section article img {
+    width: 32%;
+    height: auto;
+    border-bottom: 1px solid #e0e0e0;
+    
+    margin: 30px 0;
+    padding: 10px 30px;  
+}
+
+ /* modificados tambn input y button, se hizo igual que los otros, solo se agrego margin-top
+*/
+
+article div {
+    width: 50%;
+    float: left;
+    padding: 20px;
+   
+}
+article button {
+    width: 25%;
+    color:white;
+    background-color: #192592;
+    border: solid;
+    
+    padding: 15px;
+    margin-top: 16px;
+    border-radius: 10px;
+    float: right;
+}
+article input {
+    width: 25%;
+    padding: 15px;
+    margin-top: 20px;
+    float: right;
+}
+article p strong {
+    font-size: 1.5em;
+}
+
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 0 5px;
+    
+}
+/* modificaran para que ocupen 4 columnas */
+footer section article {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;  
+    margin: 0 20px;
+}
+footer article ul {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px 0;
+    margin: 10px 0;
+   
+}
+footer article li {
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: 500;
+    list-style: none;
+    
+    color: #5b5e6d;
+    margin: 15px 0px;
+   
+    
+}
+/* imagen se centrara */
+footer section .Iso {
+    width: 120px;
+    position: relative;
+    left: 245px;
+    top: 20px}
+.section2 {
+    box-sizing: border-box;
+    margin: 10px 10px;
+    padding-bottom: 30px;
+    background-color: #F4F3F4;
+}
+footer.section2 {
+    background-color: #F4F3F4;
+    width: 100%;
+}
+footer .section2 ul {
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+}
+footer .section2 li {
+    box-sizing: border-box;
+    list-style: none;
+    font-weight: 900;
+    color: #5b5e6d;
+    font-size: 0.8em;
+    background-color: #F4F3F4;
+    padding: 0 10px;
+    text-align: center;
+    
+}
+
+
+footer div {
+    width: 67%;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    background-color:#F4F3F4
+    
+}
+footer div img {
+    width: 25px;
+    position: relative;
+    top: 4px; 
+}
+footer div span {
+    
+    font-weight: bold;
+    color: #5b5e6d;
+    
+   
+}
+
