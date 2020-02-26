@@ -32,7 +32,7 @@ nav grey: #5b5e6d;
     --font-title: 'Times New Roman', Times, serif;
     --font-text: "Helvetica Neue", Helvetica, sans-serif;
 
-    --font-title-size: 2.2rem;
+    --font-title-size: 3.8rem;
     --font-text-size: 1rem;
     --mobile-ln-height: 25px;
     --mobile-ln-height-title: 35px;
@@ -126,28 +126,33 @@ p {
 
 .get-started-form {
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .email-input {
+    width: 50%;
     margin-top: 40px;
     padding-left: 20px;
     border: .5px solid var(--light-gray)
 }
 
 .get-started-btn {
+    width:25%;
     background-color:var(--btn-purple);
     color: #fff;
 }
 
 .btn-input-styles {
-    width: 100%;
     height: 60px;
     font-size: var(--font-text-size);
     font-weight:400;
-    margin-bottom: 20px;
+    margin:20px 10px 20px 0px;
     border-radius: 5px;
+}
+
+.sign-in {
+    text-decoration: underline;
 }
 
 /* Good Company section  */
@@ -197,6 +202,10 @@ p {
 
 @media screen and (max-width: 768px) {
 
+    * {
+        --font-title-size: 2.2rem;
+    } 
+
     /* Nav - < 768px */
 
     .main-nav {
@@ -223,7 +232,13 @@ p {
     }
 
     .get-started-form {
+        justify-content: center;
         flex-direction: column;
+    }
+
+    .btn-input-styles {
+        margin: 10px 0;
+        width: 100%;
     }
 
     /* GOOD COMPANY - < 768px */
@@ -247,10 +262,10 @@ p {
 /* (961px > width > 767px) */
 @media (min-width:767px) and (max-width:961px) {
     * {
-        /* outline: sienna solid 2px; */
-        font-size: 20px;
+        --font-title-size: 3.8rem;
     }
-
+    
+    /* Nav - > 767px < 961 */
     .main-nav ul {
         display: none;
     }
@@ -259,13 +274,20 @@ p {
         display: block;
         font-size: var(--menu-icon);
     }
-
+     /* Header - > 767px < 961 */
+    .get-started-form {
+        justify-content: flex-start;
+    }
     .btn-input-styles {
-        margin:20px 10px;
+        margin:20px 10px 20px 0px;
+    }
+
+    .email-input {
+        width: 50%;
     }
 
     .get-started-btn {
-        width:50%;
+        width:25%;
     }
 }
 
@@ -294,7 +316,7 @@ p {
 
     .main-header {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: flex-start;
     }
 
