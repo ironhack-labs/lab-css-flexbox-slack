@@ -33,7 +33,9 @@ nav grey: #5b5e6d;
     --font-text: "Helvetica Neue", Helvetica, sans-serif;
 
     --font-title-size: 3.8rem;
-    --font-text-size: 1rem;
+    --font-subtitle-size: 2.2rem;
+    --font-text-size: 1.1rem;
+    --font-btn-size:0.8rem;
     --mobile-ln-height: 25px;
     --mobile-ln-height-title: 35px;
 
@@ -43,7 +45,6 @@ nav grey: #5b5e6d;
 }
 
 body {
-    font-size: var(--font-text-size);
     font-family: var(--font-title);
     color: var(--title-gray);
 }
@@ -52,6 +53,10 @@ h1 {
     font-size: var(--font-title-size);
     font-weight: bold;
     line-height: var(--mobile-ln-height-title);
+}
+
+h2 {
+    font-size: var(--font-subtitle-size);
 }
 
 h1, h2 {
@@ -65,6 +70,7 @@ a {
 }
 
 p {
+    font-size: var(--font-text-size);
     font-weight: 300;
 }
 
@@ -97,12 +103,12 @@ p {
 
 .main-nav ul li {
     margin: 0 10px;
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 .main-nav ul li:last-child {
-    border:1px solid var(--light-gray);
-    border-radius: 10px;
+    border:1px solid var(--p-gray);
+    border-radius: 5px;
 }
 
 .slack-logo {
@@ -144,14 +150,21 @@ p {
 }
 
 .btn-input-styles {
-    height: 60px;
-    font-size: var(--font-text-size);
-    font-weight:400;
     margin:20px 10px 20px 0px;
+    padding: 10px 20px;
+
+    font-size: 0.8rem;
+    font-weight:400;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.already-in-slack {
+    font-size: var(--font-btn-size);
 }
 
 .sign-in {
+    font-size: var(--font-btn-size);
     text-decoration: underline;
 }
 
@@ -160,13 +173,23 @@ p {
 .good-company {
     width:100%;
     padding: var(--main-padding);
+    text-align: center;
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center; 
+    align-items: center;
     background-color: rgb(239, 242, 242);
+}
+
+.discover-btn {
+    padding: 20px 40px;
+    border: 1px solid var(--btn-purple);
+    background-color: #fff;
+    color: var(--btn-purple);
+    font-weight: bold;
+    line-height: normal;
 }
 
 .good-company-images {
@@ -174,24 +197,26 @@ p {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .good-company-img-container {
- width:50%;
- height:100px;
- border-bottom: .1px solid var(--light-gray);
+ width:30%;
+ height:150px;
 
  display: flex;
  justify-content: center;   
  align-items: center;
 }
 
-.good-company-img-container:nth-child(odd){
-    border-right: 1px solid var(--light-gray);
+.good-company-img-container:nth-child(1n + 4){
+    border-top: 1px solid var(--light-gray);
 }
 
-.good-company-img-container:nth-child(1n + 5){
-    border-bottom: none;
+.good-company-img-container:nth-child(3n + 2){
+    border-left: 1px solid var(--light-gray);
+    border-right: 1px solid var(--light-gray);
 }
 
 .good-company-img {
@@ -204,6 +229,7 @@ p {
 
     * {
         --font-title-size: 2.2rem;
+        --font-subtitle-size: 2rem;
     } 
 
     /* Nav - < 768px */
@@ -245,16 +271,14 @@ p {
 
     .good-company-img-container {
         width: 100%;
-        border-right:none;
-        border-bottom: 1px solid var(--light-gray);
     }
 
-    .good-company-img-container:nth-child(odd) {
-        border-right: none;
+    .good-company-img-container:nth-child(1n + 1){
+        border:none;
     }
 
-    .good-company-img-container:nth-child(1n){
-        border-bottom: 1px solid var(--light-gray);
+    .good-company-img-container:nth-child(1n + 2){
+        border-top: 1px solid var(--light-gray);
     }
     
 }
@@ -289,6 +313,22 @@ p {
     .get-started-btn {
         width:25%;
     }
+
+    .good-company-img-container {
+        width:50%;
+    }
+
+    .good-company-img-container:nth-child(1n + 1){
+        border:none;
+    }
+
+    .good-company-img-container:nth-child(2n + 1){
+        border-right: 1px solid var(--light-gray);
+    }
+
+    .good-company-img-container:nth-child(1n + 3){
+        border-top: 1px solid var(--light-gray);
+    }
 }
 
 @media (min-width:960px) and (max-width:1024px) {
@@ -322,7 +362,7 @@ p {
 
     .main-header-content {
         align-items: flex-start;
-        width: 35%;
+        width: 44%;
     }
 
     h1 {
