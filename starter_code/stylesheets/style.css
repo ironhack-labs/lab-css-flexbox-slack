@@ -74,6 +74,13 @@ p {
     font-weight: 300;
 }
 
+.bold {
+    font-family: var(--font-title);
+    font-size: var(--font-text-size);
+    font-weight: bold;
+    color: black;
+}
+
 /* Nav - GLOBAL */
 
 .main-nav {
@@ -104,6 +111,7 @@ p {
 .main-nav ul li {
     margin: 0 10px;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .main-nav ul li:last-child {
@@ -131,6 +139,7 @@ p {
 }
 
 .get-started-form {
+    width: 100%;
     display:flex;
     justify-content: flex-start;
     align-items: center;
@@ -147,6 +156,7 @@ p {
     width:25%;
     background-color:var(--btn-purple);
     color: #fff;
+    cursor: pointer;
 }
 
 .btn-input-styles {
@@ -156,7 +166,6 @@ p {
     font-size: 0.8rem;
     font-weight:400;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 .already-in-slack {
@@ -223,6 +232,45 @@ p {
     width: 50%;
 }
 
+/* Try it - Global */
+
+.try-it-container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--main-padding);
+}
+
+.try-it-content {
+    width: 25%;
+}
+
+.get-started-form--try {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Footer - Global */
+
+.footer--footer {
+    /* height: 50px; */
+    padding:var(--main-padding);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-gray);
+}
+
+.terms-n-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.american-flag {
+    height: 20px;
+}
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
@@ -280,7 +328,22 @@ p {
     .good-company-img-container:nth-child(1n + 2){
         border-top: 1px solid var(--light-gray);
     }
+
+    /* Try-it - < 768px */
+
+    .try-it-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .try-it-content {
+        width: 100%;
+    }
     
+    .get-started-form--try {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 /* (961px > width > 767px) */
@@ -303,7 +366,7 @@ p {
         justify-content: flex-start;
     }
     .btn-input-styles {
-        margin:20px 10px 20px 0px;
+        /* margin:20px 10px 20px 0px; */
     }
 
     .email-input {
