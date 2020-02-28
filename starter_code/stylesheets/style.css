@@ -1,11 +1,7 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
+/* 
+    Styles for Ironhack's project lab-css-responsive-slack
+    Author: Rafael Borges
 */
-
 * {
     /* outline: red solid 2px; */
     box-sizing: border-box;
@@ -79,6 +75,10 @@ p {
     font-size: var(--font-text-size);
     font-weight: bold;
     color: black;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 /* Nav - GLOBAL */
@@ -292,7 +292,6 @@ p {
 }
 
 .footer--footer {
-    /* height: 50px; */
     padding:var(--main-padding);
     display:flex;
     justify-content: space-between;
@@ -300,15 +299,31 @@ p {
     background-color: var(--bg-gray);
 }
 
-.terms-n-contact {
+.footer--footer  * {
+    margin: 10px;
+}
+
+.footer-icons-container {
     display: flex;
-    justify-content: center;
+}
+
+.footer-icons-container--lang {
+    display: flex;
+    align-items: center;
+}
+
+
+.terms-n-contact {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
 .american-flag {
-    height: 20px;
+    width: 22px;
 }
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
@@ -404,6 +419,28 @@ p {
     .footer--footer {
       flex-direction: column;
     }
+
+    .terms-n-contact {
+        width: 100%;
+    }
+
+    .footer-icons-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-icons--social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-icons-container--lang {
+        display: flex;
+        justify-content: center;
+
+    }
 }
 
 /* (961px > width > 767px) */
@@ -424,9 +461,6 @@ p {
      /* Header - > 767px < 961 */
     .get-started-form {
         justify-content: flex-start;
-    }
-    .btn-input-styles {
-        /* margin:20px 10px 20px 0px; */
     }
 
     .email-input {
@@ -455,12 +489,9 @@ p {
 }
 
 @media (min-width:960px) and (max-width:1024px) {
-    * {
-        outline: red solid 2px;
-    }
+
     /* Nav - > 960px < 1024px */
     
-
     .good-company-img-container {
         width: 33%;
     }
@@ -471,10 +502,7 @@ p {
     * {
         --font-title-size: 4.2rem;
     }
-
-    /* Nav - > 1200px */
     
-
     /* Header - > 1200px */
 
     .main-header {
