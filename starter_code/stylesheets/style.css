@@ -253,6 +253,44 @@ p {
 
 /* Footer - Global */
 
+.footer--company-info {
+    width: 100%;
+    padding:var(--main-padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* align-items: flex-start; */
+}
+
+.footer--slack-logo-box {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer--slack-logo {
+    width: 60%;
+}
+
+.footer--info-box {
+    width: 20%;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footer--info-box--title {
+    font-weight: bold;
+}
+
+.footer--info-box li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
 .footer--footer {
     /* height: 50px; */
     padding:var(--main-padding);
@@ -343,6 +381,28 @@ p {
     .get-started-form--try {
         width: 100%;
         flex-direction: column;
+    }
+    /* Footer - < 768px */
+
+    .footer--company-info {
+        flex-direction: row;
+    }
+
+    .footer--slack-logo-box {
+        width: 30%;
+        margin-right: 70%;
+    }
+
+    .footer--slack-logo {
+        width: 100%;
+    }
+    
+    .footer--info-box {
+        width: 50%;
+    }
+
+    .footer--footer {
+      flex-direction: column;
     }
 }
 
