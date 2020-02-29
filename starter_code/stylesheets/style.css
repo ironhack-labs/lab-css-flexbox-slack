@@ -27,6 +27,8 @@ nav > ul {
 
 nav > img {
     width: 100px;
+    height: 60px;
+    margin: 10px 10px;
 }
 
 header {
@@ -45,11 +47,10 @@ header > h1 {
     margin-left: 15px;
 }
 
-header > p {
+header p {
     font-size: 0.6em;
-    margin: 50px 0 50px 0;
+    margin: 30px 50px 50px 15px;
     color:#5b5e6d;
-    margin-left: 15px;
 }
 
 header > div {
@@ -91,6 +92,18 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+#img-list {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.img {
+    display: flex;
+    width: 200px;
+    margin: 30px;
 }
 
 main > div > h2 {
@@ -211,3 +224,44 @@ footer {
 .bottom-footer > div > i {
     margin: 0 10px;
 }
+
+@media (min-width: 768px) and (max-width: 960px) {
+    main > div > button {
+        width: 40%;
+    }
+
+    .img {
+        width: 100px;
+        margin: 100px 100px;
+    }
+
+    .img-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .bottom-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .bottom-div > p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-div button {
+        width: 200px;
+    }
+  }
+  
+  @media (min-width: 961px) and (max-width: 1024px) {
+    .img-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+  }
