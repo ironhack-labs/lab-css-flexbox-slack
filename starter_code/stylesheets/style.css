@@ -16,44 +16,37 @@ body{
     font-family: Slack-Larsseit;
     color: #5b5e6d;
 }
-.topNav{
-    height: max-content;
-    border-top: 1px solid #F4F3F4;
-    border-bottom: 1px solid #F4F3F4;
-    color:#5b5e6d;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.topNav img{
-    height: 50px;
-    margin-left: 20px;
+header{
+    position: fixed;
+    top: 0;
+    background-color: white;
 }
 .main-titles{
     color: #2C303F;
+}
+
+nav img{
+    height: 50px;
+    margin-left: 20px;
 }
 .imgBanner{
     width: 100%;
     height: auto;
 }
-.imgLogos{
-    width: 50%;
-    height: auto;
-    margin: 25px;
-    border-bottom: 1px solid #5b5e6d;
-}
 @media screen and (max-width:768px) {
-    body{
-        position:fixed;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-    }
     .logoSlack{
         width: 30%;
         object-fit: contain;
+    }
+    nav{
+        height: max-content;
+        border-top: 1px solid #F4F3F4;
+        border-bottom: 1px solid #F4F3F4;
+        color:#5b5e6d;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     nav > ul{
         display: none;
@@ -86,6 +79,7 @@ body{
         font-weight: bold;
     }
     .basics{
+        margin-top: 50px;
         padding: 0 30px 0 30px;
         display: flex;
         flex-direction: column;
@@ -94,6 +88,15 @@ body{
     }
     .discovery{
         background-color: #F4F3F4;
+    }
+    .customers{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .customers div{
+
     }
 }
 @media screen and (min-width:768px) and (max-width:961px) {
