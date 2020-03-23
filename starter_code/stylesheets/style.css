@@ -13,15 +13,14 @@ nav grey: #5b5e6d;
 @font-face{font-family:Slack-Circular-Pro;font-style:normal;font-weight:400;src:local('â˜º'),url(https://a.slack-edge.com/80588/spacesuit/source/fonts/circular/circular-pro-book.woff2) format('woff2'),url(https://a.slack-edge.com/80588/spacesuit/source/fonts/circular/circular-pro-book.woff) format('woff');unicode-range:U+0000-F8FE,U+F900-FFFF}
 @font-face{font-family:Slack-Circular-Pro;font-style:normal;font-weight:700;src:local('â˜º'),url(https://a.slack-edge.com/80588/spacesuit/source/fonts/circular/circular-pro-bold.woff2) format('woff2'),url(https://a.slack-edge.com/80588/spacesuit/source/fonts/circular/circular-pro-bold.woff) format('woff');unicode-range:U+0000-F8FE,U+F900-FFFF}
 body{
-    width: 100vw;
     font-family: Slack-Larsseit;
     color: #5b5e6d;
 }
 .topNav{
-    width: 100vw;
     height: max-content;
-    border-bottom: 1px solid gray;
-    color: #5b5e6d;
+    border-top: 1px solid #F4F3F4;
+    border-bottom: 1px solid #F4F3F4;
+    color:#5b5e6d;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,13 +33,34 @@ body{
 .main-titles{
     color: #2C303F;
 }
+.imgBanner{
+    width: 100%;
+    height: auto;
+}
+.imgLogos{
+    width: 50%;
+    height: auto;
+    margin: 25px;
+    border-bottom: 1px solid #5b5e6d;
+}
 @media screen and (max-width:768px) {
+    body{
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+    .logoSlack{
+        width: 30%;
+        object-fit: contain;
+    }
     nav > ul{
         display: none;
     }
     nav > i{
         display: block;
-        margin-right: 20px;
+        margin-right: 10px;
     }
     input[type="text"]{
         width: 100%;
