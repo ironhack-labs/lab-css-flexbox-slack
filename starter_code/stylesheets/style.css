@@ -15,9 +15,10 @@ body {
 
 /*Section Nav */
 
-#white-bar {
+#nav-bar {
   height: 8vh;
 }
+
 
 nav {
   background-color: white;
@@ -213,6 +214,7 @@ main div {
   height: 9vh;
   width: 100%;
   padding: 19px 40px 20px;
+  text-align: center;
 }
 
 #started h2 {
@@ -302,7 +304,7 @@ footer ul {
 #lang {
   width: 150px;
   padding: 1rem 0;
-  margin-left: 45%;
+  margin-left: 41%;
   display: flex;
   flex-flow: column nowrap;
   align-self: center;
@@ -330,3 +332,123 @@ footer ul {
   align-self: center;
   justify-content: space-around;
 }
+
+@media only screen and (max-width: 768px){
+  #nav {
+    display: none;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 961px){
+  nav>.btn {
+    display: none;
+  }
+
+  #header {
+    min-width: 200px;
+    margin-right: 5em;
+  }
+
+  #email {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  #email>input {
+    width: auto;
+    margin: 0 1em 0 0;
+  }
+
+  #email>button {
+    width: auto;
+    margin-right: 1em;
+  }
+
+  #company button {
+    width: auto;
+  }
+
+  #company img {
+    padding: 10vh 10vw;
+  }
+
+  #logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  #logo img:nth-child(5) {
+    border: 0px;
+  }
+
+  #started {
+    flex-flow: row nowrap;
+    padding: 0;
+  }
+
+  #started input {
+    width: auto;
+    margin: 0 1em 0 0;
+  }
+
+  #started button {
+    width: auto;
+  }
+
+  #link{
+    flex-flow: row nowrap;
+    margin-top: 2em;
+  }
+
+  #link img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  #link-list {
+    padding: 0 0 0 2vw;
+  }
+
+  #link-list ul {
+    margin: 0;
+    padding: 0 2rem 0 0;
+    width: 17vw;
+  }
+
+  #bottom-link {
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 84px;
+  }
+
+  #lang {
+    margin-left: 41%;
+  }
+}
+
+
+@media only screen and (min-width: 961) and (max-width: 1024){
+  nav>.btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024) and (max-width: 1200){
+  nav>.btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1201) and (max-width: 1920){
+  nav>.btn {
+    display: none;
+  }
+}
+
+
+
+
