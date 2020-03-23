@@ -14,106 +14,341 @@ nav grey: #5b5e6d;
 @font-face{font-family:Slack-Circular-Pro;font-style:normal;font-weight:700;src:local('â˜º'),url(https://a.slack-edge.com/80588/spacesuit/source/fonts/circular/circular-pro-bold.woff2) format('woff2'),url(https://a.slack-edge.com/80588/spacesuit/source/fonts/circular/circular-pro-bold.woff) format('woff');unicode-range:U+0000-F8FE,U+F900-FFFF}
 body{
     font-family: Slack-Larsseit;
-    color: #5b5e6d;
+    color: #2C303F;
 }
 header{
-    position: fixed;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
     top: 0;
     background-color: white;
 }
-.main-titles{
+nav{
+    width: 100%;
+    height: max-content;
+    border-top: 1px solid #F4F3F4;
+    border-bottom: 1px solid #F4F3F4;
+    color:#5b5e6d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 3em;
+    font-family: Slack-Circular-Pro;
+    margin-bottom: 5px;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: fit-content;
+}
+ul{
+    list-style: none;
+}
+input[type="text"]{
+    margin-bottom: 10px;
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #5b5e6d;
+    box-sizing: border-box;
+}
+button{
+    padding: 10px 10px 10px 10px;
+    background-color: #192592;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #192592;
+    box-sizing: border-box;
+}
+button:hover{
+    background-color: white;
+    color: #192592;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+.menu li{
+    margin: 0 20px 0 20px;
+    padding: 5px;
+}    
+.yourWorspaces{
+    border: 1px solid #5b5e6d;
+    border-radius: 5px;
+}
+.titles-font{
     color: #2C303F;
 }
-
-nav img{
+.logoSlack{
     height: 50px;
-    margin-left: 20px;
+    object-fit: contain;
 }
-.imgBanner{
-    width: 100%;
-    height: auto;
+.div-ph-home-section{
+    padding: 40px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #5b5e6d;
+}
+.div-ph-try-section{
+    padding: 40px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #5b5e6d;
+}
+.div-ph-discovery-section{
+    padding: 40px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #5b5e6d;
+    background-color: #F4F3F4;
+}
+.div-ph-customers-img > img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.footer ul>li:first-child {
+    font-weight: bold;
+    margin: 0px 0 10px 0;
+    color: #2C303F;
+}
+.footer ul>li{
+    margin: 10px 0 10px 0;
+}
+.footer img:first-child{
+    display: block;
+    float: left;
 }
 @media screen and (max-width:768px) {
-    .logoSlack{
-        width: 30%;
+    h1{
+        font-size: 3em;
+    }    
+    .menu{
+        display: none;
+    }
+    .home-title{
+        font-size: 3em;
+    }
+    input[type="text"]{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+    .div-ph-customers{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+    }    
+    .div-ph-customers-img {
+        box-sizing: border-box;
+        padding: 30px 15px 30px 15px;
+        width: 100%;
+    }
+    .footer-bar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer-bar-links{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-bar-links:only-child{
+        margin: 0 100px 0 100px;
+    }
+    .footer-bar-links>img{
+        width: 30px;
         object-fit: contain;
     }
-    nav{
-        height: max-content;
-        border-top: 1px solid #F4F3F4;
-        border-bottom: 1px solid #F4F3F4;
-        color:#5b5e6d;
+}
+@media screen and (min-width:767px) and (max-width:961px) {
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 3em;
+    }
+    p{
+        font-size: 1.5em;
+    }    
+    input[type="text"]{
+        width: 55%;
+    }
+    button{
+        width: fit-content;
+    }
+    .div-ph-customers{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+    } 
+    .div-ph-customers-img {
+        box-sizing: border-box;
+        padding: 25px 10px 25px 10px;
+        width: 50%;
+    }
+    .menu{
+        display: none;
+    }
+    .customers{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        flex-basis: 50%;
+    }
+    .customers div{
+        width: 50%;
+        border-top: 1px solid #5b5e6d;
+        padding: 30px 15px 30px 15p;
+    }
+    .customers div:first-child{
+        border-top: 0;
+    }
+    .customers img{
+        border: 1px solid #5b5e6d;
+        width: 50%;
+        height: auto;
+    }
+    .footer-bar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer-bar-links{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-bar-links:only-child{
+        margin: 0 100px 0 100px;
+    }
+    .footer-bar-links>img{
+        width: 30px;
+        object-fit: contain;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1024px) {
+    h1{
+        font-size: 4em;
+    }
+    h2{
+        font-size: 4em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    input[type="text"]{
+        width: 55%;
+    }
+    button{
+        width: fit-content;
+    }
+    .menu{
+        display: none;
+    }
+    .div-ph-customers{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+    } 
+    .div-ph-customers-img {
+        box-sizing: border-box;
+        padding: 25px 10px 25px 10px;
+        width: 50%;
+    }
+}
+@media screen and (min-width:1023px) {
+    h1{
+        font-size: 4em;
+    }
+    h2{
+        font-size: 4em;
+    }
+    p{
+        font-size: 2em;
+    }
+    input[type="text"]{
+        width: 55%;
+        font-size: 1.5em;
+    }
+    button{
+        width: fit-content;
+        font-size: 1.5em;
+    }
+    .menuIcon{
+        display: none;
+    }
+    .div-ph-home-section{
+        padding: 20px 30px 20px 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: stretch;
+        align-items: flex-start;
+        border-bottom: 1px solid #5b5e6d;
+    }
+    .div-ph-try-section{
+        padding: 40px 30px 40px 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        border-bottom: 1px solid #5b5e6d;
     }
-    nav > ul{
-        display: none;
-    }
-    nav > i{
-        display: block;
-        margin-right: 10px;
-    }
-    input[type="text"]{
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 10px 0px 10px 10px;
-        border-radius: 5px;
-        border: 1px solid #5b5e6d;
+    .div-ph-customers{
         box-sizing: border-box;
-    }
-    button{
-        width: 100%;
-        padding: 10px 0 10px 0;
-        background-color: #192592;
-        color: white;
-        font-weight: bold;
-        border-radius: 5px;
-        border: 1px solid #192592;
-        box-sizing: border-box;
-    }
-    button:hover{
-        background-color: white;
-        color: #192592;
-        font-weight: bold;
-    }
-    .basics{
-        margin-top: 50px;
-        padding: 0 30px 0 30px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
+        margin-top: 10px;
+    } 
+    .div-ph-customers-img {
+        box-sizing: border-box;
+        padding: 25px 10px 25px 10px;
+        width: 30%;
     }
-    .discovery{
-        background-color: #F4F3F4;
-    }
-    .customers{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .customers div{
-
-    }
-}
-@media screen and (min-width:768px) and (max-width:961px) {
-    body{
-        width: 100vw;
-    }
-}
-@media screen and (min-width:961px) {
-    body{
-        width: 100vw;
-    }
-    nav > ul{
-        display: flex;
-        list-style: none;
-    }
-    nav > i{
-        display: none;
-        margin-right: 0px;
-    }    
 }
