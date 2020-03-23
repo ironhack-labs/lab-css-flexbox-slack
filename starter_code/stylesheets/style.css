@@ -5,3 +5,181 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body {
+    font-family: Consolas;
+    background-color: aqua;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px lightgray solid;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav i {
+    padding-right: 40px;
+}
+
+nav ul {
+    display: none;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 10px;
+    display: flex;
+	flex-direction: row;
+}
+
+.slack-icon {
+    width: 100px;
+    height: 50px;
+    padding-left: 20px;
+}
+
+header {
+    padding: 50px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.get-started-button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 5px;
+    background-color: #192592;
+    color: white;
+    height: 50px;
+    font-weight: bolder;
+    width: 200px;
+}
+
+header p {
+    display: flex;
+    justify-content: center;
+}
+
+header input {
+    height: 20px;
+    padding: 10px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+header img {
+    width: 450px;
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    background-color: #F4F3F4;
+}
+
+main h2 {
+    justify-content: center;
+    display: flex;
+}
+
+main p {
+    justify-content: center;
+    display: flex;
+    padding: 0px 50px;
+    text-align: center;
+}
+
+.companies img {
+    width: 250px;
+    display: block;
+    padding: 50px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid lightgray;
+}
+
+.discover {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border: #192592 solid 1px;
+    border-radius: 5px;
+    background-color: white;
+    color: #192592;
+    height: 50px;
+    width: 200px;
+    font-weight: bolder;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.try-it {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    border-bottom: lightgray 1px solid;
+}
+
+.try-free {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.try-it input {
+    height: 20px;
+    padding: 10px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+footer {
+
+}
+
+@media (max-width: 960px) and (min-width: 767px) {
+    body {
+        background-color: red;
+    }
+  }
+
+@media (max-width: 1024px) and (min-width: 961px) {
+    body {
+      justify-content: space-around;
+      background-color: yellow;
+    }
+
+    nav i {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+      background-color: green;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav i {
+        visibility: hidden;
+    }
+}
