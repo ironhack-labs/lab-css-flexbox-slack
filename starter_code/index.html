@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <!-- link the font awesome CDN -->
     <link
       href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
@@ -19,15 +18,15 @@
   <body>
     <nav>
       <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
+      <img src="./images/sandwich.png" id="sandwich" alt="sandwich" />
+      <ul id="nav__bar">
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
         <li>Your Workspaces</li>
       </ul>
     </nav>
-    <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
+    <header class="container-column">
       <h1>Where Work Happens</h1>
       <p>
         When your team needs to kick off a project, hire a new employee, deploy
@@ -35,10 +34,14 @@
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
+      <form class="container-column" id="form">
+        <input type="email" placeholder="Email address" class="form__email-input">
+      <button type="button" name="button" class="input__email-button">GET STARTED</button>
+      </form>
       <p>Already using Slack? <a href="#">Sign in</a></p>
+      <img src="./images/home_talking.png" alt="home_work_happening" />
     </header>
-    <main>
+    <main class="container-column">
       <div>
         <h2>You're in good company</h2>
         <p>
@@ -59,7 +62,7 @@
         <button type="button" name="button">GET STARTED</button>
       </div>
     </main>
-    <footer>
+    <footer class="container-column">
       <div>
         <img src="./images/iso-slack.png" alt="" />
         <ul>
