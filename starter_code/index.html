@@ -25,7 +25,7 @@
     <header>
       <img src="./images/home_talking.png" alt="home_work_happening" />
       <div class="aside">
-        <h1 class="main-titles"> Where Work Happens </h1>
+        <h1 id="page-title" class="main-titles"> Where Work Happens </h1>
         <p>
           When your team needs to kick off a project, hire a new employee, deploy
           some code, review a sales contract, finalize next year's budget, measure
@@ -33,12 +33,10 @@
           covered.
         </p>
         <div class="form">
-          <form action="/action_page" method="post" id="email_form">
-            <input type="email" placeholder="Email address" class="form-item">
-          </form>
-          <button type="submit" form="email_form" name="button" value="submit" class="form-item">GET STARTED</button>
-          <p>Already using Slack? <a href="#">Sign in</a></p>
+          <input id="first-input" type="email" placeholder="Email address">
+          <button id="first-btn" type="submit" form="email_form" name="button" value="submit">GET STARTED</button>
         </div><!-- form -->
+        <p id="sign-in-link"> Already using Slack? <a href="#">Sign in</a></p>        
       <div><!-- aside -->
     </header>
 
@@ -49,7 +47,7 @@
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button>DISCOVER WHY</button>
+        <button id="get-started">DISCOVER WHY</button>
         <div id="partners-list">
           <div class="logo-container">
             <img class="partners-list-item" src="./images/airbnb-logo.png" alt="Airbnb Logo" />
@@ -73,15 +71,18 @@
       </div>
 
       <div id="try-it">
-        <p class="main-titles"><b>Try it for free</b></p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+        <div id="try-it-left">
+          <p class="main-titles"><b>Try it for free</b></p>
+          <p>Already using Slack? <a href="">Sign in</a></p>
+        </div>
+        <input id="second-input" type="email" placeholder="Email address">
+        <button id="third-btn" type="button" name="button">GET STARTED</button>
       </div>
     </main>
 
     <footer>
       <div id="links">
-        <img src="./images/iso-slack.png" alt="" />
+        <img src="./images/iso-slack.png" alt="Slack icon" />
         <ul class="links-item">
           <li class="head">COMPANY</li>
           <li>About Us</li>
