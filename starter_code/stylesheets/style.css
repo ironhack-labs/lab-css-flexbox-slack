@@ -71,6 +71,7 @@ main img {
     color: white;
     font-size: 1.1em;
     font-weight: 700;
+    padding: 0 1em;
 }
 
 h1 {
@@ -104,8 +105,7 @@ p {
 }
 
 .main__partners img {
-    width: 50vw;
-    border-bottom: 1px solid #5b5e6d;
+    width: 40%;
     margin: 2em 0;
     padding-bottom: 0.3em;   
 }
@@ -124,10 +124,22 @@ p {
     padding: 0;
 }
 
+#main-partners {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-items: center;
+}
+
+.main__partner-img {
+    border-bottom: 1px solid #5b5e6d;
+    
+}
+
 /*-------------------FOOTER--------------------*/
 
 footer img {
-    height: 12vh;
+    height: 10vh;
     padding: 0 1em;
 }
 
@@ -135,7 +147,7 @@ footer img {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-
+    padding: 0 1em;
 }
 
 footer li {
@@ -187,8 +199,83 @@ footer li {
     padding-left: 0;
 }
 
+
 /*-------------------961px > IPAD DISPLAY > 768px--------------------*/
 
 @media (max-width: 961px) and (min-width: 768px) {
+    #form {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 10%;
+    }
 
+    .form__email-input {
+        width: 40%;
+    }
+
+    #discover-why {
+        color: #192592;
+        border: 1px solid #192592;
+        height: 7vh;
+        width: 40%;
+        background-color: white;
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+
+    #main-partners {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .main__partner-img {
+        width: 40%;
+        border-bottom: 1px solid #5b5e6d;
+        height: 8vh;
+        margin-bottom: 1em;
+    }
+
+    .main__try-for-free {
+        margin-top: 3vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__list {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    footer ul{
+        padding: 0;
+        width: 20%;
+    }
+
+    .footer__contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1em 0;
+    }
+
+    .footer__contact-links {
+        padding: 0;
+        margin: 0;
+        width: 50%;
+    }
+    
+    #contact-links {
+        margin: 0;
+        width: 50vw;
+    }
 }
