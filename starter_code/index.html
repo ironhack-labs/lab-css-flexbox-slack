@@ -16,32 +16,35 @@
 
   <body>
     <nav class="nav-bar">
-        <i class="fa fa-bars"></i>
+      <div id="menu"><i class="fa fa-bars"></i></div>
       <img src="./images/slack-logo.png" alt="slack_logo" />
       <div id="mySidenav" class="sidenav">  
         <ul>
           <li><a href="#">Why Slack?</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Your Workspaces</a></li>
+          <li><div class="bar-button"><a href="#">Your Workspaces</a></div></li>
         </ul>
       </div>
     </nav>
     
-    <header class="app-description">
-      <h1>Where Work
-          <br> 
-          Happens
-      </h1>
-      <p>
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <input class="email" id="mail-address" type="email" name="email" placeholder="Email address">
-      <button class="button-purple" type="button" name="button">GET STARTED</button>
-      <p class="center-paragraph">Already using Slack? <a href="#">Sign in</a></p>
+    <header class="header">
+      <article class="text-buttons">
+        <div class="app-description">
+          <h1>Where Work Happens</h1>
+            <p>
+              When your team needs to kick off a project, hire a new employee, deploy
+              some code, review a sales contract, finalize next year's budget, measure
+              an A/B test, plan your next office opening, and more, Slack has you
+              covered.
+            </p>
+        </div>
+        <div class="buttoned" id="start">
+          <input class="email" id="mail-address" type="email" name="email" placeholder="Email address">
+          <button class="button-purple" type="button" name="button">GET STARTED</button>
+        </div>
+        <p>Already using Slack? <a href="#">Sign in</a></p>
+      </article>
       <img src="./images/home_talking.png" alt="home_work_happening"/>
     </header>
     
@@ -55,27 +58,31 @@
           </p>
           <button class="button-white" type="button">DISCOVER WHY</button>
         </div>
-          <img src="./images/airbnb-logo.png" alt="" />
-          <hr>
-          <img src="./images/capital-one-logo.png" alt="" />
-          <hr>
-          <img src="./images/harvard-logo.png" alt="" />
-          <hr>
-          <img src="./images/los-angeles-times-logo.png" alt="" />
-          <hr>
-          <img src="./images/oracle-logo.png" alt="" />
-          <hr>
-          <img src="./images/ticketmaster-logo.png" alt="" />
+        <div class="images">
+          <div id="comp1" class="border-right"><img src="./images/airbnb-logo.png" alt="" /></div>
+          <div id="comp2" class="no-border"><img src="./images/capital-one-logo.png" alt="" /></div>
+          <div id="comp3" class="border-right"><img src="./images/harvard-logo.png" alt="" /></div>
+          <div id="comp4" class="no-border"><img src="./images/los-angeles-times-logo.png" alt="" /></div>
+          <div id="comp5" class="border-last"><img src="./images/oracle-logo.png" alt="" /></div>
+          <div id="comp6" class="any-border"><img id="last-image" src="./images/ticketmaster-logo.png" alt="" /></div>
+        </div>
       </div>
       <div class="try-it">
-        <p class=title-paragraph>Try it for free</p>
-        <p class="center-paragraph">Already using Slack? <a href="">Sign in</a></p>
-        <button class="button-purple" type="button" name="button">GET STARTED</button>
+        <div class="paragraphed">
+          <p class=title-paragraph>Try it for free</p>
+          <p class="center-paragraph">Already using Slack? <a href="">Sign in</a></p>
+        </div>
+        <div class="buttoned" id="button-bottom">
+          <input class="email" id="mail-address" type="email" name="email" placeholder="Email address">
+          <button class="button-purple" type="button" name="button">GET STARTED</button>
+        </div>
       </div>
     </main>
     <footer>
       <div class="slack-bottom">
-        <img src="./images/iso-slack.png" alt="slack-logo" />
+        <div class="slack-logo">
+          <img src="./images/iso-slack.png" alt="slack-logo" />
+        </div>
         <section class="slack-links">
           <div class="links-list">
             <ul>
@@ -120,11 +127,13 @@
         </section>
       </div>
       <div class="bottom-info">
-        <ul>
-          <li>Status</li>
-          <li>Privacy & Terms</li>
-          <li>Contact Us</li>
-        </ul>
+        <div class="bottom-list">
+         <ul>
+           <li>Status</li>
+           <li>Privacy & Terms</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
         <div class="socials-lang">
           <img src="./images/us-flag.png" alt="" />
           <span>English (US)</span>
