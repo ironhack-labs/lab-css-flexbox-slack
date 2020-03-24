@@ -117,29 +117,36 @@ button:hover{
     background-color: #F4F3F4;
 }
 .div-ph-customers-img > img {
+    flex: 1 0 auto;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-.footer{
+.footer-list{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
 }
-.footer ul>li:first-child {
+.footer-item-title {
     font-weight: bold;
     margin: 0px 0 10px 0;
     color: #2C303F;
 }
-.footer ul>li{
+.footer-item > li {
     margin: 10px 0 10px 0;
 }
-.footer img:first-child{
-    display: block;
-    float: left;
+.footer-bar-item {
+    margin: 0 10px 0 10px;
+}
+.footer-bar{
+    background-color: #F4F3F4;
+}
+.footer-bar-font{
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 @media screen and (max-width:768px) {
     h1{
@@ -166,9 +173,19 @@ button:hover{
         margin-top: 10px;
     }    
     .div-ph-customers-img {
+        width: 100%;
         box-sizing: border-box;
         padding: 30px 15px 30px 15px;
+    }
+    .div-ph-customers-img + div {
+        border-top: 1px solid black;
+    }
+    .footer-logo{
         width: 100%;
+    }
+    .footer-item{
+        width: 50%;
+        font-size: 1.5rem;
     }
     .footer-bar{
         width: 100%;
@@ -176,17 +193,15 @@ button:hover{
         flex-direction: column;
         justify-content: flex-start;
     }
-    .footer-bar-links{
+    .footer-bar-flex{
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin-bottom: 30px;
     }
-    .footer-bar-links:only-child{
-        margin: 0 100px 0 100px;
-    }
-    .footer-bar-links>img{
+    .footer-bar-flex>img{
         width: 30px;
         object-fit: contain;
     }
@@ -217,9 +232,9 @@ button:hover{
         margin-top: 10px;
     } 
     .div-ph-customers-img {
+        width: 50%;
         box-sizing: border-box;
         padding: 25px 10px 25px 10px;
-        width: 50%;
     }
     .menu{
         display: none;
@@ -244,6 +259,13 @@ button:hover{
         border: 1px solid #5b5e6d;
         width: 50%;
         height: auto;
+    }
+    .footer-logo{
+        float: left;
+    }
+    .footer-item{
+        width: 25%;
+        font-size: 1.5rem;
     }
     .footer-bar{
         width: 100%;
@@ -299,6 +321,13 @@ button:hover{
         padding: 25px 10px 25px 10px;
         width: 50%;
     }
+    .footer-logo{
+        float: left;
+    }
+    .footer-item{
+        width: 25%;
+        font-size: 1.5rem;
+    }
 }
 @media screen and (min-width:1023px) {
     h1{
@@ -350,5 +379,12 @@ button:hover{
         box-sizing: border-box;
         padding: 25px 10px 25px 10px;
         width: 30%;
+    }
+    .footer-logo{
+        float: left;
+    }
+    .footer-item{
+        width: 25%;
+        font-size: 1.5rem;
     }
 }
