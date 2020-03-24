@@ -5,6 +5,7 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
@@ -13,16 +14,15 @@ body {
   margin: 0;
 }
 
-/*Section Nav */
+/* Section Nav */
 
 #nav-bar {
   height: 8vh;
 }
 
-
 nav {
   background-color: white;
-  color: #2C303F;
+  color: #5b5e6d;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -41,6 +41,8 @@ nav>.btn {
   background-color: white;
   border: 0px;
   font-size: 2em;
+  right: 20px;
+  position: fixed;
 }
 
 nav>img {
@@ -49,14 +51,8 @@ nav>img {
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  font-size: 1rem;
-  align-items: center;
-}
-
-nav li {
-  margin: 0 1em;
+  list-style-type: none;
+  display: none;
 }
 
 nav li:last-child {
@@ -79,7 +75,7 @@ a:hover {
   color: #5b5e6d;
 }
 
-/*Section Header */
+/* Section Header */
 
 header {
   display: flex;
@@ -147,7 +143,7 @@ header button {
   margin-bottom: 2rem;
 }
 
-/*Main Section Company */
+/* Main Section Company */
 
 main div {
   display: flex;
@@ -206,16 +202,14 @@ main div {
 }
 
 #started button {
-  font-size: 1rem;
   font-weight: 600;
   color: white;
   background-color: #192592;
   border: 0px;
   border-radius: 4px;
-  height: 10vh;
+  height: 9vh;
   width: 100%;
   padding: 19px 40px 20px;
-
 }
 
 #started h2 {
@@ -256,7 +250,7 @@ footer ul {
   padding: 0 0 2rem;
 }
 
-#link img {
+#links img {
   width: 7.5rem;
 }
 
@@ -282,17 +276,15 @@ footer ul {
 
 /*Section bottom-Footer */
 
-#bottom-links {
-  color: #2C303F;
+#bottom-link {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   background: #F4F3F4;
   font-weight: 600;
-
 }
 
-#bottom-links ul {
+#bottom-link ul {
   width: 300px;
   padding: 1rem 0;
   margin: 0;
@@ -305,9 +297,8 @@ footer ul {
 #lang {
   width: 150px;
   padding: 1rem 0;
-  margin-left: 41%;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   align-self: center;
   justify-content: space-around;
 }
@@ -315,14 +306,6 @@ footer ul {
 #lang img {
   height: 1rem;
   width: 1rem;
-}
-
-#flag {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
 }
 
 #social {
@@ -334,22 +317,13 @@ footer ul {
   justify-content: space-around;
 }
 
-@media only screen and (max-width: 768px) {
-  #nav {
-    display: none;
-  }
-
+@media only screen and (max-width: 760px) {
 }
 
-@media only screen and (min-width: 768px) and (max-width: 961px) {
-  #nav {
-    display: none;
-  }
 
-  header button {
-    width: 50%;
-    margin-right: 1em;
-  }
+/* Screen  min-width: 760px */
+
+@media only screen and (min-width: 760px) {
 
   #header {
     min-width: 200px;
@@ -362,17 +336,18 @@ footer ul {
     align-content: flex-start;
   }
 
-  .email>input {
-    width: 50%;
+  .emailn>input {
+    width: auto;
     margin: 0 1em 0 0;
   }
 
-  .email button {
-    height: 50%;
+  .email>button {
+    width: auto;
+    margin-right: 1em;
   }
 
   #company button {
-    height: 50%;
+    width: auto;
   }
 
   #company img {
@@ -393,17 +368,15 @@ footer ul {
   #started {
     flex-flow: row nowrap;
     padding: 0;
-    margin-left: 20%;
   }
 
   #started input {
-   
-    margin: 20em;
+    width: auto;
+    margin: 0 1em 0 0;
   }
 
   #started button {
-   
-    width: 50%;
+    width: auto;
   }
 
   #link {
@@ -433,17 +406,33 @@ footer ul {
   }
 
   #lang {
-    margin-left: 41%;
+    width: 150px;
+    padding: 1rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+    justify-content: space-around;
   }
+
+  #lang img {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  #social {
+    width: 100px;
+    padding: 1rem 0;
+    display: flex;
+    flex-flow: row;
+    align-self: center;
+    justify-content: space-around;
+  }
+
 }
 
+/* Screen  min-width: 960px */
 
-@media only screen and (min-width: 962) and (max-width: 1024) {
-
-  #nav {
-    display: none;
-  }
-
+@media only screen and (min-width: 960px) {
   header {
     display: flex;
     flex-flow: row nowrap;
@@ -466,7 +455,7 @@ footer ul {
     height: 50%;
   }
 
-  #company button {
+  #comapny button {
     height: 50%;
   }
 
@@ -511,14 +500,33 @@ footer ul {
   }
 }
 
-@media only screen and (min-width: 1025) and (max-width: 1200) {
-  nav>.btn {
-    display: none;
-  }
-}
+/* Screen  min-width: 1200 */
 
-@media only screen and (min-width: 1201) and (max-width: 1920) {
-  nav>.btn {
+@media only screen and (min-width: 1200px) {
+
+
+  header {
+    align-items: flex-start
+  }
+
+  nav button {
     display: none;
   }
+
+  nav ul {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0 1em;
+  }
+
+  nav li:last-child {
+    padding: 7px;
+    border: 1px solid #5b5e6d;
+    border-radius: 5px;
+  }
+
 }
