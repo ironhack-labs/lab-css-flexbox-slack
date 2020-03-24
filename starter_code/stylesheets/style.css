@@ -50,11 +50,18 @@ html {
   }
 /* ----------------------------------- NAV ---------------------------------- */
 #slack-logo {
-    width: 55vw;
-    padding-right: 30vw;
+    width: 25vw;
+}
+nav div:first-child {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+nav div {
+    display: flex;
+    align-items: center;
 }
 nav {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     border-bottom: 1px solid lightgray;
@@ -70,6 +77,11 @@ nav i {
 nav ul{
     display: none;
 }
+@media (min-width: 767px) and (max-width: 961px) {
+    nav div:first-child {
+        width: 75%;
+    }
+}
 /* ----------------------------------- NAV ---------------------------------- */
 
 /* --------------------------------- HEADER --------------------------------- */
@@ -80,6 +92,9 @@ header p {
     font-size: 3.6vw;
     color: #5b5e6d;
     padding-bottom: 5vw;
+}
+header a {
+    color: #192592;
 }
 #header-text p {
     width: 90%;    
