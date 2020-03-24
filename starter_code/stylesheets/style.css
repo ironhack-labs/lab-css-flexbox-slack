@@ -132,6 +132,10 @@ header {
     align-items: center;
 }
 
+.logo-companies:last-child {
+    border-bottom: none;
+}
+
 .logo-companies img {
     max-height: 80%;
     max-width: 75%;
@@ -268,7 +272,19 @@ footer ul li {
     }
 
     .logo-companies {
-        width: 50%;
+        width: 49%;
+    }
+
+    .logo-companies:last-child{
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .logo-companies:nth-child(odd){
+        border-right: 1px solid lightgrey;
+    }
+
+    .logo-companies:nth-last-child(1), .logo-companies:nth-last-child(2) {
+        border-bottom: none;
     }
 
     .try-it {
@@ -307,6 +323,20 @@ footer ul li {
 @media screen and (min-width: 960px) {
     .logo-companies {
         width: 33%;
+    }
+
+    .logo-companies:nth-child(odd) {
+        border-right: none;
+    }
+
+    .logo-companies:nth-child(3n+2) {
+        border-left: 1px solid lightgrey;
+        border-right: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .logo-companies:nth-last-child(1), .logo-companies:nth-last-child(2), :nth-last-child(3) {
+        border-bottom: none;
     }
 }
 
