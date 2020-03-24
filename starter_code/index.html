@@ -9,16 +9,15 @@
     <title>Where work happens | Slack</title>
   </head>
 
-  <body>
-    
+  <body>   
     <nav id="navbar">
       <img src="./images/slack-logo.png" alt="slack_logo" />
-      <i class="fas fa-bars"></i>
+      <a href="#"><i id="compact-menu" class="fas fa-bars fa-lg"></i></a>
       <ul id="navbar-list">
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
+        <li class="navbar-list-link"><a href="#">Why Slack?</a></li>
+        <li class="navbar-list-link"><a href="#">Pricing</a></li>
+        <li class="navbar-list-link"><a href="#">About Us</a></li>
+        <li id="your-workspaces" class="navbar-list-link button"><a href="#">Your Workspaces</a></li>
       </ul>
     </nav>
 
@@ -32,11 +31,11 @@
           an A/B test, plan your next office opening, and more, Slack has you
           covered.
         </p>
-        <div class="form">
-          <input id="first-input" type="email" placeholder="Email address">
-          <button id="first-btn" type="submit" form="email_form" name="button" value="submit">GET STARTED</button>
+        <div id="form">
+          <input id="header-input" type="email" placeholder="Email address">
+          <button id="header-btn" class="button" type="submit" form="email_form" name="button" value="submit"><a href="/get-started"> GET STARTED </a></button>
         </div><!-- form -->
-        <p id="sign-in-link"> Already using Slack? <a href="#">Sign in</a></p>        
+        <p id="sign-in-link" class="sign-in-style"> Already using Slack? <a href="#">Sign in</a></p>        
       <div><!-- aside -->
     </header>
 
@@ -47,7 +46,7 @@
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button id="get-started">DISCOVER WHY</button>
+        <button id="discover-why" class="button"><a href="/discover-why"> DISCOVER WHY </a></button>
         <div id="partners-list">
           <div class="logo-container">
             <img class="partners-list-item" src="./images/airbnb-logo.png" alt="Airbnb Logo" />
@@ -68,16 +67,16 @@
             <img class="partners-list-item larger" src="./images/ticketmaster-logo.png" alt="TicketMaster Logo" />
           </div>  
         </div><!-- partners-list -->
-      </div>
+      </div><!-- partners -->
 
       <div id="try-it">
         <div id="try-it-left">
-          <p class="main-titles"><b>Try it for free</b></p>
-          <p>Already using Slack? <a href="">Sign in</a></p>
-        </div>
-        <input id="second-input" type="email" placeholder="Email address">
-        <button id="third-btn" type="button" name="button">GET STARTED</button>
-      </div>
+          <p class="main-titles"><b> Try it for free </b></p>
+          <p class="sign-in-style"> Already using Slack? <a href=""> Sign in </a></p>
+        </div><!-- try-it-left -->
+        <input id="try-it-input" type="email" placeholder="Email address">
+        <button id="try-it-btn" class="button" type="button" name="button"><a href="/get-started"> GET STARTED </a></button>
+      </div><!-- try-it -->
     </main>
 
     <footer>
@@ -115,25 +114,25 @@
           <li>Slack at Work</li>
           <li>Slack Fund</li>
         </ul>
-      </div>
+      </div><!-- links -->
 
       <div id="footer-contact">
         <ul class="footer-contact-line">
-          <li class="f-contact-item">Status</li>
-          <li class="f-contact-item">Privacy & Terms</li>
-          <li class="f-contact-item">Contact Us</li>
-        </ul>
+          <li class="f-contact-item"> Status </li>
+          <li class="f-contact-item"> Privacy & Terms </li>
+          <li class="f-contact-item"> Contact Us </li>
+        </ul><!-- footer-contact-line 1 -->
         <div class="footer-contact-line">
           <img id="flag" class="f-contact-item" src="./images/us-flag.png" alt="United States of America flag" />
           <span class="f-contact-item"> English (US) </span>
           <i id="chevron" class="fas fa-chevron-down"></i>
-        </div>
+        </div><!-- footer-contact-line 2 -->
         <div class="footer-contact-line">
           <i class="fab fa-twitter f-contact-item"></i>
           <i class="fab fa-facebook-f f-contact-item"></i>
           <i class="fab fa-youtube f-contact-item"></i>
-        </div>
-      </div>
+        </div><!-- footer-contact-line 3 -->
+      </div><!-- footer-contact -->
     </footer>
   </body>
 </html>
