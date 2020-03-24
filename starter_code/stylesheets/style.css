@@ -5,3 +5,482 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* reset end */
+
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+
+  h1, h2 {
+    font-family: 'Noto Serif', serif;
+    color: #2C303F;
+  }
+
+  h3, p, button, input, li {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+
+  
+  .nav-main {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+
+  
+  .nav-main ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .nav-main li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .nav-main li a:hover,
+  .nav-main .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .nav-main .logo {
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    width: 120px;
+
+  }
+  
+  .nav-main .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  .nav-main .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .nav-main .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .nav-main .menu-icon .navicon:before,
+  .nav-main .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .nav-main .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .nav-main .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  .nav-main .menu-btn {
+    display: none;
+  }
+  
+  .nav-main .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .nav-main .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .nav-main .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-main .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .nav-main .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .nav-main .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+
+  .header {
+      padding: 15% 5%;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+  }
+
+  .header :nth-child(1) {order: 3;}
+
+  .intro h1 {
+      padding: 5% 15% 5% 0;
+      width: 70%;
+      font-size: 2.7em;
+      line-height: 1em;
+
+  }
+
+  .intro p {
+      padding: 0 0 5% 0;
+  }
+
+  #email {
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      border-style: solid;
+      border-radius: 4px;
+      border-width: 1px;
+      border-color: rgb(221, 221, 221);
+
+  }
+
+  input:placeholder-shown {
+      padding: 0 20px;
+  }
+
+  .intro form {
+      padding: 0 0 5%;
+  }
+
+  .intro button {
+      width: 100%;
+      height: 50px;
+      border-style: none;
+      background-color: #192592;
+      color: white;
+      border-radius: 4px;
+  }
+
+  .signin {
+      text-align: center;
+      margin: 5% 0;
+  }
+
+  .signin a {
+      color: blue;
+  }
+
+  .logos {
+      height: 1400px;
+  }
+
+  .logos div {
+      margin: 15% 5%;
+  }
+
+  .discover h2 {
+      padding: 0 0 5% 0;
+      text-align: center;
+      font-size: 2.2em;
+  }
+
+  .discover p {
+      text-align: center;
+      padding-bottom: 10%;
+  }
+
+  .discover button {
+    width: 100%;
+    height: 50px;
+    border-style: solid;
+    background-color: white;
+    color: #192592;
+    border-radius: 4px;
+    border-color: #1925927e;
+    border-width: 1px;
+
+  }
+
+.logos-list {
+    height: 1000px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logos-list img {
+    width: 250px;
+}
+
+
+.logos-list hr {
+    border: 1px solid rgb(236, 236, 236);
+    width: 90%;
+}
+
+.call-of-action {
+    background-color: white;
+    height: 300px;
+    padding: 5% 5%;
+}
+
+.call-of-action button {
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    background-color: #192592;
+    color: white;
+    border-radius: 4px;
+}
+
+.call-of-action form {
+    padding: 0 0 5%;
+}
+
+.call-of-action h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 0 0 3%;
+}
+
+.call-of-action p {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0 0 5%;
+}
+
+
+footer {
+    background-color: white;
+}
+
+.links {
+    font-size: 1.5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.links ul {
+    margin: 5% 2%;
+    list-style: none;
+}
+
+.links li {
+    line-height: 2.5em;
+    color: #5b5e6d;
+}
+
+.links:last-child {justify-content: flex-end;}
+
+.real-footer {
+    background-color: #F4F3F4;
+}
+
+.real-footer > div {
+    padding: 5% 15%;
+}
+.final-links { 
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.final-links li {
+    color: #5b5e6d;
+}
+
+.no-se-acaba {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-se-acaba img {
+    width: 30px;
+}
+
+.se-acabo {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (min-width: 767px) and (max-width: 967px) {
+
+header,main {
+    width: 100%;
+}
+
+.flex-call {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.intro button {
+    width: 30%;
+}
+
+.intro #email {
+    width: 100%;
+}
+
+.signin {
+    text-align: left;
+}
+
+.intro h1 {
+    width: 100%;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discover button {
+    width: 40%;
+
+}
+
+.logos-list {
+    height: 600px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos-list img {
+    width: 200px;
+}
+
+.logos-list hr {
+    width: 50%;
+}
+
+
+
+
+
+}
+
+
+@media (min-width: 1200px) {
+    .nav-main li {
+      float: left;
+    }
+    .nav-main li a {
+      padding: 20px 30px;
+    }
+    .nav-main .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .nav-main .menu-icon {
+      display: none;
+    }
+  }
