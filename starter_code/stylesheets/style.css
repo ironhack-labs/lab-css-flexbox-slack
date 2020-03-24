@@ -17,7 +17,7 @@ nav {
     height: 60px;
     position: fixed;
     top: 0;
-    padding: 0 30px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +44,7 @@ header {
 header h1 {
     color: #2C303F;
     font-size: 40px;
+    width: 60%;
 }
 header p,
 .company p {
@@ -194,6 +195,7 @@ header img {
     /* Header */
     header h1 {
         font-size: 60px;
+        width: auto;
     }
     header input.box-form {
         width: 50%;
@@ -253,7 +255,7 @@ header img {
         width: 50%;
         display: flex;
         justify-content: space-evenly;
-        padding: 10px 0;
+        padding: 10px 30px;
     }
     .try-it-items input {
         margin: 0;
@@ -283,9 +285,6 @@ header img {
     .about ul li {
         padding: 10px;
     }
-    nav {
-        background-color: red;
-    }
 }
 
 @media (min-width: 961px) {
@@ -306,11 +305,49 @@ header img {
     .little:nth-child(4) {
         border-right: 1px solid lightgray;
     }
-    nav {
-        background-color: green;
-    }
 }
 
 @media (min-width: 1201px) {
-    
+    /* Nav */
+    nav p {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        color: #5b5e6d;
+    }
+    nav ul li {
+        padding: 10px 25px;
+    }
+    nav ul li:last-of-type {
+        border: 1px solid #5b5e6d;
+        border-radius: 4px;
+        padding: 5px 10px;
+    }
+    /* Header */
+    input.box-form {
+        display: none;
+    }
+    header {
+        position: relative;
+        padding-left: 55%;
+        margin: 50px 20px; 
+        height: 500px;
+    }
+    header img {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        width: 40%;
+        max-height: 500px;
+    }
+    header button.box-form,
+    .company button.box-form {
+        width: auto;
+    }
+    .try-it-items {
+        justify-content: flex-end;
+    }
 }
