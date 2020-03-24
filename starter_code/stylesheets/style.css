@@ -7,7 +7,7 @@ nav grey: #5b5e6d;
 */
 body {
     font-family: Consolas;
-    background-color: aqua;
+    background-color: white;
 }
 
 nav {
@@ -24,6 +24,7 @@ nav {
 
 nav i {
     padding-right: 40px;
+    color: #2C303F;
 }
 
 nav ul {
@@ -49,6 +50,17 @@ header {
     flex-direction: column;
 }
 
+header ul {
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+    align-self: center;
+}
+
+header ul li {
+    margin: 10px 10px;
+}
+
 .get-started-button {
     display: flex;
     justify-content: center;
@@ -69,7 +81,7 @@ header p {
 header input {
     height: 20px;
     padding: 10px;
-    width: 170px;
+    width: 175px;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -149,30 +161,260 @@ main p {
     align-self: center;
 }
 
-footer {
+.email-form {
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+    align-self: center;
+}
 
+.email-form li {
+    margin: 10px 10px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.wrap ul {
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+    justify-content: left;
+}
+
+.wrap li {
+    margin: 10px 0px;
+}
+
+.footer-links {
+    background-color: #F4F3F4;
+    padding: 20px 0px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links li {
+    margin: 0px 10px;
+}
+
+.title {
+    color: #2C303F;
+    font-weight: 800;
+}
+
+.real-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.real-footer img {
+    width: 30px;
+}
+
+.real-footer span {
+    margin: 0px 10px;
+    padding: 20px 0px;
+}
+
+.social-media {
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media i {
+    margin: 0px 20px;
+    color: #2C303F;
+    transform: scale(1.5);
 }
 
 @media (max-width: 960px) and (min-width: 767px) {
-    body {
-        background-color: red;
+    header {
+        display: flex;
+    }
+
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    header input {
+        width: 300px;
+    }
+
+    header ul {
+        display: flex;
+        flex-flow: row;
+    }
+
+    header p {
+        display: flex;
+        justify-content: left;
+    }
+
+    .companies-big-screens img {
+        margin: 0px 50px;
+        width: 200px;
+    }
+
+    main ul {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .try-it {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .try-free {
+        justify-content: left;
+    }
+
+    .email-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .slack-big {
+        width: 150px;
+        float: left;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-flow: row;
+        justify-self: center;
+    }
+
+    .real-footer {
+        margin-right: 20px;
+        display: flex;
+    }
+
+    .footer-end {
+        display: flex;
+        margin-left: 170px;
     }
   }
 
 @media (max-width: 1024px) and (min-width: 961px) {
-    body {
-      justify-content: space-around;
-      background-color: yellow;
+    header h1 {
+        font-size: 3.5em;
     }
 
-    nav i {
-        visibility: hidden;
+    header input {
+        width: 300px;
+    }
+
+    header ul {
+        display: flex;
+        flex-flow: row;
+    }
+
+    header p {
+        display: flex;
+        justify-content: left;
+    }
+
+    .try-it {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .try-free {
+        justify-content: left;
+    }
+
+    .email-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-flow: row;
+        justify-self: center;
+    }
+
+    .real-footer {
+        margin-right: 20px;
+        display: flex;
+    }
+
+    .footer-end {
+        display: flex;
+        margin-left: 170px;
+    }
+
+    .slack-big {
+        width: 150px;
+        float: left;
     }
 }
 
 @media (min-width: 1024px) {
-    body {
-      background-color: green;
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    header input {
+        width: 300px;
+    }
+
+    header ul {
+        display: flex;
+        flex-flow: row;
+    }
+
+    header p {
+        display: flex;
+        justify-content: left;
+    }
+
+    .try-it {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .try-free {
+        justify-content: left;
+    }
+
+    .email-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-flow: row;
+        justify-self: center;
+    }
+
+    .real-footer {
+        margin-right: 20px;
+        display: flex;
+    }
+
+    .footer-end {
+        display: flex;
+        margin-left: 170px;
+    }
+
+    .slack-big {
+        width: 150px;
+        float: left;
     }
 
     nav ul {
