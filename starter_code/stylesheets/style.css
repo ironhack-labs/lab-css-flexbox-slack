@@ -48,6 +48,7 @@ img{
 }
 ul{
     list-style: none;
+    padding: 0;
 }
 input[type="text"]{
     margin-bottom: 10px;
@@ -79,6 +80,7 @@ button:hover{
 .menu li{
     margin: 0 20px 0 20px;
     padding: 5px;
+    font-weight: 500;
 }    
 .yourWorspaces{
     border: 1px solid #5b5e6d;
@@ -98,6 +100,13 @@ button:hover{
     justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid #5b5e6d;
+}
+.div-ph-home-image{
+    width: 100%;
+}
+.div-ph-home-image>img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .div-ph-try-section{
     padding: 40px 30px 40px 30px;
@@ -133,13 +142,20 @@ button:hover{
 .footer-item-title {
     font-weight: bold;
     margin: 0px 0 10px 0;
-    color: #2C303F;
+    color: #5b5e6d;
 }
 .footer-item > li {
     margin: 10px 0 10px 0;
 }
 .footer-bar-item {
-    margin: 0 10px 0 10px;
+    margin: 0 0 0 20px;
+    color: #5b5e6d;
+}
+.footer-bar-flex-shrink2{
+    flex-shrink: 2;
+}
+.footer-bar-flex-shrink3{
+    flex-shrink: 3;
 }
 .footer-bar{
     background-color: #F4F3F4;
@@ -200,6 +216,9 @@ button:hover{
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
+    }
+    .footer-bar-flex-justify{
+        justify-content: center;
     }
     .footer-bar-flex>img{
         width: 30px;
@@ -270,20 +289,21 @@ button:hover{
     .footer-bar{
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
     }
-    .footer-bar-links{
+    .footer-bar-flex{
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    .footer-bar-links:only-child{
-        margin: 0 100px 0 100px;
+    .footer-bar-flex-justify{
+        justify-content: flex-start;
     }
-    .footer-bar-links>img{
+    .footer-bar-flex>img{
         width: 30px;
         object-fit: contain;
     }
@@ -327,6 +347,26 @@ button:hover{
     .footer-item{
         width: 25%;
         font-size: 1.5rem;
+    }
+    .footer-bar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-bar-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-bar-flex-justify{
+        justify-content: flex-start;
+    }
+    .footer-bar-flex>img{
+        width: 30px;
+        object-fit: contain;
     }
 }
 @media screen and (min-width:1023px) {
@@ -386,5 +426,25 @@ button:hover{
     .footer-item{
         width: 25%;
         font-size: 1.5rem;
+    }
+    .footer-bar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-bar-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-bar-flex-justify{
+        justify-content: flex-start;
+    }
+    .footer-bar-flex>img{
+        width: 30px;
+        object-fit: contain;
     }
 }
