@@ -85,7 +85,7 @@ img {
 /* hero */
 
 #hero {
-    padding: 120px 10px 40px;
+    padding: 120px 10px 5px;
 }
 
 #hero h1 {
@@ -142,10 +142,16 @@ aside small {
     margin-bottom: 30px;
 }
 
-#sponsors img {
-    padding: 60px;
+#sponsors #holder {
     border-bottom: #e0e0e0 0.5px solid;
+    padding: 50px;
 }
+
+#sponsors #holder img {
+    width: 70%;
+    margin: 0 auto;
+}
+
 
 /* cta-section */
 
@@ -248,4 +254,98 @@ footer li:nth-child(1) {
     background-color: white;
     color: #192592;
     margin: 40px 0 0;
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 1em;
+    }
+
+    #hero h1 {
+        font-size: 3.1em;
+    }
+
+    #hero #form {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    #hero #form label {
+        width: 300px;
+        margin: 0 20px 0 0;
+    }
+
+    #hero #form .button.dark {
+        margin: 0;
+        width: 200px;
+    }
+
+    #hero small {
+        text-align: left;
+    }
+
+    #hero img {
+        width: 40%;
+        margin: 40px auto;
+    }
+
+    #sponsors {
+        padding-bottom: 40px;
+    }
+
+    #sponsors .button.light {
+        margin: 40px auto;
+        width: 200px;
+    }
+
+    #sponsors #holder:nth-child(odd) {
+        border-right: #e0e0e0 0.5px solid;
+    }
+
+    #sponsors #holder:nth-child(5),
+    #sponsors #holder:nth-child(6) {
+        border-bottom: none;
+    }
+
+    aside h3,
+    aside p,
+    aside small {
+        text-align: left;
+    }
+
+    aside #form {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    aside #form label {
+        width: 150px;
+        margin: 0 20px 0 0;
+        height: 49px;
+    }
+
+    aside #form .button.dark {
+        margin: 0;
+        width: 150px;
+        font-size: 0.8em;
+    }
+
+    footer {
+        padding-top: 20px;
+    }
+
+    footer li {
+        font-size: 0.8em;
+    }
+
+    .logo-footer {
+        width: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    
 }
