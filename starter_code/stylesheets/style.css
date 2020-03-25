@@ -5,3 +5,326 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+/* ---- GENERAL STYLING ---- */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    padding-top: 80px;
+}
+
+aside {
+    padding: 40px 0px;
+    text-align: center;
+    border-bottom: 1px solid rgba(201, 201, 201, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sign-in-link {
+    color:#192592;
+    text-decoration: underline;
+}
+.sign-in-link:hover {
+    color:#e09200;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Merriweather', sans-serif;
+    padding-bottom: 20px;
+    color: #2C303F;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 500;
+    color: #5b5e6d;
+    line-height: 1.7;
+    font-size: 1.1em;
+    padding-bottom: 50px;
+}
+
+.sign-in-cta {
+    text-align: center;
+    padding-top: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid rgba(201, 201, 201, 0.5);
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+}
+
+/*
+form input[type="submit"] {				
+    color: white;
+    background-color: #192592;
+    font-weight: 900;
+} 
+*/
+
+.button-normal {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    color: white;
+    background-color: #192592;
+    font-weight: 900;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.button-reverse {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    color: #192592;
+    background-color: white;
+    font-weight: 900;
+    font-size: 0.8em;
+}
+
+
+/* ---- NAVIGATION ----  */
+
+nav {
+    border-bottom: 1px solid rgba(201, 201, 201, 0.5);
+    padding: 10px 20px;
+    color: rgb(109, 109, 109);
+    position: fixed;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 900;
+}
+
+
+
+nav .nav-logo {
+    width: 100px;
+}
+
+nav ul {
+    display: none;
+    /* display: flex; */
+    list-style-type: none;
+    font-size: 1.2em;
+    
+}
+
+nav li {
+    padding: 0 20px
+}
+
+
+.nav-button {
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.fa-bars { 
+    font-size: 1.5em;
+    color: grey;
+}
+
+
+
+/* ---- HEADER ----  */
+
+header { 
+    padding-top: 120px;
+}
+
+header img {
+    width: 90%;
+}
+
+#people-talking-image {
+    display: block;
+    margin: auto;
+}
+
+
+
+/* ---- GOOD COMPANY SECTION ---- */
+
+.good-company-section {
+    text-align: center;
+    background-color: #F4F3F4;
+}
+
+.clients-section {
+    padding: 50px 0px;
+}
+
+.clients-section img {
+    width: 50%;
+    margin: 60px;
+}
+
+.sponsor-container {
+    border-bottom: 1px solid rgba(201, 201, 201, 0.5);
+}
+
+.clients-section :nth-child(6) {
+    border: none;
+}
+
+
+
+/* ---- ASIDE  ---- */
+
+aside h3 {
+    padding-bottom: 0px;
+    text-align: start;
+}
+
+aside p {
+    padding-bottom: 0px;
+}
+
+
+/* ---- FOOTER ---- */
+
+footer {
+    color: #5b5e6d;
+}
+
+.footer-sections-links {
+    padding: 40px auto;
+}
+
+
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0px;
+    padding-bottom: 40px;
+}
+
+footer .list-title {
+    font-weight: 900;
+}
+
+footer ul li {
+    line-height: 2.5;
+}
+
+/* #slack-footer-logo {
+    width: 200%;
+} */
+
+
+
+
+/* ---- MEDIA QUERYES */
+
+
+/* MEDIUM SCREENS  */
+@media (min-width: 768px) {
+    
+    h1 {
+        font-size: 3em;
+    }
+    
+    .sign-in-cta {
+        text-align: start;
+    }
+    
+    .sponsor-container {
+        border: none;
+        border-bottom: 1px solid rgba(201, 201, 201, 0.5);
+
+    }
+
+    .clients-section > div:nth-child(5), .clients-section > div:nth-child(6) {
+        border-bottom: none;
+    }
+
+    .clients-section > div:nth-child(odd) {
+        border-right: 1px solid rgba(201, 201, 201, 0.5);
+    }
+
+
+}
+
+
+ /* LARGE SCREENS  */
+ /* I set the min-width to 992 instead of 1200 because Bootstrap md to lg width jump is set on 992px */
+@media (min-width: 992px) {
+
+    .large-screen-invisible {
+        display:none
+    }
+
+    nav ul {
+        display: flex;
+        
+    }
+
+    p { 
+        padding-bottom: 0px;
+    }
+
+    
+    nav {
+        padding: 10px 50px;
+    }
+
+
+    .fa-bars {
+        display: none;
+    }
+
+    header {
+        padding-top: 165px;
+    }
+    
+    /*  El error esta aquí */
+    .clients-section > div:nth-child(1), .clients-section > div:nth-child(2) {
+        border-right: 1px solid rgba(201, 201, 201, 0.5);
+    }
+
+    .clients-section > div:nth-child(4), .clients-section > div:nth-child(5) {
+        border-right: 1px solid rgba(201, 201, 201, 0.5);
+        border-bottom: none;
+    }
+
+    .clients-section > div:nth-child(3) {
+        border-right: none;
+    }
+
+    aside .large-screen-invisible {
+        display: block;
+        visibility: hidden;
+    }
+}
+
+
