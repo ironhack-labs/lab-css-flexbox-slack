@@ -77,11 +77,52 @@ nav i {
 nav ul{
     display: none;
 }
-@media (min-width: 767px) and (max-width: 961px) {
+
+/* --------------------------- SMALL & MEDIUM DEVICES -------------------------- */
+@media (min-width: 767px){
     nav div:first-child {
         width: 75%;
     }
+    #slack-logo {
+        width: 20vw;
+    }
 }
+
+/* ------------------------- SMALL & MEDIUM DEVICES ------------------------- */
+
+/* ------------------------------- BIG SCREEN ------------------------------- */
+@media (min-width: 1220px) {
+    #nav-menu-toggle {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav li {
+        list-style: none;
+        color: #5b5e6d;
+    }
+    nav li:last-child {
+        border: 1px solid #5b5e6d;
+        padding: 0.6em;
+        border-radius: 5px;
+    }
+    nav div:first-child, nav div:last-child{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #slack-logo{
+        width: 12vw;
+        padding-left: 5vw;
+    }
+}
+/* ------------------------------- BIG SCREEN ------------------------------- */
+
 /* ----------------------------------- NAV ---------------------------------- */
 
 /* --------------------------------- HEADER --------------------------------- */
@@ -166,6 +207,20 @@ header a {
     }
 }
 /* ------------------------------ SMALL DEVICES ----------------------------- */
+
+/* ------------------------------- BIG SCREEN ------------------------------- */
+@media (min-width: 1220px) {
+    #header-box-one, #header-img-box {
+        width: 50%;
+    }
+    #header {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+}
+/* ------------------------------- BIG SCREEN ------------------------------- */
+
 /* --------------------------------- HEADER --------------------------------- */
 
 /* ---------------------------------- MAIN ---------------------------------- */
@@ -370,6 +425,7 @@ footer li {
     #footer-menu {
         display: flex;
         justify-content: space-between;
+        padding-top: 3vw;
     }
     #grid-list {
         display: flex;
@@ -420,8 +476,7 @@ footer li {
         width: 10%;
     }
     
-    
+}
 
 /* ------------------------------ SMALL DEVICES ----------------------------- */
-
 /* --------------------------------- FOOTER --------------------------------- */
