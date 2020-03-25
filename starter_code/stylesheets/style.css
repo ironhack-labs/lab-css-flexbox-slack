@@ -5,3 +5,314 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*MENU*/
+
+
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #999999;
+    position: fixed;
+    width: 100%;
+    z-index: 900;
+}
+
+.nav-menu img{
+    width: 100px;
+}
+
+.nav-menu ul{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.nav-menu li{
+    margin-left: 10px;
+}
+
+.nav-menu .button{
+    color: inherit;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+.nav-menu nav{
+    display: none;
+}
+
+.nav-menu .menu-icon{
+    width: 40px;
+}
+
+/*HERO*/
+
+.hero{
+    padding: 20px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero .email-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.hero p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.hero .email{
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 150px;
+    border: 2px solid #999999;
+}
+
+
+/*SPONSORS*/
+.sponsors{
+    text-align: center;
+    background-color: #F4F3F4;
+}
+
+.sponsors img{
+    width: 50%;
+    margin: 50px 0;
+
+}
+.sponsors h2{
+    margin: 30px 0;
+}
+
+.sponsors p{
+    margin: 40px 0;
+}
+
+.sponsors .button{
+    text-decoration: none;
+    color: darkblue;
+    background-color: white;
+    border: 2px solid darkblue;
+    padding: 17px 100px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/*CALL TO ACTION*/
+
+.cta{
+    text-align: center;
+    padding: 50px;
+    border-top: 2px solid #999999;
+    border-bottom: 2px solid #999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta p{
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.cta .button{
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 100px;
+    background-color: #192592;
+    color: white;
+    margin: 30px auto;
+;
+}
+
+.cta .email{
+    margin-top: 30px;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 70px;
+    border: 2px solid #999999;
+}
+
+.cta h3{
+    font-size: 1.5em;
+}
+
+/*Footer information*/
+.more-info{
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.more-info ul{
+    list-style: none;
+}
+
+.more-info li{
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.more-info img{
+    width: 150px;
+}
+
+/*Pie de pagina*/
+
+.feet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F4F3F4;
+    padding: 20px;
+}
+
+.feet img{
+    width: 20px;
+}
+
+.feet .flag{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feet ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+.feet li{
+    margin: 0 10px;
+}
+
+/*Buttons*/
+
+.hero .button{
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 150px;
+    background-color: #192592;
+    color: white;
+    margin: 50px auto;
+}
+
+/*BREAKPOINTS*/
+
+
+@media (min-width: 768px){
+
+    .hero{
+
+        text-align: start;
+    }
+
+    .hero .email{
+        padding: 10px 70px;
+        width: 40%;
+    }
+
+    .hero .email-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .hero .button{
+        padding: 10px 70px;
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+
+    .cta{
+        text-align: start;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cta .button{
+        padding: 10px 70px;
+    }
+
+    .cta .email{
+        margin-top: 0;
+        padding: 10px 70px;
+        border: 2px solid #999999;
+        margin-left: 20px;
+    }
+
+    .more-info p{
+        font-size: .8em;
+    }
+
+    .more-info h3{
+        font-size: .8em;
+    }
+
+    .feet{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .feet .flag{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    
+    
+    
+
+    
+}
+
+@media (min-width: 960px){
+
+    .nav-menu nav{
+        display: flex;
+    }
+
+    .nav-menu .menu-icon{
+        display: none;
+    }
+
+    .email{
+        display: none;
+    }
+
+    .cta{
+        display: flex;
+        justify-content: space-between;
+    }
+}
