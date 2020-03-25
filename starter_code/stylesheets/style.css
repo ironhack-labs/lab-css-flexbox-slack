@@ -5,3 +5,267 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+/***** GENERAL *****/
+
+body {
+    color: #5b5e6d;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    padding-top: 50px;
+}
+
+h1,
+h2 {
+    color: #2c303f;
+    font-family: "merriweather", arial;
+}
+
+h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+h1 {
+    font-size: 3.3em;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2.4em;
+    margin-bottom: 40px;
+}
+
+section {
+    margin: 30px 0;
+    padding: 50px 0;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: #192592;
+    border: none;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.sign-in-text {
+    text-align: center;
+}
+
+.sign-in-text a {
+    border-bottom: 1px solid #192592;
+    color: #192592;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ebebeb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/***** MENU BAR SECTION *****/
+
+.menu {
+    padding: 0 30px;
+    border-bottom: 2px solid #ebebeb;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+.menu .logo {
+    width: 180px;
+}
+
+/*Menu navegacion*/
+.menu ul {
+    display: flex;
+
+    list-style: none;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li > a {
+    color: inherit;
+}
+.menu nav {
+    display: none;
+}
+
+.menu-button {
+    border: 2px solid #2c303f;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/*Icono menu navegacion*/
+.menu .navicon {
+    width: 40px;
+    cursor: pointer;
+}
+
+/***** HERO SECTION *****/
+
+.hero img {
+    width: 100%;
+}
+
+/***** SPONSOR SECTION *****/
+
+.sponsor {
+    background-color: #f4f3f4;
+    text-align: center;
+    border-bottom: 2px solid #ebebeb;
+}
+
+.brand-container {
+    height: 150px;
+    display: flex;
+}
+
+.bordered-small {
+    border-bottom: 2px solid #ebebeb;
+}
+
+.sponsor img {
+    width: 60%;
+    margin: auto;
+}
+
+.white-button {
+    background-color: white;
+    border: 2px solid #192592;
+    color: #192592;
+    display: block;
+    margin: 0 auto;
+}
+
+/***** ASIDE *****/
+
+aside {
+    border-bottom: 2px solid #ebebeb;
+    margin: 30px 0;
+    padding: 50px 0;
+}
+
+/***** FOOTER *****/
+
+footer ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+footer li {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #5b5e6d;
+}
+
+footer section {
+    background-color: #f4f3f4;
+    text-align: center;
+}
+
+footer > section img {
+    width: 25px;
+}
+.language {
+    padding: 20px 0;
+}
+
+/***** RESPONSIVE *****/
+
+@media (min-width: 768px) {
+    /***** HERO SECTION *****/
+
+    .sign-in-text {
+        text-align: left;
+    }
+
+    .white-button {
+        width: 30%;
+    }
+
+    /***** SPONSOR SECTION *****/
+    /*Bordes verticales*/
+    .brands .brand-container:nth-child(2n) {
+        border-left: 2px solid #ebebeb;
+    }
+    /*Bordes horizontales*/
+    .bordered-small {
+        border-bottom: none;
+    }
+    .bordered-medium {
+        border-bottom: 2px solid #ebebeb;
+    }
+}
+
+@media (min-width: 992px) {
+    /***** MENU BAR SECTION *****/
+
+    .menu nav {
+        display: block;
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    /***** HERO SECTION *****/
+
+    /* El formulario para introducir el email
+    desaparece en la disposicion de desktop*/
+    .email-form {
+        display: none;
+    }
+
+    /***** SPONSOR SECTION *****/
+
+    /*Bordes verticales*/
+    .brands .brand-container:nth-child(2n) {
+        border-left: none;
+    }
+    .brands .brand-container:nth-child(3n) {
+        border-right: 2px solid #ebebeb;
+    }
+    .brands .brand-container:nth-child(3n + 2) {
+        border-left: 2px solid #ebebeb;
+    }
+    /*Bordes horizontales*/
+    .bordered-medium {
+        border-bottom: none;
+    }
+    .bordered-large {
+        border-bottom: 2px solid #ebebeb;
+    }
+}
