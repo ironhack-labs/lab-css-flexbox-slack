@@ -37,13 +37,17 @@
 
   <body>
     <nav class="slack-navbar">
-      <img src="./images/slack-logo.png" alt="slack_logo" class="logo" />
-      <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-      </ul>
+      <div class="flex-container">
+        <img src="./images/slack-logo.png" alt="slack_logo" class="logo" />
+      </div>
+      <div class="flex-container">
+        <ul>
+          <li>Why Slack?</li>
+          <li>Pricing</li>
+          <li>About Us</li>
+          <li class="button">Your Workspaces</li>
+        </ul>
+      </div>
       <img
         src="./images/svg/list.svg"
         alt="Navigation menu button"
@@ -52,7 +56,7 @@
     </nav>
     <header class="hero">
       <div class="container">
-        <div class="row">
+        <div class="row hero__flex-container">
           <div class="col-xl-6">
             <h1>Where Work Happens</h1>
             <p>
@@ -61,20 +65,20 @@
               budget, measure an A/B test, plan your next office opening, and
               more, Slack has you covered.
             </p>
-            <form action="#" method="POST">
-              <label for="mail"></label>
-              <input
-                type="email"
-                id="mail"
-                name="user-mail"
-                value="Email address"
-                class="input-form"
-              />
-              <button type="button" name="button" class="button">
-                GET STARTED
-              </button>
-            </form>
-
+            <div class="form-container">
+              <form action="#" method="POST">
+                <label for="mail"></label>
+                <input
+                  type="email"
+                  id="mail"
+                  name="user-mail"
+                  value="Email address"
+                />
+                <button type="button" name="button" class="button">
+                  GET STARTED
+                </button>
+              </form>
+            </div>
             <p class="signin-link">
               Already using Slack? <a href="#">Sign in</a>
             </p>
@@ -94,34 +98,34 @@
         </p>
         <button class="button">DISCOVER WHY</button>
         <div class="row">
-          <div class="col-xl-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <img class="sponsors__logo" src="./images/airbnb-logo.png" alt="" />
           </div>
-          <div class="col-xl-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <img
               class="sponsors__logo"
               src="./images/capital-one-logo.png"
               alt=""
             />
           </div>
-          <div class="col-xl-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <img
               class="sponsors__logo"
               src="./images/harvard-logo.png"
               alt=""
             />
           </div>
-          <div class="col-xl-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <img
               class="sponsors__logo"
               src="./images/los-angeles-times-logo.png"
               alt=""
             />
           </div>
-          <div class="col-xl-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <img class="sponsors__logo" src="./images/oracle-logo.png" alt="" />
           </div>
-          <div class="col-xl-4 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <img
               class="sponsors__logo"
               src="./images/ticketmaster-logo.png"
@@ -130,22 +134,29 @@
           </div>
         </div>
       </div>
-      <div class="try-now">
-        <h3>Try it for free</h3>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <form action="#" method="POST">
-          <label for="mail"></label>
-          <input
-            type="email"
-            id="mail"
-            name="user-mail"
-            value="Email address"
-            class="input-form"
-          />
-          <button type="button" name="button" class="button">
-            GET STARTED
-          </button>
-        </form>
+      <div class="try-now container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Try it for free</h3>
+            <p>Already using Slack? <a href="#">Sign in</a></p>
+          </div>
+          <div class="col-md-6">
+            <div class="form-container">
+              <form action="#" method="POST">
+                <label for="mail"></label>
+                <input
+                  type="email"
+                  id="mail"
+                  name="user-mail"
+                  value="Email address"
+                />
+                <button type="button" name="button" class="button">
+                  GET STARTED
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -205,27 +216,32 @@
               <li>Contact Us</li>
             </ul>
           </div>
-          <div class="col-md-6 social-media__icon-flex-container">
-            <div class="social-media__icon-flex-element">
-              <img src="./images/us-flag.png" alt="" />
-              <span>English (US)<i class="fas fa-chevron-down"></i></span>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6 flex-container">
+                <img src="./images/us-flag.png" alt="" />
+                <span>
+                  English (US)
+                  <i class="fas fa-chevron-down"></i>
+                </span>
+              </div>
+              <div class="col-md-6 flex-container">
+                <i class="fab fa-twitter social-media__platform-icon"></i>
+                <i class="fab fa-facebook-f social-media__platform-icon"></i>
+                <i class="fab fa-youtube social-media__platform-icon"></i>
+              </div>
             </div>
-            <div class="social-media__icon-flex-element">
-              <i class="fab fa-twitter social-media__platform-icon"></i>
-              <i class="fab fa-facebook-f social-media__platform-icon"></i>
-              <i class="fab fa-youtube social-media__platform-icon"></i>
-            </div>
-            <small class="social-media__icon-flex-element"
-              >Icons made by
-              <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-                >Freepik</a
-              >
-              from
-              <a href="https://www.flaticon.com/" title="Flaticon"
-                >www.flaticon.com</a
-              ></small
-            >
           </div>
+          <small class="col-12"
+            >Icons made by
+            <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+              >Freepik</a
+            >
+            from
+            <a href="https://www.flaticon.com/" title="Flaticon"
+              >www.flaticon.com</a
+            ></small
+          >
         </div>
       </div>
     </footer>

@@ -32,6 +32,7 @@ input {
 }
 
 .button {
+  display: block;
   color: #ffffff;
   font-weight: bold;
   background-color: #192592;
@@ -41,16 +42,29 @@ input {
   margin: 15px auto;
   box-shadow: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
-.input-form {
+input {
   display: block;
+  width: 90%;
   margin: 0px auto;
 }
 
 .signin-link {
   text-align: center;
+}
+
+small {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* --- SLACK-NAVBAR SECTION --- */
@@ -67,7 +81,9 @@ input {
 }
 
 .slack-navbar .logo {
+  display: block;
   width: 75px;
+  height: 40px;
 }
 
 .navicon {
@@ -76,6 +92,21 @@ input {
 
 .slack-navbar ul {
   display: none;
+  list-style: none;
+  align-items: center;
+  padding-right: 25px;
+}
+
+.slack-navbar li {
+  padding: 0px 5px;
+}
+
+.slack-navbar .button {
+  background: none;
+  color: #5b5e6d;
+  font-weight: normal;
+  padding: 5px 15px;
+  border: 1px solid #5b5e6d;
 }
 
 /* --- HERO SECTION --- */
@@ -88,12 +119,19 @@ input {
 /* --- SPONSORS SECTION --- */
 
 .sponsors {
+  margin: 0px;
   background: #f4f3f4;
   text-align: center;
 }
 
 .sponsors__logo {
   padding: 30px;
+}
+
+.sponsors .button {
+  color: #192592;
+  border: 1px solid #192592;
+  background: none;
 }
 
 /* --- TRY-NOW SECTION --- */
@@ -156,20 +194,81 @@ input {
   width: 15px;
 }
 
-.social-media__icon-flex-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.social-media__icon-flex-element {
-  padding: 5px 0px;
-}
-
 .social-media__platform-icon {
   padding: 0px 5px;
 }
 
 small {
   font-size: 0.8em;
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media (min-width: 767px) {
+  .button {
+    width: 200px;
+    padding: 15px inherit;
+  }
+
+  form .button {
+    width: 150px;
+  }
+
+  .form-container {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    padding-top: 15px;
+  }
+
+  form {
+    display: flex;
+    width: 90%;
+    margin: 0px;
+  }
+
+  input {
+    margin: 15px 0 15px 5px;
+  }
+
+  .signin-link {
+    text-align: left;
+  }
+
+  .try-now {
+    text-align: left;
+  }
+
+  .try-now h3 {
+    padding-left: 0px;
+  }
+
+  .try-now input {
+    width: 150px;
+  }
+
+  .try-now button {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .navicon {
+    display: none;
+  }
+
+  .slack-navbar ul {
+    display: flex;
+  }
+
+  .hero {
+    padding-top: 100px;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .hero__flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
