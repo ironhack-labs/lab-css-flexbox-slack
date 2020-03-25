@@ -1,7 +1,373 @@
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
-main-titles dark-grey: #2C303F;
+main-titles dark-grey: 2C303F#;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+{
+    color: #2C303F;
+}
+
+p {
+    color: #5b5e6d;
+}
+
+li {
+    color: #5b5e6d;
+}
+
+hr {
+    color: #5b5e6d;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*--- HEADER---*/
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 40px;
+    position: relative;
+    align-items: center;
+}
+
+.nav-hidden {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+}
+
+.main-navbar ul {
+    text-align: right;
+    color: #5b5e6d;
+    background-color: rgba(247, 241, 216, 0.473);
+    padding: 4px 4px 4px 4px;
+}
+
+.main-navbar ul li {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.burger {
+    width: 40px;
+    padding: 5px;
+    opacity: .5;
+    margin-top: 15px;
+}
+
+
+/* WHERE WORK*/
+
+.button {
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: #192592;
+    display: block;
+    padding: 15px 30px;
+    font-size: .8em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.where-work {
+    padding: 40px 20px;
+}
+
+.where-work p {
+    padding: 25px 0;
+}
+
+.where-work input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.working-people {
+    padding-top: 30px;
+}
+
+.where-work .button {
+    width: 100%;
+}
+
+.working-people img {
+    width: 100%;
+}
+
+.sign-in {
+    text-align: center;
+    color: #5b5e6d;
+    display: block;
+    padding: 20px;
+}
+
+.sign-in a {
+    text-decoration: underline;
+}
+
+
+/*----SPONSORS---*/
+
+main {
+    background-color: #F4F3F4;
+}
+
+main img {
+    width: 230px;
+}
+
+.sponsors-info {
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.sponsors-info p {
+    padding: 20px 0;
+}
+
+.button.white {
+    color: #192592;
+    border: 1px solid #192592;
+    background-color: white;
+    width: 100%;
+}
+
+.sponsors-img img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+/*---ASIDE---*/
+
+.aside {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.aside a {
+    text-decoration: underline;
+}
+
+.aside input {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.aside button {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+/*- FOOTER----*/
+
+.footer-resume {
+    padding: 30px 5px;
+}
+
+.footer-resume img {
+    width: 100%;
+}
+
+.footer-resume ul {
+    padding: 10px 0;
+}
+
+.footer-resume li {
+    padding: 10px 0;
+}
+
+.footer-lists {
+    margin: 0 auto;
+}
+
+.footer-language {
+    background-color: #F4F3F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-language li {
+    padding: 0 5px;
+}
+
+.status {
+    display: flex;
+    padding-top: 20px;
+}
+
+.status li {
+    padding: 0 10px;
+}
+
+.language {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.language img {
+    width: 30px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.icons li {
+    padding: 0 10px;
+}
+
+
+/* Clase añadida con JS*/
+
+.nav-active {
+    display: block;
+    transition: ease-in 0.5;
+}
+
+
+/*----MEDIA QUERIES------*/
+
+@media (min-width: 768px) {
+    .where-work .button {
+        width: 169px;
+        padding: 13px 0px;
+        margin-left: -25px;
+    }
+    .resume {
+        padding: 0 40px;
+    }
+    .sign-in {
+        text-align: left;
+        margin-bottom: 40px;
+        padding-top: 5px;
+        margin-left: -25px;
+    }
+    h1 {
+        font-weight: bolder;
+    }
+    .button.white {
+        width: 180px;
+        margin: 0 auto;
+    }
+    .aside {
+        align-items: center;
+    }
+    .aside input {
+        width: 130%;
+    }
+    .aside .button {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 20px;
+        padding: 14px 10px;
+    }
+    .text-align-left {
+        text-align: left;
+    }
+    .text-align-left p {
+        width: 250px;
+    }
+    .footer-resume {
+        font-size: .7em;
+    }
+    .footer-resume h5 {
+        font-size: 0.9em;
+        font-weight: bolder;
+    }
+    .footer-language {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .lan-icons {
+        display: flex;
+        margin-top: 12px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-navbar {
+        position: static;
+    }
+    .main-navbar nav {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 60px;
+    }
+    .main-navbar ul {
+        display: flex;
+        background-color: white;
+    }
+    .burger {
+        display: none;
+    }
+    .main-navbar span {
+        border: 1px solid #5b5e6d;
+        padding: 4px 6px;
+        border-radius: 5px;
+    }
+    .aside {
+        text-align: center;
+    }
+    .sign-in-large {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* WHERE WORK QUERIES*/
+    .input-hidden {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-left: 4px;
+        margin-bottom: 5px;
+    }
+    .input-hidden .button {
+        padding: 20px 10px;
+    }
+    .where-work input {
+        display: none;
+    }
+    .resume {
+        margin-top: 20px;
+    }
+    .aside input {
+        display: none;
+    }
+}
