@@ -5,3 +5,199 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/*----GENERAL STYLING----*/
+
+section {
+    padding: 50px 0;
+}
+
+h6,
+h4,
+h2,
+h1 {
+    color: #2C303F;
+}
+
+p {
+    color: #5b5e6d;
+}
+
+
+/*----NAVIGATION STYLING----*/
+
+.menu {
+    border-bottom: 1px solid #d6d6d6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 900;
+    width: 100%;
+    position: fixed;
+    padding: 0 10px;
+    background-color: white;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 5px 0;
+    font-size: .9em;
+}
+
+.menu li {
+    margin-right: 15px;
+}
+
+.menu nav {
+    display: none;
+}
+
+.menu a>img {
+    width: 100px;
+}
+
+.navicon {
+    width: 24px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+/*----HERO STYLING----*/
+
+.hero header {
+    padding-top: 50px;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.started-btn {
+    border: 1px solid;
+    width: 100%;
+    padding: 10px 0;
+    font-size: .8em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    background-color: #192592;
+}
+
+.form {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+/*----COMPANY STYLING----*/
+
+.company {
+    text-align: center;
+    background-color: #F4F3F4;
+}
+
+.company p {
+    margin-bottom: 20px;
+}
+
+.discover-btn {
+    border: 1px solid;
+    width: 100%;
+    padding: 10px 0;
+    font-size: .8em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #192592;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.company img {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+/*----TRY-IT STYLING----*/
+
+.try-it {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+/*----FOOTER STYLING----*/
+
+.footer {
+    margin-top: 30px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+/*----FOOTER-NAV STYLING----*/
+
+.footer-nav {
+    display: flex;
+    background-color: #5b5e6d;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+.footer-nav img {
+    width: 20px;
+}
+
+.footer-nav ul {
+    display: flex;
+}
+
+.footer-nav li {
+    margin-right: 15px;
+}
+
+.footer-nav i {
+    margin: 0 10px;
+}
+
+
+/*----BREAKPOINTS----*/
+
+@media (min-width: 767px) {
+    .started-btn {
+        width: 40%;
+    }
+
+    .form {
+        width: 40%;
+    }
+
+    .discover-btn {
+        width: 40%;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 960px) {
+    .menu nav {
+        display: block;
+    }
+
+    .discover-btn {
+        width: 40%;
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    .form {
+        display: none;
+    }
+}
