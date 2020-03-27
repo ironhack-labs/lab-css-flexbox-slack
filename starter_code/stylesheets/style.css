@@ -45,12 +45,18 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px;
+    margin: 200px;
 }
 
 .banner-tittle {
     font-size: 22rem;
     color: #2C303F;
+}
+.inputs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 .banner-p {
@@ -61,11 +67,21 @@ header img {
     width: 70%;
 }
 
+input {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 100px 0;
+    color: #2C303F;
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 50px;   
+}
 .blue-button {
     background-color: #192592;
     width: 80%;
     border-radius: 50px;
-    padding: 180px 0;
+    padding: 100px 0;
     color: white;
     font-size: 8rem;
     letter-spacing: 0.5rem;
@@ -219,6 +235,33 @@ footer {
     font-size: 100px;
     margin: 50px;
     color: #2C303F;
+}
+
+/** MEDIAS QUERIES **/
+
+@media (min-width: 767px) {
+
+   
+    input {
+        width: 40%;  
+    }
+
+    .blue-button {
+        width: 20%;  
+    }
+
+    .div-brands {
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .div-brands img {
+        width: 48%;
+        height: 400px;
+        padding: 10px;
+    }
+
+    
 }
 
 
