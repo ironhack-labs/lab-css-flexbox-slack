@@ -5,3 +5,377 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.main-container {
+  /*supuestamente esto hace que abarque el 100% del ANCHO del viewport */
+  width: 100vw;
+}
+
+nav {
+  /*Esto hace que tu NAV no se pase*/
+  /* Preguntar a Joss si esto fue bueno o cada elemento del Nav necesita un div para manipular la hamburguesa*/
+  width: 100%;
+  /* border: 1px solid black; */
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-sizing: border-box;
+  padding: 0 4%;
+}
+
+nav img {
+  width: 20%;
+}
+
+nav img:nth-of-type(2) {
+  width: 7%;
+}
+
+nav ul {
+  /* Para ocultar el menú y colocar la hamburguesa */
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  width: 100%;
+  margin: auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.container-header {
+  margin-top: 15%;
+  padding: 0% 2%;
+  box-sizing: border-box;
+}
+
+.container-header h1 {
+  font-size: 4.5em;
+  padding-bottom: 5%;
+  color: #2c303f;
+}
+
+.container-header > p {
+  font-size: 2em;
+  padding-bottom: 5%;
+  color: #5b5e6d;
+}
+
+.email-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+input {
+  box-sizing: border-box;
+  width: 80%;
+  margin-top: 10%;
+  padding: 4% 0;
+  border: 1px solid #5b5e6d;
+  font-size: 2.5em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.email-container button {
+  /* border: 1px solid black; */
+  background-color: #192592;
+  color: white;
+  width: 80%;
+  padding: 4% 0;
+  margin-top: 10%;
+  border-radius: 10px;
+  font-size: 2.5em;
+  box-sizing: border-box;
+}
+
+.email-container p {
+  /* border: 1px solid black; */
+  margin-top: 2%;
+}
+
+.email-container img {
+  width: 80%;
+  margin-top: 10%;
+}
+
+main {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+main > div {
+  background-color: #f4f3f4;
+}
+
+h2 {
+  color: #2c303f;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.text-container p {
+  color: #5b5e6d;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 10%;
+}
+
+main div:nth-of-type(2) {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+main button {
+  background-color: white;
+  margin-top: 5%;
+  padding: 4%;
+  width: 80%;
+  border: 2px solid #192592;
+  border-radius: 10px;
+  color: #192592;
+  font-size: 1.5em;
+  box-sizing: border-box;
+}
+
+main img {
+  box-sizing: border-box;
+  width: 50%;
+  /* Este color se lo puse para disminuir la linea */
+  border-bottom: 1px solid silver;
+  padding: 4% 0;
+  margin-top: 20%;
+}
+
+main img:last-child {
+  margin-bottom: 20%;
+}
+
+main div:nth-of-type(3) {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 1px solid black;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+h3 {
+  font-size: 2em;
+  text-align: center;
+}
+
+main div:nth-of-type(3) p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.second-email {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 10%;
+}
+
+footer {
+  border: 1px solid black;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+}
+
+.info > img {
+  width: 40%;
+  padding-right: 40%;
+}
+
+footer ul {
+  list-style: none;
+  /* border: 1px solid red; */
+  width: 40%;
+  margin-left: 8%;
+}
+
+footer li {
+  font-size: 2em;
+  text-decoration: none;
+  padding: 6% 0;
+}
+
+footer div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer div:nth-child(2) li {
+  display: inline;
+}
+
+.status {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.deeper-footer {
+  background-color: beige;
+}
+
+.deeper-footer img {
+  width: 10%;
+  padding: 0% 5%;
+}
+
+.deeper-footer div:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 961px) {
+  nav > img {
+    width: 15%;
+  }
+
+  .container-header h1 {
+    font-size: 2.5em;
+  }
+
+  .container-header p {
+    font-size: 1.7em;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .email-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .email-container input {
+    width: 50%;
+    margin-left: 2%;
+    font-size: 2.5em;
+  }
+
+  /* .email-container button {
+    width: 35%;
+    font-size: 2.5em;
+  } */
+
+  main div button {
+    width: 25%;
+    font-size: 1.2em;
+    padding: 2% 4%;
+    margin: 3% 40%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .email-container p {
+    margin-left: 3%;
+    font-size: 1.5em;
+  }
+
+  .text-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .text-container p {
+    font-size: 1.7em;
+    margin: 5%;
+  }
+
+  main div:nth-child(2) img {
+    width: 50%;
+    margin: 5% 0;
+    padding: 7% 8%;
+    border: none;
+  }
+
+  main div:nth-child(2) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 4%;
+  }
+
+  main div:nth-child(2) h2 {
+    font-size: 2em;
+  }
+
+  .second-email {
+    width: 40%;
+    float: right;
+  }
+}
+
+@media (min-width: 1024px) {
+  main div:first-child img {
+    width: 18%;
+    margin: 2% 0;
+    padding: 5% 5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav ul {
+    display: block;
+    list-style: none;
+    width: 45%;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-left: 2%;
+    color: #5b5e6d;
+    font-size: 1.2em;
+  }
+
+  nav img {
+    padding: 1% 0% 1% 4%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  header {
+    flex-flow: row wrap;
+    margin-bottom: 5%;
+  }
+
+  header div {
+    width: 50%;
+  }
+
+  
