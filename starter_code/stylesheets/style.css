@@ -22,6 +22,7 @@ body {
   line-height: 1.5;
   color: #5b5e6d;
   position: relative;
+  font-size: 1.6rem;
 }
 
 h1,
@@ -214,10 +215,6 @@ main h2 {
 
 /*Extra Small Screen*/
 @media (max-width: 766.98px) {
-  body {
-    font-size: 1.6rem;
-  }
-
   button,
   input {
     width: 100%;
@@ -226,9 +223,6 @@ main h2 {
 
 /*Small Screen */
 @media (min-width: 767px) and (max-width: 959.98px) {
-  body {
-    font-size: 1.6rem;
-  }
   input {
     width: 50%;
   }
@@ -298,9 +292,6 @@ main h2 {
 }
 
 @media (min-width: 960px) and (max-width: 1023.98px) {
-  body {
-    font-size: 1.6rem;
-  }
   input {
     width: 50%;
   }
@@ -309,6 +300,111 @@ main h2 {
   }
   .image-block img {
     width: 30%;
+    align-self: baseline;
+    border-right: solid 1px #c9c9c9;
+    padding: 30px;
+  }
+
+  .image-block img:nth-child(3n) {
+    border-right: 0;
+  }
+
+  .image-block img:nth-child(4),
+  .image-block img:nth-child(5) {
+    border-bottom: 0;
+  }
+
+  .footer-logo {
+    width: auto;
+  }
+
+  .footer-nav {
+    padding-right: 30px;
+  }
+
+  .footer-nav ul {
+    flex: auto;
+  }
+
+  .info-nav.grey-bg {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info-nav ul {
+    width: 40%;
+  }
+
+  .lang-sn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lang {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  header {
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 200px;
+  }
+
+  header h1 {
+    font-size: 6rem;
+  }
+
+  header img {
+    order: 0;
+    width: 50%;
+    object-fit: contain;
+  }
+
+  header p:last-child {
+    text-align: left;
+  }
+  input {
+    width: 50%;
+  }
+  button {
+    align-self: center;
+  }
+
+  main .grey-bg {
+    padding: 60px;
+  }
+
+  .image-block,
+  .sign-in-block,
+  .footer-nav {
+    width: 70%;
+    margin: auto;
+  }
+
+  .sign-in-block form {
+    text-align: center;
+  }
+
+  .image-block img {
+    width: 26%;
     align-self: baseline;
     border-right: solid 1px #c9c9c9;
     padding: 30px;
