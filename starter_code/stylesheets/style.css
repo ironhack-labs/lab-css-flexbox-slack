@@ -5,3 +5,501 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+body {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100vw;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #F4F3F4;
+}
+
+nav img {
+    height: 4rem;
+    padding-left: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.fa-bars {
+    display: block;
+    width: 60vw;
+    text-align: right;
+    align-self: center;
+    font-size: 2rem;
+    color: #5b5e6d;
+    padding-right: 2rem;
+}
+
+nav li {
+    display: none;
+    visibility: hidden;
+    flex-direction: column;
+    width: 50vw;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 0.5rem;
+    background-color: white;
+    color: #5b5e6d;
+    border: 2px solid #F4F3F4;
+}
+
+nav ul:hover {
+    cursor: pointer;
+}
+
+nav ul:hover li {
+    visibility: visible;
+    display: block;
+}
+
+nav li {
+    clear: both;
+    width: 100%;
+}
+
+header {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header img {
+    order: 6;
+    width: 100vw;
+    padding: 1rem;
+}
+
+h1 {    
+    padding: 2rem;
+    width: 80vw;
+    color: #2C303F;
+    font-size: 2rem;
+    font-family: "Times New Roman";
+}
+
+header p {
+    padding: 0 2rem;
+    color: #5b5e6d;
+}
+
+.email-input-field {
+    display: block;
+    padding: 1rem;
+    margin: 2rem;
+    width: 90vw;;
+    border: 1px solid #F4F3F4;
+    border-radius: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.email-input-field::placeholder {
+    color: #9c9da0;
+    font-weight: 300;
+}
+
+header > button {
+    display: block;
+    width: 100vw;
+    padding: 1rem;
+    margin: 0 2rem;
+    background-color: #192592;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+header p:nth-of-type(2) {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F3F4;
+    width: 100vw;
+}
+
+main h2 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-family: "Times New Roman";
+    color: #2C303F;
+}
+
+main p {
+    width: 90vw;
+    margin: 1rem auto 1.5rem;
+    color: #5b5e6d;
+}
+
+main button {
+    display: block;
+    width: 85vw;
+    padding: 1.2rem;
+    margin: auto;
+    background-color: white;
+    color: #192592;
+    border: 1px solid  #192592;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+main img {
+    display: block;
+    width: 80vw;
+    padding: 3.5rem;
+    margin: auto;
+    border-bottom: 2px solid #ebebeb;
+}
+
+main > div:nth-child(2) {
+    background-color: white;
+}
+
+main > div:nth-child(2) > p:first-child {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    font-family: "Times New Roman";
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+main > div:nth-child(2) > p:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+main > div:nth-child(2)> button {
+    background-color: #192592;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+footer > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+
+footer > div:first-child > img {
+    width: 7rem;
+    margin-right: calc(100vw - 7rem);
+}
+
+footer > div:first-child > ul {
+    flex: 50%;
+    margin: 0.5rem auto;
+    list-style: none;
+    line-height: 2rem;
+    color: #5b5e6d;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+footer > div:first-child > ul > li:first-child {
+    font-weight: 600;
+}
+
+footer > div:nth-child(2) {
+    background-color: #F4F3F4;
+    font-weight: 400;
+}
+
+footer > div:nth-child(2) > ul{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+footer > div:nth-child(2) li {
+    margin: 1rem 0.5rem;
+}
+
+footer > div:nth-child(2) > div {
+    width: 50vw;
+    line-height: 2rem;
+    margin: auto;
+    text-align: right;
+}
+
+footer > div:nth-child(2) > div > img {
+    width: 1.5rem;
+}
+
+footer > div:nth-child(2) > div > span {
+    margin: 0.5rem;
+}
+
+footer > div:nth-child(2) > div > i {
+    margin: 1rem 0.5rem;
+    width: 1.5rem;
+    color: #5b5e6d;
+}
+
+
+@media (min-width:767px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    header img {
+        justify-self: center;
+        width: 40vw;
+        margin: auto;
+    }
+    
+    header .email-input-field {
+        width: 48vw;
+        margin-right: 0.2rem;
+    }
+
+    header button {
+        display: inline-block;
+        width: 20vw;
+        margin: 2rem 0;
+        height: 3.3rem;
+    }
+
+    header p:nth-of-type(2) {
+        justify-content: left;
+        width: 100vw;
+        margin: 0;
+    }
+
+    main > div:first-child {
+        text-align: center;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    main button {
+        width: 25vw;
+        margin-top: 2rem;
+    }
+
+    main img {
+        display: inline-block;
+        width: 40vw;
+        border-bottom: 2px solid #ebebeb;
+        border-right: 2px solid #ebebeb;
+    }
+
+    main > div:nth-child(2) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+
+    main > div:nth-child(2) > p:first-child {
+        display: flex;
+        position: relative;
+        width: 30vw;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+ 
+    main > div:nth-child(2) > p:nth-child(2) {
+        display: flex;
+        position: absolute;
+        width: 30vw;
+        font-size: 0.9rem;
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+
+    main .email-input-field {
+        display: flex;
+        width: 25vw;
+        margin: 3rem 0 auto;
+    }
+
+    main > div:nth-child(2) > button {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 25vw;
+        height: 3.3rem;
+        margin: 3rem 2rem 0 0;
+        padding: 0.8rem;
+    }
+
+    footer > div:first-child {
+        display: flex;
+    }
+
+    footer > div:first-child img {
+        width: 6rem;
+        height: 6rem;
+        margin: 0;
+    }
+
+    footer > div:first-child ul {
+        flex: 20%;
+    }
+
+    footer > div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        margin: auto 0;
+    }
+
+    footer > div:nth-child(2) ul {
+        justify-content: left;
+        width: 40vw;
+        margin-left: 2rem;
+    }
+
+    footer > div:nth-child(2) > div {
+        margin-right: 2rem;
+    }
+
+}
+
+@media (min-width:960px) {
+    main img {
+        width: 30vw;
+    }
+
+    main img:nth-of-type(3) {
+        border-right: none;
+    }
+    main img:last-child  {
+        border-right: none;
+    }
+}
+
+@media (min-width:1200px) {
+    .fa-bars {
+        display: none;
+    }
+
+    nav li {
+        display: inline-block;
+        visibility: visible;
+        width: 12rem;
+        border: none;
+    }
+
+    nav li:last-child {
+        border: 2px solid#5b5e6d;;
+        border-radius: 0.2rem;
+    }
+
+    header {
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+
+    header img {
+        order: 0;
+        margin: 5rem 2rem;
+        float: left;
+    }
+
+    header h1 {
+        display: flex;
+        width: 45vw;
+        height: 5rem;
+        margin-top: 2rem;
+        font-size: 4rem;
+    }
+
+    header p {
+        position: absolute;
+        left: 45vw;
+        top: 20rem;
+        width: 40vw;
+        font-size: 1.2rem;
+    }
+
+    header p:nth-of-type(2) {
+        top: 34rem;
+    }
+
+    header button {
+        position: absolute;
+        left: 47vw;
+        top: 26.5rem;
+    }
+
+    header .email-input-field {
+        display: none !important;
+    }
+
+    .email-input-field  {
+        visibility: hidden;
+    }
+
+    button {
+        width: 12rem !important;
+        height: 4rem !important;
+    }
+
+    main img {
+        padding: 3rem 6rem;
+    }
+
+    footer > div:first-child {
+        justify-content: flex-end;
+    }
+
+    footer > div:first-child > img {
+        position: absolute;
+        left: 2rem;
+    }
+
+    footer > div:first-child ul {
+        width: 10vw;
+        flex: none;
+        margin: 2rem;
+    }
+
+    footer > div:nth-child(2) > div{
+        text-align: right;
+        margin-right: 2rem;
+    }
+}
+
