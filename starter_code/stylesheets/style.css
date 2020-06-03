@@ -1,7 +1,283 @@
 /*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
+--background-grey: #F4F3F4;
+--button-purple: #192592
+--main-titles dark-grey: #2C303F;
+--paragraph grey: #5b5e6d;
+--nav-grey: #5b5e6d;
 */
+
+:root{
+    --background-grey: #F4F3F4;
+    --button-purple: rgb(63,73,170);
+    --main-titles dark-grey: #2C303F;
+    --paragraph grey: #5b5e6d;
+    --nav-grey: #5b5e6d;
+}
+
+.button.inverted  {
+    color: var(--button-purple);
+    background-color: white;
+}
+
+.email-group{
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    font-size: 1.2em;
+}
+
+body li {
+    list-style: none;
+}
+
+body img {
+    width: 100px;
+}
+
+.button {
+    padding: 15px 35px;
+    border-radius: 4px;
+    border-color:  var(--button-purple);
+    background-color: var(--button-purple);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-width: 1px;
+    margin: 0;
+}
+
+input {
+    padding: 15px 35px;
+    width:100%;
+    margin:  15px 0;
+}
+
+.colorLink {
+    color: var(--button-purple);
+    text-decoration: underline;
+}
+
+/* ---------------------------- Nav Bar -----------------------------*/
+
+
+body nav {
+    position: fixed;
+    top: 0;
+    z-index: 9000;
+    margin: 1px 0 5px 0;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: var(--nav-grey);
+    padding-top: 5px;
+    
+}
+
+.menu {
+    border-top: 1px solid var(--background-grey);
+    border-bottom: 1px solid var(--background-grey);
+}
+
+nav ul {
+    margin: auto 0;
+}
+
+nav ul li a {
+    padding: 10px 25px;
+    display: block;
+}
+
+.border {
+    border: 1px solid black
+}
+
+.mobile-menu img {
+    width: 45px;
+    margin: auto 0;
+    display:none;
+}
+
+.nav-list {
+    width: 100%;
+}
+
+/* ---------------------------- Section 1 -----------------------------*/
+
+.section1 {
+    padding-top: 100px;
+}
+
+.section1 img {
+    width: 100%;
+}
+
+
+
+
+/* ---------Header-----------*/
+
+body header {
+    margin: 50px 0; 
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    line-height: 70px;
+}
+
+header p {
+    margin-top: 20px;
+    color: rgb(114,116,128);
+}
+
+header input {
+    width: 100%;
+}
+
+
+/*--------section2--------*/
+
+.section2 {
+    text-align: center;
+    background-color: var(--background-grey);
+    padding-bottom: 30px;
+}
+
+h2 {
+    padding-top: 60px;
+    font-weight: bold;
+    font-style: serif;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.section2 p{
+    color: rgb(114,116,128);
+    margin-bottom: 40px;
+}
+
+.section2 img{
+    width: 40%;
+    margin: 10% auto;
+}
+
+/*--------section3--------*/
+
+
+.claim {
+    font-weight: bold;
+    font-style: serif;
+    font-size: 1.5em;
+    padding-top: 40px;
+    line-height: 0;
+
+}
+
+.section3 {
+    text-align: center;
+}
+
+
+/*--------------footer----------*/
+
+.footer {
+    border-top: 1px solid rgb(221, 220, 220);
+    padding: 50px 10px;
+}
+
+footer img {
+    margin-right: 20%;
+}
+
+.footerTitle {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+footer li {
+    color: rgb(114,116,128);
+    font-size: 0.8em;
+    line-height: 20px;;
+}
+
+
+.bottomFooter {
+    background-color: var(--background-grey);
+    color: rgb(114,116,128);
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.bottomFooter li{
+    padding-right: 20px;
+}
+
+.bottomFooter img {
+    width: 25px
+}
+
+
+/*-------------querys------------*/
+
+
+@media (max-width: 767px) { /*HASTA SM*/
+    
+        .mobile-menu img {
+            display: block;
+        }
+        
+        .nav-list {
+            display: none;
+        }
+
+        .button {
+            width: 100%;
+        }
+        
+    }
+    
+    @media (max-width: 768px) { /* A PARTIR MD*/
+        
+        
+            .imgHeader {
+                order: 2;
+                }
+            }
+            
+   @media (min-width: 961px){
+                
+                 
+           /*    .email-group{
+                   width:100%
+               }
+
+                
+                .email-group button {
+                    width:30%;
+                }
+                .email-group input{
+                    width:50%;
+                }
+            
+
+            }*/
+
+
+            
+@media (min-width: 1200px){ /*HASTA EL INFINITO Y MÁS ALLÁ*/
+    input {
+        display: none;
+    }
+
+
+}
+
+
