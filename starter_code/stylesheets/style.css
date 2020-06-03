@@ -5,3 +5,360 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* General styling */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+section {
+    border-bottom: 1px solid rgb(129, 130, 133);
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Helvetica Neue', 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-size: 4em;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 2.7em;
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    color: #5b5e6d;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+    color: #5b5e6d;
+}
+
+ul a {
+    color: #5b5e6d;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* --- Nav --- */
+
+.menu {
+    position: fixed;
+    width: 100%;
+    z-index: 9000;
+    border-bottom: 1px solid gray;
+    background-color: #fff;
+}
+
+
+.menu .navidiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: none;
+    margin: 0 40px;
+}
+
+.menu .navidiv ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.menu .logo {
+    width: 150px;
+    margin: 15px;
+}
+
+.menu .navicon {
+    width: 70px;
+    height:70px;
+    margin: 0 20px;
+}
+
+.menu .container a {
+    display: block;
+}
+
+.menu li a {
+    display: block;
+}
+
+.workspace-lnk {
+    border: 1px solid #5b5e6d;
+    border-radius: 5px;
+}
+
+/* --- Hero --- */
+
+.hero {
+    padding: 200px 0 0;
+}
+
+.text-hero {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-hero p {
+    margin: 30px 0;
+}
+
+.container-hero {
+    order: 2;
+}
+
+/* --- Companies --- */
+
+.companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F3F4;
+    padding: 80px 0;
+}
+
+.comp-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.companies h2 {
+    text-align: center;
+}
+
+.companies p {
+    text-align: center;
+    color: #5b5e6d;
+    margin: 20px;
+}
+
+.companies img{
+    padding: 50px;
+    width: 20em;
+}
+
+.comp-img {
+    display: flex;
+    justify-content: center;
+}
+
+/* Seccion try it for free */ 
+.try {
+    padding: 40px 0;
+}
+
+.try p {
+    text-align: center;
+}
+
+.button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Footer --- */
+.foot-spacing{
+    padding: 60px 0;
+}
+
+.slack-hash {
+    width: 200px;
+    position: absolute left;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    font-size: 1.5em;
+    padding: 20px 0;
+}
+
+.footerdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F4F3F4;
+    padding: 20px 0;
+}
+
+.ul-title {
+    font-size: 2em;
+    color: #5b5e6d;
+    font-weight: 700;
+}
+
+.footersub {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #5b5e6d;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 50px;
+}
+
+.sub1 li {
+    margin-left: 30px;
+    font-size: 1em;
+}
+
+.sub2 {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.sub2 img {
+    margin-left: 15px;
+    width: 50px;
+    padding: 10px;
+}
+
+.sub2 span {
+    margin-right: 15px;
+}
+
+.sub3 i {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+/* --- Components --- */
+
+.button {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 20px;
+    width: 300px;
+}
+
+.buttonwhite {
+    color: rgb(69, 69, 211);
+    background-color: white;
+    display: block;
+    border: 1px solid rgb(69, 69, 211);
+}
+
+.buttonblue {
+    color: white;
+    background-color: rgb(69, 69, 211);
+    display: block;
+    border-style: none;
+}
+
+#email {
+    width: 500px;
+    height: 60px;
+    margin: 20px 0;
+    display: block;
+}
+
+::placeholder {
+    font-size: 1.3em;
+    padding: 20px 30px;
+}
+
+/*---  Media queries --- */
+
+@media (min-width: 768px) {
+
+    .centered {
+        text-align: left;
+    }
+
+    .try p {
+        text-align: left;
+    }
+
+    .try h3 {
+        text-align: left;
+    }
+
+    .ul-title {
+        font-size: 1em;
+    }
+
+    footer li {
+        font-size: 0.8em;
+        padding: 5px 0;
+    }
+
+    .footerdiv {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .footsub {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slack-hash {
+        width: 100px;
+    }
+
+    #email {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container-hero {
+        order: 1;
+    }
+
+    .text-hero {
+        order: 2;
+    }
+
+    .bar{
+        display: none;
+    }
+
+    .menu nav {
+        display: block;
+    }
+
+    .menu .navicon {
+        display: none;
+    }
+
+}
