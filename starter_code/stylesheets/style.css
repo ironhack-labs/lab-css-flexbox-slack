@@ -1,5 +1,4 @@
 
-
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
@@ -11,39 +10,18 @@ nav grey: #5b5e6d;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body{
-   
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-style: normal;  
     background-color: white;;
-    padding: 0;
-    margin: 0; 
+    margin:0;
+    padding:0;
 }
 
 h1, p{
   color:#5b5e6d;
 }
 
-.action-button {
-    background-color: #192592;
-    border: none;
-    padding: 20px 70px;
-    margin: 10px 5px;
-    border-radius: 5px;
-    color: white;
-    font-weight:bold;
-    letter-spacing: 0.1rem;
-    width: 100%;
-}
-
-input{ 
-    color:#5b5e6d;
-    font-family: 'Montserrat', sans-serif;
-    width:90%;
-    padding: 15px 20px;
-    margin:5px 20px;
-    border: 1px thin grey;
-}
 
 .nav {
     display: flex;
@@ -64,48 +42,74 @@ input{
     display: none;
 }
 
-.nav div {
+#burger-menu div {
     width: 35px;
     height: 5px;
     background-color: black;
-    margin: 6px 20px;
+    margin: 6px 0;
 }
 
 .header{
     background-color: white;
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 0px 60px 20px 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin:30px;
+}
+
+
+.action-button {
+    background-color: #192592;
+    border: none;
+    padding: 20px 10px;
+    width:85%;
+    margin-right: 25px;
+    margin-top:25px;
+    margin-bottom:20px;
+    border-radius: 5px;
+    color: white;
+    font-weight:bold;
+    letter-spacing: 0.1rem;
+    text-align:center;
+}
+
+input{ 
+    color:#5b5e6d;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 15px;
+    margin-right:25px;
+    width:75%;
+    border: 1px thin grey;
+    align-items: center;
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.3rem;
-    padding: 20px 0 10px 0;
-    
+    text-align:start;
+    margin-left:10px;
 }
 
 .header p {
     font-size: 1.2rem;
     font-weight: 300;
+    text-align:start;
+    margin-left:10px;
+    margin-right:15px;
     line-height: 1.8rem;
 }
 
-.header div p:last-child {
-    text-align: center;
-    font-size: 1rem;
-  }
-
-.header img {
-    width: 80vw;
-    align-content: center; 
+#home-work{
+  width:70%;
+  margin-top:15px;
 }
 
 .section-1{
     text-align:center;
-    padding: 20px 5px 40px 10px;
     background-color:#F4F3F4;
-    width: 100%;
+    width:100%;
+    padding:20px 20px;
 }
 
 .section-1 p{
@@ -120,8 +124,10 @@ h1 {
 
 
 .logo{
-    width: 45%;
+    width: 40%;
     margin: 30px auto;
+    border-bottom:1px solid lightgray;
+    padding:25px 90px;
 }
 
 #why{
@@ -135,13 +141,98 @@ h1 {
     
 .sign-up-section{
     text-align:center;
-    margin-top:30px;
+    width:100%;
+    padding:20px 20px;
+    margin-left:10px;
+}
+
+.sign-up-section p{
+    margin-bottom: 20px;
+}
+
+footer img{
+    width:25%;
+}
+
+.footer-1{
+ display:flex;
+ justify-content: space-evenly;
+ font-weight: 200;
+line-height: 2.2rem;
+}
+
+.footer-2{
+    display:flex;
+    justify-content: space-evenly;
+    font-weight: 200;
+    line-height: 2.2rem;
+}
+
+
+.footer ul{
+    list-style: none;
+    width: 25%;
+}
+
+.real-footer{
+    background-color:#F4F3F4;
+    width:100%;
+    padding:20px;
+}
+
+.real-footer img {
+    width:10%;
+    margin-right:5px;
+}
+
+.move {
+   display:flex; 
+   flex-direction: row; 
+   align-items: center;
+   color:#5b5e6d;
+}
+
+.move li{
+  align-items: center;
+  text-align:center;
+  margin:10%;
+  white-space: nowrap;
+}
+
+.lan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:10px 10px;
+}
+
+.lan span{
+    margin-right:15px;
+}
+
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons i{
+    margin:2px 15px;
 }
 
 
 
 
-
-@media (max-width: 768px) {
-    
+@media (min-width: 768px) (max-width:961px){
   }
+
+
+@media(min-width:960px) (max-width:1024px){
+
+} 
+
+@media(min-width: 1200px){
+
+}
