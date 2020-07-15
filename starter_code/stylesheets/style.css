@@ -12,7 +12,7 @@ html {
 
 /* header */
 nav > img {
-    height: 70px;
+    height: 90px;
   
 }
 
@@ -25,13 +25,15 @@ nav > img {
 }
 
 nav {
+    width: 100%; 
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 3%;
-    /* position: fixed;
-    top: 0; */
+    top:0;
+    /* margin-left: 3%; */
+    /* margin-right: 5%;  */
    
-
+    background-color: white;
 } 
  
 .container div {
@@ -42,6 +44,7 @@ nav {
     position: relative;
     top: 20px;
 }
+    
 
 .people-talk {
     width: 70%;
@@ -421,3 +424,43 @@ hr {
     }
 }
 
+@media (min-width: 1024px) {
+    
+ 
+    .container {
+        display: none;
+    }
+    .header-list {
+        width: 50%;
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .header-list > li {
+        padding: 10px 30px;
+        font-size: 1.4em;
+    }
+    .border{
+        border: 2px solid black;
+        
+    }
+
+
+    #email, #second-email-field {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+    .logo-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around; 
+        margin-left: 10%;
+      }
+    
+      .logo-wrapper > img {
+          margin: 2%;
+      }
+}
