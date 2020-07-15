@@ -5,6 +5,8 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* Iteration 1 | Extra Small Screen (width < 768px) */
 body {
     color: #5b5e6d;
     font-family: 'Roboto', sans-serif;
@@ -12,11 +14,14 @@ body {
 
 p {
     color: #5b5e6d;
+    font-size: 1.1em;
 }
 
-hr {
-    color: #5b5e6d;
-    margin: 0px 10px 0px 50px;
+#separation-line div {
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    margin: 6px 0;
 }
 
 nav>img {
@@ -40,23 +45,37 @@ nav {
     margin: 6px 0;
 }
 
-
-h1 {
-    color: #2C303F;
-}
-
 header {
-    margin: 20px 100px;
+    margin: 20px 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-header>button {
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #2C303F;
+    font-size: 2.5em;
+}
+
+input {
+    color: grey;
+    font-size: 1.1em;
+    padding: 20px;
+    border: lightgray solid 1px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.btn {
     background-color: #192592;
     color: white;
     padding: 20px 0px;
-    border-radius: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1em;
 }
 
 .sign {
@@ -68,51 +87,52 @@ header>img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 
 main {
     background-color: #F4F3F4;
     text-align: center;
-    padding: 20px 100px;
+    padding-top: 20px;
 }
 
 main button {
     background-color: white;
-    color: blue;
-    border: blue solid 1px;
+    color: darkblue;
+    border: darkblue solid 1px;
     font-weight: bold;
-    padding: 20px 80px;
-    border-radius: 10px;
-    margin: 20px 0px;
-    width: 300px;
+    padding: 20px 0px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1em;
 }
 
-main img {
-    width: 250px;
+.logo-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+     padding: 30px;
+}
+
+.logo-list div {
     border-bottom: lightgray solid 1px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.logo-list img {
+    margin: 30px auto;
+    width: 45%;
+}
+
+.try {
+    background-color: white;
 }
 
 .title {
     font-size: 1.3em;
     font-weight: bolder;
     padding-top: 20px;
-}
-
-.get-started {
-    background-color: #192592;
-    color: white;
-    padding: 20px 100px;
-    border-radius: 10px;
-}
-
-footer {
-    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #2C303F;
 }
 
 .grid {
@@ -125,29 +145,39 @@ footer li {
 }
 
 .small-title {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bolder;
 }
 
-.status {
+.footer-list {
+    margin-top: 20px;
+    padding-top: 10px;
     background-color: #F4F3F4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conditions {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.social {
-    background-color: #F4F3F4;
+.languages {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-
+    align-items: center;
+    padding: 20px 0px;
 }
 
-.flag {
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
+.languages > img {
+    width: 20px;
+    padding-right: 10px;
+}
+
+.languages > span {
+    padding-right: 10px;
 }
 
 .social-media {
@@ -155,3 +185,72 @@ footer li {
     justify-content: center;
     align-items: center;
 }
+
+.social-media > i {
+    padding-right: 15px;
+}
+
+/* Iteration 2 | Small Screen (961px > width > 767px) */
+@media only screen and (min-width: 767px) and (max-width: 961px) {
+    .btn {
+        width: 25vw;
+    }
+    input {
+        width: 50vw;
+    }
+    main button {
+        width: 25vw;
+    }
+    .logo-list {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .logo-list div {
+        border-right: lightgray solid 1px;
+    }
+    .grid {
+        display: flex;
+    }
+    .footer-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .conditions li {
+        margin-right: 15px;
+    }
+}
+/*I didn't manage to put the social media part on the same row*/
+
+/*Iteration 3 | Medium Screen (1024px > width > 960px)*/
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+        .btn {
+            width: 25vw;
+        }
+        input {
+            width: 50vw;
+        }
+        main button {
+            width: 25vw;
+            }
+    .logo-list {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .logo-list div {
+        border-right: lightgray solid 1px;
+    }
+    .grid {
+        display: flex;
+    }
+    .footer-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .conditions li {
+        margin-right: 15px;
+    }
+}
+
+/*Iteration 4 | Large Screen (width > 1200px)*/
