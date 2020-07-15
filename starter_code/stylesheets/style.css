@@ -43,6 +43,9 @@ ul {
     background-color: white;
     border-bottom: 2px solid #EEEEEE;
     width: 100%;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
 }
 
 .nav img {
@@ -64,7 +67,9 @@ ul {
     background-color: white;
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     padding: 0px 30px 20px 30px;
+    margin-top: 80px;
 }
 
 h1 {
@@ -124,7 +129,7 @@ a[href*="#"] {
   }
 
 .header img {
-    width: 85vw;
+    width: 350px;
 }
 
 /* main section */
@@ -215,7 +220,7 @@ a[href*="#"] {
 }
 
 .footer img {
-    width: 35vw;
+    width: 150px;
 }
 
 .footer-lists {
@@ -239,16 +244,18 @@ a[href*="#"] {
 
 .conditions {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     background-color:#F4F3F4;
     margin-top: 30px;
+    padding-bottom: 20px;
 }
 
 .conditions ul {
     font-weight: 400;
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
     justify-content: center;
 }
@@ -279,7 +286,7 @@ a[href*="#"] {
 .conditions div div:last-child i {
    font-size: 1.6rem;
    padding: 0 15px;
-   margin-bottom: 20px;
+   
 }
 
 
@@ -338,11 +345,29 @@ a[href*="#"] {
     }
 
     .footer-lists ul {
-        width: 20%;
+        width: 25%;
     }
 
+    .footer div:first-child{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
     
+    .footer-lists {
+        width: 100vw;
 
+    }
+
+    .conditions div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .conditions div div:first-child {
+        margin-right: 20px;
+    }
 
   
   }
