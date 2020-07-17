@@ -18,7 +18,10 @@
 
   <body>
     <nav>
-      <img src="./images/slack-logo.png" alt="slack_logo" />
+      <div class="nav-icon">
+        <img src="./images/slack-logo.png" alt="slack_logo" />
+      </div>
+
       <div class="container">
         <div></div>
         <div></div>
@@ -32,67 +35,87 @@
       </ul>
     </nav>
     <header>
-      <h1>Where Work Happens</h1>
-      <p class="header-text">
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <section class="header-wrapper">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email address"
-        />
-        <button class="button" type="button" name="button">GET STARTED</button>
-        <p>Already using Slack? <a href="#">Sign in</a></p>
-        <img
-          class="people-talk"
-          src="./images/home_talking.png"
-          alt="home_work_happening"
-        />
-      </section>
-    </header>
-    <main>
-      <div class="first-main-section">
-        <h2>You're in good company</h2>
-        <p>
-          Millions of people around the world have already made Slack the place
-          where their work happens.
+      <div class="text-section">
+        <h1>Where Work Happens</h1>
+        <p class="header-text">
+          When your team needs to kick off a project, hire a new employee,
+          deploy some code, review a sales contract, finalize next year's
+          budget, measure an A/B test, plan your next office opening, and more,
+          Slack has you covered.
         </p>
-        <button class="discover-button">DISCOVER WHY</button>
-        <div class="logo-wrapper">
-          <img src="./images/airbnb-logo.png" alt="" />
-          <hr />
-          <img src="./images/capital-one-logo.png" alt="" />
-          <hr />
-          <img src="./images/harvard-logo.png" alt="" />
-          <hr />
-          <img src="./images/los-angeles-times-logo.png" alt="" />
-          <hr />
-          <img src="./images/oracle-logo.png" alt="" />
-          <hr />
-          <img src="./images/ticketmaster-logo.png" alt="" />
-        </div>
-      </div>
-      <div class="second-main-section">
-        <div class="header-link-wrapper">
-          <p class="header-text">Try it for free</p>
-          <p class="second-main-section-paragraph">
-            Already using Slack? <a href="">Sign in</a>
-          </p>
-        </div>
-        <div class="second-email-button">
+       
+        <div class="email-button-wrapper">
           <input
-            id="second-email-field"
             type="email"
             id="email"
             name="email"
             placeholder="Email address"
           />
-          <button id="second-get-started-button" type="button" name="button">
+          <button class="get-started-button" type="button" name="button">
+            GET STARTED
+          </button>
+        </div>
+
+        <p class="sign">Already using Slack? <a href="#">Sign in</a></p>
+      </div>
+      <div class="image-section">
+        <img
+          id="people-talk-image"
+          src="./images/home_talking.png"
+          alt="home_work_happening"
+        />
+      </div>
+
+    </header>
+    <main>
+      <div class="main">
+        <div class="main-info">
+          <h2>You're in good company</h2>
+          <p>
+            Millions of people around the world have already made Slack the
+            place where their work happens.
+          </p>
+          <button class="discover-button">DISCOVER WHY</button>
+        </div>
+
+        <div class="general-logo-wrapper">
+          <div class="image-wrapper">
+            <img src="./images/airbnb-logo.png" alt="" />
+          </div>
+          <div class="image-wrapper">
+            <img src="./images/capital-one-logo.png" alt="" />
+          </div>
+          <div class="image-wrapper">
+            <img src="./images/harvard-logo.png" alt="" />
+          </div>
+          <div class="image-wrapper">
+            <img src="./images/los-angeles-times-logo.png" alt="" />
+          </div>
+          <div class="image-wrapper">
+            <img src="./images/oracle-logo.png" alt="" />
+          </div>
+          <div class="image-wrapper">
+            <img src="./images/ticketmaster-logo.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="second-main-section">
+        <div class="try-sign">
+          <p class="header-p">Try it for free</p>
+          <p class="second-main-section-paragraph">
+            Already using Slack? <a href="">Sign in</a>
+          </p>
+        </div>
+        <div class="email-getstarted-button">
+          <input
+            id="email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+          />
+          <button class="get-started-button" type="button" name="button">
             GET STARTED
           </button>
         </div>
@@ -100,8 +123,11 @@
     </main>
     <footer>
       <div class="footer-wrapper">
-        <img src="./images/iso-slack.png" alt="" />
-        <div class="footer">
+        <div class="footer-icon">
+          <img src="./images/iso-slack.png" alt="" />
+        </div>
+
+        <div class="footer-lists">
           <ul>
             <li class="footer-header">COMPANY</li>
             <li>About Us</li>
@@ -137,21 +163,27 @@
         </div>
       </div>
       <div class="footer-last-part">
-        <ul>
+        <ul class="lists">
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-        <div class="footer-last-part-last-half">
-          <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
+        <div class="icon-lang-wrapper">
+          <div class="flag-lang-arrow">
+            <img src="./images/us-flag.png" alt="" />
+            <span>English (US)</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+  
+  
           <div class="icons-wrapper">
             <i class="fab fa-twitter"></i>
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-youtube"></i>
           </div>
         </div>
+
+
       </div>
     </footer>
   </body>
