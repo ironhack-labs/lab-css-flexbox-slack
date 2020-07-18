@@ -45,12 +45,11 @@ ul {
     width: 100%;
     position: fixed; 
     top: 0; 
-    width: 100%; 
 }
 
 .nav img {
     height: 8vh;
-    padding: 8px 30px;
+    padding: 8px 35px;
 }
 
 .nav ul {
@@ -59,7 +58,7 @@ ul {
 
 .nav img:last-child {
     height: 4vh;
-    padding-right: 30px;
+    padding-right: 35px;
 }
 
 /* header */
@@ -68,7 +67,7 @@ ul {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 0px 30px 20px 30px;
+    padding: 0px 35px 20px 35px;
     margin-top: 80px;
 }
 
@@ -172,8 +171,14 @@ a[href*="#"] {
 }
 
 .logo-container img {
-    width: 45%;
+    height: 5vh;
     margin: 30px auto;
+}
+
+.logo-container div:last-child img,
+.logo-container div:nth-last-child(2) img {
+    width: 20vw;
+    height: auto;
 }
 
 .logo-container div:last-child {
@@ -183,7 +188,7 @@ a[href*="#"] {
 .sign-up-section {
     margin: 30px 0;
     text-align: center;
-    padding: 0px 30px 20px 30px;
+    padding: 0px 35px 20px 35px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -290,7 +295,7 @@ a[href*="#"] {
 }
 
 
-@media only screen and (min-width: 767px) and (max-width: 961px) {
+@media only screen and (min-width: 767px) and (max-width: 960px) {
     .header-btns button {
         width: 25vw;
         margin-left: 15px;
@@ -311,7 +316,6 @@ a[href*="#"] {
 
     .logo-container div {
         width: 40vw;
-        height: 20vh;
     }
 
     .logo-container div:nth-last-child(2) {
@@ -368,7 +372,207 @@ a[href*="#"] {
     .conditions div div:first-child {
         margin-right: 20px;
     }
+  }
 
-  
+  @media only screen and (min-width: 961px) and (max-width: 1024px) {
+    .header-btns button {
+        width: 25vw;
+        margin-left: 15px;
+    }
+    
+    .header-btns input {
+        width: 50vw;
+    }
+
+    .header-btns p {
+        margin-left: 0;
+    }
+
+    .logo-container{
+        justify-content: center;
+        align-content: center;
+    }
+
+    .logo-container div {
+        width: 30vw;
+    }
+
+    .logo-container div:nth-last-child(2),  
+    .logo-container div:nth-last-child(3) {
+        border-bottom: none;
+    }
+
+    .logo-container div:nth-child(1),
+    .logo-container div:nth-child(2),
+    .logo-container div:nth-child(4),
+    .logo-container div:nth-child(5) {
+        border-right: 2px solid #EEEEEE;
+    }
+
+    .sign-up-section {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .sign-up-section h2 {
+        margin-top: 0;
+    }
+
+    .sign-up-section input {
+        width: 25vw;
+        margin: 0;
+    }
+
+    .sign-up-section button {
+        width: 20vw;
+        margin-left: 15px;
+    }
+
+    .footer-lists ul {
+        width: 25%;
+    }
+
+    .footer div:first-child{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .footer-lists {
+        width: 100vw;
+
+    }
+
+    .conditions div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .conditions div div:first-child {
+        margin-right: 20px;
+    }
   }
   
+  @media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 6.5vw;
+    }
+    
+    .nav img:last-child {
+        display: none;
+    }
+
+    .nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 30px;
+    }
+
+    .nav ul li {
+        padding-left: 30px;
+    }
+
+    .nav ul li:last-child{
+        border: 1px solid #5b5e6d;
+        padding: 10px;
+        margin-left: 30px;
+        border-radius: 5px;
+    }
+
+    .header {
+        flex-direction: row;
+    }
+
+    .header img {
+        width: 40vw;
+        margin-right: 100px;
+    }
+
+    input {
+        display: none;
+    }
+
+   .action-button{
+       width: 40%;
+   }
+
+   .header-btns{
+       flex-direction: column;
+   }
+
+   .header-btns p {
+       margin-left: 0;
+   }
+
+    .logo-container{
+        justify-content: center;
+        align-content: center;
+    }
+
+    .logo-container div {
+        width: 30vw;
+    }
+
+    .logo-container div:nth-last-child(2),  
+    .logo-container div:nth-last-child(3) {
+        border-bottom: none;
+    }
+
+    .logo-container div:nth-child(odd),
+    .logo-container div:nth-child(2),
+    .logo-container div:nth-child(4) {
+        border-right: 2px solid #EEEEEE;
+    }
+
+    .sign-up-section {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .sign-up-section h2 {
+        margin-top: 0;
+    }
+
+    .sign-up-section input {
+        width: 25vw;
+        margin: 0;
+    }
+
+    .sign-up-section button {
+        width: 20vw;
+        margin-left: 15px;
+    }
+
+    .footer-lists ul {
+        width: 25%;
+    }
+
+    .footer div:first-child{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .footer-lists {
+        width: 100vw;
+
+    }
+
+    .conditions div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .conditions div div:first-child {
+        margin-right: 20px;
+    }
+  }
