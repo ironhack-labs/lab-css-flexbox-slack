@@ -11,13 +11,14 @@ nav grey: #5b5e6d;
 /* nav */
 
 body {
+  /* remove margins, etc before start */
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 20px; 
-  /* width: 100%; */
 } 
 nav {
+  /* z-index - to help to show content below fixed element (add padding-top to the next element) */
   width: 100%;
   position: fixed;
   display: flex;
@@ -41,6 +42,7 @@ nav {
   display: none; 
 }
 .container div {
+  /* draw the hamburger */
   background-color: #5b5e6d;
   width: 40px;
   height: 2px;
@@ -48,8 +50,6 @@ nav {
   position: relative;
   top: 20px;
 }
-
-/*header */
 header{
   /* after fixed position, to make it visible + z-index:1000 in fixed nav */
   padding-top: 10%;
@@ -94,7 +94,6 @@ header{
 }
 .main {
   background-color: #f4f3f4;
-  
 }
 .main-info {
   display: flex;
@@ -123,13 +122,13 @@ header{
   border-radius: 5px;
 }
 .general-logo-wrapper {
+  /* wrapping all in the center */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 3%;
 }
-
 .image-wrapper > img{
   width: 400px;
   margin-top: 30px;
@@ -217,7 +216,6 @@ header{
   .discover-button {
     width: 350px;
   }
-
   .try-sign {
     text-align: left;
     margin-left: 1%;
@@ -294,10 +292,6 @@ header{
   .flag-lang-arrow {
     justify-content: space-around;
   }
-
-
-
-  
 }
 
 @media screen and (min-width: 1200px)  {
@@ -318,7 +312,6 @@ header{
   .border {
     border: 2px solid black;
   }
-
   header {
     display: flex;
     justify-content: space-between;
@@ -331,8 +324,6 @@ header{
   .header-text {
     width: 70%;
   }
-
-
   #email {
     display: none;
   }
@@ -355,7 +346,6 @@ header{
   }
   .footer-wrapper {
     font-size: 0.5em;
-    
   }
   .footer-lists {
     width: 70%;
