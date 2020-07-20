@@ -12,17 +12,17 @@ nav grey: #5b5e6d;
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    font-style: normal;  
-    background-color: white;;
+    background-color: white;
     padding: 0;
     margin: 0; 
     color: #2C303F;
 }
 
 p {
-  color: #5b5e6d;
-  font-weight: 300;
-  line-height: 1.9rem;
+    color: #5b5e6d;
+    font-weight: 300;
+    line-height: 2.2rem;
+    font-size: 1.2rem;
 }
 
 h1, h2 {
@@ -62,35 +62,26 @@ ul {
 }
 
 /* header */
-.header{
-    background-color: white;
+.header {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 0px 35px 20px 35px;
-    margin-top: 80px;
+    width: 80%;
+    margin: 110px auto 0 auto;
 }
 
 h1 {
-    font-size: 8vw;
-    padding: 20px 0 10px 0;  
+    font-size: 9vw;
+    padding-bottom: 10px;
 }
 
 .header p {
-    font-size: 1.1rem;
     padding-bottom: 25px;
-}
-
-.header-btns {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: flex-start;
 }
 
 .header-btns p {
     font-size: 1rem;
-    margin-left: 18%;
+    text-align: center;
 }
 
 
@@ -112,10 +103,10 @@ input {
     background-color: #192592;
     border: none;
     text-align: center;
-    padding: 20px 0;
+    padding: 23px 0 20px 0;
     border-radius: 5px;
     color: white;
-    font-weight:bold;
+    font-weight: bold;
     letter-spacing: 0.1rem;
     width: 100%;
 }
@@ -125,7 +116,7 @@ a[href*="#"] {
     text-decoration: none;
     border-bottom: 1px solid #192592;
     padding-bottom: 2px;
-  }
+}
 
 .header img {
     width: 350px;
@@ -137,8 +128,8 @@ a[href*="#"] {
     flex-direction: column;
     justify-content: space-around;
     border-bottom: 2px solid #EEEEEE;
+    margin:  0 auto;
 }
-
 
 .section-1{
     text-align: center;
@@ -146,15 +137,27 @@ a[href*="#"] {
     background-color:#F4F3F4;
     border-top: 2px solid #EEEEEE;
     border-bottom: 2px solid #EEEEEE;
-    width: 100%;
 }
 
 .section-1 h2 {
-    font-size: 5vw;
+    font-size: 6vw;
 }
 
 .section-1 p {
     padding: 0 25px;
+}
+
+#why {
+    color:#192592;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color:white;
+    border: 1px solid #192592;
+    letter-spacing: 0.1rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 100px;
+    margin: 25px 0;
 }
 
 .logo-container{
@@ -162,7 +165,6 @@ a[href*="#"] {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* margin: 0 40px; */
 }
 
 .logo-container div {
@@ -202,19 +204,6 @@ a[href*="#"] {
 
 .sign-up-section p {
     margin-top: 0;
-}
-
-#why {
-    color:#192592;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    background-color:white;
-    border: 1px solid #192592;
-    letter-spacing: 0.1rem;
-    border-radius: 5px;
-    text-align: center;
-    padding: 20px 100px;
-    margin: 25px 0;
 }
 
 /* footer */
@@ -291,22 +280,43 @@ a[href*="#"] {
 .conditions div div:last-child i {
    font-size: 1.6rem;
    padding: 0 15px;
-   
 }
 
 
 @media only screen and (min-width: 767px) and (max-width: 960px) {
-    .header-btns button {
-        width: 25vw;
-        margin-left: 15px;
+    /* header */
+    .header {
+        width: 90%;
     }
+
+    h1 {
+        font-size: 5vw;;
+    }
+
+    .header p {
+        padding-right: 25px
+    }
+
     
     .header-btns input {
-        width: 50vw;
+        width: 35vw;
+    }
+
+    .header-btns button {
+        width: 25%;
     }
 
     .header-btns p {
-        margin-left: 0;
+        text-align: left;
+    }
+
+    /* main */
+    .section-1 h2 {
+        font-size: 2.5rem;;
+    }
+
+    .section-1 p {
+        padding: 0 65px;
     }
 
     .logo-container{
@@ -328,7 +338,6 @@ a[href*="#"] {
 
     .sign-up-section {
         margin-top: 50px;
-        display: flex;
         justify-content: space-between;
         align-items: flex-start;
         text-align: left;
@@ -345,9 +354,14 @@ a[href*="#"] {
 
     .sign-up-section button {
         width: 20vw;
-        margin-left: 15px;
+        margin-left: 5px;
     }
 
+    /* footer */
+    .footer {
+        padding-top: 30px;
+    }
+    
     .footer-lists ul {
         width: 25%;
     }
@@ -360,7 +374,6 @@ a[href*="#"] {
     
     .footer-lists {
         width: 100vw;
-
     }
 
     .conditions div {
@@ -375,19 +388,40 @@ a[href*="#"] {
   }
 
   @media only screen and (min-width: 961px) and (max-width: 1024px) {
-    .header-btns button {
-        width: 25vw;
-        margin-left: 15px;
+    /* header */
+    .header {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 5vw;;
+    }
+
+    .header p {
+        padding-right: 25px
     }
     
     .header-btns input {
-        width: 50vw;
+        width: 35vw;
+    }
+
+    .header-btns button {
+        width: 25%;
     }
 
     .header-btns p {
-        margin-left: 0;
+        text-align: left;
+    }
+    
+    /* main */
+    .section-1 h2 {
+        font-size: 2.5rem;;
     }
 
+    .section-1 p {
+        padding: 0 65px;
+    }
+    
     .logo-container{
         justify-content: center;
         align-content: center;
@@ -411,7 +445,6 @@ a[href*="#"] {
 
     .sign-up-section {
         margin-top: 50px;
-        display: flex;
         justify-content: space-between;
         align-items: flex-start;
         text-align: left;
@@ -428,7 +461,12 @@ a[href*="#"] {
 
     .sign-up-section button {
         width: 20vw;
-        margin-left: 15px;
+        margin-left: 5px;
+    }
+/* 
+    footer */
+    .footer {
+        padding-top: 30px;
     }
 
     .footer-lists ul {
@@ -443,7 +481,6 @@ a[href*="#"] {
     
     .footer-lists {
         width: 100vw;
-
     }
 
     .conditions div {
@@ -457,11 +494,8 @@ a[href*="#"] {
     }
   }
   
-  @media only screen and (min-width: 1200px) {
-    h1 {
-        font-size: 6.5vw;
-    }
-    
+  @media only screen and (min-width: 1200px) {  
+    /* nav */
     .nav img:last-child {
         display: none;
     }
@@ -482,6 +516,19 @@ a[href*="#"] {
         padding: 10px;
         margin-left: 30px;
         border-radius: 5px;
+    }
+
+    /* header */
+    .header {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 5vw;;
+    }
+
+    .header p {
+        padding-right: 25px
     }
 
     .header {
@@ -506,9 +553,14 @@ a[href*="#"] {
    }
 
    .header-btns p {
-       margin-left: 0;
+       text-align: left;
    }
 
+   /* main */
+    .section-1 h2 {
+       font-size: 2.5rem;;
+    }
+    
     .logo-container{
         justify-content: center;
         align-content: center;
@@ -551,19 +603,28 @@ a[href*="#"] {
         margin-left: 15px;
     }
 
+    /* footer */
+    .footer {
+        padding-top: 30px;
+    }
+
     .footer-lists ul {
         width: 25%;
     }
 
     .footer div:first-child{
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: flex-start;
     }
     
     .footer-lists {
-        width: 100vw;
+        width: 70%
+    }
 
+    .conditions {
+        justify-content: space-between;
+        padding: 10px 35px;
     }
 
     .conditions div {
