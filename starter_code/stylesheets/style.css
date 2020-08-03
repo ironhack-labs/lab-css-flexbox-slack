@@ -5,3 +5,175 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  
+  nav {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  hr {
+    width: 100%;
+    border: 1px solid lightgray;
+  }
+
+  h3 {
+    font-size: xx-large;
+  }
+ 
+  header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    padding: 2rem;
+  }
+
+  header h1,
+  header p {
+    text-align: left;
+  }
+
+  header p:last-child {
+    text-align: center;
+  }
+
+  input,
+  button {
+    padding: 1.5rem;
+    border-radius: .4rem;
+    width: 100%;
+    border: none;
+  }
+
+  header button,
+  main button {
+    background-color: #4149aa;
+    color: white;
+  }
+
+  header input {
+    border: 1px solid lightgray;
+    margin-bottom: 1rem;
+  }
+
+  header img {
+    order: 999;
+  }
+
+  main {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  main div:first-child {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #f5f5f5;
+  }
+
+  main div:first-child button {
+    background-color: white;
+    border: 1px solid #4149aa;
+    color: #4149aa;
+  }
+
+  main div:first-child img {
+    align-self: center;
+    height: 48px;
+  }
+  
+  main div:nth-child(n+2) {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  footer div {
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+  footer div div {
+    display: flex;
+    align-self: flex-start;
+    flex: 0 0 100%;
+    height: auto;
+  }
+
+  footer div div img {
+    justify-content: center;
+    width: 8rem;
+  }
+
+  footer ul {
+    flex: 1 1 40%;
+    padding: 0;
+  }
+
+  footer ul li {
+    margin-top: 1rem;
+    text-align: start;
+    list-style: none;
+  }
+
+  footer div:nth-child(even) {
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 2rem;
+  }
+
+  footer div:nth-child(even) ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  footer div:nth-child(even) div div {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    place-items: center;
+  }
+
+  footer div:nth-child(even) div div img {
+    height: 40px;
+    width: 40px;
+  }
+
+
+  @media (max-width: 961px) and (min-width: 767px) {
+    /* start here */
+  }
