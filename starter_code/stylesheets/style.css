@@ -16,164 +16,249 @@ body {
   text-align: center;
 }
 
+nav {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
 
-@media (max-width: 768px) {
-  
-  nav {
-    align-items: center;
-    background-color: #fff;
-    display: flex;
-    justify-items: center;
-    justify-content: space-between;
-    padding: .5rem 2rem;
-    position: sticky;
-    top: 0;
-    width: 100%;
-  }
+nav ul {
+  display: none;
+}
 
-  nav ul {
-    display: none;
-  }
+img {
+  max-width: 100%;
+}
 
-  img {
-    max-width: 100%;
-  }
+hr {
+  width: 100%;
+  border: 1px solid lightgray;
+}
 
-  hr {
-    width: 100%;
-    border: 1px solid lightgray;
-  }
+h3 {
+  font-size: xx-large;
+}
 
-  h3 {
-    font-size: xx-large;
-  }
- 
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  padding: 2rem;
+}
+
+header h1,
+header p {
+  text-align: left;
+}
+
+header p:last-child {
+  text-align: center;
+}
+
+input,
+button {
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  border: none;
+}
+
+header button,
+main button {
+  background-color: #4149aa;
+  color: white;
+}
+
+header input {
+  border: 1px solid lightgray;
+  margin-bottom: 1rem;
+}
+
+header div {
+  order: 999;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main div:first-child {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #f5f5f5;
+}
+
+main div:first-child button {
+  background-color: white;
+  border: 1px solid #4149aa;
+  color: #4149aa;
+}
+
+main div:first-child img {
+  align-self: center;
+  height: 6rem;
+  padding-bottom: 2rem;
+}
+
+main div:nth-child(n + 2) {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer div {
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+footer div div {
+  display: flex;
+  align-self: flex-start;
+  flex: 0 0 100%;
+  height: auto;
+}
+
+footer div div img {
+  justify-content: center;
+  width: 8rem;
+}
+
+footer ul {
+  flex: 1 1 40%;
+  padding: 0;
+}
+
+footer ul li {
+  margin-top: 1rem;
+  text-align: start;
+  list-style: none;
+}
+
+footer div:nth-child(even) {
+  display: flex;
+  background-color: #f5f5f5;
+  padding: 2rem;
+}
+
+footer div:nth-child(even) ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+footer div:nth-child(even) div div {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  place-items: center;
+}
+
+footer div:nth-child(even) div div img {
+  height: 40px;
+  width: 40px;
+}
+
+@media (min-width: 767px) {
   header {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    padding: 2rem;
+    flex-flow: row wrap;
+    gap: 0.5rem;
   }
 
-  header h1,
-  header p {
-    text-align: left;
+  header > button,
+  header > input {
+    width: auto;
+    flex: 0 1 40%;
+    margin-bottom: 0;
   }
 
-  header p:last-child {
-    text-align: center;
-  }
-
-  input,
-  button {
-    padding: 1.5rem;
-    border-radius: .4rem;
-    width: 100%;
-    border: none;
-  }
-
-  header button,
-  main button {
-    background-color: #4149aa;
-    color: white;
-  }
-
-  header input {
-    border: 1px solid lightgray;
-    margin-bottom: 1rem;
-  }
-
-  header img {
-    order: 999;
-  }
-
-  main {
-    display: flex;
-    flex-flow: column nowrap;
+  header > div {
+    flex: 0 0 100%;
   }
 
   main div:first-child {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    padding: 2rem;
-    gap: 2rem;
-    background-color: #f5f5f5;
+    flex-flow: row wrap;
+    flex: 1 1 100%;
+    justify-content: center;
+    gap: 4rem;
   }
 
-  main div:first-child button {
-    background-color: white;
-    border: 1px solid #4149aa;
-    color: #4149aa;
+  main div button {
+    max-width: 60%;
+    margin: 0 auto;
   }
 
   main div:first-child img {
-    align-self: center;
-    height: 48px;
-  }
-  
-  main div:nth-child(n+2) {
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: center;
-    padding: 2rem;
-  }
-
-  footer div {
-    padding: 2rem;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-  }
-
-  footer div div {
-    display: flex;
-    align-self: flex-start;
-    flex: 0 0 100%;
+    width: 33%;
     height: auto;
   }
 
-  footer div div img {
-    justify-content: center;
-    width: 8rem;
+  main div:nth-child(n + 2) {
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  main div:nth-child(n + 2) h3 {
+    width: 40%;
+    text-align: left;
+  }
+
+  main div:nth-child(n + 2) button {
+    width: 40%;
+  }
+
+  main div:nth-child(n + 2) p {
+    order: 99999;
+  }
+
+  footer > div > div {
+    display: none;
   }
 
   footer ul {
-    flex: 1 1 40%;
+    flex: 1 1 25%;
     padding: 0;
   }
 
-  footer ul li {
-    margin-top: 1rem;
-    text-align: start;
-    list-style: none;
+  footer div:nth-child(even) {
+    flex-wrap: wrap;
   }
 
   footer div:nth-child(even) {
-    display: flex;
-    background-color: #f5f5f5;
-    padding: 2rem;
+    flex: 1 1 50%;
   }
 
-  footer div:nth-child(even) ul {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
+  footer div:nth-child(even) div:last-child {
+    flex: 1 0 100%;
+  }
+}
+
+@media (min-width: 961px) {
+  main div button {
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
-  footer div:nth-child(even) div div {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    place-items: center;
+  main div:first-child img {
+    width: 20%;
+    height: auto;
   }
+}
 
-  footer div:nth-child(even) div div img {
-    height: 40px;
-    width: 40px;
+@media (min-width: 1200) {
+  nav > ul {
+    display: auto !important;
   }
-
-
-  @media (max-width: 961px) and (min-width: 767px) {
-    /* start here */
-  }
+}
