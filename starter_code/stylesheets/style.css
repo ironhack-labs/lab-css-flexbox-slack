@@ -34,12 +34,13 @@ nav {
     box-sizing: border-box;
     align-items: center;
     z-index: 2;
-    border-top: 1px solid var(--nav-grey);
-    border-bottom: 1px solid var(--nav-grey);
+    border-top: 1px solid var(--background-grey);
+    border-bottom: 1px solid var(--background-grey);
 }
 
 nav>img {
     width: 200px;
+    box-sizing: border-box;
 }
 
 nav>ul {
@@ -48,6 +49,7 @@ nav>ul {
 
 header {
     padding: 120px 40px 0 40px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -146,14 +148,14 @@ div.try {
     padding: 60px 40px;
 }
 
-.try>p:nth-child(1) {
+.try>div>p:nth-child(1) {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0;
     color: var(--dark-grey);
 }
 
-.try>p:nth-child(2) {
+.try>div>p:nth-child(2) {
     margin-top: 0;
 }
 
@@ -202,14 +204,14 @@ div.try {
     font-size: 1.4rem;
 }
 
-#lastSection> :nth-child(2) {
+#lastSection> :nth-child(2)> :nth-child(1) {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px 0;
 }
 
-#lastSection> :nth-child(2) span {
+#lastSection> :nth-child(2)> :nth-child(1) span {
     font-weight: bold;
     color: var(--nav-grey);
     margin: 0 20px;
@@ -221,13 +223,13 @@ i {
     font-size: 1.5rem;
 }
 
-#lastSection> :nth-child(3) {
+#lastSection> :nth-child(2)> :nth-child(2) {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-#lastSection> :nth-child(3)>i {
+#lastSection> :nth-child(2)> :nth-child(2)>i {
     font-size: 2rem;
     margin: 0 20px;
 }
@@ -236,7 +238,7 @@ i {
     width: 40px;
 }
 
-@media (min-width: 768px) and (max-width: 960px) {
+@media (min-width: 768px) {
     h1 {
         width: 700px;
     }
@@ -289,17 +291,163 @@ i {
     }
     div.try {
         display: flex;
+        justify-content: space-between;
         align-items: center;
+    }
+    div.try>div:nth-child(1) {
+        text-align: start;
     }
     div.try p {
         margin: 0;
+        font-size: 1.4rem;
+    }
+    div.try>div:nth-child(1)>p:nth-child(1) {
+        font-size: 1.8rem;
+    }
+    div.try>div:nth-child(2) {
+        width: 50%;
     }
     .try .btn,
     .try .emailInput {
-        width: 25%;
+        width: 45%;
         font-size: 1rem;
     }
     #linksEnd>ul {
         width: 20%;
+    }
+    #lastSection {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #lastSection ul {
+        width: 45%;
+    }
+    #lastSection ul li {
+        font-size: 1.1rem;
+    }
+    #lastSection>div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 45%;
+    }
+    #lastSection> :nth-child(2)> :nth-child(1) {
+        margin-right: 40px;
+    }
+    #lastSection> :nth-child(2)> :nth-child(1) span {
+        font-weight: bold;
+        color: var(--nav-grey);
+        margin: 0 5px;
+        font-size: 1.1rem;
+    }
+    i {
+        color: var(--nav-grey);
+        font-size: 1.2rem;
+    }
+    #lastSection> :nth-child(2)> :nth-child(2)>i {
+        font-size: 1.4rem;
+        margin: 0 10px;
+    }
+    #lastSection img {
+        width: 30px;
+    }
+}
+
+@media (min-width: 961px) {
+    #company .logos {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 400px;
+    }
+    #company .logos img {
+        width: 33.3333%;
+        height: 200px;
+        padding: 40px 20px;
+        margin: 0;
+        border-bottom: 1px solid #e4e3e3;
+        object-fit: contain;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    #company .logos img.left-logo {
+        border-right: none;
+    }
+    #company .logos img.middle-logo-3 {
+        border-right: 1px solid #e4e3e3;
+        border-left: 1px solid #e4e3e3;
+        border-bottom: 1px solid #e4e3e3;
+    }
+    #company .logos img.bottom-logo-3 {
+        border-bottom: none;
+    }
+    hr {
+        display: none;
+    }
+}
+
+
+/* We put min-width of 1024px instead of 1200px to be sure to cover all the possible width of the viewport */
+
+@media (min-width: 1024px) {
+    nav svg {
+        display: none;
+    }
+    nav>ul {
+        display: block;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+    }
+    nav>ul>li {
+        color: var(--nav-grey);
+        font-size: 1.1rem;
+    }
+    nav>ul>li:nth-child(4) {
+        border: 1px solid var(--dark-grey);
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    header {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+    header>div {
+        padding-left: 80px;
+        text-align: left;
+        box-sizing: border-box;
+        width: 60%;
+    }
+    header>img {
+        width: 40%;
+        object-fit: contain;
+        padding-left: 0;
+    }
+    header .emailInput {
+        display: none;
+    }
+    header .btn {
+        width: 200px;
+        font-size: 1.2rem;
+    }
+    #register {
+        height: 200px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #register p {
+        margin: 10px 0 0 0;
+        width: auto;
+    }
+    h1 {
+        width: 400px;
+    }
+    h1+p {
+        font-size: 1.6rem;
     }
 }
