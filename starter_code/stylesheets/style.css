@@ -7,8 +7,8 @@ nav grey: #5b5e6d;
 */
 
 :root {
-    --background-grey: #F4F3F4;
-    --dark-grey: #2C303F;
+    --background-grey: #f4f3f4;
+    --dark-grey: #2c303f;
     --button-purple: #192592;
     --nav-grey: #5b5e6d;
 }
@@ -51,7 +51,7 @@ header {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     width: 400px;
 }
 
@@ -103,11 +103,6 @@ header>img {
     padding: 60px 40px;
 }
 
-main img {
-    width: 300px;
-    margin: 40px 0;
-}
-
 #company>h2 {
     font-size: 3.5rem;
 }
@@ -131,6 +126,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+main img {
+    width: 300px;
+    margin: 40px 0;
 }
 
 hr {
@@ -152,7 +153,7 @@ div.try {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0;
-    color: var(--dark-grey)
+    color: var(--dark-grey);
 }
 
 .try>p:nth-child(2) {
@@ -204,27 +205,27 @@ div.try {
     font-size: 1.4rem;
 }
 
-#lastSection>:nth-child(2) {
+#lastSection> :nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px 0;
 }
 
-#lastSection>:nth-child(2) span {
+#lastSection> :nth-child(2) span {
     font-weight: bold;
     color: var(--nav-grey);
     margin: 0 20px;
     font-size: 1.4rem;
 }
 
-#lastSection>:nth-child(3) {
+#lastSection> :nth-child(3) {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-#lastSection>:nth-child(3)>i {
+#lastSection> :nth-child(3)>i {
     font-size: 2rem;
     margin: 0 20px;
     color: var(--nav-grey);
@@ -232,4 +233,42 @@ div.try {
 
 #lastSection img {
     width: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    h1 {
+        width: 700px;
+    }
+    .emailInput {
+        width: 50%;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+    .btn {
+        width: 30%;
+    }
+    #register {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: 130px;
+    }
+    #register p {
+        width: 50%;
+    }
+    header>img {
+        width: 70%;
+        padding-top: 20px;
+        padding-left: 15%;
+    }
+    #company .logos {
+        display: row;
+    }
+    #company .logos img {
+        width: 200px;
+        margin: 40px 0;
+    }
+    hr {
+        display: none;
+    }
 }
