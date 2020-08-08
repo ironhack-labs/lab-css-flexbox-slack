@@ -143,9 +143,6 @@ hr {
 
 div.try {
     background-color: #fff;
-}
-
-.try {
     padding: 60px 40px;
 }
 
@@ -169,7 +166,7 @@ div.try {
 
 #linksEnd>ul {
     list-style: none;
-    width: 210px;
+    width: 250px;
     padding-left: 20px;
     color: var(--nav-grey);
 }
@@ -219,6 +216,11 @@ div.try {
     font-size: 1.4rem;
 }
 
+i {
+    color: var(--nav-grey);
+    font-size: 1.5rem;
+}
+
 #lastSection> :nth-child(3) {
     display: flex;
     flex-direction: row;
@@ -228,7 +230,6 @@ div.try {
 #lastSection> :nth-child(3)>i {
     font-size: 2rem;
     margin: 0 20px;
-    color: var(--nav-grey);
 }
 
 #lastSection img {
@@ -262,13 +263,43 @@ div.try {
         padding-left: 15%;
     }
     #company .logos {
-        display: row;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 600px;
     }
     #company .logos img {
-        width: 200px;
-        margin: 40px 0;
+        width: 50%;
+        height: 200px;
+        padding: 40px 10%;
+        margin: 0;
+        border-bottom: 1px solid #e4e3e3;
+        object-fit: contain;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    #company .logos img.left-logo {
+        border-right: 1px solid #e4e3e3;
+    }
+    #company .logos img.bottom-logo {
+        border-bottom: none;
     }
     hr {
         display: none;
+    }
+    div.try {
+        display: flex;
+        align-items: center;
+    }
+    div.try p {
+        margin: 0;
+    }
+    .try .btn,
+    .try .emailInput {
+        width: 25%;
+        font-size: 1rem;
+    }
+    #linksEnd>ul {
+        width: 20%;
     }
 }
