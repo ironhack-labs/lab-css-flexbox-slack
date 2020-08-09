@@ -1,7 +1,670 @@
 /*
-background-grey: #F4F3F4;
+background-grey: #F4F3F4; rgb(244, 243, 244)
 button-purple: #192592
 main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
+paragraph grey: #5b5e6d; rgb(91, 94, 109)
 nav grey: #5b5e6d;
 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root{
+    --gris: #5b5e6d;
+    --grisOscuro: #2C303F;
+    --morado: rgba(25, 37, 146, .9);
+    --grisClaro:  #F4F3F4;
+}
+
+body{
+    margin: 0;
+}
+
+p{
+    color: var(--gris);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{    
+    color: var(--grisOscuro);
+    font-weight: bold;
+    width: 88vw;
+    font-size: 9.3vw;
+}
+
+h2{
+    color: var(--grisOscuro);
+    font-weight: bold;
+    font-size: 6vw;
+    margin-bottom: 1vh;
+}
+
+h3{
+    color: var(--grisOscuro);
+    font-weight: bold;
+    font-size: 5vw;
+    margin: 10px 0 3px
+}
+
+li{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--gris);
+    list-style: none;
+}
+
+i{
+    color: var(--gris);
+    padding: 10px 20px;
+}
+
+.signIn{
+    font-size: .8em;
+}
+
+header a, main a{
+    color: var(--morado)
+}
+
+/*navbar*/
+nav{
+    height: 80px;
+    position: fixed;
+    border-bottom: 1px solid var(--grisClaro);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2vw 3vh;
+    background-color: white;    
+}
+
+#logo{
+    height: 60px;
+}
+
+#menu{
+    height: 30px;
+    
+}
+
+nav ul{
+    display: none;
+}
+
+/*header*/
+header{
+    padding: 80px 20px 10px 20px;
+}
+
+header div p:nth-child(2){
+    width: 77vw;
+    margin: 0 0 25px;
+}
+
+.getStart{
+    background-color: var(--morado);
+    border: 0;    
+    color: white;
+    border-radius: 3px;
+    width: 100%;
+    height: 50px;
+}
+
+input{
+    border-radius: 3px;
+    border: 2px solid var(--grisClaro);
+    width: 99%;
+    height: 46px;
+    padding: 0;
+}
+
+header div p:nth-child(4){
+    text-align: center;
+}
+
+header img{
+    width: 100%;
+    display: block;
+    margin: 20px auto 0;
+}
+
+
+/*main*/
+.grayBackground{
+    background-color: var(--grisClaro);
+    text-align: center;
+    padding: 20px 20px 0;    
+}
+
+.grayBackground>:first-child div {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px 0 0;
+}
+.grayBackground>button{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color: var(--morado);
+    border: 1px solid  rgba(25, 37, 146, .6);
+    border-radius: 3px;
+    font-weight: bolder;
+    margin: 2vh auto 5vh;
+}
+
+.grayBackground img{
+    height: 40px;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgba(91, 94, 109, .2);
+    width: 50%;
+}
+
+main>div:nth-child(2){
+    text-align: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--grisClaro);
+}
+
+
+/*footer*/
+
+footer img{
+    height: 100px;
+    
+}
+
+/*lista de compañía, productos, recuros y extras*/
+
+footer div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+footer div:nth-child(2) ul{
+    padding: 20px;
+    width: 28%;
+    padding: 0 14px;
+    margin: 0 0 30px;
+}
+
+footer div:nth-child(2) ul li{
+    padding: 8px 0 0; 
+    
+}
+footer div:nth-child(2) ul li:first-child{
+    font-weight: bold;
+    padding: 0 0 10px;
+    
+}
+
+/*status, términos, contacto*/
+footer div:nth-child(3){
+    background-color: var(--grisClaro);
+    width: 100vw;
+    padding: 15px 0
+}
+
+footer div:nth-child(3) ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+footer div:nth-child(3) ul li{
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+
+/*bandera, idioma*/
+footer div:nth-child(3)>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+/*bandera*/
+footer div:nth-child(3) img{
+    width: 30px;
+    height: 30px;
+    padding: 0 15px;
+}
+
+footer div:nth-child(3)>div:nth-child(3){
+    text-align: center;
+}
+
+/*FOR TABLETS*/
+@media (max-width: 961px) and (min-width: 767px){
+    
+    h1{
+        font-size: 7vw;
+        margin: 3vh 0 2vh;
+    }
+
+    h2{
+        font-size: 4vw;
+    }
+
+    h3{
+        font-size: 3.5vw;
+    }
+
+    header{
+        padding: 80px 35px 30px
+    }
+
+    /*email form*/
+
+    header div>div{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;  
+    }
+
+    header .getStart{
+        width: 50%;
+        padding: 10px 10px;
+    }
+
+    header input{
+        width: 97%;
+    }
+
+    header div p:nth-child(4){
+        text-align: left;
+    }
+
+    header img{
+        width: 40%;
+    }
+
+    /*Companys*/
+
+    .grayBackground button{
+        width: 25%;
+    }
+
+    .grayBackground>div {
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .grayBackground>div img{
+        width: 40%;
+    }
+
+    /*Try for free*/
+    main>div:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 40px;
+    }
+    main>div:nth-child(2) div:nth-child(2){
+        flex-grow: .1;
+        display: flex;
+        justify-content: space-between;
+    }
+    main .getStart{
+        margin: 0 10px;
+    }
+
+    main>div:nth-child(2) div:nth-child(1){
+        text-align: left;
+    }
+
+    main>div:nth-child(2) p, h3{
+        margin: 2px;
+    }
+    
+    /*Company. product, resources, extras*/
+    footer>img{
+        float: left;
+    }
+
+    footer div:nth-child(2) ul{
+        width: 16%;
+    }
+
+    /*Footer*/
+    footer div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        align-items: center;
+        margin: 0;
+    }
+
+    /*Status, terms, contact*/
+    footer div:nth-child(3) ul{
+        flex-grow: 3;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    /*Idioma*/
+    footer div:nth-child(3) div:nth-child(2){
+        width: 30vw;
+        padding: 0;
+    }
+
+    /*Social media icons*/
+    footer div:nth-child(3) div:nth-child(3){
+        padding-right: 20px;
+        margin: 0;
+        justify-content: flex-end;
+        width: 10vw;
+    }
+    
+    footer div:nth-child(3) div:nth-child(3) i{
+        padding: 8px;
+    }    
+}
+
+
+/*Computadoras pantalla chica*/
+@media (max-width: 1024px) and (min-width: 962px){
+    
+    h1{
+        font-size: 7vw;
+        margin: 3vh 0 2vh;
+    }
+
+    h2{
+        font-size: 4vh;
+    }
+
+    h3{
+        font-size: 3.2vw;
+    }
+
+    header{
+        padding: 80px 50px 30px
+    }
+
+    /*email form*/
+
+    header div>div{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;  
+    }
+
+    header .getStart{
+        width: 50%;
+        padding: 10px 10px;
+    }
+
+    header input{
+        width: 97%;
+    }
+
+    header div p:nth-child(4){
+        text-align: left;
+    }
+
+    header img{
+        width: 40%;
+        height: 50%;
+    }
+
+    /*Companys*/
+
+    .grayBackground button{
+        width: 25%;
+    }
+
+    .grayBackground>div {
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .grayBackground>div img{
+        width: 30%;
+    }
+
+    /*Try for free*/
+    main>div:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 40px;
+    }
+    main>div:nth-child(2) div:nth-child(2){
+        flex-grow: .1;
+        display: flex;
+        justify-content: space-between;
+    }
+    main .getStart{
+        margin: 0 10px;
+    }
+
+    main>div:nth-child(2) div:nth-child(1){
+        text-align: left;
+    }
+
+    main>div:nth-child(2) p, h3{
+        margin: 2px;
+    }
+    
+    /*Company. product, resources, extras*/
+    footer>img{
+        float: left;
+        padding-left: 40px;
+    }
+    footer div:nth-child(2){
+        padding-right: 40px;
+    }
+
+    footer div:nth-child(2) ul{
+        width: 16%;
+    }
+
+    /*Footer*/
+    footer div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        align-items: center;
+        margin: 0;
+    }
+
+    /*Status, terms, contact*/
+    footer div:nth-child(3) ul{
+        flex-grow: 3;
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+
+    /*Idioma*/
+    footer div:nth-child(3) div:nth-child(2){
+        width: 30vw;
+        padding: 0;
+    }
+
+    /*Social media icons*/
+    footer div:nth-child(3) div:nth-child(3){
+        padding-right: 40px;
+        margin: 0;
+        justify-content: flex-end;
+        width: 10vw;
+    }
+    
+    footer div:nth-child(3) div:nth-child(3) i{
+        padding: 15px;
+    }
+}
+
+/*Computadoras pantalla grande*/
+@media (min-width: 1025px){
+    
+    h1{
+        font-size: 5vw;
+        margin: 0 0 2vh;
+        width: 95%;
+    }
+
+    h2{
+        font-size: 4vh;
+    }
+
+    h3{
+        font-size: 3.2vw;
+    }
+
+    nav img:nth-child(3){
+        display: none;        
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 40vw;
+    }
+
+    nav ul li:nth-child(4){
+        border: 1px solid var(--gris);
+        border-radius: 3px;
+        padding: 10px;
+    }
+
+    nav{
+        padding: 50px;
+    }
+
+    header{
+        padding: 140px 50px 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: initial;
+    }
+
+    header>div{
+        width: 50vw;
+        height: 60%
+    }
+
+    header>div p:nth-child(2){
+        width: 80%;
+        margin: 0;
+    }
+
+    header img{
+        width: 33%;
+        margin: 0;
+        padding-right: 40px;
+    }
+
+    header .getStart{
+        width: 25%;
+        padding: 0;
+    }
+    
+    input{
+        display: none;
+    }
+
+    header div p:nth-child(4){
+        text-align: left;
+    }
+
+    /*Companys*/
+
+    .grayBackground button{
+        width: 25%;
+    }
+
+    .grayBackground>div {
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .grayBackground>div img{
+        width: 30%;
+        height: 50%;
+    }
+
+    /*Try for free*/
+    main>div:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 40px;
+    }
+    main>div:nth-child(2) div:nth-child(2){
+        flex-grow: .1;
+        display: flex;
+        justify-content: space-between;
+    }
+    main .getStart{
+        margin: 0 10px;
+    }
+
+    main>div:nth-child(2) div:nth-child(1){
+        text-align: left;
+    }
+
+    main>div:nth-child(2) p, h3{
+        margin: 2px;
+    }
+    
+    /*Company. product, resources, extras*/
+    footer>img{
+        float: left;
+        padding-left: 40px;
+    }
+    footer div:nth-child(2){
+        padding-right: 40px;
+    }
+
+    footer div:nth-child(2) ul{
+        width: 16%;
+    }
+
+    /*Footer*/
+    footer div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        align-items: center;
+        margin: 0;
+    }
+
+    /*Status, terms, contact*/
+    footer div:nth-child(3) ul{
+        flex-grow: 3;
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+
+    /*Idioma*/
+    footer div:nth-child(3) div:nth-child(2){
+        width: 30vw;
+        padding: 0;
+    }
+
+    /*Social media icons*/
+    footer div:nth-child(3) div:nth-child(3){
+        padding-right: 40px;
+        margin: 0;
+        justify-content: flex-end;
+        width: 10vw;
+    }
+    
+    footer div:nth-child(3) div:nth-child(3) i{
+        padding: 15px;
+    }
+    
+}
