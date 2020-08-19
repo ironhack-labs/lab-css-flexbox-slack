@@ -5,3 +5,293 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body {
+    font-family: Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+
+}
+
+h1 {
+    font-weight: 600;
+    padding-top: 90px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: rgb(71, 71, 71);
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+p {
+    font-size: 1.2em;
+    color: rgb(104, 104, 104);
+    padding-bottom: 15px;
+}
+
+
+
+/* HEADER */
+
+.menu {
+    z-index: 9999;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid rgb(221, 218, 218);
+}
+
+.menulist{
+    display: none;
+}
+
+.navicon {
+    width: 50px;
+    margin-right: 30px;
+}
+
+.logo {
+    width: 150px;
+}
+
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li {
+    padding: 0 40px;
+    list-style: none;
+}
+
+header a {
+    color: rgb(70, 70, 70);
+}
+
+/* SECTION PRINCIPAL */
+
+.init {
+    margin-left: 20px;
+}
+
+.sigin {
+    text-align: center;
+}
+
+.sigin a {
+    text-decoration: underline;
+}
+
+.sigin h4 {
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+.placeholder {
+    align-items: center;
+}
+/* SECTION PARTNERS */
+
+.partners {
+    background-color: rgb(204, 204, 204);
+    text-align: center;
+}
+
+.partners img {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-bottom: 1px solid grey;
+    width: 50%;
+
+}
+
+aside {
+    margin-left: 20px;
+    
+}
+
+/* SECTION FOOTER */
+
+
+footer img {
+    width: 100px;
+}
+
+footer li {
+    list-style: none;
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: rgb(110, 110, 110);
+}
+
+.contact {
+    background-color: rgb(226, 226, 226);
+    height: 130px;
+}
+
+.aboutus {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+}
+
+.aboutus ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.aboutus li {
+    margin: 0px 10px;
+    font-size: .8em;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.data img {
+    width: 25px;
+    margin-top: 0;
+}
+
+
+/* COMPONENTS: BUTTONS  */
+
+.button {
+    text-transform: uppercase;
+    border: 1px solid;
+    font-size: .8em;
+    display: block;
+    padding: 15px;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #4048AA;
+    color: white;
+    font-weight: 600;
+
+}
+
+.button.white {
+    background-color: white;
+    color: #4048AA;
+}
+
+.buttonworkspace {
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 760px) {
+
+    aside {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .sigin {
+        text-align: left;
+        
+    }
+    aside .button {
+        display: block;
+        justify-content: right;
+        margin-top: 50px;
+        width: 200px;
+
+    }
+    .partners article{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .button.white {        
+        width: 200px;
+        text-align: center;
+    }
+
+    .center {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .aboutus ul {
+        margin-top: 10px;
+    }
+
+}
+
+@media (min-width: 980px) {
+    .navicon {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menulist{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .right{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .init img {
+        padding-top: 100px;
+    }
+
+}
