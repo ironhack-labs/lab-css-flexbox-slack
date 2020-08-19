@@ -1,115 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css"
+    >
+    <title>Slack Clone</title>
+</head>
 
-    <!-- link the font awesome CDN -->
-    <link
-      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
-      rel="stylesheet"
-    />
+<body>
 
-    <!-- link your styles -->
-    <link rel="stylesheet" href="./stylesheets/style.css" />
-    <title>Where work happens | Slack</title>
-  </head>
+    <header class="menu">
 
-  <body>
-    <nav>
-      <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-      </ul>
-    </nav>
-    <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
-      <h1>Where Work Happens</h1>
-      <p>
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+        <a href="#"><img src="images/slack-logo.png" alt="slack-logo" class="logo"></a>
+        <img src="images/menu.png" alt="menu burger" class="navicon">
+
+        <nav>
+
+            <ul>
+                <li><a href="#">Why Slack?</a></li>
+                <li><a href="#">Princing</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="recuadro">Your Workspaces</a></li>
+            </ul>
+
+        </nav>
+
     </header>
+
     <main>
-      <div>
-        <h2>You're in good company</h2>
-        <p>
-          Millions of people around the world have already made Slack the place
-          where their work happens.
-        </p>
-        <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
-      </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
-      </div>
+
+        <header class="header">
+
+            <div class="container">
+
+                <div class="row header_text">
+
+                    <div class="col-12 col-lg-6">
+                        <img src="images/home_talking.png" alt="imagen home talking">
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+
+                        <h1 class="space_header">Where Work Happens</h1>
+                        <p class="space_header">When your team needs to kick off a project, hire a new employee, deploy
+                            some code, review a sales contract, finalize next year's budget, measure
+                            an A/B test, plan your next office opening, and more, Slack has you
+                            covered.
+                        </p>
+                        <div class="colocar">
+                            <input type="email" name="email" id="email" placeholder="Email address" class="space_header input">
+                            <a href="#" class="a_header">get started</a>
+                        </div>
+                        
+                        <p class="p_header">Already using Slack?  <a href="#">Sing in.</a></p>
+
+                    </div>
+
+                </div>                
+
+            </div>
+
+        </header>
+
+        <section class="background_sponsors">
+
+            <div class="container sponsors_text">
+
+                <h2>You're in good company</h2>
+                <p>Millions of people around the world have already made Slack the place where their work happenes.</p>
+                <a href="#">discover why</a>
+            </div>
+
+            <div class="container">
+
+                <div class="row div_sponsors">
+
+                    <div class="col-10 col-sm-6 col-lg-4 sponsors line line2"><img src="images/airbnb-logo.png" alt="airbnb logo"></div>
+                    <div class="col-10 col-sm-6 col-lg-4 sponsors line2"><img src="images/capital-one-logo.png" alt="capital one logo"></div>
+                    <div class="col-10 col-sm-6 col-lg-4 sponsors line "><img src="images/harvard-logo.png" alt="harvard logo"></div>
+                    <div class="col-10 col-sm-6 col-lg-4 sponsors line2"><img src="images/los-angeles-times-logo.png" alt="los angeles times logo"></div>
+                    <div class="col-10 col-sm-6 col-lg-4 sponsors line line2"><img src="images/oracle-logo.png" alt="oracle logo"></div>
+                    <div class="col-10 col-sm-6 col-lg-4 sponsors"><img src="images/ticketmaster-logo.png" alt="ticketmaster logo"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-12 col-sm-6  for_free">
+                        <h3>Try it for free</h3>
+                        <p>Alredy using Slack? <a href="#">Sing in</a></p>
+                    </div>
+
+                    <div class="col-12 col-sm-3  for_free">
+                        <input type="email" name="email" id="mail" placeholder="Email addres" class="space_header input mediun_input">
+                    </div>
+
+                    <div class="col-12 col-sm-3  for_free">
+                        <a href="#" class="a_header mediun">get started</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <hr>
+
+        </section>
+
+        <section class="section_means">
+
+            <div class="container-fluid">
+
+                <div class="row means">
+
+                    <div class="col-12 col-sm-2 col-lg-4">
+                        <a href="#"><img src="images/Slack.ico" alt="Slack icono" class="slack_icon"></a>
+                    </div>
+
+                    <div class="col-6 col-sm-2 means_list">
+                        <h4>company</h4>
+                        <p>About Us</p>
+                        <p>Careers</p>
+                        <p>Blog</p>
+                        <p>Press</p>
+                        <p>Brand Guidelines</p>
+                    </div>
+
+                    <div class="col-6 col-sm-2 means_list">
+                        <h4>product</h4>
+                        <p>Why Slack?</p>
+                        <p>Enterprise</p>
+                        <p>Customer Stories</p>
+                        <p>Pricing</p>
+                        <p>Security</p>
+                    </div>
+
+                    <div class="col-6 col-sm-2 means_list">
+                        <h4>resources</h4>
+                        <p>Dowload</p>
+                        <p>Help Center</p>
+                        <p>Guides</p>
+                        <p>Partner</p>
+                        <p>Events</p>
+                        <p>App Directory</p>
+                        <p>API</p>
+                    </div>
+
+                    <div class="col-6 col-sm-2 means_list">
+                        <h4>extras</h4>
+                        <p>Podcast</p>
+                        <p>Slack Shop</p>
+                        <p>Slack at Work</p>
+                        <p>Slack Fund</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
     <footer>
-      <div>
-        <img src="./images/iso-slack.png" alt="" />
-        <ul>
-          <li>COMPANY</li>
-          <li>About Us</li>
-          <li>Careers</li>
-          <li>Blog</li>
-          <li>Press</li>
-          <li>Brand Guidelines</li>
-        </ul>
-        <ul>
-          <li>PRODUCT</li>
-          <li>Why Slack?</li>
-          <li>Enterprise</li>
-          <li>Customer Stories</li>
-          <li>Pricing</li>
-          <li>Security</li>
-        </ul>
-        <ul>
-          <li>RESOURCES</li>
-          <li>Download</li>
-          <li>Help Center</li>
-          <li>Guides</li>
-          <li>Events</li>
-          <li>App Directory</li>
-          <li>API</li>
-        </ul>
-        <ul>
-          <li>EXTRAS</li>
-          <li>Podcast</li>
-          <li>Slack Shop</li>
-          <li>Slack at Work</li>
-          <li>Slack Fund</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Status</li>
-          <li>Privacy & Terms</li>
-          <li>Contact Us</li>
-        </ul>
-        <div>
-          <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
+        <div class="container">
+
+            <dic class="row">
+
+                <div class="col">
+
+                    <div class="row terms">
+                        <div class="col-4 col-sm-4"><p>Status</p></div>
+                        <div class="col-4 col-sm-4"><p>Privacy & Terms</p></div>
+                        <div class="col-4 col-sm-4"><p>Contact Us</p></div>
+                    </div>
+                   
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-4 flag">
+                            <img src="images/us-flag.png" alt="bandera usa" class="terms_flag" >
+                            <p>English (US) ></p>
+                        </div>
+                        <div class="col-2 col-sm-2 flag_icon"><a href="#"><img src="https://img.icons8.com/android/24/000000/twitter.png" alt="icono twitter" /></a></div>
+                        <div class="col-2 col-sm-2 flag_icon"><a href="#"><img src="https://img.icons8.com/android/24/000000/facebook-new.png" alt="icono facebook"/></a></div>
+                        <div class="col-2 col-sm-2 flag_icon"><a href="#"><img src="images/YOUTUBE_icon-icons.com_65487.png" alt="icono youtube"></a></div>
+                    </div>
+
+                </div>
+
+            </dic>
+
         </div>
-      </div>
+
     </footer>
-  </body>
+
+    
+</body>
 </html>
