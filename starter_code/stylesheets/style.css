@@ -5,3 +5,227 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* Genrales */
+
+h1 {
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(73, 70, 70);
+
+}
+
+h2 {
+    font-size: 2.6em;
+    font-weight: 600;
+    line-height: 1.5;
+
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(73, 70, 70);
+}
+p {
+    font-weight: 400;
+  
+    color: rgb(73, 70, 70);
+}
+
+a {
+    color: inherit
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+
+section{
+    padding: 50px 0px
+}
+.center{
+    text-align:center;
+}
+
+.graybg{
+    background: rgb(241, 241, 241)
+}
+.absolute{
+    position: absolute
+}
+
+
+/* Headere */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+
+}
+header ul{
+    display: flex;
+    align-items: center;
+    
+}
+header li{
+    margin: 0px 15px;
+    color: inherit;
+    
+}
+header img{
+    height: 50px;
+    width: auto;
+}
+header nav{
+    display: none;
+}
+.button.nav-button{
+    color: #5b5e6d;
+    width: 180px;
+}
+
+/* section Intro */
+
+
+.intro article{
+    max-width: 600px;
+    font-size: 1.2em;
+    margin: 0px 0px;
+ 
+}
+.intro form{
+    display: block;
+
+}
+
+.email-input{
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+/* company section */
+
+.company img{
+    padding:30% 40px;
+    border-bottom: 1px solid rgb(199, 192, 192);
+
+}
+
+/* try it section */
+
+.try-it{
+    border-top: 1px solid rgb(199, 192, 192);
+    border-bottom: 1px solid rgb(199, 192, 192);
+}
+
+/* footer */
+
+footer{
+    position: relative;
+}
+footer img{
+    height: 80px;
+    width: 80px;
+    top: 20px;
+    left: 20px
+}
+footer ul{
+    padding:0px
+
+}
+footer .footer-links{
+    padding-top: 110px
+}
+footer li{
+    padding: 7px 0px
+}
+
+
+/* components */
+
+.button{
+    text-transform: uppercase;
+    font-weight: bold; 
+    border: 1px solid;
+    font-size : 0.8em;
+    display : block;
+    padding: 15px;
+    width: auto;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+    background: white;
+    color: #192592;
+}
+.button.solid{
+    background: #192592;
+    color: white;
+}
+
+@media (min-width: 770px) {
+    .intro form{
+        display: flex;
+        align-items: center;
+    }
+    .button{
+        width: 250px;
+        margin: 10px;
+    }
+    .email-input{
+        width: 350px;
+    }
+   
+    .intro .center{
+        text-align:start;
+    }
+    .company .button{
+        margin: auto;
+        
+    }
+    .dflex{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .try-it .email-input{
+        width:180px;
+    }
+    .try-it .button{
+        width:180px;
+    }
+    .try-it .center{
+        text-align: start;
+    }
+    .try-it form{
+        display: flex;
+        align-items: center;
+    }
+    footer{
+        padding-left: 150px;
+        
+    }
+    footer .footer-links{
+        padding-top: 40px
+    }
+}
+
+@media (min-width: 1000px){
+    .email-input{
+        display:none
+    }
+    footer{
+        padding-left: 40%
+    }
+    header nav{
+        display: block;
+    }
+    .menu-icon{
+        display: none;
+    }
+}
