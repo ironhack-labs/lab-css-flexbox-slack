@@ -5,3 +5,229 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* Whole */
+img{
+    width:100%;
+}
+
+h1, h3, h4 {
+    font-family: serif;
+}
+
+p {
+    color: #5b5e6d;
+}
+
+/* Nav */
+.navDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgb(161, 160, 160);
+    
+}
+
+
+
+nav .ulBox {
+    display: none;
+}
+
+nav .slackLogo {
+    width: 60px;
+}
+
+nav .burgerLogo {
+    width: 20px;
+    height: 20px;
+}
+
+/* Where work happens */
+.whereWork {
+    padding: 15px;
+}
+
+.whereWork h1 {
+    font-weight: bold;
+}
+
+.whereWork .slackQuestion {
+    text-align: center;
+}
+
+.emailType {
+    display: block;
+    margin: 0 auto;
+    width: 380px;
+    padding: 10px;
+}
+
+.signIn {
+    text-decoration: underline;
+}
+
+/* You're in good company */
+.goodCompany {
+    background-color: #F4F3F4;
+    padding: 20px;
+}
+.goodCompany h3 {    
+    font-weight: bold;
+
+}
+
+/* Sponsors */
+.logo {
+    width: 125px;
+    /* padding: 10px; */
+}
+
+.sponsors {
+    background-color: #F4F3F4;
+    padding: 20px;
+    
+}
+
+/* Try it for free */
+.tryIt {
+    text-align: center;
+    padding: 15px;
+    line-height: 0.5;
+}
+
+.tryIt h4 {
+    font-weight: bold;
+}
+
+.tryIt .emailTypeTwo {
+    display: block;
+    margin: 0 auto;
+    width: 380px;
+    padding: 10px;
+}
+
+/* Links */
+.links {
+    position: relative;
+    margin-top: 70px;
+}
+.links span{
+    font-weight: bold;
+}
+.links li {
+    color: #5b5e6d;
+    line-height: 30px;
+}
+.smallLogo {
+    width: 100px;
+    position: absolute;
+    top: -100px;
+}
+
+
+/* Footer */
+.footerDiv {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.footerDiv img{
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+}
+
+/* Buttons */
+.button {
+    display: block;
+    margin: 0 auto;
+    background-color: #4048AA;
+    color: white;
+    text-align: center;
+    margin: 15px auto;
+    border: 1px solid;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    width: 380px;
+}
+
+.whiteButton {
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    color: #192592;
+    text-align: center;
+    margin: 15px auto;
+    border: 1px solid;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    width: 380px;
+}
+
+
+/* Media */
+@media (min-width: 767px) and (max-width: 961px){
+        .emailType {
+            display: inline;
+            width: 50%;
+        }
+      .button {
+          display: inline;
+          width: 20%;
+      }
+      .whereWork .slackQuestion {
+          text-align: start;
+      }
+      .tryIt .emailTypeTwo {
+         display: inline;
+         width: 20%;
+      }
+      .tryIt {
+          text-align: start;
+          display: flex;
+      }
+        .tryIt h4,p {
+            align-items: flex-start;
+        }
+}
+
+@media (max-width: 1200px){
+        .ulBox{
+            display: flex;
+        }
+        nav ul {
+            /* display: block; */
+            /* display: flex; */
+            justify-content: space-between;
+            list-style-type: none;
+        }
+        .burgerLogo {
+            display: none;
+        }
+
+        .workSpace {
+            border: 1px solid rgb(59, 59, 238);
+        }
+
+        .emailType{
+            display: none;
+        }
+        
+        .goodCompany h3{
+            margin: 0 auto;
+        }
+
+        .tryIt .emailTypeTwo {
+            display: none;
+        }
+        
+        .tryIt .button {
+            width:150px;
+        }
+}
