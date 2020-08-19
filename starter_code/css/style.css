@@ -1,0 +1,309 @@
+/*
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+
+/* GENERAL STYLING */
+
+body {
+    color: #5b5e6d;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    color: #2C303F;
+}
+
+p {
+    margin: 20px 0;
+    font-weight: 300;
+    color: dimgray;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+/* NAVIGATION */
+
+.menu {
+    z-index: 1000;
+    /* position: fixed; */
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding: 10px 35px;
+    color: #454545;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ebeaeb;
+}
+
+.menu .logo {
+    width: 100px;
+}
+
+.menu .navicon {
+    font-size: 1.3em;
+}
+
+.menu nav {
+    display: none;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style-type: none;
+    color: #454545;
+    font-weight: 400;
+    margin: 0;
+    padding: 40px;
+
+}
+
+.menu nav ul a {
+    color: inherit;
+    
+}
+
+.anchor-workspaces{
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 35px 0;
+    
+}
+
+.hero form {
+    text-align: center;
+}
+
+.hero img {
+    width: 300px;
+}
+
+/* PRESENTATION SECTION */
+
+.presentation {
+    background-color: #F4F3F4;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.presentation img {
+    width: 300px;
+    margin: 20px 0;
+    padding: 25px;
+}
+
+.presentation .sponsor-container {
+    border-bottom: 1px solid rgba(211, 211, 211, 0.3)
+}
+
+/* TRY IT SECTION */
+
+.try-it {
+    text-align: center;
+    padding: 60px 0;
+    border-top: 1px solid rgba(211, 211, 211, 0.8);
+    border-bottom: 1px solid rgba(211, 211, 211, 0.8);
+}
+
+/* FOOTER */
+footer {
+    padding: 50px 0 0 0;
+}
+
+footer img {
+    width: 50px;
+    margin-bottom: 50px;
+}
+
+footer ul {
+    font-size: 0.8em;
+    list-style: none;
+    text-align: start;
+    padding: 0;
+}
+
+footer ul li {
+    padding: 10px 0;
+}
+
+.li-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2C303F;
+}
+
+.footer-2 {
+    background-color: #F4F3F4;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.footer-2 ul {
+    list-style: none;
+}
+
+.footer-2 ul li {
+    padding: 10px;
+}
+
+.li-title > a {
+    color: inherit;
+}
+
+.social-media {
+    color: #2C303F;
+    padding: 15px 10px;
+    font-size-adjust: 1.3em;
+}
+
+.social-media > a {
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* COMPONENT: BUTTONS */
+
+.button {
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid #192592;
+    border-radius: 4px;
+    padding: 19px 40px 20px;
+    margin: 15px 0 20px;
+    font-weight: bold;
+    display: inline;
+}
+
+.button.dark {
+    background-color: #192592;
+    color: #ffffff;
+}
+
+.button.light {
+    background-color: #ffffff;
+    color: #192592;
+}
+
+/* COMPONENTS: LINK */
+
+.sign-in-anchor {
+    color: #192592;
+    border-bottom: 1px solid #192592;
+}
+
+/* COMPONENTS: INPUT TYPE TEXT */
+
+.input-text {
+    display: inline;
+    border: 1px solid  #d3d3d3;
+    border-radius: 4px;
+    padding: 20px 0 20px 15px;
+    margin: 20px 0 15px;
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+@media (min-width: 576px) {
+
+    .input-text, .button {
+        display: block;
+        width: 100%;
+    }
+
+
+}
+
+
+@media (min-width: 768px) {
+
+    .hero form {
+        text-align: start;
+    }
+
+    .input-text {
+        display: inline;
+        width: 300px;
+    }
+
+    .button {
+        width: auto;
+    }
+
+    .button.light {
+        display: inline;
+    }
+
+    .button.dark {
+        display: inline;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+
+    .menu nav {
+        display: inline;
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    .text-header {
+        flex-direction: row-reverse;
+    }
+
+    .text-header img {
+        width: 460px;
+    }
+
+    .input-text {
+        display: none;
+    }
+
+    .button.light {
+        display: inline;
+    }
+
+
+}
