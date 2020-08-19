@@ -5,3 +5,240 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* GENERALS */
+
+/* HEADER */
+header {
+  z-index: 9999;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: white;
+}
+header .logo {
+  width: 5em;
+  height: 5em;
+}
+header .burger-menu {
+  width: 3em;
+  height: 4em;
+}
+
+nav ul {
+  display: none;
+  margin-right: 3em;
+
+
+}
+nav ul li {
+  list-style: none;
+  font-size: 1.3em;
+  margin: 20px 10px;
+  color:#5b5e6d
+}
+nav ul .border{
+    padding:5px;
+    border:2px solid #383636;
+    margin-top:13px;
+    border-radius:5px
+
+}
+
+/* SECTIONS */
+
+.hero h1 {
+  padding-top: 2em;
+  width: 6em;
+  font-family: serif;
+  font-size: 4em;
+}
+.hero img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.hero input {
+  display: block;
+  width: 100%;
+  border: 2px solid grey;
+  border-radius: 3px;
+  margin: 2em 0;
+  padding: 1em 0;
+}
+.hero .buttom {
+  border-radius: 3px;
+  display: block;
+  padding: 1em;
+  background-color: #192592;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+}
+.hero .center {
+  text-align: center;
+  margin-top: 1em;
+}
+.companies {
+  text-align: center;
+  background-color: #f4f3f4;
+}
+.companies h2 {
+  padding-top: 1em;
+}
+.companies img {
+  width: 100%;
+  padding: 3em;
+}
+.companies a {
+  border: 2px solid grey;
+  border-radius: 3px;
+  display: block;
+  padding: 1em;
+  background-color: white;
+  color: #192592;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 3em;
+}
+.companies p {
+  margin-top: 2em;
+}
+
+.try-free h3 {
+  margin-top: 3em;
+  text-align: center;
+  font-family: serif;
+  font-weight: 800;
+}
+.try-free p {
+  text-align: center;
+}
+.try-free .buttom {
+  border-radius: 3px;
+  display: block;
+  padding: 1em;
+  background-color: #192592;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+}
+.try-free input {
+  display: block;
+  width: 100%;
+  border: 2px solid grey;
+  border-radius: 3px;
+  margin: 2em 0;
+  padding: 1em 0;
+}
+.try-free .config-buttom {
+  margin-bottom: 3em;
+}
+
+.list-products li {
+  color: grey;
+  padding-bottom: 5px;
+  list-style: none;
+}
+.list-products .bold{
+    font-weight: 800;
+}
+.list-products img{
+    width: 4em;
+}
+
+footer ul{
+    display:flex;
+    justify-content: center;
+}
+footer  ul li{
+  list-style:none;
+}
+footer .flag{
+    text-align: center;
+}
+footer .flag img{
+    width: 3%;
+}
+footer .center-logo{
+    text-align: center;
+}
+
+/* COMPONENTS */
+
+/* @MEDIA */
+
+
+
+
+@media (min-width: 768px) {
+  .hero .flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .hero input {
+    width: 55%;
+    margin-right: 5px;
+  }
+  .hero .buttom {
+    margin-top: 2em;
+    height: 3.7em;
+  }
+
+  .companies a {
+    width: 30%;
+    margin: 3em auto;
+  }
+  .try-free .flexBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .try-free .config-buttom {
+    margin-top: 3.5em;
+    display: flex;
+    justify-content: center;
+  }
+  .try-free input {
+    width: 80%;
+    margin-right: 10px;
+  }
+  .try-free .buttom {
+    width: 70%;
+    margin-top: 2em;
+    height: 3.75em;
+  }
+}
+
+@media (min-width: 1200px) {
+    header .burger-menu{
+        display:none
+    }
+    header nav ul{
+        display:flex
+    }
+    .hero input {
+      display: none;
+    }
+    .hero .buttom {
+      width: 30%;
+    }
+    .hero .center {
+      text-align: start;
+    }
+    .hero img {
+      margin-top: 12em;
+    }
+    .try-free input {
+      display: none;
+    }
+    .try-free .buttom {
+      margin-right: 4em;
+     
+    }
+  }
