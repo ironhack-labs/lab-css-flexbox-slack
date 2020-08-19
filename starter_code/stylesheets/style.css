@@ -5,3 +5,293 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 500;
+    color: #2C303F;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.grey-background header, aside, .secfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.button.blue {
+    background-color: #192592;
+    color: white;
+}
+
+.button.white{
+    color:#192592;
+    background-color: white;
+}
+
+
+h1 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1;
+    color: #2C303F;
+}
+h2 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 50px;
+    color: #2C303F;
+}
+
+h3 {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-top: 50px;
+    color: #2C303F;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #2C303F;
+}
+p {
+    font-size: 1.4em;
+    margin: 50px auto;
+}
+
+/*nav*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    border-bottom: 1px solid #ccc;  
+    position: fixed;
+    z-index:100;
+    background-color: white;
+    width:100%;
+    top:0;
+}
+nav ul {
+    display: none;
+
+}
+nav ul li {
+    margin-left: 15px;
+}
+nav ul a {
+    display: block;
+    padding :10px 20px; 
+}
+nav img {
+    width: 200px;
+}
+.fas.fa-bars {
+    font-size: 2em;
+    color:#5b5e6d;
+}
+/*hero*/
+
+.hero {
+    margin: 180px auto;
+}
+
+input {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.smp {
+    text-align: center;
+    margin: 10px auto 20px ;
+    
+}
+.smp a {
+    color: #192592;
+    border-bottom: 1px solid;
+}
+
+.image {
+    width: 730px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Grey background section*/
+
+.grey-background {
+    background-color: #F4F3F4;
+    padding-bottom: 50px;
+}
+
+.grey-background img {
+    display: block;
+    margin: 50px auto;
+    width: 60%;
+    
+}
+
+/*footer*/
+
+footer {
+    border-top: 1px solid #CCC;
+}
+
+.mainf {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainf ul {
+    margin-bottom: 50px;
+}
+
+.mainf li {
+    margin: 25px auto;
+    font-size: 1.5em;
+}
+
+.hash-logo {
+    width: 200px;
+    height: 200px;
+}
+
+.finfooter {
+    background-color:#CCC;
+}
+.finfooter ul {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.finfooter li, .finfooter span {
+    padding: 30px;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.languagesocial {
+    display: flex;
+    flex-direction: column;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+}
+.flag {
+    width: 30px;
+}
+.secfooter i {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+/*mediaqueries*/
+
+@media(min-width: 768px) {
+    form {
+        display:flex;
+        align-items: center;
+        width: 80%
+    }
+    .button.white{
+        width:290px; 
+    }
+    .button {
+        width: 40%;
+    }
+    .button.blue {
+        margin-left: 20px;
+        font-size: 1em;
+    }
+    .smp {
+        text-align: left;
+        font-size: 1em;
+    }
+    .grey-background img {
+        width: 60%;     
+    }
+    
+    h3 {
+        text-align: left;
+    }
+    .flexy {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flexy form {
+        justify-content: flex-end;
+        width: 60%;
+    }
+    .flexy input {
+        width: 40%;
+    }
+    h4 {
+        font-size: 1.2em;
+    }
+    .mainf {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer {
+        font-size: 0.6em;
+    }
+    .secfooter{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .finfooter i{
+        font-size: 30px;
+    }
+    .finfooter li, .secfooter span {
+        padding: 10px;
+    }
+    .languagesocial {
+        flex-direction: row;
+    }
+}
+
+@media(min-width: 1200px) {
+    nav ul {
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .slack {
+        border: 1px solid;
+        border-radius: 5px;
+    }
+    .fas.fa-bars {
+        display: none;
+    }
+    input {
+        display: none;
+    }
+    .mainimage {
+       width: 100%;
+    }
+    .button.blue {
+        width: 200px;
+    }
+    p {
+        margin: 15px 0;
+    }
+}
