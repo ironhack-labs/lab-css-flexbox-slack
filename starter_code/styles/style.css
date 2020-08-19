@@ -1,0 +1,261 @@
+/*
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+
+/* General styling */
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: .5em
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: inherit
+}
+
+ul{
+    list-style: none;
+}
+
+.titles{
+    font-family: 'Merriweather', serif;;
+}
+
+section, aside {
+    padding: 60px 0
+}
+
+.usingSlack a {
+    color: #3F48A9;
+    text-decoration: underline;
+}
+
+.presentation div[class*="col"] figure,
+.sponsors div[class*="col"] figure {
+
+    margin:0;
+    padding:0;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 20px;
+    border-bottom: solid 1px lightgrey;
+}
+
+.menu img {
+    height: 50px;
+}
+
+.headbar{
+    display: none;
+}
+
+.menu ul {
+    display:flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu .navicon {
+    height: 26px;
+}
+
+.headBar {
+    display: none;
+}
+
+/* Presentation SECTION */
+
+.presentation .usingSlack{
+
+    text-align: center;
+
+}
+
+.presentation img{
+    width: 100%;
+}
+
+/* Sponsors SECTION */
+
+.sponsors {
+    background-color: whitesmoke;
+    border-bottom: solid 1px lightgrey;
+}
+
+.sponsors header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.sponsors div[class*="col"] {
+    padding: 20px;
+}
+
+.sponsors img {
+    width: 50%
+}
+
+/* Aside SECTION */
+
+aside {
+    text-align: center;
+    border-bottom: solid 1px lightgrey;
+}
+
+/* Navigator SECTION */
+
+.navigator ul {
+    padding: 0
+}
+
+.navigator div[class*="col"]{
+}
+
+/* COMPONENTS */
+
+.button {
+    padding: 16px 40px;
+    margin: 10px 0;
+    
+    display: block;
+    
+    text-align: center;    
+    
+    border: 1px solid;
+    border-radius: 5px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9em
+}
+
+.button.tight{
+    padding: 6px;
+    text-transform: capitalize;
+    font-weight: initial;
+}
+
+.button.blue {
+    background-color: #3F48A9;
+    color: white;
+    border-color: #3F48A9;
+}
+
+.button.email {    
+    border-color: lightgrey;
+    outline: none;
+    text-transform: inherit;
+    color: grey;
+    text-transform: capitalize;
+
+    font-size: 1em;
+    text-align: left;
+}
+
+.button.white {
+    color: #3F48A9
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 576px){
+
+    h1{
+        font-size: 2.8em;
+    }
+
+    .sponsors h2 {
+        font-size: 2em;
+    }
+
+    .menu {
+        padding: 10px 40px;
+    }
+
+    .menu .navicon {
+        height: 30px;
+    }
+    
+    .presentation .usingSlack {
+        text-align: left;
+    }
+
+    .button {
+        padding: 20px 40px;
+    }
+
+    .sponsors div[class*="col"] {
+        padding: 30px 10px;
+    }
+
+    .sponsors img {
+        width: 80%
+    }
+}
+
+@media (min-width: 768px){
+
+    h1 {
+        font-size: 3.8em;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    p{
+        font-size: 1.2em;
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    .headBar {
+        display: block;
+    }
+}
+
+@media (min-width: 992px){
+
+    .sponsors img {
+        width: 50%
+        }
+}
