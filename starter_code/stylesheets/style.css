@@ -5,3 +5,374 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* GENERAL STYLING*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: 'DM Serif Display', serif;  
+}
+
+
+p {
+    font-weight: 200;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* NAVIGATION */
+
+.menu {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: white;
+    border-bottom: 1px solid;
+    border-bottom-color:#ebebeb;
+    
+}
+
+.menu .logo {
+    width: 120px;
+    padding-left: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color:#6d6f7b;
+}
+.menu .navicon {
+    width: 40px;
+    padding-right: 10px;
+}
+.menu nav {
+    display: none;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.menu li {
+    margin: 0px 20px;
+
+}
+
+#workspaces{
+    border: 1px solid;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    display: block;
+    padding: 5px;
+    width: 160px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+/* GET STARTED SECTION*/
+
+.get-started{
+    margin-top:100px;
+}
+
+.get-started h1{
+    font-size: 2.8em;
+    margin-bottom: 25px;
+}
+
+.get-started p{
+    padding-top: 65px 0px;
+    line-height: 25px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+input{
+
+    color: rgb(140, 136, 136); 
+    background-color:#ffffff;
+    height: 60px;
+    width: 418px;
+    border: 1px solid #e6e3e3;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 0.95em;
+    margin:20px 0px 15px 0px;
+}
+
+#img-init{
+    width:85%;
+    margin-top:30px;
+}
+
+#sign-in{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#sign-in a{
+    text-decoration: underline; 
+}
+
+/* GOOD COMPANY SECTION */
+
+.companies{
+    background-color:#f5f5f5;
+    text-align: center;
+    padding-top: 90px
+}
+.companies p{
+    font-size: 1em;
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+
+.companies img {
+    width:50%;
+    margin: 40px;
+    
+}
+
+#latimes{
+    width:70%;
+}
+
+/* TRY IT FOR FREE SECTION */
+
+.try-it{
+    background-color: #ffffff; 
+    height: 270px;
+    text-align: center;
+    margin-top: 30px;
+    border-bottom: 1px solid;
+    border-bottom-color:#ebebeb;
+}
+
+
+/* COMPANY / PRODUCTS / ETC... SECTION */
+
+#logo-slack-final{
+    width:150px;
+}
+
+.bottom{
+    text-align: left;
+    margin:20px 0px 20px 0px;
+}
+
+.bottom h5{
+    color:#6d6f7b;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin:20px 0px 20px 0px;
+}
+
+.bottom a{
+    text-decoration:none;
+    color:#6d6f7b;
+}
+
+.bottom p{
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+
+/* FOOTER */
+
+.end-foot{
+    background-color:#f5f5f5;
+    text-align: center;
+    height: 150px;
+}
+
+.end-foot nav ul {
+    display:flex;
+    list-style: none;
+    margin-top: 10px;
+    justify-content: center;
+    
+}
+
+.end-foot li {
+    padding-right:10px;
+
+}
+.end-foot a{
+    text-decoration: none;
+    color:#6d7079;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+#english-lang{
+    padding-top: 10px;
+}
+
+#usa-flag{
+    width:15px;
+    
+}
+
+#fab-icon{
+    font-size: 1.4em;
+    padding-top: 10px;
+    letter-spacing:8px;
+}
+
+
+/* COMPONENT: BUTTONS  */
+
+.button {
+    text-transform: uppercase;
+    font-size: 0.85em;
+    color: white;
+    background-color: #4048aa;
+    border-radius: 4px;
+    display: block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 auto;
+    
+}
+.button.white{
+    color: #4048aa;
+    background-color: white;
+    border: 1px solid;
+    margin: 0 auto;
+}
+
+.button.left{
+    float: right;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) {
+    
+    .menu nav {
+        display: block;
+    }
+
+    .menu .navicon {
+        display: none
+    }
+
+    .get-started{
+        height: 550px;
+    }
+
+    .get-started h1{
+        font-size: 4em;
+        margin: 50px 0px 25px 0px;
+    }
+
+    #img-init{
+        width:80%;
+        margin-top:50px;
+    }
+
+    .button{
+        width: 200px;
+        margin:0px 0px 15px 0px;
+    }
+
+    .try-it{
+    }
+
+    input{
+        display: none;
+    }
+
+    #sign-in{
+        font-size: 0.8em;
+        text-align: left;
+    }
+
+    .try-it{
+        background-color: #ffffff; 
+        height: 200px;
+        margin-top: 25px;
+    }
+
+    .try-it h4{
+        text-align: left;
+    }
+
+    #fab-icon{
+        font-size: 1em;
+        padding-top: 10px;
+        letter-spacing:4px;
+    }
+
+    .end-foot nav ul {
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width: 961px) and (min-width: 767px) {
+
+    .menu nav {
+        display: none;
+    }
+    .menu .navicon {
+        display: inline
+    }
+
+    .get-started{
+        height: 750px;
+    }
+
+    #img-init{
+        width:55%;
+        margin-top: 20px;
+        margin-left: 150px;  
+    }
+
+    input{
+        display:block;
+        width: 300px;
+    }
+
+    #input-try{
+        width:160px;
+        margin-left: -100px;
+    }
+
+    .button{
+        display:block;
+        margin-top: -83px;
+        margin-left: 310px;
+    }
+    .button.left{
+        display:block;
+        margin-top: -83px;
+        margin-right: -40px;
+    }
+
+
+
+    .companies img {
+        width:80%;
+        margin: 40px; 
+    }
+    
+
+}
+
