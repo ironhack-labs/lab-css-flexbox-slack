@@ -4,4 +4,287 @@ button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
+color del botón Get Started por si alguien quiere el mismo color #4048AA
 */
+
+/* GENERAL */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+
+section {
+    padding: 50px 30px;
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Serif', serif;
+    color: #2C303F;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.3em;
+    width: 300px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    color: #5b5e6d;
+    line-height: 1.5;
+    padding: 20px 0;
+}
+
+li>a {
+    color: #676b7a;
+}
+
+img {
+    width: 100%;
+}
+
+/* COMPONENTS */
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #4048AA;
+}
+
+button.white {
+    color: #4048AA;
+    background-color: white;
+    border: 1px solid darkgrey;
+    margin-bottom: 50px;
+}
+
+input {
+    font-size: 1em;
+    width: 100%;
+    padding: 15px 0 15px 5px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+  }
+
+/* NAVIGATION SECTION */
+
+.menu {
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #FFF;
+    border-bottom: 1px solid #5b5e6d;
+    transition: all .5s;    
+}
+
+.menu .logo-slack {
+    width: 120px;
+}
+
+.menu .navicon {
+    width: 50px;
+}
+
+.menu nav {
+    display: none;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li>a {
+    text-decoration: none;
+    color: #2C303F;
+}
+
+/* PRESENTATION SECTION */
+
+.presentation {
+    padding-top: 150px;
+}
+
+.presentation .sign-in {
+    text-align: center;
+}
+
+/* FEATURES-COMPANIES SECTION*/
+
+.features-companies {
+    background-color: #F4F3F4;
+    text-align: center;
+}
+
+.features-companies p {
+    font-weight: 400;
+    padding: 20px 100px;
+}
+
+.features-companies img {
+    width: 40%;
+    padding: 5% 1%;
+    margin-bottom: 10px;
+    border-bottom: 1.5px solid #E4E2E2;
+}
+
+.features-companies img.last {
+    border-bottom: none;
+}
+
+.features-companies img.bigger {
+    width: 60%;
+}
+
+/* NAV-BAR-BOTTOM SECTION */
+
+.nav-bar-bottom {
+    color: #5b5e6d;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.try-it {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 0;
+}
+
+.try-it p {
+    padding: 0px;
+}
+
+.nav-bar-bottom hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.nav-bar-bottom .logo {
+    width: 200px;
+    height: 200px;
+}
+
+.nav-bar-bottom li {
+    list-style: none;
+    line-height: 2.5;
+    color: #676b7a;
+}
+
+.nav-bar-bottom li.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #50525c;
+}
+
+/* FOOTER SECTION*/
+
+footer {
+    background-color: #F4F3F4;
+    color: #676b7a;
+    font-size: 0.8em;    
+    padding-top: 20px;
+    display: flex;
+    justify-content: center
+    ;
+}
+
+footer ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+
+footer li {
+    margin: 0 10px;
+}
+
+footer li>a {
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 0;
+}
+
+footer .language-flag {
+    width: 20px;
+    height: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (min-width:767px) {
+    button {
+        width: 40%;
+        padding: 15px 5px;
+        margin-top: 0;
+    }
+
+    button.white {
+        width: 30%;
+    }
+
+    input {
+        width: 50%;
+    }
+
+    .presentation .sign-in {
+        text-align: left;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .menu nav {
+        display: block;
+    }
+
+    .menu .navicon {
+        display: none;
+    }
+
+    button {
+        width: 30%;
+        padding: 15px 0;
+        margin-top: 20px;       
+    }
+
+    input {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3em;
+        width: 350px;
+        height: 150px;
+    }
+   
+}
+
