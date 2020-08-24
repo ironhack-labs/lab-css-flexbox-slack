@@ -1,7 +1,7 @@
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
-main-titles dark-grey: #2C303F;
+main-titles dark-grey:  ;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
@@ -10,252 +10,493 @@ nav grey: #5b5e6d;
 
 * {
     font-family: 'Quicksand', sans-serif;
+    color: #5b5e6d
 }
 
-h1 {
-    font-size: 1.8em;
-    margin-bottom: .5em;
+h1,
+h2 {
+
+    font-family: 'Merryweather';
+    font-weight: 900;
+    color: black
+
 }
 
 h2 {
-    font-size: 1.5em;
-    margin-bottom: .5em
+
+    margin-bottom: .5em;
+    font-size: 1.8em
+
 }
 
 p {
-    margin-bottom: 1.2em;
+
+    margin-bottom: 2em;
+
 }
 
-a, a:hover{
-    text-decoration: none;
-    color: inherit
-}
+ul {
 
-ul{
-    list-style: none;
-}
-
-.titles{
-    font-family: 'Merriweather', serif;;
-}
-
-section, aside {
-    padding: 60px 0
-}
-
-.usingSlack a {
-    color: #3F48A9;
-    text-decoration: underline;
-}
-
-.presentation div[class*="col"] figure,
-.sponsors div[class*="col"] figure {
-
-    margin:0;
+    margin: 0;
     padding:0;
-    height: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    list-style: none;
+
 }
 
-/* Navigation */
+a,
+a:hover{
 
-.menu {
+    color: #5b5e6d;
+    text-decoration: none
+
+}
+
+section {
+
+    padding: 40px 20px 20px 20px;
+
+}
+
+figure {
+
+    margin: 0
+
+}
+
+div[class*='col'] img {
+
+    /* background-color: red; */
+
+}
+
+.try-it .sign-in {
+
+    text-align: center;
+
+}
+
+header {
+
+    z-index: 1;
+
+}
+
+main {
+
+    z-index: 2;
+
+}
+
+/* Web header section */
+
+.web-header {
+
+    position:fixed;
+    width: 100%;
+    background-color: white;
+
+    padding: 0 30px;
+    height: 50px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 0px 20px;
-    border-bottom: solid 1px lightgrey;
+    border-bottom: solid 1px #F4F3F4
+
 }
 
-.menu img {
-    height: 50px;
+.web-header .home-logo {
+
+    height: 80%;
+
 }
 
-.headbar{
+.web-header .hambur {
+
+    height: 40%;
+    display: block;
+
+}
+
+.web-header .nav-list {
+
     display: none;
-}
-
-.menu ul {
-    display:flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    margin: 0 20px;
-}
-
-.menu .navicon {
-    height: 26px;
-}
-
-.headBar {
-    display: none;
-}
-
-/* Presentation SECTION */
-
-.presentation .usingSlack{
-
-    text-align: center;
 
 }
 
-.presentation img{
+.web-header figure,
+.web-header img {
+
+    height: 100%;
+
+}
+
+.web-header li {
+
+    margin: 0 20px
+
+}
+
+/* Presentation section */
+
+.presentation {
+
+    padding-top: 90px;
+    border-bottom: solid 1px lightgray
+
+}
+
+.presentation img {
+
     width: 100%;
+
 }
 
-/* Sponsors SECTION */
+.email-field input,
+.email-field button {
+
+    width: 100%;
+
+}
+
+input {
+
+    padding: 0 15px;
+    outline: none;
+
+}
+
+a.sign {
+
+    text-decoration: underline;
+    color: #3F48A9;
+
+}
+
+/* Sponsors section */
 
 .sponsors {
-    background-color: whitesmoke;
-    border-bottom: solid 1px lightgrey;
-}
 
-.sponsors header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 35px;
-}
+    padding: 40px 30px 20px 30px;
+    text-align: center;
+    background-color: #F4F3F4;
 
-.sponsors div[class*="col"] {
-    padding: 20px;
+
 }
 
 .sponsors img {
-    width: 50%
+
+    width: 50%;
+
 }
 
-/* Aside SECTION */
+.sponsors div[class*='col'] {
 
-aside {
-    text-align: center;
-    border-bottom: solid 1px lightgrey;
+    margin: 30px 0;
+
 }
 
-/* Navigator SECTION */
+/* Try-it section */
 
-.navigator ul {
-    padding: 0
+.try-it {
+
+    padding: 30px;
+    border: solid 1px lightgray;
+    border-left: none;
+    border-right: none
+
 }
 
-.navigator div[class*="col"]{
+.try-it h2 {
+
+    font-size: 1.5em;
+
 }
+
+.try-it p,
+.try-it h2 {
+
+    margin-bottom: 0px;
+    text-align: center
+
+}
+
+/* Navigator section */
+
+.navigator h2 {
+
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    color: #5b5e6d;
+    font-size: 1.2em;
+
+}
+
+.navigator li {
+
+    margin: 15px 0;
+
+}
+
+.navigator img {
+
+    width: 80px
+
+}
+
+.navigator div[class*='col']{
+
+    margin: 10px 0
+
+}
+
+/* Footer */
+
+footer {
+
+    padding: 10px 0;
+    background-color: #F4F3F4;
+
+}
+
+footer ul {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+footer ul a {
+
+    font-weight: 700;
+
+}
+
+footer li {
+
+    margin-right: 20px;
+
+}
+
+footer figure {
+
+    display: inline
+
+}
+
+footer img {
+
+    height: 30px;
+
+}
+
+.social img {
+
+    height: 20px;
+    filter: saturate(0);
+
+}
+
+footer div[class*='col'] {
+
+    margin: 10px 0
+
+}
+
+footer span {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px
+
+}
+
+
 
 /* COMPONENTS */
 
 .button {
-    padding: 16px 40px;
+
+    height: 50px;
     margin: 10px 0;
-    
-    display: block;
-    
-    text-align: center;    
-    
-    border: 1px solid;
+
+    background-color: white;
+
+    color: #5b5e6d;
+
+    border: solid 1px;
     border-radius: 5px;
 
-    text-transform: uppercase;
+}
+
+.button.hard {
+
+    text-transform:uppercase;
     font-weight: 700;
-    font-size: .9em
+    font-size: .9em;
+
 }
 
-.button.tight{
-    padding: 6px;
-    text-transform: capitalize;
-    font-weight: initial;
-}
+.button.hard.blue {
 
-.button.blue {
     background-color: #3F48A9;
     color: white;
     border-color: #3F48A9;
+
 }
 
-.button.email {    
-    border-color: lightgrey;
-    outline: none;
-    text-transform: inherit;
-    color: grey;
-    text-transform: capitalize;
+.button.hard.white {
 
-    font-size: 1em;
-    text-align: left;
-}
+    color: navy;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    margin: 0 auto 40px auto
 
-.button.white {
-    color: #3F48A9
 }
 
 /* RESPONSIVE */
 
-@media (min-width: 576px){
+@media (min-width: 576px) {
 
-    h1{
-        font-size: 2.8em;
-    }
-
-    .sponsors h2 {
-        font-size: 2em;
-    }
-
-    .menu {
-        padding: 10px 40px;
-    }
-
-    .menu .navicon {
-        height: 30px;
-    }
     
-    .presentation .usingSlack {
-        text-align: left;
-    }
-
-    .button {
-        padding: 20px 40px;
-    }
-
-    .sponsors div[class*="col"] {
-        padding: 30px 10px;
-    }
-
-    .sponsors img {
-        width: 80%
-    }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
     h1 {
+
         font-size: 3.8em;
+
     }
 
-    .hide {
-        display: none;
+    h2 {
+
+        font-size: 2.2em;
+
     }
 
-    p{
-        font-size: 1.2em;
+    p {
+
+        font-size: 1.1em;
+
     }
 
-    .navicon {
-        display: none;
+    .input-field {
+
+        padding-right: 5px;
+
+    }
+    
+    .get-started-b {
+
+        padding-left: 5px;
+
     }
 
-    .headBar {
+    .presentation img {
+
+        width: 55%;
         display: block;
+        margin: 0 auto;
+                        
     }
+
+    .button.button.hard.white {
+
+        width: 200px
+
+    }
+
+    .try-it h2,
+    .try-it .sign-in {
+
+        text-align: left
+
+    }
+    
+    .try-it h2 {
+
+        font-size: 1.8em
+
+    }
+
+    footer {
+
+        padding: 0;
+
+    }
+
+    footer span {
+
+        width: 200px
+
+    }
+    
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
 
-    .sponsors img {
-        width: 50%
-        }
+    .web-header {
+    
+        padding: 0 50px;
+        height: 70px;
+        
+    }
+
+    .web-header .hambur {
+
+        display: none;
+
+    }
+
+    .web-header .nav-list {
+
+        display: flex;
+
+    }
+
+    h1 {
+
+        font-size: 5em;
+
+    }
+
+    .presentation {
+
+        padding-top: 110px;
+
+    }
+
+    .presentation .input-field {
+
+        display: none;
+
+    }
+
+    .get-started-b {
+
+        padding-left: 15px;
+
+    }
+
+    .presentation img {
+        
+        width: 100%;
+                        
+    }
+
+    .try-it .input-field {
+
+        display: none;
+
+    }
+
+}
+
+@media (min-width: 1200px) {     
+
 }
