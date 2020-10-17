@@ -20,6 +20,8 @@ button{
     width: 100%;
     border-radius: 3px;
     border:1px solid #192592; 
+    font-weight: bold;
+    box-sizing: border-box;
 }
 
 .btn-white{
@@ -33,15 +35,19 @@ button{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
     color:#2C303F;
 }
 h2{
-    font-size: 2.0rem;
+    font-size: 2rem;
     color:#2C303F;
 }
      
-p,input, li, span{
+p,
+input, 
+li, 
+span,
+i {
     font-family:  Helvetica;
     font-size: 1.2rem;
     color: #5b5e6d;;
@@ -80,6 +86,7 @@ header img{
 
 header p{
     font-size: 1.1rem;
+    line-height: 1.6;
     color:#5b5e6d;
 }
 
@@ -88,6 +95,7 @@ header input{
     width: 100%;
     border: 1px solid #5b5e6d;
     margin-bottom: 1.5rem;
+    box-sizing: border-box;
 }
  
 header p:last-of-type{
@@ -105,17 +113,28 @@ main p{
     text-align: center;
 }
 
+main > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+main input{
+    height: 3rem;
+    width: 100%;
+    border: 1px solid #5b5e6d;
+    margin-bottom: 1.5rem;
+}
+
 main img{
     width: 40%;
     height: auto;    
     margin: 25px auto
 }
 
-main > div {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    display: flex;
-    align-items: center;
+#discover-btn {
+    width: 100%;
 }
 
 footer {
@@ -128,7 +147,14 @@ footer>div {
     flex-wrap: wrap;
 }
 
-footer>div img {}
+footer>div>div {
+    width: 100%;
+}
+
+footer>div img {
+    width: 30vw;
+    height: auto;
+}
 
 footer>div ul {
     padding: 0;
@@ -162,6 +188,7 @@ footer ul li:first-of-type {
 #footer-bottom img {
     height: 2rem;
     width: auto;
+    margin-right: 15px;
 }
 
 #footer-bottom span {
@@ -169,5 +196,99 @@ footer ul li:first-of-type {
 }
 
 #footer-bottom > div {
+    width: 60%;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#footer-bottom i {
+    font-size: 2rem;
+    margin: 15px;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 30px;
+    }
+
+    header p {
+        font-size: 1.4rem;
+    }
+    #input-container {
+        display: flex;
+        align-items: center;
+    }
+    button {
+        width: 230px;
+    }
+    header input{
+        width: 450px;
+        margin: 0 20px 0 0;
+    }
+    header p:last-of-type{
+        text-align: left;
+    }
+    header img{
+        width: 40%;
+        align-self: center;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    main > div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #discover-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+    }
+    #discover-btn button {
+        margin: 0 auto;
+    }
+    main img {
+        width: 30%;
+        margin: 40px;
+    }
+    #tryit {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    main div:last-of-type {
+        display: flex;
+        flex-direction: column;
+
+    }
+    main div:last-of-type h2 {
+        display: inline-block;
+        width: 50%;
+        font-size: 1.5rem;
+        clear: right;
+    }
+    main div:last-of-type input {
+        width: 150px;
+        margin: 0 20px 0 50px;
+        box-sizing: border-box;
+    }
+    footer>div>div {
+        width: 15%;
+    }
+    footer>div img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 962px) {
+    
 }
