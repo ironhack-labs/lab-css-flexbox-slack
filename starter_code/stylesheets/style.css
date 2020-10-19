@@ -8,223 +8,183 @@ nav grey: #5b5e6d;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-html,
+
+
 body {
     margin: 0;
     padding: 0;
+    background-color: white;
+    color: black;
+    width: 800px;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto',
+        sans-serif;
 }
-li {
-   list-style: none;
-}
-.slack-img-nav {
-    width: 12%;
+
+img {
+    width: 25vw;
     height: auto;
 }
-button {
+
+h1,
+h2,
+h3 {
+    color: #2C303F;
+}
+
+p {
+    padding: 3vh 5vw 3vh 5vw;
+    text-align: left;
+    color: #5b5e6d;
+}
+
+li {
+    padding: 3vh 5vw 3vh 5vw;
+    color: #5b5e6d;
+    list-style: none;
+}
+
+nav {
+    /* position: fixed; */
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 8vh;
+    background-color: #f4f5f8;
+}
+
+nav img {
+    width: 100px;
+    height: auto;
+    padding: 0 5vw 0 5vw;
+}
+
+nav svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 5vw 2vh 5vw;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_talking_img {
+    width: 80vw;
+    height: auto;
+}
+
+.purple-btn {
     border-radius: 4px;
     background-color: #2b39b3;
     border: none;
     color: #fff;
-
+    padding: 20px 60px;
 }
-input[type="email"] {
-    border: 1px solid #cccccc;
+
+.blank-btn {
     border-radius: 4px;
-
-}
-.top-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.nav-bar {
-    position: fixed;
     background-color: #FFF;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
+    border: 1px solid #2b39b3;
+    color: #2b39b3;
+    padding: 20px 60px;
+    margin: 0 35vw 0 35vw;
+    width: 70%;
+    margin-bottom: 10vh;
 }
 
-.nav-bar-ul {
+main div {
+    width: 100vw;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F4F3F4
+}
+
+main .first-div {}
+
+main h2 {
+    text-align: center;
+    width: 80vw;
+}
+
+main div>img {
+    margin-bottom: 40px;
+    width: 280px;
+    padding: 3vh 2vw 3vh 2vw;
+}
+
+footer>div {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+footer li {
+    margin: 3vh 2vw 3vh 2vw;
+    padding: 0;
+}
+footer .footer-last-div {
+    width: 100vw;
+    background-color: #F4F3F4
+}
+
+footer .us-flag-img {
+    width: 15px;
+}
+
+.footer-info ul {
+    display: flex;
+    flex-direction: row;
+}
+.footer-info {
+    width: 90vw;
+    display: flex;
     justify-content: space-between;
 }
 
-header h1 {
-    text-align: left;
-}
-
-p {
-    padding: 0 40px;
-    color: #5b5e6d;
-}
-
-.section-one {
+.footer-icons {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #F4F3F4;
-}
-.iso-slack-img{
-    width: 35%;
-    height: auto;
-}
-footer li{
-    color:#5b5e6d;
-}
-.section-one hr {
-    width: 0%;
-}
-
-.section-two {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
-.footer-list{
-    background-color: #F4F3F4;
-}
-footer li {
-    padding-bottom: 15px;
-}
 
-@media (max-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+
+@media screen and (max-width: 768px) {
+    body {
+        /* background-color: purple; */
+        width: 100%;
     }
-    
+
     h1 {
-        width: 75%;
-        margin-top: 50px;
-    }
-    .home_talking_img {
-        width: 95%;
-        height: auto;
+        /* width: 75vw; */
     }
 
-    .section-one hr {
-        width: 90%;
-    }
-    .section-one img {
-        width: 50%;
-        height: auto;
-        padding: 20px 0 20px 0;
-    }
-    .list-one, .list-two {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .footer-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .first-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .us-image {
-        width: 4%;
-        height: auto;
-    }
-    .logo-items {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .middle-footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .middle-footer img,span,i {
-        padding-right: 10px;
-    }
-    .last-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 20px 0 20px 0;
-    }
-    button {
-        padding: 15px 30px;   
-    }
-
-    input[type="email"] {
-        margin-bottom: 15px;
-        padding: 10px 5px;
-    }
-
-    .discover-btn {
-        background-color: #FFF;
-        border: 1px solid #2b39b3;
-        color: #2b39b3;
-    }
 }
-@media (max-width: 961px) {
-    
-    hr {
-        width: 0;
+
+@media screen and (max-width: 961px) and (min-width: 767px) {
+    body {
+        /* background-color: blue; */
     }
 
-    p {
-        font-size: 1.2rem;
-        
-        
-    }
 
-    .input-button-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        width: 90%;
+}
 
-    }
-
-    /* button {
-        border-radius: 4px;
-        background-color: #2b39b3;
-        border: none;
-        color: #fff;
-        height: 100%;
-    } */
-
-    input[type="email"] {
-        margin: 0;
-        border: 1px solid #cccccc;
-        border-radius: 4px;
-        margin-right: 15px;
-        width: 330px;
-        height: 23px;
-
-    }
-
-    .paragraph-sign-in {
-        width: 90%;
-    }
-
-    .section-one p {
-        text-align: center;
-    }
-
-    .logo-items {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+@media screen and (max-width: 1024px) and (min-width: 960px) {
+    body {
+        /* background-color: orange; */
     }
 }
