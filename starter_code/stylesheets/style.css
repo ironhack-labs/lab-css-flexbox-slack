@@ -27,6 +27,28 @@ nav {
 
 nav ul {
     display: none;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #5b5e6d;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav li .li {
+    text-decoration: none;
+    color: #5b5e6d;
+}
+
+nav li .li-border {
+    border: 1px solid #222;
+    border-radius: 0.25em;
+    padding: 15px;
+    text-decoration: none;
+    color: #5b5e6d;
 }
 
 nav .logo {
@@ -46,9 +68,11 @@ nav .logo {
 .hero h1 {
     color: #2C303F;
 }
+
 .hero p {
     margin: 15px auto;  
 }
+
 .hero input {
     margin: 15px auto;
     width: 250px;
@@ -175,4 +199,15 @@ footer img {
 .white {
     background-color: white;
     color: #192592;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 992px) {
+    nav .navicon {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+    }
 }
