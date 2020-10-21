@@ -1,0 +1,345 @@
+/*
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+
+/* GENERAL SETTINGS */
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #5b5e6d;
+    letter-spacing: .5px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2C303F;
+    font-size: 1.6rem;
+    padding-top: 40px;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid lightgray;
+}
+
+/* NAVIGATION */
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px;
+    margin: 0;
+}
+
+.menu li {
+    list-style: none;
+    padding: 0 15px;
+    color: #2C303F;
+}
+
+.menu li:nth-child(4) {
+    border: 1px solid #2C303F;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 0 15px;
+}
+
+.menu {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 9000;
+}
+
+.menu nav {
+    display: none;
+}
+
+.menu .logo {
+    width: 80px;
+}
+
+.menu .burger {
+    width: 35px;
+}
+
+/* START SECTION */
+
+.start {
+    margin: 0 10px;
+}
+
+.start h1 {
+    font-size: 2.5em;
+    margin: 60px 0px 25px;
+}
+
+.start input {
+    margin-top: 40px;
+}
+
+.start img {
+    width: 300px;
+    display: block;
+    margin: 50px auto 0;
+}
+
+.start .center {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+    color: #192592;
+}
+
+.underline:hover {
+    color: #192592;
+    text-decoration: underline;
+}
+
+/* SPONSORS SECTION */
+
+.sponsors {
+    background: #F4F3F4;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.sponsors .sponsor {
+    width: 140px;
+    padding: 30px 0;
+}
+
+.sponsors .times {
+    width: 250px;
+}
+
+.wrapper {
+    padding: 30px 0 60px;
+}
+
+/* TRY IT SECTION */
+
+.try-it {
+    padding: 0 10px 30px 10px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.try-it h3 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+/* ASIDE */
+aside {
+    position: relative;
+    padding: 15px 10px;
+    
+}
+aside .ico {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0
+}
+
+aside h4 {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+aside a {
+    font-size: 0.8em;
+    color: #5b5e6d; 
+    padding: 20px 0;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F4F3F4;
+    color: #2C303F;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+footer li {
+    padding: 0 10px;
+    list-style: none;
+    margin: 0;
+}
+
+footer .flag {
+    width: 25px;
+}
+
+footer .social {
+    width: 15px;
+    margin: 3px;
+}
+
+footer .icons {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer .big {
+    width: 40%;
+}
+
+/* BUTTONS */
+
+.button {
+    border: 1px solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 700;
+    padding: 16px;
+    display: block;
+    width: auto;
+    margin: 25px 0 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+.button.dark {
+    background: #192592;
+    color: white;
+}
+
+.button.light {
+    color: #192592;
+    background: white;
+}
+
+@media all and (max-width: 768px) {
+    aside {
+        padding-top: 100px;
+    }
+}
+
+@media all and (min-width: 768px){
+    p{
+        font-size: 1.2em;
+    }
+    
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .button {
+        display: inline;
+        width: 350px;
+        padding: 16px 40px;
+    }
+
+    .start h1 {
+        font-size: 3.5em;
+    }
+
+    .start .center {
+        text-align: start;
+        font-size: 1em;
+    }
+
+    .sponsors .spon-p {
+        padding: 5px 0 15px;
+    }
+
+    .try-it .leftalign {
+        text-align: start;
+    }
+
+    .try-it .button {
+         margin: 0 0 0 auto;
+    }
+
+    .try-it{
+        padding-top: 30px;
+    }
+
+    .try-it p, .try-it h3 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    aside {
+        padding-left: 150px;
+    }
+
+    .start input {
+        display: inline;
+        width: 300px;
+        margin: 0;
+    }
+
+    .try-it input {
+        display: inline;
+        width:150px
+    }
+}
+
+
+
+@media all and (min-width: 992px){
+    input {
+        display: none;
+    }
+
+    .menu nav {
+        display: block;
+    }
+
+    .menu .burger {
+        display: none;
+    }
+
+    .start .center {
+        padding-top: 1.5rem;
+    }
+
+    .start p {
+        padding-bottom: 1.5rem
+    }
+}
