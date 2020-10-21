@@ -1,7 +1,314 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+/* --- GENERAL STYLING --- */
+
+body {
+    font-family: 'Commisioner', Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: left;
+    font-family: 'Commisioner';
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Commisioner';
+    font-weight: 800;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Commisioner';
+    font-weight: 800;
+}
+
+h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 600;
+    color: #5b5e6d;
+    position: relative;
+    font-family: sans-serif;
+}
+
+p {
+    font-family: 'Commisioner';
+    color: #5b5e6d;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.grey-section {
+    background-color: #F4F3F4;
+}
+
+.link{
+    text-decoration: underline;
+    color: #192592;
+}
+
+/* NAVIGATION */
+
+.menu {
+    border-bottom: 2px solid #F4F3F4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    color: #5b5e6d;
+    z-index: 9000;
+    transition: all .5s;
+}
+
+.menu.solid {
+    background: white;
+    color: #222;
+}
+
+.menu .logo {
+    width: 100px;
+}
+
+.menu .navigation {
+    width: 35px;
+}
+
+.menu nav {
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.menu li {
+    margin: 0px 10px;
+}
+
+.your-workspaces {
+    border: 1px solid #5b5e6d;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* HERO SECTION */
+
+.hero {
+    padding: 150px 20px 20px 20px;
+}
+
+.hero p {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.button-started {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #192592;
+    display: block;
+    padding: 20px 80px;
+    background-color: #192592;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.already {
+    padding-top: 40px;
+    margin-left: 60px;
+}
+
+/* FEARURES SECTION */
+
+.features {
+    padding: 30px;
+}
+
+.features p {
+    text-align: center;
+}
+
+.button-why {
+    text-decoration: none;
+    color: #192592;
+    border: 1px solid #192592;
+    padding: 15px 60px;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 5px;
+    text-align: center;
+    margin: 40px 0;
+    display: block;
+}
+
+/* SPONSORS SECTION */
+
+.sponsors {
+    text-align: center;
+}
+
+.sponsors img {
+    width: 50%;
+    margin-bottom: 100px;
+    filter: grayscale(50%);
+    opacity: .6;
+    transition: all .9s;
+}
+
+.sponsors img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    width: 220px;
+    transform: scale(1.2);
+}
+
+/* GET-STARTED*/
+
+.get-started {
+    padding: 50px 40px;
+}
+
+.get-started p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ABOUT US */
+
+.about-us {
+    font-family: sans-serif;
+    padding: 25px;
+    border-top: 2px solid #F4F3F4;
+}
+
+.slack-ico {
+    width: 120px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #F4F3F4;
+    display: flex;
+    text-align: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+
+}
+
+.footer li {
+    margin-left: 15px;
+    color: #5b5e6d;
+    font-weight: 600;
+    margin-top: 35px;
+}
+
+/* RESPONSIVE */
+
+@media all and (min-width: 992px) {
+
+    .menu .navigation {
+        display: none;
+    }
+
+    .menu nav {
+        display: block;
+    }
+
+    .button-started {
+        text-decoration: none;
+        color: white;
+        border: 1px solid #192592;
+        padding: 15px 20px;
+        background-color: #192592;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: small;
+        border-radius: 5px;
+        display: block;
+        width: 30%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .already {
+    padding-top: 0px;
+    margin-left: 0px;
+    }
+
+    .button-why {
+        text-decoration: none;
+        color: #192592;
+        border: 1px solid #192592;
+        padding: 15px 20px;
+        background-color: white;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: small;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 20px;
+        width: 25%;
+        align-items: center;
+        font-family: sans-serif;
+        margin: auto;
+    }
+
+    .get-started {
+        padding: 30px 30px 30px 80px;
+    }
+    
+    .get-started p {
+        font-family: 'commisioner';
+        text-align: left;
+    }
+    
+    .button-started {
+        text-decoration: none;
+        color: white;
+        border: 1px solid #192592;
+        padding: 15px auto;
+        background-color: #192592;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: small;
+        border-radius: 5px;
+        display: block;
+        width: 50%;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+    .sponsors {
+        padding-top: 50px;
+    }
+    
+    .slack-ico {
+        width: 150px;
+    }
+}
