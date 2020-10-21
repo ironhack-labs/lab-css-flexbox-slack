@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Menu</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M14 18h36M14 32h36"
+  stroke-linejoin="round" stroke-linecap="round"></path>
+  <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10"
+  stroke-width="2" d="M14 46h36" stroke-linejoin="round" stroke-linecap="round"></path>
+</svg>

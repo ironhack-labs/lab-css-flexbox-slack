@@ -5,3 +5,240 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+/* --- GENERAL STYLING --- */
+
+body {
+    font-family: 'Poppins', sans-serif, Helvetica;
+    color: #5b5e6d;
+    font-weight: 300;
+}
+img {
+    width: 100%;
+}
+a {
+    color: inherit
+}
+h1, h2, h3{
+    font-family: 'Merriweather', serif, Helvetica;
+    color:#323648
+}
+h1 {
+    font-size: 3.5em;
+}
+p {
+    font-size: 1.6em;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+.border-bottoms{
+    border-bottom: 1px solid #dee2e6;
+}
+.border-rights{
+    border-right: 1px solid #dee2e6;
+}
+/* --- NAVIGATION --- */
+.menu {
+    border-bottom: 2px solid #eee;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9000;
+    background-color: #fff;
+}
+
+.menu .logo {
+    width: 80px;
+}
+
+.menu .navicon {
+    width: 35px;
+}
+
+.menu nav {
+    display: none;
+    
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.menu li {
+    margin: 10px;
+}
+a.button-menu {
+    border: solid 1px;
+    border-radius: 4px;
+    padding: 10px;
+}
+/* --- HERO --- */
+header.hero {
+    padding-top: 100px;
+}
+.small a {
+    text-decoration: underline;
+    color: #192592;
+}
+.small{
+    text-align:center;
+}
+
+/* --- CLIENTS --- */
+section.clients {
+    background: #F4F3F4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.clients img {
+    width: 50%;
+    margin: 40px;
+}
+a.button {
+    width: 100%;
+    text-transform: uppercase;
+    color: #192592;
+    border-radius: 3px;
+    display: block;
+    border: solid 1px;
+    background: #fff;
+    padding: 20px 40px;
+    font-weight: 400;
+}
+/* --- ASIDE --- */
+aside.try-free {
+    padding: 50px 0;
+    text-align: center;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+/* --- FOOTER--- */
+footer h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-size: 1em;
+}
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer ul li{
+    padding-left:0;
+}
+.sub-footer {
+    background: #f5f5f5;
+}
+.sub-footer ul {
+display: flex;
+list-style: none;
+margin-bottom: 0;
+}
+.sub-footer li {
+    margin: 10px;
+}
+.sub-footer img {
+    width: 35px;
+}
+/* --- COMPONENTS --- */
+input, button {
+    width: 100%;
+    border-radius: 4px;
+    padding: 20px 15px;
+    
+}
+input{
+    background-color: #fff;
+    line-height: 1.2;
+    font-size: 1rem;
+    border: 1px solid #ebebeb;
+    box-shadow: none;  
+    display: inline-block;
+    margin-bottom: 30px;
+}
+form button {
+    border: none;
+    background-color: #192592;
+    color: #fff;
+    text-transform: uppercase;
+}
+@media all and (min-width: 768px) {
+    p {
+        font-size: 1em;
+        }
+    
+    input#email {
+        width: 50%;
+        margin-bottom:0
+    }
+    form button{
+        width:30%
+    }
+    p.small {
+        margin: 10px;
+        text-align: left;
+    }
+    .hero img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    a.button {
+        width: 50%;
+      
+        margin: 0 auto;
+    }
+    .border-rights:nth-child(even) {
+        border-right: none;
+    }
+    .border-bottoms:nth-child(5) {
+        border-bottom: none;
+    }
+    .border-bottoms:nth-child(6) {
+        border-bottom: none;
+    }
+    aside input#email {
+        width: 40%;
+    }
+    aside h3{
+        text-align:left
+    }
+    footer {
+        margin: 40px 0;
+    }
+}
+@media all and (min-width: 992px) {
+    header.hero {
+        padding-bottom: 50px;
+    }
+    .menu .navicon {
+        display: none;
+    }
+
+    .menu nav {
+        display: block;
+    }
+    a.button {
+        width: 40%;
+        padding: 15px 25px;
+  
+    }
+    input#email {
+        display: none;
+    }
+.border-rights:nth-child(even) {
+        border-right: none;
+    }
+    footer a {
+        width: 30%;
+        display: block;
+    }
+}
