@@ -5,3 +5,269 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* GENERAL STYLING*/
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-weight: bold;
+}
+.darkGrey{
+    color: #2C303F
+}
+
+.grey{
+    color: #5b5e6d;
+}
+
+.light{
+    font-weight: 100;
+}
+ hr {
+     margin-top: 30px;
+ }
+
+ .signIn{
+     color: #4049AA;
+ }
+/* NAV SECTION */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin: 0;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+ .logo{
+    width: 100px;
+    margin: 0;
+    padding: 0;
+ }
+.navicon {
+    width: 25px;
+}
+
+nav{
+    display: none;
+    color: #5b5e6d;
+    margin: 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+nav li{
+    margin-right: 20px;
+}
+
+nav li a{
+    color: #5b5e6d;
+}
+img{
+    width: 100%;
+}
+
+/* BUTTONS */
+.button{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 30px;
+    width: 300px;
+}
+
+.purple{
+    color: white;
+    background-color: #4049AA;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: .9em;
+}
+/* HEADER */
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    width: 350px;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.hero article >p{
+    width: 400px;
+}
+.hero article{
+    margin: 30px;
+}
+
+.inputEmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.inputEmail input{
+    border: 1px solid #b3b3b3;
+    padding: 8px 100px 8px 20px;
+    border-radius: 3px;
+    margin-bottom: 7px;
+}
+
+.inputEmail p{
+    margin: 10px;
+}
+
+.hero img {
+    width: 300px;
+}
+
+/* COMPANY SECTION */
+.company {
+    background-color: #F4F3F4;
+    padding: 50px 0 70px;
+    text-align: center;
+}
+
+.company img{
+    width: 50%;
+    padding: 15px 15px;
+}
+
+.company h2 {
+    font-size: 2em;
+    font-weight: bold;
+}   
+
+
+.company header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.company .button {
+    border: 1px solid #4049AA;
+    color: #4049AA;
+    border-radius: 3px;
+    background-color: white;
+    font-weight: 400;
+    font-size: .9em;
+}
+
+/* EMAIL SECTION */
+
+.email {
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+/* INFO SECTION */
+
+.info img {
+    width: 150px;
+}
+
+.info ul{
+    list-style-type: none;
+}
+
+.info ul li{
+    margin: 15px 0;
+}
+
+.list-titles {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* FOOTER SECTION */
+
+footer {
+    background: #F4F3F4;
+    text-align: center;
+}
+footer img {
+    width: 30px;
+}
+
+.languaje {
+    margin-bottom: 30px;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+} 
+footer ul li{
+    margin: 0px 15px;
+    color: #5b5e6d;
+}
+
+
+
+@media all and (min-width: 768px){
+
+    .inputEmail{
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .hero article >p{
+        width: 600px;
+    }
+    .hero h1 {
+        width: 600px;
+        font-size: 3.3em;
+    }       
+    .button.tall{
+        padding: 25px ;
+        width: 150px;
+    }
+    .tallemail input{
+    border: 1px solid #b3b3b3;
+    padding: 23px 0px 23px 20px;
+    width: 150px;
+    border-radius: 3px;
+    margin-bottom: 7px;
+    }
+    .languaje {
+        padding-top: 15px;
+    }
+    
+}
+
+@media all and (min-width: 992px){
+   .hero{
+       flex-direction: row;;
+       margin-top: 40px;
+   }
+   .hero img {
+    width: 400px;
+    }
+    .tallemail input{
+        display: none;
+    }
+    nav{
+        display: initial;
+    }
+    .navicon {
+    display: none;
+}
+}
