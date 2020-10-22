@@ -1,7 +1,265 @@
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
+- main-titles dark-grey: #2C303F;
+- paragraph grey: #5b5e6d;
+- nav grey: #5b5e6d;
 */
+
+
+/* --- GENERAL STYLING --- */
+
+body {
+}
+
+.nav,
+.section1,
+.section3,
+.section4,
+.footer {
+    padding: 0 30px;
+}
+
+h1, h2 {
+    color: #2C303F;
+    font-weight: bold;
+}
+
+p, li, i, span {
+    color: #5b5e6d;
+}
+
+.nav ul,
+.section4 ul,
+footer ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* --- NAV --- */
+
+.nav {
+    border-bottom: 1px solid #5b5e6d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav ul {
+    display: none;
+}
+
+.nav #nav-workspaces {
+    border: 1px solid #5b5e6d;
+    padding: 6px;
+}
+
+.nav .logo-slack {
+    width: 90px;
+}
+
+.nav .navicon {
+    width: 40px;
+}
+
+
+/* --- SECTION 1 --- */
+
+.section1 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.section1 h1, .section1 p {
+    margin-bottom: 30px;
+}
+.section1 h1 {
+    font-size: 45px;
+}
+
+.section1 p {
+    font-size: 20px;
+}
+
+
+/* --- SECTION 2 --- */
+
+.section2-background {
+    background-color: #F4F3F4;
+    padding: 40px;
+}
+
+.section2 {
+    text-align: center;
+}
+
+.section2 img {
+    width: 60%;
+    border-bottom: .5px solid grey;
+    padding: 20px 20px;
+}
+
+.section2 a {
+    border: 1px solid #192592;
+    color: #192592;
+    font-weight: bold;
+    background-color: white;
+}
+
+
+/* --- SECTION 3 --- */
+
+.section3 {
+    text-align: center;
+    margin-top: 50px;
+    border-bottom: 1px solid #5b5e6d;
+}
+
+.section3 #section3-bold {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+/* --- SECTION 4 --- */
+
+.section4 {
+    padding: 0;
+}
+
+.slack-icon {
+    width: 30%;
+}
+
+.section4 li {
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+.section4 .section4-bold {
+    font-weight: bold;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #F4F3F4;
+    padding: 50px auto;
+}
+
+footer li, span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer img {
+    width: 5%;
+}
+
+footer i {
+    font-size: 25px;
+}
+
+footer ul, footer .language {
+    display: flex;
+    padding-top: 20px;
+}
+
+footer ul {
+    justify-content: space-evenly;
+}
+
+footer .language {
+    justify-content: center;
+}
+
+footer .social {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer .social i {
+    margin: auto 10px;
+}
+
+/* --- INPUTS AND BUTTONS --- */
+
+.input, .button, .section2 a {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #192592;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* --- SIGN IN --- */
+
+.sign-in {
+    text-decoration: underline;
+    color: #192592;
+}
+
+
+@media all and (min-width: 768px) {
+
+    .section1 {
+        text-align: left;
+    }
+
+    .section2 a {
+        width: 30%;
+    }
+
+    .section3 {
+        text-align: left;
+    }
+
+    footer ul, footer .language, footer .social {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer img {
+        width: 10%;
+    }
+}
+
+@media all and (min-width: 992px) {
+
+    .nav .navicon {
+        display: none;
+    }
+
+    .nav ul {
+        display: contents;
+    }
+
+    .section1 input {
+        display: none;
+    }
+
+    .section3 input {
+        display: none;
+    }
+}
