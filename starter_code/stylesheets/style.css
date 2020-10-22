@@ -6,72 +6,380 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
-/* BODY */
 
-body {
-    font-family: 'Lato', sans-serif;
-}
 
 h1,
-h2 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
+h2,
+h3 {
+    font-family: 'Bitter', serif;
+    color: #2C303F;
+    font-size: 2.75em;
+    line-height: 1.25em;
 }
 
 
-img {
-    width: 100%;
+p {
+    color: #5b5e6d;
+    font-weight: 600px;
+    font-size: 1.25em;
+}
+
+.menu .navicon {
+    width: 36px;
+    margin-right: 15px;
 }
 
 
-ul {
-    list-style: none;
-}
 
 
 
-
-
-
-/* 0.Nav-Bar */
-.menu {
-    border-bottom: 2px solid #d3d3d3;
-    position: absolute;
-    width: 100%;
+/* Buttons */
+.btn-white {
     background-color: #ffffff;
+    border-radius: 6px;
+    padding: 24px 60px;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #192592;
+    border: none;
+    margin: 24px auto;
+    border: 1px solid #192592
+}
+
+.btn-white:hover {
+    background-color: #192592;
+    color: #ffffff;
+    transition: .5s;
+    border: 1px solid #ffffff;
+}
+
+.btn-blue {
+    background-color: #192592;
+    border-radius: 6px;
+    padding: 24px 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    margin: 24px auto;
+}
+
+.btn-blue:hover {
+    background-color: #ffffff;
+    color: #192592;
+    transition: .5s;
+    border: 1px solid #192592;
+}
+
+
+
+
+
+/* Menu: Nav-Bar */
+.menu {
     z-index: 9999;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+    padding: 5px 30px;
+    transition: all .5s;
+    background-color: #ffffff;
+    border-bottom: 1px solid lightgray;
+    box-shadow: #000000 2px;
+}
+
+.menu .navicon {
+    width: 36px;
+    margin-right: 15px;
+}
+
+.nav-bar {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .logo {
-    width: 200px;
-    padding: 10px 20px;
+    width: 160px;
+    margin-left: 15px;
 }
 
-/* 1.Hero-Section */
-.hero {
-    padding-top: 140px;
+.menu nav {
+    display: none;
 }
 
-/* 2.Web-Map-Section */
-.cta {
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 10px
+}
+
+.nav-bar ul li {
+    padding: 0px 20px;
+}
+
+.nav-bar ul li a {
+    font-weight: 600;
+    color: #5b5e6d;
+    text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+    color: #192592;
+}
+
+.btn-white-topbar {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 6px 10px;
+    width: 100%;
+    font-weight: 600;
+    border: 1px solid #5b5e6d;
+
+}
+
+.btn-white-topbar:hover {
+    transition: .5s;
+    border: 1px solid #192592;
+}
+
+.form {
+    display: flex;
+    font-size: 1.25em;
+}
+
+.flat-illustration {
+    width: 100%;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+
+
+
+
+/* Section: Landing */
+
+.landing1 {
+    margin-top: 150px;
+    margin-bottom: 0px;
+}
+
+.promo {
+    margin: 40px 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+.form-group {
+    margin: 40px auto;
+}
+
+.email-form {
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    padding: 20px 14px;
+    width: 100%;
+    font-size: 1.25em;
+}
+
+.main-section .already-user {
     text-align: center;
 }
 
-/* 3.Footer-Section */
-footer {
+.sign-in {
+    text-decoration: underline;
+}
+
+
+.sponsors {
     text-align: center;
+    background-color: #F4F3F4;
+    border: 1px solid lightgray;
 }
 
-footer img {
-    width: 50px;
+.sponsors-sect {
+    margin: 40px 0px;
 }
 
 
-/* MEDIA */
 
-@media (min-width: 768px) {
 
-    .nav-bar {
+
+/* Section: Guide */
+.guide {
+    padding: 50px 30px;
+    text-align: left;
+}
+
+.guide-justify {
+    align-items: left;
+}
+
+.top-iso {
+    display: flex;
+    width: 120px;
+    margin: 0px;
+    justify-self: flex-start;
+}
+
+.iso-slack {
+    margin: 0px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+}
+
+.subtitle ul a {
+    text-decoration: none;
+}
+
+.subtitle ul a p:hover {
+    color: #000000;
+    transition: .5s;
+}
+
+.presentation {
+    margin-bottom: 20px;
+}
+
+.brands {
+    width: 100%;
+    padding: 10%;
+}
+
+
+
+
+/* Footer: External-links */
+.external-links {
+    background-color: #F4F3F4;
+    padding: 20px 0px;
+    justify-items: center;
+    align-items: center;
+    border-top: 1px solid lightgray;
+
+}
+
+.external-links a {
+    color: #5b5e6d;
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.services {
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.services a {
+    justify-items: center;
+    padding: 0px 10px;
+}
+
+.flag {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.us-flag {
+    width: 30px;
+}
+
+.social {
+    padding: 2px 0px 10px 0px;
+}
+
+.social a {
+    align-content: center;
+    font-size: 1.25em;
+}
+
+.social a img {
+    width: 40px;
+    justify-content: space-between;
+    align-self: center;
+    padding: 0px 2px;
+}
+
+
+
+/* Responsive */
+
+@media (min-width: 1200px) {
+
+    .menu nav {
+        display: block;
+    }
+
+    .menu .navicon {
+        display: none;
+    }
+
+    .features svg {
+        width: 90px;
+    }
+}
+
+@media (min-width: 961px) {
+
+    .landing1 {
+        margin: 150px 30px;
+    }
+
+    .landing {
+        margin: 50px 30px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-group .email-form {
+        margin-right: 10px;
+        height: 72px;
+        width: 320px;
+    }
+
+    .form-group .btn-blue {
+        margin: 0px 10px 0px 0px;
+        width: 200px;
+    }
+
+    .main-section .already-user {
+        text-align: left;
+    }
+
+    .btn-white {
+        display: flex;
+        align-self: center;
+        height: 72px;
+        width: 240px;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .central-sect {
+        flex-direction: row-reverse;
+    }
+
+    .main-section .email-form {
         display: none;
     }
 
