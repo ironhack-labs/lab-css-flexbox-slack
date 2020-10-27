@@ -17,52 +17,73 @@
   </head>
 
   <body>
-    <nav>
+    <nav id="nav" class="container row align-center justify-between">
       <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
+
+      <ul id="menu" class="container row justify-between">
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
-        <li>Your Workspaces</li>
+        <li class="border">Your Workspaces</li>
       </ul>
+      
+      <div id="menu-icon">
+        <div class="icon"></div>
+        <div class="icon"></div>
+        <div class="icon"></div>
+      </div>
     </nav>
-    <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
-      <h1>Where Work Happens</h1>
-      <p>
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+    <header class="container row wrap padding-container">
+      <img class="item-5" src="./images/home_talking.png" alt="home_work_happening" />
+      <div class="container column">
+        <h1 class="text-center">Where Work Happens</h1>
+        <p class="text">
+          When your team needs to kick off a project, hire a new employee, deploy
+          some code, review a sales contract, finalize next year's budget, measure
+          an A/B test, plan your next office opening, and more, Slack has you
+          covered.
+        </p>
+        <div>
+          <input type="email" placeholder="Email address" class="input mb1-3 bt1-3">
+          <button type="button" name="button" class="button-blue">GET STARTED</button>  
+        </div>
+        <p id="already" class="text-center">Already using Slack? <a href="#">Sign in</a></p>
+  
+      </div>
     </header>
-    <main>
-      <div>
-        <h2>You're in good company</h2>
-        <p>
+    <main class="padding-container">
+      <div id="main" class="container row wrap">
+        <h2 class="text-center">You're in good company</h2>
+        <p class="text">
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
+        <button class="button-white text-center">DISCOVER WHY</button>
+        <div class="container row wrap">
+          <img src="./images/airbnb-logo.png" alt="" />
+          <img src="./images/capital-one-logo.png" alt="" />
+          <img src="./images/harvard-logo.png" alt="" />
+          <img src="./images/los-angeles-times-logo.png" alt="" />
+          <img src="./images/oracle-logo.png" alt="" />
+          <img src="./images/ticketmaster-logo.png" alt="" />
+        </div>
+
       </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
-      </div>
+
     </main>
+    <section id="try" class="padding-container container row wrap justify-between">
+        <div>
+          <p class="bold text-center">Try it for free</p>
+          <p class="text-center text">Already using Slack? <a href="#">Sign in</a></p>  
+        </div>
+        <input type="email" placeholder="Email address" class="input">
+        <button type="button" name="button" class="button-blue">GET STARTED</button>
+    </section>
     <footer>
-      <div>
+      <div class="container row wrap">
         <img src="./images/iso-slack.png" alt="" />
-        <ul>
+
+        <ul class="text">
           <li>COMPANY</li>
           <li>About Us</li>
           <li>Careers</li>
@@ -70,7 +91,7 @@
           <li>Press</li>
           <li>Brand Guidelines</li>
         </ul>
-        <ul>
+        <ul class="text">
           <li>PRODUCT</li>
           <li>Why Slack?</li>
           <li>Enterprise</li>
@@ -78,7 +99,7 @@
           <li>Pricing</li>
           <li>Security</li>
         </ul>
-        <ul>
+        <ul class="text">
           <li>RESOURCES</li>
           <li>Download</li>
           <li>Help Center</li>
@@ -87,7 +108,7 @@
           <li>App Directory</li>
           <li>API</li>
         </ul>
-        <ul>
+        <ul class="text">
           <li>EXTRAS</li>
           <li>Podcast</li>
           <li>Slack Shop</li>
@@ -95,16 +116,18 @@
           <li>Slack Fund</li>
         </ul>
       </div>
-      <div>
-        <ul>
+      <div class="background-grey container column justify-between align-center">
+        <ul id="status" class="container row text">
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-        <div>
+        <div id="flag" class="container row justify-center">
           <img src="./images/us-flag.png" alt="" />
           <span>English (US)</span>
           <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="social" class="container row align-center">
           <i class="fab fa-twitter"></i>
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-youtube"></i>
