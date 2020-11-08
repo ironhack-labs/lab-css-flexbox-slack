@@ -20,6 +20,12 @@ nav{
     color: #5b5e6d;
     border-bottom: 1px solid #5b5e6d;
 }
+h1{
+    font-size: 4rem;
+}
+header{
+    margin-top: 5rem;
+}
 .background-grey{
     background-color:  #F4F3F4
 }
@@ -88,6 +94,13 @@ main img{
     border-bottom: 1px solid #5b5e6d;
     padding-bottom: 2rem
 }
+main h2{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
 section div p{
     display: block;
     margin: auto;
@@ -100,7 +113,16 @@ section div p{
     margin: 0 0.5rem;
 }
 .mb2{
-    margin-bottom:2rem
+    margin-bottom:1rem
+}
+.ml-06{
+    margin-left: .6rem
+}
+.mr-06{
+    margin-right:.6rem
+}
+.text-center{
+    text-align: center;
 }
 
 
@@ -113,9 +135,6 @@ section div p{
     }
     #menu{
         display: none
-    }
-    header{
-        margin-top: 5rem;
     }
     header img{
         width: 19rem;
@@ -145,7 +164,7 @@ section div p{
         width: 100%;
         padding-bottom: 1rem;
     }
-    footer img{
+    footer > img{
         width: 8rem;
         margin-right: 5rem;
     }
@@ -155,6 +174,7 @@ section div p{
 
 }
 @media(min-width: 767px),(max-width:961){
+
     .button-blue{
         width: 24%;
         height: 2rem;
@@ -166,7 +186,9 @@ section div p{
     .input{
         width: 30%;
         height: 2rem;
-        margin-bottom: 1rem;    
+        margin-bottom: 1rem;   
+        margin-right: .8rem;
+        margin-bottom: 0 
     }
     #already{
         text-align: left;
@@ -182,12 +204,25 @@ section div p{
     footer ul{
         margin-right: 2rem;
     }
-    .input2{
-        width: 30%;
-        height: 2rem;
+    #foot ul li{
+        margin-right: 1rem;
     }
     #try{
         flex-wrap: inherit;
+    }
+    #try p{
+        text-align: left;
+    }
+    #foot{
+        flex-direction: row;
+        padding: 2rem 1rem 2rem 1rem
+    }
+    #flag {
+        margin-bottom: 0;
+        margin-left: 7rem
+    }
+    #flag span, #flag i{
+        margin-top: .4rem
     }
 
 }
@@ -206,5 +241,77 @@ section div p{
 }
 
 @media (min-width: 1200px){
+    #menu-icon{
+        visibility: hidden
+    }
+    #menu {
+        margin-left: 32rem;
+    }
+    #menu li{
+        margin-right: 2rem;
+        padding: .4rem
+    }
+    .border {
+        border: 1px solid black;
+        border-radius: .2rem;
+    }
+    .item-5{
+        order: 0;
+    }
+    .input{
+        display: none;
+    }
+    #header {
+        flex-wrap: nowrap;
+        padding-right: 5rem;
+    }
+    header > img {
+        width: 25rem;
+        margin: 3rem 8rem 2rem 4rem;
+    }
+    .button-blue{
+        height: 3rem;
+        width: 10rem;
+    }
+    header p a{
+        display: block
+    }
+    #main p{
+        display: block;
+    }
+    .button-white{
+        margin: 0 auto;
+        display:block
+    }
+    #logos{
+        padding: 0 5rem;
+    }
+    main img{
+        width: 15rem;
+        margin: 2rem 3.5rem;
+    }
+    section{
+        margin: 3rem 0;
+    }
+    section button{
+        margin-left: 25rem;
+    }
+    footer > div > img{
+        width: 7rem;
+        height: 7rem;
+        margin-right: 15rem;
+    }
+    footer > div > ul{
+        margin-left: 3rem;
+    }
+    footer > div > ul li{
+        margin: 1rem 0;
+    }
+    #foot{
+        padding: 0 2rem 0 0;
+    }
+    #flag{
+        margin-left: 35rem;
+    }
 
 }
