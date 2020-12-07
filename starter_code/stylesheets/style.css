@@ -6,6 +6,11 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
+* {
+    box-sizing: border-box;
+}
+
+
 @media (max-width: 768px) {
     body {
         margin: 0;
@@ -55,6 +60,7 @@ nav grey: #5b5e6d;
         top: 50px;
         padding: 5%;
         margin-bottom: 25px;
+        width: calc(100%);
     }
     header img {
         max-width: 90%;
@@ -63,13 +69,14 @@ nav grey: #5b5e6d;
         padding: 5%;
         background-color: #F4F3F4;
         align-items: center;
+        width: calc(100%);
     }
     main img {
-        max-width: 95%;
         height: 40px;
+        width: auto;
     }
     p {
-        color: 5b5e6d;
+        color: #5b5e6d;
     }
     h1 {
         color: #2C303F;
@@ -102,8 +109,77 @@ nav grey: #5b5e6d;
         font-weight: bold;
         margin-bottom: 20px;
     }
+    #footer-top {
+        padding: 5%;
+        align-items: center;
+        width: calc(100%);
+    }
+    #footer-top button {
+        width: -webkit-fill-available;
+        padding: 15px;
+        background-color: #192592;
+        color: #fff;
+        border-color: #192592;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    #footer-top input {
+        width: -webkit-fill-available;
+        padding: 15px;
+        margin: 0 0 20px 0;
+    }
+    footer {
+        background-color: #F4F3F4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer img {
+        height: 20px;
+    }
+    footer ul {
+        width: 100%;
+        display: flex;
+    }
+    footer li {
+        padding: 0 20px;
+        list-style: none;
+        color: #5b5e6d;
+    }
+    footer i {
+        padding: 0 10px;
+    }
+    .row {
+        padding: 15px 0;
+    }
+    #list, li {
+        list-style: none;
+        padding: 10px 0;
+        color: #5b5e6d;
+    }
+    .cols {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
 }
 
 .center {
     text-align: center;
+}
+
+.img-box {
+    padding: 30px 15px;
+    border-bottom: solid 1px lightgray;
+}
+
+.text-large {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-weight: bold;
 }
