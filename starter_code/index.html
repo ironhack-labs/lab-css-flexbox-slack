@@ -10,7 +10,7 @@
     <!----GOOGLE FONTS---->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mallanna&family=Vesper+Libre:wght@500;700&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Vesper+Libre:wght@500;700&display=swap" 
     rel="stylesheet">
 
     <!----BOOTSTRAP---->
@@ -31,13 +31,29 @@
     
     <!----NAV BAR---->
 
-    <header>
+    <header class="nav-bar">
 
       <a href="#">
-        <img src="images/slack-logo.png" alt="Slack logo">
+        <img src="images/slack-logo.png" alt="Slack logo" class="logo">
       </a>
 
-      <img src="images/menu-icon.svg" alt="Menu icon">
+      <img src="images/menu-icon.svg" alt="Menu icon" class="menu-icon">
+
+      <div>
+
+        <ul class="nav-menu">
+          
+          <li><a href="#">Why Slack?</a></li>
+
+          <li><a href="#">Pricing</a></li>
+
+          <li><a href="#">About Us</a></li>
+
+          <li><a href="#" class="workspace">Your Workspace</a></li>
+
+        </ul>
+
+      </div>
 
     </header>
 
@@ -45,19 +61,13 @@
 
       <!----HERO SECTION---->
 
-      <header>
+      <header class="hero">
 
         <div class="container">
 
           <div class="row">
 
-            <div class="col-12 col-lg-6">
-
-              <img src="images/home_talking.png" alt="app drawing">
-
-            </div>
-
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 order-lg-2">
 
               <h1>Where Work Happens</h1>
               <p>When your team needs to kick off a project, 
@@ -68,15 +78,15 @@
 
               <div class="row">
 
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 order-lg-2 align-middle">
 
-                  <input type="email">
+                  <input type="email" placeholder="Email adress">
 
                 </div>
 
                 <div class="col-12 col-md-6">
                   
-                  <a href="#">Get started</a>
+                  <a href="#" class="button purple">Get started</a>
 
                 </div>
 
@@ -84,6 +94,12 @@
 
               <p>Already using Slack? <a href="#">Sign in.</a></p>
 
+            </div>
+
+            <div class="col-12 col-lg-6 order-lg-1">
+
+              <img src="images/home_talking.png" alt="app drawing">
+  
             </div>
 
           </div>
@@ -94,7 +110,7 @@
 
       <!----SPONSOR SECTION---->
 
-      <section>
+      <section class="sponsor">
 
         <div class="container">
 
@@ -105,7 +121,7 @@
 
           </header>
 
-          <a href="#">Discover why</a>
+          <a href="#" class="button white">Discover why</a>
 
           <div class="row">
 
@@ -126,6 +142,7 @@
               <img src="images/harvard-logo.png" alt="Harvard logo">
 
             </div>
+
 
             <div class="col-12 col-md-6 col-lg-4">
 
@@ -152,28 +169,49 @@
       </section>
 
 
-      <!----MAIN ASIDE SECTION---->
+      <!----MAIN ASIDE---->
 
-      <aside>
+      <aside class="free-trial">
 
         <div class="container">
+          
+          <div class="row">
 
-          <article>
+            <div class="col-12 col-md-6">
 
-            <h3>
-              Try it for free
-            </h3>
+              <article>
 
-            <p>Already using Slack? <a href="#">Sign in.</a></p>
+                <h3>
+                  Try it for free
+                </h3>
 
-          </article>
+                <p>Already using Slack? <a href="#">Sign in.</a></p>
 
-          <form action="">
+              </article>
 
-            <input type="email">
-            <a href="#">Get started</a>
+            </div>
 
-          </form>
+            <div class="col-12 col-md-6">
+
+              <form action="">
+
+                <div class="row">
+
+                  <div class="col-12 col-md-6">
+                    <input type="email" placeholder="Email adress">
+                  </div>
+
+                  <div class="col col-md-6">
+                    <a href="#" class="button purple">Get started</a>
+                  </div>
+
+                </div>
+
+              </form>
+
+            </div>
+
+          </div>
 
         </div>
 
@@ -183,7 +221,7 @@
 
     <!----FOOTER---->
 
-    <footer>
+    <footer class="info">
 
       <div class="container">
 
@@ -331,55 +369,68 @@
 
     <!----BODY ASIDE SECTION---->
 
-    <aside>
+    <aside class="more-info">
 
       <div class="container">
 
         <div class="row">
 
-          <div class="col-12 col-md-6">
-
-            <ul>
-
-              <li>
-                <a href="#">Status</a>
-              </li>
-
-              <li>
-                <a href="#">Privacy & Terms</a>
-              </li>
-
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-
-            </ul>
-
+          <div class="col-3 col-md-1">
+            <a href="#">Status</a>
           </div>
 
-          <div class="col-12 col-md-6">
-            
+          <div class="col-6 col-md-2">
+            <a href="#">Privacy & Terms</a>
+          </div>
+
+          <div class="col-3 col-md-2">
+            <a href="#">Contact Us</a>
+          </div>
+
+          <div class="col-12 col-md-2">
+            <!----EMPTY COLUMN---->
+          </div>
+
+          <div class="col-12 col-md-3">
+
             <div class="row">
 
-              <div class="col-12 col-md-6">
-
-                <img src="images/us-flag.png" alt="US Flag">
-                <a href="#">English (US)</a>
-                <img src="images/arrow-icon.svg" alt="Arrow icon">
-
+              <div class="col-3">
+                <img src="images/us-flag.png" alt="Us flag">
               </div>
 
-              <div class="col-12 col-md-6">
+              <div class="col-5">
+                <p>English (US)</p>
+              </div>
 
-                <a href="#"><img src="images/twitter-icon.svg" alt="Twitter icon"></a>
-                <a href="#"><img src="images/facebook-icon.svg" alt="Facebook icon"></a>
-                <a href="#"><img src="images/youtube-icon.svg" alt="Youtube icon"></a>
-
+              <div class="col-4">
+                <img src="images/arrow-icon.svg" alt="Arrow icon" class="arrow">
               </div>
 
             </div>
 
           </div>
+
+          <div class="col-12 col-md-2">
+
+            <div class="row">
+
+              <div class="col-4">
+                <img src="images/twitter-icon.svg" alt="Twitter icon">
+              </div>
+
+              <div class="col-4">
+                <img src="images/facebook-icon.svg" alt="Facebook icon">
+              </div>
+
+              <div class="col-4">
+                <img src="images/youtube-icon.svg" alt="Youtube icon">
+              </div>
+
+            </div>
+
+          </div>
+
 
         </div>
 
