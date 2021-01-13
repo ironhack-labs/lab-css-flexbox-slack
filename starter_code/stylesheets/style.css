@@ -1,16 +1,21 @@
-/*
-background-grey: #F4F3F4;
+/* background-grey: #F4F3F4;
 button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+nav grey: #5b5e6d; */
 
 
 /* ---- GENERAL STYLING ---- */
 
 body {
     font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    color: #2C303F;
+    font-family: "Merriweather", serif;
+    margin: 20px 0;
 }
 
 img {
@@ -26,6 +31,10 @@ img {
     align-items: center;
     padding: 15px;
     background: white;
+    border-bottom: 1px solid #F4F3F4;
+    color: #2C303F;
+    position: fixed;
+    width: 100%;
 }
 
 .logo {
@@ -34,17 +43,54 @@ img {
 
 .navicon {
     width: 50px;
-    display: none;
     filter: grayscale(.8);
 }
 
 .nav-bar ul {
-    /* display: none; */
+    display: none;
     list-style: none;
-    display: flex;
+    /* display: flex; */
     margin-bottom: 0;
 }
 
 .nav-bar ul li {
     margin: 0 10px;
+}
+
+
+/* ---- HERO ---- */
+
+.hero {
+    padding: 100px 20px;
+}
+
+.hero img {
+    /* display: block; */
+}
+
+.email-input {
+    width: 100%;
+    border: 1.5px solid #F4F3F4;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin: 20px auto;
+}
+
+
+/* ---- COMPONENTS: BUTTONS ---- */
+
+.button {
+    border: 1px solid #192592;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 500;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.button.purple {
+    background-color: #192592;
+    color: white;
 }
