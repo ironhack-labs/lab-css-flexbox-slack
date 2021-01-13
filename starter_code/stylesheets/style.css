@@ -7,246 +7,167 @@ nav grey: #5b5e6d;
 */
 
 
-/* GENERAL STYLING */
-
+/* GENERAL */
 body {
-    font-family: 'Fraunces', serif, sans-serif;
-    font-family: 'Vesper Libre', serif, sans-serif;
-  }
-
-
-
-h1{
-    font-size: 3em;
-    font-weight: 300;
-    margin-bottom: 20px;
+    font-family: "awesome";
 }
 
- img {
-     width: 100%;
+img {
+    width: 100%;
 }
 
 
 
- /* NAVIGATION */
+/* BARRA DE NAVEGACION */
+@media (min-width: 768px) { }
 
-.barra-menu{
-    display:flex;
-    justify-content:space-between; 
-    align-items:center;
-    padding: 10px 10px 10px 10px;
-    background-color: white;
-    height:60px;
-    position: fixed;
+.barra-menu {
     border-bottom: 3px solid#F4F3F4;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
     width:100%;
     z-index:100;
-    top:0;
 }
 
 .barra-menu .slack-logo{
     width: 150px;
+    margin-top:20px;
 }
 
 .barra-menu .navicono{
-   width: 40px;
-   padding: 25px 25px 25px 25px;
+   display: none;
 }
 
-.barra-menu nav {
-    display:none;
-}
-
-
-.barra-menu ul {
-    list-style:none;
-    display:flex;
-    margin-bottom:0%;
-    padding: 25px 25px 25px 25px;
-
-}
-
-.barra-menu ul li {
-    margin:0 10px;
+@media screen and (max-width: 768px) { 
+ .barra-menu .navicono{
+       width:60px;
+       display: inline-block;
+       margin-top:20px;
  }
+ .barra-menu li {
+   display: none;
+ }
+ .sponsors img {
+     max-width: 70%;
+     margin: 50px 50px 50px 50px;
 
-
-.barra-menu a {
-    color:#5b5e6d;
-    text-decoration:none;
+ }
 }
-  
-
- /* NAVIGATION */
-
- /*
- .wwh {
-    padding: 100px 0;
+.barra-menu ul {
+    float:right;
+    display:flex;
+    flex-direction: row;
     text-align: center;
+    padding: 25px 25px 25px 25px;
+    justify-content: space-around;
+    list-style: none;
+    color:#5b5e6d;
 }
 
+.barra-menu li{
+   margin:10px;
+   font-weight: 800;
+   margin-top:20px;
+ }
+ 
 
-.wwh .img {
-    width:80%;
-    display:block;
-    margin:0 auto;
-}
-
-*/
+/* WHERE WORK HAPPENS */
 
 .wwh {
-    background-color: rgba(255,255,255,0);
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding-top: 200px;
-    padding-right: 30px;
-    padding-bottom: 200px;
-    padding-left: 30px;
- }
+   background-color: rgba(255,255,255,0);
+   background-position: center center;
+   background-repeat: no-repeat;
+   padding-top: 200px;
+   padding-right: 30px;
+   padding-bottom: 200px;
+   padding-left: 30px;
+}
 
- .wwh .workhapp {
-    display: inline-block;
+.wwh .workhapp {
+   display: inline-block;
     padding-left: 20px;
 
- }
+}
 
- .wwh .text1{
-    text-align:left;
-    padding-right:20px;
- }
-
-
-
- /* PATROCINADORES */
-
- .sponsors {
-    text-align: center;
-    background:#F4F3F4;
+.wwh .text1{
+   text-align:left;
+   float:right;
+   padding-right: 20px;
 }
 
 
-.sponsors img {
-    width:50%;
-    margin-bottom:40px;
-    margin-right: 5%;
-}
-
-
-
-
- /* TRY FOR FREE SECTION */
-
- .try4free{
-    background-color: white;
-    border-bottom: 3px solid#F4F3F4;
-    padding:40px 0 ;
-    text-align: center;
- }
-
- .try4free h3 {
-     font-size:4em;
-     color:#464b59;
- }
-
- .try4free p {
-    font-size:3em;
-    color:#464b59;
-}
-
-
-
- /* FOOTER SECTION */
-
-
-.info ul {
-    list-style:none;
-    margin-bottom:0%;
-    padding: 25px 25px 25px 25px;
-}
-
-.info ul li {
-    margin:0 10px;
-}
-
-
-.info a {
-    color:#5b5e6d;
-    text-decoration:none;
-}
- 
-
-.iso-slack{
-    width: 150px;
- }
-
-
-.us-flag {
-    width: 150px;
- }
- 
-
-.theend nav ul li a{
-    justify-content:space-between; 
-    background:#F4F3F4;
-    list-style:none;
- }
-
-
-
-  /* COMPONENTS BUTTONS */
+ /* BOTONES */
 
 .button {
-   border: 2px solid;
-   text-decoration: none;
-   text-transform: uppercase;
-   font-size:.8em;
-   padding: 20px;
-   display:block;
-   width: 220px;
-   margin:10px;
-   text-align: center;
-}
-
-.button.purple {
-   background-color:#192592;
-   border-color:#192592;
-   color:white; 
-   /*margin-left:auto;*/
-}
-
- .button.white {
-    background-color:white;    
-    color:#192592;
-   /* margin-left:auto;
-    margin-right:auto;*/
-}  
-
-/*
-.form-mail {
-    border: 2px solid #94908d;
-    text-decoration:none;
-    letter-spacing:1px;
-    font-size:.8em;
+    border: 2px solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
     padding: 20px;
     display:block;
     width: 220px;
-    margin:0 auto;
-    text-align:center;
-    color:#94908d;
+    margin: 10px;
+    text-align: center;
 }
-*/
 
 
-/*mobile*/
-@media (min-width: 768px){ 
-    .navicono {
-    display:none;
+.button.purple {
+background-color:#192592;
+color:white;
+
+}
+
+.button.white {
+background-color:white;    
+color:#192592;
+text-align: center;
+display:block;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+/* PATROCINADORES */
+
+.sponsors {
+   text-align: center;
+   background:#F4F3F4;
+}
+
+.sponsors img {
+   width: 100%;
+   margin-bottom: 20px;
+   margin-right: 5%;
+}
+
+
+
+
+/*PRUEBA GRATIS */
+.tf {
+   border-bottom: 3px solid#F4F3F4;
+}
+
+.button.purple2{
+   background-color:#192592;
+   color:white;
+   display:block;
+   margin-left:auto;
    }
 
-   .barra-menu nav{
-    display:block;
- }
 
+/* PIE DE PAG */
+
+.iso-slack{
+   width: 150px;
 }
 
 
+.us-flag {
+   width: 150px;
+}
