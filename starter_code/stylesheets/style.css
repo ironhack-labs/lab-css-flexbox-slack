@@ -18,6 +18,7 @@ h1 {
     color: #2C303F;
     font-family: "Merriweather", serif;
     margin: 20px 0;
+    font-weight: 900;
 }
 
 h2 {
@@ -57,14 +58,12 @@ img {
 }
 
 .navicon {
-    /* display: none; */
     filter: grayscale(.8);
 }
 
 .nav-bar ul {
     display: none;
     list-style: none;
-    /* display: flex; */
     margin-bottom: 0;
 }
 
@@ -105,7 +104,24 @@ img {
 }
 
 .sponsors img {
-    margin: 20px 0;
+    object-fit: contain;
+    padding: 40px;
+}
+
+.sponsors-col {
+    display: flex;
+}
+
+.sponsors-right-border {
+    border: none;
+}
+
+.sponsors-bottom-border {
+    border-bottom: 1px solid #5b5e6d;
+}
+
+.sponsors-bottom-border:nth-child(6) {
+    border-bottom: none;
 }
 
 
@@ -121,7 +137,7 @@ img {
 /* ---- FOOTER - USEFUL LINKS ---- */
 
 .useful-links img {
-    width: 30%;
+    width: 100px;
     padding: 20px 0;
 }
 
@@ -139,7 +155,8 @@ img {
 
 .footer-nav {
     background: #F4F3F4;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .footer-nav ul {
@@ -170,11 +187,6 @@ img {
 
 /* ---- COMPONENTS: COLS ---- */
 
-.border-bottom {
-    border-bottom: 1px solid #F4F3F4;
-    padding-bottom: 20px;
-}
-
 
 /* ---- COMPONENTS: BUTTONS ---- */
 
@@ -196,4 +208,53 @@ img {
 .button.white {
     color: #192592;
     background-color: white;
+}
+
+@media (min-width:768px) {
+    .sponsors a {
+        width: 250px;
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .sponsors-bottom-border:nth-child(5) {
+        border: none;
+    }
+    .sponsors-right-border:nth-child(odd) {
+        border-right: 1px solid #5b5e6d;
+    }
+    h1 {
+        font-size: 3.5em;
+    }
+    .useful-links {
+        padding-top: 20px;
+    }
+    .useful-links img {
+        width: 80px;
+        padding-top: 0;
+    }
+}
+
+@media(min-width:992px) {
+    .sponsors-bottom-border:nth-child(4) {
+        border-bottom: none;
+    }
+    .sponsors-right-border:nth-child(odd) {
+        border-right: none;
+    }
+    .sponsors-right-border:nth-child(1),
+    .sponsors-right-border:nth-child(2),
+    .sponsors-right-border:nth-child(4),
+    .sponsors-right-border:nth-child(5) {
+        border-right: 1px solid #5b5e6d;
+    }
+}
+
+@media (min-width:1200px) {
+    .navicon {
+        display: none;
+    }
+    .nav-bar ul {
+        display: flex;
+    }
 }
