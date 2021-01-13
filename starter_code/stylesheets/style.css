@@ -5,3 +5,292 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* GENERAL STYLE */
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 172px;
+}
+
+input {
+    color: gray;
+    font-size: 22px;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.button-blue {
+    text-align: center;
+    text-decoration: none;
+    border: 0.5px solid #3d4aa7;
+    background-color: #3d4aa7;
+    padding: 25px 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+/* NAV BAR STYLE */
+
+.nav-bar {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    border-bottom: 0.7px solid rgb(207, 207, 207);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.nav-logo {
+    width: 150px;
+}
+
+.nav-menu-icon {
+    width: 55px;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.nav-menu li {
+    margin: 0 25px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: gray;
+}
+
+.nav-menu-button {
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/* HERO STYLE */
+
+.hero {
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 0.7px solid rgb(207, 207, 207);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.hero h1 {
+    font-size: 53px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.hero p {
+    font-size: 22px;
+    color: gray;
+    margin-bottom: 50px;
+}
+
+
+.hero .join {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero img {
+    width: 490px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* SPONSORS STYLE */
+
+.sponsors {
+    background-color: rgb(236, 236, 236);
+    padding: 50px 25px;
+    text-align: center;
+}
+
+.sponsors h2 {
+    margin-top: 0;
+    font-size: 2.3em;
+    padding-top: 40px;
+}
+
+.sponsors p {
+    font-size: 22px;
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.sponsors .button-white {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 0.7px solid #3d4aa7;
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 40px;
+    color: #3d4aa7;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.sponsors img {
+    width: 190px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.span6.topline {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    width: 100%;
+}
+
+.span6.bottomline {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    width: 100%;
+}
+
+/* SIGN UP STYLE */
+
+.sign-up {
+    padding: 50px 24px;
+    text-align: center;
+    border-top: 0.7px solid rgb(207, 207, 207);
+    border-bottom: 0.7px solid rgb(207, 207, 207);
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up h3 {
+    margin-top: 0;
+    font-size: 1.7em;
+}
+
+.sign-up p {
+    color: gray;
+    font-size: 22px;
+}
+
+/* FOOTER STLYE */
+
+footer .app-info {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+footer img {
+    width: 150px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.disclaimers {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+}
+
+.disclaimers ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.disclaimers li {
+    margin: 0 15px;
+}
+
+.flag {
+    width: 25px;
+}
+
+footer .app-info {
+    color: gray;
+}
+
+.list-title {
+    color: rgb(92, 92, 92);
+    font-weight: 500;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+/* MEDIA SCREEN CONDITIONS */
+
+@media screen and (min-width: 767px) {
+    .email {
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+        height: auto;
+    }
+
+    .sign-up {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-menu-icon {
+        display: none;
+    }
+    .nav-menu {
+        display: block;
+    }
+
+    input {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 190px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero img {
+        margin-right: 30px;
+    }
+}
+
