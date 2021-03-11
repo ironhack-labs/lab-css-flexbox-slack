@@ -5,6 +5,9 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/*-----------------phone---------------------*/
+
 @media (max-width: 767px) {
     body{
         margin: 0;
@@ -40,7 +43,7 @@ nav grey: #5b5e6d;
         font-size: 2.6em; 
     }
 
-    header p , .goodcompany p{
+    header p , .goodcompany p, .signin p{
         color : #5b5e6d;
         font-size: 1.2em;
     }
@@ -49,20 +52,20 @@ nav grey: #5b5e6d;
         margin-bottom: 5vh;
         margin-top: 0;
     }
-    header #email, button{
+    header #email, .signin #email, button{
         padding: 2.5vh ;
         border-radius: 5px
     }
 
-    header button {
+    header button , .signin button{
         margin-top: 3vh;
         background: #192592;
         color: white;
         border: none;
     }
     
-    header #email {
-        border: 1px solid #6e5e6e
+    header #email ,.signin #email{
+        border: 1px solid #ebe8eb
     }
     .usingSlack {
         text-align: center;
@@ -70,8 +73,7 @@ nav grey: #5b5e6d;
 
     main {
         border-top: 2px solid #e9e8e9;
-        display: flex;
-        flex-direction: column;    
+        border-bottom: 2px solid #e9e8e9;  
     }
 
     main img {
@@ -82,13 +84,17 @@ nav grey: #5b5e6d;
         object-fit: contain;
     }
 
-    .goodcompany{
+    .goodcompany, .signin{
         display: flex;
         flex-direction: column;
-        background: #F4F3F4;
         padding: 4vh 10vw 6vh 10vw;
         text-align: center;
-        border-bottom: 2px solid #e9e8e9;;
+        
+    }
+
+    .goodcompany{
+        background: #F4F3F4;
+        border-bottom: 2px solid #e9e8e9;
     }
 
     .goodcompany h2 {
@@ -105,5 +111,15 @@ nav grey: #5b5e6d;
 
      .ticket{
         border: none;
+     }
+     main .signin{
+         display: flex;
+         flex-direction: column;
+     }
+     .signin h3 {
+        margin-bottom: 0;
+     }
+     .signin p{
+         margin-top: 0;
      }
   }
