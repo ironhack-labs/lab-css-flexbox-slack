@@ -5,3 +5,253 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/*
+Tamaños:
+width < 768px
+961px > width > 767px
+1024px > width > 960px
+*/
+
+body{
+    color: #5b5e6d;
+    font-family: '', sans-serif;
+}
+
+h1, h2{
+    color: #2C303F;
+    font-family: '', serif;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 3em;
+}
+h2{
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.button{
+    text-transform: uppercase;
+    font-weight: 500;
+    border: #192592 1px solid;
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 3px;
+}
+
+.button.purple{
+    color: white;
+    background-color: #192592;
+}
+
+.button.white{
+    color: #192592;
+    background: white;
+}
+
+input {
+    border: #F4F3F4 1px solid;
+    padding: 10px 70px 10px 10px;
+    border-radius: 3px;
+}
+
+.signinLink{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .button, input{
+        width: 100%;
+    }
+
+    .signinQuestion {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    input{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 960px){  
+    form{
+        display: flex;
+        justify-content: flex-start;
+    } 
+    input{
+        flex-grow: 0.4;
+        margin-right: 5px;
+    }
+}
+
+/*NAV*/
+
+.menu{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    border-bottom: 2px solid #5b5e6d;
+}
+.menu .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu img{
+    width: 90px;
+}
+
+.menu span.navbar{
+    color: #5b5e6d;
+    font-size: 2em;
+    padding: 0;
+}
+
+.menu ul.navbar{
+    display: none;
+}
+
+@media (min-width: 960px){
+
+    .menu span.navbar {
+        display: none;
+    }
+
+    .menu ul.navbar {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-right: 0;
+    }
+
+    .menu ul.navbar li a{
+        margin: 0 20px;
+        text-decoration: none;
+        color: #5b5e6d;
+        font-weight: 400;
+    }
+
+    .menu ul.navbar .navButton{
+        border: 1px solid #5b5e6d;
+        text-align: center;
+        padding: 5px;
+        margin-right: 0;
+        border-radius: 5px;
+    }
+}
+
+/*MAIN HEADER*/
+.hero{
+    padding-top: 100px;
+    border-bottom: 2px solid #5b5e6d;
+}
+
+.hero h1{
+    margin-bottom: 20px;
+    width: 75%;
+}
+
+.hero p{
+    margin-bottom: 35px;
+}
+
+.hero form{
+    margin-bottom: 15px;
+}
+
+.hero img{
+    margin-top: 30px;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .hero .info {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 960px) {
+    .hero .row{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .hero form {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .hero input{
+        margin-right: 0;
+        margin-left: 5px;
+    }
+}
+
+/*MAIN SPONSORS*/
+
+.sponsors{
+    background-color: #F4F3F4;
+}
+
+.sponsors header{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.sponsors .row{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.sponsors img{
+    width: 75%;
+    margin: 30px auto;
+    /*
+    No supe como centrar las imagenes sin usar
+    position: relative;, intente de todo pero no se movian.
+    */
+    position: relative;
+    left: 50px;
+}
+
+/*MAIN TRYIT*/
+
+.tryit{
+    border-top: 2px solid #5b5e6d;
+    border-bottom: 2px solid #5b5e6d;
+}
+
+.tryit header{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.tryit form{
+    padding-bottom: 30px;
+}
+
+@media (min-width: 769px){
+    .tryit header {
+        text-align: left;
+    }
+
+    .tryit form {
+        display: flex;
+        padding-bottom: 0px;
+    }
+
+    .tryit .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+    }
+}
+
