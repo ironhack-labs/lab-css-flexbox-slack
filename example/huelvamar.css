@@ -1,0 +1,244 @@
+/* ----- GENERAL STYLING ----- */
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+section {
+    padding: 120px 0
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2 {
+    font-size: 3em;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 40px 0
+}
+
+
+
+/* ----- NAVBAR ----- */
+
+.menu {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 20;
+    background: transparent;
+    width: 100%;
+    color: white;
+    font-weight: 100;
+    border-bottom: 1px solid white;
+    transition: all .5s;
+}
+
+.menu.filled {
+    background: white;
+    color: black;
+}
+
+
+.menu nav {
+    display: none;
+}
+
+.menu .logo {
+    filter: brightness(50);
+    width: 150px;
+}
+
+.menu.filled .logo {
+    filter: brightness(1);
+}
+
+.menu .navicon {
+    width: 30px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: inherit
+}
+
+
+
+/* ----- HERO SECTION ----- */
+
+.hero {
+    background: url('./../img/sea-back.jpg') no-repeat center / cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero p {
+    margin-bottom: 40px;
+}
+
+
+/* ----- INTRO SECTION ----- */
+
+.intro .button {
+    margin: 40px 0;
+}
+
+
+/* ----- SPONSORS SECION ----- */
+
+.sponsors {
+    text-align: center;
+}
+
+.sponsors h2 {
+    margin-bottom: 80px;
+}
+
+.sponsors img {
+    width: 50%;
+    opacity: .8;
+    transition: all .6s;
+    filter: grayscale(.6)
+}
+
+.sponsors img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+/* ----- FEATURES SECION ----- */
+
+.features {
+    background: url('./../img/caja-de-langostino-vivo-en-hielo-huelvamar.jpg') no-repeat center / cover;
+    text-align: center;
+}
+
+.features hr {
+    margin: 80px auto;
+    border-color: black;
+    width: 50%;
+}
+
+.features figure {
+    width: 30%;
+    margin: 10px auto;
+}
+
+.features article {
+    margin-bottom: 50px;
+}
+
+
+
+/* ----  PROCESSES SECTION ---- */
+
+.processes  {
+    background: url('./../img/barco-fondo-mar.jpeg') no-repeat left center / cover;
+}
+
+.processes .button {
+    margin: 40px 0
+}
+
+
+
+/* ----  BUY NOW SECTION ---- */
+
+.buy-now {
+    background-color: #282a2b;
+    color: white;
+    padding: 40px 0;
+}
+
+.buy-now h2 {
+    font-size: 2.3em;
+}
+
+
+
+/* ----  FOOTER ---- */
+
+footer {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 120px
+}
+
+
+/* ----  BUTTON COMPONENT ---- */
+
+.button {
+    border: 1px solid;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: block;
+    width: 230px;
+    font-size: .8em;
+    padding: 10px;
+    text-align: center;
+}
+
+.button.white {
+    color: white;
+}
+
+.button.dark {
+    color: black;
+}
+
+.button.centered {
+    margin: 0 auto;
+}
+
+.button.block {
+    width: auto;
+}
+
+.button:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ----  MEDIA QUERIES ---- */
+
+@media screen and (min-width: 768px) {
+
+    .menu nav {
+        display: block;
+    }
+
+    .menu .navicon {
+        display: none;
+    }
+
+    .sponsors img {
+        width: 70%;
+    }
+
+}
+
