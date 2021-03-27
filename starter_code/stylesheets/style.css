@@ -72,9 +72,19 @@ main button {
 	color: white;
 	font-weight: 600;
 	border-radius: 5px;
-	padding: 14px 0px;
+	padding: 16px 0px;
 	margin-top: 20px;
 	border-style: none;
+}
+#sign-in{
+    margin: 0;
+    margin-top: 15px;
+}
+header img {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    transition: width 0.2s;
 }
 
 /* MAIN */
@@ -105,13 +115,20 @@ main p {
 #discover-btn {
 	background-color: white;
 	border: 1px solid var(--button-purple);
-	padding: 14px 0px;
+	padding: 14px 20px;
 	border-radius: 5px;
 	color: var(--button-purple);
 	font-weight: 800;
 	margin-bottom: 40px;
 }
-main img {
+#logos-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#logos-container img {
 	width: 200px;
 }
 main hr {
@@ -142,6 +159,28 @@ main hr {
 
 /* FOOTER */
 /* First footer list */
+#slack-logo {
+    width: 150px;
+    height: 150px;
+    margin-left: -30px;
+}
+#footer-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+#footer-list ul{
+    padding: 0px;
+}
+#footer-list ul li,
+#footer-contact-list ul li {
+    list-style-type: none;
+    font-size: 1.8rem;
+    color: var(--paragraph-grey);
+    margin: 10px 0px;
+}
+#footer-list ul li:first-child {
+    font-weight: 900;
+}
 
 /* Second footer list */
 #footer-contact-list {
@@ -197,11 +236,10 @@ main hr {
 		width: 100%;
 	}
 	#sign-in {
-		text-align: center;
+		text-align: center;        
 	}
 	header img {
-		margin-top: 15px;
-		width: 315px;
+        width: 315px;
 	}
 
 	/* MAIN */
@@ -218,34 +256,14 @@ main hr {
 
 	/* FOOTER */
 	/* First footer list */
-	#slack-logo {
-		width: 150px;
-		padding-right: 120px;
-		margin-left: -30px;
-	}
-	#footer-list {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		padding-left: 30px;
-	}
-	#footer-list ul {
-		width: 50%;
-		padding: 0px;
-	}
-
-	#footer-list ul li,
-	#footer-contact-list ul li {
-		list-style-type: none;
-		font-size: 1.8rem;
-		color: var(--paragraph-grey);
-	}
-	#footer-list ul li:first-child {
-		font-weight: 900;
-	}
-	#footer-list ul li {
-		margin: 10px 0px;
-	}
+    #footer-list-container {
+        display: flex;
+        flex-direction: column;        
+        padding-left: 30px;
+    }
+    #footer-list ul{
+        margin: 0px 30px 10px 30px;
+    }
 
 	/* Second footer list */
 }
@@ -255,4 +273,36 @@ main hr {
 	nav > ul {
 		display: none;
 	}
+
+    /* HEADER */
+    header p{
+        width: 80%;
+    }
+    header img {
+		margin-top: 15px;
+		width: 400px;
+	}
+    header input {
+        width: 400px;
+        margin-right: 10px;
+    }
+    header button,
+    main button{
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    /* FOOTER */
+    /* First footer list */
+    #slack-logo{
+        padding: 0;
+        margin-left: 15px;
+        height: 120px;
+        width: 120px;
+
+    }
+    #footer-list-container ul{
+        width: 150px;
+    }
+
 }
