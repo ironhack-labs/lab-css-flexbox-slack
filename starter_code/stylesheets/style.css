@@ -1,7 +1,173 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+/* VARIABLES */
+:root{
+    --background-grey: #F4F3F4;
+    --button-purple: #192592;
+    --button-blue: #4049AA;
+    --main-titles-dark-grey: #2C303F;
+    --paragraph-grey: #5B5E6D;
+    --nav-grey: #5B5E6D;
+    --light-grey: #EBEBEB;
+}
+
+/* RESETS */ 
+html,
+body,
+h1, h3,
+input,
+p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+
+/* NAV BAR */
+nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    border-bottom: 1px solid var(--light-grey);
+}
+nav img{
+    height: 50px;
+    padding-left: 30px;    
+}
+nav i{
+    float: right;
+    font-size: 2.5rem;
+    color: var(--nav-grey);
+    margin-right: 30px;
+    padding: 15px 0px;
+}
+
+nav > ul {
+    display: none;
+}
+
+/* HEADER */
+header {
+    padding: 30px 30px 0px 30px;
+}
+header h1{
+    color: var(--main-titles-dark-grey);
+    font-size: 3.7rem;    
+}
+header > p {
+    font-size: 1.8rem;
+    color: var(--paragraph-grey);
+    margin: 30px 0px;
+}
+header input,
+main input{
+    width: 100%;
+    padding: 12px 0px 12px 10px;
+    font-size: 1.8rem;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+}
+header input:focus,
+main input:focus{
+    outline-color: var(--nav-grey);
+}
+header button,
+main button {
+    width: 100%;
+    background-color: var(--button-blue);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 14px 0px;
+    margin-top: 20px;
+    border-style: none;  
+}
+#sign-in {
+    text-align: center;    
+}
+header img {
+    margin-top: 15px;
+    width: 315px;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-grey);
+    border-top: 1px solid var(--light-grey);
+    padding: 20px 30px 0px 30px;
+}
+main > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h2 {
+    color: var(--main-titles-dark-grey);
+    text-align: center;
+    font-size: 2.6rem;
+}
+main p {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--paragraph-grey);
+}
+#discover-btn{
+    background-color: white;
+    border: 1px solid var(--button-purple);
+    width: 100%;
+    padding: 14px 0px;
+    border-radius: 5px;
+    color: var(--button-purple);
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+main img{    
+    width: 200px;
+}
+main hr {
+    width: 100%;
+    border: 1px solid var(--light-grey);
+    margin: 30px 0px 30px 0px;
+}
+#try-it-container{
+    background-color: white;
+    padding: 40px;
+    width: 100vw;
+    border-bottom: 1px solid var(--light-grey);
+    border-top: 1px solid var(--light-grey);
+    margin-top: 50px;
+}
+#try-it-container  p {
+    color: var(--paragraph-grey);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+#try-it-container a{
+    color: var(--button-blue);
+}
+#try-it-title{
+    font-size: 2.2rem;
+    color: var(--main-titles-dark-grey);
+}
+main button{
+    width: 315px;
+}
+main input{
+    margin-top: 10px;
+    width: 315px;
+}
+
+/* FOOTER */
+#slack-logo{
+    width: 150px;
+}
+
+
+@media(max-width: 768px){
+
+
+}
