@@ -76,6 +76,12 @@ main button {
 	padding: 16px 0px;
 	margin-top: 20px;
 	border-style: none;
+	transition: background-color 0.2s;
+}
+header button:hover,
+main button:hover {
+	background-color: var(--button-purple);
+	cursor: pointer;
 }
 #sign-in {
 	margin: 0;
@@ -121,6 +127,10 @@ main p {
 	color: var(--button-purple);
 	font-weight: 800;
 	margin-bottom: 40px;
+}
+#discover-btn:hover {
+	border: 2px solid var(--button-purple);
+	padding: 13px 20px;
 }
 #logos-container {
 	display: flex;
@@ -174,6 +184,13 @@ main p {
 }
 #footer-list ul li {
 	width: 127px;
+	transition: color 0.2s;
+}
+#footer-list ul li:hover,
+#footer-contact-list ul li:hover,
+#social-container i:hover {
+	color: var(--button-purple);
+	cursor: pointer;
 }
 #footer-list ul li,
 #footer-contact-list ul li {
@@ -181,6 +198,10 @@ main p {
 	font-size: 1.8rem;
 	color: var(--paragraph-grey);
 	margin: 10px 0px;
+	transition: color 0.2s;
+}
+#social-container i {
+	transition: color 0.2s;
 }
 #footer-list ul li:first-child {
 	font-weight: 900;
@@ -428,10 +449,10 @@ main p {
 }
 @media (min-width: 1200px) {
 	/* NAV BAR */
-	.fa-bars{
+	.fa-bars {
 		display: none;
 	}
-	nav{
+	nav {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -443,17 +464,22 @@ main p {
 		align-items: center;
 		margin-right: 60px;
 	}
-	nav > ul li{
+	nav > ul li {
 		margin: 0px 10px;
 		padding: 5px 10px;
+		transition: color 0.2s;
 	}
-	nav > ul li:last-child{
+	nav > ul li:last-child {
 		border: 1px solid var(--paragraph-grey);
-		border-radius: 5px
+		border-radius: 5px;
+	}
+	nav > ul li:hover {
+		color: var(--button-purple);
+		cursor: pointer;
 	}
 
 	/* HEADER */
-	header{
+	header {
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-around;
@@ -462,11 +488,11 @@ main p {
 	#work-happens-section {
 		width: 600px;
 	}
-	#work-happens-section h1{
+	#work-happens-section h1 {
 		font-size: 7rem;
 	}
 	header p {
-		width: 80%;		
+		width: 80%;
 	}
 	header img {
 		margin: 0;
@@ -517,7 +543,7 @@ main p {
 	}
 	#footer-list-container {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		margin: 25px 0px;
 	}
 	#footer-list-container ul {
