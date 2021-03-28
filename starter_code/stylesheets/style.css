@@ -12,10 +12,9 @@
 /* RESETS */
 html,
 body,
-h1,
-h3,
+h1,h3,
 input,
-p {
+p,ul {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -67,7 +66,7 @@ main input:focus {
 	outline-color: var(--nav-grey);
 }
 header button,
-main button {
+main button{
 	background-color: var(--button-blue);
 	color: white;
 	font-weight: 600;
@@ -166,10 +165,13 @@ main p {
 }
 #footer-list{
     display: flex;
-    flex-wrap: wrap;
+	flex-flow: row wrap;
 }
 #footer-list ul{
     padding: 0px;
+}
+#footer-list ul li{
+	width: 127px;
 }
 #footer-list ul li,
 #footer-contact-list ul li {
@@ -191,7 +193,8 @@ main p {
 	background-color: var(--background-grey);
 	color: var(--paragraph-grey);
 	font-weight: 900;
-	height: 150px;
+	height: 120px;
+	padding: 10px 0px;
 }
 #footer-contact-list ul {
 	display: flex;
@@ -204,7 +207,7 @@ main p {
 
 #flag-container {
 	font-size: 1.8rem;
-	width: 48%;
+	width: 150px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -228,6 +231,7 @@ main p {
 	/* HEADER */
 	header input,
 	main input {
+		margin-top: 10px;
 		width: 100%;
 	}
 
@@ -246,13 +250,6 @@ main p {
 	#discover-btn {
 		width: 100%;
 	}
-	main button {
-		width: 315px;
-	}
-	main input {
-		margin-top: 10px;
-		width: 315px;
-	}
 	.logo-box {
 		padding: 20px 80px 20px 80px;
 		height: 100px;
@@ -266,10 +263,11 @@ main p {
     #footer-list-container {
         display: flex;
         flex-direction: column;        
-        padding-left: 30px;
+        padding-left: 60px;
     }
     #footer-list ul{
-        margin: 0px 30px 10px 30px;
+		width: 40%;		
+		padding: 0px 40px 20px 20px;
     }
 
 	/* Second footer list */
