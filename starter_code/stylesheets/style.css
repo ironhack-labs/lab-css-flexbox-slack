@@ -51,7 +51,7 @@ header h1 {
 	color: var(--main-titles-dark-grey);
 	font-size: 3.7rem;
 }
-header > p {
+header p {
 	font-size: 1.8rem;
 	color: var(--paragraph-grey);
 	margin: 30px 0px;
@@ -289,7 +289,7 @@ main p {
 
 	/* HEADER */
 	header p {
-		width: 80%;
+		width: 70%;
 	}
 	header img {
 		margin-top: 15px;
@@ -359,7 +359,7 @@ main p {
 
 	/* HEADER */
 	header p {
-		width: 80%;
+		width: 60%;
 	}
 	header img {
 		margin-top: 15px;
@@ -377,7 +377,8 @@ main p {
 
 	/* MAIN */
 	.logo-box {
-		padding: 20px 40px 20px 40px;
+		padding: 20px 0px;
+		width: 33%;
 		height: 100px;
 	}
 	.logo-box:nth-child(1),
@@ -417,6 +418,115 @@ main p {
 	}
 	#footer-contact-list {
 		flex-direction: row;
+	}
+	#footer-contact-list div {
+		display: flex;
+	}
+	#social-container {
+		width: 100px;
+	}
+}
+@media (min-width: 1200px) {
+	/* NAV BAR */
+	.fa-bars{
+		display: none;
+	}
+	nav{
+		display: flex;
+		justify-content: space-between;
+	}
+	nav > ul {
+		list-style-type: none;
+		font-size: 1.8rem;
+		color: var(--paragraph-grey);
+		display: flex;
+		align-items: center;
+		margin-right: 60px;
+	}
+	nav > ul li{
+		margin: 0px 10px;
+		padding: 5px 10px;
+	}
+	nav > ul li:last-child{
+		border: 1px solid var(--paragraph-grey);
+		border-radius: 5px
+	}
+
+	/* HEADER */
+	header{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		padding-bottom: 20px;
+	}
+	#work-happens-section {
+		width: 600px;
+	}
+	#work-happens-section h1{
+		font-size: 7rem;
+	}
+	header p {
+		width: 80%;		
+	}
+	header img {
+		margin: 0;
+		width: 400px;
+	}
+	header input {
+		width: 400px;
+		margin-right: 10px;
+	}
+	header button,
+	main button {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* MAIN */
+	.logo-box {
+		width: 33%;
+		height: 100px;
+	}
+	.logo-box:nth-child(1),
+	.logo-box:nth-child(2),
+	.logo-box:nth-child(4),
+	.logo-box:nth-child(5) {
+		border-right: 1px solid var(--nav-grey);
+	}
+	.logo-box:nth-child(4),
+	.logo-box:nth-child(5),
+	.logo-box:nth-child(6) {
+		border-bottom: none;
+	}
+	#try-it-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#try-it-container button {
+		margin: 0px 0px 0px 10px;
+	}
+	/* FOOTER */
+	/* First footer list */
+	#slack-logo {
+		padding: 0;
+		margin-left: 15px;
+		margin-right: 30px;
+		height: 120px;
+		width: 120px;
+	}
+	#footer-list-container {
+		display: flex;
+		justify-content: space-around;
+		margin: 25px 0px;
+	}
+	#footer-list-container ul {
+		width: 150px;
+	}
+	#footer-contact-list {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0px 40px;
 	}
 	#footer-contact-list div {
 		display: flex;
