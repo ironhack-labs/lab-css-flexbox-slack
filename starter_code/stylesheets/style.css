@@ -123,18 +123,18 @@ main p {
 }
 #logos-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+	flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
-#logos-container img {
-	width: 200px;
+.logo-box {
+	border-bottom: 1px solid var(--nav-grey);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-main hr {
-	border: 1px solid var(--light-grey);
-	margin: 30px 0px 30px 0px;
-	width: 100%;
+.logo-box img{
+	width: 200px;
 }
 #try-it-container {
 	background-color: white;
@@ -253,6 +253,13 @@ main hr {
 		margin-top: 10px;
 		width: 315px;
 	}
+	.logo-box {
+		padding: 20px 80px 20px 80px;
+		height: 100px;
+	}
+	.logo-box:last-child{
+		border: none;
+	}
 
 	/* FOOTER */
 	/* First footer list */
@@ -268,7 +275,7 @@ main hr {
 	/* Second footer list */
 }
 
-@media (min-width: 767px) and (max-width: 961px) {
+@media (min-width: 769px) and (max-width: 961px) {
 	/* NAV BAR */
 	nav > ul {
 		display: none;
@@ -292,6 +299,19 @@ main hr {
         padding-right: 20px;
 
     }
+
+	/* MAIN */
+	.logo-box {
+		padding: 20px 60px 20px 60px;
+		height: 100px;
+	}
+	.logo-box:nth-child(odd){
+		border-right: 1px solid var(--nav-grey);
+	}
+	.logo-box:last-child,
+	.logo-box:nth-child(5){
+		border-bottom: none;
+	}
     /* FOOTER */
     /* First footer list */
     #slack-logo{
@@ -299,7 +319,6 @@ main hr {
         margin-left: 15px;
         height: 120px;
         width: 120px;
-
     }
     #footer-list-container ul{
         width: 150px;
