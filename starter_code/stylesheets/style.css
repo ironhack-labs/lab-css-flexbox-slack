@@ -6,37 +6,131 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
-html, body{
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
+/* GENERAL STYLE */
+html,
+body,
+h1,
+h3,
+input,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+    font-family: 'Verdana';
     box-sizing: border-box;
     text-decoration: none;
 }
 
-nav{
-    background-color: white;
+p{    
+    color: #5b5e6d
+}
+
+.main-titles {
+    font-size: 3rem;
+    font-family: 'Times';    
+    color: #2C303F;
+}
+
+.btn-purple {
     width: 100%;
+    height: 60px;
+    background-color: #192592;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-white {
+
+}
+
+/* NAV */
+nav{
     position: sticky;
     top: 0;
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: white;
+    width: 100vw;
+    border-bottom: 1px solid #EBEBEB;
 }
 nav img {
-    width: 120px;
-    margin-left: 20px;
+    height: 50px;
+	padding-left: 30px;
 }
 nav ul{
     display: flex;
     float: right;
     list-style: none;
-    display: none; /* for responsive */
 }
 .menu-icon{
-    text-decoration: none;
-    color: #767579;
-    font-size: 2.5rem;
-    margin-right: 20px;
+    display: none;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    padding: 30px;
+}
+
+header img {
+    margin: 30px 0;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 30px auto;
+}
+
+.header-content input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    margin: 10px 0 25px 0;
+}
+
+.header-content input::placeholder {
+    color: #5b5e6d;
+    font-size: 1.5em;
+    padding: 0 10px;
+  }
+
+.header-content .header-sign {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header-content .header-sign a {
+    color: #192592;
+    text-underline-position: under;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /*NAV*/
+    nav ul{
+        display: none;
+    }
+
+    .menu-icon{
+        float: right;
+        color: #5b5e6d;
+        font-size: 2.5rem;
+        margin-right: 30px;
+        padding: 10px 0;
+        display: block;
+    }
+
+    /*HEADER*/
+    header {
+        flex-direction: column-reverse;
+    }
+
 }
