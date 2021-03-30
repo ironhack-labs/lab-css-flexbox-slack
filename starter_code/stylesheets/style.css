@@ -5,3 +5,327 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* { 
+    font-family:  Helvetica;
+
+}
+/*---- GENEral PAGE STYLING ----*/
+
+h1 , h2, h3, h4, h5 {
+    color: #2C303F;
+}
+
+h1, h2 {
+    padding-left: 30px; 
+}
+
+p {
+color: #5b5e6d;
+font-size: 1.5rem;
+
+
+}
+
+
+
+/* html,
+body,
+h1, h3,
+input,
+p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+} */
+
+
+
+
+/*---- NAV BAR ----*/
+
+
+
+nav {
+    top: 0 ;
+    width: 100vw;
+    font-size: 1em;
+    border-bottom: 1px solid lightgrey;
+    position:fixed;
+}
+
+
+nav i {
+    float: right;
+    font-size: 2.5rem;
+    color: var(--nav-grey);
+    margin-right: 30px;
+    padding: 15px 0px;
+}
+
+.slack-logo {
+    height: 50px;
+    float:left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px 70px 0px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+
+/*---- HEADER----*/
+
+header {
+    padding: 30px 30px 0px 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+header img {
+    width: 70%;
+    margin-top: 15px;
+    
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    margin: 30px 0px;
+        }
+
+
+header input {
+    padding: 12px 0px 12px 10px;
+    font-size: 1.rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;  
+}
+header button {
+    padding: 20px 40px; 
+    margin-top: 20px;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    background-color: #192592;
+    color: white;
+    align-items: center;
+
+}
+
+#sign-in {
+    font-size: 1rem;
+}
+
+
+/*---- MAIN ----*/
+
+main {
+    border-top: 1px solid lightgrey;
+    padding: 20px 30px 0px 30px;
+    background-color: #F4F3F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main p {
+    text-align: center;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover-btn {
+    width: 100%;
+    padding: 20px 40px; 
+    margin-top: 20px;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    background-color: white;
+    color:#192592;
+    align-items: center;
+}
+.get-started-btn {
+    padding: 20px 40px; 
+    margin-top: 20px;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    background-color: #192592;
+    color: white;
+    align-items: center;
+    
+}
+
+main img {
+    width: 200px;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid lightgrey;
+}
+
+ 
+/*---- FOOTER ----*/
+
+footer {
+    padding: 5px 50px 5px 20px;
+}
+
+
+ .footer-logo {
+    width: 100px;
+    float: left;
+    
+} 
+
+#footer-list-a {
+    width: 100%;
+}
+
+footer div ul{
+list-style: none;
+width: 50%;
+padding: 0px;
+} 
+
+
+#footer-list-b {
+   
+}
+
+#footer-items {
+   
+}
+.flag-img {
+    width: 20px;
+}
+
+.socials {
+  
+}
+
+
+
+/*---- MEDIA QUERIES ----*/
+
+
+/*_1____Extra Small Screen (width < 768px)*/
+
+@media (max-width: 768px) {
+
+    nav > ul {
+		display: none;
+	}
+
+/* ----- HEADER ------- */
+
+    header input {
+        margin-top: 10px;
+		width: 100%;
+             
+        }
+    
+        header button {
+            width: 100%;
+        }
+    
+    }
+
+    #sign-in {
+        text-align: center;
+    }
+    
+/*---- MAIN ----*/
+
+
+.discover-btn {
+    width: 100%;
+}
+.get-started-btn {
+    width: 100%;
+    
+}
+
+/*---- FOOTER ----*/
+
+
+#footer-list-a {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#footer-list-b {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#footer-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+@media (min-width: 769px) and (max-width: 961px) {}
+
+  
+/* The buttons and inputs stop occupying 100%.
+
+Now we have 2 companies logos on each row.
+
+The subfooter goes from 2 columns, to display all the 4 
+columns in the same row.
+
+The footer goes from 3 different rows of content to a simple 
+row displaying some info at the left and some to the right. */
+
+/* Iteration 3 | Medium Screen 
+The easiest change we will have. You should display 
+3 logos per row on the "You're in good company" section.  */
+
+
+
+
+
+
+/* Iteration 4 | Large Screen (width > 1200px)
+Last one! Some small changes and we are done!
+
+Our nav-bar starts to show all the menu links, so go ahead, 
+remove the collapse icon and add the list.
+
+On the top of the webpage, the image is displayed in line 
+with the "Where work happens" text. If you are using 
+flex-box (you must 😉 ), this should be super easy! */
+
+@media (max-width: 1024px) {
+
+
+}
