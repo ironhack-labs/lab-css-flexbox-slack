@@ -5,3 +5,311 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+html{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+.hamburger-menu-checkbox,
+.hamburger-menu-label {
+  cursor: pointer;
+  position: absolute;
+  top: 9.5px;
+  right: 16px;
+}
+
+.menu-group {
+  border: 2px solid #000;
+  visibility: hidden;
+}
+
+input[type="checkbox"] {
+  border: none;
+  z-index: 99;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked~.menu-group {
+  visibility: visible;
+}
+
+.menu-container{
+  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.menu-container img {
+  position: fixed;
+  width: 7%;
+  padding:15px 15px 15px 15px;
+  margin-left:2%;
+}
+
+.menu-container ul{
+  display: flex;
+  list-style: none;
+  opacity: 0;
+}
+
+h1{
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  color: #2C303F;
+  
+}
+
+h2{
+  margin-bottom: 1rem;
+  color: #323648;
+  font-size: 27px;
+  }
+
+
+.where-work-happens{
+   display: flex;
+   flex-direction: column;
+   margin-top: 100px;
+   align-items: center;
+}
+
+.where-work-happens p{
+  color: #5b5e6d;
+  
+}
+
+.where-work-happens img{
+  width: 300px;
+}
+
+.main-text-one{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-bottom: 60px;
+  color: #323648;
+  font-size: 20px;
+}
+
+
+.email{
+  /* font-size: 20px;
+  color: #5b5e6d;
+  margin-bottom: 20px;
+  height: 500px
+  border-color: rgba(91, 94, 109, 0.1); */
+  width: 80%;
+  font-size: 20px;
+  color: #5b5e6d;
+  padding: 20px 73px;
+  margin-bottom: 20px;
+  border-color: rgba(91, 94, 109, 0.1);
+}
+
+.purple-button{
+  color: white;
+  background-color: #192592;
+  font-family: sans-serif;
+  width: 100%;
+  font-size: 20px;
+  padding: 20px 40px;
+  
+}
+
+
+
+.main-text-two a{
+  color:#192592;
+}
+
+.grey-section{
+  background-color: #F4F3F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grey-section img {
+  text-align: center;
+  width: 250px;
+  padding: 40px 0 40px 0
+}
+
+.grey-section p{
+  color: #5b5e6d;
+  text-align: center;
+  font-size: 20px;
+  width: 300px;
+}
+
+
+
+.sign-in{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in-one{
+  color: #2C303F;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sign-in-two {
+  color: #323648;
+  font-size: 20px;
+}
+
+.sign-in-two a{
+  color: #192592;
+}
+
+.email{
+  width: 80%;
+  font-size: 20px;
+  color: #5b5e6d;
+  padding: 20px 73px;
+  margin-bottom: 20px;
+  border-color: rgba(91, 94, 109, 0.1);
+}
+
+.purple-button{
+  width: 87%;
+  font-family: sans-serif;
+  background-color: #192592;
+  color: white;
+  font-size: 20px;
+  padding: 20px 107px;
+  
+}
+
+.white-button {
+  color: #192592;
+  border-color: #192592;
+  font-size: ;
+  padding: 20px 100px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.companies-names{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer-li{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.footer-li ul{
+  list-style: none;
+}
+
+.footer-li{
+  color: #5b5e6d;
+  margin: 16px;
+}
+
+.hashtag-img {
+  width: 180px;
+}
+
+.titles{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #2C303F;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.footer-li li{
+  margin-bottom: 20px;
+}
+
+
+.social-final-footer{
+  background-color: #F4F3F4;
+  color: #5b5e6d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-final-footer ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.social-final-footer li{
+  font-size: 20px;
+  padding: 30px;
+}
+
+.social-final-footer img{
+  width: 25px;
+}
+
+.language-selector{
+  font-size: 20px;
+}
+
+.fab fa-twitter,
+.fab fa-facebook-f,
+.fab fa-youtube{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 767px){
+  .companies-names{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  .email{
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .purple-button{
+
+  }
+}
+
+
+@media only screen and (min-width: 960px){
+  .companies-names{
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .buttons-section-1 img{
+    padding: 30px;
+    margin: 30px;
+    
+  }
+}
+
+@media only screen and (min-width: 1024px){
+
+}
