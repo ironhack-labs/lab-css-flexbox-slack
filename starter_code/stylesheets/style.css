@@ -1,7 +1,268 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+:root {
+    --background-grey: #F4F3F4;
+    --button-purple: #192592;
+    --main-titles-dark-grey: #2C303F;
+    --paragraph-grey: #5b5e6d;
+    --nav-grey: #5b5e6d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white;
+    z-index: 9999;
+    border-bottom: 5px solid var(--background-grey);
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+
+}
+
+nav ul li {
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+nav ul li:last-child {
+    border: 2px solid var(--nav-grey);
+    padding: 6px;
+    border-radius: 4px;
+}
+
+nav .fa-bars {
+    margin: 11px;
+}
+
+header {
+    overflow: hidden;
+    margin-top: 90px;
+
+}
+
+header img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+header button {
+    background-color: var(--button-purple);
+    color: white;
+    line-height: 3;
+    width: 160px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border-style: none;
+}
+
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--main-titles-dark-grey);
+}
+
+header p {
+    margin-bottom: 20px;
+    color: var(--paragraph-grey);
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.brand-logos img {
+    width: 150px;
+    margin: 20px;
+}
+
+.main-div1 {
+    background-color: var(--background-grey);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.main-div1 h2 {
+    margin-bottom: 20px;
+    color: var(--main-titles-dark-grey);
+}
+
+.main-div1 p {
+    margin-bottom: 30px;
+    color: var(--paragraph-grey);
+}
+
+.main-div1 button {
+    background-color: white;
+    color: var(--main-titles-dark-grey);
+    line-height: 3;
+    width: 160px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 2px solid var(--nav-grey);
+}
+
+.get-started-button {
+    background-color: var(--button-purple);
+    color: white;
+    line-height: 3;
+    width: 160px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border-style: none;
+}
+
+.main-div2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.main-div2 {
+    font-size: 2rem;
+}
+
+footer {
+    border-top: 3px solid var(--background-grey);
+    padding-top: 30px;
+}
+
+.footer-div1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.hashtag-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 100%;
+}
+
+.footer-text-columns {
+    margin: 0 20px 20px 0;
+    width: 150px;
+}
+
+.footer-text-columns li {
+    line-height: 1.6rem;
+}
+
+.footer-div2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-grey);
+    height: 90px;
+    padding: 30px;
+    margin-right: 10px;
+}
+
+.footer-div2 div span{
+    margin-left: 10px;
+}
+.footer-div2 div i {
+    margin-left: 10px;
+}
+
+.footer-bar-list li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.us-flag {
+    width: 20px;
+}
+
+
+
+
+
+
+
+/*_____________________________________________________________*/
+
+/*Small*/
+@media (min-width: 768px) {
+    header img {
+        width: 70%;
+    }
+
+    .hashtag-image {
+        margin-right: auto;
+    }
+
+    .footer-text-columns {
+        width: 150px;
+    }
+}
+
+/*Medium*/
+@media (min-width: 960px) {
+
+    .brand-logos img {
+        margin: 50px;
+    }
+
+    header {
+        padding: 70px;
+    }
+
+    header img {
+        float: left;
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav .fa-bars {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 5rem;
+    }
+
+}
+
+/*Large*/
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+
