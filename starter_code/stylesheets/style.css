@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
@@ -5,3 +54,329 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* Reset extension */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* General settings */
+/* Fonts */
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    font-family: serif;
+    color: #2C303F;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    font-family: serif;
+    color: #2C303F;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    font-family: serif;
+    color: #2C303F;
+}
+
+p {
+    color: #5b5e6d;
+    font-size: 1.1rem;
+}
+
+/* Images */
+
+nav > img {
+    width: 30%;
+}
+
+.iso-slack {
+    width: 35%;
+}
+
+.flag {
+    width: 30px;
+    display: inline;
+}
+
+/* Elements */
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.blue-button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    background-color: #192592;
+    color: white;
+    font-weight: bold;
+}
+
+.mail-input {
+    margin: 20px auto;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: solid 1px rgba(168, 168, 168, 0.219);
+}
+
+/* Sections */
+/* nav */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #69696944;
+    position: fixed;
+    background-color: white;
+    box-shadow: 2px 2px 8px 0 rgba(179, 179, 179, 0.473);
+}
+
+.fa-bars {
+    font-size: 1.8rem;
+    color: #5b5e6d;
+}
+
+@media (min-width: 300px){
+    nav > ul > li  {
+        display: none;
+    }
+}
+
+@media (min-width: 767px){
+    nav > img {
+        width: 20%;
+    }
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0 2% 0;
+}
+
+header > p:first-of-type {
+    width: 95%;
+}
+
+header > p:last-of-type {
+    align-self: center;
+    margin: 18px 0 50px 0;
+}
+
+@media (min-width: 300px){
+    h1 {
+        white-space: pre-line;
+    }
+}
+
+@media (min-width: 767px){
+    h1 {
+        white-space: normal;
+        font-size: 3.6rem;
+    }
+    header {
+        display: block;
+        padding: 140px 0 2% 0;
+    }
+    header .blue-button {
+        display: inline;
+        width: 25%;
+    }
+    header .mail-input {
+        display: inline;
+        width: 50%;
+    }
+    header > img {
+        margin: 0 auto;
+        width: 70%;
+    }
+    header > p:first-of-type {
+        font-size: 1.2rem;
+    }
+}
+
+/* Main */
+
+main {
+    border-top: 1px solid rgba(168, 168, 168, 0.219);
+    border-bottom: 1px solid rgba(168, 168, 168, 0.219);
+    padding-bottom: 50px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F3F4;
+    padding: 0 10%;
+    border-bottom: 1px solid rgba(168, 168, 168, 0.219);
+}
+
+.main-content p {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.white-button {
+    width: 100%;
+    padding: 15px;
+    margin: 30px 0;
+    border-radius: 4px;
+    border: 1px solid #192592;
+    background-color: #ffffff;
+    color: #192592;
+    font-weight: bold;
+}
+
+.companies-logo {
+    width: 100%;
+    padding: 20px 70px;
+    border-bottom: 1px solid rgba(168, 168, 168, 0.219);
+}
+
+.companies-logo:nth-of-type(4) {
+    padding: 20px 30px;
+}
+
+.companies-logo:last-of-type {
+    padding: 20px 60px 50px 60px;
+    border-bottom: none;
+}
+
+.try-it {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 767px){
+    h2 {
+        font-size: 2.2rem;
+    }
+    .white-button {
+        width: 30%;
+    }
+    .companies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .companies-logo {
+        border-bottom: none;
+    }
+    h3 {
+        margin: 1rem 0;
+    }
+    .try-it {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 4%;
+    }
+    .try-it .mail-input {
+        margin: 20px 5px 20px 15%;
+        width: 28%;
+    }
+    main .container{
+        width: 90%;
+    }
+    main .blue-button {
+        display: inline;
+        width: 20%;
+    }
+}
+
+/* Footer */
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-bottom: 30px;
+}
+
+.ind-links {
+    line-height: 2.2em;
+    color: #5b5e6d;
+    font-size: 1.1rem;
+}
+
+.ind-links > li:first-child {
+    font-weight: bold;
+    line-height: 3.5em;
+}
+
+.last-division{
+    background-color: #F4F3F4;
+    padding-top: 20px;
+}
+
+.last-division > ul {
+    color: #5b5e6d;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 3em;
+    color: #5b5e6d;
+    font-weight: bold;
+}
+
+.social-media-div {
+    display: flex;
+    align-items: center;
+}
+
+.fas, .fab, span {
+    padding: .7em .5em;
+}
+
+@media (min-width: 767px){
+    .iso-slack {
+        width: 15%;
+        display: inline;
+        position: absolute;
+    }
+    .footer-links {
+        display: flex;
+        flex-basis: calc(50% - 2rem);
+        justify-content: flex-end;
+}
