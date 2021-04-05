@@ -1,7 +1,300 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+/* Seccion General */
+
+.serif-title {
+    font-family: 'Merriweather', serif;
+    color: #2C303F;
+}
+
+.grey-text {
+    color: #5b5e6d;
+}
+
+.paragraph {
+    line-height: 26px;
+}
+
+.text {
+    font-family: 'Lexend', sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.centered {
+    text-align: center;
+}
+
+.padded {
+    padding: 2.5em 1.5em;
+}
+
+.very.padded {
+    padding: 4em 7em;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+
+/* Botones */
+
+.button {
+    padding: 1em 1em;
+    margin: .3em 0 1em 0;
+    border: 1px solid #192592;
+    border-radius: 5px;
+}
+
+.button.blue {
+    background-color: #192592;
+    color: white;
+}
+
+.button.white {
+    background-color: white;
+    color: #192592;
+}
+
+
+/* Navegador */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 1.5em;
+    border-bottom: 2px solid rgb(245, 245, 245);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.menu li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+.menu .workspaces-link {
+    border: 1px solid black;
+    padding: 0.6em 1em;
+    border-radius: 5px;
+}
+
+.menu-button {
+    color: grey;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Header */
+
+header.padded {
+    padding-bottom: 0;
+}
+
+header figure {
+    margin-top: 2em;
+}
+
+
+/* Seccion1 */
+
+.mail-input {
+    padding: 1em 1em;
+    margin: 1.2em 0;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 5px;
+}
+
+
+/* Seccion2 */
+
+.discover figure:not(:last-child) {
+    border-bottom: 2px solid rgb(235, 235, 235);
+}
+
+.discover {
+    background-color: #F4F3F4;
+    border-bottom: 2px solid rgb(235, 235, 235);
+}
+
+.discover .paragraph {
+    margin: 1em 0 1.8em;
+}
+
+
+/* Seccion3 */
+
+.try-free {
+    padding-top: 3em;
+    border-bottom: 2px solid rgb(235, 235, 235);
+}
+
+.mini-title {
+    font-size: 1.5em;
+    margin-bottom: 0em;
+}
+
+a {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+.hash-icon {
+    width: 140px;
+    margin: 1.2em 0;
+}
+
+footer li {
+    list-style: none;
+    padding-bottom: 1.2em;
+    padding-left: 1.5em;
+}
+
+
+/* Footer2 */
+
+.subfooter {
+    background-color: #F4F3F4;
+    padding: 1em 0 2em;
+}
+
+.subfooter ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.subfooter li:first-child {
+    padding-left: 0;
+}
+
+.languages {
+    margin-bottom: 2.3em;
+}
+
+.languages,
+.social-networks {
+    display: flex;
+    justify-content: center;
+}
+
+.languages span {
+    margin: 0 1.3em 0 0.8em;
+}
+
+.languages img {
+    width: 25px;
+}
+
+.central-icon {
+    margin: 0 1.7em;
+}
+
+
+/* Media Queres */
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+    .mail-input {
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+    }
+    .small-centered {
+        text-align: center;
+    }
+    .small-fluid {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu {
+        display: none;
+    }
+    .mail-input {
+        width: 60%;
+    }
+    .medium-half {
+        width: 50%;
+    }
+    .button {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .medium-hidden {
+        display: none;
+    }
+    .try-free {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .try-free .mail-input {
+        width: auto;
+    }
+    .subfooter {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em 2em 0;
+    }
+    .subfooter>div {
+        display: flex;
+    }
+    .languages {
+        margin-right: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu-button {
+        display: none;
+    }
+    .big-reverted {
+        flex-direction: row-reverse;
+    }
+    .medium-half {
+        width: 60%;
+    }
+    .mail-input {
+        display: none;
+    }
+    .try-free {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .button {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .subfooter {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em 2em 0;
+    }
+    .subfooter>div {
+        display: flex;
+    }
+    .languages {
+        margin-right: 2em;
+    }
+}
