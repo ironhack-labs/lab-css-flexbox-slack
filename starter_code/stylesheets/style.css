@@ -62,7 +62,6 @@ p {
   height: 60px;
   border: 1px solid #ebebeb;
   border-radius: 5px;
-  margin: 10px 0 25px 0;
 }
 
 .input-text::placeholder {
@@ -135,10 +134,6 @@ main {
 .discover-logo img {
   width: 180px;
   padding: 35px;
-}
-.discover-logobox {
-  border-bottom: 1px solid #5b5e6d;
-  width: 100%;
 }
 
 /* TRY SECTION */
@@ -235,6 +230,10 @@ main {
     flex-direction: column-reverse;
   }
 
+  .input-text {
+    margin: 10px 0 25px 0;
+  }
+
   /* Discover section */
   .discover-img {
     flex-direction: column;
@@ -243,5 +242,68 @@ main {
   /* FOOTER */
   .footer-links ul {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 961px) and (min-width: 767px) {
+  .sign-form{
+    display: flex;
+  }
+
+  .input-text {
+    margin: 0 10px 0 0;
+  }
+
+  .sign-form .input-text {
+    width: 45%;    
+  }
+
+  .sign-form .btn-purple {
+    width: 25%;
+  }
+
+  .header-content .header-sign {
+    text-align: justify;
+  }
+
+  .header-content img{
+    width: 50%;
+    margin: 15px auto;
+  }
+
+  .btn-white{
+    width: 30%;
+  }
+  .try-section{
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .try-form{
+    display: flex;
+    width: 50%;
+  }
+
+  .link-footer{
+    display: flex;
+  }
+
+  .footer-links {
+    width: 80%;
+    flex-wrap: nowrap;
+  }
+
+  .footer-contact{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-contact li {
+    margin: auto 0;
+  }
+
+  .footer-share{
+    display: flex;
   }
 }
