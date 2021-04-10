@@ -1,7 +1,327 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+:root {
+    --color-white: #ffffff;
+    --color-light-grey: #F4F3F4;
+    --color-grey: #ebebeb;
+    --color-mid-grey: #5b5e6d;
+    --color-dark-grey: #2C303F;
+    --color-purple: #192592;
+    
+    --height-navbar: 120px;
+
+    --font-paragraph: 'Poppins', sans-serif;
+    --font-title: 'Merriweather', serif;
+}
+
+/************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-paragraph);
+    font-size: 16px;
+}
+
+/************************/
+@media only screen and (max-width: 768px) {
+    h1 {font-size: 4rem;}
+    
+    h2 {font-size: 2.8rem;}
+    
+    h3 {font-size: 2rem;}
+    
+    p {font-size: 1.8rem;}
+    
+    nav > li {font-size: 1.8rem;}
+    
+    nav > i {font-size: 2.4rem;}
+
+    #footer-top > ul > li {font-size: 1.5rem;}
+
+    #footer-bottom, #footer-bottom li {font-size: 1.4rem;}
+
+    .xs-row {display: flex; flex-direction: row;}
+    .xs-col {display: flex; flex-direction: column;}
+    .xs-wrap {flex-wrap: wrap;}
+    .xs-hide{display: none;}
+    .xs-tx-ct {text-align: center;}
+    .xs-p-5 {padding: 5%;}
+    .get-started-form {width: 100%;}
+    button, input {width: 100%; margin: 20px auto; height: 100px; font-size: 1.8rem;}
+    .client-logo {margin: 0 auto; width: 100%; padding: 60px 10px; display: flex; justify-content: center; align-items: center;}
+    .client-logo > img {width: 50%;}
+    .xs-border-bottom{border-bottom: 1px solid var(--color-grey);}
+    #try-it-for-free {align-items: center;}
+    #try-it-for-free > h3, #try-it-for-free > p {margin: 5px auto;}
+    #footer-top > img {height: 200px; margin-right: 100%;}
+    #footer-top > ul {width: 50%;}
+    #footer-bottom > ul {justify-content: center;}
+    #footer-bottom > ul > li {padding: 0 10px; margin: 25px 0;}
+    #footer-bottom > div {justify-content: center; align-items: center;}
+    #footer-bottom > div > img {height: 35px;}
+    #footer-bottom > div > * {padding: 0 10px; margin-top: 30px; margin-bottom: 20px}
+    #footer-bottom > div > .xs-left-filler {margin-left: 30%;}
+    #footer-bottom > div > .xs-right-filler {margin-right: 30%;}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 960px) {
+    h1 {font-size: 4rem;}
+
+    h2 {font-size: 2.8rem;}
+
+    h3 {font-size: 1.5rem;}
+
+    p {font-size: 1.2rem;}
+
+    nav > li {font-size: 1.8rem;}
+
+    nav > i {font-size: 2.4rem;}
+
+    #footer-top > ul > li {font-size: 1.1rem;}
+
+    #footer-bottom, #footer-bottom li {font-size: 1rem;}
+
+    .sm-row {display: flex; flex-direction: row;}
+    .sm-col {display: flex; flex-direction: column;}
+    .sm-wrap {flex-wrap: wrap;}
+    .sm-hide{display: none;}
+    .sm-tx-ct {text-align: center;}
+    .sm-tx-lf {text-align: left;}
+    .sm-ct-img {display: flex; flex-direction: column; align-items: center;};
+    .sm-p-5 {padding: 5%;}
+    header .get-started-form {justify-content: flex-start;}
+    main .get-started-form {justify-content: flex-end;}
+    button, input {margin: 20px 0; height: 75px; font-size: 1.1rem;}
+    #email-top {width: 420px;}
+    #email-bottom {width: 210px;}
+    input {margin-right: 10px;}
+    button {width: 210px;}
+    #client-logos {margin-top: 40px;}
+    .client-logo {margin: 0 auto; width: 50%; height: 165px; padding: 30px 10px; display: flex; justify-content: center; align-items: center;}
+    .client-logo > img {width: 75%;}
+    .sm-border-bottom{border-bottom: 1px solid var(--color-grey);}
+    .sm-border-right{border-right: 1px solid var(--color-grey);}
+    #try-it-for-free {width: 100%; justify-content: space-between;}
+    #try-it-for-free > div > {text-align: left;}
+    #try-it-for-free > div > * {margin-top: 0; margin-bottom: 0;}
+    #footer-top > img {height: 100px;}
+    #footer-top > ul > li {margin-bottom: 25px;}
+    #footer-bottom {justify-content: space-between; padding-right: 5%;}
+    #footer-bottom > div, #footer-bottom > ul {align-items: center;}
+    #footer-bottom > div > img {height: 35px; margin-left: 10px; margin-right: 10px;}
+    #footer-bottom li, #footer-bottom i {margin-left: 10px; margin-right: 10px;}
+    .list-title {margin-top: 0;}
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1199px) {
+    h1 {font-size: 4rem;}
+
+    h2 {font-size: 2.8rem;}
+
+    h3 {font-size: 1.5rem;}
+
+    p {font-size: 1.2rem;}
+
+    nav > li {font-size: 1.8rem;}
+
+    nav > i {font-size: 2.4rem;}
+
+    #footer-top > ul > li {font-size: 1.1rem;}
+
+    #footer-bottom, #footer-bottom li {font-size: 1rem;}
+
+    .md-row {display: flex; flex-direction: row;}
+    .md-col {display: flex; flex-direction: column;}
+    .md-wrap {flex-wrap: wrap;}
+    .md-hide{display: none;}
+    .md-tx-ct {text-align: center;}
+    .md-tx-lf {text-align: left;}
+    .md-ct-img {display: flex; flex-direction: column; align-items: center;};
+    .md-p-5 {padding: 5%;}
+    header .get-started-form {justify-content: flex-start;}
+    main .get-started-form {justify-content: flex-end;}
+    button, input {margin: 20px 0; height: 75px; font-size: 1.1rem;}
+    #email-top {width: 420px;}
+    #email-bottom {width: 210px;}
+    input {margin-right: 10px;}
+    button {width: 210px;}
+    #client-logos {margin-top: 40px;}
+    .client-logo {margin: 0 auto; width: 33%; height: 165px; padding: 30px 10px; display: flex; justify-content: center; align-items: center;}
+    .client-logo > img {width: 75%;}
+    .md-border-bottom{border-bottom: 1px solid var(--color-grey);}
+    .md-border-right{border-right: 1px solid var(--color-grey);}
+    #try-it-for-free {width: 100%; justify-content: space-between;}
+    #try-it-for-free > div > {text-align: left;}
+    #try-it-for-free > div > * {margin-top: 0; margin-bottom: 0;}
+    #footer-top > img {height: 100px;}
+    #footer-top > ul > li {margin-bottom: 25px;}
+    #footer-bottom {justify-content: space-between; padding-right: 5%;}
+    #footer-bottom > div, #footer-bottom > ul {align-items: center;}
+    #footer-bottom > div > img {height: 35px; margin-left: 10px; margin-right: 10px;}
+    #footer-bottom li, #footer-bottom i {margin-left: 10px; margin-right: 10px;}
+    .list-title {margin-top: 0;}
+}
+
+@media only screen and (min-width: 1200px) {
+    h1 {font-size: 4rem;}
+
+    h2 {font-size: 2.8rem;}
+
+    h3 {font-size: 1.5rem;}
+
+    p {font-size: 1.2rem;}
+
+    nav > ul > li {font-size: 1.8rem; margin: auto 40px}
+    nav > ul > li:last-child {padding: 10px; border: 1px solid var(--color-mid-grey);}
+
+    nav > i {font-size: 2.4rem;}
+
+    #footer-top > ul > li {font-size: 1.1rem;}
+
+    #footer-bottom, #footer-bottom li {font-size: 1rem;}
+
+    .lg-row {display: flex; flex-direction: row;}
+    .lg-row-rev {display: flex; flex-direction: row-reverse;}
+    .lg-col {display: flex; flex-direction: column;}
+    .lg-wrap {flex-wrap: wrap;}
+    .lg-hide{display: none;}
+    .lg-tx-ct {text-align: center;}
+    .lg-tx-lf {text-align: left;}
+    .lg-ct-img {display: flex; flex-direction: column; align-items: center;};
+    .lg-p-5 {padding: 5%;}
+    header .get-started-form {direction: row;}
+    header > div {padding: 80px 6%};
+    main .get-started-form {justify-content: flex-end;}
+    button, input {margin: 20px 0; height: 75px; font-size: 1.1rem;}
+    #email-top {width: 420px;}
+    #email-bottom {width: 210px;}
+    input {margin-right: 10px;}
+    button {width: 210px;}
+    #client-logos {margin-top: 40px;}
+    .client-logo {margin: 0 auto; width: 33%; height: 165px; padding: 30px 10px; display: flex; justify-content: center; align-items: center;}
+    .client-logo > img {width: 75%;}
+    .lg-border-bottom{border-bottom: 1px solid var(--color-grey);}
+    .lg-border-right{border-right: 1px solid var(--color-grey);}
+    #try-it-for-free {width: 100%; justify-content: space-between;}
+    #try-it-for-free > div > {text-align: left;}
+    #try-it-for-free > div > * {margin-top: 0; margin-bottom: 0;}
+    #footer-top > img {height: 100px;}
+    #footer-top {justify-content: space-between;}
+    #footer-top > ul > li {margin-bottom: 25px;}
+    #footer-bottom {justify-content: space-between; padding-right: 5%;}
+    #footer-bottom > div, #footer-bottom > ul {align-items: center;}
+    #footer-bottom > div > img {height: 35px; margin-left: 10px; margin-right: 10px;}
+    #footer-bottom li, #footer-bottom i {margin-left: 10px; margin-right: 10px;}
+    .list-title {margin-top: 0;}
+}
+
+/************************/
+h1 {
+    font-family: var(--font-title);
+    font-weight: 900;
+}
+
+h2 {
+    font-family: var(--font-title);
+    font-weight: 900;
+}
+
+h3 {
+    font-family: var(--font-title);
+    font-weight: 900;
+}
+
+p {
+    font-weight: 400;
+}
+
+button {
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid var(--color-purple);
+    text-align: center;
+}
+
+input {
+    padding-left: 32px;
+    font-family: var(--font-paragraph);
+    font-weight: 400;
+    border-radius: 5px;
+    border: 2px solid var(--color-grey);
+}
+
+nav > li {
+    font-weight: 400;
+}
+
+nav {
+    width: 100%;
+    height: var(--height-navbar);
+    position: fixed;
+    top: 0;
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-grey);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+nav > i {
+    font-weight: 300;
+}
+
+nav > img {
+    height: 100px;
+}
+
+header {
+    margin-top: var(--height-navbar);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.p-5 {
+    padding: 5%;
+}
+
+.get-started {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+}
+
+.tx-ct {
+    text-align: center;
+}
+
+.cl-mid-gr {
+    color: var(--color-mid-grey);
+}
+
+    
+#youre-in-good-company {
+    background-color: var(--color-light-grey);
+}
+
+#discover-why {
+    background-color: var(--color-white);
+    color: var(--color-purple);
+}
+
+#footer-top > ul > .list-title {
+    font-weight: 600;
+}
+
+#footer-bottom {
+    background-color: var(--color-light-grey);
+}
+
+#footer-bottom, #footer-bottom li {
+    font-weight: 600;
+}

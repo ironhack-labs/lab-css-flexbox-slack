@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- link the font awesome CDN -->
-    <link
-      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
-      rel="stylesheet"
-    />
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
     <!-- link your styles -->
     <link rel="stylesheet" href="./stylesheets/style.css" />
@@ -17,69 +14,84 @@
   </head>
 
   <body>
-    <nav>
+    <nav class="xs-row md-row lg-row cl-mid-gr">
       <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
+      <i class="lg-hide fa fa-bars"></i>
+      <ul class="xs-hide sm-hide md-hide lg-row">
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
         <li>Your Workspaces</li>
       </ul>
     </nav>
-    <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
-      <h1>Where Work Happens</h1>
-      <p>
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+    <header class="xs-col sm-col md-col lg-row-rev p-5 xs-border-bottom">
+      <div class="lg-col">
+        <h1>Where Work Happens</h1>
+        <p class="cl-mid-gr">
+          When your team needs to kick off a project, hire a new employee, deploy
+          some code, review a sales contract, finalize next year's budget, measure
+          an A/B test, plan your next office opening, and more, Slack has you
+          covered.
+        </p>
+        <div class="xs-col sm-row get-started-form md-row get-started-form">
+          <input class="lg-hide" type="email" placeholder="Email address" id="email-top">
+          <button class="get-started" type="button" name="button">GET STARTED</button>
+        </div>
+        <p class="cl-mid-gr xs-tx-ct sm-tx-lf md-tx-lf">Already using Slack? <a href="#">Sign in</a></p>
+      </div>
+      <div class="sm-ct-img md-ct-img">
+        <img src="./images/home_talking.png" alt="home_work_happening" />
+      </div>
     </header>
-    <main>
-      <div>
+    <main class="xs-col sm-col md-col lg-col">
+      <div class="xs-col sm-col md-col lg-col p-5 xs-border-bottom sm-border-bottom md-border-bottom lg-border-bottom tx-ct" id="youre-in-good-company">
         <h2>You're in good company</h2>
-        <p>
+        <p class="cl-mid-gr">
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
+        <button id="discover-why">DISCOVER WHY</button>
+        <div class="xs-col sm-row sm-wrap md-row md-wrap lg-row lg-wrap" id="client-logos">
+          <div class="client-logo xs-border-bottom sm-border-right sm-border-bottom md-border-right md-border-bottom lg-border-right lg-border-bottom"><img src="./images/airbnb-logo.png" alt="" /></div>
+          <div class="client-logo xs-border-bottom sm-border-bottom md-border-bottom md-border-right lg-border-bottom lg-border-right"><img src="./images/capital-one-logo.png" alt="" /></div>
+          <div class="client-logo xs-border-bottom sm-border-bottom md-border-bottom sm-border-right lg-border-bottom"><img src="./images/harvard-logo.png" alt="" /></div>
+          <div class="client-logo xs-border-bottom sm-border-bottom md-border-right lg-border-right"><img src="./images/los-angeles-times-logo.png" alt="" /></div>
+          <div class="client-logo xs-border-bottom sm-border-right md-border-right lg-border-right"><img src="./images/oracle-logo.png" alt="" /></div>
+          <div class="client-logo"><img  src="./images/ticketmaster-logo.png" alt="" /></div>
+        </div>
       </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+      <div class="xs-col sm-row md-row lg-row p-5 xs-border-bottom sm-border-bottom md-border-bottom lg-border-bottom" id="try-it-for-free">
+        <div class="xs-col md-col lg-col">
+          <h3>Try it for free</h3>
+          <p>Already using Slack? <a href="">Sign in</a></p>
+        </div>
+        <div class="xs-col xs-wrap sm-row md-row lg-row get-started-form">
+          <input class="lg-hide" type="email" placeholder="Email address" id="email-bottom">
+          <button class="get-started" type="button" name="button">GET STARTED</button>
+        </div>
       </div>
     </main>
-    <footer>
-      <div>
+    <footer class="xs-col sm-col md-col lg-col cl-mid-gr">
+      <div class="xs-row xs-wrap sm-row md-row lg-row p-5" id="footer-top">
         <img src="./images/iso-slack.png" alt="" />
-        <ul>
-          <li>COMPANY</li>
+        <ul class="xs-col sm-p-5 md-p-5 lg-p-5">
+          <li class="list-title">COMPANY</li>
           <li>About Us</li>
           <li>Careers</li>
           <li>Blog</li>
           <li>Press</li>
           <li>Brand Guidelines</li>
         </ul>
-        <ul>
-          <li>PRODUCT</li>
+        <ul class="xs-col sm-p-5 md-p-5 lg-p-5">
+          <li class="list-title">PRODUCT</li>
           <li>Why Slack?</li>
           <li>Enterprise</li>
           <li>Customer Stories</li>
           <li>Pricing</li>
           <li>Security</li>
         </ul>
-        <ul>
-          <li>RESOURCES</li>
+        <ul class="xs-col sm-p-5 md-p-5 lg-p-5">
+          <li class="list-title">RESOURCES</li>
           <li>Download</li>
           <li>Help Center</li>
           <li>Guides</li>
@@ -87,24 +99,24 @@
           <li>App Directory</li>
           <li>API</li>
         </ul>
-        <ul>
-          <li>EXTRAS</li>
+        <ul class="xs-col sm-p-5 md-p-5 lg-p-5">
+          <li class="list-title">EXTRAS</li>
           <li>Podcast</li>
           <li>Slack Shop</li>
           <li>Slack at Work</li>
           <li>Slack Fund</li>
         </ul>
       </div>
-      <div>
-        <ul>
+      <div class="xs-col sm-row md-row lg-row xs-p-5" id="footer-bottom">
+        <ul class="xs-row sm-row md-row lg-row">
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-        <div>
-          <img src="./images/us-flag.png" alt="" />
+        <div class="xs-row sm-row md-row lg-row xs-wrap">
+          <img class="xs-left-filler" src="./images/us-flag.png" alt="" />
           <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
+          <i class="xs-right-filler fas fa-chevron-down"></i>
           <i class="fab fa-twitter"></i>
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-youtube"></i>
