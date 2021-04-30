@@ -4,32 +4,48 @@ button-purple: #192592
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
+
+nav ul{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+
+
 */
-body{
-    padding-left: 2%;
-}
+
 *{
     margin:0;
     box-sizing: border-box;
 }
 
-
-@media (max-width:768px){
 nav {
     width: 100vw;
+    position: fixed;
+    background-color: white;
     display: flex;
     flex-direction: row;
-    position: fixed;
     justify-content: space-between;
-    background-color: white;
+    align-items: center;
+    align-content: center;
+    padding-right: 10%;
+    padding-left: 2%;
 }
+nav div {
+    display: flex;
+    flex-direction: column;
+}
+.icon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 3px 0;
+  }
+
 nav img {
     width: 150px;
 }
 nav ul{
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
+    display: none;
     
 }
 nav li {
@@ -81,6 +97,32 @@ header p{
     border-radius: 10px; 
     margin-bottom: 20px;  
 }
+#boton2{
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    margin-left: 20px;
+    height: 80px; 
+    background-color: #192592;   
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#form2 {
+    display: flex;
+    width: 86vw;
+    margin-left: 12px;
+    height: 100px; 
+    border-color:#5b5e6d;   
+    color: white;
+    font-size: 30px;
+    align-items: center;
+    border-radius: 10px; 
+    margin-bottom: 20px;  
+}
 .p2 {
     display: flex;
     justify-content: center;
@@ -92,8 +134,11 @@ header p{
     font-size: 30px;
     align-items: unset;
 }
+#headerimg1 {
+    display: none;
+}
 
-header img {
+#headerimg2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,10 +184,11 @@ main > div > article {
 }
 main > div > article > img {
     display: flex;
+    -ms-flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    padding: 5%;
+    width: 40vw;
+    padding: 10%;
 }
 
 .div2 {
@@ -234,5 +280,557 @@ main > div > article > img {
     padding-bottom: 50px;
 }
 
+@media (min-width:767px) and (max-width:961px){
+    #formandbutton{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
 
+    #boton{ 
+        width: 20vw;
+        margin-left: 20px;
+        height: 80px; 
+        background-color: #192592;   
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        
+    }    
+    #form {
+        width: 46vw;
+        height: 80px;    
+        color: white;
+        font-size: 15px;
+        border-radius: 10px;
+        margin: 0 0 0 15px;  
+    }
+    header p{
+        font-size: 25px;
+    }
+    .p2 {
+        display: flex;
+        justify-content: left;
+    }
+    .p2 a {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        padding-left: 5px;
+        font-size: 22px;
+        align-items: unset;
+    }
+    header img {
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+    main > div > h2 {
+        font-size: 45px;
+        font-weight: bolder;
+    }
+    
+    main > div > p {
+        padding: 0 5% 5%;
+        font-size: 22px;  
+    }
+    
+    main > div > button {
+        width: 20vw;
+        font-size: 15px;
+        margin: 0 auto 20px;
+    }
+    
+    main > div > article { 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main > div > article > img {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 10%;
+    }
+    
+    .div2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-top: 5%;
+    }
+   
+    
+    #boton2{ 
+        width: 20vw;
+        margin-left: 20px;
+        height: 80px; 
+        background-color: #192592;   
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        
+    }    
+    #form2 {
+        width: 26vw;
+        height: 80px;    
+        color: white;
+        font-size: 15px;
+        border-radius: 10px;
+        margin: 0 0 0 15px; 
+    }
+    .ptitulo {
+        width: 50%;
+        font-size: 50px;
+        font-weight: bolder;
+        color: black;
+        padding-bottom: 0;
+    }
+    .footerdiv1{
+        display: flex;
+        padding-top: 10%;
+    }
+    .footerdiv1img{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: baseline;
+        width: 125px;
+        height: 125px;
+        margin-right: 5%;
+    }
+    
+    .footerdiv1 ul {
+        font-size: 1.2rem;
+        width: 20vw;
+    }
+    
+    #footerdiv3 { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 30px 0;
+    }
+        
+    #footerdiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        clear:left;  
+    }
+    
+    footer ul{
+        display: flex;
+        flex-direction: row;
+        padding-right: 10%;
+    }
+    
+    #footerli { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+        padding-right: 5%;
+        font-size: 18px;
+        width: 50vw; 
+    }
+    
+    #footerimg {
+        width: 35px;
+    }
+    
+    #footerdiv2 {
+        flex-wrap: nowrap;
+        align-items: right;
+        font-size: 18px;
+        width: 50vw;
+        padding-right: 10px;
+        padding-left: 70px;
+        margin-top: 0;        
+    }    
 }
+
+@media (min-width:960px) and (max-width:1024px){
+    #formandbutton{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+
+    #boton{ 
+        width: 20vw;
+        margin-left: 20px;
+        height: 80px; 
+        background-color: #192592;   
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        
+    }    
+    #form {
+        width: 46vw;
+        height: 80px;    
+        color: white;
+        font-size: 15px;
+        border-radius: 10px;
+        margin: 0 0 0 15px;  
+    }
+    header p{
+        font-size: 25px;
+    }
+    .p2 {
+        display: flex;
+        justify-content: left;
+    }
+    .p2 a {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        padding-left: 5px;
+        font-size: 22px;
+        align-items: unset;
+    }
+    header img {
+        width: 500px;
+        margin: 0 auto;
+    }
+        
+    main > div > h2 {
+        font-size: 45px;
+        font-weight: bolder;
+    }
+    
+    main > div > p {
+        padding: 0 5% 5%;
+        font-size: 22px;  
+    }
+    
+    main > div > button {
+        width: 20vw;
+        font-size: 15px;
+        margin: 0 auto 20px;
+    }
+    
+    main > div > article { 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main > div > article > img {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        padding: 15% 5% 10% 5%;
+    }
+    
+    .div2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-top: 5%;
+    }
+   
+    
+    #boton2{ 
+        width: 20vw;
+        margin-left: 20px;
+        height: 80px; 
+        background-color: #192592;   
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        
+    }    
+    #form2 {
+        width: 26vw;
+        height: 80px;    
+        color: white;
+        font-size: 15px;
+        border-radius: 10px;
+        margin: 0 0 0 15px; 
+    }
+    .ptitulo {
+        width: 50%;
+        font-size: 50px;
+        font-weight: bolder;
+        color: black;
+        padding-bottom: 0;
+    }
+    .footerdiv1{
+        display: flex;
+        padding-top: 10%;
+    }
+    .footerdiv1img{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: baseline;
+        width: 125px;
+        height: 125px;
+        margin-right: 5%;
+    }
+    
+    .footerdiv1 ul {
+        font-size: 1.2rem;
+        width: 20vw;
+    }
+    
+    #footerdiv3 { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 30px 0;
+    }
+        
+    #footerdiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        clear:left;  
+    }
+    
+    footer ul{
+        display: flex;
+        flex-direction: row;
+        padding-right: 10%;
+    }
+    
+    #footerli { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+        padding-right: 5%;
+        font-size: 18px;
+        width: 50vw; 
+    }
+    
+    #footerimg {
+        width: 35px;
+    }
+    
+    #footerdiv2 {
+        flex-wrap: nowrap;
+        align-items: right;
+        font-size: 18px;
+        width: 50vw;
+        padding-right: 10px;
+        padding-left: 70px;
+        margin-top: 0;        
+    }    
+}
+
+@media (min-width:1024px){
+
+    nav div {
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: flex-end;
+        color:#5b5e6d;
+        width: 50vw;
+    }
+    .cuadro{
+        border: 1px solid;
+        padding: 1%;
+    }
+
+    #formandbutton{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+
+    #boton{ 
+        width: 12vw;
+        margin-left: 0px;
+        height: 60px; 
+        background-color: #192592;   
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 10px;
+        
+    }    
+    #form {
+        display: none; 
+    }
+    header h1{
+        font-size: 60px;
+    }
+    header p{
+        font-size: 20px;
+    }
+    .p2 {
+        display: flex;
+        justify-content: left;
+        padding: 3% 0 10%;
+    }
+    .p2 a {
+        text-underline-offset: 3px;
+        font-size: 18px;
+    }
+    .title{
+        padding: 10% 0 0;
+    }
+    #headerimg1 {
+        display: flex;
+        float: left;
+        padding: 10% 0 0; 
+        margin-right: 5%;
+        width: 40vw;
+    }
+    
+    #headerimg2 {
+        display: none;
+    }
+    
+    main > div > h2 {
+        font-size: 45px;
+    }
+    
+    main > div > p {
+        padding: 0 5% 5%;
+        font-size: 18px;  
+    }
+    
+    main > div > button {
+        width: 20vw;
+        font-size: 15px;
+        margin: 0 auto 20px;
+    }
+
+    .footerdiv1{
+        display: flex;
+        padding-top: 10%;
+    }
+    
+    main > div > article { 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main > div > article > img {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        padding: 5% 5% 5% 5%;
+    }
+    
+    .div2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-top: 5%;
+    }
+   
+    
+    #boton2{ 
+        width: 20vw;
+        margin-left: 20px;
+        height: 80px; 
+        background-color: #192592;   
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        
+    }    
+    #form2 {
+        width: 26vw;
+        height: 80px;    
+        color: white;
+        font-size: 15px;
+        border-radius: 10px;
+        margin: 0 0 0 15px; 
+    }
+    .ptitulo {
+        width: 50%;
+        font-size: 50px;
+        font-weight: bolder;
+        color: black;
+        padding-bottom: 0;
+    }
+   
+    .footerdiv1img{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: baseline;
+        width: 125px;
+        height: 125px;
+        margin-right: 20vw;
+    }
+    
+    .footerdiv1 ul {
+        font-size: 1.2rem;
+        padding-right: 3%;
+        width: 15vw;
+    }
+    
+    #footerdiv3 { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3% 0;
+    }
+        
+    #footerdiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        clear:left;  
+    }
+    
+    footer ul{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #footerli { 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 0;
+        font-size: 18px;
+        width: 50vw; 
+    }
+
+    #footerli li{
+        padding-right: 12%;
+    }
+    
+    #footerimg {
+        width: 35px;
+    }
+    
+    #footerdiv2 {
+        flex-wrap: nowrap;
+        align-items: right;
+        align-content: center;
+        justify-content: flex-end;
+        font-size: 18px;
+        width: 50vw;
+        padding-right: 5%;
+        padding-left: 70px;
+        margin-top: 0;        
+    }    
+    #footerdiv2 i{
+        padding: 0% 3%;
+}
+}
+
