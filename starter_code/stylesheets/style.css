@@ -184,7 +184,7 @@ main > div > article {
 }
 main > div > article > img {
     display: flex;
-    -ms-flex-direction: row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 40vw;
@@ -200,6 +200,10 @@ main > div > article > img {
     font-weight: bolder;
     color: black;
     padding-bottom: 0;
+}
+.p2b {
+    justify-content: left;
+    padding: 3% 0 10%;
 }
 .footerdiv1 img {
     display: block;
@@ -289,37 +293,25 @@ main > div > article > img {
     }
 
     #boton{ 
-        width: 20vw;
-        margin-left: 20px;
-        height: 80px; 
-        background-color: #192592;   
-        color: white;
+        width: 20vw; 
         font-size: 15px;
-        font-weight: bold;
-        border-radius: 10px;
         
     }    
     #form {
         width: 46vw;
-        height: 80px;    
-        color: white;
+        height: 80px;  
         font-size: 15px;
-        border-radius: 10px;
         margin: 0 0 0 15px;  
     }
     header p{
         font-size: 25px;
     }
     .p2 {
-        display: flex;
         justify-content: left;
     }
     .p2 a {
-        text-decoration: underline;
         text-underline-offset: 3px;
-        padding-left: 5px;
         font-size: 22px;
-        align-items: unset;
     }
     header img {
         width: 500px;
@@ -352,43 +344,46 @@ main > div > article > img {
         justify-content: center;
         align-items: center;
         width: 50%;
-        padding: 10%;
     }
     
     .div2 {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        padding-top: 5%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        height:20vh;
+    }
+   
+    .ptitulo {
+        display: flex;
+        align-items: left;
+        width: 50%;
+        font-size: 40px;
+    }
+   
+    .p2b {        
+        display: flex;
+        align-items: left;
+        font-size: 20px;
+        width: 50%;
+        padding: 1% 5%;
     }
    
     
     #boton2{ 
         width: 20vw;
-        margin-left: 20px;
-        height: 80px; 
-        background-color: #192592;   
-        color: white;
+        margin-left: 5px;
+        margin-right: 20px;
         font-size: 15px;
-        font-weight: bold;
-        border-radius: 10px;
         
     }    
     #form2 {
         width: 26vw;
-        height: 80px;    
-        color: white;
+        height: 80px; 
         font-size: 15px;
-        border-radius: 10px;
         margin: 0 0 0 15px; 
     }
-    .ptitulo {
-        width: 50%;
-        font-size: 50px;
-        font-weight: bolder;
-        color: black;
-        padding-bottom: 0;
-    }
+    
     .footerdiv1{
         display: flex;
         padding-top: 10%;
@@ -466,19 +461,13 @@ main > div > article > img {
         width: 20vw;
         margin-left: 20px;
         height: 80px; 
-        background-color: #192592;   
-        color: white;
         font-size: 15px;
-        font-weight: bold;
-        border-radius: 10px;
         
     }    
     #form {
         width: 46vw;
-        height: 80px;    
-        color: white;
+        height: 80px;  
         font-size: 15px;
-        border-radius: 10px;
         margin: 0 0 0 15px;  
     }
     header p{
@@ -489,11 +478,8 @@ main > div > article > img {
         justify-content: left;
     }
     .p2 a {
-        text-decoration: underline;
         text-underline-offset: 3px;
-        padding-left: 5px;
         font-size: 22px;
-        align-items: unset;
     }
     header img {
         width: 500px;
@@ -531,41 +517,41 @@ main > div > article > img {
     
     .div2 {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
         padding-top: 5%;
+        height:30vh;
     }
    
+    .ptitulo {
+        display: flex;
+        align-items: left;
+        width: 50%;
+    }
+   
+    .p2b {        
+        display: flex;
+        align-items: left;
+        width: 50%;
+        padding: 1% 5%;
+    }
     
     #boton2{ 
         width: 20vw;
-        margin-left: 20px;
-        height: 80px; 
-        background-color: #192592;   
-        color: white;
-        font-size: 15px;
-        font-weight: bold;
-        border-radius: 10px;
-        
+        margin-left: -10px;
+        font-size: 15px;        
     }    
     #form2 {
         width: 26vw;
-        height: 80px;    
-        color: white;
+        height: 80px; 
         font-size: 15px;
-        border-radius: 10px;
         margin: 0 0 0 15px; 
     }
-    .ptitulo {
-        width: 50%;
-        font-size: 50px;
-        font-weight: bolder;
-        color: black;
-        padding-bottom: 0;
-    }
+    
     .footerdiv1{
         display: flex;
-        padding-top: 10%;
+        padding-top: 5%;
     }
     .footerdiv1img{
         display: flex;
@@ -657,11 +643,7 @@ main > div > article > img {
         width: 12vw;
         margin-left: 0px;
         height: 60px; 
-        background-color: #192592;   
-        color: white;
         font-size: 12px;
-        font-weight: bold;
-        border-radius: 10px;
         
     }    
     #form {
@@ -672,9 +654,10 @@ main > div > article > img {
     }
     header p{
         font-size: 20px;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
     .p2 {
-        display: flex;
         justify-content: left;
         padding: 3% 0 10%;
     }
@@ -688,9 +671,10 @@ main > div > article > img {
     #headerimg1 {
         display: flex;
         float: left;
-        padding: 10% 0 0; 
+        padding: 0%;
+        margin-top: 10%; 
         margin-right: 5%;
-        width: 40vw;
+        width: 35vw;
     }
     
     #headerimg2 {
@@ -714,7 +698,7 @@ main > div > article > img {
 
     .footerdiv1{
         display: flex;
-        padding-top: 10%;
+        padding-top: 5%;
     }
     
     main > div > article { 
@@ -732,39 +716,40 @@ main > div > article > img {
     
     .div2 {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
         padding-top: 5%;
+        height:30vh;
     }
    
+    .ptitulo {
+        display: flex;
+        align-items: left;
+        width: 50%;
+    }
+   
+    .p2b {        
+        display: flex;
+        align-items: left;
+        width: 50%;
+        padding: 1% 5%;
+    }
     
     #boton2{ 
-        width: 20vw;
-        margin-left: 20px;
-        height: 80px; 
-        background-color: #192592;   
-        color: white;
+        width: 15vw;
+        margin-left: -60px;
+        margin-right: 40px;
         font-size: 15px;
-        font-weight: bold;
-        border-radius: 10px;
         
     }    
     #form2 {
         width: 26vw;
-        height: 80px;    
-        color: white;
+        height: 80px; 
         font-size: 15px;
-        border-radius: 10px;
-        margin: 0 0 0 15px; 
+        margin: 0 0 0 0px; 
     }
-    .ptitulo {
-        width: 50%;
-        font-size: 50px;
-        font-weight: bolder;
-        color: black;
-        padding-bottom: 0;
-    }
-   
+    
     .footerdiv1img{
         display: flex;
         flex-direction: column;
