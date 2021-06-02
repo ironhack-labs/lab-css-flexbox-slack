@@ -1,0 +1,425 @@
+/*
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+
+/* general settings */
+
+* {
+  /* border: 1px solid red; */
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 3.5em;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+form p {
+  font-size: 1.3em;
+}
+
+/* header / nav*/
+
+header {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background: white;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid rgb(202, 199, 199);
+}
+
+header img {
+  width: 120px;
+  margin-left: 40px;
+}
+
+.burger {
+  font-size: 2em;
+  margin-right: 40px;
+}
+
+header .menu-nav {
+  display: none;
+}
+
+header .menu-nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 20px;
+}
+header .menu-nav ul li {
+  padding: 5px 10px;
+}
+
+header .menu-nav ul {
+  padding: 0;
+  margin: 0 20px;
+}
+
+header .menu-nav ul li:nth-of-type(4) {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+header .menu-nav ul li a {
+  color: #5b5e6d;
+}
+
+.header-hr {
+  margin-top: 0px;
+}
+
+/* header2 */
+
+.header2 {
+  padding-top: 50px;
+  /* margin: 30px; */
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.header2 * {
+  margin-bottom: 20px;
+}
+
+.header2 form p {
+  text-align: center;
+}
+
+/* company */
+
+.bggrey {
+  padding-top: 50px;
+  background: rgb(236, 235, 235);
+}
+
+.company {
+  text-align: center;
+  padding: 0 40px;
+  margin-bottom: 80px;
+}
+
+.company * {
+  margin-bottom: 30px;
+}
+
+/* /* logos */
+.logos {
+  justify-content: center;
+}
+
+.logos img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.logos div {
+  margin-bottom: 100px;
+}
+
+/* for free & form */
+.for-free div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.for-free form input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.for-free form {
+  padding: 0 30px;
+}
+
+.for-free {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.for-free div p {
+  font-size: 1.3em;
+}
+
+/* footer */
+
+footer h4 {
+  font-size: 1.2em;
+}
+footer {
+  font-size: 1.7em;
+}
+
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+footer li a {
+  color: #5b5e6d;
+}
+
+footer article {
+  padding-bottom: 30px;
+}
+
+footer div:first-of-type {
+  max-width: 90%;
+}
+
+.relative {
+  position: relative;
+  height: 250px;
+}
+
+.relative img {
+  width: 100px;
+}
+
+.slackIco {
+  position: absolute;
+  top: 30%;
+  left: 15px;
+}
+
+/* contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.contact a {
+  color: #2c303f;
+  font-size: 20px;
+}
+
+.contact img {
+  width: 50px;
+}
+
+.privacy {
+  display: flex;
+  justify-content: space-around;
+}
+
+.privacy ul {
+  display: flex;
+}
+
+.privacy ul li {
+  list-style-type: none;
+  padding: 0 30px;
+}
+
+.flag-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons,
+.flag {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.icons a {
+  padding: 0 15px;
+}
+
+/* buttons / inputs*/
+form input {
+  height: 70px;
+  width: 100%;
+  border-radius: 7px;
+
+  font-size: 1.5em;
+}
+
+.submit {
+  background: #192592;
+  color: white;
+}
+
+.button {
+  padding: 10px 130px;
+  border: 1px solid #192592;
+  border-radius: 5px;
+}
+
+/* Medias */
+
+@media screen and (min-width: 768px) {
+  .header2 {
+  }
+  .header2 form input {
+    margin-bottom: 0;
+  }
+
+  .header2 form input:nth-of-type(1) {
+    width: 50%;
+  }
+  .header2 form input:nth-of-type(2) {
+    width: 30%;
+  }
+  .header2 form p {
+    text-align: left;
+  }
+
+  /* logos */
+  .hidelogo {
+    display: none;
+  }
+  /* for-free */
+  .for-free {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .for-free form {
+    display: flex;
+  }
+
+  /* footer */
+
+  footer {
+    margin-top: 60px;
+  }
+
+  footer div:first-of-type {
+    max-width: 100%;
+  }
+
+  .relative {
+    display: flex;
+    width: 150px;
+  }
+
+  .slackIco {
+    top: 0;
+    left: 10px;
+  }
+
+  .footer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* contact */
+  .contact {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact a {
+    color: #2c303f;
+    font-size: 20px;
+  }
+
+  .contact img {
+    width: 50px;
+  }
+
+  .privacy ul li {
+    list-style-type: none;
+    padding: 0 10px;
+    /* padding: 0 30px; */
+  }
+
+  .flag-icons {
+    flex-direction: row;
+  }
+
+  .flag {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header .menu-nav {
+    display: block;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .header2 > div {
+    padding-top: 50px;
+  }
+
+  .header2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* atento es el text + form */
+  .header2 div:first-child {
+    width: 40%;
+    order: 2;
+  }
+
+  /* screen div header2*/
+  .header2 div:last-child {
+    width: 50%;
+  }
+
+  .header2 img {
+    order: 1;
+  }
+
+  .header2 form input:nth-of-type(1) {
+    display: none;
+  }
+  .header2 form input:nth-of-type(2) {
+    width: 100%;
+    margin: 20px 0 15px;
+  }
+
+  /* logos */
+  .hidelogo {
+    display: block;
+  }
+
+  /* footer */
+  .slackIco {
+    top: 0;
+    left: -25px;
+  }
+
+  .footer-list {
+    justify-content: space-evenly;
+  }
+
+  .contact a {
+    color: #2c303f;
+    font-size: 30px;
+  }
+}
