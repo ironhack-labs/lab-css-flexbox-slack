@@ -34,7 +34,7 @@ p {
 .container {
   margin-right: 28px;
   margin-left: 28px;
-  max-width: 712px;
+  max-width: 94%;
 }
 
 header,
@@ -59,6 +59,54 @@ section {
 .menu-icon {
   font-size: 50px;
   color: #5b5e6d;
+}
+
+.header-nav nav {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.header-nav ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .header-nav nav {
+    margin: 0;
+    padding: 0;
+    display: initial;
+  }
+  .header-nav ul {
+    display: flex;
+  }
+
+  .header-nav li {
+    margin: 0 20px;
+  }
+
+  .header-nav a {
+    color: #979aa7;
+    font-weight: 600;
+  }
+
+  .workspace-link {
+    border: 1px solid #979aa7;
+    border-radius: 5px;
+    padding: 10px 40px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .logo img {
+    width: 120px;
+    display: block;
+  }
 }
 
 /* HERO */
@@ -115,6 +163,33 @@ input::placeholder {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .hero .sign-in {
+    text-align: left;
+    font-size: 1.3em;
+    margin-bottom: 40px;
+  }
+
+  .hero img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero input {
+    display: none;
+  }
+
+  .hero img {
+    width: 80%;
+  }
+
+  .button {
+    width: 60%;
+    margin: 10px 0;
+  }
+}
+
 /* SPONSORS */
 
 .sponsors {
@@ -132,6 +207,7 @@ input::placeholder {
   padding: 40px 80px;
   border-bottom: 2px solid lightgrey;
 }
+
 .last {
   border: none;
   margin-bottom: 80px;
@@ -143,6 +219,55 @@ input::placeholder {
   object-fit: contain;
 }
 
+@media (min-width: 768px) {
+  .sp-logo {
+    border: none;
+  }
+
+  .sponsors .container > .row > div {
+    border-bottom: 2px solid lightgrey;
+  }
+
+  .par {
+    border-left: 2px solid lightgrey;
+  }
+
+  .last {
+    margin-bottom: 0;
+  }
+
+  .last-childs {
+    border-bottom: none !important;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sponsors .container > .row > div {
+    border-left: none;
+    border-right: 2px solid lightgrey;
+  }
+
+  .top {
+    border-bottom: 2px solid lightgrey;
+    border-right: 2px solid lightgrey;
+    border-top: none;
+    border-left: none;
+  }
+  .bot {
+    border-bottom: none !important;
+  }
+
+  .right {
+    border-right: none !important;
+  }
+
+  .sp-logo {
+    height: 200px;
+    padding: 30px 60px;
+  }
+}
+
 /* LOG IN SECTION */
 
 .log-in-section {
@@ -152,6 +277,27 @@ input::placeholder {
 
 .log-in-section .sign-in {
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .log-in-section h2 {
+    font-size: 2.2em;
+  }
+
+  .log-in-section p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .log-in-section input {
+    display: none;
+  }
+
+  .log-in-section .button {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 /* NAV SECTION */
@@ -170,6 +316,18 @@ input::placeholder {
   margin: 20px 0;
   color: #7f818d;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .nav-section {
+    padding: 60px 0;
+    border: none;
+  }
+
+  .nav-section img {
+    width: 100%;
+    transform: scale(1.2);
+  }
 }
 
 /* FOOTER */
@@ -217,6 +375,24 @@ footer i {
 
 .flex {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .flex {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  footer li {
+    margin: 0 10px 0 0;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  footer span {
+    font-size: 16px;
+  }
 }
