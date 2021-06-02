@@ -2,15 +2,20 @@
 :root{
 --background-grey: #F4F3F4;
 --button-purple: #192592;
---main-titles-dark-grey: #2C303F;
---paragraph-grey: #5b5e6d;
+--main-titles-dark-grey: #2c303fe0;
+--paragraph-grey: #5b5e6de8;
 --nav-grey: #5b5e6d;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap');
 /* GENERAL-STYLES */
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+section{
+    box-shadow: 0px 0px 1px rgba(83, 80, 80, 0.3);
 }
 img{
     width: 100%;
@@ -19,7 +24,17 @@ li{
 text-decoration: none;
 list-style: none;
 }
-
+h1,h2,h3{
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    color: var(--main-titles-dark-grey);
+    }
+p,li{
+    color: var(--paragraph-grey);
+}
+.background-grey{
+    background: var(--background-grey);
+}
 
 /* NAVBAR-STYLE */
 nav {
@@ -32,21 +47,72 @@ nav {
 nav img{
     width: 100px;
 }
-.nav-bar li{
-   display:none;
+.nav-bar ul{
+    display: flex;
 }
+ .nav-bar li{
+   display:none;}
+
 .icon-menu:before {
   content: "\e9bd";
+  color: var(--nav-grey);
 }
-.good-company{
-    background: var(--background-grey);
-}
+
+ 
 /* INTRO-STYLE */
+/* SIGN-IN-STYLE */
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.sign-in h2,p,input{
+    margin: 10px auto;
+}
+.sign-in p{
+    text-align: center;
+}
+.sign-in span{
+    background: var(--button-purple);
+}
 /* COMPANY-STYLE */
 .good-company .col img{
     padding: 20%;
-    box-shadow: 0px 0px 1px rgba(83, 80, 80, 0.3);;
+    box-shadow: 0px 0px 1px rgba(83, 80, 80, 0.3);
+}
+/* LINKS-STYLE */
+.links li{
+    padding: 5px;
+}
+.links li:first-child{
+    font-weight: 700;
 }
 /* FOOTER-STYLE */
+footer div{
+     padding: 10px;
+}
+footer ul {
+       display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer li{
+    
+    font-weight: 600;
+}
+footer .lang{
+    display: flex;
+    justify-content: center;
+    color: var(--paragraph-grey);
+}
+footer .lang i{
+    padding-left: 5px;
+}
+footer img{
+    width: 30px;
+}
+/* PHONE-RES */
 /* I-PAD-RES */
 /* PC-RES */
