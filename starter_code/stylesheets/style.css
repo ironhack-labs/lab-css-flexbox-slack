@@ -74,8 +74,9 @@ nav img{
 .sign-in p{
     text-align: center;
 }
-.sign-in span{
+.sign-in span {
     background: var(--button-purple);
+    width: 100%;
 }
 /* COMPANY-STYLE */
 .good-company .col img{
@@ -136,7 +137,7 @@ footer img{
 .sign-in input,.sign-in span,.sign-in p{
     margin-left: 5px;
     line-height: 2.5;
-}
+}width: 100px;
 .sign-in input {
     width: 69%;
 }
@@ -149,11 +150,35 @@ font-weight: bold;
 #sponsors img{
     padding: 20% 0;
 }
-.good-company .sign-in{
 
-}
 }
 /* COMPUTER-RES */
 @media screen and (min-width: 992px) { 
-    
+    .nav-bar li{
+        display: flex;
+        padding-left: 5px;
+    }
+    .nav-bar span{
+        display:none;
+    }
+    .nav-bar a{
+        color: var(--nav-grey);
+    }
+    .container_father{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
 }
+.container_son img {
+    width: 500px;
+    object-fit: contain;
+}
+.container_son {
+    flex-basis: 50%;
+    margin: 10px;
+}
+.good-company{
+    padding-bottom: 20%;
+}
+}
+
