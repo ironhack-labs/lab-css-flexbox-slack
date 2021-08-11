@@ -4,81 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <!-- link the font awesome CDN -->
-    <link
-      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
-      rel="stylesheet"
-    />
-
-    <!-- link your styles -->
-    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheets/style.css" />
     <title>Where work happens | Slack</title>
   </head>
 
   <body>
-    <nav>
-      <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-      </ul>
-    </nav>
+
     <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
-      <h1>Where Work Happens</h1>
-      <p>
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+      <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img width="100" src="images/slack-logo.png" alt="Slack logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
-      <div>
-        <h2>You're in good company</h2>
-        <p>
-          Millions of people around the world have already made Slack the place
-          where their work happens.
-        </p>
-        <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
+
+    <section class="first">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+          <h1>Where work happens</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi ea odit molestiae perferendis! Quasi laborum, voluptate consequuntur unde fugiat ad tempora, corrupti nobis laudantium vitae quam rem nesciunt sequi aut!</p>
+
+          <button class="button1">GET STARTED</button>
+          <p>Already using Slack? <a href="#">Sign in.</a></p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+          <img width="100%" src="images/home_talking.png" alt="People home_talking">
+        </div>
       </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+    </section>
+
+    <section class="second">
+      <div class="row">
+        <div class="col-12">
+          <h2>You're in good company</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi? Culpa ducimus eveniet natus dolorum nisi? Aliquid nemo, ad eius, praesentium, numquam consequuntur rem neque porro accusantium sunt est dolore!</p>
+        </div>
+        <div class="col-12">
+          <button class="button2">DISCOVER WHY</button>
+        </div>
+          <div class="row justify-content-around">
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <img width="100%" src="images/airbnb-logo.png" alt="airbnb logo">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <img width="100%"  src="images/capital-one-logo.png" alt="Capital one logo">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <img width="100%"  src="images/harvard-logo.png" alt="Harvard logo">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <img width="100%"  src="images/los-angeles-times-logo.png" alt="Los angeles time logo">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <img width="100%"  src="images/oracle-logo.png" alt="oracles logo">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+              <img width="100%"  src="images/ticketmaster-logo.png" alt="tiketmaster logo">
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-    <footer>
-      <div>
-        <img src="./images/iso-slack.png" alt="" />
-        <ul>
+    </section>
+
+    <section class="third">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <h3>Try it for free</h3>
+            <p>Already using Slack? Sign in</p>
+          </div>
+          <div class="col-12 col-sm-6">
+            <button class="button3" type="button" name="button">GET STARTED</button>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="col-12 col-sm-3 icon">
+          <img class="icon" src="images/Slack.ico" alt="slack icon">
+        </div>
+        <div class="col-6 col-sm-2 list-unstyled info">
           <li>COMPANY</li>
           <li>About Us</li>
           <li>Careers</li>
           <li>Blog</li>
           <li>Press</li>
           <li>Brand Guidelines</li>
-        </ul>
-        <ul>
+        </div>
+        <div class="col-6 col-sm-2 list-unstyled info">
           <li>PRODUCT</li>
           <li>Why Slack?</li>
           <li>Enterprise</li>
           <li>Customer Stories</li>
           <li>Pricing</li>
           <li>Security</li>
-        </ul>
-        <ul>
+        </div>
+        <div class="col-6 col-sm-2 list-unstyled info">
           <li>RESOURCES</li>
           <li>Download</li>
           <li>Help Center</li>
@@ -86,30 +127,33 @@
           <li>Events</li>
           <li>App Directory</li>
           <li>API</li>
-        </ul>
-        <ul>
+        </div>
+        <div class="col-6 col-sm-2 list-unstyled info">
           <li>EXTRAS</li>
           <li>Podcast</li>
           <li>Slack Shop</li>
           <li>Slack at Work</li>
           <li>Slack Fund</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Status</li>
-          <li>Privacy & Terms</li>
-          <li>Contact Us</li>
-        </ul>
-        <div>
-          <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
+        </div>
+        <div class="col-12 footer2">
+          <div class="row">
+            <div class="col-12">
+              <p>Status</p>
+              <p>Privacy & Terms</p>
+              <p>Contact Us</p>
+            </div>
+            <div class="col-12">
+              <img src="./images/us-flag.png" alt="" />
+              <span>English (US)</span>
+              <i class="fas fa-chevron-down"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+
   </body>
 </html>
