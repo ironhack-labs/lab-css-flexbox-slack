@@ -7,8 +7,20 @@ nav grey: #5b5e6d;
 */
 
 html {
-    font-family: "Montserrat", 'Courier New', Courier, monospace;
-    color: #5b5e6d
+    font-family: "Montserrat", "Courier New", Courier, monospace;
+    color: #5b5e6d;
+}
+
+.button-purple {
+    background-color: #192592;
+    color: white;
+    border: #192592;
+}
+
+.button-purple-inverted {
+    background-color: white;
+    color: #192592;
+    border: 1px solid #192592;
 }
 
 .padding-content {
@@ -17,27 +29,27 @@ html {
 
 .title {
     font-family: "Meriweather";
-    color: #2C303F;
+    color: #2c303f;
     font-weight: 600;
     font-size: 3rem;
 }
 
 .title-2 {
     font-family: "Meriweather";
-    color: #2C303F;
+    color: #2c303f;
     font-weight: 600;
     font-size: 2rem;
 }
 
 .title-3 {
     font-family: "Meriweather";
-    color: #2C303F;
+    color: #2c303f;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .background-grey {
-    background-color: #F4F3F4;
+    background-color: #f4f3f4;
 }
 
 .transparent-background {
@@ -58,13 +70,16 @@ html {
     display: block;
 }
 
+.hide-md {
+    display: block;
+}
+
 @media (min-width: 768px) {
-    
     .title {
         font-size: 4rem;
     }
 
-    .title-2{
+    .title-2 {
         font-size: 3rem;
     }
 
@@ -72,6 +87,9 @@ html {
         font-size: 2rem;
     }
 
+    .hide-md {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
@@ -82,7 +100,7 @@ html {
         font-size: 5rem;
     }
 
-    .title-2{
+    .title-2 {
         font-size: 4rem;
     }
 
@@ -93,5 +111,10 @@ html {
     .hide-lg {
         display: none;
     }
+
+    .hide-md {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-    
