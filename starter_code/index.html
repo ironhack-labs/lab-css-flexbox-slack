@@ -13,30 +13,49 @@
 
     <!-- link your styles -->
     <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Where work happens | Slack</title>
   </head>
 
   <body>
-    <nav>
-      <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
+    <nav class="nav-container">
+      <div class="logo-container">
+        <img src="./images/slack-logo.png" alt="slack_logo" />
+      </div>
+      <ul class="nav-list hidden">
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
         <li>Your Workspaces</li>
       </ul>
+      <a href="#" class="dropdown-button">
+        <i class="fa fa-bars fa-lg"></i>
+      </a>
+      
     </nav>
-    <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
-      <h1>Where Work Happens</h1>
+    <header class="header-container">
+      <!-- <div class="header-home-taking hidden">
+        <img src="./images/home_talking.png" alt="home_work_happening" />
+      </div> -->
+      <h1>Where Work <br> Happens</h1>
       <p>
         When your team needs to kick off a project, hire a new employee, deploy
         some code, review a sales contract, finalize next year's budget, measure
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
+      <form>
+        <fieldset class="email-container">
+          <div class="email-wrapper">
+            <input type="email" name="email" placeholder="Email address">
+          </div>
+      </fieldset>
+      </form>
+      <button class="get-started" type="button" name="button">GET STARTED</button>
       <p>Already using Slack? <a href="#">Sign in</a></p>
+      <div class="header-home-taking">
+        <img src="./images/home_talking.png" alt="home_work_happening" />
+      </div>
     </header>
     <main>
       <div>

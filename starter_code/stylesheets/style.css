@@ -5,3 +5,152 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&display=swap');/* Box sizing rules */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+  font: 200 16px/1.5 "Poppins", Helvetica, Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+	list-style: none;
+}
+/* Make images easier to work with */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+	margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+:root {
+  --background-grey: #F4F3F4;
+  --button-purple: #192592;
+  --main-titles-dark-grey: #2C303F;
+  --paragraph-grey: #5b5e6d;
+  --nav-grey: #5b5e6d;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+}
+
+.logo-container img {
+  width: 30%;
+}
+
+.hidden {
+  display: none;
+}
+
+.dropdown-button i {
+  color: var(--nav-grey);
+}
+
+.header-container {
+  position: relative;
+  top: 10vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header-container h1 {
+  font-family: 'Scheherazade New', serif;
+  line-height: 1;
+  padding: 10px 0;
+
+}
+
+.header-container p {
+  padding: 10px 0;
+  color: var(--paragraph-grey);
+}
+
+.email-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.email-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.email-wrapper input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  color: var(--paragraph-grey);
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.email-container {
+  border: 0;
+}
+
+.get-started {
+  padding: 20px 20px;
+  border: 0;
+  background: rgba(49,52,153,1);
+  border-radius: 5px;
+  margin: 22px 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
