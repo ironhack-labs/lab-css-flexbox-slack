@@ -137,32 +137,128 @@ table {
 
 @media screen and (max-width: 768px) {
   body {
-    background-color: var(--background-grey);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100vw;
+    text-align: center;
   }
   img {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin: 40px auto;
+    width: 80%;
+    margin: 30px 0;
   }
-  p {
-    margin: auto;
-    text-align: center;
+
+  h1 {
+    margin: 20px 30px 0 30px;
+    font-size: 2.5em;
+    color: var(--main-titles-dark-grey);
+    font-weight: bold;
+    text-align: left;
+  }
+  .left {
+    font-size: 1.2em;
+    margin: 20px 30px;
+    font-weight: 200;
+    text-align: left;
   }
 
   nav {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+    border-bottom: solid 1px rgba(131, 128, 128, 0.15);
   }
   nav img {
     margin: 0;
-    width: 35%;
+    width: 30%;
     height: 100%;
   }
-  #hamburger-icon {
-    width: 10%;
+  .fas {
+    font-size: 1.8em;
     margin: auto 0;
+    color: var(--nav-grey);
+  }
+
+  .container-goodCompany {
+    background-color: var(--background-grey);
+    border-top: solid 1px rgba(131, 128, 128, 0.15);
+    border-bottom: solid 1px rgba(131, 128, 128, 0.15);
+    padding-bottom: 50px;
+  }
+
+  .container-goodCompany img {
+    margin-top: 30px;
+    width: 50%;
+  }
+
+  .main-img-line {
+    border-bottom: solid 1px rgba(131, 128, 128, 0.15);
+    margin: 0 30px;
+  }
+
+  h2 {
+    margin: 20px 30px 0 30px;
+    font-size: 2em;
+    color: var(--main-titles-dark-grey);
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.2em;
+    margin: 20px 30px;
+    font-weight: 200;
+    color: var(--paragraph-grey);
+  }
+
+  main button {
+    color: var(--button-purple);
+    background-color: white;
+    font-weight: bold;
+    border: solid 1px var(--button-purple);
+    height: 60px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .container-tryForFree,
+  header {
+    background-color: white;
+  }
+
+  header input,
+  main input {
+    height: 60px;
+    border-radius: 8px;
+    width: 100%;
+    border: solid 1px rgba(131, 128, 128, 0.15);
+  }
+
+  .container {
+    margin: 20px 30px;
+  }
+
+  header button,
+  .container-tryForFree button {
+    color: white;
+    background-color: var(--button-purple);
+    font-weight: bold;
+    border: none;
+    height: 60px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .try-for-free {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+  }
+  .already-using-slack {
+    font-size: 0.9em;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  footer {
+    background-color: var(--background-grey);
   }
 }
