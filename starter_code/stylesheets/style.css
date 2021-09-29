@@ -5,3 +5,456 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+:root {
+  --bg-grey: #f4f3f4;
+  --btn-purple: #192592;
+  --title-dark-grey: #2c303f;
+  --p-grey: #5b5e6d;
+  --nav-grey: #5b5e6d;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  color: #747479;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  /* position: fixed; */
+  z-index: 999;
+  background-color: white;
+  border-bottom: 0.5px solid #e9e9f0;
+}
+
+.slack-logo {
+  width: 10rem;
+}
+
+.menu-icon-line {
+  width: 3.5rem;
+  height: 0.5rem;
+  background-color: #5b5e6d;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.header-image {
+  order: 2;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  color: var(--title-dark-grey);
+}
+
+h1.header-heading {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.header-text {
+  order: 1;
+  margin-top: 2rem;
+}
+
+.get-started-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.get-started-form,
+.get-started-form input,
+.get-started-form button,
+.ref-discover-btn {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.get-started-form input,
+.get-started-form button,
+.ref-discover-btn {
+  height: 5rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+}
+
+.get-started-form input {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  border: 1px solid #cbccd1;
+}
+
+.get-started-form input::placeholder {
+  color: #a5a6aa;
+}
+
+.get-started-form button {
+  background-color: var(--btn-purple);
+  border: none;
+  color: white;
+}
+
+.sign-in-text {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+main {
+  width: 100%;
+  background-color: var(--bg-grey);
+}
+
+.references {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.references h2 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.ref-discover-btn {
+  background-color: white;
+  color: var(--btn-purple);
+  border: 1px solid #cbccd1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.ref-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ref-images img {
+  max-width: 20rem;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+
+.img-container {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+}
+.img-container:not(:last-child) {
+  border-bottom: 1px solid #d9dadf;
+}
+.cta {
+  padding-bottom: 2rem;
+}
+.cta h3 {
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.slack-logo-small {
+  width: 10rem;
+}
+
+.footer-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.footer-links {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #747479;
+}
+
+.footer-links li:first-child {
+  font-weight: bold;
+}
+
+.footer-links:last-child {
+  align-self: flex-start;
+}
+
+.footer-links li {
+  padding-top: 1rem;
+}
+
+.footer-bottom {
+  background-color: var(--bg-grey);
+}
+
+.footer-bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 5rem; */
+}
+
+.footer-bottom-links li {
+  padding: 1rem;
+  font-weight: bold;
+  color: #747479;
+}
+
+.en-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.american-flag {
+  width: 1.5rem;
+}
+
+.en-us-item,
+.fab {
+  padding: 1rem;
+  font-weight: bold;
+  color: #747479;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1199px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .get-started-form {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .get-started-form input {
+    width: 40%;
+    margin: 1rem 0.5rem;
+  }
+  .get-started-form button,
+  .ref-discover-btn {
+    width: 40%;
+  }
+  .ref-images {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cta {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+  }
+  .cta-form {
+    justify-content: flex-end;
+  }
+  .cta-texts {
+    width: 50%;
+  }
+  .cta-texts h3,
+  .cta-texts p {
+    text-align: left;
+  }
+  .sign-in-text {
+    margin: 0;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .footer-links {
+    max-width: 20%;
+    font-size: 1.7rem;
+  }
+  .slack-logo-small {
+    width: 10%;
+  }
+  .footer-links-container {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .footer-bottom-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flags-icons {
+    display: flex;
+    padding: 2rem;
+  }
+  .img-container:nth-last-child(2) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 961px) and (min-width: 768px) {
+  .img-container {
+    max-width: 50%;
+    border-right: 1px solid #d9dadf;
+  }
+}
+
+@media (min-width: 960px) {
+  .img-container {
+    max-width: 33%;
+    border-right: 1px solid #d9dadf;
+  }
+  .img-container:nth-last-child(3) {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-links {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    font-size: 1.7rem;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header-image {
+    order: 1;
+    width: 45%;
+  }
+  .header-text {
+    width: 50%;
+    align-self: flex-start;
+    justify-self: center;
+    order: 2;
+  }
+  .sign-in-text {
+    text-align: left;
+  }
+  h1.header-heading {
+    font-size: 7em;
+  }
+  .start-email-input {
+    display: none;
+  }
+}
