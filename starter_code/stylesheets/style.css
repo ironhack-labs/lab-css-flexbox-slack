@@ -99,11 +99,12 @@ h1, h2, h3 {
   color: var(--main-titles-dark-grey);
 }
 
+/* Navigation */
 .nav-container {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
   position: fixed;
@@ -115,14 +116,26 @@ h1, h2, h3 {
   width: 30%;
 }
 
-.hidden {
+.nav-list {
+  flex: 0 60%;
+  justify-content: flex-end;
   display: none;
+}
+
+.nav-list li {
+  padding: 12px 20px;
+}
+
+.nav-list li:last-child {
+  border: 1px solid var(--nav-grey);
+  border-radius: 5px;
 }
 
 .dropdown-button i {
   color: var(--nav-grey);
 }
 
+/* Header */
 .header-container {
   position: relative;
   top: 10vh;
@@ -229,6 +242,7 @@ input::-webkit-input-placeholder {
   padding: 30px 0;
 }
 
+/* Main section */
 .main h2 {
   padding: 20px 0;
   font-size: 2rem;
@@ -328,6 +342,7 @@ h3 {
   font-size: 1.1rem;
 }
 
+/* Footer */
 .nav-footer {
   background-color: var(--background-grey);
   display: flex;
@@ -387,8 +402,11 @@ h3 {
 /* Small Screen */
 /* Media queries */
 
-  /* navigation  */
+/* navigation  */
 @media all and (min-width: 767px) {
+  .logo-container img {
+    width: 210px;
+  }
   .form-wrapper {
     flex-direction: row;
     align-items: center;
@@ -402,12 +420,15 @@ h3 {
   }
   .get-started {
     margin: 0;
+    max-width: 235px;
   }
+
   .header-container p:last-child {
     text-align: start;
   }
   .discovery-why {
-    width: 50%;
+    width: 30vw;
+    max-width: 360px;
   }
   .try-for-free-wrapper {
     flex-direction: row;
@@ -419,7 +440,7 @@ h3 {
     justify-content: end;
   }
   .try-for-free-form-button .get-started {
-    width: 35%;
+    width: 25vw;
     margin-left: 10px;
   }
   .try-for-free-text {
@@ -471,7 +492,7 @@ h3 {
 }
 
 /* Medium Screen */
-@media (min-width: 960px) and (max-width: 1024px) {
+@media (min-width: 960px) {
 
   .logo-enterprises > * {
     flex: 0 33%;
@@ -483,12 +504,41 @@ h3 {
   .logo-enterprises div:nth-last-child(-n+3) {
     border-bottom: 0;
   }
-
 }
 
 /* Large Screen */
-@media (min-width: 1200px) {
-  
+@media (min-width: 1024px) {
+  .nav-list {
+    display: flex;
+  }
+  .dropdown-button {
+    display: none;
+  }
+  .header-container {
+    flex-direction: row;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .header-wrapper {
+    width: 50%;
+    order: 1;
+  }
+  .header-home-taking img {
+    width: 70%;
+  }
+  .email-container {
+    display: none;
+  }
+  .form-wrapper .get-started {
+    flex: 0 40%;
+  }
+  .slack-logo-companies-footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .slack-logo-companies-footer img {
+    width: 60%;
+  }
 }
 
 
