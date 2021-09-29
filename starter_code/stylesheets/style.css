@@ -146,17 +146,27 @@ h1, h2, h3 {
   line-height: 1.8;
 }
 
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .header-container p:last-child {
-  text-align: center;
   font-size: 1rem;
+  text-align: center;
 }
 
 .form-email-container {
   margin-bottom: 7px;
 }
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .email-container {
   width: 100%;
-  margin: 0 auto;
 }
 
 .email-wrapper {
@@ -185,7 +195,7 @@ input::-webkit-input-placeholder {
 
 .get-started, .discovery-why {
   width: 100%;
-  padding: 20px 20px;
+  padding: 23px 20px;
   margin: 22px 0;
   border: 0;
   font-size: 14px;
@@ -200,12 +210,12 @@ input::-webkit-input-placeholder {
 
 .main {
   text-align: center;
-  background-color: var(--background-grey);
   border-bottom: 1px solid rgb(221 221 221 / 32%)
 }
 
 .main .main-wrapper {
   padding: 50px 35px;
+  background-color: var(--background-grey);
 }
 
 .sign-in-link {
@@ -255,7 +265,15 @@ input::-webkit-input-placeholder {
 }
 
 .try-for-free-wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 35px;
+}
+
+.try-for-free-text, 
+.try-for-free-form-button {
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
@@ -297,7 +315,6 @@ h3 {
 .companies-list li {
   margin: 18px 0;
   font-weight: 300;
-  
 }
 
 .companies-list .name-company {
@@ -317,6 +334,11 @@ h3 {
   justify-content: space-evenly;
   font-weight: 500;
   color: var(--paragraph-grey);
+}
+
+.nav-flag-language-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .flag-language-wrapper {
@@ -352,5 +374,93 @@ h3 {
   font-size: 1.5rem;
   padding: 0 12px;
 }
+
+
+/* Media queries */
+
+/* Small Screen */
+@media (min-width: 767px) and (max-width: 961px) {
+  .form-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+  .form-wrapper .email-container {
+    flex: 0 calc(55% - 3%);
+    margin-right: 15px;
+  }
+  .form-wrapper .get-started {
+    flex: 0 calc(30% - 3%);
+  }
+  .get-started {
+    margin: 0;
+  }
+  .header-container p:last-child {
+    text-align: start;
+  }
+  .discovery-why {
+    width: 50%;
+  }
+  .try-for-free-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+  .try-for-free-form-button {
+    flex-direction: row;
+    flex: 2; /* take twice the space */
+    justify-content: end;
+  }
+  .try-for-free-form-button .get-started {
+    width: 35%;
+    margin-left: 10px;
+    
+  }
+  .try-for-free-text {
+    align-items: start;
+  }
+  .try-for-free-text p {
+    padding: 0;
+  }
+  .form-email-container {
+    margin: 0;
+  }
+  .email-wrapper input {
+    padding: 25px
+  }
+  .companies-list > * {
+    flex: 0 25%;
+  }
+  .nav-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-footer li {
+    padding-right: 15px;
+  }
+  .nav-flag-language-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+  .flag-language-wrapper {
+    width: 200px;
+  }
+  .flag-language-wrapper img {
+    width: 20%;
+  }
+
+  
+}
+
+/* Medium Screen */
+@media (min-width: 960px) and (max-width: 1024px) {
+  
+}
+
+/* Large Screen */
+@media (min-width: 1200px) {
+  
+}
+
+
 
 
