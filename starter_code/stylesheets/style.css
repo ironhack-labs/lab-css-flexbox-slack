@@ -73,12 +73,30 @@ textarea,
 select {
 	font: inherit;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 :root {
   --background-grey: #F4F3F4;
   --button-purple: #192592;
-  --main-titles-dark-grey: #2C303F;
+  --button-purple-lighter: rgba(25, 37, 146, .5);
+  --main-titles-dark-grey: #010202;
   --paragraph-grey: #5b5e6d;
   --nav-grey: #5b5e6d;
+  --white: #fff;
+}
+
+h1, h2, h3 {
+  font-family: 'Scheherazade New', serif;
+  line-height: 1;
+  padding: 10px 0;
+  color: var(--main-titles-dark-grey);
 }
 
 .nav-container {
@@ -87,6 +105,8 @@ select {
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
   position: fixed;
+  background-color: var(--white);
+  z-index: 1000;
 }
 
 .logo-container img {
@@ -106,51 +126,231 @@ select {
   top: 10vh;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 35px;
+  margin-bottom: 40px;
 }
 
 .header-container h1 {
-  font-family: 'Scheherazade New', serif;
-  line-height: 1;
-  padding: 10px 0;
-
+  font-size: 2.5rem;
 }
 
-.header-container p {
-  padding: 10px 0;
+.mg {
+  margin-top: 20px;
+}
+
+ p {
+  padding: 20px 0;
   color: var(--paragraph-grey);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8;
 }
 
+.header-container p:last-child {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.form-email-container {
+  margin-bottom: 7px;
+}
 .email-container {
   width: 100%;
   margin: 0 auto;
 }
+
 .email-wrapper {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
+
 .email-wrapper input {
   width: 100%;
   border: 0;
   outline: 0;
   border-radius: 5px;
   color: var(--paragraph-grey);
-  padding: 15px 20px;
-  font-size: 14px;
+  padding: 20px;
+  font-size: 1rem;
   font-weight: 400;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(110, 110, 110,.9);
 }
 
 .email-container {
   border: 0;
 }
 
-.get-started {
+.get-started, .discovery-why {
+  width: 100%;
   padding: 20px 20px;
-  border: 0;
-  background: rgba(49,52,153,1);
-  border-radius: 5px;
   margin: 22px 0;
-  color: #fff;
-  font-size: 12px;
+  border: 0;
+  font-size: 14px;
   font-weight: 500;
 }
+
+.get-started {
+  background: var(--button-purple);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.main {
+  text-align: center;
+  background-color: var(--background-grey);
+  border-bottom: 1px solid rgb(221 221 221 / 32%)
+}
+
+.main .main-wrapper {
+  padding: 50px 35px;
+}
+
+.sign-in-link {
+  color: var(--button-purple);
+  border-bottom: 1px solid var(--button-purple);
+}
+
+.header-home-taking {
+  padding: 30px 0;
+}
+
+.main h2 {
+  padding: 20px 0;
+  font-size: 2rem;
+}
+
+.discovery-why  {
+  background: #fff;
+  color: var(--button-purple);
+  border-radius: 5px;
+  border: .5px solid var(--button-purple-lighter);
+}
+
+.logo-enterprises {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo-enterprises img {
+  padding: 2rem 0;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.logo-enterprises div {
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-enterprises div:last-child {
+  border-bottom: 0;
+}
+
+.los-angeles-logo img {
+  width: 90%;
+}
+
+.try-for-free-wrapper {
+  padding: 35px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.slack-logo-companies-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.slack-logo-companies-footer img {
+  width: 25%;
+}
+
+.companies-list {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--paragraph-grey);
+}
+
+.companies-list ul {
+  padding: 20px;
+}
+
+.companies-list > * {
+  flex: 0 50%;
+}
+
+.companies-list ul {
+  padding: 30px 40px;
+}
+
+.companies-list li {
+  margin: 18px 0;
+  font-weight: 300;
+  
+}
+
+.companies-list .name-company {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.nav-footer {
+  background-color: var(--background-grey);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.nav-footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 500;
+  color: var(--paragraph-grey);
+}
+
+.flag-language-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+}
+
+.flag-language-wrapper img {
+  width: 11%;
+  padding: 0 10px;
+}
+
+.flag-language-wrapper > * {
+  padding: 0 5px;
+}
+
+.flag-language-wrapper span {
+  color: var(--paragraph-grey);
+  font-weight: 500;
+}
+
+.nav-footer i {
+  color: rgba(89, 91, 103, 1);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-icons i {
+  font-size: 1.5rem;
+  padding: 0 12px;
+}
+
+
