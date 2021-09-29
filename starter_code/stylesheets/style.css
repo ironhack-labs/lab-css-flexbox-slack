@@ -102,6 +102,8 @@ h1, h2, h3 {
 .nav-container {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
   position: fixed;
@@ -254,12 +256,16 @@ input::-webkit-input-placeholder {
 
 .logo-enterprises div {
   border-bottom: 1px solid #ddd;
+  height: 125px;
 }
 
 .logo-enterprises div:last-child {
   border-bottom: 0;
 }
 
+.los-angeles-logo {
+  width: 100%;
+}
 .los-angeles-logo img {
   width: 90%;
 }
@@ -379,7 +385,10 @@ h3 {
 /* Media queries */
 
 /* Small Screen */
-@media (min-width: 767px) and (max-width: 961px) {
+/* Media queries */
+
+  /* navigation  */
+@media all and (min-width: 767px) {
   .form-wrapper {
     flex-direction: row;
     align-items: center;
@@ -412,7 +421,6 @@ h3 {
   .try-for-free-form-button .get-started {
     width: 35%;
     margin-left: 10px;
-    
   }
   .try-for-free-text {
     align-items: start;
@@ -425,6 +433,13 @@ h3 {
   }
   .email-wrapper input {
     padding: 25px
+  }
+  .logo-enterprises {
+    flex-direction: row;
+    flex-wrap: wrap
+  }
+  .logo-enterprises > * {
+    flex: 0 50%;
   }
   .companies-list > * {
     flex: 0 25%;
@@ -447,13 +462,28 @@ h3 {
   .flag-language-wrapper img {
     width: 20%;
   }
-
-  
+  .logo-enterprises div:nth-last-child(-n+2){ /*last 2 children*/
+    border-bottom: 0;
+  }
+  .logo-enterprises div:nth-child(odd) {
+    border-right: 1px solid #ddd;
+  }
 }
 
 /* Medium Screen */
 @media (min-width: 960px) and (max-width: 1024px) {
-  
+
+  .logo-enterprises > * {
+    flex: 0 33%;
+  }
+  .logo-enterprises div:nth-child(2),
+  .logo-enterprises div:nth-child(4) {
+    border-right: 1px solid #ddd;
+  }
+  .logo-enterprises div:nth-last-child(-n+3) {
+    border-bottom: 0;
+  }
+
 }
 
 /* Large Screen */
