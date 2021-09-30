@@ -5,3 +5,294 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+/*mobile*/ 
+@media screen and (max-width: 628px) {
+
+}
+/*tablet*/ 
+@media (min-width: 769px) and (max-width: 1025) {
+
+}
+/*desktop*/ 
+@media (min-width: 1026px) {
+
+}
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+ }
+ /* NAV BAR */ 
+ 
+ 
+ nav ul{
+     background-color: white;
+     color: #5b5e6d;
+     padding: 0;
+     margin: 0;
+     text-align: center;
+     overflow: hidden;
+     -webkit-transition: max-height 0.4s;
+     -ms-transition: max-height 0.4s;
+     -moz-transition: max-height 0.4s;
+     -o-transition: max-height 0.4s;
+     transition: max-height 0.4s;
+   
+ }
+ nav ul li{
+     display: inline-block;
+     padding: 20px;
+ }
+ nav ul li:hover{
+     color: #d3d3d3;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: inherit;
+ }
+ 
+ 
+ .handle {
+     width: 100%;
+     background-color: white;
+     box-sizing: border-box;
+     padding: 15px;
+     cursor: pointer;
+     color: white;
+     display: none;
+ }
+ img.menu{
+     display: inline-block;
+ }
+ .menu_icon div {
+   background-color: #5b5e6d;
+   border-radius: 2px;
+   width: 35px;
+   height: 5px;
+   margin: 5px;
+ }
+ .menu_icon{
+     float: right;
+     margin: .5em 0;
+ }
+ @media screen and (max-width: 1025px){
+     nav ul{
+         max-height: 0px;
+     }
+     nav ul li{
+         box-sizing: border-box;
+         width: 100%;
+         padding: 15px;
+     }
+     .showing{
+         max-height: 20em; 
+     }
+     .handle{
+         display: block;
+     }
+   
+   .slack-logo {
+     display: none;
+   }
+     
+ }
+ 
+ .menu {
+   height: 50px;
+ }
+ 
+ 
+ .your-workspaces {
+   border: 1px solid #192592;
+   border-radius: 3px;
+   padding: 10px 10px; 
+ 
+ }
+ 
+ @media screen and (min-width: 1026px){
+   nav {
+   display: flex;
+   justify-content: space-around;
+   border-bottom: 1px solid #d3d3d3;
+ }
+   .slack-logo {
+   height: 50px;
+ }
+ 
+ }
+ 
+ /* 1st SECTION */ 
+ .header-img  {
+   height: 200px;
+   object-fit: contain;
+ }
+ 
+ header {
+   height: 600px;
+   padding: 25px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   }
+ 
+ 
+ header p {
+   font-size: 17px;
+   color: #5b5e6d;
+ }
+ 
+ .get-started {
+   background-color: #192592;
+   color: white;
+   border: none;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 17px;
+   border-radius: 3px;
+ }
+ 
+ header input {
+   padding: 15px 15px;
+   margin: 15px 0px;
+   font-size: 17px;
+   color: #5b5e6d;
+ }
+ 
+ .sign-in {
+   text-decoration: underline;
+   color: blue;
+ }
+ 
+ .already-signed-up {
+   text-align: center;
+ }
+ 
+ /* 2nd SECTION */ 
+ main div{
+   padding: 25px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+ }
+ 
+ .first-main-section {
+   background-color: #F4F3F4;
+ }
+ 
+ 
+ .discover-why {
+   background-color: white;
+   color: #192592;
+   border: 1px solid #192592;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 16px;
+   border-radius: 3px;
+   margin: 15px 0px;
+ }
+ 
+ main p {
+   color: #5b5e6d;
+   margin: 10px 0px;
+ }
+ 
+ main h3 {
+   color: #2C303F;
+ }
+ /* logos */ 
+
+ .first-main-section{
+    object-fit: contain;
+ }
+
+
+ main input {
+   padding: 15px 15px;
+   margin: 15px 0px;
+   font-size: 17px;
+   color: #5b5e6d;
+   border: 1px solid #F4F3F4;
+ }
+ 
+ .try-it {
+   font-weight: 700;
+   font-size: 25px;
+   padding: 10px;
+ }
+
+ main img {
+    margin: 20px 30px;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+ .img-container {
+    display: inline-block;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 1rem 0;
+    box-sizing: inherit;
+ }
+ 
+ /*footer*/
+ 
+ footer {
+   border-top: 1px solid #5b5e6d;
+ }
+ 
+ footer ul li {
+   list-style-type: none;
+ }
+ 
+ .bottom-footer {
+   background-color: #F4F3F4;
+   display: flex;
+   align-items: center;
+   flex-direction: column; 
+ }
+ 
+ .bottom-footer ul {
+   display: flex;
+  
+ }
+ 
+ .bottom-footer ul li {
+   padding: 5px;
+ }
+ 
+ .footer-title {
+   font-weight: 700;
+ }
+ 
+ .footer-summary {
+   display: block;
+   margin-bottom: 1rem;
+   margin-top: 2rem;
+   
+ }
+ 
+ .footer-summary ul {
+   display: inline-block;
+   grid-template-columns: repeat(2,1fr);
+   grid-gap: 1rem 0;
+   box-sizing: inherit;
+ }
+ 
+ .last-part-footer img {
+     height: 15px;
+ }
+
+ .last-part-footer {
+   display: flex;
+   flex-direction: column; 
+ }
+
+ 
