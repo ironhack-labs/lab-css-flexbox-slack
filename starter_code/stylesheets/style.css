@@ -148,15 +148,15 @@ img {
 }
 
 h1 {
-  margin: 20px 30px 0 30px;
+  margin: 20px 30px;
   font-size: 2.5em;
   color: var(--main-titles-dark-grey);
   font-weight: bold;
   text-align: left;
 }
 .left {
-  font-size: 1.2em;
-  margin: 20px 30px;
+  font-size: 1.4em;
+  margin: 20px 30px 50px 30px;
   font-weight: 200;
   text-align: left;
 }
@@ -169,11 +169,11 @@ nav {
   justify-content: space-between;
   padding: 10px 30px;
   border-bottom: solid 1px rgba(131, 128, 128, 0.15);
+  height: fit-content;
 }
 nav img {
   margin: 0;
-  width: 30%;
-  height: 100%;
+  width: 90px;
 }
 .fas {
   font-size: 1.8em;
@@ -237,7 +237,7 @@ main input {
 
 .btn-container {
   margin: 20px auto;
-  width: fit-content;
+  width: 200px;
 }
 
 .container-tryForFree {
@@ -269,13 +269,21 @@ header button,
   margin: 0;
 }
 
-.last-section {
-  background-color: var(--background-grey);
-}
-
 #slack-logo-footer-container {
   width: 35%;
   margin: 0;
+}
+
+.footer-links-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.footer-links {
+  margin: 0 35px;
 }
 
 .footer-links ul:nth-last-child(-n + 2) {
@@ -296,10 +304,19 @@ header button,
   width: 150px;
 }
 
+#iso-slack {
+  display: flex;
+  justify-content: flex-start;
+  width: 120px;
+  height: 120px;
+  margin: 0;
+}
+
 .last-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--background-grey);
 }
 .lastSectionRow {
   display: flex;
@@ -321,19 +338,17 @@ li {
   width: 30px;
 }
 
-.footer-links {
-}
-
 @media screen and (max-width: 960px) and (min-width: 768px) {
   .header-small-screen {
     display: flex;
     flex-direction: row;
     align-content: center;
+    align-items: center;
+    margin: 0 35px;
   }
 
   .btn-container {
-    margin: 0 auto;
-    width: 300px;
+    width: 240px;
   }
   .company-logo-ctn-small {
     display: flex;
@@ -343,7 +358,7 @@ li {
     margin: 50px;
   }
   .company-logo-ctn-small img {
-    width: 340px;
+    width: 280px;
     margin: 0 30px;
   }
   .container-tryForFree {
@@ -351,26 +366,29 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    margin: 0 35px;
   }
   .tryForFee-ctn-left-small {
     display: flex;
     flex-direction: column;
-    margin-left: 35px;
     text-align: left;
   }
   .tryForFee-ctn-right-small {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
   }
 
   header input,
   main input {
     height: 60px;
     border-radius: 8px;
-    margin: 0 0 0 35px;
-    width: 300px;
+    width: 260px;
     border: solid 1px rgba(131, 128, 128, 0.4);
+    margin: 0 auto;
+  }
+  .footer-links {
+    display: flex;
   }
 }
