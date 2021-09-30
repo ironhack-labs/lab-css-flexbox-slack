@@ -136,6 +136,8 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .main-content {
+  }
   body {
     display: flex;
     flex-direction: column;
@@ -164,6 +166,9 @@ table {
 
   nav {
     display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
     justify-content: space-between;
     padding: 10px 30px;
     border-bottom: solid 1px rgba(131, 128, 128, 0.15);
@@ -236,6 +241,12 @@ table {
     margin: 20px 30px;
   }
 
+  .container-tryForFree {
+    border-bottom: solid 1px rgba(131, 128, 128, 0.15);
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
   header button,
   .container-tryForFree button {
     color: white;
@@ -258,7 +269,45 @@ table {
     margin: 0;
   }
 
-  footer {
+  .last-section {
     background-color: var(--background-grey);
+  }
+
+  #slack-logo-footer-container {
+    width: 35%;
+    margin: 0;
+  }
+  footer div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+  }
+  footer ul {
+    margin: 20px auto;
+    padding: auto;
+  }
+  .footer-links li:first-child {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--main-titles-dark-grey);
+  }
+
+  footer li {
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: 200;
+    color: var(--paragraph-grey);
+  }
+
+  .footer-list {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: ;
+  }
+  .footer-list li {
+    margin: 0 5px;
+    font-weight: 800;
   }
 }
