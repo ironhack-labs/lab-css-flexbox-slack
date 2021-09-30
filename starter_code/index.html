@@ -13,21 +13,26 @@
 
     <!-- link your styles -->
     <link rel="stylesheet" href="./stylesheets/style.css" />
-    <title>Where work happens | Slack</title>
+    <title class="title">Where work happens | Slack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <nav>
-      <img src="./images/slack-logo.png" alt="slack_logo" />
+      <img src="./images/slack-logo.png" alt="slack_logo"  class ="logo" />
+      <div class="nav-bar">
       <ul>
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
         <li>Your Workspaces</li>
       </ul>
+    </div>
     </nav>
     <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
+      
       <h1>Where Work Happens</h1>
       <p>
         When your team needs to kick off a project, hire a new employee, deploy
@@ -35,11 +40,16 @@
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
+      <div class="email-space">
+      <input type="email" id="email" name="email" placeholder="Email Address">
+      <br>
+      <button type="button" name="button" class="get-started-button">GET STARTED</button>
       <p>Already using Slack? <a href="#">Sign in</a></p>
+      <img id ="block1" class="work-image" src="./images/home_talking.png" alt="home_work_happening" />
+    </div>
     </header>
     <main>
-      <div>
+      <div class="grey-block-one">
         <h2>You're in good company</h2>
         <p>
           Millions of people around the world have already made Slack the place
@@ -53,33 +63,36 @@
         <img src="./images/oracle-logo.png" alt="" />
         <img src="./images/ticketmaster-logo.png" alt="" />
       </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+      <div class ="bottom-email">
+        <p class="for-free">Try it for free</p>
+        <p class ="using-slack">Already using Slack? <a href="">Sign in</a></p>
+        <input type="email" id="email" name="email" placeholder="Email Address">
+        <br>
+        <button type="button" name="button" class="get-started-button">GET STARTED</button>
       </div>
     </main>
     <footer>
-      <div>
-        <img src="./images/iso-slack.png" alt="" />
-        <ul>
-          <li>COMPANY</li>
+      <div class="footer-section">
+        <img src="./images/iso-slack.png" alt="slack-logo" class="logo-smaller" />
+        <div class="footer-links-container">
+        <ul class="footer-links">
+          <li><strong>COMPANY</strong></li>
           <li>About Us</li>
           <li>Careers</li>
           <li>Blog</li>
           <li>Press</li>
           <li>Brand Guidelines</li>
         </ul>
-        <ul>
-          <li>PRODUCT</li>
+        <ul class="footer-links">
+          <li><strong>PRODUCT</strong></li>
           <li>Why Slack?</li>
           <li>Enterprise</li>
           <li>Customer Stories</li>
           <li>Pricing</li>
           <li>Security</li>
         </ul>
-        <ul>
-          <li>RESOURCES</li>
+        <ul class="footer-links">
+          <li><strong>RESOURCES</strong></li>
           <li>Download</li>
           <li>Help Center</li>
           <li>Guides</li>
@@ -87,29 +100,32 @@
           <li>App Directory</li>
           <li>API</li>
         </ul>
-        <ul>
-          <li>EXTRAS</li>
+        <ul class="footer-links">
+          <li><strong>EXTRAS</strong></li>
           <li>Podcast</li>
           <li>Slack Shop</li>
           <li>Slack at Work</li>
           <li>Slack Fund</li>
         </ul>
       </div>
-      <div>
-        <ul>
+      </div>
+      <div  class="last-section">
+        <ul class="row">
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-        <div>
+        <div class="las-section1">
           <img src="./images/us-flag.png" alt="" />
           <span>English (US)</span>
           <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="las-section1">
           <i class="fab fa-twitter"></i>
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-youtube"></i>
         </div>
-      </div>
+        </div>
     </footer>
   </body>
 </html>
