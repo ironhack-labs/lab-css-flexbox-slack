@@ -11,9 +11,10 @@ nav grey: #5b5e6d;
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
-header, main div, .container {
+header, main div, .container, .baseline {
     padding: 36px;
 }
 
@@ -55,28 +56,24 @@ nav ul {
 
 /* Header */
 
-header img {
-    height: 19rem;
-    margin-top: 40px;
-}
-
 header h1 {
-    margin-top: 80px;
+    margin-top: 90px;
     padding-right: 70px;
     color: #2C303F;
     font-size: 2.5em;
 }
 
-.singUp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .singUp input, .singUp button {
+    box-sizing: border-box;
     width: 100%;
     height: 3.5rem;
     border-radius: 5px;
+}
+
+header img {
+    height: 19rem;
+    display: block;
+    margin: 40px auto 0;
 }
 
 .singUp input {
@@ -99,12 +96,10 @@ header h1 {
 }
 
 header p:nth-child(4) {
-    margin: 0 auto;
+    text-align: center;
     color: #5b5e6d;
     font-size: 15px;
 }
-
-
 
 /* Main */
 
@@ -126,16 +121,17 @@ main button {
     width: 100%;
     height: 3.5rem;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: rgb(65, 76, 164);
     border: 1px solid rgb(112, 124, 211);
     border-radius: 5px;
     background-color: white;
-    margin-bottom: 20px;
+    margin: 20px 0 40px;
 }
 
 main div div {
     border-bottom: 1px solid rgb(218, 218, 218);
+    height: 40px;
 }
 .main div:last-child {
     border-bottom: none;
@@ -147,18 +143,17 @@ main img {
 }
 
 [src*=los-angeles] {
-    width: 250px;
+    width: 255px;
 }
-
-main p:nth-child(2) {
-    font-family: ;
+[src*=oracle], [src*=ticket] {
+    width: 200px;
 }
 
 h3 {
     font-size: 1.7rem;
     color: #2C303F;
-    margin: 40px 0 0 0;
-    line-height: 1px;
+    margin-top: 40px;
+    line-height: 0;
 }
 
 main article {
@@ -167,7 +162,6 @@ main article {
 }
 
 article input {
-    margin: 0 0 23px 0;
     font-family: 'Poppins';
     color: #5b5e6d;
     border: 1px solid rgb(226, 226, 226);
@@ -186,7 +180,7 @@ article button {
 }
 
 article input, article button {
-
+    box-sizing: border-box;
     height: 3.5rem;
     border-radius: 5px;
 }
@@ -195,14 +189,19 @@ main div:last-child {
     border-bottom: 1px solid rgb(226, 226, 226);
 }
 
+.singupSection p {
+    margin-top: 0;
+    line-height: 0;
+}
+
 /* footer */
 
 .container {
-    background-color: white;
+    padding: 0;
 }
 
-footer img:nth-child(1) {
-    height: 150px;
+footer img {
+    height: 135px;
 }
 
 footer ul {
@@ -219,15 +218,17 @@ footer li {
 
 .container li:first-child {
     font-weight: 800;
+    margin: 0;
 }
 
 .container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .container ul {
-    margin: 0 0 40px 0;
+    width: 150px;
 }
 
 /* baseline */
@@ -243,7 +244,6 @@ footer li {
 .baseline ul {
     display: flex;
     justify-content: space-around;
-    padding: 0 50px;
 }
 
 .baseline li {
@@ -252,13 +252,7 @@ footer li {
 
 .baseline article img {
     height: 25px;
-}
-
-.baseline article:nth-child(2) {
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    vertical-align: middle;
 }
 
 .baseline article {
@@ -271,4 +265,257 @@ footer li {
 
 [class*=facebook] {
     margin: 0 20px;
+}
+
+/* Responsive design - Small scree, table-like  */
+
+@media (min-width: 767px) and (max-width: 961px) {
+    header {
+        padding-right: 80px;
+    }
+
+    header h1 {
+        font-size: 3.7rem;
+        margin-bottom: 20px;
+    }
+    .singUp {
+        display: flex;
+    }
+    .singUp input, .singUp button {
+        box-sizing: border-box;
+        margin: 23px 0 0;
+        height: 60px;
+    }
+    .singUp input {
+        width: 330px;
+        margin-right: 10px;
+    }
+    .singUp button {
+        width: 150px;
+    }
+    header p:nth-child(4) {
+        text-align: left;
+    }
+
+    /*  */
+    main h2 {
+        margin-bottom: 5px;
+    }
+    .main button {
+        width: 200px;
+    }
+    .main div {
+        width: 39%;
+    }
+    .main article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main div:nth-of-type(even) {
+        border-left: 1px solid rgb(218, 218, 218);
+    }
+    .main div:nth-child(5) {
+        border-bottom: none;
+    }
+    .singupSection {
+        text-align: left;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .singupSection p {
+        margin: 0;
+        padding: 0;
+    }
+    .singupSection h3 {
+        margin: 20px 0;
+    }
+
+    .singupSection article:nth-child(1) {
+        height: 80px;
+    }
+    .singupSection article:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 330px;
+    }
+    .singupSection input, .singupSection button {
+        margin: 0;
+        padding: 0;
+        width: 160px;
+    }
+
+    /*  */
+    footer {
+        position: relative;
+    }
+
+    [src*='iso'] {
+        margin-bottom: 250px;
+    }
+
+    .container {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 80%;
+    }
+
+    /*  */
+
+    .baseline {
+        display: flex;
+        align-items: center;
+        font-size: 0.85em;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        height: 80px;
+    }.baseline article:nth-child(2) {
+        margin-left: auto;
+    }
+    .baseline li {
+        margin: 0 10px;
+    }
+    .baseline span {
+        margin: 0 10px;
+    }
+    .baseline ul {
+        padding: 0;
+    }
+
+    .baseline article {
+        margin: 0 15px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 962px) {
+    [src*='Ham'] {
+        display: none;
+    }
+    nav ul {
+        display: block;
+        list-style: none;
+        padding-left: 0;
+        color: #757577;
+        font-family: 'Poppins';
+        font-weight: 300;
+
+        display: flex;
+        align-items: center;
+    }
+    nav li {
+        margin: 0 10px;
+    }
+    nav li:last-child {
+        border: 1px solid black;
+        padding: 5px 10px;
+        border-radius: 6px;
+    }
+
+    /*  */
+    header {
+        display: flex;
+    }
+    header img {
+        height: 350px;
+    }
+    header div:nth-child(2) {
+        order: -1;
+        padding: 100px 0 0;
+        margin-right: 70px;
+    }
+    header h1 {
+        font-size: 4.2rem;
+    }
+    header input {
+        display: none;
+    }
+    #singin {
+        text-align: left;
+        font-size: 0.8em;
+    }
+    .singUp button {
+        width: 160px;
+    }
+
+    /*  */
+    .main  button {
+        width: 180px;
+    }
+    .main article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main article div {
+        width: 220px;
+    }
+    .main article div:nth-of-type(1n+2) {
+        border-left: 1px solid rgb(218, 218, 218);
+    }
+    .main article div:nth-of-type(1n+4) {
+        border-bottom: none;
+    }
+    .singupSection {
+        z-index: -1;
+        position: relative;
+        text-align: left;
+    }
+    .singupSection input {
+        display: none;
+    }
+    .singupSection button {
+        width: 180px;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+    }
+
+    /*  */
+
+    footer {
+        position: relative;
+    }
+
+    [src*='iso'] {
+        margin-bottom: 250px;
+    }
+
+    .container {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 80%;
+    }
+
+    .baseline {
+        display: flex;
+        align-items: center;
+        font-size: 0.85em;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        height: 80px;
+    }.baseline article:nth-child(2) {
+        margin-left: auto;
+    }
+    .baseline li {
+        margin: 0 10px;
+    }
+    .baseline span {
+        margin: 0 10px;
+    }
+    .baseline ul {
+        padding: 0;
+    }
+
+    .baseline article {
+        margin: 0 15px;
+        padding: 0;
+    }
 }
