@@ -11,7 +11,6 @@ nav grey: #5b5e6d;
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 header, main div, .container, .baseline {
@@ -55,10 +54,9 @@ nav ul {
 }
 
 /* Header */
-
 header h1 {
     margin-top: 90px;
-    padding-right: 70px;
+    width: 250px;
     color: #2C303F;
     font-size: 2.5em;
 }
@@ -198,6 +196,8 @@ main div:last-child {
 
 .container {
     padding: 0;
+    width: 400px;
+    margin: 0 auto;
 }
 
 footer img {
@@ -269,7 +269,7 @@ footer li {
 
 /* Responsive design - Small scree, table-like  */
 
-@media (min-width: 767px) and (max-width: 961px) {
+@media (min-width: 767px) {
     header {
         padding-right: 80px;
     }
@@ -277,6 +277,7 @@ footer li {
     header h1 {
         font-size: 3.7rem;
         margin-bottom: 20px;
+        width: 600px;
     }
     .singUp {
         display: flex;
@@ -394,6 +395,24 @@ footer li {
 }
 
 @media (min-width: 962px) {
+    .main article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main article div {
+        width: 220px;
+    }
+    .main article div:nth-of-type(1n+2) {
+        border-left: 1px solid rgb(218, 218, 218);
+    }
+    .main article div:nth-of-type(1n+4) {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 1200px) {
     [src*='Ham'] {
         display: none;
     }
@@ -475,47 +494,5 @@ footer li {
         position: absolute;
         right: 40px;
         top: 40px;
-    }
-
-    /*  */
-
-    footer {
-        position: relative;
-    }
-
-    [src*='iso'] {
-        margin-bottom: 250px;
-    }
-
-    .container {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 80%;
-    }
-
-    .baseline {
-        display: flex;
-        align-items: center;
-        font-size: 0.85em;
-        justify-content: flex-end;
-        box-sizing: border-box;
-        height: 80px;
-    }.baseline article:nth-child(2) {
-        margin-left: auto;
-    }
-    .baseline li {
-        margin: 0 10px;
-    }
-    .baseline span {
-        margin: 0 10px;
-    }
-    .baseline ul {
-        padding: 0;
-    }
-
-    .baseline article {
-        margin: 0 15px;
-        padding: 0;
     }
 }
