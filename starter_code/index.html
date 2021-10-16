@@ -6,28 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- link the font awesome CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link
       href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
       rel="stylesheet"
     />
 
     <!-- link your styles -->
-    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css">
     <title>Where work happens | Slack</title>
   </head>
 
   <body>
     <nav>
       <img src="./images/slack-logo.png" alt="slack_logo" />
+
+<hamburguer>
+  <div class="icono-menu">
+  <img src="./images/588a64e7d06f6719692a2d11.png" id="icono-menu"
+  </div>
+
+  <div class="cont-menu active" id="menu">
       <ul>
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
         <li>Your Workspaces</li>
       </ul>
+    </div>
+  <script src="app.js"></script>
+</hamburguer>
     </nav>
     <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
       <h1>Where Work Happens</h1>
       <p>
         When your team needs to kick off a project, hire a new employee, deploy
@@ -35,9 +45,24 @@
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
+      <div class="headerbuttons">
+      <email>
+       <label for="email"></label>
+       <input type="email" id="email"
+        size="30" placeholder="Email address" required>
+      </email>
+    
       <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+      </div>
+
+      <singin>
+      <p>Already using Slack?&nbsp;<a href="#">Sign in</a></p>
+     </singin>
+
+      <img src="./images/home_talking.png" alt="home_work_happening" />
     </header>
+
+    
     <main>
       <div>
         <h2>You're in good company</h2>
@@ -53,17 +78,24 @@
         <img src="./images/oracle-logo.png" alt="" />
         <img src="./images/ticketmaster-logo.png" alt="" />
       </div>
-      <div>
-        <p>Try it for free</p>
+      <div class="clase1">
+        <p><b>Try it for free</b></p>
         <p>Already using Slack? <a href="">Sign in</a></p>
+        <email>
+          <label for="email"></label>
+          <input type="email" id="email"
+           size="30" placeholder="Email address" required>
+         </email>
         <button type="button" name="button">GET STARTED</button>
       </div>
     </main>
     <footer>
+      
       <div>
+        <bloque1>
         <img src="./images/iso-slack.png" alt="" />
         <ul>
-          <li>COMPANY</li>
+          <li><h3>COMPANY</h3></li>
           <li>About Us</li>
           <li>Careers</li>
           <li>Blog</li>
@@ -71,15 +103,17 @@
           <li>Brand Guidelines</li>
         </ul>
         <ul>
-          <li>PRODUCT</li>
+          <li><h3>PRODUCT</h3></li>
           <li>Why Slack?</li>
           <li>Enterprise</li>
           <li>Customer Stories</li>
           <li>Pricing</li>
           <li>Security</li>
         </ul>
+      </bloque1>
+      <bloque2>
         <ul>
-          <li>RESOURCES</li>
+          <li><h3>RESOURCES</h3></li>
           <li>Download</li>
           <li>Help Center</li>
           <li>Guides</li>
@@ -88,28 +122,34 @@
           <li>API</li>
         </ul>
         <ul>
-          <li>EXTRAS</li>
+          <li><h3>EXTRAS</h3></li>
           <li>Podcast</li>
           <li>Slack Shop</li>
           <li>Slack at Work</li>
           <li>Slack Fund</li>
         </ul>
+      </bloque2>
       </div>
-      <div>
+    
+      <grayinfo>
         <ul>
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-        <div>
-          <img src="./images/us-flag.png" alt="" />
+      
+        <footerimg>
+         
+          <img class="USflag" src="./images/us-flag.png" alt=""/>
           <span>English (US)</span>
+        </footerimg>
+        <redes>
           <i class="fas fa-chevron-down"></i>
           <i class="fab fa-twitter"></i>
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-youtube"></i>
-        </div>
-      </div>
+        </redes>
+      </grayinfo>
     </footer>
   </body>
 </html>
