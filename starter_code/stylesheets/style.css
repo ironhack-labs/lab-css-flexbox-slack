@@ -33,6 +33,7 @@ h2 {
     font-size: 40px;
     font-weight: 600;
     color: #484849;
+    text-align: center;
 }
 
 
@@ -61,7 +62,14 @@ h4 {
     align-items: center;
     padding: 20px 0px;
     border-bottom: 3px solid #ececec;
+    position: fixed;
+    top: 0px;
+    background-color: #ffffff;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
 }
+
 
 header nav a img {
     width: 150px;
@@ -74,6 +82,7 @@ header nav ul{
     justify-content: space-between;
     width: 40%;
     display: none;
+    margin-right: 60px;
 }
 
 .burger-menu {
@@ -98,7 +107,8 @@ header nav ul{
 }
 
 .hero {
-    padding: 40px;
+    padding: 160px 0px 60px 0px;
+
 }
 
 .main-img {
@@ -209,7 +219,7 @@ header nav ul{
 
 .sponsors-section {
     padding: 40px;
-    background-color: #faf8f8;
+    background-color: #f1f0f0;
 }
 
 .sponsor-img {
@@ -260,6 +270,7 @@ header nav ul{
 
 footer {
     padding: 60px 0px;
+    background-color: #eeeeee;
 }
 
 .footer-links {
@@ -277,8 +288,8 @@ footer {
 
 
 .sm-icons {
-    width: 30px;
-    margin-top: 20px;
+    width: 20px;
+    margin: 20px 10px 0px 10px;
 }
 
 
@@ -305,4 +316,45 @@ footer {
     header nav ul {
         display: flex;
     }
+}
+
+
+@media screen and (min-width:767px) {
+    .sponsor-border {
+        border-bottom: 1px solid #d8d6d6;
+    }
+
+    .try-section .center-txt {
+        text-align: start;
+    }
+
+    .hero .center-element {
+        justify-content: start;
+    }
+
+    .links-section {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .links-txt {
+        font-size: 16px;
+    }
+
+    h4 {
+        margin-top: 0px;
+    }
+
+    .footer-links {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .sm-icons {
+        width: 20px;
+        margin: 20px 5px 0px 5px;
+    }
+
 }
