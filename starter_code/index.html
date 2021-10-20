@@ -18,94 +18,102 @@
 
 
 <body>
-	<nav>
-		<div class="logo">
-			<img src="./images/slack-logo.png" alt="slack_logo" />
-		</div>
-		<div class="navicon">
-			<img src="./images/navicon.png" alt="navicon">
-		</div>
+	<nav class="navbar navbar-light bg-light fixed-top">
+		<a class="navbar-brand" href="#">
+			<img class="logo" src="./images/slack-logo.png" alt="slack-logo">
+		</a>
+		<img class="navicon" src="./images/navicon.png" alt="navicon">
 	</nav>
 	<header>
-		<div class="container">
-			<div class="row work-happens">
+		<div class="container header-container">
 
-				<h1>Where Work Happens</h1>
-				<p>
-					When your team needs to kick off a project, hire a new employee, deploy
-					some code, review a sales contract, finalize next year's budget, measure
-					an A/B test, plan your next office opening, and more, Slack has you
-					covered.
-				</p>
+			<div class="row header-row">
+
+				<div class="col-12 col-xl-6">
+
+					<h1>Where Work Happens</h1>
+					<p>
+						When your team needs to kick off a project, hire a new employee, deploy
+						some code, review a sales contract, finalize next year's budget, measure
+						an A/B test, plan your next office opening, and more, Slack has you
+						covered.
+					</p>
+
+				</div>
+
+				<div class="email col-12 col-md-6 offset-xl-6">
+					<input type="text" placeholder="Email adress">
+				</div>
+
+				<div class="but col-12 col-md-6 offset-xl-6">
+					<button class="get-started btn" type="button" name="button">GET STARTED</button>
+					<p>Already using Slack? <a href="#">Sign in</a></p>
+				</div>
+				
+				<div class="col-12 col-xl-6 order-xl-first home-talking ">
+							<img src="./images/home_talking.png" alt="home-talking">
+				</div>
 
 			</div>
-			<div class="row already">
 
-					<div class="email col-md-6">
-						<input type="text" placeholder="Email adress">
-					</div>
-
-					<div class="but col-md-6">
-						<button type="button" name="button">GET STARTED</button>
-					</div>
-
-			</div>
-			<p>Already using Slack? <a href="#">Sign in</a></p>
 		</div>
-	</header>
-	<section class="first">
-		<div class="container">
-			<div class="row home-talking ">
-				<img src="./images/home_talking.png" alt="home-talking">
-			</div>
-			<div class="row good-company justify-content-center">
-				<h2>You're in good company</h2>
-				<p>
-					Millions of people around the world have already made Slack the place
-					where their work happens.
-				</p>
-				<button>DISCOVER WHY</button>
-			</div>
+	</header>				
+	<section class="good">
+
+		<div class="container-fluid container-good">
+
+				<div class="row good-company justify-content-center align-items-center">
+
+					<div class="col-12">
+							<h2>You're in good company</h2>
+							<p>
+								Millions of people around the world have already made Slack the place
+								where their work happens.
+							</p>
+							<button class="discover-button btn" type="button">DISCOVER WHY</button>
+					</div>
+				</div>
 		</div>
+
 	</section>
 	<section class="sponsors">
 
 		<div class="container sponsors-container">
 
-			<div class="row sponsors-row">
+			<div class="row sponsors-row justify-content-around">
 
 				
 					
-					<div class="sponsor col-12 col-md-6 col-lg-3">
+					<div class="sponsor col-12 col-md-6 col-lg-4">
 						<img src="./images/airbnb-logo.png" alt="">
 					</div>
 
-					<div class="sponsor col-12 col-md-6">
-						<img src="./images/airbnb-logo.png" alt="">
-					</div>
-				
-				
-
-				
-				
-					<div class="sponsor col-12 col-md-6 col-lg-3">
-						<img src="./images/airbnb-logo.png" alt="">
-					</div>
-				
-					<div class="sponsor col-12 col-md-6 col-lg-3">
-						<img src="./images/airbnb-logo.png" alt="">
+					<div class="sponsor col-12 col-md-6 col-lg-4">
+						<img src="./images/capital-one-logo.png" alt="">
 					</div>
 				
 				
 
 				
 				
-					<div class="sponsor col-12 col-md-6 col-lg-3">
-						<img src="./images/airbnb-logo.png" alt="">
+					<div class="sponsor col-12 col-md-6 col-lg-4">
+						<img src="./images/harvard-logo.png" alt="">
 					</div>
 				
-					<div class="sponsor col-12 col-md-6 col-lg-3">
-						<img src="./images/airbnb-logo.png" alt="">
+					<div class="sponsor col-12 col-md-6 col-lg-4">
+						<img src="./images/los-angeles-times-logo.png" alt="">
+					</div>
+				
+				
+
+				
+				
+					<div class="sponsor col-12 col-md-6 col-lg-4">
+						<img src="./images/oracle-logo.png" alt="">
+					</div>
+				
+					<div class="sponsor col-12 col-md-6 col-lg-4">
+						<img src="./images/ticketmaster-logo.png" alt="">
 					</div>
 				
 				
@@ -131,7 +139,7 @@
 				</div>
 				
 				<div class="col-md-4">
-					<button type="button" name="button">GET STARTED</button>
+					<button type="button" class="get-started btn" name="button">GET STARTED</button>
 				</div>
 				
 			</div>
@@ -206,23 +214,25 @@
 
 		<div class="container footer-container">
 
-			<div class="row footer-row justify-content-center">
+			<div class="row footer-row justify-content-center align-items-center">
 
-				<div class="list-footer col-12 col-md-4">
-					<ul>
-						<li>Status</li>
-						<li>Privacy & Terms</li>
-						<li>Contact Us</li>
-					</ul>
-				</div>
-				<div class="language col-12 col-md-4">
+				<div class="col-12 col-md-6">
 
-					<img class= "usa" src="./images/us-flag.png" alt="us-flag">
-					<span>English (US)</span>
-					<i class="fas fa-chevron-down"></i>
+						<ul class="list-footer">
+							<li>Status</li>
+							<li>Privacy & Terms</li>
+							<li>Contact Us</li>
+						</ul>
 
 				</div>
-				<div class="col-12 col-md-4">
+				<div class="col-12 col-md-3">
+					<div class="language">
+						<img class= "usa" src="./images/us-flag.png" alt="us-flag">
+						<span>English (US)</span>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
 
 					<div class="social-icons">
 						<i class="fab fa-twitter"></i>
