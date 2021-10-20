@@ -19,7 +19,8 @@
 
 
 <body>
-  <nav class="navbar navbar-expand-lg">
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light py-3 mb-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img class="logo-stack" src="./images/slack-logo.png" alt="logo-slack"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -40,12 +41,9 @@
               About Us
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Link</a>
-          </li>
+         
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Your Workspaces</button>
         </form>
       </div>
@@ -54,11 +52,17 @@
 
 
 
+      </div>
+    </div>
+  
+  </nav>
+
+
 
   <header>
-    <div class="container justify-content-center align-content-center">
-      <div class="row justify-content-center">
-        <div class="col-12">
+    <div class="container mt-5">
+      <div class="row mx-1">
+        <div class="col-12 col-lg-6 order-lg-2">
           <h1>Where Work Happens</h1>
           <p>
             When your team needs to kick off a project, hire a new employee, deploy
@@ -68,32 +72,35 @@
           </p>
         </div>
 
-        <div>
-          <form class="col-12">
-            <div class="mb-3 col">
+
+      <form class="col-12 col-md-6 d-lg-none d-xl-none">
+
               <label for="exampleInputEmail1" class="form-label"></label>
               <input type="email" class="form-control" placeholder="Email address" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
-          </form>
+
+      </form>
+
+      <div class="d-grid col-12 col-md-3 col-lg-7 order-lg-3 my-3">
+          <button class="btn btn-primary first-button" type="button">Get started</button>
+      </div>
+
+        <div class="col-12 col-lg-6 order-lg-4">
+          <p class="text-center text-md-left">Already using Slack? <a href="#">Sign in</a></p>
         </div>
 
-        <div class="d-grid col-12">
-          <button class="btn btn-primary first-button" type="button">Get started</button>
-        </div>
-        <div class="col-12">
-          <p class="align-center">Already using Slack? <a href="#">Sign in</a></p>
-        </div>
-        <div class="col-12 size-imgform">
+        <div class="col-12 size-img col-lg-6 order-lg-1 d-flex justify-content-center">
           <img class="img-size" src="./images/home_talking.png" alt="home_work_happening" />
         </div>
+
       </div>
     </div>
   </header>
   <main class="second-screen">
-    <div class="container">
-      <div class="row second-screen">
-        <div class="col-12 mt-4">
-          <h2>You're in good company</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 mt-4 text-center">
+          <h2 class="fw-bold">You're in good company</h2>
           <p>
             Millions of people around the world have already made Slack the place
             where their work happens.
@@ -104,57 +111,72 @@
         </div>
 
 
-        <div class="col-12 d-flex justify-content-center mt-5">
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center py-4 px-3 border border-top-0 rounded">
           <img class="img-size-logos" src="./images/airbnb-logo.png" alt="" />
         </div>
+        
 
-        <div class="col-12 d-flex justify-content-center mt-5">
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center py-4 px-3 border-top-0 border rounded">
           <img class="img-size-logos" src="./images/capital-one-logo.png" alt="" />
         </div>
-
-        <div class="col-12 d-flex justify-content-center mt-5">
+        
+        <div class="col-12 d-md-none d-lg-block col-lg-4 d-flex justify-content-center  py-4 px-3 mt-4 mb-4 border-top-0 border rounded">
           <img class="img-size-logos" src="./images/harvard-logo.png" alt="" />
         </div>
 
-        <div class="col-12 d-flex justify-content-center mt-5">
+        <div class="col-12 d-md-none d-lg-block col-lg-4 d-flex justify-content-center py-4 px-3 mt-4 mb-4 border border-top-0 rounded">
           <img class="img-size-logos" src="./images/los-angeles-times-logo.png" alt="" />
         </div>
-
-        <div class="col-12 d-flex justify-content-center mt-5">
+       
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4 mb-4 py-4 px-3  border border-top-0 rounded">
           <img class="img-size-logos" src="./images/oracle-logo.png" alt="" />
         </div>
-
-        <div class="col-12 d-flex justify-content-center mt-5 mb-5">
+        
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mt-4 mb-4 py-4 px-3 border border-top-0 rounded">
           <img class="img-size-logos" src="./images/ticketmaster-logo.png" alt="" />
         </div>
-
+        
       </div>
     </div>
     </div>
   </main>
 
   <section>
-    <div class="container justify-content-center"></div>
-    <div class="row">
-      <div class="col-12">
-        <p class="text-center">Try it for free</p>
-        <p class="text-center">Already using Slack? <a href="">Sign in</a></p>
-      </div>
-      <div class="d-grid col-12">
+    <div class="container-fluid">
+      <div class="row my-5 mx-1 justify-content-between">
+        <div class="col-12 col-md-6 col-lg-4">
+        <h3 class="text-center text-center-not-md text-center-not-lg fw-bold">Try it for free</h3>
+        <p class="text-center text-center-not-md text-center-not-lg">Already using Slack? <a href="">Sign in</a></p>
+       </div>
+
+    
+     <form class="mb-3 col-12 col-md-3 d-lg-none d-xl-none"> 
+  
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <input type="email" class="form-control" placeholder="Email address" id="exampleInputEmail1"
+              aria-describedby="emailHelp">
+       
+      </form>
+      
+    
+
+      <div class="d-grid col-12 col-md-3 col-lg-4 mt-3">
         <button class="btn btn-primary first-button" type="button">Get started</button>
       </div>
+    </div>  
   </section>
+<hr>
 
   <footer>
 
-    <section class="container">
-      <div class="row">
+    <section class="container-fluid">
+      <div class="row justify-content-evenly">
 
-        <div class="col-12">
-          <img src="./images/iso-slack.png" alt="" />
+        <div class="col-12 col-md-3">
+          <img class="size-slack" src="./images/iso-slack.png" alt="" />
         </div>
 
-        <div class="col-6">
+        <div class="col-6 col-md-2">
           <ul class="list-unstyled">
             <li class="text-uppercase fw-bold">Company</li>
             <li> <a class="text-decoration-none text-secondary" href="">About Us</a> </li>
@@ -165,7 +187,7 @@
           </ul>
         </div>
 
-        <div class="col-6">
+        <div class="col-6 col-md-2">
           <ul class="list-unstyled">
             <li class="text-uppercase fw-bold">Product</li>
             <li><a class="text-decoration-none text-secondary" href="">Why Slack?</a></li> 
@@ -176,7 +198,7 @@
           </ul>
         </div>
 
-        <div class="col-6">
+        <div class="col-6 col-md-2">
           <ul class="list-unstyled">
             <li class="text-uppercase fw-bold">Resources</li>
             <li><a class="text-decoration-none text-secondary" href="">Download</a></li>
@@ -188,7 +210,7 @@
           </ul>
         </div>
 
-        <div class="col-6">
+        <div class="col-6 col-md-2">
           <ul class="list-unstyled fw-bold">
             <li class="text-uppercase">Extras</li>
             <li><a class="text-decoration-none text-secondary" href="">Podcast</a></li>
@@ -205,7 +227,7 @@
 
       <div class="row justify-content-center align-content-center">
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-4">
           <ul class="list-unstyled d-flex justify-content-center">
             <li class="me-3"><a class="text-decoration-none text-secondary" href="#">Status</a> </li>
             <li class="me-3"><a class="text-decoration-none text-secondary" href="#">Privacy & Terms</a></li>
@@ -214,15 +236,15 @@
         </div>
 
 
-        <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="col-12 col-md-3 d-flex justify-content-center">
 
           <img class="size-flag" src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
+          <span class="">English (US)</span>
+          <i class=" fas fa-chevron-down"></i>
 
         </div>
 
-        <div class="col-12 d-flex justify-content-center mb-3 mt-3">
+        <div class="col-12 col-md-3 d-flex justify-content-center mb-3 mt-3">
           <i class="fab fa-twitter me-3"></i>
           <i class="fab fa-facebook-f me-3"></i>
           <i class="fab fa-youtube me-3"></i>
