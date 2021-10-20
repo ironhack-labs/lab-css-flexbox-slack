@@ -12,33 +12,53 @@ footer a {
   text-decoration: none;
   color: #2c303f;
 }
-a:hover {
+a {
   color: #303a96;
+}
+a:hover {
+  color: #4f3096;
 }
 footer h6 {
   text-transform: uppercase;
 }
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#navbarNav a:hover {
+  color: #4f3096;
+}
+#li-btn a:hover {
+  color: white;
+}
+#nav-btn:hover {
+  transition: 1s;
+  background-color: #303a96;
+}
 .btn.mt-4.col-12.col-md-6.col-lg-4 {
   padding: 10px;
   background-color: #303a96;
+  margin: 15px;
   color: white;
 }
 .btn.mt-4.col-12.col-md-6.col-lg-4:hover {
+  transition: 1s;
   color: #303a96;
   background-color: white;
   border: solid 1px #303a96;
 }
 .col-12.col-md-6.col-lg-4.logo-container {
   height: 100px;
-  margin: 25px 0;
-  border-bottom: solid 1.5px #6f7070;
+  padding: 100px 0;
+  border-bottom: solid 1.5px rgb(199, 199, 199);
 }
 .row.my-5 div {
   padding: 75px 0;
 }
 #title {
   font-weight: 700;
-  font-size: 24px;
+  margin-top: 30px;
+  font-size: 32px;
 }
 #free {
   border-bottom: solid 1.5px rgb(233, 232, 232);
@@ -56,9 +76,10 @@ footer h6 {
   font-weight: 700;
   color: #303a96;
   background-color: white;
-  border: solid 2px #2c303f;
+  border: solid 0.5px #2c303f;
 }
 #btn-white:hover {
+  transition: 1s;
   background-color: #303a96;
   color: white;
 }
@@ -68,12 +89,17 @@ footer h6 {
   color: white;
 }
 #btn-purple:hover {
+  transition: 1s;
   color: #303a96;
   background-color: white;
   border: solid 1px #303a96;
 }
 #sponsor {
   width: 80%;
+  transition: transform 0.2s;
+}
+#sponsor:hover {
+  transform: scale(0.75);
 }
 #slack-logo {
   height: 100px;
@@ -82,8 +108,35 @@ footer h6 {
 #gray-background {
   background-color: rgb(233, 232, 232);
 }
+#footer-flag {
+  margin: 10px 0;
+}
+#footer-icons i {
+  margin-left: 10px;
+}
+#footer-list li {
+  margin: 10px 5px 0 10px;
+}
+#staticEmail2 {
+  width: 185px;
+}
 @media screen and (min-width: 992px) {
   #nav-btn {
     border: solid 1.5px #4d4e55;
+  }
+  #sponsor:hover {
+    transform: scale(1.2);
+  }
+  #logo:hover {
+    transform: scale(1.2);
+  }
+  .col-12.col-md-6.col-lg-4.logo-container {
+    border-right: solid 1.5px rgb(199, 199, 199);
+  }
+  .col-12.col-md-6.col-lg-4.logo-container:nth-child(3) {
+    border-right: none;
+  }
+  .col-12.col-md-6.col-lg-4.logo-container:nth-child(6) {
+    border-right: none;
   }
 }
