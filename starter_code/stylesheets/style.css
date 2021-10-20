@@ -27,12 +27,13 @@ h1{
 }
 
 h2{
-    font-size: 2.7em;
+    font-size: 2.9em;
     font-weight: 600;
 }
 h3{
     font-size: 2.2em;
     font-weight: 600;
+    margin-left: 20px;
 }
 
 p {
@@ -85,16 +86,17 @@ img {
     color: inherit;
 }
 
-/*BUTTON*/
+/*BUTTON & INPUT*/
 .button{
     width: 100%;
     font-size: 1.8em;
     color: white;
     text-transform: uppercase;
     border: 4px #192592 solid;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: #192592;
     padding: 25px;
+    margin-top: 30px;
 }
 .button.white{
     width: auto;
@@ -103,19 +105,19 @@ img {
     background-color: white;
  
 }
+.hero input, .free input{
+    border-color:#aeaeaf;
+    padding: 30px;
+    width: 100%;
+    margin: 20px 0px;
+    border-radius: 5px;
+    font-size: 1.6em;
+}
 
 /* SECTION HERO*/
 .hero{
     text-align: left;
 
-}
-
-.hero input, .free input{
-    border-color:#aeaeaf;
-    padding: 5px;
-    width: 100%;
-    margin: 20px 0;
-    border-radius: 2px;
 }
 
 .bigger{
@@ -153,6 +155,10 @@ img {
 }
 
 /* SECTION LINKS*/
+.links{
+    margin-bottom:40px;
+}
+
 .links ul li:nth-child(1){
     font-weight: 600;
 }
@@ -168,8 +174,9 @@ img {
     background: #F4F3F4;
 }
 
-.footer img{
-    width: 5%;
+.flag{
+    width:10%;
+    height: auto; 
 }
 
 .footer ul{
@@ -177,17 +184,25 @@ img {
 }
 
 .footer i, .footer span {
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin: 10px;
     text-align: center;
     color: #5b5e6d;
 
 }
 
+.fab{
+    padding: 10px;
+}
+
 .space{
-    padding: 20px;
- 
-    
+    padding: 20px;    
+}
+
+.space.centered{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 @media screen and (min-width:768px){
@@ -198,7 +213,45 @@ img {
 
     .not{
         border-bottom: 1px solid grey;
-  }
+    }
+  
+   .hero input{
+    margin: 20px 20px;
+   }
+   .email{
+     display: flex;
+    justify-content:center;
+    align-items: baseline;
+   }
+   .space.centered{
+    font-size: 1em;
+   }
+   .space li{
+    font-size: 0.8em;
+   }
+   
+   .footer i, .footer span {
+    font-size: 1em;
+    }
+
+    .flag{
+        width:35px;
+        height: 35px;
+    }
+
+    .links img{
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .ml{
+        margin-left: 6%;
+    }
+    .textfree{
+       margin-top: 40px;
+        padding: 30px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -214,12 +267,11 @@ img {
     .hero input, .free input{
         display: none;
     }
-    .links img{
-        position: absolute;
-        margin-top: 20px;
-        margin-left: 10px;
-    }
     
+    .menu ul li:nth-child(4){
+        border: 2px solid #5b5e6d;
+        border-radius: 5px;
+    }
 
 }
 
