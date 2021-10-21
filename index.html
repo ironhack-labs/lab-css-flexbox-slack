@@ -7,6 +7,7 @@
 
         <!-- link the font awesome CDN -->
         <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
+        <!-- <link rel="stylesheet" href="/css/fontawesome.min.css"> -->
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,9 @@
                 <img src="./images/slack-logo.png" alt="slack_logo" />
             </a>
 
-            <i class="fas fa-bars" id="burger"></i>
+            <svg id="burger">
+                <use xlink:href="/images/icons/icon-sprite.svg#burger"></use>
+            </svg>
 
             <ul>
                 <li><a href="#">Why Slack?</a></li>
@@ -41,6 +44,7 @@
 
             <div class="content">
                 <h1>Where Work Happens</h1>
+
                 <p>
                     When your team needs to kick off a project, hire a new employee, deploy
                     some code, review a sales contract, finalize next year's budget, measure
@@ -52,6 +56,8 @@
                     <button type="button" name="button" class="btn btn-primary">GET STARTED</button>
                     <p>Already using Slack? <a href="#">Sign in</a></p>
                 </div>
+
+
             </div>
         </header>
 
@@ -92,7 +98,7 @@
                 <div class="col-logo">
                     <img src="./images/iso-slack.png" alt="" />
                 </div>
-                
+
                 <div class="lists">
                     <ul>
                         <li>COMPANY</li>
@@ -102,7 +108,7 @@
                         <li>Press</li>
                         <li>Brand Guidelines</li>
                     </ul>
-                    
+
                     <ul>
                         <li>PRODUCT</li>
                         <li>Why Slack?</li>
@@ -111,7 +117,7 @@
                         <li>Pricing</li>
                         <li>Security</li>
                     </ul>
-                    
+
                     <ul>
                         <li>RESOURCES</li>
                         <li>Download</li>
@@ -121,7 +127,7 @@
                         <li>App Directory</li>
                         <li>API</li>
                     </ul>
-                    
+
                     <ul>
                         <li>EXTRAS</li>
                         <li>Podcast</li>
@@ -143,12 +149,22 @@
                     <button class="select">
                         <img src="./images/us-flag.png" alt="" />
                         <span>English (US)</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <svg>
+                            <use xlink:href="/images/icons/icon-sprite.svg#chevron-down"></use>
+                        </svg>
                     </button>
-                    
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-youtube"></i>
+
+                    <div class="icons">
+                        <svg>
+                            <use xlink:href="/images/icons/icon-sprite.svg#twitter"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="/images/icons/icon-sprite.svg#facebook"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="/images/icons/icon-sprite.svg#youtube"></use>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </footer>
