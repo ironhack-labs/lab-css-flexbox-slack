@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/* SASS Document */
+
+/*=============================================== Imports ===============================================*/
+
+@import "mixins";
+@import "reset";
+@import "variables";
+
+/*=============================================== General ===============================================*/
+
+* {
+    outline: none;
+}
+
+html,
+body {
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    color: var(--gray-text);
+    line-height: var(--line-height);
+}
+
+/*=============================================== Fonts ===============================================*/
+
+h1, h2, h3 {
+    font-family: var(--font-titles);
+    color: var(--dark-gray);
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    a {
+        position: relative;
+        color: var(--purple);
+        text-decoration: none;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            background-color: currentColor;
+            height: 2px;
+        }
+    }
+}
+
+/*=============================================== UI ===============================================*/
+
+.btn {
+    padding: var(--margin-xxs) var(--margin-s);
+    border-radius: var(--radius-m);
+    border: none;
+
+    &.btn-outline {
+        border: 1px solid currentColor;
+    }
+
+    &.btn-primary {
+        background-color: var(--purple);
+        color: var(--white);
+        font-weight: var(--font-bold);
+        font-size: 18px;
+        padding: var(--margin-s) var(--margin-xl);
+    }
+
+    &.btn-secondary {
+        color: var(--purple);
+        font-weight: var(--font-bold);
+        background-color: var(--white);
+        font-size: 18px;
+        padding: var(--margin-s) var(--margin-xl);
+    }
+}
+
+button {
+    font-family: var(--font-family);
+}
+
+/*=============================================== Sections ===============================================*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include flexbox(center, space-between, nowrap);
+    width: 100%;
+    padding: var(--margin-m) 5vw;
+    background-color: var(--white);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+
+    .slack-logo {
+        height: 50px;
+        width: 100px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    #burger {
+        @media (min-width: 960px) {
+            display: none;
+        }
+    }
+
+    ul {
+        @include ulNone();
+        @include flexbox(center, flex-start, nowrap);
+
+        li:not(:last-child) {
+            margin-right: var(--margin-m);
+        }
+
+        a {
+            color: var(--nav);
+            text-decoration: none;
+            font-size: 18px;
+        }
+    }
+}
+
+header {
+    @include grid(repeat(2, 1fr), 24px, 0);
+    align-items: center;
+    padding: 100px 5vw;
+
+    .content {
+        @include grid(1fr, 0, var(--margin-l));
+
+        .links {
+            @include flexbox(flex-start, flex-start, nowrap);
+            flex-direction: column;
+
+            .btn {
+                margin-bottom: var(--margin-s);
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+main {
+    & > div {
+        padding: 100px 5vw;
+    }
+
+    .companies {
+        background-color: var(--gray);
+        @include flexbox(center, center, nowrap);
+        flex-direction: column;
+
+        h2 {
+            margin-bottom: var(--margin-s);
+        }
+
+        p {
+            margin-bottom: var(--margin-l);
+        }
+
+        .images {
+            @include grid(repeat(3, 1fr), 0, 0);
+
+            img {
+                width: 100%;
+                height: 15vw;
+                object-fit: contain;
+                padding: var(--margin-xxl);
+
+                &:first-child,
+                &:nth-child(2),
+                &:nth-child(3) {
+                    border-bottom: 1px solid var(--border);
+                }
+
+                &:not(:nth-child(3n)) {
+                    border-right: 1px solid var(--border);
+                }
+            }
+        }
+    }
+
+    .try {
+        @include flexbox(center, space-between, nowrap);
+
+        h3 {
+            margin-bottom: var(--margin-xs);
+        }
+    }
+}
+
+footer {
+    border-top: 1px solid var(--gray);
+
+    .footer-grid {
+        padding: 50px 5vw;
+        @include flexbox(flex-start, space-between, nowrap);
+
+        .col-logo img {
+            width: 120px;
+        }
+
+        .lists {
+            @include flexbox(flex-start, flex-start, nowrap);
+
+            ul {
+                @include ulNone();
+                @include flexbox(flex-start, flex-start, nowrap);
+                flex-direction: column;
+
+                &:not(:last-child) {
+                    margin-right: var(--margin-xxl);
+                }
+
+                li {
+                    &:first-child {
+                        font-weight: var(--font-bold);
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: var(--margin-m);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-links {
+        @include flexbox(center, space-between, nowrap);
+        background-color: var(--gray);
+        padding: var(--margin-l) 5vw;
+        font-weight: var(--font-bold);
+        color: var(--nav);
+
+        ul {
+            @include ulNone();
+            @include flexbox(center, flex-start, nowrap);
+
+            li:not(:last-child) {
+                margin-right: var(--margin-m);
+            }
+        }
+
+        & > div {
+            @include flexbox(center, flex-start, nowrap);
+
+            .select {
+                padding: 0;
+                border: none;
+                background: none;
+                @include flexbox(center, flex-start, nowrap);
+                color: var(--nav);
+                font-size: 18px;
+                font-weight: var(--font-bold);
+
+                img {
+                    --size: 16px;
+                    width: var(--size);
+                    height: var(--size);
+                    object-fit: contain;
+                    margin-right: var(--margin-xs);
+                }
+
+                i {
+                    margin-left: var(--margin-xs);
+                    color: currentColor;
+                }
+            }
+
+            & > *:not(:last-child) {
+                margin-right: var(--margin-m);
+            }
+        }
+    }
+}
+
+/*=============================================== Components ===============================================*/
+
+/*=============================================== Pages ===============================================*/
+
+/*=============================================== Helpers ===============================================*/
+
+@import "helpers";
