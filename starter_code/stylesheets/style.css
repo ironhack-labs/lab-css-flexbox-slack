@@ -6,6 +6,7 @@ paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
 
+/* GENERAL INFO */
 img{
     width: 100%;
 }
@@ -21,17 +22,34 @@ header, section {
 h2{
     padding-top: 20px;
 }
+nav{
+    border-bottom: 1px solid #5b5e6d;
+}
 
+header{
+   padding: 20px 0;
+}
+/* NAV SECTION */
 .menu {
     display:flex;
     justify-content: space-between;
     margin: 10px;
 }
-.menu ul{
+/* .menu ul{
     display:flex;
     list-style: none;
     margin: 0;
     padding: 0;
+} */
+
+.menu li{
+    display:flex;
+}
+.menu a{
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
 }
 .menu img.logo {
     width: 100px;
@@ -40,9 +58,8 @@ h2{
     width: 50px;
 }
 
-header{
-   padding: 20px 0;
-}
+/* SECTIONS */
+
 .signin{
     text-align: center;
 }
@@ -59,6 +76,8 @@ header{
     padding: 20px;
     margin: 20px auto;
     border-bottom: 1px solid #dad8da;
+    display: flex;
+    align-items: center;
 }
 
 .input{
@@ -67,24 +86,36 @@ header{
     color:#dad8da;
     display:block;
     margin:10px auto;
+    border-radius: 3px;
 }
 
 .getStarted{
-text-align: center;
+    text-align: center;
 }
+
+/* FOOTER */
 footer ul{
     list-style: none;
     color: #5b5e6d;
+
+}
+footer a{
+    display: flex;
 }
 footer .titleLink{
     color:#2C303F;
 }
 footer .contact{
     background-color:#F4F3F4; 
+    display:flex;
 }
+
+
 .footerLogo{
     width: 150px;
 }
+
+/* COMPONENTS */
 button{
     display:block;
     text-decoration: none;
@@ -103,6 +134,7 @@ button.white{
     border: 1px solid;
 }
 
+/* MEDIA */
 @media screen and (min-width: 0px){
     .navicon{
         display:block;
@@ -117,7 +149,13 @@ button.white{
     footer .empty{
         display:none;
     }
-   
+   .sponsors .hideLogo{
+       display:none;
+    }
+   .sponsors{
+        width: 500px;
+        margin: 30px auto;
+    }
    
 }
 @media screen and (min-width: 992px) {
@@ -129,5 +167,23 @@ button.white{
     }
     footer .empty {
         display:block;
+    }
+    .sponsors .hideLogo{
+       display:block;
+    }
+   .sponsors{
+        width: 800px;
+        margin: 30px auto;
+    }
+
+    .input{
+        display: none;
+    }
+    button{
+        width: 220px;
+        padding: 10px 50px;
+    }
+    .menu img.logo {
+    width: 200px;
     }
 }
