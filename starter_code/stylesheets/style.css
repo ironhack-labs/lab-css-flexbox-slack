@@ -5,3 +5,287 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* GENERAL STYLES */
+
+body {
+
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: #2C303F;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.2em;
+    color: #5b5e6d;
+}
+
+/* NAVIGATION */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgb(197, 186, 186);
+    position: fixed;
+    width: 100%;
+    background: white;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navicon {
+    width: 30px;
+}
+
+.nav-bar {
+    display:none;
+}
+
+.menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 0 10px;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.menu a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.workspaces {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/* HERO */
+
+.hero {
+    padding-top: 150px;
+}
+
+.sign-in {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* PARTNERS */
+
+.partners {
+    text-align: center;
+    background: #f6f6f6;
+    padding: 80px 0;
+}
+
+.partners img {
+    padding: 60px;
+    border-bottom: 1px solid #c8c9cd;
+    height: 100%;
+}
+
+.partners a {
+    display: block;
+    color: #192592;
+    background: white;
+    border: 1px solid #192592;
+    text-decoration: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 1px;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.tickermaster {
+    border-bottom: none;
+}
+
+/* TRY FOR FREE */
+
+.try-for-free {
+    text-align: center;
+    padding: 80px 0;
+    border-top: 2px solid #c8c9cd;
+    border-bottom: 2px solid #c8c9cd;
+}
+
+/* FOOTER */
+footer {
+    color: #5b5e6d;
+}
+
+.slack-icon {
+    width: 180px;
+}
+
+footer ul li {
+    margin: 0 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-nav {
+    margin: 40px;
+}
+
+.li-title {
+    font-weight: bold;
+}
+
+.footer-end {
+    background: #F6F6F6;
+    padding: 20px 0;
+}
+
+.footer-end ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.flag {
+    width: 30px;
+}
+
+.lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang span {
+    margin: 0 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media i {
+    margin: 5px;
+}
+
+/* COMPONENTS */
+
+#name {
+    display: block;
+    color: white;
+    padding: 15px;
+    margin: 15px auto;
+    width: 100%;
+}
+.button {
+    display: block;
+    color: white;
+    background: #192592;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-style: none;
+    padding: 15px;
+    margin: 15px auto;
+    width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media  screen and (min-width: 768px) {
+    
+    form {
+        display: flex;
+    }
+
+    .button {
+        display: initial;
+        width: 30%;
+    }
+
+    #name {
+        display: initial;
+        width: 70%;
+    }
+
+    .sign-in {
+        text-align: left;
+    }
+
+    .partners a {
+        width: 50%;
+    }
+
+     .partner-3, .partner-4 {
+        display: none;
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .navicon {
+        display: none;
+        }
+
+    .nav-bar {
+        display: block;
+    }
+
+     .partner-3, .partner-4 {
+        display: initial;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    #name {
+        display: none;
+    }
+
+    .button {
+        margin: 0;
+    }
+
+    .sign-in {
+        margin-top: 15px;
+    }
+
+}
