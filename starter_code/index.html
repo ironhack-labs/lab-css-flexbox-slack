@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- link the font awesome CDN -->
     <link
       href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/a27ff277ec/UntitledProject/style.css">
 
     <!-- link your styles -->
     <link rel="stylesheet" href="./stylesheets/style.css" />
@@ -17,99 +19,190 @@
   </head>
 
   <body>
-    <nav>
-      <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-      </ul>
-    </nav>
-    <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
-      <h1>Where Work Happens</h1>
-      <p>
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
-    </header>
-    <main>
-      <div>
-        <h2>You're in good company</h2>
-        <p>
-          Millions of people around the world have already made Slack the place
-          where their work happens.
-        </p>
-        <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
-      </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
-      </div>
-    </main>
-    <footer>
-      <div>
-        <img src="./images/iso-slack.png" alt="" />
-        <ul>
-          <li>COMPANY</li>
-          <li>About Us</li>
-          <li>Careers</li>
-          <li>Blog</li>
-          <li>Press</li>
-          <li>Brand Guidelines</li>
+      <nav class="navbar">
+        <img src="./images/slack-logo.png" alt="slack_logo" class=slacklogo>
+        <ul class=menu>
+          <li> <a href="#">Why Slack?</a> </li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#" class="borderbutt grayborder">Your Workspaces</a></li>
         </ul>
-        <ul>
-          <li>PRODUCT</li>
-          <li>Why Slack?</li>
-          <li>Enterprise</li>
-          <li>Customer Stories</li>
-          <li>Pricing</li>
-          <li>Security</li>
-        </ul>
-        <ul>
-          <li>RESOURCES</li>
-          <li>Download</li>
-          <li>Help Center</li>
-          <li>Guides</li>
-          <li>Events</li>
-          <li>App Directory</li>
-          <li>API</li>
-        </ul>
-        <ul>
-          <li>EXTRAS</li>
-          <li>Podcast</li>
-          <li>Slack Shop</li>
-          <li>Slack at Work</li>
-          <li>Slack Fund</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Status</li>
-          <li>Privacy & Terms</li>
-          <li>Contact Us</li>
-        </ul>
-        <div>
-          <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
+        <span class="icon-menu"></span>
+      </nav>
+      <main>
+    <header class=" marginseparator borderseparator">
+      <div class="container marginseparator paddingbot">
+        <div class="row">
+          <div class="col-xl-6 order-xl-2 align-self-center">
+            <h1 class=expandonxl>Where Work Happens</h1>
+            <p>When your team needs to kick off a project, hire a new employee, deploy
+              some code, review a sales contract, finalize next year's budget, measure
+              an A/B test, plan your next office opening, and more, Slack has you
+              covered.
+            </p>
+            <div class="container-flow">
+              <div class="row gx-0 gx-sm-2">
+                <div class="col-sm-6 order-sm-1 hideonlg">
+                  <input type="email" id=email name=email placeholder="Email address" class="button borderbutt grayborder lighter">
+                </div>
+                <div class="col-sm-6 order-sm-2 col-lg-5">
+                  <button type="button" name="button" class="button borderbutt grayborder buttonblue">GET STARTED</button>
+                </div>
+                <div class="col-sm-12 order-sm-3 texcenter">
+                  <p>Already using Slack? <a href="#">Sign in</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 order-xl-1">
+            <img src="./images/home_talking.png" alt="home_work_happening" />
+        </div>
         </div>
       </div>
+    </header>
+    <section class="grayback borderseparator marginseparator paddingbot">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2>You're in good company</h2>
+            <p>
+              Millions of people around the world have already made Slack the place
+              where their work happens.
+            </p>
+          </div>
+        </div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-6">
+            <button class="button borderbutt buttonwhite">DISCOVER WHY</button>
+        </div>
+      </div>
+      <div class="row  marginseparator g-10 sponsors">
+            <div class="col-sm-6 col-md-6  col-xl-4">
+              <img src="./images/airbnb-logo.png" alt="airbnb" >
+            </div>
+            <div class="col-sm-6 col-md-6  col-xl-4">
+              <img src="./images/capital-one-logo.png" alt="capital one" >
+            </div>
+            <div class="col-sm-6 col-md-4 hideonmd  col-xl-4">
+              <img src="./images/harvard-logo.png" alt="harvard" >
+            </div>
+            <div class="col-sm-6 col-md-4 hideonmd  col-xl-4">
+              <img src="./images/los-angeles-times-logo.png" alt="los angeles times" >
+            </div>
+            <div class="col-sm-6 col-md-6  col-xl-4">
+              <img src="./images/oracle-logo.png" alt="oracle" >
+            </div>
+            <div class="col-sm-6 col-md-6 col-xl-4">
+              <img src="./images/ticketmaster-logo.png" alt="ticketmaster" >
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="borderseparator marginseparator paddingbot">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 order-sm-1 text-center">
+            <h3 class="serif">Try it for free</h3>
+            <p>Already using Slack? <a href="">Sign in</a></p>
+          </div>
+        
+        <div class="col-md-6 order-sm-2"><div class="row justify-content-center gy-2">
+          <div class="col-sm-6  order-sm-0 hideonlg">
+          <input type="email" id=email name=email placeholder="Email address" class="button borderbutt grayborder lighter">
+        </div>
+          <div class="col-sm-6  text-center ">
+            <button type="button" name="button" class="button borderbutt grayborder buttonblue">GET STARTED</button>
+        </div>
+      </div></div>
+        </div>
+      </div>
+    </section>
+    </main>
+    
+    <main>
+      <footer>
+      
+      <div class="container marginseparator ">
+        <div class="row justify-content-between">
+          <div class="col-1">
+            <img src="./images/iso-slack.png" alt="" class=slacklogo>
+        </div>
+        <div class="col-7">
+          <div class="row">
+
+            <div class="col-6 col-xl-3">
+              <ul class=menu2>
+                <li><a href="#" class=firstlink>COMPANY</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Brand Guidelines</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-xl-3">
+              <ul class=menu2>
+                <li><a href="#" class=firstlink>PRODUCT</a></li>
+                <li><a href="#">Why Slack?</a></li>
+                <li><a href="#">Enterprise</a></li>
+                <li><a href="#">Customer Stories</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Security</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-xl-3">
+              <ul class=menu2>
+                <li><a href="#" class=firstlink>RESOURCES</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">App </a></li>
+                <li><a href="#">API</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-xl-3">
+              <div>
+                <ul class=menu2>
+                  <li><a href="#" class=firstlink>EXTRAS</a></li>
+                  <li><a href="#">Podcast</a></li>
+                  <li><a href="#">Slack Shop</a></li>
+                  <li><a href="#">Slack at Work</a></li>
+                  <li><a href="#">Slack Fund</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+        <div class="grayback ending borderseparator"> 
+          <div class="container">
+            <div class="row justify-content-between ">
+              <div class="col-sm-6">
+                <ul class="menu1">
+                  <li>Status</li>
+                  <li>Privacy & Terms</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+              <div class="col-sm-4 ">
+          <div class="row justify-content-end">
+            <div class="col-sm-6 text-center wrap"><img src="./images/us-flag.png" alt="" >
+              <i class="fas fa-chevron-down"></i>
+                <span>English (US)</span></div>
+                <div class="col-sm-6 text-center"><i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i></div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </footer>
+    </main>
   </body>
 </html>
+
+
+<!-- :)))))))))) -->
