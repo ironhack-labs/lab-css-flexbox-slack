@@ -5,3 +5,223 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+ /* General styles */
+
+img {
+    width: 100%;
+}
+
+h1 {
+    color: #2C303F;
+    font-size: 3em;
+    padding-bottom: 12px;
+    font-family: 'serif';
+}
+
+h2 {
+    font-family: serif;
+    margin: 20px auto;
+}
+
+p {
+   color: #5b5e6d; 
+   font-size: 1.2em;
+   padding-bottom: 12px;
+}
+
+hr {
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+/* navigation */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    background: white;
+    color: #5b5e6d;
+
+}
+
+.menu .logo img {
+    width: 100px;
+}
+
+.menu .navicon {
+    width: 30px;
+}
+
+.menu nav {
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu .workspace {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+/* hero section*/
+
+.hero {
+    padding: 100px 20px;
+}
+.hero .email {
+    margin-bottom: 20px;
+}
+
+.email {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* companies section */
+
+.companies {
+    background-color: #F4F3F4;
+    padding: 40px 40px;
+    
+}
+.companies .works {
+    padding: 40px;
+
+}
+
+/* try-free section */
+
+.try-free {
+    padding: 40px;
+    align-items: center;
+    margin-bottom: 1px solid #5b5e6d;
+}
+
+/* information class */
+
+.information .services li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.information img{
+    width: 150px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    background-color: #F4F3F4;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: #5b5e6d;
+}
+
+footer img {
+    width: 20px;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+footer li{
+    padding: 10px;
+}
+
+
+/* button */
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.purple {
+    background-color: #192592;
+    color: white;
+}
+
+.transparent {
+    background-color: white;
+    border:1px solid;
+    border-radius: 5px;
+    color: #192592;
+    font-weight: bold;
+}
+
+/* media */
+
+@media screen and (min-width: 768px) {
+    
+    .companies {
+        align-items: center;
+    }
+    .companies .hidden-logo {
+        display: none;
+    }
+
+   .companies .works {
+        align-items: center;
+   }
+
+   .companies .button {
+        width: 30%;
+        align-items: center;
+   }
+   
+}
+
+@media screen and (min-width: 960px) {
+    .menu .navicon {
+        display: none;
+    }
+
+    .menu nav {
+        display: block;
+    }
+    .hero .email {
+        display: none;
+    }
+    .companies .hidden-logo {
+        display: block;
+    }
+    .try-free .hidden {
+        display: none;
+    }
+}
