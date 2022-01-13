@@ -62,6 +62,7 @@ h1,h2, .serif{
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    margin-right: 15px;
 }
 
 .menu li a{
@@ -131,19 +132,22 @@ h1,h2, .serif{
 width: 1.5em;
 }
 
+.sponsors img{
+    max-width: 100%;
+}
+
 @media screen and (max-width:1200px) {
     .menu{
-        display: none;
-    }
-    .sponsors .hideonmd{
         display: none;
     }
      .expandonxl{
         font-size: 5em;
     }
-    
+    .sponsors .showuntilmd{
+        display:none;
+    }
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:960px) {
     .icon-menu{
         display: none;
     }
@@ -154,10 +158,12 @@ width: 1.5em;
         font-size: 4em;
     }
     
+    
 }
-@media screen and (max-width:576px) {
-    .texcenter{
-        text-align: center;
+@media screen and (min-width:961px) {
+    .sponsors .showuntilmd{
+        
     }
+   
+    
 }
-
