@@ -72,6 +72,9 @@ h2{
     color: inherit;
 }
 
+
+
+
 /* HERO */
 .hero-top{
     display: flex;
@@ -124,6 +127,7 @@ h2{
 .sponsors{
     text-align: center;
     background-color: #F4F3F4;
+    border-top: 2px solid #a3a1a3a6;
     padding: 30px;
 }
 .sponsors img{
@@ -141,7 +145,7 @@ h2{
     text-align: center;
     padding: 40px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #F4F3F4;
+    border-bottom: 1px solid #ceccce;
 }
 .enrolment h2{
     font-size: 1.2em;
@@ -163,6 +167,9 @@ h2{
 .subfooter ul{
     list-style: none;
 }
+
+
+
 
 /* FOOTER */
 .last-footer{
@@ -189,13 +196,15 @@ h2{
 .correction-padding{
     padding: 0;
 }
+.disappear-at-sm{
+    display: none;
+}
 
 
 
 
-
-
-@media screen and (min-width: 992px){
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px){
     .button{
         text-decoration: none;
         padding: 15px 0px;
@@ -205,11 +214,35 @@ h2{
         font-weight: bold;
         font-size: 0.8em;
         display: block;
-        width: 250px;
+        width: 200px;
+    }
+    .disappear{
+        display: none;
+    }
+    .justify-left{
+        text-align: left;
+    }
+    .este{
+        display:flex;
+        justify-content: center;
+    }
+    .disappear-at-md{
+        display: none;
+    }
+    .appear-at-md{
+        display: block;
+    }
+    .styling-at-md{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
-@media screen and (min-width: 1200px){
+
+
+
+@media screen and (min-width: 992px){
     .menu nav{
         display: block;
     }
@@ -220,5 +253,20 @@ h2{
     
      h1{
         font-size: 70px;
+    }
+    .disappear{
+        display: block;
+    }
+    .disappear-input{
+        display: none;
+    }
+    .button.purple{
+        width: 170px;
+    }
+    .enrolment{
+        text-align: left;
+    }
+    .appear-at-lg{
+        display: block;
     }
 }
