@@ -5,3 +5,316 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #5b5e6d;
+}
+
+h1,
+h2,
+h3 {
+  font-family: serif;
+  color: #2c303f;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.menu .logo {
+  width: 100px;
+}
+
+.menu .navicon {
+  width: 30px;
+  height: 30px;
+}
+
+.menu nav {
+  display: none;
+}
+
+.menu nav ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.menu nav li {
+  margin-left: 15px;
+}
+
+.menu nav a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.menu nav li:last-child {
+  border: 1px solid black;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+
+/* Button */
+
+button {
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.blue {
+  background-color: #192592;
+  color: white;
+  border: none;
+}
+
+.white {
+  background-color: white;
+  color: #192592;
+  border: 1px solid #192592;
+}
+
+.hero button {
+  margin-bottom: 20px;
+}
+
+.sponsors button {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.info button {
+  margin-bottom: 40px;
+}
+
+/*  Hero */
+
+h1 {
+  font-weight: 600;
+  font-size: 3.5em;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.hero img {
+  margin-top: 20px;
+}
+
+.hero input {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 8px 10px;
+}
+
+.hero .signin {
+  text-align: center;
+}
+
+/*  Sponsors */
+.sponsors {
+  background-color: #f4f3f4;
+  text-align: center;
+}
+
+.sponsors img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.sponsors h2 {
+  font-size: 2em;
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Info */
+
+.info p {
+  text-align: center;
+}
+
+.info h3 {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.info input {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  padding-left: 10px;
+}
+
+.info .logo {
+  width: 100px;
+  text-align: center;
+}
+
+.info ul {
+  padding-top: 15px;
+}
+
+.info li {
+  margin-top: 10px;
+}
+
+.info li:first-child {
+  text-transform: uppercase;
+}
+
+.info ul li:first-child {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Footer */
+
+footer {
+  background-color: #f4f3f4;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+footer ul li {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+footer img {
+  width: 20px;
+  margin-right: 5px;
+}
+footer .links {
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+footer .links span {
+  padding-right: 5px;
+}
+
+footer .socials {
+  margin: 27px;
+}
+
+footer .socials i {
+  margin-left: 15px;
+}
+
+/* media queries */
+
+@media screen and (min-width: 768px) {
+  .hero input {
+    width: 300px;
+  }
+  .hero button {
+    width: 200px;
+  }
+  .hero .signin {
+    text-align: left;
+  }
+
+  .sponsors button {
+    width: 300px;
+  }
+  .sponsors .img3,
+  .sponsors .img4 {
+    display: none;
+  }
+
+  .info h3,
+  .info p {
+    text-align: left;
+  }
+  .info input {
+    width: 200px;
+  }
+  .info button {
+    width: 200px;
+  }
+
+  .info form {
+    padding-top: 30px;
+  }
+  footer ul {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  footer ul li {
+    margin: 0;
+    font-size: 0.8em;
+    padding-top: 28px;
+  }
+
+  footer .linksSocial {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  footer .links {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu .navicon {
+    display: none;
+  }
+
+  .menu nav {
+    display: block;
+  }
+
+  .hero input {
+    display: none;
+  }
+
+  .sponsors .img3,
+  .sponsors .img4 {
+    display: block;
+  }
+
+  .info input {
+    display: none;
+  }
+  .info form {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  footer ul li {
+    font-size: 0.9em;
+  }
+}
