@@ -1,7 +1,428 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+:root {
+	--light-grey: #f4f3f4;
+	--purple: #192592;
+	--dark-grey: #2c303f;
+	--grey: #5b5e6d;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+}
+
+/* NAV STYLES */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	background-color: #fff;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+nav img {
+	height: 50px;
+}
+
+nav ul {
+	display: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/* HEADER STYLES */
+
+header {
+	padding: 7rem 1rem 0;
+}
+
+header h1 {
+	font-size: 2.8rem;
+	line-height: 1;
+	margin-bottom: 2rem;
+	color: var(--dark-grey);
+}
+
+header p {
+	color: var(--grey);
+	margin-bottom: 2rem;
+}
+
+header span {
+	display: block;
+}
+
+header p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+input,
+button {
+	display: block;
+	width: 100%;
+	padding: 1.2rem;
+	border-radius: 4px;
+}
+
+input {
+	border: 1px solid #bfbfbf;
+	margin-bottom: 1rem;
+	outline: none;
+}
+
+input::placeholder {
+	font-size: 1rem;
+}
+
+button {
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+	background-color: var(--purple);
+	margin-bottom: 1rem;
+}
+
+.sign-in {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.sign-in a {
+	color: var(--purple);
+	text-decoration: none;
+	border-bottom: 1px solid var(--purple);
+}
+
+/* MAIN SECTION STYLES */
+
+.illustration {
+	margin-bottom: 2rem;
+	width: 100%;
+}
+
+main {
+	text-align: center;
+	/* padding: 0 1rem; */
+}
+
+main .content {
+	background-color: var(--light-grey);
+	text-align: center;
+	padding: 0 1rem 6rem;
+	margin-bottom: 4rem;
+}
+
+main h2 {
+	font-size: 1.7rem;
+	padding-top: 3rem;
+	margin-bottom: 1rem;
+	color: var(--dark-grey);
+}
+
+main p {
+	font-size: 1.2rem;
+}
+
+.content p {
+	color: var(--grey);
+	margin-bottom: 2rem;
+}
+
+.main-btn {
+	margin-bottom: 4rem;
+	color: var(--purple);
+	background-color: #fff;
+	border: 1px solid var(--purple);
+}
+.logos div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4rem;
+}
+
+.logos div:first-child {
+	margin-bottom: 4rem;
+}
+
+.logo {
+	width: auto;
+	height: 2.5rem;
+}
+
+.helper {
+	height: 1.5rem;
+	width: auto;
+}
+
+.cta {
+	padding: 0 1rem 3rem;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.cta p:first-child {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+/* FOOTER STYLES */
+
+footer {
+	padding-top: 4rem;
+}
+
+.slack-logo {
+	height: 4rem;
+	margin-bottom: 2rem;
+	padding: 0 1rem;
+}
+
+.blocks {
+	display: flex;
+	gap: 3rem;
+	color: var(--grey);
+	padding: 0 1rem;
+}
+
+.blocks ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.blocks ul li:first-child {
+	font-weight: bold;
+}
+
+.blocks ul li:not(:first-child) {
+	font-size: 1.1rem;
+}
+
+.block1 ul li:last-child,
+.block2 ul li:last-child {
+	margin-bottom: 2rem;
+}
+
+.info {
+	padding: 1rem 0 1.5rem;
+	text-align: center;
+	color: var(--grey);
+	font-size: 1.1rem;
+	font-weight: bold;
+	background-color: var(--light-grey);
+}
+
+.info ul {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.lang {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.lang img {
+	height: 30px;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.social img {
+	height: 25px;
+}
+
+/* TABLET STYLES */
+
+@media (min-width: 768px) {
+	header,
+	nav,
+	.info,
+	.cta {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	header h1 {
+		font-size: 3.5rem;
+	}
+	h1 span {
+		display: inline;
+	}
+
+	header p {
+		font-size: 1.3rem;
+	}
+
+	input,
+	button {
+		display: inline;
+	}
+	input {
+		width: 60%;
+	}
+
+	button {
+		width: 25%;
+	}
+
+	.sign-in {
+		text-align: left;
+	}
+
+	.illustration {
+		width: 25rem;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.content h2 {
+		font-size: 2rem;
+	}
+
+	.logos {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 5rem;
+	}
+
+	.logos div:first-child {
+		margin-bottom: 0;
+	}
+	.second img:last-child {
+		justify-content: flex-end;
+	}
+
+	.cta {
+		display: flex;
+		justify-content: space-between;
+	}
+	.cta div {
+		text-align: left;
+	}
+
+	.sign-up {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+	}
+	.sign-up button {
+		width: 50%;
+		font-size: 1rem;
+	}
+
+	footer > div {
+		display: flex;
+	}
+	.slack-logo {
+		padding-left: 2rem;
+	}
+
+	.blocks {
+		margin-left: 2rem;
+	}
+
+	.block1,
+	.block2 {
+		display: flex;
+		gap: 3rem;
+	}
+
+	.info {
+		padding-top: 3rem;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.info > div {
+		display: flex;
+		gap: 2rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	header,
+	nav,
+	.info,
+	.cta {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+	.hb {
+		display: none;
+	}
+
+	nav ul {
+		display: flex;
+		font-size: 1.2rem;
+		gap: 2rem;
+		color: var(--grey);
+		align-items: center;
+	}
+
+	nav ul li:last-child {
+		border: 1px solid var(--purple);
+		padding: 1rem;
+		border-radius: 4px;
+	}
+
+	header {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+	header div {
+		padding-left: 8rem;
+	}
+
+	header button {
+		width: 30%;
+	}
+
+	header h1 span {
+		display: block;
+	}
+
+	.illustration {
+		position: static;
+		transform: translateX(0%);
+		z-index: -1;
+	}
+
+	.logos {
+		justify-content: center;
+		gap: 4rem;
+	}
+
+	footer > div {
+		justify-content: space-between;
+	}
+
+	.blocks {
+		padding-right: 8rem;
+	}
+}
