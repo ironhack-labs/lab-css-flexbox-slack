@@ -24,11 +24,10 @@ nav {
   right: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid black;
   background-color: white;
-}
-nav {
-  margin-bottom: 60px;
+  height: 80px;
 }
 nav img {
   height: 50px;
@@ -37,7 +36,7 @@ nav svg {
   height: 40px;
 }
 header {
-  margin-top: 50px;
+  margin-top: 90px;
 }
 header h1 {
   font-size: 2.5rem;
@@ -98,16 +97,23 @@ main .company {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
 }
-.flex-img img {
-  margin-bottom: 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.flex-img .touch-up {
+  width: 95vw;
+  border-bottom: 1px solid rgba(191, 188, 188, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
 }
 .resize {
-  width: auto;
-  max-width: 80%;
-  height: 40px;
+  width: 40%;
+  height: 5vw;
   padding: 10px;
+}
+.resize-la {
+  width: 60%;
 }
 .free {
   background-color: white;
@@ -222,6 +228,12 @@ footer .footer-bottom .footer-bottom-bottom {
 .final-img .final-img-container {
   display: none;
 }
+.line {
+  display: block;
+  height: 1px;
+  width: 95vw;
+  background-color: gray;
+}
 @media screen and (min-width: 767px) {
   .center {
     width: 95%;
@@ -253,18 +265,18 @@ footer .footer-bottom .footer-bottom-bottom {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .flex-img img {
-    margin-bottom: 0px;
+    justify-content: space-between;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-left: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1); */
+  }
+  .flex-img .touch-up {
+    margin-bottom: 0px;
     width: 50%;
-    height: 10vh;
-    padding: 40px 80px;
+    height: 30px%;
     box-sizing: border-box;
   }
+
   .free {
     background-color: white;
     margin-top: 0px;
@@ -368,13 +380,11 @@ footer .footer-bottom .footer-bottom-bottom {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .flex-img .resize {
+  .flex-img .touch-up {
+    margin-bottom: 0px;
     width: 33%;
+    height: 30px%;
     box-sizing: border-box;
-    margin-bottom: 0;
-    height: 10vh;
-    padding: 40px 40px;
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -446,11 +456,6 @@ footer .footer-bottom .footer-bottom-bottom {
   }
   .free {
     justify-content: space-around;
-  }
-  .flex-img .resize {
-    border: 0;
-    padding: 50px 120px;
-    height: 20vh;
   }
   .footer-bottom {
     margin-top: 50px;
