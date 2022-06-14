@@ -5,3 +5,150 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  border-bottom: 5px solid #5b5e6d;
+}
+nav img {
+  width: 20%;
+}
+nav ul {
+  list-style: none;
+}
+
+button {
+  width: 80%;
+  background: #192592;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+.interact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header img {
+  max-width: 80%;
+}
+.logos {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  align-items: center;
+}
+.logos img {
+  margin-top: 1.5em;
+  border-bottom: 5px solid lightgray;
+  max-width: 50vw;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  flex-grow: 2;
+}
+.footer ul {
+  width: 40vw;
+  list-style: none;
+}
+.extra {
+  display: flex;
+  background: lightgray;
+  flex-direction: column;
+}
+.extra ul {
+  display: flex;
+  justify-content: space-around;
+}
+.extra2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.extra3 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.end-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 767px) {
+  .interact {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-basis: 50%;
+  }
+  button {
+    max-width: 20%;
+  }
+  .end-note {
+    display: flex;
+    flex-direction: row;
+  }
+  .logos {
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 40%;
+    align-content: space-between;
+    justify-content: space-around;
+  }
+  .logos img {
+    max-width: 35vw;
+    flex-grow: 1;
+  }
+  .footer {
+    flex-wrap: nowrap;
+  }
+  .extra {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .extra ul {
+    justify-content: space-between;
+    flex-grow: 2;
+  }
+}
+
+@media (min-width: 960px) {
+  .logos img {
+    max-width: 30vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0.5;
+  }
+  .front {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+  .interact {
+    flex-direction: column-reverse;
+  }
+  .email {
+    display: none;
+  }
+}
