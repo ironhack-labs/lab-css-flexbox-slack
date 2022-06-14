@@ -14,10 +14,11 @@
 
 body {
   background-color: var(--bg-grey);
+  font-family: "Helvetica";
 }
 
 .button {
-  width: 80vw;
+  width: 100%;
   padding: 20px;
 }
 
@@ -43,6 +44,7 @@ h6 {
 
 p {
   color: var(--p-grey);
+  line-height: 1.5625em;
 }
 
 nav {
@@ -78,6 +80,12 @@ nav img {
   margin-top: 10vh;
 }
 
+.text-input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 767px) {
   #navbar {
     display: flex;
@@ -101,7 +109,15 @@ nav img {
   }
 
   #header {
-    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 110px 30px;
+    background: white;
+  }
+
+  #header > h1,
+  p {
+    margin-bottom: 20px;
   }
 
   .logos {
