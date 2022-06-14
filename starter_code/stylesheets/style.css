@@ -1,88 +1,109 @@
 :root {
-    --bg-grey:#F4F3F4;
-    --btn-purple: #192592;
-    --h1-grey: #2C303F;
-    --p-grey: #5b5e6d;
-    --nav-grey: #5b5e6d;
+  --bg-grey: #f4f3f4;
+  --btn-purple: #192592;
+  --h1-grey: #2c303f;
+  --p-grey: #5b5e6d;
+  --nav-grey: #5b5e6d;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--bg-grey);
+  background-color: var(--bg-grey);
 }
 
-button {
-    background-color: var(--btn-purple);
-    color: white;
-    width: 80vw;
+.button {
+  width: 80vw;
+  padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--h1-grey);
+.purple-button {
+  background-color: var(--btn-purple);
+  color: white;
+}
+
+.white-button {
+  background-color: white;
+  color: var(--btn-purple);
+  border: 1px solid var(--btn-purple);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--h1-grey);
 }
 
 p {
-    color: var(--p-grey);
+  color: var(--p-grey);
 }
 
 nav {
-    color: var(--nav-grey);
-    /* position: fixed; */
-    height: 10vh;
-    width: 100vw;
+  color: var(--nav-grey);
+  /* position: fixed; */
+  height: 10vh;
+  width: 100vw;
 }
 
 img {
-    width: 100vw;
+  width: 100vw;
 }
 
 nav img {
-    height: 100%;
-    width: auto;
+  height: 100%;
+  width: auto;
 }
 
 /* Flex Setting */
 
 .flex {
-    display: flex;
+  display: flex;
+  flex-direction: column;
 }
 
 .logos {
-    flex-direction: column;
-    text-align: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .logos img {
-    width: 40vw;
-    margin-top: 10vh;
+  width: 40vw;
+  margin-top: 10vh;
 }
-
-
 
 @media (max-width: 767px) {
-    
-    #navbar {
-        display: flex;
-        color: var(--nav-grey);
-        position: fixed;
-        height: 10vh;
-        width: 100vw;
-        }
-    
-    nav img {
-        height: 100%;
-        width: auto;
-        border-bottom: 1px solid var(--nav-grey);
-    }
+  #navbar {
+    display: flex;
+    color: var(--nav-grey);
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+  }
 
-    #menu-list {
-        display: none;
-    }
+  nav img {
+    height: 100%;
+    width: auto;
+    border-bottom: 1px solid var(--nav-grey);
+  }
+
+  #menu-list {
+    display: none;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logos img {
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--nav-grey);
+  }
 }
-
-
