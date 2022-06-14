@@ -14,6 +14,7 @@
 }
 
 body {
+  width: 100%;
   background-color: white;
   font-family: "Helvetica";
   color: var(--p-grey);
@@ -51,19 +52,20 @@ p {
 .white-button {
   color: var(--btn-purple);
   border: 1px solid var(--btn-purple);
+  background-color: white;
 }
 
 #navbar {
   display: flex;
   position: fixed;
   height: 80px;
-  width: 100vw;
+  width: 100%;
   background: white;
   border-bottom: 2px solid #dde2f3;
   box-shadow: 2px 3px 2px var(--bg-grey);
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 10%;
 }
 
 #navbar img {
@@ -81,7 +83,7 @@ p {
 #header {
   display: flex;
   flex-direction: column;
-  padding: 110px 30px;
+  padding: 110px 5%;
   background: white;
 }
 
@@ -127,8 +129,7 @@ p {
 
 .logos img {
   width: 100%;
-  padding: 0 120px;
-  padding-bottom: 50px;
+  padding: 10% 30%;
   border-bottom: 1px solid #dde2f3;
 }
 
@@ -305,5 +306,78 @@ p {
   #social {
     font-size: 1.3rem;
     margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 960px) {
+  .fa {
+    display: none;
+  }
+  #menu-list {
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  #menu-list li:last-child {
+    border: 1px solid var(--h1-grey);
+    border-radius: 3px;
+    padding: 8px;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 5%;
+  }
+
+  #header input {
+    display: none;
+  }
+
+  #header h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+
+  #header .button {
+    flex: 0.5;
+  }
+
+  .logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .logos img {
+    width: 30%;
+    padding: 80px 60px;
+    border: none;
+  }
+
+  .logos img:nth-child(1),
+  img:nth-child(2) {
+    border-bottom: 1px solid #dde2f3;
+    border-right: 1px solid #dde2f3;
+  }
+
+  .logos img:nth-child(3) {
+    border-bottom: 1px solid #dde2f3;
+  }
+
+  .logos img:nth-child(4),
+  img:nth-child(5) {
+    border-right: 1px solid #dde2f3;
+  }
+
+  #footer-container {
+    justify-content: space-around;
+  }
+
+  .list-container ul:last-child {
+    margin-left: 80px;
   }
 }
