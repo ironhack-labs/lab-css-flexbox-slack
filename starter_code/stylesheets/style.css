@@ -5,3 +5,274 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.heading {
+    color: #2C303F;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+
+p {
+    line-height: 1.4rem;
+    font-weight: 500;
+    color: #5b5e6d;;
+    text-align: center;
+    padding: 1rem 0 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    background-color: white;
+}
+
+.menu-button {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2em;
+    cursor: pointer;
+    color: #5b5e6d;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 1.5rem 0;
+}
+
+.header .intro {
+    text-align: left;
+    padding: 2rem 0;
+}
+
+.email {
+    color: #5b5e6d;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    align-self: center;
+    width: 90%;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.header > img {
+    order: 5;
+    width: 100%;
+    align-self: center;
+}
+
+.button {
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    align-self: center;
+    width: 100%
+}
+
+.get-started {
+    background-color: #192592;
+    color: white; 
+    border: hidden;
+}
+
+.customers {
+    background-color: #F4F3F4;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.discover-why {
+    background-color: white;
+    color:#192592;
+    border: 1px solid #192592;
+    font-weight: bold;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+.company-logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.company-logo > img {
+    max-height:2.5rem;
+    max-width: 12.5rem;
+    padding: 1rem 5rem;
+}
+
+
+.trial {
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+.trial > p {
+    padding: 0.25rem 0;
+}
+.trial > p.heading {
+    font-size: 1.5rem;
+}
+
+
+.footer .logo {
+ max-height: 6rem;
+}
+
+.footer-heading {
+    font-weight: bold;
+    color: #2C303F;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-nav-list {
+    padding: 1rem 1rem;
+    width: 9rem;
+}
+
+.footer li { 
+    line-height: 2rem;
+    color: #5b5e6d;
+}
+
+.footer-bottom {
+    background-color: #F4F3F4;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer-bottom-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-bottom-item li {
+    padding: 0.5rem 0;
+}
+
+.footer .flag {
+    max-height: 1.4rem;
+}
+
+.footer-bottom-language {
+    padding: 0.5rem 0;
+}
+
+.footer-bottom-social i {
+    padding: 1rem 1rem;
+}
+
+
+@media (max-width: 768px) {
+   
+}
+
+@media (min-width: 767px) {
+    .header img {
+        width: auto;
+    }
+    
+    .button {
+        width: 30%;
+    }
+
+    .email {
+        width: 50%;
+    }
+
+    .header p {
+        text-align: left;
+    }
+
+    .company-logo {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    .trial p {
+        text-align: left;
+    }
+
+    .trial button, .trial input {
+        width: auto;
+    }
+
+    .trial .input-field {
+        float: right; 
+    }
+
+    .footer .logo {
+        float: left;
+    }
+
+    .footer-bottom {
+        padding: 1rem 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-bottom-item li {
+        padding: 0.5rem 0.5rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .company-logo img {
+        padding: 1rem 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .header img{
+        order: 0;
+        width: 50%;
+        align-self: left;
+    }
+
+    .header {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .company-logo img {
+        padding: 1rem 5rem;
+    }
+}
