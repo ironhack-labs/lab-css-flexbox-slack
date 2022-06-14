@@ -19,13 +19,19 @@
   <body>
     <nav>
       <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-      </ul>
+      <div>
+        <ul id="myLinks">
+          <li> <a href="">Why Slack?</a></li>
+          <li> <a href="">Pricing</a></li>
+          <li> <a href="">About Us</a></li>
+          <li> <a href="">Your Workspaces</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </nav>
+
     <header>
       <img src="./images/home_talking.png" alt="home_work_happening" />
       <h1>Where Work Happens</h1>
@@ -35,9 +41,16 @@
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
+      <div class="firstTwoButtons">
+        <form>
+          <label for="email"></label>
+          <input type="text" placeholder = "Email address" id ="email" name="email">
+        </form>
+        <button type="button" name="button" class="button">GET STARTED</button>
+      </div>
       <p>Already using Slack? <a href="#">Sign in</a></p>
     </header>
+
     <main>
       <div>
         <h2>You're in good company</h2>
@@ -45,7 +58,7 @@
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button>DISCOVER WHY</button>
+        <button class="buttonTwo">DISCOVER WHY</button>
         <img src="./images/airbnb-logo.png" alt="" />
         <img src="./images/capital-one-logo.png" alt="" />
         <img src="./images/harvard-logo.png" alt="" />
@@ -56,10 +69,16 @@
       <div>
         <p>Try it for free</p>
         <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+        <form>
+          <label for="email"></label>
+          <input type="text" placeholder = "Email address" id ="email" name="email">
+        </form>
+        <button type="button" name="button" class="button">GET STARTED</button>
       </div>
     </main>
+
     <footer>
+      
       <div>
         <img src="./images/iso-slack.png" alt="" />
         <ul>
@@ -95,6 +114,7 @@
           <li>Slack Fund</li>
         </ul>
       </div>
+
       <div>
         <ul>
           <li>Status</li>
@@ -111,5 +131,19 @@
         </div>
       </div>
     </footer>
+
+<!-- Javascript to set up the burger menu -->
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
   </body>
 </html>
+
