@@ -1,7 +1,81 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+:root {
+    --bg-grey:#F4F3F4;
+    --btn-purple: #192592;
+    --h1-grey: #2C303F;
+    --p-grey: #5b5e6d;
+    --nav-grey: #5b5e6d;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-grey);
+}
+
+button {
+    background-color: var(--btn-purple);
+    color: white;
+    width: 80vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--h1-grey);
+}
+
+p {
+    color: var(--nav-grey);
+}
+
+nav {
+    color: var(--nav-grey);
+    /* position: fixed; */
+    height: 10vh;
+    width: 100vw;
+}
+
+header {
+    margin-top: 150px; /*Fix this later*/
+}
+
+img {
+    width: 100vw;
+}
+
+nav img {
+    height: 100%;
+    width: auto;
+}
+
+/* Flex Setting */
+
+.grid {
+    display: grid;
+}
+
+.logos {
+    flex-direction: column;
+    text-align: center;
+}
+
+.logos img {
+    width: 40vw;
+    margin-top: 10vh;
+}
+
+
+
+@media (max-width: 767px) {
+    p {
+        color: red;
+    }
+
+    nav img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+
