@@ -8,6 +8,7 @@
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -26,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    color: var(--nav-grey);
+    color: var(--p-grey);
 }
 
 nav {
@@ -34,10 +35,6 @@ nav {
     /* position: fixed; */
     height: 10vh;
     width: 100vw;
-}
-
-header {
-    margin-top: 150px; /*Fix this later*/
 }
 
 img {
@@ -51,8 +48,8 @@ nav img {
 
 /* Flex Setting */
 
-.grid {
-    display: grid;
+.flex {
+    display: flex;
 }
 
 .logos {
@@ -68,13 +65,23 @@ nav img {
 
 
 @media (max-width: 767px) {
-    p {
-        color: red;
-    }
-
+    
+    #navbar {
+        display: flex;
+        color: var(--nav-grey);
+        position: fixed;
+        height: 10vh;
+        width: 100vw;
+        }
+    
     nav img {
         height: 100%;
         width: auto;
+        border-bottom: 1px solid var(--nav-grey);
+    }
+
+    #menu-list {
+        display: none;
     }
 }
 
