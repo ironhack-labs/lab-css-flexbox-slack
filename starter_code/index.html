@@ -19,15 +19,17 @@
   <body>
     <nav>
       <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-      </ul>
+      <button type="button" class="collapsible">≡</button>
+      <div class="collapsible">
+        <ul class="collapsive-content">
+          <li>Why Slack?</li>
+          <li>Pricing</li>
+          <li>About Us</li>
+          <li>Your Workspaces</li>
+        </ul>
+      </div>
     </nav>
     <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
       <h1>Where Work Happens</h1>
       <p>
         When your team needs to kick off a project, hire a new employee, deploy
@@ -35,11 +37,21 @@
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+      <label for="email"></label>
+      <input
+        type="email"
+        class="email"
+        name="email"
+        placeholder="Email address"
+      />
+      <button type="button" name="button" class="get-started">
+        GET STARTED
+      </button>
+      <p class="sign-in">Already using Slack? <a href="#">Sign in</a></p>
+      <img src="./images/home_talking.png" alt="home_work_happening" />
     </header>
     <main>
-      <div>
+      <div id="brands">
         <h2>You're in good company</h2>
         <p>
           Millions of people around the world have already made Slack the place
@@ -53,33 +65,42 @@
         <img src="./images/oracle-logo.png" alt="" />
         <img src="./images/ticketmaster-logo.png" alt="" />
       </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+      <div id="get-started">
+        <p class="try-it">Try it for free</p>
+        <p class="sign-in">Already using Slack? <a href="">Sign in</a></p>
+        <label for="email"></label>
+        <input
+          type="email"
+          class="email"
+          name="email"
+          placeholder="Email address"
+        />
+        <button type="button" name="button" class="get-started">
+          GET STARTED
+        </button>
       </div>
     </main>
     <footer>
-      <div>
+      <div id="container-1">
         <img src="./images/iso-slack.png" alt="" />
-        <ul>
-          <li>COMPANY</li>
+        <ul id="company">
+          <li><strong>COMPANY</strong></li>
           <li>About Us</li>
           <li>Careers</li>
           <li>Blog</li>
           <li>Press</li>
           <li>Brand Guidelines</li>
         </ul>
-        <ul>
-          <li>PRODUCT</li>
+        <ul id="product">
+          <li><strong>PRODUCT</strong></li>
           <li>Why Slack?</li>
           <li>Enterprise</li>
           <li>Customer Stories</li>
           <li>Pricing</li>
           <li>Security</li>
         </ul>
-        <ul>
-          <li>RESOURCES</li>
+        <ul id="resources">
+          <li><strong>RESOURCES</strong></li>
           <li>Download</li>
           <li>Help Center</li>
           <li>Guides</li>
@@ -87,15 +108,15 @@
           <li>App Directory</li>
           <li>API</li>
         </ul>
-        <ul>
-          <li>EXTRAS</li>
+        <ul id="extras">
+          <li><strong>EXTRAS</strong></li>
           <li>Podcast</li>
           <li>Slack Shop</li>
           <li>Slack at Work</li>
           <li>Slack Fund</li>
         </ul>
       </div>
-      <div>
+      <div id="container-2">
         <ul>
           <li>Status</li>
           <li>Privacy & Terms</li>
@@ -104,10 +125,12 @@
         <div>
           <img src="./images/us-flag.png" alt="" />
           <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
+          <div id="socials">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
         </div>
       </div>
     </footer>
