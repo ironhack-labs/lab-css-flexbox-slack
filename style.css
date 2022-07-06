@@ -208,7 +208,7 @@ nav grey: #5b5e6d;
 @media (min-width: 961px) and (min-width: 767px) {
 .nav-bar {
   flex-direction: column;
-  width: 95%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   padding-left: 8px;
@@ -222,18 +222,21 @@ nav grey: #5b5e6d;
 
   .top-menu {
     display: flex;
+    flex: content;
     flex-direction: row;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 50;
+    padding-right: 150px;
     padding-top: 7px;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .header {
-    display: block;
-    text-align: justify;
-    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 185px;
   }
 
 
@@ -241,18 +244,17 @@ nav grey: #5b5e6d;
     display: flex;
     flex-direction: column;
     align-content: center;
-    width: 400px;
-    height: 360px;
+    width: 500px;
+    height: 390px;
     padding-top: 10px;
-    padding-left: 45px;
+    padding-left: 90px;
   }
 
   .form {
     border: solid lightgrey;
     border-width: thin;
-   /* border-radius: 20px;*/
     padding: 30px;
-   /* margin: 50px 100px;*/
+    width: 75vw;
    text-align: center;
    color: lightgray;
    font-family: 'Poppins';
@@ -263,7 +265,7 @@ nav grey: #5b5e6d;
     background-color: blue;
     border-width: thin;
     border-radius: 10px;
-    width: 88vw;
+    width: 80vw;
     padding: 30px;
    text-align: center;
    color: white;
@@ -297,8 +299,11 @@ nav grey: #5b5e6d;
   }
 
   .free {
+   flex-wrap: wrap;
    flex-direction: block;
    text-align: center;
+   padding-right: 70px;
+   padding-left: 0px;
 
   }
 
@@ -324,29 +329,41 @@ nav grey: #5b5e6d;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: lightgrey;
   }
 
   .all-images > img {
-  width: 325px;
+  width: 400px;
   height: 125px;
   flex-wrap: wrap;
- 
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 70px;
+  padding-left: 220px;
   }
   
   .footer > img {
     width: 40px;
+    padding-left: 40px;
   }
 
+  .footer {
+    padding-bottom: 40px;
+  } 
+
+  .footer > i {
+  padding-left: 90px;
+  }
+
+  .footer > span {
+    padding-left: 70px;
+  }
 
 
   .footer-menu {
       background-color: #F4F3F4;
   }
 
-  .footer-menu > ul {
+  .footer-menu {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -356,6 +373,7 @@ nav grey: #5b5e6d;
     margin-bottom: 20px;
     padding-top: 30px;
   }
+
 
   .iso-slack-settings {
     flex-direction: column;
