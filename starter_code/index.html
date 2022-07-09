@@ -17,17 +17,22 @@
   </head>
 
   <body>
+    <div id="nav">
     <nav class="nav-bar">
+      <div>
       <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul class="nav-bar-ul">
+    </div>
+      <ul>
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
         <li>Your Workspaces</li>
       </ul>
     </nav>
+  </div>
+
     <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
+      <div class="page-top">
       <h1>Where Work Happens</h1>
       <p>
         When your team needs to kick off a project, hire a new employee, deploy
@@ -35,18 +40,31 @@
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
-    </header>
-    <main>
       <div>
+      <form action="/register" method="post">
+        <label for="email"></label>
+        <input class="email-box" type="email" id="email" placeholder="Email address">
+      </form>
+    </div>
+    <div class="sign-in">
+      <button class="get-started" type="button" name="button">GET STARTED</button>
+    </div>
+    <div class="sign-in">
+      <p>Already using Slack? <a href="#">Sign in</a></p>
+    </div>
+
+      <img src="./images/home_talking.png" alt="home_work_happening" />
+    </header>
+
+    <main>
+      <div class="gray-background">
         <h2>You're in good company</h2>
         <p>
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
         <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
+        <img src="./images/airbnb-logo.png" alt="" class="airbnb"/>
         <img src="./images/capital-one-logo.png" alt="" />
         <img src="./images/harvard-logo.png" alt="" />
         <img src="./images/los-angeles-times-logo.png" alt="" />
@@ -59,6 +77,7 @@
         <button type="button" name="button">GET STARTED</button>
       </div>
     </main>
+
     <footer>
       <div>
         <img src="./images/iso-slack.png" alt="" />
