@@ -1,7 +1,71 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+:root{
+  --button-purple: #192592;
+  --nav-grey: #5b5e6d;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+header{
+  background-color: white;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--nav-grey);
+  width: 100%;
+}
+
+.header-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer{
+}
+
+main {
+}
+
+
+.slack_logo{
+  width: 100px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+
+  .slack_logo{
+    width: 100px;
+    height: 50px;
+  }
+
+  .hamburger-menu {
+    width: 35px;
+    height: 30px;
+    display: block;
+    border: none;
+    padding: 0px;
+    margin: 10px;
+    background: linear-gradient(
+      to bottom, 
+      var(--button-purple), var(--button-purple) 20%, 
+      white 20%, white 40%, 
+      var(--button-purple) 40%, var(--button-purple) 60%, 
+      white 60%, white 80%, 
+      var(--button-purple) 80%, var(--button-purple) 100%
+    );
+  }
+
+  .hamburger-nav, .screen{
+    display: none;
+  }  
+}
+
