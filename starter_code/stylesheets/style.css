@@ -1,6 +1,11 @@
 :root{
   --button-purple: #192592;
   --nav-grey: #5b5e6d;
+  --background-grey: #F4F3F4;
+  --main-titles-dark-grey: #2C303F;
+  --paragraph-grey: #5b5e6d;
+  --color-white: #FFFFFF;
+  --background-white: #FFFFFF;
 }
 
 *{
@@ -11,13 +16,49 @@
 
 html {
   font-size: 16px;
+  font-family: "Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+}
+
+h1, h2, h3{
+  font-size: 2.5rem;
+  color: var(--main-titles-dark-grey);
+  font-family: 'Yrsa', serif;
+  line-height: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--paragraph-grey);
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: 900;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+input {
+  cursor: auto; 
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid var(--background-grey);
+  font-size: 1rem;
+  font-family: 'Kumbh Sans', sans-serif;
+
 }
 
 header{
-  background-color: white;
+  background-color: var(--background-white);
   position: sticky;
   top: 0;
-  border-bottom: 1px solid var(--nav-grey);
+  border-bottom: 1px solid var(--background-grey);
   width: 100%;
 }
 
@@ -29,24 +70,47 @@ header{
 }
 
 footer{
+  padding: 20px;
 }
 
 main {
+  padding: 20px;
 }
-
 
 .slack_logo{
   width: 100px;
   height: 50px;
 }
 
+.get-started{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-work-happening {
+  width: 20rem;
+}
+
+.get-started > section > p {
+  margin-top: 20px;
+}
+
+.get-started > form {
+  width: 100%;
+ }
+
+.get-started > form > input {
+  padding: 20px;
+}
+
+.get-started-button{
+  background-color: var(--button-purple);
+  color: var(--color-white);
+}
+
 @media (max-width: 768px) {
-
-  .slack_logo{
-    width: 100px;
-    height: 50px;
-  }
-
   .hamburger-menu {
     width: 35px;
     height: 30px;
@@ -66,6 +130,17 @@ main {
 
   .hamburger-nav, .screen{
     display: none;
-  }  
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .get-started-button {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
 }
 
