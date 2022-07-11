@@ -246,7 +246,7 @@ ul > li:first-child {
   margin: 10px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 1200px){
   .hamburger-menu {
     width: 35px;
     height: 30px;
@@ -264,11 +264,12 @@ ul > li:first-child {
       var(--paragraph-grey) 80%,  var(--paragraph-grey) 100%
     );
   }
-
   .hamburger-nav, .screen{
     display: none;
   }
-  
+}
+
+@media (max-width: 768px) {  
   form {
     display: flex;
     flex-direction: column;
@@ -294,3 +295,25 @@ ul > li:first-child {
   }
 }
 
+@media (min-width: 1200px) {
+  .hamburger-menu, .hamburger-nav{
+    display: none;
+  }
+  .screen{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .screen > section > button {
+    background: var(--background-white);
+    text-transform: capitalize;
+    color: var(--paragraph-grey);
+    cursor: pointer;
+  }
+
+  .screen > section > button:hover, .screen > section > button:focus{
+    border: 1px solid var(--paragraph-grey);
+    border-radius: 0px;
+    padding: 10px;
+  }
+}
