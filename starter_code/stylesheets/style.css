@@ -16,7 +16,6 @@
 
 html {
   font-size: 16px;
-  font-family: "Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
 }
 
 h1, h2, h3{
@@ -26,7 +25,7 @@ h1, h2, h3{
   line-height: 2rem;
 }
 
-p {
+p, span {
   font-size: 1rem;
   color: var(--paragraph-grey);
   font-family: 'Kumbh Sans', sans-serif;
@@ -71,7 +70,7 @@ header{
 
 footer{
   background-color: var(--background-white);
-  position: sticky;
+  bottom: 0;
   left: 0;
   border-top: 1px solid var(--background-grey);
   width: 100%;
@@ -99,27 +98,26 @@ ul > li:first-child {
   height: 50px;
 }
 
-.get-started{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-}
-
 .home-work-happening {
   width: 20rem;
 }
 
-.get-started > section > p {
+.get-started > .get-started-large-screen > section > p, .get-started-bottom > section > p {
   margin-top: 20px;
 }
 
-.get-started > form {
+.get-started > .get-started-large-screen > form{
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
  }
 
-.get-started > form > input {
+ .get-started-bottom > form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+
+.get-started > .get-started-large-screen > form > input, .get-started-bottom > form > input{
   padding: 20px;
 }
 
@@ -132,13 +130,6 @@ ul > li:first-child {
   padding: 20px;
   width: 100%;
   background-color: var(--background-grey);
-}
-
-.discover-why {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .discover-why > button {
@@ -157,6 +148,10 @@ ul > li:first-child {
   margin-top: 25px;
 }
 
+.good-company {
+  width: 100%;
+}
+
 .good-company > section > p {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -171,12 +166,16 @@ ul > li:first-child {
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  align-content: space-around;
+
+} 
+
+.get-started, .get-started-bottom {
+  padding: 20px;
 }
 
-.get-started > h3 {
+.get-started > h3, .get-started-bottom > h3 {
   padding-top: 20px;
   font-size: 1.5rem;
 }
@@ -185,17 +184,17 @@ ul > li:first-child {
   padding: 15px;
   display: flex;
   flex-direction: column;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 .about-company > img {
   width: 8em;
 }
 
-.list-about-company {
+.discover-why {
   display: flex;
   flex-direction: column;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -210,12 +209,18 @@ ul > li:first-child {
   font-weight: 800;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding: 20px;
 }
 
-.lpd > p{
-  padding: 10px;
+.list-about-company {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .language {
   display: flex;
   flex-direction: row;
@@ -223,14 +228,6 @@ ul > li:first-child {
   align-items: center;
   color: var(--paragraph-grey);
   font-weight: 700;
-}
-.language > img {
-  width: 2rem;
-  margin: 5px;
-}
-
-.language > span, .language > i {
-  margin: 5px;
 }
 
 .social-network {
@@ -240,6 +237,19 @@ ul > li:first-child {
   justify-content: center;
   align-items: center;
   margin: 10px;
+}
+
+.lpd > p{
+  padding: 10px;
+}
+
+.language > img {
+  width: 2rem;
+  margin: 5px;
+}
+
+.language > span, .language > i {
+  margin: 5px;
 }
 
 .social-network > i {
@@ -269,11 +279,23 @@ ul > li:first-child {
   }
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 767px){  
   form {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+  }
+
+  .get-started, .get-started-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .get-started-bottom, .get-started-bottom, .get-started-bottom > form{
+    width: 100%;
   }
 
   .get-started-button {
@@ -293,6 +315,70 @@ ul > li:first-child {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  
+  .list-about-company {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-about-company > ul {
+    width: 50%;
+  }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+ .get-started >  form, .get-started-bottom > form{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+ }
+ .img-section {
+   display: flex;
+   justify-content: center;
+ }
+}
+
+@media screen and (min-width: 768px){
+  .discover-why {
+    text-align: center;
+  }
+
+  .users > img {
+   padding: 10px;
+   }
+
+  .good-company > section > img {
+   width: 16em;
+ }
+
+  .about-company {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+  }
+
+  .list-about-company {
+    align-items: stretch;
+    width: 75%;
+  }
+
+  .get-started-bottom {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   }
+
+   .bottom-footer, .bottom-footer > div{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+   }
 }
 
 @media (min-width: 1200px) {
@@ -315,5 +401,23 @@ ul > li:first-child {
     border: 1px solid var(--paragraph-grey);
     border-radius: 0px;
     padding: 10px;
+  }
+
+  .get-started{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .get-started > .get-started-large-screen {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-work-happening {
+    width: 30rem;
+  }
+  
+  .get-started-bottom {
+    width: 100%;
   }
 }
