@@ -1,7 +1,423 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+:root{
+  --button-purple: #192592;
+  --nav-grey: #5b5e6d;
+  --background-grey: #F4F3F4;
+  --main-titles-dark-grey: #2C303F;
+  --paragraph-grey: #5b5e6d;
+  --color-white: #FFFFFF;
+  --background-white: #FFFFFF;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1, h2, h3{
+  font-size: 2.5rem;
+  color: var(--main-titles-dark-grey);
+  font-family: 'Yrsa', serif;
+  line-height: 2rem;
+}
+
+p, span {
+  font-size: 1rem;
+  color: var(--paragraph-grey);
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: 900;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+input {
+  cursor: auto; 
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid var(--background-grey);
+  font-size: 1rem;
+  font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+header{
+  background-color: var(--background-white);
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--background-grey);
+  width: 100%;
+}
+
+.header-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer{
+  background-color: var(--background-white);
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid var(--background-grey);
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+  padding-top: 20px;
+  color: var(--paragraph-grey);
+}
+
+ul {
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+ul > li:first-child {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+
+.slack_logo{
+  width: 100px;
+  height: 50px;
+}
+
+.home-work-happening {
+  width: 20rem;
+}
+
+.get-started > .get-started-large-screen > section > p, .get-started-bottom > section > p {
+  margin-top: 20px;
+}
+
+.get-started > .get-started-large-screen > form{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+ }
+
+ .get-started-bottom > form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+
+.get-started > .get-started-large-screen > form > input, .get-started-bottom > form > input{
+  padding: 20px;
+}
+
+.get-started-button{
+  background-color: var(--button-purple);
+  color: var(--color-white);
+}
+
+.good-company {
+  padding: 20px;
+  width: 100%;
+  background-color: var(--background-grey);
+}
+
+.discover-why > button {
+  background-color: var(--background-white);
+  color: var(--button-purple);
+  border: 1px solid var(--button-purple);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.discover-why {
+  padding: 20px;
+}
+
+.good-company > section > h2 {
+  margin-top: 25px;
+}
+
+.good-company {
+  width: 100%;
+}
+
+.good-company > section > p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.good-company > section > img {
+  width: 8em;
+}
+
+.users {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+
+} 
+
+.get-started, .get-started-bottom {
+  padding: 20px;
+}
+
+.get-started > h3, .get-started-bottom > h3 {
+  padding-top: 20px;
+  font-size: 1.5rem;
+}
+
+.about-company{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.about-company > img {
+  width: 8em;
+}
+
+.discover-why {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-grey);
+  padding: 20px;
+}
+
+.lpd {
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+.list-about-company {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--paragraph-grey);
+  font-weight: 700;
+}
+
+.social-network {
+  color: var(--paragraph-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.lpd > p{
+  padding: 10px;
+}
+
+.language > img {
+  width: 2rem;
+  margin: 5px;
+}
+
+.language > span, .language > i {
+  margin: 5px;
+}
+
+.social-network > i {
+  margin: 10px;
+}
+
+@media (min-width: 0px) and (max-width: 1200px){
+  .hamburger-menu {
+    width: 35px;
+    height: 30px;
+    display: block;
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 10px;
+    background: linear-gradient(
+      to bottom, 
+      var(--paragraph-grey), var(--paragraph-grey) 20%, 
+      white 20%, white 40%, 
+      var(--paragraph-grey) 40%,  var(--paragraph-grey) 60%, 
+      white 60%, white 80%, 
+      var(--paragraph-grey) 80%,  var(--paragraph-grey) 100%
+    );
+  }
+  .hamburger-nav, .screen{
+    display: none;
+  }
+}
+
+@media (max-width: 767px){  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .get-started, .get-started-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .get-started-bottom, .get-started-bottom, .get-started-bottom > form{
+    width: 100%;
+  }
+
+  .get-started-button {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .users {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+  }
+
+  .users > img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .list-about-company {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-about-company > ul {
+    width: 50%;
+  }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 961px){
+ .get-started >  form, .get-started-bottom > form{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+ }
+ .img-section {
+   display: flex;
+   justify-content: center;
+ }
+}
+
+@media screen and (min-width: 768px){
+  .discover-why {
+    text-align: center;
+  }
+
+  .users > img {
+   padding: 10px;
+   }
+
+  .good-company > section > img {
+   width: 16em;
+ }
+
+  .about-company {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+  }
+
+  .list-about-company {
+    align-items: stretch;
+    width: 75%;
+  }
+
+  .get-started-bottom {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   }
+
+   .bottom-footer, .bottom-footer > div{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+   }
+}
+
+@media (min-width: 1200px) {
+  .hamburger-menu, .hamburger-nav{
+    display: none;
+  }
+  .screen{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .screen > section > button {
+    background: var(--background-white);
+    text-transform: capitalize;
+    color: var(--paragraph-grey);
+    cursor: pointer;
+  }
+
+  .screen > section > button:hover, .screen > section > button:focus{
+    border: 1px solid var(--paragraph-grey);
+    border-radius: 0px;
+    padding: 10px;
+  }
+
+  .get-started{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .get-started > .get-started-large-screen {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-work-happening {
+    width: 30rem;
+  }
+  
+  .get-started-bottom {
+    width: 100%;
+  }
+}
