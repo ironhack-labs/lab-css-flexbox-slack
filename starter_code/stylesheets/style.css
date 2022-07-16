@@ -5,3 +5,159 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+  }
+
+  .responsive {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+  }
+  
+  nav{
+    background: #2fcdcd;
+    height: 80px;
+    width: 100%;
+}
+
+.partners{
+    width: 100px;
+    height: auto;
+}
+
+header{
+    /* padding: 10px 10px 10px 10px ; */
+    width: 100%;
+}
+
+.headContent{
+    margin: 10px 10px 10px 10px ; 
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #000090;
+    transition: .5s;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    text-align: center;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+  @media (max-width: 768px) {
+    .responsive {
+      background-color: green;
+      width: 100%;
+      height: 100%;
+      
+    }
+
+    .header-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .partners{
+        width: 100px;
+        height: auto;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s; /* sliding effect */
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+        background: #2c3e50;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 961px) {
+    .responsive {
+      background-color: blue;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (min-width: 961px) and (max-width: 1024px) {
+    .responsive {
+      background-color: blueviolet ;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .responsive {
+      background-color: turquoise;
+      width: 100%;
+      height: 100%;
+    }
+  }
