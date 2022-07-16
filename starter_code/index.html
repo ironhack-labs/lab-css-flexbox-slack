@@ -7,7 +7,7 @@
 
     <!-- link the font awesome CDN -->
     <link
-      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       rel="stylesheet"
     />
 
@@ -19,6 +19,7 @@
   <body>
     <nav>
       <img src="./images/slack-logo.png" alt="slack_logo" />
+      <i class="fa-solid fa-bars"></i>
       <ul>
         <li>Why Slack?</li>
         <li>Pricing</li>
@@ -27,7 +28,6 @@
       </ul>
     </nav>
     <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
       <h1>Where Work Happens</h1>
       <p>
         When your team needs to kick off a project, hire a new employee, deploy
@@ -35,9 +35,14 @@
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
+      <div class="input-button">
+      <input type="email" id="email" name="email" placeholder="Email address">
+      <button type="button" name="button" class="purpleBtn">GET STARTED</button>
       <p>Already using Slack? <a href="#">Sign in</a></p>
+      <img src="./images/home_talking.png" alt="home_work_happening" />
+    </div>
     </header>
+
     <main>
       <div>
         <h2>You're in good company</h2>
@@ -45,7 +50,8 @@
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button>DISCOVER WHY</button>
+        <button class="whiteBtn">DISCOVER WHY</button>
+      <div class="logos">
         <img src="./images/airbnb-logo.png" alt="" />
         <img src="./images/capital-one-logo.png" alt="" />
         <img src="./images/harvard-logo.png" alt="" />
@@ -56,12 +62,15 @@
       <div>
         <p>Try it for free</p>
         <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+        <input type="email" id="email" name="email" placeholder="Email address">
+        <button type="button" name="button" class="purpleBtn">GET STARTED</button>
       </div>
     </main>
+
+
     <footer>
-      <div>
-        <img src="./images/iso-slack.png" alt="" />
+      <img src="./images/iso-slack.png" alt="" />
+      <div class="footer">
         <ul>
           <li>COMPANY</li>
           <li>About Us</li>
@@ -70,6 +79,7 @@
           <li>Press</li>
           <li>Brand Guidelines</li>
         </ul>
+
         <ul>
           <li>PRODUCT</li>
           <li>Why Slack?</li>
@@ -78,6 +88,7 @@
           <li>Pricing</li>
           <li>Security</li>
         </ul>
+
         <ul>
           <li>RESOURCES</li>
           <li>Download</li>
@@ -87,6 +98,7 @@
           <li>App Directory</li>
           <li>API</li>
         </ul>
+        
         <ul>
           <li>EXTRAS</li>
           <li>Podcast</li>
@@ -95,16 +107,18 @@
           <li>Slack Fund</li>
         </ul>
       </div>
-      <div>
+      <div class="bottomFooter">
         <ul>
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-        <div>
+        <div id="icons">
           <img src="./images/us-flag.png" alt="" />
           <span>English (US)</span>
           <i class="fas fa-chevron-down"></i>
+        </div>
+          <div id="icons">
           <i class="fab fa-twitter"></i>
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-youtube"></i>
