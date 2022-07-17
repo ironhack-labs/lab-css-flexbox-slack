@@ -7,25 +7,23 @@ nav grey: #5b5e6d;
 */
 
 body {
-  margin: 5vw 5vw 5vw 5vw;
+  margin: 0vw 0vw 0vw 0vw;
   padding: 0;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-}
-
-nav img {
-  width: 10vw;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial,
+    sans-serif;
 }
 
 nav {
-  border-bottom: 1px grey solid;
+  border-bottom: 1px solid rgba(91, 94, 109, 0.2);
   position: fixed;
   background-color: white;
   top: 0px;
   width: 100vw;
   overflow: hidden;
-  height: 8vh;
+  height: 10vh;
 }
 
 header {
@@ -36,7 +34,17 @@ header {
 }
 
 h1 {
+  color: #2c303f;
   width: 60vw;
+  font-size: 50px;
+  margin: 30px 23px 23px 50px;
+  padding-top: 10px;
+}
+
+p {
+  color: #5b5e6d;
+  margin: 15px 23px 23px 50px;
+  font-size: 30px;
 }
 
 img {
@@ -44,27 +52,83 @@ img {
 }
 
 button {
-  width: 70vw;
+  width: 80vw;
   background-color: #611f69;
   color: white;
   border: none;
-  height: 7vw;
+  height: 12vw;
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
   border-radius: 5px;
+  font-size: 23px;
 }
 
 main div {
   background-color: #f4f3f4;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
+}
+
+main h2 {
+  color: #2c303f;
+  font-size: 40px;
+  margin: 40px 40px 10px 40px;
+}
+
+/* I could not center this text correctly. */
+
+main p {
+  justify-content: center;
+}
+
+main img {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  width: 35vw;
+  height: auto;
 }
 
 footer {
-    margin-top: 3vh;
-  border-top: 1px solid gray;
+  margin-top: 3vh;
+  border-top: 1px solid rgba(91, 94, 109, 0.2);
 }
 
+/* I could not get these list items to wrap properly in Flexbox. "Extras" is not correctly positioned. */
+
+ul {
+  list-style-type: none;
+  color: #8b868b;
+}
+
+li {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#nav-logo {
+  width: 18vw;
+  height: auto;
+  padding-top: 2vw;
+  padding-left: 8vw;
+}
+
+#menu-icon {
+  width: 5vw;
+  height: 4vh;
+  padding-top: 3.5vw;
+  padding-right: 6vw;
+}
+
+#nav-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 #images {
   display: flex;
@@ -76,10 +140,14 @@ footer {
   align-self: center;
 }
 
+/* I could not figure out how to create a visible border line for this button */
+
 #button-discover {
-  color: blue;
+  color: #1264a3;
   background-color: white;
-  border-style: solid 1px blue;
+  border-style: thin solid;
+  border-color: black;
+  font-size: 24px;
 }
 
 #slack {
@@ -92,17 +160,84 @@ footer {
 
 #try-it-for-free {
   background-color: white;
+  margin-bottom: 10px;
+}
+
+#try-it-for-free p:first-child {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+#try-it-for-free button {
+  margin: 45px auto 0px auto;
 }
 
 #homeTalking2 {
   align-self: center;
   margin-top: 5vh;
   margin-bottom: 5vh;
+  width: 70vw;
+  height: auto;
 }
 
 #footer-slack-logo {
-    width: 20vw;
-    height: 20vh;
+  width: 20vw;
+  height: auto;
 }
 
+#footer-div-one {
+  display: flex;
+  flex-direction: row;
+}
 
+#footer-div-one li:first-of-type {
+  font-weight: bold;
+}
+
+#footer-div-two {
+  display: flex;
+  flex-direction: row;
+}
+
+#footer-div-two li:first-of-type {
+  font-weight: bold;
+}
+
+#footer-bottom-two {
+  display: flex;
+  flex-direction: column;
+ 
+  color: #8b868b;
+}
+
+#footer-bottom {
+  background-color: #f4f3f4;
+  display: flex;
+  flex-direction: column;
+  color: #8b868b;
+}
+
+#ul-div {
+  align-self: center;
+}
+
+#flag-img {
+  width: 2vw;
+  height: 2vh;
+}
+
+#lang {
+  align-self: center;
+  padding-bottom: 25px;
+}
+
+/* I do not know how to space these social icons. */
+
+#socials {
+  align-self: center;
+}
+
+.links {
+  display: inline;
+}
