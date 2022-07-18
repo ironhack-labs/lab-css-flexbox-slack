@@ -13,7 +13,7 @@ body {
   }
 
   .responsive {
-    background-color: red;
+    background-color: white;
     width: 100%;
     height: 100%;
   }
@@ -25,15 +25,20 @@ body {
 }
 
 .partners{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    height: auto;
+    gap: 10px 20px;
+    justify-content: space-evenly;
 }
 
+
 .partner-logo{
-    width: 80%;
+    width: 100%;
     height: auto;
-    display: block;
-    margin: 30px auto;
+    /* display: block;
+    margin: 30px auto; */
 }
 
 header{
@@ -52,6 +57,7 @@ header{
 .logo{
     height: 40px;
 }
+
 nav ul{
     float: right;
     margin-right: 20px;
@@ -65,7 +71,6 @@ nav ul li a{
     color: #fff;
     font-size: 18px;
     padding: 7px 13px;
-    margin-left: -60px;
     border-radius: 3px;
     text-transform: uppercase;
 }
@@ -77,6 +82,42 @@ li a.active, li a:hover{
 .container{
     display: flex;
     flex-direction: column;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+}
+
+.FooterEnd{
+    background-color: gray;
+    display: flex;
+    width:100%;
+}
+
+.footerchild{
+    width: 100%;
+}
+
+.FooterUL{
+    margin: 0px;
+    padding: 0px 0px 0px 15px; 
+}
+
+.listNone{
+    list-style: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+.FooterLI{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.pad10{
+    padding: 10px
 }
 
 .center{
@@ -97,13 +138,15 @@ li a.active, li a:hover{
     display: none;
 }
 
+.child {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+
+
+
   @media (max-width: 768px) {
-    .responsive {
-      background-color: green;
-      width: 100%;
-      height: 100%;
-      
-    }
 
     .header-img{
         width: 100%;
@@ -130,6 +173,7 @@ li a.active, li a:hover{
     }
     nav ul li a{
         font-size: 20px;
+        margin-left: -60px;
     }
     li a:hover, li a.active{
         background: none;
@@ -138,33 +182,89 @@ li a.active, li a:hover{
     #check:checked ~ ul{
         left:0;
         background: #2c3e50;
+        position: fixed;
+        top: 80px;
+        left: 0px;
     }
 
     footer > ul {
         display: block;
     }
+
+    .container2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .child {
+        width: 45%;  /* Or whatever */
+        height: 100%; /* Or whatever */
+      }
+
+      .logo_footer{
+        /* display: block; */
+        width: 100%;
+    }
+
+    .FooterEnd{
+        background-color: gray;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .partners{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .partnerschild{
+        /* class="partner-logo" */
+        width: 80%;
+        height: auto;
+    
+    }
   }
 
   @media (min-width: 768px) and (max-width: 961px) {
-    .responsive {
-      background-color: blue;
-      width: 100%;
-      height: 100%;
+
+    .child {
+        width: 25%;  /* Or whatever */
+        height: 100%; /* Or whatever */
+      }
+
+      .partnerschild{
+        /* class="partner-logo" */
+        width: 40%;
+        height: auto;    
     }
   }
 
   @media (min-width: 961px) and (max-width: 1024px) {
-    .responsive {
-      background-color: blueviolet ;
-      width: 100%;
-      height: 100%;
+
+    .child {
+        width: 25%;  /* Or whatever */
+        height: 100%; /* Or whatever */
+      }
+
+      .partnerschild{
+        /* class="partner-logo" */
+        width: 25%;
+        height: auto;    
     }
   }
 
   @media (min-width: 1024px) {
-    .responsive {
-      background-color: turquoise;
-      width: 100%;
-      height: 100%;
+
+    .child {
+        width: 25%;  /* Or whatever */
+        height: 100%; /* Or whatever */
+      }
+      .partnerschild{
+        /* class="partner-logo" */
+        width: 25%;
+        height: auto;    
     }
   }
