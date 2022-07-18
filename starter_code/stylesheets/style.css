@@ -32,6 +32,10 @@ nav {
     justify-content: space-between;
 }
 
+nav ul {
+    visibility: hidden;
+}
+
 #hamburger {
     width: 10vw;
     margin-right: 10vw;
@@ -39,8 +43,9 @@ nav {
 }
 
 #homeTalking1 {
-    display: none;
-    width: 90vw;
+    visibility: hidden;
+    width: 0vw;
+    height: 0vh;
 }
 
 header {
@@ -66,7 +71,7 @@ div img {
     flex-direction: column;
     width: 90vw;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 
 button {
@@ -303,4 +308,76 @@ input, button {
         padding-right: 2vw;
     }
 
+}
+
+@media (min-width: 961px) {
+    #images img {
+        width: 25vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    #images {
+        margin-top: 5vh;
+    }
+}
+
+@media (min-width: 1201px) {
+    #hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        visibility: visible;
+        list-style: none;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    #workspaces {
+        border: 1px black solid;
+        border-radius: 4px;
+    }
+
+    #homeTalking1 {
+        visibility: visible;
+        width: 30vw;
+        height: 30vh;
+        margin-right: 5vw;
+    }
+
+    #homeTalking2 {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    input, button {
+        height: 5vh;
+    }
+    header input {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    #endOfMain input {
+        height: 5vh;
+        width: 10vw;
+    }
+    #endOfMain button {
+        height: 5vh;
+        width: 10vw;
+    }
 }
