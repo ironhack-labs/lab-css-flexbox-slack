@@ -11,22 +11,35 @@
       rel="stylesheet"
     />
 
+    <!-- Font import  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Tiro+Kannada&display=swap" rel="stylesheet">
+
     <!-- link your styles -->
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <title>Where work happens | Slack</title>
   </head>
 
   <body>
+    <!-- Nav -->
     <nav>
       <img src="./images/slack-logo.png" alt="slack_logo" />
-      <i class="fa-solid fa-bars"></i>
       <ul>
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
         <li>Your Workspaces</li>
       </ul>
+      <div class="bar">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </nav>
+    <div class="hr"></div>
+
+    <!-- Header -->
     <header>
       <h1>Where Work Happens</h1>
       <p>
@@ -36,13 +49,16 @@
         covered.
       </p>
       <div class="input-button">
-      <input type="email" id="email" name="email" placeholder="Email address">
-      <button type="button" name="button" class="purpleBtn">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
-    </div>
+        <input type="email" name="email" placeholder="Email address">
+        <button type="button" name="button">GET STARTED</button>
+      </div>
+      <div class="header-image-container">
+        <p>Already using Slack? <a href="#">Sign in</a></p>
+        <img src="./images/home_talking.png" alt="home_work_happening" />
+      </div>
     </header>
 
+<!-- Main -->
     <main>
       <div>
         <h2>You're in good company</h2>
@@ -50,27 +66,57 @@
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button class="whiteBtn">DISCOVER WHY</button>
+        <button class="white">DISCOVER WHY</button>
+
       <div class="logos">
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
-      </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <input type="email" id="email" name="email" placeholder="Email address">
-        <button type="button" name="button" class="purpleBtn">GET STARTED</button>
+        <div class="logo-image-container">
+          <img src="./images/airbnb-logo.png" alt="" />
+        </div>
+
+        <div class="logo-image-container">
+          <img src="./images/capital-one-logo.png" alt="" />
+        </div>
+
+        <div class="logo-image-container">
+          <img src="./images/harvard-logo.png" alt="" />
+        </div>
+        
+        <div id="lat" class="logo-image-container">
+          <img src="./images/los-angeles-times-logo.png" alt="" />
+        </div>
+
+        <div class="logo-image-container">
+          <img src="./images/oracle-logo.png" alt="" />
+        </div>
+
+        <div class="logo-image-container">
+          <img src="./images/ticketmaster-logo.png" alt="" />
+        </div>
+        
       </div>
     </main>
 
+<!-- Main under -->
+    <section>
+        <div class="main-under-white">
+        
+        <div id="under-logos-text">
+          <h3>Try it for free</h3>
+          <p>Already using Slack? <a href="">Sign in</a></p>
+        </div>  
 
+        <div id="under-logos-input">
+          <input type="email" name="email" placeholder="Email address">
+          <button type="button" name="button" >GET STARTED</button>
+        </div>
+      </div>
+      <div class="hr"></div>
+    </section>
+
+<!-- Footer -->
     <footer>
-      <img src="./images/iso-slack.png" alt="" />
       <div class="footer">
+        <img src="./images/iso-slack.png" alt="" />
         <ul>
           <li>COMPANY</li>
           <li>About Us</li>
@@ -79,7 +125,6 @@
           <li>Press</li>
           <li>Brand Guidelines</li>
         </ul>
-
         <ul>
           <li>PRODUCT</li>
           <li>Why Slack?</li>
@@ -88,17 +133,16 @@
           <li>Pricing</li>
           <li>Security</li>
         </ul>
-
         <ul>
           <li>RESOURCES</li>
           <li>Download</li>
           <li>Help Center</li>
           <li>Guides</li>
+          <li>Partners</li> <!-- Was missing in the Template -->
           <li>Events</li>
           <li>App Directory</li>
           <li>API</li>
         </ul>
-        
         <ul>
           <li>EXTRAS</li>
           <li>Podcast</li>
@@ -107,23 +151,27 @@
           <li>Slack Fund</li>
         </ul>
       </div>
-      <div class="bottomFooter">
+    </footer>
+
+<!-- Footer Bottom -->
+      <div class="footerBottom">
         <ul>
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
+        
         <div id="icons">
           <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
+          <p>English (US)</p>
           <i class="fas fa-chevron-down"></i>
         </div>
-          <div id="icons">
+
+        <div id="icons">
           <i class="fab fa-twitter"></i>
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-youtube"></i>
         </div>
       </div>
-    </footer>
   </body>
 </html>
