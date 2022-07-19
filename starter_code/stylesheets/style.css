@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">');
+
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
@@ -9,7 +12,31 @@ nav grey: #5b5e6d;
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5em;
     /* overflow-x: hidden; */
+  }
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Ibarra Real Nova', serif;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
   }
 
   .responsive {
@@ -19,9 +46,15 @@ body {
   }
   
   nav{
-    background: #2fcdcd;
+    background: #ffffff;
     height: 80px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 0 20px;    
+    flex-direction: row;
+    border-bottom: 1px solid rgb(187, 187, 187);        
 }
 
 .partners{
@@ -31,14 +64,15 @@ body {
     width: 100%;
     gap: 10px 20px;
     justify-content: space-evenly;
+    padding: 70px 0;
+    align-items: center;
 }
 
 
 .partner-logo{
     width: 100%;
     height: auto;
-    /* display: block;
-    margin: 30px auto; */
+    margin: 30px 0;
 }
 
 header{
@@ -47,7 +81,7 @@ header{
 }
 
 .headContent{
-    margin: 10px 10px 10px 10px ; 
+    margin: 10px 20px; 
 }
 
 .enlace{
@@ -68,20 +102,85 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
-    color: #fff;
+    color: #5b5e6d;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
+    text-decoration: none;
 }
-li a.active, li a:hover{
-    background: #000090;
-    transition: .5s;
+
+.signup-form {
+    display: block;
+    width: 80%;
+}
+
+.btn-full {
+    background-color: #4049AA;
+    color: white;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    border: #4049AA;;
+    border-radius: 5px;
+}
+
+.btn-outlined {
+    background-color: #ffffff;
+    color: #4049AA;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    border: 1px solid #4049AA;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-field {
+    color: rgb(149, 141, 141);
+    padding: 20px 20px;
+    border: 1px solid rgb(149, 141, 141);
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+main {
+    background-color: #F5F5F5;
 }
 
 .container{
+    padding: 50px 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 20px;
+}
+
+.footerchild{
+    width: 100%;
+}
+
+.FooterUL{
+    margin: 0px;
+    padding: 0px 0px 0px 15px; 
+}
+
+.listNone{
+    list-style: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+.FooterLI{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.pad10{
+    padding: 10px
 }
 
 .container2{
@@ -126,7 +225,7 @@ li a.active, li a:hover{
 
 .checkbtn{
     font-size: 30px;
-    color: #fff;
+    color: rgb(93, 93, 93);
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -147,7 +246,20 @@ li a.active, li a:hover{
 
 
   @media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 1;
+    }
 
+    header {
+        padding: 30px 10px;
+    }
+
+    .container-header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .header-img{
         width: 100%;
         height: auto;
@@ -155,6 +267,15 @@ li a.active, li a:hover{
 
     .checkbtn{
         display: block;
+    }
+    nav {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        flex-direction: row-reverse;
     }
     nav ul{
         position: fixed;
@@ -191,6 +312,35 @@ li a.active, li a:hover{
         display: block;
     }
 
+    .signup-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-full {
+        background-color: #4049AA;
+        color: white;
+        padding: 20px 30px;
+        width: 100%;
+        text-transform: uppercase;
+        border: #4049AA;;
+        border-radius: 5px;
+    }
+
+    .form-field {
+        color: rgb(149, 141, 141);
+        padding: 20px 20px;
+        width: 100%;
+        border: 1px solid rgb(149, 141, 141);
+        border-radius: 5px;
+        margin: 15px 0;
+       }
+
+
     .container2{
         display: flex;
         flex-direction: row;
@@ -203,15 +353,15 @@ li a.active, li a:hover{
         height: 100%; /* Or whatever */
       }
 
-      .logo_footer{
+      .logo-footer{
         /* display: block; */
         width: 100%;
     }
 
     .FooterEnd{
-        background-color: gray;
+
+        background-color: #F5F5F5;
         text-align: center;
-        flex-wrap: wrap;
     }
 
     .partners{
@@ -219,6 +369,8 @@ li a.active, li a:hover{
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
+        padding: 70px 0;
+        align-items: center;
     }
     .partnerschild{
         /* class="partner-logo" */
@@ -230,6 +382,25 @@ li a.active, li a:hover{
 
   @media (min-width: 768px) and (max-width: 961px) {
 
+    h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+
+    .container-header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header-img{
+        width: 100%;
+        height: auto;
+    }
+    
     .child {
         width: 25%;  /* Or whatever */
         height: 100%; /* Or whatever */
@@ -238,12 +409,42 @@ li a.active, li a:hover{
       .partnerschild{
         /* class="partner-logo" */
         width: 40%;
-        height: auto;    
+        height: auto;
     }
+
+    .cta {
+        display: flex;
+        align-items: center;    
+    }
+
+    .FooterEnd{
+        background-color: #F5F5F5;
+        display: flex;
+        width:100%;
+        }
   }
 
   @media (min-width: 961px) and (max-width: 1024px) {
 
+    h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+
+    .container-header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header-img{
+        width: 100%;
+        height: auto;
+    }
+    
     .child {
         width: 25%;  /* Or whatever */
         height: 100%; /* Or whatever */
@@ -254,9 +455,34 @@ li a.active, li a:hover{
         width: 25%;
         height: auto;    
     }
+
+    .FooterEnd{
+        background-color: #F5F5F5;
+        display: flex;
+        width:100%;
+        }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1024px) and (max-width: 1200px) {
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+
+    .container-header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header-img{
+        width: 100%;
+        height: auto;
+    }
 
     .child {
         width: 25%;  /* Or whatever */
@@ -267,4 +493,56 @@ li a.active, li a:hover{
         width: 25%;
         height: auto;    
     }
+
+    .FooterEnd{
+        background-color: #F5F5F5;
+        display: flex;
+        width:100%;
+        }
+  }
+
+  @media (min-width: 1200px) {
+
+    .container-header{
+        padding: 50px 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-img {
+        width: 500px;
+        height: 100%;
+        margin: 100px 70px;
+
+    }
+
+    .headContent {
+        padding: 0 30px;
+        margin: 0 70px 20px 0;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+
+    .form-field {
+        display: none;
+    }
+
+    .child {
+        width: 25%;  /* Or whatever */
+        height: 100%; /* Or whatever */
+      }
+      .partnerschild{
+        /* class="partner-logo" */
+        width: 25%;
+        height: auto;    
+    }
+
+    .FooterEnd{
+        background-color: #F5F5F5;
+        display: flex;
+        width:100%;
+        }
   }
