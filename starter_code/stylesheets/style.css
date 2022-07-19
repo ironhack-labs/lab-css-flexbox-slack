@@ -25,7 +25,7 @@ nav {
     position: fixed;
     background-color: white;
     top: 0px;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     height: 10vh;
     display: flex;
@@ -96,6 +96,14 @@ button {
     align-self: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    width: 80vh;
+    height: auto;
+}
+
+#center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
@@ -319,11 +327,27 @@ input, button {
     #images {
         margin-top: 5vh;
     }
+    input, button {
+        height: 5vh;
+    }
+
+    #endOfMain input {
+        height: 5vh;
+        width: 30vw;
+    }
+    #endOfMain button {
+        height: 5vh;
+        width: 30vw;
+    }
 }
 
 @media (min-width: 1201px) {
     #hamburger {
         display: none;
+    }
+
+    nav {
+        width: 70%;
     }
 
     nav ul {
@@ -334,12 +358,12 @@ input, button {
     }
 
     nav ul li {
-        margin-left: 2vw;
-        margin-right: 2vw;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        padding-top: 1vw;
-        padding-bottom: 1vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
     }
     #workspaces {
         border: 1px black solid;
@@ -361,11 +385,15 @@ input, button {
     header {
         display: flex;
         flex-direction: row;
+        width: 70%;
     }
-
-    input, button {
-        height: 5vh;
+    header p {
+        width: 40%;
     }
+    #center {
+        align-items: flex-start;
+    }
+    
     header input {
         visibility: hidden;
         width: 0;
@@ -373,11 +401,23 @@ input, button {
     }
 
     #endOfMain input {
-        height: 5vh;
         width: 10vw;
     }
+
     #endOfMain button {
-        height: 5vh;
         width: 10vw;
+    }
+
+    #images {
+        width: 80%;
+        justify-content: center;
+    }
+
+    #images img {
+        width: 20vw;
+    }
+
+    #divStatus {
+        width: 85%;
     }
 }
