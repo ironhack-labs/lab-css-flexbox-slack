@@ -5,3 +5,740 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    font-size: 0.6em;
+}
+
+nav {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 8em;
+    margin-left: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 6em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    body {
+        max-width: 768px;
+        margin-right: 3em;
+        margin-left: 3em;
+    }
+
+
+    body main div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body main img {
+        width: 20rem;
+        margin: 18px
+    }
+
+    .wrapper {
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .wrapper h1{
+        margin-bottom: 10px;
+    }
+
+    header p {
+        text-align: justify;
+        line-height: 25px;
+    }
+
+    .started {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #button, #why, #free {
+        color: white;
+        background-color: blue;
+        text-align: center;
+        height: 60px;
+        width: 100%;
+        margin: 1rem;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        margin-left: 14px;
+        border: 10px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row {
+        display: flex;
+
+    }
+
+    #company, #product, #extras, #resources {
+        padding: 30px;
+        font-size: 2em;
+    }
+
+    #company, #product, #extras, #resources, ul li {
+        list-style: none;
+        font-weight: lighter;
+        font-size: 1.3em;
+    }
+
+    .firstline {
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    #resources {
+        margin-right: 1em;
+    }
+
+    #status ul{
+        display: flex;
+  justify-content: space-evenly;
+  font-size: ;
+    }
+
+    #icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #icons div{
+        margin-left: 30px;
+    }
+
+
+    #flag img{
+        width: 2em;
+    }
+
+    #flag div{
+       margin-bottom: 20px;
+    }
+
+    #flag {
+        display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 961px){
+    body {
+        max-width: 961px;
+        margin-right: 3em;
+        margin-left: 3em;
+    }
+
+    body main div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper {
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .wrapper h1{
+        margin-bottom: 10px;
+    }
+
+    header p {
+        text-align: justify;
+        line-height: 25px;
+    }
+
+    .started {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+
+    #button {
+        color: white;
+        background-color: blue;
+        text-align: center;
+        height: 40px;
+        width: 40%;
+        margin: 2px;
+    }
+
+    #in {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    input {
+        width: 60%;
+        height: 40px;
+        margin: 2px;
+
+    }
+
+    main {
+        background-color: lightgray;
+    }
+
+    #why {
+        background-color: white;
+        padding: 20px;
+        color: blue;
+        font-weight: bold;
+        font-size: 16px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: blue;
+    }
+
+    #image {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #image div {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        border: 1px solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: gray;
+        
+    }
+
+    #image div div{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        border-bottom: none;
+
+    }
+
+    #image div div img{
+        width:40%;
+        padding: 15%;
+
+    }
+
+    #try {
+        background-color: white;
+        border-bottom: 1px solid lightgray;
+        padding: 30px;
+    }
+
+    #free {
+        color: white;
+        background-color: blue;
+        text-align: center;
+        height: 40px;
+        width: 60%;
+        margin: 2px;
+    }
+
+    
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row {
+        display: flex;
+
+    }
+
+    #company, #product, #extras, #resources {
+        padding: 4rem;
+        font-size: 2em;
+    }
+
+    #company, #product, #extras, #resources, ul li {
+        list-style: none;
+        font-weight: lighter;
+        font-size: 1.3em;
+    }
+
+    .firstline {
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    #resources {
+        margin-right: 1em;
+    }
+
+    #substatus {
+        background-color: lightgray;
+    }
+
+    #status ul{
+        display: flex;
+  justify-content: space-evenly;
+
+    }
+
+    #icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #icons div{
+        margin-left: 30px;
+    }
+
+
+    #flag img{
+        width: 2em;
+    }
+
+    #flag div{
+       margin-bottom: 20px;
+    }
+
+    #flag {
+        display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 960px) and (max-width: 1024px){
+    body {
+        max-width: 1024px;
+        margin-right: 3em;
+        margin-left: 3em;
+    }
+
+    body main div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper {
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .wrapper h1{
+        margin-bottom: 10px;
+    }
+
+    header p {
+        text-align: justify;
+        line-height: 25px;
+    }
+
+    .started {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+
+    #button {
+        color: white;
+        background-color: blue;
+        text-align: center;
+        height: 40px;
+        width: 40%;
+        margin: 2px;
+    }
+
+    #in {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    input {
+        width: 60%;
+        height: 40px;
+        margin: 2px;
+
+    }
+
+    main {
+        background-color: lightgray;
+    }
+
+    #why {
+        background-color: white;
+        padding: 20px;
+        color: blue;
+        font-weight: bold;
+        font-size: 16px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: blue;
+    }
+
+    #image {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #image div {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        border: 1px solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: gray;
+        
+    }
+
+    #image div div{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        border-bottom: none;
+
+    }
+
+    #image div div img{
+        width:40%;
+        padding: 15%;
+
+    }
+
+    #try {
+        background-color: white;
+        border-bottom: 1px solid lightgray;
+        padding: 30px;
+    }
+
+    #free {
+        color: white;
+        background-color: blue;
+        text-align: center;
+        height: 40px;
+        width: 60%;
+        margin: 2px;
+    }
+
+    
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row {
+        display: flex;
+
+    }
+
+    #company, #product, #extras, #resources {
+        padding: 4rem;
+        font-size: 2em;
+    }
+
+    #company, #product, #extras, #resources, ul li {
+        list-style: none;
+        font-weight: lighter;
+        font-size: 1.3em;
+    }
+
+    .firstline {
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    #resources {
+        margin-right: 1em;
+    }
+
+    #substatus {
+        background-color: lightgray;
+    }
+
+    #status ul{
+        display: flex;
+  justify-content: space-evenly;
+
+    }
+
+    #icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #icons div{
+        margin-left: 30px;
+    }
+
+
+    #flag img{
+        width: 2em;
+    }
+
+    #flag div{
+       margin-bottom: 20px;
+    }
+
+    #flag {
+        display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    body {
+        max-width: 1024px;
+        margin-right: 3em;
+        margin-left: 3em;
+    }
+
+    body main div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .wrapper h1{
+        margin-bottom: 10px;
+    }
+
+    header p {
+        text-align: justify;
+        line-height: 25px;
+    }
+
+    .started {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+
+    #button {
+        color: white;
+        background-color: blue;
+        text-align: center;
+        height: 40px;
+        width: 40%;
+        margin: 2px;
+    }
+
+    #in {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    input {
+        width: 60%;
+        height: 40px;
+        margin: 2px;
+
+    }
+
+    main {
+        background-color: lightgray;
+    }
+
+    #why {
+        background-color: white;
+        padding: 20px;
+        color: blue;
+        font-weight: bold;
+        font-size: 16px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: blue;
+        width:20%;
+    }
+
+    #image {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width:80%;
+    }
+
+    #image div {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        border: none;
+        flex-wrap: wrap;
+    }
+
+    #image div div{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        border-bottom: none;
+        border: none;
+
+    }
+
+    #image div div img{
+        width: 70%;
+        padding: 10%;
+        border: none;
+    }
+
+    #try {
+        background-color: white;
+        border-bottom: 1px solid lightgray;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    #try input{
+        width: 30%;
+    }
+
+    #free {
+        color: white;
+        background-color: blue;
+        text-align: center;
+        height: 40px;
+        width: 30%;
+        margin: 2px;
+    }
+
+    
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row {
+        display: flex;
+
+    }
+
+    #company, #product, #extras, #resources {
+        padding: 4rem;
+        font-size: 2em;
+    }
+
+    #company, #product, #extras, #resources, ul li {
+        list-style: none;
+        font-weight: lighter;
+        font-size: 1.3em;
+    }
+
+    .firstline {
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    #resources {
+        margin-right: 1em;
+    }
+
+    #substatus {
+        background-color: lightgray;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: flex-start;
+    }
+
+    #status ul{
+        display: flex;
+  justify-content: space-between;
+
+    }
+
+    #icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #icons div{
+        margin-right: 30px;
+    }
+
+
+    #flag img{
+        width: 2em;
+    }
+
+    #flag div{
+       margin-bottom: 20px;
+    }
+
+    #flag {
+        display: flex;
+  align-items: right;
+  flex-direction: row;
+  margin-top: 20px;
+    }
+
+}
