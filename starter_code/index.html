@@ -12,104 +12,301 @@
     />
 
     <!-- link your styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <title>Where work happens | Slack</title>
   </head>
 
   <body>
-    <nav>
-      <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-      </ul>
-    </nav>
-    <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
-      <h1>Where Work Happens</h1>
-      <p>
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
-    </header>
-    <main>
-      <div>
-        <h2>You're in good company</h2>
-        <p>
-          Millions of people around the world have already made Slack the place
-          where their work happens.
-        </p>
-        <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
+    <!-- <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <img
+          src="./images/slack-logo.png"
+          alt="slack_logo"
+          class="navbar-brand"
+        />
+        <ul>
+          <li>Why Slack?</li>
+          <li>Pricing</li>
+          <li>About Us</li>
+          <li>Your Workspaces</li>
+        </ul>
       </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+    </nav> -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white justify-content-between"
+    >
+      <div class="container">
+        <a class="navbar-brand w-50" href="#">
+          <!-- Hola -->
+          <img src="./images/slack-logo.png" alt="" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Why Slack?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <div class="row flex-lg-row-reverse">
+          <div class="col-lg-6">
+            <h1>Where Work Happens</h1>
+            <p>
+              When your team needs to kick off a project, hire a new employee,
+              deploy some code, review a sales contract, finalize next year's
+              budget, measure an A/B test, plan your next office opening, and
+              more, Slack has you covered.
+            </p>
+
+            <!-- <div class="d-grid gap-3"> -->
+            <div class="row">
+              <form class="form-inline my-2 col-12 col-md-6">
+                <input
+                  class="form-control p-3"
+                  type="search"
+                  placeholder="Email address"
+                  aria-label="Email address"
+                />
+              </form>
+              <button
+                class="btn btn-primary blue-btn p-3 my-2 col-12 col-md-3"
+                type="button"
+              >
+                GET STARTED
+              </button>
+            </div>
+            <p class="text-center text-md-start p-3">
+              Already using Slack? <a href="#" class="sign-in">Sign in</a>
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="./images/home_talking.png"
+              alt="home_work_happening"
+              class="talking"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </header>
+
+    <main>
+      <div class="bg-light text-center">
+        <div class="container">
+          <div class="p-4 m-2">
+            <h2>You're in good company</h2>
+            <p>
+              Millions of people around the world have already made Slack the
+              place where their work happens.
+            </p>
+          </div>
+          <div class="row">
+            <div class="text-center col-md-4 my-0 mx-auto">
+              <button
+                class="btn btn-outline-primary p-3 discover w-100"
+                type="button"
+              >
+                DISCOVER WHY
+              </button>
+            </div>
+          </div>
+          <div class="container images text-center my-4 py-5">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 p-4">
+                <img src="./images/airbnb-logo.png" alt="" />
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 p-4">
+                <img src="./images/capital-one-logo.png" alt="" />
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 p-4">
+                <img src="./images/harvard-logo.png" alt="" />
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 p-4">
+                <img src="./images/los-angeles-times-logo.png" alt="" />
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 p-4">
+                <img src="./images/oracle-logo.png" alt="" />
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 p-4">
+                <img src="./images/ticketmaster-logo.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <p class="fw-bold h1 titles">Try it for free</p>
+              <p>Already using Slack? <a href="" class="sign-in">Sign in</a></p>
+            </div>
+
+            <form class="form-inline col-12 col-md-4">
+              <input
+                class="form-control mr-sm-2 p-3 my-2"
+                type="search"
+                placeholder="Email address"
+                aria-label="Email address"
+              />
+            </form>
+            <button
+              class="btn btn-primary blue-btn p-3 my-2 mb-5 col-12 col-md-2"
+              type="button"
+            >
+              GET STARTED
+            </button>
+          </div>
+        </div>
       </div>
     </main>
+
     <footer>
-      <div>
-        <img src="./images/iso-slack.png" alt="" />
-        <ul>
-          <li>COMPANY</li>
-          <li>About Us</li>
-          <li>Careers</li>
-          <li>Blog</li>
-          <li>Press</li>
-          <li>Brand Guidelines</li>
-        </ul>
-        <ul>
-          <li>PRODUCT</li>
-          <li>Why Slack?</li>
-          <li>Enterprise</li>
-          <li>Customer Stories</li>
-          <li>Pricing</li>
-          <li>Security</li>
-        </ul>
-        <ul>
-          <li>RESOURCES</li>
-          <li>Download</li>
-          <li>Help Center</li>
-          <li>Guides</li>
-          <li>Events</li>
-          <li>App Directory</li>
-          <li>API</li>
-        </ul>
-        <ul>
-          <li>EXTRAS</li>
-          <li>Podcast</li>
-          <li>Slack Shop</li>
-          <li>Slack at Work</li>
-          <li>Slack Fund</li>
-        </ul>
+      <div class="container">
+        <div class="row pl-2 pt-2">
+          <div class="col-12 col-md col-lg-4">
+            <img src="./images/iso-slack.png" alt="slack-logo" class="logo" />
+          </div>
+
+          <ul class="col-6 col-md col-lg list-unstyled footer-list">
+            <li class="fw-bold">COMPANY</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Blog</li>
+            <li>Press</li>
+            <li>Brand Guidelines</li>
+          </ul>
+          <ul class="col-6 col-md col-lg list-unstyled footer-list">
+            <li class="fw-bold">PRODUCT</li>
+            <li>Why Slack?</li>
+            <li>Enterprise</li>
+            <li>Customer Stories</li>
+            <li>Pricing</li>
+            <li>Security</li>
+          </ul>
+          <ul class="col-6 col-md col-lg list-unstyled footer-list">
+            <li class="fw-bold">RESOURCES</li>
+            <li>Download</li>
+            <li>Help Center</li>
+            <li>Guides</li>
+            <li>Events</li>
+            <li>App Directory</li>
+            <li>API</li>
+          </ul>
+          <ul class="col-6 col-md col-lg list-unstyled footer-list">
+            <li class="fw-bold">EXTRAS</li>
+            <li>Podcast</li>
+            <li>Slack Shop</li>
+            <li>Slack at Work</li>
+            <li>Slack Fund</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul>
-          <li>Status</li>
-          <li>Privacy & Terms</li>
-          <li>Contact Us</li>
-        </ul>
-        <div>
-          <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
+
+      <!-- <div class="bg-light">
+        <div class="container bg-light row">
+          <div class="col-12 col-md-8">
+            <ul
+              class="list-unstyled d-flex flex-row justify-content-center pt-3 flex-md-start"
+            >
+              <li class="fw-bold px-3">Status</li>
+              <li class="fw-bold px-3">Privacy & Terms</li>
+              <li class="fw-bold px-3">Contact Us</li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-2">
+            <div
+              class="d-flex flex-row justify-content-center align-items-center"
+            >
+              <img src="./images/us-flag.png" alt="" class="flag" />
+              <span>English (US)</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-2">
+            <div
+              class="d-flex flex-row justify-content-center align-items-center py-3"
+            >
+              <i class="fab fa-twitter px-2"></i>
+              <i class="fab fa-facebook-f px-2"></i>
+              <i class="fab fa-youtube px-2"></i>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 text-md-start">
+              <ul
+                class="list-unstyled d-flex flex-row justify-content-center pt-3 flex-md-start"
+              >
+                <li class="fw-bold px-3">Status</li>
+                <li class="fw-bold px-3">Privacy & Terms</li>
+                <li class="fw-bold px-3">Contact Us</li>
+              </ul>
+            </div>
+
+            <div
+              class="col-12 col-md-6 text-center justify-content-center text-md-end"
+            >
+              <div class="row justify-content-center pt-3">
+                <div class="col-12 col-md-4">
+                  <img src="./images/us-flag.png" alt="" class="flag" />
+                  <span>English (US)</span>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <i class="fab fa-twitter px-2"></i>
+                  <i class="fab fa-facebook-f px-2"></i>
+                  <i class="fab fa-youtube px-2"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
