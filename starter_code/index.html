@@ -4,65 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-    <!-- link the font awesome CDN -->
     <link
       href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
-      rel="stylesheet"
-    />
-
-    <!-- link your styles -->
-    <link rel="stylesheet" href="./stylesheets/style.css" />
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="/starter_code/stylesheets/style.css">
     <title>Where work happens | Slack</title>
   </head>
 
   <body>
-    <nav>
-      <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-      </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-0 border-bottom ">
+      <div class="container-fluid bg-white ">
+      <a class="navbar-brand col-2" href="#"><img src="/starter_code/images/slack-logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse col-1 justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Why Slack?<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Your Workspaces</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     </nav>
-    <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
-      <h1>Where Work Happens</h1>
-      <p>
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+
+    <header class="border-bottom pt-2 px-5">
+      <div class="container">
+        <div class="row flex-column">
+          <h1 class="col-8 pb-4">Where Work Happens</h1>
+          <p class="pb-4">
+            When your team needs to kick off a project, hire a new employee, deploy
+            some code, review a sales contract, finalize next year's budget, measure
+            an A/B test, plan your next office opening, and more, Slack has you
+            covered.
+          </p>
+          <form class="mb-2">
+            <div class="form-group w-100 col-12">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+          </form>      
+          <button class="mb-2 btn btn-primary col-12" type="button" name="button">GET STARTED</button>
+          <p class="d-flex justify-content-center">Already using Slack? <a href="#">Sign in</a></p>
+        <img class="w-75 mx-auto d-block" src="./images/home_talking.png" alt="home_work_happening"/>
+        </div>
+      </div>
     </header>
-    <main>
-      <div>
-        <h2>You're in good company</h2>
-        <p>
+
+
+
+    <main class="border-bottom container bg-light">
+      <div class="border-bottom row flex-column m-5">
+        <h2 class="col-12 d-flex justify-content-center ">You're in good company</h2>
+        <p class="text-center">
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
+        <button class="btn btn-outline-primary">DISCOVER WHY</button>
+        <img class="w-50 mx-auto d-block border-bottom py-4" src="./images/airbnb-logo.png" alt="airbnb" />
+        <img class="w-50 mx-auto d-block border-bottom py-4" src="./images/capital-one-logo.png" alt="capital one" />
+        <img class="w-50 mx-auto d-block border-bottom py-4" src="./images/harvard-logo.png" alt="harvard" />
+        <img class="w-50 mx-auto d-block border-bottom py-4" src="./images/los-angeles-times-logo.png" alt="los angeles" />
+        <img class="w-50 mx-auto d-block border-bottom py-4" src="./images/oracle-logo.png" alt="oracle" />
+        <img class="w-50 mx-auto d-block border-bottom py-4" src="./images/ticketmaster-logo.png" alt="ticketmaster" />
       </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+      <div class="row flex-column border-bottom pt-2 px-5 bg-white">
+        <p class="d-flex justify-content-center">Try it for free</p>
+        <p class="d-flex justify-content-center">Already using Slack? <a href="">Sign in</a></p>
+        <form class="mb-2">
+          <div class="form-group w-100 col-12">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+        </form>      
+        <button class="mb-2 btn btn-primary col-12" type="button" name="button">GET STARTED</button>
       </div>
     </main>
-    <footer>
-      <div>
-        <img src="./images/iso-slack.png" alt="" />
-        <ul>
+    <footer class="container">
+      <div class="row">
+        <div class="col-12">
+        <img class="w-25" src="./images/iso-slack.png" alt="" />
+        </div>
+        <ul class="col-6">
           <li>COMPANY</li>
           <li>About Us</li>
           <li>Careers</li>
@@ -70,7 +104,7 @@
           <li>Press</li>
           <li>Brand Guidelines</li>
         </ul>
-        <ul>
+        <ul class="col-6">
           <li>PRODUCT</li>
           <li>Why Slack?</li>
           <li>Enterprise</li>
@@ -78,7 +112,7 @@
           <li>Pricing</li>
           <li>Security</li>
         </ul>
-        <ul>
+        <ul class="col-6">
           <li>RESOURCES</li>
           <li>Download</li>
           <li>Help Center</li>
@@ -87,7 +121,7 @@
           <li>App Directory</li>
           <li>API</li>
         </ul>
-        <ul>
+        <ul class="col-6">
           <li>EXTRAS</li>
           <li>Podcast</li>
           <li>Slack Shop</li>
@@ -95,21 +129,24 @@
           <li>Slack Fund</li>
         </ul>
       </div>
-      <div>
-        <ul>
+      <div class="row">
+        <ul class="d-flex justify-content-around">
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-        <div>
-          <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
+        <div class="row ">
+          <img class="img-fluid w-25 col-4" src="./images/us-flag.png" alt="" />
+          <span class="col-4">English (US)</span>
+          <i class="fas fa-chevron-down col-4"></i>
+          <i class="fab fa-twitter col-4"></i>
+          <i class="fab fa-facebook-f col-4"></i>
+          <i class="fab fa-youtube col-4"></i>
         </div>
       </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
