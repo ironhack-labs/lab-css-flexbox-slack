@@ -12,12 +12,19 @@
     />
 
     <!-- link your styles -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <title>Where work happens | Slack</title>
   </head>
 
   <body>
-    <nav>
+    <!-- <nav>
       <img src="./images/slack-logo.png" alt="slack_logo" />
       <ul>
         <li>Why Slack?</li>
@@ -25,44 +32,119 @@
         <li>About Us</li>
         <li>Your Workspaces</li>
       </ul>
+    </nav> -->
+
+    <!-- navigation Bar -->
+
+      <header>
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand w-25" href="#"
+          ><img src="./images/slack-logo.png" alt="slack_logo"
+        /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
-      <h1>Where Work Happens</h1>
-      <p>
+    
+      <div class="container">      
+        <h1 class="margin-top">Where Work Happens</h1>
+        <p>
         When your team needs to kick off a project, hire a new employee, deploy
         some code, review a sales contract, finalize next year's budget, measure
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
-      </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
-    </header>
-    <main>
-      <div>
+        </p>
+        <div class="container row justify-content-center">      
+          <input class="m-2 p-2 col-12 col-md-6" type="text" value="Email address">
+              <button class="bg-primary text-white border-0 rounded col-md-3" type="button"        name="button">GET STARTED</button>
+              <p class="ps-5">Already using Slack? <a href="#">Sign in</a></p>
+              <img src="./images/home_talking.png" alt="home_work_happening" />
+        </div>
+      </div>
+      </header>
+
+    <main class="container bg-light">
+      <div class="container text-center">
         <h2>You're in good company</h2>
         <p>
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
+        <div class="btn-flex"><button class="bg-light w-100 text-primary rounded p-2">DISCOVER WHY</button></div>
+        <div class="row">
+          <img class="col-12 col-md-6 p-5" src="./images/airbnb-logo.png" alt="" />
+          <img class="col-12 col-md-6 p-5" src="./images/capital-one-logo.png" alt="" />
+          <img class="col-12 col-md-6 p-5" src="./images/harvard-logo.png" alt="" />
+          <img class="col-12 col-md-6 p-5" src="./images/los-angeles-times-logo.png" alt="" />
+          <img class="col-12 col-md-6 p-5" src="./images/oracle-logo.png" alt="" />
+          <img class="col-12 col-md-6 p-5" src="./images/ticketmaster-logo.png" alt="" />
+        </div>
       </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+      
+      <div class="container row text-center">
+        
+        <div class="col-md-4">        
+          <p>Try it for free</p>
+          <p>Already using Slack? <a href="">Sign in</a></p>
+        </div>
+
+        <input class="col-md-4" type="text" value="Email address">
+        <button class="margin-top-btn rounded bg-primary text-white p-2 border-0 col-md-4" type="button" name="button">GET STARTED</button>
       </div>
     </main>
+
+    <hr>
+
     <footer>
-      <div>
-        <img src="./images/iso-slack.png" alt="" />
-        <ul>
+      
+      <div class=" container row justify-content-start ps-2">
+        
+        
+        <div clas="col-12 col-md-4"> 
+          <img class="w-25" src="./images/iso-slack.png" alt="" />
+        </div>
+       
+        <ul class="col-6 col-md-2 list-unstyled">
           <li>COMPANY</li>
           <li>About Us</li>
           <li>Careers</li>
@@ -70,7 +152,8 @@
           <li>Press</li>
           <li>Brand Guidelines</li>
         </ul>
-        <ul>
+
+        <ul class="col-6 col-md-2  list-unstyled">
           <li>PRODUCT</li>
           <li>Why Slack?</li>
           <li>Enterprise</li>
@@ -78,7 +161,8 @@
           <li>Pricing</li>
           <li>Security</li>
         </ul>
-        <ul>
+
+        <ul class="col-6 col-md-2  list-unstyled">
           <li>RESOURCES</li>
           <li>Download</li>
           <li>Help Center</li>
@@ -87,29 +171,44 @@
           <li>App Directory</li>
           <li>API</li>
         </ul>
-        <ul>
+        
+        <ul class="col-6 col-md-2  list-unstyled">
           <li>EXTRAS</li>
           <li>Podcast</li>
           <li>Slack Shop</li>
           <li>Slack at Work</li>
           <li>Slack Fund</li>
         </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Status</li>
-          <li>Privacy & Terms</li>
-          <li>Contact Us</li>
+      
+       </div>
+        <div class="bg-light">
+         <ul class="container row bg-light">
+          <li class="col-4 list-unstyled">Status</li>
+          <li class="col-4 list-unstyled">Privacy & Terms</li>
+          <li class="col-4 list-unstyled">Contact Us</li>
         </ul>
-        <div>
-          <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
+
+        <div class="container row justify-content-center align-items-center d-flex">
+          <div class="col-6 bg-light">
+            <img class="w-25" src="./images/us-flag.png" alt="" />
+                    <span class="col-6">English (US)</span>
+                    <i class="col-6" class="fas fa-chevron-down"></i>
+          </div>
+          
+          <div class="row bg-light">         
+           <i class="fab fa-twitter col-4"></i>
+           <i class="fab fa-facebook-f col-4"></i>
+           <i class="fab fa-youtube col-4"></i>
+          </div>
+  
+
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
