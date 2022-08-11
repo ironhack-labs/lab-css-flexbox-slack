@@ -17,7 +17,7 @@ nav grey: #5b5e6d;
     left: 0;
 } */
 
- hr {
+hr {
     width: 100%;
  }
 
@@ -48,7 +48,23 @@ a {
     color: gray;
 }
 
+.btn-purple {
+    background-color: #192592;
+    color: #fff;
+}
+
+
  /* HEADER  */
+
+header {
+    position: relative;
+ }
+
+.icon-bar {
+    position: absolute;
+    top: 5px;
+    left: 80%;
+}
 
  .logo {
      width: 15%;
@@ -61,15 +77,6 @@ a {
     width: 90%;
  }
 
-.btn-purple {
-    background-color: #192592;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 30px;
-}
-
-
 
 /* DISCOVER */
 
@@ -78,28 +85,34 @@ a {
 }
 
 
-/* FOOTER  */
-/* 
-.links img {
-    display: inline-block;
-}
-
-.links ul {
-    display: inline-block;
-} */
-
-
      /* MEDIAS  */
 
-@media (min-width: 540px) {
+
+@media (min-width: 400px) {
+        .btn-purple {
+            background-color: #192592;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            /* padding: 10px 30px; */
+            /* width: 70%; */
+        }
+    
+        .footer-2 img {
+            width: 5%;
+        }
+}
+
+
+@media (max-width: 400px) and (min-width: 767px) {
     .btn-purple {
-        background-color: #192592;
-        color: #fff;
-        border: none;
-        border-radius: 3px;
-        padding: 10px 30px;
-        width: 80%;
-    }
+            background-color: #192592;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            /* padding: 10px 30px; */
+            /* width: 70%; */
+        }
 
     
 
@@ -107,26 +120,19 @@ a {
         text-align: center;
     }
 
-        .btn-white {
-            background-color: #fff;
-            color: rgb(25, 37, 146);
-            border: 1px solid rgb(25, 37, 146);
-            ;
-            border-radius: 3px;
-            padding: 10px 30px;
-            width: 80%;
-        }
+    .btn-white {
+        background-color: #fff;
+        color: rgb(25, 37, 146);
+        border: 1px solid rgb(25, 37, 146);
+        border-radius: 3px;
+    }
 
-        .footer-2 img {
-            width: 5%;
-        }
-
-    /* .logo {
-            width: 10%;
-        } */
+    .footer-2 img {
+        width: 5%;
+    }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 768px) and (min-width: 961px) {
     .icon {
         visibility: hidden;
     }
@@ -135,7 +141,6 @@ a {
         background-color: #fff;
         color: rgb(25, 37, 146);
         border: 1px solid rgb(25, 37, 146);
-        ;
         border-radius: 3px;
         padding: 10px 30px;
         width: 30%;
@@ -146,17 +151,35 @@ a {
         color: #fff;
         border: none;
         border-radius: 3px;
-        padding: 10px 30px;
         width: 40%;
     }
 
     .footer-2 img {
-        width: 10%;
+        width: 5%;
+    }
+
+    /* input {
+        display: none;
+    } */
+
+    .sign {
+        text-align: left;
     }
 
 }
 
+@media (min-width: 962px) and (min-width: 1024px) {
+        .footer-2 img {
+        .sign {
+            text-align: left;
+        }
 
-@media (min-width: 960px) {
+        .btn-purple {
+            background-color: #192592;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            width: 40%;
+        }
 }
 

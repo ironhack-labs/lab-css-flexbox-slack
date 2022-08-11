@@ -11,52 +11,40 @@
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <title>Where work happens | Slack</title>
   </head>
+
   <body>
     <header class="border-bottom border-secondary">
       <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid row pt-2">
-    <div class="col-md-5 col-lg-5">
-      <img class="logo ms-5" src="./images/slack-logo.png" alt="slack_logo" />
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    </div>    
-    <div class="collapse navbar-collapse col-md-7 col-lg-7" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 row pt-3">
-        <li class="nav-item col-md-4 col-lg-4">
-          <a class="nav-link" aria-current="page" href="#">Why Slack?</a>
-        </li>
-        <li class="nav-item col-md-4 col-lg-4">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item col-md-4 col-lg-4">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
-      </ul>
-        <button class="btn btn-outline-secondary">Your Workspaces</button>
-    </div>
-  </div>
-</nav>
-      <!-- <div class="container">
-        <div class="row p-3">
-          <div class="col-md-2 col-lg-2">
-            <img class="logo ms-5" src="./images/slack-logo.png" alt="slack_logo" />      
-          </div>        
-            <nav class="col-md-8 col-lg-8">
-                <ul class="row pt-4 d-flex justify-content-start">
-                 <i class="icon fa-solid fa-bars"></i>               
-                 <li class="mx-3 col-md-3 col-lg-3"><a href="#">Why Slack?</li></a>
-                 <li class="mx-3 col-md-3 col-lg-3"><a href="#">Pricing</li></a>
-                 <li class="mx-3 col-md-3 col-lg-3"><a href="#">About Us</li></a>
-               </ul>
-               <button class="btn btn-white col-md-2 col-lg-2">Your Workspaces</button>
-            </nav>        
+        <div class="container-fluid">
+          <div class="row pt-2">
+            <div class=" col-sm-6 col-md-5 col-lg-5">
+            <img class="logo ms-5" src="./images/slack-logo.png" alt="slack_logo" />
+            <button class="icon-bar navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>    
+          <div class="collapse navbar-collapse col-sm-6 col-md-7 col-lg-7" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 row pt-3 d-flex justify-content-evenly">
+              <li class="nav-item col-md-4 col-lg-4">
+                <a class="nav-link" aria-current="page" href="#">Why Slack?</a>
+              </li>
+              <li class="nav-item px-5 col-md-4 col-lg-4">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item px-5 col-md-4 col-lg-4">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+              <button class="btn btn-outline-secondary">Your Workspaces</button>
+          </div>
+          </div>          
         </div>
-      </div> -->
+      </nav>
     </header>
+
     <main>
       <section class="container hero">
-        <div class="row pt-2">
+        <div class="row pt-2 flex-lg-row-reverse">
           <div class="title col-sm-12 col-md-12 col-lg-6 py-2">
             <h1 class="title-h1 my-3">Where Work Happens</h1>
             <p>
@@ -65,7 +53,10 @@
             an A/B test, plan your next office opening, and more, Slack has you
             covered.
             </p>
-            <button class="btn-purple my-3" type="button" name="button">GET STARTED</button>
+            <form class="row pt-2 py-2">
+              <input class="rounded-1 p-2 mb-2 me-2 col-sm-12 col-md-9 col-lg-7" type="text" placeholder="Email addres">
+              <button class="btn-purple rounded-1 p-2 mb-2 col-sm-12 col-md-3 col-lg-3" type="button" name="button">GET STARTED</button>
+            </form>            
             <p class="sign">Already using Slack? <a href="#">Sign in</a></p>
           </div>
           <div class="work col-sm-12 col-md-12 col-lg-6">
@@ -87,95 +78,100 @@
               <button class="btn-white">DISCOVER WHY</button>
             </div>
           </div>
-          <div class="brand row pt-3 my-3">
-            <img class="col-sm-12 col-md-6 col-lg-4 my-5" src="./images/airbnb-logo.png" alt="" />
-            <img class="col-sm-12 col-md-6 col-lg-4 my-5" src="./images/capital-one-logo.png" alt="" />
-            <img class="col-sm-12 col-md-6 col-lg-4 my-5" src="./images/harvard-logo.png" alt="" />
-            <img class="col-sm-12 col-md-6 col-lg-4 my-5" src="./images/los-angeles-times-logo.png" alt="" />
-            <img class="col-sm-12 col-md-6 col-lg-4 my-5" src="./images/oracle-logo.png" alt="" />
-            <img class="col-sm-12 col-md-6 col-lg-4 my-5" src="./images/ticketmaster-logo.png" alt="" />
+          <div class="brand row pt-3 m-3">
+            <img class="col-sm-12 col-md-6 col-lg-4 my-5 p-5" src="./images/airbnb-logo.png" alt="" />
+            <img class="col-sm-12 col-md-6 col-lg-4 my-5 p-5" src="./images/capital-one-logo.png" alt="" />
+            <img class="col-sm-12 col-md-6 col-lg-4 my-5 p-5" src="./images/harvard-logo.png" alt="" />
+            <img class="col-sm-12 col-md-6 col-lg-4 my-5 p-5" src="./images/los-angeles-times-logo.png" alt="" />
+            <img class="col-sm-12 col-md-6 col-lg-4 my-5 p-5" src="./images/oracle-logo.png" alt="" />
+            <img class="col-sm-12 col-md-6 col-lg-4 my-5 p-5" src="./images/ticketmaster-logo.png" alt="" />
             </div>          
           </div>
       </section>
+
       <section class="free container">
-        <div class="row">
-          <h2 class="d-flex flex-colum justify-content-center">Try it for free</h2>
-          <p class="d-flex flex-colum justify-content-center">Already using Slack? <a class="ms-2" href="">Sign in</a></p>
+        <div class="row pt-2 d-flex justify-content-evenly">
+          <div class="col-sm-12 col-md-6 col-lg-5">
+            <h2 class="d-flex flex-colum justify-content-center">Try it for free</h2>
+            <p class="d-flex flex-colum justify-content-center">Already using Slack? <a class="ms-2" href="">Sign in</a></p>
+          </div>
+            <div class="col-sm-12 col-md-6 col-lg-7">
+              <form class="row pt-2 py-2">
+                <input class="col-sm-12 col-md-7 col-lg-7 rounded-1 py-2 mb-2" type="text" placeholder="Email addres">
+                <button class="col-sm-12 col-md-5 col-lg-5 btn-purple rounded-1 py-2 mb-2" type="button" name="button">GET STARTED</button>
+              </form>
+            </div>       
         </div>
-        <div class="row d-flex justify-content-center">
-          <button class="btn-purple" type="button" name="button">GET STARTED</button> 
-        </div>       
-        </div>
-      </section>
+      </section>      
     </main>
+
     <footer>
       <div class="container footer">
-          <div class="row pt-2 footer-1">
-            <div class="col-sm-12 col-md-3 col-lg-3 slak">
-            <img class="slak-img" src="./images/iso-slack.png" alt="" />
+        <div class="row pt-2 footer-1 d-flex justify-content-between">
+          <div class="col-sm-12 col-md-3 col-lg-3 slak">
+              <img class="slak-img" src="./images/iso-slack.png" alt="" />
             </div>
-          <div class="col-sm-12 col-md-9 col-lg-9 row pt-4">
-          <div class="links-1 col-xs-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-start">
-          <ul>
-          <li>COMPANY</li>
-          <li>About Us</li>
-          <li>Careers</li>
-          <li>Blog</li>
-          <li>Press</li>
-          <li>Brand Guidelines</li>
-          </ul>
-          </div>
-          <div class="links-2 col-xs-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-start">
-            <ul>
-          <li>PRODUCT</li>
-          <li>Why Slack?</li>
-          <li>Enterprise</li>
-          <li>Customer Stories</li>
-          <li>Pricing</li>
-          <li>Security</li>
-        </ul>
-          </div>
-          <div class="links-3 col-xs-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-start">
-            <ul>
-          <li>RESOURCES</li>
-          <li>Download</li>
-          <li>Help Center</li>
-          <li>Guides</li>
-          <li>Events</li>
-          <li>App Directory</li>
-          <li>API</li>
-        </ul>
-          </div>
-          <div class="links-4 col-xs-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-start">
-            <ul>
-          <li>EXTRAS</li>
-          <li>Podcast</li>
-          <li>Slack Shop</li>
-          <li>Slack at Work</li>
-          <li>Slack Fund</li>
-        </ul>
+            <div class="col-sm-12 col-md-9 col-lg-9 row pt-4">
+            <div class="links-1 col-xs-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-start">
+              <ul>
+                <li>COMPANY</li>
+                <li class="text-secondary">About Us</li>
+                <li class="text-secondary">Careers</li>
+                <li class="text-secondary">Blog</li>
+                <li class="text-secondary">Press</li>
+                <li class="text-secondary">Brand Guidelines</li>
+              </ul>
+            </div>
+            <div class="links-2 col-xs-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-start">
+              <ul>
+                <li>PRODUCT</li>
+                <li class="text-secondary">Why Slack?</li>
+                <li class="text-secondary">Enterprise</li>
+                <li class="text-secondary">Customer Stories</li>
+                <li class="text-secondary">Pricing</li>
+                <li class="text-secondary">Security</li>
+              </ul>
+            </div>
+            <div class="links-3 col-xs-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-start">
+              <ul>
+                <li>RESOURCES</li>
+                <li class="text-secondary">Download</li>
+                <li class="text-secondary">Help Center</li>
+                <li class="text-secondary">Guides</li>
+                <li class="text-secondary">Events</li>
+                <li class="text-secondary">App Directory</li>
+                <li class="text-secondary">API</li>
+              </ul>
+            </div>
+            <div class="links-4 col-xs-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-start">
+              <ul>
+                <li>EXTRAS</li>
+                <li class="text-secondary">Podcast</li>
+                <li class="text-secondary">Slack Shop</li>
+                <li class="text-secondary">Slack at Work</li>
+                <li class="text-secondary">Slack Fund</li>
+              </ul>
+            </div>        
           </div>        
-          </div>
-        
-      </div>
-          </div>        
+        </div>
+      </div>        
                   
       <div class="footer-2 row pt-2">
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-6 col-lg-6 py-3">
         <ul class="row">
           <li class="col"><a href="#">Status</a></li>
           <li class="col"><a href="#">Privacy & Terms</a></li>
           <li class="col"><a href="#">Contact Us</a></li>
         </ul>
-        <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center justify-content-evenly py-3">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 py-3 d-flex justify-content-sm-evenly">
           <img src="./images/us-flag.png" alt="" />
           <span>English (US)</span>
           <i class="fas fa-chevron-down"></i>
           <i class="fab fa-twitter"></i>
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-youtube"></i>
-        </div>
-        </div>
+        </div>        
       </div>        
     </footer>
     <!-- JavaScript Bundle with Popper -->
