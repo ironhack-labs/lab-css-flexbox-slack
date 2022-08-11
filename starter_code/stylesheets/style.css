@@ -7,6 +7,7 @@ nav grey: #5b5e6d;
 */
 
 /* Para que no se coma lo de de abajo :) del navbar position:fixed */
+/* extra-small BECAUSE mobile-first */
 body {
     min-height: 75rem;
     padding-top: 4.5rem;
@@ -17,7 +18,35 @@ body {
     height: 20%;
 }
 
-@media (min-width: 767px) and (max-width: 961px) {
+.flag-us {
+    width: 10%;
+}
+
+/* .talking {
+    display: flex;
+    justify-content: space-around;
+} */
+
+/* small */
+@media (min-width: 600px) and (max-width: 961px) {
+    .navbar-brand {
+        width: 15%;
+        height: 10%;
+    }
+
+    body {
+        min-height: 100rem;
+        padding-top: 7rem;
+    }
+
+    .flag-us {
+        width: 10%;
+    }
+
+}
+
+/* med */
+@media (min-width: 962px) and (max-width: 1199px) {
     .navbar-brand {
         width: 10%;
         height: 10%;
@@ -27,13 +56,12 @@ body {
         min-height: 100rem;
         padding-top: 7rem;
     }
-
-    .img-talking {
-        padding-left: 15%;
-    }
 }
 
-.company-logo {
-    /* width: 30%; */
-    /* height: 10%; */
+/* big */
+@media (min-width: 1200px) {
+    .navbar-brand {
+        width: 5%;
+        height: 5%;
+    }
 }
