@@ -18,55 +18,117 @@ body {
     max-width: 100%;
 }
 
+button {
+    width: 80%;
+    height: 50px;
+    background-color: #192592;
+    color: white;
+    border-radius: 3%;
+    margin: 10px 0;
+    /* margin: 0 auto; */
+}
+
+p {
+    color: #5b5e6d;
+}
+
+input {
+    width: 78vw;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 2%;
+}
+
 header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
     align-items: center;
-    /* padding: 0 30px; */
-    /* margin-top: 10vh; */
+    /* position: relative; */
+    /* margin-top: 100px; */
 }
 
-header > p {
+#header-email-button-div {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    /* height: auto; */
+
+
+}
+
+h1 {
+    color: #2C303F;
+}
+
+p li {
+    color: #5b5e6d
+}
+
+ul {
+    font-weight: 100;
+}
+
+header p,
+header h1 {
     padding: 0 40px;
 }
+
 
 nav {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* margin-bottom: 100px; */
     /* position: fixed; */
+    border-bottom: 1px solid black;
 }
 
 nav>img {
-    width: 40%;
+    width: 40vw;
     height: 40%;
 }
 
 main {
     text-align: center;
-    
+
 }
 
-main>div {
+.client-section {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
+    /* padding: 0 30px; */
+    background-color: #F4F3F4;
+    margin-top: 0;
 }
 
-main>div>img {
-    width: 100%;
+#work-happening-img {
+    width: 80%;
     height: auto;
+}
+
+#discover-btn {
+    background-color: white;
+    color: #192592;
+    border: 1px solid #192592;
+
 }
 
 .logo {
     width: 200px;
     height: auto;
     margin: 20px;
+}
+
+.logos-group {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
 }
 
 .footer-resources {
@@ -78,6 +140,12 @@ main>div>img {
     justify-content: flex-start;
     align-items: flex-start;
 
+}
+
+.footer-resources img {
+    width: 45vw;
+    height: auto;
+    padding-right: 30px;
 }
 
 #company-list #product-list #resources-list #extra-list {
@@ -99,21 +167,28 @@ ul li {
     /* height: auto; */
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* justify-content: center;  */
-    align-items: center; 
 }
 
 #icons {
-    width: 40%;
+    width: 50%;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* margin: 0 auto; */
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px 0; */
+    /* margin: 10px auto; */
 }
 
-#icons img {
-    width: 40px;
+.fab {
+    padding: 15px;
+}
+
+#icons>div>img {
+    width: 20%;
     height: auto;
 }
 
@@ -124,4 +199,196 @@ ul li {
     flex-wrap: wrap;
     justify-content: space-evenly;
     /* align-items: stretch; */
+}
+
+#lang-flag {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 767px) {
+    #cta-inputs input {
+        display: none;
+    }
+
+    #work-happening-desktop-img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: baseline;
+        /* flex-wrap: wrap; */
+
+    }
+
+    #work-happening-desktop-img {
+        display: none;
+    }
+
+    #header-email-button-div {
+        display: flex;
+        width: 100vw;
+        height: auto;
+        flex-direction: row;
+        margin-left: 5vw;
+
+        /* align-items: center; */
+        /* height: auto; */
+    }
+
+    button {
+        width: 20vw;
+        /* height: auto; */
+
+    }
+
+
+    input {
+        width: 30vw;
+        margin-right: 1vw;
+        height: 50px;
+    }
+
+    .footer-resources img {
+        width: 10vw;
+        height: auto;
+    }
+
+
+    .logos-group {
+        display: flex;
+        width: 90vw;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid #5b5e6d; */
+    }
+
+    .logo-border-left {}
+
+    .logo-border-right {}
+
+    .logos-group * {
+        padding: 30px;
+    }
+
+    .logos {
+        width: 100%;
+        height: auto;
+    }
+
+    #call-to-action {
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+        /* margin: 5px 50px; */
+
+    }
+
+    #call-to-action * {
+        margin: 10px 10px;
+    }
+
+    #cta-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #cta-inputs input {
+        display: inline-flex;
+        width: 150px;
+        padding: 5px;
+        height: 35px;
+    }
+
+    #bottomline {
+        background-color: #F4F3F4;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* justify-content: center;  */
+    }
+
+
+    #terms {
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* align-items: stretch; */
+    }
+
+    #terms * {
+        margin: 0 10px;
+    }
+
+    #icons {
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    #lang-flag {
+        width: 40%;
+        display: flex;
+        /* align-items: center; */
+    }
+
+
+}
+
+@media only screen and (min-width: 960px) {
+
+    .logos-group {
+        display: flex;
+        width: 95vw;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid #5b5e6d; */
+    }
+
+    #work-happening-desktop-img {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    #email-input {
+        display: none;
+    }
+
+    #work-happening-img {
+        display: none;
+    }
+    
+    .dissappear {
+        display: none;
+    }
+
+    #work-happening-desktop-img {
+        display: inline-flex;
+    }
+
+
+    
 }
