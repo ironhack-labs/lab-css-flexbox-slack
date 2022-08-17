@@ -96,13 +96,15 @@ p {
 .formEmail input{
     color: #5b5e6d;
     border: none;
-    font-size: 1.3em
+    font-size: 1.3em;
+    outline: transparent;
 }
 
 .formEmailTwo input{
     color: #5b5e6d;
     border: none;
-    font-size: 1.3em
+    font-size: 1.3em;
+    outline: transparent;
 }
 
 .getStarted{
@@ -133,23 +135,28 @@ p {
 }
 
 .goodCompany,
-.goodCompany div {
+.marginCompany {
     background-color: #F4F3F4;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.logo {
+.companyLogos {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.companyLogos img{
+    border-bottom: 1px solid #747788;
+    padding: 10% 20%;
     width: 40%;
-    margin: 45px 0
+    margin: 45px 0;
 }
 
-.goodCompany hr{
-    background-color: #5b5e6d;
-    height: 0.5px;
-    width: 80%;
-    border: none;
+#lastLogo {
+    border-bottom: none;
 }
 
 .marginCompany{
@@ -168,6 +175,7 @@ h2{
     border-color: #192592;
     border-radius: 6px;
     font-size: 1.2em;
+    margin-bottom: 5%;
 }
 
 .bottom {
@@ -326,12 +334,49 @@ h2{
         flex-wrap: wrap;
         flex-direction: row;
         align-items: initial;
+        justify-content: space-evenly;
     }
     .companyLogos img{
-        width: 35%;
-        border-bottom: 1px solid #5b5e6d;
-        border-left: 1px solid #5b5e6d;
-        border-right: 1px solid #5b5e6d;
+        padding: 5%;
+        width: 39.5%;
+        border-bottom: 1px solid #bdbec4;
+        border-left: 1px solid #bdbec4;
+        margin: 0 auto
+    }
+
+    #lastLogoSecond{
+        border-bottom: none;
+    }
+
+    .finalFooter {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .finalFooter ul{
+        font-size: 1em;
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .noPhoneFlex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .noPhoneFlex div{
+        display: flex;
+    }
+    
+    .flagFlex img, span, i{
+        font-size: 0.5em;
+        margin: 0 10px;
+    }
+    .social i{
+        margin: 0 10px;
     }
 }
 
