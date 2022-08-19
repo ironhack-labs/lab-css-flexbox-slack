@@ -11,13 +11,17 @@
       crossorigin="anonymous"
     ></script>
     <!-- link your styles -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Albert Sans"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <title>Slack</title>
   </head>
 
   <body>
-    <!-- nav bar section -->
-    <nav>
+    <!-- mobile nav bar section -->
+    <nav >
       <div class="flex-container">
         <div class="flex-item">
           <img
@@ -32,16 +36,41 @@
       </div>
       <hr />
     </nav>
+
+    <!-- laptop nav bar -->
+    <nav class="flex-container laptop-nav-bar">
+      <div class="flex-item">
+        <img
+          class="slack-logo"
+          src="./images/slack-logo.png"
+          alt="slack_logo"
+        />
+      </div>
+      <div class="flex-item laptop-nav">
+        <ul>
+          <li class="nav-item">Why Slack?</li>
+          <li class="nav-item">Pricing</li>
+          <li class="nav-item">About Us</li>
+        </ul>
+      </div>
+      <div class="laptop-nav">
+        <button class="your-space-button" href="">Your Workspaces</button>
+      </div>
+    </nav>
     <!-- section one -->
     <header class="flex-container">
-      <div class="flex-center">
-        <h1>Where Work Happens</h1>
-        <p>
-          When your team needs to kick off a project, hire a new employee,
-          deploy some code, review a sales contract, finalize next year's
-          budget, measure an A/B test, plan your next office opening, and more,
-          Slack has you covered.
-        </p>
+      <div class="flex-center work-section">
+        <div>
+          <h1 class="laptop-large-text">Where Work Happens</h1>
+        </div>
+        <div class="text-container">
+          <p class="laptop-large-p-tag">
+            When your team needs to kick off a project, hire a new employee,
+            deploy some code, review a sales contract, finalize next year's
+            budget, measure an A/B test, plan your next office opening, and
+            more, Slack has you covered.
+          </p>
+        </div>
         <input
           class="email"
           type="email"
@@ -102,33 +131,27 @@
       </div>
     </main>
 
-    <section class="try-free">
-      <p class="free">Try it for free</p>
-      <p>Already using Slack? <a href="">Sign in</a></p>
-      <input
-        class="email"
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Email Address"
-      />
-      <button class="get-started" type="button" name="button">
-        GET STARTED
-      </button>
-    </section>
+    <section>
+      <div class="try-free flex-container">
+        <div class="flex-item">
+          <p class="free">Try it for free</p>
+          <p>Already using Slack? <a href="">Sign in</a></p>
+        </div>
 
-    <!-- testing section -->
-    <!-- <section class="flex-container">
-      <div class="box-one">
-        <h1>1</h1>
+        <div class="flex-item">
+          <input
+            class="email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+          />
+          <button class="get-started" type="button" name="button">
+            GET STARTED
+          </button>
+        </div>
       </div>
-      <div class="box-two">
-        <h1>2</h1>
-      </div>
-      <div class="box-three">
-        <h1>3</h1>
-      </div>
-    </section> -->
+    </section>
 
     <!-- section three -->
     <!-- <footer class="flex-container">
