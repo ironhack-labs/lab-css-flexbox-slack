@@ -17,7 +17,7 @@ nav grey: #5b5e6d; */
 #button1{
     font-size: 20px;
     color:white;
-    background-color: darkblue;
+    background-color: #192592;
     border-radius: 2px;
     display: flex;
     padding: 15px;
@@ -59,6 +59,7 @@ nav grey: #5b5e6d; */
 
 
 @media (max-width: 768px){
+        
     #logo-images{
         display:flex;
         flex-flow: column wrap;
@@ -74,26 +75,63 @@ nav grey: #5b5e6d; */
         display: flex;
         flex-direction: column;
     }
+
+    li{
+        display: flex;
+        height: 30px;
+        align-items: flex-start;
+        flex-direction: column;           
     }
+}
 
 @media (min-width: 768px) and (max-width: 961px){
-   #intro h1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content:center;
+     #intro h1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
    }
-   
-    #button1, #register {
+  
+    #button1 {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap-reverse;
         gap: 5px;
-        
+   }
+    
+   /* this #logo-images works for Iteration 3, 
+   but is not working for Iteration 2, 
+   shows 3 logos instead of 2 */
+
+    #logo-images{
+        display:flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 10px;
     }
-   
+    
+    
+    
+    .try-free {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     
-        
+  
+}
+
+@media (min-width: 960px) and (max-width: 1024px){
+
+    #logo-images{
+        display:flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 10px;
     }
+
+}
