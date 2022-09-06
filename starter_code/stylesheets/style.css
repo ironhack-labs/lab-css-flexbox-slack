@@ -5,13 +5,21 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+@font-face {
+    font-family: my-new-font;
+    src: url(https://use.fontawesome.com/releases/v5.0.1/css/all.css);
+}
+
 
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
     
 }
-
 #navi-menu{
+    display: none
+}
+/* #navi-menu{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -19,38 +27,47 @@ body{
     list-style-type: none;
     padding-left: 0px;
 
-}
+}*/
 
 #navigation{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-top: 0;
     width: 100%;
-    height: 100px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     border-bottom: 3px solid #F4F3F4;
 }
 
+
+
 #section-1{
     display: flex;
     flex-direction: column;
     width: auto;
-
-    
-    
 }
 
 #home-work{   
     height: 400px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 
 }
 
 .button{
+    width: 90%;
     background-color: #192592;
     color: white;
     padding:10px;
     border-radius: 4px;
     box-shadow: none;
     border: none;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-bottom: 10px;
 
 }
 
@@ -68,10 +85,15 @@ body{
 
 .email-bar{
     flex-grow: 1;
+    height: 40px;
+    margin-left: 20px;
+    margin-right:20px;
+    padding: 4px;
 }
 
 .link-slack{
     text-align: center;
+    padding: 0%;
 }
 
 #section-2{
@@ -87,10 +109,9 @@ body{
 }
 
 #section-2-div-1 img{    
-    display: flex;
-    width: 40%;
-    height: 100px;
-    margin-top: 20px;    
+    max-width: 40%;
+    padding: 20px 50px 20px 50px; 
+    border-bottom: 0.5px gray solid;
 }
 
 
@@ -102,7 +123,7 @@ body{
     background-color: white;
     border: 1px solid;
     color: #192592;
-    width: 95%;
+    width: 300px;
     padding: 10px;
     border-radius: 4px;  
 }
@@ -115,14 +136,43 @@ body{
     margin: 0;
 }
 
+.logos-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 
-
-@media (max-width: 768px ){
-    #navigation{
-        display: flex;
-
-    }
 }
+
+.try-for-free{
+    margin-top: 50px;
+}
+
+.button{
+    display: flex;
+    background-color: #192592;
+    color: white;
+    padding:10px;
+    border-radius: 4px;
+    box-shadow: none;
+    border: none;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-bottom: 10px;
+
+
+}
+
+#button-3{
+
+    background-color: white;
+    color: #192592;
+    width: 95%;
+    padding: 10px;
+    border-radius: 4px;  
+}
+
 
 #fotter{
     display: flex;
@@ -138,3 +188,137 @@ body{
 .title{
     font-weight: bold;
 }
+/* small screen */ 
+@media (max-width: 961px ) and (min-width: 767px) {
+    
+    .headlines{
+        margin: 20px 50px 10px 50px;
+        display: flex;
+    }
+    .link-slack{
+        text-align: left;
+        margin-left: 20px;
+    }
+    .form-and-button{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: auto;
+    }
+
+    .email-bar{
+        display: flex;
+        justify-content: flex-start;
+        width: 30%;
+    }
+    .home-work-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #home-work{
+        width: 40%;
+    }
+    .logos-container img{
+        width: 30%;
+        height: 30%;
+    }
+    
+        .logos-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    #headline-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .try-and-link{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* medium screen */ 
+@media (max-width: 1024px) and (min-width: 961px) {
+    
+.logos-container img{
+    width: 20%;
+    height: 30%;
+}
+
+    .logos-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* large screen */ 
+@media (min-width: 1200px) {
+    
+
+    #hamburger-list{display:none}
+
+    #navi-menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;   
+            list-style-type: none;
+            padding-left: 0px;
+    }
+    #navi-menu li {
+        display:inline;
+        padding: 0px 10px;
+    }
+    #your-workspace {
+        border: 1px grey solid;
+    }
+    #section-1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .email-bar{display: none;
+    }
+    .button{width: 20%;}
+    
+
+    }
+
+   
+
+}
+
+
