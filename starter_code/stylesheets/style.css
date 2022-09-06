@@ -17,10 +17,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:fixed;
+    width:100%;
+    top:0;
     background-color: white;
     border-bottom: 1px solid rgba(91,94,109,.2);
-    color:#5b5e6d;   
-    padding: 10px 20px;
+    color:#5b5e6d; 
+    padding: 10px 0px;  
+  
 }
 .slack-logo{
     width:80px; 
@@ -229,15 +233,36 @@ header button{
     main h2, p{
         text-align: center;
     }
-    
-
 }
 
-
-
-
 @media screen and (min-width:768px) and (max-width:961px){
-
+    .hamburger,.toggle-menu{
+        display:block;
+    }
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top:1;
+        right:-300px;
+        background-color: white;
+        color:#5b5e6d;
+        width:250px;
+        height:100%;
+        padding-top:65px;
+    }
+    
+    .menu ul{
+        width:100%;
+    
+    }
+    .menu li,.menu li:hover{
+        padding:30px;
+        font-size: 24px;
+        box-shadow: 0 1px rgba(255.255.255.0.1);
+        inset;
+    }
     header{
         display: flex;
         flex-direction: column-reverse;
