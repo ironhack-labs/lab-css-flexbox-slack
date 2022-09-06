@@ -9,20 +9,25 @@ nav grey: #5b5e6d;
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-/*    font-size: 16px;
-    width: 768px;
     position: relative;
+    margin: 0;
+    padding: 0;
+
+/*
+    font-size: 16px;
     line-height: 50px;
 */
 }
 
 h1, h2, #try-it {
     font-family: 'Times New Roman', Times, serif;
+    color: #2C303F;
+    border: 1px solid red;
 }
 
 h1 {
     font-size: 3.5em;
-    width: 50%
+    width: 50%;
 }
 
 h2 {
@@ -31,7 +36,9 @@ h2 {
 
 p {
     font-size: 2.5em;
-    margin: 20px;
+    font-weight: 100;
+    color: #5b5e6d;
+    border: 1px solid red;
 }
 
 nav {
@@ -53,7 +60,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 20px;
+    margin: 50px;
+    border: 1px solid green;
 }
 
 header img {
@@ -66,6 +74,15 @@ form {
     align-items: center;
 }
 
+.form input {
+    width: 100%;
+    font-size: 2em;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+}
+
 .form button {
     width: 100%;
     font-size: 2em;
@@ -76,31 +93,22 @@ form {
     border-radius: 10px;
 }
 
-.form input {
-    width: 95%;
-    font-size: 2em;
-    margin: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    border-radius: 10px;
-    border: 1px solid lightgrey;
+.sign-in {
+    font-size: 2.0em;
+    text-align: center;
+    margin-bottom: 2em;
 }
 
-.sign-in {
-    text-align: center;
-}
 main div {
     background-color: #F4F3F4;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px;
-    padding: 20px;
+    padding: 50px;
 }
 
-main div button {
+main button {
     width: 100%;
     font-size: 2em;
     margin: 10px;
@@ -118,25 +126,24 @@ main div button:hover {
 }
 
 section div {
-    height: 100px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;  
 }
 
 .logo {
-    width: 200px;
-    margin: 0px auto;
+    width: 300px;
+    border: 1px solid red;
 }
 
 #la-times {
-    width: 400px;
-    margin: 0px auto;
+    width: 550px;
 }
 
 hr {
     width: 90%;
-    border-bottom: 1px solid rgb(228, 225, 225);
+    border-bottom: 1px solid rgb(253, 251, 251);
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -145,7 +152,22 @@ hr {
 .white-background {
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    margin: 50px;
+    border: 1px solid green;
+}
+
+/*
+#email-input {
+    width: 95%;
+    font-size: 2em;
+    margin: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
 }
 
 #email-button {
@@ -158,31 +180,26 @@ hr {
     color: white;
     border-radius: 10px;
 }
-
-#email-input {
-    width: 95%;
-    font-size: 2em;
-    margin: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    border-radius: 10px;
-    border: 1px solid lightgrey;
-}
+*/
 
 /* Extra Small Screen (width < 768px) */
 @media (max-width: 768px) {
     body {
         font-size: 16px;
         width: 768px;
-        position: relative;
         line-height: 50px;
     }    
 }
 
 /* Small Screen (961px > width > 767px) */
+
 @media (min-width: 767px) {
     
+    body {
+        font-size: 16px;
+        line-height: 50px;
+        }
+
     h1 { 
         font-size: 8em;
         line-height: 1em;
@@ -199,6 +216,16 @@ hr {
         flex-direction: row;
         align-items: flex-start;
     }
+    .form input {
+        width: 10em;
+/*      font-size: 2em;
+        margin: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        border-radius: 10px;
+        border: 1px solid lightgrey;
+*/  
 
     .form button {
         width: 10em;
@@ -210,16 +237,6 @@ hr {
         border-radius: 10px;
 */    }
     
-    .form input {
-        width: 20em;
-/*        font-size: 2em;
-        margin: 10px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 30px;
-        border-radius: 10px;
-        border: 1px solid lightgrey;
-*/  
     }
     
 }
