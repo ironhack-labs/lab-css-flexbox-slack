@@ -58,7 +58,10 @@ header {
 
 }
 
-
+.button-email {
+    display: flex;
+    flex-direction: column;
+}
 
 input, .button-start {
     margin: 1em;
@@ -121,23 +124,22 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     padding-bottom: 1em;
-}
-
-.logo-container hr {
     width: 100%;
-    background-color:blue;
-
-    
-    
 }
 
 .logo {
     width: 50%;
     padding: 1em;
     padding: 3em;
+    border-bottom: 0.1em solid lightgray;
     
+}
+
+.logo-size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #la-times {
@@ -163,13 +165,13 @@ h3 {
     margin: 0;
 }
 
-footer ul{
+footer ul {
     list-style-type: none;
     color: rgb(41, 41, 41);
     font-size: 1.2em;
 }
 
-.footer-links-item{
+.footer-links-item {
     padding: 0.75em;
 }
 
@@ -242,7 +244,49 @@ footer {
     width: 50%;
 }
 
+@media (min-width: 767px) {
+    .button-start, .button-discovery {
+        width: 25%;
+    }
+    input {
+        width: 50%;
+    }
+    .button-email {
+        flex-direction: row;
+    }
+    .logo {
+        border: 0.1em solid lightgray;
+        width: 10em;
+    }
+    .logo-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
+    .logo-size {
+        width: 20em;
+    }
+
+    #la-times {
+        width: auto;
+    }
+    .footer-end, .footer-container {
+        flex-direction: row;
+        width: 100%;
+    }
+    #icons {
+        display: flex;
+        flex-direction: row;
+    }
+    .img-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+}
 
 
 
