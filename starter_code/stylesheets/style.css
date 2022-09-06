@@ -9,9 +9,9 @@ nav grey: #5b5e6d;
 body {
     display: flex;
     flex-direction: column;
-    /* margin: 3em; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    margin: 0;
+    padding: 0;
 }
 
 #nav {
@@ -19,10 +19,6 @@ body {
     top: 0px;
     margin: 0;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    
-    
 
 }
 
@@ -33,19 +29,20 @@ body {
 }
 
 .slack-image{
-    width: 6em;
-    padding: 2em;
+    width: 7em;
+    padding: 1.5em 0 1.5em 1.5em;
 }
 
 .nav-links{
     list-style-type: none;
     display: flex;
     flex-direction: column;
-
+    justify-content: space-evenly;
 }
 
 #hr {
     width: 100%;
+    margin:0;
 }
 
 header {
@@ -53,9 +50,16 @@ header {
     flex-direction: column;
 }
 
+header, 
+#section-1, 
+#section-2, 
+.footer-links,
+.footer-end {
+    padding: 2em;
+}
+
 #image-home{
     order: 1;
-
 }
 
 .button-email {
@@ -64,7 +68,7 @@ header {
 }
 
 input, .button-start {
-    margin: 1em;
+    margin-bottom: 1em;
     height: 3em;
     border-radius: 5px;
     font-size: 1.2em;
@@ -72,33 +76,38 @@ input, .button-start {
 
 input {
     padding-left: 1em;
+    border: 1px solid black;
 }
 
 .button-start {
     background-color: #2f4faf;
     color: white;
+    border: 1px solid black;
 
 }
 
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 3.5em;
-    color: rgb(41, 41, 41)
+    color: #2C303F;
+    margin: 0.25em 0;
 }
 
 .paragraph {
-    line-height: 1.5em;
+    line-height: 1.6em;
+    color: #5b5e6d;
+    font-weight: 500;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif
 }
 
-.center-paragraph {
+.center {
     text-align: center;
-    color: rgb(41, 41, 41)
 }
 
 h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 3em;
-    color: rgb(41, 41, 41);
+    font-size: 2.8em;
+    color: #2C303F;
     text-align: center;
 }
 
@@ -111,12 +120,13 @@ h2 {
     height: 3em;
     border-radius: 5px;
     font-size: 1.2em;
+    border: 1px solid black;
 }
 
 #section-1 {
     display: flex;
     flex-direction: column;
-    background-color: rgb(241, 241, 241);
+    background-color: #F4F3F4;
     padding-top:2em;
 }
 
@@ -154,7 +164,7 @@ h2 {
 h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2.5em;
-    color: rgb(41, 41, 41);
+    color: #2C303F;
     text-align: center;
     margin: 2em 1em 0 1em;
 
@@ -167,22 +177,28 @@ h3 {
 
 footer ul {
     list-style-type: none;
-    color: rgb(41, 41, 41);
+    color: #2C303F;
     font-size: 1.2em;
+    padding: 0;
 }
 
 .footer-links-item {
-    padding: 0.75em;
+    padding: 0.5em;
 }
 
 footer ul li:first-child {
     font-weight: 800;
+    
+
 }
 
 .footer-links {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    
 }
 
 .footer-links ul {
@@ -192,7 +208,7 @@ footer ul li:first-child {
 }
 
 .footer-end {
-    background-color: rgb(241, 241, 241);
+    background-color: #F4F3F4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,7 +234,6 @@ footer ul li:first-child {
 
 #icons {
     padding: 0;
-    /* padding: 2.5em; */
 }
 
 .fab{
@@ -226,7 +241,7 @@ footer ul li:first-child {
 }
 
 footer {
-    color: rgb(41, 41, 41);
+    color: #5b5e6d;
 }
 
 .terms {
@@ -245,6 +260,7 @@ footer {
 }
 
 @media (min-width: 767px) {
+    
     .button-start, .button-discovery {
         width: 25%;
     }
