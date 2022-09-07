@@ -24,6 +24,12 @@ nav grey: #5b5e6d; */
     margin-top: 10px;
 }
 
+input[email]{
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
 .other-users h2{
     font-size: 40;
 }
@@ -67,6 +73,7 @@ nav grey: #5b5e6d; */
         padding: 10px;
     }
 
+   
     .discover-why {
         display: flex;
         justify-content: center;
@@ -91,6 +98,7 @@ nav grey: #5b5e6d; */
         flex-direction: row-reverse;
         justify-content: flex-end;
    }
+
   
     #button1 {
         display: flex;
@@ -112,16 +120,27 @@ nav grey: #5b5e6d; */
         padding: 10px;
     }
     
+
+    #register input[email], #button1 {
+        display:inline-flex;
+        flex-direction: row;
+    }
     
+    #register p {
+        display: flex;
+        justify-content: flex-start;
+    }
     
-    .try-free {
+    #try-free p {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
-    
-  
+    #try-free #button1, input[email]{
+        display: inline-flex;
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 960px) and (max-width: 1024px){
@@ -132,6 +151,10 @@ nav grey: #5b5e6d; */
         flex-wrap: wrap;
         justify-content: flex-start;
         padding: 10px;
+    }
+
+    #register input[email], #button1, p{
+        display: inline-flex;
     }
 
 }
