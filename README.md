@@ -172,7 +172,7 @@ You can inspect the page styles here:
 
 ### Iteration 3 | Medium Screens (width > 1024px and width < 1440px)
 
-The easiest change we will have. We'll continue by focusing on the meduim screen size devices (notebooks and bigger tablets). You should display 3 logos per row on the **"You're in good company"** section. Easy peasy!
+The easiest change we will have. We'll continue by focusing on the meduim screen size devices (notebooks and bigger tablets):
 
 
 
@@ -223,7 +223,7 @@ You can inspect the page styles here:
 
 ### Iteration 4 | Large Screens (width > 1440px)
 
-Last one! Some small changes and we are done! In this iteration we are targeting the large screen devices such as desktops and laptops.
+Last one! Some small changes and we are done! In this iteration we are targeting the large screen devices such as desktops and laptops:
 
 - The **sign up buttons** in the **header** should now be displayed horizontally, next to each other. Additionaly, the image shown in the **header** should be centered and fully visible.
 
