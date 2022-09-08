@@ -49,7 +49,7 @@ The `starter_code` folder contains all the files you'll need. The `images` folde
 
 During each iteration, the first step you should do is to inspect the provided screenshots. These are included in each iteration, along with a preview of the final result. Use these as a starting point for implementing your styles.
 
-
+<br />
 
 <!--
 
@@ -67,7 +67,7 @@ When you begin working as a developer, it is very likely that your team will use
 
 -->
 
-
+----
 
 ### Iteration 1 | Mobile Screens (width < 768px)
 
