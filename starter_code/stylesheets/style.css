@@ -10,6 +10,12 @@ html{
     font-size:10px;
     margin: 0;
     box-sizing: border-box;
+    color: #5b5e6d;
+}
+
+body{
+    border: 1px solid black;
+    line-height: 2.4rem;
 }
 
 img {
@@ -30,15 +36,77 @@ nav {
     background-color: white;
     box-shadow: 0px 2px 3px #F4F3F4;
     border-bottom: #F4F3F4;
+    height: 5rem;
+    padding: 1rem;
 }
 
 nav > img{
-    max-width: 30vw;
+    max-width: 10rem;
     height:auto;
+    margin-left: 5vw;;
 }
 
-@media only screen and (max-width:768px) {
+header{
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1.6rem;
+    padding: 7rem 3rem;
+}
+
+.header-content{
+    display:flex;
+    flex-direction: column;
+}
+
+.header-content > h1{
+    color:#2C303F;
+    font-size:4rem;
+    width: 60%;
+    line-height: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.sign-in{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in > button{
+    width: 100%;
+    background-color: #192592;
+    color:#F4F3F4;
+    border: none;
+    height: 5rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width:1024px) {
     #menu {
         display: none;
+    }
+    nav > a {
+        display: flex;
+        margin-right: 5vw;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #menu{
+        display: flex;
+        list-style-type: none;
+        margin-right: 5vw;
+    }
+
+    nav > a {
+        display: none;
+    }
+
+    header{
+        display:flex;
+        flex-direction: row;
     }
 }
