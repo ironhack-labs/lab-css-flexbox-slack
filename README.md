@@ -18,7 +18,6 @@ The goal of the lab is to create a *responsive* landing page using **CSS**, **Fl
 ## Requirements
 
 - Fork this repo
-
 - Clone this repo
 
   
@@ -62,7 +61,6 @@ Figma is great because it allows designers and developers to collaborate on proj
 When you begin working as a developer, it is very likely that your team will use Figma to handoff the designs of the features you will be asked to create. We're going to assume you've never seen Figma before, so don't worry. The following short videos should get you up to speed:
 
 - [What is Figma?](https://www.youtube.com/watch?v=_d8GG2QZYAM)
-
 - [Figma for Frontend developers [ in 5 minutes ]](https://www.youtube.com/watch?v=hbN9RGcQFNU)
 
 -->
@@ -89,7 +87,7 @@ Use the following page screenshot as the guide:
 
 <details>
   <summary>Screenshot - Mobile Screens</summary>
-  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Home+Page+-+420px.png" />
+  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Home+Page+-+420px.png" width="200px"/>
   <br/>
 
   [Back to top](#iteration-1--mobile-screens-width--768px)
