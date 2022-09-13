@@ -140,7 +140,7 @@ Use the following page screenshot as the guide:
 
 <details>
   <summary>Screenshot - Small Screens</summary>
-  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Home+Page+-+768px.png" />
+  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Home+Page+-+768px.png" width="350px"/>
   <br/>
 
   [Back to top](#iteration-2--small-screens-width--768px-and-width--1024px)
