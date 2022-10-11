@@ -13,15 +13,16 @@ html {
   scroll-behavior: smooth;
   font-family: arial, sans-serif;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 body {
   background-color: #540b51;
+  width: 100vw;
 }
 nav {
   margin: 5vw;
@@ -50,14 +51,13 @@ h1 {
   text-align: center;
   color: white;
   font-size: 1.6rem;
-  margin: 2rem 0;
+  margin: 5vw;
 }
 header > div > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  width: 80%;
   width: 100%;
 }
 header p {
@@ -103,7 +103,7 @@ header p {
   position: absolute;
   top: 50%;
   left: 15px;
-  translate: 0 -50% ;
+  translate: 0 -50%;
 }
 #product > img {
   width: 600px;
@@ -111,9 +111,12 @@ header p {
 }
 main {
   background-color: #f3eae2;
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
-main section {
+main h2,
+h3,
+p,
+a {
   margin: 5vw;
 }
 main section:first-child p {
@@ -127,33 +130,155 @@ main section:first-child div {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 0.5rem;
-  margin: 1em 0;
+  gap: 1.5rem;
+  margin: 5vw;
 }
 main section:first-child div > img {
   height: 2rem;
 }
 #connect > img {
-    width: 360px;
-    margin: 1.5rem 0;
+  width: 360px;
+  margin: 1.5rem 0;
 }
 #flexibility > img {
-    width: 360px;
-    margin: 1.5rem 0;
+  width: 360px;
+  margin: 1.5rem 0;
 }
 #speed > img {
-    width: 360px;
-    margin: 1.5rem 0;
+  width: 360px;
+  margin: 1.5rem 0;
 }
 h2 {
-    text-align: left;
-    color: black;
-    font-size: 1.5rem;
-    margin: 1.5rem 0;
-  }
-  a {
-    text-decoration: none;
-  }
-  main > section p {
-    margin-bottom: 1rem;
-  }
+  text-align: left;
+  color: black;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+}
+#rely-on-slack h3 {
+  text-align: center;
+  color: black;
+  font-size: 1.25rem;
+  margin: 5vw;
+}
+a {
+  text-decoration: none;
+  color: #2e71a6;
+}
+main > section p {
+  margin-bottom: 1rem;
+}
+main > section > div {
+  margin-bottom: 2rem;
+}
+#rely-on-slack {
+  background-color: white;
+  padding: 1.5rem 0;
+}
+#rely-on-slack p {
+  text-align: center;
+}
+#meet {
+  height: 50px;
+  background-color: #540b51;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+}
+.talk {
+  height: 50px;
+  background-color: white;
+  color: #540b51;
+  border: 1px solid #540b51;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+}
+#meet-talk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+#rely-on-slack span {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #540b51;
+}
+#rely-on-slack li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 220px;
+  margin: 0 auto;
+}
+#last-section {
+  background-color: #540b51;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+#last-section h3 {
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  margin: 5vw;
+}
+#try {
+  height: 50px;
+  background-color: #540b51;
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+}
+footer {
+  background-color: white;
+  padding: 5vw;
+}
+footer ul {
+  list-style: none;
+  line-height: 3;
+}
+#iso-slack {
+  height: 40px;
+  margin-bottom: 1rem;
+}
+.flex-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  border-bottom: 1px solid grey;
+  padding-bottom: 1.5rem;
+}
+.flex-list li:first-child {
+  font-weight: bold;
+}
+.bold-list {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.bold-list li:last-child {
+  color: #2E71A6;
+}
+#social-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
