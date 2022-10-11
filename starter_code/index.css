@@ -23,7 +23,7 @@ footer links grey: #454245
   }
   header h1 {
     color: white;
-    font-weight: 600px;
+    font-weight: 600;
     text-align: center;
     padding: 20px;
     font-size: 40px;
@@ -100,6 +100,29 @@ footer links grey: #454245
   }
   nav {
     background-color: #540b51;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.2rem;
+  }
+  nav img[alt="Slack logo"] {
+    width: 8rem;
+  }
+  nav button {
+    background-color: unset;
+    border: none;
+  }
+  nav .button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
   }
   main .container {
     background-color: #f3eae2;
@@ -107,6 +130,8 @@ footer links grey: #454245
   main .title-one {
     text-align: center;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 19px;
     padding: 30px;
     color: #191817;
   }
@@ -130,6 +155,163 @@ footer links grey: #454245
     height: 20%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  main .connected-mobile img {
+    width: 80%;
+    padding-bottom: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    background-color: #540b51;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header h1 {
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 20px;
+    font-size: 40px;
+  }
+  header p {
+    color: white;
+    text-align: left;
+    font-size: 19px;
+    padding: 20px;
+    font-weight: 400;
+  }
+  header span {
+    color: #ecb12f;
+  }
+  header .button-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+  }
+  header .button-header button {
+    border: red solid 2px;
+    width: 95%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+  }
+  header .button-header .button-email {
+    color: #540b51;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  header .button-header .button-google {
+    background-color: #4285f4;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+    display: flex;
+    padding: 20px;
+  }
+  header .button-header .button-google img {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  header .button-header span {
+    -ms-flex-preferred-size: 85%;
+        flex-basis: 85%;
+  }
+  header .img-header {
+    padding: 20px;
+    width: auto;
+  }
+  header .img-header img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+  }
+  nav {
+    background-color: #540b51;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.2rem;
+  }
+  nav img[alt="Slack logo"] {
+    width: 8rem;
+  }
+  nav button {
+    background-color: unset;
+    border: none;
+  }
+  nav .button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  main .container {
+    background-color: #f3eae2;
+  }
+  main .title-one {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 30px;
+    color: #191817;
+  }
+  main .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 30px;
+    gap: 30px;
+  }
+  main .logo img {
+    width: 20%;
+    height: 20%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  main .connected-mobile img {
+    width: 80%;
+    padding-bottom: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*# sourceMappingURL=index.css.map */
