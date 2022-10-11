@@ -8,3 +8,329 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap");
+
+/* reset styling and set font style */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Noto Sans;
+}
+
+/* home page */
+
+#slack-logo {
+  height: 20px;
+  display: inline;
+}
+
+header,
+nav {
+  background-color: #540b51;
+  width: 100%;
+}
+
+nav {
+  padding-left: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.nav-bar-button {
+  border: none;
+  margin: 0 10px;
+  background-color: #540b51;
+}
+
+.nav-bar-button img {
+  width: 18px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  max-width: 300px;
+  margin: auto;
+}
+
+header p {
+  color: white;
+  margin: 20px 0;
+  font-size: 0.9rem;
+}
+
+header p > span {
+  color: #ecb12f;
+}
+
+.sign-up-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 92vw;
+}
+
+.sign-up-buttons button {
+  width: 100%;
+  height: 40px;
+  padding: 20px 0;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+/* wouldn't normally use these selectors and give id's instead to make it more readable but i wanted to make use of what we learned today */
+
+.sign-up-buttons button:last-child {
+  background-color: #4285f4;
+  color: white;
+  position: relative;
+}
+
+.sign-up-buttons button:first-child {
+  color: #540b51;
+}
+
+.sign-up-buttons button > img {
+  height: 32px;
+  background-color: white;
+  padding: 6px;
+  left: 3px;
+  position: absolute;
+}
+
+.slack-app-sc {
+  display: inline-block;
+  height: 280px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.slack-app-sc > img {
+  width: 150vw;
+  position: absolute;
+  left: -10px;
+}
+
+/* company logos part */
+
+main {
+  background-color: #f3eae2;
+}
+
+.company-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: 100%;
+  height: 100px;
+  margin: 20px 0;
+}
+
+.company-logos img {
+  height: 40px;
+  width: auto;
+}
+
+main > section:first-child {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  padding: 40px 20px;
+}
+
+/*  */
+
+.main-imgs {
+  width: 100%;
+  display: flex;
+  margin: 30px 0;
+}
+
+.go-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ad-imgs {
+  width: 90%;
+}
+
+.section-content h2 {
+  font-size: 1.4rem;
+  margin: 20px 10px 15px 10px;
+}
+
+.section-content p {
+  font-size: 0.8rem;
+  margin: 0 10px 15px 10px;
+}
+
+.section-content a {
+  text-decoration: none;
+  color: #2e71a6;
+  margin: 0 10px 15px 10px;
+  font-size: 0.78rem;
+}
+
+.section-content a::after {
+  content: "→";
+}
+
+.section-stats {
+  background-color: white;
+  text-align: center;
+}
+
+.section-stats > ul span {
+  color: #540b51;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.section-stats-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.section-stats-btns button {
+  width: 90%;
+  height: 40px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.section-stats-btns button:first-child {
+  background-color: #540b51;
+  border: none;
+  color: white;
+}
+
+.section-stats-btns button:last-child {
+  border: 1px solid #540b51;
+  color: #540b51;
+  background-color: white;
+}
+
+.section-stats li > p {
+  margin: 0 30%;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.section-stats li {
+  margin: 30px 0;
+}
+
+.section-stats li:last-child {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+/* */
+
+.section-welcome {
+  background-color: #540b51;
+  color: white;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  border-bottom-left-radius: 100% 35%;
+  border-bottom-right-radius: 100% 35%;
+}
+
+.section-welcome h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.section-welcome > button {
+  width: 90%;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.purple-btn {
+  border: 1px solid white;
+  background-color: #540b51;
+  color: white;
+}
+
+/* footer */
+
+footer > img {
+  width: 40px;
+  aspect-ratio: 1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.6rem;
+  line-height: 2.5rem;
+  color: #454245;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer > div > ul > li:first-child {
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: black;
+}
+
+.footer-links {
+  font-weight: 600;
+  font-size: 0.6em;
+  line-height: 1.7rem;
+  margin: 20px 0;
+  color: #454245;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyrights {
+  line-height: normal;
+  margin: 30px 0;
+  color: #454245;
+}
