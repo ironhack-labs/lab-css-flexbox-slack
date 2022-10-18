@@ -22,6 +22,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 nav > div > img {
@@ -30,14 +31,6 @@ nav > div > img {
 
 #menu_bar {
     display: flex;
-}
-
-#menu {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 20px;
 }
 
 #menu li {
@@ -83,18 +76,20 @@ header > div > p {
 }
 
 #signGoogle {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     background-color: #4285F4;
     border: 1px solid #4285F4;
     border-radius: 3px;
+    position: relative;
 }
 
 
 #signGoogle span {
     color: white;
     text-align: center;
+    
 }
 
 #signGoogle img {
@@ -103,6 +98,8 @@ header > div > p {
     padding: 4px;
     border-radius: 1px;
     margin: 4px;
+    position: absolute;
+    left: 0;
 }
 
 
@@ -142,6 +139,10 @@ header > div > p {
     margin-top: 10px;
 }
 
+.text a {
+    text-decoration: none;
+}
+
 .section6 {
     background-color: #540B51;
     display: flex;
@@ -156,13 +157,23 @@ footer {
 }
 
 footer > img {
-    width: 50px;
+    width: 40px;
+    margin: 15px 0;
 }
 
 footer > div {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
+    gap: 8vw;
+}
+
+.listHead {
+    font-weight: bold;
+}
+
+#lastList {
+    font-weight: bold;
 }
 
 footer ul {
@@ -175,6 +186,14 @@ footer ul {
     header > div > h1 {
         padding: 50px;
         font-size: 50px;
+    }
+
+    #menu {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 20px;
     }
 
     .signUp {
@@ -250,15 +269,16 @@ footer ul {
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        justify-content: center;
+        justify-content: space-between;
         padding: 30px;
-        /* position: fixed;
-        top: 0; */
+        width: 100vw;
+        position: fixed;
+        top: 0;
     }
 
     h1 {
         text-align: center;
-        padding: 8vw;
+        padding: 30vw 8vw 8vw 8vw;
         font-size: 9vw;
     }
 
@@ -273,7 +293,7 @@ footer ul {
 
     #menu{
         height: 1px;
-        visibility: hidden;
+        display: none;
     }
 
     #menuMobile {
@@ -440,6 +460,7 @@ footer ul {
         padding: 0 50px;
         margin-bottom: 10px;
         color: white;
+        
     }
 
     .section6 div {
@@ -469,15 +490,53 @@ footer ul {
         background-color: #540B51;
         color: white;
     }
+    
+    .section5 ul {
+        margin: 20px 0;
+    }
+
+    .section5 li {
+        padding: 20px 0;
+    }
+
+    .percentage {
+        font-size: 40px;
+        font-weight: bold;
+        color: #540B51;
+    }
+
+    .details {
+        font-size: 10px;
+        font-weight: bold;
+        padding: 0 30vw;
+    }
+
+    #circle {
+        background-color: #540B51;
+        width: 100vw;
+        height: 5vh;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 10px;
+    }
+
+    footer li {
+        padding: 10px 0;
+    }
+
     #lastList {
        display: flex;
        flex-direction: column;
-       justify-content: space-between;
+       justify-content: space-between;;
     }
    
-    #social {
-       display: flex;
-       gap: 50px;
+    #social {;
+        display: flex;
+        justify-content: space-between;
     }
     
 }
