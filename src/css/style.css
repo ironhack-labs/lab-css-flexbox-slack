@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 6.2rem;
+  background-color: #540b51; }
+  .navbar__start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .navbar__start > img {
+      width: 20%;
+      height: 20%; }
+    .navbar__start > ul {
+      display: none; }
+  .navbar__end {
+    display: flex;
+    gap: 2rem; }
+    .navbar__end button {
+      background-color: inherit;
+      border: none; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 6.2rem;
+  background-color: #540b51; }
+  .header div {
+    text-align: center; }
+    .header div :is(h1, p) {
+      color: #fff; }
+    .header div h1 {
+      font-size: 6.4rem;
+      text-align: left; }
+    .header div p {
+      font-size: 1.6rem; }
+
+/*
+    **** SOME BREAKING POINTS ****
+
+Iteration 1 | Mobile Screens (width < 768px)                        - phone --> default
+Iteration 2 | Small Screens (width > 768px and width < 1024px)      - small
+Iteration 3 | Medium Screens (width > 1024px and width < 1440px)    - medium
+Iteration 4 | Large Screens (width > 1440px)                        - large
+    
+    **** UNIT ****
+    1em = 16px
+
+*/

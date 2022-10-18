@@ -1,0 +1,36 @@
+/*
+    **** SOME BREAKING POINTS ****
+
+Iteration 1 | Mobile Screens (width < 768px)                        - phone --> default
+Iteration 2 | Small Screens (width > 768px and width < 1024px)      - small
+Iteration 3 | Medium Screens (width > 1024px and width < 1440px)    - medium
+Iteration 4 | Large Screens (width > 1440px)                        - large
+    
+    **** UNIT ****
+    1em = 16px
+
+*/
+@mixin respond($brackpoint) {
+  @if $brackpoint == phone {
+    // 768/16 = 48
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $brackpoint == small {
+    @media (min-width: 64em) {
+      @content;
+    }
+  }
+  @if $brackpoint == medium {
+    @media (min-width: 90em) {
+      @content;
+    }
+  }
+  @if $brackpoint == large {
+    @media (max-width: 90em) {
+      @content;
+    }
+  }
+}
