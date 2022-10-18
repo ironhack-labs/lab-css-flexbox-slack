@@ -80,12 +80,6 @@ header p span {
   align-items: stretch;
 }
 
-.buttons img {
-  height: 3.5vh;
-  background-color: white;
-  border-radius: 0.1rem;
-  padding: 0.2rem;
-}
 
 .button {
   text-transform: uppercase;
@@ -105,9 +99,16 @@ header p span {
 .header_logo_button {
   background-color: var(--button-blue);
   color: var(--ivory);
-  display: flex;
-  justify-content: flex-start;
-  gap: 4.2rem;
+}
+
+.header_logo_button img {
+  height: 3.5vh;
+  background-color: white;
+  border-radius: 0.1rem;
+  padding: 0.2rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
 }
 
 .header_logo_button span {
@@ -333,6 +334,11 @@ padding: 1rem;
     position: relative;
     left: 25%;
   }
+
+  .header_logo_button {
+    gap: 5.2rem;
+  }
+
   #icons {
     justify-content: flex-start;
     gap: 1rem;
