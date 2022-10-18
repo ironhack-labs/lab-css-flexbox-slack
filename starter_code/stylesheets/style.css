@@ -115,7 +115,7 @@ header p span {
 }
 
 .header_img {
-  width: 135vw;
+  width: 100vw;
   position: relative;
   margin: 1rem 0 2rem 0;
 }
@@ -159,7 +159,7 @@ main {
   margin: 1rem 0 1rem 0;
 }
 
-#description_img_right {
+.description-right img {
   position: relative;
   left: 12vw;
 }
@@ -254,6 +254,7 @@ padding: 1rem;
 
 #footer img {
   width: 15vw;
+  padding: 1rem;
 }
 
 .footer_menu {
@@ -298,4 +299,60 @@ padding: 1rem;
 #footer small {
   text-align: center;
   font-size: 0.7rem;
+}
+
+/* MEDIA QUERIES */
+
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = from 1281px up
+*/
+@media (min-width: 1281px) {
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+
+/*
+  ##Device = Tablets, Ipads
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .button {
+    width: 50%;
+    position: relative;
+    left: 25%;
+  }
+  #icons {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  #footer img {
+    width: 10vw;
+  }
+  .description img {
+    width: 48vw;
+    position: static;
+  }
+  .description-right {
+    flex-direction: row-reverse;
+  }
+  .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .companies_images img {
+    width: 10vw;
+  }
 }
