@@ -1,10 +1,110 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+*{
+--purple: #540B51;
+--ivory: #F3EAE2;
+--blue: #4285F4;
+--titles-black: #191817;
+--paragraph-black: #000000;
+--paragraph-yellow: #ECB12F;
+--links-blue: #2E71A6;
+--grey: #454245;
+}
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .navbar {
+background-color: var(--purple);
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100vw;
+padding: 0 1rem;
+position: fixed;
+box-sizing: border-box;
+top: 0;
+ }
+ .right-navbar {
+    display: flex;
+ }
+ .left-navbar {
+    display: flex;
+ }
+ .left-navbar img {
+    height: 5vh;
+    align-self: center;
+ }
+ .left-navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 1rem;
+     }
+.left-navbar ul a {
+    text-decoration: none;
+    color: white;
+}
+.right-navbar {
+    gap: 1rem;
+}
+.navbar button {
+    background-color: transparent;
+    border: none;
+}
+header {
+    text-align: center;
+    padding-top: 10vh;
+    background-color: var(--purple);
+    color: white;
+}
+header p {
+    font-size: 1rem;
+}
+header h1 {
+    padding: 1rem;
+    font-size: 3rem;
+   }
+   header p span {
+    color: var(--paragraph-yellow);
+    font-weight: bolder;
+   }
+   .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: stretch;
+   }
+   .button {
+    text-transform: uppercase;
+    border: transparent;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    height: 3rem;
+   }
+   .white-button {
+    background-color: white;
+    color: var(--purple)
+   }
+   .google-button {
+    background-color: var(--links-blue);
+    color: var(--purple);
+   }
+   .google-button img {
+    height: 1rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    padding: 0.1rem;
+    position: relative;
+   }
+   .google-button span {
+    align-self:center;
+   }
+   .header-screenshot {
+    width: 100vw;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+   }
