@@ -40,6 +40,15 @@ body {
 
 .navbar_left ul {
   visibility: hidden;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navbar_left ul a {
+  text-decoration: none;
+  color: white;
 }
 
 .navbar_right {
@@ -61,6 +70,7 @@ header {
 
 header h1 {
   font-size: 2.5rem;
+  padding: 1rem;
 }
 
 header p {
@@ -99,6 +109,7 @@ header p span {
 .header_logo_button {
   background-color: var(--button-blue);
   color: var(--ivory);
+  position: relative;
 }
 
 .header_logo_button img {
@@ -107,8 +118,8 @@ header p span {
   border-radius: 0.1rem;
   padding: 0.2rem;
   position: absolute;
-  left: 0.5rem;
-  top: 0.5rem;
+  left: 2%;
+  top: 18%;
 }
 
 .header_logo_button span {
@@ -140,10 +151,11 @@ main {
   text-align: center;
 }
 .companies_images{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   align-items: center;
+  justify-items: center;
   padding: 1rem;
 }
 
@@ -151,6 +163,10 @@ main {
   width: 15vw;
   flex: 1;
   height: fit-content;
+}
+
+#target-logo {
+  width: 7vh;
 }
 
 /* Channels */
@@ -310,7 +326,9 @@ padding: 1rem;
   ##Screen = from 1281px up
 */
 @media (min-width: 1281px) {
-
+  :root {
+    font-size: 28px;
+  }
 }
 
 /*
@@ -319,7 +337,16 @@ padding: 1rem;
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-
+  .button {
+    width: 50%;
+    left: 25%;
+  }
+  .navbar_left ul {
+    visibility: visible;
+  }
+  :root {
+    font-size: 20px;
+  }
 }
 
 
@@ -328,7 +355,7 @@ padding: 1rem;
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .button {
     width: 50%;
     position: relative;
@@ -360,5 +387,18 @@ padding: 1rem;
   }
   .companies_images img {
     width: 10vw;
+  }
+  .navbar_left ul {
+    visibility: visible;
+  }
+  .navbar button {
+    visibility: hidden;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar_left {
+    gap: 2rem;
   }
 }
