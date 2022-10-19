@@ -20,6 +20,10 @@
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 2.6rem;
+
+    @include respond(ms) {
+      font-size: 1.8rem;
+    }
   }
 
   & div {
@@ -31,13 +35,23 @@
 
     & > img {
       width: 25%;
+
       @include respond(ss) {
         width: 18%;
       }
+
+      @include respond(ms) {
+        width: 18%;
+      }
+
       & + img:nth-child(2) {
         width: 15%;
 
         @include respond(ss) {
+          width: 8%;
+        }
+
+        @include respond(ms) {
           width: 8%;
         }
       }
@@ -48,6 +62,9 @@
         @include respond(ss) {
           width: 14%;
         }
+        @include respond(ms) {
+          width: 14%;
+        }
       }
 
       & + img:nth-child(4) {
@@ -56,12 +73,19 @@
         @include respond(ss) {
           width: 6%;
         }
+        @include respond(ms) {
+          width: 6%;
+        }
       }
 
       & + img:nth-child(5) {
         width: 35%;
 
         @include respond(ss) {
+          width: 20%;
+        }
+
+        @include respond(ms) {
           width: 20%;
         }
       }

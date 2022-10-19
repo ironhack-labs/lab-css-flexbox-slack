@@ -26,12 +26,19 @@
       @include respond(ss) {
         font-size: 3.2rem;
       }
+
+      @include respond(ms) {
+        font-size: 3.2rem;
+      }
     }
     & > p {
       text-align: center;
       font-size: 2.4rem;
 
       @include respond(ss) {
+        font-size: 1.8rem;
+      }
+      @include respond(ms) {
         font-size: 1.8rem;
       }
     }
@@ -49,6 +56,9 @@
       @include respond(ss) {
         flex-direction: row;
       }
+      @include respond(ms) {
+        flex-direction: row;
+      }
 
       & button {
         width: 100%;
@@ -59,6 +69,10 @@
         border: 1px solid $background-purple;
 
         @include respond(ss) {
+          flex: 0 0 40%;
+          font-size: 1.4rem;
+        }
+        @include respond(ms) {
           flex: 0 0 40%;
           font-size: 1.4rem;
         }
@@ -85,6 +99,10 @@
         flex-direction: row;
         justify-content: space-around;
       }
+      @include respond(ms) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
 
       & > li {
         display: flex;
@@ -102,6 +120,9 @@
           @include respond(ss) {
             font-size: 3.2rem;
           }
+          @include respond(ms) {
+            font-size: 3.2rem;
+          }
         }
         & > :last-child {
           text-align: center;
@@ -109,6 +130,11 @@
           font-weight: 500;
 
           @include respond(ss) {
+            font-size: 1.4rem;
+            padding: 0 4rem;
+          }
+
+          @include respond(ms) {
             font-size: 1.4rem;
             padding: 0 4rem;
           }
@@ -134,6 +160,12 @@
     @include respond(ss) {
       height: 30rem;
     }
+    @include respond(ms) {
+      height: 30rem;
+
+      display: block;
+      text-align: center;
+    }
 
     & h3 {
       font-size: 4rem;
@@ -141,6 +173,9 @@
       margin: 2.4rem 0;
 
       @include respond(ss) {
+        font-size: 3.4rem;
+      }
+      @include respond(ms) {
         font-size: 3.4rem;
       }
     }
@@ -158,11 +193,21 @@
         height: 4rem;
         font-size: 1.4rem;
       }
+
+      @include respond(ms) {
+        width: 20%;
+        height: 4rem;
+        font-size: 1.4rem;
+      }
     }
 
     & > :nth-child(2) {
       background-color: $background-purple;
       color: $color-white;
+
+      @include respond(ms) {
+        margin-right: 2rem;
+      }
     }
     & > :nth-child(3) {
       color: $background-purple;

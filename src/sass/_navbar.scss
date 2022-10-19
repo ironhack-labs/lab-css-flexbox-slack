@@ -8,7 +8,7 @@
   &__start {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 4rem;
 
     & > img {
       width: 20%;
@@ -16,16 +16,54 @@
     }
     & > ul {
       display: none;
+
+      @include respond(ms) {
+        list-style: none;
+        display: flex;
+        font-size: 1.4rem;
+
+        gap: 2rem;
+      }
+
+      & a {
+        color: $color-white;
+        text-decoration: none;
+      }
     }
   }
 
   &__end {
     display: flex;
+
     gap: 2rem;
 
     & button {
       background-color: inherit;
       border: none;
+
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+    & ul {
+      flex: 0 0 100%;
+      background-color: $color-white;
+      gap: 2rem;
+      padding: 0.8rem 1.2rem;
+
+      @include respond(ms) {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      & a {
+        color: $background-purple;
+        text-decoration: none;
+      }
     }
   }
 }

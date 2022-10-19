@@ -11,6 +11,14 @@
     height: 50rem;
   }
 
+  @include respond(ms) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    height: 70rem;
+  }
+
   & img {
     @include respond(ss) {
       width: 50%;
@@ -19,14 +27,23 @@
       align-self: center;
       justify-self: flex-end;
     }
+
+    @include respond(ms) {
+      width: 40%;
+      height: 20%;
+
+      align-self: center;
+      justify-self: flex-end;
+    }
   }
 
-  & div {
+  & > div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
+    flex: 0 0 50%;
     gap: 2rem;
 
     & :is(h1, p) {
@@ -42,6 +59,11 @@
         font-size: 4.2rem;
         text-align: left;
       }
+
+      @include respond(ms) {
+        font-size: 5.2rem;
+        text-align: left;
+      }
     }
 
     & p {
@@ -50,6 +72,12 @@
 
       @include respond(ss) {
         font-size: 1.4rem;
+        text-align: left;
+        margin-bottom: 0;
+      }
+
+      @include respond(ms) {
+        font-size: 2rem;
         text-align: left;
         margin-bottom: 0;
       }
@@ -69,6 +97,7 @@
       font-size: 1.6rem;
       text-transform: uppercase;
       font-weight: 600;
+      margin-bottom: 2rem;
 
       @include respond(ss) {
         font-size: 1.4rem;
