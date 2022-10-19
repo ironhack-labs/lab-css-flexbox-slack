@@ -43,7 +43,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="navbar-right">
                 <button class="button left">
                     <img
                         class="search-img"
@@ -52,7 +52,7 @@
                     />
                 </button>
 
-                <button class="button">
+                <button class="button menu">
                     <img
                         class="menu-img"
                         src="./images/icon-menu.png"
@@ -60,12 +60,14 @@
                     />
                 </button>
 
-                <ul hidden>
+                <ul class="navbar-cta">
                     <li>
-                        <a href="#">Sign in</a>
+                        <a class="navbar-btn" href="#">Sign in</a>
                     </li>
                     <li>
-                        <a href="#">Try for free</a>
+                        <a class="navbar-btn white-btn" href="#"
+                            >Try for free</a
+                        >
                     </li>
                 </ul>
             </div>
@@ -145,11 +147,17 @@
 
             <section class="bring">
                 <div class="bring-top">
-                    <img
-                        class="img"
-                        src="./images/connectedness-mobile.png"
-                        alt="connectedness"
-                    />
+                    <picture>
+                        <source
+                            srcset="./images/connectedness.png"
+                            media="(min-width: 728px)"
+                        />
+                        <img
+                            class="img"
+                            src="./images/connectedness-mobile.png"
+                            alt="connectedness"
+                        />
+                    </picture>
                 </div>
 
                 <div class="bring-content">
@@ -170,11 +178,17 @@
 
             <section class="choose">
                 <div class="choose-top">
-                    <img
-                        class="img"
-                        src="./images/flexibility-mobile.png"
-                        alt="flexibility"
-                    />
+                    <picture>
+                        <source
+                            srcset="./images/flexibility.png"
+                            media="(min-width: 728px)"
+                        />
+                        <img
+                            class="img"
+                            src="./images/flexibility-mobile.png"
+                            alt="flexibility"
+                        />
+                    </picture>
                 </div>
                 <div class="choose-content">
                     <h2 class="choose-title">Choose how you want to work</h2>
@@ -194,11 +208,18 @@
 
             <section class="move">
                 <div class="move-top">
-                    <img
-                        class="img"
-                        src="./images/speed-mobile.png"
-                        alt="speed"
-                    />
+                    <picture>
+                        <source
+                            srcset="./images/speed.png"
+                            media="(min-width: 728px)"
+                        />
+
+                        <img
+                            class="img"
+                            src="./images/speed-mobile.png"
+                            alt="speed"
+                        />
+                    </picture>
                 </div>
 
                 <div class="move-content">
@@ -218,39 +239,41 @@
                 </div>
             </section>
 
-            <section>
-                <h3>Teams large and small rely on Slack</h3>
-                <p>
+            <section class="teams">
+                <h3 class="teams-title">Teams large and small rely on Slack</h3>
+                <p class="teams-text">
                     Slack securely scales up to support collaboration at the
                     world’s biggest companies.
                 </p>
 
-                <div>
-                    <button>Meet Slack for enterprise</button>
-                    <button>Talk to sales</button>
+                <div class="teams-cta">
+                    <button class="btn purple">
+                        Meet Slack for enterprise
+                    </button>
+                    <button class="btn">Talk to sales</button>
                 </div>
 
-                <ul>
-                    <li>
+                <ul class="percentage-list">
+                    <li class="percentage">
                         <p><span>85%</span></p>
-                        <p>
+                        <p class="percentage-content">
                             of users say Slack has improved communication
                             <sup>*</sup>
                         </p>
                     </li>
 
-                    <li>
+                    <li class="percentage">
                         <p><span>86%</span></p>
-                        <p>
+                        <p class="percentage-content">
                             feel their ability to work remotely has improved has
                             improved
                             <sup>*</sup>
                         </p>
                     </li>
 
-                    <li>
+                    <li class="percentage">
                         <p><span>88%</span></p>
-                        <p>
+                        <p class="percentage-content">
                             feel more connected to their teams*
                             <sup>*</sup>
                         </p>
@@ -258,65 +281,69 @@
                 </ul>
             </section>
 
-            <section>
-                <h3>Welcome to your new digital HQ</h3>
+            <section class="welcome">
+                <h3 class="welcome-title">Welcome to your new digital HQ</h3>
 
-                <button>Try for free</button>
-                <button>Talk to sales</button>
+                <button class="btn purple white-border">Try for free</button>
+                <button class="btn">Talk to sales</button>
             </section>
         </main>
 
-        <footer>
-            <img src="./images/iso-slack.png" alt="Slack logo" />
-            <div>
-                <ul>
-                    <li>WHY SLACK?</li>
-                    <li>Slack vs. Email</li>
-                    <li>Channels</li>
-                    <li>Engagement</li>
-                    <li>Scale</li>
-                    <li>Watch the Demo</li>
+        <footer class="footer">
+            <img
+                class="footer-logo"
+                src="./images/iso-slack.png"
+                alt="Slack logo"
+            />
+            <div class="footer-top">
+                <ul class="footer-list">
+                    <li class="footer-list-title footer-list-item">
+                        WHY SLACK?
+                    </li>
+                    <li class="footer-list-item">Slack vs. Email</li>
+                    <li class="footer-list-item">Channels</li>
+                    <li class="footer-list-item">Engagement</li>
+                    <li class="footer-list-item">Scale</li>
+                    <li class="footer-list-item">Watch the Demo</li>
                 </ul>
 
-                <ul>
-                    <li>PRODUCT</li>
-                    <li>Features</li>
-                    <li>Integrations</li>
-                    <li>Enterprise</li>
-                    <li>Solutions</li>
-                    <li>Releases</li>
+                <ul class="footer-list">
+                    <li class="footer-list-title footer-list-item">PRODUCT</li>
+                    <li class="footer-list-item">Features</li>
+                    <li class="footer-list-item">Integrations</li>
+                    <li class="footer-list-item">Enterprise</li>
+                    <li class="footer-list-item">Solutions</li>
+                    <li class="footer-list-item">Releases</li>
                 </ul>
 
-                <ul>
-                    <li>PRICING</li>
-                    <li>Plans</li>
-                    <li>Paid vs. Free</li>
+                <ul class="footer-list">
+                    <li class="footer-list-title footer-list-item">PRICING</li>
+                    <li class="footer-list-item">Plans</li>
+                    <li class="footer-list-item">Paid vs. Free</li>
                 </ul>
 
-                <ul>
-                    <li>COMPANY</li>
-                    <li>About Us</li>
-                    <li>Leadership</li>
-                    <li>Investor Relations</li>
-                    <li>News</li>
-                    <li>Media Kit</li>
-                    <li>Careers</li>
+                <ul class="footer-list">
+                    <li class="footer-list-item footer-list-title">COMPANY</li>
+                    <li class="footer-list-item">About Us</li>
+                    <li class="footer-list-item">Leadership</li>
+                    <li class="footer-list-item">Investor Relations</li>
+                    <li class="footer-list-item">News</li>
+                    <li class="footer-list-item">Media Kit</li>
+                    <li class="footer-list-item">Careers</li>
                 </ul>
             </div>
 
-            <ul>
-                <li>Status</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Cookie Preferences</li>
-                <li>Contact Us</li>
-                <li>Change Region</li>
-                <li>Download Slack</li>
+            <ul class="footer-list no-border-btm footer-list-btm">
+                <li class="footer-list-btm-item">Status</li>
+                <li class="footer-list-btm-item">Privacy</li>
+                <li class="footer-list-btm-item">Terms</li>
+                <li class="footer-list-btm-item">Cookie Preferences</li>
+                <li class="footer-list-btm-item">Contact Us</li>
+                <li class="footer-list-btm-item">Change Region</li>
+                <li class="footer-list-btm-item">Download Slack</li>
             </ul>
 
-            <hr />
-
-            <ul>
+            <ul class="footer-cta">
                 <li>
                     <i class="fab fa-twitter"></i>
                 </li>
