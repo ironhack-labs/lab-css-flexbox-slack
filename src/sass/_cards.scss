@@ -1,0 +1,40 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  & div {
+    display: flex;
+    padding: 0 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 2.6rem;
+
+    & > h2 {
+      font-size: 4.4rem;
+      color: $titles-black;
+    }
+    & > p {
+      line-height: 2.2rem;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+
+    & img {
+      width: 95%;
+
+      &:not(:first-child) {
+        margin-top: 3rem;
+      }
+    }
+    & a:link {
+      font-size: 1.4rem;
+      color: $links-blue;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+}

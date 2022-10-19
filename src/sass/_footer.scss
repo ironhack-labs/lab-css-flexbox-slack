@@ -1,0 +1,52 @@
+.footer {
+  padding: 0 1.2rem;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4rem;
+
+  & img {
+    width: 8%;
+    grid-column: 1 / -1;
+  }
+
+  & hr {
+    grid-column: 1 / -1;
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 1.4rem;
+
+    & :not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+
+    & :first-child {
+      font-weight: 600;
+    }
+  }
+  & > :nth-child(7) {
+    grid-column: 1 / -1;
+    font-weight: 600;
+    font-size: 1.4rem;
+
+    & :not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  & > :nth-child(8) {
+    grid-column: 1 / -1;
+
+    font-size: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  & > :nth-child(9) {
+    grid-column: 1 / -1;
+    font-size: 1.4rem;
+  }
+}

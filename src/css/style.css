@@ -1,3 +1,16 @@
+/*
+    **** SOME BREAKING POINTS ****
+    
+    Iteration 1 | Mobile Screens (width < 390px)                        - phone --> default
+    Iteration 2 | tablet portrait (width > 390px and width < 768px)     - table
+    Iteration 3 | Small Screens (width > 768px and width < 1024px)      - small
+    Iteration 4 | Medium Screens (width > 1024px and width < 1440px)    - medium
+    Iteration 5 | Large Screens (width > 1440px)                        - large
+    
+    **** UNIT ****
+    1em = 16px
+
+*/
 *,
 *::before,
 *::after {
@@ -7,7 +20,26 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 37.5%; }
+  @media all and (min-width: 91em) {
+    html {
+      font-size: 87.5%; } }
+  @media all and (min-width: 65em) and (max-width: 90em) {
+    html {
+      font-size: 75%; } }
+  @media all and (min-width: 49em) and (max-width: 64em) {
+    html {
+      font-size: 62.5%; } }
+  @media all and (min-width: 24.37em) and (max-width: 48em) {
+    html {
+      font-size: 50%; } }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  background-color: #f3eae2; }
 
 body {
   font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif; }
@@ -38,26 +70,258 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 6.2rem;
+  gap: 2rem;
   background-color: #540b51; }
   .header div {
-    text-align: center; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; }
     .header div :is(h1, p) {
-      color: #fff; }
+      color: #fff;
+      text-align: center; }
     .header div h1 {
-      font-size: 6.4rem;
-      text-align: left; }
+      font-size: 5.4rem;
+      margin-bottom: 2rem;
+      color: #191817; }
     .header div p {
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+      .header div p span {
+        color: #ecb12f; }
+  .header__btn {
+    width: 100%; }
+    .header__btn button {
+      width: inherit;
+      height: 6rem;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: 600; }
+      .header__btn button:first-child {
+        padding-left: 3rem; }
+      .header__btn button + :last-child {
+        display: flex;
+        align-items: center;
+        background-color: #4285f4;
+        padding-left: 0.6rem; }
+        .header__btn button + :last-child > img {
+          width: 4rem;
+          background-color: #fff; }
+        .header__btn button + :last-child > span {
+          color: #fff;
+          margin: 0 auto; }
+
+.features {
+  background-color: #f3eae2;
+  margin-top: -6rem;
+  padding: 0 2.8rem;
+  position: relative;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; }
+  .features p {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 2.6rem; }
+  .features div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .features div > img {
+      width: 30%; }
+      .features div > img + img:nth-child(2) {
+        width: 15%; }
+      .features div > img + img:nth-child(3) {
+        width: 20%; }
+      .features div > img + img:nth-child(4) {
+        width: 10%; }
+      .features div > img + img:nth-child(5) {
+        width: 35%; }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; }
+  .cards div {
+    display: flex;
+    padding: 0 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.6rem; }
+    .cards div > h2 {
+      font-size: 4.4rem;
+      color: #191817; }
+    .cards div > p {
+      line-height: 2.2rem;
+      font-weight: 600;
       font-size: 1.6rem; }
+    .cards div img {
+      width: 95%; }
+      .cards div img:not(:first-child) {
+        margin-top: 3rem; }
+    .cards div a:link {
+      font-size: 1.4rem;
+      color: #2e71a6;
+      font-weight: 500;
+      text-decoration: none; }
 
-/*
-    **** SOME BREAKING POINTS ****
+.footer {
+  padding: 0 1.2rem;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4rem; }
+  .footer img {
+    width: 8%;
+    grid-column: 1 / -1; }
+  .footer hr {
+    grid-column: 1 / -1; }
+  .footer__list {
+    list-style: none;
+    font-size: 1.4rem; }
+    .footer__list :not(:last-child) {
+      margin-bottom: 1.6rem; }
+    .footer__list :first-child {
+      font-weight: 600; }
+  .footer > :nth-child(7) {
+    grid-column: 1 / -1;
+    font-weight: 600;
+    font-size: 1.4rem; }
+    .footer > :nth-child(7) :not(:last-child) {
+      margin-bottom: 1.6rem; }
+  .footer > :nth-child(8) {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  .footer > :nth-child(9) {
+    grid-column: 1 / -1;
+    font-size: 1.4rem; }
 
-Iteration 1 | Mobile Screens (width < 768px)                        - phone --> default
-Iteration 2 | Small Screens (width > 768px and width < 1024px)      - small
-Iteration 3 | Medium Screens (width > 1024px and width < 1440px)    - medium
-Iteration 4 | Large Screens (width > 1440px)                        - large
-    
-    **** UNIT ****
-    1em = 16px
+.cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #fff; }
+  .cta > div:first-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%; }
+    .cta > div:first-child h3 {
+      margin-top: 5.2rem;
+      text-align: center;
+      font-size: 5.2rem; }
+    .cta > div:first-child > p {
+      text-align: center;
+      font-size: 2.4rem; }
+    .cta > div:first-child div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.6rem;
+      padding: 0 1.2rem;
+      width: 100%; }
+      .cta > div:first-child div button {
+        width: inherit;
+        height: 6rem;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 1px solid #540b51; }
+        .cta > div:first-child div button:first-child {
+          background-color: #540b51;
+          color: #fff; }
+    .cta > div:first-child > ul {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4rem;
+      list-style: none;
+      font-size: 2rem; }
+      .cta > div:first-child > ul > li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+        gap: 2rem; }
+        .cta > div:first-child > ul > li > :first-child {
+          font-size: 4rem;
+          font-weight: 600;
+          color: #540b51; }
+        .cta > div:first-child > ul > li > :last-child {
+          text-align: center;
+          font-size: inherit;
+          font-weight: 500; }
+  .cta > div:last-child {
+    background-color: #540b51;
+    width: 100%;
+    height: 40rem;
+    border-radius: 0 0 35% 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0 1.2rem; }
+    .cta > div:last-child h3 {
+      font-size: 4rem;
+      color: #fff;
+      margin: 2.4rem 0; }
+    .cta > div:last-child button {
+      width: inherit;
+      height: 6rem;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: 1px solid #fff; }
+    .cta > div:last-child > :nth-child(2) {
+      background-color: #540b51;
+      color: #fff; }
+    .cta > div:last-child > :nth-child(3) {
+      color: #540b51; }
 
-*/
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; }
+  .cards div {
+    display: flex;
+    padding: 0 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.6rem; }
+    .cards div > h2 {
+      font-size: 4.4rem;
+      color: #191817; }
+    .cards div > p {
+      line-height: 2.2rem;
+      font-weight: 600;
+      font-size: 1.6rem; }
+    .cards div img {
+      width: 95%; }
+      .cards div img:not(:first-child) {
+        margin-top: 3rem; }
+    .cards div a:link {
+      font-size: 1.4rem;
+      color: #2e71a6;
+      font-weight: 500;
+      text-decoration: none; }

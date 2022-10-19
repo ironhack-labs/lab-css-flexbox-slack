@@ -2,21 +2,66 @@
   display: flex;
   flex-direction: column;
   padding: 0 6.2rem;
+  gap: 2rem;
   background-color: $background-purple;
 
   & div {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
 
     & :is(h1, p) {
       color: $color-white;
+      text-align: center;
     }
     & h1 {
-      font-size: 6.4rem;
-      text-align: left;
+      font-size: 5.4rem;
+      margin-bottom: 2rem;
+      color: $titles-black;
     }
 
     & p {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+
+      & span {
+        color: $paragraph-yellow;
+      }
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    & button {
+      width: inherit;
+      height: 6rem;
       font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      &:first-child {
+        padding-left: 3rem;
+      }
+
+      & + :last-child {
+        display: flex;
+        align-items: center;
+        background-color: $button-blue;
+        padding-left: 0.6rem;
+
+        & > img {
+          width: 4rem;
+          background-color: $color-white;
+        }
+        & > span {
+          color: $color-white;
+          margin: 0 auto;
+        }
+      }
     }
   }
 }

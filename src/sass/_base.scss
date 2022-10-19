@@ -27,5 +27,29 @@ $font-display: "Josefin Sans", sans-serif;
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 37.5%; // 1rem = 6px --> phone default
+
+  @include respond(ls) {
+    font-size: 87.5%; // 1rem = 14px --> large screen
+  }
+  @include respond(ms) {
+    font-size: 75%; // 1rem = 12px --> medium screen
+  }
+  @include respond(ss) {
+    font-size: 62.5%; // 1rem = 10px --> small screen
+  }
+  @include respond(tablet) {
+    font-size: 50%; // 1rem = 8px --> tablet
+  }
+}
+
+// MAIN
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+
+  background-color: $background-ivory;
 }
