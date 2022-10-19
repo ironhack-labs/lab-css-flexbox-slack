@@ -14,32 +14,40 @@
     flex-direction: column;
     justify-content: center;
 
-    gap: 2rem;
+    gap: 4rem;
 
     width: 100%;
 
     & h3 {
       margin-top: 5.2rem;
       text-align: center;
-      font-size: 4.8rem;
+      font-size: 3rem;
 
       @include respond(ss) {
-        font-size: 3.2rem;
+        font-size: 3rem;
       }
 
       @include respond(ms) {
+        font-size: 3.2rem;
+      }
+
+      @include respond(ls) {
         font-size: 3.2rem;
       }
     }
     & > p {
       text-align: center;
-      font-size: 2.4rem;
+      font-size: 1rem;
+      margin-top: -2rem;
 
       @include respond(ss) {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
       }
       @include respond(ms) {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+      }
+      @include respond(ls) {
+        font-size: 1.6rem;
       }
     }
 
@@ -49,7 +57,7 @@
       flex-direction: column;
       justify-content: center;
 
-      gap: 1.6rem;
+      gap: 4rem;
       padding: 0 1.2rem;
       width: 100%;
 
@@ -57,6 +65,9 @@
         flex-direction: row;
       }
       @include respond(ms) {
+        flex-direction: row;
+      }
+      @include respond(ls) {
         flex-direction: row;
       }
 
@@ -73,7 +84,11 @@
           font-size: 1.4rem;
         }
         @include respond(ms) {
-          flex: 0 0 40%;
+          flex: 0 0 30%;
+          font-size: 1.4rem;
+        }
+        @include respond(ls) {
+          flex: 0 0 30%;
           font-size: 1.4rem;
         }
 
@@ -103,6 +118,10 @@
         flex-direction: row;
         justify-content: space-around;
       }
+      @include respond(ls) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
 
       & > li {
         display: flex;
@@ -123,6 +142,9 @@
           @include respond(ms) {
             font-size: 3.2rem;
           }
+          @include respond(ls) {
+            font-size: 3.2rem;
+          }
         }
         & > :last-child {
           text-align: center;
@@ -130,11 +152,15 @@
           font-weight: 500;
 
           @include respond(ss) {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             padding: 0 4rem;
           }
 
           @include respond(ms) {
+            font-size: 1.2rem;
+            padding: 0 4rem;
+          }
+          @include respond(ls) {
             font-size: 1.4rem;
             padding: 0 4rem;
           }
@@ -167,6 +193,13 @@
       text-align: center;
     }
 
+    @include respond(ls) {
+      height: 30rem;
+
+      display: block;
+      text-align: center;
+    }
+
     & h3 {
       font-size: 4rem;
       color: $color-white;
@@ -176,6 +209,9 @@
         font-size: 3.4rem;
       }
       @include respond(ms) {
+        font-size: 3.4rem;
+      }
+      @include respond(ls) {
         font-size: 3.4rem;
       }
     }
@@ -199,6 +235,11 @@
         height: 4rem;
         font-size: 1.4rem;
       }
+      @include respond(ls) {
+        width: 20%;
+        height: 4rem;
+        font-size: 1.4rem;
+      }
     }
 
     & > :nth-child(2) {
@@ -206,6 +247,9 @@
       color: $color-white;
 
       @include respond(ms) {
+        margin-right: 2rem;
+      }
+      @include respond(ls) {
         margin-right: 2rem;
       }
     }

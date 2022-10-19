@@ -21,7 +21,7 @@
 html {
   box-sizing: border-box;
   font-size: 37.5%; }
-  @media all and (min-width: 91em) {
+  @media all and (max-width: 91em) {
     html {
       font-size: 87.5%; } }
   @media all and (min-width: 65em) and (max-width: 90em) {
@@ -65,6 +65,12 @@ body {
           display: flex;
           font-size: 1.4rem;
           gap: 2rem; } }
+      @media all and (max-width: 91em) {
+        .navbar__start > ul {
+          list-style: none;
+          display: flex;
+          font-size: 1.4rem;
+          gap: 2rem; } }
       .navbar__start > ul a {
         color: #fff;
         text-decoration: none; }
@@ -82,6 +88,13 @@ body {
       gap: 2rem;
       padding: 0.8rem 1.2rem; }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .navbar__end ul {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 1.6rem;
+          font-weight: 500; } }
+      @media all and (max-width: 91em) {
         .navbar__end ul {
           list-style: none;
           display: flex;
@@ -109,6 +122,13 @@ body {
       justify-content: space-between;
       gap: 4rem;
       height: 70rem; } }
+  @media all and (max-width: 91em) {
+    .header {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4rem;
+      height: 70rem; } }
   @media all and (min-width: 48em) and (max-width: 64em) {
     .header img {
       width: 50%;
@@ -119,6 +139,12 @@ body {
     .header img {
       width: 40%;
       height: 20%;
+      align-self: center;
+      justify-self: flex-end; } }
+  @media all and (max-width: 91em) {
+    .header img {
+      width: 40%;
+      height: 30%;
       align-self: center;
       justify-self: flex-end; } }
   .header > div {
@@ -143,6 +169,10 @@ body {
         .header > div h1 {
           font-size: 5.2rem;
           text-align: left; } }
+      @media all and (max-width: 91em) {
+        .header > div h1 {
+          font-size: 5.2rem;
+          text-align: left; } }
     .header > div p {
       font-size: 2rem;
       margin-bottom: 2rem; }
@@ -152,6 +182,11 @@ body {
           text-align: left;
           margin-bottom: 0; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .header > div p {
+          font-size: 2rem;
+          text-align: left;
+          margin-bottom: 0; } }
+      @media all and (max-width: 91em) {
         .header > div p {
           font-size: 2rem;
           text-align: left;
@@ -172,6 +207,11 @@ body {
           font-size: 1.4rem;
           width: inherit;
           height: 4rem; } }
+      @media all and (max-width: 91em) {
+        .header__btn button {
+          font-size: 1.6rem;
+          width: inherit;
+          height: 6rem; } }
       .header__btn button:first-child {
         padding-left: 3rem; }
       .header__btn button + :last-child {
@@ -185,6 +225,12 @@ body {
           @media all and (min-width: 48em) and (max-width: 64em) {
             .header__btn button + :last-child > img {
               height: 3rem; } }
+          @media all and (min-width: 65em) and (max-width: 90em) {
+            .header__btn button + :last-child > img {
+              height: 4rem; } }
+          @media all and (max-width: 91em) {
+            .header__btn button + :last-child > img {
+              height: 4rem; } }
         .header__btn button + :last-child > span {
           color: #fff;
           margin: 0 auto; }
@@ -204,13 +250,16 @@ body {
     .features {
       margin-top: 0rem; } }
   .features p {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 2.6rem; }
     @media all and (min-width: 65em) and (max-width: 90em) {
       .features p {
         font-size: 1.8rem; } }
+    @media all and (max-width: 91em) {
+      .features p {
+        font-size: 2em; } }
   .features div {
     display: flex;
     align-items: center;
@@ -218,13 +267,16 @@ body {
     flex-wrap: wrap;
     gap: 0.8rem; }
     .features div > img {
-      width: 25%; }
+      width: 20%; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .features div > img {
-          width: 18%; } }
+          width: 16%; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
         .features div > img {
-          width: 18%; } }
+          width: 14%; } }
+      @media all and (max-width: 91em) {
+        .features div > img {
+          width: 12%; } }
       .features div > img + img:nth-child(2) {
         width: 15%; }
         @media all and (min-width: 48em) and (max-width: 64em) {
@@ -233,14 +285,20 @@ body {
         @media all and (min-width: 65em) and (max-width: 90em) {
           .features div > img + img:nth-child(2) {
             width: 8%; } }
+        @media all and (min-width: 65em) and (max-width: 90em) {
+          .features div > img + img:nth-child(2) {
+            width: 6%; } }
       .features div > img + img:nth-child(3) {
-        width: 18%; }
+        width: 14%; }
         @media all and (min-width: 48em) and (max-width: 64em) {
           .features div > img + img:nth-child(3) {
             width: 14%; } }
         @media all and (min-width: 65em) and (max-width: 90em) {
           .features div > img + img:nth-child(3) {
-            width: 14%; } }
+            width: 12%; } }
+        @media all and (max-width: 91em) {
+          .features div > img + img:nth-child(3) {
+            width: 12%; } }
       .features div > img + img:nth-child(4) {
         width: 10%; }
         @media all and (min-width: 48em) and (max-width: 64em) {
@@ -249,14 +307,20 @@ body {
         @media all and (min-width: 65em) and (max-width: 90em) {
           .features div > img + img:nth-child(4) {
             width: 6%; } }
+        @media all and (max-width: 91em) {
+          .features div > img + img:nth-child(4) {
+            width: 4%; } }
       .features div > img + img:nth-child(5) {
-        width: 35%; }
+        width: 30%; }
         @media all and (min-width: 48em) and (max-width: 64em) {
           .features div > img + img:nth-child(5) {
             width: 20%; } }
         @media all and (min-width: 65em) and (max-width: 90em) {
           .features div > img + img:nth-child(5) {
-            width: 20%; } }
+            width: 18%; } }
+        @media all and (min-width: 65em) and (max-width: 90em) {
+          .features div > img + img:nth-child(5) {
+            width: 16%; } }
 
 .cards {
   display: flex;
@@ -274,37 +338,49 @@ body {
       align-self: center; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .cards div div {
-          width: 65%; } }
+          width: 45%; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .cards div div {
+          width: 50%; } }
+      @media all and (max-width: 91em) {
         .cards div div {
           width: 55%; } }
     .cards div > h2 {
-      font-size: 4.4rem;
+      font-size: 3.4rem;
       color: #191817; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .cards div > h2 {
           font-size: 3.6rem; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
         .cards div > h2 {
-          font-size: 3.6rem; } }
+          font-size: 3.8rem; } }
+      @media all and (max-width: 91em) {
+        .cards div > h2 {
+          font-size: 4rem; } }
     .cards div > p {
       line-height: 2.2rem;
       font-weight: 600;
-      font-size: 1.6rem; }
+      font-size: 1rem; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .cards div > p {
-          font-size: 1.4rem; } }
+          font-size: 1.2rem; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .cards div > p {
+          font-size: 1.2rem; } }
+      @media all and (max-width: 91em) {
         .cards div > p {
           font-size: 1.4rem; } }
     .cards div img {
-      width: 95%; }
+      width: 50%; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .cards div img {
-          width: 75%; } }
+          width: 55%; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
         .cards div img {
-          width: 75%; } }
+          width: 60%; } }
+      @media all and (max-width: 91em) {
+        .cards div img {
+          width: 65%; } }
       .cards div img:nth-child(2) {
         align-self: flex-end; }
       .cards div img:not(:first-child) {
@@ -318,6 +394,9 @@ body {
         .cards div a:link {
           font-size: 1.2rem; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .cards div a:link {
+          font-size: 1.2rem; } }
+      @media all and (max-width: 91em) {
         .cards div a:link {
           font-size: 1.2rem; } }
 
@@ -342,7 +421,13 @@ body {
   .footer > :nth-child(7) {
     grid-column: 1 / -1;
     font-weight: 600;
-    font-size: 1.4rem; }
+    font-size: 1rem;
+    list-style: none; }
+    @media all and (max-width: 91em) {
+      .footer > :nth-child(7) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; } }
     .footer > :nth-child(7) :not(:last-child) {
       margin-bottom: 1.6rem; }
   .footer > :nth-child(8) {
@@ -352,6 +437,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around; }
+    @media all and (max-width: 91em) {
+      .footer > :nth-child(8) {
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 4rem; } }
   .footer > :nth-child(9) {
     grid-column: 1 / -1;
     font-size: 1.4rem; }
@@ -368,39 +458,49 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
     width: 100%; }
     .cta > div:first-child h3 {
       margin-top: 5.2rem;
       text-align: center;
-      font-size: 4.8rem; }
+      font-size: 3rem; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .cta > div:first-child h3 {
-          font-size: 3.2rem; } }
+          font-size: 3rem; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .cta > div:first-child h3 {
+          font-size: 3.2rem; } }
+      @media all and (max-width: 91em) {
         .cta > div:first-child h3 {
           font-size: 3.2rem; } }
     .cta > div:first-child > p {
       text-align: center;
-      font-size: 2.4rem; }
+      font-size: 1rem;
+      margin-top: -2rem; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .cta > div:first-child > p {
-          font-size: 1.8rem; } }
+          font-size: 1.2rem; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
         .cta > div:first-child > p {
-          font-size: 1.8rem; } }
+          font-size: 1.4rem; } }
+      @media all and (max-width: 91em) {
+        .cta > div:first-child > p {
+          font-size: 1.6rem; } }
     .cta > div:first-child div {
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      gap: 1.6rem;
+      gap: 4rem;
       padding: 0 1.2rem;
       width: 100%; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .cta > div:first-child div {
           flex-direction: row; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .cta > div:first-child div {
+          flex-direction: row; } }
+      @media all and (max-width: 91em) {
         .cta > div:first-child div {
           flex-direction: row; } }
       .cta > div:first-child div button {
@@ -416,7 +516,11 @@ body {
             font-size: 1.4rem; } }
         @media all and (min-width: 65em) and (max-width: 90em) {
           .cta > div:first-child div button {
-            flex: 0 0 40%;
+            flex: 0 0 30%;
+            font-size: 1.4rem; } }
+        @media all and (max-width: 91em) {
+          .cta > div:first-child div button {
+            flex: 0 0 30%;
             font-size: 1.4rem; } }
         .cta > div:first-child div button:first-child {
           background-color: #540b51;
@@ -437,6 +541,10 @@ body {
         .cta > div:first-child > ul {
           flex-direction: row;
           justify-content: space-around; } }
+      @media all and (max-width: 91em) {
+        .cta > div:first-child > ul {
+          flex-direction: row;
+          justify-content: space-around; } }
       .cta > div:first-child > ul > li {
         display: flex;
         align-items: center;
@@ -453,15 +561,22 @@ body {
           @media all and (min-width: 65em) and (max-width: 90em) {
             .cta > div:first-child > ul > li > :first-child {
               font-size: 3.2rem; } }
+          @media all and (max-width: 91em) {
+            .cta > div:first-child > ul > li > :first-child {
+              font-size: 3.2rem; } }
         .cta > div:first-child > ul > li > :last-child {
           text-align: center;
           font-size: inherit;
           font-weight: 500; }
           @media all and (min-width: 48em) and (max-width: 64em) {
             .cta > div:first-child > ul > li > :last-child {
-              font-size: 1.4rem;
+              font-size: 1.2rem;
               padding: 0 4rem; } }
           @media all and (min-width: 65em) and (max-width: 90em) {
+            .cta > div:first-child > ul > li > :last-child {
+              font-size: 1.2rem;
+              padding: 0 4rem; } }
+          @media all and (max-width: 91em) {
             .cta > div:first-child > ul > li > :last-child {
               font-size: 1.4rem;
               padding: 0 4rem; } }
@@ -483,6 +598,11 @@ body {
         height: 30rem;
         display: block;
         text-align: center; } }
+    @media all and (max-width: 91em) {
+      .cta > div:last-child {
+        height: 30rem;
+        display: block;
+        text-align: center; } }
     .cta > div:last-child h3 {
       font-size: 4rem;
       color: #fff;
@@ -491,6 +611,9 @@ body {
         .cta > div:last-child h3 {
           font-size: 3.4rem; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .cta > div:last-child h3 {
+          font-size: 3.4rem; } }
+      @media all and (max-width: 91em) {
         .cta > div:last-child h3 {
           font-size: 3.4rem; } }
     .cta > div:last-child button {
@@ -510,10 +633,18 @@ body {
           width: 20%;
           height: 4rem;
           font-size: 1.4rem; } }
+      @media all and (max-width: 91em) {
+        .cta > div:last-child button {
+          width: 20%;
+          height: 4rem;
+          font-size: 1.4rem; } }
     .cta > div:last-child > :nth-child(2) {
       background-color: #540b51;
       color: #fff; }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .cta > div:last-child > :nth-child(2) {
+          margin-right: 2rem; } }
+      @media all and (max-width: 91em) {
         .cta > div:last-child > :nth-child(2) {
           margin-right: 2rem; } }
     .cta > div:last-child > :nth-child(3) {
@@ -535,37 +666,49 @@ body {
       align-self: center; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .cards div div {
-          width: 65%; } }
+          width: 45%; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .cards div div {
+          width: 50%; } }
+      @media all and (max-width: 91em) {
         .cards div div {
           width: 55%; } }
     .cards div > h2 {
-      font-size: 4.4rem;
+      font-size: 3.4rem;
       color: #191817; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .cards div > h2 {
           font-size: 3.6rem; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
         .cards div > h2 {
-          font-size: 3.6rem; } }
+          font-size: 3.8rem; } }
+      @media all and (max-width: 91em) {
+        .cards div > h2 {
+          font-size: 4rem; } }
     .cards div > p {
       line-height: 2.2rem;
       font-weight: 600;
-      font-size: 1.6rem; }
+      font-size: 1rem; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .cards div > p {
-          font-size: 1.4rem; } }
+          font-size: 1.2rem; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .cards div > p {
+          font-size: 1.2rem; } }
+      @media all and (max-width: 91em) {
         .cards div > p {
           font-size: 1.4rem; } }
     .cards div img {
-      width: 95%; }
+      width: 50%; }
       @media all and (min-width: 48em) and (max-width: 64em) {
         .cards div img {
-          width: 75%; } }
+          width: 55%; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
         .cards div img {
-          width: 75%; } }
+          width: 60%; } }
+      @media all and (max-width: 91em) {
+        .cards div img {
+          width: 65%; } }
       .cards div img:nth-child(2) {
         align-self: flex-end; }
       .cards div img:not(:first-child) {
@@ -579,5 +722,8 @@ body {
         .cards div a:link {
           font-size: 1.2rem; } }
       @media all and (min-width: 65em) and (max-width: 90em) {
+        .cards div a:link {
+          font-size: 1.2rem; } }
+      @media all and (max-width: 91em) {
         .cards div a:link {
           font-size: 1.2rem; } }

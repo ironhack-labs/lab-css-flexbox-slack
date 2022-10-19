@@ -29,7 +29,14 @@
   & > :nth-child(7) {
     grid-column: 1 / -1;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    list-style: none;
+
+    @include respond(ls) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     & :not(:last-child) {
       margin-bottom: 1.6rem;
@@ -44,6 +51,12 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    @include respond(ls) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 4rem;
+    }
   }
   & > :nth-child(9) {
     grid-column: 1 / -1;

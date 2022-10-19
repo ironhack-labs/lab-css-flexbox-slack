@@ -19,6 +19,14 @@
     height: 70rem;
   }
 
+  @include respond(ls) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    height: 70rem;
+  }
+
   & img {
     @include respond(ss) {
       width: 50%;
@@ -31,6 +39,14 @@
     @include respond(ms) {
       width: 40%;
       height: 20%;
+
+      align-self: center;
+      justify-self: flex-end;
+    }
+
+    @include respond(ls) {
+      width: 40%;
+      height: 30%;
 
       align-self: center;
       justify-self: flex-end;
@@ -64,6 +80,11 @@
         font-size: 5.2rem;
         text-align: left;
       }
+
+      @include respond(ls) {
+        font-size: 5.2rem;
+        text-align: left;
+      }
     }
 
     & p {
@@ -77,6 +98,12 @@
       }
 
       @include respond(ms) {
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 0;
+      }
+
+      @include respond(ls) {
         font-size: 2rem;
         text-align: left;
         margin-bottom: 0;
@@ -105,6 +132,12 @@
         height: 4rem;
       }
 
+      @include respond(ls) {
+        font-size: 1.6rem;
+        width: inherit;
+        height: 6rem;
+      }
+
       &:first-child {
         padding-left: 3rem;
       }
@@ -121,6 +154,14 @@
 
           @include respond(ss) {
             height: 3rem;
+          }
+
+          @include respond(ms) {
+            height: 4rem;
+          }
+
+          @include respond(ls) {
+            height: 4rem;
           }
         }
         & > span {
