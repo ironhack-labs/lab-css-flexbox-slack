@@ -67,7 +67,7 @@ nav {
     font-size: 4.5rem;
     text-align: center;
     font-weight: 400;
-    padding-bottom: 5%;
+    padding: 0 0 5% 0;
 }
 
 .headerContainer1 > p, .headerContainer1 > p > span {
@@ -89,12 +89,12 @@ nav {
 }
 
 .big {
-    margin: 1%;
-    width: 650px;
+    width: 95%;
     height: 100px;
     border-radius: 10px;
     border: none;
     font-size: 1.5rem;
+    margin-bottom: 5%;
 }
 
 .buttonHeaderContainer > button:first-child {
@@ -111,15 +111,15 @@ nav {
 }
 .buttonHeaderContainer >button:last-child > img {
     background-color: white;
-    width: 10%;
+    width: 8%;
     margin-left: 2%;
 }
 
 .buttonHeaderContainer >button:last-child > span {
     display: flex;
+    justify-content: center;
     color: white;
     font-size: 1.5rem;
-    margin-left: 18%;
 }
 
 .headerContainer2 * {
@@ -189,6 +189,7 @@ nav {
 .sectionContainer3 > div > img {
     padding-left: 10%;
 }
+
 .sectionContainer5, .sectionContainer6 {
     padding-top: 15%;
     display: flex;
@@ -308,7 +309,6 @@ hr {
 
 .footerTechContainer *{
     display: flex;
-    flex-direction: column;
     padding: 2%;
     font-weight: 600;
 }
@@ -324,4 +324,34 @@ hr {
 
 .footerCopyright {
     width: 80%;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #header {
+        flex-direction: row;
+    }
+
+    .headerContainer2 {
+        display: flex;
+    }
+    
+    .logoContainer > img {
+        height: 40px;
+    }
+
+    .sectionContainer5 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footerTechContainer *{
+        display: flex;
+    }
+
+    .footerTechContainer > li {
+        width: 100px;
+        margin: 0;
+        border: 0;
+
+    }
 }
