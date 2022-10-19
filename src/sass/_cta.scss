@@ -1,18 +1,12 @@
 .cta {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  @include flex_column_center;
 
   gap: 3rem;
 
   background-color: $color-white;
 
   & > div:first-child {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    @include flex_column_center;
 
     gap: 4rem;
 
@@ -52,10 +46,7 @@
     }
 
     & div {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
+      @include flex_column_center;
 
       gap: 4rem;
       padding: 0 1.2rem;
@@ -100,10 +91,7 @@
     }
 
     & > ul {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
+      @include flex_column_center;
       gap: 4rem;
 
       list-style: none;
@@ -124,11 +112,7 @@
       }
 
       & > li {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-
+        @include flex_column_center;
         gap: 2rem;
 
         & > :first-child {
