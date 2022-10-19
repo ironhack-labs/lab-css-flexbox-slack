@@ -1,9 +1,25 @@
 .header {
   display: flex;
+
   flex-direction: column;
   padding: 0 6.2rem;
   gap: 2rem;
   background-color: $background-purple;
+
+  @include respond(ss) {
+    flex-direction: row;
+    height: 50rem;
+  }
+
+  & img {
+    @include respond(ss) {
+      width: 50%;
+      height: 50%;
+
+      align-self: center;
+      justify-self: flex-end;
+    }
+  }
 
   & div {
     display: flex;
@@ -20,12 +36,23 @@
     & h1 {
       font-size: 5.4rem;
       margin-bottom: 2rem;
-      color: $titles-black;
+      color: $color-white;
+
+      @include respond(ss) {
+        font-size: 4.2rem;
+        text-align: left;
+      }
     }
 
     & p {
       font-size: 2rem;
       margin-bottom: 2rem;
+
+      @include respond(ss) {
+        font-size: 1.4rem;
+        text-align: left;
+        margin-bottom: 0;
+      }
 
       & span {
         color: $paragraph-yellow;
@@ -43,6 +70,12 @@
       text-transform: uppercase;
       font-weight: 600;
 
+      @include respond(ss) {
+        font-size: 1.4rem;
+        width: inherit;
+        height: 4rem;
+      }
+
       &:first-child {
         padding-left: 3rem;
       }
@@ -56,6 +89,10 @@
         & > img {
           width: 4rem;
           background-color: $color-white;
+
+          @include respond(ss) {
+            height: 3rem;
+          }
         }
         & > span {
           color: $color-white;

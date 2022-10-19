@@ -27,10 +27,10 @@ html {
   @media all and (min-width: 65em) and (max-width: 90em) {
     html {
       font-size: 75%; } }
-  @media all and (min-width: 49em) and (max-width: 64em) {
+  @media all and (min-width: 48em) and (max-width: 64em) {
     html {
       font-size: 62.5%; } }
-  @media all and (min-width: 24.37em) and (max-width: 48em) {
+  @media all and (min-width: 24.37em) and (max-width: 47em) {
     html {
       font-size: 50%; } }
 
@@ -72,6 +72,16 @@ body {
   padding: 0 6.2rem;
   gap: 2rem;
   background-color: #540b51; }
+  @media all and (min-width: 48em) and (max-width: 64em) {
+    .header {
+      flex-direction: row;
+      height: 50rem; } }
+  @media all and (min-width: 48em) and (max-width: 64em) {
+    .header img {
+      width: 50%;
+      height: 50%;
+      align-self: center;
+      justify-self: flex-end; } }
   .header div {
     display: flex;
     flex-direction: column;
@@ -84,10 +94,19 @@ body {
     .header div h1 {
       font-size: 5.4rem;
       margin-bottom: 2rem;
-      color: #191817; }
+      color: #fff; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .header div h1 {
+          font-size: 4.2rem;
+          text-align: left; } }
     .header div p {
       font-size: 2rem;
       margin-bottom: 2rem; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .header div p {
+          font-size: 1.4rem;
+          text-align: left;
+          margin-bottom: 0; } }
       .header div p span {
         color: #ecb12f; }
   .header__btn {
@@ -98,6 +117,11 @@ body {
       font-size: 1.6rem;
       text-transform: uppercase;
       font-weight: 600; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .header__btn button {
+          font-size: 1.4rem;
+          width: inherit;
+          height: 4rem; } }
       .header__btn button:first-child {
         padding-left: 3rem; }
       .header__btn button + :last-child {
@@ -108,6 +132,9 @@ body {
         .header__btn button + :last-child > img {
           width: 4rem;
           background-color: #fff; }
+          @media all and (min-width: 48em) and (max-width: 64em) {
+            .header__btn button + :last-child > img {
+              height: 3rem; } }
         .header__btn button + :last-child > span {
           color: #fff;
           margin: 0 auto; }
@@ -123,6 +150,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 4rem; }
+  @media all and (min-width: 48em) and (max-width: 64em) {
+    .features {
+      margin-top: 0rem; } }
   .features p {
     font-size: 2.2rem;
     text-transform: uppercase;
@@ -132,17 +162,33 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    gap: 0.8rem; }
     .features div > img {
-      width: 30%; }
+      width: 25%; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .features div > img {
+          width: 18%; } }
       .features div > img + img:nth-child(2) {
         width: 15%; }
+        @media all and (min-width: 48em) and (max-width: 64em) {
+          .features div > img + img:nth-child(2) {
+            width: 8%; } }
       .features div > img + img:nth-child(3) {
-        width: 20%; }
+        width: 18%; }
+        @media all and (min-width: 48em) and (max-width: 64em) {
+          .features div > img + img:nth-child(3) {
+            width: 14%; } }
       .features div > img + img:nth-child(4) {
         width: 10%; }
+        @media all and (min-width: 48em) and (max-width: 64em) {
+          .features div > img + img:nth-child(4) {
+            width: 6%; } }
       .features div > img + img:nth-child(5) {
         width: 35%; }
+        @media all and (min-width: 48em) and (max-width: 64em) {
+          .features div > img + img:nth-child(5) {
+            width: 20%; } }
 
 .cards {
   display: flex;
@@ -156,15 +202,31 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 2.6rem; }
+    .cards div div {
+      align-self: center; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cards div div {
+          width: 65%; } }
     .cards div > h2 {
       font-size: 4.4rem;
       color: #191817; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cards div > h2 {
+          font-size: 3.6rem; } }
     .cards div > p {
       line-height: 2.2rem;
       font-weight: 600;
       font-size: 1.6rem; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cards div > p {
+          font-size: 1.4rem; } }
     .cards div img {
       width: 95%; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cards div img {
+          width: 75%; } }
+      .cards div img:nth-child(2) {
+        align-self: flex-end; }
       .cards div img:not(:first-child) {
         margin-top: 3rem; }
     .cards div a:link {
@@ -172,6 +234,9 @@ body {
       color: #2e71a6;
       font-weight: 500;
       text-decoration: none; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cards div a:link {
+          font-size: 1.2rem; } }
 
 .footer {
   padding: 0 1.2rem;
@@ -225,10 +290,16 @@ body {
     .cta > div:first-child h3 {
       margin-top: 5.2rem;
       text-align: center;
-      font-size: 5.2rem; }
+      font-size: 4.8rem; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cta > div:first-child h3 {
+          font-size: 3.2rem; } }
     .cta > div:first-child > p {
       text-align: center;
       font-size: 2.4rem; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cta > div:first-child > p {
+          font-size: 1.8rem; } }
     .cta > div:first-child div {
       display: flex;
       align-items: center;
@@ -237,13 +308,20 @@ body {
       gap: 1.6rem;
       padding: 0 1.2rem;
       width: 100%; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cta > div:first-child div {
+          flex-direction: row; } }
       .cta > div:first-child div button {
-        width: inherit;
-        height: 6rem;
+        width: 100%;
+        height: 4rem;
         font-size: 1.6rem;
         text-transform: uppercase;
         font-weight: 600;
         border: 1px solid #540b51; }
+        @media all and (min-width: 48em) and (max-width: 64em) {
+          .cta > div:first-child div button {
+            flex: 0 0 40%;
+            font-size: 1.4rem; } }
         .cta > div:first-child div button:first-child {
           background-color: #540b51;
           color: #fff; }
@@ -255,35 +333,51 @@ body {
       gap: 4rem;
       list-style: none;
       font-size: 2rem; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cta > div:first-child > ul {
+          flex-direction: row;
+          justify-content: space-around; } }
       .cta > div:first-child > ul > li {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        width: 35%;
         gap: 2rem; }
         .cta > div:first-child > ul > li > :first-child {
           font-size: 4rem;
           font-weight: 600;
           color: #540b51; }
+          @media all and (min-width: 48em) and (max-width: 64em) {
+            .cta > div:first-child > ul > li > :first-child {
+              font-size: 3.2rem; } }
         .cta > div:first-child > ul > li > :last-child {
           text-align: center;
           font-size: inherit;
           font-weight: 500; }
+          @media all and (min-width: 48em) and (max-width: 64em) {
+            .cta > div:first-child > ul > li > :last-child {
+              font-size: 1.4rem;
+              padding: 0 4rem; } }
   .cta > div:last-child {
     background-color: #540b51;
     width: 100%;
     height: 40rem;
-    border-radius: 0 0 35% 35%;
+    border-radius: 0 0 50% 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 1.2rem;
     padding: 0 1.2rem; }
+    @media all and (min-width: 48em) and (max-width: 64em) {
+      .cta > div:last-child {
+        height: 30rem; } }
     .cta > div:last-child h3 {
       font-size: 4rem;
       color: #fff;
       margin: 2.4rem 0; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cta > div:last-child h3 {
+          font-size: 3.4rem; } }
     .cta > div:last-child button {
       width: inherit;
       height: 6rem;
@@ -291,6 +385,11 @@ body {
       text-transform: uppercase;
       font-weight: 600;
       border: 1px solid #fff; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cta > div:last-child button {
+          width: 80%;
+          height: 4rem;
+          font-size: 1.4rem; } }
     .cta > div:last-child > :nth-child(2) {
       background-color: #540b51;
       color: #fff; }
@@ -309,15 +408,31 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 2.6rem; }
+    .cards div div {
+      align-self: center; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cards div div {
+          width: 65%; } }
     .cards div > h2 {
       font-size: 4.4rem;
       color: #191817; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cards div > h2 {
+          font-size: 3.6rem; } }
     .cards div > p {
       line-height: 2.2rem;
       font-weight: 600;
       font-size: 1.6rem; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cards div > p {
+          font-size: 1.4rem; } }
     .cards div img {
       width: 95%; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cards div img {
+          width: 75%; } }
+      .cards div img:nth-child(2) {
+        align-self: flex-end; }
       .cards div img:not(:first-child) {
         margin-top: 3rem; }
     .cards div a:link {
@@ -325,3 +440,6 @@ body {
       color: #2e71a6;
       font-weight: 500;
       text-decoration: none; }
+      @media all and (min-width: 48em) and (max-width: 64em) {
+        .cards div a:link {
+          font-size: 1.2rem; } }
