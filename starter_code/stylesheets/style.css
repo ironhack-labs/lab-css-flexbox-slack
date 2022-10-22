@@ -17,6 +17,9 @@ body, html {
 img {
     max-width: 100vw;
 }
+.display-desktop {
+    display: none;
+}
 h3 {
     font-size: 1.8em;
 }
@@ -59,14 +62,16 @@ main a::after {
     background-color: inherit;
     border: 0;
 }
-
+header {
+    background-color: #540b51;;
+}
 .header-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
     text-align: center;
-    background-color: #540b51;
+    /* background-color: #540b51; */
     color: #fff;
     font-weight: 600;
 }
@@ -150,7 +155,9 @@ main img {
     padding: 10px;
 }
 #improvements h3 {
-    margin-bottom: 0;
+    color: #540b51;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 .impro-buttons {
@@ -274,10 +281,19 @@ footer ul {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1399px) {
+    .display-desktop {
+        display: block;
+    }
+    .display-mobile {
+        display: none;
+    }
     .navbar {
         flex-wrap: wrap;
         align-content: center;
-        height: 120px;
     }
     .navbar-items {
         align-items: center;
@@ -305,21 +321,137 @@ footer ul {
     }
     .navbar-menu ul {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: 0;
         list-style: none;
-        width: 160px;
+        font-size: .8em;
+    }
+    .navbar-menu ul li {
+        padding: 10px 15px;
+    }
+
+    .navbar-menu ul li:last-child{
+        text-transform: uppercase;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+    .navbar-menu ul li:last-child a{
+        color: #000;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-info {
+        align-items: initial;
+        text-align: left;
+        padding: 60px;
+    }
+    .header-info h1 {
+        width: 80%;
+        font-size: 4em;
+    }
+    .header-buttons {
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        margin-bottom: 40px;
+        /* height: 60px; */
+    }
+    .header-buttons button {
+        /* flex: initial; */
+        /* width: 48%; */
+    }
+    .header-buttons img{
+        right: 1.2em;
+    }
+
+    .header-img-container img {
+        height: 400px;
+    }
+
+    #trusted-co {
+        padding: 50px 20px;
+    }
+    #trusted-co div {
+        width: 70%;
+        margin: auto;
+    }
+    main img {
+        height: 400px;
+    }
+    
+    #channels, #platform {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+    .channels-text, .communication-text, .platform-text{
+        width: 30%;
+        padding: 20px 80px;
+        font-size: 1.2em;
+    }
+
+    #communication {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    #improvements {
+        width: 80%;
+        margin: auto;
+    }
+    .impro-buttons {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 50%;
+        margin: auto;
+    }
+    .impro-buttons button {
+        padding: 5px 30px;
+    }
+    .improvements-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0;
+    }
+    .improvements-list li {
+        width: 15%;
+        margin: initial;
+    }
+
+    #product-try {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #product-try h3 {
+        width: 100%;
+        font-size: 2.5em;
+    }
+    #product-try button {
+        margin: 10px 30px;
+        border-radius: 0;
+    }
+    footer {
+        width: 80%;
+        margin: auto;
+    }
+    #footer-info {
         justify-content: space-between;
     }
-
-    .header-buttons {
-        display: none;
+    #footer-agb{
+        display: flex;
+        justify-content: space-between;
     }
-}
-
-@media (min-width: 1025px) and (max-width: 1399px) {
-    
+    #footer-social{
+        width: 20%
+    }
 }
 
 @media (min-width: 1440px) {
-
+    
 }
