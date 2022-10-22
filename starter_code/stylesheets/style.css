@@ -1,10 +1,127 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: Helvetica, sans-serif;
+}
+
+:root {
+  --background-purple: #540b51;
+  --background-ivory: #f3eae2;
+  --button-blue: #4285f4;
+  --titles-black: #191817;
+  --paragraph-black: #000000;
+  --paragraph-yellow: #ecb12f;
+  --links-blue: #2e71a6;
+  --footer-links-grey: #454245;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  background-color: var(--background-purple);
+}
+
+.navbar__logo {
+  width: 9rem;
+}
+
+.navbar__links {
+  display: none;
+}
+
+.navbar__icon {
+  padding: 1rem;
+
+  background-color: var(--background-purple);
+  border: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--background-purple);
+}
+
+.header__title {
+  text-align: center;
+  font-size: 5rem;
+  line-height: 5rem;
+  color: #fff;
+}
+
+.header__paragraph {
+  padding: 2rem 0;
+
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.header__paragraph span {
+  font-size: 2rem;
+  color: gold;
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.header__emailSignUpBtn {
+  width: 95%;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+
+  border-radius: 0.5rem;
+  color: var(--background-purple);
+  font-size: 2.5rem;
+}
+
+.header__googleSignUpBtn {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  padding: 1rem 0;
+
+  background-color: var(--button-blue);
+}
+
+.header__googleSignUpBtn img {
+  position: absolute;
+  left: 1rem;
+
+  width: 3rem;
+
+  border-radius: 0.3rem;
+  background-color: #fff;
+}
+
+.header__googleSignUpBtn span {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.header__appScreenshot {
+  background-color: var(--background-purple);
+}
+
+.header__appScreenshot img {
+  width: 90rem;
+  padding-left: 17rem;
+}
+
+/* I'm starting to style based on 500px width mobile screen  */
