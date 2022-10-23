@@ -1,10 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 62.5%;
-  font-family: Helvetica, sans-serif;
-}
+/* I'm starting to style based on 500px width mobile screen  */
 
 :root {
   --background-purple: #540b51;
@@ -15,6 +9,22 @@
   --paragraph-yellow: #ecb12f;
   --links-blue: #2e71a6;
   --footer-links-grey: #454245;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: Helvetica, sans-serif;
+}
+
+.buttonStyle {
+  width: 95%;
+  padding: 1rem 0;
+
+  border-radius: 0.5rem;
+  font-size: 2rem;
 }
 
 .navbar {
@@ -70,7 +80,7 @@
   color: gold;
 }
 
-.header__buttons {
+.header__buttonsContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,29 +88,27 @@
   padding-bottom: 2rem;
 }
 
-.header__emailSignUpBtn {
-  width: 95%;
-  padding: 1rem 0;
+.header__buttonsContainer__emailSignUpBtn {
   margin-bottom: 1rem;
 
-  border-radius: 0.5rem;
   color: var(--background-purple);
-  font-size: 2.5rem;
+  background-color: #fff;
+  border: none;
 }
 
-.header__googleSignUpBtn {
+.header__buttonsContainer__googleSignUpBtn {
   position: relative;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95%;
-  padding: 1rem 0;
 
+  color: #fff;
   background-color: var(--button-blue);
+  border: none;
 }
 
-.header__googleSignUpBtn img {
+.header__buttonsContainer__googleSignUpBtn__logo {
   position: absolute;
   left: 1rem;
 
@@ -110,18 +118,336 @@
   background-color: #fff;
 }
 
-.header__googleSignUpBtn span {
-  color: #fff;
-  font-size: 2.5rem;
-}
+.header__appScreenshotContainer {
+  width: 100%;
+  height: 42rem;
+  overflow: hidden;
 
-.header__appScreenshot {
   background-color: var(--background-purple);
 }
 
-.header__appScreenshot img {
-  width: 90rem;
-  padding-left: 17rem;
+.header__appScreenshotContainer__appScreenshot {
+  height: 50rem;
+
+  background-image: url("../images/hero-product-ui.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 12%;
 }
 
-/* I'm starting to style based on 500px width mobile screen  */
+.testimonials__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+
+  background-color: var(--background-ivory);
+}
+
+.testimonials__top__paragraph {
+  padding-top: 3.5rem;
+
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+
+.testimonials__top__logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.testimonials__top__logos img {
+  padding-bottom: 1rem;
+}
+
+.testimonials__top__logos__airbnb {
+  width: 10rem;
+}
+
+.testimonials__top__logos__nasa {
+  width: 7rem;
+}
+
+.testimonials__top__logos__uber {
+  width: 8rem;
+}
+
+.testimonials__top__logos__target {
+  width: 5rem;
+}
+
+.testimonials__top__logos__nyt {
+  width: 22rem;
+}
+
+.testimonials__top__logos__spotify {
+  width: 12rem;
+}
+
+.feature {
+  background-color: var(--background-ivory);
+}
+
+.feature__img {
+  width: 100%;
+}
+
+.feature__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.feature__text__title {
+  padding: 3rem 0 1.5rem 2rem;
+
+  font-size: 2.5rem;
+}
+
+.feature__text__paragraph {
+  padding: 0 1.5rem 0;
+
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  text-align: left;
+}
+
+.feature__text__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: flex-start;
+  padding: 1rem 0 4rem 1.5rem;
+
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.feature__text__link__arrow {
+  padding-left: 0.2rem;
+  width: 1.8rem;
+}
+
+.testimonials__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials__bottom__title {
+  padding: 6rem 0 2rem 0;
+
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.testimonials__bottom__paragraph {
+  margin-bottom: 1rem;
+
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.testimonials__bottom__buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+
+.testimonials__bottom__buttonsContainer__entrepriseButton {
+  margin: 0 0 1rem 0;
+
+  color: #fff;
+  background-color: var(--background-purple);
+  border: none;
+}
+
+.testimonials__bottom__buttonsContainer__salesButton {
+  margin-bottom: 4rem;
+
+  color: var(--background-purple);
+  background-color: #fff;
+  outline-color: var(--background-purple);
+}
+
+.testimonials__bottom__stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+}
+
+.testimonials__bottom__stats li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.testimonials__bottom__stats__percentage {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: var(--background-purple);
+}
+
+.testimonials__bottom__stats__text {
+  width: 50%;
+
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.testimonials__bottom__stats li:nth-child(2) {
+  width: 80%;
+}
+
+.testimonials__bottom__stats li:nth-child(3) {
+  width: 70%;
+}
+
+.testimonials__bottom__finePrint {
+  width: 95%;
+  margin-bottom: 4rem;
+
+  color: #aaa;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.testimonials__bottom__finePrint sup {
+  font-size: 1rem;
+  color: var(--background-purple);
+}
+
+.callToActionSection {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  margin-bottom: 12rem;
+
+  background-color: var(--background-purple);
+}
+
+.callToActionSection__circleContainer {
+  position: absolute;
+  z-index: -1;
+  top: 10rem;
+
+  width: 70rem;
+  height: 20rem;
+
+  border-radius: 50%;
+  background-color: var(--background-purple);
+}
+
+.callToActionSection__titel {
+  padding: 0 2rem 0;
+  margin-bottom: 3rem;
+
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.callToActionSection__salesButton {
+  margin-bottom: 1rem;
+  border-color: #fff;
+
+  color: #fff;
+  background-color: var(--background-purple);
+}
+
+.callToActionSection__tryButton {
+  border: none;
+  color: var(--background-purple);
+  background-color: #fff;
+}
+
+.footer__logo {
+  margin: 0 0 2rem 2rem;
+  width: 3.5rem;
+}
+
+.footer__navLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.footer__navLinks__list {
+  font-size: 2rem;
+  list-style: none;
+}
+
+.footer__navLinks__list li:first-child {
+  font-weight: bold;
+}
+
+.footer__navLinks__list li {
+  padding: 1rem;
+}
+
+.footer__horizontalLine {
+  margin: 0 1rem 2rem;
+  height: 0.1rem;
+  width: 95%;
+
+  background-color: #ccc;
+  border: none;
+}
+
+.footer__generalInfoLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.footer__generalInfoLinks li {
+  padding: 1rem;
+}
+
+.footer__socialMediaIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem 0;
+  margin-top: 1rem;
+
+  font-size: 5rem;
+  list-style: none;
+}
+
+.footer__legalInfo {
+  width: 90%;
+  padding-left: 1.5rem;
+  margin-top: 2rem;
+
+  text-align: left;
+  font-size: 1.5rem;
+  color: #aaa;
+}
