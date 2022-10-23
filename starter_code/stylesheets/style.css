@@ -280,17 +280,100 @@ footer ul {
     font-size: 2em;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    
-}
-
-@media (min-width: 1025px) and (max-width: 1399px) {
+/* SMALL SCREENS SIZE - TABLET */
+@media (min-width: 768px) {
     .display-desktop {
         display: block;
     }
     .display-mobile {
         display: none;
     }
+    /* HEADER */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-info {
+        align-items: initial;
+        text-align: left;
+        padding: 60px;
+    }
+    .header-info h1 {
+        width: 80%;
+        font-size: 3em;
+    }
+    .header-buttons {
+        margin-bottom: 40px;
+    }
+    .header-buttons button {
+    }
+    .header-buttons img{
+        right: 1.2em;
+    }
+
+    .header-img-container img {
+        height: 200px;
+    }
+
+    #trusted-co {
+        padding-bottom: 50px;
+    }
+    .channels-text, .communication-text, .platform-text{
+        width: 60%;
+        margin: auto;
+        padding: 50px 0;
+    }
+
+    /* IMPROVEMENTS - TEAM LARGE AND SMALL */
+    #improvements {
+        width: 80%;
+        margin: auto;
+    }
+    .impro-buttons {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: auto;
+    }
+    .impro-buttons button {
+        padding: 5px 30px;
+    }
+    .improvements-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0;
+    }
+    .improvements-list li {
+        width: 15%;
+        margin: initial;
+    }
+
+    #product-try button{
+        width: 60%;
+        margin: auto;
+    }
+
+    footer {
+        width: 90%;
+        margin: auto;
+    }
+    #footer-info {
+        justify-content: space-between;
+    }
+    #footer-agb{
+        display: flex;
+        justify-content: space-between;
+    }
+    #footer-social{
+        width: 20%
+    }
+}
+
+
+/* MEDIUM SCREENS SIZE */
+@media (min-width: 1025px) {
+    
     .navbar {
         flex-wrap: wrap;
         align-content: center;
@@ -340,37 +423,14 @@ footer ul {
         color: #000;
     }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header-info {
-        align-items: initial;
-        text-align: left;
-        padding: 60px;
-    }
+    /* HEADER */
     .header-info h1 {
-        width: 80%;
         font-size: 4em;
     }
-    .header-buttons {
-        /* flex-direction: row; */
-        /* justify-content: space-between; */
-        margin-bottom: 40px;
-        /* height: 60px; */
-    }
-    .header-buttons button {
-        /* flex: initial; */
-        /* width: 48%; */
-    }
-    .header-buttons img{
-        right: 1.2em;
-    }
-
     .header-img-container img {
         height: 400px;
     }
+
 
     #trusted-co {
         padding: 50px 20px;
@@ -400,29 +460,6 @@ footer ul {
         flex-direction: row-reverse;
     }
 
-    #improvements {
-        width: 80%;
-        margin: auto;
-    }
-    .impro-buttons {
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 50%;
-        margin: auto;
-    }
-    .impro-buttons button {
-        padding: 5px 30px;
-    }
-    .improvements-list {
-        display: flex;
-        justify-content: space-between;
-        margin: 50px 0;
-    }
-    .improvements-list li {
-        width: 15%;
-        margin: initial;
-    }
-
     #product-try {
         flex-direction: row;
         flex-wrap: wrap;
@@ -433,22 +470,12 @@ footer ul {
         font-size: 2.5em;
     }
     #product-try button {
-        margin: 10px 30px;
+        max-width: 15%;
+        margin: 10px 10px;
         border-radius: 0;
     }
     footer {
         width: 80%;
-        margin: auto;
-    }
-    #footer-info {
-        justify-content: space-between;
-    }
-    #footer-agb{
-        display: flex;
-        justify-content: space-between;
-    }
-    #footer-social{
-        width: 20%
     }
 }
 
