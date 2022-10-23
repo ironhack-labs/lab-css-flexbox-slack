@@ -15,14 +15,14 @@ footer links grey: #454245
 }*/
 html,
 body {
-  margin: 0 0px 0 0;
+  margin: 0;
   padding: 0 ;
+  box-sizing: border-box;
 }
 h1,
 h2,
 h3,
 p {
-    color: black;
     font-family: sans-serif;
 }
 .link {
@@ -53,17 +53,82 @@ ul {
 
 @media (max-width: 768px) {
     
+    nav {
+       height: 70px;
+       width: 100%;
+    }
+    nav .slackLogo {
+        height: 30px;
+        margin: 17px 15px auto 15px;
+    }
+    
+    .listNav > li {
+        display: inline-block;
+    }
+    
+    .flex-nav{
+        display:flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    } 
+
+    nav > button {
+        display: flex;
+        flex: end;
+    }
     .hidden-nav-part{
         display: none;
     }
+    header div h1 {
+        color: white;
+        font-size: 70px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        font-weight: bold;;
+    }
+    header div p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    header div .orangeText {
+        color: #ECB12F;
+    }
+    .signUpEmail {
+        font-size: 20px;
+        padding: 25px 115px;
+        text-transform: uppercase;
+        width: 80%;
+    }
+    .signUpGoogle {
+        font-size: 20px;
+        padding: 25px 115px;
+        text-transform: uppercase;
+        width: 80%;
+    }
+    .signUpGoogle img {
+        height: 30px;
+    }
+    .signUpEmail, .signUpGoogle {
+        display: flex;
+        justify-content: center;
+    }
+
+
     .buttons {
         display: flex;
+        
     }
     .button {
+        
         justify-content: center;
+        align-items: center;
         color: #540B51;
         font-size: 20px;
         padding: 35px 115px;
+        text-transform: uppercase;
+        width: 80%;
     }
     
     #button1 { 
@@ -71,8 +136,10 @@ ul {
         background-color: white;  
     }
     #button2 {
+        
         border: 1.5px solid purple;
-        background-color: white;  
+        background-color: white; 
+        order: 1; 
     }
     .infoLinks {
         padding: 15px 0;
