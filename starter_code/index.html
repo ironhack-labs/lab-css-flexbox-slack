@@ -19,14 +19,14 @@
 
   <body>
     <nav class="navbar">
-      <div>
+      <div class="navbar__left">
         <img
-          class="navbar__logo"
+          class="navbar__left__logo"
           src="./images/slack-logo.png"
           alt="Slack logo"
         />
 
-        <ul class="navbar__links navbar__links-show">
+        <ul class="navbar__left__links">
           <li>
             <a href="#">Product</a>
           </li>
@@ -42,21 +42,25 @@
         </ul>
       </div>
 
-      <div>
-        <button class="navbar__icon">
+      <div class="navbar__right">
+        <button class="navbar__right__button">
           <img src="./images/icon-search.png" alt="Search icon" />
         </button>
 
-        <button class="navbar__icon">
-          <img src="./images/icon-menu.png" alt="Menu icon" />
+        <button class="navbar__right__button">
+          <img
+            class="navbar__right__button__menu"
+            src="./images/icon-menu.png"
+            alt="Menu icon"
+          />
         </button>
 
-        <ul hidden>
-          <li>
+        <ul class="navbar__right__login">
+          <li class="navbar__right__login__signIn">
             <a href="#">Sign in</a>
           </li>
           <li>
-            <a href="#">Try for free</a>
+            <a class="navbar__right__login__try" href="#">Try for free</a>
           </li>
         </ul>
       </div>
@@ -145,6 +149,13 @@
             alt="connectedness"
           />
         </div>
+        <div>
+          <img
+            class="feature__img__big"
+            src="./images/connectedness.png"
+            alt="connectedness"
+          />
+        </div>
 
         <div class="feature__text">
           <h2 class="feature__text__title">Bring your team together</h2>
@@ -167,7 +178,7 @@
         </div>
       </section>
 
-      <section class="feature">
+      <section class="feature invertFeature">
         <div class="feature__rightAlign">
           <img
             class="feature__rightAlign__img"
@@ -175,6 +186,14 @@
             alt="flexibility"
           />
         </div>
+        <div class="feature__rightAlign__big">
+          <img
+            class="feature__rightAlign__img__big"
+            src="./images/flexibility.png"
+            alt="flexibility"
+          />
+        </div>
+
         <div class="feature__text">
           <h2 class="feature__text__title">Choose how you want to work</h2>
           <p class="feature__text__paragraph">
@@ -194,13 +213,17 @@
         </div>
       </section>
 
-      <section class="feature">
+      <section class="feature bottomFeature">
         <div>
           <img
             class="feature__img"
             src="./images/speed-mobile.png"
             alt="speed"
           />
+        </div>
+
+        <div>
+          <img class="feature__img__big" src="./images/speed.png" alt="speed" />
         </div>
 
         <div class="feature__text">
@@ -291,12 +314,18 @@
           Welcome to your new digital HQ
         </h3>
 
-        <button class="callToActionSection__salesButton buttonStyle">
-          Talk to sales
-        </button>
-        <button class="callToActionSection__tryButton buttonStyle">
-          Try for free
-        </button>
+        <div class="callToActionSection__buttonContainer">
+          <button
+            class="callToActionSection__buttonContainer__salesButton buttonStyle"
+          >
+            Talk to sales
+          </button>
+          <button
+            class="callToActionSection__buttonContainer__tryButton buttonStyle"
+          >
+            Try for free
+          </button>
+        </div>
       </section>
     </main>
 

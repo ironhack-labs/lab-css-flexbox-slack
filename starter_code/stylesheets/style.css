@@ -1,5 +1,3 @@
-/* I'm starting to style based on 500px width mobile screen  */
-
 :root {
   --background-purple: #540b51;
   --background-ivory: #f3eae2;
@@ -37,19 +35,23 @@
   background-color: var(--background-purple);
 }
 
-.navbar__logo {
+.navbar__left__logo {
   width: 9rem;
 }
 
-.navbar__links {
+.navbar__left__links {
   display: none;
 }
 
-.navbar__icon {
+.navbar__right__button {
   padding: 1rem;
 
   background-color: var(--background-purple);
   border: 0;
+}
+
+.navbar__right__login {
+  display: none;
 }
 
 .header {
@@ -58,7 +60,8 @@
   justify-content: center;
   align-items: center;
 
-  background-color: var(--background-purple);
+  background-image: url("../images/background-singup.png");
+  background-size: cover;
 }
 
 .header__content__title {
@@ -199,6 +202,11 @@
   width: 100%;
 }
 
+.feature__rightAlign__big,
+.feature__img__big {
+  display: none;
+}
+
 .feature__text {
   display: flex;
   flex-direction: column;
@@ -207,7 +215,7 @@
 }
 
 .feature__text__title {
-  padding: 3rem 0 1.5rem 2rem;
+  padding: 3rem 0 1.5rem 1.5rem;
 
   font-size: 2.5rem;
 }
@@ -372,7 +380,11 @@
   color: #fff;
 }
 
-.callToActionSection__salesButton {
+.callToActionSection__buttonContainer {
+  width: 90%;
+}
+
+.callToActionSection__buttonContainer__salesButton {
   margin-bottom: 1rem;
   border-color: #fff;
 
@@ -380,7 +392,7 @@
   background-color: var(--background-purple);
 }
 
-.callToActionSection__tryButton {
+.callToActionSection__buttonContainer__tryButton {
   border: none;
   color: var(--background-purple);
   background-color: #fff;
@@ -400,7 +412,7 @@
 
 .footer__navLinks {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   width: 100%;
   padding: 0 1rem 0;
@@ -421,7 +433,7 @@
 }
 
 .footer__horizontalLine {
-  margin: 0 auto;
+  margin: 2rem auto;
   height: 0.1rem;
   width: 95%;
 
@@ -527,16 +539,29 @@
 
   .feature__img,
   .feature__rightAlign__img {
-    width: 90%;
+    display: none;
   }
 
-  .feature__rightAlign {
+  .feature__img__big,
+  .feature__rightAlign__big,
+  .feature__rightAlign__img__big {
+    display: flex;
+    max-width: 100%;
+    height: 40rem;
+  }
+
+  .feature__rightAlign__big {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
   }
 
   .feature__text {
     align-items: center;
+  }
+
+  .feature__text__title {
+    width: 80%;
   }
 
   .feature__text__paragraph {
@@ -574,6 +599,7 @@
   .testimonials__bottom__stats li {
     display: flex;
     align-items: center;
+    width: 80%;
     padding: 0;
   }
 
@@ -594,9 +620,12 @@
     font-size: 1.2rem;
   }
 
-  .footer__navLinks {
-    justify-content: space-between;
-    margin-left: 0;
+  .callToActionSection__salesButton {
+    width: 80%;
+  }
+
+  .callToActionSection__tryButton {
+    width: 80%;
   }
 
   .footer__subfooter {
@@ -619,8 +648,185 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2rem 0 3rem 0;
 
     font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navbar__left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__left__links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+    font-size: 4rem;
+    list-style: none;
+  }
+
+  .navbar__left__links a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .navbar__right {
+    display: flex;
+    align-items: center;
+    width: 40%;
+  }
+
+  .navbar__right__login {
+    display: flex;
+
+    list-style: none;
+  }
+
+  .navbar__right__login {
+    font-weight: bold;
+  }
+
+  .navbar__right__login a {
+    text-decoration: none;
+  }
+
+  .navbar__right__login__signIn {
+    padding-top: 0.3rem;
+  }
+
+  .navbar__right__login__signIn a {
+    margin-right: 2rem;
+
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  .navbar__right__login__try {
+    padding: 1rem;
+
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    color: var(--background-purple);
+    background-color: #fff;
+  }
+
+  .navbar__right__button__menu {
+    display: none;
+  }
+
+  .header__content__title {
+    margin: 3rem 0 6rem 0;
+  }
+
+  .header__content__paragraph {
+    width: 60%;
+  }
+
+  .header__content__buttonsContainer {
+    width: 80%;
+  }
+
+  .testimonials__top {
+    padding-bottom: 8rem;
+  }
+
+  .feature {
+    display: flex;
+  }
+
+  .feature__img__big,
+  .feature__rightAlign__img__big {
+    height: 30rem;
+  }
+
+  .feature__rightAlign {
+    display: none;
+  }
+
+  .feature__rightAlign__big {
+    display: flex;
+  }
+
+  .feature__text {
+    width: 70%;
+  }
+
+  .feature__text__title {
+    font-size: 4rem;
+  }
+
+  .feature__text__paragraph {
+    font-size: 1.8rem;
+  }
+
+  .feature__text__link {
+    font-size: 2.2rem;
+  }
+
+  .feature__text__link__arrow {
+    display: none;
+  }
+
+  .invertFeature {
+    flex-direction: row-reverse;
+  }
+
+  .bottomFeature {
+    padding-bottom: 5rem;
+  }
+
+  .testimonials__bottom__title {
+    font-size: 3.5rem;
+  }
+
+  .testimonials__bottom__buttonsContainer {
+    margin-top: 1rem;
+  }
+
+  .testimonials__bottom__buttonsContainer__entrepriseButton {
+    flex-grow: 0.2;
+    height: 5.1rem;
+    padding: 1.5rem 0;
+  }
+
+  .testimonials__bottom__buttonsContainer__salesButton {
+    padding: 1.5rem 0;
+  }
+
+  .testimonials__bottom__stats__percentage {
+    font-size: 8rem;
+  }
+
+  .callToActionSection__titel {
+    font-size: 4rem;
+  }
+
+  .callToActionSection__buttonContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+  }
+
+  .callToActionSection__buttonContainer__salesButton {
+    margin: 0 0 0 1rem;
+    padding: 1rem 0;
+  }
+
+  .callToActionSection__buttonContainer__tryButton {
+    padding: 1.5rem 0;
   }
 }
 
