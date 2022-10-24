@@ -17,89 +17,93 @@
 </head>
 
 <body>
-  <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+  <nav class="navHeader">
+    <div id="flexboxContainerNavLeft">
+      <img class="navLogo" src="./images/slack-logo.png" alt="Slack logo" />
 
-      <ul>
-        <li>
-          <a href="#">Product</a>
+      <ul class="navList" id="flexboxContainerNavList" style="list-style-type: none">
+        <li class="flexboxItemNavLeft">
+          <a style="text-decoration: none; color: white;" href="#">Product</a>
         </li>
-        <li>
-          <a href="#">Solutions</a>
+        <li class="flexboxItemNavLeft">
+          <a style="text-decoration: none; color: white;" href="#">Solutions</a>
         </li>
-        <li>
-          <a href="#">Resources</a>
+        <li class="flexboxItemNavLeft">
+          <a style="text-decoration: none; color: white;" href="#">Resources</a>
         </li>
-        <li>
-          <a href="#">Pricing</a>
+        <li class="flexboxItemNavLeft">
+          <a style="text-decoration: none;color: white;" href="#">Pricing</a>
         </li>
       </ul>
     </div>
 
-    <div>
-      <button>
-        <img src="./images/icon-search.png" alt="Search icon">
+    <div id="flexboxContainer" id="flexboxContainerNavRight">
+      <button class="flexboxItem item1">
+        <img class="navImg" src="./images/icon-search.png" alt="Search icon">
+      </button>
+      <button class="flexboxItem item2">
+        <img class="navImg" src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <button>
-        <img src="./images/icon-menu.png" alt="Menu icon">
-      </button>
-
-      <ul hidden>
+      <ul id="flexItemDesktop" class="hidden flexboxItem" style="list-style-type: none;">
         <li>
-          <a href="#">Sign in</a>
+          <a class="navRight1" style="text-decoration: none;color: white;" href="#">Sign in</a>
         </li>
         <li>
-          <a href="#">Try for free</a>
+          <a class="navRight2" style="text-decoration: none;color:#540B51;" href="#">Try for free</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <header>
-    <div>
+  <header class="header" id="flexboxContainerMainHeader">
+    <div  id="flexboxContainerHeader" class="flexboxMainItem1">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p class="headerSubline">
+        <span  style="color: #ECB12F; font-weight: bold;">Slack is free to try</span> 
+        as long as you'd like.
+      </p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div id="flexboxContainerButton">
+        <button class="flexboxButtonItem buttonWhite" type="submit">Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
+        <button id="flexboxContainerHeaderButton" class="flexboxButtonItem buttonGoogle" type="submit">
+          <img class="googleLogo" src="./images/logo-google.png" alt="Google logo" />
           <span>Sign up with Google</span>
         </button>
       </div>
 
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+    <div class="flexboxMainItem2">
+      <img class="contentImgHeader" src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
-    <section>
-      <p>Trusted by companies all over the world</p>
+    <section id="sectionTrust">
+      <p id="specialHeadline">Trusted by companies all over the world</p>
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+      <div id="flexboxContainerLogos">
+        <img class="flexboxItemLogo itemLogo1" src="./images/logo-airbnb.png" alt="Airbnb logo" />
+        <img class="flexboxItemLogo itemLogo2"src="./images/logo-nasa.png" alt="NASA logo" />
+        <img class="flexboxItemLogo itemLogo3"src="./images/logo-uber.png" alt="Uber logo" />
+        <img class="flexboxItemLogo itemLogo4"src="./images/logo-target.png" alt="Target logo" />
+        <img class="flexboxItemLogo itemLogo5"src="./images/logo-nyt.png" alt="New York Times logo" />
+        <img class="flexboxItemLogo itemLogo6"src="./images/logo-spotify.png" alt="Spotify logo" />
       </div>
 
     </section>
 
-    <section>
-      <div>
-        <img src="./images/connectedness-mobile.png" alt="connectedness" />
+    <section class="flexboxContainerContent">
+  
+      <div class="contentBackground">
+        <img class="contentImg" src="./images/connectedness-mobile.png" alt="connectedness" />
+        <img class="contentImg1" src="./images/connectedness.png" alt="connectedness" /> 
       </div>
 
-      <div>
+      <div class="regularContent contentItemRight">
         <h2>Bring your team together</h2>
 
         <p>
@@ -108,13 +112,18 @@
         </p>
 
         <a href="#">
-          <span>Learn more about channels</span>
+          <span>Learn more about channels -></span>
         </a>
       </div>
     </section>
 
-    <section>
-      <div>
+    <section class="flexboxContainerContent">
+      <div class="contentBackground  contentItem1">
+        <img id="imageRight" class="contentImg"  src="./images/flexibility-mobile.png" alt="flexibility" />
+        <img id="imageRight" class="contentImg1"  src="./images/flexibility.png" alt="flexibility" />
+      </div>
+
+      <div  class="regularContent  contentItem2">
         <h2>Choose how you want to work</h2>
         <p>
           In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat,
@@ -123,21 +132,20 @@
         </p>
 
         <a href="#">
-          <span>Learn more about flexible communication</span>
+          <span>Learn more about flexible communication -></span>
         </a>
       </div>
 
-      <div>
-        <img src="./images/flexibility-mobile.png" alt="flexibility" />
-      </div>
+   
     </section>
 
-    <section>
-      <div>
-        <img src="./images/speed-mobile.png" alt="speed" />
+    <section class="flexboxContainerContent">
+      <div class="contentBackground">
+        <img class="contentImg" src="./images/speed-mobile.png" alt="speed" />
+        <img class="contentImg1" src="./images/speed.png" alt="speed" />
       </div>
 
-      <div>
+      <div  class="regularContent contentItemRight">
         <h2>Move faster with your tools in one place</h2>
         <p>
           With your other work apps connected to Slack, you can work faster by switching tabs less. And with powerful
@@ -145,7 +153,7 @@
         </p>
 
         <a href="#">
-          <span>Learn more about the Slack platform</span>
+          <span>Learn more about the Slack platform -></span>
         </a>
       </div>
     </section>
@@ -153,54 +161,57 @@
 
     <section>
       <h3>Teams large and small rely on Slack</h3>
-      <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+      <p class="slackSubline">Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
-      <div>
-        <button>Meet Slack for enterprise</button>
-        <button>Talk to sales</button>
+      <div id="flexboxContainerSlack">
+        <button id="buttonSlackSize" class="flexboxButtonItem buttonPurple" type="submit">Meet Slack for enterprise</button>
+        <button id="buttonSlackSize2" class="flexboxButtonItem buttonWhite" type="submit">Talk to sales</button>
       </div>
 
-      <ul>
-        <li>
-          <p><span>85%</span></p>
-          <p>
+     
+      <div class="flexboxContainerMarketing">
+        <div class="flexboxSlackItem">  
+        <p><span class="slackMarketing">85%</span></p>
+          <p class="slackContent">
             of users say Slack has improved communication
             <sup>*</sup>
           </p>
-        </li>
-
-        <li>
-          <p><span>86%</span></p>
-          <p>
+        </div>
+        <div class="flexboxSlackItem">
+          <p><span class="slackMarketing">86%</span></p>
+          <p class="slackContent">
             feel their ability to work remotely has improved has improved
             <sup>*</sup>
           </p>
-        </li>
-
-        <li>
-          <p><span>88%</span></p>
-          <p>
+        </div>
+        <div class="flexboxSlackItem">
+          <p><span class="slackMarketing">88%</span></p>
+          <p class="slackContent">
             feel more connected to their teams*
             <sup>*</sup>
           </p>
-        </li>
-      </ul>
+        </div>
+      </div>
+      <p id="legalContent"><sup>*</sup>legal text Lorem ipsum dolor sit amet, consectetur
+         adipiscing elit. Proin lobortis, justo tincidunt aliquet porta, urna orci lobortis sapien, eget tincidunt velit neque non enim. Nulla sed sodales sapien, ut finibus purus. 
+         Nunc euismod metus vel feugiat tristique.</p>
     </section>
 
-    <section>
-      <h3>Welcome to your new digital HQ</h3>
-
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+    <section class="backgroundPurple">
+      <h3 style="color: white;">Welcome to your new digital HQ</h3>
+    <div id="flexboxContainerWelcome">  
+      <button class="flexboxWelcomeItem buttonPurple" type="submit">Try for free</button>
+      <button class="flexboxWelcomeItem buttonWhite" type="submit">Talk to sales</button>
+    </div>
     </section>
 
   </main>
 
-  <footer>
+  <footer class="footer">
     <img src="./images/iso-slack.png" alt="Slack logo" />
-    <div>
-      <ul>
-        <li>WHY SLACK?</li>
+    <div id="flexboxContainerFooterIndex">
+      <ul class="flexboxColumn">
+        <li class="flexboxHeader">WHY SLACK?</li>
         <li>Slack vs. Email</li>
         <li>Channels</li>
         <li>Engagement</li>
@@ -208,8 +219,8 @@
         <li>Watch the Demo</li>
       </ul>
 
-      <ul>
-        <li>PRODUCT</li>
+      <ul class="flexboxColumn">
+        <li class="flexboxHeader">PRODUCT</li>
         <li>Features</li>
         <li>Integrations</li>
         <li>Enterprise</li>
@@ -217,14 +228,14 @@
         <li>Releases</li>
       </ul>
 
-      <ul>
-        <li>PRICING</li>
+      <ul class="flexboxColumn">
+        <li class="flexboxHeader">PRICING</li>
         <li>Plans</li>
         <li>Paid vs. Free</li>
       </ul>
 
-      <ul>
-        <li>COMPANY</li>
+      <ul class="flexboxColumn">
+        <li class="flexboxHeader">COMPANY</li>
         <li>About Us</li>
         <li>Leadership</li>
         <li>Investor Relations</li>
@@ -233,36 +244,36 @@
         <li>Careers</li>
       </ul>
     </div>
+<hr>
 
-
-    <ul>
-      <li>Status</li>
-      <li>Privacy</li>
-      <li>Terms</li>
-      <li>Cookie Preferences</li>
-      <li>Contact Us</li>
-      <li>Change Region</li>
-      <li>Download Slack</li>
+    <ul id="flexboxContainerLegal" style="list-style-type: none">
+      <li class="flexboxLegalItem">Status</li>
+      <li class="flexboxLegalItem">Privacy</li>
+      <li class="flexboxLegalItem">Terms</li>
+      <li class="flexboxLegalItem">Cookie Preferences</li>
+      <li class="flexboxLegalItem">Contact Us</li>
+      <li class="flexboxLegalItem">Change Region</li>
+      <li class="flexboxLegalItem"Download Slack</li>
     </ul>
 
-    <hr>
+    
 
-    <ul>
+    <ul id="flexboxContainerSocial" style="list-style-type: none">
       <li>
-        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter flexboxSocialItem"></i>
       </li>
       <li>
-        <i class="fab fa-facebook"></i>
+        <i class="fab fa-facebook flexboxSocialItem"></i>
       </li>
       <li>
-        <i class="fab fa-youtube"></i>
+        <i class="fab fa-youtube flexboxSocialItem"></i>
       </li>
       <li>
-        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-linkedin flexboxSocialItem"></i>
       </li>
     </ul>
 
-    <div>
+    <div class="copy">
       <small>
         &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
         their respective owners.
