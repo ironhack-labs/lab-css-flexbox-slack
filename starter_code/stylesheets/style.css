@@ -8,22 +8,23 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400&display=swap');
 
 /*///////////////// General //////////////////*/
-/* {
-    box-sizing: border-box;
-}*/
-html,
-body {
-  margin: 0;
-  padding: 0 ;
-  box-sizing: border-box;
+*,
+*::before,
+*::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
 h1,
 h2,
 h3,
 p {
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .link {
     list-style-type: none;
@@ -54,12 +55,18 @@ ul {
 @media (max-width: 768px) {
     
     nav {
-       height: 70px;
+       height: 10%;
        width: 100%;
     }
     nav .slackLogo {
         height: 30px;
-        margin: 17px 15px auto 15px;
+        margin: 25px 15px auto 15px;
+    }
+    .menuSearchFlex {
+        display: flex;
+	    flex-direction: row;
+	    justify-content: flex-end;
+	    align-items: center;
     }
     
     .listNav > li {
@@ -86,35 +93,52 @@ ul {
         padding-right: 30px;
         text-align: center;
         font-weight: bold;;
+        padding-top: 40px;
     }
     header div p {
         color: white;
         font-size: 20px;
         text-align: center;
+        margin-top: 35px;
     }
     header div .orangeText {
         color: #ECB12F;
     }
     .signUpEmail {
-        font-size: 20px;
-        padding: 25px 115px;
-        text-transform: uppercase;
-        width: 80%;
+        color: #540B51;
+        margin-top: 30px;
     }
     .signUpGoogle {
+        background-color: #4285F4;
+        color: white;
+        margin-bottom: 30px;
+        margin-top: 20px ;
+    }
+    .email {
         font-size: 20px;
         padding: 25px 115px;
         text-transform: uppercase;
         width: 80%;
+        border: 0;
+        height: 85px;
+        border-radius: 5px;
+        margin-left: 65px;
+
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
     }
     .signUpGoogle img {
-        height: 30px;
+        height: 40px;
+        padding-right: 10px;
     }
-    .signUpEmail, .signUpGoogle {
-        display: flex;
-        justify-content: center;
+    .screenSlack {
+        display: block;
+        width: 100%;
+        max-width: 768px;
+        height: 300px;
     }
-
 
     .buttons {
         display: flex;
@@ -234,6 +258,9 @@ ul {
 #button2 {
     border: 1.5px solid purple;
     background-color: white;  
+}
+.screenSlack {
+    height: 50%;
 }
 .infoLinks {
     padding: 15px 0;
