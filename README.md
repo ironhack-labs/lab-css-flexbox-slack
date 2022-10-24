@@ -14,7 +14,6 @@ The goal of the lab is to create a *responsive* landing page using **CSS**, **Fl
 
 
 
-
 ## Requirements
 
 - Fork this repo
