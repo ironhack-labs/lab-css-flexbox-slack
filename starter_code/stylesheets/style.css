@@ -1,10 +1,497 @@
-/*
-background purple: #540B51
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;;
+  font-size: 16px;
+}
+
+@media (width < 768px) {
+  /* NavBar */
+
+  #navBar {
+  
+    background-color: #540b51; 
+  }
+
+  
+  .navBarLogo {
+    padding: 10px 10px;
+    width: 25%;
+  }
+
+  #navMenu {
+    /* display: flex;
+        flex-direction: row; */
+
+    list-style-type: none;
+  }
+
+  #navMenu li {
+    /* display: inline-block;
+    padding: 20px 10px; */
+    display: none;
+  }
+
+  #navDiv2 {
+
+    display: flex;
+    flex-direction: row; 
+    overflow: hidden;
+      
+  }
+
+  .navBtn {
+    background-color: #540b51;
+    border: 0;
+    padding: 10px 10px;
+  }
+
+  /* header */
+
+  #header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #540b51;
+    overflow: hidden;
+  }
+
+
+  #headerH1 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  #headerPara {
+    color: white;
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  .btnDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .btn1 {
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
+    margin: 0 20px 10px 10px;
+    border-radius: 5%;
+  }
+
+  .btn2 {
+    display: flex;
+
+    background-color: #4285f4;
+
+    margin: 0 20px 10px 10px;
+    border-radius: 5%;
+  }
+
+  .googleLogo {
+    width: 40px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: white;
+  }
+
+  .signUpGoogle {
+    text-align: center;
+    padding: 20px 80px;
+    color: rgb(255, 232, 232);
+  
+  }
+
+
+
+  #bgMain{
+
+    background-color: #f3eae2;
+  }
+  
+
+  .companyLogos {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px; 
+      
+  }
+
+  .companyLogos > img {
+    height: 40px;
+   
+  }
+  
+    #section3{
+
+      margin-top: 80px;
+    }
+
+  #section5 {
+    margin-top: 20px;
+    
+  }
+
+  #section5,
+  #section6 {
+    text-align: center;
+  }
+
+  section > .paraMain {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px 10px 0 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  
+  .heroProductimg {
+    height: 150px;
+  }
+
+  .connectImg {
+    height: 350px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  p {
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  .flexibilityImgDiv {
+    display: flex;
+    justify-content: right;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .flexibilityImg {
+    height: 350px;
+  }
+
+  .speedImg {
+    height: 350px;
+  }
+
+  #section5H3{
+
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+    padding: 35px;
+    font-weight: 800;
+  }
+
+  #section5Btn{
+
+    display: flex;
+    flex-direction: column;
+    margin: 20px; 
+
+  }
+
+  #section5Btn1{
+
+    margin-bottom: 10px;
+    background-color: #540b51;
+    color: #ffffff;
+    padding: 10px;
+  }
+  #section5Btn2{
+
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    color: #540b51;
+    padding: 10px;
+  }
+
+  .percentage > span {
+    font-size: 30px;
+    color: #540b51;
+  
+  }
+
+  .percentage{
+    font-weight: bold;
+    padding: 20px;
+  }
+
+  #section6H3 {
+
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    padding: 35px;
+    font-weight: 800;
+  }
+
+  #section5Para{
+
+    padding: 20px 15px;
+    font-size: 20px;
+
+  }
+
+  #section6{
+
+    background-color: #540b51;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    height: 600px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 280px 90px;
+  border-bottom-right-radius: 280px 90px;
+  }
+
+  .section6Btn1{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #540b51;
+    padding: 30px;
+    margin: 20px;
+    color: white;
+    border-radius: 5%;  
+     
+  }
+
+  .section6Btn2{
+    
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 30px;
+    color: #540b51;
+    border-radius: 5%;
+     
+  }
+  footer img {
+
+    margin-left: 30px;
+  }
+
+  .titleFooter{
+
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .footerDiv{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  #privacyFooter{
+    display: flex;
+    flex-direction: column;   
+
+  }
+
+#privacyFooter li{
+  margin: 10px 0;
+  margin-left: 30px ;
+}
+
+#socialIcons li i {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  
+
+}
+#copyright{
+
+  padding: 30px;
+  margin-top: 40px;
+  
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* NavBar */
+
+  #navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #540b51;
+    overflow: hidden;
+   
+  }
+
+  .navBarLogo {
+    padding: 10px 10px;
+    width: 25%;
+  }
+
+  #navMenu {
+    display: flex;
+      flex-direction: row;
+    justify-content: end ;
+    list-style-type: none;
+  }
+
+  #navMenu li {
+    display: inline-block;
+  padding: 20px 10px;
+ display: none;
+    
+  }
+
+  #navMenu li a{
+
+    color: #ffffff;
+  }
+
+  .navBtn {
+    background-color: #540b51;
+    border: 0;
+    padding: 10px 10px;
+    
+  }
+
+  /* header */
+
+  #header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+
+    background-color: #540b51;
+    overflow: hidden;
+  }
+
+  #headerDiv {
+  }
+
+  #headerH1 {
+    padding: 10px 160px 30px 30px;
+
+    color: white;
+    text-align: left;
+    font-size: 50px;
+  }
+
+  #headerPara {
+    color: white;
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  
+
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
+    margin: 10px 23px 10px 10px;
+    border-radius: 5%;
+  }
+
+  .btn2 {
+    display: flex;
+
+    width: 40%;
+    background-color: #4285f4;
+
+    margin: 10px 30px 10px 10px;
+    border-radius: 5%;
+  }
+
+  .googleLogo {
+    width: 40px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: white;
+  }
+
+  .signUpGoogle {
+    display: flex;
+    flex-flow: wrap;
+    padding: 20px 80px;
+    color: rgb(255, 232, 232);
+    clear: both;
+  }
+
+  #heroIimg2 {
+    height: 200px;
+  }
+
+  .heroImgDiv {
+    display: flexbox;
+    justify-content: right;
+    height: 200px;
+  }
+
+  .main {
+    background-color: #f3eae2;
+  }
+
+  section > .paraMain {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px 10px 0 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .companyLogos {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: 20px 15px;
+  }
+
+  .companyLogos > img {
+    height: 40px;
+  }
+
+  #connectedImg {
+    background-image: url("starter_code\images\connectedness.png");
+    height: 250px;
+  }
+}
+
+/* background purple: #540B51
 background ivory: #F3EAE2
 button blue: #4285F4
 titles black: #191817
 paragraph black: #000000
 paragraph yellow: #ECB12F
 links blue: #2E71A6
-footer links grey: #454245
-*/
+footer links grey: #454245 */
+
+
