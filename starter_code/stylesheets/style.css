@@ -8,7 +8,7 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
-
+@media (max-width: 480px) {
 .nav, .header {
     background-color: #540B51;
     display: flex;
@@ -32,6 +32,10 @@ nav {
     display: none;
 }
 
+.products-list {
+    display: none;
+}
+
 .nav-button {
     background-color: transparent;
     border: none;
@@ -47,6 +51,12 @@ nav {
     width: 100%;
     margin: 5%;
 }
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 h1 {
     font-size: 1.8rem;
@@ -54,6 +64,10 @@ h1 {
 
 .slack-is-free {
     color: orange;
+}
+
+.sign-in-try-for-free {
+    display: none;
 }
 
 .email-sign-up {
@@ -170,17 +184,16 @@ h2 {
 .teams-rely-on-slack button {
         box-sizing: border-box;
         border-radius: 4px;
-        margin: 5px;
-        padding: 15px 100px;
         text-transform: uppercase;
 }
 
 .talk-to-sales {
     background-color: white;
-    color:#540B51;
+    color: #540B51;
     border-style: solid;
     border-color: #540B51;
-
+    margin: 5px;
+    padding: 10px 10px;
 }
 
 
@@ -202,6 +215,14 @@ h2 {
     color: #540B51;
     border-style: solid;
     border-color: white;
+}
+
+
+.talk-to-sales2 {
+    color: white;
+    border-style: solid;
+    border-color: white;
+    background-color: #540B51;
 }
 
 .slack-for-enterprise {
@@ -275,3 +296,350 @@ html {
     font-size: calc(15px + 0.390625vw);
     font-family: Roboto;
 }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .nav, .header {
+        background-color: #540B51;
+        display: flex;
+    }
+    
+    nav {
+        background: #540B51;
+        display: flex;
+        background-color: #540B51;
+        justify-content: flex-end;
+        align-items:center;
+        margin: 7%;
+    }
+    
+    .slack-logo {
+        display: block;
+        width: 30%;
+    }
+    
+    .products-list > ul > li {
+        list-style: none;
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav-button {
+        background-color: transparent;
+        border: none;
+    }
+
+    .sign-in-try-for-free li {
+        list-style: none;
+    }
+
+    .sign-in-try-for-free a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sign-in-try-for-free, .products  {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .top-of-page {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 5%;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .slack-is-free {
+        color: orange;
+    }
+    
+    .email-sign-up {
+        background-color: white;
+        border-radius: 4px;
+        text-transform: uppercase;
+        padding: 5% 15%;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 3%;
+        color: #540B51;
+        justify-content: center;
+    }
+    
+    .google-sign-up {
+        background-color: #4285F4;
+        border: none;
+        border-radius: 4px;
+        text-transform: uppercase;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 3%;
+        color: white;
+        text-align: center;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .google-sign-up span {
+        padding: 5% 15% 0% 5%;
+    }
+    .google-logo {
+        width: 7%;
+        background-color: white;
+        border-radius: 2px;
+        float: left;
+        padding: 2%;
+        margin: 1%;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    
+    .connect-img, .flex-img, .speed-img {
+        height: 350px;
+        width: auto;
+    }
+    
+    
+    .slack-app-screenshot img {
+        width: 100%; 
+    }
+    
+    .tan-component {
+        background-color: #F3EAE2;
+    }
+    
+    .main-para {
+        text-align: center;
+        padding-top: 20px;
+        text-transform: uppercase;
+        font-size: 14px;
+    
+    }
+    
+    .logos {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50%;
+        align-content: flex-start;
+        text-align: center;
+    }
+    
+    .logos-first-shelf img {
+        width: 20%;
+    }
+    
+    .logos-second-shelf img {
+        width: 40%;
+        margin-bottom: 50px;
+    }
+    
+    .bring-your-team-together, .choose-how-to-work, .move-faster-with-tools {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 400px;
+        margin: 100px;
+    }
+
+    .speed-img, .flex-img, .connect-img {
+        height: 300px;
+        width: auto;
+    }
+    
+    .tan-component a:link, .tan-component a:visited {
+        text-decoration: none;
+        color: #2E71A6;
+    }
+    
+    .teams-rely-on-slack {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .teams-rely-on-slack ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        width: 800px;
+    }
+
+    .percentages p {
+        width: 100px;
+        font-size: 10px;
+        padding-right: 250px;
+    }
+    
+    .welcome {
+        display:flex; 
+        flex-direction: column;
+        text-align: center;
+        background-color: #540B51;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    .teams-rely-on-slack button {
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin: 5px;
+            padding: 15px 100px;
+            text-transform: uppercase;
+    }
+
+    .talk-to-sales {
+        color:#540B51;
+        border-style: solid;
+        border-color: #540B51;
+        background-color: white;
+    
+    }
+  
+    .talk-to-sales2 {
+        color: white;
+        border-style: solid;
+        border-color: white;
+        background-color: #540B51;
+    }
+    
+    
+    .teams-rely-on-slack span  {
+        color:#540B51;
+        font-size: 4em;
+        font-weight: 900px;
+    }
+    
+    .teams-rely-on-slack ul {
+        text-align:left;
+    }
+    
+    .welcome h3 {
+        color: white;
+    }
+
+    .slack-list-container ul {
+        margin-left: 20px; 
+    }
+    .slack-list-container li {
+        display: flex;
+        flex-direction: center;
+        padding-right: 150px;
+    }
+
+    .try-for-free {
+        color: #540B51;
+        border-style: solid;
+        border-color: white;
+    }
+    
+    .slack-for-enterprise {
+        color: white;
+        background-color: #540B51;;
+        border-style: solid;
+        border-color: white;
+        margin: 5px;
+        padding: 10px 10px;
+    }
+    
+    .welcome button {
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin: 5px;
+        padding: 10px 30px;
+        text-transform: uppercase;
+    }
+    
+    .welcome {
+        padding-bottom: 3em;
+        position: relative; 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iso-slack-img {
+        margin-top: 7%;
+        margin-left: 4%;
+        margin-bottom: 3%;
+        width: 4%;
+    }
+    
+    footer ul li {
+        list-style:none;
+        margin: 0 0 1em 0;
+    }
+    
+    .why-slack-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        font-size: 60%;
+    }
+    
+    .slack-list-container {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .footer-bar {
+        margin: 0 0 .5em 0;
+        font-size: 70%;
+
+    }
+
+    .footer-bar li {
+        display: inline;
+        padding-right: 60px;
+    }
+
+    .footer-bar ul {
+        padding-left: 0; 
+    }
+    
+    #download-slack {
+        color: #2E71A6;
+    }
+
+    .footer-logos li {
+        padding-right: 60px;
+    }
+    
+    .footer-logos ul {
+        display: flex;
+    }
+
+    small {
+        font-size: 7px;
+    }
+    
+    html {
+        font-size: calc(15px + 0.390625vw);
+        font-family: Roboto;
+    }
+}
+
