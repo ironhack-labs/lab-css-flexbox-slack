@@ -17,73 +17,73 @@
 </head>
 
 <body>
-  <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+  <nav class="navContainer">
+    <div class="navLeftContainer">
+      <img style = "height=20px" src="./images/slack-logo.png" alt="Slack logo" />
 
-      <ul>
+      <ul class="navLeftContainer">
         <li>
-          <a href="#">Product</a>
+          <a class="navLeftItem" href="#">Product</a>
         </li>
         <li>
-          <a href="#">Solutions</a>
+          <a class="navLeftItem" href="#">Solutions</a>
         </li>
         <li>
-          <a href="#">Resources</a>
+          <a class="navLeftItem" href="#">Resources</a>
         </li>
         <li>
-          <a href="#">Pricing</a>
+          <a class="navLeftItem" href="#">Pricing</a>
         </li>
       </ul>
     </div>
 
-    <div>
+    <div class="navRightContainer">
       <button>
-        <img src="./images/icon-search.png" alt="Search icon">
+        <img class="navButton" src="./images/icon-search.png" alt="Search icon">
       </button>
 
       <button>
-        <img src="./images/icon-menu.png" alt="Menu icon">
+        <img class="navButton" src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <ul class="signIn">
         <li>
-          <a href="#">Sign in</a>
+          <a class="navRightItem" href="#">Sign in</a>
         </li>
         <li>
-          <a href="#">Try for free</a>
+          <a class="navRightItem" href="#">Try for free</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <header>
-    <div>
-      <h1>Great teamwork starts with a digital HQ</h1>
+  <header class="headerContainer">
+    <div class="headerText">
+      <h1 class="text-centre">Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p class="text-centre"><span style="color:orange">Slack is free to try </span> for as long as you'd like</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="headerButtonContainer">
+        <button id=signUpWithEmail>Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+        <button id="signUpWithGoogleButton">
+          <img id="googleSymbol" src="./images/logo-google.png" alt="Google logo" />
+          <span class="signUpWithGoogleText">Sign up with Google</span>
         </button>
       </div>
 
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+    <div class="slackScreenshot" >
+      <img class="slackScreenshotImage" src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
+ 
+  <main class="main ivoryBackground">
+    <section class="ivoryBackground flexboxColumn">
+      <p class="companiesText text-centre">Trusted by companies all over the world</p>
 
-  <main>
-    <section>
-      <p>Trusted by companies all over the world</p>
-
-      <div>
+      <div class="companyLogos">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
@@ -94,12 +94,12 @@
 
     </section>
 
-    <section>
+    <section class="ivoryBackground flexboxColumn">
       <div>
-        <img src="./images/connectedness-mobile.png" alt="connectedness" />
+        <img id="connectedness" src="./images/connectedness-mobile.png" alt="connectedness" />
       </div>
 
-      <div>
+      <div class="teamTogether">
         <h2>Bring your team together</h2>
 
         <p>
@@ -107,51 +107,61 @@
           channels, it's easier to connect across departments, offices, time zones and even other companies.
         </p>
 
-        <a href="#">
-          <span>Learn more about channels</span>
-        </a>
+        <div style="display:flex; flex-direction: row; justify-content:flex-start; align-items:center">
+          <a class="channels" href="#">
+            <span>Learn more about channels</span>
+          </a>
+          <img style="margin-left: 10px" src="./images/icon-arrow-right.png" alt="arrow pointing right" />
+        </div>
+
       </div>
     </section>
 
-    <section>
-      <div>
+    <section class="ivoryBackground flexible">
+      <div class="howToWork">
         <h2>Choose how you want to work</h2>
-        <p>
+        <p class="howToWorkPara">
           In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat,
           send
           audio and video clips, or hop on a huddle to talk things out live.
         </p>
 
-        <a href="#">
-          <span>Learn more about flexible communication</span>
-        </a>
+        <div>
+            <a class="channels" href="#">
+              <span>Learn more about flexible communication</span>
+            </a>
+            <img style="margin-left: 10px" src="./images/icon-arrow-right.png" alt="arrow pointing right" />
+        </div>
       </div>
 
       <div>
-        <img src="./images/flexibility-mobile.png" alt="flexibility" />
+        <img id="flexibleImage" src="./images/flexibility-mobile.png" alt="flexibility" />
       </div>
     </section>
 
-    <section>
+    <section class="ivoryBackground flexboxColumn">
       <div>
-        <img src="./images/speed-mobile.png" alt="speed" />
+        <img id="speedImage" src="./images/speed-mobile.png" alt="speed" />
       </div>
 
-      <div>
+      <div style="margin-left:10px">
         <h2>Move faster with your tools in one place</h2>
         <p>
           With your other work apps connected to Slack, you can work faster by switching tabs less. And with powerful
           tools like Workflow Builder, you can automate away routine tasks.
         </p>
 
-        <a href="#">
-          <span>Learn more about the Slack platform</span>
-        </a>
+        <div>
+          <a class="channels" href="#">
+            <span>Learn more about the Slack platform</span>
+          </a>
+          <img style="margin-left: 10px" src="./images/icon-arrow-right.png" alt="arrow pointing right" />
+        </div>
       </div>
     </section>
 
 
-    <section>
+    <section class="whiteBackground">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
@@ -196,7 +206,7 @@
 
   </main>
 
-  <footer>
+  <footer class="whiteBackground">
     <img src="./images/iso-slack.png" alt="Slack logo" />
     <div>
       <ul>
