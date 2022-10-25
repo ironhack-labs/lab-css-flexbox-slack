@@ -123,20 +123,19 @@
 }
 
 .header__appScreenshotContainer {
+  position: relative;
   width: 100%;
-  height: 42rem;
+  height: 40rem;
   overflow: hidden;
-
-  background-color: var(--background-purple);
 }
 
 .header__appScreenshotContainer__appScreenshot {
-  height: 50rem;
+  position: absolute;
+  top: 0rem;
+  left: -5rem;
 
-  background-image: url("../images/hero-product-ui.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 12%;
+  width: 80rem;
+  height: 45rem;
 }
 
 .testimonials__top {
@@ -357,18 +356,7 @@
   margin-bottom: 12rem;
 
   background-color: var(--background-purple);
-}
-
-.callToActionSection__circleContainer {
-  position: absolute;
-  z-index: -1;
-  top: 10rem;
-
-  width: 80rem;
-  height: 20rem;
-
-  border-radius: 50%;
-  background-color: var(--background-purple);
+  clip-path: ellipse(100% 100% at center top);
 }
 
 .callToActionSection__titel {
@@ -488,7 +476,7 @@
 @media (min-width: 768px) {
   .header {
     flex-direction: row;
-    height: 65rem;
+    height: 60rem;
   }
 
   .header__content {
@@ -520,13 +508,10 @@
     align-items: flex-start;
   }
 
-  .header__appScreenshotContainer {
-    width: 90%;
-  }
-
   .header__appScreenshotContainer__appScreenshot {
-    background-size: 50rem;
-    background-position: -80% 0%;
+    left: 13rem;
+    height: 30rem;
+    width: 50rem;
   }
 
   .testimonials__top__logos {
@@ -727,6 +712,10 @@
     display: none;
   }
 
+  .header__content {
+    padding-left: 3rem;
+  }
+
   .header__content__title {
     margin: 3rem 0 6rem 0;
   }
@@ -737,6 +726,13 @@
 
   .header__content__buttonsContainer {
     width: 80%;
+  }
+
+  .header__appScreenshotContainer__appScreenshot {
+    top: 5rem;
+    left: 2rem;
+    width: 60rem;
+    height: 30rem;
   }
 
   .testimonials__top {
@@ -765,7 +761,7 @@
   }
 
   .feature__text__title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .feature__text__paragraph {
@@ -828,10 +824,59 @@
   .callToActionSection__buttonContainer__tryButton {
     padding: 1.5rem 0;
   }
+
+  .callToActionSection {
+    clip-path: ellipse(75% 100% at center top);
+  }
 }
 
-@media (min-width: 1000px) {
-  .callToActionSection__circleContainer {
-    width: 130rem;
+@media (min-width: 1440px) {
+  .header {
+    height: 75rem;
+
+    background-color: var(--background-purple);
+    background-image: none;
+  }
+
+  .header__content {
+    padding-left: 8rem;
+  }
+
+  .header__content__title {
+    width: 60%;
+
+    font-size: 8rem;
+    line-height: 7.5rem;
+  }
+
+  .header__content__paragraph {
+    width: 45%;
+  }
+
+  .header__content__buttonsContainer {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .header__content__buttonsContainer__emailSignUpBtn {
+    width: 40%;
+    padding: 1.5rem;
+  }
+
+  .header__content__buttonsContainer__googleSignUpBtn {
+    width: 40%;
+    padding: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  .header__appScreenshotContainer {
+    height: 100%;
+  }
+
+  .header__appScreenshotContainer__appScreenshot {
+    top: 15rem;
+
+    height: 35rem;
   }
 }
