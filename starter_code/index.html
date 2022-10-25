@@ -11,6 +11,8 @@
 
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
+  <!-- Link to Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,900italic,900,700italic,700,600italic,600,400italic,300italic,300,200italic" type="text/css">
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
@@ -18,7 +20,7 @@
 
 <body>
   <nav>
-    <div>
+    <div class="navbar">
       <img src="./images/slack-logo.png" alt="Slack logo" />
 
       <ul>
@@ -57,16 +59,16 @@
     </div>
   </nav>
 
-  <header>
+  <header class="header">
     <div>
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><span style="color: #ECB12F; font-weight: 600; " >Slack is free to try</span> for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="button-container">
+        <button id="email">Sign up with email</button>
 
-        <button>
+        <button id="google">
           <img src="./images/logo-google.png" alt="Google logo" />
           <span>Sign up with Google</span>
         </button>
@@ -75,15 +77,15 @@
     </div>
 
     <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+      <img class="screenshot" src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
-    <section>
+    <section class="references">
       <p>Trusted by companies all over the world</p>
 
-      <div>
+      <div class="ref-logos">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
@@ -94,7 +96,7 @@
 
     </section>
 
-    <section>
+    <section class="connected">
       <div>
         <img src="./images/connectedness-mobile.png" alt="connectedness" />
       </div>
@@ -113,7 +115,11 @@
       </div>
     </section>
 
-    <section>
+    <section class="flexible">
+      <div>
+        <img src="./images/flexibility-mobile.png" alt="flexibility" />
+      </div>
+
       <div>
         <h2>Choose how you want to work</h2>
         <p>
@@ -126,13 +132,9 @@
           <span>Learn more about flexible communication</span>
         </a>
       </div>
-
-      <div>
-        <img src="./images/flexibility-mobile.png" alt="flexibility" />
-      </div>
     </section>
 
-    <section>
+    <section class="platform">
       <div>
         <img src="./images/speed-mobile.png" alt="speed" />
       </div>
@@ -151,7 +153,7 @@
     </section>
 
 
-    <section>
+    <section class="stats">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
@@ -160,7 +162,7 @@
         <button>Talk to sales</button>
       </div>
 
-      <ul>
+      <ul class="stats-container">
         <li>
           <p><span>85%</span></p>
           <p>
@@ -187,7 +189,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="cta">
       <h3>Welcome to your new digital HQ</h3>
 
       <button>Try for free</button>
@@ -198,7 +200,7 @@
 
   <footer>
     <img src="./images/iso-slack.png" alt="Slack logo" />
-    <div>
+    <div class="footer-menu">
       <ul>
         <li>WHY SLACK?</li>
         <li>Slack vs. Email</li>
@@ -234,7 +236,7 @@
       </ul>
     </div>
 
-
+<hr>
     <ul>
       <li>Status</li>
       <li>Privacy</li>
@@ -247,7 +249,7 @@
 
     <hr>
 
-    <ul>
+    <ul class="social">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -262,7 +264,7 @@
       </li>
     </ul>
 
-    <div>
+    <div class="disclaimer">
       <small>
         &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
         their respective owners.
