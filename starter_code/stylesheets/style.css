@@ -27,10 +27,16 @@
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
+  width: 100%;
 
   background-color: var(--background-purple);
 }
@@ -59,6 +65,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10rem;
 
   background-image: url("../images/background-singup.png");
   background-size: cover;
@@ -467,16 +474,11 @@
   color: #aaa;
 }
 
-@media (min-width: 700px) {
-  .callToActionSection__circleContainer {
-    width: 115rem;
-  }
-}
-
 @media (min-width: 768px) {
   .header {
     flex-direction: row;
-    height: 60rem;
+    padding-top: 9rem;
+    height: 70rem;
   }
 
   .header__content {
@@ -641,6 +643,8 @@
 
 @media (min-width: 1024px) {
   .navbar {
+    position: relative;
+
     justify-content: space-evenly;
     align-items: center;
   }
@@ -710,6 +714,10 @@
 
   .navbar__right__button__menu {
     display: none;
+  }
+
+  .header {
+    padding-top: 2rem;
   }
 
   .header__content {
