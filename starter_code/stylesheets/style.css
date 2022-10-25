@@ -54,6 +54,9 @@ ul {
 
 @media (max-width: 768px) {
     
+    *{
+        max-width: 768px;
+    }
     nav {
        height: 10%;
        width: 100%;
@@ -86,6 +89,9 @@ ul {
     .hidden-nav-part{
         display: none;
     }
+
+    /*////////// header /////////*/
+
     header div h1 {
         color: white;
         font-size: 70px;
@@ -122,7 +128,7 @@ ul {
         border: 0;
         height: 85px;
         border-radius: 5px;
-        margin-left: 65px;
+        margin-left: 80px;
 
         display:flex;
         flex-direction:row;
@@ -133,38 +139,106 @@ ul {
         height: 40px;
         padding-right: 10px;
     }
-    .screenSlack {
-        display: block;
+    header div .screenSlack {
+        max-width:768px;
         width: 100%;
-        max-width: 768px;
-        height: 300px;
     }
 
-    .buttons {
-        display: flex;
-        
-    }
-    .button {
-        
-        justify-content: center;
-        align-items: center;
-        color: #540B51;
-        font-size: 20px;
-        padding: 35px 115px;
-        text-transform: uppercase;
-        width: 80%;
-    }
+/*////////// main ///////////*/
+
+.companies p {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 26px;
+}
+.partnersLogos {
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+.partnersLogos img {
+    height: 65px;
     
-    #button1 { 
-        border: 1.5px solid white;
-        background-color: white;  
-    }
-    #button2 {
-        
-        border: 1.5px solid purple;
-        background-color: white; 
-        order: 1; 
-    }
+}
+#connectedness img, #speedImg img, #flexibilityImg img {
+    width: 90%;
+    margin-bottom: 60px;
+    
+}
+#speedImg img, #flexibilityImg img {
+    padding-top: 100px;
+}
+#flexibilityImg img {
+    
+    justify-content: flex-end;
+}
+.moreInfo {
+    font-weight: 400;
+    
+}
+.moreInfo h2 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.moreInfo p {
+    font-size: 23px;
+    line-height: 40px;
+    padding-bottom: 27px;
+}
+.moreInfo a {
+    color: #2E71A6;
+    font-size: 23px;
+    
+}
+.mainText {
+    width: 90%;
+    padding-left: 40px;
+    padding-bottom: 60px;
+}
+
+
+
+/*////////// Footer ////////////*/
+
+
+.buttons {
+    display: flex;
+    
+}
+.button {
+    color: #540B51;
+    font-size: 20px;
+    padding: 35px 115px;
+    font-size: 20px;
+    padding: 25px 115px;
+    text-transform: uppercase;
+    width: 80%;
+    height: 85px;
+    border-radius: 5px;
+    margin-left: 80px;
+
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+#button1 { 
+    border: 1.5px solid white;
+    background-color: white;  
+}
+#button2 {
+    
+    border: 1.5px solid purple;
+    background-color: white; 
+    order: 1; 
+}
     .infoLinks {
         padding: 15px 0;
         display: flex;
@@ -338,13 +412,31 @@ footer hr {
 
 
 .buttons {
-    display: flex;
+    font-size: 20px;
+        padding: 25px 115px;
+        text-transform: uppercase;
+        width: 80%;
+        border: 0;
+        height: 85px;
+        border-radius: 5px;
+        margin-left: 80px;
 }
 .button {
-    justify-content: center;
     color: #540B51;
     font-size: 20px;
     padding: 35px 115px;
+    font-size: 20px;
+    padding: 25px 115px;
+    text-transform: uppercase;
+    width: 80%;
+    height: 85px;
+    border-radius: 5px;
+    margin-left: 80px;
+
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
 }
 
 #button1 { 
