@@ -10,7 +10,7 @@ We use Slack app almost every day to keep our communications with our classmates
 
 
 
-The goal of the lab is to create a *responsive* landing page using **CSS**, **Flexbox**, and **media queries**.
+The goal of the lab is to create a *responsive* landing page using **CSS** and **Flexbox**.
 
 
 
@@ -71,7 +71,7 @@ When you begin working as a developer, it is very likely that your team will use
 
 Mobile first right? :wink: 
 
-We will start by focusing on the styles for mobile screens first! 📱 Oh! Remember to use **Flexbox** to create the layout and display the content in rows or columns from the start. You'll be working on adapting the layout to different screen sizes in the following iterations, so it's essential that you start using Flexbox from start to end!
+We will start by focusing on the styles for mobile screens first! :iphone: Oh! Remember to use **Flexbox** to create the layout and display the content in rows or columns from the start. You'll be working on adapting the layout to different screen sizes in the following iterations, so it's essential that you start using Flexbox from start to end!
 
 
 
@@ -223,7 +223,7 @@ You can inspect the page styles here:
 
 Last one! Some small changes and we are done! In this iteration we are targeting the large screen devices such as desktops and laptops:
 
-- The **sign up buttons** in the **header** should now be displayed horizontally, next to each other. Additionaly, the image shown in the **header** should be centered and fully visible.
+- The **sign up buttons** in the **header** should now be displayed horizontally, next to each other. Additionally, the image shown in the **header** should be centered and fully visible.
 
   
 
