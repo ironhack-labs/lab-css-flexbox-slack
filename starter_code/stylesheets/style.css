@@ -9,44 +9,61 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-
-
 * {
     margin: 0px;
     padding: 0px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+html, body, #page {
+    height: 100%;
+    overflow: hidden;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: #2E71A6;
+    background: url('../images/icon-arrow-right.png') no-repeat right center;
+    padding-right: 30px;
 }
 
 @media (max-width: 768px) {
-    nav {
+    nav {   
         display: flex;
-        justify-content: space-between;
-        position: fixed;
-        top: 0;
-        left: 0;
+        justify-content:space-between;
+        flex: 0 0 auto;
         background-color: #540B51;
         padding: 1.5rem 0 1.5rem 1.5rem;
-        border: 1px solid #00ff99;
+    }    
+    
+    main {
+        flex: 1 1 auto;
+        position: relative; /* need this to position inner content */
+        height: 100%;
+        overflow-y: scroll;
+        border: 0;
     }
 
     #slack-img {
         display: flex;
         width: 150px;
-        border: 1px solid #ff9900;
     }
 
     nav ul {
         display: none;
     }
 
-    #nav-buttons {
-        display: flex;
-        border: 1px solid #99ff00;
-    }
-
-    #menu-icon {
-        margin-right: 30px;
+    #nav-buttons button {
+        padding: 0 20px 0 0;
     }
 
     nav button {
@@ -57,28 +74,31 @@ footer links grey: #454245
     nav button img {
         width: 30px;
     }
-    section {
-        background-color: #540B51;
-    }
+
     #header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 10%;
+        padding: 0 5%;
+        background-color: #540B51;
     }
-    #header h1{
-        margin-top: 80px;
-        padding: 20px 0;
-        color: white;
-        font-size: 45px;
+
+    #header h1 {
+        margin-top: 10px;
+        padding: 20px 0 35px 0;
+        color: #fff;
+        font-size: 3rem;
         text-align: center;
     }
-    #header p{
-        color: white;
+
+    #header p {
+        color: #fff;
         text-align: center;
-        padding-bottom: 15px;
+        font-size: 1.2rem;
+        padding-bottom: 25px;
     }
-    #header span{
+
+    #header span {
         color:  #ECB12F;
         font-weight: bold;
     }
@@ -87,25 +107,27 @@ footer links grey: #454245
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 -20% 16px -20%;
+        align-content: stretch;
+        width: 100%;
+        font-size: 1.2rem;
     }
-    #sign-up{
+
+    #sign-up {
+        background-color: #fff;
         color: #540B51;
         text-transform: uppercase;
         padding: 15px 0;
         border-radius: 3px;
         border: 0px;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
 
     #google {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         align-items: center;
         background-color: #4285F4;
         border: 0px;
-        margin-top: 3px;
+        margin: 3px 0 20px 0;
         border-radius: 3px;
     }
 
@@ -115,28 +137,186 @@ footer links grey: #454245
         width: 35px;
         margin: 5px;
         position: relative;
-        top: 0px;
-        left: 0px;
     }
 
     #google span {
+        flex-grow: 1;
         color: #fff;
         font-weight: normal;
         text-transform: uppercase;
         text-align: center;
-        margin-right: 30%;
     }
 
     #hero {
-        display: block;
-        width: 100%;
-        height: 400px;
-        background: url("../images/hero-product-ui.png") no-repeat center;
-        background-size: cover;
-        broder: 1px solid #F3EAE2;
+        height: 430px;
+        background: url("../images/hero-product-ui.png") no-repeat top left;
+        background-size: 110%;
     }
 
-    main {
+    #companies {
         background-color: #F3EAE2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 0 1.5rem 0;
+    }
+
+    #companies>p {
+        color: #000;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 3.5rem 0 2.5rem 0;
+    }
+
+    #companies>div {
+        text-align: center;
+    }
+
+    #companies>div>img {
+        height: 4rem;
+        padding: 1.5rem;
+    }
+
+    #bring {
+        background-color: #F3EAE2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: column;
+        justify-content: space-around;
+        padding: 1.5rem 0;
+    }
+    
+    #bring>#connected {
+        content: url("../images/connectedness-mobile.png");
+        padding: 1.2rem 0;
+    }
+
+    #bring div {
+        padding: 0 1rem;
+    }
+
+    #bring h2 {
+        font-size: 3rem;
+        padding: 1.2rem 0;
+    }
+
+    #bring p {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    #choose {
+        background-color: #F3EAE2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: column;
+        justify-content: space-around;
+        padding: 1.5rem 0;
+    }
+    
+    #choose #flexibility {
+        content: url("../images/flexibility-mobile.png");
+        padding: 1.2rem 0;
+        order: 1;
+    }
+
+    #choose div {
+        padding: 0 1rem;
+        order: 2;
+    }
+
+    #choose h2 {
+        font-size: 3rem;
+        padding: 1.2rem 0;
+    }
+
+    #choose p {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    #move {
+        background-color: #F3EAE2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: column;
+        justify-content: space-around;
+        padding: 1.5rem 0;
+    }
+    
+    #move>#mobile {
+        content: url("../images/speed-mobile.png");
+        padding: 1.2rem 0;
+    }
+
+    #move div {
+        padding: 0 1rem;
+    }
+
+    #move h2 {
+        font-size: 3rem;
+        padding: 1.2rem 0;
+    }
+
+    #move p {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    #teams {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 3rem;
+        border: 1px solid #ff9900;
+    }
+
+    #teams h3 {
+        font-size: 3rem;
+        padding: 1.2rem 0;
+        text-align: center;
+    }
+
+    #teams p {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    #teams-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: stretch;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    #meet {
+        color: #fff;
+        background-color: #540B51;
+        text-transform: uppercase;
+        padding: 15px 0;
+        border-radius: 3px;
+        border: 0px;
+        margin-bottom: 0px;
+    }
+
+    #talk {
+        color: #fff;
+        background-color: #540B51;
+        text-transform: uppercase;
+        padding: 15px 0;
+        border-radius: 3px;
+        border: 0px;
+        margin-bottom: 0px;
     }
 }
