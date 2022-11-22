@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+/*----------Navbar----------*/
 
 nav {
   display: flex;
@@ -130,6 +131,29 @@ button {
 }
 
 /* MAIN */
+section {
+  margin: 20px;
+  /* position: relative; */
+}
+
+h2,
+h3 {
+  font-size: 2.5rem;
+  margin: 10px;
+}
+
+a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2e71a6;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+a::after {
+  content: "→";
+}
 
 .trust {
   margin: 40px;
@@ -155,32 +179,9 @@ button {
   margin: 10px;
 }
 
-section {
-  margin: 20px;
-}
-
-h2,
-h3 {
-  font-size: 2.5rem;
-  margin: 10px;
-}
-
 .text {
   font-size: 1.4rem;
   margin: 10px;
-}
-
-a {
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-decoration: none;
-  color: #2e71a6;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-a::after {
-  content: "→";
 }
 
 .text-div {
@@ -188,12 +189,21 @@ a::after {
   margin-bottom: 40px;
 }
 
+/*--------Teams-----------*/
 .team {
   background-color: white;
   margin: 0;
   padding: 0;
   width: auto;
 }
+
+.circular-edge {
+  height: 60px;
+
+  border-radius: 0 0 30% 30%;
+  background-color: #540b51;
+}
+
 .team h3 {
   padding: 50px 50px 0 50px;
   text-align: center;
@@ -206,6 +216,7 @@ a::after {
 .purple-button {
   background-color: #540b51;
   color: white;
+  border: white;
   position: relative;
 }
 
@@ -215,6 +226,9 @@ a::after {
   border: 2px solid #540b51;
   position: relative;
 }
+
+/*-------Welcome----------*/
+
 /* 0. check out the html code */
 /* 0.1 direct children */
 /* 0.2 name children */
@@ -224,4 +238,86 @@ a::after {
 /* 1.1 apply flexbox */
 
 /* 2. flexbox header */
-/* 3.  */ ;
+/* 3.  */
+
+.img-left {
+  margin-left: -20px;
+}
+.img-right {
+  margin-left: 20px;
+}
+
+/*-----Footer--------*/
+.footer-logo {
+  width: 40px;
+  margin: 40px;
+}
+.footer-columns {
+  display: flex;
+  border-bottom: 1px solid rgb(124, 124, 124);
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+}
+
+.footer-columns li {
+  list-style: none;
+  color: #222;
+  margin: 10px;
+  line-height: 1.7rem;
+}
+
+.footer-list-title {
+  font-weight: 700;
+  color: black;
+}
+
+.icons-social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+  list-style: none;
+}
+
+.footer-options {
+  margin: 10px;
+  list-style: none;
+  font-weight: 600;
+}
+
+.footer-options li {
+  margin: 0.8rem;
+  line-height: 2rem;
+}
+
+small {
+  color: #646464;
+  font-size: 0.7rem;
+}
+
+/*----------Media Queries----------*/
+/* Small Screens (width > 768px and width < 1024px)*/
+@media (min-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 1555px) {
+  body {
+    background-color: red;
+  }
+}
