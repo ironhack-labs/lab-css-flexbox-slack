@@ -11,88 +11,132 @@ footer links grey: #454245
 
 
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    background-color: #540B51;
-    margin: 0px;
-    padding: 1.5rem 0 1.5rem 1.5rem;
-}
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #540B51;
+        padding: 1.5rem 0 1.5rem 1.5rem;
+        border: 1px solid #00ff99;
+    }
 
-nav img {
-    width: 150px;
-}
+    #slack-img {
+        display: flex;
+        width: 150px;
+        border: 1px solid #ff9900;
+    }
 
-nav ul {
-    display: none;
-}
+    nav ul {
+        display: none;
+    }
 
-nav #nav-buttons {
-    display: flex;
-    width: 100px;
-    justify-content: flex-end;
-    margin
-}
+    #nav-buttons {
+        display: flex;
+        border: 1px solid #99ff00;
+    }
 
-#menu-icon {
-    margin-right: 30px;
-}
+    #menu-icon {
+        margin-right: 30px;
+    }
 
-nav button {
-    background-color: #540B51;
-    border: 0px;
-}
+    nav button {
+        background-color: #540B51;
+        border: 0px;
+    }
 
-nav button img {
-    width: 30px;
-}
-section{
-    background-color: #540B51;
-    
-}
-#header {
-    display: flex;
-  flex-direction:column;
-    align-items: center;
-}
-#header h1{
-    margin-top: 80px;
-    padding: 20px 0;
-    color: white;
-    font-size: 22px;
-    text-align: center;
-}
-#header p{
-    color: white;
-    text-align: center;
-    padding-bottom: 10px;
-}
-#header span{
-    color:  #ECB12F;
-    font-weight: bold;
-}
+    nav button img {
+        width: 30px;
+    }
+    section {
+        background-color: #540B51;
+    }
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10%;
+    }
+    #header h1{
+        margin-top: 80px;
+        padding: 20px 0;
+        color: white;
+        font-size: 45px;
+        text-align: center;
+    }
+    #header p{
+        color: white;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    #header span{
+        color:  #ECB12F;
+        font-weight: bold;
+    }
 
-#header-buttons{
-    display: flex;
-    flex-direction: column;
-justify-content: center;
+    #header-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 -20% 16px -20%;
+    }
+    #sign-up{
+        color: #540B51;
+        text-transform: uppercase;
+        padding: 15px 0;
+        border-radius: 3px;
+        border: 0px;
+        margin-bottom: 5px;
+    }
 
-}
-#sign-up{
-color: #540B51;
-text-transform: uppercase;
-padding: 10px 0;
-}
-#google{
-    background-color: #4285F4;
+    #google {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #4285F4;
+        border: 0px;
+        margin-top: 3px;
+        border-radius: 3px;
+    }
+
+    #google img {
+        background-color: #fff;
+        border-radius: 5px;
+        width: 35px;
+        margin: 5px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    #google span {
+        color: #fff;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-align: center;
+        margin-right: 30%;
+    }
+
+    #hero {
+        display: block;
+        width: 100%;
+        height: 400px;
+        background: url("../images/hero-product-ui.png") no-repeat center;
+        background-size: cover;
+        broder: 1px solid #F3EAE2;
+    }
+
+    main {
+        background-color: #F3EAE2;
+    }
 }
