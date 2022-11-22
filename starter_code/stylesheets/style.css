@@ -9,194 +9,316 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-#navbar {
-    background-color: #540B51;
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    border: 10px solid pink;
+@media (min-width: 0px) and (max-width: 768px) {
 
-    top: 0;
-    right: ;
-    left: ;
-
-}
-.nav2 {
-    justify-content: stretch;
-    border: 10px solid yellow;
-}
-
-.slack-logo {
-    width: 200px;
-    height: 25px;
-
-    display: inline-block;
-    flex-grow: 3;
-    border: 10px solid red;
-
-}
-button {
-    background: none;
-	color: inherit;
-	border: none;
-}
-
-@media (min-width: 700px) {
-    body {
-        background-color: red;
-    }
-}
-
-header {
-    background-color: #540B51;
-}
-
-h1 {
-    text-align: center;
-    color: white;
-}
-
-header p {
-    text-align: center;
-}
-
-.button {
-    display: flex;
-    flex-direction: column;
-
-    margin: 15px;
-}
-
-.button-white {
-    background-color: white;
-    text-transform: uppercase;
-    border-radius: 5px;
-
-    padding: 15px;
-    margin-bottom: 5px;
-}
-
-.button-blue {
-    background-color: #4285F4;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 5px;
-
-    padding: 15px;
-    margin-top: 5px;
-}
-
-main {
-    background-color: #F3EAE2;
-}
-
-main p {
-    text-align: center;
-}
-
-.header-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.section1 {
-    text-transform: uppercase;
-
-    
-}
-
-.logo-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    
-}
-
-.logo-container img {
-        width: 20%;
-        height: auto;
-
-        padding: 10px;
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto';
     }
 
-h2 {
-    text-align: left;
-    margin: 10px;
-    font-size: 35px;
-}
-
-.section2 img {
-        max-width: 100%;
-        height: auto;
+    p {
+        color: #000000;
     }
 
-.section2 p, span {
-    text-align: left;
-    margin: 10px;
-}
+/* Navigation Bar */
 
-.section2 a {
-    text-decoration: none;
-}
+    .nav-bar {
+        background-color: #540B51;
+        display: flex;
+        justify-content: space-between;
 
-.section3 {
-    background-color: white;
-    text-align: center;
-}
+        padding: 15px;
+        top: 0;
+        right: 0;
+        left: 0;
 
-.button-purple {
-    background-color: purple;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 5px;
+        position: fixed;
+    }
 
-    padding: 15px;
-    margin-bottom: 5px;
-}
+    .nav-logo {
+        background-color: #540B51;
+        justify-content: center;
+    }
 
-.button-white {
-    background-color: white;
-    color: #540B51;
-    border: 2px solid #540B51;
-    text-transform: uppercase;
-    border-radius: 5px;
+    .slack-logo {
+        width: 100%;
+        height: 20px;
+        object-fit: contain;
+        
+        margin: 5px;
+        display: inline-block;
+        flex-grow: 3;
+    }
 
-    padding: 15px;
-    margin-bottom: 5px;
-}
+    button {
+        background: none;
+        color: inherit;
+        border: none;
+    }
 
-ul {
-    list-style-type: none;
-}
+    nav ul li{
+        display: none;
+    }
 
-ul li {
-    margin: 20px;
-}
 
-ul span {
-    color: #540B51;
-    font-size: 80px;
-    font-weight: 200;
-}
+/* Header */
 
-ul p {
-    text-align: center;
-    font-weight: bold;
+    header {
+        background-color: #540B51;
+        padding-top: 35px;
 
-    margin: 0 25%;
-}
+    }
 
-.section4 {
-    background-color: #540B51;
-
-    padding-bottom: 100px;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-}
-
-.section4 h3 {
+    h1 {
+        font-size: 45px;
         text-align: center;
         color: white;
+
+        padding: 15px;
+        margin: 15px;
+    }
+
+    header p {
+        text-align: center;
+        color: white;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .button-white {
+        background-color: white;
+        text-transform: uppercase;
+        border-radius: 5px;
+
+        padding: 15px;
+        height: 50px;
+    }
+
+    .button-blue {
+        color: white;
+        background-color: #4285F4;
+        text-transform: uppercase;
+
+        display: inline-block;
+   
+        border-radius: 5px;
+        
+        padding: 15px;
+        height: 50px;
+    }
+
+    .button-blue img {
+        background-color: white;
+        border-radius: 2.5px;
+        padding: 5px;
+        
+        width: 30px;
+        margin-right: auto;
+        margin-left: 3px;
+        float: left;
+    }
+
+    .button-blue span {
+        margin-right: 50px;
+    }
+
+    .header-img {
+        max-width: 100%
+    }
+
+/* Main Tag - 1st Section */ 
+    main {
+        background-color: #F3EAE2;
+        padding: 15px;
+    }
+
+    .section-main1 p {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+    .logo-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        
+    }
+
+    .logo-container img {
+            width: 20%;
+            height: auto;
+
+            padding: 10px;
+        }
+
+/* Logos */
+    
+    #airbnb{
+        width: 25vw;
+        height: 8vw;
+    }
+
+    #nasa{
+        width: 15vw;
+        height: 12vw;
+    }
+
+    #uber{
+        width: 15vw;
+        height: 5vw;
+    }
+
+    #target{
+        width: 11vw;
+        height: 11vw;
+    }
+
+    #nyt{
+        width: 44vw;
+        height: 10vw;
+    }
+
+    #spotify{
+        width: 28vw;
+        height: 9vw;
+    }
+
+ /* Main Tag - 2nd Section */ 
+
+    h2 {
+        color: #191817;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        font-size: 35px;
+    }
+
+    .section-main2 {
+        background-color: #F3EAE2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .section-main2 p  {
+        margin-bottom: 15px;
+    }
+
+    .section-main2 img {
+            max-width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+    }
+
+    .section-main2 a {
+        text-decoration: none;
+        color: #2E71A6;
+    }
+
+/* Main Tag - Section 3 */
+
+    .section3 {
+        background-color: white;
+        color: #191817;
+        padding-bottom: 15px;
+
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section3 h3 {
+        padding: 15px;
+        color: #191817;
+        text-align: center;
+    }
+
+    .section3 > p {
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #191817;
+        text-align: center;
+
+    }
+
+    .button-purple {
+        background-color: purple;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 5px;
+
+        padding: 15px;
+        margin-bottom: 5px;
+    }
+
+    .button-white {
+        background-color: white;
+        color: #540B51;
+        border: 2px solid #540B51;
+        text-transform: uppercase;
+        border-radius: 5px;
+
+        padding: 15px;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    ul li {
+        margin: 20px;
+    }
+
+    .section3 span {
+        color: #540B51;
+        font-size: 60px;
+        font-weight: 200;
+    }
+
+    ul p {
+        text-align: center;
+        font-style: bold;
+
+        margin: 0 25%;
+    }
+
+    /* Main Tag - Section 4*/ 
+
+    .section4 {
+        background-color: #540B51;
+
+        padding-bottom: 150px;
+        padding-top: 15px;
+        
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .section4 h3 {
+            text-align: center;
+            color: white;
+    }
+
+    .section4 .button-purple {
+        border: 1px solid white;
+    }
+
 }
