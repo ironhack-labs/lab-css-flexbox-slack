@@ -7,6 +7,11 @@ paragraph black: #000000
 paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
+
+
+img1 : #35c4ef
+img2 : #2db57c
+img3 : #ebb02e
 */
 
 /*default settings*/
@@ -17,7 +22,6 @@ footer links grey: #454245
 }
 
 body {
-  position: absolute;
   top: 30px;
   display: flex;
   flex-direction: column;
@@ -52,10 +56,12 @@ nav {
 
 main {
   background-color: #f3eae2;
+  width: 100%;
 }
 
 header {
   background-color: #540b51;
+  margin-top: 3rem;
 }
 
 h1 {
@@ -69,7 +75,7 @@ h1 {
 img {
   max-width: 100%;
   height: auto;
-  width: auto\9;
+  width: auto;
 }
 
 .header-child-1 {
@@ -144,7 +150,7 @@ h3 {
   padding-top: 20px;
 }
 
-a {
+a.link-main {
   font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
@@ -153,7 +159,7 @@ a {
   margin-left: 10px;
 }
 
-a::after {
+a.link-main ::after {
   content: "→";
 }
 
@@ -243,10 +249,12 @@ a::after {
 /* 3.  */
 
 .img-left {
-  margin-left: -20px;
+  max-width: 400px;
+  margin-left: -3rem;
 }
 .img-right {
-  margin-left: 20px;
+  max-width: 400px;
+  /* margin-left: 62%; */
 }
 
 /*-----Footer--------*/
@@ -282,13 +290,13 @@ a::after {
   list-style: none;
 }
 
-.footer-options {
+.subfooter {
   margin: 10px;
   list-style: none;
   font-weight: 600;
 }
 
-.footer-options li {
+.subfooter li {
   margin: 0.8rem;
   line-height: 2rem;
 }
@@ -299,59 +307,183 @@ small {
 }
 
 .percentage {
-    color:#540b51;
-    font-weight: 700;
-    font-size: 3rem;
+  color: #540b51;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 .percentage-text {
-    font-weight: 700;
-    font-size: 1rem;
-    margin: 0 ;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
 }
 
 .percentage-container {
-    margin: 0 25%;
-    padding-bottom: 3rem;
-    list-style: none;
+  margin: 0 25%;
+  padding-bottom: 3rem;
+  list-style: none;
 }
 
 .welcome {
-    background-color: #540b51;
-    margin: auto;
-    border-top: 10px solid #540b51;
-    text-align: center;
-    color: white;
-    padding: 20px;
+  background-color: #540b51;
+  margin: auto;
+  border-top: 10px solid #540b51;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
 
 .welcome h3 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /*----------Media Queries----------*/
 /* Small Screens (width > 768px and width < 1024px)*/
 @media (min-width: 768px) {
-  body {
-    background-color: lightblue;
+  header {
+    display: flex;
+    align-items: flex-end;
+  }
+  .header-child-1 {
+    flex-basis: 70%;
+    flex-grow: 3;
+  }
+  .header-child-2 {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+  h1 {
+    font-size: 5rem;
+    text-align: left;
+  }
+
+  .header-p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .text-div {
+    margin: 5% 20%;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .text {
+    font-size: 1.8rem;
+    margin: 10px;
+  }
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .img-right {
+    max-width: 500px;
+    border-right: 110px solid #2db57c;
+  }
+
+  .img-left {
+    max-width: 500px;
+    border-left: 110px solid #35c4ef;
+    margin-left: -3rem;
+  }
+
+  .img-l-1 {
+    border-left: 110px solid #ebb02e;
+  }
+  .header-buttons {
+    margin: 0 20%;
+  }
+  .team-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .percentage-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .subfooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
   }
 }
 
 @media (min-width: 1024px) {
-  body {
-    background-color: orange;
+  .hamburger {
+    display: none;
+  }
+  .hidden-navbar {
+    display: flex;
+    list-style: none;
+  }
+  .link-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+
+    margin-left: 10px;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .navbar-main-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: row;
+  }
+
+  .slack-logo {
+    position: relative;
+  }
+  .try {
+    background-color: white;
+    color: #540b51;
+    margin: 10px;
+    padding: 0 10px;
+    border: 3px solid white;
+  }
+  .icr {
+    /*place at right side*/
+    margin: 1px;
+    padding: 0 10px;
+    border: 3px solid white;
+  }
+  .img-right {
   }
 }
 
 @media (min-width: 1440px) {
-  body {
-    background-color: blue;
+  .hb {
+    display: flex;
+    flex-direction: row;
   }
-}
-
-@media (min-width: 1555px) {
-  body {
-    background-color: red;
+  .hb button {
+    width: 40%;
+  }
+  header {
+    height: 50vh;
+  }
+  .img-right {
+    margin-left: 69%;
   }
 }
