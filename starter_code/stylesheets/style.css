@@ -80,6 +80,7 @@ header{
     color:white;
     text-align: center;
     font-size: 1.3rem;
+    
 }
  header > div{
     padding:0.5rem 1rem;
@@ -237,10 +238,15 @@ main section{
 }
 
 .section-img-txt a{
-
+    text-decoration: none;
     font-size: 1.2rem;
     padding:1rem;
     margin-bottom:1rem;
+}
+.section-img-txt a:after {
+    position: absolute; /* Prevent underline of arrow */
+    padding-left:2px; /* Add a little space between text and arrow */
+    content: "\2192"; /* Unicode hex for &raquo; */
 }
 /* section-text-buttons*/
 
@@ -295,4 +301,148 @@ main section{
 }
 .borde-blanco{
     border:2px solid white;
+}
+
+
+/*-------------------------------------------*/
+@media (min-width: 768px) and (max-width:1024px){
+
+
+    .prueba{
+        border:1px solid red;
+    }
+    .nav-bar{
+        height:6rem;
+    }
+    .slack-logo{
+        width:140px;
+    }
+    .img-button{
+    
+        width:40px;
+    }
+
+    /* header*/
+    header{
+        font-size: 3.2rem;
+        text-align: left;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+     
+    }
+   
+    .header-div-1{
+        height:1000px;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    header h1{
+        width:530px;
+    }
+    header p{
+        margin:0 0rem 1rem 1rem;
+        font-size: 1.8rem;
+        width:80%;
+
+    }
+    .sign-up-button{
+        width:90%;
+        height:4rem;
+        font-size:1.1rem;
+    }
+    .sign-up-button img{
+        width:1.5rem;
+        padding:0.7rem;
+    }
+
+    /* main */
+    /* section logos, no changes*/
+    /* sections with images*/
+    .img-main-section{
+        width:80%;
+        padding-top:1rem;
+    }
+    .der{
+        left:20%;
+    }
+    .replace1{
+        content:url("/lab-css-flexbox-slack/starter_code/images/connectedness.png")
+       
+    }
+    .replace2{
+        content:url("/lab-css-flexbox-slack/starter_code/images/flexibility.png")
+    }
+    .replace3{
+        content:url("/lab-css-flexbox-slack/starter_code/images/speed.png")
+    }
+    .section-img-txt{
+        display:flex;
+        flex-direction: column;
+        
+    }
+   .titulo-parrafo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+    
+    .section-img-txt h2{
+        font-size: 2.2rem;
+        text-align: left;
+        width:65%;
+        padding-left: 4%;
+        margin-bottom:0;
+    }
+    .section-img-txt p{
+        width:65%;
+        padding-left:5%;
+        font-size: 1.4rem;
+        padding:1rem 0rem 0rem 1rem;
+        margin-top:0;
+    }
+    .section-img-txt a{
+     
+     text-align:left;
+     position:relative;
+     left:-5%;
+    }   
+    .section-text-buttons h3{
+        font-size: 2.5rem;
+
+    }
+    .section-text-buttons p{
+        font-size: 1.5rem;
+        
+    }
+    .div-buttons{
+        display:flex;
+        justify-content: center;
+
+    }
+    .lila-ipad{
+        width: 50%;
+    }
+    .white-ipad{
+        width:30%;
+    }
+    .section-text-buttons ul{
+        display:flex;
+        justify-content: space-around;
+        padding-top:3rem;
+    }
+    .section-text-buttons ul li p{
+        text-align: center;
+        padding:1rem 2rem 0rem 2rem;
+        
+    }
+    .section-final {
+        font-size: 2.5rem;
+        align-items: center;
+    }
+
+
 }
