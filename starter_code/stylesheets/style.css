@@ -9,50 +9,41 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (max-width: 768px) {
 
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
+    body {
         font-family: 'Roboto';
-    }
-
-    p {
-        color: #000000;
-    }
+        background-color: #540b51;
+        display: flex;
+        flex-direction: column;
+      }
 
 /* Navigation Bar */
 
-    .nav-bar {
-        background-color: #540B51;
+    #nav-bar {
+        background-color: #540b51;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 10%;
         display: flex;
         justify-content: space-between;
-
-        padding: 15px;
-        top: 0;
-        right: 0;
-        left: 0;
-
-        position: fixed;
+        align-items: center;
     }
-
-    .nav-logo {
-        background-color: #540B51;
-        justify-content: center;
+    .logo-box {
+        margin-left: 5%;
     }
-
+    .nav-bar-icon {
+        margin-right: 5%;
+    }
+    
     .slack-logo {
-        width: 100%;
-        height: 20px;
-        object-fit: contain;
-        
-        margin: 5px;
-        display: inline-block;
-        flex-grow: 3;
+        height: 25px;
+        width: 100px;
     }
-
-    button {
+    
+    .nav-bar-icon button {
         background: none;
         color: inherit;
         border: none;
@@ -66,259 +57,183 @@ footer links grey: #454245
 /* Header */
 
     header {
-        background-color: #540B51;
-        padding-top: 35px;
-
+        margin-top: 10%;
+        background-color: #540b51;
     }
-
+    
     h1 {
-        font-size: 45px;
+        font-size: 4.5rem;
         text-align: center;
         color: white;
-
-        padding: 15px;
-        margin: 15px;
     }
-
+    
     header p {
-        text-align: center;
         color: white;
+        text-align: center;
+        font-weight: 600;
     }
-
-    .buttons {
+    
+    .button {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
         margin: 15px;
-        padding: 15px;
     }
-
+    
     .button-white {
         background-color: white;
         text-transform: uppercase;
         border-radius: 5px;
-
         padding: 15px;
-        height: 50px;
+        margin-bottom: 5px;
     }
-
-    .button-blue {
-        color: white;
-        background-color: #4285F4;
-        text-transform: uppercase;
-
-        display: inline-block;
-   
-        border-radius: 5px;
-        
-        padding: 15px;
-        height: 50px;
-    }
-
-    .button-blue img {
-        background-color: white;
-        border-radius: 2.5px;
-        padding: 5px;
-        
-        width: 30px;
-        margin-right: auto;
-        margin-left: 3px;
-        float: left;
-    }
-
-    .button-blue span {
-        margin-right: 50px;
-    }
-
-    .header-img {
-        max-width: 100%
-    }
-
-/* Main Tag - 1st Section */ 
-    main {
-        background-color: #F3EAE2;
-        padding: 15px;
-    }
-
-    .section-main1 p {
-        font-weight: bold;
-        font-size: 20px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-
-    .logo-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        
-    }
-
-    .logo-container img {
-            width: 20%;
-            height: auto;
-
-            padding: 10px;
-        }
-
-/* Logos */
     
-    #airbnb{
-        width: 25vw;
-        height: 8vw;
+    .button-blue {
+        background-color: #4285f4;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 5px;
+    
+        padding: 15px;
+        margin-top: 5px;
     }
 
-    #nasa{
-        width: 15vw;
-        height: 12vw;
-    }
-
-    #uber{
-        width: 15vw;
-        height: 5vw;
-    }
-
-    #target{
-        width: 11vw;
-        height: 11vw;
-    }
-
-    #nyt{
-        width: 44vw;
-        height: 10vw;
-    }
-
-    #spotify{
-        width: 28vw;
-        height: 9vw;
-    }
-
- /* Main Tag - 2nd Section */ 
-
-    h2 {
-        color: #191817;
-        margin-left: 10px;
-        margin-bottom: 15px;
-        font-size: 35px;
-    }
-
-    .section-main2 {
-        background-color: #F3EAE2;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
+/* Main Tag - 1st Section Tag */ 
+    .big-images {
         max-width: 100%;
-        padding: 15px;
+        height: auto;
     }
 
-    .section-main2 p  {
-        margin-bottom: 15px;
+    main {
+        background-color: #f3eae2;
+        margin-left: -2%;
+        margin-right: -2%;
     }
 
-    .section-main2 img {
-            max-width: 100%;
-            padding-top: 15px;
-            padding-bottom: 15px;
-    }
-
-    .section-main2 a {
-        text-decoration: none;
-        color: #2E71A6;
-    }
-
-/* Main Tag - Section 3 */
-
-    .section3 {
-        background-color: white;
-        color: #191817;
-        padding-bottom: 15px;
-
-        padding-top: 15px;
+    main p {
+        margin: 10% 0 5% 0;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      
+      .header-img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      #section1 {
+        text-transform: uppercase;
+      }
+      
+      .logo-container {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        padding: 0 0 10% 0;
+      }
+      
+      .logo-container img {
+        width: auto;
+        height: 45px;
+        padding: 2%;
+      }
+
+ /* Main Tag - 2nd to 5th Section Tag - Team */ 
+
+    .team {
+        padding: 5% 5% 10%;
+    }
+    
+    .team h2 {
+        font-size: 3rem;
+    }
+    .team p {
+        text-align: left;
+    }
+    
+    .team a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #2e71a6;
     }
 
-    .section3 h3 {
-        padding: 15px;
-        color: #191817;
+
+    #section5 {
+        background-color: white;
         text-align: center;
+        padding-bottom: 10%;
     }
-
-    .section3 > p {
-        padding-left: 15px;
-        padding-right: 15px;
-        color: #191817;
-        text-align: center;
-
+    #section5 h3 {
+        font-size: 3rem;
+        padding: 10% 10% 0;
     }
-
+    #section5 p {
+        font-size: 1.5rem;
+        padding: 0 10%;
+    }
+    
     .button-purple {
         background-color: purple;
         color: white;
         text-transform: uppercase;
         border-radius: 5px;
-
+        border-color: #540b51;
         padding: 15px;
         margin-bottom: 5px;
     }
-
+    
     .button-white {
         background-color: white;
-        color: #540B51;
-        border: 2px solid #540B51;
+        color: #540b51;
+        border: 2px solid #540b51;
         text-transform: uppercase;
         border-radius: 5px;
-
+    
         padding: 15px;
-        margin-bottom: 5px;
+        margin-top: 2%;
     }
-
+    
     ul {
+        margin: 15% 0;
         list-style-type: none;
     }
-
+    
     ul li {
-        margin: 20px;
+        margin: 10% 0;
     }
-
-    .section3 span {
-        color: #540B51;
-        font-size: 60px;
+    
+    ul span {
+        color: #540b51;
+        font-size: 5rem;
         font-weight: 200;
     }
-
+    
     ul p {
         text-align: center;
-        font-style: bold;
-
-        margin: 0 25%;
+        font-weight: bold;
+        margin: 0 15%;
     }
 
-    /* Main Tag - Section 4*/ 
+/* Main Tag - 6th Section Tag - Welcome */ 
 
-    .section4 {
-        background-color: #540B51;
+    #section6 {
+        background-color: #540b51;
+        padding-top: 5%;
+        padding-bottom: 15%;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
 
-        padding-bottom: 150px;
-        padding-top: 15px;
-        
-        border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 50%;
-    }
-
-    .section4 h3 {
-            text-align: center;
-            color: white;
-    }
-
-    .section4 .button-purple {
-        border: 1px solid white;
-    }
+      }
+      
+      #section6 h3 {
+        text-align: center;
+        color: white;
+        font-size: 4rem;
+      }
+      
+      #section6 .button-purple {
+        border-color: white;
+      }
 
 }
