@@ -8,3 +8,273 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+html {
+    font-size: 15px;
+}
+
+@media (max-width: 400px) {
+    nav ul {
+        display: none;
+    }
+}
+
+/******************************/
+
+body {
+    background-color: #540B51;
+    margin: auto 0;
+}
+
+nav {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img[src*=slack]{
+    width: 5rem;
+    padding: 1rem;
+}
+
+img[src*=iso-slack] {
+    width: 2.5rem;
+    padding: 1rem;
+}
+
+img[src*=google] {
+    height: 80%;
+    margin-left: 0;
+    background: white;
+}
+
+img[alt^="Slack app"] {
+    width: 150%;
+}
+
+nav > div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav button {
+    background-color: #540B51;
+    border-style: none;
+}
+
+header > div > div {
+    display: flex;
+    flex-flow: column;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 0 10px
+}
+
+header button, section:nth-child(5) button, section:nth-child(6) button {
+    height: 3rem;
+    border-radius: 4px;
+    margin: 0 10px 10px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+header button:first-of-type {
+    padding-left: 20px;
+    color: #540B51
+}
+
+header button:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #4285F4;
+    color: white
+}
+
+header button:last-of-type > span {
+    align-self: self-start;
+}
+
+header h1 ~ p {
+    text-align: center;
+    color: white
+}
+
+header h1 ~ p > span {
+    color: #ECB12F
+}
+
+header > div:last-of-type {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 18rem
+}
+
+/******************************/
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #F3EAE2;
+}
+
+section div img {
+    margin-left: -10px;
+}
+
+section:nth-child(3) div img {
+    margin-left: 0;
+    margin-right: -10px;
+}
+
+main section {
+    display: flex;
+    flex-flow: column nowrap ;
+    padding: 10px;
+}
+
+main section:nth-child(3) {
+    flex-direction: column-reverse;
+}
+
+main section > div  {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main > section:first-of-type {
+    padding: 0 20px;
+    background-color: #F3EAE2;
+}
+
+main > section:first-of-type > p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8rem;
+    padding: 20px 0 10px 0;
+}
+
+main > section:first-of-type > div {
+    height: 8.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+main > section:first-of-type > div img{
+    height: 2em;
+}
+
+footer, main > section:nth-child(5) {
+    background-color: white;
+}
+
+main > section:last-of-type {
+    background-color: #540B51;
+}
+
+section:nth-child(5) button:first-of-type {
+    color: white;
+    background-color: #540B51;
+}
+
+section:nth-child(5) button:last-of-type {
+    color: #540B51;
+    background-color: white;
+    border-color: #540B51;
+}
+
+section:nth-of-type(5) > ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+section:nth-of-type(5) > ul > li {
+    text-align: center;
+}
+
+section:nth-of-type(5) > ul > li > p:first-of-type {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 0;
+    color: #540B51;
+}
+
+section:nth-of-type(5) > ul > li > p:last-of-type {
+    padding: 0 6rem;
+    font-weight: bold;
+}
+
+section:nth-child(6) > h3 {
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+}
+
+section:nth-child(6) button:first-of-type {
+    color: white;
+    background-color: #540B51;
+    border-color: white;
+}
+
+section:nth-child(6) button:last-of-type {
+    color: #540B51;
+    background-color: white;
+    border-color: white;
+}
+
+footer {
+    padding: 10px;
+}
+
+footer > div:first-of-type {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0.1rem;
+    display: flex;
+    font-size: 0.8rem;
+    flex-flow: wrap column;
+    justify-content: flex-start;
+}
+
+li {
+    padding: 10px 0;
+}
+
+footer div:first-of-type li:first-of-type {
+    font-weight: bold;
+}
+
+footer > ul:first-of-type {
+    font-weight: bold;
+}
+
+footer > ul:nth-of-type(2) {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-around;
+}
+
+footer div:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
