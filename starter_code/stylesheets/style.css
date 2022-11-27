@@ -183,6 +183,12 @@ main > section:last-of-type {
     background-color: #540B51;
 }
 
+main > section:nth-child(5) > h3 {
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 0 1rem;
+}
+
 section:nth-child(5) button:first-of-type {
     color: white;
     background-color: #540B51;
@@ -236,6 +242,8 @@ section:nth-child(6) button:last-of-type {
 
 footer {
     padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 footer > div:first-of-type {
@@ -283,4 +291,34 @@ a {
     color: #2E71A6;
     font-weight: bold;
 }
+
+footer ul > li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+footer li > img {
+    padding-right: 7px;
+}
+
+footer > ul:first-of-type > li:last-of-type {
+        font-weight: bold;
+        color: #4285F4;
+}
+
+a[href^='#'] {
+    display: flex;
+}
+
+a[href^='#'] > span {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+}
+
+a[href^='#'] > span > img {
+    padding-left: 15px;
+}
+
 
