@@ -13,13 +13,115 @@ html {
     font-size: 15px;
 }
 
+@media (min-width: 1024px) {
+    nav>div:first-of-type {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    nav>div:first-of-type>img {
+        flex-grow: 1;
+    }
+
+    nav>div:first-of-type>ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        flex-grow: 7;
+    }
+
+    nav>div:first-of-type>ul a {
+        color: white;
+    }
+
+    nav>div:first-of-type {
+        flex-grow: 1;
+    }
+
+    nav>div:last-of-type {
+        flex-grow: 2;
+    }
+
+    nav>div:last-of-type>button:last-of-type {
+        display: none;
+    }
+
+    nav>div:last-of-type {
+        justify-content: flex-end;
+    }
+
+    nav>div:last-of-type>ul {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    nav>div:last-of-type>ul>li:first-of-type {
+        border-radius: 4px;
+        margin: 0 10px 10px 10px;
+        font-weight: bold;
+        font-size: 0.8rem;
+        padding: 10px 10px;
+    }
+
+    nav>div:last-of-type>ul>li:first-of-type>a {
+        color: white;
+    }
+
+    nav>div:last-of-type>ul>li:last-of-type {
+        border-radius: 4px;
+        margin: 0 10px 10px 10px;
+        font-weight: bold;
+        font-size: 0.8rem;
+        background-color: white;
+        padding: 10px 10px;
+    }
+
+    nav>div:last-of-type>ul>li:last-of-type>a {
+        color: #540B51;
+        font-weight: bold;
+    }
+
+    main section:nth-child(2), main section:nth-child(3), main section:nth-child(4) {
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    nav>div:last-of-type {
+        justify-content: space-between;
+    }
+
+    main section {
+        flex-flow: column nowrap;
+        padding: 10px;
+    }
+
+    main section:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+}
+
 @media (max-width: 1024px) {
     nav ul {
         display: none;
     }
+
+    nav>div:last-of-type {
+        justify-content: space-between;
+    }
+
+    main section {
+        flex-flow: column nowrap;
+        padding: 10px;
+    }
+
+    main section:nth-child(2) {
+        flex-direction: column-reverse;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1440px) {
     header {
         display: flex;
 
@@ -48,7 +150,7 @@ html {
         justify-content: space-between;
     }
 
-    footer>ul:nth-of-type(2) { 
+    footer>ul:nth-of-type(2) {
         justify-content: flex-start;
     }
 }
@@ -58,7 +160,7 @@ html {
         padding: 0 4rem;
     }
 
-    footer>ul:nth-of-type(2) { 
+    footer>ul:nth-of-type(2) {
         justify-content: space-around;
     }
 }
@@ -100,7 +202,6 @@ img[alt^="Slack app"] {
 
 nav>div:last-of-type {
     display: flex;
-    justify-content: space-between;
 }
 
 nav button {
@@ -176,6 +277,7 @@ main {
 
 section div img {
     margin-left: -10px;
+    max-width: 100%;
 }
 
 section:nth-child(3) div img {
@@ -185,12 +287,7 @@ section:nth-child(3) div img {
 
 main section {
     display: flex;
-    flex-flow: column nowrap;
-    padding: 10px;
-}
-
-main section:nth-child(3) {
-    flex-direction: column-reverse;
+    background-color: #F3EAE2;
 }
 
 main section>div {
@@ -305,7 +402,7 @@ footer>div:first-of-type {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
-    
+
 }
 
 ul {
