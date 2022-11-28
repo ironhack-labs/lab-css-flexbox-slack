@@ -9,9 +9,15 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 html {
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
 }
 
 .white {
@@ -20,6 +26,22 @@ html {
 
 .yellow {
     color: #ECB12F;
+}
+
+.black-text {
+    color: #191817;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.purple-background {
+    background-color: #540B51;
+}
+
+.text-bold {
+    font-weight: bold;
 }
 
 /*NAV*/
@@ -54,11 +76,7 @@ header {
 }
 
 .header-intro h1 {
-    text-align: center;
-}
-
-.header-intro p {
-    text-align: center;
+    font-size: 2.3rem;
 }
 
 .sign-up-div {
@@ -69,27 +87,282 @@ header {
     gap: 1rem;
 }
 
-img[src*="hero-product"] {
-    width: 100%;
-}
-
 .email-button {
     text-transform: uppercase;
+    font-weight: 600;
     color: #540B51;
-    padding: 0.8rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
 }
 
 .google-button {
     text-transform: uppercase;
     font-weight: 600;
-    background-color: #4285F4;
     color: white;
-    padding: 0.8rem;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4285F4;
+    border: none;
+    border-radius: 5px;
 }
 
+.google-button img {
+    width: 1.2rem;
+    background-color: white;
+    padding: 0.5rem;
+    margin-right: auto;
+    border-radius: 3px;
+}
+
+.google-button span {
+    margin-right: auto;
+}
+
+img[src*="hero-product"] {
+    margin-top: 2rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: left bottom;
+    height: 20rem;
+}
 /*HEADER END*/
 
+/* CLIENTS LOGOS */
 
+.clients {
+    background-color: #F3EAE2;
+}
+
+.clients p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+.clients-logos {
+    padding: 0 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.clients-logos img {  
+    align-self: center;
+    height: 2rem;
+}
+
+/* CLIENTS LOGOS END*/
+
+/*ADVANTAGES*/
+
+.advantages {
+    background-color: #F3EAE2;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.advantages-img img {
+    width: 24rem;
+}
+
+.advantages-info {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.advantages-info h2 {
+    font-weight: 900;
+}
+
+.advantages-info a {
+    color: #2E71A6;
+    text-decoration: none;
+}
+
+.advantages-info a > img {
+    margin-left: 0.4rem;
+}
+
+.advantages-reverse {
+    background-color: #F3EAE2;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 2rem;
+}
+
+.advantages-img-reverse {
+    align-self: flex-end;
+}
+
+.advantages-img-reverse img {
+    width: 24rem;
+}
+
+/*ADVANTAGES END*/
+
+/*STATISTICS*/
+
+.statistics h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.statistics > p {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.next-steps-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.percentages-list {
+    padding: 0 6rem;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+.btn-purple {
+    background-color: #540B51;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-white {
+    background-color: white;
+    color: #540B51;
+    text-transform: uppercase;
+    padding: 1rem;
+    border: 2px solid #540B51;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.percentages-list span {
+    font-size: 2rem;
+    color: #540B51;
+    font-weight: 900;
+}
+
+.percentages-list p {
+    font-weight: 600;
+}
+
+/*STATISTICS END*/
+
+/*TRY SLACK*/
+.next-steps-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 0 1rem 9rem 1rem;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.next-steps-2 h3 {
+    font-size: 2rem;
+}
+
+.try-free {
+    order:1;
+}
+
+/*TRY SLACK END*/
+
+/*FOOTER*/
+
+footer {
+    margin-top: 5rem;
+}
+
+img[src*="iso-slack"] {
+    width: 3.5rem;
+    padding-left: 1rem;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-menu ul {
+    list-style: none;
+    font-size: small;
+    padding: 0 1rem;
+}
+
+.footer-menu ul > li:first-child {
+    font-weight: 800;
+}
+
+.footer-menu ul > li:not(:first-child) {
+    color: #454245;
+}
+
+.footer-menu li {
+    padding-top: 1.5rem;
+}
+
+.footer-submenu {
+    list-style: none;
+    padding: 0 1rem;
+    font-size: small;
+    font-weight: 800;
+}
+
+.footer-submenu li {
+    padding-top: 1.5rem;
+}
+
+.footer-submenu img {
+    margin-right: 0.4rem;
+}
+
+.footer-submenu li:last-child {
+    color: #2E71A6;
+}
+
+.social-media {
+    list-style: none;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-rights {
+    padding: 0 1rem;
+    font-size: smaller;
+    margin-bottom: 2rem;
+}
+
+/*FOOTER END*/
 
 
 /*MOBILE AND TABLET*/
