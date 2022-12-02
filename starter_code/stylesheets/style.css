@@ -8,3 +8,95 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+}
+nav,
+header {
+	background-color: #540b51;
+	display: flex;
+}
+header {
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+}
+#navbar__icon {
+	background-color: #540b51;
+	border: none;
+}
+
+@media (max-width: 768px) {
+	nav {
+		height: 50px;
+		padding: 20px 35px;
+		justify-content: space-between;
+	}
+	nav img {
+		height: 30px;
+	}
+	nav ul {
+		display: none;
+	}
+
+	#title__content h1,
+	p {
+		padding: 20px;
+	}
+
+	#title__content h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+	#signup {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		padding-bottom: 40px;
+	}
+	#signup img {
+		height: 40px;
+	}
+	#signup > button {
+		width: 95%;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #540b51;
+		border-radius: 3px;
+	}
+	#signup #google {
+		display: flex;
+		background-color: #4285f4;
+		color: white;
+	}
+	.google__logo {
+		background-color: white;
+		margin: 2px;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#google__signup {
+		flex: 1;
+		text-align: center;
+		padding-right: 50px;
+	}
+}
