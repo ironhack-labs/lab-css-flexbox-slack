@@ -188,11 +188,13 @@ section#wavy {
 .wavy-buttons {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	gap: 1.25rem;
 }
 
 .wavy-buttons > button {
-	width: 100%;
+	width: 15rem;
 	height: 3.75rem;
 	display: flex;
 	justify-content: center;
@@ -705,7 +707,7 @@ small {
 	#speed img {
 		display: block;
 		width: auto;
-		height: 90%;
+		height: 80%;
 	}
 
 	#team,
@@ -723,14 +725,14 @@ small {
 	#team > *,
 	#work > *,
 	#tools > * {
-		width: 30rem;
+		min-width: 15rem;
 		font-size: 1.5rem;
 		line-height: 1.5em;
 	}
 	#team h2,
 	#work h2,
 	#tools h2 {
-		font-size: 4rem;
+		font-size: 3rem;
 		line-height: 1.2em;
 		margin-top: 1.5rem;
 		font-weight: 900;
@@ -756,22 +758,6 @@ small {
 	button#enterprise {
 		width: 50rem;
 	}
-	.white-bg ul {
-		padding: 3.125rem 3.125rem;
-		display: flex;
-		flex-direction: row;
-		text-align: left;
-		gap: 3.125rem;
-	}
-	.white-bg ul > li {
-		width: 12.5rem;
-		height: 12.5rem;
-	}
-
-	#below__hr {
-		flex-direction: row;
-		justify-content: space-between;
-	}
 
 	main {
 		display: flex;
@@ -784,19 +770,6 @@ small {
 		gap: 3rem;
 		background-color: #f3eae2;
 		height: 140rem;
-	}
-
-	#sales {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		gap: 1rem;
-		padding: 0 22rem;
-	}
-
-	button#enterprise {
-		width: 80rem;
 	}
 
 	section.white-bg h3 {
@@ -824,6 +797,313 @@ small {
 	#wavy h3 {
 		font-size: 2.8rem;
 	}
+}
+
+@media (min-width: 1440px) {
+	header {
+		position: relative;
+		height: 58rem;
+		justify-content: space-between;
+		align-items: center;
+		background: url('/lab-css-flexbox-slack/starter_code/images/background-singup.png');
+		background-position: center;
+	}
+	/* #slack-app-screenshot img {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	} */
+	#slack-app-screenshot {
+		width: 50rem;
+		height: 30rem;
+		background: url('/lab-css-flexbox-slack/starter_code/images/hero-product-ui.png');
+		background-size: 40rem;
+		background-repeat: no-repeat;
+		position: absolute;
+		left: 65vw;
+		top: 22vh;
+	}
+
+	nav {
+		height: 5rem;
+		padding: 1.25rem 2.1875rem;
+		justify-content: space-between;
+	}
+	nav ul {
+		display: flex;
+	}
+	nav > div {
+		display: flex;
+	}
+
+	button#navbar-burger {
+		display: none;
+	}
+
+	#title__content {
+		height: 100%;
+		width: 60rem;
+		padding: 1.25rem 6rem;
+	}
+
+	#title__content h1 {
+		font-size: 5rem;
+		margin-bottom: 5rem;
+		font-weight: 900;
+		width: 30rem;
+	}
+	#title__content p {
+		font-size: 1.5rem;
+		width: 22rem;
+	}
+
+	#connectedness,
+	#speed {
+		padding: 2.5rem 5rem 2.5rem 0;
+	}
+	#flexibility {
+		padding: 2.5rem 0 2.5rem 5rem;
+	}
+	#connectedness-mobile,
+	#flexibility-mobile,
+	#speed-mobile {
+		display: none;
+	}
+
+	#nav-links {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		width: 60%;
+	}
+	#nav-links a,
+	#sign-in a {
+		color: white;
+		font-size: 20px;
+		font-weight: 700;
+	}
+	#nav-links ul {
+		flex: 1;
+		justify-content: flex-start;
+		gap: 6.25rem;
+		margin-left: 5rem;
+	}
+	#nav-links ul li {
+		width: fit-content;
+		padding: 10px;
+	}
+	#search-items {
+		width: 30%;
+		display: flex;
+		gap: 50px;
+		justify-content: flex-end;
+	}
+	#search-items ul {
+		display: flex;
+		gap: 50px;
+		align-items: center;
+	}
+	#trial a {
+		color: #540b51;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	#trial {
+		background: white;
+		padding: 15px 30px;
+		border-radius: 5px;
+	}
+
+	#signup {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		padding: 10px 0 0 0;
+	}
+	#signup img {
+		height: 2.5rem;
+	}
+	#signup > button {
+		width: 100%;
+		height: 3.75rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #540b51;
+		border-radius: 3px;
+	}
+	#signup #google {
+		display: flex;
+		background-color: #4285f4;
+		color: white;
+	}
+
+	section.medium {
+		display: flex;
+		flex-direction: row;
+		height: 40rem;
+	}
+	section.medium > * {
+		flex: 1;
+		height: inherit;
+	}
+
+	section.medium.reverse {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	#companies img {
+		height: 50px;
+	}
+
+	#companies img#round {
+		height: 70px;
+	}
+	#companies {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-bottom: 10rem;
+	}
+
+	#connectedness,
+	#speed {
+		width: 450px;
+		padding: 2.5rem 5rem 2.5rem 0;
+	}
+
+	#flexibility {
+		display: flex;
+		justify-content: flex-end;
+		padding: 2.5rem 0 2.5rem 5rem;
+	}
+
+	#connectedness img,
+	#flexibility img,
+	#speed img {
+		display: block;
+		width: auto;
+		height: 90%;
+	}
+
+	#team,
+	#work,
+	#tools {
+		padding: 1rem 4rem;
+		font-size: 18px;
+		line-height: 1.5em;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+		margin-bottom: 2rem;
+	}
+	#team > *,
+	#work > *,
+	#tools > * {
+		width: 25rem;
+		font-size: 1.2srem;
+		line-height: 1.5em;
+	}
+	#team h2,
+	#work h2,
+	#tools h2 {
+		font-size: 3.5rem;
+		line-height: 1.2em;
+		margin-top: 1.5rem;
+		font-weight: 900;
+	}
+
+	.white-bg ul {
+		padding: 3.125rem 3.125rem;
+		display: flex;
+		flex-direction: row;
+		text-align: left;
+		gap: 3.125rem;
+	}
+	.white-bg ul > li {
+		width: 12.5rem;
+		height: 12.5rem;
+	}
+
+	#below__hr {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bg-pink {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		background-color: #f3eae2;
+		height: 160rem;
+	}
+
+	#sales {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		padding: 0 22rem;
+	}
+
+	#sales > button {
+		width: 17rem;
+		height: 3.75rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	button#enterprise {
+		width: 25rem;
+	}
+
+	section.white-bg h3 {
+		font-size: 3.75rem;
+	}
+	p#white-bg-first {
+		font-size: 1.5rem;
+	}
+	.white-bg ul {
+		justify-content: space-between;
+	}
+	.wavy-buttons {
+		display: flex;
+		flex-direction: row;
+		gap: 1.25rem;
+		padding: 0 30rem;
+	}
+
+	.wavy-buttons > buttons {
+		width: 17rem;
+	}
+
+	.wavy-buttons button#contact-sales {
+		color: white;
+		background-color: #540b51;
+		border: 2px solid white;
+	}
+
+	#wavy h3 {
+		font-size: 2.8rem;
+	}
 
 	#socials {
 		display: flex;
@@ -834,5 +1114,9 @@ small {
 	}
 	small {
 		padding-left: 1.2rem;
+	}
+
+	footer {
+		padding: 80px 40px;
 	}
 }
