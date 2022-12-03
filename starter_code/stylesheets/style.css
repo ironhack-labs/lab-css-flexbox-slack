@@ -19,84 +19,597 @@ html {
 }
 body {
 	margin: 0;
+	font-family: 'Arimo', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 nav,
 header {
 	background-color: #540b51;
 	display: flex;
-}
-header {
-	flex-direction: column;
 	color: white;
-	justify-content: center;
 }
-#navbar__icon {
+
+#navbar-search,
+#navbar-burger {
 	background-color: #540b51;
 	border: none;
 }
 
-@media (max-width: 768px) {
+nav img {
+	height: 30px;
+}
+
+#highlight {
+	font-weight: 700;
+	color: #ecb12f;
+}
+
+#signup {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	padding: 10px 0 0 0;
+}
+#signup img {
+	height: 40px;
+}
+#signup > button {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #540b51;
+	border-radius: 3px;
+}
+#signup #google {
+	display: flex;
+	background-color: #4285f4;
+	color: white;
+}
+.google__logo {
+	background-color: white;
+	margin: 2px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#google__signup {
+	flex: 1;
+	text-align: center;
+	padding-right: 50px;
+}
+a {
+	text-decoration: none;
+	color: #2e71a6;
+}
+
+section a:after {
+	content: ' →';
+}
+
+section {
+	background-color: #f3eae2;
+}
+
+section.white-bg {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+section.white-bg h3 {
+	margin-top: 20px;
+	margin-bottom: 0;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	padding: 15px;
+}
+
+p#white-bg-first {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+#sales {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 10px;
+}
+
+#sales > button {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: 2px solid #540b51;
+	border-radius: 5px;
+	color: #540b51;
+	background-color: white;
+}
+
+button#enterprise,
+button#contact-sales {
+	color: white;
+	background-color: #540b51;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.white-bg ul {
+	padding: 50px 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.white-bg ul > li {
+	width: 35%;
+}
+.white-bg ul li > p {
+	font-weight: 700;
+}
+.white-bg ul li p > span {
+	font-size: 56px;
+	font-weight: 900;
+	color: #540b51;
+}
+
+section#wavy {
+	background-color: #540b51;
+
+	color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px 100px 20px;
+	gap: 20px;
+	clip-path: ellipse(105% 100% at center top);
+}
+
+#wavy > button {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: 2px solid #540b51;
+	border-radius: 3px;
+	color: #540b51;
+	background-color: white;
+}
+
+#wavy button#contact-sales {
+	color: white;
+	background-color: #540b51;
+	border: 2px solid white;
+}
+
+#wavy h3 {
+	font-size: 35px;
+	font-weight: 900;
+	text-align: center;
+}
+
+.bold__font {
+	font-weight: 700;
+}
+
+footer {
+	padding: 80px 20px;
+}
+
+footer img {
+	height: 60px;
+}
+
+#lists {
+	display: flex;
+	padding: 40px 20px;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+#lists ul {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+	color: #454245;
+}
+
+#below__hr {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 20px;
+	gap: 20px;
+}
+
+#below__hr li img {
+	height: 15px;
+}
+
+#below__hr li .links div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.links {
+	display: flex;
+	gap: 10px;
+}
+
+#blue {
+	color: #2e71a6;
+}
+
+#socials {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px 40px;
+	font-size: 20px;
+}
+
+#spacer {
+	margin: 0 20px;
+	border: 1px solid #4542451f;
+}
+
+small {
+	text-align: center;
+	font-weight: 300;
+}
+
+#trusted {
+	margin: 0;
+	text-align: center;
+	padding: 50px 0px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+#team h2,
+#work h2,
+#tools h2 {
+	margin: 0;
+	font-size: 30px;
+}
+
+#companies {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	row-gap: 20px;
+	padding: 10px;
+}
+#companies img {
+	height: 35px;
+}
+
+#connectedness img,
+#flexibility img,
+#speed img {
+	display: block;
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	header {
+		flex-direction: column;
+
+		justify-content: center;
+	}
 	nav {
 		height: 50px;
 		padding: 20px 35px;
 		justify-content: space-between;
 	}
-	nav img {
-		height: 30px;
-	}
+
 	nav ul {
 		display: none;
 	}
 
-	#title__content h1,
-	p {
+	#title__content {
 		padding: 20px;
+	}
+
+	#title__content p {
+		text-align: center;
 	}
 
 	#title__content h1 {
 		font-size: 40px;
 		text-align: center;
 	}
-	#signup {
+
+	#slack-app-screenshot {
+		max-width: 768px;
+		height: 500px;
+		background: url('/lab-css-flexbox-slack/starter_code/images/hero-product-ui.png');
+		background-size: cover;
+		background-position: left 10% bottom -80px;
+		background-repeat: no-repeat;
+	}
+
+	/* #slack-app-screenshot img {
+		max-width: 100%;
+		position: relative;
+		left: 50px;
+	} */
+
+	#team,
+	#work,
+	#tools {
+		padding: 30px 20px;
+	}
+
+	#connectedness {
+		display: none;
+	}
+	#connectedness-mobile,
+	#speed-mobile {
+		padding: 40px 20px 40px 0;
+	}
+	#connectedness-mobile img {
+		width: 100%;
+	}
+
+	#flexibility {
+		display: none;
+	}
+	#flexibility-mobile {
+		padding: 40px 0 40px 20px;
+	}
+	#flexibility-mobile img {
+		width: 100%;
+	}
+
+	#speed {
+		display: none;
+	}
+
+	#speed-mobile img {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	header {
+		position: relative;
+		height: 1000px;
+		justify-content: space-between;
+		align-items: center;
+		background: url('/lab-css-flexbox-slack/starter_code/images/background-singup.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	/* #slack-app-screenshot img {
+		max-width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+	} */
+	#slack-app-screenshot {
+		width: 17rem;
+		height: 22rem;
+		background: url('/lab-css-flexbox-slack/starter_code/images/hero-product-ui.png');
+		background-size: cover;
+		position: absolute;
+		left: 73.4vw;
+		top: 27vh;
+	}
+
+	nav {
+		height: 80px;
+		padding: 20px 35px;
+		justify-content: space-between;
+	}
+
+	nav ul {
+		display: none;
+	}
+	#title__content {
+		height: 100%;
+		width: 450px;
+		padding: 20px;
+	}
+
+	#title__content h1 {
+		font-size: 80px;
+		font-weight: 900;
+	}
+	#title__content p {
+		font-size: 24px;
+	}
+	#connectedness img,
+	#flexibility img,
+	#speed img {
+		display: block;
+		width: 100%;
+	}
+
+	#connectedness,
+	#speed {
+		padding: 40px 80px 40px 0;
+	}
+
+	#flexibility {
+		padding: 40px 0 40px 80px;
+	}
+
+	#connectedness-mobile,
+	#flexibility-mobile,
+	#speed-mobile {
+		display: none;
+	}
+	#team,
+	#work,
+	#tools {
+		padding: 1rem 12rem;
+		font-size: 18px;
+		line-height: 1.5em;
+	}
+
+	#tools {
+		padding-bottom: 3rem;
+	}
+
+	#companies {
+		display: flex;
+		justify-content: center;
 		align-items: center;
-		gap: 15px;
-		padding-bottom: 40px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-bottom: 5rem;
 	}
-	#signup img {
-		height: 40px;
+	#companies img {
+		height: 35px;
 	}
-	#signup > button {
-		width: 95%;
+
+	#companies img#round {
+		height: 50px;
+	}
+
+	#sales {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		padding: 0 15rem;
+	}
+
+	#sales > button {
+		width: 100%;
 		height: 60px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border: none;
-		text-transform: uppercase;
-		font-weight: 700;
-		color: #540b51;
-		border-radius: 3px;
 	}
-	#signup #google {
-		display: flex;
-		background-color: #4285f4;
-		color: white;
+
+	button#enterprise {
+		width: 50rem;
 	}
-	.google__logo {
-		background-color: white;
-		margin: 2px;
-		width: 50px;
-		height: 50px;
+	.white-bg ul {
+		padding: 50px 50px;
 		display: flex;
-		justify-content: center;
+		flex-direction: row;
+		text-align: left;
+		gap: 50px;
+	}
+	.white-bg ul > li {
+		width: 200px;
+		height: 200px;
+	}
+
+	#below__hr {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	#socials {
+		display: flex;
+		justify-content: flex-start;
+		padding: 0px 35px 40px;
+		font-size: 20px;
+		gap: 20px;
+	}
+	small {
+		padding-left: 35px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	header {
+		position: relative;
+		height: 1000px;
+		justify-content: space-between;
 		align-items: center;
+		background: url('/lab-css-flexbox-slack/starter_code/images/background-singup.png');
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
-	#google__signup {
-		flex: 1;
-		text-align: center;
-		padding-right: 50px;
+	/* #slack-app-screenshot img {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	} */
+	#slack-app-screenshot {
+		width: 29rem;
+		height: 22rem;
+		background: url('/lab-css-flexbox-slack/starter_code/images/hero-product-ui.png');
+		background-size: cover;
+		position: absolute;
+		left: 67.8vw;
+		top: 27vh;
+	}
+
+	nav {
+		height: 80px;
+		padding: 20px 35px;
+		justify-content: space-between;
+	}
+	nav ul {
+		display: flex;
+	}
+	nav > div {
+		display: flex;
+	}
+
+	button#navbar-burger {
+		display: none;
+	}
+
+	#title__content {
+		height: 100%;
+		width: 35rem;
+		padding: 20px;
+	}
+
+	#title__content h1 {
+		font-size: 80px;
+		margin-bottom: 80px;
+		font-weight: 900;
+	}
+	#title__content p {
+		font-size: 24px;
+	}
+
+	#connectedness,
+	#speed {
+		padding: 40px 80px 40px 0;
+	}
+	#flexibility {
+		padding: 40px 0 40px 80px;
+	}
+	#connectedness-mobile,
+	#flexibility-mobile,
+	#speed-mobile {
+		display: none;
+	}
+
+	#nav-links {
 	}
 }
