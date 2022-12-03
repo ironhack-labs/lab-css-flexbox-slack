@@ -97,11 +97,18 @@ main .first p {
 .google {
   background-color: #4285f4;
   color: white;
+  position: relative;
 }
 
 .google img {
   height: 15px;
   background-color: white;
+  padding: 10px;
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
 }
 
 .intro {
@@ -484,5 +491,17 @@ small {
 
 /* Large Screens (1440px and up) */
 @media only screen and (min-width: 1440px) {
+  .email {
+    margin-bottom: 0px;
+    width: 300px;
+    margin-right: 30px;
+  }
 
+  .google {
+    width: 300px;
+  }
+
+  header div div {
+    display: flex;
+  }
 }
