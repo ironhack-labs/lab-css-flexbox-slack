@@ -120,7 +120,7 @@ main .first p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 #logo img {
@@ -132,16 +132,6 @@ main .first p {
   width: 100%;
 }
 
-/* second */
-
-.second {
-}
-
-/* third */
-
-.third {
-}
-
 h2 {
   font-size: 2em;
 }
@@ -149,11 +139,6 @@ h2 {
 a {
   color: #2e71a6;
   text-decoration: none;
-}
-
-/* fourth */
-
-.fourth {
 }
 
 /* firth */
@@ -273,19 +258,15 @@ small {
   color: grey;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Mobile Screens, <768px) */
 @media only screen and (max-width: 767px) {
   nav ul {
     display: none;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Small Screens (768px and up) */
 @media only screen and (min-width: 768px) {
-  body {
-    /* font-size: 120%; */
-  }
-
   nav {
     padding: 2rem 3rem;
   }
@@ -314,6 +295,17 @@ small {
   header h1 {
     font-size: 70px;
     color: white;
+  }
+
+  header > div {
+    flex: 1;
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  #orange-title {
+    font-size: 20px;
+    font-weight: bold;
   }
 
   header button {
@@ -403,10 +395,94 @@ small {
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Medium Screens (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  /* nav */
+  nav div {
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px;
+  }
+
+  nav ul li {
+    padding-left: 40px;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #nav-try {
+    background-color: white;
+    color: #540b51;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 0.25rem;
+  }
+
+  /* main */
+
+  main section.second,
+  main section.third,
+  main section.fourth {
+    display: flex;
+  }
+
+  main section div {
+    flex: 1;
+  }
+
+  .picture {
+    width: 400px;
+  }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* fifth */
+
+.fifth ul li {
+  padding: 0px 80px;
+}
+
+.fifth #meet {
+  width: 300px;
+}
+.fifth #talk {
+  width: 200px;
+}
+
+/* sixth */
+
+.sixth-button {
+  display: flex;
+  justify-content: center;
+}
+
+.sixth-button #talk-to-sales {
+  width: 200px;
+  margin-bottom: 0px;
+}
+
+.sixth-button #try-for-free {
+  width: 200px;
+}
+
+.sixth-button button {
+  margin: 0px 20px;
+}
+
+/* Large Screens (1440px and up) */
+@media only screen and (min-width: 1440px) {
+
 }
