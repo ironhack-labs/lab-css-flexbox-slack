@@ -8,3 +8,441 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+html,
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', monospace;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  /* Navigaton bar */
+  .nav-bar {
+    background-color: #540b51;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    position: fixed;
+    top: 0;
+    height: 120px;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .icon {
+    border: none;
+    background: #540b51;
+  }
+
+  .icon img {
+    width: 40px;
+  }
+
+  .slack-logo {
+    width: 40%;
+  }
+
+  /* Dropdown menu */
+
+  /* Header */
+
+  header {
+    margin-top: 120px;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    padding: 30px 40px;
+  }
+
+  .first-header p {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+
+  .first-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #540b51;
+    color: #ffffff;
+  }
+
+  .first-header strong {
+    font-weight: 500;
+    color: #ecb12f;
+  }
+
+  .img-background img {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  .header-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .header-buttons button {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 15px 40px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .signUp-button {
+    padding: 20px;
+    color: #540b51;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    height: 90px;
+  }
+
+  .google-button {
+    background-color: #4285f4;
+    display: flex;
+    align-items: center;
+    gap: 110px;
+    letter-spacing: 0.05rem;
+    height: 90px;
+  }
+
+  .google-button span {
+    color: #ffffff;
+  }
+
+  .google-button img {
+    background-color: #ffffff;
+    width: 10vw;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    border-radius: 3px;
+  }
+
+  .img-background {
+    overflow: hidden;
+  }
+
+  .img-background img {
+    position: relative;
+    right: 50px;
+  }
+
+  /* Companies section */
+
+  main {
+    position: relative;
+    top: -150px;
+  }
+
+  .companies-section {
+    background-color: #f3eae2;
+  }
+
+  .companies-section p {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .companies-section p {
+    padding-top: 60px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #191817;
+    letter-spacing: 0.05rem;
+  }
+
+  .companies-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 60px 80px 60px;
+  }
+
+  .companies-logo img {
+    height: 60px;
+  }
+
+  /* Team section, Flexibility section Speed section */
+
+  .team-section,
+  .flexibility-section,
+  .speed-section {
+    background-color: #f3eae2;
+  }
+
+  .team-img,
+  .speed-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    right: 50px;
+  }
+
+  .team-content,
+  .flexibility-content,
+  .speed-content {
+    padding: 60px 40px 60px 40px;
+  }
+
+  .team-content h2,
+  .flexibility-content h2,
+  .speed-content h2 {
+    color: #191817;
+    font-size: 3rem;
+    padding-bottom: 20px;
+  }
+
+  .team-content p,
+  .flexibility-content p,
+  .speed-content p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    color: #000000;
+    padding-bottom: 20px;
+  }
+
+  .team-content a,
+  .flexibility-content a,
+  .speed-content a {
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    color: #2e71a6;
+    text-decoration: none;
+  }
+
+  .flexibility-img {
+    overflow: hidden;
+  }
+
+  .flexibility-img img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 50px;
+  }
+
+  /* Slack options section */
+
+  .slack-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 80px auto;
+  }
+
+  .slack-options h3 {
+    color: #191817;
+    font-size: 3rem;
+    padding: 0 100px 40px 100px;
+  }
+
+  .slack-options > p {
+    font-size: 1.8rem;
+    width: 80vw;
+    font-weight: 300;
+    line-height: 2.5rem;
+    color: #000000;
+    padding-bottom: 20px;
+  }
+
+  .options-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .options-button button {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 15px 40px;
+    border-radius: 5px;
+  }
+
+  .enterprise-button {
+    padding: 30px;
+    background-color: #540b51;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    border: none;
+    height: 90px;
+  }
+
+  .sales-button {
+    padding: 30px;
+    background-color: #ffffff;
+    border: 2px solid #540b51;
+    color: #540b51;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    height: 90px;
+  }
+
+  .percentage {
+    width: 60%;
+    padding: 0;
+  }
+
+  .percentage li p {
+    font-size: 1.8rem;
+    padding-bottom: 30px;
+    color: #191817;
+  }
+
+  .percentage li p span {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #540b51;
+  }
+
+  .comment {
+    font-size: 1.2rem;
+    color: #7a7a7a;
+    /* width: 120%; */
+  }
+
+  /* Digital section */
+  .digital {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #540b51;
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  .digital h3 {
+    color: #ffffff;
+    font-size: 3rem;
+    padding: 0 100px 40px 100px;
+  }
+
+  .free-button {
+    order: 1;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 15px auto;
+    border-radius: 5px;
+    padding: 30px;
+    border: none;
+    background-color: #ffffff;
+    color: #540b51;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    width: 100%;
+  }
+
+  .talk-button {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 15px auto;
+    border-radius: 5px;
+    padding: 30px;
+    border: none;
+    border: 2px solid #ffffff;
+    background-color: #540b51;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    width: 100%;
+  }
+
+  /* Footer */
+
+  .footer {
+    margin: 0 40px 40px 40px;
+  }
+
+  .footer ul {
+    padding: 0;
+  }
+
+  .footer img {
+    height: 110px;
+    padding-bottom: 40px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-question li:first-child {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    padding-bottom: 40px;
+    color: #191817;
+  }
+
+  .footer-question li {
+    color: #454245;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+  }
+
+  .footer-other li {
+    color: #454245;
+    font-size: 1.3rem;
+    padding-bottom: 40px;
+    font-weight: bold;
+  }
+
+  .footer-other li:last-child {
+    color: #2e71a6;
+  }
+
+  hr {
+    margin: 60px 0;
+  }
+
+  .social-medias {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  small {
+    color: #454245e1;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 1024px) {
+}
