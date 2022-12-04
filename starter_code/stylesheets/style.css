@@ -20,24 +20,15 @@ html,body {
 main {
     background-color: #F3EAE2;
 }
-#section1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em 1em;
-    font-size: 1.2em;
-    font-weight: 900;
+#nav-signin li:last-child a,
+#header-button button,
+#section1 p,
+#section5-button button,
+#section6-button button{
+    text-transform: uppercase;
 }
-#companies-logo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-#companies-logo img {
-    height: 35px;
-    margin: 5px;
-}
+
+
 #section5 {
     background-color: white;
     padding: 2em 1em;
@@ -55,6 +46,27 @@ main {
     padding-right: 0.5em;
     font-size: 1.2em;
 }
+#section6 {
+    background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+}
+#section6 h3 {
+    color: white;
+}
+#footer-items li:nth-child(6) {
+    color:#454245;
+}
+#footer-items li:nth-child(7) {
+    color:#2E71A6;
+}
+#footer-items img {
+    padding-top:0 ;
+}
+footer small {
+    margin-bottom: 2em;
+}
 
 @media screen and (max-width: 767px) {
     .nav {
@@ -67,13 +79,13 @@ main {
         background-color: #540B51;
         width: 100%;
     }
-    .nav #nav-menu {
+    #nav-menu {
         display: none;
     }
-    .nav #nav-signin {
+    #nav-signin {
         display: none;
     }
-    .nav #nav-logo {
+    #nav-logo {
         width: 6rem;
     }
     .nav #nav-button {
@@ -139,24 +151,41 @@ main {
         max-width: 150%;
         max-height: auto;   
     }
-
+    #section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em 1em;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+    #companies-logo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #companies-logo img {
+        height: 35px;
+        margin: 5px;
+    }
 
     #section2-image {
-        height: 20em;
+        height: 100vw;
         background-image: url(../images/connectedness-mobile.png);
-        background-size: 100% 100%;
+        background-size: 100% auto;
         background-repeat: no-repeat;
-        margin: 15px 30px 15px 0px;
+        margin: 15px 30px 0px 0px;
     }
     #section3-image {
-        height: 20em;
+        height: 100vw;
         background-image: url(../images/flexibility-mobile.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        margin:30px 0px 15px 20px;
+        margin:0px 0px 15px 20px;
     }
     #section4-image {
-        height: 20em;
+        height: 100vw;
         background-image: url(../images/speed-mobile.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -165,6 +194,10 @@ main {
     }
     .section-article {
         margin: 20px 10px;
+    }
+    .section-article a {
+        text-decoration: none;
+        color: #2E71A6;
     }
     #section5-button,
     #section6-button {
@@ -201,12 +234,7 @@ main {
         font-size: 2em;
         color: #540B51;
     }
-    #section6 {
-        background-color: #540B51;
-        display: flex;
-        flex-direction: column;
-        padding: 1em 1em;
-    }
+
     #section6 h3 {
         color: white;
     }
@@ -243,18 +271,18 @@ main {
         font-weight: 900;
         font-size: small;
     }
+    #footer-items img {
+        width: auto;
+        height: 13px;
+        padding: 0;
+        margin-right: 0.4em;
+    }
     #footer-icon {
         list-style-type:none;
         padding: 0;
         display: flex;
         justify-content: space-between;
     }
-
-
-
-
-
-
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .nav {
@@ -267,19 +295,19 @@ main {
         background-color: #540B51;
         width: 100%;
     }
-    .nav #nav-menu {
+    #nav-menu {
         display: none;
     }
-    .nav #nav-signin {
+    #nav-signin {
         display: none;
     }
-    .nav #nav-logo {
+    #nav-logo {
         width: 6rem;
     }
-    .nav #nav-button {
+    #nav-button {
         padding-right: 2rem;
     }
-    .nav #nav-button button{
+    #nav-button button{
         padding-left: 0;
         padding-right: 20px;
         border: none;
@@ -358,31 +386,58 @@ main {
         max-height: auto;  
         padding-left: 2em; 
     }
+    #section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em 1em;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+    #companies-logo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #companies-logo img {
+        height: 35px;
+        margin: 5px;
+    }
     #section2-image {
-        height: 30em;
+        height: 50vw;
         background-image: url(../images/connectedness.png);
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: 80% auto;
+        background-size: contain;
         margin: 15px 30px 0px 0px;
     }
     #section3-image {
-        height: 30em;
+        height: 50vw;
         background-image: url(../images/flexibility.png);
-        background-size: 100% 100%;
+        background-size: 80% auto;
         background-repeat: no-repeat;
+        background-position: right;
         margin:30px 0px 15px 20px;
     }
     #section4-image {
-        height: 30em;
+        height: 50vw;
         background-image: url(../images/speed.png);
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: 80% auto;
         margin: 15px 30px 0px 0px;
 
     }
     .section-article {
-        margin: 2em 8em;
+        margin: 3em 8em;
         font-size: larger;
+    }
+    .section-article a {
+        text-decoration: none;
+        color: #2E71A6;
+    }
+    .section-article a img {
+        display: none;
     }
     #section5-button {
         display: flex;
@@ -431,6 +486,7 @@ main {
     #section5-numbers {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
     }
     #section5-numbers p{
         text-align: left;
@@ -446,7 +502,7 @@ main {
     }
     footer img {
         padding-top: 2em;
-        width:10%;
+        width:5%;
     }
     #footer-list {
         display: flex;
@@ -475,6 +531,348 @@ main {
         line-height: 2;
         font-weight: 900;
         font-size: small;
+    }
+    #footer-items img {
+        width: auto;
+        height: 13px;
+        padding: 0;
+        margin-right: 0.4em;
+    }
+    #footer-icon {
+        list-style-type:none;
+        padding-left: 0;
+        padding-bottom: 0.5em;
+        display: flex;
+        justify-content: flex-start;
+    }
+    #footer-icon li {
+        padding-right: 4em;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    .nav {
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5em;
+        background-color: #540B51;
+        width: 100%;
+    }
+    #nav-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+    }
+    #nav-menu {
+        width: 30em;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        margin: 0;
+    
+    }
+    #nav-menu a {
+        color: white;
+        text-decoration: none;;
+    }
+    #nav-logo {
+        width: 6em;
+        height: fit-content;
+    }
+    #nav-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #nav-button button {
+        padding-left: 0;
+        padding-right: 20px;
+        border: none;
+        background-color: #540B51;
+    }
+    #nav-button button:last-child {
+        display: none;
+    }
+    #nav-signin {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+    #nav-signin li:first-child a{
+        color: white;
+        text-decoration: none;
+        margin-right: 2.5em;
+    }
+    #nav-signin li:last-child a{
+        background-color: white;
+        border-radius: 2px;
+        text-decoration: none;
+        margin-right: 2em;
+        padding:0.3em 1em
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 4em;
+        margin-bottom: 4em;
+        background-image: url(../images/background-singup.png);
+        background-size: 160% 100%;
+        background-repeat: no-repeat;
+    }
+    #header-intro {
+        width: 100em;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        background: none;
+        padding-left: 3em;
+    }
+    header h1{
+        font-size: 4.5rem;
+        text-align: left;
+        color: white;
+        line-height: 1.4;
+        width: 6em;
+    }
+    header p {
+        font-size: 1.5rem;
+        text-align: left;
+        color: white;
+        width: 14em;
+    }
+    header #highlight {
+        color: #ECB12F;
+    }
+    #header-button {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    header button {
+        display: block;
+        width: 25em;
+        margin-bottom: 1em;
+        padding: 1em 2em;
+        border: none;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    header button:first-child {
+        background-color: white;
+        color: #540B51;
+    }
+    header button:nth-child(2) {
+        position: relative; /* for img position: absolute*/
+        background-color: #4285F4;
+        color: white;
+    }
+    header button:nth-child(2) img {
+        position: absolute; /* the img position is fixed relative to the parent.*/
+        top: 5px;
+        left: 5px;
+        padding: 6px 7px;
+        width:25px;
+        background-color: white;
+        border-radius: 2px;
+    }
+    header button:nth-child(2) span{
+        justify-content: center;
+    }
+    #header-product-ui {
+        width: 55vw;  
+        padding-left: 6em; 
+    }
+    #section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em 1em;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+    #section1 p {
+        margin: 0;
+    }
+    #companies-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        padding-top: 1em;
+    }
+    #companies-logo img {
+        height: 35px;
+    }
+    #section2,
+    #section4 {
+        display: flex;
+        flex-direction:row;
+        height: 18em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    #section3 {
+        display: flex;
+        flex-direction:row-reverse;
+        height: 18em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+    }
+    #section2-image {
+        width: 100%;
+        background-image: url(../images/connectedness.png);
+        background-repeat: no-repeat;
+        background-size: 80% auto;
+        background-position:left;
+    }
+    #section3-image {
+        width: 100%;
+        background-image: url(../images/flexibility.png);
+        background-repeat: no-repeat;
+        background-size: 80% auto;
+        background-position:right;
+
+    }
+    #section4-image {
+        width: 100%;
+        background-image: url(../images/speed.png);
+        background-repeat: no-repeat;
+        background-size: 80% auto;
+        background-position:left;
+
+    }
+    .section-article {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 0 2em;
+        line-height: 1.2;
+    }
+    .section-article h2 {
+        font-size: 3rem;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+    .section-article p {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        width: 20em;
+    }
+    .section-article a {
+        text-decoration: none;
+        color: #2E71A6;
+    }
+    .section-article a img {
+        display: none;
+    }
+    #section5-button,
+    #section6-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 2em 8em;
+    }
+    #section5-button button,
+    #section6-button button {
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #section5-button button:first-child,
+    #section6-button button:last-child {
+        background-color: #540B51;
+        color: white;
+        border-radius: 5px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-color: white;
+        border-style: solid;
+    }
+    #section5-button button:last-child,
+    #section6-button button:first-child {
+        background-color: white;
+        color: #540B51;
+        border-radius: 5px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-color: #540B51;
+        border-style: solid;
+    }
+    #section5 ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    #section5-numbers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #section5-numbers p{
+        text-align: left;
+    }
+    #section5-numbers li p:last-child {
+        width: 20vw;
+    }
+    #section5 span{
+        font-weight: 900;
+        font-size: 2em;
+        color: #540B51;
+    }
+    footer {
+        background-color: white;
+        padding: 2em 3em;
+    }
+    footer img {
+        padding-top: 2em;
+        width:5%;
+    }
+    #footer-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        
+    }    
+    .footer-title {
+        font-weight: 900;
+        color: black
+    }
+    #footer-list ul {
+        list-style-type: none;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+    #footer-list li {
+        line-height: 2;
+    }
+    #footer-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        line-height: 2;
+        font-weight: 900;
+        font-size: small;
+    }
+    #footer-items img {
+        width: auto;
+        height: 13px;
+        padding: 0;
+        margin-right: 0.4em;
     }
     #footer-icon {
         list-style-type:none;
