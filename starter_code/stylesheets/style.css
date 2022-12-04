@@ -9,6 +9,12 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
+@media (width < 768px) {
+    .small {
+       display: none; 
+    }
+}
+
 html {
     font-family: Helvetica, sans-serif;
 }
@@ -24,35 +30,90 @@ nav {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
+    height: 10vh;
 }
 
 #slacklogo {
     height: 3vh;
-    padding-left: 3vw;
+    padding-left: 6vw;
 }
 
 .nav-button {
     background-color: #540B51;
     border: none;
-    padding-right: 3vw;
+    padding-right: 6vw;
 }
 
-#header > div {
+#header {
     background-color: #540B51;  
     color: white;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    height: 40vh;
 }
 
-#signup-button {
-    height: 0.5vh;
-    width: 0.5vw;
+#header-text1 {
+    text-align: center;
+    width: 80vw;
+    font-size: 9vw;
+    margin-bottom: 2vh;
+    font-size: bold;
 }
 
-@media (width < 768px) {
-    .small {
-       display: none; 
-    }
+#header-text2 {
+    text-align: center;
+    font-size: 4vw;
 }
+
+#ht2-special {
+    color: #ECB12F;
+    font-weight: bold;
+}
+
+#buttons-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#email-signup {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 7vh;
+    width: 90vw;
+    border: 0;
+    border-radius: 2px;
+    background-color: white;
+    font-size: 1.2em;
+    color: #540B51;
+}    
+
+#google-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 90vw;
+    background-color: #4285F4;
+    border: 0;
+    position: absolute;
+    font-size: 1.2em;
+    color: white;
+}
+
+#logo-google {
+    background-color: white;
+    height: 3.5vh;
+    padding: 35%;
+    border-radius: 2px;
+    position: relative;
+    right: 19vw;
+    top: 0.5vw;
+}
+
+#hero-product {
+    width: 100%;
+    height: 40vh;
+}
+
