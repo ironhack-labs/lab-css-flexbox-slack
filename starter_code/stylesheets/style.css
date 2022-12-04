@@ -509,7 +509,7 @@ small {
 	}
 
 	#sales > button {
-		width: 100%;
+		max-width: 10rem;
 		height: 3.75rem;
 		display: flex;
 		justify-content: center;
@@ -517,7 +517,7 @@ small {
 	}
 
 	button#enterprise {
-		width: 50rem;
+		max-width: 16rem;
 	}
 	.white-bg ul {
 		padding: 3.125rem 3.125rem;
@@ -605,13 +605,6 @@ small {
 		width: 22rem;
 	}
 
-	#connectedness,
-	#speed {
-		padding: 2.5rem 5rem 2.5rem 0;
-	}
-	#flexibility {
-		padding: 2.5rem 0 2.5rem 5rem;
-	}
 	#connectedness-mobile,
 	#flexibility-mobile,
 	#speed-mobile {
@@ -626,39 +619,53 @@ small {
 	#nav-links a,
 	#sign-in a {
 		color: white;
-		font-size: 20px;
+		font-size: 16px;
 		font-weight: 700;
+	}
+	#sign-in {
+		min-width: 3rem;
 	}
 	#nav-links ul {
 		flex: 1;
 		justify-content: space-between;
 		gap: 50px;
-		margin-left: 5rem;
+		margin-left: 1rem;
 	}
 	#nav-links ul li {
 		width: fit-content;
 		padding: 10px;
 	}
 	#search-items {
-		width: 30%;
+		width: 25rem;
 		display: flex;
-		gap: 50px;
+		gap: 30px;
+		justify-content: space-around;
 	}
 	#search-items ul {
 		display: flex;
-		gap: 50px;
+		justify-content: space-between;
 		align-items: center;
+		width: 16rem;
 	}
+
 	#trial a {
 		color: #540b51;
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: 700;
 		text-transform: uppercase;
 	}
 	#trial {
 		background: white;
-		padding: 15px 30px;
+		padding: 10px 20px;
 		border-radius: 5px;
+		min-width: 10rem;
+	}
+
+	.three-navbar-icons {
+		display: flex;
+		width: inherit;
+		justify-content: flex-end;
+		gap: 2rem;
 	}
 
 	section.medium {
@@ -696,10 +703,15 @@ small {
 	#speed {
 		width: 450px;
 		padding: 2.5rem 5rem 2.5rem 0;
+		display: flex;
+		justify-content: center;
 	}
 
 	#flexibility {
+		width: 450px;
 		padding: 2.5rem 0 2.5rem 5rem;
+		display: flex;
+		justify-content: center;
 	}
 
 	#connectedness img,
@@ -713,7 +725,7 @@ small {
 	#team,
 	#work,
 	#tools {
-		padding: 1rem 4rem;
+		padding: 1rem;
 		font-size: 18px;
 		line-height: 1.5em;
 		display: flex;
@@ -726,15 +738,20 @@ small {
 	#work > *,
 	#tools > * {
 		min-width: 15rem;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		line-height: 1.5em;
+		margin-left: 6rem;
+		margin-right: 6rem;
 	}
+
 	#team h2,
 	#work h2,
 	#tools h2 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		line-height: 1.2em;
 		margin-top: 1.5rem;
+		margin-left: 6rem;
+		margin-right: 6rem;
 		font-weight: 900;
 	}
 
@@ -748,7 +765,7 @@ small {
 	}
 
 	#sales > button {
-		width: 100%;
+		max-width: 14rem;
 		height: 3.75rem;
 		display: flex;
 		justify-content: center;
@@ -756,7 +773,7 @@ small {
 	}
 
 	button#enterprise {
-		width: 50rem;
+		max-width: 20rem;
 	}
 
 	main {
@@ -787,6 +804,9 @@ small {
 		gap: 1.25rem;
 		padding: 0 30rem;
 	}
+	.wavy-buttons > button {
+		min-width: 13rem;
+	}
 
 	.wavy-buttons button#contact-sales {
 		color: white;
@@ -796,6 +816,21 @@ small {
 
 	#wavy h3 {
 		font-size: 2.8rem;
+	}
+
+	#below__hr {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	#socials {
+		display: flex;
+		justify-content: flex-start;
+		padding: 0rem 2.1875rem 2.5rem;
+		font-size: 1.25rem;
+		gap: 1.25rem;
+	}
+	small {
+		padding-left: 2.1875rem;
 	}
 }
 
@@ -858,13 +893,6 @@ small {
 		width: 22rem;
 	}
 
-	#connectedness,
-	#speed {
-		padding: 2.5rem 5rem 2.5rem 0;
-	}
-	#flexibility {
-		padding: 2.5rem 0 2.5rem 5rem;
-	}
 	#connectedness-mobile,
 	#flexibility-mobile,
 	#speed-mobile {
@@ -894,15 +922,16 @@ small {
 		padding: 10px;
 	}
 	#search-items {
-		width: 30%;
+		width: 30rem;
 		display: flex;
 		gap: 50px;
-		justify-content: flex-end;
+		justify-content: space-between;
 	}
 	#search-items ul {
 		display: flex;
-		gap: 50px;
+		justify-content: space-between;
 		align-items: center;
+		width: 18rem;
 	}
 	#trial a {
 		color: #540b51;
@@ -914,6 +943,14 @@ small {
 		background: white;
 		padding: 15px 30px;
 		border-radius: 5px;
+		min-width: 10rem;
+	}
+
+	.three-navbar-icons {
+		display: flex;
+		width: inherit;
+		justify-content: flex-end;
+		gap: 2rem;
 	}
 
 	#signup {
@@ -980,11 +1017,13 @@ small {
 	#speed {
 		width: 450px;
 		padding: 2.5rem 5rem 2.5rem 0;
+		display: flex;
+		justify-content: center;
 	}
 
 	#flexibility {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 		padding: 2.5rem 0 2.5rem 5rem;
 	}
 
@@ -1091,8 +1130,8 @@ small {
 		padding: 0 30rem;
 	}
 
-	.wavy-buttons > buttons {
-		width: 17rem;
+	.wavy-buttons > button {
+		min-width: 13rem;
 	}
 
 	.wavy-buttons button#contact-sales {
