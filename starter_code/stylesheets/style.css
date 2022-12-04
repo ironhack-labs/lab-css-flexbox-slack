@@ -38,13 +38,13 @@ main {
     text-align: center;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    font-size: 2em;
+    font-size: 4vw;
 }
 #section5 p {
     text-align: center;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    font-size: 1.2em;
+    font-size: 1.5vw;
 }
 #section6 {
     background-color: #540B51;
@@ -101,12 +101,12 @@ footer small {
         padding: 50px 1em 1em 1em;
     }
     header h1{
-        font-size: 2.5rem;
+        font-size: 10vw;
         text-align: center;
         color: white;
     }
     header p {
-        font-size: 1rem;
+        font-size: 5vw;
         text-align: center;
         color: white;
     }
@@ -193,7 +193,14 @@ footer small {
 
     }
     .section-article {
-        margin: 20px 10px;
+        margin: 3em 0 3em 2em;
+    }
+    .section-article h2 {
+        font-size: 6vw;
+    }
+    .section-article p,
+    .section-article a {
+        font-size: 4vw;
     }
     .section-article a {
         text-decoration: none;
@@ -425,6 +432,7 @@ footer small {
         background-image: url(../images/speed.png);
         background-repeat: no-repeat;
         background-size: 80% auto;
+        background-size: contain;
         margin: 15px 30px 0px 0px;
 
     }
@@ -444,6 +452,7 @@ footer small {
         flex-direction: row;
         justify-content: center;
         margin: 2em 8em;
+        font-size: 1vw;
     }
     #section5-button button {
         padding-left: 3em;
@@ -549,7 +558,7 @@ footer small {
         padding-right: 4em;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:1024px){
     .nav {
         position: fixed;
         z-index: 1;
@@ -580,16 +589,19 @@ footer small {
     }
     #nav-menu a {
         color: white;
-        text-decoration: none;;
+        text-decoration: none;
+        font-size: 1.2vw;
     }
     #nav-logo {
-        width: 6em;
+        width: 5vw;
         height: fit-content;
+        
     }
     #nav-icon {
         display: flex;
         flex-direction: row;
         align-items: center;
+        font-size: 1.1vw;
     }
     #nav-button button {
         padding-left: 0;
@@ -625,7 +637,7 @@ footer small {
         margin-top: 4em;
         margin-bottom: 4em;
         background-image: url(../images/background-singup.png);
-        background-size: 160% 100%;
+        background-size: 100vw auto;
         background-repeat: no-repeat;
     }
     #header-intro {
@@ -716,27 +728,28 @@ footer small {
     #section4 {
         display: flex;
         flex-direction:row;
-        height: 18em;
+        height: 30vw;
         padding-top: 2em;
         padding-bottom: 2em;
     }
     #section3 {
         display: flex;
         flex-direction:row-reverse;
-        height: 18em;
+        height: 30vw;
         padding-top: 2em;
         padding-bottom: 2em;
 
     }
     #section2-image {
-        width: 100%;
+        width: 50vw;
         background-image: url(../images/connectedness.png);
         background-repeat: no-repeat;
         background-size: 80% auto;
         background-position:left;
+        margin-top: 15px;
     }
     #section3-image {
-        width: 100%;
+        width: 50vw;
         background-image: url(../images/flexibility.png);
         background-repeat: no-repeat;
         background-size: 80% auto;
@@ -744,33 +757,38 @@ footer small {
 
     }
     #section4-image {
-        width: 100%;
+        width: 50vw;
         background-image: url(../images/speed.png);
         background-repeat: no-repeat;
         background-size: 80% auto;
         background-position:left;
+        margin-top: 15px;
 
     }
     .section-article {
+
         display: flex;
         flex-direction: column;
-        width: 80%;
-        padding: 0 2em;
+        justify-content: center;
+        width: 50vw;
+        margin: 3em 0 3em 2em;
         line-height: 1.2;
     }
     .section-article h2 {
-        font-size: 3rem;
+        font-size: 3.5vw;
         font-weight: 900;
         margin-top: 0;
         margin-bottom: 0.5em;
+        width: 25vw;
     }
     .section-article p {
-        font-size: 1rem;
+        font-size: 1.6vw;
         margin-top: 0;
         margin-bottom: 0.5em;
-        width: 20em;
+        width: 30vw;
     }
     .section-article a {
+        font-size: 1.6vw;
         text-decoration: none;
         color: #2E71A6;
     }
@@ -790,6 +808,7 @@ footer small {
         padding-right: 3em;
         margin-left: 1em;
         margin-right: 1em;
+        font-size: 1vw;
     }
     #section5-button button:first-child,
     #section6-button button:last-child {
@@ -828,7 +847,7 @@ footer small {
     }
     #section5 span{
         font-weight: 900;
-        font-size: 2em;
+        font-size: 2vw;
         color: #540B51;
     }
     footer {
@@ -853,7 +872,7 @@ footer small {
     #footer-list ul {
         list-style-type: none;
         padding: 5px;
-        font-size: 0.8em;
+        font-size: 1vw;
     }
     #footer-list li {
         line-height: 2;
@@ -866,7 +885,7 @@ footer small {
         padding: 0;
         line-height: 2;
         font-weight: 900;
-        font-size: small;
+        font-size: 1vw;
     }
     #footer-items img {
         width: auto;
@@ -887,6 +906,22 @@ footer small {
 
 
 
+    
+}
+@media screen and (min-width:1440px){
+    header {
+        background: none;
+    }
+    #header-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 1em;
+    }
+    #header-product-ui {
+        width: 55vw;   
+    }
     
 }
 
