@@ -49,6 +49,9 @@ header {
   flex-direction: column;
   overflow: hidden;
   height: 100vh;
+  background-image: url(../images/background-singup.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header > div {
@@ -62,9 +65,7 @@ header h1 {
   font-weight: 700;
   color: white;
   text-align: center;
-  background-image: url(../images/background-singup.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  
 }
 
 header p {
@@ -309,7 +310,7 @@ article {
   margin-bottom: 2vh;
   font-weight: 600;
   font-size: 0.9rem;
-  border-radius: 5px;
+  border-radius: 2px;
   text-transform: uppercase;
 }
 /* footer */
@@ -340,12 +341,12 @@ footer {
 #footer-links-container li:first-child {
   font-weight: 900;
   font-size: 0.8rem;
-  padding-bottom: 3vh;
-  height: 8vh;
+  padding-bottom: 2vh;
+  height: 3vh;
 }
 
 #footer-links-container li {
-  padding-bottom: 4vh;
+  padding-bottom: 2vh;
   color: #454245;
 }
 
@@ -485,6 +486,8 @@ hr {
   #nav-buttons,
   #nav-links {
     display: flex;
+    list-style: none;
+
   }
 
   nav > div {
@@ -493,13 +496,27 @@ hr {
     align-items: center;
   }
 
-  #nav-links {
-    display: flex;
+  #nav-links li {
+    color: #FFF;
+    font-weight: 600;
+    padding: 0 3vh;
   }
 
-  #nav-links li {
-    list-style: none;
+  
+
+  #signin-nav-link {
     color: #FFF;
+    padding: 1vh 3vh;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  #try-free-nav-link {
+    font-size: 0.9rem;
+    padding: 1vh 2vh;
+    border-radius: 5px;
+    background-color: #FFF;
+    text-transform: uppercase;
     font-weight: 600;
   }
 
@@ -507,4 +524,79 @@ hr {
     color: inherit;
     text-decoration: none;
   }
+
+  .second-section, #fourth-section {
+    flex-direction: row;
+    align-items: center;
+
+  }  
+
+  #third-section {
+    flex-direction: row;
+    align-items: center;
+  }
+  #digital-iq-btns {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #digital-iq-btns button{
+    margin-right: 2vh; 
+  }
+  
+}
+
+@media (width > 1440px){
+  
+  header{
+    background-image: none;
+    height: 80vh;
+  }
+  header div {
+    width: 50%;
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  #header-left-pane {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #header-left-pane h1{
+    text-align: left;
+    font-size: 5rem;
+  }
+
+  #header-left-pane p{
+    text-align: left;
+    font-size: 1.6rem;
+  }
+
+  
+  .signup-buttons {
+    padding: 0 ;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .signup-button {
+    width: 45%;
+  }
+
+  #header-right-pane{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #product-ui-img{
+    padding: 0;
+    margin: 0 0 12vh;
+    width: 45vh;
+
+  }
+
+
 }
