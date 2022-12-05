@@ -11,21 +11,25 @@ footer links grey: #454245
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
 /* Navigation */
+
 nav {
   display: flex;
   background-color: #540b51;
   justify-content: space-between;
-  padding: 8% 5% 0;
+  align-items: center;
+  padding: 3% 5%;
   height: 50px;
 }
 
 nav img {
-  align-self: flex-start;
-  height: 28px;
+  align-self: center;
+  width: 100%;
+  height: 30px;
 }
 
 nav button {
@@ -44,7 +48,7 @@ header {
   background-color: #540b51;
   flex-direction: column;
   overflow: hidden;
-  height: 120vh;
+  height: 100vh;
 }
 
 header > div {
@@ -394,6 +398,7 @@ hr {
 
 /* mobile first approach so no mobile media query*/
 
+/* small screens */
 @media (width > 768px) {
   header {
     flex-direction: row;
@@ -452,7 +457,7 @@ hr {
 
   #legal-list {
     flex-direction: row;
-    
+
     align-items: center;
     justify-content: space-evenly;
   }
@@ -470,3 +475,36 @@ hr {
   }
 }
 
+/* md screens */
+
+@media (width > 1024px) {
+  #nav-hamburguer {
+    display: none;
+  }
+
+  #nav-buttons,
+  #nav-links {
+    display: flex;
+  }
+
+  nav > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #nav-links {
+    display: flex;
+  }
+
+  #nav-links li {
+    list-style: none;
+    color: #FFF;
+    font-weight: 600;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
