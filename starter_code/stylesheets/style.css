@@ -33,6 +33,10 @@ nav button {
   border: none;
 }
 
+#nav-links {
+  display: none;
+}
+
 /* header */
 
 header {
@@ -54,6 +58,9 @@ header h1 {
   font-weight: 700;
   color: white;
   text-align: center;
+  background-image: url(../images/background-singup.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header p {
@@ -76,6 +83,7 @@ header p {
 .signup-button:first-child {
   color: #540b51;
 }
+
 .signup-button {
   height: 65px;
   justify-content: center;
@@ -95,7 +103,6 @@ header p {
 }
 #google-signup-btn img {
   width: 2em;
-  justify-self: flex-start;
   background-color: white;
   border-radius: 2px;
   padding: 4px 10px;
@@ -151,7 +158,6 @@ main {
   padding-bottom: 10%;
   color: #191817;
   background-color: #f3eae2;
-
 }
 
 .second-section img {
@@ -181,7 +187,6 @@ main {
   flex-direction: column-reverse;
   color: #000000;
   background-color: #f3eae2;
-
 }
 
 #third-section img {
@@ -196,7 +201,6 @@ main {
   padding-bottom: 10%;
   color: #191817;
   background-color: #f3eae2;
-
 }
 
 #fourth-section img {
@@ -234,7 +238,7 @@ main {
 .buttons-container button {
   padding: 2.5vh 8vh;
   margin-bottom: 2vh;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 0.9rem;
   border-radius: 5px;
   text-transform: uppercase;
@@ -242,6 +246,7 @@ main {
 
 .purple-btn {
   color: #fff;
+  border: #fff solid 2px;
   background-color: #540b51;
 }
 
@@ -277,107 +282,191 @@ article {
   color: #454245;
 }
 
-#sixth-section{
-    background-color: #540b51;
-    color: #fff;
-    border-bottom-left-radius: 100% 15%;
-    border-bottom-right-radius: 100% 15%;
+#sixth-section {
+  background-color: #540b51;
+  color: #fff;
+  border-bottom-left-radius: 100% 15%;
+  border-bottom-right-radius: 100% 15%;
 }
 
-#sixth-section h3{
-    font-size: 1.6rem;
-    text-align: center;
-}
-#sixth-section .buttons-container{
-    flex-direction: column-reverse;
+#sixth-section h3 {
+  font-size: 1.6rem;
+  text-align: center;
 }
 
-
-@media (width < 768px) {
-  #nav-links {
-    display: none;
-  }
+#digital-iq-btns {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 2vh 0 8vh;
 }
 
+#digital-iq-btns button {
+  padding: 2.5vh 8vh;
+  margin-bottom: 2vh;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+/* footer */
 footer {
-    padding-top: 10vh;
+  padding-top: 10vh;
 }
 
 #slack-logo-footer {
-    width: 8vh;
-    padding: 5%;
+  width: 8vh;
+  padding: 5%;
 }
 
 #footer-links-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 50vh;
 }
+
 #footer-links-container ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: 0.7rem;
-    font-weight: 400;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 0.7rem;
+  font-weight: 400;
 }
 #footer-links-container li:first-child {
-    font-weight: 900;
-    font-size: 0.8rem;
-    padding-bottom: 3vh;
-    height: 8vh;
-
+  font-weight: 900;
+  font-size: 0.8rem;
+  padding-bottom: 3vh;
+  height: 8vh;
 }
 
 #footer-links-container li {
-    padding-bottom: 4vh;
-    color: #454245;
+  padding-bottom: 4vh;
+  color: #454245;
 }
 
 hr {
-    width: 90%;
-    background-color: #454245;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
+  width: 90%;
+  background-color: #454245;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
 }
 
-#legal-list{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
+#legal-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 #legal-list li {
-    font-weight: 700;
-    font-size: 0.8rem;
-    padding-bottom: 3vh;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-bottom: 3vh;
 }
 
 #legal-list img {
-    display: inline-block;
-    width: 3vh;
-    padding: 0;
+  display: inline-block;
+  width: 3vh;
+  padding: 0;
 }
 
 #blue-download-li {
-    color: #2E71A6;
+  color: #2e71a6;
 }
 
 #social-links-list {
-    display: flex;
-    justify-content: space-around;
-    padding: 3vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 3vh;
 }
 
 #social-links-list li {
-    list-style: none;
+  list-style: none;
 }
 
-#copyright-footer-note{
-    font-size: 0.8rem;
-    font-family: 400;
-    padding: 0 5% 10%;
+#copyright-footer-note {
+  font-size: 0.8rem;
+  font-family: 400;
+  padding: 0 5% 10%;
 }
 
+/* Media Queries */
+
+/* mobile first approach so no mobile media query*/
+
+@media (width > 768px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5vh;
+    width: 100%;
+  }
+
+  header > div {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  header > div p {
+    text-align: left;
+    padding-right: 15vh;
+  }
+
+  header > div h1 {
+    text-align: left;
+    padding-right: 5vh;
+  }
+
+  .signup-buttons {
+    width: 100%;
+    padding-right: 5vh;
+  }
+
+  #product-ui-img {
+    width: 300px;
+    padding-left: 5vh;
+  }
+
+  .buttons-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vh;
+  }
+
+  #user-reviews-stats {
+    flex-direction: row;
+  }
+
+  #user-reviews-stats > li p {
+    text-align: left;
+  }
+
+  #stats-disclaimer {
+    display: none;
+  }
+
+  #digital-iq-btns {
+    flex-direction: column;
+  }
+
+  #legal-list {
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #legal-list li {
+    padding-right: 4vh;
+  }
+
+  #social-links-list {
+    justify-content: flex-start;
+    padding: 0 6vh;
+  }
+  #social-links-list li {
+    padding: 0 10vh 3vh 0;
+  }
+}
 
