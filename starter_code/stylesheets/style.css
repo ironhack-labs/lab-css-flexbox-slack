@@ -94,25 +94,30 @@ nav{
 .sign-up{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    
     width: 90vw;
     
 }
 
 .email-sub {
-    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
     background-color: rgb(235, 235, 235);
     border-radius: 4px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.232);
     font-size: 18px;
     color:#540B51;
     font-weight: bold;
+    height: 52px;
+    margin-bottom: 14px;
  
     
 }
 
 .google-bt{
-    height: 8vh;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,6 +127,7 @@ nav{
     font-weight: bold;
     font-size: 16px;
     color: white;
+    flex-grow: 1;
     
 }
 
@@ -273,12 +279,16 @@ nav{
  }
 
 .social{
+    
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    margin: 20px;
+    margin: 40px;
+
 
 }
+
 
 .stats{
     display: flex;
@@ -344,10 +354,12 @@ footer ul{
 }
 
 .last-menu{
+    display: flex;
+    flex-wrap: wrap;
     font-weight: bold;
     list-style: none;
-    margin-left: 20px;
-    font-size: 16px;
+    font-size: 10px;
+    
     
 
 }
@@ -365,191 +377,325 @@ small {
     margin-top: 40px;
     padding: 20px;
 }
+
+
+
+
+    /* MOBILE  */
+
+
 @media (max-width: 767px) {
     
 
     header{
-        display: flex;
-        justify-content: space-between;
+     display: flex;
+     justify-content: space-between;
      
     }
     #hero{
-        width: 100vw;
+     width: 100vw;
     }
 
     .navbar { 
-        display: flex;
-        flex-direction: column; 
+    display: flex;
+    flex-direction: column; 
 
 }
     .menu-on-nav{
-        display: none;
-    }
-    .resize {   
-        width: 100vw;
-    }
-       
-
-
+     display: none;
     }
 
-    
-
-@media (min-width: 768px) and ( max-width: 1023px)
-{
-
-
-    header{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-     
-     
+    .resize{
+     width: 90vw;
     }
-    #hero{
-        display: flex;
-        flex-direction: row;
-        background-image: url(/starter_code/images/background-singup.png);
-        background-size: contain;
-      
-          
-    }
-    
-    #hero img {
-        display: flex;
-        object-fit: contain;
-        
-    }
+
+
+.img-testimonial {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90vw;
+    margin: 20px;
   
-
-    .navbar { 
-        display: flex;
-        flex-direction: column; 
-
 }
-    .menu-on-nav{
-        display: none;
 
-    }
-
-    .email-sub{
-        margin: 21px;
-    }
-
-    .resize {   
-        width: 100vw;
-    }
-
-    .message, .sign-up{
+    #testimonials{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        width: 50vw;
+        align-items: center;
+    }
+
+
+    .small-copy{
+        color: rgb(169, 169, 169);
+        width: 50%;
+        margin: 20px;
+    }
+
+
 
     }
 
-    .message { 
-        display: flex;
-        align-items: flex-start;
-        width: 25vw;
-        margin-left: 40px;
-       
+
+
+
+
+        /* TABLET */
+
+    @media (min-width: 768px) and ( max-width: 1023px)
+    {
+
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        #hero{
+            display: flex;
+            flex-direction: row;
+            background-image: url(/starter_code/images/background-singup.png);
+            background-size: contain;
+        }
+        
+        #hero img {
+            display: flex;
+            object-fit: contain;
+            
+        }
     
-    }
-    h1{
-        text-align: left;
+
+        .navbar { 
+            display: flex;
+            flex-direction: column; 
 
     }
-     
-    .main-text{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        margin-left: 18%;
-        padding:20px;
-        width: 500px;
+        .menu-on-nav{
+            display: none;
 
-       
-    }
-    
-    .resize{
-        height: 60vh;
-        width: 60vh;
-    }
+        }
+
+        .message { 
+            display: flex;
+            align-items: flex-start;
+            width: 25vw;
+            margin-left: 40px;
+        }
+
     .sign-up{
-      
-        width: 30xw;
+        width: 40vw;
     }
         
- 
-    .testimonials:first-child{
-        display: flex;
-    }
+        h1{
+            text-align: left;
 
-    .img-testimonial{
+        }
+        
+        .main-text{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 18%;
+            padding:20px;
+            width: 500px;
+
+        }
+
+    #testimonials p{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+
+    }
+
+    .img-tab{
+
+    }
+
+        .img-testimonial{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;   
+
+        }
+
+        .resize{
+            width: 30vw;
+        }
+
+        .img-testimonial img{
+            width: 10%;
+            height: 10%;
+
+        }
         
+        .cta1{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 20px;
+        
+        }
+        .stats-box{
+            display: flex;
+            margin: 20px;
+        }
 
-    }
+        .last-menu{
+            display: flex;
+        }
 
-    .img-testimonial img{
-        width: 10%;
-        height: 10%;
+        .last-menu  li {
+            display: flex;
+            flex-wrap: wrap;
 
-    }
+        }
+
+        .social li {
+        display: flex;
+        justify-content: flex-start;
+        }
+        
+        .small-copy{
+            color: rgb(169, 169, 169);
+            width: 50%;
+            margin: 20px;
+
+        } 
+    }  
+                DESKTOP
     
-    .cta1{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 20px;
-      
-    }
-    .stats-box{
-        display: flex;
-        margin: 20px;
-    }
-
-    .last-menu{
-        display: flex;
-    }
-
-    .last-menu  li {
-        display: flex;
-
-    }
-
-    .social li {
-       display: flex;
-       justify-content: flex-start;
-
-    }
-}
-
-
-/* 
-@media (min-width: 1024px ) and (max-width: 1439px)
-{
-    main{
+            @media (min-width: 1024px ) and (max-width: 1439px)
+            {
+                header{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                }
+                #hero{
+                    display: flex;
+                    flex-direction: row;
+                    background-image: url(/starter_code/images/background-singup.png);
+                    background-size: contain;
+                }
+                
+                #hero img {
+                    display: flex;
+                    object-fit: contain;
+                    
+                }
+            
         
-    }
-}
-
-@media (min-width: 1440px)
-{
-    main{
+                .navbar { 
+                    display: flex;
+                    flex-direction: column; 
         
-    }
-}
+            }
+                .menu-on-nav{
+                    display: none;
+        
+                }
+        
+                .message { 
+                    display: flex;
+                    align-items: flex-start;
+                    width: 25vw;
+                    margin-left: 40px;
+                }
+        
+            .sign-up{
+                width: 40vw;
+            }
+                
+                h1{
+                    text-align: left;
+        
+                }
+                
+                .main-text{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    margin-left: 18%;
+                    padding:20px;
+                    width: 500px;
+        
+                }
+        
+            #testimonials p{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        
+            }
+        
+                .img-testimonial{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;   
+        
+                }
+        
+            
+                .img-testimonial img{
+                    width: 10%;
+                    height: 10%;
+        
+                }
+                
+                .cta1{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin: 20px;
+                
+                }
+                .stats-box{
+                    display: flex;
+                    margin: 20px;
+                }
+        
+                .last-menu{
+                    display: flex;
+                }
+        
+                .last-menu  li {
+                    display: flex;
+                    flex-wrap: wrap;
+        
+                }
+        
+                .social li {
+                display: flex;
+                justify-content: flex-start;
+                }
+                
+                .small-copy{
+                    color: rgb(169, 169, 169);
+                    width: 50%;
+                    margin: 20px;
+        
+                } 
+            }
 
+
+
+
+           /*  @media (min-width: 1440px)
+            {
+                main{
+                    
+                }
+            }
  */
 
 
-/*
+
+
 background purple: #540B51
 background ivory: #F3EAE2
 button blue: #4285F4
