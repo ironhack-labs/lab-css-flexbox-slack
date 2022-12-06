@@ -26,11 +26,12 @@ nav {
   height: 50px;
 }
 
-nav img {
-  align-self: center;
-  width: 100%;
-  height: 30px;
+#slack-logo-header{
+  width: 25vw;
 }
+
+
+
 
 nav button {
   background-color: #540b51;
@@ -48,10 +49,7 @@ header {
   background-color: #540b51;
   flex-direction: column;
   overflow: hidden;
-  height: 100vh;
-  background-image: url(../images/background-singup.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 60vh;
 }
 
 header > div {
@@ -65,7 +63,6 @@ header h1 {
   font-weight: 700;
   color: white;
   text-align: center;
-  
 }
 
 header p {
@@ -116,7 +113,7 @@ header p {
 }
 
 #product-ui-img {
-  width: 100vh;
+  width: 50vh;
 }
 
 /* main */
@@ -221,7 +218,7 @@ main {
 
 #fifth-section h3 {
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   text-align: center;
   padding: 0 5%;
   color: #191817;
@@ -229,7 +226,7 @@ main {
 
 #fifth-section p {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: center;
   padding: 0 1vh;
 }
@@ -241,11 +238,11 @@ main {
 }
 
 .buttons-container button {
-  padding: 2.5vh 8vh;
+  padding: 1.5vh 8vh;
   margin-bottom: 2vh;
   font-weight: 600;
-  font-size: 0.9rem;
-  border-radius: 5px;
+  font-size: 1.2rem;
+  border-radius: 7px;
   text-transform: uppercase;
 }
 
@@ -295,7 +292,7 @@ article {
 }
 
 #sixth-section h3 {
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   text-align: center;
 }
 
@@ -309,7 +306,7 @@ article {
   padding: 2.5vh 8vh;
   margin-bottom: 2vh;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   border-radius: 2px;
   text-transform: uppercase;
 }
@@ -319,7 +316,7 @@ footer {
 }
 
 #slack-logo-footer {
-  width: 8vh;
+  width: 5vh;
   padding: 5%;
 }
 
@@ -327,7 +324,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 50vh;
+  padding-bottom: 3vh;
 }
 
 #footer-links-container ul {
@@ -335,12 +332,14 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 400;
+  width: 15%;
+  padding: 0 2vh;
 }
 #footer-links-container li:first-child {
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   padding-bottom: 2vh;
   height: 3vh;
 }
@@ -352,27 +351,26 @@ footer {
 
 hr {
   width: 90%;
-  background-color: #454245;
-  margin-top: 6vh;
-  margin-bottom: 6vh;
+  color: grey;
 }
 
 #legal-list {
   list-style: none;
   display: flex;
   flex-direction: column;
+  padding-top: 3vh;
 }
 
 #legal-list li {
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   padding-bottom: 3vh;
 }
 
 #legal-list img {
   display: inline-block;
-  width: 3vh;
-  padding: 0;
+  width: 1vh;
+  margin: 1px;
 }
 
 #blue-download-li {
@@ -381,12 +379,13 @@ hr {
 
 #social-links-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 3vh;
 }
 
 #social-links-list li {
   list-style: none;
+  font-size: 2rem;
 }
 
 #copyright-footer-note {
@@ -401,51 +400,75 @@ hr {
 
 /* small screens */
 @media (width > 768px) {
+
+  #slack-logo-header{
+    width: 15vw;
+  }
+  
+  
   header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 5vh;
+    height: 100%;
+    padding-bottom: 5vh;
     width: 100%;
+    background-image: url(../images/background-singup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   header > div {
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    margin-left: 2vh;
   }
 
   header > div p {
     text-align: left;
-    padding-right: 15vh;
   }
 
   header > div h1 {
     text-align: left;
-    padding-right: 5vh;
+    margin-right: 15vh;
+    font-size: 3rem;
+    font-weight: 800;
   }
 
   .signup-buttons {
     width: 100%;
-    padding-right: 5vh;
   }
 
   #product-ui-img {
-    width: 300px;
-    padding-left: 5vh;
+    width: 350px;
+  }
+
+  #fifth-section h3 {
+    font-size: 2rem;
+  }
+
+  #fifth-section p {
+    font-size: 1.2rem;
   }
 
   .buttons-container {
     flex-direction: row;
     justify-content: center;
-    gap: 3vh;
   }
 
+  .buttons-container button {
+    font-size: 1rem;
+    padding: 1.5vh 2.5vh;
+    margin: 0 1vh;
+    box-sizing: border-box;
+  }
   #user-reviews-stats {
     flex-direction: row;
   }
 
   #user-reviews-stats > li p {
     text-align: left;
+    padding: 0 1vh;
   }
 
   #stats-disclaimer {
@@ -454,25 +477,32 @@ hr {
 
   #digital-iq-btns {
     flex-direction: column;
+    margin: 0 3vh;
+    padding: 1vh 0;
   }
 
   #legal-list {
     flex-direction: row;
-
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   #legal-list li {
-    padding-right: 4vh;
+    font-size: 0.6rem;
+    padding-right: 2.5vh;
   }
 
+  #legal-list img {
+    width: 12px;
+  }
   #social-links-list {
+    display: flex;
     justify-content: flex-start;
-    padding: 0 6vh;
+    padding: 0 2vh;
   }
   #social-links-list li {
-    padding: 0 10vh 3vh 0;
+    padding-right: 1vh;
+    font-size: 1.5rem;
   }
 }
 
@@ -483,39 +513,48 @@ hr {
     display: none;
   }
 
+  #slack-logo-header{
+    width: 10vw;
+  }
+
   #nav-buttons,
   #nav-links {
     display: flex;
     list-style: none;
-
   }
 
+  nav {
+    justify-content: space-between;
+  }
   nav > div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav > div + div {
+    justify-content: flex-end;
     align-items: center;
   }
 
   #nav-links li {
-    color: #FFF;
+    color: #fff;
     font-weight: 600;
-    padding: 0 3vh;
+    padding: 0 1vh;
   }
 
-  
-
   #signin-nav-link {
-    color: #FFF;
-    padding: 1vh 3vh;
+    color: #fff;
+    padding: 1vh 2vh;
     font-weight: 600;
     font-size: 0.9rem;
   }
 
   #try-free-nav-link {
     font-size: 0.9rem;
-    padding: 1vh 2vh;
+    padding: 1vh;
     border-radius: 5px;
-    background-color: #FFF;
+    background-color: #fff;
     text-transform: uppercase;
     font-weight: 600;
   }
@@ -525,59 +564,92 @@ hr {
     text-decoration: none;
   }
 
-  .second-section, #fourth-section {
+
+
+
+  .second-section,
+  #fourth-section {
     flex-direction: row;
     align-items: center;
-
-  }  
+  }
 
   #third-section {
     flex-direction: row;
     align-items: center;
+  }
+
+  #user-reviews-stats p {
+    font-size: 1.2rem;
+    
   }
   #digital-iq-btns {
     flex-direction: row;
     justify-content: center;
   }
 
-  #digital-iq-btns button{
-    margin-right: 2vh; 
+  #digital-iq-btns button {
+    margin-right: 2vh;
+    padding: 2vh 2.5h;
   }
-  
-}
 
-@media (width > 1440px){
+
   
-  header{
+  footer{
+    padding-top: 2vh;
+  }
+
+  #legal-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  #social-links-list{
+    padding: 2vh 0 2vh 3vh;
+    margin: 0;
+  }
+
+  footer{
+    padding: 0 5vw;
+  }
+
+}
+@media (width > 1440px) {
+  header {
     background-image: none;
-    height: 80vh;
+    height: 50vh;
+    padding: 5vh 5vw;
+    width: 90%;
   }
   header div {
     width: 50%;
-    height: 80vh;
+    height: 100%;
     padding: 0;
     margin: 0;
   }
 
   #header-left-pane {
     flex-direction: column;
+    margin-right: 5vw;
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  #header-left-pane h1{
+  #header-left-pane h1 {
     text-align: left;
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
-  #header-left-pane p{
+  #header-left-pane p {
     text-align: left;
     font-size: 1.6rem;
   }
 
-  
   .signup-buttons {
-    padding: 0 ;
+    padding: 0;
     margin: 0;
     flex-direction: row;
     justify-content: space-around;
@@ -586,17 +658,31 @@ hr {
     width: 45%;
   }
 
-  #header-right-pane{
+  #header-right-pane {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
   }
-  #product-ui-img{
+  #product-ui-img {
     padding: 0;
-    margin: 0 0 12vh;
-    width: 45vh;
-
+    margin-bottom: 10vh;
+    width: 40vw;
   }
 
+  .first-section {
+    padding-bottom: 5vh;
+  }
+  
+ 
+  #user-reviews-stats li {
+    padding-right: 10vw;
+  }
 
+  #legal-list li {
+    font-size: 1rem;
+  }
+  #social-links-list li {
+    padding: 0 2vw 1vh;
+  }
 }
