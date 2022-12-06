@@ -28,11 +28,14 @@ body{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: 6rem;
     padding-left: 2rem;
     padding-right: 2rem;
 
+}
+nav > div:last-child{
+   padding-right: 4rem;
 }
 .hidden-menu {
     display: none;
@@ -40,20 +43,28 @@ body{
 .header2 > img{
     width: 10rem;
 }
-}
 
+.img-back2{
+    display: none;
+}
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color:#540B51;
 }
+header > div:last-child{
+    width: 100%;
+}
+header > div:last-child > img{
+    width: 45rem;
+}
 
 .gmail > p{
     color: white;
     width: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     }
 
 .gmail > h1{
@@ -66,9 +77,13 @@ header{
     font-size: 3rem;
 
 }
+.gmail > p > span {
+    font-weight: bold;
+    color: rgb(237, 181, 98);
+    margin-right: 5px;
+}
 .img-back{
-    width:100%;
-
+   width: 100%;
 }
 .sign-up{
     display: flex;
@@ -87,18 +102,24 @@ header{
     background-color:white;
 }
 .sign-up>button:last-child{
+    display: flex;
     border-style: none;
     border-radius: 5px;
-    display: flex;
+    align-items: center;
     color:white;
     background-color: #4285F4;
 }
 .sign-up>button:last-child>img{
+    display: flex;
     width: 30%;
     background-color: white;
     border-radius: 3px;
     width: 2rem;
-    float: left;
+} 
+.sign-up>button:last-child>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .back-ivory{
     background-color: #F3EAE2;
@@ -243,8 +264,9 @@ header{
     font-size: 3em;
 }
 #last-section{
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
     background-color: #540B51;
+    border-radius: 0 0rem 40rem 40rem;
 }
 #last-section > h3{
     color: white;
@@ -267,6 +289,9 @@ footer > img{
 }
 footer > div{
     display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid rgb(194, 188, 188) 1px;
+    margin: 1rem;
 }
 
 footer > div > ul{
@@ -274,17 +299,413 @@ footer > div > ul{
     display: flex;
     list-style: none;
 }
+footer > div > ul > li{
+    margin: 1em 1.5em;
+}
+footer > div > ul > li:first-child{
+    font-size: large;
+    font-weight: bold;
+}
 .social-media{
     justify-content: space-between;
     display: flex;
     list-style: none;
+    padding-bottom: 2em;
 }
+
 footer > ul > li{
     line-height: 3rem;
     font-weight: bolder;
     display: flex;
-    list-style: none;
+    
 }
-footer > ul > li:last-child{
-    change dot background image
+footer > ul:first-of-type > li:nth-child(6){
+    padding-left: 1.5em;
+    background: url(../images/icon-region.png); 
+    background-repeat: no-repeat;  
+    background-position: left;
+}
+footer > ul:first-of-type > li:nth-child(7){
+    padding-left: 1.5em;
+    background: url(../images/icon-download.png); 
+    background-repeat: no-repeat;  
+    color: #4285F4;
+    background-position: left;
+    margin-bottom: 2em;
+}
+footer > div:last-child{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 4rem;
+    border: none;
+}
+}
+
+
+
+/*            Tablette layout           */
+
+
+
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }    
+    .menu-img{
+        border-style: none;
+        background-color: #540B51;
+        padding: 1rem;
+    }
+    .img-back{
+        display: none;
+    }
+    .img-back2{
+        width: 80%;
+    }
+    .header1{
+        top: 0;
+        position: fixed;
+        background-color:#540B51;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 93%;
+        height: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+    }
+    .hidden-menu {
+        display: none;
+    }
+    .header2 > img{
+        width: 10rem;
+    }
+    
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color:#540B51;
+        height: 40rem;
+        margin-top: 5rem;
+    }
+    .gmail{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gmail > p{
+        color: white;
+        width: auto;
+        display: flex;
+        justify-content: left;
+        padding: 0rem 1rem;
+        }
+    
+    .gmail > h1{
+        display: flex;
+        align-items: center;
+        padding: 3rem 15rem 5rem 1rem;
+        color:white;
+        height: 3rem;
+        text-align: left;
+        font-size: 3rem;
+    
+    }
+    .gmail > p > span {
+        font-weight: bold;
+        color: rgb(237, 181, 98);
+        margin-right: 5px;
+    }
+    header > div:last-child{
+        height: 35rem;
+        width: 17rem;
+        
+    }
+    header > div:last-child > img{
+        width: 30rem;
+    }
+    .sign-up{
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-up > button{
+        align-items: center;
+        justify-content: center;
+        height: 4rem;
+        margin: 1rem;
+    }
+    .sign-up>button:first-child{
+        color: #540B51;
+        border-style: none;
+        border-radius: 5px;
+        background-color:white;
+    }
+    .sign-up>button:last-child{
+        display: flex;
+        border-style: none;
+        border-radius: 5px;
+        align-items: center;
+        color:white;
+        background-color: #4285F4;
+    }
+    .sign-up>button:last-child>img{
+        display: flex;
+        width: 30%;
+        background-color: white;
+        border-radius: 3px;
+        width: 2rem;
+    } 
+    .sign-up>button:last-child>span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .back-ivory{
+        background-color: #F3EAE2;
+    }
+    
+    #first-section{
+        display: flex;
+        flex-direction: column;
+        background-color: #F3EAE2;
+    }
+    #first-section>p{
+        font-weight: bold;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        height: 4em;
+        align-items: center;
+    
+    }
+    #first-section>div{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        display:flex;
+        padding: 2em;
+    }
+    #first-section>div>img{
+        padding: 0.5em;
+        height: 2.5em;
+        width: auto;
+       display: inline-block;
+    }
+    #first-section>div>img:nth-child(2){
+        height: 3em;
+    }
+    #first-section>div>img:nth-child(3){
+        height: 2em;
+    }
+    
+    .second-section > img{
+        width: 90%;
+    }
+    .team-together{
+        padding: 2rem 8rem;
+
+    }
+    .head2{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    .andp{
+        padding-left: 1em;
+        text-align: left;
+        line-height: 1.5em;
+        font-weight: 500;
+    }
+    .blue-link{
+        padding-left: 1em;
+        text-decoration: none;
+        padding-bottom: 2em;
+        color: #4285F4;
+        font-weight: 600;
+        padding-right: 2rem;
+    }
+    .third-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .third-section > div > img{
+        padding: 5rem 0rem 0rem 3rem;
+    }
+    
+    
+    .fourth-section{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 3rem;
+    }
+    .fourth-section > div:last-child > img{
+        float: right;
+    }
+    #fifth-section{
+        padding: 2.5rem 0rem;
+    }
+    .violet-button{
+        font-weight: bold;
+        margin: 1em;
+        width: 15em;
+        height: 3.5em;
+        align-items: center;
+        color: #540B51;
+        border-style: none;
+        border-radius: 3px;
+        background-color:white;
+        border: solid 1px #540B51;
+        margin-left: 10rem;
+        
+    }
+    .white-button{
+        font-weight: bold;
+        width: 20em;
+        height: 3.5em;
+        align-items: center;
+        border-style:none;
+        border-radius: 3px;
+        color:white;
+        background-color:#540B51;
+        border: solid white 1px;
+        }
+    #sixth-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #sixth-section > div{
+        justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 30rem;
+        
+
+    }
+    #sixth-section > h3{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bolder;
+        padding: 2em 2em 0em 2em;
+    }
+    #sixth-section > p{
+        text-align: center;
+        font-size: large;
+        font-weight: 600;
+        padding: 0em 1em ;
+    }
+    #sixth-section > ul{
+        padding: 0;
+        padding-top: 2rem;
+        display: flex;
+        font-weight: bolder;
+        list-style: none;
+        text-align: center;
+        width: 50em ;
+    
+    }
+    #sixth-section > ul > li
+    > p > span{
+        color: #540B51;
+        font-weight: bolder;
+        font-size: 3em;
+    }
+    #last-section{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background-color: #540B51;
+        border-radius: 0 0rem 40rem 40rem;
+        padding-bottom: 4rem;
+    }
+    #last-section > h3{
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .last-button{
+        margin:auto;
+        margin-top: 1em;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    footer > img{
+        width: 4rem;
+        margin: 2em 2em 2em 4em;
+    }
+    footer > div{
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: solid rgb(194, 188, 188) 1px;
+        margin: auto;
+    }
+    
+    footer > div > ul{
+        flex-direction: column;
+        display: flex;
+        list-style: none;
+    }
+    footer > div > ul > li{
+        margin: 1em 1.5em;
+    }
+    footer > div > ul > li:first-child{
+        font-size: large;
+        font-weight: bold;
+    }
+    .social-media{
+        justify-content: space-between;
+        display: flex;
+        list-style: none;
+        padding-bottom: 2em;
+        margin-right: 30rem;
+        margin-left: 1rem;
+    }
+    
+    footer > ul > li{
+        line-height: 3rem;
+        font-weight: bolder;
+        display: flex;
+        
+    }
+    footer > ul:first-of-type{
+        display: flex;
+        justify-content: space-around;
+    }
+    footer > ul:first-of-type > li{
+        font-size: small;
+    }
+    footer > ul:first-of-type > li:nth-child(6){
+        padding-left: 1.5em;
+        background: url(../images/icon-region.png); 
+        background-repeat: no-repeat;  
+        background-position: left;
+    }
+    footer > ul:first-of-type > li:nth-child(7){
+        padding-left: 1.5em;
+        background: url(../images/icon-download.png); 
+        background-repeat: no-repeat;  
+        color: #4285F4;
+        background-position: left;
+    }
+    footer > div:last-child{
+        color:#454245;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 4rem;
+        border: none;
+    }
+    footer > div:last-child > small{
+        width: 50rem;
+    }
+
 }
