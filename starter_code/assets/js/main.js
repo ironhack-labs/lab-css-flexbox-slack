@@ -15,4 +15,4 @@ document.body.onclick = (ev) => {
   }
 }
 
-<img src="./images/icon-menu.png" alt="Slack logo" height="20px"/>
+//<img src="./images/icon-menu.png" alt="Slack logo" height="20px"/>
