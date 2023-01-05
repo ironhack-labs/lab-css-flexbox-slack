@@ -18,6 +18,7 @@ The goal of the lab is to create a *responsive* landing page using **CSS** and *
 ## Requirements
 
 - Fork this repo
+
 - Clone this repo
 
   
@@ -90,6 +91,7 @@ Use the following page screenshot as the guide:
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Slack+Home+Page+-+420px.png" width="200px"/>
   <br/>
 
+
   [Back to top](#iteration-1--mobile-screens-width--768px)
 </details>
 
@@ -145,6 +147,7 @@ Use the following page screenshot as the guide:
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Slack+Home+Page+-+768px.png" width="550px"/>
   <br/>
 
+
   [Back to top](#iteration-2--small-screens-width--768px-and-width--1024px)
 </details>
 
@@ -196,6 +199,7 @@ Use the following page screenshot as the guide:
   <summary>Screenshot - Medium Screens</summary>
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Slack+Home+Page+-+1024px.png" />
   <br/>
+
 
 
   [Back to top](#iteration-3--medium-screens-width--1024px-and-width--1440px)
@@ -251,6 +255,7 @@ Use the following page screenshot as the guide:
 
 
 
+
   [Back to top](#iteration-4--large-screens-width--1440px)
 
 </details>
@@ -270,3 +275,228 @@ You can inspect the page styles here: [Figma file - Large Screens]()
 
 
 Happy coding! ❤️
+
+
+
+## FAQs
+
+
+
+<details>
+  <summary>I am stuck in the exercise and don't know how to solve the problem or where to start.</summary>
+  <br>
+
+  If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear question about the specific issue you are facing. This will help you narrow down the problem and come up with potential solutions.
+
+
+For example, is it a concept that you don't understand, or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources. 
+
+
+Once you have a clear understanding of the problem, you will be able to start working towards the solution.
+
+  [Back to top](#faqs)
+</details>
+
+
+
+<details>
+  <summary>How do I center align HTML text elements?</summary>
+  <br>
+
+  To center align HTML *text elements*, you can use the `text-align` property and set it to `center`. This property can be applied to any *inline* or *block-level* element.
+
+Here is an example of how you can use the `text-align` property to center align multiple text elements:
+
+**HTML**
+
+```html
+<div>
+  <h2>This is a title</h2>
+  
+  <p>This is some text in here</p>
+</div>
+```
+
+**CSS**
+
+```css
+/* CSS */
+
+p {
+  text-align: center; /* Center align all p elements */
+}
+
+h2 {
+  text-align: center; /* Center align all h2 elements */
+}
+```
+
+This will center align all `p` and `h2` elements within the parent `div`.
+
+For more information, check: [W3C: Centering Things](https://www.w3.org/Style/Examples/007/center.en.html)
+
+  [Back to top](#faqs)
+</details>
+
+
+
+<details>
+  <summary>How do I center align HTML block elements?</summary>
+  <br>
+
+  To center align a block-level element, such as a `div`, `h1`, etc., you can use the `margin` property and set it to `auto`. This will center the element horizontally within its parent container. 
+
+Here is an example of how you can do this:
+
+**HTML**
+
+```html
+<section>
+  <div>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+  </div>
+</section>
+```
+
+**CSS**
+
+```css
+/* CSS */
+
+div {
+  width: 500px;
+  margin: 0 auto;
+}
+```
+
+This will set the `widh` property of the `div` to 500 pixels and we set the left and right margin to be equal by using `margin: 0 auto;`.
+
+  [Back to top](#faqs)
+</details>
+
+
+
+<details>
+  <summary>How do I center align an HTML image element?</summary>
+  <br>
+
+  There are a few ways you can center aling an image element.
+
+##### 1. Align an image using `text-align`
+
+To center an image element in HTML, you can use the `text-align` property on the parent element, such as `div`. Example:
+
+**HTML**
+
+```html
+<div>
+  <img src="https://placehold.co/300x150.png" />
+</div>
+```
+
+**CSS**
+
+```css
+div {
+  text-align: center;
+}
+```
+
+This will center align all the children elements within the `section` element, including the `img` element.
+
+<br>
+
+##### 2. Align an image as a block element
+
+The other way is converting the image into a block element and using `margin: 0 auto`. Here is an example:
+
+**HTML**
+
+```html
+<section>
+  <img src="https://placehold.co/300x150.png" />
+</section>
+```
+
+**CSS**
+
+```css
+img {
+  display: block;
+  margin: 0 auto;
+}
+```
+
+This will center the image horizontally within the parent `section` element. The `display: block` property is used to make the image a *block-level* element, allowing the `margin: 0 auto` property to work. The `margin: 0 auto` property sets the left and right margins to be equal, centering the element within its parent container.
+
+  [Back to top](#faqs)
+</details>
+
+<details>
+  <summary>How can I change the header from having 1 column to having 2 columns?</summary>
+  <br>
+
+  To change the header of an HTML page from having one column to having two columns using Flexbox, you should do the following in your CSS:
+
+1.  Use the `display` property and set it to `flex`. 
+2.  Add the `flex-direction` property and set it to `column` to arrange the elements in a column. 
+3.  Add the `justify-content` property to align the elements horizontally 
+4.  Use the `align-items` property to align them vertically.
+
+```css
+header {
+  display: flex;
+  flex-direction: column; /* Arrange elements in a column */
+  justify-content: space-between; /* Align horizontally */
+  align-items: center; /* Align vertically */
+}
+```
+
+
+
+To make the header responsive and change it to a two column layout on screens that are wider than 800 pixels, use a media query and set the `flex-direction` property to `row`:
+
+```css
+@media (min-width: 800px) {
+  header {
+    flex-direction: row;
+  }
+
+  /* Change the width of nested div elements */
+  header > div {
+    width: 50%;
+  }
+}
+```
+
+
+
+On smaller screens, the header will maintain a single column layout, but on screens larger than 800 pixels wide, it will change to a two column layout.
+
+  [Back to top](#faqs)
+</details>
+
+
+
+<details>
+  <summary>Why are my media query styles not displaying properly on my browser?</summary>
+  <br>
+
+  When using media queries to create a responsive layout, it is recommended to start with the default styles for mobile (smaller) screens, and then use media queries at the end of your stylesheet to apply styles for each increasing viewport size.
+
+
+
+There are a few possible reasons why your media query styles may not be displaying properly on your browser
+
+1. Check that you already have default styles for mobile screens, where applicable. These styles should be placed at the beginning of your stylesheet, before your media queries.
+2. Make sure that you have placed your media queries at the end of your stylesheet, after your regular styles. This is because media queries are applied after regular styles, so if you place them before your regular styles, they will be overridden.
+3. Make sure that you have the correct syntax in your media query. The correct syntax is `@media (expression) {...}`.
+4. Make sure that you are using the correct media query expression. For example, if you are trying to target screens that are wider than 800 pixels, you should use the `min-width` in your expression, like this: `@media (min-width: 800px) {...}.`
+
+
+
+For more information on CSS media queries, check: [MDN: Beginner's guide to media queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
+
+  [Back to top](#faqs)
+</details>
+
