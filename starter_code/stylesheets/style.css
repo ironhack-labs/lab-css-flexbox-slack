@@ -67,22 +67,24 @@ h1 {
 }
 
 
-#boton-header {
+.boton-enlace {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#boton-header button {
+.boton-enlace button, #percentages button {
     width: 90vw;
     height: 50px;
     margin-bottom: 15px;
     border-radius: 5px;
-    border: none;
-    
 }
 
-#boton-header img {
+.boton-sinborde {
+    border: none;
+}
+
+.boton-enlace img {
     width: 25px;
     background-color: white;
     margin: 5px;
@@ -91,7 +93,7 @@ h1 {
     margin-right: 16%;
 }
 
-#boton-header button {
+.boton-enlace button {
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -124,6 +126,7 @@ h1 {
 
 #background-ivory {
     background-color: #F3EAE2;
+    padding-bottom: 50px;
 }
 
 #first-section {
@@ -180,9 +183,10 @@ h1 {
     margin-right: 15px;
 }
 
-.information h2 {
+.information h2, #percentages h3 {
     font-weight: bolder;
     margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
 .information p {
@@ -191,4 +195,65 @@ h1 {
 
 .information a {
     text-decoration: none;
+}
+
+/* percentages section */
+
+#percentages {
+    background-color: white;
+    padding-top: 80px;
+}
+
+#percentages h3 {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#percentages > p {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#percentages > p {
+    padding-bottom: 20px;
+}
+
+#boton-violeta{
+    background-color: #540B51;
+    color: white;
+}
+
+#boton-borde-vio{
+    color: #540B51;
+    border-color: #540B51;
+}
+
+.number {
+    color: #540B51;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    
+}
+
+#numeros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    margin: 20px auto 60px auto;
+}
+
+#numeros li {
+    list-style: none;
+}
+
+#numeros .num {
+    padding-top: 30px;
+}
+
+#numeros p {
+    font-weight: bolder;
 }
