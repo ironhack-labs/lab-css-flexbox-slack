@@ -62,40 +62,61 @@ table {
 
 }
 
+
+.nav {
+    display: flex;
+    justify-content: space-between; 
+    background-color: var(--background-purple);
+}
+
+.nav__img {
+    max-width: 10rem;
+}
+
+.nav__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav__list {
+    display: none;
+}
+
+.nav__right {
+    display: flex;
+    padding: 5%;
+    /* justify-content: flex-end; */
+}
+
+.nav__right button {
+    border: none;
+    background-color: var(--background-purple);    
+}
+
+
+
 @media (max-width: 768px) {
-    .nav {
-        display: flex;
-        justify-content: space-between; 
-        background-color: var(--background-purple);
-    }
-    
-    .nav__img {
-        width: 22.5%;
-        height: auto;
-        padding: 5%;
-    
-    }
-    
-    .nav__left {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    
-    .nav__list {
-        display: none;
-    }
-    
-    .nav__right {
-        display: flex;
-        padding: 5%;
-        /* justify-content: flex-end; */
-    }
-    
-    .nav__right button {
-        border: none;
-        background-color: var(--background-purple);    
-    }
+
+.nav__img {
+width: 22.5vw;
+padding: 5%;
+}
+
+}
+@media (min-width: 650px) and (max-width: 1024px) {
+.nav__img {
+padding-left: 10%;
+max-width: 6rem;
+}
 
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+.nav__img {
+padding: 10% 2%;
+max-width: 10rem;
+
+}
+
+}
