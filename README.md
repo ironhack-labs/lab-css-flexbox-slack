@@ -380,7 +380,45 @@ This will center the image horizontally within the parent `section` element. The
 </details>
 
 <details>
-  <summary>How can I change the header from having 1 column to having 2 columns?</summary>
+  <summary>How can I center align elements within a Flexbox container?</summary>
+  <br>
+To center align elements within a Flexbox parent container, you can use the `justify-content` property and set it to `center`. This will horizontally center the elements within the Flexbox container. 
+
+**Example:**
+
+```css
+.container {
+  display: flex;
+  justify-content: center; /* Center elements horizontally */
+}
+
+```
+
+
+
+You can also use the `align-items` property and set it to `center` to vertically center align the elements within the Flexbox container.
+
+Example:
+
+```css
+.container {
+  display: flex;
+  justify-content: center;  /* Center elements horizontally */
+  align-items: center;      /* Center elements vertically */
+}
+```
+<br>
+
+
+For more information and an interactive Flexbox guide, check: [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox)
+
+<br>
+
+  [Back to top](#faqs)
+</details>
+
+<details>
+  <summary>How can I change the header from having 1 column to having 2 columns using Flexbox?</summary>
   <br>
 
   To change the header of an HTML page from having one column to having two columns using Flexbox, you should do the following in your CSS:
