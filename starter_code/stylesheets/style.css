@@ -14,6 +14,7 @@ body {
     font-size: 1rem;
     font-family: 'Source Sans Pro';
     margin: 0;
+    padding: 0;
 }
 
 .navigation {
@@ -97,8 +98,8 @@ header h1 {
     color:white; 
     padding: 0.5rem 1rem;
     width: 95vw;
-    display: flex;
     align-items: center;
+    text-align: center;
     
 }
 
@@ -264,3 +265,44 @@ footer {
 .footer-list > li {
     padding: 0.7rem 0;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        width: 100vw;
+        height: 80vw;
+        align-items: stretch;
+        
+
+    }
+    header > div {
+        width: 50%;
+    }
+    
+    .sign-up {
+        background-image: url(/starter_code/images/background-singup.png);
+        background-size: cover;
+        
+      }
+
+    .header-image {
+        padding: 0;
+        
+    }
+
+    .sign-up-button-1 {
+        width: 65vw;   
+    }
+    
+    .sign-up-button-2 {
+        width: 65vw;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .companies-logos-container {
+        flex-wrap: nowrap;
+    }
+}
+
