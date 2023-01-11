@@ -94,12 +94,13 @@ nav > div button {
   flex-direction: column;
   padding: 0 1.6rem;
   margin-bottom: 1.6rem;
-  position: relative;
+  /* position: relative; */
   width: 100%;
 }
 
 .btn-container {
   width: 100%;
+  position: relative;
 }
 
 .hero-btn {
@@ -118,7 +119,7 @@ nav > div button {
 }
 
 .hero-btn-outline {
-  display: flex;
+  /* display: flex; */
   justify-content: space-evenly;
   align-items: center;
   padding: 1.6rem 1.8rem;
@@ -132,14 +133,22 @@ nav > div button {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 1.2rem;
+  margin: 0 auto;
+  position: relative;
 }
 
 .btn-img {
   width: 2.4rem;
   background-color: white;
   /* display: none; */
-  position: absolute;
+  /* position: absolute; */
+  display: flex;
+  justify-content: flex-start;
   right: 275px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* .hero-img-container {
@@ -260,14 +269,19 @@ nav > div button {
 .footer-img {
   height: 4.4rem;
   margin: 2.4rem 1.2rem;
+  padding: 0 4.4rem;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 0 1.2rem;
-  column-gap: 2.4rem;
+  /* padding: 0 4.4rem; */
+  /* column-gap: 2.4rem; */
   margin-bottom: 2.4rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin: 0 auto */
+  justify-items: center;
 }
 
 .footer-title {
@@ -280,6 +294,7 @@ nav > div button {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  text-align: left;
 }
 
 .footer-items {
@@ -303,6 +318,7 @@ hr {
   gap: 2.4rem;
   margin: 2.4rem;
   list-style: none;
+  padding: 0 4.4rem;
 }
 
 .contact-items {
@@ -438,6 +454,11 @@ li p {
     text-align: left;
   }
 
+  .hero-description {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
   .container {
     padding: 2.4rem;
   }
@@ -481,12 +502,40 @@ li p {
   .features-link {
     font-size: 1.6rem;
   }
+
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .contact-items {
+    font-size: 1.2rem;
+  }
+
+  .socials {
+    /* align-items: flex-start; */
+    justify-content: left;
+    padding: 0 4.4rem;
+  }
 }
 
 /* ----------- Medium Screens: 1024 - 1440px ----------- */
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .features-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /* ----------- Large Screens: > 1440px ----------- */
 @media screen and (min-width: 1440px) {
 }
+
+/* marker only this is updated */
