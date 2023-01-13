@@ -15,6 +15,19 @@ footer links grey: #454245
     font-family: Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
 }
 
+@media (width < 768px)  {
+    #boton-violeta{
+        width: 90vw;
+    }
+    #numeros li{
+        align-items: center;
+    }
+
+    #boton-debajo{
+        border: none;
+    }
+}
+
 .big-img-smallversion {
     display: none;
 }
@@ -75,7 +88,7 @@ h1 {
     align-items: center;
 }
 
-.boton-enlace button, #percentages button, #back-violet button {
+.boton-enlace button, #boton-borde-vio , #back-violet button {
     width: 90vw;
     height: 50px;
     margin-bottom: 15px;
@@ -242,7 +255,7 @@ h1 {
     
 }
 
-#numeros {
+#contenedor-numeros {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -255,7 +268,6 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 li {
@@ -433,9 +445,9 @@ section a {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 70%;
-            padding-right: auto;
-            padding-left: 15%;
+            width: auto;
+            margin-left: 150px;
+            margin-right: 150px;
         }
 
         #contenedor-right{
@@ -460,30 +472,57 @@ section a {
             width: 60%;
             padding-left: 20%;
             padding-right: auto;
+            
+        
         }
 
         #boton-violeta {
             margin-right: 15px;
+            flex-grow: 2;
+            width: auto;
             
         }
 
         #boton-borde-vio{
+            flex-grow: 1;
+            width: auto;
         }
 
-        #numeros {
+        #contenedor-numeros {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             width: 80vw;
+
         }
 
+        #numeros {
+            display: flex;
+            align-items: baseline;
+            
+        
+        }
         #numeros p {
             text-align: left;
-            width: 20vw;
+            
         }
 
+        #numeros li {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
 
+        #boton-bordeblanco {
+            color: #540B51;
+            background-color: white;
+            border: none;
+        }
 
-
+        #boton-deabajo {
+            border-color: white;
+            background-color: #540B51;
+            color: white;
+            
+        }
 }   
 
