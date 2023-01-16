@@ -9,22 +9,11 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-@media (max-width: 768px){
-    
-    .first-links{
-        display: none;
-    }
-    .introduction h1{
-        max-width: 300px;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .description{
-        color: white;
-        margin-left: 70px;
-    }
-
+body{
+    margin: 0;
+    padding: 0;
 }
+
 
 .nav-bar {
 background-color: #540B51;
@@ -64,7 +53,7 @@ h1{
 }
 
 .description span{
-    color: rgb(241, 24, 9);
+    color: rgb(231, 225, 59);
 }
 
 .description{
@@ -127,8 +116,7 @@ border-radius: 5px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   
-   height: 30em;
+   height: 75%;
    padding-top: 5vh;
 }
 
@@ -142,46 +130,49 @@ border-radius: 5px;
 }
 
 .container-images{
-max-height: 25em;
-display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items:center;
-	align-content:space-around
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+.container-images > img{
+    margin: 45px 7px;
 }
 
 
 
-
-.companies-image{
+.airbnb-logo{
     width: 120px;
 }
 
 .target-logo{
-    width: 4em;
-    margin: 3vh 5vh;
+    width: 14vw;
+   
     
 }
 
 .uber-logo{
-    margin-left: 5vh;
+   
     max-width: 15vw;
 }
 
 .nasa-logo{
-    margin-left: 5vh;
-    max-width: 15vh;
+    
+    max-width: 10vh;
 }
 
 .new-york-times{
     width: 220px;
-    margin-right: 5vh;
+    
     
 }
 
 .spotify-logo{
-    max-width: 20vw;
+    max-width: 130px;
    
 }
 
@@ -235,6 +226,142 @@ main{
     font-size: 1.1em;
 }
 
+.data-information{
+     background-color: #FFFFFF;
+     padding-bottom: 5em;
+     padding-top: 10vh;
+
+}
+
+h3{
+    font-size: 1.7em ;
+    text-align: center;
+}
+
+.data-information p{
+    text-align:center;
+    
+}
+
+.data-information p span{
+    display: block;
+    text-align: center;
+}
+
+.communication-buttons{
+display: flex;
+flex-direction: column;
+margin: 0 1.5em;
+}
+
+.data-list{
+    list-style-type: none;
+}
+
+.data-list li p span{
+    font-size: 2.2em;
+    color: #540B51;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-weight: 600;
+}
+
+
+.information-paragraph{
+    width: 25vw;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.communication{
+    background-color: #540B51;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.communication > h3{
+    margin: 0 auto;
+    margin-top: 1.3em;
+    
+}
+
+.sales-buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 0;
+}
+
+#talk-to-sales{
+
+   min-height: 13vh;
+   margin: 0 2em 2em 2em;
+   background-color: #540B51;
+   color: #FFFFFF;
+   border: 2px solid #FFFFFF;
+   font-weight: 600;
+   font-size: 18px;
+   
+
+}
+
+#try-for-free{
+    min-height: 13vh;
+    margin: 0 2em 2em 2em;
+    background-color: #FFFFFF;
+    color: #540B51;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+footer {
+    background-color: #FFFFFF;
+    margin-top: 6vh;
+    margin-left: 0;
+}
+
+#footer-logo{
+    width: 10vw;
+    margin-left: 7vw;
+}
+
+.footer-lists{
+    display:flex;
+    
+    
+}
+
+.footer-lists ul li{
+    margin: 2vh 0;
+    list-style-type: none;
+}
+
+.footer-lists li:not(:has(b)){
+    color: #454245;
+}
+
+.footer-links li{
+    margin: 3vh 0;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.footer-links li span{
+    color:#2E71A6 ;
+}
+
+.social-medias{
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    padding: 1vh 0;
+    
+}
+
+.footer-lists ul{
+    padding-left: 3vw;
+}
 
 @media (max-width: 768px){
     
@@ -283,4 +410,49 @@ main{
         .move a{
             margin-left: 4vw;
         }
+
+        .communication-buttons{
+            display: flex;
+            flex-direction: column;
+            }
+            
+            #meet-button{
+                
+                height: 3em;
+                background-color: #540B51;
+                color: white;
+               border: 1px solid #000000;
+               border-radius: 7px;
+               font-size: 1.2em;
+               margin-bottom: 3vh;
+            }
+
+            #talk-button{
+                height: 4em;
+                border-radius: 7px;
+                border: 2px solid #540B51;
+                background-color: #FFFFFF ;
+                color:#540B51;
+                font-size: 1.2em;
+                height: 3em;
+            }
+
+            .data-information{
+                height: 100% ;
+            }
+            .communication{
+                min-height: 60vh ;
+            }
+
+            .communication > h3{
+                width: 50vw;
+                
+            }
+            
+        .sales-buttons{
+
+            flex-direction: column-reverse;
+
+        }
+
 }
