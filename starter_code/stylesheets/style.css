@@ -1,4 +1,4 @@
-/*
+/* /*
 background purple: #540B51
 background ivory: #F3EAE2
 button blue: #4285F4
@@ -8,3 +8,702 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    overflow-x: hidden;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+    width: 100%;
+}
+
+header {
+    background: #540B51;
+}
+nav{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.linksAndLogo{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.linksAndLogo ul{
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+}
+.btnNavBar{
+  background:#540B51 ;
+  border: none;
+  padding: 10px;
+}
+.HeaderInformation{
+    color: white;
+}
+
+/****** Responsive width < 768px ******/
+
+@media screen and (width < 768px) { 
+    .hidden{
+        display: none;
+    }
+    .linksAndLogo ul {
+        display: none;
+    }
+   
+    .HeaderInformation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .HeaderInformation h1{
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .HeaderInformation p {
+        margin-bottom: 20px;
+    }
+    .HeaderInformation p span{
+        color: orange;
+        
+    }
+    .btn-Header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .btn-Header button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: #540B51;
+        margin: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 2px;
+        height: 60px;
+    }
+
+    .btn-Header button:nth-child(2){
+        background:#4285F4 ;
+        color: white;
+    }
+    .btn-Header img{
+        height: 28px;
+        padding:4px;
+        margin-right: 10px;
+        background: white;
+    }
+
+     .heroProductUi{
+        width: 120%;
+        position:static;
+    }
+
+    
+    .section2, .section4{
+        display: flex;
+        flex-direction:  column;
+    }
+
+    .section3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        right: 0;
+    }
+    .flexibility{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .BringYourTeamTogether img , .flexibility img, .SpeedMobile img{
+        width: 500px;
+        height: 400px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        height: 300px;
+        margin: 30px;
+    }
+
+    .content h2{
+        width: 335px;
+        margin: 10px;
+    }
+
+    .content p{
+        width: 335px;
+        margin: 10px;
+
+    }
+    .TeamsLargeAndSmall{
+        text-align: center;
+        padding: 30px;
+     }
+     .TeamsLargeAndSmall h3{
+         margin-bottom: 20px;
+         font-size: 2em;
+      }
+     .TeamsLargeAndSmall p{
+         margin-bottom: 20px;
+         letter-spacing: 1px;
+      }
+
+    .list2 ul{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .list2 li{
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .list2 li:nth-child(7){
+        color: #2E71A6;
+    }
+    .reseauxSociaux{
+        display: flex;
+        justify-content: center;
+       
+        font-size: 1rem;
+    }
+    .reseauxSociaux li{
+        width: 25px;
+    }
+   
+ 
+
+}
+
+/****** width > 768px and width < 1024px ******/
+
+
+@media screen and (768px < width < 1024px) { 
+    .hidden{
+        display: none;
+    }
+    .linksAndLogo ul {
+        display: none;
+    }
+    
+    .HeaderInformation h1{
+        width: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 4rem;
+    }
+
+    .containerHeader{
+        display: flex;
+        align-items: center;
+    }
+    .heroProductUi{
+        width: 500px;
+    }
+
+    .section2, .section4{
+        display: flex;
+        flex-direction:  column;
+    }
+
+    .section3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        right: 0;
+    }
+    .flexibility{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .BringYourTeamTogether img , .flexibility img, .SpeedMobile img{
+        width: 500px;
+        height: 400px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        height: 300px;
+        margin: 30px;
+    }
+
+    .content h2{
+        width: 335px;
+        margin: 10px;
+    }
+
+    .content p{
+        width: 335px;
+        margin: 10px;
+
+    }
+
+    .HeaderInformation p span{
+        color: orange;
+        
+    }
+    .btn-Header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .btn-Header button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: #540B51;
+        margin: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 2px;
+        height: 50px;
+    }
+
+    .btn-Header button:nth-child(2){
+        background:#4285F4 ;
+        color: white;
+        position: relative;
+        height: 50px;
+    }
+
+    .btn-Header img{
+        padding: 5px;
+        height: 40px;
+        background: white;
+        left: 2px;
+        position: absolute;
+    }
+
+   
+
+  
+}
+
+/****** Responsive width > 1024px and width < 1440px ******/
+
+
+@media screen and (1024px < width < 1440px){
+    .btn-menu{
+        display: none;
+    }
+    
+    .HeaderInformation h1{
+        width: 450px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 4rem;
+    }
+
+    .linksAndLogo ul{
+        width: 600px;
+   
+    }
+
+    .containerHeader{
+        display: flex;
+        align-items: center;
+    }
+    .heroProductUi{
+        width: 550px;
+    }
+    .section2,  .section4{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+       
+    }
+    .section3{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        
+    }
+
+    .BringYourTeamTogether img , .flexibility img, .SpeedMobile img{
+        width: 500px;
+        height: 400px;
+    }
+  
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        height: 300px;
+        width: 400px;
+    }
+
+
+    .HeaderInformation p span{
+        color: orange;
+        
+    }
+    .btn-Header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btn-Header button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: #540B51;
+        margin: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 2px;
+        height: 50px;
+    }
+
+    .btn-Header button:nth-child(2){
+        background:#4285F4 ;
+        color: white;
+        position: relative;
+        height: 50px;
+    }
+
+    .btn-Header img{
+        padding: 5px;
+        height: 40px;
+        background: white;
+        left: 2px;
+        position: absolute;
+    }
+}
+
+
+/****** Responsive width >1440 ******/
+@media screen and (width > 1440px){
+   
+
+    .btn-menu{
+        display: none;
+    }    
+    .HeaderInformation h1{
+        width: 600px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 4rem;
+    }
+
+    .containerHeader{
+        display: flex;
+        align-items: center;
+    }
+    .heroProductUi{
+        width: 700px;
+    }
+
+    .HeaderInformation p span{
+        color: orange;
+        
+    }
+    .btn-Header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btn-Header button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: #540B51;
+        margin: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 2px;
+        height: 50px;
+    }
+
+    .btn-Header button:nth-child(2){
+        background:#4285F4 ;
+        color: white;
+        position: relative;
+        height: 50px;
+    }
+
+    .btn-Header img{
+        padding: 5px;
+        height: 40px;
+        background: white;
+        left: 2px;
+        position: absolute;
+    }
+
+    .section2,  .section4{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+       
+    }
+    .section3{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        
+    }
+
+    .BringYourTeamTogether img , .flexibility img, .SpeedMobile img{
+        width: 500px;
+        height: 450px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px;
+        height: 300px;
+        width: 450px;
+    }
+
+}
+
+
+
+/****** Responsive all width******/
+
+
+
+.HeaderInformation{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+
+.linksAndLogo ul li {
+    margin-right: 20px;
+    color: white;
+}
+.linksAndLogo ul li a{
+    margin-right: 20px;
+    color: white;
+}
+.linksAndLogo img{
+    height: 23px;
+    width: 90px;
+    margin-right: 40px;
+}
+
+main{
+    background-color:#F3EAE2 ;
+    display: flex;
+    flex-direction: column;
+}
+
+.TeamsLargeAndSmall{
+    background-color: white;
+}
+
+.btn-purple{
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: #540B51;
+    border: 1px solid white;
+    color: white;
+}
+.btn-white{
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid  #540b51;
+    color: #540B51;
+}
+
+.welcome{
+    background-color: #540B51;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.border{
+    border: 1px solid rgba(128, 128, 128, 0.498);
+    margin: 30px;
+}
+
+.compagnies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+   
+}
+.compagnies div{
+    text-align: center;
+ }
+
+.compagnies p{
+    margin: 20px;
+}
+
+.compagnies img{
+   height: 30px;
+   margin: 10px;
+}
+
+.pourcentages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.pourcentages li{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.pourcentages li p{
+    width: 200px;
+}
+
+.TeamsLargeAndSmall{
+    text-align: center;
+    padding: 30px;
+ }
+ .TeamsLargeAndSmall h3{
+     margin-bottom: 20px;
+     font-size: 2em;
+  }
+ .TeamsLargeAndSmall p{
+     margin-bottom: 20px;
+     letter-spacing: 1px;
+  }
+
+  .btnsMeetSlack{
+      display: flex;
+      flex-direction: column;
+      
+  }
+  .btnsMeetSlack button{
+   width: 100%;
+   height: 50px;
+ }
+
+
+ .TeamsLargeAndSmall span{
+     font-size: 2.5rem;
+     color: #540B51;
+     font-weight: bold;
+ }
+
+ .TeamsLargeAndSmall ul{
+     margin: 50px;
+ }
+
+ .welcome h3{
+     margin-bottom: 30px;
+     font-size: 2rem;
+ }
+
+ footer{
+     display: flex;
+     flex-direction: column;
+ }
+
+ .list1{
+     display: flex;
+     justify-content: space-around;
+     text-align: center;
+     
+ }
+ .list1 li{
+     width: 100px;
+     margin: 20px;
+ }
+ .list1 li:first-child{
+     margin: 20px;
+     font-weight: bold;
+ }
+
+ .list2 ul{
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+}
+
+.list2 li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+ footer img{
+     height: 50px;
+     width: 50px;
+     margin: 30px;
+ }
+
+
+ .reseauxSociaux{
+     display: flex;
+     justify-content: left;
+     margin: 30px;
+     font-size: 1.5rem;
+ }
+
+
+
+ .reseauxSociaux li{
+    margin-right: 100px;
+   
+}
+
+  small {
+    display: flex;
+     margin: 30px;
+     color: rgba(0, 0, 0, 0.626);
+ }
