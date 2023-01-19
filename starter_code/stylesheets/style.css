@@ -57,6 +57,7 @@ nav button {
 
 nav button img {
   width: 20px;
+  height: 20px;
 }
 
 header {
@@ -159,6 +160,11 @@ main {
   background-color: #F3EAE2;
 }
 
+.text-img {
+  display: flex;
+  flex-direction: column;
+}
+
 .text-img img {
   max-width: 95%;
 }
@@ -168,7 +174,6 @@ main {
 }
 
 .text-img.reverse {
-  display: flex;
   flex-direction: column-reverse;
 }
 
@@ -324,7 +329,7 @@ small {
   font-size: 0.8em;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   header {
     flex-direction: row;
   }
@@ -376,6 +381,61 @@ small {
 
   #social-icons {
     width: 40%;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .responsive-menu li a,
+  #sign-in a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  nav div,
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+
+  nav img {
+    height: 25px;
+  }
+
+  #burger-icon {
+    display: none;
+  }
+
+  #try-for-free {
+    margin-left: 30px;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 4px;
+    padding: 1em;
+  }
+
+  #try-for-free a {
+    text-decoration: none;
+    color: #540B51;
+    font-weight: bold;
+  }
+
+  .text-img,
+  .text-img.reverse {
+    flex-direction: row;
+  }
+
+  .text-img-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #digital-hq button {
+    margin: 0 16px;
   }
 
 }
