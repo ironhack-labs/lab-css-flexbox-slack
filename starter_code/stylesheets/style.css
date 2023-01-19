@@ -87,6 +87,8 @@ header p span {
 }
 
 #header-btns {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
   width: 100%;
 }
@@ -438,4 +440,15 @@ small {
     margin: 0 16px;
   }
 
+}
+
+@media screen and (min-width: 1440px) {
+  #header-btns {
+    flex-direction: row;
+  }
+
+  #header-img-container img {
+    max-width: 100%;
+    right: 0%;
+  }
 }
