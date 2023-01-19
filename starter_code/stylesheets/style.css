@@ -59,6 +59,11 @@ nav button img {
   width: 20px;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+}
+
 header div {
   display: flex;
   flex-direction: column;
@@ -92,9 +97,9 @@ header button,
   width: 100%;
   height: 60px;
   border-radius: 4px;
-  margin-bottom: 16px;
   text-transform: uppercase;
   font-weight: bold;
+  margin: 0 auto 16px;
 }
 
 #email-btn {
@@ -123,6 +128,8 @@ header button,
 
 #header-img-container img {
   max-width: 200%;
+  position: relative;
+  right: -50%;
 }
 
 #partners {
@@ -192,6 +199,11 @@ main {
   padding: 50px 20px;
 }
 
+#sales div {
+  display: flex;
+  flex-direction: column;
+}
+
 #sales h3 {
   font-weight: 800;
   font-size: 2em;
@@ -215,13 +227,16 @@ main {
 }
 
 #sales ul {
-  max-width: 50%;
   margin: 50px auto 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .percentage {
   text-align: center;
+  max-width: 50%;
 }
 
 .percentage p span {
@@ -284,6 +299,8 @@ footer img {
 #footer-footer {
   font-weight: 800;
   font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
 }
 
 #footer-footer li {
@@ -305,4 +322,60 @@ hr {
 small {
   color: #454245;
   font-size: 0.8em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    flex-direction: row;
+  }
+
+  #header-img-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #header-img-container img {
+    max-width: 150%;
+    right: -33%;
+  }
+
+  #header-txt {
+    padding: 50px 20px;
+  }
+
+  #header-txt h1 {
+    font-size: 4em;
+    text-align: left;
+  }
+
+  #sales div {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  #sales ul {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  #sales .percentage {
+    max-width: 25%;
+  }
+
+  .stats-descr {
+    text-align: left;
+  }
+
+  #footer-footer {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #social-icons {
+    width: 40%;
+  }
+
 }
