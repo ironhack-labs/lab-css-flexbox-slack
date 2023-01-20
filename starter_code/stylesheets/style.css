@@ -32,6 +32,9 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
 
 /***----------NAV----------***/
 
@@ -91,6 +94,7 @@ header .top-container {
     align-items: center;
     justify-content: center;
     gap: .5em;
+    width: 100%;
 }
 
 header .btn {
@@ -161,6 +165,7 @@ main section {
 
 .main-trusted-container {
     gap: .7em;
+    margin: auto 14px;
 }
 
 .main-trusted-container p{
@@ -203,10 +208,203 @@ main section div a::after {
 }
 
 .text-section p{
-    font-size: .8em; /*me quede aqui mne falta comprbar tamaño*/
+    font-size: .8em;
 }
-.text-section h3 {
-    font-size: .8em; /*me quede aqui mne falta comprbar tamaño*/
+.text-section h2 {
+    font-size: 1.2em;
+}
+
+.text-section a {
+    font-size: .8em; 
+}
+
+/*Team seccion*/
+
+#team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    margin: 2em 0 0 0;
+    padding: 0 1em;
+}
+
+#team h3{
+    line-height: 30px;
+    font-size: 1.3em;
+}
+
+#team p{
+    font-size: .8em;
+}
+
+#team .btn {
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    font-size: .7em;
+    text-transform: uppercase;
+    font-weight: 800;
+    z-index: 9;
+}
+
+
+#team  .btn-meet-slack {
+    background-color: var(--bg-purple);
+    color: white;
+}
+
+#team  .btn-talkToo {
+    background-color: white;
+    color: var(--bg-purple);
+    border: 1px solid var(--bg-purple);
+
+}
+
+#team ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    width: 60%;
+    gap: .7em;
+}
+
+#team ul p{
+    color: var(--p-black);
+    font-weight: 800;
+    font-size: .7em;
+}
+
+#team ul p span{
+    color: var(--bg-purple);
+    font-size: 2.3em;
+}
+
+#bottom-main-container {
+    background-color: var(--bg-purple);
+    margin: 0;
+    padding: 1.7em 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+#bottom-main-container h3{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 800; 
+}
+
+#bottom-main-container .btn {
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    font-size: .7em;
+    text-transform: uppercase;
+    font-weight: 800;
+    z-index: 9;
+}
+
+#bottom-main-container .btn-try-free {
+    background-color: var(--bg-purple) ;
+    border:1px solid var(--bg-ivory);
+    color: white;
+}
+
+#bottom-main-container .btn-talk-sales {
+    color: var(--bg-purple);
+    background-color: white;
 }
 
 /***----------Footer----------***/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    padding: 0 .4em;
+}
+footer img {
+    width: 50px;
+    margin: 20px;
+    
+}
+
+footer .info-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+footer .info-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    width: 20%;
+    padding: 1em 0.4em;
+}
+
+
+footer .info-container ul li{
+    font-size: .6em;
+    color: var(--footer-links-grey);
+}
+
+footer .info-container ul li:first-child{
+    font-size: .7em;
+    font-weight: 800;
+}
+
+.others-footer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+    font-size: .7em;
+    font-weight: 600;
+    padding-left: 12px;
+}
+
+.iconWorldBefore::before {
+    content: url("../images/icon-region.png");
+    padding: 0 6px 0 0;
+}
+
+
+.iconDowloadBefore::before {
+    content: url("../images/icon-download.png");
+    padding: 0 6px 0 0;
+}
+
+.social-media-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.copyright-container {
+    margin-top: 1em;
+    font-size: .7em;
+    color: var(--footer-links-grey);
+}
