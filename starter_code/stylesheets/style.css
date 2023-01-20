@@ -1,17 +1,145 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
 
 :root {
     --bg-purple: #540B51;
     --bg-ivory: #F3EAE2;
     --btn-blue: #4285F4;
     --title-black: #191817;
+    --p-black: #000000;
+    --p-yellow: #ECB12F;
+    --links-blue:#2E71A6 ;
+    --footer-links-grey: #454245;
 }
+
+/***----////////////------MOBILE FIRST-----/////////-----***/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.bg-purple {
+    background-color: var(--bg-purple);
+}
+
+
+/***----------NAV----------***/
+
+.nav-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6em 2em;
+    background-color: var(--bg-purple);
+}
+
+.nav-bar-list {
+    display: none;
+    list-style: none;
+
+}
+
+.nav-bar-list a {
+    text-decoration: none;
+    color: var();
+
+}
+
+nav .logo-container img{
+    width: 100%;
+    height: 20px;
+}
+
+.mobile-menu button {
+    background-color: transparent;
+    border: none;
+    padding: 0 8px;
+}
+
+.mobile-menu button img {
+    width: 100%;
+    height: 20px;
+}
+
+/***----------Header----------***/
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header .top-container {
+    background-color: var(--bg-purple);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+
+header .btn {
+    border: none;
+    width: 90%;
+    border-radius: 5px;
+    height: 40px;
+    font-size: .7em;
+    text-transform: uppercase;
+    font-weight: 800;
+    z-index: 9;
+}
+
+header .btn-signUp {
+    background-color: var(--bg-ivory);
+    color: var(--bg-purple);
+}
+
+header .btn-google {
+    background-color: var(--btn-blue);
+    color: var(--bg-ivory);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header .btn-google img{
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 30px;
+    padding: .3em;
+    border-radius: 3px;
+}
+
+header .img-bg-container {
+    width: 100%;
+    background-color: var(--bg-purple);
+    height: 300px;
+}
+
+header .img-bg-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: 0px 20px;
+}
+
+
+/***----------Main----------***/
+
+
+
+
+
+/***----------Footer----------***/
