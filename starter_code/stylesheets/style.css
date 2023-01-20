@@ -1,10 +1,298 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap");
+
+:root {
+  --background-purple: #540b51;
+  --background-ivory: #f3eae2;
+  --background-ivory-shade: #ffebb5;
+  --button-blue: #4285f4;
+  --titles-black: #191817;
+  --paragraph-black: #000000;
+  --paragraph-yellow: #ecb12f;
+  --links-blue: #2e71a6;
+  --footer-links-grey: #454245;
+}
+
+/* RESETS */
+
+body {
+  background-color: var(--background-ivory);
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+small {
+  font-size: .5rem;
+}
+
+/* GLOBALS */
+
+.container {
+  padding: 0 .75rem;
+}
+
+/* NAVIGATION */
+
+.navigation {
+  background-color: var(--background-purple);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.navigation-logo {
+  width: 5rem;
+}
+
+.navigation-left {
+  display: flex;
+}
+
+.navigation-right {
+  display: flex;
+}
+
+.navigation-button {
+  background-color: transparent;
+}
+
+.navigation-items-dsk {
+  display: none;
+}
+
+/* HERO SECTION */
+
+.hero {
+  color: white;
+  text-align: center;
+  background-color: var(--background-purple);
+}
+
+.hero-heading {
+  margin-top: 0;
+}
+
+.hero-link {
+  color: var(--paragraph-yellow);
+}
+
+/* LOGOS SECTION */
+
+.logos {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.logos-wrapper {
+  justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.logos-item {
+  height: 1.75rem;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+/* GUIDE SECTION */
+
+.guide-block {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.guide-block-heading {
+  color: var(--titles-black);
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+
+.guide-block-paragraph {
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.guide-block-link {
+  color: var(--button-blue);
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.guide-block-link-title {
+  margin-right: 0.5rem;
+}
+
+.guide-block-link-icon {
+  height: 0.75rem;
+  width: auto;
+}
+
+/* DATA SECTION  */
+
+.data {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: white;
+}
+
+.data-heading {
+  font-size: 1.5rem;
+  color: var(--titles-black);
+}
+
+.data-cta {
+  margin-bottom: 2.5rem;
+}
+
+.data-list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.data-item {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.data-item-number {
+  color: var(--background-purple);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.data-item-paragraph {
+  font-size: 0.75rem;
+}
+
+/* WELLCOME SECTION */
+
+.wellcome {
+  background-color: var(--background-purple);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.wellcome-heading {
+  color: white;
+  font-size: 2rem;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-logo {
+  width: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-navigation-list {
+  width: 20%;
+}
+
+.footer-navigation-item {
+  font-size: 0.65rem;
+  margin-bottom: 1.25rem; 
+}
+
+.footer-tools {
+  font-size: 0.65rem;
+  font-weight: 500;
+}
+
+.footer-tools-item {
+  margin: 1.75rem 0;
+}
+
+.footer-tools-icon-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-tools-icon {
+  width: 1rem;
+  margin-right: .5rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+
+/* BUTTONS */
+
+.cta {
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.cta-google {
+  background-color: var(--button-blue);
+  color: white;
+  position: relative;
+}
+
+.cta-google-img {
+  background-color: white;
+  left: 0.25rem;
+  padding: 0.25rem;
+  position: absolute;
+  top: 0.25rem;
+  width: 1.25rem;
+}
+
+.cta-primary {
+  background-color: var(--background-purple);
+  border: solid 1px white;
+  color: white;
+}
+
+.cta-ghost {
+  background-color: transparent;
+  border: solid 1px var(--background-purple);
+}
