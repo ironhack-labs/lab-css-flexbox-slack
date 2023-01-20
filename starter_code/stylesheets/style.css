@@ -21,10 +21,15 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: var(--bg-ivory);
 }
 
 .bg-purple {
     background-color: var(--bg-purple);
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -73,6 +78,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color: var(--bg-ivory);
 }
 
 header .top-container {
@@ -137,9 +143,70 @@ header .img-bg-container img {
 
 
 /***----------Main----------***/
+/*First Section*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+}
 
+.main-trusted-container {
+    gap: .7em;
+}
 
+.main-trusted-container p{
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: 700;
+    color: var(--p-black);
+}
 
+.main-trusted-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.main-trusted-container div img{
+    object-fit: contain;
+    width: auto;
+    height: 28px;
+}
+
+/*Second Section*/
+
+main section div img {
+    width: 100%;
+}
+
+main section div a {
+    color: var(--links-blue);
+}
+
+main section div a::after {
+    content: "→";
+}
+
+.text-section {
+    padding: 1em;
+}
+
+.text-section p{
+    font-size: .8em; /*me quede aqui mne falta comprbar tamaño*/
+}
+.text-section h3 {
+    font-size: .8em; /*me quede aqui mne falta comprbar tamaño*/
+}
 
 /***----------Footer----------***/
