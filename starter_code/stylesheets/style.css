@@ -378,7 +378,7 @@ sup {
   height: 50px;
   width: 100%;
   border: 1px solid #fff;
-  border-radius: 3px;
+
   font-size: 1rem;
   background-color:#540B51;
   font-weight: 400;
@@ -389,7 +389,7 @@ sup {
   height: 50px;
   width: 100%;
   border: none;
-  border-radius: 3px;
+
   font-size: 1rem;
   background-color:#fff;
   font-weight: 400;
@@ -500,6 +500,12 @@ footer hr {
     color: rgb(12, 12, 12);
     font-family: Noto sans Display;;
   }
+  .nav-underline {
+    display: none;
+  }
+  .great-teamwork {
+    display: none;
+  }
 
 }
 
@@ -521,6 +527,9 @@ footer hr {
   }
   nav li a {
     color: rgb(12, 12, 12);
+  }
+  .nav-underline {
+    display: none;
   }
 
   /* header */
@@ -547,6 +556,9 @@ footer hr {
     font-size: 5.3rem;
     text-align: left;
     line-height: 6rem;
+  }
+  .great-teamwork {
+    display: none;
   }
   header p {
     margin-bottom: 10px;
@@ -723,6 +735,9 @@ nav li a {
   font-size: .8rem;
   font-weight: 500;
 }
+.nav-underline {
+  display: none;
+}
 /* header */
 header .container {
   width: 100%;
@@ -743,6 +758,9 @@ header h1 {
   font-size: 5rem;
   text-align: left;
   line-height: 5.5rem;
+}
+.great-teamwork {
+  display: none;
 }
 header p {
   width: 80%;
@@ -883,7 +901,6 @@ article .text p {
 .third li {
   font-size: .8rem;
 }
-
 .fourth ul {
   justify-content: flex-start;
   gap: 4rem;
@@ -894,6 +911,229 @@ article .text p {
 }
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*Large Screens*/
-@media only screen and (min-width : 1440px){
+@media only screen and (min-width : 1440px) {
+nav ul {
+  display: none;
+}
+nav {
+  flex-direction: row;
+}
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#slack-logo img{
+  margin-right: 40px;
+}
+nav ul {
+  display: flex;
+  gap: 3rem;
+}
+nav li a {
+  font-size: 1rem;
+}
+#burger-menu button {
+  display: none;
+}
+.nav-right ul {
+  align-items: center;
+}
+.free {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 5px 15px;
+}
+.free a {
+  color: #540B51;
+  font-size: .8rem;
+  font-weight: 500;
+}
+.nav-underline {
+  width: 40%;
+  border: .5px solid rgb(255, 255, 255, .55);
+  margin-left: 60%;
+}
+/* header */
+header .container {
+  width: 100%;
+  margin-left: 30px;
+  height: auto;
+}
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+header h1:first-child {
+  display: none;
+}
+.great-teamwork {
+  margin-top: 30px;
+  padding-bottom: 130px; 
+  font-size: 5rem;
+  text-align: left;
+  line-height: 5.5rem;
+}
+header p {
+  width: 70%;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.with {
+  width: 100%;
+  position:relative;
+  margin-bottom: 150px;
+}
+.sign-up {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.hero {
+  width: 100%;
+}
+.hero picture {
+  height: 300px;
+  display: block;
+}
+.hero img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: 40px 0px;
+}
+  
+/* function */
+article img:first-child {
+  display:none;
+}
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+article picture {
+  margin-top: 0;
+}
+article img:nth-child(2) {
+  width: 80%;
+  display: flex;
+  justify-content: left;
+}
+.flexibility img {
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+}
+.flexibility-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+article .text {
+  width: 80%;
+  margin-right: 50px;
+}
+.second-text {
+  padding-left: 50px;
+}
+article .text h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  width: 70%;
+}
+article .text p {
+  line-height: 1.8rem;
+  width: 80%;
+}
+  
+/* term */
+#term .main-text {
+  font-size: .9rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#term p {
+  text-align: left;
+  margin-bottom:0;
+}
+#term .sign-up {
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 1rem;
+  width: 40%;
+}
+#term .sign-up .meet {
+  width: 60%;
+}
+#term .sign-up .talk {
+  width: 40%;
+}
+#term .percentage {
+  margin:0;
+  padding: 0;
+}
+#term ul {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#term li {
+  width: 25%;
+}
+.percentage p:nth-child(2) {
+  margin-top: 10px;
+  align-content: left;
+  width: 70%;
+}
 
+/* HQ */
+#hq h3 {
+  margin-top: 50px;
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+#hq .sign-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+#hq .sale{
+  width: 15%;
+}
+#hq .try{
+  width: 15%;
+}
+/* footer */
+.third ul {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.9rem;
+}
+.third li {
+  font-size: .8rem;
+}
+
+.fourth ul {
+  justify-content: flex-start;
+  gap: 4rem;
+}
+.last small {
+  font-size: .7rem;
+}
 }
