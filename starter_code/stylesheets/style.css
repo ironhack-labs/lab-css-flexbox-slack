@@ -46,6 +46,10 @@ img {
 
 /***----------NAV----------***/
 
+.login-container {
+  display: none;
+}
+
 .nav-bar-container {
   display: flex;
   justify-content: space-between;
@@ -61,7 +65,6 @@ img {
 
 .nav-bar-list a {
   text-decoration: none;
-  color: var();
 }
 
 nav .logo-container img {
@@ -436,7 +439,7 @@ footer .second-section-footer hr{
 /***----////////////------Small Screens ( 768px < 1024px)-----/////////-----***/
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   html {
     font-size: 20px;
   }
@@ -613,5 +616,180 @@ footer .second-section-footer hr{
 }
 
 
-/***----////////////------Small Screens ( 768px < 1024px)-----/////////-----***/
+/***----////////////------Medium Screens ( 1024px < 1440px)-----/////////-----***/
 
+/*
+  The navbar should now display all the menu links. The previously displayed menu icon should now be hidden.
+  The sections in the main part should now display the content in 2 columns: one column for the heading and text, and the other for the image.
+  The section "Welcome to your new digital HQ" should now have the buttons displayed horizontally as rows.
+*/
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 28px;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .nav-bar-container {
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    gap: 4em;
+  }
+
+  .logo-container {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav .logo-container .logo-img {
+    width: auto;
+    height: 20px;
+  }
+
+  .logo-container a {
+    color: #fff;
+  }
+
+  .nav-bar-list {
+    display: flex;
+    gap: 1rem;
+    font-size: .7rem;
+    font-weight: 600;
+  }
+
+
+  .login-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .login-container a{
+    color: white;
+    font-size: .6rem;
+    font-weight: 700;
+    padding: 0 1rem;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+  }
+
+  .btn-try a {
+    color: var(--bg-purple);
+    background-color: white;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+  }
+
+  .section2 {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .section2 #imgOfSection2 {
+    height: 300px;
+  }
+
+  .section2 div {
+    width: 50%;
+  }
+
+  .section2 .text-section {
+    width: 50%;
+    padding: 0 4rem;
+  }
+
+  .section3 {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .section3 #imgOfSection3 {
+    height: 300px;
+  }
+
+  .section3 div {
+    width: 50%;
+  }
+
+  .section3 .text-section {
+    width: 50%;
+    padding: 0 4rem;
+  }
+
+  .section4 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .section4 #imgOfSection4 {
+    height: 260px;
+  }
+
+  .section4 div {
+    width: 50%;
+  }
+
+  .section4 .text-section {
+    width: 50%;
+    padding: 0 4rem;
+  }
+
+  .text-section p {
+    font-size: .6rem;
+  }
+
+  .text-section a {
+    font-size: .6rem;
+  }
+
+  #team {
+    padding-top: 2rem;
+  }
+
+  #team h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  #team p {
+    font-size: .6rem;
+    margin-bottom: 20px;
+  }
+
+  .btn-container {
+    
+  }
+}
+
+
+
+/***----////////////------Medium Screens ( 1024px < 1440px)-----/////////-----***/
+
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 24px;
+  }
+
+ 
+}
