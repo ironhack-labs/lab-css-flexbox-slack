@@ -1,10 +1,452 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+hr{
+    display: none;
+}
+nav{
+    display: flex;
+    background-color: #540B51;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.menu{
+    display: none;
+}
+.nav-logo{
+    width: 120px;
+}
+nav button{
+    background-color: #540B51;
+    border: none;
+    margin: 0px 10px;
+}
+.infos-header{
+    background-color:#540B51;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.infos-header > *{
+    margin: 10px auto;
+}
+.infos-header h1{
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+.textYellow{
+    color: #ECB12F;
+}
+.botoes-cadastrar{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.botoes-cadastrar button{
+    margin: 15px auto;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.buttonEmail{
+    background-color: white;
+    color: #540B51;
+    padding: 15px ;
+    
+}
+.buttonGmail{
+    background-color: #4285F4;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.buttonGmail span{
+    width: 80%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+
+}
+.buttonGmail img{
+    background-color: white;
+    width: 50px;
+    margin: 10px 0px 10px 10px;
+    
+}
+.anuncioProduct{
+    width: 100%;
+}
+.anuncioProduct img{
+    width: 100%;
+}
+.parceiros{
+    background: #F3EAE2;
+    display: flex;
+    flex-direction: column;
+}
+.logosParceiros{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.imgInfos{
+    background-color: #F3EAE2;
+}
+.logosParceiros img{
+    width: 160px;
+}
+.parceiros p{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px auto;
+}
+.infos-1, .infos-2, .infos-3{
+    display: flex;
+    flex-direction: column;
+    background-color: #F3EAE2;
+    
+}
+.infos-1 img, .infos-2 img, .infos-3 img{
+   background-color: #F3EAE2;
+   width: 100%;
+    
+}
+.textInfo{
+    padding: 20px;
+}
+.textInfo>*{
+    margin: 10px auto;
+}
+.textInfo h2{
+    font-size: 25px;
+}
+.textInfo a{
+    text-decoration: none;
+    color: #2E71A6;
+}
+.infos-2{
+    flex-direction: column-reverse;
+}
+.infos-2 .imgInfos{
+    display: flex;
+    justify-content: flex-end;
+}
+.prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.prices h3{
+    font-size: 25px;
+    margin: 20px;
+}
+.prices p{
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+}
+.listPrices{
+    list-style: none;
+    font-weight: bold;
+}
+.listPrices li{
+    margin: 15px auto ;
+}
+.listPrices span{
+    color: #540B51;
+    font-size: 30px;
+}
+.buttonPrices{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.buttonPrices button{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+    margin: 10px auto ;
+    width: 100%;
+}
+.buttonEnterprise{
+
+    background-color:#540B51;
+    color: white;
+    
+}
+.sales{
+    background-color: white;
+    color: #540B51;
+    border: 1px solid #540B51;
+    
+
+}
+.welcome{
+    background-color: #540B51;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.welcome h3{
+    font-size: 25px;
+}
+.welcome button{
+    margin: 10px auto ;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.button-welcome1{
+    
+    background-color: white;
+    color: #540B51;
+    border: none;
+}
+.button-welcome2{
+    background-color: #540B51;
+    color: white;
+    border: 1px solid white;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+footer img{
+    width: 50px;
+    margin: 10px ;
+}
+.infosFooter{
+    display: flex;
+}
+.infosFooter ul{
+    list-style: none;
+    width: 25%;
+    margin: 10px;
+}
+.infosFooter li{
+   margin: 15px 0px;
+   color: #454245; 
+}
+.title{
+    font-weight: bold;
+    color: black;
+}
+.status{
+    list-style: none;
+    font-weight: bold;
+}
+.status li{
+    margin: 15px 0;
+}
+.download{
+    color: #2E71A6;
+}
+.redes-sociais{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.redes-sociais li{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.finish{
+    margin: 30px auto;
+    color: #454245;
+    width: 80%;
+}
+@media (min-width: 768px ) {
+    header{
+        display: flex;
+        background-color: #540B51;
+        align-items: center;
+        justify-content: center;
+    }
+    .alignLeft {
+        text-align: left;
+        width: 100%;
+        padding: 20px;
+    }
+    .logosParceiros{
+        flex-wrap: nowrap;
+    }
+    .logosParceiros img{
+        width: 120px;
+    }
+    .infos-header h1, .textYellow{
+        text-align: left;
+    }
+    .textInfo{
+        padding: 10px 25%;
+        margin: 20px auto;
+    }
+    .textInfo h2{
+        font-size: 36px;
+    }
+    .textInfo p, .textInfo a{
+        font-size: 20px;
+    }
+    .buttonPrices{
+        flex-direction: row;
+        
+    }
+    .buttonPrices button{
+        margin: 10px;
+    }
+    .buttonEnterprise{
+        max-width: 300px;
+        
+    }
+    .sales{
+        max-width: 200px;
+    }
+    .listPrices{
+     flex-direction: row;
+     display: flex;
+    }
+    .prices p{
+        width: 70%;
+    }
+    .prices span{
+        font-size: 50px;
+    }
+    .welcome h3{
+        font-size: 40px;
+        margin: 15px;
+    }
+    .status{
+        display: flex;
+        justify-content: space-between;
+    }
+    .redes-sociais{
+        justify-content: flex-start;
+    }
+    .redes-sociais li{
+        width: 100px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .finish{
+        display: flex;
+        margin: 40px 0px 20px;
+        padding: 0;
+    }
+    .infos-1 img, .infos-2 img, .infos-3 img {
+        background-color: #F3EAE2;
+        width: 65%;
+        height: auto
+    }
+}
+@media (min-width: 1024px ) {
+    .menu{display: flex;}
+.infos-1, .infos-2, .infos-3{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.imgInfos, .textInfo{
+    width: 50%;
+    
+}
+.textInfo{
+    padding: 30px 20px 20px 60px;
+}
+.welcome h3{
+    text-align: center;
+    width: 100%;
+}
+.welcome button{
+    width: auto;
+    margin: auto 15px;
+}
+.welcome{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-logo{
+    display: flex;
+
+}
+.divLogo{
+    width: 75%;
+    display: flex;
+}
+.menu{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.menu li{
+    margin: auto 10px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.icon-menu{
+    display: none;
+}
+.buttons-header{
+    display: flex;
+    padding: 10px;
+    list-style: none;
+}
+.divNav{
+    display: flex;
+}
+.signIn{
+    color:white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.forFree{
+    background: white;
+    color: #540B51;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.textInfo h2{
+    font-size: 60px;
+}
+.infos-1 img, .infos-2 img, .infos-3 img {
+    background-color: #F3EAE2;
+    width: auto;
+    height: 500px;
+}
+}
