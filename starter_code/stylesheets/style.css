@@ -113,6 +113,10 @@ header h1 {
     margin-top: 0;
 }
 
+#sign-in{
+    visibility: hidden;
+}
+
 /*Everything we write here will only be applued to screens with more than a 1000px in width*/
 header {
     background-color: purple;
@@ -296,8 +300,33 @@ footer div{
 
 @media (min-width: 1440px) {
 
+    nav {
+        display: flex;
+        background-color: #540B51;
+        height: 70px;
+        margin-bottom: 0;
+    }
+
+    #sign-in{
+        visibility: visible;
+    }
+
+    #sign-in li{
+        text-decoration: none;
+        list-style: none;
+    }
+
+    #sign-in a{
+        color: white;
+    }
+
+    .search-list{
+        order: 2;
+    }
+
     .header-list {
         display: flex;
+        order: 1;
         gap: 30px;
         visibility: visible;
         margin: 0;
@@ -307,12 +336,6 @@ footer div{
     .header-list a{
         color: white;
     }
-
-
-
-
-
-
 
     .logoPics img{
         height: 45px;
