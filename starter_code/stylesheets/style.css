@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
+    border:1px solid red;
 }
 :root{
     --bg-purple: #540B51;
@@ -21,10 +22,21 @@
 .h-100{
     height:100%;
 }
+.w-100{
+    width:100%;
+}
+.w-70{
+    width:500px;
+    height:360px;
+    border-radius: 20px 20px 0 0;
+}
+.w-50{
+    width:50%;
+}
 .container{
     width:90%;
     position: relative;
-    max-width:1200px;
+    max-width:1400px;
 }
 /* Styles for Navbar */
 .navbar-nav{
@@ -39,6 +51,14 @@
     font-size:var(--fs-4);
     color:var(--white);
 }
+.navbar-hamburger-btn{
+    list-style: none;
+}
+.navbar-hamburger-btn a {
+    color:var(--white);
+    text-decoration:none;
+}
+
 
 /* Styles using Flexbox */
 .display-flex{
@@ -64,14 +84,19 @@
     padding:1.2rem;
 }
 
-/* Styles for Text Colors */
+/* Styles for Text */
 .text-white{
     color:var(--white);
 }
 .text-yellow{
     color:var(--yellow);
 }
-
+.text-transparent{
+    color:black !important;
+}
+.text-center{
+    text-align:center;
+}
 /* Styles for Header */
 header{
     background-color:var(--bg-purple);
@@ -84,7 +109,7 @@ header{
 header  h1{
     font-size:var(--fs-1);
 }
-.header-background{
+.header-image{
     width:380px;
     height:250px;
     position:absolute;
@@ -96,9 +121,26 @@ header  h1{
 .btn-medium{
     padding:1.0rem 3rem;
 }
+.btn-small{
+    padding:0.6rem 1.5rem;
+}
 .btn-icon{
-    width:15%;
-    height:100%;
+    width:30px;
+    height:30px;
+    justify-self:flex-start;
+}
+/* Styles for Background */
+.bg-white{
+    background-color:var(--white);
+}
+.bg-blue{
+    background-color:var(--light-blue);
+}
+.bg-ivory{
+    background-color: var(--bg-ivory);
+}
+.bg-purple{
+    background-color: var(--bg-purple);
 }
 
 /* Styles for Navbar */
@@ -111,11 +153,14 @@ nav{
     height:auto;
 }
 
+#logo > img{
+    width:100px;
+    height:40px;
+}
 
 .gap-large{
     gap:2.1rem;
 }
-
 
 /*Media Query for Mobile Devices*/
 @media (max-width: 767px){
