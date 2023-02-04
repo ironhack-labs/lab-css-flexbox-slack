@@ -1,3 +1,8 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
 :root{
     --bg-purple: #540B51;
     --bg-ivory:#F3EAE2;
@@ -13,12 +18,29 @@
     --fs-3:1.5rem;
     --fs-1:2.5rem;
 }
-*{
-    border:1px solid red;
-}
 .h-100{
     height:100%;
 }
+.container{
+    width:90%;
+    position: relative;
+    max-width:1200px;
+}
+/* Styles for Navbar */
+.navbar-nav{
+    display:flex;
+    gap:1rem;
+}
+.navbar-nav li{
+    list-style: none;
+}
+.navbar-nav a {
+    text-decoration: none;
+    font-size:var(--fs-4);
+    color:var(--white);
+}
+
+/* Styles using Flexbox */
 .display-flex{
     display:flex;
 }
@@ -31,10 +53,12 @@
 .justify-content-center{
     justify-content: center;
 }
-.navbar-image{
-    width:150px;
-    height:auto;
+.justify-content-between{
+    justify-content: space-between;
 }
+
+
+
 /*Styles for Paddings  */
 .padding-small{
     padding:1.2rem;
@@ -51,7 +75,7 @@
 /* Styles for Header */
 header{
     background-color:var(--bg-purple);
-    position:absolute;
+    position:relative;
     left:0;
     top:0;
     width:100vw;
@@ -61,14 +85,14 @@ header  h1{
     font-size:var(--fs-1);
 }
 .header-background{
-    width:250px;
+    width:380px;
     height:250px;
     position:absolute;
-    bottom:0;
-    right:0;
+    right:0px;
     top:30%;
 }
 
+/* Styles for Buttons */
 .btn-medium{
     padding:1.0rem 3rem;
 }
@@ -77,32 +101,57 @@ header  h1{
     height:100%;
 }
 
+/* Styles for Navbar */
+nav{
+    background-color: var(--bg-purple);
+    width:100vw;
+}
+.navbar-image{
+    width:150px;
+    height:auto;
+}
 
 
-
-
-
-
-
-
-
+.gap-large{
+    gap:2.1rem;
+}
 
 
 /*Media Query for Mobile Devices*/
 @media (max-width: 767px){
-
+   .navbar-hamburger-icons{
+    visibility: visible;
+    }
+    .navbar-hamburger-btn{
+        visibility: hidden;
+    }
 }
 /*Media Query for Small Screens*/
-@media (min-width: 768px) and (max-width:959px){
-
+@media (min-width: 767px) and (max-width:959px){
+    .navbar-hamburger-icons{
+        visibility: visible;
+        }
+        .navbar-hamburger-btn{
+            visibility: hidden;
+        }
 }
 
 /*Media Query for Medium Screens*/
-@media (min-width: 960px) and (max-width:1999px){
-
+@media (min-width: 959px) and (max-width:2000px){
+    .navbar-hamburger-icons{
+        visibility: hidden;
+        }
+        .navbar-hamburger-btn{
+            visibility: visible;
+        }
 }
 
 /*Media Query for Large screens*/
 @media (min-width:1200px){
-
+    .navbar-hamburger-icons{
+        visibility: hidden;
+        }
+        .navbar-hamburger-btn{
+            visibility: visible;
+        }
 }
