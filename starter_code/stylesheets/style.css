@@ -8,3 +8,177 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+
+  justify-content: space-between;
+
+  background-color: #540b51;
+  width: 100%;
+  padding: 40px;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  width: 55%;
+}
+
+.nav__menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  width: 80%;
+}
+.nav__menu a,
+.nav__button--white {
+  color: white;
+}
+.nav__menu img {
+  height: 35px;
+}
+
+.nav__buttons {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+.nav__buttons button {
+  background: none;
+  border: none;
+}
+.nav__buttons ul {
+  display: flex;
+  align-items: center;
+}
+.nav__buttons li {
+  padding-right: 30px;
+}
+.nav__button--hidden {
+  display: none;
+}
+
+.nav__button--li {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+.nav__button--li > a {
+  color: #540b51;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #540b51;
+  color: white;
+  margin: 0;
+}
+
+.header__signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.header__signup h1 {
+  font-size: 2rem;
+  width: 60%;
+}
+
+.header__signup p {
+  font-size: 1.2rem;
+}
+
+.header__signup p > span {
+  color: #ecb12f;
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: column;
+}
+.header__signup button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  margin: 5px;
+}
+
+.header__buttons--google > img {
+  height: 40px;
+  background-color: #4285f4;
+}
+
+/* Media Query */
+
+@media (max-width: 768px) {
+  .nav__buttons {
+    width: auto;
+    gap: 20px;
+  }
+
+  .nav__buttons ul,
+  .nav__menu ul {
+    display: none;
+  }
+  .nav__button--hidden {
+    display: block;
+  }
+  .header__signup h1 {
+    font-size: 2.2rem;
+    width: 90%;
+  }
+  .header__buttons {
+    flex: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav__buttons {
+    width: auto;
+    gap: 20px;
+  }
+  .nav__buttons ul,
+  .nav__menu ul {
+    display: none;
+  }
+  .nav__button--hidden {
+    display: flex;
+  }
+} ;
