@@ -2,7 +2,6 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
-    border:1px solid red;
 }
 :root{
     --bg-purple: #540B51;
@@ -18,6 +17,33 @@
     --fs-4:1.3rem;
     --fs-3:1.5rem;
     --fs-1:2.5rem;
+    --fs-2:2.1rem;
+    --fs-xxl:3.2rem;
+    --fs-xl:2.4rem;
+}
+.fs-5{
+    font-size:1.2rem;
+}
+.fs-1{
+    font-size:var(--fs-1);
+}
+.fs-2{
+    font-size:var(--fs-2);
+}
+#companies{
+    margin-bottom:5rem;
+}
+.fw-bold{
+    font-weight:700;
+}
+.product-margin{
+    margin-left:8rem;
+}
+.product-text > h2{
+   width:50%;
+}
+.product-text p {
+    width:70%;
 }
 .h-100{
     height:100%;
@@ -26,9 +52,8 @@
     width:100%;
 }
 .w-70{
-    width:500px;
-    height:360px;
-    border-radius: 20px 20px 0 0;
+    width:70%;
+    height:73%;
 }
 .w-50{
     width:50%;
@@ -58,7 +83,15 @@
     color:var(--white);
     text-decoration:none;
 }
-
+#buttoncontainer{
+    padding:1.8rem;
+    max-width:500px;
+    height:50px;
+    gap:0.6rem;
+}
+.border-0{
+    border:none;
+}
 
 /* Styles using Flexbox */
 .display-flex{
@@ -76,14 +109,21 @@
 .justify-content-between{
     justify-content: space-between;
 }
-
+.justify-content-end{
+    justify-content: flex-end;
+}
+.text-decoration-none{
+    text-decoration: none;
+}
 
 
 /*Styles for Paddings  */
 .padding-small{
     padding:1.2rem;
 }
-
+.padding-medium{
+    padding:1.8rem;
+}
 /* Styles for Text */
 .text-white{
     color:var(--white);
@@ -91,11 +131,14 @@
 .text-yellow{
     color:var(--yellow);
 }
-.text-transparent{
-    color:black !important;
+.text-purple{
+    color:var(--bg-purple) !important;
 }
 .text-center{
     text-align:center;
+}
+.text-blue{
+    color:var(--dark-blue);
 }
 /* Styles for Header */
 header{
@@ -107,7 +150,9 @@ header{
     height:50vh;
 }
 header  h1{
-    font-size:var(--fs-1);
+    font-size:3.6rem;
+    width:465px;
+    padding:1.8rem;
 }
 .header-image{
     width:380px;
@@ -116,17 +161,21 @@ header  h1{
     right:0px;
     top:30%;
 }
-
+header p {
+    font-size:1.4rem;
+    padding:1.8rem;
+}
 /* Styles for Buttons */
 .btn-medium{
-    padding:1.0rem 3rem;
+    width:250px;
+    height:50px;
 }
 .btn-small{
     padding:0.6rem 1.5rem;
 }
 .btn-icon{
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
     justify-self:flex-start;
 }
 /* Styles for Background */
@@ -142,7 +191,9 @@ header  h1{
 .bg-purple{
     background-color: var(--bg-purple);
 }
-
+.bg-transparent{
+    background-color: transparent;
+}
 /* Styles for Navbar */
 nav{
     background-color: var(--bg-purple);
@@ -150,11 +201,11 @@ nav{
 }
 .navbar-image{
     width:150px;
-    height:auto;
+    height:1.5rem;
 }
 
 #logo > img{
-    width:100px;
+    
     height:40px;
 }
 
@@ -162,6 +213,38 @@ nav{
     gap:2.1rem;
 }
 
+#teams{
+    height:600px;
+}
+#teams li{
+    list-style: none;
+}
+#teams h3{
+    font-size:var(--fs-xl);
+}
+#teams li span{
+    font-size:var(--fs-xxl);
+    color:var(--bg-purple);
+    font-weight:700;
+}
+#welcome{
+    height:200px;
+}
+#welcome h3{
+    font-size: var(--fs-xl);
+}
+footer li {
+    list-style: none;
+}
+#list{
+    line-height:2rem;
+}
+#list{
+    border-bottom:1px solid grey;
+}
+#product-ui{
+    max-width:1400px;
+}
 /*Media Query for Mobile Devices*/
 @media (max-width: 767px){
    .navbar-hamburger-icons{
