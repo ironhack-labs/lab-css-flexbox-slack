@@ -50,13 +50,18 @@ nav {
   width: 55%;
 }
 
+.nav__buttons ul,
 .nav__menu ul {
+  display: none;
+}
+
+/* .nav__menu ul {
   display: flex;
   flex-direction: row;
   list-style: none;
   justify-content: space-between;
   width: 80%;
-}
+} */
 .nav__menu a,
 .nav__button--white {
   color: white;
@@ -74,10 +79,10 @@ nav {
   background: none;
   border: none;
 }
-.nav__buttons ul {
+/* .nav__buttons ul {
   display: flex;
   align-items: center;
-}
+} */
 .nav__buttons li {
   padding-right: 30px;
 }
@@ -100,7 +105,7 @@ nav {
 
 header {
   display: flex;
-  
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #540b51;
@@ -117,8 +122,8 @@ header {
 }
 
 .header__signup h1 {
-  font-size: 2rem;
-  width: 60%;
+  font-size: 2.2rem;
+  width: 90%;
 }
 
 .header__signup p {
@@ -132,6 +137,8 @@ header {
 .header__buttons {
   display: flex;
   flex-direction: column;
+  flex: auto;
+  width: 100%;
 
 }
 .header__buttons > button {
@@ -182,27 +189,27 @@ header {
     gap: 20px;
   } */
 
-  .nav__buttons ul,
+  /* .nav__buttons ul,
   .nav__menu ul {
     display: none;
-  }
+  } */
   /* .nav__button--hidden {
     display: block;
   } */
-    header {
+    /* header {
       flex-direction: column;
-    }
-  .header__signup h1 {
-    font-size: 2.2rem;
-    width: 90%;
-  }
-  .header__buttons {
+    } */
+  /* .header__signup h1 {
+    font-size: 2rem;
+    width: 60%;
+  } */
+  /* .header__buttons {
     flex: auto;
     width: 100%;
-  }
+  } */
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .nav__buttons {
     width: auto;
     gap: 20px;
@@ -214,8 +221,23 @@ header {
   .nav__button--hidden {
     display: flex;
   }
-
-    
-  
-  
+  .header{
+    flex-direction: row;
+  }
+ 
 } ;
+
+@media (width > 1024px){
+
+  .nav__buttons ul {
+      display: flex;
+      align-items: center;
+    }
+  .nav__menu ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: space-between;
+      width: 80%;
+}
+}
