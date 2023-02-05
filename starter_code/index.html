@@ -16,9 +16,8 @@
   <title>Slack is your digital HQ | Slack</title>
 </head>
 <body>
-  <nav class="display-flex padding-small justify-content-between">
-    <!-- Navbar Link Start-->
-    <div class="display-flex gap-large">
+  <nav class="display-flex padding-medium justify-content-between align-items-center">
+    <div class="display-flex gap-large align-items-center">
       <img class="navbar-image" src="./images/slack-logo.png" alt="Slack logo" />
       <ul class="navbar-nav align-items-center">
         <li>
@@ -34,10 +33,8 @@
           <a href="#">Pricing</a>
         </li>
       </ul>
-      <!-- Navbar Links End-->
     </div>
-    <!-- Navbar Buttons Start-->
-    <div class="navbar-hamburger-icons">
+    <div class="navbar-hamburger-icons display-flex">
       <button >
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
@@ -45,30 +42,26 @@
       <button>
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
-      <!--Navbar hambuger icon items Start-->
       <ul class="navbar-hamburger-btn display-flex">
         <li class="btn-small">
           <a href="#">Sign in</a>
         </li>
         <li class="btn-small bg-white">
-          <a class="text-transparent" href="#">Try for free</a>
+          <a class="text-purple" href="#">Try for free</a>
         </li>
       </ul>
-      <!--Navbar hambuger icon items End-->
     </div>
-    <!-- Navbar Buttons End-->
   </nav>
   <header class="display-flex justify-content-center">
     <div class="container h-100">
-    <div class="display-flex flex-direction-col justify-content-center h-100">
+    <div class="display-flex flex-direction-col h-100">
       <h1 class="text-white">Great teamwork starts with a digital HQ</h1>
-      <p class="text-yellow">Slack is free to try<span class="text-white">for as long as you'd like.</span></p>
+      <p class="text-yellow fw-bold">Slack is free to try<span class="text-white"> for as long as you'd like.</span></p>
 
-      <div class="display-flex">
-        <button class="btn-medium">Sign up with email</button>
-
-        <button class="btn-medium display-flex align-items-center bg-blue">
-          <img class="btn-icon bg-white" src="./images/logo-google.png" alt="Google logo" />
+      <div id="buttoncontainer" class="display-flex">
+        <button class="btn-medium border-0">Sign up with email</button>
+        <button class="btn-medium display-flex border-0 align-items-center justify-content-center bg-blue">
+          <img class="btn-icon bg-white" src="./images/logo-google.png" alt="Google logo"/>
           <span>Sign up with Google</span>
         </button>
       </div>
@@ -80,10 +73,13 @@
   </div>
   </header>
 
-  <main class="display-flex justify-content-center bg-ivory">
-   <div class="container">
-    <section>
-      <p class="text-center">Trusted by companies all over the world</p>
+  <main>
+    <!-- Main Container width here%-->
+   <div class="w-100 display-flex justify-content-center bg-ivory align-items-center flex-direction-col">
+    <!--Main Container here-->
+    <div class="container padding-small">
+    <section id="companies">
+      <p class="text-center fs-5 fw-bold padding-small">Trusted by companies all over the world</p>
 
       <div id="logo" class="display-flex justify-content-between">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
@@ -95,74 +91,82 @@
       </div>
 
     </section>
-
+  </div>
+  <div id="product-ui">
     <section class="display-flex">
-      <div class="w-50">
-        <img class="w-70" src="./images/connectedness-mobile.png" alt="connectedness" />
+      <div class="w-50 display-flex">
+        <img class="w-70 d" src="./images/connectedness-mobile.png" alt="connectedness" />
       </div>
 
-      <div class="w-50">
-        <h2>Bring your team together</h2>
+      <div class="w-50 product-text product-margin">
+        <h2 class="fs-2 fw-bold padding-small">Bring your team together</h2>
 
-        <p>
+        <p class="padding-small">
           At the heart of Slack are channels: organized spaces for everyone and everything you need for work. In
           channels, it's easier to connect across departments, offices, time zones and even other companies.
         </p>
 
-        <a href="#">
+        <a class="text-decoration-none text-blue padding-small" href="#">
           <span>Learn more about channels</span>
         </a>
       </div>
     </section>
 
     <section class="display-flex">
-      <div class="w-50">
-        <h2>Choose how you want to work</h2>
+      <div class="w-50 product-text product-margin">
+        <h2 class="fs-2 fw-bold">Choose how you want to work</h2>
         <p>
           In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat,
           send
           audio and video clips, or hop on a huddle to talk things out live.
         </p>
 
-        <a href="#">
+        <a class="text-decoration-none text-blue " href="#">
           <span>Learn more about flexible communication</span>
         </a>
       </div>
 
-      <div class="w-50">
+      <div class="w-50 display-flex justify-content-end">
         <img class="w-70" src="./images/flexibility-mobile.png" alt="flexibility" />
       </div>
     </section>
 
     <section class="display-flex">
-      <div class="w-50">
+      <div class="w-50 display-flex">
         <img class="w-70" src="./images/speed-mobile.png" alt="speed" />
       </div>
 
-      <div class="w-50">
-        <h2>Move faster with your tools in one place</h2>
+      <div class="w-50 product-text product-margin">
+        <h2 class="fs-2 fw-bold">Move faster with your tools in one place</h2>
         <p>
           With your other work apps connected to Slack, you can work faster by switching tabs less. And with powerful
           tools like Workflow Builder, you can automate away routine tasks.
         </p>
 
-        <a href="#">
+        <a class="text-decoration-none text-blue" href="#">
           <span>Learn more about the Slack platform</span>
         </a>
       </div>
     </section>
+    </div>
+    </div>
+  </div>
+    <!--Main Container here-->
+    <!-- Main width 100% here-->
 
-
-    <section class="bg-white">
+   <!--Main Width 100% here-->
+   <div class="w-100 display-flex justify-content-center">
+   <div class="container">
+    <section class="bg-white text-center" id="teams">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
       <div>
-        <button>Meet Slack for enterprise</button>
-        <button>Talk to sales</button>
+        <button class="btn-medium bg-purple text-white">Meet Slack for enterprise</button>
+        <button class="btn-medium bg-transparent">Talk to sales</button>
       </div>
 
-      <ul>
+      <ul class="display-flex">
         <li>
           <p><span>85%</span></p>
           <p>
@@ -188,21 +192,27 @@
         </li>
       </ul>
     </section>
+  </div>
+</div>
+<div class="w-100 display-flex justify-content-center bg-purple">
+  <div class="container display-flex justify-content-center  align-items-center">
+    <!-- Main width 100% here-->
+    <section id="welcome" class="text-center">
+      <h3 class="text-white">Welcome to your new digital HQ</h3>
 
-    <section class="bg-purple">
-      <h3>Welcome to your new digital HQ</h3>
-
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+      <button class="btn-medium text-purple">Try for free</button>
+      <button class="btn-medium bg-transparent text-white bg-transparent">Talk to sales</button>
     </section>
+  </div>
   </div>
   </main>
 
-  <footer>
+  <footer class="display-flex justify-content-center padding-medium">
+    <div class="container">
     <img src="./images/iso-slack.png" alt="Slack logo" />
-    <div class="display-flex">
+    <div id="list" class="display-flex justify-content-between padding-small">
       <ul>
-        <li>WHY SLACK?</li>
+        <li class="fw-bold">WHY SLACK?</li>
         <li>Slack vs. Email</li>
         <li>Channels</li>
         <li>Engagement</li>
@@ -211,7 +221,7 @@
       </ul>
 
       <ul>
-        <li>PRODUCT</li>
+        <li class="fw-bold">PRODUCT</li>
         <li>Features</li>
         <li>Integrations</li>
         <li>Enterprise</li>
@@ -220,13 +230,13 @@
       </ul>
 
       <ul>
-        <li>PRICING</li>
+        <li class="fw-bold">PRICING</li>
         <li>Plans</li>
         <li>Paid vs. Free</li>
       </ul>
 
       <ul>
-        <li>COMPANY</li>
+        <li class="fw-bold">COMPANY</li>
         <li>About Us</li>
         <li>Leadership</li>
         <li>Investor Relations</li>
@@ -237,7 +247,7 @@
     </div>
 
 
-    <ul class="display-flex">
+    <ul class="display-flex justify-content-between padding-small">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
@@ -247,9 +257,7 @@
       <li>Download Slack</li>
     </ul>
 
-    <hr>
-
-    <ul class="display-flex">
+    <ul class="display-flex gap-large padding-small">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -270,7 +278,7 @@
         their respective owners.
       </small>
     </div>
-
+  </div>
   </footer>
 </body>
 
