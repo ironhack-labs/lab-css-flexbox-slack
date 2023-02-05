@@ -144,6 +144,7 @@ header {
 .header__buttons > button {
   text-transform: uppercase;
   border-radius: 5px;
+  border: none;
 }
 .header__signup button {
   display: flex;
@@ -166,7 +167,7 @@ header {
 .header__buttons--google > img {
   height: 40px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 2px;
   margin-right: auto;
 }
 .header__buttons--google > span{
@@ -209,7 +210,7 @@ header {
   } */
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (width > 768px) {
   .nav__buttons {
     width: auto;
     gap: 20px;
@@ -221,23 +222,57 @@ header {
   .nav__button--hidden {
     display: flex;
   }
-  .header{
+  header{
     flex-direction: row;
+    padding: 20px 20px 70px 40px;  
   }
- 
-} ;
+  .header__signup{
+    align-items: flex-start;
+    text-align: left;
+    width: 1400px;
+  }
+  .header__signup h1 {
+    font-size: 3.2rem;
+  }
+  .header__signup p {
+    font-size: 1.35rem;
+  }
+  .header__buttons--google > img{
+    
+    padding: 5px;
+  }
+} 
 
-@media (width > 1024px){
-
+@media (min-width: 1024px){
+.nav__menu{
+  width: 60%;
+}
   .nav__buttons ul {
-      display: flex;
-      align-items: center;
-    }
-  .nav__menu ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      justify-content: space-between;
-      width: 80%;
+    display: flex;
+    align-items: center;
+  }
+.nav__menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    width: 80%;
+}
+.nav__button--hidden{
+  display: none;
+}
+header{
+  padding: 30px 20px 90px 70px;
+}
+.header__signup h1 {
+  font-size: 5.2rem;
+}
+
+.header__signup p {
+  font-size: 1.4rem;
+  width: 60%;
+}
+.header__buttons{
+  width: 90% ;
 }
 }
