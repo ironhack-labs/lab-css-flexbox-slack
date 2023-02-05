@@ -8,3 +8,159 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #540b51;
+}
+
+p,
+span {
+  font-size: 1.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #5b5e6d;
+  line-height: 150%;
+}
+
+li {
+  font-size: 1.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #5b5e6d;
+  line-height: 135%;
+}
+
+hr {
+  border-top: 1px solid #e2e0e0;
+}
+
+/*Posicionamiento
+Modelo de caja
+Tipografía y texto
+Visual
+Miscelánea*/
+
+/* Iteration 1 */
+@media (max-width: 767px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+    background-color: #540b51;
+    align-items: center;
+  }
+
+  nav div > img {
+    width: 8rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav button {
+    align-items: center;
+    margin: 10px;
+    border: 0;
+    background-color: #540b51;
+  }
+
+  /* header */
+
+  header div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header div:first-child h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+  }
+
+  header div:first-child p > span {
+    color: #ecb12f;
+  }
+
+  header div:first-child p {
+    color: white;
+  }
+
+  header > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  header button {
+    width: 100%;
+    height: 4rem;
+  }
+
+  header button:nth-child(2) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header button img {
+    position: absolute;
+    left: 1rem;
+    width: 2rem;
+    outline: 0.3rem solid white;
+    height: 2rem;
+    background-color: white;
+  }
+
+  header button span {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  header div:nth-child(2) img {
+    width: 120%;
+  }
+
+  /* main */
+  #main-section {
+    background-color: #f3eae2;
+  }
+
+  #main-section section:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #main-section section:first-child div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #main-section section:first-child img {
+    width: 40px;
+  }
+}
+
+/* Iteration 2 */
+@media (min-width: 767px) and (max-width: 959px) {
+}
+
+/* Iteration 3 */
+@media (min-width: 960px) and (max-width: 1199px) {
+}
+
+/* Iteration 4 */
+@media (min-width: 1200px) {
+}
