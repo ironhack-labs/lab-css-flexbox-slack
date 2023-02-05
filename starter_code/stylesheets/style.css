@@ -116,7 +116,6 @@ h1 {
     background-color: #F3EAE2 ;
     display: flex;
     flex-flow: column;
-    align-items: center;
     font-weight: 600;
     text-transform: uppercase;
     padding: 20px;
@@ -224,6 +223,7 @@ width: 95vw;
 #enterprise-section ul li{
     padding: 20px;
     font-weight: 500;
+    width: 20%;
 }
 
 #enterprise-section ul li p:first-child{
@@ -332,6 +332,7 @@ list-style-position: inside;
 footer > ul:first-of-type li:last-child{
     list-style-image: url(/starter_code/images/icon-download.png);
     list-style-position: inside;
+    color: #2E71A6;
     }
 footer > ul:last-of-type{
     margin: 20px 0;
@@ -343,11 +344,216 @@ footer div:last-child{
 }
 
 
-@media (min-width:768) and (max-width: 1023px) {
+@media (min-width:768px) {
+header {
+    display: flex;
+    align-items: center;
+}
+
+#sign-up-section{
+    background-image: url(/starter_code/images/background-singup.png);
+    background-size: cover;
+    padding-top: 50px;
+}
+#sign-up-section p{
+    text-align: left;
+}
+h1{
+    font-size: 75px;
+    text-align: start;
+}
+#header-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+#header-img img{
+    width: 120%;
     
 }
-@media (min-width:1024) and (max-width: 1439px) {
- 
+#sign-up button:last-child span {
+    position: absolute;
+    left:inherit; 
+    transform: translateX(0)  
+}
+
+#companies-section div{
+    flex-wrap: nowrap;
+    flex-flow: row;
+}
+#companies-section div img{
+    height: 35px;
+}
+
+.function-section img{
+    display: none;
+}
+
+#team-section div:first-child{
+    background: url(/starter_code/images/connectedness.png);
+    height: 300px;
+    background-size: 600px;
+    background-repeat: no-repeat;
+}
+#communication-section div:last-child{
+    background: url(/starter_code/images/flexibility.png);
+    height: 300px;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#platform-section div:first-child{
+    background: url(/starter_code/images/speed.png);
+    height: 300px;
+    background-size: 600px;
+    background-repeat: no-repeat;
+}
+.function-section{
+    display: flex;
+    flex-flow: column;
+}
+
+
+#team-section div:last-child{
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    width: 50%;
+}
+#communication-section div:first-child{
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    width: 50%;
+}
+#platform-section div:last-child{
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    width: 50%;
+}
+#enterprise-section div{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+#enterprise-section div button{
+    width: fit-content;
+    padding: 0px 20px;
+    margin:20px;
+}
+#enterprise-section ul{
+    width: 100vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+#enterprise-section ul li{
+    text-align: left;
+}
+
+footer > ul:first-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+footer > ul:first-of-type li{
+  order:0
+}
+footer > ul:last-of-type{
+    width: 40%;
+    
+}
+
+}
+@media (min-width:1024px) and (max-width: 1439px) {
+nav > div:first-of-type{
+    display: flex;
+    width: 70%; 
+    justify-content:space-between; 
+}
+#menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+#menu a{
+    color: white;
+    text-decoration: none;
+}
+nav div button:last-of-type{
+    display:none;
+}
+nav div:last-child{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div ul:last-child{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav div ul:last-child li{
+    padding: 10px 20px;
+}
+nav div ul:last-child li a{
+    color: white;
+    text-decoration: none;
+
+}
+nav div:last-child ul:last-child li:last-child{
+    background-color: white;
+    border-radius: 5px;
+}
+nav div:last-child ul:last-child li:last-child a{
+    color:#540B51
+}
+
+.function-section{
+    flex-flow: row;
+}
+.function-section div{
+    width: 100%;
+}
+.function-section div:last-child{
+    margin: 0 50px
+}
+#communication-section div:first-child{
+    margin: 0 50px
+}
+#communication-section div:last-child{
+    margin:0;
+}
+#communication-section{
+    flex-flow: row;
+}
+
+#before-footer{
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#before-footer h3{
+    width:100%;
+}
+h3{
+    font-size: 50px !important;
+}
+#before-footer button{
+    width:fit-content;
+    margin:10px;
+    padding:0 35px; 
+
+}
+
+
 }
 @media (max-width: 1440px) {
  
