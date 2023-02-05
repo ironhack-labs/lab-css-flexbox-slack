@@ -110,6 +110,7 @@ header{
     flex-wrap: wrap;
     align-items: center;
     max-width: 700px;
+    
 }
 .log1{
     display: flex;
@@ -148,6 +149,9 @@ header{
     margin: 0 5px 30px 0;
 }
 .connes{
+    display: none;
+}
+.connesm{
     width: 700px;
 }
 .team {
@@ -156,9 +160,12 @@ header{
     
     font-weight: bold;    
 }
-.flex{
+.flexm{
     width: 700px;
     margin: 30px 0 30px 20px;
+}
+.flex{
+    display: none;
 }
 .flexteams{
     display: flex;
@@ -167,7 +174,10 @@ header{
     
     font-weight: bold; 
 }
-.speed {
+.speed{
+    display: none;
+}
+.speedm{
     width: 700px;
     margin: 30px 30px 0  0; 
 }
@@ -274,7 +284,8 @@ background:#F3EAE2 ;
     width: 75px;
 }
 .lastlist{
-    display: flex;   
+    display: flex;  
+    justify-content: space-evenly; 
 }
 .lastlist ul{
     list-style-type:none;   
@@ -302,14 +313,364 @@ background:#F3EAE2 ;
     justify-content: space-around;
     width:
 }
+}
 
+@media (min-width:767px) and (max-width:961px){
 
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #nav-bar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;   
+        background: #540B51;
+    }
+    .slack-logo {
+        display: flex;
+        align-items: center;
+        height: 25px;
+        width: 100px;    
+    }
+    .nav-div{
+        display: flex;   
+        align-items: center;
+    }
+    .nav-div ul{
+        display: flex;
+        visibility: hidden;    
+    }
+    .nav-button{
+        display: flex;   
+    }
+    .icon-search {
+        background: #540B51;
+        border: none;
+        margin-right: 5px;
+    }
+    .icon-menu{
+        background: #540B51;
+        border: none;
+    }
+    #header{
+        display: flex;
+        flex-direction: row;
+        height: 700px;
+        background: #540B51;
+        color: #F3EAE2;
+        align-items: center;
+        background-image: url("../images/background-singup.png");
+        background-size: cover;
+        
+    }
+    #head{
+        display: flex;
+        
+        flex-direction: column;
+        
+       height: 600px;
+       margin: 20px;
+       
 
+    }
+    #head h1{
+        font-size: 70px;
+        display: flex;
+        
+    }
+    #head p{
+    color: #ECB12F;
+    font-weight: bold;
 
-
-
-
-
+    }
+    .button1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 400px;
+    }
+    .email{
+        
+        background-color: rgb(226, 226, 226);
+        border-radius: 5%;
+        text-align: center;
+        padding: 10px 15px;
+        color: #540B51;
+        margin: 50px 0 0 10px;
+        border: none;
+        
+    }
+    .google{
+        
+        display: flex;
+        justify-content: center;
+        border: none;
+        background-color: #4285F4;
+        border-radius: 5%;
+        padding: 3px 15px;
+        color: #540B51;
+        margin: 10px;
+        width: 390px;
+       
+    }
+    .google img{
+        background-color: aliceblue;
+        display: flex; 
+        width:30px ;
+        height:30px ;
+        border-radius: 3px;
+        margin-right: 10px;
+          
+    }
+    .googletext{
+       align-self: center;  
+       color: white;
+    }
+    .screen{
+        
+        display: flex;
+        width: 400px;
+        align-items: center;
+    }
+    .trust{
+        margin: 30px 0;
+        text-transform:uppercase;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        
+        margin: 0 15px;
+        align-items: baseline;
+        max-width: 900px;
+    }
+    .log1{
+        display: flex;
+        width:80px;
+        height: 40px;
+        margin: 0 5px;
+    }
+    .log2{
+        display: flex;
+        width:65px;
+        height: 50px; 
+        margin: 0 5px;
+    }
+    .log3{
+        display: flex;
+        width:70px;
+        height: 30px;
+        margin: 0 5px;   
+    }
+    .log4{
+        display: flex;
+        width:50px;
+        height: 50px;  
+        margin: 0 5px;
+    }
+    .log5{
+        display: flex;
+        width:230px;
+        height: 45px; 
+        margin: 0 5px; 
+    }
+    .log6{
+        display: flex;
+        width:130px;
+        height: 40px; 
+        margin: 0 5px 30px 0;
+    }
+    #sec2{
+        margin: 40px 0;
+    }
+    .connesm{
+        display: none;
+    }
+    .connes{
+        width: 800px;
+        display: flex;
+        align-self: flex-start;
+        margin-bottom: 30px;
+    }
+    .team {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 500px;
+        font-weight: bold; 
+        margin: auto  
+    }
+    #sec3{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+    }
+    .flexm{
+        display: none;
+    }
+    .flex{
+        width: 800px;
+        display: flex;
+        float: right;
+        margin-bottom: 30px;
+    }
+    .flextext{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 500px;
+        font-weight: bold; 
+        margin: auto;
+    }
+    .speedm{
+        display: none;
+    }
+    .speed {
+        width: 800px;
+        margin: 30px 30px 30px  0; 
+    }
+    .speedtext{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 500px;
+        font-weight: bold; 
+        margin: auto  
+    }
+    #sec1{
+    background-color:#F3EAE2 ;
+    }
+    #sec2{
+        background:#F3EAE2 ; 
+    }
+    #sec3{
+        background:#F3EAE2 ;   
+    }
+    #sec4{
+        background:#F3EAE2 ;   
+    }
+    #rely {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    #rely h3{
+        display: flex;
+        text-align: center;
+        align-content: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #rely p{
+        text-align: center;
+        font-weight: bold;
+    }
+    .button2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:99%;
+        border-radius: 2px;
+    }
+    .meet{
+        
+        background: #540B51;
+        border-radius: 5%;
+        text-align: center;
+        padding: 10px 15px;
+        color: white;
+        margin: 10px;
+        border-radius: 4px;
+    }
+    .sales{
+        
+        background-color: rgb(226, 226, 226);
+        border-radius: 5%;
+        text-align: center;
+        padding: 10px 15px;
+        color: #540B51;
+        margin: 10px;
+        border-radius: 4px;    
+    }
+    #rely ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #rely span{
+        font-size: 80px;
+        color: #540B51;
+    }
+    #hq{
+        background: #540B51;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+    }
+    #hq h3{
+        font-size: 35px;
+        color: #F3EAE2;
+        margin: 20px 10px;
+    }
+    .try{
+        border-radius: 3px;
+        border:1px solid black;
+        margin: 5px;
+        color: #540B51;
+        padding: 15px;
+    }
+    .talk{
+        border-radius: 3px;
+        border:1px solid #F3EAE2;
+        margin:  10px 5px 30px 5px;
+        background: #540B51;
+        color: #F3EAE2;
+        padding: 15px;
+    }
+    
+    .slogo{
+        margin: 30px 20px;
+        width: 75px;
+    }
+    .lastlist{
+        display: flex; 
+        justify-content: space-evenly;  
+    }
+    .lastlist ul{
+        list-style-type:none;   
+    }
+    .lastlist li{
+        margin-bottom: 30px;
+    }
+    .lastlist li:first-child{
+        font-weight: bold;  
+    }
+    .lastlastlist{
+        list-style-type: none;
+        font-weight: bold;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .lastlastlist li{
+        margin-top: 10px;
+    }
+    .lastlastlist li:last-child{
+        color:#2E71A6 ;
+    }
+    .lastlastlastlist{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        
+    }
 
 }
 
