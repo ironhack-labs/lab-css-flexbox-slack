@@ -21,6 +21,10 @@ html {
   background-color: #540b51;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 p,
 span {
   font-size: 1.2em;
@@ -36,10 +40,6 @@ li {
   line-height: 135%;
 }
 
-hr {
-  border-top: 1px solid #e2e0e0;
-}
-
 /*Posicionamiento
 Modelo de caja
 Tipografía y texto
@@ -51,9 +51,10 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 15px;
+  padding: 2rem 3rem 1.5rem;
   background-color: #540b51;
   align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav div > img {
@@ -66,7 +67,7 @@ nav ul {
 
 nav button {
   align-items: center;
-  margin: 10px;
+  margin: 0 0 0 2rem;
   border: 0;
   background-color: #540b51;
 }
@@ -77,12 +78,14 @@ header div:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2rem;
 }
 
 header div:first-child h1 {
   text-align: center;
   font-size: 3rem;
   color: white;
+  margin-bottom: 1.5rem;
 }
 
 header div:first-child p > span {
@@ -91,6 +94,7 @@ header div:first-child p > span {
 
 header div:first-child p {
   color: white;
+  margin-bottom: 1.5rem;
 }
 
 header > div > div {
@@ -103,6 +107,12 @@ header > div > div {
 header button {
   width: 100%;
   height: 4rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: white;
 }
 
 header button:nth-child(2) {
@@ -110,6 +120,17 @@ header button:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0;
+  background-color: #4285f4;
+}
+
+header button:nth-child(2) span {
+  color: white;
+}
+
+header button:first-child {
+  margin-bottom: 1.5rem;
+  color: #540b51;
 }
 
 header button img {
@@ -126,19 +147,29 @@ header button span {
   text-transform: uppercase;
 }
 
+header div:nth-child(2) {
+  height: 22rem;
+  overflow: hidden;
+}
+
 header div:nth-child(2) img {
-  width: 120%;
+  height: 120%;
+  float: right;
+  margin-right: -4rem;
 }
 
 /* main */
 #main-section {
   background-color: #f3eae2;
+  padding-top: 3rem;
 }
 
 #main-section section:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 #main-section section:first-child div {
@@ -146,27 +177,31 @@ header div:nth-child(2) img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+  margin: 2rem;
 }
 
 #main-section section:first-child img {
-  width: 50px;
+  width: 80px;
   padding: 0.5rem;
 }
 
 #main-section section:first-child .large-img-dimensions {
-  width: 90px;
+  width: 110px;
 }
 
 #main-section section:first-child img:nth-child(5) {
-  width: 120px;
+  width: 140px;
 }
 
 #main-section section:first-child img:nth-child(4) {
-  width: 40px;
+  width: 60px;
 }
+
+/* instructions - middle section  */
 
 .main-section img {
   width: 90%;
+  margin-bottom: 2.5rem;
 }
 
 .section-reverse {
@@ -176,10 +211,12 @@ header div:nth-child(2) img {
 
 .section-reverse div:first-child {
   order: 2;
+  margin-bottom: 6rem;
 }
 
 .section-reverse div:nth-child(2) {
   order: 1;
+  margin-top: 6rem;
 }
 
 .section-reverse img {
@@ -188,14 +225,25 @@ header div:nth-child(2) img {
 
 .main-section h2 {
   font-size: 2rem;
+  margin: 0 2rem 1rem;
+}
+
+.main-section p {
+  font-size: 1.5rem;
+  margin: 0 2rem 1rem;
 }
 
 .main-section a {
   text-decoration: none;
+  margin: 0 2rem 1rem;
 }
 
 .main-section a > span {
   color: #2e71a6;
+}
+
+.main-section a::after {
+  content: url("/starter_code/images/icon-arrow-right.png");
 }
 
 #main-section section:nth-child(5) {
@@ -203,27 +251,47 @@ header div:nth-child(2) img {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 3rem;
+  padding: 6rem 2rem;
   background-color: white;
 }
 
 #main-section section:nth-child(5) h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #main-section section:nth-child(5) div {
   display: flex;
   flex-direction: column;
   width: 90%;
+  margin-top: 1.5rem;
 }
 
 #main-section button {
   width: 100%;
   height: 4rem;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  border: 0.1rem solid #540b51;
+}
+
+#main-section button:first-child {
+  width: 100%;
+  height: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: #540b51;
+  color: white;
 }
 
 #main-section ul {
   width: 40%;
+  margin-top: 4rem;
 }
 
 #main-section ul li {
@@ -240,21 +308,41 @@ header div:nth-child(2) img {
   font-size: 1rem;
   font-weight: 600;
   line-height: 150%;
+  margin-bottom: 1.5rem;
+}
+
+#main-section li > p > sup {
+  font-size: 0.9rem;
 }
 
 #main-section section:nth-child(6) {
   text-align: center;
+  padding: 3rem 2rem;
   background-color: #540b51;
 }
 
 #main-section section:nth-child(6) h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
+  margin-bottom: 2rem;
   color: white;
 }
 
 #main-section section:nth-child(6) button {
   width: 90%;
+  background-color: #540b51;
+  border-radius: 0.3rem;
+  border: 0.1rem solid white;
+  font-weight: 600;
+  color: white;
+}
+
+#main-section section:nth-child(6) button:last-child {
+  width: 90%;
+  border-radius: 0.3rem;
+  background-color: white;
+  border: 0.1rem solid #540b51;
+  color: #540b51;
 }
 
 /* footer */
@@ -266,7 +354,7 @@ footer {
 
 footer img {
   width: 10%;
-  margin: 2rem;
+  margin: 2rem 4rem;
 }
 
 footer > div {
@@ -293,11 +381,6 @@ footer > div > ul li {
   color: black;
 }
 
-footer > ul {
-  order: 3;
-  font-weight: 600;
-}
-
 footer > ul li {
   font-size: 1rem;
   padding: 8px 0;
@@ -306,6 +389,29 @@ footer > ul li {
 
 footer > hr {
   order: 2;
+  margin: 0 2rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+footer > ul {
+  order: 3;
+  list-style: none;
+  font-weight: 600;
+  margin: 1rem 4rem;
+}
+
+.terms-and-conditions li:last-child {
+  color: #2e71a6;
+}
+
+.terms-and-conditions li:nth-child(6)::before {
+  content: url("/starter_code/images/icon-region.png");
+  padding-right: 1rem;
+}
+
+.terms-and-conditions li:last-child::before {
+  content: url("/starter_code/images/icon-download.png");
+  padding-right: 1rem;
 }
 
 footer ul:nth-child(5) {
@@ -313,10 +419,16 @@ footer ul:nth-child(5) {
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
+  margin: 1rem 4rem;
+}
+
+footer ul:nth-child(5) li i {
+  font-size: 2.5rem;
 }
 
 footer div:last-child {
   order: 4;
+  margin: 1rem 2rem 2rem;
 }
 
 /* Iteration 2 */
