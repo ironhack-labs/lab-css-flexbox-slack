@@ -13,7 +13,6 @@ body {
     margin: 0;
     padding: 0;
 }
-@media (max-width: 768px) {
 
 nav, header, .welcome-section {
     background-color: #540B51;
@@ -465,7 +464,6 @@ footer small {
     text-align: left;
     padding: 20px 15px;
 }
-}
 
 @media (min-width: 768px) and (max-width: 1023px) {
         
@@ -871,16 +869,14 @@ footer img {
 .footer-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100vw;
 }
 
 .footer-list ul {
     font-size: 12px;
-    line-height: 20px;
-    padding: 0 10px;
+    line-height: 15px;
     margin: 0;
-    
 }
 
 .footer-list li {
@@ -943,7 +939,7 @@ footer small {
 }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
     nav, header, .welcome-section {
         background-color: #540B51;
     } 
@@ -988,13 +984,16 @@ footer small {
         padding: 1px 10px;
     }
     .button-nav {
-        border: none;
-        display: flex;
+         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
     
+    .nav-search-button {
+        border: none;
+    }
+
     .nav-menu-button {
         visibility: hidden;
     }
@@ -1391,8 +1390,6 @@ footer small {
     }
     
     footer img {
-        display: flex;
-        flex-direction: row;
         width: 35px;
         object-fit: cover;
         padding: 15px 15px;
@@ -1401,7 +1398,7 @@ footer small {
     .footer-list {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         width: 100vw;
     }
     
@@ -1428,15 +1425,12 @@ footer small {
         justify-content: space-evenly;
         width: 100vw;
         margin: 10px 0;
-    }
-    
-    .footer-list-links {
         color: #454245;
         font-weight: bold;
         list-style: none;
         padding: 10px 0;
     }
-    
+        
     footer .link-change-region::before {
         content: url(/starter_code/images/icon-region.png);
         margin-right: 5px;
@@ -1461,6 +1455,7 @@ footer small {
     
     .logo-links li {
         padding: 5px 20px;
+        list-style: none;
     }
     
     footer small {
