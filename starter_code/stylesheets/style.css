@@ -31,27 +31,6 @@ nav {
     margin-left: 35px;
 }
 
-div > button {
-    background-color: #540B51;
-    border: none;
-    margin: 0px 5px;
-}
-
-#navlinks {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 45%;
-    max-height: 100%;
-}
-
-#links {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
 #signincont {
     display: flex;
     justify-content: space-evenly;
@@ -81,24 +60,6 @@ div > button {
 
 #tryforfreep {
     margin: 0;
-}
-
-li {
-    display: inline;
-    font-size: 1.5rem;
-}
-
-li > a {
-    text-decoration: none;
-    color: white;
-}
-
-hr {
-    margin-right: 0;
-    width: 20%;
-    height: 0.5px;
-    background-color: grey;
-    border: none;
 }
 
 /* GREAT DOOMWORK */
@@ -141,6 +102,30 @@ header {
     height: 50px;
 }
 
+/* TRUST */
+
+#logobox {
+    height: 200px;
+}
+
+/* BANNERS */
+
+h2 {
+    font-size: 2.5rem;
+}
+
+/* LARGE TEAMS */
+
+h3 {
+    font-size: 2.5rem;
+}
+
+/* */
+
+hr {
+    width: 90%;
+    color: rgba(128, 128, 128, 0.142);
+}
 
 /* UTILITY CLASSES */
 
@@ -156,12 +141,28 @@ header {
     display: flex;
 }
 
+.width50 {
+    width: 50%;
+}
+
 .width100 {
     width: 100%;
 }
 
 .flex-column {
     flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.min-content {
+    width: min-content;
 }
 
 .align-center {
@@ -188,6 +189,10 @@ header {
     text-align: center;
 }
 
+.text-black {
+    color: #000;
+}
+
 .text-white {
     color: white;
 }
@@ -200,28 +205,111 @@ header {
     color: #ECB12F;
 }
 
+.text-blue {
+    color: #4285F4;
+}
+
+.text-grey {
+    color: rgba(128, 128, 128, 0.712);
+}
+
 .font-size {
     font-size: 20px;
+}
+
+.font-sizea {
+    font-size: 60px;
+}
+
+.font-sizeb {
+    font-size: 10px;
+}
+
+.font-sizec {
+    font-size: 15px;
 }
 
 .font-weight {
     font-weight: 600;
 }
 
+.font-decoration {
+    text-decoration: none;
+}
+
 .pt75 {
     padding-top: 75px;
 }
 
-.mr50 {
-    margin-right: 50px;
+.pb50 {
+    padding-bottom: 50px;
+}
+
+.pb75 {
+    padding-bottom: 75px;
+}
+
+.pb100 {
+    padding-bottom: 100px;
+}
+
+.pl0 {
+    padding-left: 0;
+}
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mr0 {
+    margin-right: 0px;
+}
+
+.mr10 {
+    margin-right: 10px;
 }
 
 .mr25 {
     margin-right: 25px;
 }
 
-.mr10 {
-    margin-right: 10px;
+.mr50 {
+    margin-right: 50px;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.max-width100 {
+    max-width: 100%;
+}
+
+.height15 {
+    height: 15px;
 }
 
 .bgpurple {
@@ -238,6 +326,20 @@ header {
 
 .bgbeige {
     background-color: #F3EAE2;
+}
+
+.border-color-purple {
+    border-color: #540B51;
+    border-width: 4px;
+}
+
+.border-color-white {
+    border-color:white;
+    border-width: 4px;
+}
+
+.border-none {
+    border: none;
 }
 
 .mobile-button {
@@ -263,6 +365,10 @@ header {
     display: inline;
 }
 
+#footer-slack-logo {
+    width: 75px;
+}
+
 /* @media screen and (max-width: 700px) { */
     @media screen and (max-width: 768px) {
         li {
@@ -286,14 +392,18 @@ header {
         }
 
         .mobile-margin {
-            margin: 20px 20px 10px 20px;
+            margin: 0px 20px 0px 20px;
+        }
+
+        .mobile-margin-slim {
+            margin: 0px 25% 0px 25%;
         }
 
         .blue-banner-mobile {
             width: 95%;
         }
 
-        .beige-banner-mobile {
+        .green-banner-mobile {
             width: 95%;
             display: block;
             margin-left: auto;
@@ -302,10 +412,15 @@ header {
         .yellow-banner-mobile {
             width: 95%;
         }
+
+        .image-trim {
+            max-height:710px;
+            overflow: hidden;
+        }
     }
     
     @media screen (max-width: 1024px) {
-        .wide-block {
+        .mobile-block {
             display: block;
         }
 
@@ -320,5 +435,7 @@ header {
         .tablet-column {
             flex-direction: column;
         }
+
+
     
     }

@@ -24,9 +24,9 @@
   <!-- NAV OF DOOM-->
   <body>
     <nav>
-      <div id="navlinks">
+      <div>
         <img id="slacklogo" src="./images/slack-logo.png" alt="Slack logo" />
-        <ul id="links">
+        <ul>
           <li>
             <a href="#">Product</a>
           </li>
@@ -41,9 +41,9 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-block">
+      <div class=" mobile-block">
         <img src="./images/icon-menu.png" class="mr25" alt="burger-menu" />
-        <img src="./images/icon-search.png" class="mr25" alt="burger-menu" />
+        <img src="./images/icon-search.png" class="mr25" alt="search-icon" />
       </div>
       <div id="signincont">
         <button id="signin">
@@ -68,50 +68,43 @@
           <span class="text-yellow">Slack is free to try </span>for as long as
           you'd like.
         </p>
-        <button>
-          <span class="bgwhite text-purple mobile-button block"
-            >SIGN UP WITH EMAIL</span
-          >
-        </button>
-          <button>
-            <span id="google" class="bgblue text-white mobile-button standard-button block"
-              >SIGN UP WITH GOOGLE</span
-            >
-          </button>
+        <div class="display-flex flex-column bgpurple">
+         <button class="mobile-button text-purple font-weight border-none">SIGN UP WITH EMAIL</button>
+         <button class="mobile-button text-white font-weight bgblue border-none">SIGN UP WITH GOOGLE</button>
+        </div>
         </div>
       </div>
 
-      <div>
-        <img
-          src="./images/hero-product-ui.png"
-          class="contain"
-          alt="Slack app screenshot"
-        />
+      <div class="image-trim">
+        <img src="./images/hero-product-ui.png" class="contain" alt="Slack app screenshot"/>
       </div>
     </header>
 
-    <main>
-      <section class="display-flex flex-column text-align-center contain width100 bgbeige">
-        <p class="font-size font-weight">TRUSTED BY COMPANIES ALL OVER THE WORLD</p>
+<!-- TRUST -->
 
-        <div class="display-flex justify-space-around mobile-margin align-center">
+    <main>
+      <section class="text-align-center bgbeige">
+        <p class="font-size font-weight mt0 pt75">TRUSTED BY COMPANIES ALL OVER THE WORLD</p>
+
+        <div id="logobox" class="display-flex flex-wrap justify-space-around mobile-margin align-center">
           <img src="./images/logo-airbnb.png" class="image-size1" alt="Airbnb logo" />
           <img src="./images/logo-nasa.png" class="image-size2" alt="NASA logo" />
           <img src="./images/logo-uber.png" class="image-size3" alt="Uber logo" />
           <img src="./images/logo-target.png" class="image-size4" alt="Target logo" />
-        </div>
-        <div class="display-flex  justify-space-around mobile-margin">
           <img src="./images/logo-nyt.png" class="image-size5" alt="New York Times logo" />
           <img src="./images/logo-spotify.png" class="image-size6" alt="Spotify logo" />
         </div>
       </section>
+
+<!-- BLUE BANNER -->
+
 
       <section class="bgbeige pt75">
         <div>
           <img src="./images/connectedness-mobile.png" class="bgbeige blue-banner-mobile" alt="connectedness" />
         </div>
 
-        <div>
+        <div class="mobile-margin">
           <h2>Bring your team together</h2>
 
           <p>
@@ -121,17 +114,27 @@
             companies.
           </p>
 
-          <a href="#">
-            <span>Learn more about channels</span>
+          <a href="#" class="font-decoration">
+          <div class="display-flex align-center flex-row">
+            <div>            
+              <span>Learn more about channels</span>
+            </div>
+            <div class="pl10">
+              <img src=".\images\icon-arrow-right.png" alt="">
+            </div>
+          </div>
           </a>
+
         </div>
       </section>
 
+<!-- GREEN BANNER -->
+
       <section class="bgbeige pt75">
         <div>
-          <img src="./images/flexibility-mobile.png" class="beige-banner-mobile" alt="flexibility" />
+          <img src="./images/flexibility-mobile.png" class="green-banner-mobile" alt="flexibility" />
         </div>
-        <div>
+        <div class="mobile-margin">
           <h2>Choose how you want to work</h2>
           <p>
             In Slack, you’ve got all the flexibility to work when, where and how
@@ -139,18 +142,27 @@
             or hop on a huddle to talk things out live.
           </p>
 
-          <a href="#">
-            <span>Learn more about flexible communication</span>
+          <a href="#" class="font-decoration">
+            <div class="display-flex align-center flex-row">
+              <div>            
+                <span>Learn more about flexible communication</span>
+              </div>
+              <div class="pl10">
+                <img src=".\images\icon-arrow-right.png" alt="">
+              </div>
+            </div>
           </a>
         </div>
       </section>
+
+<!-- YELLOW BANNER -->
 
       <section class="bgbeige pt75">
         <div>
           <img src="./images/speed-mobile.png" class="yellow-banner-mobile" alt="speed" />
         </div>
 
-        <div>
+        <div class="mobile-margin pb50">
           <h2>Move faster with your tools in one place</h2>
           <p>
             With your other work apps connected to Slack, you can work faster by
@@ -158,110 +170,126 @@
             you can automate away routine tasks.
           </p>
 
-          <a href="#">
-            <span>Learn more about the Slack platform</span>
+          <a href="#" class="font-decoration">
+          <div class="display-flex align-center flex-row">
+            <div>            
+              <span>Learn more about channels</span>
+            </div>
+            <div class="pl10">
+              <img src=".\images\icon-arrow-right.png" alt="">
+            </div>
+          </div>
           </a>
+
         </div>
       </section>
 
-      <section class="text-align-center pt75">
+<!-- LARGE TEAMS -->
+
+      <section class="text-align-center pt75 mobile-margin mt0">
         <h3>Teams large and small rely on Slack</h3>
         <p>
           Slack securely scales up to support collaboration at the world’s
           biggest companies.
         </p>
 
-        <div class="display-flex flex-column mobile-button">
-          <button>Meet Slack for enterprise</button>
-          <button>Talk to sales</button>
+        <div class="display-flex flex-column">
+          <button class="mobile-button text-white bgpurple border-none">MEET SLACK FOR ENTERPRISE</button>
+          <button class="mobile-button bgwhite border-color-purple text-purple">TALK TO SALES</button>
         </div>
 
-        <ul>
-          <li>
-            <p><span>85%</span></p>
-            <p>
-              of users say Slack has improved communication
-              <sup>*</sup>
-            </p>
-          </li>
+        <div class="display-flex flex-column">
+          <div>          
+            <p class="text-purple font-sizea font-weight mb0">85%</p>
+            <p class="font-weight mobile-margin-slim">of users say Slack has improved communication*</p></div>
+          <div>
+            <p class="text-purple font-sizea font-weight mb0">86%</p>
+            <p class="font-weight mobile-margin-slim">feel their ability to work remotely has improved*</p>
+          </div>
+          <div>
+            <p class="text-purple font-sizea font-weight mb0">88%</p>
+            <p class="font-weight mobile-margin-slim">feel more connected to their teams*</p>
+          </div>
 
-          <li>
-            <p><span>86%</span></p>
-            <p>
-              feel their ability to work remotely has improved has improved
-              <sup>*</sup>
-            </p>
-          </li>
 
-          <li>
-            <p><span>88%</span></p>
-            <p>
-              feel more connected to their teams*
-              <sup>*</sup>
-            </p>
-          </li>
-        </ul>
+          <p class="text-grey"><span class="text-black">*</span> Weighted average. Based on 2,707 survey responses from weekly Slack users in the U.S., UK, Australia and Canada with a ± 2% margin of error at 95% CI (August 2020).</p>
+        </div>
       </section>
 
-      <section>
-        <h3>Welcome to your new digital HQ</h3>
+<!-- WELCOME -->
 
-        <button>Try for free</button>
-        <button>Talk to sales</button>
+      <section class="display-flex flex-column bgpurple pb75">
+        <h3 class="text-align-center text-white">Welcome to your new digital HQ</h3>
+
+        <button class="mobile-button bgpurple border-color-white text-white font-weight">TALK TO SALES</button>
+        <button class="mobile-button bgwhite border-color-purple text-purple font-weight">TRY FOR FREE</button>
       </section>
     </main>
 
-    <footer>
-      <img src="./images/iso-slack.png" alt="Slack logo" />
-      <div>
-        <ul>
-          <li>WHY SLACK?</li>
-          <li>Slack vs. Email</li>
-          <li>Channels</li>
-          <li>Engagement</li>
-          <li>Scale</li>
-          <li>Watch the Demo</li>
+<!-- FOOTER -->
+
+    <footer class="mobile-margin">
+      <img id="footer-slack-logo" class="mt50" src="./images/iso-slack.png" alt="Slack logo" />
+      <div class="display-flex justify-space-around font-sizec">
+        <ul class="pl0">
+          <p class="mt20"><b>WHY SLACK?</b></p>
+          <p class="mt50">Slack vs. Email</p>
+          <p class="mt20">Channels</p>
+          <p class="mt20">Engagement</p>
+          <p class="mt20">Scale</p>
+          <p class="mt20">Watch the Demo</p>
         </ul>
 
         <ul>
-          <li>PRODUCT</li>
-          <li>Features</li>
-          <li>Integrations</li>
-          <li>Enterprise</li>
-          <li>Solutions</li>
-          <li>Releases</li>
+          <p class="mt20"><b>PRODUCT</b></p>
+          <p class="mt50">Features</p>
+          <p class="mt20">Integrations</p>
+          <p class="mt20">Enterprise</p>
+          <p class="mt20">Solutions</p>
+          <p class="mt20">Releases</p>
         </ul>
 
         <ul>
-          <li>PRICING</li>
-          <li>Plans</li>
-          <li>Paid vs. Free</li>
+          <p class="mt20"><b>PRICING</b></p>
+          <p class="mt50">Plans</p>
+          <p class="mt20">Paid vs. Free</p>
         </ul>
 
         <ul>
-          <li>COMPANY</li>
-          <li>About Us</li>
-          <li>Leadership</li>
-          <li>Investor Relations</li>
-          <li>News</li>
-          <li>Media Kit</li>
-          <li>Careers</li>
+          <p class="mt20"><b>COMPANY</b></p>
+          <p class="mt50">About Us</p>
+          <p class="mt20">Leadership</p>
+          <p class="mt20">Investor Relations</p>
+          <p class="mt20">News</p>
+          <p class="mt20">Media Kit</p>
+          <p class="mt20">Careers</p>
         </ul>
       </div>
 
-      <ul>
-        <li>Status</li>
-        <li>Privacy</li>
-        <li>Terms</li>
-        <li>Cookie Preferences</li>
-        <li>Contact Us</li>
-        <li>Change Region</li>
-        <li>Download Slack</li>
+      <hr>
+
+      <ul class="pl0">
+        <p class="font-sizec mt30"><b>Status</b></p>
+        <p class="font-sizec mt30"><b>Privacy</b></p>
+        <p class="font-sizec mt30"><b>Terms</b></p>
+        <p class="font-sizec mt30"><b>Cookie Preferences</b></p>
+        <p class="font-sizec mt30"><b>Contact Us</b></p>
+        <div class="display-flex align-center">
+          <img class="height15" src=".\images\icon-region.png" alt="small globe">
+          <div>
+            <p class="font-sizec ml10"><b>Change Region</b></p>
+          </div>
+        </div>
+        <div class="display-flex align-center">
+          <img class="height15" src=".\images\icon-download.png" alt="download icon">
+          <div>
+            <p class="font-sizec ml10 text-blue"><b>Download Slack</b></p>
+          </div>
+        </div>
+
       </ul>
 
-      <hr />
-
-      <ul>
+      <ul class="pl0">
         <li>
           <i class="fab fa-twitter"></i>
         </li>
@@ -276,7 +304,7 @@
         </li>
       </ul>
 
-      <div>
+      <div class="text-grey font-size pb50">
         <small>
           &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights
           reserved. Various trademarks held by their respective owners.
