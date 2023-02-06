@@ -88,7 +88,16 @@ header div:first-child h1 {
   margin-bottom: 1.5rem;
 }
 
-header div:first-child p > span {
+header div:first-child p[data-highlightword] {
+  position: relative;
+  color: white;
+}
+
+header div:first-child p[data-highlightword]::before {
+  content: attr(data-highlightword);
+  position: absolute;
+  top: 0;
+  left: 0;
   color: #ecb12f;
 }
 
@@ -944,5 +953,19 @@ footer div:last-child {
 
   footer ul:nth-child(5) li {
     padding-right: 6rem;
+  }
+}
+
+/* Change images */
+
+@media (min-width: 767px) {
+  main section:nth-child(2) img {
+    content: url("../images/connectedness.png");
+  }
+  .section-reverse img {
+    content: url("../images/flexibility.png");
+  }
+  main section:nth-child(4) img {
+    content: url("../images/speed.png");
   }
 }
