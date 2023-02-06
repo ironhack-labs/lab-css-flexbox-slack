@@ -443,6 +443,9 @@ footer div:last-child {
 /* Iteration 2 */
 @media (min-width: 767px) and (max-width: 1023px) {
   header {
+    background-image: url("/starter_code/images/background-singup.png");
+    background-size: 100rem;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -476,8 +479,25 @@ footer div:last-child {
 
   /* main section */
 
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-section .info-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-section a::after {
+    content: "";
+  }
+
   #main-section section:first-child div {
     width: 100%;
+    margin-bottom: 6rem;
   }
 
   #main-section section:nth-child(5) div {
@@ -500,9 +520,14 @@ footer div:last-child {
   #main-section ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     text-align: start;
+    padding: 0 4rem;
     width: 100%;
+  }
+
+  #main-section ul li {
+    width: 20%;
   }
 
   footer > ul {
