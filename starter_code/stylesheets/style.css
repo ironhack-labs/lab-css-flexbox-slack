@@ -121,6 +121,9 @@
 .text-decoration-none{
     text-decoration: none;
 }
+.text-uppercase{
+    text-transform: uppercase;
+}
 
 
 /*Styles for Paddings  */
@@ -164,8 +167,8 @@ header  h1{
     width:450px;
     height:250px;
     position:absolute;
-    right:150px;
-    top:20%;
+    right:140px;
+    top:18%;
 }
 header p {
     font-size:1.4rem;
@@ -184,9 +187,10 @@ header p {
     padding:0.6rem 1.5rem;
 }
 .btn-icon{
-    width:20px;
-    height:20px;
-    justify-self:flex-start;
+    width:40px;
+    height:40px;
+    position: absolute;
+    left:5px;
 }
 /* Styles for Background */
 .bg-white{
@@ -266,6 +270,33 @@ footer li {
 #slackLogo{
     width:60px;
 }
+#footer-info li{
+    font-weight:700;
+}
+#changeRegion::before{
+   content: url('../images/icon-region.png');
+   height:50px;
+   width:50px;
+   left:-20px;
+   position: absolute;
+   display: block;
+}
+#changeRegion{
+    position: relative;
+    left:1.5rem;
+}
+#downloadSlack::before{
+    content: url('../images/icon-download.png');
+    height:50px;
+    width:50px;
+    left:-20px;
+    position: absolute;
+    display: block;
+}
+#downloadSlack{
+    color:var(--dark-blue);
+    position: relative;
+}
 /*Media Query for Mobile Devices*/
 @media (max-width: 767px){
     :root{
@@ -289,7 +320,7 @@ footer li {
         flex-direction: column;
         align-items: center;
         gap:0.5rem;
-        height:60vw;
+        height:25vh;
         overflow: auto;
     }
     #welcome button{
@@ -308,7 +339,7 @@ footer li {
         padding:1.2rem 0;
     }
     #iconSocial{
-        justify-content: space-around;
+        justify-content: space-between;
     }
     #list{
         gap:0.5rem;
@@ -332,12 +363,18 @@ footer li {
     }
     #product-ui section{
         flex-direction: column;
+        margin-bottom: 3.5rem;
     }
     #product-ui section > div{
-        width:100%;
+        width:100vw !important;
         padding:1.5rem 0.8rem;
-        
+        align-items: flex-start;
+        padding:0;
     }
+    .w-70{
+        width:85%;
+        height:320px;
+     }
     #choose-text{
         order:1;
     }
@@ -358,12 +395,12 @@ footer li {
         gap:1.5rem;
      }
      header{
-        height:80vh;
+        height:85vh;
         overflow: hidden;
         text-align: center;
      }
      .header-image{
-        top:60%;
+        top:50%;
         left:20px;
         position: absolute;
         width:100%;
@@ -380,6 +417,7 @@ footer li {
      #buttoncontainer button{
         padding:1rem;
         width:100%;
+        position: relative;
      }
      #teamWork{
         align-items: center;
@@ -387,7 +425,19 @@ footer li {
      #teams h3{
         margin-top:2.5rem;
      }
-}
+     #product-ui{
+        margin-bottom:3rem;
+     }
+     #footer-info{
+        gap:0.9rem;
+     }
+     #downloadSlack{
+        left:1.5rem;
+    }
+    #changeRegion{
+        left:1.5rem;
+    }
+}     
 /*Media Query for Small Screens*/
 @media (min-width: 768px) and (max-width:959px){
     .navbar-hamburger-icon{
@@ -426,7 +476,6 @@ footer li {
         #product-ui section > div{
             width:100%;
             padding:1.5rem 0.8rem;
-            
         }
         #choose-text{
             order:1;
@@ -445,7 +494,7 @@ footer li {
          }
          .header-image{
             top:auto;
-            bottom:30%;
+            bottom:20%;
             left:570px;
             position: absolute;
          }
@@ -455,6 +504,68 @@ footer li {
           #teamButtons{
               margin-bottom: 6rem;
           }
+          .btn-icon{
+            width:40px;
+            height:40px;
+            position: absolute;
+            left:2.1rem;
+        }
+        #footer-info{
+            width:100%;
+            padding:1.5rem 0;
+            justify-content: space-between;
+            gap:1.2rem;
+        }
+        #iconSocial{
+            gap:3rem;
+        }
+        #teams{
+            height:45vh;
+        }
+        #teamWork h1{
+            min-width:40%;
+            max-width:60%;
+        }
+        #product-ui section{
+            margin-bottom: 3.5rem;
+            flex-direction: column;
+        }
+        #product-ui section > div{
+            width:100vw !important;
+            padding:1.5rem 0.8rem;
+            align-items: flex-start;
+            padding:0;
+        }
+        .w-70{
+            width:85%;
+            height:400px;
+         }
+         #companies{
+            width:100%;
+         }
+         #choose-img{
+            align-self:flex-end;
+         }
+         .product-text h2{
+           width:100%;
+           padding:2.1rem 0 0.5rem 0;
+         }
+         .product-text p{
+            padding:0.8rem 0;
+         }
+         .product-text{
+            padding-left:10rem !important;
+         }
+         .product-text a{
+            padding:0;
+         }
+         .product-margin{
+            margin:0;s
+         }
+         #product-ui img{
+            width:75%;
+            height:400px;
+         }
 }
 
 /*Media Query for Medium Screens*/
@@ -483,7 +594,7 @@ footer li {
          .header-image{
             top:auto;
             bottom:35%;
-            left:800px;
+            left:850px;
             position: absolute;
          }
          #teams h3{
@@ -491,6 +602,30 @@ footer li {
           }
           #teamButtons{
               margin-bottom: 6rem;
+          }
+          .btn-icon{
+            width:40px;
+            height:40px;
+            position: absolute;
+            left:2.1rem;
+        }
+        #iconSocial{
+            gap:3rem;
+        }
+        #teamWork h1{
+            min-width:40%;
+            max-width:60%;
+        }
+        #product-ui img{
+            width:90%;
+            height:280px;
+         }
+         .product-text h2{
+            width:65%;
+            padding:2.1rem 1rem 0;
+          }
+          #product-ui{
+            height:80vh;
           }
 }
 
@@ -508,5 +643,16 @@ footer li {
         #teamButtons{
             margin-bottom: 6rem;
         }
-
+        .btn-icon{
+            width:35px;
+            height:35px;
+            position: absolute;
+            right:70%;
+        }
+        #buttoncontainer button{
+            position: relative;
+        }
+        #buttoncontainer{
+            max-width:800px;
+        }
 }
