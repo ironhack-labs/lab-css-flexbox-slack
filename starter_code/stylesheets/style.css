@@ -353,7 +353,7 @@ footer {
 }
 
 footer img {
-  width: 10%;
+  width: 6%;
   margin: 2rem 4rem;
 }
 
@@ -361,7 +361,8 @@ footer > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin: 0 4rem;
 }
 
 footer > div > ul {
@@ -369,7 +370,7 @@ footer > div > ul {
   order: 1;
   list-style: none;
   font-size: 0.8rem;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 footer > div > ul li:first-child {
@@ -383,7 +384,7 @@ footer > div > ul li {
 
 footer > ul li {
   font-size: 1rem;
-  padding: 8px 0;
+  padding: 1rem 0;
   color: black;
 }
 
@@ -401,12 +402,20 @@ footer > ul {
 }
 
 .terms-and-conditions li:last-child {
+  display: flex;
+  align-items: center;
   color: #2e71a6;
+}
+
+.terms-and-conditions li:nth-child(6) {
+  display: flex;
+  align-items: center;
 }
 
 .terms-and-conditions li:nth-child(6)::before {
   content: url("/starter_code/images/icon-region.png");
   padding-right: 1rem;
+  justify-content: center;
 }
 
 .terms-and-conditions li:last-child::before {
@@ -428,17 +437,94 @@ footer ul:nth-child(5) li i {
 
 footer div:last-child {
   order: 4;
-  margin: 1rem 2rem 2rem;
+  margin: 1rem 4rem 2rem;
 }
 
 /* Iteration 2 */
-@media (min-width: 767px) and (max-width: 959px) {
+@media (min-width: 767px) and (max-width: 1023px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+  }
+
+  header div:first-child {
+    width: 60%;
+    align-items: flex-start;
+  }
+
+  header div:first-child h1 {
+    width: 90%;
+    text-align: start;
+    font-size: 7rem;
+  }
+
+  header > div > div {
+    width: 100%;
+  }
+
+  header div:nth-child(2) {
+    height: 25rem;
+  }
+
+  header div:nth-child(2) img {
+    height: 100%;
+    margin-right: -20rem;
+  }
+
+  /* main section */
+
+  #main-section section:first-child div {
+    width: 100%;
+  }
+
+  #main-section section:nth-child(5) div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    gap: 2rem;
+  }
+
+  #main-section button {
+    width: auto;
+    padding: 0 3rem;
+  }
+
+  #main-section button:first-child {
+    width: auto;
+  }
+
+  #main-section ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+  }
+
+  footer > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer ul:nth-child(5) {
+    justify-content: flex-start;
+  }
+
+  footer ul:nth-child(5) li {
+    padding-right: 6rem;
+  }
 }
 
 /* Iteration 3 */
-@media (min-width: 960px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1339px) {
 }
 
 /* Iteration 4 */
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 }
