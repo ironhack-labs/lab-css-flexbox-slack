@@ -153,14 +153,9 @@ main button {
     letter-spacing: 1px;
     margin-bottom: 1rem;
     min-height: var(--button-min-height);
-    padding: 0;
+    padding: 0 30px;
     text-transform: uppercase;
     width: 100%;
-}
-
-main button {
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .btn-outline {
@@ -180,11 +175,15 @@ main button {
 .btn-google img {
     background-color: var(--white);
     border-radius: 3px;
-    margin: -20px 0 0 4px;
+    left: 4px;
+    margin: 0;
+    padding: 4px;
     position: absolute;
-    width: 36px;
-    left: 0;
     top: 50%;
+    transform: translateY(-50%);
+    height: 86%;
+    width: auto;
+    box-sizing: border-box;
 }
 
 .bg-purple button {
@@ -256,7 +255,6 @@ nav .logo {
     flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 3rem;
     margin: 0;
     padding: 0;
 }
@@ -393,6 +391,10 @@ footer ul {
         padding-bottom: 60px;
     }
 
+    .content-header {
+        display: flex;
+    }
+
     header {
         align-items: center;
         display: flex;
@@ -526,6 +528,12 @@ footer ul {
         height: 48px;
     }
 
+    header .full-width {
+        width: calc;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     main button:not(:only-of-type) {
         display: inline-block;
         width: auto;
@@ -568,6 +576,14 @@ footer ul {
         font-size: 1.35rem;
     }
 
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
     nav .logo {
         width: 100px;
     }
@@ -580,8 +596,44 @@ footer ul {
         margin-left: 2rem;
     }
 
+    main button,
+    header button {
+        min-height: 58px;
+        font-size: 0.7rem;
+    }
+
+    header.bg-purple .btn-google {
+        padding-left: 2.5rem;
+        padding-right: 1rem;
+    }
+
     header {
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+
+    header button:not(:only-of-type) {
+        display: inline-block;
+        width: 48%;
+        vertical-align: middle;
+    }
+
+    header button + button {
+        margin-left: 0.5rem;
+    }
+
+    section > * {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .content-header {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .list-numbers {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
