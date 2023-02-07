@@ -1,13 +1,13 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+:root {
+  --background-purple: #540b51;
+  --background-ivory: #f3eae2;
+  --button-blue: #4285f4;
+  --paragraph-black: #000000;
+  --paragraph-yellow: #ecb12f;
+  --links-blue: #2e71a6;
+  --white: white;
+}
+
 *,
 ::after,
 ::before {
@@ -18,7 +18,7 @@ footer links grey: #454245
 
 html {
   font-size: 62.5%;
-  background-color: #540b51;
+  background-color: var(--background-purple);
 }
 
 body {
@@ -29,7 +29,7 @@ p,
 span {
   font-size: 1.2em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
+  color: var(--paragraph-black);
   line-height: 150%;
 }
 
@@ -40,19 +40,13 @@ li {
   line-height: 135%;
 }
 
-/*Posicionamiento
-Modelo de caja
-Tipografía y texto
-Visual
-Miscelánea*/
-
 /* Iteration 1 */
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem 3rem 1.5rem;
-  background-color: #540b51;
+  background-color: var(--background-purple);
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -69,7 +63,7 @@ nav button {
   align-items: center;
   margin: 0 0 0 2rem;
   border: 0;
-  background-color: #540b51;
+  background-color: var(--background-purple);
 }
 
 /* header */
@@ -84,13 +78,13 @@ header div:first-child {
 header div:first-child h1 {
   text-align: center;
   font-size: 3rem;
-  color: white;
+  color: var(--white);
   margin-bottom: 1.5rem;
 }
 
 header div:first-child p[data-highlightword] {
   position: relative;
-  color: white;
+  color: var(--white);
 }
 
 header div:first-child p[data-highlightword]::before {
@@ -98,11 +92,11 @@ header div:first-child p[data-highlightword]::before {
   position: absolute;
   top: 0;
   left: 0;
-  color: #ecb12f;
+  color: var(--paragraph-yellow);
 }
 
 header div:first-child p {
-  color: white;
+  color: var(--white);
   margin-bottom: 1.5rem;
 }
 
@@ -121,7 +115,7 @@ header button {
   font-weight: 600;
   border: 0;
   border-radius: 0.3rem;
-  background-color: white;
+  background-color: var(--white);
 }
 
 header button:nth-child(2) {
@@ -130,25 +124,25 @@ header button:nth-child(2) {
   justify-content: center;
   align-items: center;
   border: 0;
-  background-color: #4285f4;
+  background-color: var(--button-blue);
 }
 
 header button:nth-child(2) span {
-  color: white;
+  color: var(--white);
 }
 
 header button:first-child {
   margin-bottom: 1.5rem;
-  color: #540b51;
+  color: var(--background-purple);
 }
 
 header button img {
   position: absolute;
   left: 1rem;
   width: 2rem;
-  outline: 0.3rem solid white;
+  outline: 0.3rem solid var(--white);
   height: 2rem;
-  background-color: white;
+  background-color: var(--white);
 }
 
 header button span {
@@ -169,7 +163,7 @@ header div:nth-child(2) img {
 
 /* main */
 #main-section {
-  background-color: #f3eae2;
+  background-color: var(--background-ivory);
   padding-top: 3rem;
 }
 
@@ -248,7 +242,7 @@ header div:nth-child(2) img {
 }
 
 .main-section a > span {
-  color: #2e71a6;
+  color: var(--links-blue);
 }
 
 .main-section a::after {
@@ -262,7 +256,7 @@ header div:nth-child(2) img {
   text-align: center;
   margin-top: 3rem;
   padding: 6rem 2rem;
-  background-color: white;
+  background-color: var(--white);
 }
 
 #main-section section:nth-child(5) h3 {
@@ -282,9 +276,9 @@ header div:nth-child(2) img {
   height: 4rem;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 0.3rem;
-  border: 0.1rem solid #540b51;
+  border: 0.1rem solid var(--background-purple);
 }
 
 #main-section button:first-child {
@@ -294,8 +288,8 @@ header div:nth-child(2) img {
   margin-bottom: 1rem;
   border: 0;
   border-radius: 0.3rem;
-  background-color: #540b51;
-  color: white;
+  background-color: var(--background-purple);
+  color: var(--white);
 }
 
 #main-section ul {
@@ -310,7 +304,7 @@ header div:nth-child(2) img {
 #main-section li > p > span {
   font-size: 3rem;
   font-weight: 600;
-  color: #540b51;
+  color: var(--background-purple);
 }
 
 #main-section li > p {
@@ -327,36 +321,36 @@ header div:nth-child(2) img {
 #main-section section:nth-child(6) {
   text-align: center;
   padding: 3rem 2rem;
-  background-color: #540b51;
+  background-color: var(--background-purple);
 }
 
 #main-section section:nth-child(6) h3 {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 2rem;
-  color: white;
+  color: var(--white);
 }
 
 #main-section section:nth-child(6) button {
   width: 90%;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 0.3rem;
-  border: 0.1rem solid #540b51;
+  border: 0.1rem solid var(--background-purple);
   font-weight: 600;
-  color: #540b51;
+  color: var(--background-purple);
 }
 
 #main-section section:nth-child(6) button:last-child {
   width: 90%;
   border-radius: 0.3rem;
-  background-color: #540b51;
-  border: 0.1rem solid white;
-  color: white;
+  background-color: var(--background-purple);
+  border: 0.1rem solid var(--white);
+  color: var(--white);
 }
 
 /* footer */
 footer {
-  background-color: white;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
 }
@@ -388,13 +382,13 @@ footer > div > ul li:first-child {
 
 footer > div > ul li {
   padding: 8px 0;
-  color: black;
+  color: var(--paragraph-black);
 }
 
 footer > ul li {
   font-size: 1rem;
   padding: 1rem 0;
-  color: black;
+  color: var(--paragraph-black);
 }
 
 footer > hr {
@@ -413,7 +407,7 @@ footer > ul {
 .terms-and-conditions li:last-child {
   display: flex;
   align-items: center;
-  color: #2e71a6;
+  color: var(--links-blue);
 }
 
 .terms-and-conditions li:nth-child(6) {
@@ -581,7 +575,7 @@ footer div:last-child {
 
   nav ul a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
   }
 
   nav div:first-child {
@@ -610,12 +604,12 @@ footer div:last-child {
   nav div:last-child > ul > li:last-child {
     text-transform: uppercase;
     padding: 0.5rem 1.5rem;
-    background-color: white;
-    color: #540b51;
+    background-color: var(--white);
+    color: var(--background-purple);
   }
 
   nav div:last-child > ul > li:last-child a {
-    color: #540b51;
+    color: var(--background-purple);
   }
 
   header {
@@ -777,7 +771,7 @@ footer div:last-child {
 
   nav ul a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
   }
 
   nav div:first-child {
@@ -812,12 +806,12 @@ footer div:last-child {
   nav div:last-child > ul > li:last-child {
     text-transform: uppercase;
     padding: 0.5rem 1.5rem;
-    background-color: white;
-    color: #540b51;
+    background-color: var(--white);
+    color: var(--background-purple);
   }
 
   nav div:last-child > ul > li:last-child a {
-    color: #540b51;
+    color: var(--background-purple);
   }
 
   header {
