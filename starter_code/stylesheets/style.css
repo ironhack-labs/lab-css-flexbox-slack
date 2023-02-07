@@ -26,11 +26,11 @@ body {
 header,
 section,
 footer {
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 section {
-    padding: 30px 10px;
+    padding: 30px 15px;
 }
 
 section:not(.bg-ivory) {
@@ -48,12 +48,8 @@ section:not(.bg-ivory) {
 .bg-ivory {
     background-color: var(--ivory);
     color: var(--paragraph-black);
-}
-
-.full-width {
-    width: calc(100% + 20px);
-    margin-left: -10px;
-    margin-right: -10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 header .full-width {
@@ -85,6 +81,10 @@ h1 {
 h2 {
     font-size: 1.6rem;
     padding-top: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
 }
 
 p {
@@ -277,10 +277,17 @@ nav .logo {
 .text-and-img {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .text-and-img div {
     order: 2;
+}
+
+.text-and-img .text {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .text-and-img .image {
@@ -357,12 +364,93 @@ footer ul {
 
 /* --- SMALL SCREENS --- */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+    html {
+        font-size: 1.2rem;
+    }
 
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav,
+    header,
+    section,
+    footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    header .text {
+        flex: 0 0 50%;
+    }
+
+    header .image {
+        flex: 0 0 45%;
+    }
+
+    .list-logos {
+        flex-wrap: nowrap;
+    }
+
+    header .full-width {
+        width: calc(100% + 60px);
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    .bg-ivory + .bg-ivory {
+        padding-top: 0;
+    }
+
+    .text-and-img .text {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .text-and-img .image {
+        flex: 0 0 80%;
+    }
+
+    .text-and-img .text + .image {
+        margin-left: 20%;
+    }
+
+    .list-numbers {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .nav-footer-secondary {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-footer-secondary li + li {
+        margin-top: 0;
+    }
+
+    .nav-social {
+        gap: 3rem;
+        justify-content: left;
+    }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-
+@media (min-width: 768px) and (max-width: 1024px) {
+    
 }
 
 
