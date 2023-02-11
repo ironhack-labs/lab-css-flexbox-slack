@@ -9,6 +9,8 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
+/*** Global configuration ***/
+
 * {
   box-sizing: border-box;
 }
@@ -18,10 +20,28 @@ img {
 }
 
 html {
+  font-family: "Arimo", sans-serif;
   font-size: 10px;
 }
 
-/* Nav-bar */
+/*** Tools ***/
+
+.column-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 15px 20px;
+}
+
+.basic-decoration-button {
+  border: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+/*** Nav-bar ***/
 
 nav {
   display: flex;
@@ -34,13 +54,16 @@ nav {
   width: 20%;
 }
 
-.icon-img {
+.icon-button {
   background-color: #540b51;
   border: none;
+}
+
+.icon-button img {
   width: 125%;
 }
 
-.icon-button {
+.icon-bar {
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -48,4 +71,200 @@ nav {
 
 nav ul {
   display: none;
+}
+
+/*** Header ***/
+
+header {
+  background-color: #540b51;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  padding: 20px 0 15px;
+}
+
+header span {
+  color: #ecb12f;
+}
+
+.signup-email {
+  background-color: white;
+  color: #540b51;
+  padding: 20px 0;
+}
+
+.signup-google {
+  background-color: #4285f4;
+  padding: 3px 0;
+  display: flex;
+  align-items: center;
+}
+
+.signup-google span {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding-left: 40px;
+}
+
+.signup-google img {
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  border-radius: 3px;
+  width: 39px;
+  padding: 6px;
+  margin: 6px;
+}
+
+.header-img {
+  width: 150%;
+  max-height: 400px;
+}
+
+/*** Main ***/
+/* Section 1 - Company Logos */
+
+.company-logos {
+  background-color: #f3eae2;
+}
+
+.company-logos p {
+  padding: 35px 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.company-logos div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 10px 40px;
+}
+
+.logo-airbnb {
+  width: 112px;
+  height: 35px;
+}
+
+.logo-nasa {
+  width: 67px;
+  height: 60px;
+}
+
+.logo-uber {
+  width: 75px;
+  height: 26px;
+}
+
+.logo-target {
+  width: 48px;
+  height: 48px;
+}
+
+.logo-nyt {
+  width: 230px;
+  height: 32px;
+}
+
+.logo-spotify {
+  width: 112px;
+  height: 35px;
+}
+
+/* Section 2 - Features */
+
+.features {
+  background-color: #f3eae2;
+}
+
+.features-description {
+  padding: 20px 15px 30px;
+}
+
+.features-description h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.features-description p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  padding-bottom: 15px;
+}
+
+.features-description a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #2e71a6;
+  font-weight: 700;
+}
+.features-description span::after {
+  content: " \2192";
+}
+
+.padding-right {
+  padding-right: 10px;
+}
+
+.padding-left {
+  padding-left: 10px;
+}
+
+/* Section 3 - Numbers */
+
+.numbers {
+  padding-top: 50px;
+}
+
+.numbers-title h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 0 50px 20px;
+}
+
+.numbers-title p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  padding-bottom: 10px;
+}
+
+.numbers-title span::before {
+  content: "\A";
+  white-space: pre;
+}
+
+.enterprise-button {
+  background-color: #540b51;
+  color: white;
+  padding: 20px 0;
+}
+
+.sales-button {
+  background-color: white;
+  color: #540b51;
+  padding: 20px 0;
+  border: solid 2px #540b51;
 }
