@@ -7,6 +7,13 @@
     font-family: 'AppliedSansProRg';
     src: url(../fonts/AppliedSansProRg.TTF);
 }
+li {
+    display:block;
+}
+
+.screen-image {
+    display: none;
+}
 
 nav, header{
     background-color:#540B51 ;
@@ -222,7 +229,7 @@ a {
     flex-direction: column;
 }
 
-#bring-section {
+#choose-section {
     display: flex;
     flex-direction: column;
 }
@@ -249,7 +256,16 @@ h3 {
 
 #teams-section p {
     text-align: center;
+    font-size:12px;
+    font-family: 'AppliedSansProBold';
 }
+#teams-section > p {
+    font-family: 'AppliedSansProRg';
+    font-size: 12px;
+    color:grey;
+    margin-top: 20px;
+}
+
 
 #meet-button {
     color:white;
@@ -277,16 +293,13 @@ h3 {
     font-family: 'AppliedSansProBold';
     color:#540B51;
     font-size: 44px;
-    margin-top: 90px;
 }
 
 #teams-section ul {
     margin-top:80px;
+    width: 180px;
 }
 
-/* #teams-section ul p {
-    width: ;
-} */
 #welcome-section {
     display: flex;
     flex-direction: column;
@@ -334,12 +347,14 @@ footer img {
     justify-content: space-around;
     width: auto;
     border-bottom: 1px solid grey;
-    margin-top: 80px;
+    margin-top: 60px;
     column-count: ;
-
-
+    padding-bottom: 40px;
 }
 
+#board li {
+margin-top: 20px;
+}
 
 footer li {
     list-style: none;
@@ -355,6 +370,8 @@ footer li {
 
 #last-links {
 padding-left: 12px;
+margin-top:40px;
+margin-bottom: 30px
 }
 
 #last-links > li {
@@ -366,6 +383,7 @@ padding-left: 12px;
     display: flex;
     justify-content: space-between;
     margin: 20px; 
+    margin-bottom: 40px;
 }
 
 #final-logos i{
@@ -416,3 +434,201 @@ hr {
 
 
 
+
+/* --------------- GRAN PANTALLA  -  PEPE -------------------------- */
+@media only screen and (width > 1440px) {
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #left-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    nav ul {
+        display:flex;
+        gap: 30px
+    }
+
+    #right-nav {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    nav a {
+        color: white;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #tryforfree {
+        text-transform: uppercase;
+        background-color: white;
+        border-radius: 4px ;
+        padding: 10px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    #tryforfree a {
+        color:#540B51;
+        font-family: 'AppliedSansProBold';
+    }
+
+    h1 {
+        font-size: 90px;
+        text-align: left;
+
+    }
+
+    header p {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .all-buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .email-button {
+        padding: 20px 60px;
+    }
+
+    .google-button {
+        padding: 20px 60px;
+    }
+
+    .logo-google {
+        position: absolute;
+        left: 320px;
+        top: 434px;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 100px;
+    }
+    .screenshot {
+        width: 80%;
+        overflow: visible;
+    }
+    #logos-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .all-logos {
+        justify-content: center;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .mobile-image {
+        display: none;
+    }
+
+    .screen-image {
+        display: block;
+    }
+    .info-aspect img {
+        width: 50%;
+    }
+
+    .info-aspect {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #green-image {
+        order: 0;
+        width: 75%;
+    }
+
+    #choose-section {
+        flex-direction: row;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    #teams-section p {
+        font-size: 20px;
+    }
+
+    #meet-button {
+        padding: 16px 30px;
+        width: auto;
+    }
+
+    #talk-button {
+        padding: 16px 30px;
+        width: auto;
+    }
+
+    #teams-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #teams-section ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 320px
+    }
+
+    #teams-section li > p {
+        width: 200px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+#teams-section > p {
+    display: none;
+}
+
+#try-button {
+    padding: 16px 30px;
+    width: 200px;
+}
+
+#second-talk-button {
+    padding: 16px 30px;
+    width: 200px;
+    order: 0;
+}
+
+#welcome-section {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#board {
+    justify-content: space-between;
+}
+
+#last-links {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#final-logos {
+    justify-content: flex-start;
+    gap: 80px
+}
+
+  }
