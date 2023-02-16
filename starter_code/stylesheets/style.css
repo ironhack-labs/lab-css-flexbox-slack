@@ -127,8 +127,6 @@ header {
 }
 
 #email_button {
-    display: flex;
-    justify-content: center;
     width: 90%;
     color: #540B51;
     padding: 15px;
@@ -140,10 +138,7 @@ header {
 }
 
 #google_button {
-    display: flex;
-    justify-content: center;
     width: 90%;
-    align-items: center;
     background-color: #4285F4;
     color: white;
     margin-left: 20px;
@@ -156,9 +151,11 @@ header {
 }
 
 #google_logo {
-    width: 40px;
+    width: 37px;
     background-color: white;
-    
+    position: absolute;
+    margin-left: -96px;
+    margin-top: -11px;
 }
 
 #app-screenshot  {
@@ -234,7 +231,7 @@ h3 {
 }
 
 #facts {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -269,17 +266,33 @@ h3 {
     height: 50px;
     border: 2px solid #540B51;
     margin-top: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 #percentage_list {
-    text-align: center;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .percentage {
     color: #540B51;
     font-size: 50px;
     font-weight: bold;
+    margin-bottom: 15px;
+    width: 180px;
+    text-align: center;
+    display: block;
+}
+
+.p_percent {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    width: 180px;
+    text-align: center;
+    display: block;
 }
 
 #last_section {
@@ -311,3 +324,53 @@ h3 {
 }
 
 /* Footer starts */
+
+#logo-footer {
+    display: flex;
+    justify-content: left;
+    height: 40px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#listas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 0px 20px;
+    margin-bottom: 30px;
+}
+
+.list {
+    font-size: 14px;
+    line-height: 25px;
+    width: 70px;
+}
+
+.encabezado-lista {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+hr {
+    margin: 0px 30px;
+}
+
+#last-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#down-slack {
+    color: #2E71A6;
+}
+
+#copyright {
+    font-size: 10px;
+    margin: 10px 30px;
+    display: block;
+}
