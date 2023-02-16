@@ -64,10 +64,14 @@ table {
     .lista-logo {
         display: none;
     }
+
+    .images_features_tablet {
+        display: none;
+    }
 }
 
 body {
-    display: none;
+    
     all: unset;
     font-family: 'Roboto', sans-serif;
 }
@@ -75,7 +79,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid darkgrey;
     background-color: #540B51;
 }
     
@@ -189,12 +193,12 @@ header {
 }
 
 .logos_c {
-    height: 40px;
+    height: 35px;
 }
 
 .features {
     background-color: #F3EAE2;
-    padding: 0px 10px 60px 10px;
+    padding: 0px 20px 60px 20px;
 }
 
 h2 {
@@ -217,7 +221,7 @@ h2 {
     font-weight: bold;
 }
 
-.images_features {
+.images_features_mobile {
     margin: none;
     width: 100%;
 }
@@ -244,7 +248,13 @@ h3 {
     padding-bottom: 30px;
 }
 
-.buttons {
+.buttons1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -337,7 +347,7 @@ h3 {
 #listas {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     padding: 0px 20px;
     margin-bottom: 30px;
 }
@@ -362,7 +372,7 @@ hr {
     margin-bottom: 30px;
     padding-left: 30px;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 #down-slack {
@@ -373,4 +383,205 @@ hr {
     font-size: 10px;
     margin: 10px 30px;
     display: block;
+    padding: 20px 0px;
+    line-height: 20px;
+}
+
+/* SMALL SCREENS */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .lista-logo {
+        display: none;
+    }
+
+    header {
+        background-image: url(../images/background-singup.png);
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 80px;
+        width: 400px;
+    }
+
+    .header_without_image {
+        
+    }
+
+    .header-contain {
+        width: 66%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        text-align: left;
+    }
+
+    #slack_p {
+        margin-left: 35px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 25px;
+        width: 400px;
+        line-height: 40px;
+    }
+
+    #email_button {
+        width: 450px;
+        color: #540B51;
+        padding: 15px;
+        margin-left: 35px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        height: 70px;
+        font-size: 18px;
+    }
+
+    #google_button {
+        width: 450px;
+        background-color: #4285F4;
+        color: white;
+        margin-left: 35px;
+        margin-top: 15px;
+        margin-bottom: 150px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        border: none;
+        height: 70px;
+        font-size: 18px;
+    }
+
+    #google_logo {
+        width: 50px;
+        background-color: white;
+        position: absolute;
+        margin-left: -123px;
+        margin-top: -17px;
+    }
+
+    #app-screenshot  {
+        display: none;
+    }
+
+    #companies_section {
+        height: 250px;
+    }
+
+    #trusted_p {
+        font-size: 18px;
+    }
+
+    #companies_logos {
+        flex-wrap: nowrap;
+        margin-left: 40px;
+        line-height: 0px;
+    }
+
+    .images_features_mobile {
+        display: none;
+    }
+
+    .images_features_tablet {
+        width: 100%;
+    }
+
+    .features {
+        display: block;
+        padding: 0px 120px 60px 120px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    #p_facts {
+        font-size: 20px;
+    }
+
+    #percentage_list {
+        display: flex;
+        justify-content:space-around;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .percentage {
+        text-align: left;
+        margin-bottom: 0px;
+        margin-top: 60px;
+    }
+
+    .p_percent {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .buttons1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #meet_slack {
+        width: 330px;
+    }
+
+    #talk_sales {
+        width: 200px;
+        margin: 0px;
+    }
+
+    #last_section {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    /* Footer starts */
+
+    #logo-footer {
+        height: 60px;
+        padding-left: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #listas {
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .list {
+        width: 150px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .encabezado-lista {
+        margin-bottom: 0px;
+    }
+
+    hr {
+        margin: 40px;
+    }
+
+    #last-list {
+        font-size: 14px;
+        list-style-type: none;
+        display: inline;
+        padding: 40px;
+    }
+
+    #last-list li {
+        list-style-type: none;
+        display: inline;
+        padding-right: 17px;
+    }
+
+    #copyright {
+        font-size: 12px;
+        padding-bottom: 40px;
+        margin-left: 40px;
+    }
+
 }
