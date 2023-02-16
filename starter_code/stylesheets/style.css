@@ -64,8 +64,7 @@ header {
 }
 
 header img {
-    height: 450px;
-    width: auto;
+    width: 100%;
 }
 
 
@@ -178,6 +177,14 @@ header span {
     width: auto;
 }
 
+.service-img-right {
+    display: none;
+
+}
+
+.service-img-left {
+    display: none;
+}
 
 .slack-services-text {
     padding: 60px 40px 90px 40px;
@@ -391,10 +398,20 @@ hr {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    html {
+
+        width: 1024px;
+      
+    }
+
+   
+    
     header {
+        width: auto;
         display: flex;
         flex-direction: row;
         text-align: left;
+        position: relative;
     }
 
     h1 {
@@ -404,12 +421,16 @@ hr {
     header p {
         padding: 0 30px;
 
+
     }
 
     .header-img {
         align-items: center;
         margin: auto 0;
-        width: 40%;
+        /* height: auto; */
+        width: 90%;
+       
+    
     }
 
     .log-in {
@@ -437,8 +458,31 @@ hr {
     }
 
     #companies p {
-        font-size: 20px;
+        font-size: 25px;
         padding-top: 0;
+    }
+
+    .service-img-mob {
+        display: none;
+    }
+
+    .service-img-left {
+        display: block;
+        width: 100%;
+        padding-right: 200px;
+        background-color:#F3EAE2 ;
+    }
+
+    .service-img-right {
+        display: block;
+        width: 100%;
+        padding-left: 200px;
+        background-color:#F3EAE2 ;
+    }
+
+    .slack-services-text {
+        padding-left: 200px;
+        padding-right: 200px;
     }
 
 
@@ -446,7 +490,5 @@ hr {
 
 
 
-
-
-
 }
+
