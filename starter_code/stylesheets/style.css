@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-img {
+img, div, header, main, section {
     width: 100%;
 }
 
@@ -46,6 +46,11 @@ nav ul {
     display: none;
 }
 
+nav button {
+    background-color: #540B51;
+    border: 0;
+}
+
 .logo {
     width: 40%;
 }
@@ -58,6 +63,8 @@ nav ul {
 .menu-buttons img {
    width: 30px;
    height: 30px;
+   background-color: #540B51;
+   margin: 0;
 } 
 
 header {
@@ -181,6 +188,24 @@ header span {
     width: auto;
 }
 
+.noMargin {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+
+}
+
+.noMargin2 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+
+}
+
 .service-img-right {
     display: none;
 
@@ -190,8 +215,16 @@ header span {
     display: none;
 }
 
+.service-img-mob {
+    padding: 2% 6% 2% 0;
+}
+
+.service-img-mob-right {
+    padding: 2% 0 2% 6%;
+}
+
 .slack-services-text {
-    padding: 60px 40px 90px 40px;
+    padding: 8% 6% 12%;
     background-color: #F3EAE2;
 }
 
@@ -201,8 +234,16 @@ header span {
 
 .slack-services-text span {
     color: #2E71A6;
-    font-size: 25px;
+    font-size: 2.2em;
     text-decoration: none;
+}
+
+.half-width {
+    font-weight: bold;
+}
+
+.half-width2 {
+    font-weight: bold;
 }
 
 .fa-solid {
@@ -211,7 +252,7 @@ header span {
 }
 
 #Teams button {
-    width: 75%;
+    width: 100%;
     height: 80px;
     padding: 10px 30px;
     font-size: 2em;
@@ -224,7 +265,7 @@ header span {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    padding: 0 60px 0 40px;
+    padding: 0 6%;
     text-align: center;
 }
 
@@ -264,15 +305,13 @@ h3 {
 
 }
 
-
-
 #section-bottom {
     background-color: #540B51;
 }
 
 #section-bottom h3 {
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 10%;
 }
 
 #section-bottom div {
@@ -280,12 +319,12 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    padding: 0 60px 0 40px;
+    padding: 0 6%;
     text-align: center;
 }
 
 #section-bottom button {
-    width: 75%;
+    width: 100%;
     height: 80px;
     padding: 10px 30px;
     font-size: 2em;
@@ -399,12 +438,8 @@ hr {
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    html {
 
-        min-width: 768px;
-        max-width: 1024px;
-      
-    }
+
 
     /* div {
         min-width: 768px;
@@ -418,9 +453,12 @@ hr {
         display: flex;
         flex-direction: row;
         text-align: left;
-        
+
     }
 
+    nav > ul, li {
+        visibility: visible;
+    }
 
     h1 {
     padding: 30px;
@@ -462,6 +500,7 @@ hr {
 
     #companies img {
         height: 32px;
+        width: 100%;
       
     }
 
@@ -503,7 +542,7 @@ hr {
         display: flex;
         flex-wrap: nowrap;
         padding-left: 100px;
-    padding-right: 100px;
+        padding-right: 100px;
 
        
     }
@@ -542,6 +581,10 @@ hr {
     font-weight: bold;
    }
 
+   #Teams > div {
+    width: 100%;
+   }
+
    .half-width, .half-width2  {
    padding: 0;
     text-align: left;
@@ -576,13 +619,15 @@ hr {
 
 @media (min-width: 1024px) and (max-width: 1440px) {
 
-    html {
-
-        min-width: 768px;
-        max-width: 1024px;
-      
+    nav {
+   
+        background-color: #540B51;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        border-bottom: 0;
     }
-
     
     header {
         width: auto;
@@ -595,20 +640,13 @@ hr {
     
 
     .logo {
-      width: 15%;
+        width: 80px;
         height: auto;
-        display: block;
+        position: absolute;
+        left: 30px;
+        top: 30px;
     }
 
-    nav {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-    }
 
     
 
