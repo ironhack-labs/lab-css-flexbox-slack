@@ -19,12 +19,11 @@
   </head>
 
   <body>
-    <div class="container background-color-purple">
-      <nav>
-        <div>
-          <img class="slack-icon" src="./images/slack-logo.png" alt="Slack logo" />
 
-          <ul>
+      <nav class="nav-container background-color-purple">
+        <div>
+          <img class="centered slack-icon" src="./images/slack-logo.png" alt="Slack logo" />
+          <ul hidden>
             <li>
               <a href="#">Product</a>
             </li>
@@ -40,13 +39,13 @@
           </ul>
         </div>
 
-        <div class="container">
-          <button>
-            <img src="./images/icon-search.png" alt="Search icon" />
+        <div class="nav-container">
+          <button class="nav-button nav-toggle background-color-purple">
+            <img class="background-color-purple" src="./images/icon-search.png" alt="Search icon" />
           </button>
 
-          <button>
-            <img src="./images/icon-menu.png" alt="Menu icon" />
+          <button class="nav-button background-color-purple">
+            <img class="background-color-purple" src="./images/icon-menu.png" alt="Menu icon" />
           </button>
 
           <ul hidden>
@@ -59,7 +58,6 @@
           </ul>
         </div>
       </nav>
-    </div>
 
     <header>
       <div class="container background-color-purple">
@@ -69,24 +67,24 @@
 
         <div class="container">
           <button class="button">
-            <span class="button-text text-color-purple"><strong>SIGN UP WITH EMAIL</strong></span>
+            <span class="to-upper button-text text-color-purple">Sign up with email</span>
           </button>
 
           <button class="button background-color-blue text-color-white">
             <img class="btn-container google-logo" src="./images/logo-google.png" alt="Google logo" />
-            <span class="button-text"><strong>SIGN UP WITH GOOGLE</strong></span>
+            <span class="to-upper button-text">Sign up with Google</span>
           </button>
         </div>
       </div>
 
       <div class="container">
-        <img class="img-resize" src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+        <img class="img-overflow" src="./images/hero-product-ui.png" alt="Slack app screenshot" />
       </div>
     </header>
 
     <main>
       <section class="background-color-ivory">
-        <p>Trusted by companies all over the world</p>
+        <p class="centered">Trusted by companies all over the world</p>
 
         <div class="logos">
           <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
@@ -114,12 +112,12 @@
           </p>
 
           <a href="#">
-            <span class="learn-more">Learn more about channels</span>
+            <span class="learn-more arrow-right">Learn more about channels</span>
           </a>
         </div>
       </section>
 
-      <section>
+      <section class="links">
         <div class="container">
           <h2>Choose how you want to work</h2>
           <p class="text">
@@ -129,7 +127,7 @@
           </p>
 
           <a href="#">
-            <span class="learn-more">Learn more about flexible communication</span>
+            <span class="learn-more arrow-right">Learn more about flexible communication</span>
           </a>
         </div>
 
@@ -152,7 +150,7 @@
           </p>
 
           <a href="#">
-            <span class="learn-more">Learn more about the Slack platform</span>
+            <span class="learn-more arrow-right">Learn more about the Slack platform</span>
           </a>
         </div>
       </section>
@@ -166,10 +164,10 @@
 
         <div class="container">
           <button type="button" class="button background-color-purple text-color-white">
-           <span class="button-text"><strong>Meet Slack for enterprise</strong></span>
+           <span class="button-text to-upper">Meet Slack for enterprise</span>
           </button>
           <button type="button" class="button text-color-purple button-border-purple">
-            <span class="button-text"><strong>Talk to sales</strong></span>
+            <span class="button-text to-upper">Talk to sales</span>
             </button>
         </div>
 
@@ -210,11 +208,11 @@
         
         <h3 class="text-color-white">Welcome to your new digital HQ</h3>
 
-        <button type="button" class="button text-color-purple"> 
-          <span class="button-text"><strong>TRY FOR FREE</strong></span>
+        <button type="button" class="button text-color-white background-color-purple button-border-white"> 
+          <span class="button-text to-upper">Talk to sales</span>
         </button>
-        <button type="button" class="button text-color-white background-color-purple button-border-white">
-          <span class="button-text"><strong>TALK TO SALES</strong></span>
+        <button type="button" class="button text-color-purple background-color-white">
+          <span class="button-text to-upper">Try for free</span>
         </button>
       
       </section>
@@ -227,7 +225,7 @@
 
     <footer>
       <img src="./images/iso-slack.png" alt="Slack logo" />
-      <div class="container">
+      <div class="container-footer">
         <ul>
           <li>WHY SLACK?</li>
           <li>Slack vs. Email</li>
@@ -263,6 +261,8 @@
         </ul>
       </div>
 
+      <hr />
+      
       <ul>
         <li>Status</li>
         <li>Privacy</li>
@@ -273,9 +273,7 @@
         <li>Download Slack</li>
       </ul>
 
-      <hr />
-
-      <ul>
+      <ul class="media-links">
         <li>
           <i class="fab fa-twitter"></i>
         </li>
@@ -290,7 +288,7 @@
         </li>
       </ul>
 
-      <div class="container">
+      <div class="container-footer">
         <small>
           &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights
           reserved. Various trademarks held by their respective owners.
