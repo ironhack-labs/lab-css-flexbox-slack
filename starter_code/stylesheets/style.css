@@ -7,6 +7,11 @@
     font-family: 'AppliedSansProRg';
     src: url(../fonts/AppliedSansProRg.TTF);
 }
+
+
+/* Mobile Screens (width < 768px) */
+
+
 li {
     display:block;
 }
@@ -81,13 +86,14 @@ header p{
 .google-button {
     font-family: 'AppliedSansProBold';
     text-transform: uppercase;
-    text-align: center;
     width: auto;
-    padding: 18px;
     color:white;
     background-color: #4285F4;
     margin: 5px 10px 10px 10px;
+}
 
+.google-button > span {
+    text-align: center;
 }
 /* No sabemos posicionar */
 
@@ -95,18 +101,18 @@ header p{
     width: 26px;
     padding: 8px;
     background-color: white;
-    position: absolute;
-    left:16px;
-    top: 332px;
+    position: relative;
+    left:-92px;
+    top: 0px;
     
 }
 
-.screenshot {
+/*#screenshot {
     overflow: hidden;
     height: 310px;
-}
 
-.screenshot > img{
+
+#screenshot > img{
    
     width: 150%;
 
@@ -131,6 +137,7 @@ footer links grey: #454245
 footer img {
     width: 20px;
 }
+
 
 .logos-up {
     display: flex;
@@ -247,6 +254,10 @@ a {
     background-color: #540B51;
 }
 
+#data-info {
+    display:flex;
+}
+
 h3 {
     font-family: 'AppliedSansProBold';
     font-size: 26px;
@@ -348,7 +359,6 @@ footer img {
     width: auto;
     border-bottom: 1px solid grey;
     margin-top: 60px;
-    column-count: ;
     padding-bottom: 40px;
 }
 
@@ -415,23 +425,252 @@ hr {
 }
 
 
-
-
 /* Small Screens (width > 768px and width < 1024px) */
  
 
-@media( min-width: 768px     ){
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 
     /* - The **header** should go from 1 column to display 2 columns:
      one with the content and buttons, and the other with the image.*/
-    
-     header{
-         display: flex;
-         flex-direction: row;
-        flex-wrap: nowrap;
-     }
- }
+    nav {
+        border-bottom: 1px solid gray;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
 
+    #left-header {
+        width: 284%;
+    }
+   
+
+     header{
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         align-items: center;
+         background-image: url(../images/background-singup.png);
+         background-size: 180%;
+         background-repeat: no-repeat;
+         padding-bottom: 140px;
+     }
+     
+     #screenshot {      
+        overflow: hidden;
+    }
+            
+
+        
+     #screenshot img {
+        margin-left: 12px;
+        width: 190%;
+        padding-left:25px;
+
+     }
+     
+     h1 {
+        text-align: left;
+        font-size: 100px;
+        padding: 40px 30px;
+        line-height: 120px;
+     }
+
+     header p {
+        text-align: left;
+        padding-left: 30px;
+        font-size: 24px;
+        line-height: 34px;
+        
+     }
+     
+     .logo-google {
+        top:2px;
+        left: -96px;
+     }
+     
+     #logos-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-logos {
+        justify-content: space-around;
+        flex-direction:row;
+        align-items: center;
+        flex-wrap: nowrap;  
+    }
+
+    .logos-up {
+        width: 50%
+    }
+    .logos-down {
+        display: flex;
+        padding-top: 50px;
+        justify-content: space-around;
+        gap: 40px
+    }
+    .mobile-image {
+            display: none;
+        }
+    
+    .screen-image {
+            display: block;
+            width: 80%;}
+
+    .center-text {
+        text-align: left;
+        padding-left: 170px;
+        width: 580px;
+        font-size: 1.3rem;
+    }
+    .center-text p {
+        line-height: 1.5em;
+    }
+
+    .link-aspect{
+        color:#2E71A6;
+        padding-top: 12px;
+    }
+
+    .final-link-aspect {
+        padding-top: 12px;
+        padding-bottom: 1.5em;
+    }
+    h2 {
+        font-size: 1.7em;
+        padding-top:1.2em;
+    }
+
+    h3 {
+        font-size: 40px;
+            
+        }
+    
+    #green-image {
+        padding-left: 188px;
+       
+    }
+    #choose-section {
+        overflow: hidden;
+    }
+
+    #data-info {
+        display:flex;
+        justify-content: flex-start;
+    }
+
+  
+    #teams-section p {
+                font-size: 20px;
+                padding-bottom: 24px;
+                
+            }
+            
+    #meet-button {
+                padding: 18px 30px;
+                width: auto;
+                font-size: 1.2em;
+            }
+        
+    #talk-button {
+                padding: 18px 30px;
+                width: auto;
+                font-size: 1.2em;
+                border-color:#540B51;
+            }
+        
+    #teams-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+                
+            }
+
+    #teams-section > h3 {
+        font-size:36px;
+    }
+    
+    #welcome-section > h3 {
+        font-size: 44px;
+    }
+    }
+    #second-talk-button {
+        margin: 0px 30px;
+        order: 1;
+    }        
+
+    #welcome-section {
+        display: row;
+
+    }
+
+    #try-button {
+        margin-left: 80px;
+        margin-right: 80px;
+        width: auto;
+        font-size: 1.2em;
+        color:#540B51;
+    }
+
+    #board {
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: px;
+    }
+
+    #board ul {
+        width: 200px;
+    }
+
+    #board ul li {
+        font-size: 1.1em;
+
+    }
+
+    #second-talk-button {
+    margin-left: 80px;
+    margin-right: 80px;
+    width: auto;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;}
+
+
+    #teams-section ul {
+                display: flex;
+                justify-content: space-around;
+                gap: 320px
+            }
+        
+    #teams-section li > p {
+                /* width: 200px; */
+                text-align: left;
+                font-size: 18px;
+            }
+        
+        #estadistic {
+            display: none;
+        }
+
+        #last-links {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 30px;
+            padding-bottom: 10px;
+        }
+        
+        #final-logos {
+            justify-content: flex-start;
+            gap: 80px;
+            padding-left: 2px;
+        }
+
+        #footer-text {
+            padding-bottom: 30px;
+        }
+
+    
 
 
 
@@ -518,7 +757,7 @@ hr {
         align-items: center;
         padding: 100px;
     }
-    .screenshot {
+    #screenshot {
         width: 80%;
         overflow: visible;
     }
