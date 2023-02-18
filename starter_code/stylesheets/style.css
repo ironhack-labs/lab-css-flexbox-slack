@@ -10,6 +10,7 @@
 
 .screen-image {
     display: none;
+    margin-right: 0px;
 }
 
 nav, header{
@@ -232,6 +233,9 @@ a {
     order: 0;
     width: 100%;
 }
+#green-image img{
+    width: 100%;
+}
 
 
 #teams-section {
@@ -412,11 +416,13 @@ footer li {
     font-size: 20px;
 }
 
-small {
+#footer-text {
     font-size: 10px;
     line-height: 20px;
     margin-left: 8px;
     margin-bottom: 20px;
+    text-align: left;
+    padding-left: 20px; 
 }
 
 #last-links img {
@@ -462,39 +468,39 @@ small {
          padding-bottom: 140px;
      }
      
-     #screenshot {      
-        overflow: hidden;
+     #screenshot {  
+        position:absolute;    
     }
             
 
         
      #screenshot img {
-        margin-left: 12px;
-        width: 190%;
-        padding-left:25px;
+
+        width: 10%;
+        left:0px
 
      }
      
      h1 {
         text-align: left;
-        font-size: 100px;
+        font-size: 86px;
         padding: 40px 30px;
-        line-height: 120px;
+        line-height: 96px;
      }
 
      header p {
         text-align: left;
         padding-left: 30px;
-        font-size: 24px;
+        font-size: 30px;
         line-height: 34px;
         
      }
      
      .logo-google {
-        top:2px;
-        left: -96px;
-     }
-     
+        top: 831px;
+        left: 16px;
+        width: 3%;
+     }     
      #logos-section {
         display: flex;
         flex-direction: column;
@@ -556,6 +562,7 @@ small {
     
     #green-image {
         padding-left: 188px;
+               
        
     }
     #choose-section {
@@ -605,16 +612,37 @@ small {
         display: block
     }
 
+    #data-info {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;  
+        width: 100% !important;
+    
+    }
+    
+    
     #data-info > li {
-        padding-right: 90px;
+        padding-right: 0px;
+        
     }
-
     #all-percents {
-        padding-left: 30px;
+        padding-left: 0px;
     }
-
+    
+    #team-section ul {
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
     #sur-percent {
         margin-top: 4px;
+        font-size: 18px;
+        margin-bottom:20px
+    }
+    
+    .percent {
+        font-size: 60px;
     }
 
     #welcome-section > h3 {
@@ -792,9 +820,9 @@ footer img{
     }
 
     .logo-google {
-        position: absolute;
-        left: 320px;
-        top: 434px;
+        position: relativa;
+        left: 46px;
+        top: 648px;
     }
 
     header {
@@ -805,6 +833,12 @@ footer img{
     }
     #screenshot {      
         overflow: hidden;
+    }
+    
+    #screenshot img {
+        margin-left: 12px;
+        width: 114%;
+        padding-left:35px;     
     }
     
     h1 {
@@ -823,13 +857,7 @@ footer img{
         padding-top: 80px;
     }
         
-     #screenshot img {
-        margin-left: 12px;
-        width: 114%;
-        padding-left:35px;
-
-     
-    }
+    
     #logos-section {
         display: flex;
         flex-direction: column;
@@ -877,11 +905,6 @@ footer img{
         width: 50%;
     }
 
-    .info-aspect {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
     #main-info {
         display: flex;
@@ -889,7 +912,25 @@ footer img{
         column-count: 2;
         
     }
+
+    #choose-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #green-image {
+        order: 0;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
     
+    .info-aspect {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+
     .final-link-aspect {
         padding-top: 10px;
         padding-bottom: 40px;
@@ -921,11 +962,6 @@ footer img{
         align-items: center;
     }
 
-    #teams-section ul {
-        display: flex;
-        justify-content: space-around;
-        gap: 320px
-    }
 
     #teams-section li > p {
         width: 200px;
@@ -949,15 +985,24 @@ footer img{
 #data-info {
     display:flex;
     flex-direction: row;
-    justify-content: flex-start;    
+    justify-content: space-around;  
+    width: 100% !important;
+
 }
+
 
 #data-info > li {
     padding-right: 0px;
     
 }
 #all-percents {
-    padding-left: 650px;
+    padding-left: 0px;
+}
+
+#team-section ul {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 #sur-percent {
@@ -1024,17 +1069,18 @@ footer img{
 
 #final-logos li {
     font-size: 16px;
+    padding-left: 10px;
+
 }
 
 #footer-text small {
     font-size: 14px;
-    margin-left: 50px;
+    margin-left: 14px;
     padding-bottom: 70px;
   } 
 
 
 }
-
 
 
  @media screen and (width > 1440px) {
@@ -1122,8 +1168,8 @@ footer img{
 
     .logo-google {
         position: absolute;
-        left: 320px;
-        top: 434px;
+        left: 420px;
+        top: 534px;
     }
 
     header {
@@ -1233,9 +1279,7 @@ footer img{
         font-size: 18px;
     }
 
-#text-under-team {
-    display: ;
-}
+
 
 #try-button {
     padding: 16px 30px;
