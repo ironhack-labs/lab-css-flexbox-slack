@@ -1,33 +1,4 @@
 /*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
-
-/*si quiero que la imagen ocupe un porcentaje de pantalla
-height: 100vh
-*/
-
-/*
-mobile: 600
-ipad: 
-desktop: 1024
-*/
-
-
-
-
-
-
-
-
-
-/*
 Landing page structure:
 nav
 homepage-header
@@ -41,7 +12,6 @@ subfooter
 social-media-icons
 disclaimer-owner-website
 */
-
 
 body  {
 font-family: 'Montserrat', sans-serif;
@@ -84,7 +54,7 @@ header > div {
     display: flex;
     background-color: #540a51;
     flex-direction: column;
-    padding: 40px;
+    padding: 40px 40px 10px 40px;
 }
 header > div > h1 {
     color: white;
@@ -125,27 +95,29 @@ header > div > p {
 .homepage-header-cta-sign-up-google {
     background-color: #4285F4;
     border: none;
-    color: #540a51;
-    text-align: center;
+    color: white;
     font-size: 14px;
     display: flex;
     align-items: center;
-    justify-content: center;
     text-transform: uppercase;
     padding: 10px;
     margin: 10px;
+}
+.homepage-header-cta-sign-up-google > span {
+    margin: auto;
 }
 .homepage-header-cta-sign-up-google-image {
     height: 30px;
     width: 30px;
     background-color: white;
-    margin-right: 20px;
-}
-.homepage-header-image {
-    height: 40vh;
 }
 .homepage-header-image-box {
     padding: 0px;
+}
+.homepage-header-image {
+    object-position: 20px 30px;
+    object-fit: cover;
+    height: 70%;
 }
 /*module-1: companies-logos*/
 main > section > p {
@@ -160,10 +132,14 @@ main > section > p {
 .companies-logos-structure {
     display: flex;
     flex-direction: row;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     background-color: #F3EAE2;
     padding: 20px;
+    justify-content: center;
+}
+.companies-box {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .company-logo-airbnb {
@@ -205,7 +181,8 @@ main > section > p {
     flex-direction: column;
 }
 .features-images {
-    height: 50vh;
+    height: 40%;
+    max-width: 95%;
 }
 .green-image{
     float: right;
@@ -221,12 +198,21 @@ main > section > p {
     font-size: 12px;
     font-weight: 500;
 }
+.icon-arrow {
+height: 10px;
+width: 15px;
+}
 /*module-3: buy-slack-talk-to-sales*/
 .buy-slack-talk-to-sales-section {
     display: flex;
     flex-direction: column;
     padding: 40px 20px 10px 20px;
 }
+.buy-slack-talk-to-sales-section > section {
+    display: flex;
+    flex-direction: column;
+}
+
 .buy-slack-talk-to-sales-title {
     color: black;
     font-size: 25px;
@@ -357,11 +343,6 @@ hr {
    margin: 10px; 
 }
 /*subfooter*/
-.footer-links-dowload-slack-change-region {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5vh;
-}
 .footer-links-with-icons {
     padding: 1vh;
 }
@@ -372,7 +353,7 @@ hr {
     list-style: none;
 }
 .footer-links-with-icons-blue {
-    color: #4285F4;
+    color: #4691bc;
 }
 /*social-media-icons*/
 .footer-social-media {
@@ -388,4 +369,117 @@ hr {
  font-size: 12px;
  font-weight: 100;
  padding: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /*homepage-header*/
+    header > div > h1 {
+        font-size: 70px;
+        text-align: left;
+        padding-right: 40%;
+        margin: 0px;
+    }
+    header > div > p {
+        font-size: 18px;
+        text-align: left;  
+        padding-right: 40%; 
+    }
+    .homepage-text-yellow-color {
+        font-size: 18px;
+        text-align: left; 
+    }
+    .homepage-header-image {
+        position: absolute;
+        top: 200px;
+        right: 0;
+        width: 300px;
+        height: 400px;
+    }
+
+    .homepage-header-cta-sign-up-email {
+        background-color: white;
+        border: none;
+        color: #540a51;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 15px 45px;
+        margin: 10px 300px 10px 0px;
+    }
+    .homepage-header-cta-sign-up-google {
+        background-color: #4285F4;
+        border: none;
+        color: white;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        padding: 10px;
+        margin: 10px 300px 80px 0px;
+    }
+/*module-1: companies-logos*/
+main > section > p {
+    font-size: 14px;
+}
+.companies-logos-structure {
+    padding: 40px;
+}
+    /*module-2: features: team-together, how-to-work and move-fast*/
+    .features-images {
+    height: 400px;
+    width: 80%;
+}
+.features-text {
+    margin: 40px 150px 40px 150px;
+    font-size: 18px;
+}
+.features-text > a {
+    font-size: 14px;
+}
+/*module-3: buy-slack-talk-to-sales*/
+.buy-slack-talk-to-sales-section > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.surveys-results {
+    padding: 0px;
+
+}
+.surveys-results > ul {
+    display: flex;
+    flex-direction: row;
+}
+.surveys-results > ul > li > p{
+    padding: 0px 50px 20px 50px;
+    margin: 0px;
+    text-align: left;
+
+}
+.surveys-results-disclaimer {
+    display: none;
+}
+/*subfooter*/
+.footer-links-with-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer-social-media {
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-social-media > li {
+    margin: 1px 80px 1px 10px;
+
+}
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+
+
+
+
 }
