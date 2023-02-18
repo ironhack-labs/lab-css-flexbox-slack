@@ -104,6 +104,8 @@ nav .menu-list a{
     height: 30px;
     text-align: right;
     background-color: #ffff;
+    left: 130px;
+    position: absolute;
 }
 .logo-google span{
     text-align: center;
@@ -135,6 +137,8 @@ header .photo-movil img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    object-fit: contain;
 }
 .main-section-header p{
     font-size: 20px;
@@ -142,15 +146,20 @@ header .photo-movil img{
     text-transform: uppercase;
     font-weight: 500;
 }
-.main-header-img img{
+.main-header-img .img-one img{
     width: 20%;
-    height: 45px;
-    justify-content: center;
-    margin: 7px;
+    height: auto; 
+    padding-left: 5%;
 }
-.main-header-img .logo-spotify,.main-header-img .logo-newyork{
+.main-header-img .img-two img {
     width: 40%;
+    height: auto;
+    
 }
+.img-one,.img-two{
+    text-align: center; 
+}
+
 footer {
     order: 10
 }
@@ -307,7 +316,6 @@ footer .footer-columns ul .title{
     font-weight: bold;
 }
 footer .ul-footer-links{
-   
 }
 footer .ul-footer-links li{
     font-weight: bold;
@@ -426,15 +434,20 @@ header{
 .main-header-img{
     display: flex;
     gap: 40px;
+    flex-wrap: nowrap;
 }
 .main-section-header{
     padding: 50px 20px
 }
 .main-header-img img{
-    width: 10%;
+    object-fit: cover;
+    height: 25px;
+    width: auto;
 }
 .main-header-img .logo-newyork,.main-header-img .logo-spotify{
-    width: 10%;
+    object-fit: cover;
+    height: 25px;
+    width: auto;
 }
 .article-one-img img ,.article-two-img img,.article-three-img img{
     width: 85%;
@@ -629,12 +642,15 @@ header .photo-movil img {
 .main-header-img{
     height: auto;
     gap: 50px;
+    flex-wrap: nowrap;
 }
 .main-header-img img{
-    width: 10%;
+    width: auto;
+    height: 35px;
 }
 .main-header-img .logo-newyork,.main-header-img .logo-spotify {
-    width: 10%;
+    width: auto;
+    height: 35px;
 }
 .main-section-header {
     padding: 50px 20px
