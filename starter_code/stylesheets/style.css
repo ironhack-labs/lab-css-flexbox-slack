@@ -436,6 +436,10 @@ hr {
     color: #2E71A6;
 }
 
+footer i {
+    font-size: 2em;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
 
 
@@ -445,8 +449,6 @@ hr {
         min-width: 768px;
         max-width: 1024px;
     } */
-
-   
     
     header {
         width: auto;
@@ -468,6 +470,10 @@ hr {
         padding: 0 30px;
 
 
+    }
+
+    .fullWidth {
+        width: 100%;
     }
 
     .header-img {
@@ -494,7 +500,16 @@ hr {
         height: auto;
     }
 
+    #companiesFeat {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
     #companies div {
+        width: 100%;
         flex-wrap: nowrap;
     }
 
@@ -502,6 +517,17 @@ hr {
         height: 32px;
         width: 100%;
       
+    }
+
+    .fullWidth {
+        width: 100%;
+        display: block;
+    
+    }
+
+    .noMargin {
+        padding: 0;
+        width: 50%;
     }
 
     #companies p {
@@ -514,9 +540,11 @@ hr {
     }
 
     .service-img-left {
-        display: block;
-        width: 100%;
-        padding-right: 200px;
+        display: flex;
+        flex-direction: column;
+        width: 200%;
+        flex-wrap: wrap;
+        padding-right: 40%;
         background-color:#F3EAE2 ;
     }
 
@@ -528,23 +556,33 @@ hr {
     }
 
     .slack-services-text {
-        padding-left: 100px;
-        padding-right: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 200%;
+        flex-wrap: wrap;
+        background-color:#F3EAE2 ;
+        text-align: left;
         
     }
 
     .slack-services-text h2 {
         font-size: 4em;
 
+
     }
 
+    .service-img-mob-right {
+        display: none;
+    }
+
+
     #Teams > div {
+        width: 100%;
         display: flex;
         flex-wrap: nowrap;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 10%;
+        padding-right: 10%;
 
-       
     }
   
    #Teams h3 {
@@ -553,9 +591,15 @@ hr {
 
    }
 
+   .logos {
+    width:100%;
+    height: auto;
+   }
+
    #Teams p {
     font-size: 2.2em;
-    margin-top: -20px;
+    width: 100%;
+
    }
 
    .percentages {
@@ -613,6 +657,10 @@ hr {
 
    .fab {
     font-size:32px;
+   }
+
+   .order {
+    width: 100%;
    }
 
 }
