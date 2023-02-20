@@ -13,26 +13,38 @@ social-media-icons
 disclaimer-owner-website
 */
 
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
 /*nav mobile*/
+.nav-mobile-structure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #540a51;
+}
+.nav-delete-icons-and-ctas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .nav-mobile {
     display: flex;
     background-color: #540a51;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .nav-mobile-icon-search {
     display: flex;
+    justify-content: flex-end;
 }
 
 .nav-mobile-logo-slack {
     width: 100px;
-    display: flex;
     margin: 10px;
 }
 
@@ -442,8 +454,8 @@ hr {
     padding: 15px;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
 
+@media(min-width: 768px) {
     /*homepage-header*/
     header > div > h1 {
         font-size: 70px;
@@ -570,16 +582,18 @@ hr {
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media(min-width: 1024px) {
 
     /*nav desktop*/
     .menu-icon-hamburger {
         display: none;
     }
 
+    .menu-icon-search {
+        margin: 10px;
+    }
     .nav-categories {
         display: flex;
-
         list-style: none;
         margin: 0;
         padding: 0;
@@ -600,10 +614,24 @@ hr {
         text-decoration: none;
     }
 
-    .nav-desktop-ctas {
+    .nav-delete-icons-and-ctas {
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+    .nav-mobile-ctas > ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+ 
+    }
+    .nav-mobile-ctas {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
         padding: 0;
         margin: 0;
         list-style: none;
@@ -616,10 +644,14 @@ hr {
         text-decoration: none;
 
     }
-
-    .nav-mobile-ctas > li {
+.nav-mobile-icon-search {
+    display: flex;
+    flex-direction: row;
+    
+}
+    .nav-mobile-ctas > ul > li {
+        display: flex;
         list-style: none;
-        margin: 10px 20px;
     }
 
     .nav-mobile-logo-slack {
@@ -642,12 +674,6 @@ hr {
         margin: 10px 20px;
     }
     /*homepage-header*/
-    header > div > h1 {
-        font-size: 70px;
-        text-align: left;
-        padding-right: 40%;
-        margin: 0;
-    }
 
     header > div > p {
         font-size: 20px;
@@ -656,10 +682,6 @@ hr {
         padding-top: 50px;
     }
 
-    .homepage-text-yellow-color {
-        font-size: 18px;
-        text-align: left;
-    }
 
     .homepage-header-image {
         position: absolute;
@@ -700,15 +722,6 @@ hr {
         padding: 60px 40px;
     }
 
-    /*module-1: companies-logos*/
-    main > section > p {
-        font-size: 14px;
-    }
-
-    .companies-logos-structure {
-        padding: 40px;
-    }
-
     /*module-2: features: team-together, how-to-work and move-fast*/
     .features-sections {
         display: flex;
@@ -732,10 +745,6 @@ hr {
     }
 
 
-    .features-text > a {
-        font-size: 14px;
-    }
-
     .features-sections-green-image-reverse-block {
         flex-direction: row-reverse;
     }
@@ -743,29 +752,6 @@ hr {
     /*module-3: buy-slack-talk-to-sales*/
     .buy-slack-talk-to-sales-title {
         font-size: 30px;
-    }
-
-    .buy-slack-talk-to-sales-section > section {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .surveys-results {
-        padding: 0;
-
-    }
-
-    .surveys-results > ul {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .surveys-results > ul > li > p {
-        padding: 0 50px 20px;
-        margin: 0;
-        text-align: left;
-
     }
 
     .surveys-results-disclaimer {
@@ -784,23 +770,5 @@ hr {
         justify-content: center;
         padding: 0;
     }
-
-    /*subfooter*/
-    .footer-links-with-icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .footer-social-media {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .footer-social-media > li {
-        margin: 1px 80px 1px 10px;
-
-    }
-
 
 }
