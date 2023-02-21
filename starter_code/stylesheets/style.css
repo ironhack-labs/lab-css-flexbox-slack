@@ -161,19 +161,14 @@ a {
     text-align: center;
 }
 
-.section-5-btns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 100%;
-    
-}
-
 .section-5 button {
     margin: 6px;
     padding: 15px;
     width: 65%;
+}
+
+.section-5-btns {
+    width: 70%;
 }
 
 .section-5 ul {
@@ -263,4 +258,84 @@ a {
     border-radius: 2px;
     font-weight: bold;
     border: 1px solid black;
+}
+
+/* MEDIA QUERYES */
+@media (min-width: 0px) and (max-width: 768px) {
+    #section-2-img-mobile {
+        display: block;
+    }
+
+    #section-2-img-full {
+        display: none;
+    }
+
+    #section-3-img-mobile {
+        display: block;
+    }
+
+    #section-3-img-full {
+        display: none;
+    }
+
+    #section-4-img-mobile {
+        display: block;
+    }
+
+    #section-4-img-full {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #section-2-img-mobile {
+        display: none;
+    }
+
+    #section-2-img-full {
+        display: block;
+        max-width: 90%;
+    }
+
+    #section-3-img-mobile {
+        display: none;
+    }
+
+    #section-3-img-full {
+        display: block;
+    }
+
+    #section-4-img-mobile {
+        display: none;
+    }
+
+    #section-4-img-full {
+        display: block;
+        max-width: 90%;
+    }
+
+    .section-2-text, .section-3-text, .section-4-text {
+        margin-left: 130px;
+        margin-right: 65px;
+    }
+
+    .section-5-btns {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+
+    .section-5-purple-button {
+        flex-basis: 100%;
+    }
+
+    .section-5 ul {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .section-5 li {
+        margin: 10px;
+    }
 }
