@@ -81,7 +81,8 @@ body {
 
 .flex-header {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -152,3 +153,36 @@ body {
     list-style-type: none;
 }
 
+@media (min-width: 768px){
+    .flex-header {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .flex-header .info {
+        flex-grow: 3;
+        flex-shrink: 1;
+    }
+    .flex-header .image {
+        flex-grow: 1;
+        flex-shrink: 2;
+    }
+
+    .description .image {
+        margin-right: 10%;
+    }
+    .description.reverse-row .image{
+        margin-right: 0;
+        margin-left: 10%;
+    }
+    .description .text {
+        margin: 0 20%;
+    }
+
+    section.rely .info-button, section.rely ul  {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        text-align: left;
+    }
+}
