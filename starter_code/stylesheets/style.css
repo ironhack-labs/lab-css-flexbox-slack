@@ -46,6 +46,22 @@ flex: 1 100%;
 margin: 10px;
 }
 
+.navigation {
+    display: flex;
+    background-color: #540B51;
+    border-bottom: 0.5px solid white;
+    justify-content: space-between;
+}
+.navigation img {
+    height: 30px;
+    padding: 0px;
+    border: none;
+}
+
+#teamwork span {
+    color: orange;
+}
+
 .button-container  {
     display: flex;
     flex-direction: column;
@@ -58,6 +74,7 @@ display: flex;
 justify-content:center;
 align-items: center;
 position: relative;
+margin: 5px;
 
 }
 
@@ -91,7 +108,7 @@ margin: 10px 0;
     text-align: center;
     padding: 20px;
     text-transform: uppercase;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 #companies {
     background-color: #F3EAE2 ;
@@ -137,31 +154,178 @@ margin: 10px 0;
     font-weight: bold;
 }
 
+#img2 {
+    display: none;
+}
+#img4 {
+    display: none;
+}
+#img6 {
+    display: none;
+}
+
+
 @media (min-width: 768px) {
     header{
         flex-wrap: nowrap;
         text-align: start;
         background-image: url(../images/background-singup.png);
         background-size: contain;
+        padding: 50px 0 120px 0;
+        background-repeat: no-repeat;
     }
         
  #teamwork {
-    flex-grow: 2;
-    width: 66%;
+   /* background-color: #fff;
+   width: 400px; */
 
  }
 header img {
     overflow: hidden ;
     width: auto;
-    height: auto;
+    height: auto;    
+    position: absolute;
+    
+        bottom: 200px;
+}
+header p{
+    font-size: 25px;
+    margin-bottom: 30px;
 }
 h1 {
-    font-size: 100px;
-}
-#head-image-container{
-    width: 34%;
+    width: 410px;
+    font-size: 90px;
+    margin-bottom: 30px;
     
 }
+#head-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    position: relative;
+}
+.one-of-three {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.one-of-three h2 {
+    font-weight: bold;
+}
+.features {
+    align-items: center;
+
+}
+#connect {
+    background-image: url(../images/connectedness.png);
+    /* background-color: #540B51; */
+}
+#img1{
+    display: none;
+}
+#img2 {display: block;
+}
+#img3 {
+    display: none;
+}
+#img4 {display: block;
+}
+#img5 {
+    display: none;
+}
+#img6 {display: block;
+
+}
+.features div {
+    
+    
+}
+.features img{
+    justify-content: flex-start;
+}
+h3{
+    font-size: 1.8rem;
+    margin: 30px;
+}
+#slack p {
+    margin-bottom: 30px;
 }
 
+.button-container2 {
+    flex-direction: row;
+}
+#meet {
+    background-color: #540B51;
+    color: white;
+}
+.button-container2 button {
+    padding: 15px 40px;
+    margin-right: 10px;
+}
+#precent {
+    display: flex;
+}
+#precent li {
+    padding: 40px;
+}
+#welcome {
+    background-color: #540B51;
+    height: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ;
+
+}
+#welcome h3 {
+    font-weight: bold;
+
+}
+#welcome button {
+    width: 75%;
+    height: 40px;
+    margin: 5px;
+    text-transform: uppercase;
+
+}
+
+#try-free{
+    color: #540B51;
+
+}
+
+#ttsales{
+    background-color: #540B51;
+    border: 0.5px solid white;
+    color: white;
+}
+
+#googlelogo {
+    position: absolute;
+    bottom: 0px;
+}
+}
+@media (min-width: 1024px){
+  .features{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .one-of-three {
+    width: 30%;
+    margin-right: 50px;
+
+    
+  }
+  #connect {
+    
+    margin-right: 80px;
+  }
+  #welcome {
+    flex-direction: row;
+    
+    
+  }
+}
 
