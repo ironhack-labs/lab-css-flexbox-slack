@@ -45,9 +45,24 @@ ul {
 	list-style: none;
 }
 
+a {
+	color: #4285f4;
+	text-decoration: none;
+}
+
+a:after {
+	content: '→';
+}
+
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+header > div > *,
+section > *,
+div.team-div > * {
+	margin-bottom: 16px;
 }
 
 /* Navigation */
@@ -84,25 +99,52 @@ header {
 	text-align: center;
 }
 
+header > div,
+.buttons-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	width: 100%;
+}
+
 button {
 	border: none;
+}
+
+.text-button {
 	background-color: white;
 	text-transform: uppercase;
 	margin-bottom: 12px;
-}
-
-header > div,
-.signup-buttons-container {
-	display: flex;
-	flex-direction: column;
-}
-
-.signup-button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-weight: 600;
 	height: 48px;
-	border-radius: 2px;
+	border-radius: 4px;
+	color: #540b51;
 }
 
-.icon-container {
+.text-button.inverted {
+	background-color: #540b51;
+	color: white;
+}
+
+.ghost-button {
+	background-color: transparent;
+	color: white;
+	border: 2px solid currentColor;
+}
+
+.ghost-button.inverted {
+	background-color: transparent;
+	color: #540b51;
+	border-color: currentColor;
+}
+
+button > span {
+	display: inline-block;
+}
+
+button .icon-container {
 	position: absolute;
 	left: 8px;
 	top: 8px;
@@ -111,20 +153,15 @@ header > div,
 	padding: 6px;
 	border-radius: 2px;
 }
+
 .google-button {
 	background-color: #4285f4;
 	position: relative;
-	/* display: flex;
-  justify-content: space-between;
-  align-items: center; */
+	color: white;
 }
 
 .google-button img {
 	height: 24px;
-}
-
-button > span {
-	display: inline-block;
 }
 
 .company-section p {
@@ -186,13 +223,9 @@ section > p {
 	align-items: center;
 }
 
-.teams-section span {
+.teams-section .big-number {
 	color: #540b51;
 	font-size: 3em;
-}
-
-.teams-section p {
-	width: 150px;
 	font-weight: 800;
 }
 
@@ -212,23 +245,6 @@ section > p {
 	text-align: center;
 }
 
-.cta-section button {
-	width: 300px;
-	padding: 10px 20px;
-	margin: 10px auto 20px auto;
-	font-weight: 600;
-}
-
-.cta2 {
-	border: 1px solid white;
-	background: #540b51;
-	color: white;
-}
-
-.cta1 {
-	color: #540b51;
-}
-
 .footer-div {
 	display: flex;
 	justify-content: space-around;
@@ -240,6 +256,7 @@ footer img {
 	height: 50px;
 	margin: 20px auto 30px 20px;
 }
+
 .footer-div ul {
 	margin: 0;
 	padding: 0;
@@ -284,7 +301,6 @@ footer img {
 	header h1 {
 		font-size: 4em;
 		width: 300px;
-
 		margin-bottom: 25px;
 	}
 
@@ -310,33 +326,42 @@ footer img {
 		font-size: 2em;
 		margin-top: 50px;
 	}
+
 	.teams-section p {
 		width: max-content;
 		font-weight: 200;
 		margin: 20px auto;
 	}
 
-	.cta1,
-	.cta2 {
-		width: 300px;
-		height: 50px;
-		padding: 5px 20px;
-		border: 1px solid #540b51;
-		margin-top: 10px;
-		font-weight: 500;
-	}
-
-	.percentage-ul {
+	.footer-ul {
 		display: flex;
+		justify-content: space-evenly;
+	}
+	.footer-logos {
+		justify-content: flex-start;
+		margin-left: 15px;
 	}
 
-	.percentage-ul p {
-		width: 175px;
-		font-weight: 600;
+	.footer-logos li {
+		margin: 15px 35px;
 	}
 
-	.percentage-ul li {
-		margin: 0 25px;
+	.last-div {
+		width: 100%;
+		text-align: left;
+	}
+}
+
+@media (min-width: 1025px) {
+	.navbar-ul {
+		display: flex;
+		margin-left: 150px;
+		padding-bottom: 20px;
+	}
+	.navbar-ul a {
+		color: white;
+		text-decoration: none;
+		padding: 25px;
 	}
 
 	.cta-section .cta1,
