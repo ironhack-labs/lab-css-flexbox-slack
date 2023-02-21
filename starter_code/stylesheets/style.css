@@ -9,37 +9,116 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-
-header{
-    background-color: #540B51 ; 
-}
-
 body{
     padding: 0;
     margin: 0;
 }
 
-h1{
-    color: white;
+h2 h3 {
+    color: #191817;
 }
 
-main{
-    background-color: #F3EAE2;
+/***********/
+/****NAV****/
+/***********/
+
+
+nav{
+    background-color: #540B51;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding-top: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.slack-icon{
+    height: 30px;
+    margin-left: 30px;
+}
+.nav-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #540B51;
+    border: none;
+}
+
+
+
+/***********/
+/***HEAD****/
+/***********/
+
+
+header{
+    background-color: #540B51 ;
+    display: flex;
     text-align: center;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    width: 100%; 
+    color: white;
 }
 
-section{
-    display:flex;
-    flex-direction: column;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+header button {
+    background-color: white;
+    color:#540B51;
+    padding: 0px;
+    margin: 5px;
+    outline:#540B51 1px solid;
+    border:none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    width: 250px;
+    height: 50px;
 }
+
+.google {
+    background-color: #4285F4;
+}
+
+.logo-google {
+    height: 20px;
+    background-color: white;
+
+}
+
+.screen {
+    width: 768px;
+}
+
+
+
+h1{
+    color: white;
+}
+
+
+/***********/
+/***MAIN****/
+/***********/
+
+
+main{
+    background-color: #F3EAE2;
+    display: flex;
+    text-align: center;
+    flex-flow: column;
+    align-items: stretch;
+}
+
+/***********/
+/****P1*****/
+/***********/
 
 .companies{
     flex-flow: row wrap;
@@ -52,40 +131,63 @@ section{
     padding:5px 30px;
 }
 
-section img{
-    height: 600px;
-    padding: 0;
-}
-.content{
-    padding:20px;
+/***********/
+/****P2*****/
+/***********/
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     text-align: left;
+    justify-content: space-between;
+
 }
 
-.left{
-    text-align: left;
-}
-.right{
-    text-align: right;
+.content p, h2, a {
+    padding: 5%; 
 }
 
-.work{
-    flex-flow: column-reverse;
+.content img{
+    height: auto;
+    max-width: 100%;
 }
+
+.content div {
+    max-width: 768px;
+}
+
+/***********/
+/****P3*****/
+/***********/
 
 .teams{
     background-color: white;
     width: 100%;
 }
+
+.percent {
+    font-size: 2em;
+}
+
+li {
+    list-style: none;
+}
+
 .welcome{
     background-color: #540B51;
     width: 100%;
     color: white;
+    padding: 5% 0%;
 }
 
 .purpleButton{
     background-color: #540B51;
     color: white;
-    padding:10px 100px;
+    width: 250px;
+    padding:10px 10px;
+    margin: 2px;
     border-radius: 3px;
     outline:white 1px solid;
     border:none;
@@ -94,9 +196,38 @@ section img{
 .whiteButton{
     background-color: white;
     color:#540B51;
-    padding:10px 100px;
+    width: 250px;
+    padding:10px 10px;
     outline:#540B51 1px solid;
     border:none;
     border-radius: 3px;
+    margin: 2px;
 }
 
+
+/***********/
+/***SIZE****/
+/***********/
+
+
+@media (max-width: 1024px) {
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: end;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
