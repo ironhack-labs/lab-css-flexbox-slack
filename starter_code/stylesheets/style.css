@@ -19,6 +19,31 @@ body {
 
 .purple-background {
     background-color: #540B51;
+    color: #ffffff;
+}
+
+button {
+    background: none;
+    border: none;
+}
+.info-button button, .highlight-menu ul li a {
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 6px;
+    height: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/*.info-button button*/.purple, .highlight-menu ul li a.purple{
+    background-color: #540B51;
+    color:#ffffff;
+    border: 1px solid #ffffff;
+}
+/*.info-button button*/.white, .highlight-menu ul li a.white{
+    background-color: #ffffff;
+    color:#540B51;
+    border: 1px solid #540B51;
 }
 
 /*CSS FOR ELEMENT WITH 2 BUTTONS*/
@@ -46,6 +71,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    padding: 15px;
 }
 .menu {
     display: flex;
@@ -61,7 +87,9 @@ body {
 .menu ul, .highlight-menu ul {
     display: none;
 }
-
+.highlight-menu ul li a.purple{
+    border: 1px solid #540B51;
+}
 .menu img {
     height: 25px;
 }
@@ -83,13 +111,30 @@ body {
 .flex-header .image img{
     width: 100%;
 }
-
+.flex-header .info-button button.google-button {
+    background-color: #4285F4;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.flex-header .info-button button.google-button img{
+    background-color: #ffffff;
+    height: 40px;
+}
+.flex-header .info-button button.google-button span{
+    flex-grow: 1;
+}
 
 
 /*TRUSTED SECTION*/
+#trusted {
+    padding-top: 30px;
+    padding-bottom: 30px;
 
+}
 #trusted p{
     text-align: center;
+    margin: 0;
 }
 .trusted-logo{
     display: flex;
@@ -97,7 +142,7 @@ body {
     justify-content: center;
 }
 .trusted-logo img{
-    height: 50px;
+    height: 40px;
     margin: 10px;
 }
 
@@ -108,7 +153,13 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.description .text {
+    margin: 15px;
+}
+.description .text a {
+    text-decoration: none;
+    color: #2E71A6;
+}
 .description.reverse-row{
     flex-direction: column-reverse;
 }
@@ -173,6 +224,7 @@ body {
         justify-content: center;
         list-style: none;
         text-align: left;
+        margin: 0px 10%;
     }
 
     .footer-menu {
@@ -215,6 +267,9 @@ body {
         flex-direction: row;
         justify-content: center;
     }
+    .info-button, section.rely .info-button {
+        margin: 0px 25%;
+    }
 
 }
 
@@ -222,5 +277,8 @@ body {
     div.info-button {
         flex-direction: row;
         justify-content: center;
+    }
+    .info-button, section.rely .info-button {
+        margin: 0px 30%;
     }
 }
