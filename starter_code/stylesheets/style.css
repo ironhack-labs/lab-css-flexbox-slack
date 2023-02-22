@@ -30,20 +30,21 @@ html {
   
   img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: auto;
   }
 
 header {
+    height: 500px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     background-color: #540B51;
     color: white;
     text-align: center;
 }
 
 header > * {
-flex: 1 100%;
 margin: 10px;
+
 }
 
 .button-container  {
@@ -60,17 +61,27 @@ align-items: center;
 position: relative;
 
 }
-
-.button-container button img {
-   
-
+#teamwork {
+    height: 50%;
+}
+#teamwork h1 {
+    padding: 50px 0px;
+}
+#head-image-container {
+    height: 50%;
+    overflow: hidden;
+}
+#head-image-container img{
+    max-width: 150%;
+    max-height: auto;
 }
 #googlelogo {
     padding: 1px;
     background-color: rgb(232, 224, 224);
     justify-self: start;
     position: absolute;
-    left: 5px
+    left: 5px;
+    max-height: 100%;
 }
 #google-button {
     background-color: #4285F4;
@@ -137,31 +148,29 @@ margin: 10px 0;
     font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     header{
-        flex-wrap: nowrap;
-        text-align: start;
         background-image: url(../images/background-singup.png);
         background-size: contain;
+        background-repeat: no-repeat;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
     }
-        
- #teamwork {
-    flex-grow: 2;
-    width: 66%;
-
- }
-header img {
-    overflow: hidden ;
-    width: auto;
-    height: auto;
-}
-h1 {
-    font-size: 100px;
-}
-#head-image-container{
-    width: 34%;
-    
-}
+    #head-image-container {
+        width: 30%;
+        overflow: hidden;
+        margin-right: 0;
+        height: auto;
+    }
+    #head-image-container img {
+        max-height: 200px;
+        max-width: none;
+        margin: auto 0;   
+    }
+    #teamwork {
+        height: auto;
+    }
 }
 
 
