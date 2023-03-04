@@ -9,33 +9,71 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-body{
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --pad:3rem;
+}
+
+body {
 margin: 0;
 font-family: sans-serif;
 height: 100vh;
 }
 
-nav{
+#nav-and-header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#nav-and-header header {
+    flex: 1;
+}
+
+nav {
     background-color: #540B51;
     display: flex;
     padding: 10px;
 }
 
-
-.btn{
-    background-color: transparent;
-    border: none;
+nav > div {
+    display: flex;
+    align-items: center;
 }
 
-img{
+
+.btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: #540B51;
+    border: 1px solid white;
+    background-color: white;
+
+}
+.btn.btn-blue {
+    background: #4285F4;
+    border-color: #4285F4;
+}
+
+.btn.btn-outline {
+    background-color: transparent;
+}
+
+img {
     max-width: 100%;
 }
 
-.logo{
-    height: 2em;
+.logo {
+    height: 1.2em;
 }
 
-ul{
+ul {
     display: none;
 }
 
@@ -43,44 +81,67 @@ ul{
     margin-left: auto;
 }
 
-header{
-    background-color: #540B51;
-    text-align: center;
-    height: 100vh;
+.menu button {
+    background-color: transparent;
+    border: none;
 }
 
-header>div {
+header {
+    background-color: #540B51;
+    height: 100vh;    
+}
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1.5rem;
+}
+
+header > div > div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-h1{
+h1 {
     margin: 0;
     color: white;
     width: 80%;
-    text-align: center;
-    
+    text-align: center; 
 }
 
-.slogan{
+.slogan {
     color: #ECB12F;
 }
-header p{
+
+header p {
     color: white;
 }
 
-.signUp{
+.signUp {
     display: flex;
     flex-direction: column;
-        width: 90%;
+    width: calc(100% - var(--pad));
+    gap: 1rem;
 }
 
-.signUp button{
+.signUp button {
     height: 50px;
-    background-color: antiquewhite;
+    background-color: white;
 }
 
-.Google{
+.google {
     height: 24px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    max-width: none;
+    width: 160%;
+    position: absolute;
+    left: -20px;
 }
