@@ -242,9 +242,7 @@ You can inspect the page styles here: [Figma file - Large Screens]()
 
 <br />
 
-
-
-Happy coding! :heart:
+**Happy coding!** :heart:
 
 <br>
 
