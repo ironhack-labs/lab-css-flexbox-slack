@@ -7,7 +7,7 @@
    <h2>Learning Goals</h2>
   </summary>
 
-  This exercise is designed to allow you practice and apply the concepts and techniques taught in class. 
+  This exercise allows you to practice and apply the concepts and techniques taught in class. 
 
   Upon completion of this exercise, you will be able to:
 
@@ -27,10 +27,10 @@
 
 **Slack** is a cloud-based set of team collaboration tools and services, or in simpler terms, an online chat application.
 
-We use the Slack app almost every day to keep our communications with our classmates and the **Ironhack** team, but today we will be focusing on their landing page. In today's lab, we'll recreate Slack's landing page while ensuring it's responsive and adapts well to different screens. You can see the web page that we will be cloning [here](https://www.figma.com/proto/k77VYVA70WcPYRLvg4QmIf/LAB-CSS-Slack-Clone?node-id=125%3A3&scaling=scale-down-width&page-id=125%3A2&starting-point-node-id=125%3A3&hide-ui=1).
+Slack app is used in daily communications within different teams in companies, but today we will be focusing on their landing page. In today's lab, we'll recreate Slack's landing page while ensuring it's responsive and adapts well to different screens. You can see the web page we will be cloning [here](https://www.figma.com/proto/k77VYVA70WcPYRLvg4QmIf/LAB-CSS-Slack-Clone?node-id=125%3A3&scaling=scale-down-width&page-id=125%3A2&starting-point-node-id=125%3A3&hide-ui=1).
 
 
-The goal of the lab is to create a *responsive* landing page using **CSS** and **Flexbox**.
+The lab's goal is to create a *responsive* landing page using **CSS** and **Flexbox**.
 
 ## Requirements
 
@@ -65,11 +65,11 @@ During each iteration, the first step you should do is to inspect the provided s
 
 ## Iteration 0 | Introduction to Figma
 
-The first step during every iteration will be to inspect the design files. These were created using Figma and are usually handed off to developers by designers. [Figma](https://www.figma.com/) is a web-based UI (User Interface) design tool, used for creating design prototypes for websites and applications.
+The first step during every iteration will be to inspect the design files. These were created using Figma and are usually handed off to developers by designers. [Figma](https://www.figma.com/) is a web-based UI (User Interface) design tool used for creating design prototypes for websites and applications.
 
 Figma is great because it allows designers and developers to collaborate on projects while also making it simple to share and preview web page designs.
 
-When you begin working as a developer, your team will likely use Figma to hand off to you the designs of the features you will be asked to create. We're going to assume you've never seen Figma before, so don't worry. The following short videos should get you up to speed:
+When you begin working as a developer, your team will likely use Figma to hand off to you the designs of the features you will be asked to create. We will assume you've never seen Figma before, so don't worry. The following short videos should get you up to speed:
 
 - [What is Figma?](https://www.youtube.com/watch?v=_d8GG2QZYAM)
 - [Figma for Frontend developers [ in 5 minutes ]](https://www.youtube.com/watch?v=hbN9RGcQFNU)
@@ -80,9 +80,9 @@ When you begin working as a developer, your team will likely use Figma to hand o
 
 ### Iteration 1 | Mobile Screens (width < 768px)
 
-Mobile first right? :wink: 
+Mobile first, right? :wink: 
 
-We will start by focusing on the styles for mobile screens first! :iphone: Oh! Remember to use **Flexbox** to create the layout and display the content in rows or columns from the start. You'll be working on adapting the layout to different screen sizes in the following iterations, so it's essential that you start using Flexbox from start to end!
+We will start by focusing on the styles for mobile screens first! :iphone: Oh! Remember to use **Flexbox** to create the layout and display the content in rows or columns from the start. You'll be working on adapting the layout to different screen sizes in the following iterations, so it's essential that you start using Flexbox from beginning to end!
 
 
 
@@ -126,7 +126,7 @@ You can inspect the page styles here:
 ### Iteration 2 | Small Screens (width > 768px and width < 1024px)
 
 Let's start growing our screen size. In this iteration, you will work on making the website look great on small screens (iPads, tablets, or larger smartphones). You will have to use CSS [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) to apply the style and layout changes. Take a look at the preview and the screenshot to see the changes that are needed. Your task is to work on the following:
-- The **header** should go from 1 column to display 2 columns: one with the content and buttons, and the other with the image.
+- The **header** should go from 1 column to display 2 columns: one with the content and buttons and the other with the image.
 - The **company logos** should be displayed in a single row.
 - The **images** in the sections in the **main** part should be fully displayed and aligned to the left or right side of the page, respectively.
 - The **section "Teams large and small rely on Slack"** should have the list items and the buttons displayed horizontally as rows.
@@ -170,7 +170,7 @@ You can inspect the page styles here:
 We'll continue by focusing on devices with medium-sized screens (notebooks and bigger tablets). Similar to the previous iteration, you will have to use CSS media queries to apply the style and layout changes. The most noticeable changes in this viewport size are:
 - The **navbar** should now display all the menu links. The previously displayed menu icon should now be hidden.
 - The **sections** in the **main** part should now display the content in 2 columns: one column for the heading and text, and the other for the image.
-- The **section "Welcome to your new digital HQ"** should now have the buttons displayed horizontally as rows.
+- The **section "Welcome to your new digital HQ"** should now display the buttons horizontally as rows.
 
 <br>
 
@@ -213,7 +213,7 @@ You can inspect the page styles here:
 
 Last one! Some small changes and we are done! In this iteration we are targeting large-screen devices such as desktops and laptops:
 - The **signup buttons** in the **header** should now be displayed horizontally, next to each other.
-- Additionally, the image shown in the **header** should be centered and fully visible.
+- Additionally, the image in the **header** should be centered and fully visible.
 
 <br>
 
@@ -473,7 +473,7 @@ To make the header responsive and change it to a two column layout on screens th
 }
 ```
 
-On smaller screens, the header will maintain a single column layout, but on screens larger than 800 pixels wide, it will change to a two column layout.
+The header will maintain a single-column layout on smaller screens, but on screens larger than 800 pixels wide, it will change to a two-column layout.
 
   [Back to top](#faqs)
 </details>
@@ -482,15 +482,15 @@ On smaller screens, the header will maintain a single column layout, but on scre
   <summary>Why are my media query styles not displaying properly on my browser?</summary>
   <br>
 
-  When using media queries to create a responsive layout, it is recommended to start with the default styles for mobile (smaller) screens, and then use media queries at the end of your stylesheet to apply styles for each increasing viewport size.
+  When using media queries to create a responsive layout, it is recommended to start with the default styles for mobile (smaller) screens and then use media queries at the end of your stylesheet to apply styles for each increasing viewport size.
 
 
 
 There are a few possible reasons why your media query styles may not be properly displayed on your browser.
 
-1. Check that you already have default styles for mobile screens, where applicable. These styles should be placed at the beginning of your stylesheet, before your media queries.
-2. Make sure you have placed your media queries at the end of your stylesheet after your regular styles. This is because media queries are applied after regular styles, so if you place them before your regular styles, they will be overridden.
-3. Make sure that you have the correct syntax in your media query. The correct syntax is `@media (expression) {...}`.
+1. Where applicable, check that you already have default styles for mobile screens. These styles should be placed at the beginning of your stylesheet before your media queries.
+2. Ensure you have placed your media queries at the end of your stylesheet after your regular styles. This is because media queries are applied after regular styles, so if you place them before your regular styles, they will be overridden.
+3. Ensure you have the correct syntax in your media query. The correct syntax is `@media (expression) {...}`.
 4. Make sure that you are using the correct media query expression. For example, if you are trying to target screens that are wider than 800 pixels, you should use the `min-width` in your expression, like this: `@media (min-width: 800px) {...}.`
 
   For more information on CSS media queries, check: [MDN: Beginner's guide to media queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
@@ -516,9 +516,9 @@ To check which remote repository you have cloned, run the following terminal com
   ```bash
   git remote -v
   ```
-If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first, and then clone your fork to your local machine to be able to push the changes.
+If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first and then clone your fork to your local machine to be able to push the changes.
 
-Note: You may want to make a copy of the code you have locally, to avoid losing it in the process.
+Note: You should make a copy of your local code to avoid losing it in the process.
 
   [Back to top](#faqs)
 
