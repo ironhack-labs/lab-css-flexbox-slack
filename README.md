@@ -2,6 +2,27 @@
 
 # CSS | Slack clone with Flexbox
 
+<details>
+  <summary>
+   <h2>Learning Goals</h2>
+  </summary>
+
+  This exercise is designed to allow you practice and apply the concepts and techniques taught in class. 
+
+  Upon completion of this exercise, you will be able to:
+
+  - Develop a fully responsive webpage using provided designs as a guide.
+  - Use CSS *media queries* to adapt the page layout to different screen sizes.
+  - Use *Flexbox* to layout and position elements on a webpage dynamically as either rows or columns depending on the viewport size.
+  - Use the CSS `position` property to position elements on a webpage.
+  - Display images on a webpage and make them responsive according to the viewport size.
+  - Submit completed work using Git and GitHub by creating a Pull Request.
+
+  <br>
+  <hr> 
+
+</details>
+
 ## Introduction
 
 **Slack** is a cloud-based set of team collaboration tools and services, or in simpler terms, an online chat application.
