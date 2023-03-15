@@ -10,7 +10,7 @@ footer links grey: #454245
 */
 body{
   background-color: #540B51;
-  
+  margin: 0;
 }
 
 img{
@@ -33,11 +33,19 @@ nav{
   background-color: #540B51;
   justify-content: space-between;
 }
+nav div:first-child{
+  padding-top: 16px;
+  padding-left: 16px;
+}
 nav ul{
   margin-left: auto;
   display:flex;
   list-style: none;
  display:none;
+}
+nav div:nth-of-type(2) {
+  padding-top: 16px;
+  padding-right: 16px;
 }
 
 #logoSlack{
@@ -51,6 +59,7 @@ width: 15px;
 }
 nav button{
 background-color: #540B51;
+border: none;
 }
 
 /*
@@ -73,10 +82,11 @@ align-items: center;
 header h1{
   text-align: center;
   color: white;
-  font-size: 35px;
+  font-size: 2rem;
 }
 header p {
   text-align: center;
+  font-size: 1rem;
 }
 .spanYellow{
   color:yellow;
@@ -89,20 +99,19 @@ header p {
   background-color: white;
 }
 .sign{
-  height: 7vh;
   background-color: white;
   color: purple;
   width: 90%;
   font-weight: 700;
+  padding-block: 16px;
 }
 
 .signg{
-
-height: 7vh;
 background-color: blue;
 color: white;
 width: 90%;
 font-weight: 700;
+padding-block: 13px;
 }
 .container1{
 display: flex;
@@ -160,7 +169,7 @@ main > section:nth-child(5) h3{
   text-align: center;
   padding-top: 50px;
   margin: 0;
-  font-size: 150%;
+  font-size: 210%;
 }
 main > section:nth-child(5) div{
  display: flex;
@@ -172,14 +181,14 @@ main > section:nth-child(5) p{
  text-align: center;
 }
 #slackbtn{
-  height: 7vh;
+ padding-block: 16px;
   background-color: purple;
   color: white;
   width: 90%;
   
 }
 #talkbtn{
-  height: 7vh;
+padding-block: 16px;
   background-color: white;
   color: purple;
   width: 90%;
@@ -197,7 +206,7 @@ main > section:nth-child(6) {
 main > section:nth-child(6) h3 {
   color: white;
   margin: 0;
-  font-size: 170%;
+  font-size: 200%;
   padding-bottom: 40px;
 }
 
@@ -205,42 +214,42 @@ main section p{
 padding-left: 10px;
 padding-top: 30px;
 text-align: center;
-font-size: 150%;
+font-size: 120%;
 font-weight: 500;
 }
 .containermain{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 7px;
   text-align: center;
 }
 .containermain img{
-  width: 20%;
+ 
   margin-bottom: 20px;
-  height: 40px;
+  height: 35px;
 }
 .containermain2{
   display: flex;
   justify-content: center;
-  gap: 10px;
-  width: 100vh;
+  gap: 15px;
+  
 }
 .containermain2 img{
-  width: 40%;
+ 
   
   
 }
 main h2{
 text-align: center;
 font-weight: 800;
-font-size: 220%;
+font-size: 185%;
 }
 main a{
 text-decoration: none;
 color: deepskyblue;
 font-weight: 800;
-font-size: 140%;
+font-size: 1rem
 padding-left: 20px;
 }
 .container3{
@@ -250,7 +259,7 @@ padding-left: 20px;
 }
 .talkbtn{
 width: 90%;
-height: 7vh;
+padding-block: 16px;
 color: white;
 font-weight: 700;
 background: purple;
@@ -258,7 +267,7 @@ border: solid;
 }
 .trybtn{
 width: 90%;
-height: 7vh;
+padding-block: 16px;
 color: purple;
 font-weight: 700;
 }
@@ -275,8 +284,9 @@ footer{
   background-color: white;
 }
 #slackmini{
-margin-top: 40px;
-width: 20%;
+margin-top: 30px;
+height: 3rem;
+padding-left: 20px;
 }
 .containerfooter{
 display: flex;
@@ -287,7 +297,7 @@ list-style: none;
 padding-top: 20px;
 }
 footer div ul {
-padding-left: 15px;
+padding-left: 10px;
 }
 footer div ul li:first-child {
 /* styles pour les premiers li */
@@ -300,6 +310,7 @@ opacity: 0.5;
 }
 ul:not(footer div ul) {
 font-weight: 600;
+padding-left: 20px;
 }
 #downloadslack{
 color: blue;
@@ -332,13 +343,20 @@ padding-top: 20px;
    |_||_|___|_||_|__/|___|_|_\    */
 
 
-     @media (min-width: 768px) and (max-width: 1024px) {
+     @media (min-width: 768px)  {
+      nav div ul li{
+        display: none;
+      }
+      
     header {
      display: flex;
      align-items: center;
     } 
+    header div:nth-of-type(2) {
+     flex: 1;
+    }
      .headercontainer{
-      width: 100vh;
+      flex: 1.5;
     } 
      header h1{
       font-size: 450%;
@@ -348,7 +366,37 @@ padding-top: 20px;
       font-size: 150%;
     } 
   }  
+  @media (min-width: 1024px){
+    nav div ul li{
+      
+      display: block;
+      
+    }
+    nav div:first-child{
+      display: flex;
+    }
+    nav div:nth-of-type(2){
+      display: flex;
+      flex-direction: row;
+    }
+    nav div:nth-of-type(2)  button:nth-of-type(2){
+      /* bouton option a supprimer */
+      display: none;
+    }
 
+    nav div:nth-of-type(2) ul li:nth-child(2) a {
+      border: 15px solid white;
+      background: white;
+      color: purple;
+      border-radius: 10px;
+    }
+    nav div ul li a{
+      
+      color:white;
+      text-decoration: none ;
+      
+    }
+  }
   /* _______  _______ _________ _       
   (       )(  ___  )\__   __/( (    /|
   | () () || (   ) |   ) (   |  \  ( |
@@ -359,12 +407,80 @@ padding-top: 20px;
   |/     \||/     \|\_______/|/    )_)
                                        */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
+  .containermain img{
+height: 40px;
+  }
   main > section:nth-child(5) div {
     display: flex;
     flex-direction: row;
   }
   main > section:nth-child(5) ul{
     display: flex;
+    justify-content: center;
   }
+  #slackbtn{
+    width: 70%;
+    margin-left: 100px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  #talkbtn{
+    width: 50%;
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1024px) {
+  .containermain img{
+    height: 50px;
+  }
+  main section p{
+    font-size: 150%;
+  }
+  main h2{
+    font-size: 200%;
+  }
+  main section:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+  }
+  main section:nth-of-type(3){
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+  }
+  main section:nth-of-type(4){
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+
+
+
+/* _____   U  ___ u   U  ___ u _____  U _____ u   ____     
+|" ___|   \/"_ \/    \/"_ \/|_ " _| \| ___"|/U |  _"\ u  
+U| |_  u   | | | |    | | | |  | |    |  _|"   \| |_) |/  
+\|  _|/.-,_| |_| |.-,_| |_| | /| |\   | |___    |  _ <    
+|_|    \_)-\___/  \_)-\___/ u |_|U   |_____|   |_| \_\   
+)(\\,-      \\         \\   _// \\_  <<   >>   //   \\_  
+(__)(_/     (__)       (__) (__) (__)(__) (__) (__)  (__)  */
+
+@media (min-width: 768px){
+  .containerfooter{
+  
+  gap: 7rem;
+  }
+  ul:not(footer div ul){
+    display: flex;
+    gap:30px;
+  }
+.iconcontainer{
+  display: flex;
+  justify-content: flex-start;
+  gap:4rem;
+}
 }
