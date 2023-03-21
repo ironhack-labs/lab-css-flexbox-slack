@@ -96,4 +96,58 @@ h1 + p{
 }
 header div:last-child > img{
   width: 155%;
+  overflow: hidden;
+}
+main{
+  background-color: var(--background-ivory);
+}
+main > section:first-child{
+  padding: 35px 25px;
+}
+main p:first-child{
+  text-align: center;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.logos-flex-container{
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.logos-flex-container img{
+  height: 35px; 
+  flex-shrink: 1;
+}
+.logos-flex-container img.circle{
+  height: 45px;
+}
+.logos-flex-container img:nth-child(3){
+  height: 20px;
+}
+
+.logos-flex-container img:nth-child(5){
+  max-width: 55%;
+}
+.mobile-side-image{
+  width: 95%;
+}
+div:has(> .mobile-side-image.right){
+  display: flex;
+  justify-content: flex-end;
+}
+.text-container{
+  margin: 40px 0;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.text-container a{
+  color: var(--link-blue);
+  text-decoration: none;
 }
