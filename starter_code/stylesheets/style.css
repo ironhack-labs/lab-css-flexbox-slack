@@ -72,10 +72,12 @@ h1 + p{
 .buttons-flex-container button{
   text-transform: uppercase;
   padding: 15px;
-  color: var(--background-purple);
   font-weight: 600;
   border: none;
   border-radius: 3px;
+}
+header .buttons-flex-container button{
+  color: var(--background-purple);
 }
 #google-button{
   position: relative;
@@ -150,4 +152,51 @@ div:has(> .mobile-side-image.right){
 .text-container a{
   color: var(--link-blue);
   text-decoration: none;
+}
+.white-section{
+  padding: 50px 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+.white-section h3{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.white-section h3 + p{
+  text-align: center;
+}
+.white-section .buttons-flex-container{
+  width: 100%;
+}
+.white-section .buttons-flex-container button:first-child{
+  color: white;
+  background-color: var(--background-purple);
+}
+.white-section .buttons-flex-container button:nth-child(2){
+  background-color: transparent;
+  color: var(--background-purple);
+  border: 2px solid var(--background-purple);
+}
+.white-section ul{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.white-section ul li{
+  width: 60%;
+  text-align: center;
+  font-size: .8rem;
+  font-weight: 600;
+}
+.white-section ul li p:first-child{
+  font-size: 2.5rem;
+  color: var(--background-purple);
 }
