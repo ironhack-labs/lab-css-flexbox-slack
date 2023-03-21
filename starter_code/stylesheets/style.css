@@ -10,7 +10,7 @@ footer links grey: #454245
 */
 /* ----------------------------------------- Settings */
 :root {
-    font: 500 12px "Segoe UI", sans-serif;
+    font: 500 14px "Segoe UI", sans-serif;
 }
 * {
     margin: 0;
@@ -27,9 +27,6 @@ body {
     section,
     footer {
         padding: 1.0rem;
-    }
-    h1 {
-
     }
     h2 {
         margin-top: 1.6rem;
@@ -301,16 +298,13 @@ body {
     }
 }
 
-/* --------------------------------------------- SMAL SCREENS */
+/* --------------------------------------------- SMALL SCREENS */
 @media (min-width: 768px) and (max-width: 1024px) {
     /* ----------------------------------------- General */
     header,
     section,
     footer {
         padding: 3.0rem;
-    }
-    h1 {
-
     }
     h2 {
         margin-top: 1.6rem;
@@ -388,7 +382,7 @@ body {
         flex-flow: row nowrap;
         width: 100%;
         padding: 2.0rem;
-        margin-bottom: -1rem;
+        margin-bottom: -0.1rem;
     }
     .nav-left {
         width: 100%;
@@ -619,8 +613,369 @@ body {
         font-weight: 400;
     }
 }
-}
 /* --------------------------------------------- MEDIUM SCREENS */
-@media (min-width: 1024px) and (max-width: 1440px) {}
+@import url(../stylesheets/);
+@media (min-width: 1024px) and (max-width: 1440px) {
+    /* ----------------------------------------- General */
+    header,
+    section,
+    footer {
+        padding: 3.0rem;
+    }
+    h2 {
+        margin-top: 1.6rem;
+        font-size: 2.1em;
+    }
+    h3 {
+        margin-top: 1.6rem;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    p {
+        margin: 1rem auto;
+    }
+    strong {
+        color: #ECB12F;
+    }
+    .purple {
+        background-color: #540B51;
+        border: 1px solid white;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 0.5rem;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        width: 100%;
+        height: 5.5rem;
+        margin: 0.5rem;
+    }
+    .white {
+        background-color: white;
+        border: 1px solid #540B51;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        padding: 0.5rem;
+        color: #540B51;
+        font-weight: 600;
+        text-transform: uppercase;
+        width: 100%;
+        height: 5.5rem;
+        margin: 0.5rem;
+    }
+    .blue-google {
+        background-color: #4285F4;
+        border: 1px solid #540B51;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        padding: 0.5rem;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        width: 100%;
+        height: 5.5rem;
+        margin: 0.5rem;
+        position: relative;
+    }
+    .blue-google img {
+        width: 4.3rem;
+        background-color: white;
+        padding: 0.3rem 0.5rem;
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    .blue-google span {
+        width: 75%;
+    }
+
+    /* ----------------------------------------- Nav */
+    nav {
+        background-color: #540B51;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        padding: 2.0rem;
+        margin-bottom: -0.1rem;
+    }
+    .nav-left {
+        width: 70%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-left img {
+        width: 10.0rem;
+        margin-right: 1.5rem;
+    }
+    .nav-left {
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+    }
+    .nav-left ul {
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+    }
+    .nav-left ul li a {
+        border: none;
+        text-decoration: none;
+        color: white;
+        padding: 1.0rem;
+    }
+
+    .nav-right {
+        width: 30%;
+    }
+    .nav-right button:nth-child(2) {
+        display: none;
+    }
+    .nav-right button {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-sign-in {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+    .nav-sign-in a {
+        white-space: nowrap;
+        border: none;
+        text-transform: unset;
+    }
+
+    /* ----------------------------------------- Header */
+    header {
+        background-color: #540B51;
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        
+        max-height: 100vh;
+        overflow: hidden;
+
+        padding-bottom: 10.0rem;
+    }
+    .hero-text {
+        color: white;
+        text-align: left;
+        width: 50%;
+    }
+    .hero-img {
+        position: relative;
+        width: 40%;
+    }
+    .hero-img img {
+        width: 50.0rem;
+    }
+    .hero-text h1 {
+        font-size: 4em;
+    }
+    /* ----------------------------------------- Companies */
+    .companies,
+    .showcase {
+        background-color: #F3EAE2;
+        margin-top: -0.1rem;
+    }
+    .companies {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 20.0rem;
+    }
+    .companies p {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .companies div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .companies img {
+        padding: 1.0rem;
+        height: 5.0rem;
+    }
+    /* ----------------------------------------- Showcase */
+    .showcase {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .showcase-img > img {
+        max-width: 80%;
+        margin-left: -3.0rem;
+    }
+    .showcase:nth-child(3) img {
+        float: right;
+        margin-right: -3.0rem;
+    }
+    .showcase-text {
+        margin: 2.0rem auto;
+        width: 100%;
+    }
+    section:nth-child(3) > div.showcase-text {
+        float: left;
+    }
+    .showcase a {
+        color: #4285F4;
+        text-decoration: none;
+    }
+    .showcase a::after {
+        content: url(../images/icon-arrow-right.png);
+        margin-left: 0.5rem;
+        align-items: baseline;
+    }
+    /* ----------------------------------------- Stats */
+    .stats {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2.0rem;
+    }
+    .stats h3, .stats p {
+        max-width: 80%;
+    }
+    .stats h3 {
+        margin-top: 4.0rem;
+    }
+    .stats ul {
+        list-style: none;
+        font-weight: 700;
+        margin-top: 4.0rem;
+        text-align: left;
+    }
+    .percent {
+        color: #540B51;
+        font-size: 4.2rem;
+        font-weight: 900;
+    }
+    .stats div,
+    .stats ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .stats div {
+        width: 50.0rem;
+        flex: 1;
+    }
+    .stats button {
+        white-space: nowrap;
+    }
+    .stats button:first-child {
+        flex: 4;
+    }
+    .stats button:last-child {
+        flex: 2;
+    }
+    /* ----------------------------------------- Welcome */
+    .welcome {
+        background-color: #540B51;
+        color: white;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 23.0rem;
+    }
+    .welcome h3 {
+        margin-bottom: 2.0rem;
+        max-width: 60%;
+    }
+    .welcome button {
+        max-width: 60%;
+    }
+    .welcome > div {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 40.0rem
+    }
+    /* ----------------------------------------- Footer */
+    footer img:first-child {
+        display: block;
+        width: 6.0rem;
+        margin: 4.0rem 0;
+    }
+    .footer-list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .footer-list ul {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: first baseline;
+        list-style: none;
+        width: 20%;
+    }
+    .footer-list li:first-child {
+        font-weight: 700;
+        color: black;
+    }
+    .footer-list li {
+        padding: 1.0rem 0;
+        color: #666;
+        font-weight: 400;
+    }
+    hr {
+        border: 1px solid #eee;
+        margin: 3.0rem auto;
+    }
+    .further-links {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        list-style: none;
+        font-size: 1.2rem;
+    }
+    .further-links li {
+        padding: 1.0rem;
+        font-weight: 700;
+    }
+    .further-links li:last-child {
+        color: #4285F4;
+    }
+    .further-links li:last-child::before {
+        content: url(../images/icon-download.png);
+        margin-right: 0.7rem;
+    }
+    .social-links {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        list-style: none;
+    }
+    .social-links li {
+        width: 10%;
+        padding: 1.0rem;
+    }
+    .credits {
+        margin: 1.0rem 0 3.0rem;
+        padding: 1.0rem;
+        color: #666;
+        font-weight: 400;
+    }
+}
 /* --------------------------------------------- LARGE SCREENS */
-@media (min-width: 1440px) {}
+/* @media (min-width: 1440px) {} */
