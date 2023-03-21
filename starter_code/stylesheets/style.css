@@ -9,6 +9,451 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+h2 {
+  color: #000;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+p {
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
 nav {
   background-color: #540b51;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #8a3988;
+}
+
+nav .naviLogo {
+  width: 100px;
+}
+
+nav ul {
+  display: none;
+}
+
+.buttonIcon {
+  background-color: #540b51;
+  width: 50px;
+  height: 50px;
+  border-width: 0;
+}
+
+/* HEADER */
+
+header {
+  background-color: #540b51;
+  margin: 0;
+}
+
+.headerTitle {
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+
+.headerTitle span {
+  color: #ecb12f;
+}
+
+.buttonLong {
+  height: 50px;
+  width: 90%;
+  border-radius: 5px;
+  border-width: 0;
+  margin: 10px auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#buttonEmail {
+  color: #540b51;
+}
+
+#buttonGoogle {
+  color: #fff;
+  background-color: #4285f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hideIcon {
+  opacity: 0;
+}
+
+#buttonGoogle img {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.buttonLong img {
+  height: 20px;
+}
+
+.headerImage img {
+  width: 140vw;
+}
+
+/* MAIN */
+
+main {
+  top: -120px;
+  position: relative;
+  background-color: #f3eae2;
+}
+
+.companies {
+  text-transform: uppercase;
+  padding: 30px;
+  text-align: center;
+}
+
+.companies img {
+  height: 40px;
+  margin: 20px;
+}
+
+/* FEATURES */
+
+.features-text {
+  padding: 5%;
+}
+
+.features-team {
+  text-align: left;
+  margin: 30px auto;
+}
+
+.features-team img {
+  width: 80%;
+}
+
+.features-flex {
+  text-align: right;
+  margin: 30px auto;
+}
+
+.features-flex img {
+  width: 80%;
+}
+
+.features-speed {
+  text-align: left;
+  margin: 30px auto;
+}
+
+.features-speed img {
+  width: 80%;
+}
+
+main a {
+  text-decoration: none;
+  color: #2e71a6;
+  font-weight: 600;
+  line-height: 1.5rem;
+  background-image: url(../images/icon-arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 30px;
+}
+
+/* SALES */
+
+.sales {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+#buttonMeet {
+  color: #fff;
+  background-color: #540b51;
+}
+
+#buttonSales {
+  color: #540b51;
+  background-color: #fff;
+  border: 2px solid #540b51;
+}
+
+.sales ul {
+  list-style: none;
+}
+
+.sales li {
+  padding: 30px;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.sales ul span {
+  color: #540b51;
+  text-align: center;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.sales ul p {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+/* WELCOME */
+
+.welcome {
+  background-color: #540b51;
+  text-align: center;
+  padding: 50px;
+}
+
+.welcome h2 {
+  color: #fff;
+  line-height: 0;
+}
+
+#buttonTry {
+  background-color: #fff;
+  color: #540b51;
+}
+
+#buttonTalk {
+  color: #fff;
+  background-color: #540b51;
+  border: 2px solid #fff;
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  top: -40px;
+  padding: 0 30px;
+}
+
+footer img {
+  width: 80px;
+  padding-bottom: 30px;
+}
+
+.footerColumns ul {
+  list-style: none;
+  padding: 0;
+  line-height: 3rem;
+}
+
+.footerColumns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer ul > li:first-of-type {
+  font-weight: 600;
+}
+
+.secondFooter {
+  list-style: none;
+  padding: 30px 0;
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+.changeRegion {
+  background-image: url(../images/icon-region.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 30px;
+}
+
+.downloadSlack {
+  background-image: url(../images/icon-download.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 30px;
+}
+
+.socialIcons {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 30px;
+  }
+  nav > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #buttonMenu {
+    display: none;
+  }
+
+  nav #buttonTry {
+    width: 120px;
+  }
+
+  .headerTitle {
+    text-align: left;
+    flex: 1;
+  }
+
+  h1 {
+    font-size: 5rem;
+    text-align: left;
+  }
+
+  .headerButtons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .headerImage img {
+    width: 80%;
+  }
+
+  .headerImage {
+    text-align: center;
+    flex: 1;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+  }
+
+  main {
+    top: 0;
+  }
+
+  .features-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .features-team img {
+    width: 80%;
+  }
+
+  .features-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .features-text {
+    text-align: left;
+  }
+
+  .features-flex img {
+    width: 80%;
+  }
+
+  .features-speed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .features-speed img {
+    width: 80%;
+  }
+
+  .salesButtons {
+    text-align: center;
+  }
+
+  #buttonMeet {
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  #buttonSales {
+    width: 200px;
+  }
+  .sales ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  .sales h2 {
+    padding-top: 30px;
+  }
+
+  .welcome {
+    padding: 80px;
+  }
+
+  #buttonTry {
+    width: 200px;
+    margin-right: 20px;
+  }
+
+  #buttonTalk {
+    width: 200px;
+  }
+
+  footer {
+    position: relative;
+    top: 80px;
+    padding: 0 30px;
+  }
+
+  .secondFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .socialIcons {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+  }
 }
