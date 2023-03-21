@@ -8,3 +8,92 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+:root{
+  --background-purple: #540B51;
+  --background-ivory: #F3EAE2;
+  --link-blue: #2e71a6;
+  --titles-black: #191817;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12pt;
+}
+body{
+  background-color: var(--background-purple);
+}
+nav{
+  padding: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  display: flex;
+  justify-content: space-between;
+}
+nav img.logo{
+  height: 20px;
+}
+nav .logo + ul{
+  display: none;
+}
+nav button{
+  margin: 0 10px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_container{
+  display: flex;
+}
+header{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+h1{
+  color: white;
+  font-weight: 600;
+}
+h1 + p{
+  margin: 25px 0;
+  color: white;
+}
+.buttons-flex-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.buttons-flex-container button{
+  text-transform: uppercase;
+  padding: 15px;
+  color: var(--background-purple);
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+}
+#google-button{
+  position: relative;
+  background-color: #4285F4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#google-button > img{
+  box-sizing: border-box;
+  position: absolute;
+  left: 5px;
+  height: 80%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 2px;
+}
+header div:last-child > img{
+  width: 155%;
+}
