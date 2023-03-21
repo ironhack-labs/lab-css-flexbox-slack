@@ -26,6 +26,7 @@ body{
   background-color: var(--background-purple);
 }
 nav{
+
   padding: 25px;
   border-bottom: 1px solid rgba(255, 255, 255, .3);
   display: flex;
@@ -138,6 +139,9 @@ main p:first-child{
 .mobile-side-image{
   width: 95%;
 }
+.computer-side-image{
+  display: none;
+}
 div:has(> .mobile-side-image.right){
   display: flex;
   justify-content: flex-end;
@@ -165,6 +169,7 @@ div:has(> .mobile-side-image.right){
 .white-section h3{
   text-align: center;
   font-size: 1.5rem;
+  color: #191817;
 }
 .white-section h3 + p{
   text-align: center;
@@ -271,5 +276,75 @@ footer .social-media-ul i{
 }
 footer small{
   font-size: .75rem;
-  color: grey;
+  color: #454245;
+}
+@media(min-width: 768px){
+  header{
+    padding: 30px 100px;
+    flex-direction: row;
+  }
+  header div:last-child > img{
+    width: 500px;
+  }
+  header div:has(h1){
+    width: 50%;
+  }
+  header h1{
+    font-size: 42pt;
+    text-align: left;
+  }
+  header h1 + p{
+    width: 60%;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  header .buttons-flex-container{
+    width: 100%;
+    flex-direction: row;
+  }
+  header .buttons-flex-container button{
+    flex-grow: 1;
+  }
+  main section .logos-flex-container{
+    justify-content: center;
+    gap: 70px;
+  }
+  main section:not(:first-of-type){
+    flex-direction: row;
+  }
+  main section.side-by-side-section{
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main section.side-by-side-section:nth-child(even){
+    box-sizing: border-box;
+    padding-right: 100px;
+  }
+  main section.side-by-side-section:nth-child(odd){
+    box-sizing: border-box;
+    padding-left: 100px;
+    flex-direction: row-reverse;
+  }
+  main section .mobile-side-image{
+    display: none;
+  }
+  main section.side-by-side-section > .images-container{
+    width: 50%;
+  }
+  main section.side-by-side-section img{
+    width: 90%;
+  }
+  main section.side-by-side-section .text-container{
+    margin: 0;
+    width: 35%;
+  }
+  .text-container h2{
+    font-size: 2.3rem;
+  }
+  .computer-side-image{
+    display: block;
+  }
 }
