@@ -9,12 +9,59 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-:root {
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
     font-size: 10px;
-    border: none;
-    margin: -1.5rem;
-    padding: 0px;
-}
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
 
 @media (max-width: 768px) {
     body {
@@ -27,14 +74,12 @@ footer links grey: #454245
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 3rem 3rem 2rem 3rem;
-        border: 1px solid white;
+        padding: 2.5rem 2rem 2rem 2rem;
         background-color: #540B51;
     }
 
     header {
         background-color: #540B51;
-        margin-top: -1px;
     }
 
     .nav-logo {
@@ -57,8 +102,7 @@ footer links grey: #454245
     }
 
     img {
-        width: 40rem;
-        overflow: hidden;
+        width: 10rem;
     }
 
     .headline {
@@ -69,6 +113,8 @@ footer links grey: #454245
         font-size: 3.5rem;
         color: white;
         padding:  0rem 3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .subline {
@@ -78,7 +124,10 @@ footer links grey: #454245
         text-align: center;
         font-size: 1.5rem;
         color: white;
-        margin-bottom: 2rem;
+    }
+
+    .subline span {
+        font-size: 1.5rem;
     }
 
     #sign-in-btn-2,
@@ -88,7 +137,7 @@ footer links grey: #454245
         justify-content: center;
         width: 95vw;
         height: 4.5rem;
-        margin: 1rem 1.5rem;
+        margin: 1.5rem auto;
         text-align: center;
         border-radius: 0.5rem;
         border: none;
@@ -103,6 +152,7 @@ footer links grey: #454245
 
     #sign-in-btn-2 span {
         margin-left: -3rem;
+        font-size: 1.3rem;
     }
 
     .sign-in-btn-img {
@@ -115,10 +165,79 @@ footer links grey: #454245
         padding: 0.25rem;
     }
 
-    .section-one {
-        background-color: #F3EAE2;
-        background-size: 100vw;
+    #hero-img-container {
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
     }
 
+    .hero-img {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 50%;
+        object-fit: cover;
+    }
+
+    .section-one-container {
+        background-color: #F3EAE2;
+        background-size: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-one-container p {
+        font-size: 1.8rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    #section-img[alt="Airbnb logo"],
+    #section-img[alt="NASA logo"],
+    #section-img[alt="Uber logo"],
+    #section-img[alt="Target logo"] {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-img[alt="New York Times logo"],
+    #section-img[alt="Spotify logo"] {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .airbnb {
+        width: 20%;
+        height: 20%;
+    }
+
+    .nasa {
+        width: 17%;
+        height: 17%;
+    }
+
+    .uber {
+        width: 15%;
+        height: 15%; 
+    }
+
+    .target {
+        width: 14%;
+        height: 14%;
+    }
+
+    .nyt {
+        width: 20%;
+        height: 20%;
+    }
+
+    .spotify {
+        width: 20%;
+        height: 20%;
+    }
 }
 
