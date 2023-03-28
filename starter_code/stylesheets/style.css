@@ -47,7 +47,7 @@ section {
 .button {
     border: none;
     border-radius: 4px;
-    width: 90vw;
+    width: 30vw;
     padding: 15px;
     text-transform: uppercase;
 }
@@ -273,6 +273,11 @@ hr {
 
 
 @media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+        background-color: #540B51;
+        width: 100vw;
+    }
 
     nav li {
         display: none;
@@ -288,16 +293,26 @@ hr {
         flex-direction: column;
     }
 
+    .button {
+        width: 90vw;
+    }
+
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
   }
 
 
 
   @media (min-width: 768px) and (max-width: 1024px) {
+    
     nav li {
         display: none;
     }
 
-    
+
     img {
         max-width: 60%;
       }
@@ -320,4 +335,35 @@ hr {
         gap: 50px;
     }
 
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+  }
+
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .header {
+        background-image: url("../images/background-singup.png");
+        background-position: 0 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sign-up {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
   }
