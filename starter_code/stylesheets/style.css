@@ -12,29 +12,27 @@ footer links grey: #454245
 body {
     margin: 0;
     font-size: 16px;
-}
-
-
-nav {
-    background-color:  #540B51;
-    display: flex;
-    justify-content: space-between;
-}
-
-.ivory-container {
-    background-color: #F3EAE2;
+    font-family: Arial, sans-serif;
 }
 
 h1,h2,h3 {
     margin: 0;
 }
 
-section {
-    width: 100vw;
+
+h2 {
+    font-size: 2rem;
 }
+
+
+.ivory-container {
+    background-color: #F3EAE2;
+}
+
 
 .container {
     padding: 20px;
+    height: 40vh;
 }
 
 
@@ -44,12 +42,15 @@ section {
     color: #2E71A6;
 }
 
+
+/* Button */
 .button {
     border: none;
     border-radius: 4px;
     width: 30vw;
-    padding: 15px;
+    height: 40px;
     text-transform: uppercase;
+
 }
 
 .button-white {
@@ -62,16 +63,40 @@ section {
     color: white;
 }
 
+.button-purple {
+    background-color: #540B51;
+    color: #fff;
+    border: 1px solid #fff;
+}
 
-/* Nav */
+.button-purple-white {
+    border: 1px solid #540B51;
+    background-color: #fff;
+    color: #540B51;
+}
+
+
+
+
+/* Navbar */
+nav {
+    background-color:  #540B51;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0;
+}
+
+
+section {
+    width: 100vw;
+}
+
+
 .nav-button button {
     background-color: #540B51;
     border: none;
 }
 
-nav {       
-    padding: 20px 20px 0;
-}
 
 .logo {
     width: 100px;
@@ -87,8 +112,6 @@ nav {
     flex-direction: row;
     list-style-type: none;
 }
-
-
 
 
 /* Header */
@@ -121,13 +144,32 @@ nav {
 
 
 .google-logo {
-    width: 15px;
+    width: 30px;
+    background-color: #fff;
 }
 
+.google-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.google-button span {
+    flex-grow: 2;
+}
 
 .end {
     display: flex;
     justify-content: end;
+}
+
+
+.logo-container p {
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 
 /* Terms */
@@ -143,24 +185,11 @@ nav {
     text-align: center;
 }
 
-.button-purple {
-    background-color: #540B51;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.button-purple-white {
-    border: 1px solid #540B51;
-    background-color: #fff;
-    color: #540B51;
-}
 
 .terms ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     width: 40%;
-    text-align: center;
 }
 
 .terms span {
@@ -184,14 +213,14 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
     gap: 50px;
     justify-content: center;
-    margin: 50px 0;
+    padding: 50px 50px;
+
 }
 
 .logo-pic img {
-    width: 100px;
+    height: 40px;
 }
 
 
@@ -261,7 +290,7 @@ footer li {
 }
 
 hr {
-    width: 90vw;
+    width: 90%;
 }
 
 .social-list {
@@ -277,13 +306,21 @@ hr {
         text-align: center;
         background-color: #540B51;
         width: 100vw;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
     }
+
 
     nav li {
         display: none;
     }
 
-    img {
+    .slack-pic {
+        height: 100vh;
+    }
+
+    .screenshot {
         max-width: 90%;
       }
 
@@ -307,18 +344,27 @@ hr {
 
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    
+    p {
+        font-size: 1rem;
+        font-weight: lighter;
+        line-height: 1.5;
+    }
+
     nav li {
         display: none;
     }
 
 
     img {
-        max-width: 60%;
+        max-height: 80vh;
       }
 
+    .button {
+        width: 90vw;
+    }
+
     .container {
-        padding: 80px;
+        padding: 3rem 8rem;
     }
 
     .contact {
