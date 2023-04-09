@@ -7,7 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   <!-- link the Font Awesome stylesheet - CDN -->
-  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
 
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
@@ -17,11 +19,11 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="Nav-app">
     <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+      <img class="logo"src="./images/slack-logo.png" alt="Slack logo" />
 
-      <ul>
+      <ul hidden>
         <li>
           <a href="#">Product</a>
         </li>
@@ -29,7 +31,7 @@
           <a href="#">Solutions</a>
         </li>
         <li>
-          <a href="#">Resources</a>
+          <a href="#">Resouraces</a>
         </li>
         <li>
           <a href="#">Pricing</a>
@@ -38,11 +40,11 @@
     </div>
 
     <div>
-      <button>
+      <button class="button-nav">
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button class="button-nav">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
@@ -58,16 +60,16 @@
   </nav>
 
   <header>
-    <div>
+    <div class="">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><strong class="headertext">Slack is free to try</strong> for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="flex-box">
+        <button class="signup" id="email">Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
+        <button class="signup">
+          <img class="google" src="./images/logo-google.png" alt="Google logo" />
           <span>Sign up with Google</span>
         </button>
       </div>
