@@ -12,13 +12,25 @@ footer links grey: #454245
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 nav{
     display: flex;
     background-color: #540B51;
     align-self: stretch;
     justify-content: space-between;
+}
+
+section{
+    display: flex;
+}
+
+.purple{
+    background-color: #540B51;
+}
+
+.ivory{
+    background-color: #F3EAE2;
 }
 
 header{
@@ -30,6 +42,10 @@ header{
     margin: 20px;
 }
 
+nav.purple.section{
+    flex-direction: row;
+}
+
 @media (max-width: 768px) {
     .nav-list li{
         display: none;
@@ -37,6 +53,16 @@ header{
 
     .header-img{
         max-width: 100%;
+    }   
+
+    .section{
+        flex-direction: column;
+    }
+
+    .img-div{
+        overflow: hidden;
+        display: flex;
+        height: 400px;
     }
 }
 
@@ -76,9 +102,10 @@ nav>div>button{
     align-items: center;
     background-color: #540B51;
     color: white;    
+    font-weight: 600;
 }
 
-.header-text span{
+.header-text p>span{
     color: #ECB12F;
 }
 
@@ -91,23 +118,32 @@ nav>div>button{
 }
 
 .header-buttons>button{
-    height: 50px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 6px;
+    align-items: center;
+    font-size: large;
+    color:#540B51;
+    font-weight: 700;
 }
 
 .header-buttons>:last-child{
     background-color: #4285F4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 2px;
-    padding: 3px;
+    display: grid;
+    color: white;
+}
+
+.header-buttons:last-child span{
+    justify-self: center;
 }
 
 #google-logo{
-    height: 46px;
+    position: absolute;
+    width: 40px;
     background-color: white;
     border-radius: 2px;
-   
+    justify-self: flex-start;
+    
 }
 
 h1{
@@ -117,6 +153,48 @@ h1{
     font-size: 36pt;
 }
 
-.hero-product-ui{
-    overflow: hidden;
+#brand-sponsors{
+    text-align: center;
+    font-weight: 800;
+    font-size: 13pt;
+    align-items: center;
+    justify-content: center;
+    padding:40px 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#brand-sponsors div{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+}
+
+#brand-sponsors img{
+    height: 40px;
+    margin: 10px;
+}
+
+.section-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    gap: 20px;
+    line-height: 1.5em;
+}
+
+.section-footer>h2{
+    font-weight: 900;
+    font-size: 22pt;
+}
+
+.section-footer a{
+    color: #2E71A6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.left-aligned{
+    align-self: flex-end;
 }
