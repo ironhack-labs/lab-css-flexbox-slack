@@ -25,6 +25,9 @@ body {
   padding: 0;
   unicode-bidi: embed;
 }
+img {
+  overflow: hidden;
+}
 
 /* nav setup */
 nav,
@@ -121,8 +124,8 @@ header div div button {
 #google-button span {
   text-align: center;
   width: 100%;
-  position: absolute;
-  right: 0px;
+  position: relative;
+  right: 5%;
 }
 #slack-screenshot img {
   padding-top: 4%;
@@ -497,4 +500,267 @@ footer div:nth-last-of-type(1) {
   padding-bottom: 5%;
   font-size: 10px;
   margin-left: 5%;
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  nav {
+    padding: 3% 0;
+    width: 100%;
+  }
+  nav img {
+    width: 30%;
+  }
+  nav div button img {
+    width: 30px;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 60%;
+    padding-left: 3%;
+    padding-bottom: 15%;
+    background-image: url(/starter_code/images/background-singup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header div:nth-of-type(1) h1 {
+    width: 90%;
+    text-align: left;
+    padding: 0;
+    font-size: 85px;
+    margin-bottom: 5%;
+  }
+  header div:nth-of-type(1) p{
+    width: 90%;
+    text-align: left;
+    padding: 0;
+    font-size: 30px;
+  }
+  header div:nth-of-type(1) div {
+    width: 100%;
+    padding: 0;
+  }
+  header div:nth-of-type(1) button {
+    width: 100%;
+  }
+  header div:nth-of-type(2) {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+  }
+  #slack-screenshot img{
+    width: 210%;
+    position: relative;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  #slack-screenshot{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+  #companies p {
+    font-size: 18px;
+  }
+  main section div:first-of-type {
+    justify-content: space-evenly;
+  }
+  main section div:first-of-type img {
+  margin: 0;
+  }
+  main section:first-child div:first-of-type > img:nth-child(1) {
+  width: 15%;
+  }
+  main section div:first-of-type > img:nth-of-type(2) {
+    width: 9%;
+  }
+  main section div:first-of-type > img:nth-of-type(3) {
+    width: 8%;
+  }
+  main section div:first-of-type > img:nth-of-type(4) {
+    width: 7%;
+  }
+  main section div:first-of-type > img:nth-of-type(5) {
+    width: 25%;
+  }
+  main section div:first-of-type > img:nth-of-type(6) {
+    width: 17%;
+  }
+  main section:nth-of-type(2) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10%;
+  }
+  main section:nth-of-type(2) img {
+    display: none;
+  }
+  main section:nth-of-type(2) div:nth-of-type(1) {
+    background-image: url(/starter_code/images/connectedness.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 85%;
+    margin: 0;
+  }
+  main section:nth-of-type(2) div:nth-of-type(2) {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    padding: 3% 0;
+  }
+  main section:nth-of-type(3) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 0%;
+    margin-top: 5%;
+  }
+  main section:nth-of-type(3) img {
+    display: none;
+  }
+  main section:nth-of-type(3) div:nth-of-type(1) {
+    background-image: url(/starter_code/images/flexibility.png);
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 85%;
+    margin: 0;
+  }
+  main section:nth-of-type(3) div:nth-of-type(2) {
+    width: 70%;
+    position: relative;
+    right: 15%;
+    padding: 3% 0;
+  }
+    main section:nth-of-type(4) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 0%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+  }
+  main section:nth-of-type(4) img {
+    display: none;
+  }
+  main section:nth-of-type(4) div:nth-of-type(1) {
+    background-image: url(/starter_code/images/speed.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 85%;
+    margin: 0;
+  }
+  main section:nth-of-type(4) div:nth-of-type(2) {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    padding: 3% 0;
+  }
+  main section div h2 {
+    font-size: 2em;
+  }
+  main section div p,
+  main section div a {
+    font-size: 1.16em;
+  }
+  main section:nth-of-type(5) h3 {
+    font-size: 1.8em;
+  }
+  main section:nth-of-type(5) p:first-of-type {
+    font-size: 15px;
+    width: 100%;
+  }
+  main section:nth-of-type(5) div:nth-of-type(1) {
+    flex-direction: row;
+    width: 80%;
+  }
+  main section:nth-of-type(5) div:nth-of-type(1) button {
+    width: 40%;
+  }
+  main section:nth-of-type(5) ul {
+    padding: 1%;
+    display: flex;
+    align-items:first baseline;
+    justify-content: space-evenly;
+  }
+  main section:nth-of-type(5) ul li {
+    width: 20%;
+    margin: 0 3%;
+  }
+  main section:nth-of-type(5) ul li p:first-child {
+    text-align: left;
+  }
+  main section:nth-of-type(5) ul li p:last-child {
+    text-align: left;
+    width: 100%;
+  }
+  main section:nth-of-type(5) div:last-child {
+    padding-bottom: 5%;
+  }
+  main section:nth-of-type(6) h3 {
+    font-size: 230%;
+    margin: 5% 0 0 0;
+  }
+  main section:nth-of-type(6) button {
+    width: 75%;
+  }
+  main section:nth-of-type(6) {
+    padding-bottom: 5%;
+  }
+  footer {
+    padding: 4% 0;
+  }
+  footer > img:first-of-type {
+    width: 8%;
+    left: -42%;
+  }
+  footer div:first-of-type {
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 4%;
+  }
+  footer div:first-of-type ul {
+    padding: 0;
+  }
+  footer div:first-of-type ul li {
+    padding: 10% 0;
+    font-size: 14px;
+  }
+  footer div:first-of-type ul li:first-of-type {
+    font-size: 16px;
+  }
+  footer > ul:nth-of-type(1) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4% 0;
+  }
+  footer > ul:nth-of-type(1) li {
+    padding: 0;
+    margin: 0;
+  }
+  footer > ul:nth-of-type(2) {
+    justify-content: flex-start;
+  }
+  footer > ul:nth-of-type(2) li {
+    margin: 0 4.4%;
+    padding-bottom: 5%;
+  }
+  footer div:nth-last-of-type(1) {
+    margin-left: 3%;
+  }
 }
