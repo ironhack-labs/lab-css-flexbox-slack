@@ -27,6 +27,7 @@ section{
 
 .purple{
     background-color: #540B51;
+    
 }
 
 .ivory{
@@ -46,6 +47,10 @@ nav.purple.section{
     flex-direction: row;
 }
 
+ul{
+    list-style: none;
+}
+
 @media (max-width: 768px) {
     .nav-list li{
         display: none;
@@ -62,7 +67,7 @@ nav.purple.section{
     .img-div{
         overflow: hidden;
         display: flex;
-        height: 400px;
+        height: 700px;
     }
 }
 
@@ -105,11 +110,21 @@ nav>div>button{
     font-weight: 600;
 }
 
+h3{
+    font-size: 24pt;
+}
+
+.purple h3{
+    text-align: center;
+    color: white;
+    margin: 0px 20px;
+}
+
 .header-text p>span{
     color: #ECB12F;
 }
 
-.header-buttons{
+.buttons-div{
     display: flex;
     flex-direction: column;
     align-self: stretch;
@@ -117,20 +132,32 @@ nav>div>button{
     gap: 10px;
 }
 
-.header-buttons>button{
+button{
     height: 60px;
     padding: 5px;
     border-radius: 6px;
     align-items: center;
     font-size: large;
-    color:#540B51;
     font-weight: 700;
 }
 
-.header-buttons>:last-child{
+.purple-on-white{
+    color:#540B51;
+    background-color: white;
+    border: #540B51 solid 1px;
+}
+
+.white-on-purple{
+    color: white;
+    background-color: #540B51;
+    border: white solid 1px;
+}
+
+.google-signup{
     background-color: #4285F4;
     display: grid;
     color: white;
+    border: #540B51 solid 1px;
 }
 
 .header-buttons:last-child span{
@@ -198,3 +225,93 @@ h1{
 .left-aligned{
     align-self: flex-end;
 }
+
+.white{
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 40px;
+    gap: 30px;
+}
+
+.white>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.white>ul{
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    gap: 30px;
+}
+.white>ul p:nth-child(1){
+    font-size:60px;
+    color:#540B51;
+    margin: 20px;
+}
+
+.white+.purple{
+    padding: 50px 0px;
+
+}
+
+footer{
+    padding: 40px;
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{
+    width: 80px;
+}
+
+.footer-columns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 50px;
+    
+}
+
+.footer-columns ul{
+    line-height: 4em;
+    color:#454245
+}
+
+.footer-columns li:first-child{
+   font-weight: 600;
+}
+
+footer>ul{
+    font-size: 14pt;
+    line-height: 3em;
+    font-weight: 700;
+}
+
+footer>ul li:last-child{
+    color: #4285F4;
+}
+
+footer li img{
+    height: 1em;
+    width: 1em;
+}
+
+.socials-icons ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.socials-icons i{
+    width:2em;
+    height: 2em;
+
+}
+
