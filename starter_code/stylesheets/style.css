@@ -14,11 +14,20 @@ footer links grey: #454245
     box-sizing: border-box;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+
+
 nav{
     display: flex;
     background-color: #540B51;
-    align-self: stretch;
     justify-content: space-between;
+    list-style: none;
+    width: 100vw;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
 }
 
 section{
@@ -34,10 +43,6 @@ section{
     background-color: #F3EAE2;
 }
 
-header{
-    align-self: stretch;
-}
-
 #slack-logo{
     width: 25%;
     margin: 20px;
@@ -51,12 +56,26 @@ ul{
     list-style: none;
 }
 
+.header-text{
+    background-color: #540B51;
+    color: white;    
+    font-weight: 600;
+}
+
 @media (max-width: 768px) {
     .nav-list li{
         display: none;
     }
 
+    .header-text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
     .header-img{
+        overflow: none;
+        height: auto;
         max-width: 100%;
     }   
 
@@ -65,10 +84,52 @@ ul{
     }
 
     .img-div{
-        overflow: hidden;
-        display: flex;
-        height: 700px;
+        
+        width: 100%;
+       
     }
+
+
+}
+
+@media(min-width:769px) and (max-width:1024px){
+     nav>div:first-child{
+        justify-self: stretch;
+        justify-content: space-between;
+    }
+    
+    .nav-buttons{
+        display: none;
+    }
+    
+    .nav-list{
+        justify-self: flex-end;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        justify-content: space-between;
+    }
+
+    header>div:first-child{
+        width:40vw;
+        padding: 0px 15px;
+    }
+
+    header>.img-div, header img:last-child{
+        height: 200px;
+        align-self: center;
+    }
+
+    .header-text>h1{
+        text-align: left;
+    }
+
+    
+
+
 }
 
 nav>div{
@@ -99,15 +160,6 @@ nav>div>button{
 .nav-list>li{
     text-decoration: none;
     color:white
-}
-
-.header-text{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #540B51;
-    color: white;    
-    font-weight: 600;
 }
 
 h3{
