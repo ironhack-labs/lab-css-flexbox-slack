@@ -14,7 +14,6 @@ footer links grey: #454245
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    font-size: 14px;
 }
 
 p,span {
@@ -38,30 +37,186 @@ hr {
 /* ITERACION 1  */
 
 @media (max-width: 767px) {
-    .nav-list {
+    .nav-list li {
         display: none;
     }
+
+    h1 {
+        font-size: 3rem;
+        padding: 25px;
+    }
+
+    .sing-up-google > img {
+        width: 7%;
+}
+
+    #companies >div > img {
+    height: 60px;
+    padding: 50px;
+}
+
+#companies {
+    padding-top: 50px;
+}
+
+.bg-img {
+    width: 100vw;
+}
+.btn-prp {
+    width: 90%;
+}
+
+.btn-wht {
+    width: 90%;
+}
+
+.team-list {
+    flex-direction: column;
+}
 }
 
 /* ITERACION 2 */
 
-@media (min-width: 767px) and (maxwidth: 961px){+
-    
+@media (min-width: 768px) and (max-width: 1024px){
+    .nav-list li {
+        display: none;
+    }
 
+    header {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 100px;
+        padding: 40px;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    header > div > h1 {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .sing-up-google {
+        font-size: 0.6em;
+        font-weight: normal;
+    }
+
+    .sing-up-google > img {
+        width: 11%;
+    }
+    .sing-up-email {
+        font-size: 0.8em;
+    }
+
+    #companies >div > img {
+        height: 58px;
+        padding: 10px;
+    }
+
+    #companies {
+        padding: 50px 0px 50px 0px;
+    }
+
+    .bg-img {
+        width: 58vw;
+    }
+
+    #team p, #work p ,#slack-plataform p {
+        padding: 10px 50px;
+    }
+
+    #team h2, #work h2 ,#slack-plataform h2 {
+        padding: 10px 50px;
+    }
+
+    #team a, #work a ,#slack-plataform a {
+        padding: 10px 50px;
+        color: #2E71A6;
+    }
+    
+    .final-btns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-prp {
+        width: 40%;
+    }
+    
+    .btn-wht {
+        width: 35%;
+    }
+
+    .team-list {
+        flex-direction: row;
+    }
 }
 
 /* ITERACION 3 */
 
-@media (){
+@media (min-width: 1024px) and (max-width:1440px){
+    h1 {
+        font-size: 5rem;
+        padding: 20px 20px 50px;
+        text-align: left;
+    }
 
+    .img-slack {
+        display: flex;
+        width: 15rem;
+        margin: 20px;
+    }
+
+    header {
+        display: flex;
+        padding: 20px 20px 100px 20px;
+        justify-content: center;
+    }
+    .sing-up-google > img {
+        width: 7%;
+    }
+
+    .bg-img {
+        width: 50vh;
+    }
+
+    #center-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #companies {
+        padding: 20px;
+        display: flex;
+    }
+
+    #companies > div {
+        display: flex;
+    }
+
+    #companies > div > img {
+        height: 50px;
+        padding: 10px;
+    }
+
+    .btn-prp {
+        width: 300px;
+    }
+
+    .btn-wht {
+        width: 200px;
+    }
 }
 /* ITERACION 4 */
 
 
-h1 {
-    font-size: 3rem;
-    padding: 25px;
-}
+
 
 h2 {
     font-size: 1.7rem;
@@ -77,6 +232,8 @@ nav {
     display: flex;
     align-items: center;
     background-color: #540B51;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-list {
@@ -122,12 +279,10 @@ header {
 }
 
 header > div > p {
-    font-size: 1.2rem;
     padding: 5px;
 }
 
 header > div > p > span {
-    font-size: 1.2rem;
     font-weight: bold;
     color: #ECB12F;
 }
@@ -156,7 +311,6 @@ header > div > p > span {
 }
 
 .sing-up-google > img {
-    width: 7%;
     padding: 7.5px;
     border-radius: 3px;
     background-color: white;
@@ -174,12 +328,10 @@ header > div > p > span {
 .bg-img {
     padding-top: 0px;
     padding-bottom: 25px;
-    width: 100vw;
     display: flex;
 }
 
 #companies {
-    padding-top: 50px;
     text-align: center;
     align-items: center;
     display: flex;
@@ -196,16 +348,11 @@ header > div > p > span {
     color: #191817;
 }
 
-#companies >div > img {
-    height: 60px;
-    padding: 10px;
-}
 
 #team, #work, #slack-plataform {
     background-color: #F3EAE2;
     line-height: 1.7;
     align-items: center;
-    text-align: center;
 }
 
 #team div, #work div ,#slack-plataform div{
@@ -244,7 +391,6 @@ header > div > p > span {
 .btn-prp {
     background-color: #540B51;
     color: white;
-    width: 90%;
     border-radius: 5px;
     height: 50px;
     border: none;
@@ -254,7 +400,6 @@ header > div > p > span {
 
 .btn-wht {
     background-color: white;
-    width: 90%;
     border-radius: 5px;
     height: 50px;
     text-transform: uppercase;
@@ -264,7 +409,6 @@ header > div > p > span {
 
 .team-list {
    display:flex;
-   flex-direction: column;
    right: 0px;
    align-items: center;
    text-align: center;
@@ -381,6 +525,16 @@ hr {
 
 footer > div:last-of-type > small {
     color: #454245; 
-    font-size: 0.8rem;
+    font-size: 0.4rem;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#list-footer > ul {
+    font-size: 8px;
+}
+
+.last-list {
+    font-size: 12px;
 }
