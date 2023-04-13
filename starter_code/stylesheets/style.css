@@ -63,13 +63,15 @@ ul{
 }
 
 .header-text{
+    display: flex;
+    flex-direction: column;
     background-color: #540B51;
     color: white;    
     font-weight: 600;
 }
 
 @media (max-width: 768px) {
-    .nav-list li{
+    nav>div:first-child{
         display: none;
     }
 
@@ -136,7 +138,7 @@ ul{
         justify-content: space-between;
     }
     
-    .nav-buttons{
+    .nav-buttons ul{
         display: none;
     }
     
@@ -150,13 +152,14 @@ ul{
         flex-direction: row;
         height: 530px;
         justify-content: space-between;
+        height: 800px;
     }
 
     .header-text{
         min-width:410px;
         max-width: 500px;
-        padding: 0px 35px;
-        
+        padding: 40px 35px;
+        gap:40px
     }
 
     header>.img-div, header img:last-child{
@@ -228,15 +231,14 @@ ul{
     
 }
 
-nav>div{
-    background-color: #540B51;
-    display:flex;
-    align-self: stretch;
-    align-items: center;
+nav div:first-child{
+    display:none
 }
 
-nav>div:last-child{
+.nav-buttons{
     margin-right: 12px;
+    align-items: center;
+    display: flex;
 }
 
 nav>div>button{
@@ -266,6 +268,10 @@ h3{
     text-align: center;
     color: white;
     margin: 0px 20px;
+}
+
+.header-text>p{
+    font-size: 14pt;
 }
 
 .header-text p>span{
