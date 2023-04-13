@@ -114,6 +114,20 @@ ul{
         max-width: 100%;
     };
 
+    .white>ul{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .white:first-of-type li{
+        width: 33vw;
+    }
+
+    footer>ul{
+        font-size: 14pt;
+        line-height: 3em;
+    }
 }
 
 @media(min-width:769px) and (max-width:1024px){
@@ -168,6 +182,47 @@ ul{
         align-self: center;
     }
 
+    .white .buttons-div, ul{
+        display: flex;
+        flex-direction: row;        
+    }
+    .white button{
+        flex-grow: 1;
+    }
+
+    .white li{
+        margin: 5px;
+        width: 25vw;
+    }
+
+    .purple:last-of-type .buttons-div{
+        width: 80vw;
+        align-self: center;
+    }
+
+    
+
+    .footer-columns ul{
+        flex-direction: column;
+    }
+
+    .socials-icons{
+        width:40vw;
+        
+    }
+
+
+    footer>ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 12pt;
+    }
+
+    
+    
 }
 
 nav>div{
@@ -303,7 +358,10 @@ h1{
     gap: 20px;
     line-height: 1.5em;
     align-self: center;
+
 }
+
+
 
 .section-footer>h2{
     font-weight: 900;
@@ -335,16 +393,15 @@ h1{
     flex-direction: column;
 }
 
-.white>ul{
-    display: flex;
-    flex-direction: column;
-    width: 33vw;
-    gap: 30px;
-}
+
 .white>ul p:nth-child(1){
     font-size:60px;
     color:#540B51;
     margin: 20px;
+}
+
+.purple:last-of-type{
+    justify-content: center;
 }
 
 .white+.purple{
@@ -382,8 +439,7 @@ footer img{
 }
 
 footer>ul{
-    font-size: 14pt;
-    line-height: 3em;
+    
     font-weight: 700;
 }
 
@@ -398,9 +454,8 @@ footer li img{
 
 .socials-icons ul{
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-
+    
 }
 
 .socials-icons i{
