@@ -18,7 +18,7 @@ footer links grey: #454245
   /* /NAV STYLE/ */
 
   nav{
-      background-color: purple;
+      background-color: #540b51;
       align-items: flex-start;
       display: flex;
       justify-content: space-between;
@@ -42,7 +42,7 @@ footer links grey: #454245
  
 
   header{
-      background: purple;
+      background: #540b51;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -84,7 +84,6 @@ footer links grey: #454245
   .button-email{
     text-transform: uppercase;
     background: white;
-    height: 70px;
     display: flex;
     flex-direction: row;
     align-content: space-around;
@@ -92,13 +91,13 @@ footer links grey: #454245
     justify-content: center;
     flex-wrap: wrap;
     height: 51px;
-    width: 215px;
+    width: 40vw;
     margin: 10px;
 }
 
   .button-google{
-      background: #ffffff;
-      height: 40px;
+      background: #4285f4;
+      color:white;
       display: flex;
       flex-direction: row;
       align-content: space-around;
@@ -106,7 +105,7 @@ footer links grey: #454245
       justify-content: center;
       flex-wrap: wrap;
       height: 51px;
-      width: 215px;
+      width: 40vw;
       margin: 10px;
       text-transform: uppercase;
       
@@ -119,6 +118,7 @@ footer links grey: #454245
       align-content: space-around;
       margin-bottom: 20px;
       margin-right: 10px;
+      background-color: white;
   }
 
 
@@ -132,7 +132,7 @@ footer links grey: #454245
   /* /SECCION COMAPNIES/ */
 
 
-  main{
+ main section{
       display: flex;
       flex-wrap: nowrap;
       flex-direction: column;
@@ -143,9 +143,6 @@ footer links grey: #454245
       text-align: center;
   }
   
-  .companies{
-    margin: 20px;
-}
 
   .companies p{
          font-weight: 100;
@@ -232,11 +229,18 @@ h3{
 .teams p span {
     font-size: 40px;
     font-weight: 600;
-    color:purple;
+    color:#540b51;
+}
+
+.teams ul{
+    list-style-type: none;
+
 }
 
 .teams ul li{
     padding: 30px;
+
+
 }
 
 .teams ul li p{
@@ -284,7 +288,7 @@ h3{
     flex-direction: column;
     height: 70vw;
     justify-content: center;
-    background-color:purple;
+    background-color:#540b51;
     width: 100vw;
     text-align: center;
     align-items: center;
@@ -348,3 +352,110 @@ footer .social li {
     display: flex;
     margin: 30px;
 }
+
+.display-onBig{
+    display: none;
+}
+
+.legal {
+    margin-left: 30px;
+}
+
+.final{
+    margin-left: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+header div img {
+    display:none;
+}
+
+header{
+    background-color: #540b51;
+    background-image: url("../images/hero-product-ui.png");
+    height: 80vh;
+    background-repeat:   no-repeat;
+    background-position: right 600% bottom 45%;
+    background-size: 1000px;
+    
+}
+
+
+.bigScreen-alignTextLeft {
+    text-align: left;
+    margin-right: 400px;
+}
+
+header div h1{
+    font-size: 90px;
+}
+
+header div p{
+    font-size: 30px;
+}
+
+.companies{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.companies div{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+}
+
+main .companies div img {
+    height: 40px;
+    padding: 10px;
+}
+
+.card {
+    text-align: left;
+    padding-left:150px;
+    padding-right: 150px;
+}
+
+.card p{
+    padding-right: 120px;
+}
+
+.display-onSmall{
+    display:none
+}
+
+.display-onBig{
+    display:contents;
+}
+
+.welcome{
+    height: 50vw;
+}
+
+.welcome h3{
+    font-size: 50px;
+}
+
+footer div ul{
+    padding-left: 100px;
+
+}
+
+.legal {
+    display: flex;
+}
+
+.legal li {
+margin-left: 20px;
+}
+
+
+} /*  //no borrar es de la media query */
+
