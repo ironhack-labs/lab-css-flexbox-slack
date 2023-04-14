@@ -60,6 +60,14 @@ nav.purple.section{
 
 ul{
     list-style: none;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 800px;
 }
 
 .header-text{
@@ -70,15 +78,29 @@ ul{
     font-weight: 600;
 }
 
+
+
+.header-text>h1{
+    text-align: left;
+}
+
+
 @media (max-width: 768px) {
-    nav>div:first-child{
+    .nav-list{
         display: none;
     }
-
+    
     .header-text{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-text>h1{
+        text-align: center;
+    }
+
+    .nav-buttons>ul{
+        display:none
     }
 
     .header-img{
@@ -142,17 +164,13 @@ ul{
         display: none;
     }
     
-    .nav-list{
+    .nav-list ul{
         justify-self: flex-end;
         margin-right: 50px;
     }
 
-    header{
-        display: flex;
-        flex-direction: row;
-        height: 530px;
-        justify-content: space-between;
-        height: 800px;
+    .nav-list{
+        display: none;
     }
 
     .header-text{
@@ -162,7 +180,7 @@ ul{
         gap:40px
     }
 
-    header>.img-div, header img:last-child{
+    header>.img-div, header>div>img{
         width: auto;
         height: 350px;
         overflow: hidden;
@@ -170,10 +188,7 @@ ul{
        
     }
 
-    .header-text>h1{
-        text-align: left;
-    }
-
+    
     .ivory>.img-div img{
         width: 90vw;
     }
@@ -225,10 +240,97 @@ ul{
         flex-wrap: wrap;
         gap: 10px;
         font-size: 12pt;
+    }    
+    
+}
+
+@media (min-width:1025px) and (max-width:1440px){
+    .mobile-img{
+        display: none;
     }
 
+    #slack-logo{
+        height: 40px;
+        width: auto;
+        
+    }
     
-    
+    .nav-buttons>button:nth-child(2){
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .nav-list ul{
+        justify-content: space-around;
+        width: 50vw;
+        flex-shrink: 1;
+        font-size: 14pt;
+        font-weight: 800;
+    }
+
+    .nav-buttons{
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .nav-buttons ul{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: center;
+        gap: 5px;
+    }  
+
+    .nav-buttons li{
+        display: flex;
+        flex-grow: 1;        
+    }
+
+    .nav-buttons ul li button{
+        flex-grow: 1;
+    }
+
+    .nav-buttons ul button:first-child{
+        border:none
+    }
+
+    .header-text{
+        min-width: 380px;
+        max-width:460px;
+        margin-left: 100px;
+        padding: 40px 35px;
+        gap:40px;
+        flex-shrink: 0;
+    }
+
+    .header-text h1{
+        font-size: 46pt;
+    }
+
+    header>.img-div{
+        align-self: center;
+        overflow: hidden;
+    }
+
+    header>div>img{
+        
+        max-width:50vw
+
+    }
+
+    .ivory:not(#brand-sponsors){
+        flex-direction: row;
+    }
+
+    .ivory:not(#brand-sponsors) img{
+        max-width: 50vw;
+    }
+
 }
 
 nav div:first-child{
@@ -247,7 +349,7 @@ nav>div>button{
     padding:18px;
 }
 
-.nav-list{
+.nav-list>ul{
     display:flex;
     justify-self: end;
     list-style: none;
@@ -255,7 +357,7 @@ nav>div>button{
     
 }
 
-.nav-list>li{
+.nav-list li{
     text-decoration: none;
     color:white
 }
