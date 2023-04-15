@@ -84,281 +84,20 @@ header{
     text-align: left;
 }
 
-
-@media (max-width: 768px) {
-    .nav-list{
-        display: none;
-    }
-    
-    .header-text{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .header-text>h1{
-        text-align: center;
-    }
-
-    .nav-buttons>ul{
-        display:none
-    }
-
-    .header-img{
-        overflow: none;
-        height: auto;
-        max-width: 100%;
-    }   
-
-    .section{
-        flex-direction: column;
-    }
-
-    .section-footer{
-        padding: 50px 0px;
-        width:80vw;
-    }
-
-    .img-div{
-        display: flex;
-        width: 100%;
-        overflow: hidden;
-
-    }
-
-    header>.img-div>img{
-        position: relative;
-        height: 500px;
-    }
-
-    .img-desktop{
-        display:none
-    }
-
-    .ivory img{
-        max-width: 100%;
-    };
-
-    .white>ul{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .white:first-of-type li{
-        width: 33vw;
-    }
-
-    footer>ul{
-        font-size: 14pt;
-        line-height: 3em;
-    }
+.socials-icons ul{
+    display: flex;    
+    width: 40vw;   
+    justify-content: space-between; 
 }
 
-@media(min-width:769px) and (max-width:1024px){
-     nav>div:first-child{
-        justify-self: stretch;
-        justify-content: space-between;
-    }
-    
-    .nav-buttons ul{
-        display: none;
-    }
-    
-    .nav-list ul{
-        justify-self: flex-end;
-        margin-right: 50px;
-    }
-
-    .nav-list{
-        display: none;
-    }
-
-    .header-text{
-        min-width:410px;
-        max-width: 500px;
-        padding: 40px 35px;
-        gap:40px
-    }
-
-    header>.img-div, header>div>img{
-        width: auto;
-        height: 350px;
-        overflow: hidden;
-        align-self: center;
-       
-    }
-
-    
-    .ivory>.img-div img{
-        width: 90vw;
-    }
-
-    .mobile-img{
-        display: none;
-    }
-
-    .section-footer{
-        padding: 120px 0px;
-        width: 70vw;
-        align-self: center;
-    }
-
-    .white .buttons-div, ul{
-        display: flex;
-        flex-direction: row;        
-    }
-    .white button{
-        flex-grow: 1;
-    }
-
-    .white li{
-        margin: 5px;
-        width: 25vw;
-    }
-
-    main> .purple .buttons-div{
-        width: 80vw;
-        align-self: center;
-    }
-
-    
-
-    .footer-columns ul{
-        flex-direction: column;
-    }
-
-    .socials-icons{
-        width:40vw;
-        
-    }
-
-
-    footer>ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 10px;
-        font-size: 12pt;
-    }    
-    
-}
-
-@media (min-width:1025px) and (max-width:1440px){
-    .mobile-img{
-        display: none;
-    }
-
-    #slack-logo{
-        height: 40px;
-        width: auto;
-        
-    }
-    
-    .nav-buttons>button:nth-child(2){
-        display: none;
-    }
-
-    .nav-list{
-        display: flex;
-        align-items: center;
-        
-    }
-
-    .nav-list ul{
-        justify-content: space-around;
-        width: 50vw;
-        flex-shrink: 1;
-        font-size: 14pt;
-        font-weight: 800;
-    }
-
-    .nav-buttons{
-        display: flex;
-        flex-grow: 1;
-    }
-
-    .nav-buttons ul{
-        display: flex;
-        flex-direction: row;
-        flex-grow: 1;
-        justify-content: center;
-        gap: 5px;
-    }  
-
-    .nav-buttons li{
-        display: flex;
-        flex-grow: 1;        
-    }
-
-    .nav-buttons ul li button{
-        flex-grow: 1;
-    }
-
-    .nav-buttons ul button:first-child{
-        border:none
-    }
-
-    .header-text{
-        min-width: 380px;
-        max-width:460px;
-        margin-left: 100px;
-        padding: 40px 35px;
-        gap:40px;
-        flex-shrink: 0;
-    }
-
-    .header-text h1{
-        font-size: 46pt;
-    }
-
-    header>.img-div{
-        align-self: center;
-        overflow: hidden;
-    }
-
-    header>div>img{
-        
-        max-width:50vw
-
-    }
-
-    #brand-sponsors div{
-        display: flex;
-        justify-content: space-evenly;
-        width: 75vw;
-    }
-
-    
-    .ivory{
-        display: flex;
-        flex-direction: row;
-        gap: 70px;
-    }
-
-    .reverse{
-        flex-direction: row-reverse;        
-    }
-
-    .ivory:not(#brand-sponsors) img{
-        max-width: 50vw;
-
-       
-    }
-
-    .section-footer>h2{
-        font-size: 26pt;
-        line-height: 1.3em;
-    }
-
-   .section-footer{
-    margin: 0px 70px;
-    justify-self: center;
-    align-items: center;
-    width: 30vw;
-   }
+.socials-icons i{
+    width:2em;
+    height: 2em;
 
 }
+
+
+
 
 nav div:first-child{
     display:none
@@ -521,14 +260,18 @@ h1{
     font-weight: 600;
     display: flex;
     align-items: center;
-    flex-direction: column;
     padding: 80px 40px;
     gap: 30px;
 }
 
 .white>div{
     display: flex;
-    flex-direction: column;
+    
+}
+
+.white li{
+    margin: 5px;
+    width: 25vw;
 }
 
 
@@ -576,10 +319,16 @@ footer img{
    font-weight: 600;
 }
 
-footer>ul{
-    
-    font-weight: 700;
-}
+.legal-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 12pt;
+    font-weight: 800;
+}    
+
 
 footer>ul li:last-child{
     color: #4285F4;
@@ -590,15 +339,298 @@ footer li img{
     width: 1em;
 }
 
-.socials-icons ul{
-    display: flex;
-    justify-content: space-evenly;
+@media (max-width:768px){
+    .nav-list{
+        display: none;
+    }
+    
+    .header-text{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-text>h1{
+        text-align: center;
+    }
+
+    .nav-buttons>ul{
+        display:none
+    }
+
+    .header-img{
+        overflow: none;
+        height: auto;
+        max-width: 100%;
+    }   
+
+    .section{
+        flex-direction: column;
+    }
+
+    .section-footer{
+        padding: 50px 0px;
+        width:80vw;
+    }
+
+    .img-div{
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    header>.img-div>img{
+        position: relative;
+        height: 500px;
+    }
+
+    .img-desktop{
+        display:none
+    }
+
+    .ivory img{
+        max-width: 100%;
+    };
+
+    .white-section-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .white:first-of-type li{
+        width: 33vw;
+    }
+
+    footer>ul{
+        font-size: 14pt;
+        line-height: 3em;
+    }
+
+    .socials-icons{
+        justify-content: center;
+    }
+
+    .socials-icons>ul{
+        display: flex;
+        justify-content: space-evenly;
+        width: inherit;
+        justify-content: space-evenly;
+    }
+}
+
+@media(min-width:769px) and (max-width:1024px){
+     nav>div:first-child{
+        justify-self: stretch;
+        justify-content: space-between;
+    }
+    
+    .nav-buttons ul{
+        display: none;
+    }
+    
+    .nav-list ul{
+        justify-self: flex-end;
+        margin-right: 50px;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .header-text{
+        min-width:410px;
+        max-width: 500px;
+        padding: 40px 35px;
+        gap:40px
+    }
+
+    header>.img-div, header>div>img{
+        width: auto;
+        height: 350px;
+        overflow: hidden;
+        align-self: center;
+       
+    }
+
+    
+    .ivory>.img-div img{
+        width: 90vw;
+    }
+
+    .mobile-img{
+        display: none;
+    }
+
+    .section-footer{
+        padding: 120px 0px;
+        width: 70vw;
+        align-self: center;
+    }
+
+    .white button{
+        flex-grow: 1;
+    }
+
+    .white>div{
+        flex-direction: column;
+    }
+
+    .white-section-list{
+        display: flex;
+        
+    }
+    
+    
+    main> .purple .buttons-div{
+        width: 80vw;
+        align-self: center;
+    }   
+
+    .footer-columns ul{
+        flex-direction: column;
+    }  
     
 }
 
-.socials-icons i{
-    width:2em;
-    height: 2em;
+@media (min-width:1025px) and (max-width:1440px){
+    .mobile-img{
+        display: none;
+    }
 
+    #slack-logo{
+        height: 40px;
+        width: auto;
+        
+    }
+    
+    .nav-buttons>button:nth-child(2){
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .nav-list ul{
+        justify-content: space-around;
+        width: 50vw;
+        flex-shrink: 1;
+        font-size: 14pt;
+        font-weight: 800;
+    }
+
+    .nav-buttons{
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .nav-buttons ul{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: center;
+        gap: 5px;
+    }  
+
+    .nav-buttons li{
+        display: flex;
+        flex-grow: 1;        
+    }
+
+    .nav-buttons ul li button{
+        flex-grow: 1;
+    }
+
+    .nav-buttons ul button:first-child{
+        border:none
+    }
+
+    .header-text{
+        min-width: 380px;
+        max-width:460px;
+        margin-left: 100px;
+        padding: 40px 35px;
+        gap:40px;
+        flex-shrink: 0;
+    }
+
+    .header-text h1{
+        font-size: 46pt;
+    }
+
+    header>.img-div{
+        align-self: center;
+        overflow: hidden;
+    }
+
+    header>div>img{
+        
+        max-width:50vw
+
+    }
+
+    #brand-sponsors div{
+        display: flex;
+        justify-content: space-evenly;
+        width: 75vw;
+    }
+
+    
+    .ivory{
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;        
+    }
+
+    .ivory:not(#brand-sponsors) img{
+        max-width: 50vw;
+
+       
+    }
+
+    .section-footer>h2{
+        font-size: 26pt;
+        line-height: 1.3em;
+    }
+
+    .section-footer{
+        margin: 0px 70px;
+        justify-self: center;
+        align-items: center;
+        width: 30vw;
+    }
+
+
+
+    nav div:first-child{
+    display:none
+    }
+    
+    nav div:first-child{
+    display:none
+    }
+   
+    main .buttons-div{
+        display: flex;
+        align-self: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 60vw;
+    }
+
+    main .buttons-div>button{
+        flex-grow: 1;
+
+    }
+
+    .white-section-list{
+        display: flex;
+        
+    }
 }
-
