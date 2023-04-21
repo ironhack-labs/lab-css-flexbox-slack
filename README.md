@@ -64,7 +64,7 @@ During each iteration, the first step you should do is to inspect the provided s
 <!--
 
 ## Iteration 0 | Introduction to Figma
-
+w
 The first step during every iteration will be to inspect the design files. These were created using Figma and are usually handed off to developers by designers. [Figma](https://www.figma.com/) is a web-based UI (User Interface) design tool used for creating design prototypes for websites and applications.
 
 Figma is great because it allows designers and developers to collaborate on projects while also making it simple to share and preview web page designs.
@@ -144,6 +144,7 @@ Use the following page screenshot as the guide:
   <summary>Screenshot - Small Screens</summary>
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Slack+Home+Page+-+768px.png" width="550px"/>
   <br/>
+
 
 
   [Back to top](#iteration-2--small-screens-width--768px-and-width--1024px)
@@ -521,3 +522,4 @@ If the link shown is the same as the main Ironhack repository, you will need to 
   [Back to top](#faqs)
 
 </details>
+
