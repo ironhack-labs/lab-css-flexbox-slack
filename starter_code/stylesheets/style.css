@@ -90,7 +90,7 @@ header .container img {
 }
 
 .section1 img {
-    height: 50px;
+    height: 40px;
     padding: 20px 0;
 }
 
@@ -122,7 +122,7 @@ main .contact div {
     width: 100%;
 }
 
-main .contact ul {
+.contact ul {
     list-style-type: none;
     text-align: center;
     width: 40%;
@@ -141,4 +141,56 @@ main .contact button {
 main .contact .button1 {
     color: white;
     background-color: #540B51 ;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    header div.container {
+        width: 500px;
+        position: relative;
+        right: -25%;
+    }
+
+    body .section1 div{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 100%;
+            }
+
+    body .other-sections div img {
+        padding: 15px 0;
+        width: 60%;
+    }
+
+   .right-image {
+    position: relative;
+    right: -40%;
+   }
+
+   main .contact div {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+   }
+
+   .contact ul {
+    display: flex;
+    width: 90%;
+    padding-left: 0;
+}
+
+   .contact {
+    align-items: stretch;
+   }
+
+
+   main .contact div button {
+    flex-grow: 1;
+   }
 }
