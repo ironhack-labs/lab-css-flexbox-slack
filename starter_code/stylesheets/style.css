@@ -12,7 +12,6 @@ footer links grey: #454245
 body {
   margin: 0;
   padding: 0;
-  background: #540b51;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,9 +22,31 @@ body {
   height: 100px;
 }
 
+.navmenu-container {
+  width: 200px;
+  text-align: right
+  align-items: center;
+  justify-content: center;
+}
+
+.navmenu-search {
+  width: 50px;
+  display: inline-block;
+  background:#540b51; 
+  border: none;
+  padding: 2em;
+}
+
+.navmenu-sandwich {
+  width: 50px;
+  display: inline-block;
+  background:#540b51; 
+  border: none;
+}
+
 .logo {
   width: auto;
-  height: 50px;
+  height: 20px;
   padding: 2rem;
 }
 
@@ -90,9 +111,16 @@ header {
   color: #ecb12f;
 }
 
+.container-hero {
+  width: auto;
+  overflow: hidden;
+}
+
 .hero {
   width: auto;
   height: 350px;
+  object-fit: cover;
+  text-align: right;
 }
 
 .logo-container {
@@ -125,6 +153,10 @@ header {
   width: 95%;
 }
 
+.img-benefits-right {
+  text-align: right;
+}
+
 .benefits-text {
   margin: 16px;
 }
@@ -139,4 +171,10 @@ header {
 
 .facts {
   background-color: white;
+}
+
+@media (max-width: 767px) {
+  .navbar a{
+    visibility: hidden;
+  }
 }
