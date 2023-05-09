@@ -71,13 +71,14 @@ a {
   color: white;
 }
 
-header {
+.header {
   background: #540b51;
   display: flex;
   flex-direction: column;
   color: white;
   justify-content: center;
   text-align: center;
+  gap: 10px;
 }
 
 .button-email {
@@ -144,7 +145,7 @@ header {
 
 .benefits {
   display: flex;
-  flex-wrap: wrap;
+flex-direction: column;
   background-color: #f4ede4;
 }
 
@@ -171,10 +172,96 @@ header {
 
 .facts {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.digital {
+  background-color: #540b51;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+
+.try-free {
+  width: 95%;
+  height: 3rem;
+  border-radius: 5px;
+  color: #540b51;
+  margin: 0 0 0.5rem 0;
+}
+
+.talk-sales {
+  width: 95%;
+  height: 3rem;
+  position: relative;
+  border: #f4ede4;
+  border-style: solid;
+  border-width: 2px;
+  background-color:#540b51;
+  color: white;
+  border-radius: 5px;
+  margin: 0 0 0.5rem 0;
 }
 
 @media (max-width: 767px) {
   .navbar a{
     visibility: hidden;
   }
+}
+
+@media (min-width: 767px) {
+  .navbar a{
+    visibility: hidden;
+  }
+  .header {
+    background: #540b51;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  .header h1 {
+    font-size: 4em;
+  }
+  .benefits-text {
+    margin: 6rem;
+  }
+  .facts {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar a{
+    visibility: visible;
+  }
+  .header {
+    background: #540b51;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 7rem;
+  }
+  .header h1 {
+    font-size: 7em;
+  }
+  .navmenu-sandwich {
+    visibility: hidden;
+  }
+  .benefits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .img-benefits {
+    height: 200px;
+    width: auto;
+  }
+
 }
