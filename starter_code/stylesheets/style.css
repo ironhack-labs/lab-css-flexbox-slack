@@ -22,9 +22,38 @@ main {
     flex-direction: column;
 }
 
+/* header */
+
 header img {
     width: 100%;
 }
+
+#slack-screenshot {
+    position: relative;
+}
+
+#slack-screenshot img{
+    /* position: absolute; */
+    clip: rect(0, 500px, 400px, 0);
+}
+header p {
+    text-align: center;
+}
+
+p>b {
+    color: orange;
+}
+
+#google-button {
+    background-color: #4285F4;
+    vertical-align: center;
+}
+
+#logo-google {
+    background-color: white;
+    width: 30px;
+}
+
 
 button {
     height: 50px;
@@ -49,14 +78,41 @@ main img {
     width: 100%;
 }
 
+main a {
+    color: #2E71A6;
+    font-weight: bold;
+    text-decoration: none;
+}
+main a:after {
+    content: "➡️";
+}
+
   /* it's temporary */
 /* main img, header img {
     height: 50px;
 }  */
 
+#clients {
+    text-align: center;
+    /* outline: dashed red; */
+    margin: 20px;
+}
+
+#clients p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 #clients img {
-    width: 50px;
+    height: 50px;
+    width: auto;
 } 
+
+#logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 header h1 {
     text-align: center;
