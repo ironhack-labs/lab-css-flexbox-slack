@@ -234,8 +234,24 @@ main a:after {
     background-color: white;
 }
 
+#team ul {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #team li {
     list-style-type: none;
+}
+
+#team li p {
+    font-weight: 900;
+}
+
+#team li span {
+    color: #540B51;
+    font-weight: 900;
 }
 
 @media (min-width : 768px) {
@@ -249,8 +265,11 @@ main a:after {
     }
     
     #team ul {
+        width: 80%;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 }
 
@@ -312,6 +331,15 @@ footer hr {
 
 footer #bottom-footer {
     font-weight: bold;
+}
+
+footer #bottom-footer li:last-of-type {
+    color: #4285F4;
+}
+
+footer #bottom-footer li:last-of-type:before {
+    content: url("../images/icon-download.png");
+    margin-right: 5px;
 }
 
 @media (min-width : 768px) {
