@@ -8,3 +8,394 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+    background: #540B51;
+    color: white;
+    /* padding: 10px; */
+    margin: 0;
+}
+
+main {
+    background: #F3EAE2;
+    color: #191817;
+    display: flex;
+    flex-direction: column;
+}
+
+#flex-work {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* header */
+
+header img {
+    width: 100%;
+}
+
+#slack-screenshot {
+    position: relative;
+}
+
+#slack-screenshot img{
+    /* position: relative; */
+    /* position: absolute; */
+    clip: rect(0, 500px, 400px, 0);
+}
+
+header p {
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+/* header button {
+    vertical-align: center;
+} */
+
+@media (min-width : 768px) {
+    header {
+        display: flex;
+        margin-bottom: 50px;
+        height: 600px;
+    }
+
+    header h1 {
+        text-align: left;
+        font-size: 75px;
+        /* todo: fix design for not using margin-left */
+        margin-left: 50px; 
+    }
+
+    #slack-screenshot {
+        align-self: center;
+    }
+
+    #slack-screenshot img{
+        /* left:100px; */
+        width: 300px;
+    }}
+
+p>b {
+    color: orange;
+}
+
+header button {
+    border: 0;
+}
+
+#email-button {
+    color: #540B51;
+    background-color: white;
+    vertical-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #4285F4;
+    vertical-align: center;
+}
+
+#google-button span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#logo-google {
+    /* position: relative; */
+    /* left: -100px; */
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+
+button {
+    height: 50px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav {
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav button {
+    /*height: 20px;*/
+    background: #540B51;
+    border: 0;
+}
+
+nav img {
+    height: 30px;
+}
+
+main img {
+    /* todo 95% */
+    width: 100%;
+}
+
+@media (min-width : 768px) {
+    main img {
+        width: 80%;
+    }
+}
+    
+main a {
+    color: #2E71A6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:after {
+    content: "→";
+}
+
+  /* it's temporary */
+/* main img, header img {
+    height: 50px;
+}  */
+
+#clients {
+    text-align: center;
+    /* outline: dashed red; */
+    margin: 20px;
+}
+
+#clients p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#clients img {
+    height: 50px;
+    width: auto;
+} 
+
+#logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (min-width : 768px) {
+    #logos {
+        flex-wrap: nowrap;
+    }
+
+    #clients img {
+        height: 30px;
+    }
+ }
+
+@media (min-width : 768px) {
+    #connectedness {
+        content: url("../images/connectedness.png");
+    }
+    #flexibility {
+        margin-left: 20%;
+        content: url("../images/flexibility.png");
+    }
+        #speed {
+        content: url("../images/speed.png");
+    }
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* @media (min-width : 1024px) {
+    nav div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: stretch;
+    }
+
+    .nav-links li {
+        list-style: none;
+    }
+} */
+
+.button-pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*flex: 1; */
+}
+
+.button-pair button {
+    width: 80%;
+    max-width: 400px;
+    margin: 5px;
+    /* align-items: center;
+    flex: 1; */
+}
+
+#team {
+    background-color: white;
+}
+
+#team ul {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team li {
+    width:30%;
+    list-style-type: none;
+    text-align: center;
+}
+
+#team li p {
+    font-weight: 900;
+}
+
+#team li span {
+    color: #540B51;
+    font-weight: 900;
+}
+
+@media (min-width : 768px) {
+
+    #team div {
+        margin: auto;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #team ul {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+#welcome {
+    background-color: #540B51;
+    color: white;
+}
+
+.purple-button {
+    background-color:  #540B51;
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.white-button {
+    background-color: white;
+    color: #540B51;
+    border: 1px solid #540B51;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+/* footer */
+
+footer {
+    background-color: white;
+    color: #191817;
+    padding: 20px;;
+}
+
+footer img {
+    width: 50px;
+    margin: 10px;
+}
+
+footer div {
+    display: flex;
+    justify-content: stretch;
+}
+
+footer ul {
+    padding-inline-start: 10px;
+}
+
+footer li {
+    list-style-type: none;
+    margin: 10px 0px;
+    font-size: smaller;
+}
+
+footer li:first-of-type {
+    font-weight: bold;
+}
+
+footer hr {
+    width: 90%;
+}
+
+footer #bottom-footer {
+    font-weight: bold;
+}
+
+footer #bottom-footer li:last-of-type {
+    color: #4285F4;
+}
+
+footer #bottom-footer li:last-of-type:before {
+    content: url("../images/icon-download.png");
+    margin-right: 5px;
+}
+
+@media (min-width : 768px) {
+
+    footer div {
+        justify-content: space-between;
+    }
+    
+
+    footer #bottom-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+footer #social-networks {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+@media (min-width : 768px) {
+    footer #social-networks {
+        justify-content: flex-start;
+    }
+
+    footer #social-networks li{
+        margin-right: 50px;
+    }    
+}
