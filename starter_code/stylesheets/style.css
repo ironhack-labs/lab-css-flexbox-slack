@@ -16,6 +16,7 @@ a {
   color: #2e71a6;
 }
 nav {
+  top: 0;
   height: auto;
   width: 100%;
   display: flex;
@@ -33,24 +34,28 @@ nav button {
   background-color: purple;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
+  position: relative;
 }
 header p {
   color: white;
 }
-header div button {
+header button {
   background-color: white;
   flex-direction: column;
+  align-items: flex-end;
 }
 main {
   background-color: ivory;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   display: flex;
   flex-direction: column;
+  position: relative;
   flex: 1;
   width: 100%;
 }
 
-h1 {
+header h1 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0;
@@ -64,7 +69,17 @@ nav-p {
   font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
   color: yellow;
 }
+footer {
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
 
+footer p {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
 /* @media (max-width: 768px) {
    {
     flex-direction: column;
