@@ -38,6 +38,7 @@ header img {
 }
 
 #slack-screenshot img{
+    /* position: relative; */
     /* position: absolute; */
     clip: rect(0, 500px, 400px, 0);
 }
@@ -73,7 +74,9 @@ header h1 {
     #slack-screenshot {
         align-self: center;
     }
+
     #slack-screenshot img{
+        /* left:100px; */
         width: 300px;
     }}
 
@@ -224,6 +227,7 @@ main a:after {
     color: white;
     border: 1px solid white;
     margin-bottom: 10px;
+    border-radius: 3px;
 }
 
 .white-button {
@@ -231,12 +235,14 @@ main a:after {
     color: #540B51;
     border: 1px solid #540B51;
     margin-bottom: 10px;
+    border-radius: 3px;
 }
 /* footer */
 
 footer {
     background-color: white;
     color: #191817;
+    padding: 20px;;
 }
 
 footer img {
@@ -263,16 +269,40 @@ footer li:first-of-type {
     font-weight: bold;
 }
 
-footer #social-networks {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-}
-
 footer hr {
     width: 90%;
 }
 
 footer #bottom-footer {
     font-weight: bold;
+}
+
+@media (min-width : 768px) {
+
+    footer div {
+        justify-content: space-between;
+    }
+    
+
+    footer #bottom-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+footer #social-networks {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+@media (min-width : 768px) {
+    footer #social-networks {
+        justify-content: flex-start;
+    }
+
+    footer #social-networks li{
+        margin-right: 50px;
+    }    
 }
