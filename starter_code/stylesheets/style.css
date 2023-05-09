@@ -24,11 +24,13 @@ header {
 .slack-logo-resize {
   height: auto;
   width: 200px;
+  margin: 20px;
 }
 
 #icon-buttons {
   position: absolute;
   right: 0px;
+  margin: 20px;
 }
 
 /* Use this to directly select child elements within div */
@@ -64,6 +66,7 @@ h1 {
 #Free {
   display: flex;
   justify-content: center;
+  margin: 20px;
 }
 
 #sign-up-with-email-button {
@@ -110,14 +113,39 @@ h1 {
   left: 50px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   header {
     display: flex;
     position: relative;
   }
 
+  #section1 {
+    width: 300px;
+  }
+
+  #sign-up {
+    position: absolute;
+    top: 40%;
+    left: 28%;
+  }
+
+  #section1 > #title {
+    text-align: left;
+  }
+
+  #Free > span {
+    font-size: 1em;
+  }
+
+  #section1,
   #section2 {
-    position: inherit;
-    left: 25%;
+    margin: 50px;
+  }
+
+  #section2 {
+    position: absolute;
+    left: 65%;
+    top: 129px;
+    flex-basis: 100px;
   }
 }
