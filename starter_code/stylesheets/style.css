@@ -31,6 +31,13 @@ header {
   right: 0px;
 }
 
+/* Use this to directly select child elements within div */
+
+#icon-buttons > button {
+  border: none;
+  background-color: #540b51;
+}
+
 h1 {
   color: white;
   width: 300px;
@@ -101,4 +108,16 @@ h1 {
   height: 300px;
   position: relative;
   left: 50px;
+}
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    position: relative;
+  }
+
+  #section2 {
+    position: inherit;
+    left: 25%;
+  }
 }
