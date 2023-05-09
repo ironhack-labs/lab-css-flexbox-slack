@@ -9,6 +9,8 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
+/* -> First Page <- */
+
 .section1 {
 	background-color: #540b51;
 }
@@ -54,12 +56,12 @@ header {
 	padding-top: 100px;
 }
 h1 {
-	padding-left: 100px;
-	width: 35%;
+	/* padding-left: 100px; */
+	width: 100%;
 	font-size: 56px;
 	font-weight: bold;
 	color: white;
-	text-align: start;
+	text-align: center;
 }
 header > div {
 	display: flex;
@@ -83,43 +85,64 @@ header > div > p > span {
 .header-buttons {
 	display: flex;
 	flex-direction: column;
-	height-min: 100px;
+	justify-content: center;
 	padding: 5px;
 	align-items: center;
 }
 
 .email-button {
-    display: flex;
-    align-items: center;
-    width: 400px;
-    text-align: center;
+	width: 400px;
+	text-align: center;
 	height: fit-content;
-    margin-bottom: 10px;
-    background-color: white;
-    padding: 8px;
-    
-    gap: 50px;
+	margin-bottom: 10px;
+	background-color: white;
+	color: #540b51;
+	padding: 8px;
+	gap: 50px;
+	border-radius: 5px;
 }
 
 .google-button {
-    display: flex;
-    align-items: center;
-    width: 400px;
+	display: flex;
+	align-items: center;
+	width: 400px;
 	height: fit-content;
-    background-color: #4285F4;
-    padding: 8px;
-    gap: 50px;
+	background-color: #4285f4;
+	padding: 8px;
+	gap: 89px;
+	border-radius: 5px;
 }
 
 .google-button > img {
 	height: 40px;
-    width:40px;
-    background-color: white;
-    padding: 5px;
-    
+	width: 40px;
+	background-color: white;
+	padding: 5px;
 }
 
-.google-button > span {
-    display: flex;
-    justify-content: center;
+@media (max-width: 768px) {
+	.nav-list {
+		visibility: hidden;
+	}
+}
+
+@media (min-width: 768px) {
+	.nav-list {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		gap: 25px;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	header {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		margin: 20px;
+	}
 }
