@@ -8,58 +8,86 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
-
+/* general style */
 body {
-    background-color: #540B51;
-    display: block; 
-    
+  border: 1px solid black;
+  background-color: #540b51;
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 button {
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
+  /* general style for media */
 
-    .navbar { 
-        display: flex; 
-        flex-direction: row;
-        position: sticky;
-      
-    }
-    
-    .navbar ul {
-        visibility: hidden;
-    }
-    
-     .button-container { 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .button-container button {
-        border-radius: 10px;
-        width: 300px;
-        
-    }
-    
-    .logo-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
-    .logo-container img {
-        width: auto;
-        height: 50px;
-        margin: 20px;
-    }
-    
-    .centered-title {
-        text-align: center;
-    }
+  
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .button-container button {
+    border-radius: 10px;
+    width: 300px;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .logo-container img {
+    width: auto;
+    height: 50px;
+    margin: 20px;
+  }
+
+  .centered-title {
+    text-align: center;
+  }
 }
 
+/* ivory bg */
+main {
+  background-color: #f3eae2;
+}
+
+/* navbar */
+  .navbar {
+    border: 1px solid black;
+    background-color: #540b51;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    position: sticky;
+    top: 0;
+  }
+  .navbar-item {
+    border: 1px solid black;
+  }
+  .navbar-item img {
+    height: 10vh;
+  }
+
+  .navbar ul {
+    visibility: hidden;
+  }
+  .navbar-item button {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+/* header */
