@@ -36,9 +36,41 @@ header img {
     /* position: absolute; */
     clip: rect(0, 500px, 400px, 0);
 }
+
 header p {
     text-align: center;
 }
+
+header h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+/* header button {
+    vertical-align: center;
+} */
+
+@media (min-width : 768px) {
+    header {
+        display: flex;
+        margin-bottom: 50px;
+        height: 600px;
+    }
+
+    header h1 {
+        text-align: left;
+        font-size: 75px;
+        /* todo: fix design for not using margin-left */
+        margin-left: 50px; 
+    }
+
+    #slack-screenshot {
+        align-self: center;
+    }
+    #slack-screenshot img{
+        width: 300px;
+    }}
 
 p>b {
     color: orange;
@@ -114,16 +146,15 @@ main a:after {
     justify-content: space-around;
 }
 
-header h1 {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3rem;
-}
+@media (min-width : 768px) {
+    #logos {
+        flex-wrap: nowrap;
+    }
 
-/* header button {
-    vertical-align: center;
-} */
-
+    #clients img {
+        height: 30px;
+    }
+ }
 
 .hide-it {
     display: none;
