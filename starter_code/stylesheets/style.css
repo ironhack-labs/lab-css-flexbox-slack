@@ -10,6 +10,11 @@ footer links grey: #454245
 */
 
 @media (width<768px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
 .nav-box {
     width: 100%;
     height: auto;
@@ -67,9 +72,7 @@ footer links grey: #454245
     align-items: center;
 }
 
-.header-hero-image {
 
-}
 
 .main-section1 {
     font-size: 48px;
@@ -96,9 +99,9 @@ footer links grey: #454245
     align-items: center;
 }
 
-.img1-3 {
+.img-smaller {
     size: cover;
-    width: 500px;
+    width: 400px;
     height: 200px;
 }
 
@@ -154,11 +157,118 @@ footer links grey: #454245
 }
 
 
-@media  (width > 768px), (width < 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+   
+    .nav-box {
+        width: 100%;
+        height: auto;
+        background-color: #540B51;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav-div1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .nav-div2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 40px;
+    }
+    
+    #icons {
+        justify-content: flex-end;
+    }
+    
+    .header-box {
+        display: flex;
+        flex-direction: row;
+        background-color: #540B51;
+    }
+
+    .header-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #google-logo {
+    width: 20px;
+    }
+
+    .header-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ivory {
+    background-color: #F3EAE2;
+
+    .main-section1 {
+        font-size: 22px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .company-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    
+    
+    .company-logos > img {
+        width: 100px;
+    }
+
+    .img-smaller {
+        width: 300px;
+        height: 100px;
+    }
+
+    .main-section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /*  Don't know why it is not working with this media query:(  */
+
+    .main-section3 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+}
     
 }
 
-@media  (width > 1024px), (width < 1440px) {
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .ivory {
+        background-color: #F3EAE2;
+ 
     
 }
 
