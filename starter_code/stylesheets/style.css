@@ -8,6 +8,8 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+@media(max-width:768px){
 .header{
     display: flex;
     flex-flow: row wrap;
@@ -27,8 +29,14 @@ footer links grey: #454245
     width: 40px;
     height: 40px;
     padding-right: 2em;
-    color: #540B51;
 }
+
+.header-btn img,button{
+    background-color: #540B51;
+    border: none;
+    padding-right: 0.7em;
+}
+
 .title h1{
     margin: 0;
     width: auto;
@@ -46,6 +54,7 @@ header{
     margin: 25px 10px;
 }
 .signup-email{
+    background-color: white;
     color: #540B51;
     margin-bottom: 5px;
     padding: 20px;
@@ -68,7 +77,7 @@ header{
     margin-top: 10px;
 }
 .slack-img{
-    width: 150%;
+    width: 140%;
 }
 
 .background-ivory{
@@ -76,8 +85,12 @@ header{
 }
 .section-companies{
     text-align: center;
-    padding-top: 2em;
-    font-size: 19px;
+    padding-top: 1.4em;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.section-companies p{
+    width: auto;
 }
 .companies{
     display: flex;
@@ -114,16 +127,13 @@ header{
 
 
 .teams-section {
-    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 .teams-children {
-    /* color: brown; */
     text-align: center;
-    
 }
 
 .teams-section h3 {
@@ -141,25 +151,29 @@ header{
     width: 100%;
     margin: 10px 10px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     border-color: #540B51;
     text-transform: uppercase;
+    font-size: 1.2em;
 }
 .purple {
     background-color: #540B51;
     color: white;
+    border: 1px solid white;
 }
 .white {
     background-color: white;
     color: #540B51;
+    border: 1px solid #540B51;
 }
 
 .teams-children span{
     font-size: 40px;
+    font-weight: 700;
     color: #540B51;
 }
 .teams-children p {
-    padding: 20px;
+    padding: 10px 60px 15px;
 }
 .teams-children li{
     list-style: none;
@@ -183,6 +197,8 @@ header{
     width: 100%;
 }
 footer img{
+    display: flex;
+    justify-content: flex-start;
     height: 3em;
     padding: 2em 0.8em 0.6em;
 }
@@ -207,13 +223,16 @@ hr{
 .end-footer{
     padding: 0px;
     margin-bottom: 2em;
+    margin-left: 1em;
 }
 .end-footer li{
     list-style-type: none;
     margin-bottom: 0.4em;
     padding-left: 1em;
     font-weight: 700;
-
+}
+.end-footer ul:last-child{
+    color:#2E71A6;
 }
 
 .footer-logo ul{
@@ -223,4 +242,289 @@ hr{
 }
 .footer-logo li{
     list-style-type: none;
+}
+}
+
+
+
+
+
+@media(min-width:768px) and (max-width:1024px){
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #540B51;
+        padding: 30px;
+    }
+    .slack-logo{
+        width: auto;
+        height: 30px;
+        
+    }
+    .header-btn{
+        display: flex;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding-right: 2em;
+    }
+    
+    .header-btn img,button{
+        background-color: #540B51;
+        border: none;
+        padding-right: 0.7em;
+    }
+    
+    .title h1{
+        text-align: left;
+        margin-left: 0.5em;
+        width: 100%;
+        color: white;
+        font-size: 4em;
+    }
+    .title p{
+        text-align: left;
+        margin-left: 1.8em;
+    }
+    
+    header{
+        background-image: url(/starter_code/images/background-singup.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #540B51;
+        text-align: center;
+        height: 40em;
+        width: 107%;
+    }
+    .signup-bar{
+        display: flex;
+        flex-flow: column; 
+        margin: 25px 10px;
+    }
+    .signup-email{
+        background-color: white;
+        color: #540B51;
+        margin-bottom: 5px;
+        padding: 20px;
+    }
+    .btn-google{
+        width: 30px;
+        height: auto;
+        background-color: white;
+    }
+    .signup-google{
+        display: flex;
+        background-color: #4285F4;
+        color: white;
+        padding: 20px;
+    }
+    .signup-google span{
+        line-height: 2em;
+        position: relative;
+        left: 25%;
+    }
+    .slack-img{
+        width: 90%;
+        position:relative;
+        left: 50%;
+    }
+    
+    .background-ivory{
+        background-color: #F3EAE2;
+    }
+    .section-companies{
+        text-align: center;
+        padding-top: 1.4em;
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+    .section-companies p{
+        width: auto;
+    }
+    .companies{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .companies img{
+        width: auto;
+        height: 40px;
+        margin: 1em;
+    }
+    .huge-pictures img{
+        width: 100%;
+    }
+
+    .text-huge{
+        text-align: left;
+        padding:2em 14em;
+    }
+    .text-huge p{
+        line-height: 2em;
+    }
+    .text-huge h2{
+        font-size: 1.8em;
+    }
+    .img-huge{
+        margin-right: 10em;
+        margin-top: 3em;
+    }
+    .img-huge-green{
+        margin-left: 10em;
+        margin-top: 5em;
+    }
+    .text-huge a{
+        text-decoration: none;
+        color: #2E71A6;
+    }
+    
+    
+    .teams-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .teams-children {
+        text-align: center;
+    }
+    
+    .teams-section h3 {
+        font-size: 30px;
+    }
+    
+    .div-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        
+    }
+    .teams-button{
+        width: 100%;
+        margin: 10px 10px;
+        padding: 20px;
+        border-radius: 5px;
+        border-color: #540B51;
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+    .purple {
+        background-color: #540B51;
+        color: white;
+        border: 1px solid white;
+        width: 200%;
+    }
+    .white {
+        background-color: white;
+        color: #540B51;
+        border: 1px solid #540B51;
+    }
+    .div-pourcentage {
+        display: flex;
+    }
+    .teams-children span{
+        font-size: 40px;
+        font-weight: 700;
+        color: #540B51;
+    }
+    .teams-children p {
+        padding: 10px 60px 15px;
+    }
+    .div-pourcentage .teams-children ul{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .teams-children li{
+        
+        list-style: none;
+        text-decoration: solid;
+    }
+    .teams-section.welcome {
+        background-color: #540B51;
+        color: white;
+        text-align: center;
+        padding-bottom: 4em;
+    }
+    .teams-section.welcome h3 {
+        padding: 10px;
+    }
+    .teams-button.purple.spe{
+        width: 80%;
+    }
+    .teams-button.white.spe{
+        width: 80%;
+    }
+    
+
+
+    .footer{
+        margin: 0px;
+        padding-left: 3em;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    footer img{
+        display: flex;
+        justify-content: flex-start;
+        height: 4em;
+        padding:2em 4em 1em;
+    }
+    .footer li{
+        list-style-type: none;
+        font-size: 12px;
+        margin-bottom: 0.3em;
+        line-height: 2em;
+    }
+    .footer ul{
+        padding: 1.1em;
+    }
+    
+    .footer ul::first-line{
+        font-weight: 700;
+    }
+    
+    hr{
+        width: 90%;
+    }
+    
+
+    .end-footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+    }
+    .end-footer li{
+        list-style-type: none;
+        font-weight: 700;
+    }
+    .end-footer ul:last-child{
+        color:#2E71A6;
+    }
+    
+    .footer-logo ul{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin-left: 0.8em;
+        margin-bottom: 1.6em;
+    }
+    .footer-logo li{
+        list-style-type: none;
+    }
+    .small small{
+        justify-content: center;
+    }
 }
