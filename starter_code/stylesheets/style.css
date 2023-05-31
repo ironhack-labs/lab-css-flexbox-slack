@@ -10,11 +10,17 @@ footer links grey: #454245
 */
 @media only screen and (max-width: 768px) {
 }
-
+html {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   font-size: 16px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 nav {
   background-color: #540b51;
@@ -28,7 +34,7 @@ nav {
   padding-right: 1rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
-  width: 50%;
+
 }
 
 .logo {
@@ -41,6 +47,7 @@ nav {
 
 .nav-button {
   display: flex;
+  justify-content: space-evenly;
   background-color: transparent;
   outline: none;
   border: none;
@@ -49,21 +56,21 @@ nav {
 .header {
   display: flex;
   flex-direction: column;
+  align-content: center;
   background-color: #540b51;
 }
 
 .h1 {
   color: white;
   display: flex;
-  width: 40%;
+  width: 100%;
   text-align: center;
-  padding-left: 8%;
 }
 
 .header-p {
   color: white;
   width: 100%;
-  padding-left: 10%;
+  padding-left: 12%;
 }
 
 .yellow-text {
@@ -72,9 +79,9 @@ nav {
 
 .button-position {
   display: flex;
-  width: 50%;
+  width: 80%;
   align-items: center;
-  padding-left: 2.5%;
+  padding-left: 10%;
 }
 
 .email-button {
@@ -90,13 +97,14 @@ nav {
   font-weight: 600;
   margin: 5px auto;
   text-transform: uppercase;
+  border-radius: 2px;
 }
 
 .google-sign-up {
   background-color: #4285f4;
   border: none;
   color: #540b51;
-  width: 80vw;
+  width: 100%;
   height: 40px;
   text-align: center;
   text-decoration: none;
@@ -105,6 +113,7 @@ nav {
   font-weight: 600;
   margin: 5px auto;
   text-transform: uppercase;
+  border-radius: 2px;
 }
 
 .google-logo {
@@ -113,6 +122,7 @@ nav {
   left: 5px;
   top: 5px;
   background-color: white;
+  border-radius: 2px;
 }
 
 .sign-up-span {
@@ -121,72 +131,32 @@ nav {
 }
 
 .header-image {
-  width: 80%;
+  width: 100%;
   padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+main {
+  background-color: #f3eae2;
 }
 
 .companies-intro {
   text-transform: uppercase;
   text-align: center;
-  font-weight: 1000;
-  font-size: 1.2;
+  font-weight: 900;
+  font-size: 0.9em;
+  padding-top: 7%;
 }
 
-.companies {
-  background-color: #f3eae2;
-  width: 55%;
-  padding-top: 5%;
-}
-
-.companies-row-one {
+.icons {
   display: flex;
-  flex-direction: row;
+  flex: wrap;
   justify-content: space-between;
 }
 
-.airbnb-logo {
-  height: 30px;
-  padding-top: 20px;
-  padding-left: 15px;
-}
-
-.nasa-logo {
-  height: 50px;
-  padding-top: 13px;
-}
-
-.uber-logo {
-  height: 25px;
-  padding-top: 25px;
-}
-
-.target-logo {
-  height: 60px;
-  padding-top: 5px;
-  padding-right: 10px;
-}
-
-.companies-row-two {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.new-york-times-logo {
-  height: 40px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
-
-.spotify-logo {
-  height: 40px;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  padding-right: 10px;
-}
 
 .team-image {
-  width: 55%;
+  width: 80%;
 }
 
 .team {
