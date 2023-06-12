@@ -1,10 +1,319 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    background-color: #540b51;
+    color: white;
+    height: 100px;
+    justify-content: space-between;
+  }
+  
+  .navbar a {
+    visibility: hidden;
+  }
+  
+  nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar ul {
+    display: none;
+  }
+  
+  .navmenu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  
+  .navmenu-container ul {
+    visibility: hidden;
+  }
+  
+  .navmenu-search {
+    width: 50px;
+    display: inline-block;
+    background: #540b51;
+    border: none;
+    padding: 2em;
+  }
+  
+  .navmenu-sandwich {
+    width: 50px;
+    display: inline-block;
+    background: #540b51;
+    border: none;
+  }
+  
+  .logo {
+    width: auto;
+    height: 20px;
+    padding: 2rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  li {
+    float: left;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    color: white;
+  }
+  
+  .try-btn {
+    background-color: white;
+    color: #540b51;
+    border-radius: 3px;
+    margin-right: 1rem;
+  }
+  
+  .header {
+    background: #540b51;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .button-email {
+    width: 95%;
+    height: 3rem;
+    border-radius: 5px;
+    color: #540b51;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .button-google {
+    width: 95%;
+    height: 3rem;
+    position: relative;
+    background-color: #4285f4;
+    color: white;
+    border-radius: 5px;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .button-logo {
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .highlighted {
+    color: #ecb12f;
+  }
+  
+  .container-hero {
+    width: auto;
+    overflow: hidden;
+  }
+  
+  .hero {
+    width: auto;
+    height: 350px;
+    object-fit: cover;
+    text-align: right;
+  }
+  
+  .logo-container {
+    background-color: #f4ede4;
+    padding: 1rem 0 2rem 0;
+    text-align: center;
+  }
+  
+  .companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .company-logo {
+    height: 35px;
+    width: auto;
+    padding: 0.5rem;
+  }
+  
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4ede4;
+  }
+  
+  .image-container {
+    display: flex;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+  }
+  
+  .image-container-right {
+    margin-right: 1rem;
+  }
+  .image-container-right img{
+    object-position: left;
+  }
+  
+  .image-container-left {
+    margin-left: 1rem;
+  }
+  
+  .image-container-left img{
+    object-position: right;
+  }
+  
+  .img-benefits {
+    height: auto;
+    width: 100%;
+    max-height: 40%;
+  }
+  
+  .benefits-text {
+    margin: 16px;
+  }
+  
+  .order {
+    flex-direction: column-reverse;
+  }
+  
+  .link {
+    color: #4285f4;
+  }
+  
+  .facts {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .digital {
+    background-color: #540b51;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  .try-free {
+    width: 95%;
+    height: 3rem;
+    border-radius: 5px;
+    color: #540b51;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .talk-sales {
+    width: 95%;
+  
+    height: 3rem;
+    position: relative;
+    border: #f4ede4;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #540b51;
+    color: white;
+    border-radius: 5px;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  @media (min-width: 767px) {
+    .header {
+      background: #540b51;
+      display: flex;
+      flex-direction: row;
+      color: white;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 5rem;
+    }
+    .header h1 {
+      font-size: 4em;
+    }
+    .benefits-text {
+      margin: 6rem;
+    }
+    .facts {
+      flex-direction: row;
+    }
+  
+    .button-email {
+      max-width: 66%;
+    }
+  
+    .button-google {
+      max-width: 66%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .navbar a {
+      visibility: visible;
+    }
+    .navbar ul {
+      display: flex;
+      align-items: center;
+    }
+    .header {
+      background: #540b51;
+      display: flex;
+      flex-direction: row;
+      color: white;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 7rem;
+    }
+    .header h1 {
+      font-size: 6em;
+    }
+    .navmenu-sandwich {
+      visibility: hidden;
+    }
+    .navmenu-container ul {
+      visibility: visible;
+    }
+    .benefits {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      flex-grow: 1;
+    }
+    .benefits div {
+      width: 50%;
+      flex-grow: 1;
+    }
+    .benefits-text {
+      margin: 0 10rem;
+      width: 50%;
+    }
+  }
+ 
