@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /*
 background purple: #540B51
 background ivory: #F3EAE2
@@ -8,3 +57,330 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+.navLinks {
+    display: none;
+}
+
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #540B51;
+}
+
+img {
+    width: 100px;
+}
+
+.topNav img {
+    width: 55px;
+}
+
+.topNav button {
+    border: none;
+    background-color: #540B51;
+}
+
+.topNav button img {
+    width: 15px;
+}
+
+header {
+    background-color: #540B51;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header p:first-of-type {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header p:first-of-type span{
+    color: orange;
+}
+
+.btnCnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailButton {
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px 75px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #540B51;
+    font-size: 700;
+    border: none;
+    font-weight: 700;
+}
+
+.googleButton {
+    text-transform: uppercase;
+    background-color: #4285F4;
+    padding: 10px 60px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 700;
+} 
+
+.googleButton img {
+    background-color: white;
+    border-radius: 3px;
+    height: 100%;
+    width: 10px;
+    
+}
+
+.slackApp {
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.slackApp img {
+    height: 100%;
+    width: 100%;
+}
+
+.logoSection {
+    background-color: #F3EAE2;
+}
+
+.logoSection p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 30px 0 20px 0;
+    font-weight: 700;
+    margin: 0 15px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 15px;
+    padding-bottom: 10px;
+    
+}
+
+.logoImg {
+    width: 5rem;  
+}
+
+.connSection {
+    background-color: #F3EAE2;
+}
+
+.connImg {
+    width: 100%;
+    height: 300px;
+}
+
+.connImg img {
+    width: 94%;
+    height: 100%;
+}
+
+.connAbout {
+    margin: 20px 5px 0px 5px;
+}
+
+.connAbout h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.connAbout p {
+    margin-bottom: 1.2rem;
+}
+
+.connAbout a {
+    display: block;
+    text-decoration: none;
+    color: #2E71A6;
+    padding-bottom: 30px;
+}
+
+.flexImg {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 300px;
+}
+
+.flexImg img {
+    width: 94%;
+    height: 100%;
+}
+
+.facts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.facts h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 15px 20px 15px ;
+}
+
+.facts p:first-of-type {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 0 10px;
+}
+
+.factsBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.factsBtn button:first-of-type {
+    text-transform: uppercase;
+    background-color: #540B51;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0px;
+}
+
+.factsBtn button:last-of-type {
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #540B51;
+    color: #540B51;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.percentage {
+    width: 60%;
+    margin: 30px 0px 20px 0;
+}
+
+.percentage span {
+    font-size: 2.5rem;
+    color: #540B51;
+    font-weight: 700;
+}
+
+.percentage p {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.welcome {
+    background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome h3 {
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 30px 25px;
+}
+
+.welcome button:first-of-type {
+    text-transform: uppercase;
+    padding: 15px 85px;
+    border-radius: 5px;
+    background-color: #540B51;
+    border: 1px solid white;
+    color:white;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.welcome button:last-of-type {
+    text-transform: uppercase;
+    padding: 15px 83px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #540B51;
+    color: #540B51;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+footer img {
+    width: 45px;
+    margin: 30px 0 30px 15px;
+}
+
+.footerCnt {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px 20px 10px;
+}
+.footerAbout li:first-of-type {
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.footerAbout li {
+    font-size: 0.8rem;
+    margin: 20px 5px;
+}
+
+hr {
+    margin: 0px 15px;
+}
+
+.contact li {
+    font-weight: 700;
+    margin: 15px 15px;
+}
+
+.contact li:last-of-type {
+    color: #2E71A6;
+}
+
+.socialNet {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0px;
+}
+
+.copyright {
+    font-size: 0.7rem;
+    color: gray;
+    margin: 0px 25px 30px 10px;
+}
+
+
+
