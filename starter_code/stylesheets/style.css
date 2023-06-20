@@ -32,6 +32,14 @@ footer links grey: #454245
 
 }
 
+@media (min-width: 769px) {
+    #bar {
+        width: 100vw;
+        height: 10vh;
+        border-bottom: solid 1px whitesmoke;
+    }
+}
+
 
 
 #bar>div>button {
@@ -74,9 +82,35 @@ header>div {
 
 }
 
+@media(min-width: 769px) {
+    header>div {
+        width: 100vw;
+        height: 100vh;
+
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+    header {
+
+        flex-direction: row;
+
+
+
+    }
+
+}
+
 header>div>h1 {
     color: rgb(255, 255, 255);
-    font-size: 1em;
+
     text-align: center;
     margin-left: 2%;
     margin-right: 2%;
@@ -85,16 +119,37 @@ header>div>h1 {
 
 }
 
+@media (min-width: 769px) {
+    header>div>h1 {
+        text-align: left;
+        margin-left: 7%;
+        font-size: 3.2em;
+    }
+}
+
+
 header>div>p {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     width: 100%;
     text-align: center;
     font-size: 1.3em;
-    font-weight: bold;
+    font-weight: normal;
 }
+
+@media (min-width: 769px) {
+    header>div>p {
+        margin-left: 14%;
+        text-align: left;
+    }
+}
+
+
+
+
 
 #yellow-text {
     color: #d17f05;
+    font-weight: bold;
 }
 
 .buttcontainer {
@@ -102,6 +157,13 @@ header>div>p {
     width: 90%;
     margin: 4%;
 }
+
+@media (min-width: 769px) {
+    .buttcontainer {
+        margin-left: 7%;
+    }
+}
+
 
 #sing-up {
     display: flex;
@@ -162,11 +224,27 @@ header>div>p {
     width: 100%;
 }
 
+@media (min-width: 769px) {
+    #unicornhol {
+        width: 90%;
+    }
+}
+
 #unicorn {
     width: 100%;
     height: 50vh;
     /* border: solid 10px red; */
 
+}
+
+@media (min-width: 769px) {
+    #unicorn {
+        width: 80vw;
+        height: 40vh;
+        position: relative;
+        z-index: 2;
+        left: 20px;
+    }
 }
 
 .teamtog {
@@ -182,6 +260,13 @@ header>div>p {
 
 }
 
+@media (min-width: 769px) {
+    .teamtog {
+        position: static;
+        z-index: auto;
+    }
+}
+
 .teamtog>p {
     color: rgb(0, 0, 0);
     font-size: large;
@@ -193,8 +278,18 @@ header>div>p {
 
 .brand {
     display: flex;
+
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+@media (min-width: 769px) {
+    .brand {
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        height: 19vh;
+
+    }
 }
 
 .brand>img {
@@ -217,11 +312,24 @@ header>div>p {
     /* margin-right: 20%; */
 }
 
+
 .sales-law {
-    width: 100%;
+    width: 100vw;
     height: 78vh;
 
 }
+
+@media (min-width: 769px) {
+    .sales-law {
+        width: 100vw;
+        height: 67vh;
+
+    }
+}
+
+
+
+
 
 .bring-law>h2 {
     color: rgb(0, 0, 0);
@@ -234,12 +342,29 @@ header>div>p {
     font-size: 2.3em;
 }
 
+@media (min-width: 769px) {
+    .bring-law>h2 {
+        text-align: center;
+        margin-left: 17%;
+        margin-right: 7%;
+        font-size: 1.8em;
+    }
+}
+
 .bring-law>p {
     color: rgb(0, 0, 0);
     font-size: larger;
     text-align: left;
     margin: 3%;
     font-weight: 500;
+}
+
+@media (min-width: 769px) {
+    .bring-law>p {
+        margin-left: 17%;
+        margin-right: 10%;
+
+    }
 }
 
 .bring-law>a {
@@ -253,6 +378,12 @@ header>div>p {
 
 }
 
+@media (min-width: 769px) {
+    .bring-law>a {
+        margin-left: 17%;
+    }
+}
+
 .bring-law>a::after {
     content: "→";
 
@@ -264,6 +395,19 @@ header>div>p {
     justify-content: center;
     text-align: center;
 
+}
+
+@media (min-width: 769px) {
+    .rely-on-slack {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .rely-on-slack>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 .rely-on-slack>h3 {
@@ -283,16 +427,17 @@ header>div>p {
 }
 
 .rely-on-slack>div>button {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-    width: 90%;
+    justify-content: center; */
+    width: 70%;
     margin-left: 2%;
 
 
 
 }
+
 
 #enter {
     background-color: #540B51;
@@ -314,7 +459,7 @@ header>div>p {
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 9px;
-
+    height: 9.6vh;
 }
 
 .rely-on-slack>ul>li {
@@ -325,6 +470,16 @@ header>div>p {
     margin-left: 20%;
     font-weight: bold;
     font-size: 1.1em;
+}
+
+@media (min-width: 769px) {
+    .rely-on-slack>ul {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: 50%;
+    }
 }
 
 .improved {
@@ -407,6 +562,7 @@ footer>div>ul {
 
 }
 
+
 footer>div>ul>li {
     margin-top: 20%;
     margin-bottom: 20%;
@@ -421,6 +577,20 @@ footer>div>ul>li {
     font-weight: bold;
 }
 
+.status {
+    flex-direction: column;
+    display: flex;
+
+}
+
+@media (min-width: 769px) {
+    .status {
+        flex-direction: row;
+        font-size: 0.9em;
+        justify-content: space-around;
+    }
+}
+
 .status>li {
     list-style: none;
     font-weight: bold;
@@ -428,6 +598,9 @@ footer>div>ul>li {
     height: 5vh;
 
 }
+
+
+
 
 .icons {
     display: flex;
@@ -440,5 +613,5 @@ footer>div>ul>li {
 
 #small {
     border: #ffffff 10px solid;
-    color: #454245:
+    color: #454245;
 }
