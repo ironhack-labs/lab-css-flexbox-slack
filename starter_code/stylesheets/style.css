@@ -41,7 +41,7 @@ h3{
     color: #540B51;
 }
 
-.hidden{
+.menu-hidden-btn{
     display: none;
 }
 
@@ -111,7 +111,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 
     padding: 60px 70px;
     padding-bottom: 100px;
@@ -148,6 +147,12 @@ header{
     color: #ECB12F;
 }
 
+.btns-sign-up{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .btn-email{
     background-color: white;
     color: #540B51;
@@ -157,13 +162,6 @@ header{
     border-radius:5px; 
     padding:15px 50px;
 }
-
-.btns-sign-up{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 
 .btn-google{
     height: 50px;
@@ -438,4 +436,44 @@ hr{
 
 .copyright{
     margin: 40px 80px;
+}
+
+/*------RESPONSIVE------*/
+
+@media screen and (max-width:768px){
+    .menu-hidden-btn{
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+    .menu ul{
+        display: none;
+    }
+
+    .sign-in ul{
+        display: none;
+    }
+
+    header{
+        flex-direction: column;
+        padding: 60px 39px;
+        padding-bottom: 100px;
+    }
+
+    h1{
+        text-align: center;
+        width: 670px;
+    }
+
+    .sign-up {
+        margin-top: 46px;
+    }
+
+    .sign-up p{
+        width: 498px;
+    }
+
+    .btns-sign-up{
+        flex-direction: column;
+    }
 }
