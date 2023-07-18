@@ -22,9 +22,9 @@ body {
 
 h1{
     font-size: 70px;
-    width: 440px;
     font-weight: 600;
     color: white;
+    text-align: start;
 }
 
 h2{
@@ -112,13 +112,13 @@ header{
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 60px 70px;
     padding-bottom: 100px;
 }
 
 .main-sign{
     display: flex;
     flex-direction: column;
+    padding: 60px 70px;
 }
 
 .main-picture{
@@ -138,7 +138,6 @@ header{
 }
 
 .sign-up p{
-    width: 440px;
     font-size: 25px;
     color: white;
 }
@@ -227,7 +226,7 @@ header{
     background-color: #F3EAE2;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 500px;
     align-items: center;
 }
 
@@ -242,11 +241,12 @@ header{
 .text-feature-style{
     display: flex;
     flex-direction: column;
-    width: 488px;
+    /* width: 488px; */
+    margin-right: 50px;
 }
 
 .text-feature-style p{
-    width: 440px;
+    /* width: 440px; */
     color: #000000;
     font-weight: 500;
     margin-bottom: 20px;
@@ -266,7 +266,7 @@ header{
 }
 
 #feature-2 .text-feature-style{
-    width: 424px;
+    /* width: 424px; */
     margin-left: 40px;
 }
 
@@ -451,13 +451,11 @@ hr{
 
     header{
         flex-direction: column;
-        padding: 60px 39px;
         padding-bottom: 100px;
     }
 
     h1{
         text-align: center;
-        width: 670px;
     }
 
     h2{
@@ -466,10 +464,6 @@ hr{
 
     .sign-up {
         margin-top: 46px;
-    }
-
-    .sign-up p{
-        width: 498px;
     }
 
     .btns-sign-up{
@@ -483,26 +477,9 @@ hr{
         margin-left: 0;
     }
 
-    .main-picture {
-        display: flex;
-        align-items: center;
-        width: 105.6%;
-        margin-top: 20px;
-        overflow: hidden;
-    }
-
-    .main-picture img {
-        display: block;
-        max-width: 200%;
-        height: auto;
-    }
-
-    #companies {
-        width: 100%;
+    #companies{
         position: absolute;
-        z-index: 10;
-        top: 34cm;
-        margin-bottom: -1px;
+        top: 35cm;
     }
 
     .companies-logo{
@@ -511,6 +488,7 @@ hr{
 
     .feature-style{
         flex-direction: column;
+        gap: 0;
     }
     
     #feature-2{
@@ -525,18 +503,24 @@ hr{
         margin-bottom: 0;
     }
 
-    #feature-2 .text-feature-style {
-        width: 600px;
+    .main-picture {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .main-picture img{
+        max-width: 200%;
     }
 
     .text-feature-style {
-        width: 554px;
+        /* width: 554px; */
         margin-top: 40px;
+        margin-left: 40px;
     }
 
     .text-feature-style p{
         font-size: 25px;
-        width: 554px;
+        /* width: 554px; */
     }
 
     .btns-about {
@@ -562,5 +546,122 @@ hr{
         flex-direction: column;
         gap: 40px;
         align-items: flex-start;
+    }
+
+    .information{
+        margin: 0 20px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .menu-hidden-btn{
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+    .menu ul{
+        display: none;
+    }
+
+    .sign-in ul{
+        display: none;
+    }
+
+    .main-picture {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .main-picture img {
+        max-width: 200%;
+    }
+
+    header{
+        padding-bottom: 100px;
+    }
+
+    h2{
+        font-size: 45px;
+    }
+
+    .companies-logo{
+        flex-direction: row;
+        padding: 38px 0px;
+    }
+
+    .sign-up {
+        margin-top: 46px;
+    }
+
+    .btns-sign-up{
+        flex-direction: column;
+    }
+
+    .btn-google {
+        text-indent: 0;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .feature-style{
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    #feature-2{
+        flex-direction: column-reverse;
+    }
+
+    .img-feaure-style img {
+        width: 100%;
+    }
+
+    #feature-3 .img-feaure-style{
+        margin-bottom: 0;
+    }
+
+    .text-feature-style {
+        /* width: 554px; */
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    .text-feature-style p{
+        font-size: 25px;
+        /* width: 554px; */
+    }
+
+    .btns-about {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+
+    .percentajes {
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        gap: 130px;
+    }
+
+    .btns-welcome{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .menu-bottom {
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    .information{
+        margin: 0 20px;
+    }
+
+    footer img {
+        margin: 40px 20px;
     }
 }
