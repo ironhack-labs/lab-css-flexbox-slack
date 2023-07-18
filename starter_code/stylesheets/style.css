@@ -8,3 +8,406 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+*{
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    }
+
+/* Iteration 1 | Mobile Screens  */
+
+@media (max-width: 768px) {
+
+    button {
+        font-size: 20px;
+    }
+
+    /* Nav bar */
+    #nav-bar {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #540B51;
+    }
+
+    #menu-options{
+        display: none;
+    }
+
+    button {
+        background: none;
+        border: none;
+    }
+
+    .logo-image {
+        width: 100px;
+    }
+
+    .nav-bar-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+    /* Header */
+    header {
+        background-color: #540B51;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;    
+    }
+
+    header div p span {
+        color: #ECB12F;
+        font-weight:bold
+    }
+
+    header div h1, header div p {
+        color: white;
+        text-align: center;
+        margin: 20px 0px 20px 0px;
+    }
+
+    
+
+    .header-app-screenshot {
+        width: 100px;
+            }
+
+    .sign-in-options-div, .slack-sales-buttons-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 110px;
+        margin-bottom: 10px;
+    }
+
+    .email-sign-in {
+        color: #540B51;
+        background-color: white;
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .google-sign-in {
+        color: white;
+        background-color: #4285F4;
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+        position: relative;
+
+    }
+    .google-sign-in span {  
+        text-align: center; 
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+     }
+
+
+    .google-logo {
+        width: 20px;
+        background-color: white;
+        padding: 8px;
+        border-radius: 5px;
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+    .header-app-screenshot-div {
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .header-app-screenshot {
+
+        object-position: top left;
+        object-fit: cover;
+        width: 200%
+        
+
+    }
+
+    /* Main */
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: #F3EAE2;
+    }
+
+    /* companies section */
+
+    .companies-section {
+        align-self: center;
+        width: 75%;
+        margin-bottom: 50px;
+    }
+
+    .companies-section p {
+        text-align: center;
+        margin-top: 40px;
+        text-transform: uppercase;
+    }
+    
+    .companies-logos-div {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: space-between;
+        justify-content: space-between;
+    }
+
+    .companies-logos-div img {
+        width : auto;
+        height: 30px;
+        padding: 2%;    
+}
+
+
+        /* channels section */
+        /* flexible communication section */
+        /* apps and tools section */
+
+    .channels-connectedness-section, .flexible-communication-section, .apps-tools-section {
+        margin-bottom: 50px;
+    }
+
+    .apps-tools-section {
+        margin-top: 50px;
+    }
+
+    .channels-connectedness-image, .flexible-communication-image, .apps-tools-image {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .flexible-communication-image {
+        margin-left: 10%;
+    }
+
+    .channels-connectedness-text, .flexible-communication-text, .apps-tools-text {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 10px 0 10px;
+    }
+
+    .channels-connectedness-text h2, .flexible-communication-text h2, .apps-tools-text h2, .slack-sales-section h3, .digital-hq-section h3 {
+        font-size: 35px;
+        color: #191817;
+    }
+
+    .channels-connectedness-text p, .flexible-communication-text p, .apps-tools-text p, .slack-sales-section p {
+        font-size: 20px;
+    }
+
+    .channels-connectedness-text a, .flexible-communication-text a, .apps-tools-text a {
+        color: #2E71A6;
+        text-decoration: none;
+        font-size: 20px;
+
+
+    }
+
+    .channels-connectedness-text a::after, .flexible-communication-text a::after, .apps-tools-text a::after {
+        content: url(/starter_code/images/icon-arrow-right.png);
+        display:inline-block;
+    }
+
+    /* slack sales section */
+
+    .slack-sales-section {
+        padding-top: 70px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .slack-sales-section h3, .slack-sales-section p, .digital-hq-section h3 {
+        text-align: center;
+        margin: 0 10px 20px 10px;
+        color: #191817;
+    }
+
+    .slack-sales-buttons-div {
+        width: 100%;
+    }
+
+    .slack-entreprise-button, .digital-hq-talk-sales-button {
+        color: white;
+        background-color: #540B51;
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .slack-talk-sales-button, .digital-hq-try-free-button{
+        color: #540B51;
+        background-color: white;
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+        border: 2px solid #540B51;
+
+    }
+
+    .slack-sales-section ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 20px 120px;
+
+    }
+
+    .slack-sales-section ul li p {
+        font-weight: bold;
+    }
+
+    .slack-sales-section ul li {
+        margin-bottom: 50px;
+    }
+
+    .slack-sales-section ul li p span {
+        font-size: 50px;
+        color: #540B51;
+
+    }
+
+    /* digital hq section */
+
+    .digital-hq-section {
+        background-color:#540B51;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .digital-hq-section h3{
+        margin-top: 40px;
+        color: white;
+    }
+
+    .digital-hq-talk-sales-button {
+        border: 2px solid white;
+        margin-bottom: 20px;
+    }
+
+    .digital-hq-try-free-button{
+        border: none;
+        margin-bottom: 40px;
+    }
+
+    /* footer */
+
+    footer img {
+        width: 50px;
+        margin: 50px 0 50px 20px;
+    }
+
+    footer div ul li span {
+        font-weight: bold;
+    }
+
+    footer div ul {
+        list-style-type: none;
+        margin-block: 0;
+        padding-inline: 0;
+        width: 90px;
+    }
+
+    footer div li {
+        padding: 10px 0 10px 0;
+        color: #454245;
+
+    }
+
+    hr {
+        color: #454245;
+        opacity: 0.5;
+        margin: 0 10px 0 10px;
+    }
+    .footer-categories {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0px 10px 30px 10px;
+   
+    }
+
+    .footer-information-settings {
+        list-style-type: none;
+        padding-inline: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    .footer-information-settings li {
+        font-weight: bold;
+    }
+
+    .world-icon-option::before {
+        content: url(/starter_code/images/icon-region.png);
+        display:inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    .download-icon-option::before {
+        content: url(/starter_code/images/icon-download.png);
+        display:inline-block;
+        color: #2E71A6;
+        margin-right: 5px;
+        vertical-align: middle;
+
+    }
+
+    .download-icon-option {
+        color: #2E71A6;
+    }
+
+    .footer-social-media-icons {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 10px 10px 10px;
+        padding-inline: 0;
+    }
+
+    .footer-all-rights-reserved {
+        margin: 20px 10px 40px 10px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+}
