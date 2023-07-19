@@ -8,3 +8,779 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+  
+      background-color: #F3EAE2;
+  }
+  
+  /* navigation_section */
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2.3rem;
+    height: 60px;
+    align-items: center;
+    background-color: #540b51;
+    color: white;
+  }
+  
+  nav button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav_first {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+  }
+  
+  
+  
+  
+  .nav_first > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+  }
+  
+  .nav_second {
+    display: flex;
+    gap: 2rem;
+  
+    /* flex-grow: 1; */
+  }
+  
+  .menu {
+  
+      display: none;
+  }
+  
+  .nav_second > button:last-of-type{
+  
+      display: none;
+  }
+  
+  .nav_second > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .nav_second > ul > li:nth-child(2) {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  
+  .nav_second > ul > li:nth-child(2) > a {
+    color: #540b51;
+  }
+  
+  img[src="./images/slack-logo.png"] {
+    width: 70px;
+  }
+  
+  /* end of navigation_section */
+  
+  /* hero_section */
+  header {
+    display: flex;
+    background-color: #540b51;
+    justify-content: center;
+    padding-block: 70px;
+    padding-inline: 30px;
+  }
+  
+  header > .text-section {
+    display: flex;
+    flex-direction: column;
+    
+    color: white;
+  }
+  
+  header > .text-section > h1 {
+    font-size: 70px;
+    margin-bottom: 100px;
+    color: white;
+  }
+  
+  header > .text-section > p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  
+  .hero-buttons {
+  
+      display: flex;
+      gap: 1.4rem;
+  }
+  
+  
+  .hero-buttons > button:first-child {
+    background-color: white;
+    border: none;
+    color: #540b51;
+    padding-inline: 2.5rem;
+    padding-block: 0.7rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  
+  .hero-buttons > button:last-child {
+    background-color: white;
+    border: none;
+    color: #540b51;
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    gap: .4rem
+    
+  }
+  .hero-buttons > button:last-child > img {
+    height: 30px;
+  }
+  
+  .image-section {
+  
+      display: flex;
+      align-items: center;
+  }
+  
+  .image-section > img {
+    height: 400px;
+  }
+  
+  /* end of hero_section */
+  
+  
+  
+  /* main_section */
+  
+  /* companies_section */
+  
+  main{
+  
+    
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  
+  
+  }
+  .companies {
+  
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding-block: 5rem;
+  }
+  
+  .companies > p {
+  
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      
+  }
+  
+  
+  .companies > div {
+  
+      display: flex;
+      justify-content: space-evenly;
+  
+  }
+  
+  .companies > div > img {
+  
+      height: 40px;
+      
+  }
+  
+  /* end of companies_section */
+  
+  
+  
+  /* promotion_section */
+  
+  .promotion {
+  
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30rem
+      
+  
+  }
+  
+  .promotion img {
+  
+      height: 400px;
+      width: 500px;
+  }
+  
+  .promotion > .text-section {
+  
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding-inline: 4rem;
+      font-size: 20px;
+  }
+  
+  .promotion > .text-section > h2{
+       
+      font-size: 40px;
+  
+  }
+  
+  /* end of promotion_section */
+  
+  
+  /* team_section */
+  
+  
+  .teams-section {
+  
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding-block: 100px;
+  }
+  
+  .teams-section > h3 {
+  
+     text-align: center;
+     font-size: 50px;
+     margin-bottom: 30px;
+     
+  }
+  
+  .teams-section > p {
+  
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  
+  .teams-buttons {
+  
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 70px;
+      
+      
+  }
+  
+  .teams-buttons > button {
+  
+      font-size: 20px;
+      text-transform: uppercase;
+      border: none;
+      padding-inline: 2rem;
+      padding-block: 1rem;
+      
+      border-radius: 5px;
+      
+      
+  }
+  
+  .teams-buttons > button:first-child{
+  
+      background-color: #540B51;
+      color: white;
+  }
+  .teams-buttons > button:last-child{
+  
+  
+      color: #540B51;
+      border: 2px solid #540B51;
+      background-color: white;
+  }
+  
+  .teams-section > ul {
+  
+      display: flex;
+      list-style-type: none;
+      justify-content: space-evenly;
+  
+  
+  
+  }
+  
+  
+  .teams-section > ul > li {
+  
+      font-weight: bold;
+  }
+  .teams-section > ul > li > p > span {
+  
+      font-size: 70px;
+      font-weight: bold;
+      color: #540B51;
+  }  
+  
+  .teams-section > ul > li > p:last-child {
+  
+      width: 70%;
+  }
+  
+  /* end of team_section */
+  
+  /* digital_hq section */
+  
+  .digital-hq{
+  
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      background-color: #540B51;
+      padding-block: 50px;
+  }
+  
+  .digital-hq > h3 {
+  
+      text-align: center;
+      font-size: 50px;
+      color: white;
+  
+  }
+  
+  .digital-buttons {
+  
+      display: flex;
+      justify-content: center;
+      gap: .5rem;
+  
+      
+      
+  }
+  
+  
+  .digital-buttons > button {
+      
+      font-size: 15px;
+      text-transform: uppercase;
+      padding-inline: 2.5rem;
+      padding-block: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      
+  }
+  
+  
+  .digital-buttons > button:first-child {
+  
+      background-color: white;
+      color: #540B51;
+      font-weight: 500;
+      
+      
+  }
+  .digital-buttons > button:last-child {
+  
+      border: 2px solid white;
+      background-color: transparent;
+      font-weight: 500;
+      color: white;
+      
+      
+  }
+  
+  /* end of digital_hq section */
+  
+  
+  footer {
+  
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      padding-block: 70px;
+      gap: 3rem;
+      
+      
+      
+  
+  }
+  
+  footer > img {
+  
+      height: 60px;
+      width: 60px;
+      margin-left: 170px;
+      
+  }
+  
+  footer > div {
+  
+      display: flex;
+      justify-content: space-around;
+      
+  }
+  
+  
+  
+  
+  footer > div > ul {
+  
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+  
+  }
+  
+  footer > div > ul > li:first-child {
+  
+      font-weight: 700;
+  }
+  
+  
+  .neep {
+  
+      display: flex;
+      list-style-type: none;
+      justify-content: space-evenly;
+      font-weight: 700;
+  
+  }
+  
+  .icons {
+  
+      display:flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+  
+      .nav_first > ul {
+          display: none;
+        
+      }
+  
+  
+      .nav_second > ul {
+  
+          display: none;
+        
+      }
+  
+      .menu {
+  
+          display: block !important;
+      }
+  
+      header {
+          display: flex;
+          flex-direction: column;
+          background-color: #540b51;
+          gap: 2rem;
+          justify-content: center;
+          padding-block: 70px;
+          padding-inline: 30px;
+      }
+  
+      header > .text-section > h1 {
+          font-size: 35px;
+          margin-bottom: 20px;
+          color: white;
+          text-align: center;
+      }
+  
+      header > .text-section > p {
+          font-size: 15px;
+          margin-bottom: 30px;
+          text-align: center;
+      }
+        
+      .hero-buttons {
+  
+          display: flex;
+          flex-direction: column;
+          gap: 1.4rem;
+      }
+  
+      .hero-buttons > button:last-child {
+          
+          border: none;
+          padding-inline: 2rem;
+          padding-block: 0.5rem;
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: blue;
+          color: white;
+          gap: .4rem
+      }      
+  
+  
+      .image-section {
+  
+          justify-content: center;
+      }
+  
+      .image-section > img {
+          width: 100%;
+          height: 100%;
+      }
+  
+      .companies > div {
+  
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+      }
+  
+      .companies > div > img {
+  
+         height: 150px;
+         width: 300px;
+  
+      }
+  
+  
+      .promotion {
+  
+          flex-direction: column;
+          gap: 1.5rem;
+          
+          
+      }
+  
+      .promotion > .text-section {
+  
+          font-weight: bold;
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          padding-inline: 1.3rem;
+          font-size: 20px;
+      }
+  
+      /* .promotion > .text-section {
+  
+  
+      } */
+  
+      .one {
+  
+          flex-direction: column;
+          padding: 0;
+          gap: 1.5rem;
+          /* align-items: flex-start; */
+      }
+  
+  
+      .one > div {
+        
+          align-self: flex-start;
+  
+      }
+      .two {
+  
+          flex-direction: column-reverse;
+          
+      }
+      .two > div {
+  
+          align-self: flex-end;
+      }
+  
+      .three {
+  
+          flex-direction: column;
+      }
+  
+      .three > div {
+  
+          align-self: flex-start;
+      }
+  
+      .promotion img {
+  
+          width: 300px;
+          height: 400px;
+      }
+  
+      .teams-section {
+  
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          padding-block: 30px;
+          align-items: center;
+      }
+      
+      .teams-section > h3 {
+      
+         text-align: center;
+         font-size: 35px;
+         margin-bottom: 30px;
+         
+      }
+      
+      .teams-section > p {
+      
+          text-align: center;
+          font-size: 17px;
+          font-weight: 600;
+          margin-bottom: 30px;
+      }
+      
+      .teams-buttons {
+      
+          display: flex;
+          flex-direction: column;
+          
+          gap: 1rem;
+          margin-bottom: 70px;
+          
+          
+          
+      }
+      
+      .teams-buttons > button {
+      
+          font-size: 20px;
+          text-transform: uppercase;
+          border: none;
+          padding-inline: 2rem;
+          padding-block: 1rem;
+          
+          border-radius: 5px;
+          
+          
+      }
+      
+      .teams-buttons > button:first-child{
+      
+          background-color: #540B51;
+          color: white;
+      }
+      .teams-buttons > button:last-child{
+      
+      
+          color: #540B51;
+          border: 2px solid #540B51;
+          background-color: white;
+      }
+      
+      .teams-section > ul {
+      
+          display: flex;
+          flex-direction: column;
+          list-style-type: none;
+          align-items: center;
+          gap: 2rem;
+      
+      
+      
+      }
+  
+  
+      .teams-section > ul > li {
+  
+          text-align: center;
+      }
+  
+      .teams-section > ul > li > p > span {
+  
+          font-size: 50px;
+          font-weight: bold;
+          
+          color: #540B51;
+      }  
+      
+      .teams-section > ul > li > p:last-child {
+      
+          text-align: center;
+          width: 100%;
+      }
+  
+  
+      /* .digital-hq {
+  
+          
+      } */
+  
+      .digital-hq > h3 {
+  
+          text-align: center;
+          font-size: 40px;
+          color: white;
+      
+      }
+      
+      .digital-buttons {
+      
+          display: flex;
+          flex-direction: column;
+          /* align-items: center; */
+          gap: .5rem;
+          padding-inline: 1.3rem;
+      
+          
+          
+      }
+      
+      
+      .digital-buttons > button {
+          
+          font-size: 15px;
+          text-transform: uppercase;
+          padding-inline: 2.5rem;
+          padding-block: 1.2rem;
+          border: none;
+          border-radius: 5px;
+          
+      }
+  
+      .neep {
+  
+          display: flex;
+          flex-direction: column;
+          list-style-type: none;
+          font-weight: 700;
+          padding-left: 10px;
+          gap: 1.5rem;
+      
+      }
+  
+  
+      
+  
+      
+  
+      
+  
+  }
