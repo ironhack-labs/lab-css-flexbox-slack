@@ -9,6 +9,10 @@
   <!-- link the Font Awesome stylesheet - CDN -->
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
 
@@ -18,7 +22,7 @@
 
 <body>
   <nav>
-    <div>
+    <div class="menu">
       <img src="./images/slack-logo.png" alt="Slack logo" />
 
       <ul>
@@ -37,69 +41,70 @@
       </ul>
     </div>
 
-    <div>
+    <div class="sign-in">
       <button>
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button class="menu-hidden-btn">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <ul>
         <li>
           <a href="#">Sign in</a>
         </li>
-        <li>
-          <a href="#">Try for free</a>
+        <li class="btn-try">
+          <a href="#">TRY FOR FREE</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <header>
-    <div>
+    <div class="main-sign">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <div class="sign-up">
+        <p><span class="yellow-text">Slack is free to try</span> for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+        <div class="btns-sign-up">
+          <button class="btn-email">SIGN UP WITH EMAIL</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
-        </button>
+          <button class="btn-google">
+            <img src="./images/logo-google.png" alt="Google logo" />
+            <span>SIGN UP WITH GOOGLE</span>
+          </button>
+        </div>
       </div>
-
     </div>
 
-    <div>
+    <div class="main-picture">
       <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
-    <section>
-      <p>Trusted by companies all over the world</p>
+    <section id="companies">
+      <p>TRUSTED BY COMPANIES ALL OVER THE WORLD</p>
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+      <div class="companies-logo">
+        <img class="logo" src="./images/logo-airbnb.png" alt="Airbnb logo" />
+        <img class="logo-rounded" src="./images/logo-nasa.png" alt="NASA logo" />
+        <img class="logo"src="./images/logo-uber.png" alt="Uber logo" />
+        <img class="logo-rounded" src="./images/logo-target.png" alt="Target logo" />
+        <img class="logo" style="width: 208px;" src="./images/logo-nyt.png" alt="New York Times logo" />
+        <img class="logo"  src="./images/logo-spotify.png" alt="Spotify logo" />
       </div>
 
     </section>
 
-    <section>
-      <div>
+    <section class="feature-style" id="feature-1">
+      <div class="img-feaure-style">
         <img src="./images/connectedness-mobile.png" alt="connectedness" />
       </div>
 
-      <div>
+      <div class="text-feature-style">
         <h2>Bring your team together</h2>
 
         <p>
@@ -108,13 +113,13 @@
         </p>
 
         <a href="#">
-          <span>Learn more about channels</span>
+          <span>Learn more about channels &rarr;</span>
         </a>
       </div>
     </section>
 
-    <section>
-      <div>
+    <section class="feature-style" id="feature-2">
+      <div class="text-feature-style">
         <h2>Choose how you want to work</h2>
         <p>
           In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat,
@@ -123,21 +128,21 @@
         </p>
 
         <a href="#">
-          <span>Learn more about flexible communication</span>
+          <span>Learn more about flexible communication &rarr;</span>
         </a>
       </div>
 
-      <div>
+      <div class="img-feaure-style">
         <img src="./images/flexibility-mobile.png" alt="flexibility" />
       </div>
     </section>
 
-    <section>
-      <div>
+    <section class="feature-style" id="feature-3">
+      <div class="img-feaure-style">
         <img src="./images/speed-mobile.png" alt="speed" />
       </div>
 
-      <div>
+      <div class="text-feature-style">
         <h2>Move faster with your tools in one place</h2>
         <p>
           With your other work apps connected to Slack, you can work faster by switching tabs less. And with powerful
@@ -145,24 +150,24 @@
         </p>
 
         <a href="#">
-          <span>Learn more about the Slack platform</span>
+          <span>Learn more about the Slack platform &rarr;</span>
         </a>
       </div>
     </section>
 
 
-    <section>
+    <section id="about">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
-      <div>
-        <button>Meet Slack for enterprise</button>
-        <button>Talk to sales</button>
+      <div class="btns-about">
+        <button class="btn-enterprise">MEET SLACK FOR ENTERPRISE</button>
+        <button class="btn-sales">TALK TO SALES</button>
       </div>
 
-      <ul>
+      <ul class="percentajes">
         <li>
-          <p><span>85%</span></p>
+          <p class="percentaje"><span>85%</span></p>
           <p>
             of users say Slack has improved communication
             <sup>*</sup>
@@ -180,27 +185,29 @@
         <li>
           <p><span>88%</span></p>
           <p>
-            feel more connected to their teams*
+            feel more connected to their teams
             <sup>*</sup>
           </p>
         </li>
       </ul>
     </section>
 
-    <section>
+    <section id="welcome-new-user">
       <h3>Welcome to your new digital HQ</h3>
 
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+      <div class="btns-welcome">
+        <button class="btn-free">Try for free</button>
+        <button class="btn-sales">Talk to sales</button>
+      </div>
     </section>
 
   </main>
 
   <footer>
     <img src="./images/iso-slack.png" alt="Slack logo" />
-    <div>
+    <div class="information">
       <ul>
-        <li>WHY SLACK?</li>
+        <li class="heading-list">WHY SLACK?</li>
         <li>Slack vs. Email</li>
         <li>Channels</li>
         <li>Engagement</li>
@@ -209,7 +216,7 @@
       </ul>
 
       <ul>
-        <li>PRODUCT</li>
+        <li class="heading-list">PRODUCT</li>
         <li>Features</li>
         <li>Integrations</li>
         <li>Enterprise</li>
@@ -218,13 +225,13 @@
       </ul>
 
       <ul>
-        <li>PRICING</li>
+        <li class="heading-list">PRICING</li>
         <li>Plans</li>
         <li>Paid vs. Free</li>
       </ul>
 
       <ul>
-        <li>COMPANY</li>
+        <li class="heading-list">COMPANY</li>
         <li>About Us</li>
         <li>Leadership</li>
         <li>Investor Relations</li>
@@ -234,8 +241,9 @@
       </ul>
     </div>
 
+    <hr>
 
-    <ul>
+    <ul class="menu-bottom">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
@@ -245,9 +253,7 @@
       <li>Download Slack</li>
     </ul>
 
-    <hr>
-
-    <ul>
+    <ul class="social-media">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -262,7 +268,7 @@
       </li>
     </ul>
 
-    <div>
+    <div class="copyright">
       <small>
         &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
         their respective owners.
