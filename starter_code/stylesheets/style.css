@@ -8,3 +8,116 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #540b51;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.btns-header {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+header h1 {
+  color: white;
+  font-size: 2rem;
+  width: 80%;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-wrapper p {
+  color: white;
+  padding: 10px;
+}
+
+.header-wrapper span {
+  color: #ecb12f;
+  font-weight: 600;
+}
+
+.btn {
+    border-radius: 2px;
+    border: none;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.btn-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #2E71A6;
+    margin-bottom: 30px;
+}
+
+.img-google-logo {
+    height: 85%;
+    position: absolute;
+    left: 15px;
+    background-color: white;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+.btn-2 > span {
+    color: white;
+    position: absolute;
+}
+
+.img-hero-product {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        height: 800px;
+    }
+
+    .header-wrapper {
+        width: auto;
+        align-items: start;
+        padding-left: 20px;
+    }
+    .header-wrapper p, h1 {
+       text-align: left;
+       /* width: 100%; */
+       padding: 0;
+    }
+
+    .header-wrapper h1 {
+        font-size: 4em;
+        width: 70%;
+    }
+
+    .btn {
+        width: 400px;
+    }
+
+    .img-hero-product {
+        width: 600px;
+        position: relative;
+        right: 40px;
+    }
+
+}
