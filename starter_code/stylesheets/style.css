@@ -16,6 +16,8 @@ html  {
 
 body {
     background-color: #540B51;
+    margin: 0;
+    padding: 0
     }
 
 main {
@@ -25,11 +27,15 @@ main {
 .white {
     background-color: white;
 }
+img {
+    max-width: 100%;
+}
 
 button {
     border-radius: 15px;
-    padding: 15px 32px;
-    
+    /* padding: 15px 32px; */
+    background: none;
+    border:none;
     flex-direction: column;
     /**display: flex;**/
     /**justify-content: center;**/
@@ -42,7 +48,21 @@ button {
     text-align: center;
     
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 7px;
+}
+.slack-logo{
+    width: 100px;
+}
 
+.nav-list {
+    display: none
+}
 #button-google >img {
     background-color: white;
     border-radius: 10px ;
@@ -53,12 +73,19 @@ button {
 }
 
 @media (max-width:768px) {
-header div {
+ header div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
 }
+ #companies { 
+    display: flex;
+    
+ }
+ #companies > img{
+    size: 1%;
+ }
 
 }
 
