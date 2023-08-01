@@ -8,3 +8,128 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+#header {
+    background-color: #540B51;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#header .colored-text {
+color:#ECB12F;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+.buttons {
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.email, .google {
+    margin-bottom: 5px;
+    padding: 2%;
+    font-weight: bold;
+    color: #540B51;
+    text-transform: uppercase;
+}
+
+.google {
+    background-color: #4285F4;
+    margin-top: 5px;
+    color: white;
+}
+
+.google img {
+    width: 5%;
+    background-color: white;
+    margin-right: 10%;
+}
+
+.screenshot {
+    width: 80%;
+    overflow: hidden;
+}
+
+#main {
+    background-color:#F3EAE2;
+}
+
+.trusted-companies {
+font-weight: bold;
+text-transform: uppercase;
+text-align: center;
+font-size: xxx-large;
+}
+
+.company-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .company-logos img {
+    max-width: 100%;
+    height: 100px; 
+    margin: 20px; 
+  }
+  
+  .image-phone-examples {
+    margin-top: 50px;
+    overflow: auto;
+    display: flex;
+    justify-content: right;
+  }
+
+  @media (min-width: 768px) (max-width: 1023px) {
+    #header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .header-content {
+      width: 50%;
+      text-align: left;
+    }
+  
+    .header-image {
+      width: 50%;
+      justify-content: flex-end;
+      margin-top: 0;
+    }
+  
+    .buttons {
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  
+    .buttons button {
+      margin: 5px;
+    }
+  
+    .trusted-companies {
+      font-size: large;
+      margin-top: 20px;
+    }
+  
+    .image-phone-examples {
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+  }
