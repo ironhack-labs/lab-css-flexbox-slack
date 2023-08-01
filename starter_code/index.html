@@ -10,7 +10,7 @@
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
   <!-- link your styles -->
-  <link rel="stylesheet" href="./stylesheets/style.css" />
+  <link rel="stylesheet" href="../starter_code/stylesheets/style.css" />
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
@@ -21,7 +21,7 @@
     <div>
       <img src="./images/slack-logo.png" alt="Slack logo" />
 
-      <ul>
+      <ul class="nav-list">
         <li>
           <a href="#">Product</a>
         </li>
@@ -37,7 +37,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="nav-icons">
       <button>
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
@@ -46,14 +46,14 @@
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <!-- <ul hidden>
         <li>
           <a href="#">Sign in</a>
         </li>
         <li>
           <a href="#">Try for free</a>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </nav>
 
@@ -61,29 +61,32 @@
     <div>
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><em>Slack is free to try</em> for as long as you'd like.</p>
 
       <div>
-        <button>Sign up with email</button>
-
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+        <button id="sign">SIGN UP WITH EMAIL</button>
+        <button id="button-google">
+        <div id="box">
+        
+          <img  src="./images/logo-google.png" alt="Google logo" />
+        </div>
+          <span >SIGN UP WITH GOOGLE</span>
         </button>
+      
       </div>
 
     </div>
 
     <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+      <img id="screenshot"src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
     <section>
-      <p>Trusted by companies all over the world</p>
+      <p id="trusted">TRUSTED BY COMPANIES ALL OVER THE WORLD</p>
 
-      <div>
+      <div class="flex-container">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
@@ -94,7 +97,7 @@
 
     </section>
 
-    <section>
+    <section id="brands">
       <div>
         <img src="./images/connectedness-mobile.png" alt="connectedness" />
       </div>
@@ -107,13 +110,17 @@
           channels, it's easier to connect across departments, offices, time zones and even other companies.
         </p>
 
-        <a href="#">
-          <span>Learn more about channels</span>
+        <a class="links"href="#">
+          <span>Learn more about channels &#8594</span>
         </a>
       </div>
     </section>
 
     <section>
+      
+      <div>
+        <img src="./images/flexibility-mobile.png" alt="flexibility" />
+      </div>
       <div>
         <h2>Choose how you want to work</h2>
         <p>
@@ -122,14 +129,12 @@
           audio and video clips, or hop on a huddle to talk things out live.
         </p>
 
-        <a href="#">
-          <span>Learn more about flexible communication</span>
+        <a class="links"href="#">
+          <span>Learn more about flexible communication &#8594</span>
         </a>
       </div>
 
-      <div>
-        <img src="./images/flexibility-mobile.png" alt="flexibility" />
-      </div>
+      
     </section>
 
     <section>
@@ -144,14 +149,14 @@
           tools like Workflow Builder, you can automate away routine tasks.
         </p>
 
-        <a href="#">
-          <span>Learn more about the Slack platform</span>
+        <a class="links" href="#">
+          <span>Learn more about the Slack platform &#8594</span>
         </a>
       </div>
     </section>
 
 
-    <section>
+    <section id="teams";>
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
