@@ -19,9 +19,11 @@
 <body>
   <nav>
     <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+      <div id="slackcontainer">
+        <img src="./images/slack-logo.png" alt="Slack logo" />
+      </div>
 
-      <ul>
+      <ul style="display: none;">
         <li>
           <a href="#">Product</a>
         </li>
@@ -38,11 +40,11 @@
     </div>
 
     <div>
-      <button>
+      <button class="menubtn">
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button class="menubtn">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
@@ -57,17 +59,17 @@
     </div>
   </nav>
 
-  <header>
+  <header class="header">
     <div>
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><span id="slackspan">Slack is free</span> to try for as long as you'd like.</p>
 
-      <div>
+      <div class="signbtn">
         <button>Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
+        <button id="bluebtn">
+          <img id="googlelogo" src="./images/logo-google.png" alt="Google logo" />
           <span>Sign up with Google</span>
         </button>
       </div>
@@ -75,21 +77,21 @@
     </div>
 
     <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+      <img class="heroimg" src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
-  <main>
-    <section>
-      <p>Trusted by companies all over the world</p>
+  <main style="background-color: #F3EAE2;">
+    <section class="imgsbg">
+      <p id="p">Trusted by companies all over the world</p>
 
-      <div>
+      <div class="logos">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
         <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+        <img class="img56" src="./images/logo-nyt.png" alt="New York Times logo" />
+        <img class="img56" src="./images/logo-spotify.png" alt="Spotify logo" />
       </div>
 
     </section>
@@ -99,7 +101,7 @@
         <img src="./images/connectedness-mobile.png" alt="connectedness" />
       </div>
 
-      <div>
+      <div class="description">
         <h2>Bring your team together</h2>
 
         <p>
@@ -114,7 +116,7 @@
     </section>
 
     <section>
-      <div>
+      <div class="description">
         <h2>Choose how you want to work</h2>
         <p>
           In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat,
@@ -137,7 +139,7 @@
         <img src="./images/speed-mobile.png" alt="speed" />
       </div>
 
-      <div>
+      <div class="description">
         <h2>Move faster with your tools in one place</h2>
         <p>
           With your other work apps connected to Slack, you can work faster by switching tabs less. And with powerful
@@ -151,13 +153,13 @@
     </section>
 
 
-    <section>
+    <section id="last-part">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
-      <div>
-        <button>Meet Slack for enterprise</button>
-        <button>Talk to sales</button>
+      <div id="buttons">
+        <button id="btn-first">Meet Slack for enterprise</button>
+        <button id="btn-second">Talk to sales</button>
       </div>
 
       <ul>
@@ -187,11 +189,11 @@
       </ul>
     </section>
 
-    <section>
+    <section id="wel-section">
       <h3>Welcome to your new digital HQ</h3>
-
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+        
+      <button id="try-btn">Try for free</button>
+      <button id="talk-btn">Talk to sales</button>
     </section>
 
   </main>
@@ -233,9 +235,10 @@
         <li>Careers</li>
       </ul>
     </div>
+    
+    <hr/>
 
-
-    <ul>
+    <ul id="last-footer">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
@@ -247,7 +250,7 @@
 
     <hr>
 
-    <ul>
+    <ul id="icon-list">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
