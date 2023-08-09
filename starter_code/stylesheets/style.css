@@ -18,11 +18,15 @@ body {
     background-color: #540B51;
     font-family: Slack-Larsseit,sans-serif;
 }
+html, body {
+
+    overflow-x: hidden;
+}
 
 .nav-bar {
     display: flex;
   justify-content:space-between;
-  padding:20px;
+  padding:20px 10px 0px 10px;  
 }
 
 .slack-logo {
@@ -39,9 +43,8 @@ body {
 }
 
 .header {
-display: flex;
+    display: flex;
     margin: 0px;
-    padding: 0
 }
 .header h1 {
     color: white;
@@ -55,7 +58,8 @@ display: flex;
     margin-bottom:15px;
 
 }
-.header span {
+
+.sign-up > p span {
     color: #ECB12F;
     font-weight:bold;  
 }
@@ -63,9 +67,6 @@ display: flex;
 .sign-up {
     justify-content: center;
     padding: 10px ;   
-}
-.sign-up img {
-    width: 1.5em;
 }
 
 .link-btn {
@@ -76,9 +77,8 @@ display: flex;
 }
 
 .link-btn img {
-    display:flex;
-    justify-content: flex-start;
     background-color:white;
+    width: 3em;
 }
 
 .link-btn button {
@@ -89,7 +89,6 @@ display: flex;
   margin:10px;
    border-radius: 5px;
    font-weight: 600;
-  letter-spacing: 0.5px;
 }
 
 
@@ -98,9 +97,13 @@ display: flex;
     color: #540B51;
 }
 
-.link-btn button:last-child {
+.link-btn button:last-child  {
+    display:flex;
+    justify-content: center;
     background-color:  #4285F4;
-
+    color: white ;
+    align-items: center;
+    text-align: center;
 }
 
 .trusted-companies {
@@ -145,7 +148,7 @@ display: flex;
     line-height: 1.5em;
 } 
 .team a, .work a, .tools a {
-    margin:10px;
+    margin: 10px;
     color: #2E71A6;
     text-decoration: none;
     line-height: 1.5em;
@@ -242,16 +245,15 @@ justify-content: center;
 
 .welcome button {
     text-transform: uppercase;
-   height: 8vh;
-   width: 50vh;
-  border: none;
-  margin:10px auto;
-    text-align: center;
-    padding: 10px 30px;
-   border-radius: 5px;
-   font-weight: 600;
+    height: 8vh;
+   width: 40vh;
+    border: none;
+    margin:10px auto;
+        text-align: center;
+        padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 600; 
     
-
 }
 
 .welcome > button {
@@ -306,6 +308,7 @@ hr {
 .further-links>li:not(last-child) { 
     margin:0 0 10px 20px;
    list-style-type:none;
+   font-weight: 500;
 }
 
 .social-media {
@@ -335,6 +338,42 @@ hr {
     flex-direction: row;
     align-items: center;
     margin-bottom:3em
-}
-   
+    }
+    .connect {
+        display:flex;
+        flex-direction: row;
+    }
+    .further-links{
+        display:flex;
+        flex-direction: row;
+    align-items: center;
+
+    }
+} 
+/* medium */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    
+    .welcome {
+    display: flex;
+    flex-direction: row;
+  }
+  
+    .stats {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:3em
+    }
+     .connect {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .further-links{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
 } 
