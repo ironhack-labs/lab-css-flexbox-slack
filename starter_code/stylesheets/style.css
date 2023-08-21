@@ -1,7 +1,6 @@
 /*
 background purple: #540B51
 background ivory: #F3EAE2
-button blue: #4285F4
 titles black: #191817
 paragraph black: #000000
 paragraph yellow: #ECB12F
@@ -19,7 +18,7 @@ body {
 }
     
     .slackLogo {
-        width: 150px;
+        width: 120px;
     }
 
     header {
@@ -39,6 +38,10 @@ body {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+        padding: 20px;
+        border-bottom: solid;
+        border-color: #F3EAE2;
+        border-width: 1px;
     }
     
     nav button {
@@ -50,32 +53,85 @@ body {
         font-weight: bolder;
         color: white;
         text-align: center;
+        font-size: 45px;
     }
 
     header p {
         text-align: center;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: white;
     }
     
     .google-image {
-        width: 30px;
+        position: absolute;
+        width: 20px;
+        left: 6px;
+        background-color: white;
     } 
     
-    header button {
+    .button {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        margin: 0 auto;
-        width: 350px;
+        padding: 10px;
+    }
+
+    header button {
+        position: relative;
         margin-top: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 110px;
+        padding: 15px 40px;
         text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
     }
 
     .app-screen {
       width: 550px;
+    }
+
+    .btn-1 {
+        color: #540B51;
+        border-radius: 5px;
+    }
+
+    .btn-2 {
+        color: white;
+        background-color:#4285F4 ;
+        border-radius: 5px;
+    }
+    
+    .main-class {
+       background-color: #F3EAE2;
+       display: flex;
+       flex-direction: column;
+    }
+
+   .p-main {
+        text-align: center;
+        margin-top: 45px;
+        font-size: 15px;  
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .images {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90px;
+        margin: 0 auto;
+    }
+
+    .images img {
+        width: 30px;
+    }
+
+    .image-main {
+    width:350px;
     }
 
 @media(min-width: 770px) {
