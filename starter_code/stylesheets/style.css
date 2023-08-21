@@ -14,24 +14,18 @@ body {
   margin: 0;
 }
 
+/*Responsive CSS- Mobile Screens (width < 768px)*/
+
+nav .menu {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 20px;
-}
-
-header h1 {
-  color: white;
-}
-
-.yellow-text {
-  color: #ecb12f;
-  font-weight: bold;
-}
-
-.white-text {
-  color: white;
+  border-bottom: 1px solid #6b0e68;
 }
 
 #slack-logo {
@@ -44,6 +38,38 @@ img[src*="slack-logo"] {
   width: 100px;
   margin-left: 20px;
   padding-bottom: 20px;
+}
+
+header {
+  position: relative;
+}
+
+header h1 {
+  color: white;
+}
+
+.header-great {
+  text-align: center;
+}
+.header-great h1 {
+  font-size: 40px;
+  font-stretch: narrower;
+  margin: 30px 20px 0 20px;
+}
+
+.yellow-text {
+  color: #ecb12f;
+  font-weight: bold;
+}
+
+.white-text {
+  color: white;
+}
+
+#side-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #side-menu button {
@@ -86,27 +112,179 @@ img[src*="slack-logo"] {
   left: 8px;
 }
 
+#hero-img {
+  overflow: hidden;
+}
+
+#hero-img img {
+  width: 692px;
+  height: auto;
+  margin-left: -25px;
+  margin-top: 20px;
+}
+
 .main-background2 {
   background-color: #f3eae2;
+}
+
+.main-section {
+  position: absolute;
+  margin-top: -70px;
+}
+
+.center-text {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 50px 15px 20px 15px;
+  font-size: 14px;
+}
+
+.all-images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px;
+  row-gap: 20px;
+}
+.all-images #airbnb {
+  width: 110px;
+  height: auto;
+}
+
+.all-images #nasa {
+  width: 70px;
+  height: auto;
+}
+
+.all-images #uber {
+  width: 75px;
+  height: auto;
+}
+
+.all-images #target {
+  width: 50px;
+  height: auto;
+}
+
+.all-images #ny {
+  width: 200px;
+  height: auto;
+}
+
+.all-images #spotify {
+  width: 125px;
+  height: auto;
+}
+
+.all-images img {
+  width: 40px;
+  height: auto;
+}
+
+.mobile img {
+  width: 93vw;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.team-info {
+  padding-left: 15px;
+}
+.team-info a {
+  text-decoration: none;
+  color: #2e71a6;
+  letter-spacing: 1px;
+}
+
+.team-info h2 {
+  font-size: 2rem;
+}
+
+.team-info p {
+  padding-right: 15px;
+  line-height: 27px;
+  font-size: 1.1rem;
+  color: rgb(48, 46, 46);
+}
+
+.image-none img:not([src$="-mobile.png"]) {
+  display: none;
+}
+
+.mobile2 {
+  text-align: right;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.mobile2 img {
+  width: 93vw;
+  height: auto;
+}
+
+.mobile3 img {
+  width: 93vw;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 25px;
 }
 
 .main-background3 {
   background-color: white;
 }
 
+.main-background3 h3 {
+  font-size: 2rem;
+  padding: 80px 25px 0 25px;
+  margin-bottom: 10px;
+}
+
+.section3 {
+  text-align: center;
+}
+
+#teams-text {
+  margin: 0 15px 15px;
+  line-height: 25px;
+  letter-spacing: 1.5px;
+}
+
+.teams-button {
+  width: 93vw;
+  height: 53px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.button1 {
+  background-color: #540b51;
+  color: white;
+  border: none;
+}
+
+.button2 {
+  background-color: white;
+  color: #540b51;
+  border: 1px solid #540b51;
+  margin-top: 13px;
+  margin-bottom: 40px;
+}
+
 .percent1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 0;
   flex-wrap: wrap;
   list-style: none;
   row-gap: 30px;
-  padding: 0;
-}
-
-.percent2 {
-  font-size: 50px;
-  font-weight: bold;
-  color: #540b51;
+  padding: 0 0 50px;
 }
 
 .percent1 p {
@@ -115,15 +293,30 @@ img[src*="slack-logo"] {
   font-size: 12px;
 }
 
+.percent2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #540b51;
+}
+
 .main-background4 {
+  text-align: center;
   background-color: #540b51;
+}
+
+.main-background4 h3 {
+  font-size: 2rem;
+  padding: 60px 25px 40px 25px;
+  margin-bottom: 10px;
+  color: white;
+  margin-top: 0;
 }
 
 .welcome-button {
   color: white;
   background-color: #540b51;
   border: 1px solid white;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .contact-button {
@@ -132,6 +325,7 @@ img[src*="slack-logo"] {
   border: none;
   margin-bottom: 40px;
 }
+
 .main-background5 {
   background-color: white;
   padding: 25px;
@@ -187,6 +381,7 @@ hr {
   padding: 0;
   font-size: 22px;
   margin-bottom: 40px;
+  justify-content: space-between;
 }
 
 small {
@@ -194,216 +389,150 @@ small {
   font-size: 10px;
 }
 
-/*Responsive CSS */
+/*Responsive CSS- Small Screens (width > 768px and width < 1024px)*/
 
-@media (max-width: 768px) {
-  nav .menu {
-    display: none;
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    background-image: url("../images/background-singup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    display: grid;
+    grid-template-columns: 5fr 1fr 3fr;
+    margin: 30px 0 120px 30px;
   }
 
-  nav {
-    border-bottom: 1px solid #6b0e68;
+  .sign-up-button {
+    width: 100%;
+    height: 52px;
+  }
+
+  .email-button {
+    width: 100%;
+    height: 52px;
   }
 
   .header-great {
-    text-align: center;
-  }
-  .header-great h1 {
-    font-size: 40px;
-    font-stretch: narrower;
-    margin: 30px 20px 0 20px;
+    text-align: left;
   }
 
-  #side-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .header-great h1 {
+    font-size: 74px;
+    margin: 0;
   }
+
+  .header-great > p {
+    font-size: 23px;
+  }
+
   #hero-img {
-    overflow: hidden;
+    grid-column: 3;
+    align-self: center;
   }
 
   #hero-img img {
-    width: 692px;
+    width: 227%;
     height: auto;
-    margin-left: -25px;
-    margin-top: 20px;
-  }
-
-  header {
-    position: relative;
+    padding-bottom: 50px;
   }
 
   .main-section {
-    position: absolute;
-    margin-top: -70px;
-  }
-
-  .center-text {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 50px 15px 20px 15px;
-    font-size: 14px;
+    margin: 0;
   }
 
   .all-images {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 30px;
-    row-gap: 20px;
+    margin: 0;
   }
 
-  .all-images #airbnb {
-    width: 110px;
-    height: auto;
+  .image-none img:not([src$="-mobile.png"]) {
+    display: block;
   }
 
-  .all-images #nasa {
-    width: 70px;
-    height: auto;
-  }
-
-  .all-images #uber {
-    width: 75px;
-    height: auto;
-  }
-
-  .all-images #target {
-    width: 50px;
-    height: auto;
-  }
-
-  .all-images #ny {
-    width: 200px;
-    height: auto;
-  }
-
-  .all-images #spotify {
-    width: 125px;
-    height: auto;
-  }
-
-  .all-images img {
-    width: 40px;
-    height: auto;
+  .image-none img[src$="-mobile.png"] {
+    display: none;
   }
 
   .mobile img {
-    width: 93vw;
+    width: 90vw;
     height: auto;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 70px;
   }
 
   .team-info {
-    padding-left: 15px;
-  }
-  .team-info a {
-    text-decoration: none;
-    color: #2e71a6;
-    letter-spacing: 1px;
+    padding: 5px 115px 0 125px;
   }
 
   .team-info h2 {
-    font-size: 2rem;
-  }
-
-  .team-info p {
-    padding-right: 15px;
-    line-height: 27px;
-    font-size: 1.1rem;
-    color: rgb(48, 46, 46);
+    font-size: 30px;
   }
 
   .mobile2 {
-    text-align: right;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: right;
   }
 
   .mobile2 img {
-    width: 93vw;
+    width: 90vw;
     height: auto;
   }
 
   .mobile3 img {
-    width: 93vw;
+    width: 90vw;
     height: auto;
-    margin-top: 100px;
-    margin-bottom: 25px;
   }
 
-  .main-background3 h3 {
-    font-size: 2rem;
-    padding: 80px 25px 0 25px;
-    margin-bottom: 10px;
-  }
-
-  .section3 {
-    text-align: center;
-  }
-
-  #teams-text {
-    margin: 0 15px 15px;
-    line-height: 25px;
-    letter-spacing: 1.5px;
-  }
-
-  .teams-button {
-    width: 93vw;
-    height: 53px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-    font-size: 13px;
-    font-weight: bold;
-    border-radius: 4px;
+  .ipad-button {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
   }
 
   .button1 {
-    background-color: #540b51;
-    color: white;
-    border: none;
+    width: 320px;
+    margin: 13px;
   }
 
   .button2 {
-    background-color: white;
-    color: #540b51;
-    border: 1px solid #540b51;
-    margin-top: 13px;
-    margin-bottom: 40px;
+    width: 190px;
   }
 
   .percent1 {
-    justify-content: space-around;
-    margin-bottom: 0;
-    padding-bottom: 50px;
+    justify-content: left;
+    flex-wrap: nowrap;
+    padding: 20px 40px 60px 20px;
   }
 
-  .main-background4 h3 {
-    font-size: 2rem;
-    padding: 60px 25px 40px 25px;
-    margin-bottom: 10px;
-    color: white;
-    margin-top: 0;
-  }
-
-  .main-background4 {
-    text-align: center;
+  .percent1 p {
+    margin: 0;
+    text-align: left;
+    padding: 0 35px;
   }
 
   .welcome-button {
-    margin-bottom: 20px;
+    background-color: white;
+    color: #540b51;
   }
 
   .contact-button {
-    margin-bottom: 40px;
+    background-color: #540b51;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .last-button {
+    width: 70vw;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .social-links {
-    justify-content: space-between;
+    max-width: 45%;
+  }
+
+  small {
+    margin-bottom: 90px;
   }
 }
