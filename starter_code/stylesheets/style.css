@@ -11,14 +11,10 @@ footer links grey: #454245
 
 body {
     margin: 0;
-    background-color: #8113AF;
+    background-color: #540B51;
     padding: 0;
     width: 100vw;
-    /* 100% of viewport width */
     height: 100vh;
-    /* 100% of viewport height */
-    /* overflow: hidden; */
-    /* Prevent scrollbars */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,60 +22,54 @@ body {
 
 
 
-@media (max-width: 768px) {
-    #nav-links {
-        display: none;
-    }
-
-    #nav-sign {
-        display: none;
-    }
-
-
-    /*multiple selector for logo ,search*/
-    nav div img,
-    nav div button img {
-        height: 24px;
-    }
-
-    nav {
-        padding-top: 5%;
-        padding-right: 5%;
-        padding-left: 5%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav div button {
-        margin-left: 20px;
-    }
-
+/*multiple selector for logo ,search*/
+nav div img,
+nav div button img {
+    height: 24px;
 }
+
+nav {
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*slack button*/
+nav div button {
+    margin-left: 20px;
+    outline: 0;
+    border: 0;
+    background-color: inherit;
+}
+
+
 
 h1 {
     font-size: 70px;
     color: white;
     overflow-wrap: break-word;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 /*Great teamwork*/
 p {
     text-align: center;
-    font-size: 30px;
     color: white;
 }
 
 /*Slack is free*/
 .highlight {
-    color: yellow;
+    color: #ECB12F;
 }
 
 /* sign up buttons */
 .button-container {
     margin: 20px 0;
-    /* Add margin between button containers */
     text-align: center;
 }
 
@@ -114,21 +104,365 @@ p {
     height: 24px;
 }
 
-/* sign up buttons*/
-
-
-
-
-@media (min-width: 769px) and (max-width: 1023px) {}
-
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 768px) {
     #nav-links {
-        display: none;
-    }
-
-    #sign {
         display: none;
     }
 }
 
-@media (min-width: 1441px) {}
+#nav-sign {
+    display: none;
+}
+
+/*multiple selector for logo,
+         search*/
+nav div img,
+nav div button img {
+    height: 24px;
+}
+
+nav {
+    padding-top: 5%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div button {
+    outline: 0;
+    border: 0;
+    background-color: inherit;
+}
+
+header div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 13px;
+    padding-right: 13px;
+    gap: 10px;
+}
+
+header img {
+    width: 100%;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 44px;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #F3EAE2;
+}
+
+.componiesLogoContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.componiesLogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.componiesLogo img {
+    object-fit: contain;
+    width: 70%;
+}
+
+/*bringteam*/
+.bringYourTeamContainer img {
+    width: 90%;
+    object-fit: contain;
+}
+
+.bringYourTeam {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    font-size: 2em;
+}
+
+
+.bringYourTeam p {
+    color: #000000;
+    width: 90%;
+    text-align: left;
+}
+
+.bringYourTeam h2 {
+    margin-bottom: 10px;
+}
+
+/*below two items for work also h2 , h3 and span */
+.learn-more-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.arrow {
+    margin-left: 5px;
+}
+
+/*bringteam end*/
+
+/*how you want to work*/
+.flexibilityContainer img {
+    width: 90%;
+    object-fit: contain;
+}
+
+.flexibilityImageContainer {
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+/* how to work */
+
+
+.howToWork {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    font-size: 2em;
+}
+
+
+.howToWork p {
+    color: #000000;
+    width: 90%;
+    text-align: left;
+}
+
+.howToWork h2 {
+    margin-bottom: 10px;
+}
+
+/*how to work end */
+
+
+/*Move Faster */
+
+.speedImageContainer img {
+    width: 90%;
+    object-fit: contain;
+
+}
+
+.speedContainer {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.moveFaster {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    font-size: 2em;
+}
+
+
+.moveFaster p {
+    color: #000000;
+    width: 90%;
+    text-align: justify;
+}
+
+.moveFaster h2 {
+    margin-bottom: 10px;
+}
+
+/*enf of move faster*/
+
+/*large teams*/
+
+
+.largeTeams {
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
+
+.largeTeams p {
+    color: #000000;
+}
+
+.second-button container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.meet-button {
+    margin: 20px 0;
+    padding: 20px 30px;
+    border: none;
+    background-color:
+        #540B51;
+    color:
+        white;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+
+}
+
+.talk-button {
+    margin: 20px 0;
+    padding: 15px 30px;
+    border: none;
+    color: #540B51;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/*statistics list*/
+
+.statistics-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.statistics-list p span {
+    margin: 0;
+    font-size: 3.0em;
+    position: relative;
+    display: inline-block;
+    color: #540B51;
+}
+
+/*statistics list end*/
+
+
+/*third-button container*/
+.third-button {
+    margin: 20px 0;
+    text-align: center;
+    font-size: large;
+    background-color: #540B51;
+}
+
+
+
+.free-button {
+    margin: 20px 0;
+    padding: 20px 30px;
+    border: white;
+    display: block;
+    width: 100%;
+    background-color: white;
+    color: #540B51;
+    text-transform: uppercase;
+
+}
+
+.third-button h3 {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+.sales-button {
+    margin: 20px 0;
+    padding: 20px 30px;
+    border: white;
+    color: white;
+    background-color: #540B51;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/*third button container end*/
+
+/*footer*/
+footer {
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-block: 70px;
+    gap: 3rem;
+}
+
+footer>img {
+
+    height: 60px;
+    width: 60px;
+    margin-left: 170px;
+
+}
+
+footer>div {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+footer>div>ul {
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+
+}
+
+footer>div>ul>li:first-child {
+
+    font-weight: 700px;
+
+}
+
+.last-step {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-weight: 700px;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.social-media {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.copyright {
+    text-align: center;
+    color: grey;
+    padding: 10px;
+    font-size: medium;
+}
+
+/*footer end  
