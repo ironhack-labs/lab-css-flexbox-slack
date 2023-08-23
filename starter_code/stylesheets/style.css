@@ -23,8 +23,8 @@ nav .menu {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin-top: 20px;
+  width: auto;
+  padding: 30px 20px;
   border-bottom: 1px solid #6b0e68;
 }
 
@@ -36,8 +36,8 @@ nav {
 
 img[src*="slack-logo"] {
   width: 100px;
-  margin-left: 20px;
-  padding-bottom: 20px;
+  /* margin-left: 20px;
+  padding-bottom: 20px; */
 }
 
 header {
@@ -75,7 +75,7 @@ header h1 {
 #side-menu button {
   background-color: #540b51;
   border: none;
-  margin: 5px 10px 5px 5px;
+  /* margin: 5px 10px 5px 5px; */
 }
 
 .sign-up-button {
@@ -534,5 +534,50 @@ small {
 
   small {
     margin-bottom: 90px;
+  }
+}
+
+/*Responsive CSS- Medium Screens (width > 768px and width < 1024px)*/
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  nav #slack-logo {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    font-size: 23px;
+  }
+
+  nav .menu {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-between;
+  }
+
+  .menu li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #side-menu > ul {
+    display: inline-flex;
+    list-style-type: none;
+  }
+
+  #side-menu > ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    list-style-type: none;
+  }
+
+  img[src*="menu"] {
+    display: none;
+  }
+
+  #slack-logo img {
+    width: 100px;
+    margin-left: 0;
+    padding-bottom: 0;
   }
 }
