@@ -7,4 +7,728 @@ paragraph black: #000000
 paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
+
+
+Revisar los logos de rrss del final, y en el modo ipad, revisar también los links del footer, 
+porque uno tiene que ser azul y tendría que intentar añadir las imágenes
+
+Buscar lo de overflow
 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+nav {
+    background-color: #540B51;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+/*Para que los botones se posicionen a la derecha (Mirar artículo de internet)*/
+.nav-buttons {
+    margin-left: auto;
+}
+
+.nav-buttons button {
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+}
+
+.ipad-buttons  {
+    display: none;
+}
+
+.header-section {
+    background-color: #540B51;
+    color: white;
+    padding: 20px;
+
+}
+
+.header-section strong {
+    color: #ECB12F;
+}
+
+.header-section h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.header-section p {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.nav-container>ul {
+    display: none;
+}
+
+.nav-container img {
+    width: 160px;
+}
+
+.header-section>div>button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 70px;
+    border-radius: 5px;
+    border: none;
+}
+
+.header-section>button>img {
+    height: 30px;
+}
+
+.slack-image img {
+    width: 100%;
+}
+
+#sign-up {
+    color: #540B51;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#google-signup {
+    display: flex;
+    align-items: center;
+    background-color: #4285F4;
+}
+
+#google-signup img {
+    width: 45px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+#google-signup span {
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    /*Revisar esta parte del código, es lo que hace que el botón quede centrado*/
+    display: block;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F3EAE2;
+}
+
+#company-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3EAE2;
+    margin: 0;
+}
+
+#company-section P {
+    text-transform: uppercase;
+    margin: 60px 0 40px 0;
+    font-weight: 900;
+}
+
+#company-section>div>img {
+    width: auto;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+#company-section>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.body-section {
+    margin-top: 50px;
+}
+
+.body-section img {
+    width: 95%;
+}
+
+.ipad-desktop img {
+    display: none;
+}
+
+.body-section h2 {
+    margin: 50px 20px 30px 20px;
+    font-size: 40px;
+}
+
+.body-section p {
+    margin: 0 50px 30px 20px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.body-section a {
+    text-decoration: none;
+    color: #2E71A6;
+    font-weight: 700;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.body-text a{
+    display:flex;
+}
+.body-text > a > img{
+    width:35px;
+    margin-left:20px;
+}
+.align-right {
+    display: block;
+    margin-left: auto;
+}
+
+.bottom-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.bottom-section h3 {
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: 900;
+    width: 80%;
+}
+
+.bottom-section p {
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+
+    font-weight: 500;
+}
+
+/*No entiendo el VW, antes lo intenté usar en los botones del principio y no funcionó, pero aquí si*/
+.bottom-section button {
+    margin-top: 10px;
+    display: block;
+    width: 95vw;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+#purple {
+    background-color: #540B51;
+    color: white;
+    text-transform: uppercase;
+}
+
+#white {
+    background-color: #fff;
+    color: #540B51;
+    text-transform: uppercase;
+    border: 2px solid #540B51;
+}
+
+.percentage-section {
+    list-style: none;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.percentage-section li {
+    margin-top: 30px;
+}
+
+.percentage-section span {
+    color: #540B51;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.bottom-text {
+    color: #706d70;
+    width: 80%;
+    margin-bottom: 60px;
+}
+
+.bottom-text p {
+    font-size: 15px;
+}
+
+.bottom-text strong {
+    color: #000000;
+}
+
+.bottom-purple {
+    background-color: #540B51;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-purple h3 {
+    margin: 40px 30px 40px 30px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.bottom-purple button {
+    margin-top: 10px;
+    display: block;
+    width: 95vw;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+#end-button-white {
+    background-color: white;
+    color: #540B51;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#end-button-purple {
+    background-color: #540B51;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+footer img {
+    display: block;
+    width: 60px;
+    margin: 40px 20px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer li {
+    font-size: 15px;
+    margin: 0 20px 20px 20px;
+    color: #706d70;
+}
+
+.footer-title {
+    font-weight: 900;
+    font-size: 15px;
+    margin: 0 20px 20px 20px;
+    color: black;
+}
+
+
+hr {
+    margin: 40px 20px;
+    border: 0.5px solid #706d70;
+}
+
+.blue-link {
+    color: #2E71A6;
+    font-weight: 900;
+    display:flex;
+    text-align: center;
+}
+.blue-link img{
+    width: 20px;
+    margin: 0;
+    margin-right: 10px;
+}
+.black-link {
+    color: black;
+    font-weight: 900;
+    display:flex;
+    text-align: center;
+}
+
+.black-link img{
+    width: 18px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+
+
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.social-media li {
+    color: black;
+}
+
+.copyright {
+    color: #706d70;
+    margin: 30px 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        background: url("../images/background-singup.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        position: relative;
+
+    }
+
+    .header-section {
+        background: transparent;
+        overflow: hidden;
+    }
+
+    .header-section h1 {
+        justify-content: left;
+        text-align: left;
+        font-size: 70px;
+        margin-right: 20px;
+    }
+
+    .header-section p {
+        justify-content: left;
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .slack-image img {
+        height: 300px;
+        width: auto;
+        flex-basis: 30%;
+    }
+
+    .header-section>div>button {
+        width: 100%;
+    }
+
+    .body-section img {
+        width: 80%;
+    }
+
+    .body-section h2 {
+        margin: 50px 200px 30px 100px;
+    }
+
+    .body-section p {
+        margin: 0 200px 30px 100px;
+    }
+
+    .body-section a {
+        margin: 0 180px 0px 100px;
+    }
+
+    .mobile img {
+        display: none;
+    }
+
+    .ipad-desktop img {
+        display: flex;
+    }
+
+    .bottom-section button {
+        display: inline;
+        width: 85vw;
+        margin-top: 20px;
+    }
+
+    #purple {
+        width: 400px;
+    }
+
+    #white {
+        width: 200px;
+    }
+
+    .percentage-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    .percentage-section li {
+        text-align: left;
+        width: 18%;
+    }
+
+    .percentage-section span {
+        color: #540B51;
+
+    }
+
+    .percentage-section p {
+        margin: 10px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .bottom-text {
+        display: none;
+    }
+
+    .bottom-purple button {
+        display: block;
+        width: 75vw;
+    }
+
+    .bottom-purple h3 {
+        font-size: 40px;
+    }
+
+    #bottom-links {
+        display: flex;
+    }
+
+    #bottom-links li {
+        font-size: 14px;
+        justify-content: flex-start;
+        margin: 15px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+    nav {
+        background-color: #540B51;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+       
+        overflow:hidden;
+    }
+
+    .nav-container {
+        width: 65%;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-around; puedo añadirlo cuando consiga que funcionen los otros botones*/
+    }
+
+    .nav-container ul {
+        display: flex;
+    }
+
+    .nav-container a {
+        display: flex;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 40px;
+    }
+
+    .nav-button-hidden {
+        display: none;
+    }
+    .nav-buttons{
+        display:flex;
+        align-items: center;
+       
+        margin-left:0;
+    }
+    .ipad-buttons {
+        margin-left:0px;
+    }
+    .ipad-buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    .ipad-buttons ul {
+        display: flex;
+    }
+
+    .ipad-buttons a {
+        display: inline;
+        color: white;
+        text-decoration: none;
+        margin-left:50px;
+    }
+    #try-for-free-button a{
+        border: none;
+        padding:10px 15px;
+        border-radius: 5px;
+        font-weight: 900;
+        font-size: 15px;
+        background-color: white;
+        color: #540B51;
+        text-transform: uppercase;
+    }
+    #try-for-free-button a{
+       
+        color: #540B51;
+      
+    }
+   
+
+    header {
+        background: url("../images/background-singup.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .header-section {
+        width: 50%;
+        background-color: transparent;
+
+    }
+
+    .header-section h1 {
+        justify-content: left;
+        text-align: left;
+        font-size: 70px;
+        margin-right: 20px;
+    }
+
+    .header-section p {
+        justify-content: left;
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .slack-image img {
+        height: 300px;
+        width: auto;
+        margin-left: 35%;
+    }
+
+    .header-section>div>button {
+        width: 120%;
+    }
+
+    .body-section {
+        display: flex;
+        align-items: center;
+    }
+
+  
+
+    .display-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .mobile img {
+        display: none;
+    }
+
+    .ipad-desktop img {
+        display: flex;
+        width: 90%;
+    }
+
+    .body-text {
+        width: 200%;
+        margin: 0 40px;
+    }
+
+    .body-text p {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .bottom-section button {
+        display: inline;
+        width: 85vw;
+        margin-top: 20px;
+    }
+
+    #purple {
+        width: 400px;
+    }
+
+    #white {
+        width: 200px;
+    }
+
+    .percentage-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    .percentage-section li {
+        text-align: left;
+        width: 18%;
+    }
+
+    .percentage-section span {
+        color: #540B51;
+
+    }
+
+    .percentage-section p {
+        margin: 10px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .bottom-purple {
+        display: inline;
+        text-align: center;
+    }
+
+    #end-button-purple {
+        display: inline;
+        width: 250px;
+    }
+
+    #end-button-white {
+        display: inline;
+        width: 250px;
+    }
+
+    #bottom-links {
+        display: flex;
+    }
+
+    #bottom-links li {
+        font-size: 14px;
+        justify-content: flex-start;
+        margin: 15px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+    .fab {
+        font-size: 25px;
+    }
+}
