@@ -14,11 +14,12 @@ footer links grey: #454245
 html, body {
     margin: 0;
     padding: 0;
+    text-align: center;
   }
   
   /* Style the navigation bar */
   nav {
-    background-color: #0074d9;
+    background-color: #540B51; 
     color: white;
     display: flex;
     justify-content: space-between;
@@ -45,29 +46,37 @@ html, body {
   nav button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
   
   /* Style the header section */
   header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
   }
   
+  .startingPoint{
+    flex: 1;
+    padding: 20px;
+  }
+
+
   header h1 {
     font-size: 24px;
   }
   
   header p {
     font-size: 16px;
-    color: #777;
+    color: black;
     text-align: center;
     margin-bottom: 20px;   /* it doesnt work ?! why ?? */
   }
   
   .buttonSpace{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
   }
 
@@ -78,6 +87,15 @@ html, body {
     padding: 10px 20px;
     font-weight: bold;
     margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .imagemGrande{
+    flex: 1;
+  }
+
+  .imagemGrande img {
+    max-width: 100%;
   }
   
   /* Style the main content section */
@@ -100,5 +118,71 @@ html, body {
     font-size: 16px;
     color: #777;
   }
+
+  .img-restriction{
+    width: 50%;
+    max-width: 100%;
+    align-items: right;
+    scale: 0.6;
+  }
   
+
+  @media(min-width: 768px){
+   
+    header{
+        flex-direction: row;
+    }
+
+    .buttonSpace{
+        margin-right: 20px;
+    }
+  }
+
+  @media(min-width: 1025) and (max-width: 1439){
+    header h1{
+        font-size: 30px;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .section h2 {
+        font-size: 24px;
+        width: 50%; 
+      }
+    
+      .section p {
+        font-size: 16px;
+        color: #777;
+        width: 50%; 
+      }
+    
+      .img-restriction {
+        max-width: 100%;
+        width: 50%; 
+      }
+
+      .digitalhq{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    
+    
+    
+    
+    
+    
+
+
+
+  }
+
+
 
