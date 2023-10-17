@@ -8,3 +8,398 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin: unset;
+}
+
+/* Nav bar */
+
+#menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+#menu-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    z-index: 1;
+}
+  
+#menu-dropdown li {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+  
+#menu-button:hover + #menu-dropdown, #menu-dropdown:hover {
+    display: block;
+}
+  
+#menu-dropdown a {
+    text-decoration: none;
+    color: #000;
+}
+  
+#menu-dropdown a:hover {
+    background-color: #4a90e2;
+    color: #fff;
+}  
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #540B51;
+    border-bottom: 1px solid #797673;
+    padding: 20px;
+}
+  
+nav img {
+    max-width: 100px;
+}
+  
+nav ul {
+    list-style: none;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav .nav-actions {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-actions button {
+    background-color: transparent;
+    border: none;
+}
+
+/* Header */
+
+header {
+    background-color: #540B51;
+    color: white;
+    width: 100%;
+}
+
+.orange-text {
+    color: #ECB12F;
+}
+
+img {
+    width:  100%;
+}
+
+.sign-up-buttons {
+    display: flex;
+    gap: 5px;
+    margin: 10px;
+}
+
+.sign-up-buttons button {
+    text-transform: uppercase;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.google-button {
+    background-color: #4285F4;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.email-button {
+    background-color: white;
+    color: #540B51;
+}
+
+.google-logo {
+    background-color: white;
+    width: 22px;
+    position: absolute;
+    left: 6px;
+    border-radius: 2px;
+}
+
+.header-info-and-image div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-info-and-image .buttons {
+    width: 100vw;
+}
+
+/* Main */
+
+main {
+    background-color: #F3EAE2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-main-section {
+    background-color: #F3EAE2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.companies-logos {
+    display: flex;
+    flex-wrap: wrap;     
+    justify-content: center;
+    align-items: center;
+
+}
+
+.companies-logos img {
+    max-width: 25%;   
+    padding: 20px;
+}
+
+.airbnb {
+    flex-grow: 2;
+}
+
+.nasa {
+    flex-grow: 1;
+}
+
+.uber {
+    flex-grow: 3;
+}
+
+.text-in-between {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.teams {
+    background-color: white;
+}
+
+.enterprise-sales-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+}
+
+.enterprise-sales-buttons button {
+    text-transform: uppercase;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.enterprise-button {
+    background-color: #540B51;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sales-button {
+    background-color: white;
+    color: #540B51;
+}
+
+.percent-table {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.percent-table span {
+    color: #540B51;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.welcome {
+    background-color: #540B51;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.try-talk-buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+    margin: 10px;
+    
+}
+
+.try-talk-buttons button {
+    text-transform: uppercase;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.try-button {
+    background-color: white;
+    color: #540B51;
+}
+
+.talk-button {
+    background-color: #540B51;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-color: white;
+}
+
+/* Footer */
+
+.slack-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 15%;
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+}
+
+.footer-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+}
+  
+  .footer-table li {
+    border: 1px solid white;
+    margin: 6%;
+    text-align: center;
+    height: 50px;
+    color: #7c7979;
+  }
+
+  .footer-table ul li:first-child {
+    font-weight: bold;
+    color: black;
+    height: 50px;
+  }
+
+hr {
+    margin: 20px;
+}
+
+.extra-info li {
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid white;
+    margin: 6%;
+    height: 30px;
+    color: black;
+}
+
+.social-networks ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.social-networks ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.copyright {
+    color: #7c7979;
+    margin: 15px;
+}
+
+@media (min-width: 768px) {
+    .header-info-and-image {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .extra-info ul {
+        display: flex;
+        flex-direction: row;
+        font-size: smaller;
+    }
+
+    .extra-info ul li {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #540B51;
+        border-bottom: 1px solid #797673;
+    }
+    
+    .header-info-and-image {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .extra-info ul {
+        display: flex;
+        flex-direction: row;
+        font-size: smaller;
+    }
+
+    .extra-info ul li {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+}
