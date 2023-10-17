@@ -8,6 +8,7 @@
 
   <!-- link the Font Awesome stylesheet - CDN -->
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="smallscreen.css" media="screen and (max-width: 667px)">
 
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
@@ -17,86 +18,57 @@
 </head>
 
 <body>
-  <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
-
-      <ul>
-        <li>
-          <a href="#">Product</a>
-        </li>
-        <li>
-          <a href="#">Solutions</a>
-        </li>
-        <li>
-          <a href="#">Resources</a>
-        </li>
-        <li>
-          <a href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-
-    <div>
-      <button>
-        <img src="./images/icon-search.png" alt="Search icon">
-      </button>
-
-      <button>
-        <img src="./images/icon-menu.png" alt="Menu icon">
-      </button>
-
-      <ul hidden>
-        <li>
-          <a href="#">Sign in</a>
-        </li>
-        <li>
-          <a href="#">Try for free</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <header>
-    <div>
-      <h1>Great teamwork starts with a digital HQ</h1>
-
-      <p>Slack is free to try for as long as you'd like.</p>
-
-      <div>
-        <button>Sign up with email</button>
-
+  <div class="start-background">
+    <div class="first-section">
+      <div class="slack-logo">
+        <img src="./images/slack-logo.png" alt="Slack logo" class="smallscreen-image"/>
+      </div>
+      <div class="search-nav">
         <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+          <img src="./images/icon-search.png" alt="Search icon">
         </button>
+        <nav>
+          <button>
+            <img src="./images/icon-menu.png" alt="Menu icon">
+          </button>
+        </nav>
       </div>
-
     </div>
-
+    <h1 class="text">Great teamwork starts with a digital HQ</h1>
+    <p class="text"><span style="color:#ECB12F">Slack is free to try</span> for as long as you'd like.</p>
     <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+      <button type="button" class="signup-button">Sign up with email</button>
+      <button type="button" class="signup-google-button">
+        <img src="./images/logo-google.png" alt="Google logo" class="logo-google"/>
+        <span class="signup-google-text">Sign up with Google</span>
+      </button>
     </div>
-  </header>
+    <div>
+      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" class="screenshot" />
+    </div>
+  </div>
 
-  <main>
+  <div class="mid-background">
+    
     <section>
-      <p>Trusted by companies all over the world</p>
-
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+      <p class="text-paragraph"><span>Trusted by companies all over the world</span></p>
+      <div class="customer-logo-main-container">
+        <div class="customer-logo-first-container">
+          <img src="./images/logo-airbnb.png" alt="Airbnb logo"/>
+          <img src="./images/logo-nasa.png" alt="NASA logo" />
+          <img src="./images/logo-uber.png" alt="Uber logo" />
+          <img src="./images/logo-target.png" alt="Target logo" />
+        </div>
+        <div class="customer-logo-second-container">
+          <img src="./images/logo-nyt.png" alt="New York Times logo" />
+          <img src="./images/logo-spotify.png" alt="Spotify logo" />
+        </div>
       </div>
-
     </section>
 
     <section>
       <div>
-        <img src="./images/connectedness-mobile.png" alt="connectedness" />
+        <img src="./images/connectedness-mobile.png" alt="connectedness" class="screenshot"/>
       </div>
 
       <div>
@@ -128,13 +100,13 @@
       </div>
 
       <div>
-        <img src="./images/flexibility-mobile.png" alt="flexibility" />
+        <img src="./images/flexibility-mobile.png" alt="flexibility" class="screenshot"/>
       </div>
     </section>
 
     <section>
       <div>
-        <img src="./images/speed-mobile.png" alt="speed" />
+        <img src="./images/speed-mobile.png" alt="speed" class="screenshot"/>
       </div>
 
       <div>
@@ -144,11 +116,59 @@
           tools like Workflow Builder, you can automate away routine tasks.
         </p>
 
-        <a href="#">
+        <a href="#" class="text-container">
           <span>Learn more about the Slack platform</span>
+          <div class="long-arrow-right"></div>
         </a>
       </div>
     </section>
+  </div>
+
+
+      <ul>
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Solutions</a>
+        </li>
+        <li>
+          <a href="#">Resources</a>
+        </li>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+      </ul>
+    
+
+    <div>
+
+  
+
+      <ul hidden>
+        <li>
+          <a href="#">Sign in</a>
+        </li>
+        <li>
+          <a href="#">Try for free</a>
+        </li>
+      </ul>
+    </div>
+  
+
+  <header>
+    <div>
+      
+
+      
+
+    </div>
+
+    
+  </header>
+
+  <main>
+    
 
 
     <section>
@@ -187,18 +207,16 @@
       </ul>
     </section>
 
-    <section>
-      <h3>Welcome to your new digital HQ</h3>
-
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+    <section class="start-background">
+    </div>
+      <h3 class="text">Welcome to your new digital HQ</h3>
+      <button  type="button" class="talk-to-sales-button">Talk to sales</button>
+      <button  type="button" class="try-for-free-button">Try for free</button>
     </section>
-
   </main>
-
   <footer>
-    <img src="./images/iso-slack.png" alt="Slack logo" />
-    <div>
+    <img src="./images/iso-slack.png" alt="Slack logo" class="slack-logo2" />
+    <div class ="text-container2">
       <ul>
         <li>WHY SLACK?</li>
         <li>Slack vs. Email</li>
@@ -234,8 +252,8 @@
       </ul>
     </div>
 
-
-    <ul>
+    <hr>
+    <ul class="list-text">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
@@ -244,24 +262,12 @@
       <li>Change Region</li>
       <li>Download Slack</li>
     </ul>
-
-    <hr>
-
-    <ul>
-      <li>
+      <div class="slack-socialmedia-log">
         <i class="fab fa-twitter"></i>
-      </li>
-      <li>
         <i class="fab fa-facebook"></i>
-      </li>
-      <li>
         <i class="fab fa-youtube"></i>
-      </li>
-      <li>
         <i class="fab fa-linkedin"></i>
-      </li>
-    </ul>
-
+      </div>
     <div>
       <small>
         &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
