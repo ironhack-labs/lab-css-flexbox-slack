@@ -12,16 +12,21 @@
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
 
+  <!-- link fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
 </head>
 
 <body>
-  <nav>
-    <div>
+  <nav class="navbar">
+    <div class="navbar-items">
       <img src="./images/slack-logo.png" alt="Slack logo" />
 
-      <ul>
+      <ul class="hidden768">
         <li>
           <a href="#">Product</a>
         </li>
@@ -37,7 +42,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="navbar-items">
       <button>
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
@@ -46,7 +51,7 @@
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <ul class="hidden768">
         <li>
           <a href="#">Sign in</a>
         </li>
@@ -58,32 +63,32 @@
   </nav>
 
   <header>
-    <div>
+    <div class="header-intro">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p> <span class="span-highlight"> Slack is free to try </span> for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="header-btns">
+        <button class="btn-signup">Sign up with email</button>
 
-        <button>
+        <button class="btn-signup btn-blue">
           <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+        <span>Sign up with Google</span>  
         </button>
       </div>
 
     </div>
 
-    <div>
+    <div class="header-img">
       <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
-    <section>
+    <section class="section1-trust">
       <p>Trusted by companies all over the world</p>
 
-      <div>
+      <div class="fit-image">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
@@ -94,8 +99,8 @@
 
     </section>
 
-    <section>
-      <div>
+    <section class="section2-benefit1">
+      <div class="fit-image">
         <img src="./images/connectedness-mobile.png" alt="connectedness" />
       </div>
 
@@ -113,7 +118,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="section3-benefit2">
       <div>
         <h2>Choose how you want to work</h2>
         <p>
@@ -127,13 +132,13 @@
         </a>
       </div>
 
-      <div>
+      <div class="fit-image">
         <img src="./images/flexibility-mobile.png" alt="flexibility" />
       </div>
     </section>
 
-    <section>
-      <div>
+    <section class="section4-benefit3">
+      <div class="fit-image">
         <img src="./images/speed-mobile.png" alt="speed" />
       </div>
 
@@ -151,7 +156,7 @@
     </section>
 
 
-    <section>
+    <section class="section5-enterprise">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
@@ -187,7 +192,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="section6-ctas">
       <h3>Welcome to your new digital HQ</h3>
 
       <button>Try for free</button>
