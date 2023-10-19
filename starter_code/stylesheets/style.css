@@ -176,6 +176,7 @@ section {
 
 .clear-bg {
   background-color: white;
+  margin-bottom: 0;
 }
 
 .button-purple {
@@ -303,7 +304,7 @@ hr {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  height: 0.8px;
+  height: 0.01px;
   background-color: #9a9a9a;
 }
 
@@ -340,4 +341,138 @@ hr {
   color: gray;
   margin: 2em 5%;
   text-align: center;
+}
+
+.images-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-image: url(/starter_code/images/background-singup.png);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+  }
+
+  .header-div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+  }
+
+  .header-color {
+    display: flex;
+  }
+
+  .image-screenshot {
+    flex-basis: 40%;
+  }
+
+  .image-big {
+    width: 800px;
+    position: relative;
+  }
+
+  header h1 {
+    font-size: 68px;
+    text-align: left;
+    margin-left: 0.2em;
+  }
+
+  header p {
+    font-size: 28px;
+    text-align: left;
+    margin-left: 0.2em;
+  }
+
+  .company-logos-div {
+    justify-content: center;
+  }
+
+  .company-logos-div img {
+    height: 38px;
+    margin: 0 0.4em;
+  }
+
+  .images-mobile {
+    display: none;
+  }
+  .images-desktop {
+    display: block;
+  }
+
+  .center-text {
+    margin: auto 20% auto 5%;
+  }
+
+  .clear-bg p {
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .button-purple {
+    width: 40%;
+  }
+
+  .button-white {
+    width: 20%;
+  }
+
+  .clear-bg ul,
+  footer > ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    padding: 0 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clear-bg p {
+    line-height: 1.5em;
+    text-align: left;
+  }
+  .ligher-text {
+    display: none;
+  }
+  .footer-logo {
+    margin-left: 2em;
+  }
+  .footer-links {
+    justify-content: space-around;
+  }
+  .links-socialmedia ul {
+    justify-content: flex-start;
+  }
+
+  .links-socialmedia ul li {
+    margin-right: 4em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  a:after {
+    content: '';
+  }
+
+  .header-div {
+    margin-bottom: 5em;
+  }
 }
