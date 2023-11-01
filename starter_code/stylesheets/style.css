@@ -14,6 +14,9 @@ footer links grey: #454245
 body{
     margin: 0;
 }
+.btn-hidden {
+    display: none;
+}
 .slack-logo{
     width: 96px;
     margin-right: 16px;
@@ -79,6 +82,7 @@ body{
     text-transform: uppercase;
     text-wrap: nowrap;
     box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .sign-up-button{
@@ -103,6 +107,7 @@ body{
     background-color: #4285F4;
     display: flex;
     align-items: center;
+    border: none;
 }
 
 .slack-app-image {
@@ -121,11 +126,12 @@ body{
     background-color:#F3EAE2;
 }
 
-.departments >p{
+.departments > p{
     padding: 12px;
     text-align: center;
     font-weight: bold;
     margin: 0;
+    text-transform: uppercase;
 }
 .images>img{
     height: 30px;
@@ -141,10 +147,10 @@ body{
 }
 
 .common-image-container {
-    /* height: 578px; */
     width: 100%;
     padding: 24px 0;
-    }
+    display: flex;
+}
 
  .common-image{
     width: 100%;
@@ -196,16 +202,16 @@ border: none;
     list-style: none;
     text-align: center;
     font-size: 12px;
+    margin: 38px 0;
+    padding: 0;
 }
 
 .benefit-percentage > li > p > span{
     color: #540B51;
     font-size: 46px;
+    font-weight: 600;
 }
-.benefit-percentage{
-    margin-top: 38px;
-    padding: 0;
-}
+
 .narrow-para {
     width: 40%;
     text-align: center;
@@ -244,10 +250,9 @@ border: none;
 
 .slack-footer ul {
     list-style: none;
-    margin: 0;
+    margin: 16px 0;
     padding: 0;
     font-size: 12px;
-    color: #454245;
 } 
 
 .slack-image-footer {
@@ -271,7 +276,7 @@ border: none;
     justify-content: flex-start;
 }
 
-.highlighted {
+#highlighted {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 12px;
@@ -284,7 +289,7 @@ border: none;
    flex-direction: column;
    align-items: flex-start;
    gap: 8px 0;
-   color: #191817 !important;
+   color: #191817;
    font-weight: bold;
 }
 
@@ -293,7 +298,7 @@ border: none;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    margin: 16px 0 !important;
+    padding: 16px 0  ;
 }
 
 .highlighted-blue {
@@ -308,10 +313,482 @@ border: none;
 .slack-footer hr {
     margin: 16px 0;
 }
+
+.btn-sign-in{
+    display: none;
+}
+.btn-try-for-free{
+    display: none;
+}
+
+
+
 /* tablet view styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .log-in {
+        display: flex;
+    }
+    .departments .images {
+        justify-content: space-around;
+    }
+    .description {
+        padding: 0 25%;
+    }
+
+    .common-image {
+        width: 80%;
+    }
+
+    .reverse-row-md {
+        flex-direction: row-reverse;
+    }
+    .features > h3{
+        font-size: 18px ;
+    }
+    .horiz-btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .horiz-btns .button-common {
+        padding: 12px 36px;
+        width: fit-content; 
+    }
+    .benefit-percentage{
+        display: flex;
+        
+    }
+    .digital{ 
+        padding: 58px;
+       
+    }
+    .digital > h3{
+        font-size: 36px;
+    }
+    .items-lists{
+        justify-content: space-between;
+    }
+    .items2-list{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .social-links{
+        justify-content: flex-start;
+        gap:0 89px
+    }
+}
+
 
 
 /* laptop view styles */
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+    .nav-links {
+        padding: 16px 8px;
+    }
+    .btn-icon-menu{
+        display: none;
+    }
+    .button-common {
+        padding: 16px 36px;
+        font-size: 20px;
+        height: fit-content;
+        width: fit-content;
+    }
+    .nav-link-list{
+        display: flex;
+        gap:0 38px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .sign-up-button, .google-signup {
+        width: 100%;
+    }
+    .nav-link-list a{
+        color: #FFF;
+        text-decoration: none;
+    }
+    .btn-sign-in{
+        color: #FFF;
+    }
+    .btn-try-for-free{
+        background: #FFF;
+        border-radius: 2px;
+        color: #540B51;
+        text-transform: uppercase;
+    }
+    .btn-try-for-free, .btn-sign-in {
+        padding: 12px 24px;
+        font-size: 20px;
+        display: block;
+        text-decoration: none;
+        font-weight: 600; 
+    }
+    .icon-btns-group {
+        display: flex;
+        gap: 0 8px;
+    }
+    ul.btn-hidden{
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 0 12px;
+    }
+
+    .log-in{
+        display: flex;
+        
+    }
+    .log-in-details h1{
+        font-size: 86px;
+        text-align: left;
+        padding-bottom: 56px ;
+    }
+    .log-in-details{
+        padding: 78px 38px;
+    }
+    .usage-free{
+        font-size: 38px;
+        text-align: left;
+    }
+    .slack-app-image img{
+        margin-top: 300px;
+        width:698px
+    }
+
+    .reverse-row-lg {
+        flex-direction: row-reverse;
+    }
+
+    .columify {
+        display: flex;
+        align-items: center;
+        gap: 0 32px;
+        height: 370px;
+        padding: 24px 0;
+    }
+
+    .common-image-container {
+        height: 100%;
+    }
+
+    .description {
+        width: 80%;
+        padding: 0 46px;
+    }
+
+    .description > h2 {
+        font-size: 46px;
+    }
+
+    .description > p {
+        font-size: 24px;
+    }
+
+    .departments .images {
+        justify-content: space-around;
+        padding: 35px 0;
+    }
+    .departments p{
+        padding: 35px 0;
+        font-size: 20px;
+    }
+    .features h3{
+        font-size: 46px;
+    }
+    .features p {
+        font-size: 18px;
+    }
+
+    .horiz-btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .horiz-btns .button-common {
+        padding: 16px 36px;
+        font-size: 20px;
+        width: fit-content; 
+        height: fit-content;
+    }
+
+    .benefit-percentage{
+        display: flex;
+        justify-content: space-between;
+    }
+    .benefit-percentage > li > p > span{
+        font-size: 89px;
+    }
+    .narrow-para{
+        font-size: 18px;
+        text-align: left;
+    }
+    .digital h3{ 
+        font-size: 58px;
+        width: 100%;
+    }
+    .digital { 
+        padding: 58px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .digital .button-common {
+        width: fit-content;
+
+    }
+    .items-lists{
+        justify-content: space-between;
+    
+    }
+    .items2-list{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .social-links{
+        justify-content: flex-start;
+        gap:0 89px;
+    }
+    .slack-footer{
+        padding: 34px 38px;
+    }
+    .slack-footer ul {
+        font-size: 20px;
+        margin: 32px 0;
+    }
+
+    .slack-image-footer{
+        width: 62px;
+        height: 62px;
+    }
+    #highlighted{
+        font-size: 22px;
+    }
+    .slack-footer-features .slack-footer-lists{
+        font-size:18px ;
+    }
+
+    .slack-footer-features > li {
+        color: #454245;
+    }
+
+    .items2-list li{
+        font-size: 18px;
+    }
+
+}
+
 
 
 /* desktop view styles */
+@media screen and (min-width: 1440px){
+    .sign-up {
+        display: flex;
+    }
+    .google-signup{
+        width: 50%;
+        justify-content: flex-start;
+        gap: 0 24px;
+        padding: 0;
+        height: 55px;
+        padding: 0 8px;
+    }
+    .nav-links {
+        padding: 16px 8px;
+    }
+    .btn-icon-menu{
+        display: none;
+    }
+    .button-common {
+        padding: 16px 36px;
+        font-size: 20px;
+        height: fit-content;
+        width: fit-content;
+    }
+    .nav-link-list{
+        display: flex;
+        gap:0 38px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .sign-up-button, .google-signup {
+        width: 100%;
+    }
+    .nav-link-list a{
+        color: #FFF;
+        text-decoration: none;
+    }
+    .btn-sign-in{
+        color: #FFF;
+    }
+    .btn-try-for-free{
+        background: #FFF;
+        border-radius: 2px;
+        color: #540B51;
+        text-transform: uppercase;
+    }
+    .btn-try-for-free, .btn-sign-in {
+        padding: 12px 24px;
+        font-size: 20px;
+        display: block;
+        text-decoration: none;
+        font-weight: 600; 
+    }
+    .icon-btns-group {
+        display: flex;
+        gap: 0 8px;
+    }
+    ul.btn-hidden{
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 0 12px;
+    }
+
+    .log-in{
+        display: flex;
+        
+    }
+    .log-in-details h1{
+        font-size: 86px;
+        text-align: left;
+        padding-bottom: 56px ;
+    }
+    .log-in-details{
+        padding: 78px 38px;
+    }
+    .usage-free{
+        font-size: 38px;
+        text-align: left;
+    }
+    .slack-app-image img{
+        margin-top: 300px;
+        width:698px
+    }
+
+    .reverse-row-lg {
+        flex-direction: row-reverse;
+    }
+
+    .columify {
+        display: flex;
+        align-items: center;
+        gap: 0 160px;
+        height: 430px;
+        padding: 24px 0;
+    }
+
+    .common-image-container {
+        height: 100%;
+    }
+
+    .description {
+        width: 80%;
+        padding: 0 46px;
+    }
+
+    .description > h2 {
+        font-size: 46px;
+    }
+
+    .description > p {
+        font-size: 24px;
+    }
+
+    .departments .images {
+        justify-content: center;
+        padding: 35px 0;
+        gap: 0 80px;
+    }
+    .departments p{
+        padding: 35px 0;
+        font-size: 20px;
+    }
+    .features h3{
+        font-size: 46px;
+        color: #540B51;
+    }
+    .features p {
+        font-size: 18px;
+    }
+
+    .horiz-btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .horiz-btns .button-common {
+        padding: 16px 36px;
+        font-size: 20px;
+        width: fit-content; 
+        height: fit-content;
+    }
+
+    .benefit-percentage{
+        display: flex;
+        justify-content: space-between;
+    }
+    .benefit-percentage > li > p > span{
+        font-size: 89px;
+
+    }
+    .narrow-para{
+        font-size: 18px;
+        text-align: left;
+    }
+    .digital h3{ 
+        font-size: 58px;
+        width: 100%;
+    }
+    .digital { 
+        padding: 58px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .digital .button-common {
+        width: fit-content;
+
+    }
+    .items-lists{
+        justify-content: space-between;
+    
+    }
+    .items2-list{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .social-links{
+        justify-content: flex-start;
+        gap:0 89px;
+    }
+    .slack-footer{
+        padding: 34px 38px;
+    }
+    .slack-footer ul {
+        font-size: 20px;
+        margin: 32px 0;
+    }
+
+    .slack-image-footer{
+        width: 62px;
+        height: 62px;
+    }
+    #highlighted{
+        font-size: 22px;
+    }
+    .slack-footer-features .slack-footer-lists{
+        font-size:18px ;
+    }
+
+    .slack-footer-features > li {
+        color: #454245;
+    }
+
+    .items2-list li{
+        font-size: 18px;
+    }
+}
