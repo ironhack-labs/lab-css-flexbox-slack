@@ -2,6 +2,13 @@
 
 # CSS | Flexbox Slack Clone
 
+<br>
+
+<p align="center">
+  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack-simple/Slack%2BHome%2BPage%2BIntro%2BTablet.png" alt="slack landing page mobile" width="500" />
+</p>
+
+
 <details>
   <summary>
    <h2>Learning Goals</h2>
