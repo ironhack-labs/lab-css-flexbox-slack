@@ -12,7 +12,17 @@
 
 /* Base Styles */
 /*====================*/
+/* MEDIA QUERIES */ /*
+    @media (max-width: 575px) - X-Small - Small mobile device - older smartphone
+    @media (min-width: 576px) and (max-width: 767px) - Small - Standard mobile device - iPhone 8
+    @media (min-width: 768px) and (max-width: 991px) - Medium - Small mobile device - iPhone SE
+    @media (min-width: 992px) and (max-width: 1199px) - Large - Standard mobile device - Samsung Galaxy S5
+    @media (min-width: 1200px) and (max-width: 1399px) - Extra large - Large mobile device - iPhone 12 Pro Max
+    @media (min-width: 1400px) - Extra extra large - Tablet - iPad Mini
+ /*====================*/
+
 html {
+<<<<<<< HEAD
   font-size: 24px;
   padding: 2px;
   background-color: #540B51;
@@ -206,3 +216,154 @@ html {
       /* Styles for screens smaller than 575px */
   }
 
+=======
+   font-size: 24px;
+   padding: 2px;
+   background-color: #540B51;
+   font-family: 'Arial Narrow', Arial, sans-serif;
+ }
+
+ .body {
+   margin: 0;
+ }
+ 
+ /* Navbar Section */
+ /*====================*/
+ .navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+ }
+
+ .navbar-container {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .navbar-logo {
+   width: 120px; 
+   height: auto;
+ }
+ 
+ .navbar-menu {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   margin: 0;
+   padding-left: 30px;
+ }
+
+ .navbar-menu li {
+   margin: 0 10px;
+ }
+ 
+ .navbar-menu li a {
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   font-size: 16px;
+ }
+ 
+ .nav-actions {
+   display: flex;
+   align-items: center;
+ }
+
+ .search-button, .menu-button {
+   background: none;
+   border: none;
+   color: white;
+   font-size: 24px; 
+   margin-right: 10px;
+ }
+ 
+ .nav-bottom-links {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+ }
+
+
+ .nav-bottom-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 15px;
+ }
+
+ .nav-bottom-link-button {
+  border: 1px solid white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #540B51;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+ }
+
+ .thin-line {
+   height: 1px; 
+   border: none; 
+   background-color: #794D72; 
+ }
+ 
+ /* HEADER */
+ /*====================*/
+ .GreatTeam {
+   color: white;
+   font-size: 80px;
+   text-align: center;
+   font-weight: 700;
+   padding-top: 50px;
+ }
+ 
+ .Slack-is-Free {
+   color: #191817; /* titles black */
+   font-size: 16px; /* Example size */
+   text-align: center;
+   font-weight: bold;
+ }
+ 
+ .SignUps {
+   font-size: 100%; /* Example percentage */
+ }
+
+   /* Media Queries Order */
+   /*====================*/
+   /* Start coding the media queries from the top media to the bottom. 
+   The order to code will be the following:
+   - @media (min-width: 1440px) - https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27920-383&t=A1gXFjJ0doVfgZvR-8&scaling=scale-down&page-id=68%3A2978&starting-point-node-id=27920%3A383&hotspot-hints=0&hide-ui=1
+   - @media (min-width: 1024px) and (max-width: 1439px) - https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27920-291&t=pq37L62mzfeHEFnN-1&scaling=scale-down&page-id=68%3A2977&starting-point-node-id=27920%3A291&hotspot-hints=0&hide-ui=1
+   - @media (min-width: 768px) and (max-width: 1023px) - https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27920-208&t=GG6xsZqUwaSq21fe-8&scaling=scale-down&page-id=68%3A2976&starting-point-node-id=27920%3A208&hotspot-hints=0&hide-ui=1
+   - @media (min-width: 576px) and (max-width: 767px) - https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27905-2817&t=4UQZ5O1FjodswKev-8&scaling=scale-down&page-id=68%3A2761&starting-point-node-id=27905%3A2817&hide-ui=1
+   */
+
+   @media (min-width: 1440px) {
+       /* Styles for screens larger than 1440px */
+   }
+   
+   @media (min-width: 1024px) and (max-width: 1439px) {
+       /* Styles for screens between 1024px and 1439px */
+   }
+   
+   @media (min-width: 768px) and (max-width: 1023px) {
+       /* Styles for screens between 768px and 1023px */
+       .Navbar-menu,
+       .nav-actions {
+       display: none;
+       }
+   }
+   
+   @media (min-width: 576px) and (max-width: 767px) {
+       /* Styles for screens between 576px and 767px */
+   }
+   
+   @media (max-width: 575px) {
+       /* Styles for screens smaller than 575px */
+   }
+>>>>>>> 79e7dfab09355bc3607e60581c077e2ffd27d851
