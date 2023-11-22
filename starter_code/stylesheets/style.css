@@ -1,10 +1,386 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
+/* ===== Colors ===== */
+/* Background purple: #540B51
+   Background ivory: #F3EAE2
+   Button blue: #4285F4
+   Titles black: #191817
+   Paragraph black: #000000
+   Paragraph yellow: #ECB12F
+   Links blue: #2E71A6
+   Footer links grey: #454245
 */
+
+/* ===== Base Styles ===== */
+html {
+  font-size: 24px;
+  background-color: #540B51;
+  font-family: "Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+}
+
+.body {
+  margin: 0;
+}
+
+/* ===== Navbar Section ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 120px; 
+  height: auto;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.navbar-menu li {
+  margin: 0 10px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.search-button, .menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px; 
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.thin-line {
+  height: 1px; 
+  background-color: #794D72; 
+  border: none; 
+}
+
+.nav-bottom-links {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+ }
+
+.nav-bottom-sign {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.nav-bottom-link-try {
+  text-transform: uppercase;
+  border: 1px solid white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #540B51;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* ===== Header Section ===== */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #540B51; 
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 100px;
+  color: white;
+}
+
+.text-container {
+   margin: 0px 0px 100px 50px;
+}
+
+.text-container h1 {
+  font-size: 100px;
+}
+
+.header-main-text p {
+  margin-bottom: 16px;
+}
+
+.header-second-text span {
+  color: #ECB12F;
+  font-weight: 700;
+  padding-top: 150px;
+  margin-right: 0.3em;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: left;
+}
+
+.email-button, .google-button {
+  padding: 10px 20px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: white; 
+  background-color: #4285F4; 
+}
+
+.email-button {
+   background-color: #FFFFFF; 
+   color: #540B51; 
+}
+
+.email-button a {
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.google-button {
+  display: flex;
+  align-items: center; 
+  background-color: #4285F4;
+}
+
+.google-button a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: white;
+}
+
+.google-button img {
+  margin-right: 10px;
+  width: 15px; 
+  height: auto;
+  background-color: white;
+}
+
+.header-second-text p {
+  color: #191817; 
+  font-size: 16px; 
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* ===== Main Section ===== */
+.first-section {
+   justify-content: space-evenly;
+   background-color: #F3EAE2;
+   padding: 48px 0px 70px 0px;
+   margin-top: 100px;
+}
+
+.first-content-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.first-section-text {
+   text-transform: uppercase;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 0px 88.64px;
+   margin: 0px 0px 16px;
+}
+
+.first-section-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 45px;
+}
+
+.image-logo {
+  display: inline-block;
+  align-items: center;
+  margin-right: 30px;
+  width: 100%;
+  max-width: 92px;
+  height: auto;
+}
+
+/* ===== Trusted By All Company Section ===== */
+.second-section-text {
+  text-align: center; 
+  background-color: #FFFFFF; 
+  color: #540B51;  
+  padding: 20px; 
+  margin-bottom: 30px;
+}
+
+.second-section-text h3 {
+  font-size: 40px; 
+  margin-bottom: 30px;
+}
+
+.second-section-text p {
+  font-size: 16px;
+
+  font-weight: bold;
+  color: #191817;
+}
+
+.percentages {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px; 
+  margin: 60px 0px 30px 0px;
+}
+
+.percentages-item {
+  text-align: left; 
+}
+
+.number {
+  font-size: 48px; 
+  font-weight: bold;
+  color: #540B51; 
+  text-align: left;
+  margin-bottom: 1px;
+}
+
+.information {
+  font-size: 16px; 
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1px;
+}
+
+/* ===== Welcome to Your New Digital HQ Section ===== */
+.third-section-text {
+  background-color: #540B51; 
+  text-align: center; 
+  padding: 5px 0; 
+  margin-bottom: 40px;
+}
+
+.third-section-text h3 {
+  font-size: 40px;
+  color: white;
+  margin: 0; 
+  padding: 12px 0 18px;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.welcome-button-free {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #540B51; 
+  background-color: white; 
+  border: 2px solid #540B51; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  font-weight: bold; 
+  font-size: 12px; 
+  outline: none; 
+}
+
+.welcome-button-sales {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white; 
+  background-color: #540B51; 
+  border: 1px solid white; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  font-weight: bold; 
+  font-size: 12px; 
+  outline: none; 
+}
+
+/* ===== Footer Section ===== */
+.footer-section {
+  background-color: white;
+  padding-top: 10px;
+}
+
+.thin-line-footer {
+  margin: 0px 30px 0px 30px;
+  color: grey;
+}
+
+.footer-list {
+   list-style-type: none;
+   font-size: 14px;
+   font-weight: 700;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.footer-list-item {
+   margin: 0px 16px 0px 16px;
+   padding: 32px 0px;
+}
+
+.footer-list-item a {
+   text-decoration: none;
+   color: black;
+}
+
+.footer-social-media-icons {
+   list-style-type: none;
+   display: flex;
+   align-items: center;
+}
+
+.footer-social-media-icons .icon a{
+   color: black;
+}
+
+.icon {
+   padding: 0px 0px 0px 32px;
+   margin: 32px 0px;
+}
+
+.footer-copywright {
+   font-size: 14px;
+   color: #737173;
+   padding: 0px 0px 0px 32px;
+}
+
+/* ===== Media Queries Section ===== */
+/* Media queries should be coded as it follows: 
+    @media (min-width: 1400px) - Extra extra large - Tablet - iPad Mini
+    @media (min-width: 1200px) and (max-width: 1399px) - Extra large - Large mobile device - iPhone 12 Pro Max
+    @media (min-width: 992px) and (max-width: 1199px) - Large - Standard mobile device - Samsung Galaxy S5
+    @media (min-width: 768px) and (max-width: 991px) - Medium - Small mobile device - iPhone SE
+    @media (min-width: 576px) and (max-width: 767px) - Small - Standard mobile device - iPhone 8
+    @media (max-width: 575px) - X-Small - Small mobile device - older smartphone
+*/
+/* Add your media query styles here... */
