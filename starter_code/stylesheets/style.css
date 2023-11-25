@@ -8,8 +8,6 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
-html {
-}
 
 p,
 h3 {
@@ -85,9 +83,10 @@ footer hr {
 
 #nav-bar {
     display: flex;
-    margin: 2em 1.2em 3em;
+    padding: 2em 1.2em 2em;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 #nav-bar ul {
@@ -149,16 +148,18 @@ footer hr {
 }
 
 .sign-with-google span {
-    margin-right: 30%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     display: flex;
-    font-size: 0.8 em;
+    flex: 1;
 }
 
 .sign-with-google img {
     max-height: 3em;
     background-color: white;
     max-width: 2em;
+    flex: 0 0 auto;
 }
 
 .search-icon,
@@ -266,5 +267,86 @@ footer hr {
     height: 2.2em;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #nav-bar {
+        border-bottom: 0.02em solid #858585;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        margin-bottom: 3em;
+    }
+    header {
+        padding-bottom: 5em;
+    }
+    .header-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 1em;
+    }
+    .header-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    header h1 {
+        text-align: left;
+        font-size: 10svw;
+        margin-bottom: 0.4em;
+        width: 80%;
+    }
+    header p {
+        font-size: 3vw;
+        display: flex;
+        color: white;
+        margin-bottom: 0.7em;
+    }
+    .highlighted {
+        margin-right: 0.3em;
+    }
+    .slack-app-screenshot {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: auto;
+    }
+    .trusted-companies-info {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .company-logos {
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+    }
+    .statistics-area {
+        padding-bottom: 0;
+    }
+    .statistics-area ul {
+        display: flex;
+        text-align: left;
+        padding-right: 3em;
+        padding-left: 3em;
+        gap: 7em;
+    }
+    .statistics-introduction {
+        font-size: 1em;
+    }
+    .statistic-item-text {
+        padding: 0;
+    }
+    .welcome-marketing {
+        padding: 2em 5em 3em;
+    }
+    .welcome-marketing h3 {
+        font-size: 2.3em;
+        padding: 0 0 0.8em;
+        font-weight: lighter;
+    }
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.7em;
+    }
+    .footer-icons {
+        width: 45%;
+    }
 }
