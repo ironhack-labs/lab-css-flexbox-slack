@@ -12,17 +12,17 @@
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
 
-  <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
+  <link rel="icon" type="image/x-icon" href="./images/slack-icon.png"> 
   <title>Slack is your digital HQ | Slack</title>
 </head>
 
 <body>
   <!-- NAVBAR -->
-  <nav>
+  <nav class="nav_container">
     <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+      <img src="./images/slack-logo.png" alt="Slack logo" class="nav_logo" id="slack_logo"/>
 
-      <ul>
+      <ul id="nav_menu">
         <li>
           <a href="#">Product</a>
         </li>
@@ -39,12 +39,12 @@
     </div>
 
     <div>
-      <button>
-        <img src="./images/icon-search.png" alt="Search icon">
+      <button class="nav_button">
+        <img src="./images/icon-search.png" alt="Search icon" class="nav_logo">
       </button>
 
-      <button>
-        <img src="./images/icon-menu.png" alt="Menu icon">
+      <button class="nav_button">
+        <img src="./images/icon-menu.png" alt="Menu icon" class="nav_logo">
       </button>
 
       <ul hidden>
@@ -60,44 +60,46 @@
 
 
   <!-- HEADER -->
-  <header>
+  <header class="header_container">
     <div>
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><span class="header_highlight">Slack is free to try</span> for as long as you'd like.</p>
 
       <div>
-        <button>Sign up with email</button>
+        <button class="btn">Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
+        <button class="header_button">
+          <img src="./images/logo-google.png" alt="Google logo" id="header_logo">
           <span>Sign up with Google</span>
         </button>
       </div>
 
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+    <div >
+      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" id="header_screenshot"/>
     </div>
   </header>
 
-  <main>
-    <section>
+
+  <!-- MAIN -->
+  <main >
+    <section class="main_top_container">
       <p>Trusted by companies all over the world</p>
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+      <div class="main_logo_container">
+        <img src="./images/logo-airbnb.png" alt="Airbnb logo" class="image1" />
+        <img src="./images/logo-nasa.png" alt="NASA logo" class="image2" />
+        <img src="./images/logo-uber.png" alt="Uber logo" class="image1"/>
+        <img src="./images/logo-target.png" alt="Target logo" class="image2"/>
+        <img src="./images/logo-nyt.png" alt="New York Times logo" class="image3"/>
+        <img src="./images/logo-spotify.png" alt="Spotify logo" class="image1"/>
       </div>
 
     </section>
 
-    <section>
+    <section class="main_middle_container">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
@@ -129,29 +131,34 @@
       </ul>
     </section>
 
-    <section>
+    <section class="main_bottom_container">
       <h3>Welcome to your new digital HQ</h3>
 
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+      <button class="button_1 btn">Try for free</button>
+      <button class="button_2 btn">Talk to sales</button>
     </section>
 
-  </main>
+    <hr>
 
-  <footer>
-    <ul>
+  </main>
+  
+
+  <!-- FOOTER -->
+  <footer class="footer">
+   
+    <ul class="footer_top">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
       <li>Cookie Preferences</li>
       <li>Contact Us</li>
       <li>Change Region</li>
-      <li>Download Slack</li>
+      <li class="download">Download Slack</li>
     </ul>
 
-    <hr>
+    
 
-    <ul>
+    <ul class="footer_bottom">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -166,7 +173,7 @@
       </li>
     </ul>
 
-    <div>
+    <div class="footer_copywrite">
       <small>
         &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
         their respective owners.
