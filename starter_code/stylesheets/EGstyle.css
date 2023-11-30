@@ -1,241 +1,167 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+/* Colors */
+:root {
+  --bg-purple: #540b51;
+  --bg-ivory: #f3eae2;
+  --button-blue: #4285f4;
+  --titles-black: #191817;
+  --paragraph-black: #000000;
+  --paragraph-yellow: #ecb12f;
+  --links-blue: #2e71a6;
+  --footer-links-grey: #454245;
+}
 
+/* Body */
 body {
-    position: absolute;
-    height: 1000px;
-    width: auto;
-    margin: 0;
-    padding: 0;
-    background-color: #540B51;
-    
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-purple);
 }
 
+/* Header */
 body > header > ul > button {
-    display: flex;
-    flex-direction: flex-end;
-
+  display: flex;
+  flex-direction: flex-end;
 }
 
-p > span {
-    color: #ECB12F;
-}
-
-
-nav { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--bg-purple);
 }
 
 .div0 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: #540B51;
-    width: auto;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--bg-purple);
+  width: 80%;
+  align-items: center;
 }
 
 .div0 > ul > li > a {
-    color: white;
-    list-style: none;
-    list-style-type: none;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .navbuttons {
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 10px;
 }
 
 .slack-logo {
-    padding-top: 1em;
-    padding-left: 21em;
-    display: flex;
-    justify-content: flex-start;
-    height: 2em;
+  padding-top: 1em;
+  padding-left: 21em;
+  height: 2em;
 }
 
 .div0 > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    list-style: none;
-    list-style-type: none;
-    text-decoration: none;
-    
-}
-
-.div0 > ul > li {
-    list-style: none;
-    list-style-type: none;
-    text-decoration: none;
-    
-}
-
-.div0 > button {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  text-decoration: none;
 }
 
 .div1 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: 50%;
-    background-color: #540B51;
-    font-weight: bold;
-    margin-bottom: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 50%;
+  background-color: var(--bg-purple);
+  font-weight: bold;
+  margin-bottom: 0;
+  color: white;
 }
 
 .div1-1 {
-    display: flex;
-    flex-direction: column;
-    color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .div1-1 > button {
-    border: 10px black solid;
+  border: 2px solid var(--titles-black);
 }
 
 .div1-2 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 30%;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 30%;
+  height: auto;
 }
 
-.div2 {
-    padding-top: 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #F3EAE2;
+/* Other Sections */
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div8,
+footer {
+  background-color: var(--bg-ivory);
 }
 
 .div2 > p {
-    margin-left: 40%;
-    width: 100%;
-    font-weight: bold;
-    font-size: 1em;
+  margin-left: 40%;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .div2 > .brand-logos > img {
-
-    width: 10%;
-    height: auto;
-    background-color: #F3EAE2;
-    display: flex;
-    flex-direction: row;
-    padding-left: 50%;
-
-    
+  width: 10%;
+  height: auto;
+  padding-left: 50%;
 }
 
-.div3 {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    position:relative;
-}
-
-.slack-pros-text {
-    background-color: #F3EAE2;
-}
-
-.slack-pro-images {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.div4 {
-    display: flex;
-    flex-direction: row;
-}
-
+.div3,
+.div4,
 .div5 {
-    display: flex;
-    flex-direction: row;
-}
-
-.div6 {
-    display: flex;
-    background-color: white;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .stats {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.container > .stats > .div7-1, .div7-2, .div7-3 {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-}
-
-.div8 {
-    display: flex;
-    background-color: #540B51;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.div9 {
-    display: flex;
-    background-color: #F3EAE2;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 0;
-}
-
-.div9 > img {
-    display: inline;
-}
-
-
-.div10 {
-    padding: 0;
-    display: flex;
-    background-color: #F3EAE2;
-    flex-direction: row; 
-}
-
-footer > img {
-    background-color: #F3EAE2;
-}
-
-.slack-pros {
-    display: auto;
-    height: 30em;
-    width: 30em;
-}
-
-footer {
-    background-color: #F3EAE2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .div8 > h3 {
-    color: white;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-ivory);
+}
+
+.div9 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.div9 > img {
+  display: inline;
+}
+
+.div10 {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Additional Styling */
+.p > span {
+  color: var(--paragraph-yellow);
 }
