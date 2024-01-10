@@ -8,3 +8,660 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+body {
+    font-family:'Arial', sans-serif;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    background-color: #540B51;
+    overflow-x: hidden;
+}
+
+nav img {
+width: 100px;
+margin: 40px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav button {
+    border: none;
+    background-color: transparent;
+}
+
+nav button img {
+    background: transparent;
+    width: 20px;
+}
+
+nav ul {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header h1 {
+    color: white;
+    font-size: 55px;
+    text-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+header img {
+    width: 100vw;
+    height: auto;
+    margin-top: 40px;
+}
+
+header p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 40px;
+}
+
+.googleButton {
+    background-color: #4285F4;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 95%;
+    height: 60px;
+}
+
+.googleButton img {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.googleButton p {
+    all: unset;
+}
+
+header button img {
+    width: 40px;
+    background: white;
+    border-radius: 2px;
+    display: flex;
+    position: absolute;
+    padding: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    top: -11px;
+
+}
+
+header div button {
+    background-color: white;
+    color: #4a154b;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    max-width: 900px;
+    text-transform: uppercase;
+    position: relative;
+    height: 60px;
+}
+
+.trusted {
+    background-color: #F3EAE2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.trusted p {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.trusted div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 50px 10px;
+}
+
+.image1 {
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-shrink: 2;
+    max-width: 25%;
+  }
+
+  .image2 {
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-shrink: 1;
+    max-width: 25%;
+  }
+
+  .image3 {
+    margin: 10px 10px;
+    padding: 5px 5px;
+    width: 150px;
+    max-width: 25%;
+  }
+
+  .image4 {
+    margin: 10px 10px;
+    width: 75px;
+    max-width: 25%;
+  }
+
+  .image5 {
+    margin: 10px 10px;
+    width: 300px;
+  }
+
+  .image6 {
+    margin: 10px 10px;
+    width: 200px;
+  }
+
+.stats {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .stats p {
+    color: black;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .stats h3 {
+    color: #540B51;
+    font-size: 50px; 
+    font-weight: bold;
+    margin: 90px 50px 15px 50px;
+  }
+
+  .stats span {
+    color: #540B51;
+    font-size: 70px; 
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .stats li {
+    margin-bottom: 50px; 
+    font-weight: bold;
+  }
+
+  .stats ul {
+    list-style: none;
+    padding: 0;
+    margin: 70px 225px 0px 225px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .digitalhq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .digitalhq h3 {
+    color: white;
+    font-size: 50px;
+    text-wrap: wrap;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  .digitalhq button,
+  .digitalhq .free,
+  .digitalhq .sales {
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  .digitalhq button,
+  .digitalhq .free,
+  .digitalhq .sales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  .digitalhq .free {
+    background: white;
+    color: #540B51;
+    text-transform: uppercase;
+    border: none;
+  }
+  
+  .digitalhq .sales {
+    background-color: #540B51;
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+footer {
+    background-color: #fff;
+    color: #222;
+    padding: 2em 1.5em;
+}
+
+footer > hr {
+    opacity: .3;
+  }
+
+footer > ul {
+    list-style: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.first-list li {
+    margin-top: 25px;
+    margin-left: -35px;
+}
+
+footer div {
+    color: #454245;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.download {
+color: #2E71A6; 
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-family:'Arial', sans-serif;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; 
+        height: 100vh;
+        background-color: #540B51;
+        overflow-x: hidden;
+    }
+    
+    nav img {
+    width: 100px;
+    margin: 40px 10px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    nav button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    nav button img {
+        background: transparent;
+        width: 20px;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        background-image: url("/lab-css-flexbox-slack/starter_code/images/background-singup.png");
+        background-size: 120%;
+        background-repeat: no-repeat;
+    }
+    
+    header h1 {
+        color: white;
+        font-size: 55px;
+        text-wrap: wrap;
+        text-align: left;
+        margin-left: 20px;
+        width: 60%;
+        max-width: 600px;
+        margin-top: 30px;
+    }
+    
+    header img {
+        width: 50vw;
+        height: auto;
+        margin-top: 50%;
+        margin-right: -250px;
+    }
+    
+    header p {
+        color: white;
+        text-align: left;
+        font-weight: bold;
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .googleButton {
+        background-color: #4285F4;
+        color: white;
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: none;
+        width: 95%;
+        height: 60px;
+        margin-bottom: 100px;
+    }
+    
+    .googleButton img {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .googleButton p {
+        all: unset;
+    }
+    
+    header button img {
+        width: 40px;
+        background: white;
+        border-radius: 2px;
+        display: flex;
+        position: absolute;
+        padding: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 6px;
+        top: -265px;
+    
+    }
+    
+    header div button {
+        background-color: white;
+        color: #4a154b;
+        padding: 15px 30px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        max-width: 900px;
+        text-transform: uppercase;
+        position: relative;
+        height: 60px;
+    }
+    
+    .trusted {
+        background-color: #F3EAE2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+    }
+    
+    .trusted p {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .trusted div {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5,
+    .image6 {
+        margin: 10px;
+      }
+    
+    .image1 {
+        margin: 10px 10px;
+        padding: 5px 5px;
+        max-width: 10%;
+      }
+    
+      .image2 {
+        margin: 10px 10px;
+        padding: 5px 5px;
+        max-width: 10%;
+      }
+    
+      .image3 {
+        margin: 10px 10px;
+        padding: 5px 5px;
+        max-width: 10%;
+      }
+    
+      .image4 {
+        margin: 10px 10px;
+        max-width: 5%;
+      }
+    
+      .image5 {
+        margin: 10px 10px;
+        max-width: 20%;
+      }
+    
+      .image6 {
+        margin: 10px 10px;
+        max-width: 10%;
+      }
+    
+    .stats {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .stats ul {
+        list-style: none;
+        padding: 0;
+        margin: 70px auto; 
+        display: flex;
+        justify-content: space-evenly; 
+        max-width: 1000px; 
+      }
+    
+      .stats li {
+        text-align: center;
+      }
+    
+      .stats span {
+        display: block;
+        color: #540B51;
+        font-size: 70px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+    
+      .stats p {
+        color: black;
+        font-size: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: start;
+      }
+    
+      .stats h3 {
+        color: #540B51;
+        font-size: 50px;
+        font-weight: bold;
+        margin: 90px 50px 15px 50px;
+      }
+    
+      .digitalhq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .digitalhq h3 {
+        color: white;
+        font-size: 50px;
+        text-wrap: wrap;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 50px;
+      }
+      
+      .digitalhq button,
+      .digitalhq .free,
+      .digitalhq .sales {
+        width: 90%;
+        max-width: 900px;
+      }
+      
+      .digitalhq button,
+      .digitalhq .free,
+      .digitalhq .sales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        font-size: 20px;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      
+      .digitalhq .free {
+        background: white;
+        color: #540B51;
+        text-transform: uppercase;
+        border: none;
+      }
+      
+      .digitalhq .sales {
+        background-color: #540B51;
+        color: white;
+        border: 2px solid white;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+      }
+    
+    footer {
+        background-color: #fff;
+        color: #222;
+        padding: 2em 1.5em;
+    }
+    
+    footer > hr {
+        opacity: .3;
+      }
+    
+    footer > ul {
+        list-style: none;
+        font-weight: bold;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .first-list li {
+        margin-top: 25px;
+        display: inline-block;
+        margin-left: -35px;
+    }
+    
+    footer div {
+        color: #454245;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    
+    .download {
+    color: #2E71A6; 
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 50px;
+        margin-top: 30px;
+        margin-left: -35px;
+    }
+    
+    }
