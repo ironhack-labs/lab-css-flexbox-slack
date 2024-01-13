@@ -9,146 +9,185 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 html {
-    box-sizing: border-box;
-    font-family: "Lato";
-  }
-
-  body, button {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
- @media screen and (max-width: 767px) {
-    nav, header, .third {
-        background-color: #540B51;
-    }
-
-    .second {
-        background-color: #F3EAE2;
-    }
-
-    footer ul {
-        list-style: none;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-bottom: 20px;
-        padding-top: 20px;
-    }
-
-    nav div img {
-        width: 20%
-    }
-
-    .search.icon, .menu-icon {
-    
-    } 
-
-    nav ul {
-        display: none;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        }
-    
-    .sign-up {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        margin: 0 20px;
-       
-    }
-    .sign-up button {
-        padding: 4px 15px;
-        width: 100%
-        text-transform:uppercase;
-        border-radius: 3px;
-        outline: none;
-        border: none;
-        margin-bottom: 10px;
-    }
-
-
-
-    .sign-up img {
-        width: 30px
-    }
-
-    h1 {
-        margin: 0;
-        padding-top: 20px;
-        border: none;
-        outline: none;
-        color: white;
-    }
-
-    .free {
-        color: white
-    }
-
-    .free span {
-        color: #ECB12F;
-        font-weight: bold;
-    }
-
-    .first div {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-    
-    }
-
-    .first div img {
-        max-width: 100vw; 
-        height: 7vh;
-        margin: 20px;
-    }
+  box-sizing: border-box;
+  font-family: "Lato";
 }
 
+body,
+button {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  @media screen and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
+  nav,
+  header,
+  .third {
+    background-color: #540b51;
   }
 
-
-  @media screen and (min-width: 760px) and (max-width: 1024px) {
-
+  .second {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px;
   }
 
-  @media screen and (max-width: 480px) {
-
+  .second h3 {
+    color: #540b51;
+    font-size: 35px;
+    padding-top: 35px;
   }
-  
+
+  .second span {
+    color: #540b51;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .second li {
+    list-style: none;
+    padding: 6px 80px;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .logo {
+    width: 30%;
+    padding-left: 20px;
+  }
+
+  .search-menu-buttons {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+  }
+
+  .search-icon,
+  .menu-icon {
+    background-color: #540b51;
+    border: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 35px 20px;
+  }
+  .sign-up button {
+    padding: 4px 15px;
+    width: 100%;
+    height: 44px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    margin-bottom: 13px;
+    align-items: center;
+  }
+
+  .google-button {
+    display: flex;
+    justify-content: center;
+    background-color: #4285f4;
+    position: relative;
+    color: white;
+  }
+
+  .google-button img {
+    box-sizing: border-box;
+    background-color: #f3eae2;
+    position: absolute;
+    left: 1%;
+    border-radius: 3px;
+    padding: 5px;
+    width: 30px;
+  }
+
+  .email-button {
+    color: #540b51;
+  }
+
+  h1 {
+    margin: 0;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 25px 20px;
+    line-height: 130%;
+  }
+
+  .free {
+    color: white;
+  }
+
+  .free span {
+    color: #ecb12f;
+  }
+  .hero {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .hero img {
+    width: 150%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .first {
+    background-color: #f3eae2;
+    padding-top: 25px;
+  }
+
+  .first p {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+  }
+
+  .first div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .first div img {
+    max-width: 100vw;
+    height: 7vh;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 480px) {
+}
