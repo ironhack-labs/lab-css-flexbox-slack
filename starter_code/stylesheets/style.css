@@ -13,15 +13,15 @@ html {
   font-family: "Lato";
 }
 
-body,
-button {
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
 @media only screen and (max-width: 767px) {
+  body,
+  button {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
   nav,
   header,
   .third {
@@ -51,10 +51,6 @@ button {
     padding: 6px 80px;
   }
 
-  footer ul {
-    list-style: none;
-  }
-
   nav {
     display: flex;
     flex-direction: row;
@@ -71,6 +67,8 @@ button {
   .search-menu-buttons {
     display: flex;
     flex-direction: row;
+    width: 25%;
+    justify-content: space-around;
     padding-right: 20px;
   }
 
@@ -174,12 +172,102 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 40px;
   }
 
   .first div img {
     max-width: 100vw;
     height: 7vh;
     margin: 20px;
+  }
+
+  .third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .third h3 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 10px 80px;
+  }
+
+  .try-for-free,
+  .talk-to-sales {
+    width: 95%;
+    padding: 4px 15px;
+    height: 44px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+  }
+  .try-for-free {
+    margin-bottom: 8px;
+    color: #540b51;
+  }
+
+  .talk-to-sales {
+    margin-bottom: 50px;
+    border: 1px solid white;
+    background-color: #540b51;
+    color: white;
+  }
+
+  /* .sign-up button {
+    padding: 4px 15px;
+    width: 100%;
+    height: 44px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    margin-bottom: 13px;
+    align-items: center;
+  }
+
+  .google-button {
+    display: flex;
+    justify-content: center;
+    background-color: #4285f4;
+    position: relative;
+    color: white;
+  } */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer i,
+  footer small {
+    color: #454245;
+  }
+
+  footer ul {
+    list-style: none;
+    line-height: 40px;
+    padding-top: 40px;
+  }
+
+  .some-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 25px;
+  }
+
+  .download {
+    color: #2e71a6;
+  }
+
+  .fine-print {
+    padding: 30px 25px;
+    align-items: center;
+    text-align: center;
   }
 }
 
