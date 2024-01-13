@@ -13,7 +13,7 @@ html {
   font-family: "Lato";
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   body,
   button {
     font-family: "Lato", sans-serif;
@@ -26,29 +26,6 @@ html {
   header,
   .third {
     background-color: #540b51;
-  }
-
-  .second {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 20px;
-  }
-
-  .second h3 {
-    color: #540b51;
-    font-size: 35px;
-    padding-top: 35px;
-  }
-
-  .second span {
-    color: #540b51;
-    font-weight: bold;
-    font-size: 50px;
-  }
-  .second li {
-    list-style: none;
-    padding: 6px 80px;
   }
 
   nav {
@@ -181,6 +158,29 @@ html {
     margin: 20px;
   }
 
+  .second {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .second h3 {
+    color: #540b51;
+    font-size: 35px;
+    padding-top: 35px;
+  }
+
+  .second span {
+    color: #540b51;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .second li {
+    list-style: none;
+    padding: 6px 80px;
+  }
+
   .third {
     display: flex;
     flex-direction: column;
@@ -193,6 +193,7 @@ html {
     color: white;
     font-size: 24px;
     padding: 10px 80px;
+    line-height: 130%;
   }
 
   .try-for-free,
@@ -217,7 +218,102 @@ html {
     color: white;
   }
 
-  /* .sign-up button {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer i,
+  footer small {
+    color: #454245;
+  }
+
+  .footer-nav {
+    list-style: none;
+    line-height: 40px;
+    padding-top: 40px;
+  }
+
+  .some-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 25px;
+    list-style: none;
+  }
+
+  .download {
+    color: #2e71a6;
+  }
+
+  .fine-print {
+    padding: 30px 25px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body,
+  button {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav,
+  header,
+  .third {
+    background-color: #540b51;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .logo {
+    width: 30%;
+    padding-left: 20px;
+  }
+
+  .search-menu-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-around;
+    padding-right: 20px;
+  }
+
+  .search-icon,
+  .menu-icon {
+    background-color: #540b51;
+    border: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-bottom: 90px;
+    padding-left: 20px;
+  }
+
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 35px 20px;
+  }
+  .sign-up button {
     padding: 4px 15px;
     width: 100%;
     height: 44px;
@@ -235,7 +331,149 @@ html {
     background-color: #4285f4;
     position: relative;
     color: white;
-  } */
+  }
+
+  .google-button img {
+    box-sizing: border-box;
+    background-color: #f3eae2;
+    position: absolute;
+    left: 1%;
+    border-radius: 3px;
+    padding: 5px;
+    width: 30px;
+  }
+
+  .email-button {
+    color: #540b51;
+  }
+
+  h1 {
+    margin: 0;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 25px 20px;
+    line-height: 130%;
+    font-size: 80px;
+  }
+
+  .free {
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .free span {
+    color: #ecb12f;
+  }
+
+  .first-container {
+    flex: 2;
+    margin-right: 120px;
+  }
+  .hero {
+    overflow: hidden;
+    flex: 1;
+  }
+  .hero img {
+    width: 210%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .first {
+    background-color: #f3eae2;
+    padding-top: 25px;
+  }
+
+  .first p {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+  }
+
+  .first div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 10px 50px;
+  }
+
+  .first div img {
+    max-width: 100vw;
+    height: 7vh;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .second h3 {
+    color: #540b51;
+    font-size: 35px;
+    padding-top: 35px;
+  }
+
+  .second span {
+    color: #540b51;
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .second ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+  .second li {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+    padding: 6px 80px;
+  }
+
+  .third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .third h3 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 10px 80px;
+    line-height: 130%;
+  }
+
+  .try-for-free,
+  .talk-to-sales {
+    width: 80%;
+    padding: 4px 15px;
+    height: 44px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+  }
+  .try-for-free {
+    margin-bottom: 8px;
+    color: #540b51;
+  }
+
+  .talk-to-sales {
+    margin-bottom: 50px;
+    border: 1px solid white;
+    background-color: #540b51;
+    color: white;
+  }
 
   footer {
     display: flex;
@@ -247,17 +485,23 @@ html {
     color: #454245;
   }
 
-  footer ul {
+  .footer-nav {
     list-style: none;
     line-height: 40px;
     padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .some-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-right: 25px;
+    justify-content: left;
+    list-style: none;
+  }
+
+  .some-icons li {
+    padding: 0 30px;
   }
 
   .download {
@@ -267,15 +511,6 @@ html {
   .fine-print {
     padding: 30px 25px;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
-}
-
-@media screen and (max-width: 760px) {
-}
-
-@media screen and (min-width: 760px) and (max-width: 1024px) {
-}
-
-@media screen and (max-width: 480px) {
 }
