@@ -115,11 +115,15 @@ nav img[src="./images/slack-logo.png"] {
   margin-left: 20px;
 }
 
-header div {
+header > div {
   color: white;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-direction: column;
+}
+
+header > div:first-child {
+  padding: 0 5vw;
 }
 
 header h1 {
@@ -133,7 +137,7 @@ header p {
 }
 
 header button {
-  width: 90vw;
+  width: 100%;
   height: 40px;
   margin-bottom: 15px;
   display: flex;
@@ -253,7 +257,7 @@ main img[src="./images/logo-spotify.png"] {
 
 .super-script {
   color: #454245;
-  width: 90vw;
+  width: 80vw;
 }
 
 .third-section {
@@ -270,8 +274,8 @@ main img[src="./images/logo-spotify.png"] {
   margin: 10px 0;
 }
 .third-section button {
-  width: 90vw;
-  height: 40px;
+  width: 80vw;
+  padding: 5px 0;
   margin-bottom: 15px;
   text-transform: uppercase;
   border-radius: 5px;
@@ -294,3 +298,126 @@ main img[src="./images/logo-spotify.png"] {
   color: white;
 }
 
+footer ul:first-child {
+  list-style-type: none;
+  font-weight: bold;
+  padding: 16px 20px;
+  margin-top: 16px;
+}
+
+footer ul:first-child li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+footer li img {
+  display: inline;
+  margin-right: 0.25rem;
+}
+
+footer ul:nth-child(2) {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px;
+}
+
+footer ul:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer i {
+  font-size: 24px;
+}
+
+footer div {
+  margin: 0px 10px 15px 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    align-items: stretch;
+  }
+
+  header h1 {
+    font-size: 4rem;
+    text-align: start;
+  }
+
+  header div:first-child {
+    text-align: start;
+    padding: 40px 80px 50px 20px;
+  }
+
+  .slack-app-screenshot-container {
+    overflow: hidden;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .slack-app-screenshot-container img {
+    width: 40vw;
+    max-width: none;
+  }
+
+  header button {
+    padding: 20px 5px;
+  }
+
+  .second-section {
+    padding: 50px 0;
+  }
+  .second-section h3 {
+    font-size: 2rem;
+  }
+
+  .second-section > p {
+    max-width: unset;
+  }
+
+  .second-section ul {
+    max-width: unset;
+    display: flex;
+    gap: 10rem;
+    padding: 0 5rem;
+    text-align: left;
+  }
+
+  .second-section div:last-child {
+    display: none;
+  }
+
+  .third-section h3 {
+    font-size: 2.5rem;
+    padding: 15px 0;
+  }
+
+  .third-section button {
+    padding: 15px 15px;
+  }
+
+  footer ul:first-child {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer ul:first-child {
+   text-align: center; 
+  }
+
+  footer ul:nth-child(2) {
+    justify-content: flex-start;
+
+  }
+  footer ul:nth-child(2) li {
+    margin: 0 1.5rem;
+  }
+
+  footer div {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+}
