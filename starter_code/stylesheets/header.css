@@ -1,25 +1,127 @@
-
 /* Hero - Mobile */
 
+header {
+  background-color: #540b51;
+  padding-top: 15px;
+}
+
 h1 {
-    color: #FFF;
+  text-align: center;
+}
+
+.hero-text {
+  color: #fff;
+  text-align: center;
+}
+
+.hero-tagline {
+  color: #ecb12f;
+}
+
+.container-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 48px;
+}
+
+.google-button {
+  border-radius: 4px;
+  border: 1.5px solid #540b51;
+  background: #4285f4;
+  padding: 8px 7px;
+  color: #fff;
+  text-align: center;
+  font-family: Gothic A1;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 18px; /* 128.57% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.logo-google {
+  width: 25px;
+  height: 27.941px;
+  background-color: #fff;
+  padding: 8px 10px;
+  border-radius: 2px;
+}
+
+.hero-container-image {
+  height: 428px;
+  background-image: url(/starter_code/images/hero-product-ui-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 0%;
+  background-position-y: 0%;
 }
 
 /* Hero - Small screens */
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1440px) {
+  header {
+    height: 60vh;
+    padding: 50px 0 0 32px;
+    display: flex;
+    background-image: url(/starter_code/images/bcg-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
+
+  h1 {
+    text-align: left;
+    width: 60%;
+  }
+
+  .hero-text {
+    text-align: left;
+    width: 50%;
+  }
+
+  .container-button {
+    align-items: baseline;
+    width: 35vw;
+    padding-bottom: 0;
+  }
+
+  .primary-button {
+    width: 100%;
+  }
+
+  .google-button {
+    width: 100%;
+    letter-spacing: 0;
+  }
+
+  .hero-container-image {
+    width: 50vw;
+    background-image: url(/starter_code/images/hero-product-ui-small.png);
+  }
 }
 
 /* Hero - Medium screens */
 
 @media (min-width: 1025px) and (max-width: 1439px) {
 
+    .hero-container-image {
+        background-image: url(/starter_code/images/hero-product-ui-medium.png);
+      }
 
 }
 
 /* Hero - Large screens */
 
 @media (min-width: 1440px) {
-
+    
+    .hero-container-image {
+        background-image: url(/starter_code/images/hero-product-ui-large.png);
+      }
 }
