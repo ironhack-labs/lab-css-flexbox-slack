@@ -1,100 +1,98 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
-
-body {
-  margin: 0;
-  background-color: white;
-  padding: 0 10px 0 10px;
+:root {
+  --background-purple: #540b51;
+  --background-ivory: #f3eae2;
+  --button-blue: #4285f4;
+  --titles-black: #191817;
+  --paragraph-black: #000000;
+  --paragraph-yellow: #ecb12f;
+  --links-blue: #2e71a6;
+  --footer-links-grey: #454245;
+  font-size: 10px;
+  font-weight: 700;
 }
 
-#hero {
-  background-color: #540b51;
-  height: 100vh;
+body {
+  background-color: var(--background-purple);
+  margin: none;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px 10px 10px;
-  /* margin: 10px 0 10px 0; */
+  justify-items: stretch;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
 }
 
-.nav-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.logo {
+.left-side {
   display: flex;
   align-items: center;
-  width: 90px;
-  height: 25px;
-  margin: 30px 10px 20px 20px;
+  justify-content: space-between;
 }
 
-.nav-container ul {
+.left-side > ul {
+  margin: 0;
+}
+
+.left-side > img {
+  width: 100px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.first-ul {
+  list-style: none;
+  font-size: 2rem;
   display: flex;
-  flex-direction: row;
-  margin: 32px 0px 0px 0px;
-  list-style-type: none;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.nav-container li {
-  padding: 0px 20px 0px 20px;
+.first-ul li {
+  margin-right: 20px;
 }
 
-.nav-container li a {
+.first-ul a {
   color: white;
 }
 
-.nav-actions {
+.first-ul a:link {
+  text-decoration: none;
+}
+
+.right-side {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
-.search-button {
-  width: 40px;
-  height: 40px;
-  background-color: #540b51;
+.right-side button {
+  background-color: var(--background-purple);
   border: none;
-  margin: 20px 0px 0px 0px;
-}
-
-.menu-button {
-  width: 40px;
-  height: 40px;
-  background-color: #540b51;
-  border: none;
-  margin: 20px 0px;
 }
 
 .options {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin: 15px 15px 0px 0px;
+  /*margin: 15px 15px 0px 0px;*/
   padding: 0px 20px 0 10px;
   list-style-type: none;
 }
 
 .options button:first-child {
   color: white;
-  background-color: #540b51;
+  background-color: var(--background-purple);
   border: none;
   width: 70px;
   height: 20px;
 }
 
 .options button:last-child {
-  color: #540b51;
+  color: var(--background-purple);
   background-color: white;
   border: none;
   width: 100px;
@@ -103,86 +101,87 @@ nav {
   border-radius: 5px;
 }
 
-#main-container {
+header {
+  padding: 20px 20px 20px 20px;
   display: flex;
-  flex-direction: row;
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 80px;
   color: white;
-  margin: 20px;
+  font-size: 4rem;
+  text-align: center;
 }
 
-.team-text {
-  justify-content: flex-start;
+h1 + p {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  text-indent: 1rem;
 }
 
-.sign {
+p span {
+  color: var(--paragraph-yellow);
+}
+
+header > div > div {
   display: flex;
 }
 
-.sign-up-text {
-  display: flex;
-  flex-direction: row;
-}
-
-.team-text {
+.header-buttons {
   display: flex;
   flex-direction: column;
-  margin: 10px 0px 0px 50px;
 }
 
-.first-paragraph {
-  color: white;
-  font-size: 30px;
-  margin: 100px 0px 0px 20px;
-}
-
-span {
-  color: #ecb12f;
-}
-
-.sign-up-text button {
-  color: #540b51;
-  width: 200px;
-  height: 50px;
-  margin: 10px 20px;
-  border-radius: 10px;
-}
-
-.sign-up2 button {
+.header-buttons > button {
   display: flex;
-  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 10px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 10px;
+  object-fit: fill;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.header-buttons > button:first-child {
   justify-content: center;
-  background-color: #4180ed;
-  width: 200px;
-  height: 50px;
-  margin: 10px 20px;
-  border-radius: 10px;
-}
-
-.sign-up2 img {
   background-color: white;
-  width: 25px;
-  height: 25px;
+  color: var(--background-purple);
 }
 
-.sign-up2 button span {
+.header-buttons > button:nth-child(2) {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   color: white;
-  padding: 10px;
+  background-color: var(--button-blue);
 }
 
-.img-container {
-  max-width: 100%;
-  max-height: 300px;
-  height: auto;
-  margin: 100px 0px 20px 80px;
+.header-buttons > button img {
+  position: absolute;
+  width: 30px; 
+  height: 30px;
+  margin-right: 10px;
+  background-color: white;
 }
+
+.header-buttons > button span {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+/*GIULIANA SECTION YAYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+*/
 
 .middle-container {
-  background-color: #f2eae2;
+  background-color: var(--background-ivory);
   padding: 0px 0px 40px 0px;
   font-size: 20px;
   font-weight: 700;
@@ -198,7 +197,15 @@ span {
   justify-content: center;
 }
 
-.companies img:nth-child(1) {
+.companies img {
+  width: auto;
+  height: 60px;
+  padding: 10px;
+  margin: 0px 0px 30px 0px;
+  object-fit: contain; /* Adjust based on how you want the content to fit */
+}
+
+/*.companies img:nth-child(1) {
   width: 100px;
   height: 30px;
   padding: 25px 50px 0px 0px;
@@ -227,24 +234,26 @@ span {
   width: 125px;
   height: 40px;
   padding: 10px 30px;
-}
+}*/
 
 .teams {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 .teams h3 {
   text-align: center;
-  color: #540b51;
-  font-size: 40px;
+  color: var(--background-purple);
+  font-size: 30px;
   font-weight: 700;
-  margin: 80px 0 35px 0;
+  /*margin: 80px 0 35px 0;*/
 }
 
 .teams-text {
   text-align: center;
-  margin: 0 0 50px 0;
+  font-weight: 700;
+  /*margin: 0 0 50px 0;*/
 }
 
 .percentage {
@@ -258,24 +267,24 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
+  /*margin: 0 20px;*/
 }
 
 .percentage span {
   text-align: center;
   font-size: 50px;
-  color: #540b51;
+  color: var(--background-purple);
 }
 
 .percentage li p:last-child {
-  margin: 0 0 50px;
+  /*margin: 0 0 50px;*/
   padding: 0 128px 0 150px;
 }
 
 .bottom-container {
   display: flex;
   flex-direction: column;
-  background-color: #540b51;
+  background-color: var(--background-purple);
   color: white;
 }
 
@@ -289,28 +298,32 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 10px;
   margin: 10px 0 20px 0;
 }
 
 .try {
   font-size: 18px;
-  color: #540b51;
+  color: var(--background-purple);
   background-color: white;
   padding: 15px 50px 15px;
   border-radius: 7px;
   border: none;
-  margin: 0 20px 0 0;
 }
 
 .talk {
   font-size: 18px;
   color: white;
-  background-color: #540b51;
+  background-color: var(--background-purple);
   padding: 15px 50px 15px;
-  border-color: #540b51;
-  border: none;
+  border-color: white;
   border-radius: 7px;
   margin: 0;
+}
+
+.footer-container {
+  background-color: white;
+  color: grey;
 }
 
 .info {
@@ -318,6 +331,13 @@ span {
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
+  color: var(--footer-links-grey);
+}
+
+.info li {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .social {
@@ -334,105 +354,51 @@ span {
 
 div small {
   color: #454245;
-  padding: 0px 0px 40px 0px;
 }
 
-/* Mobile View */
-@media (max-width: 767px) {
-  body {
-    padding: 0 10px;
+/* Media query for screens under 768px */
+@media (max-width: 768px) {
+  nav {
+    /* flex-direction: column;  */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: space-between;
+    justify-items: space-between;
   }
 
-  #hero {
-    height: auto;
+  .left-side {
+    margin-bottom: 10px;
   }
 
-  .nav-container {
-    flex-direction: column;
-  }
-
-  .logo {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0px;
-  }
-
-  .hero1 {
-    flex-direction: row;
-  }
-
-  .nav-container {
-    flex-direction: row;
-  }
-  .nav-container ul {
-    font-size: 15px;
-    margin: 20px 0px 0px 20px;
-    padding: 0px;
-  }
-
-  .nav-container li {
-    font-size: 12px;
-    padding: 5px;
-  }
-
-  .nav-actions {
-    flex-direction: row;
-    align-items: flex-end;
-  }
-
-  .search-button,
-  .menu-button {
-    margin: 10px 0;
-  }
-
-  .options {
-    margin: 10px 0;
-    padding: 0 10px;
+  .first-ul {
     display: none;
   }
 
-  .options button:first-child {
-    width: auto;
+  .options {
+    display: none;
   }
 
-  #main-container {
+  .right-side {
+    /* width: auto; */
+  }
+
+  header {
     flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
   }
 
-  .first-paragraph {
-    margin: 25px;
-  }
-
-  .slackimg {
-  }
-
-  .img-container {
-  }
-
-  .sign {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .sign-up-text,
-  .sign-up2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .hero-image {
     width: 100%;
-    margin: 0px 0;
-  }
+    height: 200px;
+    object-fit: cover;
 
-  .sign-up-text button,
-  .sign-up2 button {
-    width: 100%;
-    margin: 0 30px 0 0;
+    /*width: auto; 
+    max-width: 100%;
+    overflow: hidden; */
   }
 
   .mcontainer {
-    margin: -20px auto 0;
+    margin: 20px auto 0;
   }
   .middle-container {
     padding: 0;
@@ -447,11 +413,11 @@ div small {
     justify-content: center;
   }
 
-  .companies img {
+  /*.companies img {
     width: auto;
     height: 50px;
     padding: 10px;
-  }
+  }*/
 
   .teams h3 {
     font-size: 65px;
@@ -470,7 +436,7 @@ div small {
   }
 
   .percentage li {
-    margin: 0 10px;
+    /*margin: 0 10px;*/
     font-size: 20px;
     font-weight: 800;
     padding: 0 170px 0 170px;
@@ -504,7 +470,7 @@ div small {
   }
 
   .info {
-    flex-direction: row;
+    flex-direction: column;
     margin: 20px 20px 0px 0px;
   }
 
@@ -522,88 +488,11 @@ div small {
 
   div small {
     width: auto;
-    padding: 0 10px 40px 10px;
   }
 }
 
 /* Small Screen (width > 768px and width < 1024px) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .nav-container {
-    flex-direction: row;
-  }
-
-  .nav-container ul {
-    font-size: 15px;
-    margin: 28px 0px 0px 20px;
-    padding: 0px;
-  }
-
-  .nav-container li {
-    font-size: 12px;
-    padding: 5px;
-  }
-
-  .search-button,
-  .menu-button {
-    margin: 15px 0;
-  }
-
-  .options {
-    margin: 10px 0;
-    padding: 0 10px;
-    display: none;
-  }
-
-  .options button:first-child {
-    width: auto;
-  }
-
-  #hero {
-    padding: 0px 20px 100px 0px;
-  }
-
-  #main-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  h1 {
-    font-size: 65px;
-  }
-
-  .first-paragraph {
-    margin: 25px;
-  }
-
-  .img-container {
-    max-width: 100%;
-    max-height: 300px;
-    height: auto;
-    margin: 190px 0px 50px 0px;
-  }
-
-  .sign {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .sign-up-text,
-  .sign-up2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 0px 0;
-  }
-
-  .sign-up-text button,
-  .sign-up2 button {
-    width: 90%;
-    margin: 0 30px 20px 0;
-  }
-
   .middle-container {
     padding: 0;
     margin: -20px auto;
@@ -619,12 +508,12 @@ div small {
     justify-content: center;
   }
 
-  .companies img {
+  /*.companies img {
     width: auto;
     height: 50px;
     padding: 10px;
     margin: 0px 0px 30px 0px;
-  }
+  }*/
 
   .teams h3 {
     font-size: 65px;
@@ -644,7 +533,7 @@ div small {
   }
 
   .percentage li {
-    margin: 0 10px;
+    /*margin: 0 10px;*/
     font-size: 20px;
     font-weight: 800;
     padding: 0 170px 0 170px;
@@ -696,6 +585,5 @@ div small {
 
   div small {
     width: auto;
-    padding: 0 10px 40px 10px;
   }
 }
