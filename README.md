@@ -11,7 +11,7 @@
 
 <details>
   <summary>
-   <h2>Learning Goals </h2>
+   <h2>Learning Goals</h2>
   </summary>
 
 This exercise allows you to practice and apply the concepts and techniques taught in class.
