@@ -1,10 +1,526 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+:root {
+  --background-purple: #540b51;
+  --background-ivory: #f3eae2;
+  --button-blue: #4285f4;
+  --titles-black: #191817;
+  --paragraph-black: #000000;
+  --paragraph-yellow: #ecb12f;
+  --links-blue: #2e71a6;
+  --footer-links-grey: #454245;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+body {
+  background-color: var(--background-purple);
+  margin: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  justify-items: stretch;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-side > ul {
+  margin: 0;
+}
+
+.left-side > img {
+  width: 100px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.first-ul {
+  list-style: none;
+  font-size: 2rem;
+  display: flex;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.first-ul li {
+  margin-right: 20px;
+}
+
+.first-ul a {
+  color: white;
+}
+
+.first-ul a:link {
+  text-decoration: none;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.right-side button {
+  background-color: var(--background-purple);
+  border: none;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0px 20px 0 10px;
+  list-style-type: none;
+}
+
+.options button:first-child {
+  color: white;
+  background-color: var(--background-purple);
+  border: none;
+  width: 70px;
+  height: 20px;
+}
+
+.options button:last-child {
+  color: var(--background-purple);
+  background-color: white;
+  border: none;
+  width: 100px;
+  height: 40px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+header {
+  padding: 20px 20px 20px 20px;
+  display: flex;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h1 + p {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  text-indent: 1rem;
+}
+
+p span {
+  color: var(--paragraph-yellow);
+}
+
+header > div > div {
+  display: flex;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-buttons > button {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 10px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 10px;
+  object-fit: fill;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.header-buttons > button:first-child {
+  justify-content: center;
+  background-color: white;
+  color: var(--background-purple);
+}
+
+.header-buttons > button:nth-child(2) {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: var(--button-blue);
+}
+
+.header-buttons > button img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.header-buttons > button span {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.middle-container {
+  background-color: var(--background-ivory);
+  padding: 0px 0px 40px 0px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.middle-container p {
+  text-align: center;
+  padding: 30px 0px 20px 0px;
+}
+
+.companies {
+  display: flex;
+  justify-content: center;
+}
+
+.companies img {
+  width: auto;
+  height: 60px;
+  padding: 10px;
+  margin: 0px 0px 30px 0px;
+  object-fit: contain;
+}
+
+.teams {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.teams h3 {
+  text-align: center;
+  color: var(--background-purple);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.teams-text {
+  text-align: center;
+  font-weight: 700;
+}
+
+.percentage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.percentage li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.percentage span {
+  text-align: center;
+  font-size: 50px;
+  color: var(--background-purple);
+}
+
+.percentage li p:last-child {
+  padding: 0 128px 0 150px;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-purple);
+  color: white;
+}
+
+.bottom-container h3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: ;
+}
+
+.options2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 20px 0;
+}
+
+.try {
+  font-size: 18px;
+  color: var(--background-purple);
+  background-color: white;
+  padding: 15px 50px 15px;
+  border-radius: 7px;
+  border: none;
+}
+
+.talk {
+  font-size: 18px;
+  color: white;
+  background-color: var(--background-purple);
+  padding: 15px 50px 15px;
+  border-color: white;
+  border-radius: 7px;
+  margin: 0;
+}
+
+.footer-container {
+  background-color: white;
+  color: grey;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  color: var(--footer-links-grey);
+}
+
+.info li {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.social i.fab {
+  width: 100px;
+  margin: 0px;
+  padding: 0px 20px 30px 0px;
+}
+
+div small {
+  color: #454245;
+}
+
+/* Media query for screens under 768px */
+@media (max-width: 768px) {
+  nav {
+    align-items: flex-start;
+    justify-content: space-between;
+    justify-items: space-between;
+  }
+
+  .left-side {
+    margin-bottom: 10px;
+  }
+
+  .first-ul {
+    display: none;
+  }
+
+  .options {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .mcontainer {
+    margin: 20px auto 0;
+  }
+  .middle-container {
+    padding: 0;
+  }
+
+  .middle-container p {
+    padding: 20px 10px;
+  }
+
+  .companies {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .teams h3 {
+    font-size: 65px;
+    margin: 20px 0 10px 0;
+  }
+
+  .teams-text {
+    font-size: 20px;
+    margin: 20px 10px 20px 10px;
+    padding: 0 140px 0 140px;
+    font-weight: 400;
+  }
+
+  .percentage {
+    flex-direction: column;
+  }
+
+  .percentage li {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0 170px 0 170px;
+    text-align: center;
+  }
+
+  .percentage span {
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+  .percentage li p:last-child {
+    padding: 0 10px;
+  }
+
+  .bottom-container h3 {
+    font-size: 60px;
+  }
+
+  .options2 {
+    flex-direction: column;
+    margin: 10px 0 20px 0;
+  }
+
+  .try,
+  .talk {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 20px 0 10px 20px;
+  }
+
+  .info {
+    flex-direction: column;
+    margin: 20px 20px 0px 0px;
+  }
+
+  .social {
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    padding: 0 0 10px 0;
+  }
+
+  .social i.fab {
+    width: auto;
+    margin: 10px 0px 5px 40px;
+  }
+
+  div small {
+    width: auto;
+  }
+}
+
+/* Small Screen (width > 768px and width < 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .middle-container {
+    padding: 0;
+    margin: -20px auto;
+  }
+
+  .middle-container p {
+    padding: 20px 10px;
+    margin: -20px 0px 20px 0px;
+  }
+
+  .companies {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .teams h3 {
+    font-size: 65px;
+    font-weight: 800;
+    margin: 50px 80px 0px 80px;
+  }
+
+  .teams-text {
+    font-size: 20px;
+    margin: 30px 5px 20px 5px;
+    padding: 0 120px 0 140px;
+    font-weight: 500;
+  }
+
+  .percentage {
+    flex-direction: column;
+  }
+
+  .percentage li {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0 170px 0 170px;
+    text-align: center;
+  }
+
+  .percentage span {
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+  .percentage li p:last-child {
+    padding: 0 10px;
+  }
+
+  .bottom-container h3 {
+    font-size: 60px;
+  }
+
+  .options2 {
+    flex-direction: column;
+    margin: 10px 0 20px 0;
+  }
+
+  .try,
+  .talk {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 20px 20 10px 40px;
+  }
+
+  .info {
+    flex-direction: row;
+    margin: 20px 20px 0px 0px;
+  }
+
+  .social {
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    padding: 0 0 10px 0;
+  }
+
+  .social i.fab {
+    width: auto;
+    margin: 10px 0px 5px 40px;
+  }
+
+  div small {
+    width: auto;
+  }
+}
