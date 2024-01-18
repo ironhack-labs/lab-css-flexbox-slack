@@ -221,25 +221,38 @@ body {
         background-color: #540B51;
         margin-top: -1px;
     }
+
+    #nav-sign {
+        visibility: hidden;
+    }
     nav {
-        
+        width:100%;
         height: 50px;
     }
 
+    #menu {
+        margin-right: 5px;
+    }
+#list-top {
+    visibility: hidden;
+}
     #nav-btn {
         width: 20%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 20%;
-        margin: 3.5%;
+        margin: 20px 0;
+        position: relative;
+        left: 30px; 
      }
 
+    
      #slack-logo {
 
-        width:30%; 
-        object-fit: fill;
-        margin: 5%; 
+        width:60%; 
+        object-fit: contain;
+        margin: 20px 30px; 
         
         }
 
@@ -405,16 +418,26 @@ object-fit: contain;
 @media screen and (min-width: 768px) and (max-width:1024px) {
 
     #nav-btn {
-        width: 30%;
+        width: 20%;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         height: 30%;
-        margin: 3.5%;
+        margin: 20px 0;
+        position: relative;
+        right: 80px;
      }
+    #list-top {
+        visibility: hidden;
+    }
 
+    #nav-sign {
+        visibility: hidden;
+    }
      nav {
+        width: 100%;
         height: 100px;
+        padding-top: 20px;
      }
 
      #nav-btn img {
@@ -427,9 +450,10 @@ object-fit: contain;
 
      #slack-logo {
 
-        width:40%; 
-        object-fit: fill;
-        margin: 5%; 
+        width:50%; 
+        object-fit: contain;
+        margin: 20px 30px; 
+        
         
         }
 
@@ -606,6 +630,385 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: flex-start;
+}
+
+}
+
+@media screen and (min-width: 1024px) and (max-width:1440px) {
+
+    nav {
+        width:100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #nav-btn {
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 20%;
+        margin: 10px;
+        
+     }
+
+
+
+    #slack-logo {
+
+width: 40%; 
+object-fit: contain;
+
+}
+
+#list-top {
+    width: 40%;
+}
+
+#list-top ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    position: right;
+    left: 40%;
+}
+
+
+#list-top ul a {
+    text-decoration: none;
+    font-size: 1em; 
+    color: white;
+}
+
+#menu {
+    visibility: hidden;
+}
+
+#nav-sign {
+    width: 30%; 
+      
+}
+
+#nav-sign ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+#nav-sign ul a {
+    text-decoration: none;
+
+}
+
+#btn-sign-in {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+#btn-try-free {
+    background-color: white;
+    color: #540B51;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#slack-logo{
+
+
+    margin-left: 20px;
+}
+
+header {
+    width: 100%;
+    height: 700px;
+    background-image:url(../images/background-singup.png);
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header img {
+
+    width: 130%;
+    object-fit: fill;
+    position: relative;
+    right:-30%; 
+    top:15%;
+
+}
+
+h1{
+    color:white; 
+    font-size: 3em;
+    text-align: left;
+    margin: 15% 5%;
+    font-weight: 700;  
+
+}
+
+#header-text {
+    align-items:left; 
+    margin-left: 5%;
+
+ }
+
+ #header-text p {
+     text-align: left;
+     padding: 2%;
+     margin-left: 5%;
+ }
+
+ #google img {
+    background-color: white;
+    width: 12%; 
+    position: relative;
+    left: 5%;
+
+ }
+
+ #google span {
+    width: 400px;
+     position: relative;
+     right:10%;
+
+ }
+
+ #sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#email {
+
+    width: 90%;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+#google {
+    width: 90%;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10%;
+   
+}
+
+#trusted-companies {
+    background-color: #F3EAE2;
+    height: 250px;
+    
+}
+
+#trusted-companies p{
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+        }
+
+#google img {
+
+position: relative;
+left: 5%;
+
+}
+
+#google span {
+
+width: 400px;
+ position: relative;
+ right:10%;
+
+}
+
+#airbnb {
+width: 15%;
+object-fit: contain;
+}
+
+#newyork {
+width:30%; 
+object-fit: contain;
+}
+
+#spotify {
+width:15%; 
+object-fit: contain;
+}
+
+#uber {
+width:8%; 
+object-fit: contain; 
+}
+
+#target {
+
+width:5%; 
+object-fit: contain;
+}
+
+#nasa {
+
+width: 7%;
+object-fit: contain;
+padding: 0;
+}
+
+#companies {
+
+width: 95%; 
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+
+
+
+}
+
+#companies img {
+margin-left: 30px;
+}
+
+#teams ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    margin-left: 120px;
+    align-items: center;
+    width: 95%;
+    padding: 0;
+    text-align: left;
+ }
+   
+#teams span {
+
+    margin-left: 6px;
+    font-size: 3em; 
+    
+}
+
+#teams h3 {
+
+    font-size: 3em; 
+    margin-bottom: 10px;
+
+   }
+
+#teams-p {
+font-size: 1.3em;
+
+   }
+
+
+   .team-ul-p {
+
+    width:50%;
+    text-align: left;
+    
+   }
+
+   #digital h3 {
+
+    font-size: 3em;
+    margin-top: 180px;
+   }
+
+   footer {
+
+    width: 90%;
+   }
+
+   #footer-bold {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1em; 
+    margin-top: 50px;
+
+}
+
+
+
+    #footer-icons {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        list-style-type: none;
+        align-items: left;
+        
+        
+       }
+#footer-icons li {
+    margin-left: 50px;
+    position: relative;
+    left:-50px;
+}
+
+#download {
+width:15%; 
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+}
+#download img {
+
+    width: 15%; 
+    margin-right: 4px;
+}
+
+#region img {
+
+    width:15%; 
+    margin-right: 4px;
+}
+
+#region {
+width:15%; 
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+}
+
+#try-btn {
+    
+    width:20%;
+    position: relative;
+    right: 12.5%;
+    border-radius: 10px;
+
+}
+
+#sales-btn {
+    width:20%;
+    position: relative;
+    left: 12.5%; 
+    top:-145px; 
+    border-radius: 10px;
+}
+
+#digital {
+    height: 400px; 
 }
 
 }
