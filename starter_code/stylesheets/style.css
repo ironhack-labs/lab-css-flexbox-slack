@@ -8,3 +8,407 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+* {
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body{
+    margin: 0px;
+    background-color: #F3EAE2;
+}
+.logo {
+    display: flex;
+    width: auto;
+    height: 50px;
+    padding: 10px;
+}
+.hero {
+   
+    background-color: #540B51;
+}
+ .nav-ul{ 
+    display: flex;
+    flex-wrap:inherit;
+    gap: 4%;
+    padding: 0px;
+    font-size: 12px;
+    visibility: hidden;
+
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+} li a {
+   color: white;
+   
+    
+   
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.top-nav , .nav-btn {
+    display: flex;
+    width: 430px;
+    box-sizing: border-box;
+    
+}
+.nav-btn{
+    margin-right: 5px;
+    justify-content: flex-end;
+}
+button {
+    margin: 0%;
+    padding: 0px;
+    border: 0px;
+    background-color: #540B51;
+}
+.top-try-for-free{
+    display: none;
+}
+h1 {
+    padding: 10px;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+h2 {
+    color: black;
+    text-align: center;
+}
+.white {
+    text-align: center;
+    color: white;
+}
+
+.yellow {
+    color: #ECB12F;
+}
+.ggl-logo {
+    display: flex;
+
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-right: 22%;
+    
+}
+.registration-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+}
+
+.registration-buttons .sign-up {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight:bold ;
+}
+.google-sign-up {
+    display: flex; 
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.registration-buttons .google-sign-up {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #4285F4;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: white;
+    
+}
+.screenshot{
+    width: 430px;
+    height: 398px;
+    overflow: hidden;
+    background-image:url("../images/hero-product-ui.png");
+    background-size: cover;
+
+}
+ .companies {
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+.companies-logos{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+
+}
+.connectedness ,
+.flexibility ,
+ .speed {
+    width: auto;
+    height: 398px;
+    overflow: hidden;
+    background-size: cover;
+    margin: 20px;
+}
+.connectedness{
+    background-image: url("../images/connectedness-mobile.png");
+}
+.info {
+    line-height: 1.25;
+    padding: 20px;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+    margin-bottom: 20px;
+   
+}
+.flexibility{
+background-image: url("../images/flexibility-mobile.png");
+}
+.speed{
+background-image: url("../images/speed-mobile.png");
+}
+ a {
+    margin-left: 20px;
+}
+ h3{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+
+}
+.teams {
+    color: black;
+    margin: 20px;
+    height: fit-content;
+    background-color: white;
+    margin: 0px;
+
+}
+.meet-talk-btns , .talk-btn , .meet-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    gap: 10px;
+}
+ .talk-btn , .meet-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    padding: 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.talk-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    color: #540B51;
+    border: 2px solid #540B51;
+    
+}
+.meet-btn {
+    border: 2px solid white;
+}
+.percentage{
+    display: block;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #540B51;
+    text-align: center;
+}
+ .percentage-p {
+    line-height: 1.25;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+ .welc {
+    background-color: #540B51;
+    padding: 20px;
+    margin: 0px;
+ }
+ .footer-img{
+    width: 50px;
+    height: 50px;
+    display: block;
+
+ }
+ .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-right: 20px;
+ }
+  .bold {
+      color: black;
+      font-size: larger;
+      font-weight: bold;
+      padding: 5px
+
+  }
+ 
+ .footer li:not(:has(.bold)) {
+     color: rgb(113, 111, 111);
+     padding: 5px;
+     
+ }
+ .contact {
+    display: flex;
+    justify-content: space-between;
+ }
+/* From the Read me instruction, the small-screen width is >768px and width < 1024px*/
+/* Small Screens */
+ @media (min-width: 768px) {
+    .desktop-v {
+        display: flex;
+    justify-content: space-evenly; 
+       }
+       .screenshot{
+        width: 50%;
+        height: auto;
+        padding: 80px;
+    }  
+    .section2{
+        width: 40%;
+    }
+    /* .nav-ul {
+            visibility: visible;
+    } */
+    .companies-logos{
+        justify-content: space-evenly;
+       
+    }
+    .connectedness,
+    .flexibility,
+    .speed {
+    width: 55%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    
+    .connected {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .internal-divs{
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+    .learn-more{
+        text-align: left;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .info{
+        text-align: left;
+        padding-left: 20%;
+        padding-right: 20%;
+        font-size: 18px;
+    }
+    .flix{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column ;
+    }
+    .meet-talk-btns{
+     flex-direction: row;   
+     }
+   .percentage-ul {
+    display: flex;
+   }
+   .settings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   }
+   .contact{
+    justify-content: flex-start;
+    gap:40px
+
+   }
+   .menu-icon {
+    display: none;
+   }
+   .top-try-for-free {
+       display: inline-block;
+       text-align: center;
+       margin: 15px;
+       background-color: white;
+       color: #540B51;
+       padding: 15px 20px;
+       font-size: 16px;
+       font-weight: bold;
+       border: 2px solid #540B51;
+       border-radius: 4px;       
+   }
+   
+    }  
+/* Medium Screens:(width > 1024px and width < 1440px) */
+    @media (min-width:1024px) {
+     .nav-ul {
+            visibility: visible;
+            font-weight: bold;
+    } 
+    .registration-buttons {
+        display: flex;
+        flex-direction: row;
+        ;
+        padding: 20px;
+        gap: 15px;
+        
+    }
+    .screenshot{
+        width: 30%;
+        height: 50vh;
+    }
+    .google-sign-up, .sign-up{
+       width: 50vh; 
+    }
+    .desktop-v{
+        margin: 40px 0px 30px 0px;
+    }
+    .connected, .flix{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row; 
+    }
+    .flix{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse; 
+    }
+}
