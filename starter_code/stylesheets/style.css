@@ -18,6 +18,7 @@ footer links grey: #454245
 
     body {
         background-color: #540B51;
+        width: 100vw;
     }
     div.navbar > img {
         block-size: 25px;
@@ -31,8 +32,8 @@ footer links grey: #454245
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding: 10px;
-        width: 95vw;
+        padding: 25px;
+        width: 100vw;
     }
 
     div.mweb > button {
@@ -44,35 +45,52 @@ footer links grey: #454245
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        padding: 25px;
         color: white;
     }
 
     #yellow {
         color: #ECB12F;
+        font-weight: bold;
     }
 
 
 h1 {
-    font-size: 35px;
+    font-size: 40px;
     padding: 15px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
+}
+
+#top-banner-p {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    line-height: 80%;
+    font-size: 15px;
 }
 
     #buttons > button {
         display: flex;
         flex-flow: column wrap;
         height: 50px;
-        width: 300px;
+        width: 100vw;
         margin: 20px;
         border: none;
         border-radius: 5px;
+        text-align: center;
+    }
+
+    #signup-google > span {
+        margin-left: -20px;
     }
 
     #buttons > button > img {
         block-size: 30px;
         background-color: white;
+        position: relative;
+        padding: 5px;
+        bottom: 5px;
+        left: -5px;
     }
 
     #signup-mail {
@@ -101,23 +119,26 @@ h1 {
     }
 
     div#top-banner-img > img {
-        width: 100vw;
+        block-size: 300px;
+        padding: 20px;
+        max-width: 100vw;
+        object-fit: cover;
     }
 
     section.references {
-        width: 95vw;
+        width: 100vw;
         display: flex;
         flex-flow: column wrap;
         background-color: #F3EAE2;  
-        height: 250px;
         text-transform: uppercase;
         font-size: 15px;
-        padding: 20px;
+        padding: 25px;
     }
 
     section.references > p {
         text-align: center;
         font-weight: bold;
+        margin: 5px;
     }
 
     div.references {
@@ -130,7 +151,7 @@ h1 {
         width: 25%;
         object-fit: contain;
         padding:10px;
-        /* line-height: 90px; */
+        block-size: 70px;
     }
 
     section#stats {
@@ -141,6 +162,7 @@ h1 {
         align-items: center;
         text-align: center;
         padding: 25px 25px 0 25px;
+        width: 100vw;
     }
 
     section#stats > ul {
@@ -175,12 +197,17 @@ h1 {
         align-items: center;
         color: white;
         font-size: 25px;
-        padding: 10px;
+        padding: 20px;
         margin: 10px;
+        width: 100vw;
+        height: 220px;
     }
 
+    #end-ctas > h3 {
+        margin: 15px 0;
+    }
     #end-ctas > button {
-width: 90%;
+width: 100vw;
 padding: 15px;
 font-size: 15px;
 margin: 10px;
@@ -207,7 +234,8 @@ button#sales {
 
 footer {
     background-color: white;
-    padding: 5px;
+    padding: 25px;
+    width: 100vw;
 }
 
 hr {
@@ -259,7 +287,9 @@ footer > div {
     color:#454245;
     text-align: center;
 }
-
+div#top-banner-img-tablet {
+    display: none;
+}
   }
   
 
@@ -270,6 +300,7 @@ footer > div {
     body {
         background-color: #540B51;
         display: grid;
+        width: 100vw;
     }
     div.navbar > img {
         block-size: 30px;
@@ -283,9 +314,9 @@ footer > div {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding: 10px;
+        padding: 20px;
         block-size: 30px;
-        width: calc(100vw - 20px);
+        width: 100vw;
     }
 
     div.mweb > button {
@@ -298,6 +329,7 @@ footer > div {
         flex-direction: row;
         align-items: center;
         margin-left: 15px;
+        height: 600px;
     }
 
     div#top-banner {
@@ -366,9 +398,16 @@ h1 {
         margin-top: 5px;
     }
 
-    div#top-banner-img > img {
+    div#top-banner-img-tablet > img {
         height: 300px;
-        margin-left: 250px;
+        overflow: hidden;
+        position: absolute;
+        right: -300px;
+        bottom: 20%;
+    }
+
+    div#top-banner-img {
+        display: none;
     }
 
     section.references {
@@ -380,7 +419,7 @@ h1 {
         text-transform: uppercase;
         font-size: 15px;
         text-align: center;
-        padding: 20px;
+        padding: 25px;
     }
 
     section.references > p {
@@ -394,13 +433,12 @@ h1 {
         flex-flow: row nowrap;
         align-items: center;
         flex-basis: auto;
-        
+        width: 100vw;
     }
 
     div.references > img {
         padding:10px;
         width: 14%;
-        /* line-height: 90px; */
     }
 
     section#stats {
@@ -476,11 +514,6 @@ button#sales {
     border: white 1px solid;
             }
 
-footer {
-    background-color: white;
-    padding: 5px;
-}
-
 hr {
     width: 90%;
     text-align: center;
@@ -491,6 +524,7 @@ hr {
 footer {
     width: 100vw;
     background-color: white;
+    padding: 25px;
 }
 
 ul.footer-links {
