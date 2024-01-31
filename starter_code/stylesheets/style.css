@@ -12,6 +12,7 @@ footer links grey: #454245
 body {
   background-color: #540b51;
   margin: 0;
+  padding: 0;
 }
 
 .nav-bar {
@@ -54,7 +55,7 @@ body {
   align-content: end;
 }
 
-.nav-buttons {
+.search-icon {
   background-color: #540b51;
   border: none;
 }
@@ -141,13 +142,13 @@ body {
   /* font-size: 0.875rem; */
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
   /* display: block; */
   width: 100%;
   /* transition: box-shadow 420ms cubic-bezier(0.165, 0.84, 0.44, 1),
     color 420ms cubic-bezier(0.165, 0.84, 0.44, 1),
     background 420ms cubic-bezier(0.165, 0.84, 0.44, 1); */
-  margin: 10px 0px 10px 0px;
+  margin: 10px 10px 10px 10px;
 }
 
 .button-font-color-purple {
@@ -229,26 +230,25 @@ body {
 }
 
 .slack-app-screenshot {
+  display: block;
+  background-image: url(../images/hero-product-ui.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 50vw;
+}
+
+.slack-app-screenshot {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
-  /* background-size: 80%; */
-  /* background-repeat: no-repeat; */
-  /* background-position: center bottom 0px; */
-  /* margin: 60px 0px 0px 0px; */
-  /* background-color: #867246; */
-}
-
-/* 写真のトリムあとで調整 */
-.img-slack-app-screenshot {
-  display: block;
-  flex-flow: row nowrap;
-  width: 100%;
-  height: 100%;
-  /* background-color: #ecb12f; */
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center bottom 0px;
+  margin: 60px 0px 0px 0px;
 }
 
 .trusted-by-companies {
@@ -427,7 +427,14 @@ body {
   color: #ffffff;
   margin: 70px 0px 70px 0px;
 }
-
+.button-container-hq {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 95%;
+}
 .talk-to-sales {
   display: flex;
   box-sizing: border-box;
@@ -468,7 +475,9 @@ footer {
 }
 
 .container-link-list {
-  display: block;
+  display: flex;
+  flex-flow: column no wrap;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -477,64 +486,111 @@ footer {
   width: 100%;
 }
 
+.p-link-bold {
+  font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+    Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.8px;
+  font-size: 1.6rem;
+  color: #000000;
+}
+
 .link-list {
   display: flex;
   flex-flow: column nowrap;
-  align-content: flex-start;
+  width: 100vw;
+  justify-content: space-evenly;
   align-items: flex-start;
-  justify-content: flex-start;
+  /* align-content: baseline; */
   text-align: left;
   list-style: none;
+  margin: 10;
+  padding: 10;
+  /* background-color: blue; */
 }
 
-.container-region {
+.img-dl {
   display: flex;
-  flex-flow: row nowrap;
-  width: 100%;
-  height: auto;
-  /* height: 60px; */
-  justify-content: flex-start;
-  align-content: center;
-  align-items: center;
-  text-align: left;
+  width: 30px;
+  height: 30px;
 }
 
-.adjust-h {
+.img-region {
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+.a {
   display: flex;
   flex-flow: row nowrap;
-  height: 50px;
-  width: 50px;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
 }
-.container-img img {
+
+.b {
   display: flex;
   flex-flow: row nowrap;
-  background-color: #fdadad;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
-  /* padding: 4px 4px 4px 4px; */
-  margin: 2px 15px 2px 2px;
 }
 
-.img-list-region {
-  display: block;
-  width: 20px;
-  height: min-content;
+.c {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
-.img-list-download {
-  display: block;
-  width: 20px;
-  height: min-content;
+.d {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.e {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.f {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.g {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 a {
   color: #2e71a6;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+  padding: 0;
 }
 
 .link-social {
@@ -565,9 +621,515 @@ a {
   align-content: center;
   align-items: center;
   background-color: #ffffff;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI";
   font-weight: 200;
   color: rgb(0, 0, 0);
-  padding: 5px 7px 50px 7px;
+  padding: 5px 20px 50px 20px;
+}
+
+/* Iteration 2 | Small Screens (width > 768px and width < 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    background-image: url(../images/background-singup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+  }
+  .container-slack-app-screenshot {
+    display: block;
+    flex-flow: row nowrap;
+    width: 60vh;
+  }
+  .slack-app-screenshot {
+    display: block;
+    background-image: url(../images/hero-product-ui.png);
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-position: 10px 60px;
+    height: 100%;
+  }
+
+  .headline {
+    font-size: 4rem;
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+      Arial, sans-serif;
+    text-align: left;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin: 50px 5px 15px 5px;
+  }
+
+  .header-upper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .media-768over-text-align {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .list-product-overview {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    text-align: center;
+    list-style: none;
+    padding: 0%;
+  }
+  .box-w {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    position: relative;
+    width: 40%;
+    height: 350px;
+  }
+
+  .p-purple {
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+      Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.8px;
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+    color: #540b51;
+  }
+
+  .p-purple-percent {
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+      Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.8px;
+    font-size: 4rem;
+    margin-bottom: 0.1rem;
+    color: #540b51;
+  }
+
+  .adjust-h {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100px;
+  }
+
+  .p-black {
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+      Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+  .p-weighted-average {
+    display: none;
+  }
+
+  .link-list {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .p-link-bold {
+    display: flex;
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+      Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.8px;
+    font-size: 1rem;
+    color: #000000;
+    margin-left: 5px;
+  }
+
+  .img-dl {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .img-region {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+  }
+
+  .space {
+    display: block;
+    flex-flow: ;
+    width: 20px;
+    background-color: #4285f4;
+  }
+
+  .a {
+    display: flex;
+  }
+
+  .b {
+    display: flex;
+  }
+
+  .c {
+    display: flex;
+  }
+
+  .d {
+    display: flex;
+  }
+
+  .e {
+    display: flex;
+  }
+
+  .f {
+    display: flex;
+  }
+
+  .g {
+    display: flex;
+  }
+}
+
+/* Medium Screens (width > 1024px and width < 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .nav-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100vw;
+  }
+
+  .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    list-style: none;
+  }
+
+  .nav-left {
+    display: flex;
+    flex-grow: 1;
+  }
+  .nav-middle {
+    display: flex;
+    width: 100%;
+    flex-grow: 5;
+  }
+  .nav-right {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 0;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .hidden {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    list-style: none;
+  }
+
+  .sign-in {
+    display: flex;
+    flex-flow: row nowrap;
+    width: auto;
+  }
+
+  .link-sign-in {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50px;
+    font-size: 16px;
+  }
+  .try-for-free {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #ffffff;
+    box-shadow: none;
+    width: 100%;
+    height: 18px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    /* text-align: center; */
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI",
+      Tahoma, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 20px 10px 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: azure;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    background-image: url(../images/background-singup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+  }
+  .container-slack-app-screenshot {
+    display: block;
+    flex-flow: row nowrap;
+    width: 60vh;
+  }
+  .slack-app-screenshot {
+    display: block;
+    background-image: url(../images/hero-product-ui.png);
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-position: 10px 60px;
+    height: 100%;
+  }
+
+  .headline {
+    font-size: 4rem;
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+      Arial, sans-serif;
+    text-align: left;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin: 50px 5px 15px 5px;
+  }
+
+  .header-upper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .list-product-overview {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    text-align: center;
+    list-style: none;
+    padding: 0%;
+  }
+  .box-w {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    position: relative;
+    width: 40%;
+    height: 350px;
+  }
+
+  .p-purple {
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+      Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.8px;
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+    color: #540b51;
+  }
+
+  .p-purple-percent {
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+      Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.8px;
+    font-size: 4rem;
+    margin-bottom: 0.1rem;
+    color: #540b51;
+  }
+
+  .adjust-h {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100px;
+  }
+
+  .p-black {
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+      Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+  .p-weighted-average {
+    display: none;
+  }
+
+  .button-container-hq {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+  }
+
+  .link-list {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .p-link-bold {
+    display: flex;
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma,
+      Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.8px;
+    font-size: 1rem;
+    color: #000000;
+    margin-left: 5px;
+  }
+
+  .img-dl {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .img-region {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+  }
+
+  .space {
+    display: block;
+    flex-flow: ;
+    width: 20px;
+    background-color: #4285f4;
+  }
+
+  .a {
+    display: flex;
+  }
+
+  .b {
+    display: flex;
+  }
+
+  .c {
+    display: flex;
+  }
+
+  .d {
+    display: flex;
+  }
+
+  .e {
+    display: flex;
+  }
+
+  .f {
+    display: flex;
+  }
+
+  .g {
+    display: flex;
+  }
+
+  .link-social {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 30%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    /* padding: 0px 25px 40px 25px; */
+    margin: 40px 20px 10px;
+  }
+
+  .link-social img {
+    display: flex;
+    flex-flow: row nowrap;
+    /* width: 600px; */
+  }
+
+  .link-social li i {
+    font-size: 150%;
+  }
+
+  .copy-right {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-size: 0.8rem;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI";
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    padding: 5px 20px 50px 20px;
+  }
 }

@@ -22,6 +22,7 @@
     <!-- NAVBAR *s=4? XL=6? -->
 
     <nav class="nav-bar">
+      
       <div class="nav-left">
         <div class="container-img-slack-logo">
           <img
@@ -30,25 +31,29 @@
             alt="Slack logo"
           />
         </div>
-
-        <ul class="menu">
-          <li>
-            <a href="#">Product</a>
-          </li>
-          <li>
-            <a href="#">Solutions</a>
-          </li>
-          <li>
-            <a href="#">Resources</a>
-          </li>
-          <li>
-            <a href="#">Pricing</a>
-          </li>
-        </ul>
+        <div class="nav-middle">
+          <ul class="menu">
+            <li>
+              <a href="#">Product</a>
+            </li>
+            <li>
+              <a href="#">Solutions</a>
+            </li>
+            <li>
+              <a href="#">Enterprise</a>
+            </li>
+            <li>
+              <a href="#">Resources</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="nav-right">
-        <button class="nav-buttons">
+        <button class="search-icon">
           <img src="./images/icon-search.png" alt="Search icon" />
         </button>
 
@@ -56,15 +61,19 @@
           <img src="./images/icon-menu.png" alt="Menu icon" />
         </button>
 
-        <ul hidden>
-          <li>
-            <a href="#">Sign in</a>
+        <ul class="hidden">
+          <li class="sign-in">
+            <span class="button-font-color-white">
+            <a class="link-sign-in" href="#">Sign in</a>
+          </span>
           </li>
-          <li>
-            <a href="#">Try for free</a>
+          <li class="try-for-free">
+            <span class="button-font-color-purple">
+            <a href="#">Try for free</a></span>
           </li>
         </ul>
       </div>
+
     </nav>
 
     <!-- HEADER -->
@@ -72,12 +81,12 @@
     <header class="header">
       <div class="header-upper">
         <h1 class="headline">Great teamwork starts with a digital HQ</h1>
-
+        <div class="media-768over-text-align">
         <p class="p-yellow">
           Slack is free to try
           <span class="p-white">for as long as you'd like.</span>
         </p>
-
+      </div>
         <div class="button-container">
           <button class="button-white">
             <span class="button-font-color-purple">Sign up with email</span>
@@ -101,12 +110,9 @@
         </div>
       </div>
 
-      <div class="slack-app-screenshot">
-        <img
-          class="img-slack-app-screenshot"
-          src="./images/hero-product-ui.png"
-          alt="Slack app screenshot"
-        />
+      <div class="container-slack-app-screenshot">
+        <div class="slack-app-screenshot">
+        </div>
       </div>
     </header>
 
@@ -154,24 +160,30 @@
 
         <ul class="list-product-overview">
           <li class="box-w">
-            <p class="p-purple-percent"><span>85%</span></p>
+            <p class="p-purple-percent">85%</p>
+            <div class="adjust-h">
             <p class="p-black-bold">
               of users say Slack has improved communication*
             </p>
+            </div>
           </li>
 
           <li class="box-w">
-            <p class="p-purple-percent"><span>86%</span></p>
+            <p class="p-purple-percent">86%</p>
+            <div class="adjust-h">
             <p class="p-black-bold">
               feel their ability to work remotely has improved*
             </p>
+          </div>
           </li>
 
           <li class="box-w">
-            <p class="p-purple-percent"><span>88%</span></p>
+            <p class="p-purple-percent">88%</p>
+            <div class="adjust-h">
             <p class="p-black-bold">
               feel more connected to their teams*
             </p>
+          </div>
           </li>
         </ul>
         <p class="p-weighted-average"><b>*</b> Weighted average. Based on 2,707 survey responses from weekly Slack users in the U.S., UK, Australia and Canada with a ± 2% margin of error at 95% CI (August 2020).</p>
@@ -184,7 +196,7 @@
 
  
 
-          <div class="button-container">
+          <div class="button-container-hq">
 
             <button class="button-white">
               <span class="button-font-color-purple">Try for free</span>
@@ -204,64 +216,32 @@
     
     <footer class="footer">
       <div class="container-link-list">
-      <ul class="link-list">
-        <li>
-          <p class="p-black-bold">
-          Status
-        </p>
-        </li>
-        <li>
-          <p class="p-black-bold">
-            Privacy
-          </p>
-        </li>
-        <li>
-          <p class="p-black-bold">
-            Terms
-          </p>
-        </li>
-        <li>
-          <p class="p-black-bold">
-            Cookie Preferences
-          </p>
-        </li>
-        <li>
-          <p class="p-black-bold">
-            Contact Us
-          </p>
-        </li>
-        <li class="container-region">
-
-          <div class="adjust-h">
-          <div class="container-img">
-            <img class="img-list-region" src="images/icon-region-2.png" alt="image icon region">
-          </div>
-          </div>
-
-          <div class="container-region">
-            <p class="p-black-bold">
-            Change Region
-          </p>
-        </div>
-
-        </li>
-        <li class="container-region">
-          <div class="adjust-h">
-            <div class="container-img">
-              <img class="img-list-download" src="images/icon-download.png" alt="image icon download">
-            </div>
-          </div>
-          <div class="container-region">
-              <p class="p-black-bold">
-              <a link url ="" >Download Slack</a>
+        <ul class="link-list">
+          <li class="a">
+            <p class="p-link-bold">Status</p></li>
+          <li class="b"><p class="p-link-bold">Privacy</p></li>
+          <li class="c"><p class="p-link-bold">Terms</p></li>
+          <li class="d"><p class="p-link-bold">Cookie Preferences</p></li>
+          <li class="e"><p class="p-link-bold">Contact Us</p></li>
+          <li class="f">
+              <img class="img-region" src="images/icon-region-2.png" />
+              <div class="space"></div>
+            <p class="p-link-bold">
+              Change Region
             </p>
-          </div>   
-        </li>
-      
-      </ul>
-    </div>
-
-      <hr />
+          </li>
+          <li class="g">
+            <div class="space">
+              <img class="img-dl" src="images/dl.jpeg" />
+               </div>
+            <a class="a-link" link url ="" >
+              <p class="p-link-bold">
+                Download Slack
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="container-link-social">
       <ul class="link-social">
         <li>
