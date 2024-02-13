@@ -1,13 +1,19 @@
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #540a51;
-    width: 100%;
+    max-width: 768px;
     margin: 0 auto;
 
 }
+
+.h1 {
+
+    font-size: 90px;
+
+}
+
 .yellow {
-    color:#ECB12F; 
+    color: #ECB12F;
 }
 
 /*
@@ -22,50 +28,69 @@ footer links grey: #454245
 */
 
 @media (max-width: 768px) {
+    body {
+        background-size: 100%;
+        /* Set background image size to 100% of viewport width */
+        background-repeat: no-repeat;
+        /* Prevent the background image from repeating */
+
+        .iphone-img {
+            width: 768px;
+
+        }
+
+    }
+
+    /* Your other CSS rules for smaller screens */
+}
+
 
 nav ul {
-display: none;
-
+    display: none;
+    max-width: 768px
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 768px
 }
 
 .slacklogo img {
     width: 100px;
     padding: 30px;
+    max-width: 768px
+}
 
- }
-
- .buttons {
+.buttons {
     padding: 30px;
- }
+}
 
 .header-container {
     font-size: 25px;
+
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px;
+    max-width: 768px
 }
 
 button {
-background-color: #540a51;
- }
+    background-color: #540a51;
+}
 
 .contact {
     padding: 30px;
-    width: 100%;
 
+    max-width: 768px
 }
 
 .signup {
-    color:  #540a51 ;
+    color: #540a51;
     background-color: white;
     border-radius: 5px;
     border: none;
@@ -74,44 +99,55 @@ background-color: #540a51;
     text-align: center;
     font-size: 20px;
     margin: 10px;
-     }
+    width: 768px
+}
+
 .google {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 10px;
-        padding: 5px;
-        background-color: #4285F4;
-        color: white;
-        width: 100%;
-        border-radius: 5px;
-        border: none;
-        height: 60px;
-        text-align: center;
-        font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: #4285F4;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    width: 768px;
+    text-align: center;
 
 
-         }
+}
 
 .google img {
     background-color: white;
     height: 30px;
     padding: 8px;
 }
+
 .iphone-img {
-    max-width: 100%;
+    width: 768px;
 
 }
+
+
 .background-logos p {
     padding: 20px;
     font-weight: bold;
-    text-align: center; 
+    margin-bottom: 20px; /* Add margin to separate the paragraph from the logos */
+
 }
 
 .background-logos {
     background-color: #F3EAE2;
     
-}  
+
+}
+
+
 .logos-sizing {
     display: flex;
     flex-wrap: wrap;
@@ -124,7 +160,84 @@ background-color: #540a51;
 
 }
 
+.teams {
+    color: purple;
+    font-size: 30px;
+    background-color: white;
+
+
+}
+
+.teams span {
+    font-size: 70px;
+    text-align: center;
+}
+
+.digital-container {
+    background-color: purple ;
+    font-size: 40px;
+
+}
+
+.digital-container h3 {
+    color: white;
 
 }
 
 
+.digital-container button {
+    width: 600px;
+    height: 50px;
+    background-color: white;
+    color: purple;
+    font-size: 30px;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.ul {
+
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    color: purple;
+    float: left;
+}
+
+
+
+.list2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    
+    text-align: left;
+}
+
+
+
+
+.endlist {
+    list-style-type: none;
+    display: flex;
+    margin: 10px 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around; /* Space items evenly along the row */
+}
+
+.endlist li {
+    flex-grow: 155; /* Expand each icon to fill available space */
+    margin: 0 10px; /* Add margin for spacing between icons */
+}
