@@ -8,3 +8,391 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+:root {
+  --background-purple: #540b51;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: var(--background-purple);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav > div > ul {
+  display: none;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.btn {
+  background-color: var(--background-purple);
+  border: none;
+  padding-left: 15px;
+}
+
+header {
+  background-color: var(--background-purple);
+  color: white;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 20px;
+}
+
+.orange {
+  color: #ecb12f;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.sign-up > button {
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.sign-up-mail {
+  background-color: white;
+  color: #540b51;
+}
+
+.sign-up-google {
+  background-color: #4285f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+  color: white;
+}
+
+.sign-up-google > img {
+  background-color: white;
+  height: 80%;
+  position: absolute;
+  left: 0.5rem;
+  border-radius: 3px;
+}
+
+.hero-pic-div {
+  overflow: hidden;
+}
+
+.hero-pic {
+  width: 110%;
+}
+
+.trust {
+  background-color: #f3eae2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem;
+  font-weight: bold;
+}
+
+.trust > p {
+  text-align: center;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.companies > img {
+  height: 45px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.stats > h3 {
+  color: #540b51;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.number {
+  color: #540b51;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.number-info {
+  font-weight: bolder;
+}
+
+.stats > ul > li {
+  list-style: none;
+  margin: 2rem 25%;
+}
+
+.footer-info {
+  color: #454245;
+  font-size: 0.75rem;
+}
+
+.try {
+  background-color: #540b51;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.try > h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+
+.try > div > button {
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-weight: bold;
+}
+
+.try-free {
+  background-color: white;
+  color: #540b51;
+}
+
+.talk-sales {
+  background-color: #540b51;
+  border: solid 1px white !important;
+  color: white;
+}
+
+footer {
+  padding: 1.5rem;
+}
+
+footer > hr {
+  color: #454245;
+  margin: 1.5rem 0;
+}
+
+footer > ul > li {
+  list-style: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.download-slack {
+  margin: 0;
+  color: #2e71a6;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-networks > li > i {
+  font-size: 1.2rem;
+}
+
+.icon-region,
+.icon-download {
+  margin-right: 0.5rem;
+}
+
+.footer-footer {
+  text-align: center;
+}
+
+@media (width > 768px) {
+  nav {
+    padding: 2rem;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero {
+    text-align: left;
+    font-size: 2.5rem;
+    margin: 2rem 2rem 5rem 2rem;
+  }
+
+  .hero > p {
+    font-size: 1.5rem;
+  }
+
+  .hero-pic {
+    width: 150%;
+  }
+
+  .stats {
+    padding: 3rem;
+    gap: 2.5rem;
+  }
+
+  .stats-numbers {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stats > ul > li {
+    margin: 0;
+    text-align: left;
+    width: 20%;
+  }
+
+  .try {
+    padding: 2rem 7rem;
+  }
+
+  .asterisk-info {
+    display: none;
+  }
+
+  footer > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-networks {
+    justify-content: flex-start;
+  }
+
+  .social-networks > li {
+    margin-right: 3rem;
+  }
+
+  .footer-footer {
+    text-align: left;
+  }
+}
+
+@media (width > 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-nav,
+  .right-nav {
+    display: flex;
+  }
+
+  .left-nav > ul,
+  .right-nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  .left-nav > ul > li,
+  .right-nav > ul > li {
+    display: flex;
+    align-items: center;
+  }
+
+  .left-nav > ul > li > a,
+  .right-nav > ul > li > a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .left-nav > ul {
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-right: 2rem;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .search-icon {
+    margin-right: 1rem;
+  }
+
+  .sign-in {
+    color: white;
+  }
+
+  .try-for-free {
+    background-color: white;
+    color: var(--background-purple) !important;
+    padding: 0.7rem 1rem;
+    border-radius: 3px;
+  }
+
+  .try-btn {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .try-free,
+  .talk-sales {
+    width: 200px !important;
+  }
+}
+
+@media (width > 1440px) {
+  header {
+    padding: 3rem;
+  }
+
+  .sign-up {
+    flex-direction: row;
+  }
+
+  .sign-up-mail,
+  .sign-up-google {
+    width: 45%;
+  }
+
+  .hero-pic {
+    width: 75%;
+  }
+}
