@@ -1,6 +1,13 @@
 ![Ironhack logo](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# CSS | Slack clone with Flexbox
+# CSS | Flexbox Slack Clone
+
+<br>
+
+<p align="center">
+  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack-simple/Slack%2BHome%2BPage%2BIntro%2BTablet.png" alt="slack landing page mobile" width="500" />
+</p>
+
 
 <details>
   <summary>
@@ -11,7 +18,7 @@ This exercise allows you to practice and apply the concepts and techniques taugh
 
 Upon completion of this exercise, you will be able to:
 
-- Develop a fully responsive webpage using provided designs as a guide.
+- Develop a fully responsive webpage using the provided designs as a guide.
 - Use CSS _media queries_ to adapt the page layout to different screen sizes.
 - Use _Flexbox_ to layout and position elements on a webpage dynamically as either rows or columns.
 - Use the CSS `position` property to position elements on a webpage.
@@ -23,18 +30,28 @@ Upon completion of this exercise, you will be able to:
 
 </details>
 
+<br>
+
 ## Introduction
 
 **Slack** is a cloud-based set of team collaboration tools and services, or in simpler terms, an online chat application.
 
-Slack app is used in daily communications within different teams in companies, but today we will be focusing on their landing page. In today's lab, we'll recreate Slack's landing page while ensuring it's responsive and adapts well to different screens. You can see the web page we will be cloning [here](https://www.figma.com/proto/k77VYVA70WcPYRLvg4QmIf/LAB-CSS-Slack-Clone?node-id=125%3A3&scaling=scale-down-width&page-id=125%3A2&starting-point-node-id=125%3A3&hide-ui=1).
+Slack app is used in daily communications within different teams in companies, but today we will be focusing on their landing page. In today's lab, we'll recreate Slack's landing page while ensuring it's responsive and adapts well to different screens. You can see the _desktop (large) screen_ version of the web page we will be cloning [here](<https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27920-474&t=bsnVpQHUC4XwXcyM-1&scaling=scale-down-width&page-id=125%3A2&starting-point-node-id=27920%3A474&mode=design&hide-ui=1>).
 
-The lab's goal is to create a _responsive_ landing page using **CSS** and **Flexbox**.
+<br>
 
-## Requirements
+The lab's goal is to create a _responsive_ landing page using **CSS** and **Flexbox**, starting with the styles for the mobile (small) screens first and then adapting the layout to larger screens using _media queries_.
+
+We have provided you with the all the HTML and the images you will need for the page, as well as the screenshots to guide you with the styles and layout for each screen size.
+
+<br>
+
+## Getting Started
 
 - Fork this repo
 - Clone this repo
+
+<br>
 
 ## Submission
 
@@ -46,7 +63,9 @@ The lab's goal is to create a _responsive_ landing page using **CSS** and **Flex
   git push origin master
   ```
 
-- Create a Pull Request so that your TAs can check your work.
+- Create a Pull Request and submit your assignment.
+
+<br>
 
 ## Instructions
 
@@ -58,21 +77,6 @@ During each iteration, the first step you should do is to inspect the provided s
 
 <br />
 
-<!--
-
-## Iteration 0 | Introduction to Figma
-
-The first step during every iteration will be to inspect the design files. These were created using Figma and are usually handed off to developers by designers. [Figma](https://www.figma.com/) is a web-based UI (User Interface) design tool used for creating design prototypes for websites and applications.
-
-Figma is great because it allows designers and developers to collaborate on projects while also making it simple to share and preview web page designs.
-
-When you begin working as a developer, your team will likely use Figma to hand off to you the designs of the features you will be asked to create. We will assume you've never seen Figma before, so don't worry. The following short videos should get you up to speed:
-
-- [What is Figma?](https://www.youtube.com/watch?v=_d8GG2QZYAM)
-- [Figma for Frontend developers [ in 5 minutes ]](https://www.youtube.com/watch?v=hbN9RGcQFNU)
-
--->
-
 ---
 
 ### Iteration 1 | Mobile Screens (width < 768px)
@@ -83,28 +87,23 @@ We will start by focusing on the styles for mobile screens first! :iphone: Oh! R
 
 <br>
 
-When done, your page should look like this: [Preview - Mobile](https://www.figma.com/proto/k77VYVA70WcPYRLvg4QmIf/LAB-CSS-Slack-Clone?node-id=68%3A2762&scaling=scale-down&page-id=68%3A2761&starting-point-node-id=68%3A2762&show-proto-sidebar=1&hide-ui=1)
+
+
+When done, your page should look like this: [Preview - Mobile](<https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27905-2817&t=4UQZ5O1FjodswKev-8&scaling=scale-down&page-id=68%3A2761&starting-point-node-id=27905%3A2817&hide-ui=1>)
 
 <br>
 
 Use the following page screenshot as the guide:
 
 <details>
-  <summary>Screenshot - Mobile Screens</summary>
-  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Slack+Home+Page+-+420px.png" width="200px"/>
+  <summary><b>Screenshot - Mobile Screens</b></summary>
+  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack-simple/Slack%2BHome%2BPage%2B-%2B420px.png" width="420px"/>
   <br/>
+
 
 [Back to top](#iteration-1--mobile-screens-width--768px)
 
 </details>
-
-<!--
-
-You can inspect the page styles here:
-
-[Figma file - Mobile]()
-
--->
 
 <br>
 
@@ -115,72 +114,61 @@ You can inspect the page styles here:
 Let's start growing our screen size. In this iteration, you will work on making the website look great on small screens (iPads, tablets, or larger smartphones). You will have to use CSS [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) to apply the style and layout changes. Take a look at the preview and the screenshot to see the changes that are needed. Your task is to work on the following:
 
 - The **header** should go from 1 column to display 2 columns: one with the content and buttons and the other with the image.
-- The **company logos** should be displayed in a single row.
-- The **images** in the sections in the **main** part should be fully displayed and aligned to the left or right side of the page, respectively.
-- The **section "Teams large and small rely on Slack"** should have the list items and the buttons displayed horizontally as rows.
-- The **sub-footer** items, previously displayed as a column, should now be displayed in a single row.
+- In the **section "TRUSTED BY COMPANIES..."**, the **company logos** should be displayed in a single row.
+- The **section "Teams large and small rely on Slack"** should have the **list elements** displayed horizontally as rows.
+- In the **footer**, the **list elements** that were previously displayed as a column should now be displayed horizontally in a row.
 
 <br>
 
-When done, your page should look like this: [Preview - Small Screens](https://www.figma.com/proto/k77VYVA70WcPYRLvg4QmIf/LAB-CSS-Slack-Clone?node-id=49%3A1508&scaling=scale-down&page-id=68%3A2976&starting-point-node-id=49%3A1508&hide-ui=1)
+
+
+When done, your page should look like this: [Preview - Small Screens](<https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27920-208&t=GG6xsZqUwaSq21fe-8&scaling=scale-down&page-id=68%3A2976&starting-point-node-id=27920%3A208&hotspot-hints=0&hide-ui=1>)
 
 <br>
 
 Use the following page screenshot as the guide:
 
 <details>
-  <summary>Screenshot - Small Screens</summary>
-  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Slack+Home+Page+-+768px.png" width="550px"/>
+  <summary><b>Screenshot - Small Screens</b></summary>
+  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack-simple/Slack%2BHome%2BPage%2B-%2B768px.png" width="768px"/>
+
+
   <br/>
 
 [Back to top](#iteration-2--small-screens-width--768px-and-width--1024px)
 
 </details>
 
-<!--
-
-You can inspect the page styles here:
-
-[Figma file - Small Screens]()
-
--->
-
 <br>
 
 ---
 
-### Iteration 3 | Medium Screens (width > 1024px and width < 1440px)
+### BONUS: Iteration 3 | Medium Screens (width > 1024px and width < 1440px)
 
 We'll continue by focusing on devices with medium-sized screens (notebooks and bigger tablets). Similar to the previous iteration, you will have to use CSS media queries to apply the style and layout changes. The most noticeable changes in this viewport size are:
 
-- The **navbar** should now display all the menu links. The previously displayed menu icon should now be hidden.
-- The **sections** in the **main** part should now display the content in 2 columns: one column for the heading and text, and the other for the image.
-- The **section "Welcome to your new digital HQ"** should now display the buttons horizontally as rows.
+- The **navbar** should now display **all the menu links**. The previously displayed **menu icon** should now be hidden.
+- The **section "Welcome to your new digital HQ"** should now display the buttons horizontally next to each other.
 
 <br>
 
-When done, your page should look like this: [Preview - Medium Screens](https://www.figma.com/proto/k77VYVA70WcPYRLvg4QmIf/LAB-CSS-Slack-Clone?node-id=49%3A2159&scaling=scale-down&page-id=68%3A2977&starting-point-node-id=49%3A2159&hide-ui=1)
+
+
+When done, your page should look like this: [Preview - Medium Screens](<https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27920-291&t=pq37L62mzfeHEFnN-1&scaling=scale-down&page-id=68%3A2977&starting-point-node-id=27920%3A291&hotspot-hints=0&hide-ui=1>)
 
 <br>
 
 Use the following page screenshot as the guide:
 
 <details>
-  <summary>Screenshot - Medium Screens</summary>
-  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Slack+Home+Page+-+1024px.png" />
+  <summary><b>Screenshot - Medium Screens</b></summary>
+  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack-simple/Slack%2BHome%2BPage%2B-%2B1024px.png" />
   <br/>
+
 
 [Back to top](#iteration-3--medium-screens-width--1024px-and-width--1440px)
 
 </details>
-
-<!--
-
-You can inspect the page styles here:
-
-[Figma file - Medium Screens]()
-
--->
 
 <br>
 
@@ -191,34 +179,31 @@ You can inspect the page styles here:
 Last one! Some small changes and we are done! In this iteration we are targeting large-screen devices such as desktops and laptops:
 
 - The **signup buttons** in the **header** should now be displayed horizontally, next to each other.
-- Additionally, the image in the **header** should be centered and fully visible.
+- Additionally, the **image** in the **header** should be centered and fully visible.
 
 <br>
 
-When done, your page should look like this: [Preview - Large Screens](https://www.figma.com/proto/k77VYVA70WcPYRLvg4QmIf/LAB-CSS-Slack-Clone?node-id=49%3A2489&scaling=scale-down&page-id=68%3A2978&starting-point-node-id=49%3A2489&hide-ui=1)
+
+
+When done, your page should look like this: [Preview - Large Screens](<https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27920-383&t=A1gXFjJ0doVfgZvR-8&scaling=scale-down&page-id=68%3A2978&starting-point-node-id=27920%3A383&hotspot-hints=0&hide-ui=1>)
 
 <br>
 
 Use the following page screenshot as the guide:
 
 <details>
-  <summary>Screenshot - Large Screens</summary>
-  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack/Slack+Home+Page+-+1440px.png" />
+  <summary><b>Screenshot - Large Screens</b></summary>
+  <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack-simple/Slack%2BHome%2BPage%2B-%2B1440px.png" />
   <br/>
+
 
 [Back to top](#iteration-4--large-screens-width--1440px)
 
 </details>
 
-<!--
-
-You can inspect the page styles here: [Figma file - Large Screens]()
-
--->
-
 <br />
 
-**Happy coding!** :heart:
+**Happy coding!** :blue_heart:
 
 <br>
 
