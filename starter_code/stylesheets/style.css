@@ -1,10 +1,514 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+/* General */
+
+:root {
+    --purple: #540B51;
+    --bg-ivory: #F3EAE2;
+    --btn-blue: #4285F4;
+    --titles-black: #191817;
+    --p-black: #000000;
+    --p-yellow: #ECB12F;
+    --link-blue: #2E71A6;
+    --footer-links-grey: #454245;
+    --light-grey: #9d9d9d;
+    --white: #fff;
+}
+
+body {
+    background-color: var(--purple);
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: var(--p-black);
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+hr {
+    border-top: 0;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+/* Nav */
+nav .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav .logo {
+    width: 100%;
+    max-width: 140px;
+}
+
+nav .menu-desktop a:not(.btn) {
+    /* display: none; */
+    font-weight: 600;
+    color: var(--white)
+}
+
+nav .menu-mobile {
+    display: flex;
+}
+
+nav .menu-desktop {
+    display: none;
+}
+
+nav .menu-desktop ul.menu-desktop-cta {
+    display: none;
+    gap: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    nav .wrapper {
+        padding: 20px 15px;
+    }
+
+    nav .menu-mobile {
+        display: none;
+    }
+
+    nav .menu-desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        justify-content: flex-end;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    nav .menu-desktop .menu-desktop-main {
+        margin-right: auto;
+    }
+
+    nav .menu-desktop > ul {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    nav .menu-desktop ul.menu-desktop-cta,
+    nav .menu-desktop .search {
+        display: flex;
+    }
+}
+
+nav button {
+    background: none;
+    border: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: var(--p-black)
+}
+
+/* Typography */
+h1 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.details {
+    font-size: 0.9rem;
+    color: var(--light-grey);
+}
+
+.details sup {
+    color: initial;
+}
+
+
+/* Layout & colours */
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.bg-dark {
+    background-color: var(--purple);
+    color: var(--white)
+}
+
+.bg-dark p,
+.bg-dark li {
+    color: var(--white);
+}
+
+.bg-light {
+    background-color: var(--white);
+}
+
+.bg-light h1,
+.bg-light h2,
+.bg-light h3 {
+    color: var(--purple);
+}
+
+.highlight {
+    font-weight: 800;
+    color: var(--p-yellow)
+}
+
+button {
+    display: inline-flex;
+    height: 41px;
+    /* overflow: hidden; */
+    padding: 3px 5px;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 2px;
+    border: 2px solid;
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+a.btn {
+    display: inline-flex;
+    height: 30px;
+    overflow: hidden;
+    padding: 3px 30px;
+    align-items: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 2px solid;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    color: var(--purple) !important;
+    border-color: var(--white);
+    background-color: var(--white);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-secondary {
+    border: 2px solid var(--white);
+    background: transparent;
+    color: var(--white)
+}
+
+/* Specific sections */
+/* Header */
+header {
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header .hero-img {
+    margin-bottom: -55px;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    header .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .hero-img {
+        padding: 50px 0 50px 50px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header .hero-img {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 50px 0 50px 50px;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header p.lead {
+        font-size: 1.3rem;
+    }
+}
+
+#sign-in {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+@media screen and (min-width: 1440px) {
+    #sign-in {
+        flex-direction: row;
+        gap: 20px
+    }
+}
+
+#sign-in button.btn-primary {
+    justify-content: center;
+}
+
+#sign-in button.btn-google {
+    background-color: var(--btn-blue);
+    color: var(--white);
+    justify-content: space-between;
+    border-color: var(--btn-blue);
+}
+
+#sign-in button.btn-google .btn-google-logo {
+    flex-basis: 34px;
+    height: 30px;
+    background-color: var(--white);
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    margin-right: 10px;
+    flex-shrink: 100%;
+    box-sizing: border-box;
+}
+
+#sign-in button.btn-google span {
+    align-items: center;
+    flex-basis: 100%;
+    margin: 0 auto;
+}
+
+
+/* Trust */
+
+#section-trust {
+    background-color: var(--bg-ivory);
+    padding: 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#section-trust .trust-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    #section-trust .trust-logos {
+        flex-wrap: nowrap;
+    }
+}
+
+#section-trust .trust-logos img {
+    height: 34px;
+    display: inline-block;
+}
+
+
+/* Section - Stats */
+#section-stats {
+    padding: 50px 10px;
+    text-align: center;
+    
+}
+
+#section-stats .section-stats-list {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: clamp(200px, 50%, 768px); ;
+}
+
+@media screen and (min-width: 768px) {
+    #section-stats .section-stats-list {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 80px;
+    }
+}
+
+#section-stats li {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#section-stats .bignumber {
+    font-size: 3em;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+    color: var(--purple);
+    line-height: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+    #section-stats .bignumber {
+        font-size: 5em;
+    }
+}
+
+#section-stats .bignumber + p {
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* CTA section */
+#section-cta {
+    text-align: center;
+}
+
+#section-cta .section-cta-buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+#section-cta .section-cta-buttons button {
+    text-align: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    #section-cta {
+        padding: 50px 0;
+    }
+    #section-cta .section-cta-buttons {
+        align-items: center;
+    }
+    #section-cta .section-cta-buttons button {
+        width: 50%;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #section-cta .section-cta-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 30px
+    }
+}
+
+#section-cta .section-cta-buttons button.btn-primary {
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+}
+
+footer .footer-links li {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 16px 0;
+}
+
+a[class*="link-icon"] {
+    display: flex;
+    align-items: center !important;
+}
+
+a[class*="link-icon"]:before {
+    content: '';
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-position: center center;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+footer .footer-links a[class*="region"]:before {
+    background-image: url(../images/icon-region.png);
+}
+
+footer .footer-links a[class*="download"] {
+    color: var(--link-blue);
+}
+
+footer .footer-links a[class*="download"]:before {
+    background-image: url(../images/icon-download.png);
+}
+
+footer .social {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 20px 0;
+    gap: 30px;
+}
+
+footer .social i {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    footer .footer-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    hr:last-of-type {
+        display: none;
+    }
+
+    footer .social {
+        justify-content: start;
+    }
+}
