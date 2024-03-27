@@ -8,3 +8,425 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+  background-color: #540b51;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav img:first-of-type {
+  width: 100px;
+  margin-right: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#right-nav button img {
+  width: 25px;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+}
+
+header {
+  padding: 0 30px;
+  box-sizing: content-box;
+}
+
+header div:first-child {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  color: white;
+}
+
+#header-image {
+  width: 100%;
+  position: relative;
+  top: 14vw;
+  z-index: -1;
+}
+
+header h1 + p {
+  font-size: 1em;
+}
+
+h1 {
+  text-align: center;
+  width: 90%;
+}
+
+p span {
+  color: #ecb12f;
+}
+
+p {
+  text-align: center;
+}
+
+.signup button {
+  color: #540b51;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: white;
+  text-transform: uppercase;
+  padding: 3px;
+  height: 39px;
+  font-size: 0.8em;
+  line-height: 33px;
+}
+
+.signup button:nth-child(2) {
+  color: white;
+  border-radius: 5px;
+  background-color: #4285f4;
+  position: relative;
+}
+
+.signup button img {
+  background-color: white;
+  border-radius: 2px;
+  width: 18px;
+  padding: 5px 6px;
+  position: absolute;
+  left: 5px;
+  top: 4px;
+}
+
+.signup {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+  background-image: url(../images/background-singup.png);
+  background-size: contain;
+}
+
+button span {
+  text-align: center;
+}
+
+.logos {
+  background-color: #f3eae2;
+  padding: 4vh 0;
+}
+
+.logos p {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 2vw 30px;
+}
+
+.logos img {
+  max-height: 5vh;
+}
+
+.logos div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 0 30px;
+}
+
+.teams {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: white;
+  padding: 4vh 60px;
+}
+
+.teams h3 {
+  color: #540b51;
+}
+
+.teams li p span {
+  color: #540b51;
+  font-weight: 900;
+  font-size: 5vw;
+}
+
+.teams li p {
+  font-weight: 900;
+}
+
+.welcome {
+  margin: 0 30px;
+}
+
+.welcome h3 {
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3vw;
+}
+
+.welcome button:last-child {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+footer {
+  background-color: white;
+  padding-bottom: 4vh;
+}
+
+footer {
+  margin: 4vh 0 0;
+  padding: 0 30px;
+}
+
+footer ul {
+  line-height: 2;
+  padding-top: 3vh;
+  font-size: 0.9em;
+}
+
+footer ul:first-of-type li:last-child {
+  color: #2e71a6;
+}
+
+footer img {
+  width: 14px;
+}
+
+footer ul:last-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer i {
+  padding: 0;
+}
+
+div small {
+  font-weight: lighter;
+  color: grey;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 5vh;
+}
+
+/*--- Media queries----*/
+/*--- 768-1440----*/
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6vh;
+    overflow: hidden;
+  }
+
+  #header-image {
+    max-width: 400px;
+    position: relative;
+    right: -100px;
+    top: 50px;
+  }
+
+  header div:first-child {
+    width: 50vw;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 5vw;
+    text-align: left;
+  }
+
+  .logos img {
+    max-height: 4vh;
+  }
+
+  .teams ul {
+    display: flex;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+  }
+
+  footer ul:last-of-type {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
+
+/*--- 1024-1440----*/
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  #left-nav {
+    display: flex;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  nav ul a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #right-nav {
+    display: flex;
+  }
+
+  #right-nav li:last-child {
+    background-color: white;
+    color: #540b51;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 4px;
+  }
+
+  #right-nav li:last-child a {
+    color: #540b51;
+  }
+
+  #right-nav button:last-of-type {
+    display: none;
+  }
+
+  .welcome .signup {
+    flex-direction: row;
+    background-image: none;
+    justify-content: center;
+  }
+
+  .welcome .signup button {
+    width: 30%;
+  }
+}
+
+/*--- 1440++ ----*/
+@media screen and (min-width: 1440px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6vh;
+    overflow: hidden;
+  }
+
+  header div:first-child {
+    width: 50vw;
+    align-items: flex-start;
+  }
+
+  header .signup {
+    flex-direction: row;
+    background-image: none;
+    justify-content: flex-start;
+  }
+
+  header .signup button {
+    width: 40%;
+  }
+
+  header .signup {
+    flex-direction: row;
+    background-image: none;
+    justify-content: flex-start;
+  }
+
+  h1 {
+    font-size: 5vw;
+    text-align: left;
+  }
+
+  #header-image {
+    max-width: 600px;
+    position: relative;
+    top: 50px;
+  }
+
+  #left-nav {
+    display: flex;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  nav ul a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #right-nav {
+    display: flex;
+  }
+
+  #right-nav li:last-child {
+    background-color: white;
+    color: #540b51;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 4px;
+  }
+
+  #right-nav li:last-child a {
+    color: #540b51;
+  }
+
+  #right-nav button:last-of-type {
+    display: none;
+  }
+
+  .welcome .signup {
+    flex-direction: row;
+    background-image: none;
+    justify-content: center;
+  }
+
+  .welcome .signup button {
+    width: 30%;
+  }
+
+  .logos img {
+    max-height: 4vh;
+  }
+
+  .teams ul {
+    display: flex;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+  }
+
+  footer ul:last-of-type {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
