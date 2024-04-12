@@ -8,3 +8,290 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    all: unset;
+    box-sizing: border-box;
+  }
+  
+  html {
+    --bg-purple: #540b51;
+    --bg-ivory: #f3eae2;
+    --btn-blue: #4285f4;
+    --title-black: #191817;
+    --paragraph-black: #000000;
+    --praragraph-yellow: #ecb12f;
+    --link-blue: #2e71a6;
+    --footer-link-grey: #454245;
+  }
+  
+  body {
+    background-color: var(--bg-purple);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  
+  nav [alt="Slack logo"] {
+    height: 1.6rem;
+  }
+  
+  nav button:last-of-type {
+    margin-left: 1.5rem;
+  }
+  
+  header {
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2.6rem;
+  }
+  
+  header > :first-child > p {
+    margin: 1.5rem 0;
+    font-weight: 300;
+  }
+  header > :first-child > p span {
+    color: var(--praragraph-yellow);
+    font-weight: 500;
+  }
+  
+  main button,
+  header button {
+    display: block;
+    width: 94%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+  }
+  
+  header button:first-of-type {
+    margin-bottom: 0.8rem;
+    color: var(--bg-purple);
+  }
+  
+  header button:last-of-type {
+    background-color: var(--btn-blue);
+    position: relative;
+  }
+  
+  header [alt^="Google"] {
+    height: 2rem;
+    background-color: white;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.3rem;
+    height: 2.7rem;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+  }
+  
+  header > :last-child {
+    height: 21rem;
+    margin-top: 3rem;
+    overflow: hidden;
+  }
+  
+  header [alt$="screenshot"] {
+    width: 160%;
+    position: relative;
+    left: -8%;
+  }
+  
+  main > :first-child {
+    background-color: var(--bg-ivory);
+    padding: 2.3rem;
+  }
+  
+  main > :first-child > p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 1.8rem;
+  }
+  
+  main > :first-child > :last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
+  }
+  
+  main [alt$="logo"] {
+    height: 2.3rem;
+  }
+  
+  main > :nth-child(2) {
+    background-color: white;
+    padding: 4.5rem 5% 2.5rem;
+    font-weight: 700;
+  }
+  
+  main > :nth-child(2) > h3 {
+    color: var(--bg-purple);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  main > :nth-child(2) > p {
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+  
+  main > :nth-child(2) p > span {
+    color: var(--bg-purple);
+    font-size: 3rem;
+  }
+  
+  main ul {
+    list-style: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  main li {
+    margin-bottom: 2rem;
+  }
+  
+  main > :last-child {
+    padding: 3rem 0;
+  }
+  
+  main > :last-child h3 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  main button:first-of-type {
+    background-color: white;
+    color: var(--bg-purple);
+  }
+  
+  main button:last-of-type {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 1rem;
+  }
+  
+  footer {
+    background-color: white;
+    padding: 2rem;
+  }
+  
+  footer ul:first-of-type {
+    text-align: left;
+    list-style: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-top: 2px solid #c6c6c6;
+    padding-top: 2rem;
+  }
+  
+  footer ul:first-of-type li {
+    margin-bottom: 1.2rem;
+  }
+  
+  footer ul:first-of-type :nth-child(6) {
+    list-style-image: url(../images/icon-region.png);
+  }
+  
+  footer ul:first-of-type :last-child {
+    color: var(--link-blue);
+    list-style-image: url(../images/icon-download.png);
+  }
+  
+  footer ul:first-of-type :last-child,
+  footer ul:first-of-type :nth-child(6) {
+    margin-left: 1.2rem;
+  }
+  
+  footer hr {
+    display: none;
+  }
+  
+  footer ul:last-of-type {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+  
+  footer small {
+    font-size: 0.7rem;
+    color: var(--footer-link-grey);
+  }
+  
+  @media (768px < width < 1024px) {
+    header {
+      display: flex;
+      padding-bottom: 8rem;
+      gap: 2rem;
+      background-image: url(../images/background-singup.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  
+    header > :first-child {
+      width: 130%;
+    }
+  
+    header > :first-child > h1 {
+      width: 45%;
+      text-align: left;
+      margin-left: 4%;
+    }
+  
+    header > :first-child > p {
+      text-align: left;
+      font-size: 1.2rem;
+      width: 60%;
+      margin-left: 4%;
+    }
+  
+    header > :last-child {
+      width: 90%;
+      overflow: visible;
+    }
+  
+    header > :last-child img {
+      width: 100%;
+      position: relative;
+      top: 3rem;
+      left: 5%;
+    }
+  
+    main > :nth-child(2) ul,
+    footer ul {
+      width: 100%;
+      display: flex;
+      text-align: left;
+      justify-content: space-between;
+    }
+  
+    main button {
+      width: 80%;
+    }
+  }
