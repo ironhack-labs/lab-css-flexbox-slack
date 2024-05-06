@@ -10,9 +10,15 @@
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
   <!-- link your styles -->
+  <link rel="stylesheet" href="./stylesheets/css-reset.css" />
   <link rel="stylesheet" href="./stylesheets/style.css" />
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
   <title>Slack is your digital HQ | Slack</title>
 </head>
 
@@ -20,7 +26,7 @@
   <!-- NAVBAR -->
   <nav>
     <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+      <img id="nav-logo" src="./images/slack-logo.png" alt="Slack logo" height="20px" />
 
       <ul>
         <li>
@@ -38,7 +44,7 @@
       </ul>
     </div>
 
-    <div>
+    <div id="nav-logos-right">
       <button>
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
@@ -61,97 +67,106 @@
 
   <!-- HEADER -->
   <header>
-    <div>
+    <div class="container">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><span style="color: #ECB12F; font-weight: 600;">Slack is free to try</span> for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <button id="signup-email">Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
-        </button>
-      </div>
+      <button id="signup-google">
+        <img src="./images/logo-google.png" alt="Google logo" />
+        <span>Sign up with Google</span>
+      </button>
 
     </div>
 
-    <div>
+    <div id="hero-container">
       <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
-    <section>
+    <section id="trusted">
       <p>Trusted by companies all over the world</p>
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+      <div class="logos">
+        <div style="width: 25%;"><img class="boxed" src="./images/logo-airbnb.png" alt="Airbnb logo" /></div>
+        <div style="width: 15%;"><img class="boxed" src="./images/logo-nasa.png" alt="NASA logo" /></div>
+        <div style="width: 20%;"><img class="boxed" src="./images/logo-uber.png" alt="Uber logo" /></div>
+        <div style="width: 10%;"><img class="boxed" src="./images/logo-target.png" alt="Target logo" /></div>
+      </div>
+      <div class="logos" style="padding: 2rem 0">
+        <div style="width: 50%;"><img class="boxed" src="./images/logo-nyt.png" alt="New York Times logo" /></div>
+        <div style="width: 25%;"><img class="boxed" src="./images/logo-spotify.png" alt="Spotify logo" /></div>
+      </div>
+
+      <div id="logos-oneline" style="padding: 3rem 0">
+        <div style="width: 15%;"><img class="boxed" src="./images/logo-airbnb.png" alt="Airbnb logo" /></div>
+        <div style="width: 8%;"><img class="boxed" src="./images/logo-nasa.png" alt="NASA logo" /></div>
+        <div style="width: 10%;"><img class="boxed" src="./images/logo-uber.png" alt="Uber logo" /></div>
+        <div style="width: 5%;"><img class="boxed" src="./images/logo-target.png" alt="Target logo" /></div>
+        <div style="width: 30%;"><img class="boxed" src="./images/logo-nyt.png" alt="New York Times logo" /></div>
+        <div style="width: 15%;"><img class="boxed" src="./images/logo-spotify.png" alt="Spotify logo" /></div>
       </div>
 
     </section>
 
-    <section>
+    <section id="stats">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
 
       <ul>
         <li>
-          <p><span>85%</span></p>
-          <p>
+          <p class="perc"><span>85%</span></p>
+          <p class="perc-text">
             of users say Slack has improved communication
             <sup>*</sup>
           </p>
         </li>
 
         <li>
-          <p><span>86%</span></p>
-          <p>
-            feel their ability to work remotely has improved has improved
+          <p class="perc"><span>86%</span></p>
+          <p class="perc-text">
+            feel their ability to work remotely has improved
             <sup>*</sup>
           </p>
         </li>
 
         <li>
-          <p><span>88%</span></p>
-          <p>
-            feel more connected to their teams*
+          <p class="perc"><span>88%</span></p>
+          <p class="perc-text">
+            feel more connected to their teams
             <sup>*</sup>
           </p>
         </li>
       </ul>
     </section>
 
-    <section>
+    <section id="welcome">
       <h3>Welcome to your new digital HQ</h3>
 
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+      <button id="tryforfree">Try for free</button>
+      <button id="talktosales">Talk to sales</button>
     </section>
 
   </main>
 
   <footer>
-    <ul>
+    <hr style="height: 1rem;">
+
+    <ul id="links">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
       <li>Cookie Preferences</li>
       <li>Contact Us</li>
       <li>Change Region</li>
-      <li>Download Slack</li>
+      <li style="color: #2E71A6;">Download Slack</li>
     </ul>
 
-    <hr>
-
-    <ul>
+    <ul id="icons">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
