@@ -11,6 +11,7 @@
 
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
+  <link rel="stylesheet" href="./stylesheets/reset.css">
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
@@ -20,7 +21,9 @@
   <!-- NAVBAR -->
   <nav>
     <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+      <div>
+        <img src="./images/slack-logo.png" alt="Slack logo" class="logo"/>
+      </div>
 
       <ul>
         <li>
@@ -38,12 +41,12 @@
       </ul>
     </div>
 
-    <div>
-      <button>
+    <div class="nav-icon-container">
+      <button class="nav-icon">
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button class="nav-icon">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
@@ -61,45 +64,50 @@
 
   <!-- HEADER -->
   <header>
-    <div>
+    <div class="header-div">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p class="header-p"><span class="header-span">Slack is free to try </span>for as long as you'd like</p>
 
-      <div>
-        <button>Sign up with email</button>
+        <button class="header-button">Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+        <button class="header-button google-button">
+          <img src="./images/logo-google.png" alt="Google logo" class="google-logo"/>
+          <span class="google-span">Sign up with Google</span>
         </button>
-      </div>
+      
 
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+    <div class="hero-div">
+      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" class="header-hero-logo"/>
     </div>
   </header>
 
   <main>
-    <section>
-      <p>Trusted by companies all over the world</p>
+    
+    <!-- company section -->
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+    <section class="company-section">
+      <p class="section1-p">Trusted by companies all over the world</p>
+
+      <div class="company-logo-div">
+        <img src="./images/logo-airbnb.png" alt="Airbnb logo" class="company-logo logo1"/>
+        <img src="./images/logo-nasa.png" alt="NASA logo" class="company-logo logo2"/>
+        <img src="./images/logo-uber.png" alt="Uber logo" class="company-logo logo3"/>
+        <img src="./images/logo-target.png" alt="Target logo" class="company-logo logo4"/>  
+          <img src="./images/logo-nyt.png" alt="New York Times logo" class="company-logo logo5"/>
+          <img src="./images/logo-spotify.png" alt="Spotify logo" class="company-logo logo6"/>
+        
       </div>
 
     </section>
 
-    <section>
-      <h3>Teams large and small rely on Slack</h3>
-      <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+    <!-- statistics section -->
+
+    <section  class="statistics-section">
+      <h3 class="statistics-h3">Teams large and small rely on Slack</h3>
+      <p class="statistics-p"><span class="first-line">Slack securely scales up to support </span><span>collaboration at the world's biggest companies.</span></p>
 
 
       <ul>
@@ -129,29 +137,33 @@
       </ul>
     </section>
 
-    <section>
-      <h3>Welcome to your new digital HQ</h3>
+    <!-- signup section  -->
 
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+    <section class="signup-section">
+      <h3 class="signup-h3">Welcome to your new digital HQ</h3>
+
+      <button class="signup-button">Try for free</button>
+      <button class="signup-button purple-button">Talk to sales</button>
     </section>
 
   </main>
 
+  <!-- footer  -->
+
   <footer>
-    <ul>
+    <ul class="links-ul">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
       <li>Cookie Preferences</li>
       <li>Contact Us</li>
-      <li>Change Region</li>
+      <li></i>Change Region</li>
       <li>Download Slack</li>
     </ul>
 
     <hr>
 
-    <ul>
+    <ul class="icon-ul">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -166,7 +178,7 @@
       </li>
     </ul>
 
-    <div>
+    <div class="trademark">
       <small>
         &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
         their respective owners.
