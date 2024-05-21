@@ -1,10 +1,234 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+*, :before, :after {box-sizing:border-box;}
+
+
+:root {
+    --background-purple: #540B51;
+    --background-ivory: #F3EAE2;
+    --button-blue: #4285F4;
+    --titles-black: #191817;
+    --paragraph-black: #000000;
+    --paragraph-yellow: #ECB12F;
+    --links-blue: #2E71A6;
+    --footer-links-grey: #454245;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    background-color: var(--background-purple);
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav-icon {
+    background: transparent;
+    border: transparent;
+}
+
+.nav-icons li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+ul {
+    display: none;
+}
+
+#search-icon, #menu-icon {
+  width: 30px;
+  height: 30px;
+}
+
+header, .claim-two-buttons {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-purple);
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+header h1, .claim-two-buttons h3 {
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+header div h1, header div p, .claim-two-buttons h3 {
+  padding: 10px 18px;
+  text-align: center;
+  color: white;
+}
+
+.button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font: inherit;
+    font-weight: 600;
+    padding: 10px;
+    min-width: 390px;
+    height: 58px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button-icon {
+    position: absolute;
+    left: 10px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+.white-button {
+    background: white;
+    color: var(--background-purple);
+    height: 3em;
+    width: 4em;
+    margin: 0.8em;
+}
+
+.purple-button {
+    background: var(--background-purple);
+    color: white;
+    height: 3em;
+    width: 4em;
+    border: 1px solid white;
+}
+
+.blue-button {
+    background: var(--button-blue);
+    color: var(--background-purple);
+    height: 3em;
+    width: 4em;
+    margin: 0.8em;
+    color: white;
+}
+
+.header-image-container {
+    width: 100%;
+    height: 300px;
+}
+
+.header-image-container img {
+    position: relative;
+    width: 700px;
+    left: -50px;
+    margin-top: 35px;
+}
+
+.partners-section {
+    background-color: var(--background-ivory);
+    margin-top: 150px;
+    padding: 3em 0;
+}
+
+.partners-section p {
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 0 2em 0;
+}
+
+.partners-section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.partner-logo {
+    height: 40px;
+    width: auto;
+}
+
+.purple-title h3 {
+    margin-top: 50px;
+    padding: 0 20px;
+    text-align: center;
+    justify-content: center;
+    color: var(--background-purple);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.purple-title p {
+    padding: 0 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+}
+
+.numbers-section ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.purple-title span {
+    color: var(--background-purple);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.index-annotation {
+    font-size: 12px;
+    text-align: center;
+    padding: 15px 20px 40px 20px;
+    color: gray;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 15px;
+}
+
+.socials-icons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-icon {
+    margin-right: 10px;
+}
+
+footer a {
+    color: var(--links-blue);
+    text-decoration: none;
+}
