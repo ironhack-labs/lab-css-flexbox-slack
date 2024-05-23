@@ -1,10 +1,336 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+*, :before, :after {box-sizing:border-box;}
+
+:root {
+	--white-color: white;
+	--background-ivory-color: #F3EAE2;
+	--footer-links-grey: #454245;
+	--paragraph-yellow: #ECB12F;
+	--titles-black: #191817;
+	--background-purple-color: #540B51;
+	--botton-blue: #4285F4;
+	--links-blue: #2E71A6;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--white-color);
+	font-family: Arial, Helvetica, sans-serif;
+	& header {
+		background-color: var(--background-purple-color);
+	}
+}
+
+/* NAV BAR */
+#nav-bar {
+	display: flex;
+	box-sizing: border-box;
+	width: 100%;
+	justify-content: space-between;
+	padding: 2em;
+	height: 12vh;
+	background-color: var(--background-purple-color);
+}
+
+#nav-bar button {
+	background-color: var(--background-purple-color);
+	border: none;
+}
+
+#nav-bar img {
+	height: 5vh;
+	width: auto;
+}
+
+/* HEADER */
+#header {
+	color: var(--white-color);
+	display: flex;
+	align-items: center;
+	& h1 {
+		font-size: calc(2.5em + 2vw);
+	}
+	& p {
+		font-size: 1.5em;
+		font-weight: 600;
+	}
+	& button {
+		height: 3em;
+		width: 100%;
+		text-transform: uppercase;
+		font-weight: 600;
+		border-radius: 0.3em;
+		border: none;
+		margin: 0 0 1em 0;
+	}
+}
+
+.header-title {
+	flex: 1;
+	padding: 5%;
+}
+
+.color1 {
+	color: var(--paragraph-yellow);
+}
+
+.signup-email-button {
+	background-color: var(--white-color);
+	color: var(--background-purple-color);
+}
+
+.signup-google-button {
+	padding: 1;
+	align-items: center;
+	background-color: var(--botton-blue);
+	color: var(--white-color);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	& img {
+		height: 1.5em;
+		align-items: center;
+		margin-right: 20%;
+		background-color: var(--white-color);
+	}
+	& span {
+		text-align: center;
+	}
+}
+
+.header-img {
+	flex: 1;
+	height: 50vh;
+	& img {
+		height: 50vh;
+		width: auto;
+		position: center;
+	}
+}
+
+
+/*COMPANIES SECTION */
+#companies-section {
+	background-color: var(--background-ivory-color);
+	padding: 5%;
+	& h5 {
+		font-size: 1.3em;
+		color: var(--titles-black);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	& img {
+		width: auto;
+		margin: 2%;
+	}
+}
+
+#companies-section div {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/*GOALS SECTION */
+#goals-section {
+	padding: 5%;
+	text-align: center;
+	& h2 {
+		font-size: 2.5em;
+		font-weight: 600;
+		color: var(--background-purple-color);
+	}
+	& h4 {
+		font-size: 1.3em;
+	}
+	& span {
+		font-size: 3.5em;
+		font-weight: 700;
+		color: var(--background-purple-color);
+	}
+	& p {
+		padding: 0 15%;
+		font-size: 1.4em;
+		font-weight: 600;
+		color: var(--titles-black);
+	}
+	& ul {
+		flex: 1;
+	}
+	& li {
+		list-style: none;
+		font-weight: 700;
+	}
+}
+
+.goals-blocks {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/*HQ SECTION */
+#hq-section {
+	background-color: var(--background-purple-color);
+	color: var(--white-color);
+	align-items: center;
+	text-align: center;
+	padding: 1em;
+	& h3 {
+		font-size: 5vh;
+	}
+	& button {
+		width: 100%;
+		font-size: 1.5em;
+		padding: 1em;
+		text-transform: uppercase;
+		font-weight: 600;
+		border-radius: 0.2em;
+		margin-bottom: 1em;
+		max-width: 700px;
+	}
+}
+
+.free-button {
+	background-color: var(--white-color);
+	color: var(--background-purple-color);
+	border: none;
+}
+
+.sales-button {
+	background-color: var(--background-purple-color);
+	color: var(--white-color);
+	border-color: var(--white-color);
+	& img {
+		background-color: var(--white-color);
+		height: 1em;
+		align-items: left;
+	}
+}
+
+/* FOOTER */
+#footer {
+	padding: 6% 2%;
+	text-align: center;
+	& li {
+		text-align: left;
+		font-size: 1em;
+		line-height: 3;
+		list-style: none;
+		font-weight: 700;
+	}
+	& div {
+		font-size: 1.3em;
+	}
+}
+
+.footer-sections {
+	display: flex;
+	justify-content: space-between;
+}
+
+.download-sl {
+	color: var(--botton-blue);
+}
+
+.sn-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2em;
+	& i {
+		font-size: 30px;
+	}
+}
+
+.download-sl {
+    padding-left: 20px;
+    background-image: url('../images/icon-download.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.region {
+    padding-left: 20px;
+    background-image: url('../images/icon-region.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* SCREEN SIZES QUERIES */
+
+/* Mobile */
+@media (max-width: 767px) {
+	#header {
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+		& button {
+			font-size: 1.5em;
+		}
+	}
+	
+	.header-img {
+		height: 60vh;
+		overflow: hidden;
+		position: relative;
+		& img {
+			width: 100%;
+			height: auto;
+			transform: scale(1.5);
+			transform-origin: top left;
+		}
+	}
+
+	.goals-blocks {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer-sections {
+		flex-direction: column;
+	}
+
+	#companies-section img {
+		max-height: 40px;
+	}
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+	#header {
+		background: url('../images/background-singup.png');
+		background-size: cover;
+		background-position: left;
+		background-repeat: no-repeat;
+		height: 100vh;
+		width: 100%; 
+		text-align: left;
+		& button {
+			font-size: 1em;
+		}
+	}
+
+	.header-img {
+		width: 30%;
+	}
+
+	.goals-blocks {
+		flex-direction: row;
+		text-align: left;
+	}
+
+	.footer-sections {
+		flex-direction: row;
+	}
+	
+	.sn-icons {
+		max-width: 50%;
+	}
+
+	#companies-section img {
+		max-height: 35px;
+	}
+}
