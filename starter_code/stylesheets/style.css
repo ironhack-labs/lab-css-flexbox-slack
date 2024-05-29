@@ -8,3 +8,295 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#nav-bar {
+    background-color: #540B51;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
+#nav-bar #slack-logo {
+    height: 3em;
+
+}
+
+#listing-in-nav-bar {
+    display: none;
+}
+
+.nav-bar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-buttons button img {
+    width: auto;
+    height: 3em;
+}
+
+#search-icon, #menu-icon {
+    background-color: #540B51;
+    border: none; 
+    padding: 0 25px;
+}
+
+#header {
+    background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: -1px;
+
+}
+
+#header #heading-no-1 {
+    font-size: 75px;
+}
+
+
+.header-buttons button {
+    width: 100%;
+    height: 80px;
+    font-size: 25px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 480;
+}
+
+#header #text-colored {
+    color: #ECB12F;
+}
+
+#sign-up-button-email {
+    background-color: white;
+    color: #540B51;
+}
+
+#sign-up-button-google {
+    background-color: #4285F4;
+}
+
+#sign-up-button-google #google-logo {
+    background-color: white;
+    width: 1em;
+    border-radius: 5%;
+    padding: 7px;
+    float: left;
+
+}
+
+#sign-up-button-google span {
+    color: white;
+}
+
+#slack-app-screenshot {
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#slack-app-screenshot img {
+    width: 160%;
+    height: 118%;
+    object-fit: cover;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#section-1-main {
+    display: flex;
+    background-color: #F3EAE2;
+    padding: 45px 45px;
+}
+
+#section-1-main p {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#section-1-main, #images-of-companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#images-of-companies img {
+    height: 3.5em;
+    padding: 25px 10px;
+}
+
+#section-2-main {
+    background-color: white;
+    text-align: center;
+}
+
+#section-2-main h3,
+#section-2-main span {
+    color: #540B51;
+    font-weight: bold;
+}
+
+#section-2-main h3 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#section-2-main span {
+    font-size: 75px;
+    margin-bottom: 0px;
+}
+
+#section-2-main > p {
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 20px 30px 20px;
+}
+
+#section-2-main ul {
+    list-style-type: none;
+}
+
+#section-2-main ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 90px 0px 90px;
+}
+
+#section-2-main ul li p + p {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0px 110px 25px 110px;
+    margin-top: 0px;
+}
+
+#section-3-main h3 {
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    margin: 50px 30px 20px 30px;
+}
+
+#section-3-main button {
+    color: #540B51;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 10px 15px;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 3%;
+}
+
+#section-3-main #sales-button-main {
+    color: white;
+    background-color: #540B51;
+    border: 2px solid white;
+}
+
+#section-3-main {
+    margin-bottom: 20px;
+    background-color: #540B51;
+}
+
+#footer {
+    background-color: white;
+    margin: 40px 10px 20px 10px;
+    height: 400px;
+
+}
+
+#footer hr {
+    color: grey;
+    height: 2px;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+#footer #useful-links li {
+    padding: 15px 0px 15px 0px;
+}
+
+#footer ul + ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer div {
+    color: gray;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px 10px 25px 10px;
+}
+
+#footer #useful-links li img {
+    padding-right: 10px;
+}
+
+#footer #useful-links #download-slack-link {
+    color: blue;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    #section-2-main ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #section-2-main ul li {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #section-2-main ul li p + p {
+        text-align: start;
+    }
+
+    #footer #useful-links {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #section-1-main #images-of-companies {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #header #header-text {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        order: 1;
+    }
+
+    #header #slack-app-screenshot {
+        display: flex;
+        order: 2;
+        width: 40vw;
+        height: 60%;
+    }
+
+}
