@@ -10,83 +10,88 @@
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
   <!-- link your styles -->
-  <link rel="stylesheet" href="./stylesheets/style.css" />
+  <link rel="stylesheet" href="/starter_code/stylesheets/style.css" />
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
-
-      <ul>
-        <li>
-          <a href="#">Product</a>
-        </li>
-        <li>
-          <a href="#">Solutions</a>
-        </li>
-        <li>
-          <a href="#">Resources</a>
-        </li>
-        <li>
-          <a href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-
-    <div>
-      <button>
-        <img src="./images/icon-search.png" alt="Search icon">
-      </button>
-
-      <button>
-        <img src="./images/icon-menu.png" alt="Menu icon">
-      </button>
-
-      <ul hidden>
-        <li>
-          <a href="#">Sign in</a>
-        </li>
-        <li>
-          <a href="#">Try for free</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
   <!-- HEADER -->
-  <header>
-    <div>
-      <h1>Great teamwork starts with a digital HQ</h1>
+  <header class="above-the-fold dark-themed">
 
-      <p>Slack is free to try for as long as you'd like.</p>
+    <nav>
+      <div class="first-part-nav">
+        <img class="slack-logo" src="./images/slack-logo.png" alt="Slack logo" />
 
-      <div>
-        <button>Sign up with email</button>
+        <ul>
+          <li>
+            <a href="#">Product</a>
+          </li>
+          <li>
+            <a href="#">Solutions</a>
+          </li>
+          <li>
+            <a href="#">Resources</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+      <div class="second-part-nav">
+        <button class="search-button">
+          <img class="search-icon" src="/starter_code/images/icon-search.png" alt="Search icon">
         </button>
+
+        <button class="menu-button">
+        <img class="menu-icon" src="./images/icon-menu.png" alt="Menu icon">
+      </button>
+
+        <ul>
+          <li>
+            <a class="sign-in-button" href="#">Sign in</a>
+          </li>
+          <li>
+            <a class="try-button" href="#">Try for free</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+
+    <div class="header-section">
+
+      <div class="first-header-section">
+
+        <h1>Great teamwork starts with a digital HQ</h1>
+        <p><strong>Slack is free to try</strong> for as long as you'd like.</p>
+        <div class="email-google-buttons">
+          <button class="email-button"><span>Sign up with email</span></button>
+          <button class="google-button">
+            <img class="google-icon" src="./images/logo-google.png" alt="Google logo" />
+            <span>Sign up with Google</span>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="second-header-section">
+        <img class="slack-screenshot" src="./images/hero-product-ui.png" alt="Slack app screenshot" />
       </div>
 
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
-    </div>
   </header>
 
   <main>
-    <section>
+    <section class="companies-section">
       <p>Trusted by companies all over the world</p>
 
-      <div>
+      <div  class="companies-logos">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
@@ -97,9 +102,9 @@
 
     </section>
 
-    <section>
+    <section class="stats-section light-themed">
       <h3>Teams large and small rely on Slack</h3>
-      <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+      <p>Slack securely scales up to support collaboration at the world's biggest companies.</p>
 
 
       <ul>
@@ -129,16 +134,18 @@
       </ul>
     </section>
 
-    <section>
-      <h3>Welcome to your new digital HQ</h3>
 
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+    <section class="pre-footer-section dark-themed">
+      <h3>Welcome to your new digital HQ</h3>
+      <div class="button-container">
+      <button class="primary-button">Try for free</button>
+      <button class="secondary-button">Talk to sales</button>
+    </div>
     </section>
 
   </main>
-
-  <footer>
+  <hr> 
+  <footer class="light-themed">
     <ul>
       <li>Status</li>
       <li>Privacy</li>
@@ -149,7 +156,7 @@
       <li>Download Slack</li>
     </ul>
 
-    <hr>
+
 
     <ul>
       <li>
