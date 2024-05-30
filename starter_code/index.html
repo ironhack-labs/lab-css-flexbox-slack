@@ -14,38 +14,247 @@
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
+
+  <style>
+
+    @media (max-width: 768px) {
+      .logo img {
+        width: 80px; 
+        height: auto; 
+      }
+    }
+    
+  
+
+    #logo-search-list {
+      background-color: purple;
+      height: 10vh;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -10px -20px 0px -10px;
+      align-items: center;
+      position: relative; 
+    }
+
+    .logo img {
+      width: 100px; 
+      height: auto;
+      margin-left: 20px;
+    }
+
+    .search-menu {
+      position: absolute; 
+      top: 10px;
+      height: auto;
+      width: 100px; 
+      right: -10px; 
+      display: flex;
+      gap: 10px; 
+      justify-content: baseline;
+    }
+
+    #great-team{
+      background-color: purple;
+      margin: -70px -20px -10px -10px;
+      padding: 20% 10%;
+      text-align: center;
+
+    }
+
+    .slack-is-free{
+      color:white;
+    }
+
+    #sign-up{
+      background-color: purple;
+      height: 15vh;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: -10px -20px 0px -10px;
+      align-items: center;
+      position: relative; 
+      
+    }
+    .email{
+      align-items: center;
+      text-align: center;
+      width: 500px;
+      height: 40px;
+      margin: -60px 0px 0px 0px;
+    }
+
+    .google{
+      background-color: purple;
+      align-items: center;
+      text-align: center;
+      width: 600px;
+      height: 50px;
+      margin: -60px 0px 0px 0px;
+    }
+
+    .screenshot{
+      display: flex;
+      margin: 0px -20px 0px -10px;
+      
+    }
+
+   #logos-container {
+    background-color: beige;
+    width: 106%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    justify-items: center; 
+    align-items: center; 
+    text-align: center;
+    margin: -10px -60px -10px -10px ; 
+    }
+
+    .logo img {
+    width: 90px; 
+    height: auto; 
+  }
+
+
+    #trusted{
+      background-color: beige;
+      width: 100%;
+      padding: 10px 10px 10px 10px;
+      margin: -10px;
+
+    }
+
+    #teams-large{
+      color: purple;
+      background-color: white;
+      font-size: x-large;
+      margin: 50px 0px -10px 0px;
+      
+      text-align: center;
+
+    }
+
+    #slack-securely{
+      color: purple;
+      background-color: white;
+      font-size: small;
+      margin: 0px 40px 0px 40px;
+      
+      text-align: center;
+    }
+
+    #percentage{
+      background-color: white;
+      color: purple;
+      font-size: 50px;
+      margin: -20px 40px 0px 40px;
+      
+      text-align: center;
+    }
+
+    #percentage-text{
+      background-color: white;
+      color: purple;
+      font-size: 15px;
+      margin: -60px 80px -30px 70px;
+      
+      text-align: center;
+    }
+
+    #weighted-average{
+      color: rgb(189, 83, 189);
+      background-color: white;
+      font-size: 10px;
+      margin: 50px 10px 0px 10px;
+      
+      text-align: center;
+
+    }
+
+    #welcome{
+      background-color: purple;
+      height: 30vh;
+      margin: 0px -20px 10px -10px;
+      padding: 10px 0px;  
+      font-size: 30px;
+      text-align: center;
+
+
+    }
+
+    #buttons{
+      background-color: white;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 20px -20px -120px 0px;
+      align-items: left;
+     
+    }
+
+    #socials{
+      background-color: white;
+    width: 100%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    justify-items: center; 
+    align-items: center; 
+    text-align: center;
+    margin: -10px -60px -50px -10px
+
+
+    }
+
+    #footer{
+      color: rgb(189, 83, 189);
+      background-color: white;
+      font-size: 10px;
+      margin: 0px 10px 0px 10px;
+      text-align: center;
+    }
+
+
+
+
+
+    .logo1{
+      
+    }
+
+    
+    
+  </style>
+
+
 </head>
 
 <body>
+
+  <div id="flex-container">
+
+  
   <!-- NAVBAR -->
   <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+    <div id="logo-search-list">
+      <div class="logo">
+        <img src="./images/slack-logo.png" alt="Slack logo" />
+      </div>
 
-      <ul>
-        <li>
-          <a href="#">Product</a>
-        </li>
-        <li>
-          <a href="#">Solutions</a>
-        </li>
-        <li>
-          <a href="#">Resources</a>
-        </li>
-        <li>
-          <a href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-
-    <div>
-      <button>
-        <img src="./images/icon-search.png" alt="Search icon">
-      </button>
-
-      <button>
-        <img src="./images/icon-menu.png" alt="Menu icon">
-      </button>
+      <div class="search-menu">
+        <button>
+          <img src="./images/icon-search.png" alt="Search icon">
+        </button>
+        <button>
+          <img src="./images/icon-menu.png" alt="Menu icon">
+        </button>
+      </div>
 
       <ul hidden>
         <li>
@@ -56,124 +265,156 @@
         </li>
       </ul>
     </div>
-  </nav>
 
+    
+  </nav>
 
   <!-- HEADER -->
   <header>
-    <div>
+    <div id="great-team">
       <h1>Great teamwork starts with a digital HQ</h1>
-
-      <p>Slack is free to try for as long as you'd like.</p>
-
-      <div>
-        <button>Sign up with email</button>
-
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
-        </button>
+      <p class="slack-is-free">Slack is free to try for as long as you'd like.</p>
       </div>
 
+      <div id="sign-up">
+        <div class="email">
+          <button style="width: 350px; height: 30px;">SIGN UP WITH EMAIL</button>
+        </div>
+
+        <div class="google">
+          <button style="width: 350px; height: 50px; text-align: center;" >
+          <img src="./images/logo-google.png" alt="Google logo" style="width: 30px;" />
+          <span>SIGN UP WITH GOOGLE</span>
+        </button>
+        </div>
+      </div>
+    
+
+    <div class="screenshot">
+      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" style="width: 100%;"/>
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
-    </div>
+
   </header>
 
   <main>
     <section>
-      <p>Trusted by companies all over the world</p>
-
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+      <div id="trusted">
+         <p style="font-size: small; text-align: center ;">TRUSTED BY COMPANIES ALL OVER THE WORLD</p>
       </div>
+      <div id="logos-container">
+    <div class="logo"><img src="./images/logo-airbnb.png" alt="Airbnb logo" /></div>
+    <div class="logo"><img src="./images/logo-nasa.png" alt="NASA logo" /></div>
+    <div class="logo"><img src="./images/logo-uber.png" alt="Uber logo" /></div>
+    <div class="logo"><img src="./images/logo-target.png" alt="Target logo" /></div>
+    <div class="logo"><img src="./images/logo-nyt.png" alt="New York Times logo" /></div>
+    <div class="logo"><img src="./images/logo-spotify.png" alt="Spotify logo" /></div>
+</div>
+
+
 
     </section>
 
     <section>
+      <div id="teams-large">
       <h3>Teams large and small rely on Slack</h3>
+      </div>
+      <div id="slack-securely">
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
-
-
-      <ul>
-        <li>
+      </div>
+        
+          <div id="percentage">
           <p><span>85%</span></p>
-          <p>
-            of users say Slack has improved communication
-            <sup>*</sup>
-          </p>
-        </li>
-
-        <li>
+          </div>
+          <div id="percentage-text">
+          <p>of users say Slack has improved communication <sup>*</sup></p>
+          </div>
+        
+          <div id="percentage">
           <p><span>86%</span></p>
-          <p>
-            feel their ability to work remotely has improved has improved
-            <sup>*</sup>
-          </p>
-        </li>
+          </div>
 
-        <li>
+          <div id="percentage-text">
+          <p>feel their ability to work remotely has improved <sup>*</sup></p>
+          </div>
+        
+        <div id="percentage">
           <p><span>88%</span></p>
-          <p>
-            feel more connected to their teams*
-            <sup>*</sup>
-          </p>
-        </li>
-      </ul>
+        </div>
+        <div id="percentage-text">
+          <p>feel more connected to their teams* <sup>*</sup></p>
+          </div>
+        
     </section>
 
-    <section>
-      <h3>Welcome to your new digital HQ</h3>
-
-      <button>Try for free</button>
-      <button>Talk to sales</button>
-    </section>
-
-  </main>
-
-  <footer>
-    <ul>
-      <li>Status</li>
-      <li>Privacy</li>
-      <li>Terms</li>
-      <li>Cookie Preferences</li>
-      <li>Contact Us</li>
-      <li>Change Region</li>
-      <li>Download Slack</li>
-    </ul>
-
-    <hr>
-
-    <ul>
-      <li>
-        <i class="fab fa-twitter"></i>
-      </li>
-      <li>
-        <i class="fab fa-facebook"></i>
-      </li>
-      <li>
-        <i class="fab fa-youtube"></i>
-      </li>
-      <li>
-        <i class="fab fa-linkedin"></i>
-      </li>
-    </ul>
-
-    <div>
-      <small>
-        &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
-        their respective owners.
-      </small>
+    <div id="weighted-average">
+      <p>*Weighted average. Based on 2.707 survey responses from weekly Slack users in the U.S., UK, Australia and canada with a ±2% margin of error at 95% CI (August 2020)</p>
     </div>
 
+    <section>
+      <div id="welcome">
+        <h3>Welcome to your new digital HQ</h3>
+      </div>
+
+      <div id="sign-up">
+        <div class="email">
+      <button style="font-size: 15px; width: 90%;">TRY FOR FREE</button>
+        </div>
+
+        <div class="email">
+
+      <button style="font-size: 15px; width: 90%;">TALK TO SALES</button>
+      </div>
+
+      </div>
+    </section>
+  </main>
+
+   <hr>
+
+  <footer>
+    <div id="buttons">
+      <div>
+        Status
+      </div>
+      <div>
+        Privacy
+      </div>
+      <div>
+        Terms
+      </div>
+      <div>
+        Cookie Preferences
+      </div>
+      <div>
+        Contact Us
+      </div>
+      <div>
+        &#127760; Change Region
+      </div>
+      <div>
+        <button> ↓Download Slack</button>
+      </div>
+      
+    </div>
+
+
+   
+
+    <div id="socials">
+      <div><i class="fab fa-twitter"></i></div>
+      <div><i class="fab fa-facebook"></i></div>
+      <div><i class="fab fa-youtube"></i></div>
+      <div><i class="fab fa-linkedin"></i></div>
+    </div>
+
+
+    <div id="footer">
+      <small>&copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by their respective owners.</small>
+    </div>
   </footer>
 </body>
+
+</div>
 
 </html>
