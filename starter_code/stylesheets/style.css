@@ -1,10 +1,346 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+/* Colors */
+:root {
+  --purple: #540b51;
+  --ivory: #f3eae2;
+  --blue: #4285f4;
+  --black: #191817;
+  --black-paragraph: #000000;
+  --yellow-paragraph: #ecb12f;
+  --link-blue: #2e71a6;
+  --grey-footer-links: #454245;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--purple);
+  width: 100vw;
+}
+
+#slack-logo {
+  width: 80px;
+  margin: 15px;
+  background: var(--purple);
+}
+
+.navbar-links {
+  display: none;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-icons button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.nav-icons button img {
+  width: 30px;
+}
+
+/* Header Section */
+.header-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--purple);
+  width: 100vw;
+}
+
+.header-section > h1 {
+  text-align: center;
+  color: white;
+  margin: 30px;
+}
+
+.header-section > p {
+  color: white;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+#signup-button {
+  width: 90%;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  color: var(--purple);
+  border: none;
+  border-radius: 2px;
+}
+
+#google-button {
+  width: 90%;
+  margin: 10px;
+  margin-top: 0;
+  height: 50px;
+  text-align: center;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 2px;
+  font-weight: 900;
+  display: flex;
+}
+
+#google-logo {
+  width: 30px;
+  background: white;
+  border: none;
+  border-radius: 2px;
+}
+
+#google-text {
+  margin: 0 auto;
+}
+
+#hero {
+  width: 100vw;
+}
+
+/* References Section */
+#refs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ivory);
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#refs-container > p {
+  text-align: center;
+  font-size: small;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+#ref-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+#ref-logos img {
+  margin: 0 5px;
+}
+
+#nasa-logo,
+#airbnb-logo,
+#uber-logo,
+#target-logo,
+#nyt-logo,
+#spotify-logo {
+  width: 20%;
+}
+
+#airbnb-logo {
+  width: 25%;
+}
+
+#target-logo {
+  width: 15%;
+}
+
+#nyt-logo {
+  width: 45%;
+}
+
+#spotify-logo {
+  width: 40%;
+}
+
+#text-header {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+  margin-top: 60px;
+  color: var(--purple);
+}
+
+#text-sub {
+  text-align: center;
+}
+
+.percentage {
+  font-size: 60px;
+  color: var(--purple);
+  text-align: center;
+}
+
+#list {
+  list-style: none;
+  text-align: center;
+}
+
+.percentage-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  margin: 0 50px 0 50px;
+}
+
+#contact {
+  background: var(--purple);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-buttons > button {
+  border: none;
+  height: 40px;
+  font-size: 14px;
+  color: var(--purple);
+  border-radius: 2px;
+}
+
+#sales-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  font-size: 10px;
+}
+
+ul > li {
+  margin-top: 20px;
+}
+
+/* Other Styles */
+hr {
+  margin-top: 40px;
+}
+
+.ul-footer-logos {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 30px;
+}
+
+#small-text {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.618);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .header-section > h1 {
+    font-size: 80px;
+    text-align: left;
+    width: 50%;
+  }
+
+  #ref-logos {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  #nasa-logo,
+  #airbnb-logo,
+  #uber-logo,
+  #target-logo,
+  #nyt-logo,
+  #spotify-logo {
+    width: 10%;
+  }
+
+  #airbnb-logo {
+    width: 15%;
+  }
+
+  #nyt-logo {
+    width: 25%;
+  }
+
+  #spotify-logo {
+    width: 20%;
+  }
+
+  #refs-container > p {
+    font-size: 20px;
+  }
+
+  .contact-buttons {
+    width: 70%;
+    margin: 0 auto 70px auto;
+  }
+
+  #list {
+    display: inline-flex;
+    text-align: left;
+  }
+
+  .percentage-text {
+    margin-left: 0;
+  }
+
+  .detail-links {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .ul-footer-logos {
+    width: 30%;
+  }
+
+  .header-section > p {
+    width: 40%;
+  }
+
+  #signup-button,
+  #google-button {
+    width: 70%;
+  }
+
+  .header-section {
+    background-image: url("/images/background-signup.png");
+    width: 100%;
+    z-index: 1;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #hero {
+    position: relative;
+    width: 400px;
+    left: 0;
+    top: 30%;
+    z-index: 999;
+  }
+}
