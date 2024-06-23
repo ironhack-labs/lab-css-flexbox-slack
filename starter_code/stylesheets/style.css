@@ -1,10 +1,334 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #540b51;
+}
+
+nav.topnav img.slackLogo {
+  height: 30px;
+}
+
+nav.topnav ul {
+  list-style: none;
+  display: flex;
+
+  gap: 1em;
+}
+
+nav.topnav ul li a {
+  color: #2e71a6;
+  text-decoration: none;
+}
+
+nav.topnav .buttons {
+  display: flex;
+  gap: 1em;
+}
+
+nav.topnav .buttons button {
+  background: none;
+  border: none;
+}
+
+.header {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #540b51;
+  color: white;
+}
+
+.header .greatText {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.header .pharagraphHeader {
+  margin-bottom: 1em;
+  color: white;
+}
+
+.header .pharagraphHeader .yellow {
+  color: #ecb12f;
+}
+
+.header .divButtons button {
+  margin: 0.5em;
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 5px;
+}
+
+.header .singWithEmail {
+  background-color: white;
+  color: #540b51;
+}
+
+.header .googleButton {
+  background-color: #4285f4;
+  color: white;
+}
+
+.header .googleButton img.googleLogo {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.header .googleSpan {
+  vertical-align: middle;
+}
+
+.header img.screenshoot {
+  margin-top: 2em;
+  min-width: 100%;
+}
+
+.logo {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.logo .lema {
+  margin-bottom: 1em;
+  color: #000000;
+}
+
+.logo img {
+  margin: 0.5em;
+}
+
+main section {
+  text-align: center;
+  padding: 2em 1em;
+}
+section.text {
+  background-color: white;
+}
+
+main section h3 {
+  color: #540b51;
+}
+
+main section p {
+  color: #000000;
+}
+
+main section ul {
+  list-style: none;
+  padding: 0;
+}
+
+main section ul li {
+  margin: 1em 0;
+}
+
+main section ul li p span {
+  font-size: 2em;
+  color: #540b51;
+}
+
+footer {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: white;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+footer ul li a {
+  color: #454245;
+  text-decoration: none;
+}
+
+footer ul li {
+  margin: 0.5em 0;
+}
+
+footer small {
+  color: #454245;
+}
+
+@media (max-width: 768px) {
+  nav.topnav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  nav.topnav ul {
+    display: none;
+  }
+  .header .greatText {
+    font-size: 1.5em;
+  }
+
+  .header .divButtons button {
+    display: block;
+    width: 100%;
+    margin: 0.5em 0;
+  }
+  img.screenshoot {
+    max-width: 150%;
+  }
+
+  .logo img {
+    max-width: 20%;
+  }
+  section.text {
+    background-color: white;
+  }
+  ul.percent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main section ul li p span {
+    font-size: 1.5em;
+  }
+
+  .buttonss {
+    background-color: #540b51;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .buttonss h3 {
+    margin-bottom: 20px;
+  }
+
+  .buttonss button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+  }
+
+  .buttonss button:nth-child(3) {
+    background-color: #540b51;
+    color: white;
+  }
+
+  ul.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  ul.webs {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav.topnav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  nav.topnav ul {
+    display: none;
+  }
+  header.header {
+    display: flexbox;
+    flex-direction: column;
+  }
+
+  .header .greatText {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    max-width: 45%;
+  }
+  p.pharagraphHeader {
+    max-width: 45%;
+  }
+
+  .header .divButtons button {
+    max-width: 45%;
+    display: block;
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
+  img.screenshoot {
+    max-width: 150%;
+    height: 10%;
+  }
+
+  .logo img {
+    max-width: 20%;
+  }
+
+  section.text {
+    background-color: white;
+  }
+
+  ul.percent {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main section ul li p span {
+    font-size: 1.5em;
+  }
+
+  .buttonss {
+    background-color: #540b51;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .buttonss h3 {
+    margin-bottom: 20px;
+  }
+
+  .buttonss button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .buttonss button:nth-child(3) {
+    background-color: #540b51;
+    color: white;
+    border: 2px solid white;
+  }
+
+  ul.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  ul.webs {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+  }
+}
