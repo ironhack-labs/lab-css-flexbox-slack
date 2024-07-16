@@ -8,3 +8,318 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 0 20px;
+}
+/* ----------------------- */
+/* MAIN NAVIGATION */
+/* ----------------------- */
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #540b51;
+  padding: 10px 20px;
+}
+
+.nav-menu img {
+  width: 100px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu--list {
+  display: none;
+}
+
+.nav-cta {
+  display: none;
+}
+
+.nav-actions button {
+  background-color: inherit;
+  border: none;
+}
+
+/* ----------------------- */
+/* MAIN HEADER */
+/* ----------------------- */
+
+.main-header {
+  background-color: #540b51;
+  color: #fff;
+  text-align: center;
+}
+.main-header--content {
+  padding: 40px 20px;
+}
+
+.main-header--img {
+  width: 100%;
+  overflow: hidden;
+}
+.main-header--img img {
+  width: 140%;
+}
+
+.main-header--heading {
+  margin-bottom: 20px;
+}
+.main-header--text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.main-header--text span {
+  color: #ecb12f;
+}
+
+.btn {
+  max-width: 350px;
+  width: 100%;
+  padding: 10px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #540b51;
+}
+
+.btn:last-child {
+  margin-bottom: 0;
+}
+
+.btn-special {
+  background-color: #540b51;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.google-btn {
+  position: relative;
+  background-color: #4285f4;
+  z-index: 0;
+  color: #fff;
+}
+
+.google-img {
+  position: absolute;
+  width: 24px;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+/* ----------------------- */
+/* MAIN */
+/* ----------------------- */
+
+/* ----------------------- */
+/* SECTION TESTIMONIALS */
+/* ----------------------- */
+
+.testimonials {
+  background-color: #f3eae2;
+  padding-top: 30px;
+}
+
+.testimonials--heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.testimonials--img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.testimonial-img {
+  height: 32px;
+  margin-bottom: 30px;
+}
+
+/* ----------------------- */
+/* SECTION SELL */
+/* ----------------------- */
+
+.sell {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.sell--heading {
+  font-size: 24px;
+  color: #540b51;
+  margin-bottom: 10px;
+}
+
+.sell--text {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.sell-points {
+  list-style-type: none;
+}
+
+.sell-point {
+  margin-bottom: 30px;
+}
+
+.sell-point--percent {
+  color: #540b51;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.sell-point--text {
+  font-weight: 600;
+  font-size: 14px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* ----------------------- */
+/* SECTION CTA */
+/* ----------------------- */
+
+.section-cta {
+  padding: 30px;
+  background-color: #540b51;
+  text-align: center;
+}
+
+.section-cta--heading {
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* ----------------------- */
+/* SECTION CTA */
+/* ----------------------- */
+
+.footer-hr {
+  margin: 40px 0;
+  color: red;
+}
+
+.footer-links {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.footer-links li {
+  margin-bottom: 15px;
+}
+.footer-links li:last-child {
+  margin-bottom: 0;
+  color: #4285f4;
+}
+
+.social-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.copyrights {
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-header--heading {
+    font-size: 52px;
+    width: 65%;
+  }
+
+  .testimonials--heading {
+    text-align: center;
+  }
+
+  .sell--heading {
+    margin-bottom: 30px;
+  }
+
+  .sell-points {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+    gap: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-header--heading {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .main-header--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-header--img img {
+    width: 70%;
+  }
+
+  .btn {
+    max-width: 400px;
+    width: 48%;
+  }
+
+  .testimonials--img-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-cta .btn {
+    width: 200px;
+  }
+
+  .section-cta--heading {
+    font-size: 40px;
+    margin: 30px 0;
+  }
+}
