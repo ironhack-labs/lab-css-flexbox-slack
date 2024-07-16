@@ -19,10 +19,10 @@
 <body>
   <!-- NAVBAR -->
   <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+    <div class="navbar-div">
+      <img src="./images/slack-logo.png" alt="Slack logo" id="slack-logo" />
 
-      <ul>
+      <ul class="navbar-list">
         <li>
           <a href="#">Product</a>
         </li>
@@ -38,16 +38,16 @@
       </ul>
     </div>
 
-    <div>
-      <button>
+    <div class="navbar-div">
+      <button class="navbar-button">
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button class="navbar-button">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <ul class="navbar-list">
         <li>
           <a href="#">Sign in</a>
         </li>
@@ -61,32 +61,35 @@
 
   <!-- HEADER -->
   <header>
-    <div>
+    <div class="header-div">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p>
+        <span class="text-yellow">Slack is free to try</span>
+        <span class="secondary-theme-text"> for as long as you'd like.</span>
+      </p>
 
-      <div>
+      <div class="button-container">
         <button>Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
+        <button id="google-button">
+          <img src="./images/logo-google.png" alt="Google logo"/>
           <span>Sign up with Google</span>
         </button>
       </div>
 
     </div>
 
-    <div>
+    <div class="header-div">
       <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
-    <section>
-      <p>Trusted by companies all over the world</p>
+    <section id="logo-section">
+      <p id="logo-title">Trusted by companies all over the world</p>
 
-      <div>
+      <div id="logo-div">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
@@ -99,13 +102,13 @@
 
     <section>
       <h3>Teams large and small rely on Slack</h3>
-      <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+      <p class="dark-text">Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
 
       <ul>
         <li>
           <p><span>85%</span></p>
-          <p>
+          <p class="dark-text">
             of users say Slack has improved communication
             <sup>*</sup>
           </p>
@@ -113,7 +116,7 @@
 
         <li>
           <p><span>86%</span></p>
-          <p>
+          <p class="dark-text">
             feel their ability to work remotely has improved has improved
             <sup>*</sup>
           </p>
@@ -121,7 +124,7 @@
 
         <li>
           <p><span>88%</span></p>
-          <p>
+          <p class="dark-text">
             feel more connected to their teams*
             <sup>*</sup>
           </p>
@@ -129,11 +132,13 @@
       </ul>
     </section>
 
-    <section>
+    <section id="main-button-section">
       <h3>Welcome to your new digital HQ</h3>
 
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+      <div class="button-container">
+        <button>Try for free</button>
+        <button id="to-sales">Talk to sales</button>
+      </div>
     </section>
 
   </main>
@@ -151,7 +156,7 @@
 
     <hr>
 
-    <ul>
+    <ul class="social-icons">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -173,7 +178,7 @@
       </small>
     </div>
 
-  </footer>
+  </footer> 
 </body>
 
 </html>

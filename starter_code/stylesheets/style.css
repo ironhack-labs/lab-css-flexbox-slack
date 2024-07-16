@@ -1,10 +1,279 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+/* Global reset and box-sizing */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Root variables for color scheme */
+:root {
+    --main-theme: #540B51;
+    --secondary-theme: white;
+    --background-ivory: #F3EAE2;
+    --button-blue: #4285F4;
+    --paragraph-yellow: #ECB12F;
+    --paragraph-black: #000000;
+}
+
+/* Basic styles */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-theme);
+    color: var(--main-theme);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    border-radius: 2%;
+    text-transform: uppercase;
+    padding: 8px 12px; /* Adjust button padding as needed */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-theme);
+    padding: 10px;
+}
+
+.navbar-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-list {
+    display: none;
+}
+
+.navbar-button {
+    background-color: var(--main-theme);
+    color: var(--secondary-theme);
+    border: none;
+}
+
+.slack-logo {
+    width: 20%; /* Adjust logo size as needed */
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--main-theme);
+    color: var(--secondary-theme);
+}
+
+.header-div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-div h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.header-div p {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-container button {
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--secondary-theme);
+    color: var(--main-theme);
+}
+
+#google-button {
+    background-color: var(--button-blue);
+    color: var(--secondary-theme);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#google-button img {
+    height: 20px;
+    margin-right: 10px;
+    background-color: var(--secondary-theme);
+}
+
+/* Main content sections */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+#logo-section {
+    background-color: var(--background-ivory);
+}
+
+#logo-title {
+    text-transform: uppercase;
+    color: var(--paragraph-black);
+    padding: 20px;
+    font-weight: bold;
+}
+
+.secondary-theme-text {
+    color: var(--secondary-theme);
+}
+
+.text-yellow {
+    color: var(--paragraph-yellow);
+}
+
+.main-theme-text {
+    color: var(--main-theme);
+}
+
+.dark-text {
+    color: var(--paragraph-black);
+}
+
+#main-button-section {
+    background-color: var(--main-theme);
+}
+
+#main-button-section h3 {
+    color: var(--secondary-theme);
+}
+
+#to-sales {
+    background-color: var(--main-theme);
+    color: var(--secondary-theme);
+    border-color: var(--secondary-theme);
+}
+
+/* Footer */
+footer {
+    color: var(--paragraph-black);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid var(--secondary-theme);
+    margin: 10px 0;
+}
+
+footer div {
+    font-size: 0.8rem;
+}
+
+.social-icons {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+    }
+  
+    .header-div {
+      width: 50%;
+      text-align: left;
+    }
+  
+    .header-div h1 {
+      font-size: 1.5rem; 
+    }
+  
+    .button-container {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    #google-button {
+      width: auto;
+      padding: 12px 20px;
+    }
+  
+    /* Logos section */
+    #logo-div {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    #logo-div img {
+      width: auto;
+      margin: 10px;
+    }
+  
+    section ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    section ul li {
+      width: 30%;
+      margin-bottom: 20px;
+    }
+  
+    /* Footer */
+    footer ul {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+  }
+  
