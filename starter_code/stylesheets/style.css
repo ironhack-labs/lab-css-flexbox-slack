@@ -1,4 +1,4 @@
-/*
+/* 
 background purple: #540B51
 background ivory: #F3EAE2
 button blue: #4285F4
@@ -8,3 +8,452 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+/* html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+nav {
+  background-color: #540b51;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  /* z-index: 1;
+    border-bottom: 1px solid #540B51; */
+}
+/* 
+nav div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+nav div img {
+  width: 50%;
+  height: 50px;
+  margin: 0 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 1rem;
+  padding: 0;
+}
+
+nav div button {
+  width: 50px;
+  height: 30px;
+  margin: 0 1rem;
+}
+ */ */
+
+
+
+ /* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the nav element */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4A154B; /* Slack's primary color */
+  color: white;
+}
+
+/* Style the div containing the logo and the links */
+nav > div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the logo */
+nav img {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+/* Style the ul containing the navigation links */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Style individual navigation links */
+nav ul li {
+  margin-right: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #36C5F0; /* Slack's secondary color */
+}
+
+/* Style the buttons */
+nav > div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+nav button img {
+  height: 20px;
+}
+
+nav button:last-child {
+  margin-right: 0;
+}
+
+/* Style the hidden ul for sign in and try for free */
+nav > div:last-child ul {
+  list-style-type: none;
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 60px; /* Adjust as per your needs */
+  right: 2rem; /* Adjust as per your needs */
+  background-color: #4A154B;
+  border: 1px solid #36C5F0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav > div:last-child ul li {
+  padding: 0.5rem 1rem;
+}
+
+nav > div:last-child ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav > div:last-child ul li:hover {
+  background-color: #36C5F0;
+}
+
+
+/* header */
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the header element */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f9fa; /* Light grey background */
+}
+
+/* Style the first div containing the text and buttons */
+header > div:first-child {
+  max-width: 50%;
+}
+
+/* Style the h1 element */
+header h1 {
+  font-size: 2.5rem;
+  color: #4A154B; /* Slack's primary color */
+  margin-bottom: 1rem;
+}
+
+/* Style the paragraph */
+header p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Style the div containing the buttons */
+header > div:first-child > div {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Style the buttons */
+header button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header button:first-child {
+  background-color: #4A154B;
+  color: white;
+}
+
+header button:first-child:hover {
+  background-color: #3a1040;
+}
+
+header button:last-child {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #4A154B;
+  border: 1px solid #4A154B;
+}
+
+header button:last-child img {
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+header button:last-child:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style the second div containing the image */
+header > div:last-child {
+  max-width: 45%;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* Style the main element */
+main {
+  padding: 2rem;
+}
+
+/* Style the first section with logos */
+main section:first-of-type {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main section:first-of-type p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+main section:first-of-type div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+main section:first-of-type img {
+  max-height: 50px;
+}
+
+/* Style the second section with statistics */
+main section:nth-of-type(2) {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main section:nth-of-type(2) h3 {
+  font-size: 2rem;
+  color: #4A154B; /* Slack's primary color */
+  margin-bottom: 1rem;
+}
+
+main section:nth-of-type(2) p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+main section:nth-of-type(2) ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(2) ul li {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main section:nth-of-type(2) ul li p:first-of-type {
+  font-size: 2rem;
+  color: #4A154B;
+  margin-bottom: 0.5rem;
+}
+
+main section:nth-of-type(2) ul li p:last-of-type {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Style the third section with buttons */
+main section:last-of-type {
+  text-align: center;
+}
+
+main section:last-of-type h3 {
+  font-size: 2rem;
+  color: #4A154B;
+  margin-bottom: 2rem;
+}
+
+main section:last-of-type button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 1rem;
+}
+
+main section:last-of-type button:first-of-type {
+  background-color: #4A154B;
+  color: white;
+}
+
+main section:last-of-type button:first-of-type:hover {
+  background-color: #3a1040;
+}
+
+main section:last-of-type button:last-of-type {
+  background-color: white;
+  color: #4A154B;
+  border: 1px solid #4A154B;
+}
+
+main section:last-of-type button:last-of-type:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* Reset some default browser styles */
+
+
+/* Style the footer element */
+footer {
+  padding: 2rem;
+  background-color: #4A154B; /* Slack's primary color */
+  color: white;
+  text-align: center;
+}
+
+/* Style the first ul containing navigation links */
+footer ul:first-of-type {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer ul:first-of-type li {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer ul:first-of-type li:hover {
+  color: #36C5F0; /* Slack's secondary color */
+}
+
+/* Style the horizontal rule */
+footer hr {
+  border: none;
+  border-top: 1px solid #36C5F0;
+  margin: 1rem 0;
+}
+
+/* Style the second ul containing social media icons */
+footer ul:last-of-type {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer ul:last-of-type li {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer ul:last-of-type li:hover {
+  color: #36C5F0;
+}
+
+/* Style the div containing the copyright notice */
+footer div {
+  margin-top: 1rem;
+}
+
+footer small {
+  font-size: 0.875rem;
+  color: #ccc;
+}
