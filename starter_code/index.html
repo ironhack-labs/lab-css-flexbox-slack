@@ -5,8 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-  <!-- link the Font Awesome stylesheet - CDN -->
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
   <!-- link your styles -->
@@ -18,8 +20,8 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav>
-    <div>
+  <nav class="navbar">
+    <div class="navbar-container">
       <img src="./images/slack-logo.png" alt="Slack logo" />
 
       <ul>
@@ -38,21 +40,21 @@
       </ul>
     </div>
 
-    <div>
+    <div class="button-container">
       <button>
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button class="burger-icon">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <ul>
         <li>
           <a href="#">Sign in</a>
         </li>
         <li>
-          <a href="#">Try for free</a>
+          <a href="#" id="try">Try for free</a>
         </li>
       </ul>
     </div>
@@ -60,33 +62,33 @@
 
 
   <!-- HEADER -->
-  <header>
-    <div>
+  <header class="header-container">
+    <div class="start">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><span id="slack">Slack is free to try</span> for as long as you'd like.</p>
 
-      <div>
+      <div class="header-buttons">
         <button>Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
+        <button class="google-button">
+          <img src="./images/logo-google.png" alt="Google logo" id="google-logo"/>
           <span>Sign up with Google</span>
         </button>
       </div>
 
     </div>
 
-    <div>
+    <div class="product-container">
       <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
-    <section>
+    <section class="container-section-1">
       <p>Trusted by companies all over the world</p>
 
-      <div>
+      <div class="section1-logo">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
@@ -97,15 +99,15 @@
 
     </section>
 
-    <section>
+    <section class="container-section-2">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
 
-      <ul>
+      <ul class="section2-percentage">
         <li>
           <p><span>85%</span></p>
-          <p>
+          <p class="description">
             of users say Slack has improved communication
             <sup>*</sup>
           </p>
@@ -113,7 +115,7 @@
 
         <li>
           <p><span>86%</span></p>
-          <p>
+          <p class="description">
             feel their ability to work remotely has improved has improved
             <sup>*</sup>
           </p>
@@ -121,7 +123,7 @@
 
         <li>
           <p><span>88%</span></p>
-          <p>
+          <p class="description">
             feel more connected to their teams*
             <sup>*</sup>
           </p>
@@ -129,17 +131,20 @@
       </ul>
     </section>
 
-    <section>
+    <section class="section3-container">
       <h3>Welcome to your new digital HQ</h3>
 
-      <button>Try for free</button>
+      <button id="free">Try for free</button>
       <button>Talk to sales</button>
     </section>
 
   </main>
 
-  <footer>
-    <ul>
+  <footer class="footer-container">
+
+    <hr>
+
+    <ul id="footer-links">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
@@ -149,9 +154,7 @@
       <li>Download Slack</li>
     </ul>
 
-    <hr>
-
-    <ul>
+    <ul class="icon-list">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
