@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*
 background purple: #540B51
 background ivory: #F3EAE2
@@ -8,3 +10,600 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+/* .montserrat {
+  
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Montserrat;
+    /* border: solid 1px red; */
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#540B51 ;
+    width: 100%;
+    height: 50px;
+}
+
+nav img{
+    height: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.imagen-menu{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    padding-left: 50px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 70%;
+}
+    
+.botonera button:nth-child(2){
+   display: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.menu li a{
+    color: white;
+}
+
+#botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: -180px;
+}
+
+#botonera ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+}
+
+#botonera ul li a{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+}
+
+#botonera button:first-child{
+    /* color:white;s */
+    background-color: #540B51;
+    border:none;
+    padding-left: 20px;
+}
+    
+#botonera button:nth-child(2){
+    display: none;
+}
+#botonera ul li:nth-child(2){
+    background-color: white;
+    height: 25px;
+    width: 50%;
+    border-radius: 3px;
+    border: none;
+    align-content: center;
+}
+
+#botonera ul li:nth-child(2) a{
+    color: #540B51;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8rem;
+
+}
+
+
+#presentation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #540B51;
+    /* flex-wrap: wrap;
+    flex-grow: 1; */
+}
+
+.head-left{
+    background-image: url("../images/background-singup.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    color: white;
+    /*border: solid 1px green;*/
+}
+
+.head-left h1{
+    font-size: 4rem;
+    /*border: solid 1px green;*/
+    padding: 40px;
+}
+
+.head-left p{
+    padding: 40px;
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+    /*border: solid 1px green;*/
+}
+.head-left p span{
+    font-size: 1.4rem;
+    color: #ECB12F;
+}
+
+.head-l-buttons{
+    padding: 0 40px 70px;
+    /*border: solid 1px green;*/
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.head-l-buttons img{
+    height: 25px;
+    position: absolute;
+    left: 50px;
+    background-color: white;
+}
+.head-l-buttons button{
+   height: 40px;
+   border-radius: 5px;
+   text-transform: uppercase;
+   color: #540B51;
+   font-weight: 600;
+   border: none;
+}
+
+.head-l-buttons button:nth-child(2){
+    display: flex;
+    background-color: #4285F4;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.head-l-buttons button:nth-child(2) span{
+    color: white;
+}
+
+.head-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.head-r-image{
+    overflow: hidden;
+}
+
+.head-right img{
+    width: 100%;
+}
+
+#enterprises{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /*height: 100px;*/
+    background-color: #F3EAE2;
+    width: 100%;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#enterprises > p{
+    text-transform: uppercase;
+    font-size: .87rem;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logos img{
+    height: 30px;
+}
+
+.teams{
+    height: 400px;
+    padding: 50px 70px;
+}
+
+li {
+    list-style: none;
+}
+
+.teams h3,span{
+    color: #540B51;
+    list-style-type: none;
+}
+
+.teams h3{
+    font-size: 2rem;
+    margin: 20px;
+}
+.teams > p{
+    font-size: .8rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.teams ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.teams ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.teams ul li span{
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.teams ul li p:nth-child(2){
+    font-weight: 700;
+}
+
+.main-final{
+    background-color: #540B51;
+    color: white;
+    /* border: solid 1px green; */
+}
+
+.main-final h3{
+    font-size: 2rem;
+    margin: 30px;
+}
+
+.main-final button{
+    height: 40px;
+    width: 150px;
+    margin: 0 4px 40px;
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: .9rem;
+    color: #540B51;
+    border-radius: 3px;
+    border: none;
+}
+
+.main-final button:nth-child(2){
+    color: white;
+    background-color: #540B51;
+    border: solid 1px white;
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: flex-start; */
+    height: 220px;
+}
+
+hr{
+    width: 90%;
+    margin: 10px auto;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer ul li{
+   display: flex;
+   align-items: center;
+   font-weight: 600;
+   font-size: .8rem;
+}
+
+footer ul li img{
+    margin-right: 3px;
+}
+
+.download{
+    color: #2E71A6;
+}
+
+footer ul:nth-child(3){
+    justify-content: flex-start;
+}
+
+footer ul:nth-child(3) li{
+    margin-right: 11%;
+    
+}
+
+div small{
+    
+    /* margin: 0 auto; */
+    font-size: .85rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Pantalla para movil
+poner en #presentatio flex wrap
+y en .head-left y .head-right cambiar el width a 100%
+*/
+@media (width<768px){
+
+.menu{
+    display: none;
+}
+#botonera{
+    padding-right: 40px;
+    justify-content: space-between;
+    width: 20%;
+}
+#botonera button:nth-child(2){
+    display:inline-flex;
+    border-style: none;
+ }
+ #botonera button:nth-child(2) img{
+    background-color: #540B51;
+ }
+ #botonera ul{
+    display: none;
+ }
+ .head-left{
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    color: white;
+    /*border: 1px solid white;*/
+    text-align: center;
+    
+ }
+
+ .head-left p{
+    text-align: center;
+    padding-left: 90px;
+ }
+ #enterprises{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+ }
+ #enterprises p{
+padding: 25px;
+ }
+.logos{
+flex-wrap: wrap;
+
+
+}
+.logos img{
+height: 40px;
+padding: 5px 5px 30px 5px;
+}
+.teams{
+    border: 10px solid black;
+    padding-bottom: 100px;
+}
+
+#presentation{
+    flex-wrap: wrap;
+}
+.head-left{
+    width:100%;
+}
+.head-right{
+    width: 100%;
+}
+.teams{
+    display: flex;
+    flex-direction: column;
+}
+.teams h3{
+    text-align: center;
+    
+}
+
+.teams p{
+    text-align: center;
+    font-size:1rem;
+}
+    
+ .teams ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+ }
+ .teams ul li p span{
+    font-size: 0.3 rem;
+ }   
+ .teams ul li p{ 
+    text-align: center;
+    font-weight: 800;
+    font-size: 0.5rem;
+ }
+ .main-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.main-final h3{
+    text-align: center;
+}
+footer ul{
+    text-align: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+
+}
+footer ul:nth-child(3){
+    text-align: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+}
+/* Pantalla pequeña */
+@media ((width>768px) and (width <1024px)){
+    .menu{
+        display: none;
+    }
+    
+    #botonera button:nth-child(2){
+        display: inline;
+    }
+
+    #botonera button{
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        border: none;
+    }
+    #botonera ul{
+        display: none;
+    }
+
+    #botonera{
+        padding-right: 40px;
+        justify-content: space-between;
+        width: 10%;
+    }
+    .head-left{
+        width: 70%;
+    }
+    .head-right{
+        width: 30%;
+        justify-content: flex-start;
+    }
+    .head-right img{
+       width: 210%;
+    }
+    .main-buttons button{
+        width: 60%;
+        margin: 5px auto;
+    }
+    
+    .main-final button:nth-child(2){
+        width: 60%;
+        margin-bottom: 50px;
+    }
+    
+    .main-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+/*Pantalla mediana*/
+@media ((width>1024px) and (width <1440px)){
+    
+}
+
+/*Pantalla grande*/
+@media (width>1440px){ 
+    .menu{
+        width: 40%;
+    }
+    .head-left{
+        background-image: none;
+    }
+    .head-right{
+        justify-content: flex-start;
+    }
+    .head-right img {
+        width: 80%;
+    }
+    .head-l-buttons{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        /* border: solid 1px green; */
+        padding: 40px;
+    }
+    .head-l-buttons img{
+        position: absolute;
+        left: 10px;
+    }
+    .head-l-buttons button{
+        position: relative;
+        width: 50%;
+        margin-right: 15px;
+    }
+    .head-l-buttons button:nth-child(2){
+        margin: 0;
+    }
+    #enterprises{
+        height: 130px;
+    }
+}
