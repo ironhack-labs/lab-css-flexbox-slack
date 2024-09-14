@@ -1,10 +1,395 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+*{
+    margin: 0;
+    padding:0;
+    font-size: 14px;
+    font-family: Montserrat;
+  }
+  
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #540B51;
+    width: 100%;
+    height: 50px;
+  }
+  
+  nav img{
+    height: 22px;
+  }
+  
+  nav ul{
+    list-style-type: none;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .image-menu{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 48px;
+  }
+  
+  .main-menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 72%;
+  }
+  
+  #button-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #button-group ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 220px;
+  }
+  
+  #button-group ul li a{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+  }
+  
+  #intro-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #540B51;
+  }
+  
+  .header-left{
+    background-image: url("../images/background-signup.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 48%;
+    color: white;
+  }
+  
+  .header-left h1{
+    font-size: 4rem;
+    padding: 38px;
+  }
+  
+  .header-left p{
+    padding: 42px;
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+  }
+  
+  .header-left p span{
+    font-size: 1.4rem;
+    color: #ECB12F;
+  }
+  
+  .header-left-buttons{
+    padding: 0 38px 70px;
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .header-left-buttons img{
+    height: 24px;
+    position: absolute;
+    left: 52px;
+    background-color: white;
+  }
+  
+  .header-left-buttons button{
+    height: 38px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #540B51;
+    font-weight: 600;
+    border: none;
+  }
+  
+  .header-left-buttons button:nth-child(2){
+    display: flex;
+    background-color: #4285F4;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .header-right{
+    width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .header-image-right img{
+    width: 100%;
+  }
+  
+  #global-trust{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F3EAE2;
+    width: 100%;
+  }
+  
+  #global-trust > p{
+    text-transform: uppercase;
+    font-size: .87rem;
+    font-weight: 700;
+    padding: 22px 0;
+  }
+  
+  .enterprise-logos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 22px 0;
+  }
+  
+  .enterprise-logos img{
+    height: 32px;
+  }
+  
+  .team-statistics{
+    height: 400px;
+    padding: 52px 68px;
+  }
+  
+  .teams ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .teams ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+  }
+  
+  .teams ul li p span {
+    font-size: 2.2rem;
+  }
+  
+  .teams ul li p {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 160px;
+  }
+  
+  .final-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #F3EAE2;
+    text-align: center;
+  }
+  
+  .final-main-section h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .final-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .final-buttons button {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 0 20px;
+  }
+  
+  .final-buttons button:nth-child(1) {
+    background-color: #4285F4;
+  }
+  
+  .final-buttons button:nth-child(2) {
+    background-color: #6A1B4F;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #540B51;
+    color: white;
+    padding: 20px;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    font-size: 0.9rem;
+  }
+  
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer ul li img {
+    height: 16px;
+  }
+  
+  footer ul li .download {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer ul li .download img {
+    margin-right: 8px;
+  }
+  
+  footer ul li i {
+    font-size: 1.2rem;
+  }
+  
+  footer small {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  /* Media Queries */
+@media (max-width: 1200px) {
+    .header-left {
+      width: 100%;
+    }
+  
+    .header-right {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .header-left {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .header-right {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .image-menu {
+      padding-left: 24px;
+    }
+  
+    .main-menu {
+      width: 100%;
+    }
+  
+    #button-group ul {
+      width: 180px;
+    }
+  
+    .team-statistics {
+      height: auto;
+      padding: 20px;
+    }
+  
+    .teams ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .image-menu {
+      padding-left: 16px;
+      width: 100%;
+    }
+  
+    .main-menu {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #button-group ul {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .team-statistics {
+      padding: 10px;
+    }
+  
+    .teams ul {
+      flex-direction: column;
+    }
+  
+    .final-main-section {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header-left h1 {
+      font-size: 2rem;
+    }
+  
+    .header-left p {
+      font-size: 1rem;
+    }
+  
+    .header-left-buttons {
+      padding: 0 20px 30px;
+      width: 100%;
+    }
+  
+    .header-left-buttons img {
+      height: 20px;
+    }
+  
+    .final-buttons {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    footer ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer ul li {
+      font-size: 0.8rem;
+    }
+  }
