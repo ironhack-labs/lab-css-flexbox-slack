@@ -8,3 +8,419 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --background-purple: #540B51;
+    --background-ivory: #F3EAE2;
+    --button-blue: #4285F4;
+    --titles-black: #191817;
+    --paragraph-yellow: #ECB12F;
+    --links-blue: #2E71A6;
+    --footer-links-grey: #454245;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+
+html body button {
+    background-color: transparent;
+    border: none;
+}
+/*nav*/
+nav {
+    background-color: var(--background-purple);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: none;
+}
+
+nav [alt="Slack logo"]{
+    height: 1.6rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+nav button [alt="Search icon"]{
+    background-color: var(--background-purple);
+    margin-right: 0.6rem;
+}
+
+
+nav button [alt="Menu icon"] {
+    background-color: var(--background-purple);
+    margin-right: 0.5rem;
+}
+
+/*header*/
+header {
+    background-color: var(--background-purple);
+}
+
+
+header > div > h1 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1.5rem 1.7rem;
+    font-weight: 700;
+}
+
+header > div > p {
+    color: white;
+    text-align: center;
+    font-size: 0.6rem;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-weight: 700;
+}
+
+header div:first-child span {
+    color: var(--paragraph-yellow);
+}
+
+header button {
+    width: 90%;
+    height: 2.4rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+}
+
+header button:first-child {
+    background-color: white;
+    color: var(--background-purple);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border: 1px solid white;
+}
+
+header button:last-child {
+    background-color: var(--button-blue);
+    position: relative;
+    margin-top: 0.4rem;
+    border-width: 0;
+    text-transform: uppercase;
+}
+
+header button [alt ="Google logo"]{
+    width: 1.5rem;
+    padding: 0.2rem;
+    border-radius: 0.1rem;
+    margin-right: 7.7rem;
+    background-color: var(--background-ivory);
+}
+
+header button span {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+}
+
+header img[alt="Slack app screenshot" ]{
+    width: 180%;
+    margin-top: 2.2rem;
+}
+/*Main*/
+
+main section:first-child {
+    background-color: var(--background-ivory);
+    padding: 2rem 0.5rem;
+}
+
+main section:first-child > p {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+main section:first-child > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+main img[alt="Airbnb logo"] {
+    width: 25%;
+}
+
+main img[alt="NASA logo"] {
+    width: 15%;
+}
+
+main img[alt="Uber logo"] {
+    width: 15%;
+}
+
+main img[alt="Target logo"] {
+    width: 10%;
+    margin-right: 3rem;
+}
+
+main img[alt="New York Times logo"] {
+    width: 40%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+main img[alt="Spotify logo"] {
+    width: 28%;
+    margin-right: 4rem;
+    margin-top: 1rem;
+}
+
+/*Main section 2*/
+main section:nth-child(2){
+    background-color: white;
+    height: 28rem;
+}
+
+main section:nth-child(2) h3 {
+    text-align: center;
+    color: var(--background-purple);
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+main section:nth-child(2) p {
+    text-align: center;
+    font-size: 0.7rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+main section:nth-child(2) ul {
+    margin-top: 0.5rem;
+    
+}
+
+main section:nth-child(2) ul li {
+    padding-right:2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+main section:nth-child(2) ul li p span {
+    color: var(--background-purple);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main section:nth-child(2) ul li p:nth-child(2){
+    font-weight: 700;
+}
+
+main section:nth-child(3){
+    background-color: var(--background-purple);
+    height: 15rem;
+}
+
+main section:nth-child(3) h3{
+    text-align: center;
+    font-size: 1.4rem;
+    color:white;
+    padding: 2rem 2rem;
+    font-weight: 700;
+}
+
+main section:nth-child(3) button {
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+    width: 90%;
+    height: 2.4rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+}
+
+main section:nth-child(3) button:nth-child(2){
+    background-color: white;
+    border: 1px solid white;
+}
+
+main section:nth-child(3) button:last-child{
+    color: white;
+    border: 1px solid white;
+    margin-top: 1em;
+}
+
+/*footer*/
+
+footer {
+    background-color: white;
+}
+
+footer ul:first-child {
+    padding-top: 4rem;
+    border-top: 1px solid gray;
+}
+
+footer ul:first-child li {
+    font-size: 0.6rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+}
+
+footer ul:first-child li:last-child{
+    color: var(--button-blue);
+}
+
+footer hr {
+    display: none;
+}
+
+footer > ul:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer > div:last-child{
+    text-align: center;
+    color:var(--footer-links-grey);
+    font-size: 0.5rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+/*TABLET*/
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header > div > h1 {
+    text-align: left;
+    font-size: 2.6rem;
+    padding-top: 3rem;
+}
+
+header > div > p {
+    text-align: left;
+    font-size: 0.8rem;
+    padding: 1rem 1rem;
+}
+
+header img[alt="Slack app screenshot" ]{
+    width: 80%;
+    margin-left: 20rem;
+    margin-top: 10rem;
+}
+
+header button:last-child {
+    margin-bottom: 5rem;
+}
+
+/*MAIN*/
+
+main section:first-child {
+    padding: 2rem 0.5rem;
+}
+
+main img[alt="Airbnb logo"] {
+    width: 10%;
+}
+
+main img[alt="NASA logo"] {
+    width: 7%;
+}
+
+main img[alt="Uber logo"] {
+    width: 7%;
+}
+
+main img[alt="Target logo"] {
+    width: 7%;
+    margin-right: 0.6rem;
+}
+
+main img[alt="New York Times logo"] {
+    width: 20%;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+    margin-top: 1rem;
+}
+
+main img[alt="Spotify logo"] {
+    width: 13%;
+    margin-right: 4rem;
+    margin-top: 1rem;
+}
+
+/*Main section 2*/
+main section:nth-child(2){
+    height: 18rem;
+}
+
+main section:nth-child(2) h3 {
+    padding-top: 2rem;
+  
+}
+
+main section:nth-child(2) ul {
+    margin-top: 0.5rem;
+    
+}
+
+main section:nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+}
+
+main section:nth-child(3) button {
+    width: 70%;  
+}
+
+
+/*footer*/
+footer ul:first-child {
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul:last-child{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+
+}
+
+
+
+
+
+
+
