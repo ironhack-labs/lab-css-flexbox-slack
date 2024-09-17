@@ -8,3 +8,278 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Helvetica';
+}
+nav {
+    display:flex;
+    align-items: center;
+    background-color: #540B51;
+    justify-content: space-between;
+}
+
+.nav-btns, .nav-btns * {
+    display: flex;
+    height:30px;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.nav-btns button {
+    background-color:transparent;
+    border:none;
+}
+
+nav img {
+    height: 40px;
+    width: auto;
+    padding: 10px;
+}
+
+.login-elements {
+    display:none;
+}
+
+.saying-container {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    background-color:#540B51;
+    margin:auto;
+    width:100%;
+
+}
+
+.saying-container h1 {
+    text-align:center;
+    width:50%;
+    text-wrap:wrap;
+    color:white;
+}
+
+.saying-container p {
+    color:white;
+
+}
+
+.highlight-text {
+    color:orange;
+}
+
+.sign-up-buttons {
+    display: flex;
+    flex-direction:column;
+    height: 100px;
+    gap: 10px;
+    width: 90%;
+    padding: 20px;
+}
+
+.sign-up-buttons button {
+    display: flex;
+    text-align:center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 40px;
+}
+
+.sign-up-buttons button img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    height: 40px;
+    width: 40px;
+
+}
+
+.transparent-span {
+    color:transparent;
+}
+
+header  {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+header div img {
+    width:100%;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:beige;
+
+}
+
+#uppercase-p {
+    text-transform: uppercase;
+    font-weight:bold;
+    padding: 20px 0;
+    font-size:larger;
+}
+
+.logo-collection-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 0 20px 0;
+}
+
+.logo-collection-container img {
+    height: 50px;
+    
+}
+#reference-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+    padding: 25px 100px;
+}
+
+#reference-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+#reference-header h3 {
+    color: purple;
+    font-weight:bolder;
+    text-align: center;
+}
+
+#reference-header p {
+    text-align: center;
+}
+
+#reference-section ul {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    list-style:none;
+    padding:0 50px;
+    margin:0;
+    gap: 20px;
+}
+
+#reference-section ul li {
+    text-align: center;
+    padding:0 0 20px 0;
+    margin:0;
+}
+
+#reference-section ul li p span {
+    color: purple;
+    font-weight:bolder;
+    font-size:xx-large;
+}
+
+.call-to-action-section {
+    background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+    gap:5px;   
+}
+
+.call-to-action-section h3 {
+    display: flex;
+    color: white;
+    padding: 30px 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.call-to-action-section button {
+    height: 40px;
+    width: auto;
+    border-color:white;
+    border:1px;
+    border-style:solid;
+    text-transform: uppercase;
+}
+.call-to-action-section button:first-of-type {
+    background-color:white;
+    color:#540B51;
+}
+
+.call-to-action-section button:nth-of-type(2) {
+    background-color:transparent;
+    color:white;
+}
+
+footer ul:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 10px;
+    font-weight:bold;
+}
+
+footer ul:nth-of-type(2) {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding: 10px;
+    list-style:none;
+}
+
+footer div {
+    padding: 10px;
+    text-align: center;
+    color:grey;
+}
+
+@media (max-width: 768px) {
+    .nav-text-options{
+        display:none;
+    }
+
+}
+
+@media (768px < width < 1024px) {
+    .nav-text-options{
+        display:none;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color:#540B51;
+    }
+    header div img {
+        height:300px;
+        width:auto
+    }
+    .logo-collection-container {
+        flex-wrap:nowrap;
+    }
+
+    .logo-collection-container img {
+        height: 30px;
+    }
+    #reference-section ul {
+        flex-direction:row;
+    }
+
+    footer ul:first-of-type {
+        flex-direction:row;
+        justify-content:space-evenly;
+        list-style:none;
+    }
+
+}
