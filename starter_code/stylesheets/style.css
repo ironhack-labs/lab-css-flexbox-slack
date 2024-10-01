@@ -8,3 +8,240 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* Base Styles for Navbar */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  background-color: #4a154b;
+}
+
+.firstLine {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.firstLine img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.firstList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.firstList li {
+  margin: 5px 0;
+}
+
+.firstList li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+
+.secondLine {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.secondLine button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* margin-left: auto;  */
+}
+
+.secondLine button img {
+  height: 24px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .navMenu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .firstLine {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .firstList {
+    flex-direction: row;
+    display: none;
+  }
+
+  .firstList li {
+    margin: 0 10px;
+  }
+
+  .secondLine {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+
+  body {
+    background-color: #540b51;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+  }
+
+  nav div {
+    display: flex;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header h1 {
+    color: #f3eae2;
+    font-size: 50px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  #free-slack {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  #yellow-text {
+    color: #ecb12f;
+  }
+
+  #login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+  }
+
+  #any-email-button {
+    background-color: #ffff;
+    /* width: 100%; */
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    color: #540B51;
+    border-radius: 5px;
+
+
+
+  }
+
+  #gmail-button {
+    background-color: #4285F4;
+    /* width: 100%; */
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  #googleImage {
+    width: 20px;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    left: 10px;
+  }
+
+  .header-img img{
+    object-fit: cover;
+    width: 100%;
+    padding-top: 20px;
+  }
+.trustCompany{
+  display: flex;
+  justify-content: center;
+}
+.companyList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; /* This ensures that logos wrap to the next line on smaller screens */
+}
+
+.companyList img {
+  max-width: 100px; /* Adjust image size as needed */
+  margin: 10px;
+}
+/* footer */
+.contactDetails{
+  
+background-color: white;
+}
+.contactDetails li{
+  
+  list-style-type: none;
+padding: 10px;
+  }
+  .footerDetails{
+    background-color: white;
+  }
+  .footDetails{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.terms{
+  background-color: white;
+}
+.percentageDetails{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+}
+}
