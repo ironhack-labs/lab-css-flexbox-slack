@@ -8,3 +8,242 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+/* General styles - mobile-first approach */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #540B51; /* Background purple */
+    color: #000000; /* Paragraph black */
+  }
+  
+  /* Headings and paragraph styles */
+  h1, h2, h3 {
+    color: #191817; /* Titles black */
+  }
+  
+  p {
+    color: #ECB12F; /* Paragraph yellow */
+  }
+  
+  /* Link styles */
+  a {
+    color: #2E71A6; /* Links blue */
+    text-decoration: none;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #4285F4; /* Button blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #357AE8;
+  }
+  
+  /* NAVBAR */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #540B51; /* Background purple */
+  }
+  
+  nav img {
+    height: 40px;
+  }
+  
+  nav ul {
+    display: none; /* Hidden on mobile, shown on larger screens */
+  }
+  
+  nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav button img {
+    height: 20px;
+  }
+  
+  /* HEADER */
+  header {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  header .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  header img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* MAIN */
+  main {
+    background-color: #F3EAE2; /* Background ivory */
+    padding: 30px 20px;
+  }
+  
+  main section {
+    margin-bottom: 40px;
+  }
+  
+  main section h3 {
+    font-size: 1.8em;
+  }
+  
+  main section p {
+    font-size: 1.1em;
+  }
+  
+  main .trusted-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  main .trusted-logos img {
+    height: 40px;
+  }
+  
+  /* Stats section */
+  main .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  main .stats li {
+    list-style: none;
+  }
+  
+  .stats span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ECB12F; /* Highlight yellow */
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #540B51; /* Background purple */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  footer ul li {
+    color: #454245; /* Footer links grey */
+  }
+  
+  footer i {
+    color: white;
+  }
+  
+  footer small {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+  
+  /* Media Queries - adapting layout to larger screens */
+  
+  /* Tablet screens (768px and larger) */
+  @media (min-width: 768px) {
+    nav ul {
+      display: flex;
+      gap: 20px;
+    }
+  
+    nav button {
+      display: none;
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    header h1 {
+      font-size: 2.5em;
+    }
+  
+    header .cta-buttons {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  
+    header img {
+      width: 50%;
+      height: auto;
+    }
+  
+    main .stats {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  
+  /* Desktop screens (1024px and larger) */
+  @media (min-width: 1024px) {
+    nav {
+      padding: 20px 40px;
+    }
+  
+    header {
+      padding: 60px 40px;
+    }
+  
+    header h1 {
+      font-size: 3em;
+    }
+  
+    header .cta-buttons {
+      gap: 30px;
+    }
+  
+    main {
+      padding: 60px 40px;
+    }
+  
+    footer {
+      padding: 60px 40px;
+    }
+  }
