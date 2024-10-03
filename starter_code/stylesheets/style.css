@@ -8,3 +8,1134 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+* {
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    nav {
+        background-color: #540B51;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        padding: 20px; 
+        margin: 0px;
+        border-bottom: 1px solid #540B51;
+        overflow: hidden;
+        box-sizing:border-box;
+        width: 100%;
+    }
+    nav img {
+        width: 180px;
+    }
+    .icons img {
+        height: 30px;
+        width: auto;
+        background-color: #540B51;
+        border: 0px;
+    }
+    .icons button {
+        border: 0px; 
+        background-color: #540B51;
+    }
+
+    header {
+        background-color: #540B51;
+        display: flex;
+        flex-direction: column;
+    }
+    header div {
+        flex-grow: 1;
+    }
+
+    h1 {
+        font-size: 70px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        padding: 40px;
+    }
+    header p {
+        color: white; 
+        text-align: center;
+        font-size: 24px;
+    }
+    header span {
+        font-weight: bold; 
+        color: orange;
+    }
+    header button {
+        text-transform: uppercase;
+        height: 80px;
+        margin: 10px;
+        font-size: 20px;
+        padding: 8px;
+        border: none;
+    }
+    #google-icon {
+        height: 40px;
+        background-color: white;
+        padding: 10px;
+        margin-right: auto;
+    }
+    .google-signup {
+        background-color: #4285F4;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .google-signup span{
+        color: white;
+        text-align: center;
+        margin-right: auto;
+        font-weight: normal;
+    }
+
+    header .buttons {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        margin: 50px;
+    }
+    .hero-image {
+        overflow: hidden;
+    }
+    .hero-image img {
+        height: 50%;
+        margin-bottom: -200px;
+    }
+
+    .companies {
+        background-color: #F3EAE2;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        padding: 30px;
+    }
+    .companies p{
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .companies div {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    .companies img {
+        height: 50px;
+        width: auto;
+        padding: 5px;
+    }
+
+    .team {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team li {
+        list-style-type: none;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .team h3 {
+        color: #540B51;
+        font-size: 32px;
+        padding: 50px 50px 20px;
+        text-align: center;
+    }
+    .team .subtitle {
+        font-size: 20px;
+        text-align:center;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 0px 40px;
+    }
+    .team span {
+        font-size: 80px;
+        font-weight: 900;
+        color:#540B51;
+        text-align: center;
+    }
+
+    .subline {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .team li {
+        padding: 0 100px;
+    }
+
+    .info {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 100;
+        color: #454245;
+        padding: 0 50px 50px;
+        margin-top: 30px;
+    }
+    .welcome {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #540B51;
+        padding: 50px;
+        text-align: center
+    }
+    .welcome h3 {
+        color: white;
+        font-size: 32px;
+        padding-bottom: 30px;
+    }
+    .welcome button {
+        border: none;
+        background-color: inherit;
+        text-transform: uppercase;
+        height: 80px;
+        margin: 10px;
+        font-size: 20px;
+        padding: 8px;
+        font-weight: 500;
+    }
+    .welcome > :nth-child(2) {
+        background-color: white;
+        color:#540B51;
+        width: 90%;
+        border-radius: 5px;
+    }
+    .welcome > :nth-child(3) {
+        background-color:#540B51;
+        color: white;
+        border: 3px solid white;
+        width: 90%;
+        border-radius: 5px;
+    }
+    footer {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    footer ul {
+        margin: 0 20px;
+        font-size: 14px; 
+        font-weight: 700;
+    }
+    footer > :nth-child(1) {
+        border-top: 1px solid #454245;
+        margin-top: 20px;
+        padding: 20px 0;
+    }
+
+    footer li {
+        padding: 10px;
+        list-style-type: none;
+    }
+    footer li:last-child {
+        color: #2E71A6;
+    }
+    footer li:last-child img {
+        padding-right: 10px;
+    }
+    .sociallinks {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    .small {
+        text-align: center;
+        margin-bottom: 30px; 
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    nav ul {
+        display: none;
+    }
+    nav {
+        background-color: #540B51;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        padding: 20px; 
+        margin: 0px;
+        border-bottom: 1px solid #540B51;
+        overflow: hidden;
+        box-sizing:border-box;
+        width: 100%;
+    }
+    nav img {
+        width: 180px;
+    }
+    .icons img {
+        height: 30px;
+        width: auto;
+        background-color: #540B51;
+        border: 0px;
+    }
+    .icons button {
+        border: 0px; 
+        background-color: #540B51;
+    }
+
+    header {
+        background-color: #540B51;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    header div {
+        flex-grow: 1;
+    }
+
+    h1 {
+        font-size: 70px;
+        font-weight: 600;
+        color: white;
+        text-align: left;
+        padding: 40px;
+    }
+    header p {
+        color: white; 
+        text-align: left;
+        font-size: 24px;
+        padding-left: 40px;
+    }
+    header span {
+        font-weight: bold; 
+        color: orange;
+    }
+    header button {
+        text-transform: uppercase;
+        height: 60px;
+        margin: 10px;
+        font-size: 20px;
+        padding: 8px;
+        border: none;
+    }
+    #google-icon {
+        height: 90%;
+        background-color: white;
+        margin-right: auto;
+    }
+    .google-signup {
+        background-color: #4285F4;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .google-signup span{
+        color: white;
+        font-weight: normal;
+        text-align: center;
+        margin-right: auto;
+    }
+
+    header .buttons {
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
+        margin: 30px;
+        flex-grow: 1;
+    }
+    .hero-image {
+        overflow: hidden;
+    }
+    .hero-image img {
+        width: 800px;
+    }
+
+    .companies {
+        background-color: #F3EAE2;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        padding: 30px;
+    }
+    .companies p{
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
+    .companies div {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .companies img {
+        height: 40px;
+        width: auto;
+        padding: 5px;
+    }
+
+    .team {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team ul {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+
+    .team li {
+        list-style-type: none;
+        text-align: center;
+        padding: 20px 40px;
+    }
+    .team h3 {
+        color: #540B51;
+        font-size: 32px;
+        padding: 50px 50px 20px;
+        text-align: center;
+    }
+    .team .subtitle {
+        font-size: 20px;
+        text-align:center;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 0px 40px;
+    }
+    .team span {
+        font-size: 80px;
+        font-weight: 900;
+        color:#540B51;
+        text-align: center;
+    }
+
+    .subline {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .welcome {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #540B51;
+        padding: 50px;
+    }
+    .welcome h3 {
+        color: white;
+        font-size: 32px;
+        padding-bottom: 30px;
+    }
+    .welcome button {
+        border: none;
+        background-color: inherit;
+        text-transform: uppercase;
+        height: 80px;
+        margin: 10px;
+        font-size: 20px;
+        padding: 8px;
+        font-weight: 500;
+    }
+    .welcome > :nth-child(2) {
+        background-color: white;
+        color:#540B51;
+        width: 90%;
+        border-radius: 5px;
+    }
+    .welcome > :nth-child(3) {
+        background-color:#540B51;
+        color: white;
+        border: 3px solid white;
+        width: 90%;
+        border-radius: 5px;
+    }
+    footer {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    footer ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+        font-size: 14px; 
+        font-weight: 700;
+    }
+    footer > :nth-child(1) {
+        border-top: 1px solid #454245;
+        margin-top: 20px;
+        padding: 20px 0;
+    }
+
+    footer li {
+        padding: 10px 10px;
+        list-style-type: none;
+        height: 50px;
+    }
+    footer li:last-child {
+        color: #2E71A6;
+    }
+    footer li:last-child img {
+        padding-right: 10px;
+    }
+    .sociallinks {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-start;
+        padding: 10px 0px;
+    }
+    .small {
+        text-align: center;
+        margin: 30px; 
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    .menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-items a {
+        color: white;
+        text-decoration: none;
+        padding: 50px;
+    }
+    nav {
+        background-color: #540B51;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        padding: 20px; 
+        margin: 0px;
+        border-bottom: 1px solid #540B51;
+        overflow: hidden;
+        box-sizing:border-box;
+        width: 100%;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #hamburger-menu {
+        display:none;
+    }
+
+    .icons a {
+        color: white;
+        text-decoration: none;
+        padding-right: 40px;
+    }
+
+    .nav-buttons {
+        color: white; 
+    }
+    #try-button {
+        background-color: white;
+        padding: 10px 20px; 
+    }
+    #try-button a {
+        color:#540B51;
+        text-align: center; 
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    #signin-button{
+        padding: 10px 30px; 
+    }
+
+    nav img {
+        width: 180px;
+    }
+    .icons img {
+        height: 30px;
+        width: auto;
+        background-color: #540B51;
+        border: 0px;
+        margin-right: 50px;
+    }
+    .icons button {
+        border: 0px; 
+        background-color: #540B51;
+    }
+
+    header {
+        background-color: #540B51;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    header div {
+        flex-grow: 1;
+    }
+
+    h1 {
+        font-size: 70px;
+        font-weight: 600;
+        color: white;
+        text-align: left;
+        padding: 40px;
+        width: 70%;
+    }
+    header p {
+        color: white; 
+        text-align: left;
+        font-size: 24px;
+        padding-left: 40px;
+    }
+    header span {
+        font-weight: bold; 
+        color: orange;
+    }
+    header button {
+        text-transform: uppercase;
+        height: 60px;
+        margin: 10px;
+        font-size: 20px;
+        padding: 8px;
+        border: none;
+    }
+    #google-icon {
+        height: 90%;
+        background-color: white;
+        margin-right: auto;
+    }
+    .google-signup {
+        background-color: #4285F4;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .google-signup span{
+        color: white;
+        font-weight: normal;
+        text-align: center;
+        margin-right: auto;
+    }
+
+    header .buttons {
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
+        margin: 30px;
+        flex-grow: 1;
+        width: 70%;
+        margin-bottom: 100px;
+    }
+    .hero-image {
+        overflow: hidden;
+    }
+    .hero-image img {
+        width: 800px;
+    }
+
+    .companies {
+        background-color: #F3EAE2;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        padding: 30px;
+    }
+    .companies p{
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 20px;
+    }
+    .companies div {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .companies img {
+        height: 5rem;
+        width: auto;
+        padding: 20px;
+    } 
+
+    .team {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team ul {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+
+    .team li {
+        list-style-type: none;
+        text-align: center;
+        padding: 20px 40px;
+    }
+    .team h3 {
+        color: #540B51;
+        font-size: 32px;
+        padding: 50px 50px 20px;
+        text-align: center;
+    }
+    .team .subtitle {
+        font-size: 20px;
+        text-align:center;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 0px 40px;
+    }
+    .team span {
+        font-size: 80px;
+        font-weight: 900;
+        color:#540B51;
+        text-align: center;
+    }
+
+    .subline {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .welcome {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #540B51;
+        padding: 50px;
+        flex-wrap: wrap;
+    }
+
+    .welcome h3 {
+        color: white;
+        font-size: 48px;
+        padding-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .welcome button {
+        border: none;
+        background-color: inherit;
+        text-transform: uppercase;
+        height: 80px;
+        margin: 10px;
+        font-size: 20px;
+        padding: 8px;
+        font-weight: 500;
+    }
+    .welcome > :nth-child(2) {
+        background-color: white;
+        color:#540B51;
+        border-radius: 5px;
+        width: 300px;
+    }
+    .welcome > :nth-child(3) {
+        background-color:#540B51;
+        color: white;
+        border: 3px solid white;
+        border-radius: 5px;
+        width: 300px;
+    }
+    footer {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    footer ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+        font-size: 14px; 
+        font-weight: 700;
+    }
+    footer > :nth-child(1) {
+        border-top: 1px solid #454245;
+        margin-top: 20px;
+        padding: 20px 0;
+    }
+
+    footer li {
+        padding: 10px 10px;
+        list-style-type: none;
+        height: 50px;
+    }
+    footer li:last-child {
+        color: #2E71A6;
+    }
+    footer li:last-child img {
+        padding-right: 10px;
+    }
+    .sociallinks {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-start;
+        padding: 10px 0px;
+    }
+    .small {
+        text-align: center;
+        margin: 30px; 
+    }
+}
+
+@media (min-width: 1440px){
+    .menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-items a {
+        color: white;
+        text-decoration: none;
+        padding: 50px;
+    }
+    nav {
+        background-color: #540B51;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        padding: 20px; 
+        margin: 0px;
+        border-bottom: 1px solid #540B51;
+        overflow: hidden;
+        box-sizing:border-box;
+        width: 100%;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #hamburger-menu {
+        display:none;
+    }
+
+    .icons a {
+        color: white;
+        text-decoration: none;
+        padding-right: 40px;
+    }
+
+    .nav-buttons {
+        color: white; 
+    }
+    #try-button {
+        background-color: white;
+        padding: 10px 20px; 
+    }
+    #try-button a {
+        color:#540B51;
+        text-align: center; 
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    #signin-button{
+        padding: 10px 30px; 
+    }
+
+    nav img {
+        width: 180px;
+    }
+    .icons img {
+        height: 30px;
+        width: auto;
+        background-color: #540B51;
+        border: 0px;
+        margin-right: 50px;
+    }
+    .icons button {
+        border: 0px; 
+        background-color: #540B51;
+    }
+
+    header {
+        background-color: #540B51;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    header div {
+        flex-grow: 1;
+    }
+
+    h1 {
+        font-size: 70px;
+        font-weight: 600;
+        color: white;
+        text-align: left;
+        padding: 40px;
+        width: 70%;
+    }
+    header p {
+        color: white; 
+        text-align: left;
+        font-size: 24px;
+        padding-left: 40px;
+    }
+    header span {
+        font-weight: bold; 
+        color: orange;
+    }
+    header button {
+        text-transform: uppercase;
+        height: 60px;
+        margin: 10px;
+        font-size: 20px;
+        padding: 8px;
+        border: none;
+        width: 40%
+    }
+    #google-icon {
+        height: 90%;
+        background-color: white;
+        margin-right: auto;
+    }
+    .google-signup {
+        background-color: #4285F4;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .google-signup span{
+        color: white;
+        font-weight: normal;
+        text-align: center;
+        margin-right: auto;
+    }
+
+    header .buttons {
+        display: flex;
+        flex-direction: row; 
+        justify-content: flex-start;
+        margin: 30px;
+        flex-grow: 1;
+        margin-bottom: 100px;
+    }
+    .hero-image {
+        overflow: hidden;
+    }
+    .hero-image img {
+        width: 500px;
+        margin-right: 400px;
+    }
+
+    .companies {
+        background-color: #F3EAE2;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        padding: 30px;
+    }
+    .companies p{
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 20px;
+    }
+    .companies div {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .companies img {
+        height: 5rem;
+        width: auto;
+        padding: 20px;
+    } 
+
+    .team {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team ul {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+
+    .team li {
+        list-style-type: none;
+        text-align: center;
+        padding: 20px 40px;
+    }
+    .team h3 {
+        color: #540B51;
+        font-size: 32px;
+        padding: 50px 50px 20px;
+        text-align: center;
+    }
+    .team .subtitle {
+        font-size: 20px;
+        text-align:center;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 0px 40px;
+    }
+    .team span {
+        font-size: 80px;
+        font-weight: 900;
+        color:#540B51;
+        text-align: center;
+    }
+
+    .subline {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .welcome {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #540B51;
+        padding: 50px;
+        flex-wrap: wrap;
+    }
+
+    .welcome h3 {
+        color: white;
+        font-size: 48px;
+        padding-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .welcome button {
+        border: none;
+        background-color: inherit;
+        text-transform: uppercase;
+        height: 80px;
+        margin: 10px;
+        font-size: 20px;
+        padding: 8px;
+        font-weight: 500;
+    }
+    .welcome > :nth-child(2) {
+        background-color: white;
+        color:#540B51;
+        border-radius: 5px;
+        width: 300px;
+    }
+    .welcome > :nth-child(3) {
+        background-color:#540B51;
+        color: white;
+        border: 3px solid white;
+        border-radius: 5px;
+        width: 300px;
+    }
+    footer {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    footer ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+        font-size: 14px; 
+        font-weight: 700;
+    }
+    footer > :nth-child(1) {
+        border-top: 1px solid #454245;
+        margin-top: 20px;
+        padding: 20px 0;
+    }
+
+    footer li {
+        padding: 10px 10px;
+        list-style-type: none;
+        height: 50px;
+    }
+    footer li:last-child {
+        color: #2E71A6;
+    }
+    footer li:last-child img {
+        padding-right: 10px;
+    }
+    .sociallinks {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-start;
+        padding: 10px 0px;
+    }
+    .small {
+        text-align: center;
+        margin: 30px; 
+    }
+}
