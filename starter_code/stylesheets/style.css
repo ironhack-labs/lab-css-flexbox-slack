@@ -1,10 +1,322 @@
 /*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
+Background purple: #540B51
+Background ivory: #F3EAE2
+Button blue: #4285F4
+Titles black: #191817
+Paragraph black: #000000
+Paragraph yellow: #ECB12F
+Links blue: #2E71A6
+Footer links grey: #454245
 */
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #540B51;
+    font-family: sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+/* Section 1: Navbar */
+nav {
+    margin: 0;
+}
+
+.top-navbar {
+    background-color: #540B51;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+}
+
+.nav-btn img {
+    width: 20px;
+}
+
+/* Section 2: Header */
+header {
+    background-color: #540B51;
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    padding: 0 20px;
+}
+
+.hero-content p {
+    padding: 0 20px;
+}
+
+.text-highlight {
+    color: #ECB12F;
+    font-weight: bold;
+}
+
+.cta-buttons {
+    padding: 20px;
+}
+
+.email-signup {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #540B51;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.google-signup {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    background-color: #4285F4;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.google-signup img {
+    background-color: white;
+    width: 30px;
+    padding: 5px;
+}
+
+.google-signup span {
+    width: 100%;
+    text-align: center;
+    padding-right: 35px;
+}
+
+.product-image {
+    width: 100%;
+}
+
+/* Section 3: Trusted Logos */
+main {
+    background-color: white;
+}
+
+.logos-section {
+    background-color: #F3EAE2;
+    margin: 0;
+}
+
+.logos-section p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.8em;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+.logo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.logo-gallery img {
+    height: 30px;
+    width: auto;
+    margin: 10px;
+}
+
+/* Section 4: Team Statistics */
+.team-section {
+    background-color: white;
+    text-align: center;
+}
+
+.team-section h3 {
+    color: #540B51;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.team-description {
+    font-size: 0.9em;
+    padding: 0px 20px;
+}
+
+.stats-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.stats-list p {
+    text-align: center;
+}
+
+.stats-list span {
+    color: #540B51;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.stat-description {
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 0px 90px;
+}
+
+/* Section 5: Welcome Section */
+.welcome-banner {
+    background-color: #540B51;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.welcome-banner h3 {
+    color: white;
+    font-size: 2em;
+}
+
+.try-button {
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0px;
+    color: #540B51;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.sales-button {
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0px;
+    background-color: #540B51;
+    border: 1px solid white;
+    color: white;
+}
+
+/* Section 6: Footer */
+footer {
+    background-color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Footer links - Base styling */
+.footer-links {
+    font-size: 0.8em;
+    font-weight: 900;
+    padding-left: 10px;
+    padding-top: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0;
+}
+
+.footer-links li {
+    padding-bottom: 30px;
+}
+
+/* Media query for larger screens (non-mobile) */
+@media screen and (min-width: 768px) {
+    .footer-links {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .footer-links li {
+        padding-bottom: 0;
+        padding-right: 20px;
+        /* Add spacing between items */
+    }
+
+    .footer-socials li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 0px;
+    }
+}
+
+.download-option {
+    color: #2E71A6;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.copyright-info {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    /* Adjustments for larger screens */
+    header {
+        display: flex;
+        align-items: center;
+        padding-bottom: 70px;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        background-image: url("../images/background-signup.png");
+        background-size: cover;
+        text-align: left;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5em;
+        padding-right: 100px;
+    }
+
+    .product-image {
+        width: 300px;
+    }
+
+    .stats-list {
+        display: flex;
+        text-align: left;
+    }
+}
