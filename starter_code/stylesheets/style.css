@@ -8,3 +8,296 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h3, p, button {
+    color: #ffff;
+}
+
+body {
+ background-color: #540B51;
+}
+
+.menu-items {
+    display: none;
+}
+
+.navbar-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    #logo{
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+.nav-icons {
+    button {
+        background: none;
+        border: none;
+        margin: 10px;
+    }
+}
+
+.title-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    h1{
+        width: 95%;
+    }
+    #orange{
+        color: #ECB12F;
+    } 
+}
+
+.signup-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    button {
+        height: 40px;
+        width: 370px;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 550;
+    }
+    #email {
+        color: #540B51;
+    }
+    #google {
+        background-color: #4285F4;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        span{
+            margin-left: 80px;
+        }
+
+        img {
+            width: 30px;
+            background-color: #ffff;
+            padding: 5px;
+        }
+    }
+}
+
+#ui-img{
+    margin-top: 40px;
+    width: 150%;
+}
+
+.companies{
+    background-color: #F3EAE2;
+    padding: 40px 0;
+    p{
+        color: #191817;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+    }
+    .comp-logos{
+        margin: 20px auto 0;
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        img{
+            width: auto;
+            height: 35px;
+            object-fit: contain;
+        }
+    }
+}
+
+.stats{
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    h3, span{
+        color: #540B51;
+        
+    }
+
+    li, p{
+        color: black;
+        font-size: .8em;
+        list-style-type: none;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    span{
+        font-size: 3em;
+        font-weight: 700;
+    }
+    li{
+        font-weight: 700;
+        margin-top: 20px;
+        p{
+            margin: 0 auto;
+            width: 50%;
+        }
+    }
+    
+}
+
+.welcome-sec {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    align-items: center;
+
+    h3 {
+        font-size: 1.6em;
+        font-weight: 600;
+        text-align: center;
+        padding: 10px;
+    }
+
+    button {
+        height: 40px;
+        width: 350px;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 600;
+        
+    }
+        #free {
+            background-color: #ffff;
+            color: #540B51;
+        }
+        #sales {
+            background-color: #540B51;
+            border: solid #ffff 1px;
+
+        }
+}
+
+.footer {
+    background-color: #ffff;
+    padding: 20px 10px;
+    .footer-links {
+        color: #191817;
+        font-weight: 700;
+        font-size: .8em;
+        line-height: 30px;
+        list-style-type: none;
+        padding-top: 10px;
+        #slack {
+            color: #2E71A6;
+        }
+    }
+    hr {
+        border: none;          /* Remove default border */
+        height: 1px;          /* Set height for the line */
+        background-color: #969696; /* Set the color of the line */
+        margin: 20px 0;       /* Add vertical spacing around the <hr> */     
+    }
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+    li {
+        list-style: none;
+    }
+}
+
+.copyright {
+    font-size: .7em;
+    color: #454245;
+    text-align: center;
+
+}
+
+/* MEDIA QUERIES */
+
+/* SMALL SCREENS */
+
+@media (width > 768px) and (width < 1024px){
+    header{
+        background-image: url(../images/background-singup.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 0 30px 20px;
+        .title-div{
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 20px;
+            h1{
+                font-size: 40px;
+                text-align: left;
+            }
+        }
+    }
+    .div-ui-img{
+        width: 400px;
+        height: 300px;
+    }
+    #ui-img{
+        width: 150%;
+        /* float: right;
+        transform: translateX(50%);
+        overflow: hidden; */
+
+
+    }
+    .ul-stats{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        li p{
+            width: 70%;
+        }
+    }
+    .footer{
+        padding: 20px;
+        .footer-links{
+            display: flex;
+            justify-content: space-between;
+        
+        }
+        .social-media{
+            justify-content: start;
+            gap: 50px;
+        }
+        .copyright{
+            text-align: left;
+        }
+    }
+}
