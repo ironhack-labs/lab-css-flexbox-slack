@@ -8,3 +8,314 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #1d1c1d;
+    background-color: #fff;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Navbar Styling */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4a154b;
+    color: #fff;
+  }
+  
+  nav img {
+    height: 35px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin-right: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  nav div:nth-child(2) {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav div:nth-child(2) button {
+    background: none;
+    border: none;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+  nav div:nth-child(2) ul {
+    display: none; /* Initially hidden */
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f4ede4;
+  }
+  
+  header div:nth-child(1) {
+    max-width: 500px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #4a154b;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  header button {
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    border: none;
+    background-color: #4a154b;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  header button:hover {
+    background-color: #350d36;
+  }
+  
+  header div:nth-child(2) img {
+    max-width: 100%;
+  }
+  
+  /* Main Styling */
+  main {
+    padding: 2rem;
+  }
+  
+  main section {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  main section:nth-child(1) p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  main section:nth-child(1) div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  main section:nth-child(1) img {
+    width: 120px;
+  }
+  
+  main section:nth-child(2) ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  main section:nth-child(2) ul li {
+    text-align: center;
+  }
+  
+  main section:nth-child(2) ul li p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  main section:nth-child(2) ul li span {
+    font-size: 2rem;
+    color: #4a154b;
+    font-weight: bold;
+  }
+  
+  main section:nth-child(3) button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #4a154b;
+    color: #fff;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  main section:nth-child(3) button:hover {
+    background-color: #350d36;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #f4ede4;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 2rem;
+  }
+  
+  footer ul li {
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+  
+  footer ul li:hover {
+    text-decoration: underline;
+  }
+  
+  footer ul li i {
+    font-size: 1.5rem;
+  }
+  
+  footer small {
+    display: block;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #4a154b;
+  }
+  
+  hr {
+    border: 0.5px solid #ccc;
+    margin: 2rem 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+    }
+  
+    nav div:nth-child(2) ul {
+      display: block;
+    }
+  
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header div:nth-child(2) {
+      display: none;
+    }
+  
+    main section:nth-child(1) div {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    main section:nth-child(2) ul {
+      flex-direction: column;
+    }
+  
+    footer ul {
+      flex-direction: column;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    /* Navbar adjustments */
+    .navbar-menu-icon {
+        display: none; /* Hide mobile menu icon */
+    }
+
+    .navbar-links {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    }
+
+    /* Media query for screens larger than 1440px */
+@media screen and (min-width: 1440px) {
+    /* Navbar is already displayed on medium screens, so no changes needed */
+
+    /* Header section adjustments */
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 100px; /* Adjust padding for large screens */
+    }
+
+    /* Centering the header image */
+    .header-image {
+        max-width: 50%; /* Make sure the image isn't too large */
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Sign-up buttons next to each other */
+    .sign-up-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row; /* Horizontal alignment */
+        gap: 20px; /* Add space between the buttons */
+        margin-top: 20px;
+    }
+
+    .sign-up-button {
+        padding: 15px 25px;
+        font-size: 18px; /* Slightly larger font for bigger screens */
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+    }
+
+    /* Button specific styles */
+    .sign-up-email {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #ccc;
+    }
+
+    .sign-up-google {
+        background-color: #4285F4;
+        color: #fff;
+    }
+
+    /* Header Image */
+    .header-image {
+        width: 100%;
+        max-width: 600px; /* Ensure it's fully visible on large screens */
+        margin: 0 auto;
+        display: block;
+    }
+}
+    
+   
