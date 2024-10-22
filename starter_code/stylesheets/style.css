@@ -8,3 +8,319 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* Starting with Mobile first 768px*/
+
+body {
+  background-color: #540b51;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: auto;
+  height: 20px;
+}
+
+nav ul {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+nav div {
+  margin: 0 5px 0 20px;
+}
+
+.buttons {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #540b51;
+}
+
+nav img {
+  width: auto;
+  height: 20px;
+}
+
+header div {
+  color: #f3eae2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.H-text {
+  color: #ecb12f;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+header p {
+  margin-top: 10px;
+}
+
+header div button {
+  width: 350px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: #540b51;
+  text-transform: uppercase;
+  border: none;
+}
+
+header div button:nth-child(2) {
+  background-color: #4285f4;
+  color: #f3eae2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.google-logo {
+  background-color: #f3eae2;
+  border-radius: 2px;
+  padding: 2px;
+  margin-left: 15px;
+}
+
+.google-logo img {
+  height: 28px;
+}
+
+.hidden-p {
+  width: 30px;
+}
+
+.mockup img {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+}
+
+#logo-section {
+  background-color: #f3eae2;
+  width: 100%;
+  height: auto;
+}
+
+#logo-section p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.logos img {
+  height: 45px;
+  margin-bottom: 25px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#stats {
+  background-color: white;
+  margin-top: 0;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#stats ul {
+  list-style: none;
+  padding: 0;
+}
+
+#stats h3,
+#stats span {
+  margin: 0;
+  color: #540b51;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#stats .first-sentence {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#stats p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+#action-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#action-section h3 {
+  color: #f3eae2;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#action-section button {
+  width: 350px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+#action-section button:nth-child(2) {
+  color: #540b51;
+}
+
+#action-section button:nth-child(3) {
+  color: white;
+  background-color: #540b51;
+  border: 1px solid white;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.2); /* gris avec 20% d'opacité */
+  width: 85%;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #f3eae2;
+}
+
+footer ul {
+  list-style: none;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+footer li {
+  margin-bottom: 15px;
+}
+
+.change-region {
+  display: flex;
+}
+
+.change-region img {
+  margin-right: 10px;
+  mix-blend-mode: multiply;
+}
+
+.download-slack {
+  display: flex;
+  color: #4285f4;
+}
+
+.download-slack img {
+  margin-right: 10px;
+  mix-blend-mode: multiply;
+}
+
+#icons {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+.c {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    padding-left: 20px;
+    background-image: url("../images/background-singup.png");
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  header .H-text,
+  header p {
+    font-size: 20px;
+  }
+
+  #logo-section p {
+    padding-bottom: 10px;
+  }
+  .logos img {
+    height: 30px;
+  }
+
+  #stats h3 br,
+  #stats p br {
+    display: none;
+  }
+
+  #stats ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 220px;
+  }
+
+  #stats li {
+    margin: 60px;
+    text-align: left;
+  }
+
+  #action-section h3 br {
+    display: none;
+  }
+
+  #action-section h3 {
+    font-size: 40px;
+  }
+
+  #action-section button {
+    width: 80%;
+    border-radius: 5px;
+  }
+
+  footer ul {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  #icons {
+    margin-bottom: 10px;
+  }
+
+  .c br {
+    display: none;
+  }
+}
