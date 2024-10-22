@@ -8,3 +8,395 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 15px 20px;
+}
+
+body {
+	background-color: #540b51;
+	font-family: sans-serif;
+}
+main {
+	position: relative;
+}
+
+footer {
+	background-color: white;
+	padding: 50px 20px;
+}
+
+footer ul > li {
+	list-style-type: none;
+}
+hr {
+	margin-bottom: 20px;
+}
+
+small {
+	font-size: 10px;
+	text-align: center;
+	color: #454245;
+}
+.trust {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f3eae2;
+	color: #191817;
+	padding: 50px 20px;
+}
+
+.trust > p {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.trust-logos {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.trust-logos img {
+	height: 30px;
+	margin: 10px 0px;
+}
+
+.navbar {
+	display: none;
+}
+
+.icon-menu {
+	display: flex;
+	justify-content: space-between;
+}
+.icon-menu :nth-child(2) {
+	margin-left: 10px;
+}
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header > div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header h1 {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+.header p {
+	color: white;
+	text-align: center;
+}
+.header p > span {
+	color: #ecb12f;
+	text-align: center;
+}
+
+.footer-li {
+	margin-bottom: 20px;
+}
+.footer-li:last-child {
+	color: #4285f4;
+}
+#fab {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#fab {
+	margin-bottom: 20px;
+}
+button img {
+	background-color: #540b51;
+}
+button {
+	background-color: #540b51;
+	border: none;
+}
+
+#slack-logo {
+	width: 100px;
+}
+
+#buttons {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+}
+#button-sign {
+	background-color: white;
+
+	color: #540b51;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+#button-google {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #4285f4;
+	color: white;
+}
+
+#button-google > span {
+	text-transform: uppercase;
+}
+
+#button-google > img {
+	background-color: white;
+	height: 40px;
+	width: 40px;
+	padding: 8px;
+	border-radius: 2px;
+	margin-left: 5px;
+}
+#button-google > div {
+	height: 40px;
+	width: 40px;
+}
+
+#header_great {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+#header_img {
+	height: 200px;
+}
+
+#header_img > img {
+	object-fit: contain;
+	overflow: hidden;
+}
+
+#team {
+	background-color: white;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 70px 20px;
+}
+
+#team span {
+	font-size: 45px;
+}
+
+#team > h3 {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#team > p {
+	margin-bottom: 50px;
+}
+
+#team > h3,
+#team span {
+	color: #540b51;
+}
+
+#team li {
+	list-style-type: none;
+	width: 150px;
+	margin-bottom: 30px;
+}
+
+#team > h3,
+#team p {
+	text-align: center;
+}
+
+#welcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding: 50px 20px;
+}
+#welcome > h3 {
+	font-size: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#button-try {
+	background-color: white;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#button-talk {
+	border: 1px solid white;
+	font-weight: bold;
+	color: white;
+}
+
+.button {
+	width: 100%;
+	height: 50px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+#small {
+	display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.header {
+		flex-direction: row;
+	}
+	#header_great {
+		width: 60%;
+	}
+	#header_great > h1 {
+		text-align: left;
+		font-size: 60px;
+		padding-right: 20px;
+		margin-left: 20px;
+	}
+	#header_img {
+		position: relative;
+		width: 40%;
+	}
+
+	#header_img > img {
+		object-fit: unset;
+		overflow: unset;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.trust {
+		align-items: unset;
+	}
+
+	#team {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#team ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#team ul > li {
+		width: 200px;
+		padding: 0 20px;
+	}
+
+	#footer-li {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.footer-li {
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.header {
+		flex-direction: row;
+	}
+	#header_great {
+		width: 60%;
+	}
+	#header_great > h1 {
+		text-align: left;
+		font-size: 60px;
+		padding-right: 20px;
+		margin-left: 20px;
+	}
+	#header_img {
+		position: relative;
+		width: 40%;
+	}
+
+	#buttons {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: flex-start;
+		width: 600px;
+		margin-top: 10px;
+	}
+
+	#button-sign {
+		background-color: white;
+
+		color: #540b51;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-right: 10px;
+		text-transform: uppercase;
+	}
+
+	#header_img > img {
+		object-fit: unset;
+		overflow: unset;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.trust {
+		align-items: unset;
+	}
+
+	#team {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#team ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#team ul > li {
+		width: 200px;
+		padding: 0 20px;
+	}
+
+	#footer-li {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.footer-li {
+		font-size: 10px;
+	}
+	#welcome {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		padding: 50px 20px;
+	}
+}
