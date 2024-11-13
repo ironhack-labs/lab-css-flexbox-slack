@@ -8,3 +8,438 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+:root{
+    --purple: #540B51;
+    --ivory: #F3EAE2;
+    --blue: #4285F4;
+    --white: #FFFFFF;
+    --yellow: #ECB12F;
+    --grey: #454245;
+    --titles-black: #191817;
+    ---paragraph-black: #000000;
+    --links-blue: #2E71A6;
+}
+
+html, body, footer, section, nav, p, section, h1, h3 {
+    box-sizing: border-box;
+}
+
+html, body, p, section, h1, h3{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100vh;
+    font-family: Helvetica, SansSerif, Arial;
+    background-color: var(--purple);
+}
+
+main{
+    width: 100%;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -85px;
+}
+
+header{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+}
+
+header h1 {
+    display: block;
+    text-align: left;
+    font-size: 58px;
+    padding: 20px 40px;
+}
+
+header p {
+    display: block;
+    padding: 20px 40px;
+}
+
+header .free-text {
+    text-align: left;
+    padding: 20px 40px;
+}
+
+.hero-text{
+    width: 50%;
+    padding-left: 50px;
+}
+
+.hero-text h1 span {
+    display: block;
+}
+
+.hero-image {
+    width: 50%;
+    height: auto;
+}
+
+.hero-image img {
+    width: 700px;
+    height: auto;
+    margin: auto -200px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+}
+
+
+.nav-brand-left,
+.nav-buttons-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-buttons-right{
+    align-items: flex-end;
+}
+
+nav .header-btn-grp-mobile {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 5;
+}
+
+nav .header-btn-grp-mobile button{
+    background-color: var(--purple);
+    border: none;
+}
+
+nav .header-btn-grp-desktop li{
+   padding-left: 10px;
+}
+
+.header-menu-desktop,
+.header-btn-grp-desktop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-btn-grp-desktop li button{
+    color: var(--purple);
+    width: 100px;
+}
+
+.btn-hamburger{
+    display: none;
+}
+
+h1{
+    color: var(--white);
+}
+
+ul{
+    display:flex;
+    list-style-type: none;
+}
+
+ul li{
+    padding: 5px;
+}
+
+ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.free-text{
+    color: var(--white);
+}
+
+.free-text span {
+    color: var(--yellow);
+}
+
+.response{
+    padding: 70px 0;
+}
+
+.header-btn-grp {
+    padding: 20px 40px;
+}
+
+.header-btn-grp button{
+    padding: 0;
+    margin: 0;
+    width: 165px;
+    height: 35px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+button > img,
+button > span {
+    vertical-align: middle;
+}
+
+.header-btn-grp button > img {
+    background-color: var(--white);
+}
+
+.btn-signup-email{
+    color: var(--purple);
+}
+
+.btn-signup-ggl{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.header-btn-grp button img {
+    width: 26px;
+    height: auto;
+}
+
+.trusted-heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.logo{
+    width: 8rem;
+    height: auto;
+}
+
+.hero-image{
+    width: 500px;
+    height: auto;
+}
+
+.companies {
+    background-color: var(--ivory);
+    padding: 50px 0;
+}
+
+.trusted-heading{
+    padding-bottom: 40px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logos img{
+    height: 50px;
+    width: auto;
+}
+
+.teams{
+    background-color: var(--white);
+    text-align: center;
+}
+
+.teams h3{
+    padding-top: 40px;
+    font-size: 24px;
+    color: var(--purple);
+}
+
+.teams p{
+    font-size: 10px;
+    padding: 10px 40px;
+}
+
+.teams ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-bottom: 40px;
+}
+
+.teams ul li,
+.teams ul li p{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.teams ul li .percent{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--purple);
+}
+
+.teams ul li .description{
+    font-size: 10px;
+}
+
+.contact{
+    color: var(--white);
+    text-align: center;
+}
+
+.contact h3{
+    padding: 30px 40px;
+}
+
+button{
+    padding: 0;
+    margin: 0;
+    width: 165px;
+    height: 35px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.contact button.left{
+    color: var(--purple);
+}
+.contact button.right{
+    background: var(--purple);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.footer,
+.push {
+    height: 150px;
+}
+
+footer{
+    height: 185px;
+    flex: 1 1 auto;
+    background-color: var(--white);
+    padding-top: 20px;
+}
+
+.footer-nav{
+    color: var(--grey);
+    flex: 1 1 auto;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+.footer-nav span{
+    color: #2E71A6;
+}
+
+.icons-social li{
+    margin-right: 10px;
+}
+
+.copyright{
+    margin-top: 10px;
+    margin-left: 40px;
+    font-weight: 200;
+}
+
+@media (max-width: 768px) {
+    .header-menu-desktop,
+    .header-btn-grp-desktop {
+        display: none;
+    }
+
+    .btn-hamburger {
+        display: block;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        display: block;
+        text-align: center;
+        font-size: 50px;
+        padding: 20px 80px;
+    }
+
+    header p {
+        display: block;
+        padding: 20px 80px;
+    }
+
+    header .free-text{
+        text-align: center;
+    }
+
+    header .response{
+        padding:0;
+    }
+
+    header .header-btn-grp button{
+        width: 100%;
+        margin: 5px 20px;
+    }
+
+    .header-btn-grp {
+        padding: 20px 0;
+    }
+
+    .hero-text{
+        width:100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero-text h1 span {
+        display: inline;
+    }
+
+    .hero-image{
+        width: 100%;
+        height: 385px;
+        overflow: hidden;
+        padding: 0;
+        margin:0;
+    }
+
+    .hero-image img {
+        width: 860px;
+        margin-left: -65px;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .logos{
+        flex-wrap: wrap;
+    }
+
+    .logos img {
+        padding: 20px;
+    }
+
+    .footer-nav{
+        flex-direction: column;
+    }
+
+
+    footer{
+        width: 100%;
+        height: 400px;
+        flex: 1 1 auto;
+        background-color: var(--white);
+    }
+    .copyright{
+        margin: 0 50px;
+        flex: 1 1 auto;
+    }
+
+    .copyright p small{
+        word-wrap: break-word;
+    }
+}
