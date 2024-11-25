@@ -142,7 +142,7 @@ Use the following page screenshot as the guide:
 <br>
 
 ---
-
+----------
 ### BONUS: Iteration 3 | Medium Screens (width > 1024px and width < 1440px)
 
 We'll continue by focusing on devices with medium-sized screens (notebooks and bigger tablets). Similar to the previous iteration, you will have to use CSS media queries to apply the style and layout changes. The most noticeable changes in this viewport size are:
