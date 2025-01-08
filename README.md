@@ -8,7 +8,6 @@
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack-simple/Slack%2BHome%2BPage%2BIntro%2BTablet.png" alt="slack landing page mobile" width="500" />
 </p>
 
-
 <details>
   <summary>
    <h2>Learning Goals</h2>
@@ -87,8 +86,6 @@ We will start by focusing on the styles for mobile screens first! :iphone: Oh! R
 
 <br>
 
-
-
 When done, your page should look like this: [Preview - Mobile](<https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27905-2817&t=4UQZ5O1FjodswKev-8&scaling=scale-down&page-id=68%3A2761&starting-point-node-id=27905%3A2817&hide-ui=1>)
 
 <br>
@@ -99,7 +96,6 @@ Use the following page screenshot as the guide:
   <summary><b>Screenshot - Mobile Screens</b></summary>
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack-simple/Slack%2BHome%2BPage%2B-%2B420px.png" width="420px"/>
   <br/>
-
 
 [Back to top](#iteration-1--mobile-screens-width--768px)
 
@@ -120,8 +116,6 @@ Let's start growing our screen size. In this iteration, you will work on making 
 
 <br>
 
-
-
 When done, your page should look like this: [Preview - Small Screens](<https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27920-208&t=GG6xsZqUwaSq21fe-8&scaling=scale-down&page-id=68%3A2976&starting-point-node-id=27920%3A208&hotspot-hints=0&hide-ui=1>)
 
 <br>
@@ -131,7 +125,6 @@ Use the following page screenshot as the guide:
 <details>
   <summary><b>Screenshot - Small Screens</b></summary>
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack-simple/Slack%2BHome%2BPage%2B-%2B768px.png" width="768px"/>
-
 
   <br/>
 
@@ -152,8 +145,6 @@ We'll continue by focusing on devices with medium-sized screens (notebooks and b
 
 <br>
 
-
-
 When done, your page should look like this: [Preview - Medium Screens](<https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27920-291&t=pq37L62mzfeHEFnN-1&scaling=scale-down&page-id=68%3A2977&starting-point-node-id=27920%3A291&hotspot-hints=0&hide-ui=1>)
 
 <br>
@@ -164,7 +155,6 @@ Use the following page screenshot as the guide:
   <summary><b>Screenshot - Medium Screens</b></summary>
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack-simple/Slack%2BHome%2BPage%2B-%2B1024px.png" />
   <br/>
-
 
 [Back to top](#iteration-3--medium-screens-width--1024px-and-width--1440px)
 
@@ -183,8 +173,6 @@ Last one! Some small changes and we are done! In this iteration we are targeting
 
 <br>
 
-
-
 When done, your page should look like this: [Preview - Large Screens](<https://www.figma.com/proto/IBsxB8TITYkHS35t14Ae84/LAB-CSS-Slack-Clone-(v2---simple)?type=design&node-id=27920-383&t=A1gXFjJ0doVfgZvR-8&scaling=scale-down&page-id=68%3A2978&starting-point-node-id=27920%3A383&hotspot-hints=0&hide-ui=1>)
 
 <br>
@@ -195,7 +183,6 @@ Use the following page screenshot as the guide:
   <summary><b>Screenshot - Large Screens</b></summary>
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m1/lab-flexbox-slack-simple/Slack%2BHome%2BPage%2B-%2B1440px.png" />
   <br/>
-
 
 [Back to top](#iteration-4--large-screens-width--1440px)
 

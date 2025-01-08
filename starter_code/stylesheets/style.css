@@ -8,3 +8,344 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+nav {
+  box-sizing: border-box;
+  background-color: #540b51;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav img {
+  width: 5em;
+}
+
+nav ul {
+  display: none;
+}
+
+.nav-right img {
+  width: 1em;
+  background-color: #540b51;
+  padding: 0.5em;
+}
+
+.nav-right button {
+  all: unset;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.header-text {
+  background-color: #540b51;
+}
+
+.header-text h1 {
+  box-sizing: border-box;
+  padding: 0 1em 0 1em;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.header-text p {
+  padding: 0 1em 0 1em;
+  margin: 1em;
+  text-align: center;
+  color: white;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+}
+
+.header-buttons button {
+  background-color: #4285f4;
+  color: white;
+  padding: 1em;
+  margin: 0.5em;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.header-buttons .sign-up {
+  background-color: #ffffff;
+  color: black;
+}
+
+.google img {
+  width: 1.3em;
+  background-color: aliceblue;
+  padding: 0.3em;
+  border-radius: 0.2em;
+  position: absolute;
+  left: 0.5em;
+  bottom: 0.5em;
+}
+
+.hero-image {
+  margin: 0;
+  padding: 0;
+}
+
+.section-1 {
+  background-color: #f3eae2;
+  padding: 0.1em;
+  margin: 0;
+}
+
+.section-1 p {
+  padding: 1em;
+  margin: 0;
+  text-align: center;
+  color: #191817;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+/* how do you make logos the same size? */
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.logos img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.section-2 {
+  margin-top: 3em;
+  padding: 0;
+}
+
+.section-2 h3 {
+  padding: 0.2em;
+  margin: 0;
+  text-align: center;
+  color: #540b51;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.section-2 .description {
+  padding: 1em;
+  margin: 0;
+  text-align: center;
+  color: #000000;
+}
+
+.percentage {
+  text-align: center;
+  color: #540b51;
+  font-weight: bolder;
+  font-size: 3em;
+  margin: 0;
+}
+
+.percentage-description {
+  padding: 0 6em 0 6em;
+  margin: 0;
+  text-align: center;
+  color: #000000;
+  font-size: 0.9em;
+  font-weight: bolder;
+}
+
+.section-2 ul {
+  all: unset;
+}
+
+.section-3 {
+  background-color: #540b51;
+  padding: 2em 1em;
+  margin: 1em 0 0 0;
+}
+
+.section-3 h3 {
+  padding: 0.2em;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.hq-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+}
+
+.hq-buttons button {
+  color: white;
+  padding: 1em;
+  margin: 0.5em;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 100%;
+  max-width: 700px;
+}
+
+.hq-buttons .try-for-free {
+  color: #540b51;
+}
+
+.hq-buttons .talk-to-sales {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+hr {
+  border: 0.5px solid lightgray;
+  width: 90%;
+  margin: 2em auto;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+.footer-links {
+  padding: 0 0.5em;
+  margin: 0.5em;
+}
+.footer-links li {
+  padding: 0.5em 0;
+  font-size: 0.7em;
+  font-weight: bolder;
+}
+
+.footer-links img {
+  width: 1em;
+  padding-right: 5px;
+}
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+footer small {
+  text-align: center;
+  color: lightgray;
+  font-size: 0.7em;
+  display: block; /* why does small not center without display: block */
+}
+
+@media (768px <= width <= 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 1em;
+    background-color: #540b51;
+  }
+  header .hero-image {
+    width: 100%;
+    height: auto;
+    margin-right: -20em;
+  }
+
+  .header-text {
+    width: 70%;
+  }
+
+  .header-text h1 {
+    font-size: 3em;
+    text-align: left;
+    padding: 0.5em;
+  }
+
+  .header-text p {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0;
+  }
+
+  .section-2 li {
+    list-style-type: none;
+    width: 100%;
+  }
+
+  .section-2 li p {
+    text-align: left;
+  }
+
+  .section-2 ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+  }
+
+  .percentage-description {
+    padding: 0;
+    margin-right: 2.3em;
+  }
+
+  .section-3 {
+    padding: 3em 5em;
+    margin: 1em 0 0 0;
+  }
+
+  .section-3 h3 {
+    font-size: 2.5em;
+    padding-bottom: 1em;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2em;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 1em 2em;
+  }
+
+  footer small {
+    text-align: left;
+    margin: 0 3em;
+    color: lightgray;
+    font-size: 0.7em;
+    display: block; /* why does small not center without display: block */
+  }
+}
