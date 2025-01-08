@@ -8,3 +8,279 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+html {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body nav {
+    box-sizing: border-box;
+    background: #540b51;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 100%;
+}
+
+h3 {
+    color: #540b51;
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-align: center;
+    /* Ensure text in h3 is centered */
+}
+
+p {
+    margin-right: 2vh;
+    margin-left: 2vh;
+    font-weight: bold;
+    text-align: center;
+    /* Ensure the paragraph text is centered */
+
+}
+
+section {
+    padding: 0vh 10vh 2vh 10vh;
+}
+
+nav div {
+    display: flex;
+    flex-direction: flex-end;
+    padding: 2vh;
+    padding-right: 1.5vh;
+}
+
+.navbar div {
+    margin: 0;
+    padding: 0;
+}
+
+nav img {
+    display: inline-block;
+    height: 48%;
+    width: 48%;
+}
+
+body div img,
+button {
+    background-color: transparent;
+    border: none;
+}
+
+nav>div>button {
+    height: 100%;
+    width: 7vh;
+}
+
+nav ul {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+ul>li>p span {
+    color: #540b51;
+    font-size: 10vh;
+    font-family: helvetica;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #540b51;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    /* Make header take full viewport height */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+header>div {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+header button:nth-child(1) {
+    width: 98%;
+    margin: 10px;
+    margin-right: 20px;
+    background-color: #bfc4cd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+header button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+header button img {
+    width: 24px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main>section:first-child div>img {
+    width: 100px;
+    height: 100px;
+    oject-fitlex-shrink: 0;
+    object-fit: contain;
+}
+
+section img {
+    width: 100px;
+    /* Set the desired width */
+    height: 100px;
+    /* Set the desired height */
+    object-fit: contain;
+    /* Ensure the images maintain their aspect ratio */
+}
+
+main>section:first-child {
+    background-color: rgb(219, 208, 194);
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the text horizontally */
+    justify-content: center;
+    /* Center the text vertically */
+    text-align: center;
+    /* Center the text itself */
+    width: 100%;
+
+}
+
+main>section:nth-of-type(3)>button {
+    width: 95%;
+    padding: 15px;
+    margin: 1vh;
+    background-color: #f3f5f7;
+    color: purple;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+
+}
+
+main>section:nth-of-type(3) {
+    background-color: purple;
+    color: white;
+}
+
+footer ul {
+    margin-top: 4vh;
+    margin-left: 5vh;
+}
+
+hr {
+    color: #bfc4cd;
+    margin-top: 4vh;
+    width: 85%;
+}
+
+footer>ul:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fab {
+    height: 10px;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        flex-flow: space-evenly;
+        padding: 30px;
+
+    }
+
+    header img {
+        max-width: 300%;
+    }
+
+    header:first-child div {
+
+        height: 90vh;
+        flex: 1 1 auto;
+        text-align: left;
+    }
+
+    header h1 {
+        font-size: 5rem;
+        text-align: left;
+    }
+
+    main:first-child div img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
