@@ -8,3 +8,1010 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+/* Mobile Screens (width < 768px) */
+
+* {box-sizing: border-box;} /* create a box around the elements */
+
+@media (max-width: 768px) {
+
+  body {
+    width: 100%; /* set the width of the body to 100% */
+    margin: 0; /* remove the margin */
+    padding: 0; /* remove the padding */
+    overflow-x: hidden; /* hide the horizontal overflow */
+  }
+
+  img {
+    width: 100%; /* set the width of the image to 100% */
+  }
+
+  nav {
+    display: flex; /* display the nav as a flex container */
+    justify-content: space-between;  /* Space between logo and buttons */
+    align-items: center; /* center the items in the nav */
+    background-color: #540B51; /* set the background color of the nav */
+    padding: 20px; /* add padding to the nav */
+    width: 100%; /* set the width of the nav to 100% */
+    border-bottom: none; /* remove the border bottom */
+  }
+
+  /* hide li elements */
+  nav ul {
+    display: none; 
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  /* Style the buttons container */
+  nav > div:last-child {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;  /* Space between buttons */
+    /* align-items: center; */
+  }
+
+  /* Style the buttons */
+  nav button {
+    background: none;
+    border: none;
+  }
+
+  nav button img {
+    width: 100%;  
+  }
+
+  header { 
+    display: flex; /* display the header as a flex container */
+    flex-direction: column; /* set the flex direction to column */
+    align-items: center; /* center the items in the header */
+    padding: 20px; /* add padding to the header */
+    background-color: #540B51; /* set the background color of the header */
+    color: #F3EAE2; /* set the color of the header */
+    width: 100%; /* set the width of the header to 100% */
+    border-top: none; /* remove the border top */
+    text-align: center; /* center the text */
+  }
+
+  header p {
+    color: #c36c1f; /* set the color of the paragraph */
+    text-align: center; /* center the text */
+  }
+
+  header img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  header button:first-child {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: white;
+    color: #191817;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  header button:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #4285F4;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+  }
+
+  header button:last-child img {
+    position: absolute;
+    left: 10px;
+    height: 70%;
+    padding:3px;
+    width: auto;
+    background-color: white;
+  }
+
+  header button:last-child span {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3EAE2;
+  }
+
+  main section:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3EAE2;
+    width: 100%;
+  }
+
+
+  main section:first-child p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  /* New container for logos */
+  main section:first-child div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  main section:first-child div img {
+    width: auto;
+    height: 40px;
+    object-fit:fill; /* Ensure the image fits within the container */
+  }
+
+  main section:nth-child(2) {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+}
+ main section:nth-child(2) h3{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color:  #540B51;
+  margin-bottom: 0px;
+ }
+
+ main section:nth-child(2) h3 + p {
+  font-size: 1.1em;
+  text-align: center;
+  width: 100%;
+  color:  #000000;
+  padding: 0 40px;
+  margin-top: 0px;
+ }
+
+ main section:nth-child(2) li {
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 0px;
+  padding: 0 20px;
+
+ }
+
+ main section:nth-child(2) li p:first-child {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color:  #540B51;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+ }
+
+ main section:nth-child(2) li p:last-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+ }
+
+ main section:nth-child(2) ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+ }
+
+ main section:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #540B51;
+  width: 100%;
+  padding: 20px;
+ }
+
+ main section:last-child h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+ }
+
+ main section:last-child button:first-of-type {
+    background-color: white;
+    color: #191817;
+    border: none;
+    padding:  15px 20px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color:#540B51;
+ }
+
+ main section:last-child button:last-of-type {
+  background-color: #540B51;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+ }
+
+ footer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+ }
+
+ footer ul:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  padding: 0 20px;
+  list-style-type: none;
+ }
+
+ footer ul:first-child li {
+  margin-bottom: 10px;
+  font-weight: bold;
+ }
+
+ footer ul:last-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  list-style-type: none;
+  margin: 0;
+ }
+
+ footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: grey;
+  padding: 20px;
+ }
+}
+@media (min-width: 768px ) and (max-width: 1024px) {
+
+  body {
+    width: 100%; /* set the width of the body to 100% */
+    margin: 0; /* remove the margin */
+    padding: 0; /* remove the padding */
+    overflow-x: hidden; /* hide the horizontal overflow */
+  }
+
+  img {
+    width: 100%; /* set the width of the image to 100% */
+  }
+
+  nav {
+    display: flex; /* display the nav as a flex container */
+    justify-content: space-between;  /* Space between logo and buttons */
+    align-items: center; /* center the items in the nav */
+    background-color: #540B51; /* set the background color of the nav */
+    padding: 20px; /* add padding to the nav */
+    width: 100%; /* set the width of the nav to 100% */
+    border-bottom: none; /* remove the border bottom */
+  }
+
+  /* hide li elements */
+  nav ul {
+    display: none; 
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  /* Style the buttons container */
+  nav > div:last-child {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;  /* Space between buttons */
+    /* align-items: center; */
+  }
+
+  /* Style the buttons */
+  nav button {
+    background: none;
+    border: none;
+  }
+
+  nav button img {
+    width: 100%;  
+  }
+
+  nav button:nth-of-type(2) {
+    display: none;
+  }
+
+  header {
+    display: flex; /* display the header as a flex container */
+    flex-direction: row; /* set the flex direction to column */
+    align-items: center; /* center the items in the header */
+    padding: 20px; /* add padding to the header */
+    background-color: #540B51; /* set the background color of the header */
+    color: #F3EAE2; /* set the color of the header */
+    width: 100%; /* set the width of the header to 100% */
+    border-top: none; /* remove the border top */
+    text-align: center; /* center the text */
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  header div:first-child {
+    flex-grow: 1;
+    width: 100%;
+  }
+  header div:last-child img {
+    display: flex;
+    flex-grow: 1;
+    object-fit: contain;
+  }
+
+  header p {
+    color: #c36c1f; /* set the color of the paragraph */
+    text-align: center; /* center the text */
+  }
+
+  header div:last-child button img {
+    /* width: 100%; */
+    border-radius: 10px;
+  }
+
+  header button:first-child {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: white;
+    color: #191817;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  header button:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #4285F4;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+  }
+
+  header button:last-child img {
+    position: absolute;
+    left: 10px;
+    height: 70%;
+    padding:3px;
+    width: auto;
+    background-color: white;
+  }
+
+  header button:last-child span {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3EAE2;
+  }
+
+  main section:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3EAE2;
+    width: 100%;
+  }
+
+
+  main section:first-child p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  /* New container for logos */
+  main section:first-child div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  main section:first-child div img {
+    width: auto;
+    height: 40px;
+    object-fit:fill; /* Ensure the image fits within the container */
+  }
+
+  main section:nth-child(2) {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+}
+ main section:nth-child(2) h3{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color:  #540B51;
+  margin-bottom: 0px;
+ }
+
+ main section:nth-child(2) h3 + p {
+  font-size: 1.1em;
+  text-align: center;
+  width: 100%;
+  color:  #000000;
+  padding: 0 40px;
+  margin-top: 0px;
+ }
+
+ main section:nth-child(2) li {
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+  flex-direction: row;
+  margin-top: 0px;
+  padding: 0 20px;
+
+ }
+
+ main section:nth-child(2) li p:first-child {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color:  #540B51;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+ }
+
+ main section:nth-child(2) li p:last-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+ }
+
+ main section:nth-child(2) ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  flex-direction: row;
+ }
+
+ main section:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #540B51;
+  width: 100%;
+  padding: 20px;
+ }
+
+ main section:last-child h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+ }
+
+ main section:last-child button:first-of-type {
+    background-color: white;
+    color: #191817;
+    border: none;
+    padding:  15px 20px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color:#540B51;
+ }
+
+ main section:last-child button:last-of-type {
+  background-color: #540B51;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+ }
+
+ footer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+ }
+
+ footer ul:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  list-style-type: none;
+ }
+
+ footer ul:first-child li {
+  margin-bottom: 10px;
+  font-weight: bold;
+ }
+
+ footer ul:last-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding-right: 150px;
+ }
+
+ footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: grey;
+  padding: 20px;
+ }
+}
+@media (min-width: 1024px ) and (max-width: 1440px) {
+  body {
+    width: 100%; /* set the width of the body to 100% */
+    margin: 0; /* remove the margin */
+    padding: 0; /* remove the padding */
+    overflow-x: hidden; /* hide the horizontal overflow */
+  }
+
+  img {
+    width: 100%; /* set the width of the image to 100% */
+  }
+
+  nav {
+    display: flex; /* display the nav as a flex container */
+    flex-direction: row;
+    justify-content: space-between;  /* Space between logo and buttons */
+    align-items: center; /* center the items in the nav */
+    background-color: #540B51; /* set the background color of the nav */
+    padding: 20px; /* add padding to the nav */
+    width: 100%; /* set the width of the nav to 100% */
+    border-bottom: none; /* remove the border bottom */
+  }
+
+  /* hide li elements */
+  nav > div:first-child {
+    display: flex; 
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+  nav > div:first-child ul {
+    display: flex; 
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+  }
+  nav > div:first-child ul li a{
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+  }
+
+  nav > div:first-child button img {
+    width: 100%;  
+    display: none;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  /* Style the buttons container */
+  nav > div:last-child {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;  /* Space between buttons */
+    /* align-items: center; */
+  }
+
+    /* Style the buttons container */
+    nav > div:last-child ul {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;  /* Space between buttons */
+      align-items: center;
+      list-style-type: none;
+    }
+
+    nav > div:last-child ul li a {
+      color: white;
+    }
+    
+  
+  /* Style the buttons */
+  nav button {
+    background: none;
+    border: none;
+  }
+
+
+  nav button img {
+    width: 100%;  
+  }
+
+  nav button:nth-of-type(2) {
+    display: none;
+  }
+
+  nav button:last-child {
+    border: 1px solid white;
+  }
+
+  nav > div:last-child ul li:first-child {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;  /* Prevents text from wrapping */
+    display: flex;        /* Makes the element a flex container */
+    align-items: center;  /* Centers content vertically */
+  }
+
+  nav > div:last-child ul li:last-child {
+    background-color: white;
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  nav > div:last-child ul li:last-child a {
+    color: #540B51;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  header {
+    display: flex; /* display the header as a flex container */
+    flex-direction: row; /* set the flex direction to column */
+    align-items: center; /* center the items in the header */
+    padding: 20px; /* add padding to the header */
+    background-color: #540B51; /* set the background color of the header */
+    color: #F3EAE2; /* set the color of the header */
+    width: 100%; /* set the width of the header to 100% */
+    border-top: none; /* remove the border top */
+    text-align: center; /* center the text */
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  header div:first-child {
+    flex-grow: 1;
+    width: 100%;
+  }
+  header div:last-child img {
+    display: flex;
+    flex-grow: 1;
+    object-fit: contain;
+  }
+
+  header p {
+    color: #c36c1f; /* set the color of the paragraph */
+    text-align: center; /* center the text */
+  }
+
+  header div:last-child button img {
+    /* width: 100%; */
+    border-radius: 10px;
+  }
+
+  header button:first-child {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: white;
+    color: #191817;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  header button:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #4285F4;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+  }
+
+  header button:last-child img {
+    position: absolute;
+    left: 10px;
+    height: 70%;
+    padding:3px;
+    width: auto;
+    background-color: white;
+  }
+
+  header button:last-child span {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3EAE2;
+  }
+
+  main section:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3EAE2;
+    width: 100%;
+  }
+
+
+  main section:first-child p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  /* New container for logos */
+  main section:first-child div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  main section:first-child div img {
+    width: auto;
+    height: 40px;
+    object-fit:fill; /* Ensure the image fits within the container */
+  }
+
+  main section:nth-child(2) {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+}
+ main section:nth-child(2) h3{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color:  #540B51;
+  margin-bottom: 0px;
+ }
+
+ main section:nth-child(2) h3 + p {
+  font-size: 1.1em;
+  text-align: center;
+  width: 100%;
+  color:  #000000;
+  padding: 0 40px;
+  margin-top: 0px;
+ }
+
+ main section:nth-child(2) li {
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+  flex-direction: row;
+  margin-top: 0px;
+  padding: 0 20px;
+
+ }
+
+ main section:nth-child(2) li p:first-child {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color:  #540B51;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+ }
+
+ main section:nth-child(2) li p:last-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+ }
+
+ main section:nth-child(2) ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  flex-direction: row;
+ }
+
+ main section:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #540B51;
+  width: 100%;
+  padding: 20px;
+ }
+
+ main section:last-child h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+ }
+
+ main section:last-child button:first-of-type {
+    background-color: white;
+    color: #191817;
+    border: none;
+    padding:  15px 20px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color:#540B51;
+ }
+
+ main section:last-child button:last-of-type {
+  background-color: #540B51;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+ }
+
+ footer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+ }
+
+ footer ul:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  list-style-type: none;
+ }
+
+ footer ul:first-child li {
+  margin-bottom: 10px;
+  font-weight: bold;
+ }
+
+ footer ul:last-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding-right: 150px;
+ }
+
+ footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: grey;
+  padding: 20px;
+ }
+}
