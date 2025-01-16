@@ -1,310 +1,600 @@
+
 /*
-Background purple: #540B51
-Background ivory: #F3EAE2
-Button blue: #4285F4
-Titles black: #191817
-Paragraph black: #000000
-Paragraph yellow: #ECB12F
-Links blue: #2E71A6
-Footer links grey: #454245
+background purple: #540B51
+background ivory: #F3EAE2
+button blue: #4285F4
+titles black: #191817
+paragraph black: #000000
+paragraph yellow: #ECB12F
+links blue: #2E71A6
+footer links grey: #454245
 */
 
+
+/* GENERAL */
+
+
 * {
-    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
+    max-width: 3000px;
     padding: 0;
     margin: 0;
     background-color: #540B51;
     font-family: sans-serif;
 }
 
-img {
-    width: 100px;
-}
 
-nav {
-    margin: 0;
-}
+/* NAVEGADOR */
 
-.top-navbar {
-    background-color: #540B51;
+
+.nav-bar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
-.nav-menu {
+.nav-bar img {
+    height: 20px;
+    width: auto;
+}
+
+.nav-bar ul {
     display: none;
 }
 
-.nav-btn {
-    background: none;
+.nav-bar button {
+    background-color: transparent;
     border: none;
 }
 
-.nav-btn img {
-    width: 20px;
-}
 
-header {
-    background-color: #540B51;
-}
+/* HEADER */
 
-.tittle-content {
-    color: white;
-    text-align: center;
-}
 
-.tittle-content h1 {
-    padding: 0 20px;
-}
-
-.tittle-content p {
-    padding: 0 20px;
-}
-
-.text-highlight {
-    color: #ECB12F;
-    font-weight: bold;
-}
-
-.signup-buttons {
-    padding: 20px;
-}
-
-.email-signup {
-    width: 100%;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #540B51;
-    border: none;
-    margin-bottom: 10px;
-}
-
-.google-signup {
-    width: 100%;
-    padding: 10px;
-    text-transform: uppercase;
-    border: none;
-    font-weight: bold;
-    background-color: #4285F4;
+.header-info {
     color: white;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.google-signup img {
-    background-color: white;
-    width: 30px;
-    padding: 5px;
+.header-info span {
+    color: #ECB12F;
 }
 
-.google-signup span {
-    width: 100%;
+.header-info h1 {
     text-align: center;
-    padding-right: 35px;
+    font-size: 40px;
 }
 
-.product-image {
+.header-info p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.header-info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.btn-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
     width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    color: #540B51;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    border-color: white;
 }
 
-main {
-    background-color: white;
+.btn-google {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #4285F4;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    border-color: #4285F4;
 }
+
+.header-info button span {
+    color: white;
+}
+
+.btn-google img {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    left: 15px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.header-image {
+    height: 720px;
+    overflow-y: hidden;
+
+}
+
+
+/* MAIN - SECTION 1 -  */
+
+/* LOGOS */
 
 .logos {
     background-color: #F3EAE2;
-    margin: 0;
+    padding-bottom: 20px;
 }
 
 .logos p {
-    text-align: center;
     text-transform: uppercase;
-    font-weight: 900;
+    text-align: center;
+    font-weight: 795;
     font-size: 0.8em;
-    padding-right: 20px;
-    padding-top: 40px;
+    padding: 20px 10px 0 10px;
 }
 
-.logo-list {
-    display: flex;
-    flex-wrap: wrap;
+.logos-list {
     padding: 20px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.logo-list img {
-    height: 30px;
+.logos-list img {
+    height: 35px;
     width: auto;
+    padding: 0 5px;
     margin: 10px;
 }
 
-.team-section {
+.slack-info {
     background-color: white;
+    padding: 25px 20px;
+}
+
+/* SLACK INFORMATION */
+
+.slack-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.slack-info h3 {
     text-align: center;
-}
-
-.team-section h3 {
     color: #540B51;
-    padding-top: 40px;
-    padding-left: 60px;
-    padding-right: 60px;
-    font-size: 1.5em;
-    font-weight: 900;
+    font-size: 30px;
+    margin: auto 20px;
 }
 
-.team-description {
-    font-size: 0.9em;
-    padding: 0px 20px;
-}
-
-.stats-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.stats-list p {
+.slack-info > p {
     text-align: center;
+    font-weight: 545;
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
 }
 
-.stats-list span {
+.info-list {
+    text-align: center;
+
+}
+
+.info-list > li > p > span {
     color: #540B51;
-    font-size: 2.5em;
+    font-size: 40px;
     font-weight: bold;
 }
 
-.stats {
+.info-list > li > p {
+    font-size: 11px;
     font-weight: bold;
-    font-size: 0.8em;
-    padding: 0px 90px;
+    margin: 0px 60px;
+    padding: 10px 0;
 }
 
-.welcome {
+.info-list > li {
+    padding: 0px auto;
+}
+
+.slack-subtitle {
+    position: relative;
+    bottom: 20px;
+}
+
+/* TRY SLACK */
+
+.try-slack {
     background-color: #540B51;
-    text-align: center;
-    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
 
-.welcome h3 {
+.try-slack > h3 {
+    text-align: center;
     color: white;
-    font-size: 2em;
+    font-size: 30px;
+    padding: 20px;
 }
 
 .try-button {
-    width: 80%;
+    margin: 5px 20px;
+    height: 40px;
     text-transform: uppercase;
+    font-size: 13px;
     font-weight: bold;
-    padding: 10px 0px;
     color: #540B51;
-    margin-bottom: 10px;
-    border: none;
-}
-
-.sales-button {
-    width: 80%;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 10px 0px;
-    background-color: #540B51;
-    border: 1px solid white;
-    color: white;
-}
-
-footer {
     background-color: white;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 2px;
 }
 
-footer ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
+.talk-button {
+    margin: 5px 20px 30px 20px;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    background-color: #540B51;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: white;
 }
 
-.footer-links {
-    font-size: 0.8em;
-    font-weight: 900;
-    padding-left: 10px;
-    padding-top: 50px;
-    list-style: none;
+/* FOOTER */
+
+.footer {
+    background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin: 0;
 }
 
-.footer-links li {
-    padding-bottom: 30px;
+
+.footer-info {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 35px;
+    order: 2;
 }
 
-@media screen and (min-width: 768px) {
-    .footer-links {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px;
-    }
-
-    .footer-links li {
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
-    .footer-socials li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px 0px;
-    }
+.linea {
+    margin: 30px 20px 18px 20px;
+    order: 1;
 }
 
-.download-option {
-    color: #2E71A6;
-}
-
-.footer-socials {
+.footer-rrss {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
+    margin: auto 20px;
+    padding: 20px;
+    order: 3;
 }
 
 .copyright {
+    font-size: 12px;
     text-align: center;
-    padding: 20px;
+    color: gray;
+    order: 4;
 }
- 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+.download {
+    color: #4285F4;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    /* NAVBAR */
+
+    .nav-bar {
+        padding: 30px;
+    }
+    
+    .nav-bar img {
+        height: 25px;
+    }
+
+    /* HEADER */
 
     header {
         display: flex;
-        align-items: center;
-        padding-bottom: 70px;
-        overflow: hidden;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        height: 900px;
     }
 
-    .tittle-content {
-        background-image: url("../images/background-signup.png");
+    .header-info {
+        width: 1500px;
+        padding: 0px 50px 20px 25px;
+        background-image: url("../images/background-singup.png");
         background-size: cover;
         text-align: left;
     }
 
-    .tittle-content h1 {
-        font-size: 3.5em;
-        padding-right: 100px;
-    }
-
-    .product-image {
-        width: 300px;
-    }
-
-    .stats-list {
+    .header-image {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header img {
+        position: relative;
+        height: 350px;
+        width: 500px;
+    }
+
+    .header-info h1 {
+        font-size: 80px;
+        text-align: start;
+        margin-right: 100px;
+    }
+    
+    .header-info p {
+        text-align: start;
+    }
+
+    .btn-google img {
+        height: 30px;
+        width: auto;
+        position: absolute;
+        left: 40px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    /* LOGOS */
+
+    .logos-list {
+        flex-wrap: nowrap;
+    }
+
+    /* INFO LIST */
+
+    .info-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info-list li {
+        text-align: left;
+        
+    }
+
+    /* FOOTER INFO */
+
+    .footer-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px 30px;
+    }
+
+    .footer-rrss {
+        justify-content: left;
+        
+    }
+
+    .footer-rrss li{
+        margin: auto 35px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* NAVBAR */
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-bar div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .nav-bar div ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav-bar div ul li a {
+        
+        padding: 0px 20px;
+        text-decoration: none;
+    }
+
+    .nav-buttons {
+        color: white;
+    }
+
+    .sign-in {
+        background-color: #540B51;
+        padding: 10px;
+    }
+
+    .try-free {
+        background-color: white;
+        text-transform: uppercase;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .try-free a {
+        color: #540B51;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 60px;
+    }
+
+
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        height: 900px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-info {
+        width: 500px;
+        margin: 0;
+        padding: 0px 0px 20px 50px;
+        background-image: url("../images/background-singup.png");
+        background-size: cover;
         text-align: left;
     }
+
+    .header-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header img {
+        position: relative;
+        height: 350px;
+        width: 500px;
+        left: 90px;
+    }
+
+    .header-info h1 {
+        font-size: 80px;
+        text-align: start;
+        margin-right: 100px;
+    }
+
+    .header-info p {
+        text-align: start;
+    }
+
+    .btn-google img {
+        height: 30px;
+        width: auto;
+        position: absolute;
+        left: 65px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    /* TRY FOR FREE SECTION */
+
+    .button-container {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .try-button {
+        padding: 0px 50px;
+        height: 40px;
+    }
+
+    .talk-button {
+        padding: 0px 50px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .header-info {
+        background-image: none;
+    }
+
+    header img {
+        position: initial;
+        height: 400px;
+        width: auto;
+    }
+
+    .header-info > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+    .btn-google img {
+        height: 35px;
+        width: auto;
+        position: relative;
+        left: -10px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    .signup-buttons {
+        position: relative;
+        right: 20px;
+    }
+
+    .btn-email {
+        margin: 0 10px;
+    }
+
+    .btn-google {
+        margin: 0 10px;
+    }
+
+    /* INFO-SLACK */
+
+    .info-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 }
