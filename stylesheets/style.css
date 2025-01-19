@@ -1,0 +1,338 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Navigation */
+nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #541554;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav img[alt="Slack logo"] {
+  height: 25px;
+}
+
+nav ul {
+  display: none;
+  list-style: none;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+nav button img {
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+/* Header */
+header {
+  background-color: #541554;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+header > div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+header p {
+  color: #ecb22e;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+header div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+header button {
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+header button:first-child {
+  background-color: white;
+  color: #541554;
+}
+
+header button:last-child {
+  background-color: #4285f4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+header button img {
+  height: 20px;
+}
+
+header > div:last-child img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+/* Main content */
+main section:first-child {
+  background-color: #f4ede4;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+main section:first-child p {
+  text-transform: uppercase;
+  color: #454245;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+main section:first-child div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main section:first-child img {
+  height: 30px;
+}
+
+/* Stats section */
+main section:nth-child(2) {
+  background-color: #541554;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+main section:nth-child(2) h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main section:nth-child(2) > p {
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main section:nth-child(2) ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main section:nth-child(2) span {
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* CTA section */
+main section:nth-child(3) {
+  background-color: #541554;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+main section:nth-child(3) h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+main section:nth-child(3) button {
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0.5rem;
+  font-size: 1rem;
+  min-width: 200px;
+}
+
+main section:nth-child(3) button:first-child {
+  background-color: white;
+  color: #541554;
+  border: none;
+}
+
+main section:nth-child(3) button:last-child {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 1rem;
+}
+
+footer ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+footer ul:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer ul:nth-child(3) {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+footer small {
+  color: #454245;
+  font-size: 0.75rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  /* Navigation */
+  nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav button {
+    display: none;
+  }
+
+  /* Header */
+  header {
+    text-align: left;
+    padding: 4rem 2rem;
+  }
+
+  header > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  header div > div {
+    margin: 0;
+  }
+
+  header > div:last-child img {
+    margin-top: 0;
+  }
+
+  /* Company logos */
+  main section:first-child div {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  /* Stats section */
+  main section:nth-child(2) ul {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  main section:nth-child(2) li {
+    flex: 1;
+    max-width: 300px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 4rem 2rem;
+  }
+
+  footer ul:first-child {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 4rem;
+  }
+
+  main section:first-child div {
+    padding: 0 4rem;
+  }
+
+  main section:nth-child(2) ul {
+    padding: 0 4rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  nav, footer {
+    display: none;
+  }
+}
