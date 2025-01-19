@@ -8,3 +8,614 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: ivory;
+}
+
+h1 {
+  margin-top: 30px;
+  color: ivory;
+}
+
+button {
+  border: none;
+  height: 55px;
+  border-radius: 3px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #540b51;
+  height: 60px;
+  display: flex;
+  position: relative;
+}
+
+.list {
+  display: flex;
+}
+
+.list ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list ul li {
+  width: 100%;
+}
+
+.list ul li a {
+  text-decoration: none;
+  color: ivory;
+}
+
+.logo {
+  height: 30px;
+  padding: 15px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.search button {
+  margin: 0;
+  background: none;
+  border: none;
+  margin-right: 20px;
+}
+
+header {
+  background-color: #540b51;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-h1 {
+  margin: auto 20px;
+}
+
+header p {
+  font-size: 15px;
+  margin: 20px;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.sign-up button {
+  width: 80%;
+}
+
+.btn-2 {
+  background-color: #4285f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-2 span {
+  flex-grow: 1;
+}
+.btn-2 img {
+  background-color: aliceblue;
+  height: 30px;
+  width: auto;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  margin-top: 55px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.companies {
+  width: 100%;
+  height: auto;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.company-logos {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.company-logos img {
+  height: 35px;
+}
+
+.message {
+  margin: 50px;
+  text-align: center;
+}
+.message h3 {
+  color: #540b51;
+  font-size: 1.5rem;
+}
+
+.message p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.message ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+}
+.message ul li {
+  margin: 10px;
+  width: 60%;
+  height: auto;
+}
+.message li span {
+  font-size: 2.5rem;
+  color: #540b51;
+  font-weight: bolder;
+}
+
+.digital {
+  background-color: #540b51;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  padding: 50px;
+}
+
+.digital h3 {
+  font-size: 2rem;
+  padding-top: 0px;
+  text-align: center;
+}
+.digital .try-for-free {
+  color: #540b51;
+}
+.digital .talk-to-sales {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+footer {
+  color: black;
+  margin: 20px;
+}
+footer hr {
+  width: 100%;
+  margin-top: 25px;
+  color: #454245;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0%;
+  font-weight: bolder;
+}
+
+footer .contact-terms {
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.contact-terms li img {
+  padding-right: 10px;
+}
+
+.contact-terms li span {
+  color: #4285f4;
+}
+
+footer .social {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.copyright small {
+  font-size: 10px;
+  font-weight: lighter;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .list ul {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .list ul {
+    display: none;
+  }
+
+  .header-class {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-image: url("../images/hero-product-ui.png"),
+      url("../images/background-singup.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 60%, auto 90%;
+    background-position: min(525px, calc(107vw - 450px)) center,
+      min(0px, calc(100vw - 450px)) top;
+  }
+
+  .main-h1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .main-h1 h1 {
+    font-size: 4.5rem;
+    margin-top: 50px;
+  }
+  .main-h1 p {
+    margin: 0;
+    font-size: 25px;
+    width: 70%;
+  }
+
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 30%;
+  }
+
+  .sign-up button {
+    width: 100%;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .companies p {
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .companies .company-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .message ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .message ul li {
+    width: 20%;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .message ul li p {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+
+  .contact-terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
+  footer .social li {
+    padding-right: 80px;
+  }
+  .digital {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .digital button {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .navbar {
+    padding-top: 20px;
+  }
+
+  .list ul {
+    margin-left: 30px;
+  }
+  .list ul li {
+    padding-right: 60px;
+    font-weight: bolder;
+  }
+
+  .search .menu-button {
+    display: none;
+  }
+
+  .search ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+  }
+  .search ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .search ul li {
+    padding-right: 20px;
+  }
+
+  .search ul .try-button {
+    background-color: white;
+    color: #540b51;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 12px;
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  .header-class {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-image: url("../images/hero-product-ui.png"),
+      url("../images/background-singup.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 47%, auto 90%;
+    background-position: min(690px, calc(107vw - 450px)) center,
+      min(0px, calc(100vw - 450px)) top;
+  }
+
+  .main-h1 {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .main-h1 h1 {
+    font-size: 4.5rem;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    width: 90%;
+  }
+  .main-h1 p {
+    width: 70%;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 30%;
+    width: 90%;
+  }
+
+  .sign-up button {
+    width: 100%;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .digital {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .digital button {
+    width: 70%;
+  }
+  .contact-terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  footer .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
+  footer .social li {
+    padding-right: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    padding-top: 20px;
+  }
+
+  .list ul {
+    margin-left: 30px;
+  }
+  .list ul li {
+    padding-right: 60px;
+    font-weight: bolder;
+  }
+
+  .search .menu-button {
+    display: none;
+  }
+
+  .search ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+  }
+  .search ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .search ul li {
+    padding-right: 20px;
+  }
+
+  .search ul .try-button {
+    background-color: white;
+    color: #540b51;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 12px;
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  .header-class {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-image: url("../images/hero-product-ui.png"),
+      url("../images/background-singup.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 47%, auto 90%;
+    background-position: min(690px, calc(107vw - 450px)) center,
+      min(0px, calc(100vw - 450px)) top;
+  }
+
+  .main-h1 {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .main-h1 h1 {
+    font-size: 4.5rem;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    width: 90%;
+  }
+  .main-h1 p {
+    width: 70%;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .sign-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 30%;
+    width: 70%;
+  }
+
+  .sign-up button {
+    width: 100%;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .digital {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .digital button {
+    width: 70%;
+  }
+
+  .contact-terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  footer .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
+  footer .social li {
+    padding-right: 80px;
+  }
+}
