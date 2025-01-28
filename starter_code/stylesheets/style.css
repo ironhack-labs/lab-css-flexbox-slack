@@ -8,3 +8,322 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Helvetica", sans-serif;
+  background-color: #F3EAE2;
+  color: #000000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #540B51;
+  padding: 15px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  max-height: 30px;
+  padding: 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.navbar-actions button {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #540B51;
+  color: #FFFFFF;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: #ECB12F;
+  margin-bottom: 24px;
+}
+
+.hero-buttons {
+  justify-content: center;
+  display: flex;
+  gap: 15px;
+}
+
+.hero-buttons .btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.hero-buttons .btn.primary {
+  background-color: #4285F4;
+  color: #FFFFFF;
+}
+
+.hero-buttons .btn.secondary {
+  background-color: #FFFFFF;
+  color: #4285F4;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.trusted-companies {
+  text-align: center;
+  padding: 40px;
+}
+
+.trusted-companies p {
+  font-size: 1.25rem;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.companies-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.companies-logos img {
+  height: 50px;
+}
+
+.slack-teams {
+  text-align: center;
+  padding: 40px;
+}
+
+.slack-teams h3 {
+  font-size: 2rem;
+  color: #191817;
+  margin-bottom: 16px;
+}
+
+.slack-teams p {
+  font-size: 1.25rem;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.teams-stats {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.teams-stats li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #540B51;
+  text-align: center;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #540B51;
+  color: #FFFFFF;
+}
+
+.cta-section h3 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.cta-section .btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  margin: 0 8px;
+}
+
+.cta-section .btn.primary {
+  background-color: #4285F4;
+  color: #FFFFFF;
+}
+
+.cta-section .btn.secondary {
+  background-color: #FFFFFF;
+  color: #4285F4;
+}
+
+footer {
+  background-color: #F3EAE2;
+  padding: 24px;
+  text-align: center;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero-image {
+      margin-top: 24px;
+  }
+
+  .trusted-companies {
+      padding: 24px;
+  }
+
+  .slack-teams {
+      padding: 24px;
+  }
+
+  .cta-section {
+      padding: 24px;
+  }
+
+  .navbar-menu {
+      display: none;
+  }
+
+  .navbar-actions {
+      display: flex;
+      gap: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 60px;
+  }
+
+  .hero-content {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .hero-image {
+    flex: 1;
+    max-width: 50%;
+    margin-top: 0;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .companies-logos {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  .companies-logos img {
+    height: 40px;
+  }
+
+  .teams-stats {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .teams-stats li {
+    font-size: 1.25rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .footer-menu li {
+    margin: 0;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+}
