@@ -8,3 +8,552 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-purple: #540B51;
+    --background-ivory: #F3EAE2;
+    --button-blue: #4285F4;
+    --titles-black: #191817;
+    --paragraph-black: #000000;
+    --paragraph-yellow: #ECB12F;
+    --links-blue: #2E71A6;
+    --footer-links-grey: #454245;
+}
+
+html {
+    font-size: 100%;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--background-purple);
+    }
+    
+    .nav__ul {
+        display: none;
+    }
+    
+.nav__div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    flex-basis: 50%;
+}
+
+.icon-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1.5rem;
+    flex-basis: 16%;
+    button {        
+        border-style: none;
+        background-color: transparent;
+    }
+}
+
+.slack-logo {
+    width: 50%;
+    margin-left: .8rem;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-color: var(--background-purple);
+    overflow: hidden;
+}
+
+.header__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.4rem;
+}
+
+.header__h1 {
+    color: var(--background-ivory);
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -.2rem;
+    text-align: center;
+}
+
+.header__p {
+    color: var(--background-ivory);
+    font-size: .9rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1rem;
+
+    span {
+        color: var(--paragraph-yellow);
+        font-weight: 600;
+    }
+}
+
+.header__options {
+    width: 100%;
+}
+
+.header__button {
+    width: 100%;
+    background-color: var(--background-ivory);
+    color: var(--button-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    margin-top: 1rem;
+    padding: .8rem 1.5rem;
+    color: var(--background-purple);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Noto Sans", serif;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+
+.header__button--google {
+    padding: .8rem 1.5rem;
+    background-color: var(--button-blue);
+    color: var(--background-ivory);
+    font-size: .9rem;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 2rem;
+    img {
+        position: absolute;
+        width: 10%;
+        left: .4rem;
+        background-color: var(--background-ivory);
+        padding: .6rem .6rem;
+    }
+}
+
+.hero-product-ui {
+    width: 30rem;
+    height: 50%;
+    background-image: url("../images/hero-product-ui.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15% bottom;
+}
+
+.main {
+    width: 100%;
+}
+
+.companies-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: var(--background-ivory);
+}
+
+.companies-section__p {
+    color: var(--titles-black);
+    font-weight: 600;
+    font-size: .9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.companies-section__logos {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    img {
+        width: 4rem;
+        &:nth-of-type(5),
+        &:last-child {
+            width: 8rem;
+        }
+    }
+}
+
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.features-section__h3 {
+    color: var(--background-purple);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 3rem;
+}
+
+.features-section__p {
+    font-weight: 500;
+    font-size: .9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0 1.6rem;
+}
+
+
+.features-section__ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    list-style-type: none;
+    li {
+        text-align: center;
+        margin-bottom: 1rem;
+        .percentage {
+            font-weight: 700;
+            font-size: 3rem;
+            text-align: center;
+            color: var(--background-purple);
+        }
+    }
+}
+
+.percentage__p {
+    font-weight: bold;
+    font-size: .9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0 5rem;
+}
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: var(--background-purple);
+}
+
+.cta-section__h3 {
+    color: var(--background-ivory);
+    letter-spacing: -.1rem;
+    font-weight: 600;
+    font-size: calc(1.6rem + 1vw);
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0 1.6rem;
+}
+
+.cta-section__button {
+    width: 100%;
+    background-color: var(--button-purple);
+    color: var(--background-ivory);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    border: 1px solid var(--background-ivory);
+    margin-top: 1rem;
+    padding: .8rem 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Noto Sans", serif;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+
+.cta-section__button--active {
+    background-color: var(--background-ivory);
+    color: var(--background-purple);
+}
+
+
+.hr {
+    width: 90%;
+    height: 1px;
+    background-color: var(--footer-links-grey);
+    margin: 0px auto;
+    margin-top: 2rem;
+    opacity: .1;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.footer__ul {
+    list-style-type: none;
+    padding: .5rem 0;
+    li {
+        margin-bottom: .8rem;
+        font-size: .8rem;
+        font-weight: 500;
+        &:last-child {
+            color: var(--links-blue);
+        }
+    }
+}
+
+.footer__social-media {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-globe {
+    padding-right: .5rem;
+}
+
+.fa-cloud-download-alt{
+    color: var(--links-blue);
+}
+
+.inforights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    font-weight: 300;
+    color: var(--footer-links-grey);
+    small {
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+
+
+
+/*********** MEDIA QUERIES ***********/
+
+@media (769px <= width < 1025px) {
+    .nav__div {
+        flex-basis: 30%;
+    }
+
+    .header__div {
+        align-items: start;
+    }
+
+    .header__h1 {
+        width: 50%;
+        font-size: calc(4rem + 1vw);
+        text-align: left;
+    }
+
+    .icon-panel {
+        flex-basis: 10%;
+    }
+
+    .header .header__p {
+        width: 50%;
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .hero-product-ui {
+        position: absolute;
+        left: 58%;
+        bottom: 40%;
+    }
+
+    .header__options {
+        width: 50%;
+    }
+
+    .companies-section {
+        padding: 2rem 0;
+    }
+
+    .features-section__ul {
+        flex-direction: row;
+    }
+
+    .percentage__p {
+        text-align: left;
+        padding: 0 2rem;
+    }
+
+    .cta-section__button {
+        width: 80%;
+    }
+
+    .footer__ul {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 2rem;
+    }
+
+    .footer__social-media {
+        justify-content: unset;
+        column-gap: 5rem;
+    }
+}
+
+@media (1025px <= width < 1441px) {
+    .nav__div {
+        flex-basis: auto;
+        width: 70%;
+        padding: 2rem 0;
+        justify-content: space-evenly;
+    }
+
+    .slack-logo {
+        width: 15%;
+        height: 20%;
+        margin-left: 2.8rem;
+    }
+
+    .icon-panel {
+        flex-basis: 25%;
+    }
+
+    .icon-panel button:nth-of-type(2) {
+        display: none;
+    }
+
+    .nav__ul {
+        display: flex;
+        width: 70%;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: flex-end;
+        li {
+            padding: .4rem .8rem;
+        }
+        li a {
+            color: var(--background-ivory);
+            text-decoration: none;
+        }
+    }
+
+    .ul--user {
+        width: 85%;
+    }
+
+    .ul--user li:last-child{
+        background-color: var(--background-ivory);
+        border-radius: 4%;
+        a{
+            color: var(--background-purple);
+        }
+    }
+
+    .header {
+        background-image: url("../images/background-singup.png");
+        background-size: 150%;
+        background-repeat: no-repeat;
+    }
+
+    .header__options {
+        width: 40%;
+    }
+
+    .header__div {
+        align-items: flex-start;
+    }
+
+
+    .header__h1 {
+        width: 50%;
+        font-size: calc(2.5rem + 2.5vw);
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 5rem;
+    }
+
+    .header__p {
+        font-size: calc(.6rem + 1vw);
+        text-align: left;
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .hero-product-ui {
+        position: absolute;
+        bottom: 25%;
+        right: 0;
+    }
+
+    .features-section__ul {
+        flex-direction: row;
+    }
+
+    .percentage__p {
+        text-align: left;
+    }
+
+    .cta-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 1rem;
+    }
+
+    .cta-section__h3 {
+        width: 100%;
+    }
+
+    .cta-section__button {
+        width: 20%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer__ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 2rem;
+        gap: 4rem;
+    }
+
+    .footer__social-media {
+        justify-content: unset;
+        column-gap: 5rem;
+    }
+
+}
+
+@media (width > 1440px) {
+    body {
+        background-color: orangered;
+    }
+}

@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <!-- link the Font Awesome stylesheet - CDN -->
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
@@ -18,11 +21,11 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+  <nav class="nav">
+    <div class="nav__div">
+      <img class="slack-logo" src="./images/slack-logo.png" alt="Slack logo" />
 
-      <ul>
+      <ul class="nav__ul">
         <li>
           <a href="#">Product</a>
         </li>
@@ -38,7 +41,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="icon-panel">
       <button>
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
@@ -47,7 +50,7 @@
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <ul class="nav__ul ul--user" hidden>
         <li>
           <a href="#">Sign in</a>
         </li>
@@ -60,33 +63,33 @@
 
 
   <!-- HEADER -->
-  <header>
-    <div>
-      <h1>Great teamwork starts with a digital HQ</h1>
+  <header class="header">
+    <div class="header__div">
+      <h1 class="header__h1">Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p class="header__p"><span>Slack is free to try</span> for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="header__options">
+        <button class="header__button">Sign up with email</button>
 
-        <button>
+        <button class="header__button header__button--google">
           <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+          <span class="header__span">Sign up with Google</span>
         </button>
       </div>
 
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+    <div class="hero-product-ui">
+      <!-- <img src="./images/hero-product-ui.png" alt="Slack app screenshot" /> -->
     </div>
   </header>
 
-  <main>
-    <section>
-      <p>Trusted by companies all over the world</p>
+  <main class="main">
+    <section class="companies-section">
+      <p class="companies-section__p">Trusted by companies all over the world</p>
 
-      <div>
+      <div class="companies-section__logos">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
@@ -97,61 +100,59 @@
 
     </section>
 
-    <section>
-      <h3>Teams large and small rely on Slack</h3>
-      <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+    <section class="features-section">
+      <h3 class="features-section__h3">Teams large and small rely on Slack</h3>
+      <p class="features-section__p">Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
 
-      <ul>
+      <ul class="features-section__ul">
         <li>
-          <p><span>85%</span></p>
-          <p>
-            of users say Slack has improved communication
-            <sup>*</sup>
+          <p class="percentage"><span>85%</span></p>
+          <p class="percentage__p">
+            of users say Slack has improved communication<sup>*</sup>
           </p>
         </li>
 
         <li>
-          <p><span>86%</span></p>
-          <p>
-            feel their ability to work remotely has improved has improved
-            <sup>*</sup>
+          <p class="percentage"><span>86%</span></p>
+          <p class="percentage__p">
+            feel their ability to work remotely has improved has improved<sup>*</sup>
           </p>
         </li>
 
         <li>
-          <p><span>88%</span></p>
-          <p>
-            feel more connected to their teams*
-            <sup>*</sup>
+          <p class="percentage"><span>88%</span></p>
+          <p class="percentage__p">
+            feel more connected to their teams<sup>*</sup>
           </p>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h3>Welcome to your new digital HQ</h3>
+    <section class="cta-section">
+      <h3 class="cta-section__h3">Welcome to your new digital HQ</h3>
 
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+      <button class="cta-section__button cta-section__button--active">Try for free</button>
+      <button class="cta-section__button">Talk to sales</button>
     </section>
 
   </main>
 
-  <footer>
-    <ul>
+  <hr class="hr">
+
+  <footer class="footer">
+    <ul class="footer__ul">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
       <li>Cookie Preferences</li>
       <li>Contact Us</li>
-      <li>Change Region</li>
-      <li>Download Slack</li>
+      <li><i class="fa fa-globe"></i>Change Region</li>
+      <li><i class="fa fa-cloud-download-alt"></i> Download Slack</li>
     </ul>
 
-    <hr>
 
-    <ul>
+    <ul class="footer__social-media">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -166,7 +167,7 @@
       </li>
     </ul>
 
-    <div>
+    <div class="inforights">
       <small>
         &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
         their respective owners.
