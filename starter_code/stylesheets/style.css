@@ -1,10 +1,123 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+body {
+    background: #F3EAE2;
+    color: #191817;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav img {
+    height: 40px;
+}
+
+header {
+    background: #540B51;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-btn {
+    background: #4285F4;
+    color: white;
+}
+
+.google-btn {
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.trusted-companies img {
+    width: 80px;
+    height: auto;
+    margin: 5px;
+}
+
+.features ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+footer {
+    background: #454245;
+    color: white;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer hr {
+    margin: 15px 0;
+    border: 0.5px solid #aaa;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trusted-companies div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .features ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
