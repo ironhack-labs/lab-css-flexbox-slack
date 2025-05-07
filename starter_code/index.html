@@ -17,7 +17,36 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
+  
+  <!-- MOBILE NAVBAR -->
+<nav class="mobile-nav">
+  <div class="nav-header">
+    <img src="./images/slack-logo.png" alt="Slack logo" class="logo" />
+    <div class="mobile-actions">
+      <button class="search-icon">
+        <img src="./images/icon-search.png" alt="Search icon">
+      </button>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+  </div>
+
+  <div class="nav-menu" hidden>
+    <ul>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Pricing</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="#">Sign in</a></li>
+      <li><a href="#">Try for free</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- NAVBAR -->
   <nav>
     <div>
       <img src="./images/slack-logo.png" alt="Slack logo" />
@@ -60,33 +89,27 @@
 
 
   <!-- HEADER -->
-  <header>
-    <div>
-      <h1>Great teamwork starts with a digital HQ</h1>
+  <header class="hero">
+  <div class="hero-content">
+    <h1>Great teamwork starts with a digital HQ</h1>
+    <p><span class="highlight">Slack is free to try</span> for as long as you'd like.</p>
+    <button>Sign up with email</button>
+    <button class="google">
+      <img class="logo-google" src="./images/logo-google.png" alt="Google logo" />
+      <span>Sign up with Google</span>
+    </button>
+  </div>
 
-      <p>Slack is free to try for as long as you'd like.</p>
-
-      <div>
-        <button>Sign up with email</button>
-
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
-        </button>
-      </div>
-
-    </div>
-
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
-    </div>
-  </header>
+  <div class="hero-image">
+    <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+  </div>
+</header>
 
   <main>
-    <section>
-      <p>Trusted by companies all over the world</p>
+    <section style="background-color: #F3EAE2;">
+      <p><strong style="text-transform: uppercase">Trusted by companies all over the world</strong></p>
 
-      <div>
+      <div class="logo-grid">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
@@ -98,13 +121,13 @@
     </section>
 
     <section>
-      <h3>Teams large and small rely on Slack</h3>
+      <h3 style="color: #611f69">Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
 
-      <ul>
+      <ul class="data-list">
         <li>
-          <p><span>85%</span></p>
+          <p><span class="data-nums">85%</span></p>
           <p>
             of users say Slack has improved communication
             <sup>*</sup>
@@ -112,7 +135,7 @@
         </li>
 
         <li>
-          <p><span>86%</span></p>
+          <p><span class="data-nums">86%</span></p>
           <p>
             feel their ability to work remotely has improved has improved
             <sup>*</sup>
@@ -120,7 +143,7 @@
         </li>
 
         <li>
-          <p><span>88%</span></p>
+          <p><span class="data-nums">88%</span></p>
           <p>
             feel more connected to their teams*
             <sup>*</sup>
@@ -129,11 +152,14 @@
       </ul>
     </section>
 
-    <section>
+    <section class="CTA">
       <h3>Welcome to your new digital HQ</h3>
 
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+      <div style="display: flex; flex-direction: column; align-items:stretch; gap: 1rem">
+        <button style="color:#540B51; text-transform: uppercase;">Try for free</button>
+        <button style="background-color: #540B51; color: white; border: 2px solid white; text-transform: uppercase">Talk to sales</button>
+      </div>
+      
     </section>
 
   </main>
@@ -145,13 +171,21 @@
       <li>Terms</li>
       <li>Cookie Preferences</li>
       <li>Contact Us</li>
-      <li>Change Region</li>
-      <li>Download Slack</li>
+      <div class="bullet">
+        <img src="./images/icon-region.png" alt="region icon" class="footer-icon" />
+        <li>Change Region</li>
+      </div>
+      <div class="bullet">
+        <img src="./images/icon-download.png" alt="region icon" class="footer-icon" />
+        <li style="color: #2E71A6">Download Slack</li>
+      </div>
+  
+      
     </ul>
 
     <hr>
 
-    <ul>
+    <ul style="flex-direction: row; justify-content: space-between;">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -174,6 +208,13 @@
     </div>
 
   </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.nav-menu');
+      menu.hidden = !menu.hidden;
+    }
+  </script>
+  
 </body>
 
 </html>
