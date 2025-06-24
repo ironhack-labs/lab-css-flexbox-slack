@@ -1,4 +1,4 @@
-/*
+/* Color guide:
 background purple: #540B51
 background ivory: #F3EAE2
 button blue: #4285F4
@@ -8,3 +8,284 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: white;
+  color: #191817;
+}
+
+nav {
+  background-color: #540b51;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+nav img {
+  height: 25px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+nav button img {
+  height: 20px;
+}
+
+header {
+  background-color: #540b51;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+  color: #ecb12f;
+  margin-bottom: 20px;
+}
+
+header div button {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 10px auto;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header div button:first-of-type {
+  background-color: white;
+  color: #540b51;
+}
+
+header div button:last-of-type {
+  background-color: #4285f4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header div button:last-of-type img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+header img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+main section:first-of-type {
+  background-color: #f3eae2;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+main section:first-of-type p {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main section:first-of-type img {
+  height: 25px;
+  margin: 10px 15px;
+}
+
+main section:nth-of-type(2) {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+main section:nth-of-type(2) h3 {
+  color: #540b51;
+  font-size: 22px;
+}
+
+main section:nth-of-type(2) ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+main section:nth-of-type(2) li {
+  margin-bottom: 20px;
+}
+
+main section:nth-of-type(2) span {
+  font-size: 36px;
+  font-weight: bold;
+  color: #540b51;
+}
+
+main section:nth-of-type(3) {
+  background-color: #540b51;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+main section:nth-of-type(3) h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+main section:nth-of-type(3) button {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+main section:nth-of-type(3) button:first-of-type {
+  background-color: white;
+  color: #540b51;
+  border: none;
+}
+footer {
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #454245;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+footer ul li {
+  margin: 5px 0;
+}
+
+footer i {
+  font-size: 20px;
+  margin: 10px;
+  color: #454245;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  header > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    padding-right: 20px;
+  }
+
+  header > div:last-child {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    padding: 40px 40px;
+  }
+
+  main section:first-of-type div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  main section:nth-of-type(2) ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+  }
+
+  main section:nth-of-type(2) ul li {
+    margin-bottom: 0;
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  footer ul:first-of-type {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+
+  footer ul:first-of-type li {
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  nav > div:first-child ul {
+    display: flex;
+  }
+
+  nav > div:last-child ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  nav > div:last-child button {
+    display: none;
+  }
+
+  nav > div:last-child ul[hidden] {
+    display: flex !important;
+  }
+
+  main section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section:nth-of-type(3) button {
+    display: inline-block;
+    width: auto;
+    margin: 10px 10px;
+  }
+}
