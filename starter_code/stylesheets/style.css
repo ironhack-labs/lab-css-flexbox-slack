@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /*
 background purple: #540B51
 background ivory: #F3EAE2
@@ -8,3 +9,409 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom styles */
+body {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #540851;
+    padding: 20px;
+    /* width: 100%; */
+
+    img {
+      height: 20px;
+    }
+
+    ul {
+      display: none;
+    }
+
+    button {
+      background-color: #540851;
+      border: 0;
+    }
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    background-color: #540851;
+
+    #slack-intro {
+      padding-left: 20px;
+      h1 {
+        color: white;
+        font-weight: 500;
+        font-size: 2.7em;
+        margin: 15px;
+      }
+      p {
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+
+        span {
+          color: #ecb12f;
+          font-weight: 400;
+        }
+      }
+
+      #login-buttons {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        gap: 10px;
+
+        button {
+          height: 40px;
+          border-radius: 4px;
+          text-transform: uppercase;
+          font-size: 0.7em;
+          font-weight: 600;
+        }
+
+        #login-email-btn {
+          color: #540851;
+        }
+
+        #login-google-btn {
+          color: white;
+          background-color: #4285f4;
+          position: relative;
+
+          img {
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            height: 15px;
+            background-color: white;
+            padding: 6px;
+            border-radius: 1px;
+          }
+        }
+      }
+    }
+
+    #ui-img-container {
+      overflow-x: hidden;
+      margin: 0;
+      margin-top: 20px;
+      padding: 0;
+
+      img {
+        width: 600px;
+        height: 300px;
+        object-fit: cover;
+        object-position: 0% 0%;
+        display: block;
+      }
+    }
+  }
+
+  main {
+    /* position: relative; */
+
+    #companies {
+      height: auto;
+      padding: 25px 0;
+      width: 100%;
+
+      background-color: #f3eae2;
+      text-align: center;
+
+      p {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #191817;
+      }
+
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+
+        img {
+          height: 30px;
+        }
+      }
+    }
+
+    #statistics {
+      padding: 20px;
+
+      text-align: center;
+
+      h3 {
+        margin: 0;
+        color: #540851;
+        font-size: 2em;
+        padding: 30px 30px 0 30px;
+      }
+      p {
+        padding: 0px 5px;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+
+        li {
+          p {
+            margin: 0;
+            font-weight: 600;
+
+            span {
+              color: #540851;
+              font-size: 3em;
+              font-weight: 600;
+              margin: 0;
+            }
+          }
+          padding: 0 0 10px 0;
+        }
+      }
+    }
+
+    #call-to-action {
+      background-color: #540851;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 10px;
+
+      padding: 20px 20px 40px 20px;
+
+      h3 {
+        color: white;
+        text-align: center;
+        font-size: 2em;
+      }
+
+      button {
+        padding: 10px;
+        border: solid white 1px;
+        border-radius: 3px;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      #try-btn {
+        background-color: white;
+        color: #540851;
+      }
+
+      #sales-btn {
+        background-color: #540851;
+        color: white;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 20px;
+    hr {
+      width: 95%;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 10px;
+      font-size: 10px;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+    }
+
+    #footer-links {
+      margin: 30px 15px;
+      #download-link {
+        color: #2e71a6;
+      }
+    }
+
+    #social-links {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 20px;
+      font-size: 16px;
+    }
+
+    div {
+      display: flex;
+      small {
+        text-align: center;
+        padding: 30px;
+      }
+    }
+  }
+}
+
+/* Small screens */
+@media (width > 768px) {
+  body {
+    header {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      padding-bottom: 100px;
+
+      #slack-intro {
+        width: 60%;
+        h1 {
+          font-weight: 600;
+        }
+        p {
+          margin-left: 15px;
+          font-weight: 400;
+        }
+      }
+
+      #ui-img-container {
+        width: 30%;
+        align-self: center;
+
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+
+    main {
+      #statistics ul {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    footer {
+      ul {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+/* Medium screens */
+@media (width > 1024px) {
+  body {
+    nav {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      #navbar-menu-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        ul {
+          gap: 20px;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+
+      #nav-buttons {
+        display: flex;
+        justify-content: space-around;
+
+        #menu-btn {
+          display: none;
+        }
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 0.8em;
+          li {
+            padding: 10px;
+          }
+          #try-it-free-btn {
+            background-color: white;
+            border-radius: 3px;
+            a {
+              text-transform: uppercase;
+              font-weight: 500;
+              color: #540851;
+            }
+          }
+        }
+      }
+    }
+
+    main {
+      #call-to-action{
+        gap: 0px;
+        #cta-buttons {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 10px;
+
+          button {
+            padding: 15px 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Large screens */
+@media (width > 1440px) {
+  body {
+    header {
+      #slack-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        #login-buttons {
+          flex-direction: row;
+          justify-content: space-evenly;
+          button {
+            width: 100%;
+          }
+        }
+      }
+
+      #ui-img-container {
+        width: 45%;
+        object-fit: initial;
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+}
