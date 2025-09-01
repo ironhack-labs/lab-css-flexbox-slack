@@ -8,3 +8,382 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	background-color: #540b51;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2vh 2.5vw;
+}
+nav img:first-child {
+	width: 25vw;
+}
+
+nav .links {
+	display: none;
+}
+
+nav .buttons {
+	display: flex;
+	gap: 1.5vw;
+}
+nav .buttons button {
+	background: #540b51;
+
+	border: none;
+	padding: 8px;
+	border-radius: 4px;
+}
+nav .buttons img {
+	width: auto;
+	height: 3vh;
+}
+.paragraph {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.paragraph h1 {
+	color: white;
+	font-size: 3rem;
+	text-wrap: balance;
+	text-align: center;
+}
+.paragraph p {
+	color: white;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.paragraph p span {
+	color: #ecb12f;
+	font-weight: bold;
+}
+.signup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1vh;
+}
+.signup button {
+	height: 5vh;
+	width: 90vw;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+	border: none;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.signup button:nth-child(2) {
+	background-color: #4285f4;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 10vw;
+	margin-bottom: 4vh;
+}
+.signup button img {
+	background-color: #fff;
+	width: 3vh;
+	height: 3vh;
+	padding: 0.5vh;
+}
+.image {
+	overflow: hidden;
+}
+.trusted {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #f3eae2;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	margin-top: -10vh;
+}
+.trusted p {
+	color: #191817;
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+}
+.trusted img {
+	height: 5vh;
+	margin: 3vh 2vw;
+}
+
+.teams {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: 5vh;
+}
+.teams h3 {
+	color: #540b51;
+	font-size: 3rem;
+	text-wrap: balance;
+	text-align: center;
+	margin-top: 5vh;
+}
+.teams > p {
+	color: #000;
+	font-size: 1.5rem;
+	text-align: center;
+	width: 80vw;
+}
+
+.teams span {
+	color: #540b51;
+	font-size: 3rem;
+	font-weight: bold;
+}
+.teams li {
+	list-style: none;
+	font-size: 1.5rem;
+	width: 80vw;
+	text-align: center;
+	font-weight: bold;
+}
+.welcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #540b51;
+	width: 100%;
+	padding-bottom: 5vh;
+}
+.welcome h3 {
+	color: white;
+	font-size: 3rem;
+	text-wrap: balance;
+	text-align: center;
+	margin-top: 5vh;
+}
+.welcome .buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.welcome button {
+	height: 5vh;
+	width: 90vw;
+	padding: 10px;
+	margin: 5px;
+	font-size: 1.5rem;
+	color: #540b51;
+}
+.welcome button:nth-child(3) {
+	background-color: #540b51;
+	color: white;
+	cursor: pointer;
+	border: 2px solid #fff;
+}
+hr {
+	width: 80vw;
+	border: 0.5px solid #ccc;
+}
+
+footer {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+footer li {
+	list-style: none;
+}
+
+.icons {
+	display: flex;
+	gap: 20px;
+	margin-top: 20px;
+	margin-left: 10px;
+	/* padding: 0; */
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+}
+.copy {
+	display: flex;
+	justify-content: center;
+	width: 80vw;
+}
+
+@media (min-width: 768px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.signup button {
+		width: 40vw;
+	}
+	.signup button:nth-child(2) {
+		gap: 10px;
+		justify-content: space-between;
+	}
+	.image {
+		width: 50vw;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+	}
+	.image img {
+		width: auto;
+		height: 30vh;
+
+		object-fit: cover;
+	}
+	.paragraph {
+		padding-bottom: 10vh;
+	}
+	.paragraph h1 {
+		font-size: 5rem;
+		width: 50vw;
+	}
+	.companies {
+		width: 100vw;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		/* gap: 2vw; */
+	}
+	.companies img {
+		height: 3vh;
+	}
+	.percent {
+		display: flex;
+		justify-content: space-around;
+	}
+	.teams ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		gap: 2vw;
+	}
+	.teams li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: auto;
+	}
+	footer > ul:first-child {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 80vw;
+	}
+}
+
+@media (min-width: 1024px) {
+	ul[hidden] {
+		display: flex;
+		list-style: none;
+		text-decoration: none;
+	}
+	nav > div:first-child {
+		display: flex;
+		align-items: center;
+		gap: 2vw;
+	}
+	nav img:first-child {
+		width: 20vw;
+	}
+	nav .links {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 3vw;
+	}
+	nav .links li {
+		list-style: none;
+		font-size: 2rem;
+	}
+	nav a {
+		color: white;
+		text-decoration: none;
+	}
+	nav .buttons button:nth-child(2) {
+		display: none;
+	}
+	nav .buttons button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	nav .buttons img {
+		width: 3vw;
+		height: auto;
+	}
+	.login {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-weight: bold;
+		width: 15vw;
+		height: 4vh;
+		font-size: 1.3rem;
+		gap: 2vw;
+	}
+	.login li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 10vw;
+		height: 4vh;
+		border-radius: 5px;
+	}
+	.login li:nth-child(2) {
+		background-color: #fff;
+	}
+	.login li:nth-child(2) a {
+		color: #540b51;
+	}
+	.login a {
+		color: white;
+		text-decoration: none;
+	}
+	.welcome .buttons {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		background-color: #540b51;
+		width: 100%;
+		padding-bottom: 5vh;
+	}
+}
+
+@media (min-width: 1440px) {
+	.signup {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+	}
+	.signup button {
+		width: 20vw;
+	}
+	.signup button:first-child {
+		margin-bottom: 4vh;
+	}
+	.paragraph {
+		height: 80vh;
+	}
+}
