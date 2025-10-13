@@ -299,7 +299,7 @@ footer links grey: #454245
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     
     /* Elemento NAV */
     nav{
@@ -528,6 +528,344 @@ footer links grey: #454245
         background-color: #540B51;
         border: 1px solid #FFFFFF;
         margin-bottom: 3rem;
+    }
+
+    /* Footer */
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FFFFFF;
+    }
+
+    hr{
+        border-top: 2px solid #e0e0e0;
+        margin: 4rem 2rem 2rem 2rem;
+    }
+
+    footer ul:first-of-type{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem;
+    }
+
+    footer ul:first-of-type li{
+        list-style-type: none;
+        font-weight: 600;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+    }
+
+    footer ul:first-of-type li:nth-last-child(2)::before{
+        content: url(/starter_code/images/icon-region.png);
+        margin-right: 0.5rem;
+    }
+
+    footer ul:first-of-type li:last-of-type::before{
+        content: url(/starter_code/images/icon-download.png);
+        color: #4285F4;
+        margin-right: 0.5rem;
+    }
+
+    footer ul:first-of-type li:last-of-type{
+        color: #4285F4;
+    }
+
+    footer ul:nth-of-type(2){
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    footer ul:nth-of-type(2) li{
+        list-style-type: none;
+        margin: 2rem;
+    }
+
+    footer div:first-of-type{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        text-align: center;
+        padding: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    
+    /* Elemento NAV */
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #540B51;
+    }
+    
+    /* DIV contenedor del NAV*/
+    nav > div:first-of-type{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        padding: 1rem;
+    }
+
+    /* Listado del NAV */
+    nav ul:first-of-type{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    nav ul:first-of-type > li{
+        list-style-type: none;
+        margin: 0rem 2rem;
+    }
+
+    nav ul:first-of-type > li a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    nav > div:first-of-type{
+        display: flex;
+    }
+
+    /* Logotipo */
+    nav > div:first-of-type > img:first-of-type{
+        max-width: 10rem;
+    }
+
+    nav > div:nth-of-type(2){
+        display: flex;
+        width: 30%;
+    }
+
+    nav > div:nth-of-type(2) li:nth-of-type(2){
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+    nav > div:nth-of-type(2) li:nth-of-type(2) > a{
+        color: #540B51;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    /* Botones buscar y menú hamburguesa */
+    nav > div:nth-of-type(2) button{
+        padding: 1rem 1rem;
+        margin-right: 1rem;
+        background-color: #540B51;
+        border: none;
+    }
+
+    nav > div:nth-of-type(2) button:last-of-type{
+        display: none;
+    }
+
+    /* Header */
+    header{
+        background-color: #540B51;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header div:first-of-type{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    /* Título */
+    header h1{
+        text-align: left;
+        padding-bottom: 2rem;
+        font-size: 4rem;
+    }
+
+    /* Subtítulo */
+    header h1 + p{
+        text-align: left;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Resaltado en el subtítulo */
+    header h1 + p > span {
+        color: #ECB12F;
+        font-weight: 600;
+    }
+
+    /* DIV botones de registro */
+    header div:first-of-type > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Registro por email */
+    header div:first-of-type > div > button{
+        width: 90%;
+        padding: 1rem;
+        border-radius: 5px;
+        border: none;
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 1rem;
+    }
+
+    header div:first-of-type > div > button:first-of-type{
+        color: #540B51;
+    }
+
+    /* Registro por Google */
+    header div:first-of-type > div > button:nth-of-type(2){
+        display: flex;
+        color: #FFFFFF;
+        background-color: #4285F4;
+        gap: 1rem;
+    }
+
+    header div:first-of-type > div > button:nth-of-type(2) img{
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        max-width: 2rem;
+    }
+
+    header div:first-of-type > div > button:nth-of-type(2) span{
+        align-self: center;
+    }
+
+    /* Imagen HEADER */
+    header > div:nth-of-type(2) img{
+        max-width: 100%;
+        padding-top: 3rem;
+        object-fit: cover;
+    }
+
+    /* SECTION logos patrocinadores */
+    main > section:first-of-type{
+        background-color: #F3EAE2;
+    }
+
+    /* Título sección */
+    main > section:first-of-type > p{
+        text-align: center;
+        padding: 3rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    /* Contenedor imágenes sección */
+    main > section:first-of-type div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /* Imágenes sección (patrocinadores) */
+    main > section:first-of-type img{
+        max-height: 3.5rem;
+        padding: 0.5rem;
+        margin-bottom: 4rem;
+    }
+
+    /* Sección 02 */
+    section:nth-of-type(2){
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        padding: 2rem;
+    }
+
+    /* Título sección 02 */
+    section:nth-of-type(2) h3{
+        text-align: center;
+        padding: 2rem;
+        font-size: 3rem;
+        color: #540B51;
+    }
+
+    /* Intro sección 02 */
+    section:nth-of-type(2) h3+p{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
+    }
+
+    section:nth-of-type(2) ul:first-of-type{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Elementos lista sección 02 */
+    section:nth-of-type(2) li{
+        list-style-type: none;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    section:nth-of-type(2) li span{
+        color: #540B51;
+        font-size: 4rem;
+    }
+
+    /* Seccion 03 */
+    section:nth-of-type(3){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+        background-color: #540B51;
+    }
+
+    /* Título seccion 03 */
+    section:nth-of-type(3) h3{
+        text-align: center;
+        width: 100%;
+        padding: 2rem;
+        font-size: 3rem;
+        color: #FFFFFF;
+    }
+
+    /* Botones sección 03 */
+    section:nth-of-type(3) button{
+        width: 20%;
+        height: 3rem;
+        margin: 1rem;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+    }
+
+    section:nth-of-type(3) button:nth-of-type(1){
+        color: #540B51;
+        background-color: #FFFFFF;
+    }
+
+    section:nth-of-type(3) button:nth-of-type(2){
+        color: #FFFFFF;
+        background-color: #540B51;
+        border: 1px solid #FFFFFF;
+
     }
 
     /* Footer */
