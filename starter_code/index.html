@@ -10,7 +10,11 @@
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
   <!-- link your styles -->
-  <link rel="stylesheet" href="./stylesheets/style.css" />
+  <link rel="stylesheet" href="./stylesheets/mobileScreen.css" media="screen and (max-width: 768px)"/>
+  <link rel="stylesheet" href="./stylesheets/smallScreen.css" media="screen and (min-width: 769px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="./stylesheets/mediumScreen.css" media="screen and (min-width: 1024px) and (max-width: 1439px)">
+  <link rel="stylesheet" href="./stylesheets/largeScreen.css" media="screen and (min-width: 1440px)">
+
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
@@ -18,41 +22,44 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+  <nav class="display-flex justify-content-between background-purple padding-header-slack-logo">
+    <div class="display-flex-small-medium width-elements-slack-logo">
+      <img class="witdh-slack-logo" src="./images/slack-logo.png" alt="Slack logo" />
 
-      <ul>
+      <ul class="display-none display-none-ul list-style-none display-flex-small-medium list-style-none-medium align-items-center width-elements-slack-logo font-size-title-elements font-weight-bold">
         <li>
-          <a href="#">Product</a>
+          <a class="text-decoration-none font-white" href="#">Product</a>
         </li>
         <li>
-          <a href="#">Solutions</a>
+          <a class="text-decoration-none font-white" href="#">Solutions</a>
         </li>
         <li>
-          <a href="#">Resources</a>
+          <a class="text-decoration-none font-white" href="#">Enterprise</a>
         </li>
         <li>
-          <a href="#">Pricing</a>
+          <a class="text-decoration-none font-white" href="#">Resources</a>
+        </li>
+        <li>
+          <a class="text-decoration-none font-white" href="#">Pricing</a>
         </li>
       </ul>
     </div>
 
-    <div>
-      <button>
-        <img src="./images/icon-search.png" alt="Search icon">
+    <div class="display-flex width-elements-slack-logo">
+      <button class="border-none background-purple background-transparent">
+        <img class="witdh-slack-glass-menu" src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
-        <img src="./images/icon-menu.png" alt="Menu icon">
+      <button class="border-none background-purple background-transparent display-none-botton-menu">
+        <img class="witdh-slack-glass-menu" src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <ul class="display-flex list-style-none width-elements-slack-logo font-size-title-elements align-items-center display-none-mobile display-none-small">
         <li>
-          <a href="#">Sign in</a>
+          <a class="text-decoration-none font-white font-weight-bold" href="#">Sign in</a>
         </li>
-        <li>
-          <a href="#">Try for free</a>
+        <li class="padding-try-for border-radius background-white">
+          <a class="text-decoration-none text font-purple font-weight-bold text-transform-capitalize" href="#">Try for free</a>
         </li>
       </ul>
     </div>
@@ -60,114 +67,123 @@
 
 
   <!-- HEADER -->
-  <header>
-    <div>
-      <h1>Great teamwork starts with a digital HQ</h1>
+  <header class="background-purple display-flex flex-direction-column flex-direction-row-mobile">
+    <div class="width-first-section-box">
+      <h1 class="text-align-center font-white font-size-title text-align-left padding-header-slack-title width-title-box-great background-image padding-header-slack-title">Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p class="text-align-center font-weight-bold font-size-sub-title padding-header-slack-subtitle text-align-left">Slack is free to try <span class="font-weight-lighter">for as long as you'd like</span></p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="display-flex flex-direction-column padding-box-buttons flex-direction-row-title-buttons">
+        <button class="border-none font-purple border-radius padding-button-sign-email font-size-button text-transform-capitalize font-weight-bold width-google-button">Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+        <button class="display-flex align-items-center border-none background-blue border-radius padding-button-sign-google width-google-button justify-content-center position-relative">
+          <img class="padding-google-image background-white border-radius witdh-google-logo position-absolute" src="./images/logo-google.png" alt="Google logo" />
+          <span class="font-white font-size-button text-transform-capitalize font-weight-bold padding-google-button">Sign up with Google</span>
         </button>
       </div>
-
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+    <div class="over-flow-hidden background-purple-mobile display-flex-small-screen align-items-center-small-screen width-first-image-container position-relative-small">
+      <img class="witdh-first-image witdh-first-image-mobile position-absolute-small" src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
-    <section>
-      <p>Trusted by companies all over the world</p>
+    <section class="background-ivory padding-section-ivory">
+      <p class="font-black text-align-center font-size-button text-transform-capitalize font-weight-bold font-size-section-ivory">Trusted by companies all over the world</p>
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+      <div class="display-flex flex-wrap-wrap logos-section-height align-content-space-evently justify-content-around gap-logos-ivony">
+        <img class="witdh-logos" src="./images/logo-airbnb.png" alt="Airbnb logo" />
+        <img class="witdh-logos" src="./images/logo-nasa.png" alt="NASA logo" />
+        <img class="witdh-logos" src="./images/logo-uber.png" alt="Uber logo" />
+        <img class="witdh-logos" src="./images/logo-target.png" alt="Target logo" />
+        <img class="witdh-logos" src="./images/logo-nyt.png" alt="New York Times logo" />
+        <img class="witdh-logos" src="./images/logo-spotify.png" alt="Spotify logo" />
       </div>
 
     </section>
 
-    <section>
-      <h3>Teams large and small rely on Slack</h3>
-      <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+    <section class="display-flex flex-direction-column align-items-center font-weight-bold padding-big-numbers-section">
+      <h3 class="text-align-center font-purple font-weight-bold font-size-percent-section margin-teams-subtitle margin-bottom-big-number-title">Teams large and small rely on Slack</h3>
+      <p class="font-grey text-align-center font-size-subtitle-percent-section margin-teams-subtitle-big-number">Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
 
-      <ul>
-        <li>
-          <p><span>85%</span></p>
-          <p>
-            of users say Slack has improved communication
-            <sup>*</sup>
+      <ul class="list-style-none display-flex flex-direction-column text-align-center flex-direction-row text-align-left witdh-box-big-numbers justify-content-between">
+        <li class="width-boxes-big-number-mobile witdh-boxes-big-number">
+          <p><span class="font-purple font-big-numbers">85%</span></p>
+          <p class="font-black font-big-subtitle margin-teams-big-number">
+            of users say Slack has improved communication<sup>*</sup>
           </p>
         </li>
 
-        <li>
-          <p><span>86%</span></p>
-          <p>
-            feel their ability to work remotely has improved has improved
-            <sup>*</sup>
+        <li class="width-boxes-big-number-mobile witdh-boxes-big-number">
+          <p><span class="font-purple font-big-numbers">86%</span></p>
+          <p class="font-black font-big-subtitle margin-teams-big-number">
+            feel their ability to work remotely has improved<sup>*</sup>
           </p>
         </li>
 
-        <li>
-          <p><span>88%</span></p>
-          <p>
-            feel more connected to their teams*
-            <sup>*</sup>
+        <li class="width-boxes-big-number-mobile witdh-boxes-big-number">
+          <p><span class="font-purple font-big-numbers">88%</span></p>
+          <p class="font-black font-big-subtitle margin-teams-last-big-number">
+            feel more connected to their teams<sup>*</sup>
           </p>
         </li>
       </ul>
+      <p class="font-black text-align-center font-grey font-big-footer display-none-bottom-big">
+            <sup>* </sup>Weighted average. br Bases on 2,707 survey responses from weekly Slack users in the U.S., UK, Australia and Canada with a +/- 2% margin of error at 95% CI (August 2020).
+            
+      </p>
     </section>
 
-    <section>
-      <h3>Welcome to your new digital HQ</h3>
+    <section class="background-purple display-flex flex-direction-column align-items-center padding-box-buttons-welcome">
+      <h3 class="font-white font-weight-bold text-align-center font-size-welcome-title margin-bottom-welcome padding-welcome-title with-buttons-2-small">Welcome to your new digital HQ</h3>
 
-      <button>Try for free</button>
-      <button>Talk to sales</button>
+      <div class="display-flex flex-direction-column aa with-buttons-2 gap-buttons-welcome gap-buttons-welcome-small flex-direction-row-medium justify-content-center gap-welcome-button-small">
+        <button class="background-white font-purple text-transform-capitalize border-none border-radius font-size-button font-weight-bold padding-button-welcome">Try for free</button>
+        <button class="background-purple font-white text-transform-capitalize border-radius font-size-button border-color-white font-weight-bold padding-button-welcome">Talk to sales</button>
+      </div>
     </section>
 
   </main>
 
-  <footer>
-    <ul>
+  <footer class="paddding-social-media-section padding-right-box-media">
+
+    <hr class="margin-top-line margin-bottom-line">
+
+    <ul class="display-flex flex-direction-column list-style-none font-black font-weight-bold justify-content-around height-100-vh font-social-media-words flex-direction-row justify-content-between">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
       <li>Cookie Preferences</li>
       <li>Contact Us</li>
-      <li>Change Region</li>
-      <li>Download Slack</li>
-    </ul>
-
-    <hr>
-
-    <ul>
-      <li>
-        <i class="fab fa-twitter"></i>
+      <li class="display-flex">
+        <img class="witdh-little-icons" src="/starter_code/images/icon-region.png" alt="">
+        <div>Change Region</div>
       </li>
-      <li>
-        <i class="fab fa-facebook"></i>
-      </li>
-      <li>
-        <i class="fab fa-youtube"></i>
-      </li>
-      <li>
-        <i class="fab fa-linkedin"></i>
+      <li class="font-blue display-flex">
+        <img class="witdh-little-icons" src="/starter_code/images/icon-download.png" alt="">
+        <div>Download Slack</div>
       </li>
     </ul>
 
-    <div>
-      <small>
+    <ul class="list-style-none display-flex justify-content-between padding-social-media-logos justify-content-start margin-social-media-logos-right">
+      <li>
+        <i class="fab fa-twitter fa-2x"></i>
+      </li>
+      <li>
+        <i class="fab fa-facebook fa-2x"></i>
+      </li>
+      <li>
+        <i class="fab fa-youtube fa-2x"></i>
+      </li>
+      <li>
+        <i class="fab fa-linkedin fa-2x"></i>
+      </li>
+    </ul>
+
+    <div class="text-align-center font-social-media-bottom text-align-left">
+      <small class="font-grey">
         &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
         their respective owners.
       </small>
