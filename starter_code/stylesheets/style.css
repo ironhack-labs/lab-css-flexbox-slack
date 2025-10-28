@@ -1,10 +1,249 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+/* -------------------------
+   RESET & BASE STYLES
+--------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1d1d1d;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* -------------------------
+   NAVBAR
+--------------------------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #541554;
+  color: white;
+}
+
+nav img {
+  height: 25px;
+}
+
+nav ul {
+  display: none;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav button img {
+  height: 20px;
+}
+
+/* -------------------------
+   HEADER (MOBILE)
+--------------------------*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #541554;
+  color: white;
+  padding: 60px 20px;
+  gap: 30px;
+  background-image: url("../images/hero-bg-shape.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  color: #e3e3e3;
+}
+
+header p span,
+header strong {
+  color: #ecb22e;
+}
+
+header div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px;
+  margin: 6px 0;
+}
+
+header div button:first-child {
+  background-color: #fff;
+  color: #541554;
+}
+
+header div button:nth-child(2) {
+  background-color: #4285f4;
+  color: white;
+}
+
+header div button img {
+  height: 18px;
+  margin-right: 8px;
+}
+
+header img {
+  width: 100%;
+  max-width: 380px;
+}
+
+/* -------------------------
+   TRUSTED BY
+--------------------------*/
+main section:first-of-type {
+  background-color: #f4ede4;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+main section:first-of-type p {
+  color: #611f69;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+main section:first-of-type div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+main section:first-of-type img {
+  height: 35px;
+  opacity: 0.8;
+}
+
+/* -------------------------
+   TEAMS SECTION
+--------------------------*/
+main section:nth-of-type(2) {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+main section:nth-of-type(2) h3 {
+  color: #541554;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* -------------------------
+   FOOTER
+--------------------------*/
+footer {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #6d6d6d;
+}
+
+footer hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+footer i {
+  color: #611f69;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+footer small {
+  display: block;
+  margin-top: 20px;
+  color: #999;
+  font-size: 12px;
+}
+
+/* ===========================================================
+   ITERATION 2 — TABLET / SMALL SCREENS
+=========================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* HEADER 2-column layout */
+  header {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    padding: 80px 60px;
+  }
+
+  header > div {
+    flex: 1;
+  }
+
+  header h1 {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  header div button {
+    width: 80%;
+  }
+
+  header img {
+    max-width: 420px;
+  }
+
+  /* TRUSTED BY: logos in a row */
+  main section:first-of-type div {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  /* TEAMS SECTION */
+  main section:nth-of-type(2) h3 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  /* FOOTER */
+  footer ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
