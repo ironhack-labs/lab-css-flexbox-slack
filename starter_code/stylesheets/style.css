@@ -1,10 +1,289 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+/* =========================
+   Base styles (Iteration 1)
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: #540b51;
+  --ivory: #f3eae2;
+  --yellow: #ecb12f;
+  --blue: #4285f4;
+  --gray: #454245;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+}
+
+nav img {
+  height: 25px;
+}
+
+nav ul {
+  display: none;
+  list-style: none;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: var(--purple);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+header p {
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+header div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+header button {
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+header button:first-child {
+  background: #fff;
+  color: var(--purple);
+}
+
+header button:last-child {
+  background: var(--blue);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+header button img {
+  width: 18px;
+}
+
+header img {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* ===== MAIN ===== */
+main section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* trusted logos */
+main section:nth-of-type(1) {
+  background: var(--ivory);
+}
+
+main section:nth-of-type(1) p {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+main section:nth-of-type(1) div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+main section:nth-of-type(1) img {
+  height: 40px;
+}
+
+/* stats */
+main section:nth-of-type(2) h3 {
+  color: var(--purple);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+main section:nth-of-type(2) ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 0;
+}
+
+main section:nth-of-type(2) li span {
+  color: var(--purple);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* CTA */
+main section:nth-of-type(3) {
+  background: var(--purple);
+  color: #fff;
+}
+
+main section:nth-of-type(3) h3 {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+main section:nth-of-type(3) button {
+  background: #fff;
+  color: var(--purple);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--ivory);
+  color: var(--gray);
+  text-align: center;
+  padding: 30px 15px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+footer hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px auto;
+  width: 80%;
+}
+
+footer i {
+  font-size: 1.2rem;
+}
+
+footer small {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.8rem;
+}
+
+/* =========================
+   Iteration 2 | Tablets
+========================= */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  header > div:first-child {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  header > div:last-child {
+    flex: 1;
+  }
+
+  header img {
+    margin-top: 0;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  main section:nth-of-type(3) {
+    padding: 80px 20px;
+  }
+}
+
+/* =========================
+   Iteration 3 | Medium Screens
+   width > 1024px and width < 1440px
+========================= */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  nav ul {
+    display: flex;
+    gap: 25px;
+  }
+
+  nav button img[alt="Menu icon"] {
+    display: none;
+  }
+
+  header div > div {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  header div > div button {
+    width: auto;
+  }
+
+  main section:nth-of-type(3) button {
+    display: inline-block;
+  }
+}
+
+/* =========================
+   Iteration 4 | Large Screens
+   width > 1440px
+========================= */
+@media (min-width: 1440px) {
+  header div > div {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  header img {
+    max-width: 600px;
+    margin: auto;
+    display: block;
+  }
+
+  main section:nth-of-type(3) button {
+    display: inline-block;
+  }
+}
