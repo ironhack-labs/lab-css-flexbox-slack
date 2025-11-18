@@ -8,3 +8,269 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+/* 768px - mobile */
+/* width > 768px and width < 1024px - small screen */
+/* width > 1024px and width < 1440px - medium screen */
+/* Large Screens (width > 1440px) - large screen */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #540b51;
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px 25px 40px 25px;
+}
+
+nav .logo-slack {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+}
+
+nav .nav-choice-container {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.button-nav-container img,
+button {
+  background-color: #540b51;
+  border: 0px #540b51;
+  padding: 0 5px;
+}
+
+.button-nav-container ul {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .hero-product-ui {
+  padding: 0 25px;
+  text-align: center;
+}
+
+.free-try {
+  color: #ecb12f;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup {
+  width: 100%;
+  border-radius: 3px;
+  height: 30px;
+}
+
+.signup-container {
+  margin: 10px 0 35px 0;
+}
+
+.signup-container .first-party {
+  background-color: white;
+  color: #540b51;
+  margin: 10px 0 10px 0;
+}
+.signup-container .third-party {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4285f4;
+}
+
+.third-party img {
+  width: 30px;
+}
+
+.hero-product-container {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+}
+.hero-product-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.informations-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.companies-container {
+  background-color: #f3eae2;
+  @media screen and (max-width: 768px) {
+    padding: 30px 0;
+  }
+}
+
+.companies-container p {
+  color: #191817;
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+.companies-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 20px 0 -10px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.companies-images img {
+  @media screen and (max-width: 768px) {
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.slack-informations-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+  padding: 40px 10px;
+  background-color: white;
+  color: #540b51;
+}
+
+.slack-informations-container h3 {
+  font-size: 2rem;
+  margin: 10px 0 10px 0;
+}
+
+.slack-informations-container > p {
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.slack-informations-container p span {
+  display: block;
+}
+
+.list-percentages {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-percentages li {
+  width: 100px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-percentages span {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.list-percentages li p:nth-child(2) {
+  width: 200px;
+  text-align: center;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin: 25px 0 25px 0;
+}
+
+.cta-container button {
+  color: white;
+  width: 95%;
+  height: 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.cta-container button:first-of-type {
+  background-color: white;
+  color: #540b51;
+}
+
+.cta-container button:last-of-type {
+  background-color: 540b51;
+  color: white;
+  border: 1px white solid;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  padding: 25px 0 25px 0;
+}
+
+footer .line {
+  border: 1px #ebeaeb solid;
+  margin: 0 15px;
+}
+
+footer ul {
+  padding: 25px 0 0 0;
+  margin: 0 15px;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+footer ul:first-of-type li a {
+  /* I tried to override it but it's still not blue, i don't know why */
+  color: #2e71a6 !important;
+  text-decoration: none !important;
+}
+
+footer ul:last-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .credit-footer-container {
+  text-align: center;
+  margin: 5px 3px;
+}
