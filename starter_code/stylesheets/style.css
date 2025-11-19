@@ -8,3 +8,570 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+nav, header {
+    background-color: #540B51;
+}
+#hero-img {
+    width: 80%;
+}
+.logos img {
+    width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    /* nav {
+        display:flex;
+    } */
+    .nav-laptop {
+        display:none;
+    }
+    .nav-mobile {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+    }
+    .nav-mobile button {
+        background-color: #540B51;
+        border: none;
+    }
+    .logo {
+        margin: 10px;
+        margin-right:auto;
+        width: 100px;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 4em;
+        font-weight: bold;
+    }
+    header h1,p {
+        text-align: center;
+        color: white;
+    }
+    .slack {
+        color:#ECB12F
+    }
+    .sign-up {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .sign-up button {
+        width: 100%;
+        height: 70px;
+        border: grey;
+        border-radius: 8px;
+        margin: 5px auto;
+    }
+    .sign-up img {
+        /* width: 100%; */
+        height: 50px;
+        background-color: white;
+    }
+    .sign-up-email {
+        background-color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        color:#540B51
+    }
+    .sign-up-google {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        background-color: #4285F4;
+        font-weight: bold;
+    }
+    .hero {
+        margin: 20px;
+    }
+    .container {
+        width: 100%;
+        margin:0;
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+    .partners {
+        background-color: #F3EAE2;
+        
+    }
+    .partners p {
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    .logos {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logos img {
+        width: 33%;
+    }
+    .stats {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        /* text-align: center; */
+    }
+    .stats h3 {
+        color:#540B51;
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .stats p {
+        color:black;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .percentages {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+        /* margin: 10px 0;
+        padding: 0; */
+    }
+    /* .percentages li {
+        margin: 10px auto;
+    } */
+     .percentages li p  {
+        color:black;
+        font-size: 12px; 
+        font-weight: bold;
+        width: 50%
+    }
+    .percentages li p span {
+        color:#540B51;
+        font-size: 40px; 
+        padding: 10px;
+    }
+    .stats li {
+        list-style: none;
+    }
+    .welcome {
+        background-color: #540B51;
+        padding: 10px 0;
+    }
+    .welcome h3 {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .welcome button {
+        display:block;
+        padding: 5px;
+        margin: 5px auto;
+        width: 80%;
+        background-color: white;
+        color:#540B51;
+        border: 1px solid white;
+        border-radius: 8px;
+        text-transform: uppercase;
+    }
+    .welcome button:nth-child(2) {
+        background-color: #540B51;
+        color:white;
+        border: 1px solid white;
+        text-transform: uppercase;
+
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+        margin: 0;
+    }
+    .legal li {
+        list-style: none;
+        font-weight: bold;
+    }
+    .legal li:last-child {
+        color:#2E71A6;
+    }
+    .icons {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* align-self: space-between; */
+    }
+    .icons li {
+        list-style: none;
+    }
+    .small {
+        text-align: center;
+        color:grey;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-laptop {
+        display:none;
+    }
+    .nav-mobile {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+    }
+    .nav-mobile button {
+        background-color: #540B51;
+        border: none;
+    }
+    .logo {
+        margin: 10px;
+        margin-right:auto;
+        width: 100px;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    header h1,p {
+        text-align: center;
+        color: white;
+    } 
+}
+    .slack {
+        color:#ECB12F
+    }
+    .sign-up {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .sign-up button {
+        width: 100%;
+        height: 70px;
+        border: grey;
+        border-radius: 8px;
+        margin: 10px auto;
+    }
+    .sign-up img {
+        /* width: 100%; */
+        height: 50px;
+        background-color: white;
+    }
+    .sign-up-email {
+        background-color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        color:#540B51
+    }
+    .sign-up-google {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        background-color: #4285F4;
+        font-weight: bold;
+    }
+    .hero {
+        margin: 20px;
+    }
+    .container {
+        width: 100%;
+        margin:0;
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+   .partners {
+        background-color: #F3EAE2;
+        
+    }
+    .partners p {
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    .logos {
+        display:flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+    .logos img {
+        width: 10%;
+    }
+    .stats {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        /* text-align: center; */
+    }
+    .stats h3 {
+        color:#540B51;
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .stats p {
+        color:black;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .percentages {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+        /* margin: 10px 0;
+        padding: 0; */
+    }
+    /* .percentages li {
+        margin: 10px auto;
+    } */
+     .percentages li p  {
+        color:black;
+        font-size: 12px; 
+        font-weight: bold;
+        width: 50%
+    }
+    .percentages li p span {
+        color:#540B51;
+        font-size: 40px; 
+        padding: 10px;
+    }
+    .stats li {
+        list-style: none;
+    }
+    .welcome {
+        background-color: #540B51;
+        padding: 10px 0;
+    }
+    .welcome h3 {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .welcome button {
+        display:block;
+        padding: 5px;
+        margin: 5px auto;
+        width: 80%;
+        background-color: white;
+        color:#540B51;
+        border: 1px solid white;
+        border-radius: 8px;
+        text-transform: uppercase;
+    }
+    .welcome button:nth-child(2) {
+        background-color: #540B51;
+        color:white;
+        border: 1px solid white;
+        text-transform: uppercase;
+
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+        margin: 0;
+    }
+    .legal {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: left;
+    }
+    .legal li {
+        list-style: none;
+        font-weight: bold;
+    }
+    .legal li:last-child {
+        color:#2E71A6;
+    }
+    .icons {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        /* align-self: space-between; */
+    }
+    .icons li {
+        list-style: none;
+        margin: 20px 50px 20px 0;
+    }
+    .small {
+        text-align: left;
+        color:grey;
+        margin: 0 20px
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .nav-mobile {
+        display:none;
+    }
+    /* nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } */
+    .nav-laptop {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .nav-links {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .nav-links li {
+        list-style: none;
+        margin: 0 10px;
+        font-weight: bold;
+    }
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+    }
+    .nav-laptop button {
+        background-color: #540B51;
+        border: none;
+    }
+    .logo {
+        /* margin: 10px; */
+        /* margin-right:auto; */
+        width: 100px;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    header h1,p {
+        text-align: center;
+        color: white;
+    } 
+}
+    .slack {
+        color:#ECB12F
+    }
+    .sign-up {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .sign-up button {
+        width: 100%;
+        height: 70px;
+        border: grey;
+        border-radius: 8px;
+        margin: 10px auto;
+    }
+    .sign-up img {
+        /* width: 100%; */
+        height: 50px;
+        background-color: white;
+    }
+    .sign-up-email {
+        background-color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        color:#540B51
+    }
+    .sign-up-google {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        background-color: #4285F4;
+        font-weight: bold;
+    }
+    .hero {
+        margin: 20px;
+    }
+    .container {
+        width: 100%;
+        margin:0;
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+   .partners {
+        background-color: #F3EAE2;
+        
+    }
+    .partners p {
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    /* .welcome {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+     
+    .welcome button {
+        padding: 5px;
+        margin: 5px auto;
+        width: 80%;
+        background-color: white;
+        color:#540B51;
+        border: 1px solid white;
+        border-radius: 8px;
+        text-transform: uppercase;
+    }
+    .welcome button:nth-child(2) {
+        background-color: #540B51;
+        color:white;
+        border: 1px solid white;
+        text-transform: uppercase;
+    }
