@@ -1,10 +1,246 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+/* ==========================
+   GLOBAL STYLES
+========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #F3EAE2; /* ivory background */
+  color: #000000; /* default paragraph color */
+}
+
+a {
+  text-decoration: none;
+  color: #2E71A6; /* links blue */
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav ul li a {
+  color: #2E71A6;
+}
+
+nav > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ==========================
+   HEADER
+========================== */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+  background-color: #F3EAE2;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #191817; /* title black */
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+header > div:nth-child(2) img {
+  width: 100%;
+  max-width: 400px;
+}
+
+header button {
+  background-color: #4285F4; /* blue button */
+  color: white;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* ==========================
+   MAIN SECTIONS
+========================== */
+main section {
+  text-align: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+
+main section p {
+  margin-bottom: 1rem;
+}
+
+main section div img {
+  width: 80px;
+  margin: 0.5rem;
+}
+
+main section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+main section ul li p:first-child span {
+  font-size: 2rem;
+  color: #ECB12F; /* yellow */
+  font-weight: bold;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+  background-color: #F3EAE2;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #454245;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+footer hr {
+  margin: 1rem 0;
+  border: 0.5px solid #ccc;
+}
+
+footer i {
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+}
+
+/* ==========================
+   MEDIA QUERIES
+========================== */
+
+/* --------------------------
+   Small Screens (768px - 1024px)
+--------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  header > div:first-child {
+    flex: 1;
+  }
+
+  header > div:nth-child(2) {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main section div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  main section ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer ul:first-child {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* --------------------------
+   Medium Screens (1024px - 1440px)
+--------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+  nav ul {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  nav > div:last-child button {
+    display: none;
+  }
+
+  nav > div:last-child ul {
+    display: flex !important;
+    gap: 1rem;
+  }
+
+  header > div:first-child div {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+}
+
+/* --------------------------
+   Large Screens (1440px+)
+--------------------------- */
+@media screen and (min-width: 1440px) {
+
+  header > div:first-child div {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  header > div:nth-child(2) img {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
