@@ -8,3 +8,523 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #540b51;
+  margin: 0;
+}
+
+header {
+  color: aliceblue;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1em;
+}
+
+#nav-bar-right ul {
+  display: none;
+}
+/* ------------presentation --------------- */
+
+#presentation h1 {
+  margin: 50px 0;
+  font-size: 2.5em;
+}
+
+#presentation p {
+  text-align: center;
+}
+
+#presentation p span {
+  color: #ecb12f;
+}
+
+.subtitle {
+  margin: 0 auto;
+  font-size: 1.1em;
+  text-wrap: balance;
+}
+
+/* -------------------Img------------ */
+
+#big-img img {
+  width: 100%;
+  margin: 50px 0;
+  object-fit: cover;
+}
+
+#logo-section img {
+  width: 80px;
+  object-fit: contain;
+}
+
+/* Top menu */
+#top-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.top-logo {
+  width: 100px;
+}
+
+.top-btn {
+  background-color: #540b51;
+  border: none;
+}
+
+#nav-bar {
+  display: none;
+}
+
+/* ------------------ buttons--------*/
+
+#sign-up-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#sign-up-btn button {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 60px;
+  margin: 5px;
+  border-radius: 5px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #540b51;
+}
+
+#sign-up-btn .google-btn {
+  background: #4285f4;
+  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#sign-up-btn .white-btn {
+  justify-content: center;
+}
+
+#sign-up-btn .google-btn img {
+  width: 40px;
+  border-radius: 2px;
+  margin-left: 10px;
+  background-color: white;
+}
+
+#sign-up-btn .blank-space {
+  width: 40px;
+}
+
+/* ----------------Logo section----------- */
+
+#logo-section {
+  background: #f3eae2;
+  height: 260px;
+}
+
+#logo-section p {
+  font-size: 0.8em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+#logos-img {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 180px;
+}
+
+#logos-img .nyt-logo {
+  width: 200px;
+}
+
+#logos-img .spotify-logo {
+  width: 150px;
+}
+
+/* --------------- Slack data -----------------*/
+
+#slack-data {
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+#slack-data h3 {
+  color: #540b51;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#slack-data ul {
+  font-weight: bold;
+  width: 40%;
+  margin: 30px auto;
+  padding-bottom: 40px;
+}
+
+#slack-data ul li {
+  margin: 30px auto 0;
+}
+
+#slack-data ul span {
+  color: #540b51;
+  font-size: 2.5em;
+}
+
+#quote {
+  width: 95%;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.384);
+  height: 80px;
+  font-size: 0.8em;
+}
+
+/* -------------Invitation ----------------*/
+
+#invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+}
+
+#invitation h3 {
+  padding-top: 30px;
+  width: 80%;
+  height: 80px;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+}
+
+#invitation div {
+  align-items: center;
+  width: 100%;
+}
+
+#invitation button {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  align-items: center;
+  color: #540b51;
+}
+
+#invitation .btn-purple {
+  background: #540b51;
+  color: white;
+  border: 2px solid white;
+}
+
+/* -------------Footer------------- */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+}
+
+footer .line {
+  margin: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.147);
+}
+
+#footer-menu {
+  margin-left: 25px;
+  line-height: 35px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.download-btn {
+  color: #4285f4;
+}
+
+footer img {
+  width: 20px;
+  object-fit: contain;
+}
+
+#social-media ul {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#copyright {
+  color: rgba(0, 0, 0, 0.468);
+  display: flex;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+  padding: 20px;
+}
+
+/* ---------Media --------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    background-image: url(/starter_code/images/background-singup.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+  }
+
+  #presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+  }
+
+  #presentation h1 {
+    width: 70%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  #presentation p {
+    text-align: left;
+  }
+
+  #big-img {
+    width: 40%;
+    display: flex;
+  }
+
+  #big-img img {
+    margin: 0;
+  }
+
+  #logo-section .par-companies {
+    font-size: 1.3em;
+    padding-top: 40px;
+    line-height: 50px;
+  }
+
+  #slack-data h3 {
+    padding-bottom: 20px;
+  }
+
+  #slack-data ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
+  #slack-data ul li {
+    width: 50%;
+  }
+
+  #quote {
+    height: 50px;
+  }
+
+  #invitation h3 {
+    font-size: 2em;
+  }
+
+  #invitation button {
+    width: 80%;
+    height: 50px;
+  }
+
+  #footer-menu ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  #social-media ul {
+    width: 30%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  #nav-bar-right ul {
+    display: flex;
+  }
+  header {
+    background-image: url(/starter_code/images/background-singup.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .sandwich-menu {
+    display: none;
+  }
+
+  #top-menu {
+    margin: 20px 5px;
+    border: auto;
+    display: flex;
+
+    justify-content: space-around;
+  }
+
+  #top-menu div {
+    border: 1px solud green;
+    display: flex;
+    width: 100%;
+    justify-content: right;
+  }
+  #nav-bar {
+    display: flex;
+    width: 650px;
+    justify-content: space-evenly;
+  }
+
+  #nav-bar a {
+    color: white;
+    text-decoration: none;
+  }
+}
+ul[hidden] {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+}
+
+ul[hidden] a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+ul[hidden] .sign-top-btn {
+  background: white;
+  padding: 10px;
+  border-radius: 2px;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #540b51;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 550px;
+}
+
+#presentation {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#presentation h1 {
+  font-size: 3em;
+  width: 70%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#presentation p {
+  text-align: left;
+  font-size: 1.3em;
+}
+
+#big-img {
+  width: 40%;
+}
+
+#big-img img {
+  margin: 0;
+  width: 100%;
+}
+
+/* -----------------invitation-------*/
+#invitation {
+  justify-content: center;
+  height: 180px;
+}
+#invitation h3 {
+  padding: 20px;
+  font-size: 2em;
+}
+#invitation div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 25%;
+}
+
+/*---------------- logos -------------*/
+#logo-section .par-companies {
+  font-size: 1.4em;
+  padding-top: 40px;
+  text-align: center;
+}
+
+#logos-img img {
+  width: auto;
+  max-height: 60px;
+}
+
+/* Dados Slack */
+#slack-data h3 {
+  font-size: 2.5em;
+  padding-bottom: 20px;
+}
+
+#slack-data ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+#slack-data ul li {
+  width: 30%;
+}
+
+/* --------- Footer */
+#footer-menu ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+#social-media ul {
+  width: 25%;
+  justify-content: space-between;
+}
