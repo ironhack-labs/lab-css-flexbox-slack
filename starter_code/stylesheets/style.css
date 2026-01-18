@@ -8,3 +8,413 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav > div:first-child img {
+  width: 90px;
+}
+
+
+
+nav > div:first-child ul {
+  display: none;
+}
+
+nav > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+nav button {
+  background: transparent;
+}
+
+nav button img {
+  width: 20px;
+}
+
+header {
+  background-image: url('../images/background-singup.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 19px 20px; 
+  text-align: center;
+  min-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+header h1 {
+  color: white;
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 20px;
+  
+}
+header p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+header p span {
+    color: orange
+}
+
+
+header > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  
+}
+
+header button {
+ 
+ border-radius: 5px;
+ font-weight: 700;
+ width: 100%;
+ max-width: 420px;
+ cursor: pointer;
+ border: none;
+ letter-spacing: 0.5px;
+ height: 40px;
+
+}
+
+header button:first-of-type {
+    background: white;
+    color: #1d1c1d;
+}
+
+header .btn-google {
+    background: #4285F4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    padding-left: 56px;
+}
+
+header .btn-google img {
+    position: absolute;
+    width: 20px;
+    left: 20px;
+    height: 18px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    ;
+    
+}
+
+header .hero-product {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+header .hero-product img {
+    width: 150%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: none;
+}
+
+main section {
+    padding: 40px 18px;
+}
+
+
+.trusted-companies {
+    background-color:#F3EAE2;
+    text-align: center;
+    padding: 40px 20px 50px;
+    margin-top: -90px;
+    position: relative;
+}
+
+.trusted-companies p {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.trusted-companies div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 19px 22px;
+}
+
+.trusted-companies div img {
+    height: 29px;
+    width: auto;
+}
+
+
+
+.teams {
+    text-align: center;
+    background: #ffffff;
+    padding: 50px 20px 40px;
+
+}
+
+.teams h3 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #3f0e40;
+    
+}
+
+.teams p {
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0, 0.7);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.teams ul {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.teams ul li span {
+    font-size: 36px;
+    font-weight: 800;
+    display: inline-block;
+    margin-bottom: 6px;
+    color: #3f0e40;
+}
+
+main section:last-of-type {
+    text-align: center;
+    background: #4a154b;
+    color: white;
+}
+
+main section:last-of-type button {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 10px auto;
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+
+}
+
+main section:last-of-type button:first-of-type {
+    background: white;
+    color: #4a154b;
+    
+}
+
+main section:last-of-type button:last-of-type {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+main section:last-of-type h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+footer {
+  background: white;
+  padding: 25px 20px;
+  color: #1d1d1d;
+}
+
+footer ul:first-of-type li {
+  padding: 10px 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+footer ul:first-of-type li img {
+    width: 16px;
+    height: 16px;
+}
+
+footer hr {
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  margin: 18px 0;
+}
+
+footer .social-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+footer .social-icon i {
+    font-size: 18px;
+}
+
+footer small {
+    display: block;
+    color: rgba(0,0,0,0.6);
+    line-height: 1.3;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+@media (min-width: 768px) {
+
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 40px;
+  }
+
+  header > div:first-child {
+    width: 45%;
+  }
+
+  header .hero-product {
+    width: 50%;
+    max-width: none;
+  }
+
+  header .hero-product img {
+    width: 120%;
+    max-width: none;
+    display: block;
+  }
+
+  .trusted-companies ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  .trusted-companies div {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+.trusted-companies div img {
+    height: 40px;
+    width: auto;
+  }
+
+  .teams ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .teams ul li {
+    flex: 1;
+  }
+
+
+
+  .teams-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .teams-stats li {
+    flex: 1;
+  }
+
+  footer ul:first-of-type {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 0 15px 0;
+    padding: 0;
+  }
+
+  footer ul:first-of-type li {
+    margin: 0;
+  }
+
+  footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
