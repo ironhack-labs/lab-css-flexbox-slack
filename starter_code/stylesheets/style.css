@@ -8,3 +8,317 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #540b51;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.slack-logo {
+  height: 40px;
+  width: 150px;
+}
+
+.navbar-list {
+  display: none;
+}
+
+.right-icons {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  color: white;
+}
+
+.right-icons button {
+  background-color: transparent;
+  padding: 0 20px;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;*/
+  color: white;
+  text-align: center;
+}
+
+.mustard-color {
+  color: #ecb12f;
+  font-weight: 600;
+}
+
+.sigup-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email-button {
+  padding: 15px;
+  background-color: white;
+  color: #540b51;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  background-color: #4582f4;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.google-button img {
+  background-color: white;
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+  margin: 2px;
+}
+
+.google-button span {
+  flex: 1; /* take remaining space */
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center; /* vertical centering */
+  text-align: center;
+  color: white;
+}
+
+.slack-screenshot {
+  width: 100vw;
+  height: 470px;
+  overflow: hidden;
+}
+
+.slack-screenshot img {
+  width: 150%;
+  height: 150%;
+}
+
+.trusted-section {
+  text-transform: uppercase;
+  background-color: #f3eae2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.trusted-section p {
+  padding: 10px 0;
+}
+
+.trusted-company-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center images horizontally */
+  gap: 24px; /* space between images */
+  margin: 12px 0;
+}
+
+.trusted-company-images img {
+  height: 40px; /* uniform logo size */
+  width: auto; /* keep aspect ratio */
+}
+
+.team-container {
+  text-align: center;
+  background-color: white;
+  /*margin: 20px 0;*/
+  padding: 20px;
+}
+
+.team-container h3 {
+  font-size: 25px;
+  color: #540b51;
+}
+
+.team-container li {
+  list-style-type: none;
+  font-weight: 600;
+}
+
+.team-container li span {
+  font-size: 50px;
+  color: #540b51;
+}
+
+.hq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.hq-container h3 {
+  font-size: 30px;
+}
+
+.hq-container button {
+  padding: 15px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.free-button {
+  background-color: white;
+  color: #540b51;
+}
+
+.sales-button {
+  background-color: #540b51;
+  color: white;
+  border-color: white;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.terms-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.download {
+  color: #1264a3;
+}
+
+.social-media {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+footer div {
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 15px;
+  color: gray;
+}
+
+@media (width < 768px) {
+  .sigup-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+}
+
+@media (768px <= width <= 1024px) {
+  header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .signup-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    padding: 40px;
+  }
+
+  .signup-container h1 {
+    font-size: 75px;
+  }
+
+  .sigup-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .slack-screenshot {
+    overflow: hidden;
+  }
+
+  .slack-screenshot img {
+    width: 120%;
+    height: 60%;
+  }
+
+  .team-container li {
+    list-style-type: none;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .team-container ul {
+    display: flex;
+  }
+
+  .hq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    padding: 20px 0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: center;
+  }
+
+  footer {
+    background-color: white;
+    display: flex;
+  }
+
+  .terms-container {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-right: 40px;
+  }
+
+  .social-media {
+    display: flex;
+    list-style-type: none;
+    justify-content: left;
+    gap: 5vw;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  footer div {
+    padding: 20px;
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: gray;
+  }
+}
