@@ -1,10 +1,341 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+/* ==============================
+   VARIABLES (mental model only)
+================================
+purple: #540B51
+ivory: #F3EAE2
+blue: #4285F4
+black: #191817
+grey: #454245
+================================ */
+
+/* ==============================
+   RESET & BASE
+================================ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #F3EAE2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #191817;
+}
+
+img {
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+/* ==============================
+   TYPOGRAPHY
+================================ */
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 32px;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+/* ==============================
+   NAVBAR
+================================ */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #540B51;
+  padding: 8px 12px;
+}
+
+nav ul {
+  display: none;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+nav img {
+  width: 8vw;
+  height: auto;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ==============================
+   HEADER / HERO
+================================ */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  min-height: 85vh;
+  padding: 24px 16px;
+  background-color: #540B51;
+  color: #F3EAE2;
+}
+
+header h1 {
+  font-size: 2.25rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+header p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+}
+
+.hero-content {
+  max-width: 360px;
+  width: 100%;
+}
+
+/* ==============================
+   HERO BUTTONS
+================================ */
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-buttons button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 4px;
+  border: none;
+}
+
+.hero-buttons button:first-child {
+  background: white;
+  color: #191817;
+}
+
+.hero-buttons button:last-child {
+  background: #4285F4;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-buttons button:last-child img {
+  width: 18px;
+  height: 18px;
+  background: white;
+  padding: 6px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+/* ==============================
+   MAIN CONTENT
+================================ */
+.content-wrapper {
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.content-wrapper section {
+  margin-bottom: 32px;
+}
+
+section:first-child p {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+/* ==============================
+   CTA BUTTONS
+================================ */
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cta-buttons button {
+  width: 100%;
+}
+
+/* ==============================
+   FOOTER
+================================ */
+footer {
+  background-color: #F3EAE2;
+  padding: 24px 16px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li,
+footer small {
+  font-size: 0.85rem;
+  color: #454245;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 24px 0;
+}
+
+footer ul:last-of-type {
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+footer ul:last-of-type li {
+  font-size: 1.2rem;
+}
+
+footer small {
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 16px;
+  padding: 0 1rem;
+}
+
+/* ==============================
+   SMALL SCREENS (tablets)
+   768px – 1023px
+================================ */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .hero-content,
+  .content-wrapper {
+    max-width: 720px;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+
+  .hero-buttons button {
+    width: auto;
+    flex: 1;
+  }
+}
+
+/* ==============================
+   MEDIUM SCREENS (laptops)
+   1024px – 1439px
+================================ */
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+  nav {
+    padding: 12px 48px;
+  }
+
+  .hero-content {
+    max-width: 960px;
+  }
+
+  header {
+    flex-direction: row;
+    text-align: left;
+    gap: 48px;
+  }
+
+  header h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-content {
+    align-items: flex-start;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+}
+
+/* ==============================
+   LARGE SCREENS (desktops)
+   1440px+
+================================ */
+@media (min-width: 1440px) {
+
+  nav {
+    padding: 16px 96px;
+  }
+
+  .hero-content {
+    max-width: 1100px;
+  }
+
+  header h1 {
+    font-size: 3.6rem;
+  }
+
+  .content-wrapper {
+    max-width: 1100px;
+  }
+
+  section {
+    margin-bottom: 64px;
+  }
+}
