@@ -8,3 +8,267 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px 0;
+}
+/* general styling */
+body {
+  margin: 0;
+  background-color: #540b51;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Hide menu on mobile */
+.navbar ul {
+  display: none;
+  gap: 10px;
+}
+.navbar .left {
+  margin-right: auto;
+}
+.navbar .left img {
+  width: 78px;
+  height: auto;
+}
+.navbar .right {
+  margin-left: auto;
+}
+.navbar button {
+  color: white;
+  font-size: 18px;
+  background-color: #540b51;
+  border: none;
+  cursor: pointer;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.header h1 {
+  color: white;
+}
+img {
+  max-width: 100%;
+}
+.pl {
+  color: #ecb12f;
+}
+.pr {
+  color: #ffffff;
+}
+p {
+  text-align: center;
+  gap: 10px;
+}
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 5px;
+}
+.header-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 14px;
+  width: 100%;
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #540b51;
+}
+.header-buttons button img {
+  width: 28px;
+  height: 28px;
+}
+.header-buttons button:last-child {
+  background-color: #4285f4;
+  color: white;
+}
+
+.cta button:last-child {
+  background-color: purple;
+  color: white;
+  border-color: #ffffff;
+}
+
+/* Logos section styles */
+.logo-container {
+  display: flex;
+  background: #f3eae2;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px 32px;
+}
+
+.logos img {
+  width: auto;
+  height: 38px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.stats {
+  background: #ffffff;
+  text-align: center;
+  gap: 8px;
+  padding: 20px;
+}
+.stats h3 {
+  text-align: center;
+  color: #540b51;
+  font-weight: 1000;
+  font-size: 1.7rem;
+  font-family:
+    "Lato",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+}
+.stats p {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.stats ul {
+  list-style: none;
+}
+
+.stats ul span {
+  color: #540b51;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.stats ul li {
+  color: #000000;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+  gap: 20px;
+}
+.cta h3 {
+  color: #ffffff;
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+.cta button {
+  background: white;
+  color: #540b51;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 14px;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #540b51;
+}
+.cta button:last-child {
+  background-color: purple;
+  color: white;
+  border-color: #ffffff;
+}
+
+/*footer*/
+
+.footer {
+    background: 
+    #ffffff;
+}
+.links {
+    list-style: none;
+    text-align:left ;
+}
+.socials  {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+/* Media Query for Small Screens (768px < width < 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Header: Display content and image in 2 columns */
+  .header {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .header > div {
+    flex: 1;
+  }
+
+  /* Logos section: Single row layout */
+  .logos {
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  /* Stats section: List items displayed horizontally */
+  .stats ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .stats ul li {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  /* Footer: Links displayed horizontally */
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
