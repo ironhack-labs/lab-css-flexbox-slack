@@ -8,3 +8,90 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+:root {
+  --purple-bg: #540B51;    
+  --ivory-bg: #F3EAE2;     
+  --button-blue: #4285F4;  
+  --title-black: #191817;  
+  --para-black: #000000;   
+  --para-yellow: #ECB12F;  
+  --link-blue: #2E71A6;    
+  --footer-grey: #454245;  
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: var(--para-black);
+  background-color: var(--ivory-bg);
+}
+
+h1, h2, h3 { color: var(--title-black); }
+a { color: var(--link-blue); text-decoration: none; }
+
+.btn-primary {
+  background-color: var(--button-blue);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+header, .logos, .teams, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-row, .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Header 2 columns: content and image */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  header div, header img { flex: 1; }
+
+  /* Logos and Footer display in single rows */
+  .logo-row, .footer-links, .teams-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .menu-icon { display: none; }
+  .nav-menu { display: flex; gap: 20px; }
+
+  /* Digital HQ buttons horizontal */
+  .hq-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+
+  
+@media (min-width: 1440px) {
+  .header-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  header img {
+    display: block;
+    margin: 0 auto;
+  }
+}
