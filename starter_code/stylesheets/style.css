@@ -1,10 +1,392 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #540B51;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLeft,
+.navRight {
+  display: flex;
+  align-items: center;
+}
+.navLeft img {
+  height: 30px;
+}
+.navLeft ul {
+  display: none;
+}
+.navRight button {
+  background: transparent;
+  border: none;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.navRight button img {
+  width: 20px;
+}
+.navRight ul {
+  display: none;
+}
+
+
+header {
+  background-color: #540B51;
+  color: white;
+  padding: 30px 20px 50px;
+  text-align: left;
+}
+header h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+header p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ECB12F;
+}
+.hbuttons {
+  display: flex;
+  flex-direction: column;
+}
+header button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#emailB {
+  color: #540B51;
+  background-color: white;
+}
+
+#googleB {
+  color: white;
+  background-color: #4285F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#googleB img {
+  width: 25px;
+  margin-right: 10px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.hImage {
+  text-align: center;
+}
+
+.hImage img {
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.companies {
+  background-color: #F3EAE2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.companies p {
+  color: #191817;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.cLogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cLogos img {
+  height: 30px;
+  margin: 15px 20px;
+}
+
+
+.relyOn {
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.relyOn h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #191817;
+}
+
+.relyOn > p {
+  font-size: 20px;
+  color: #191817;
+}
+
+.relyOn ul {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.relyOn li {
+  margin-bottom: 40px;
+}
+
+.relyOn span {
+  font-size: 55px;
+  font-weight: bold;
+  color: #540B51;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-weight: bold;
+  color: #191817;
+}
+
+.welcome {
+  background-color: #540B51;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.welcome h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.welcome button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#forFree {
+  background-color: white;
+  color: #540B51;
+  border: none;
+}
+
+#sale {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+footer {
+  background-color: white;
+  padding: 40px 20px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.fLinks li {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #191817;
+  font-size: 15px;
+}
+
+footer hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.socialMedia {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.socialMedia li {
+  margin-right: 20px;
+  font-size: 20px;
+  color: #191817;
+}
+
+footer small {
+  color: #454245;
+  font-size: 12px;
+}
+
+
+
+@media (min-width:768px){
+
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align:left;
+    padding:60px 40px;
+  }
+
+  .hContent,
+  .hImage{
+    width:48%;
+  }
+
+  .hImage img{
+    margin-top:0;
+  }
+
+  .cLogos{
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+
+  .relyOn{
+    padding:60px 40px;
+  }
+
+  .relyOn h3,
+  .relyOn>p{
+    text-align:left;
+  }
+
+  .relyOn ul{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+  }
+
+  .relyOn li{
+    flex:1;
+    margin-bottom:0;
+    text-align:left;
+  }
+
+  footer{
+    padding:40px;
+  }
+
+  .fLinks{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+  }
+
+  .fLinks li{
+    margin-bottom:0;
+  }
+
+}
+
+
+@media (min-width:1024px){
+
+  nav{
+    padding:20px 40px;
+  }
+
+  .navLeft ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+    align-items:center;
+    margin-left:30px;
+  }
+
+  .navLeft ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    font-size:15px;
+  }
+
+  .navRight button:last-of-type{
+    display:none;
+  }
+
+  .navRight ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+    align-items:center;
+  }
+
+  .navRight ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    font-size:15px;
+  }
+
+  #navForFree{
+    border:1px solid white;
+    padding:10px 15px;
+    border-radius:4px;
+  }
+
+  .welcome button{
+    width:auto;
+    display:inline-block;
+    padding:15px 35px;
+    margin:0 10px;
+  }
+
+}
+
+
+@media (min-width:1440px){
+
+  header{
+    padding:80px 100px;
+  }
+
+  .hbuttons{
+    display:flex;
+    flex-direction:row;
+  }
+
+  header button{
+    width:auto;
+    padding:15px 30px;
+    margin-right:15px;
+    margin-bottom:0;
+  }
+
+  .companies{
+    padding:60px 100px;
+  }
+
+  .relyOn{
+    padding:80px 100px;
+  }
+
+  footer{
+    padding:60px 100px;
+  }
+
+}
