@@ -8,3 +8,324 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html{
+font-size: 14px;
+}
+body{
+    font-family: "Lato", sans-serif;
+    background-color:  #540B51;
+    
+}
+h1{
+    margin-top: 20px;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background : #540B51;
+    align-items : center;
+    padding: 10px 20px;
+}
+#icon-nav{
+   width: 20%;
+}
+
+nav img{
+    width: 150px;
+}
+nav button img{
+    width: 30px;
+    height: 30px;
+    
+}
+nav button{
+background: none;
+  border: none;
+  cursor: pointer;
+}
+nav ul {
+  display: none;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+}
+/* la div qui contient le hero-image */
+header div:last-child {
+  width: 100%;
+  overflow: hidden;
+}
+
+header button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform:uppercase;
+    height: 50px;
+    width:  100%;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    color: #540B51;
+    padding: 10px;
+}
+#google-button{
+    background-color: #4285F4;
+    color: white;
+    border-radius: 10px;
+    
+
+}
+#google-button span{
+justify-content: center;
+text-align: center;
+}
+
+
+#google-button img{
+    background-color: white;
+}
+#sign-up-button{
+    padding-left: 30px;
+}
+header p{
+    text-align: center;
+    color: #ECB12F;
+    font-size: 1rem;
+}
+span.highlight{
+    color: white;
+}
+header button img{
+    width: 30px;
+    border-radius: 5px;
+}
+header div #hero-image{
+    margin-top: 20px;
+    width: 150%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+#logo-content{
+    padding: 20px 0px;
+    background-color: #F3EAE2;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#logo-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#logo-compagny{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#logo-compagny img{
+    width: 70px;
+}
+#logo-compagny img:last-child {
+    width: 150px;
+}         /* le 6e (Spotify) */
+#logo-compagny img:nth-last-child(2) { 
+    width: 150px;
+}  /* le 5e (NYT) */
+
+.section-center {
+    padding: 0px 10px;
+}
+
+#infos{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    text-align: center;
+    font-size: 2rem;
+    color: #540B51;
+    padding-bottom: 20px;
+}
+#infos #subtitle {
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+ul{
+    list-style: none; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 3px 100px;
+}
+#infos ul li p span{
+    color: #540B51;
+    font-weight: 700;
+    font-size: 3rem;
+}
+#infos ul li p {
+    color: black;
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+#calltoaction{
+   display: flex;
+   flex-direction: column; 
+   justify-content: center;
+   align-items: center;
+   padding: 40px 10px;
+}
+#calltoaction h3{
+   color: white;
+}
+#calltoaction button{
+   width: 100%;
+   margin: 10px 0px;
+   border: 2px solid transparent;
+   border-radius: 2px;
+   height: 50px;
+   font-size: 1rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   color: #540B51;
+}
+#calltoaction button:last-child{
+  background-color: #540B51;
+  border: white 2px solid;
+  color: white;
+}
+footer {
+    background-color: white;
+    flex-direction: column;
+}
+footer ul {
+    padding: 20px 0px;
+    align-items: flex-start;
+}
+footer ul li{
+    color: black;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+#logo-icon-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer div small{
+    font-size: 0.6rem;
+    font-weight: 200;
+}
+
+@media (width > 768px) and (width < 1024px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 600px;
+    }
+    .left-header {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+    }
+    .right-header{
+        align-items: flex-end;
+        height: 100%;
+    }
+    h1{
+        font-size: 4rem;
+        text-align: left;
+    }
+    header div #hero-image{
+    margin-top: 20px;
+    width: 80%;
+}
+nav button img{
+    width: 30px;
+    height: 30px;
+    
+}
+#icon-nav{
+   width: 10%;
+}
+#infos{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+#infos ul{
+    list-style: none; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+}
+#calltoaction{
+    padding: 30px 100px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+#footer-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo-icon-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+}
+}
