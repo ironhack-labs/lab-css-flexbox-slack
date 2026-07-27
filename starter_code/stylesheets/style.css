@@ -8,3 +8,365 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ========== NAV BAR ============ */
+
+nav {
+  background-color: #540B51;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: none;
+}
+
+nav > div:first-child > img {
+  width: 100px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+nav button img {
+  width: 25px;
+}
+
+
+/* ========== HEADER ============ */
+
+header {
+  background-color: #540B51;
+  color: white;
+  padding: 20px 20px 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+header h1 {
+  font-size: 42px;
+  line-height: 1;
+}
+
+
+header p {
+  font-size: 18px;
+}
+
+header p span {
+  color: #ECB12F;
+}
+
+header > div:last-child {
+  margin-top: 30px;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Buttons */
+
+header button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+
+  border-radius: 5px;
+  border: none;
+}
+
+header > div:last-child {
+  margin-top: 30px;
+  width: 100%;
+  height: 340px;        /* adjust to taste */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+header > div:last-child img {
+  width: 115%;
+  height: 115%;
+  object-fit: cover;
+  object-position: top left;
+  
+}
+
+header button:first-of-type {
+  text-transform: uppercase;
+  color: #540B51;
+  background-color: white;
+  font-weight: bold;
+}
+
+header button:last-of-type {
+  background-color: #4285F4;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  position: relative; 
+}
+
+header button:last-of-type img {
+  width: 30px;
+  position: absolute;
+  left: 15px;
+  background-color: white;
+  border-radius: 10%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+header button:last-of-type span {
+  width: 100%;
+  text-align: center;
+}
+
+/* ========== MAIN ============ */
+
+main > section:nth-of-type(1) {
+  background-color: #F3EAE2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+main > section:nth-of-type(1) p {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+main > section:nth-of-type(1) div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+main > section:nth-of-type(1) div img {
+  width: 120px;     
+  height: 40px;
+  object-fit: contain;  
+}
+
+main > section:nth-of-type(2) {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+main > section:nth-of-type(2) h3 {
+  color: #540B51;
+  font-size: 28px;
+}
+
+main > section:nth-of-type(3) h3 {
+  font-size: 32px;
+}
+
+main > section:nth-of-type(2) ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+main > section:nth-of-type(2) ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > section:nth-of-type(2) ul li p:last-child {
+  font-weight: bold;
+  max-width: 220px;   /* forces wrap under the percentage */
+}
+
+main > section:nth-of-type(2) ul li span {
+  color: #540B51;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+main > section:nth-of-type(3) {
+  background-color: #540B51;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > section:nth-of-type(3) button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+main > section:nth-of-type(3) button:first-of-type {
+  background-color: white;
+  color: #540B51;
+}
+
+main > section:nth-of-type(3) button:last-of-type {
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+
+/* ========== FOOTER ============ */
+
+footer {
+  padding: 30px 20px;
+}
+
+footer ul:first-of-type {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer ul:first-of-type li {
+  color: #454245;
+  font-weight: bold;
+}
+
+footer hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+footer ul:last-of-type {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+footer div small {
+  color: #454245;
+  display: block;
+  margin-top: 20px;
+}
+
+footer ul:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer ul:first-of-type li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer ul:first-of-type li img {
+  display: block;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+footer ul:first-of-type li:last-child span {
+  color: #2E71A6;
+}
+
+footer ul:last-of-type i {
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+
+  /* ===== HEADER: 1 column → 2 columns ===== */
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 40px;
+  }
+
+  header > div:first-child {
+    width: 50%;
+  }
+
+  header > div:last-child {
+    width: 45%;
+    margin-top: 0;
+    height: 400px;
+    border-radius: 10px; /* no longer butting against beige, so round all corners again */
+  }
+
+  /* buttons stay stacked for now — iteration 4 is what makes them horizontal */
+
+  /* ===== TRUSTED BY: logos in a single row ===== */
+  main > section:nth-of-type(1) div {
+    flex-wrap: nowrap;
+  }
+
+  main > section:nth-of-type(1) div img {
+    width: 100px; /* slightly smaller so 6 logos fit comfortably in one row */
+  }
+
+  /* ===== TEAMS SECTION: list items horizontal ===== */
+  main > section:nth-of-type(2) ul {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  main > section:nth-of-type(2) ul li {
+    flex: 1;
+  }
+
+  /* ===== FOOTER: links horizontal ===== */
+  footer ul:first-of-type {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
