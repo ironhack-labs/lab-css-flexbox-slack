@@ -8,3 +8,480 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* Reset default browser styles and provide a consistent starting point */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #540B51;
+  color: #FFFFFF;
+}
+
+/* Mobile Screens */
+nav {
+  width: 100%;
+  background-color: #540B51;
+  padding: 32px 26px 32px 34px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: none;
+}
+
+#searchButton {
+  margin-right: 12px;
+}
+
+.navButton {
+  background-color: transparent;
+  border: none;
+}
+
+#logo {
+  height: 28px;
+  margin-right: 16px;
+}
+
+#sloganArea {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+#sloganArea > h1 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.highlightedText {
+  color: #ECB12F;
+  font-weight: 600;
+}
+
+#loginArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#loginArea button {
+  height: 56px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+#emailLoginButton {
+  color: #682765;
+}
+
+#googleLoginButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4285F4;
+  color: #FFFFFF;
+}
+
+#googleLoginButton > img {
+  background-color: #FFFFFF;
+  left: 6px;
+  top: 6px;
+  bottom: 6px;
+  border-radius: 2px;
+  position: absolute;
+  text-align: left;
+  height: calc(100% - 12px);
+  padding: 8px;
+  
+}
+
+#productImageArea {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 320px;
+  overflow: hidden;
+}
+
+#productImageArea img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#partnerSection {
+  background-color: #F3EAE2;
+  padding: 48px 32px;
+}
+
+#partnerSection > p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#partnerCompanies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+#partnerCompanies img {
+  height: 36px;
+  margin-top: 32px;
+}
+
+#statisticsSection {
+  margin: 32px 0;
+  padding: 32px;
+}
+
+#statisticsSection > h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #540B51;
+  margin-bottom: 16px;
+}
+
+#statisticsSection > p {
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#statisticsSection > ul {
+  padding: 64px 32px 0px 32px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  width: 250px;
+  margin: auto;
+}
+
+#statisticsSection > ul > li {
+  text-align: center;
+}
+
+#statisticsSection > ul > li span {
+  font-size: 52px;
+  font-weight: 600;
+  color: #540B51;
+}
+
+#statisticsSection > ul > li p:last-child, sup:last-child {
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+#statisticsSection > ul > li sup:last-child {
+  vertical-align: -2px;
+  margin-left: -5px;
+  font-size: 16px;
+}
+
+#salesSection {
+  padding: 48px 16px;
+  background-color: #540B51;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#salesSection > h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+#salesSection button {
+  height: 56px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+#tryForFreeButton {
+  color: #682765;
+  border: none;
+}
+
+#talkToSalesButton {
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 16px;
+}
+
+footer hr {
+  width: 100%;
+  height: 2px;
+  background-color: #EDEDED;
+  border: none;
+}
+
+footer ul {
+  list-style: none;
+}
+
+#sitemap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#sitemap li {
+  font-weight: 550;
+  font-size: 14px;
+  color: #454245;
+}
+
+.highlightedLink {
+  color: #2E71A6;
+}
+
+#socials {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+#socials i {
+  font-size: 24px;
+}
+
+#copyrightArea {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6c696c;
+}
+
+/* Small Screens */
+@media (min-width: 768px) {
+  header {
+    padding-bottom: 140px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sloganArea {
+    width: 65%;
+  }
+
+  #productImageArea {
+    margin: 0;
+    width: 35%;
+  }
+
+  #productImageArea img {
+    object-fit: cover;
+    object-position: left center;
+  }
+
+  #sloganArea{
+    align-items: flex-start;
+  }
+
+  #sloganArea > h1 {
+    text-align: left;
+    font-size: 80px;
+    font-weight: 600;
+  }
+
+  #sloganArea > p {
+    font-size: 26px;
+    text-align: left;
+  }
+
+  #statisticsSection > ul {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    width: auto;
+  }
+
+  #statisticsSection > ul > li {
+    text-align: left;
+    width: 200px;
+  }
+
+  #salesSection button {
+    margin: 0 64px;
+  }
+
+  #sitemap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #socials {
+    justify-content: start;
+    gap: 70px;
+  }
+
+  footer {
+    padding: 32px 32px 48px 32px;
+  }
+
+  #copyrightArea {
+    text-align: left;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 1024px) {
+  #menuButton {
+    display: none;
+  }
+
+  #signInArea {
+    display: block;
+  }
+
+  #rightSideMenuArea {
+    display: flex;
+    align-items: center;
+  }
+
+  #rightSideMenuArea > ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+  }
+
+  #rightSideMenuArea > ul > li {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    padding: 0 16px;
+  }
+
+  #rightSideMenuArea > ul > li > a {
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+  }
+
+  #signInMenuItem a {
+    color: #FFFFFF;
+  }
+
+  #tryForFreeMenuItem {
+    border-radius: 2px;
+    background-color: #FFFFFF;
+  }
+
+  #tryForFreeMenuItem a {
+    text-transform: uppercase;
+    color: #682765;
+  }
+
+  #mainMenuArea {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  #mainMenuList {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }
+
+  #mainMenuList a {
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  #salesSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #salesSection > h3 {
+    font-size: 40px;
+    flex: 0 0 100%;
+  }
+
+  #salesSection button {
+    margin: 0;
+    width: 200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #loginArea {
+    flex-direction: row;
+  }
+
+  #loginArea button {
+    width: 50%;
+  }
+
+  #sloganArea {
+    width: 50%;
+  }
+
+  #productImageArea {
+    width: 50%;
+  }
+
+  #productImageArea {
+    height: auto;
+  }
+}
