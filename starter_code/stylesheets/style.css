@@ -8,3 +8,354 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* ------------------------------------------
+   Base Styles = Iteration 1 | Mobile First (width < 768px)
+   ------------------------------------------ */
+
+body {
+  margin: 0;
+  font-family: "Nunito";
+ 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  text-align: center;
+  font-size: 14pt;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ----------- NAVBAR ------------ */
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #540b51;
+  padding: 20px;
+}
+
+#navbar img {
+  height: 25px;
+}
+
+#navbar #nav-menu {
+  display: none;
+}
+
+#navbar button {
+  background-color: transparent;
+  border: none;
+  padding: 6px;
+}
+
+nav #nav-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+nav #nav-button-wrapper img {
+  height: 20px;
+}
+
+/* ----------- HEADER / HERO ------------ */
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  background-color: #540b51;
+}
+
+header #content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  background-color: #540b51;
+  padding: 80px 12px;
+}
+
+#hero h1 {
+  color: white;
+  font-family: "Poppins";
+  font-size: 30pt;
+  font-weight: 600;
+  text-align: center;
+}
+
+#hero p {
+  color: white;
+}
+
+.span-yellow {
+  color: #ecb12f;
+  font-weight: 600;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  gap: 16px;
+}
+
+button {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  text-transform: uppercase;
+  font-family: "Nunito";
+  font-size: 10pt;
+  letter-spacing: 1pt;
+  font-weight: 700;
+  gap: 8px;
+  color: #540b51;
+  border-radius: 4px;
+  box-shadow: none;
+  border: 1px solid white;
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: white;
+}
+
+#google-button {
+  position: relative;
+  gap: 20px;
+  background-color: #4285f4;
+  border: 1px solid #4285f4;
+  color: white;
+  padding: 4px;
+}
+
+#google-logo-wrapper {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  bottom: 4px;
+
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  padding: 4px;
+  aspect-ratio: 1;
+  border-radius: 2px;
+}
+
+#google-button img {
+  width: 24px;
+  aspect-ratio: 1;
+  object-fit: cover; /* Crops & scales image like background-size: cover */
+}
+
+#hero-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ----------- SECTION 1: TRUSTED BY ------------ */
+
+#trusted-section {
+  background-color: #f3eae2;
+  padding: 60px 10vw;
+}
+
+#trusted-section p {
+  text-transform: uppercase;
+  font-size: 10pt;
+  letter-spacing: 1pt;
+  font-weight: 700;
+  padding-bottom: 20px;
+  color: #000000;
+}
+
+#logos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.trusted-logo {
+  height: 45px;
+}
+
+/* ----------- SECTION 2: STATS ------------ */
+
+#section-2 {
+  padding: 40px 10vw;
+}
+
+#section-2 h3 {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 24pt;
+  color: #540b51;
+}
+
+#section-2 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-top: 20px;
+}
+
+.span-purple {
+  font-family: "Poppins";
+  font-size: 40pt;
+  font-weight: 600;
+  color: #540b51;
+  letter-spacing: -2pt;
+}
+
+#section-2 ul p {
+  font-weight: 800;
+  font-size: 12pt;
+}
+
+/* ----------- SECTION 3: CTA ------------ */
+
+#section-3 {
+  padding: 40px 10vw;
+  background-color: #540b51;
+}
+
+#section-3 h3 {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 24pt;
+  color: white;
+  font-weight: 600;
+}
+
+/* ----------- FOOTER ------------ */
+
+footer {
+  padding: 40px 10vw;
+}
+
+footer ul {
+  padding-top: 20px;
+}
+
+#links-ul li {
+  padding: 10px 0;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+#links-ul li img {
+  width: 20px;
+  height: 20px;
+}
+
+.span-blue {
+  color: #4285f4;
+}
+
+#social-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+/* ------------------------------------------
+   Iteration 2 | Small Screens (768px - 1023px)
+   ------------------------------------------ */
+
+@media (768px <= width < 1024px) {
+
+  /* Header: 1 column -> 2 columns (content | image) */
+  #hero {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #hero > div {
+    width: 50%;
+  }
+
+  header #content-wrapper {
+    align-items: flex-start;
+  }
+
+  #hero h1,
+  #hero p {
+    text-align: left;
+  }
+
+  /* Trusted section: logos in a single row */
+  #logos-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  /* Section 2: stats displayed horizontally */
+  #section-2 ul {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* Footer: links displayed horizontally */
+  #links-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 24px;
+  }
+
+
+  #social-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 60px;
+  padding: 30px 0;
+}
+
+
+.trusted-logo {
+  height: 30px;
+}
+
+#section-2 ul p {
+  font-weight: 800;
+  font-size: 12pt;
+  text-align: left;
+}
+}
