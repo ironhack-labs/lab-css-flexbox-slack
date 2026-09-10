@@ -1,10 +1,452 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+/* ==========================================================================
+   Variables y Paleta de Colores Exigida
+   ========================================================================== */
+:root {
+  --bg-purple: #540B51;
+  --bg-ivory: #F3EAE2;
+  --btn-blue: #4285F4;
+  --titles-black: #191817;
+  --paragraph-black: #000000;
+  --paragraph-yellow: #ECB12F;
+  --links-blue: #2E71A6;
+  --footer-links-grey: #454245;
+  --white: #ffffff;
+}
+
+/* Reset y Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--paragraph-black);
+  background-color: var(--white);
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+/* ==========================================================================
+   ITERACIÓN 1: Pantallas Móviles (< 768px) - Mobile First
+   ========================================================================== */
+
+/* Navbar */
+nav {
+  background-color: var(--bg-purple);
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav > div:first-child img {
+  height: 25px;
+  filter: brightness(0) invert(1); /* Pasa el logo a blanco */
+}
+
+/* Lista de navegación izquierda (Oculta en móvil) */
+nav > div:first-child ul {
+  display: none;
+}
+
+nav > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav > div:last-child button img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+/* Lista de acciones derecha (Oculta en móvil) */
+nav > div:last-child ul {
+  display: none;
+}
+
+
+/* Header / Hero Section */
+header {
+  background-color: var(--bg-purple);
+  color: var(--white);
+  padding: 2.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: var(--paragraph-yellow);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+header > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+header button {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+header button:first-child {
+  background-color: var(--white);
+  color: var(--bg-purple);
+}
+
+header button:last-child {
+  background-color: var(--btn-blue);
+  color: var(--white);
+}
+
+header button:last-child img {
+  width: 18px;
+  height: 18px;
+  background-color: var(--white);
+  padding: 2px;
+  border-radius: 2px;
+}
+
+header > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Main - Sección 1: Empresas de Confianza */
+main section:nth-of-type(1) {
+  background-color: var(--bg-ivory);
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+}
+
+main section:nth-of-type(1) > p {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--titles-black);
+  margin-bottom: 2rem;
+}
+
+main section:nth-of-type(1) > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+main section:nth-of-type(1) img {
+  max-height: 30px;
+  object-fit: contain;
+}
+
+
+/* Main - Sección 2: Equipos */
+main section:nth-of-type(2) {
+  padding: 3.5rem 1.25rem;
+  text-align: center;
+}
+
+main section:nth-of-type(2) h3 {
+  font-size: 2rem;
+  color: var(--titles-black);
+  margin-bottom: 0.75rem;
+  font-weight: 800;
+}
+
+main section:nth-of-type(2) > p {
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+main section:nth-of-type(2) ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+main section:nth-of-type(2) li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section:nth-of-type(2) li span {
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: var(--bg-purple);
+  line-height: 1;
+}
+
+main section:nth-of-type(2) li p:last-child {
+  font-weight: 600;
+  max-width: 260px;
+}
+
+
+/* Main - Sección 3: Digital HQ CTA */
+main section:nth-of-type(3) {
+  background-color: var(--bg-purple);
+  color: var(--white);
+  padding: 3.5rem 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+main section:nth-of-type(3) h3 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+main section:nth-of-type(3) button {
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+main section:nth-of-type(3) button:nth-of-type(1) {
+  background-color: var(--white);
+  color: var(--bg-purple);
+}
+
+main section:nth-of-type(3) button:nth-of-type(2) {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--white);
+  padding: 2.5rem 1.25rem 1.5rem;
+}
+
+footer ul:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--footer-links-grey);
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid #ebebeb;
+  margin: 1.5rem 0;
+}
+
+footer ul:nth-of-type(2) {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+footer ul:nth-of-type(2) i {
+  color: var(--titles-black);
+}
+
+footer small {
+  color: #696969;
+  font-size: 0.75rem;
+}
+
+
+/* ==========================================================================
+   ITERACIÓN 2: Pantallas Pequeñas (768px <= ancho < 1024px)
+   ========================================================================== */
+@media (min-width: 768px) {
+
+  /* Header: Pasar a 2 columnas */
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header > div {
+    flex: 1;
+  }
+
+  /* Logotipos en una sola fila horizontal */
+  main section:nth-of-type(1) > div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Lista de estadísticas en fila horizontal */
+  main section:nth-of-type(2) ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main section:nth-of-type(2) li {
+    flex: 1;
+    padding: 0 0.5rem;
+  }
+
+  /* Pie de página horizontal */
+  footer ul:first-of-type {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+
+/* ==========================================================================
+   EXTRA: ITERACIÓN 3: Pantallas Medianas (1024px <= ancho < 1440px)
+   ========================================================================== */
+@media (min-width: 1024px) {
+
+  /* Mostrar menú de enlaces de navegación */
+  nav > div:first-child ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  nav > div:first-child ul a {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  /* Mostrar opciones del lado derecho y ocultar botón de menú hamburguesa */
+  nav > div:last-child ul[hidden] {
+    display: flex !important;
+    gap: 1.25rem;
+    align-items: center;
+  }
+
+  nav > div:last-child ul a {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  nav > div:last-child ul li:last-child a {
+    background-color: var(--white);
+    color: var(--bg-purple);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+
+  /* Ocultar icono de menú hamburguesa */
+  nav > div:last-child button:last-child {
+    display: none;
+  }
+
+  /* Botones de Digital HQ horizontalmente */
+  main section:nth-of-type(3) {
+    flex-direction: column;
+  }
+
+  main section:nth-of-type(3) button {
+    width: auto;
+    min-width: 180px;
+  }
+
+  main section:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Agrupa visualmente los botones en horizontal */
+  main section:nth-of-type(3) button:nth-of-type(1) {
+    margin-right: 0.5rem;
+  }
+}
+
+
+/* ==========================================================================
+   EXTRA: ITERACIÓN 4: Pantallas Grandes (ancho >= 1440px)
+   ========================================================================== */
+@media (min-width: 1440px) {
+
+  header {
+    padding: 3rem 5rem;
+  }
+
+  /* Botones del header lado a lado horizontalmente */
+  header > div:first-child > div {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  header button {
+    width: auto;
+    flex: 1;
+  }
+
+  /* Imagen del header centrada y visible */
+  header > div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header > div:last-child img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
