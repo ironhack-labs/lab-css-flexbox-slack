@@ -1,10 +1,547 @@
 /*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
+background purple: #540B51 -> primary
+background ivory: #F3EAE2 -> surface
+button blue: #4285F4 -> accent 2
+titles black: #191817 -> not used in the design
+paragraph black: #000000 -> black
+paragraph yellow: #ECB12F -> accent
+links blue: #2E71A6 -> accent 3
+footer links grey: #454245 -> grey
 */
+
+
+/* Acumin Pro and Acumin Pro Semi Condensed for titles and buttons*/
+@font-face {
+    font-family: "Acumin Pro";
+    src:
+        url("../fonts/AcuminPro-Bold.woff") format("woff"),
+        url("../fonts/AcuminPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Acumin Pro SemiCond";
+    src:
+        url("../fonts/AcuminProSemiCond-Semibold.woff") format("woff"),
+        url("../fonts/AcuminProSemiCond-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Just some global variables to make my life easier */
+/* You also might notice that I'm (almost) always using rem instead of px. Just an old habit for fluid layouts. */
+:root {
+    --color-primary: #540B51;
+    --color-accent-1: #ECB12F;
+    --color-accent-2: #4285F4;
+    --color-accent-3: #2E71A6;
+    --color-surface: #F3EAE2;
+    --color-invert: #fff;
+    --color-black: #000;
+    --color-grey: #454245;
+    --color-lightgrey: #EBEAEB;
+
+    --border-radius-m: 0.25rem;
+    --border-radius-s: 0.125rem;
+}
+
+/* No need to font-face Nunito since it's imported with Google CDN*/
+body {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: var(--color-black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Acumin Pro", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+    text-align: center;
+    color: var(--color-primary);
+    margin: 0 0 .5rem;
+    letter-spacing: -0.03em;
+}
+
+h1 {
+    font-family: "Acumin Pro SemiCond", sans-serif;
+    font-weight: 600;
+    font-size: 2.875rem;
+}
+
+h3 {
+    font-size: 2.1rem;
+    line-height: 118%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    padding: 2rem;
+}
+
+nav img {
+    max-height: 1.5625rem;
+    display: block;
+}
+
+nav ul {
+    display: none;
+}
+
+nav div:last-child {
+    display: flex;
+    gap: 1.96875rem;
+}
+
+nav button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    max-height: 1.5625rem;
+}
+
+nav button>img {
+    height: 1.3125rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    padding: 1.25rem 0.9375rem 0;
+    color: var(--color-invert);
+}
+
+header h1 {
+    color: var(--color-invert);
+}
+
+header p>span {
+    color: var(--color-accent-1);
+    font-weight: 900;
+}
+
+header div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+}
+
+button {
+    font-family: "Acumin Pro SemiCond", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background-color: var(--color-invert);
+    color: var(--color-primary);
+    width: 100%;
+    padding: 1rem 0.625rem;
+    border: 0;
+    border-radius: var(--border-radius-m);
+}
+
+header>div>div button:last-child {
+    display: flex;
+    align-items: center;
+    padding: 0.4375rem 3.25rem 0.4375rem 0.4375rem;
+    background-color: var(--color-accent-2);
+    color: var(--color-invert);
+}
+
+header>div>div button:last-child div {
+    flex: 0 0 2.8125rem;
+    height: 2.8125rem;
+    padding: 0.5rem 0.625rem;
+    background-color: var(--color-invert);
+    border-radius: var(--border-radius-s);
+}
+
+header>div>div button:last-child div>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header>div>div button:last-child span {
+    flex: 1;
+    width: auto;
+}
+
+/* This vw sizes might sound crazy but I just did some math to keep it consistant with the Figma files and then tweak them to match visually */
+header>div:last-child {
+    margin: 3rem -0.9375rem 0;
+    height: 74.5vw;
+    overflow: hidden;
+}
+
+header>div:last-child>img {
+    max-width: none;
+    width: 159.22vw;
+    margin-left: -12.92vw;
+}
+
+main section {
+    padding: 3.125rem 0.9375rem;
+}
+
+main section:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--color-surface);
+}
+
+main section:first-child p {
+    font-family: "Acumin Pro SemiCond", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main section:first-child div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+main section:nth-child(2) ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 3.125rem;
+}
+
+main section:nth-child(2) li {
+    max-width: 45%;
+}
+
+main section:nth-child(2) ul li p {
+    margin: 0 0 .5rem;
+}
+
+main section:nth-child(2) ul li p:first-child {
+    font-family: "Acumin Pro", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+    color: var(--color-primary);
+    font-size: 3.5rem;
+    letter-spacing: -0.03em;
+}
+
+main section:nth-child(2) ul li p:last-child {
+    font-size: 0.9375rem;
+    line-height: 140%;
+    font-weight: 900;
+}
+
+main section:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+    background-color: var(--color-primary);
+    color: var(--color-invert);
+}
+
+main section:last-child h3 {
+    color: var(--color-invert);
+    margin-bottom: 1.5rem;
+}
+
+main section:last-child button:last-child {
+    background-color: transparent;
+    border: 1.5px solid var(--color-invert);
+    color: var(--color-invert);
+}
+
+footer {
+    padding: 2.5rem 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer hr {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-lightgrey);
+    border: 0;
+    margin: 0;
+}
+
+footer ul:first-of-type,
+footer ul:last-of-type {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+footer ul:first-of-type {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 0.875rem;
+    font-weight: 900;
+}
+
+footer ul:first-of-type li:nth-last-child(2),
+footer ul:first-of-type li:last-child {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+/* used background instead of content here to be able to visually adjust them better */
+footer ul:first-of-type li:nth-last-child(2)::before {
+    content: "";
+    background: url("../images/icon-region.png");
+    width: 1rem;
+    height: 1rem;
+    margin-top: -0.0625rem;
+    margin-right: 0.1875rem;
+}
+
+footer ul:first-of-type li:last-child::before {
+    content: "";
+    background: url("../images/icon-download.png");
+    width: 1.1875rem;
+    height: 1rem;
+    margin-top: -0.125rem;
+}
+
+footer ul:first-of-type li:last-child {
+    color: var(--color-accent-3);
+}
+
+footer ul:last-of-type {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul:last-of-type i {
+    font-size: 1.25rem;
+}
+
+footer small {
+    display: block;
+    font-size: 0.75rem;
+    line-height: 160%;
+    color: var(--color-grey);
+}
+
+/* iteration 2 - small screens */
+@media screen and (width > 768px) {
+    header {
+        flex-direction: row;
+        background: url(../images/background-singup.png);
+        background-size: cover;
+        text-align: left;
+        padding: 1.675rem 0 9.375rem 1.875rem;
+        gap: 1.375rem;
+    }
+
+    header>div:first-child {
+        flex: 1.5 1 0;
+    }
+
+    header>div:last-child {
+        display: flex;
+        align-items: center;
+        flex: 1 1 0;
+        height: auto;
+        margin: 0;
+    }
+
+    header h1,
+    header p {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 5.25rem;
+        text-align: left;
+    }
+
+    header p {
+        font-size: 1.375rem;
+    }
+
+    header>div:last-child>img {
+        width: 80vw;
+        margin-left: 0;
+    }
+
+    main section,
+    footer {
+        padding: 3.125rem 1.875rem;
+    }
+
+    main section:nth-child(2) {
+        background-color: var(--color-invert);
+    }
+
+    main section:nth-child(2) ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 1.25rem;
+        gap: 3rem;
+    }
+
+    main section:nth-child(2) li {
+        max-width: 20%;
+    }
+
+    main section:nth-child(2) li p {
+        text-align: left;
+    }
+
+    main section:last-child {
+        padding-right: 5.625rem;
+        padding-left: 5.625rem;
+    }
+
+    footer {
+        text-align: left;
+        background-color: var(--color-invert);
+    }
+
+    footer ul:first-of-type {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    footer ul:last-of-type {
+        justify-content: left;
+        gap: 4.375rem;
+    }
+}
+
+/* iteration 3 - medium screens */
+@media screen and (width > 1024px) {
+
+    nav div:first-child,
+    nav div:last-child {
+        display: flex;
+    }
+
+    nav div:first-child {
+        gap: 2.9375rem;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.875rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        white-space: nowrap;
+    }
+
+    nav a {
+        color: var(--color-invert);
+        text-decoration: none;
+    }
+
+    nav ul[hidden] li:last-child a {
+        font-family: "Acumin Pro SemiCond", sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        border-radius: var(--border-radius-m);
+        background-color: var(--color-invert);
+        color: var(--color-primary);
+        padding: 0.625rem 1rem 0.75rem;
+    }
+
+    nav button:last-of-type {
+        display: none;
+    }
+
+    header div:first-child {
+        flex: 1 1 0;
+    }
+
+    header h1 {
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+
+    header>div:last-child>img {
+        width: 60.5vw;
+    }
+
+    
+    main section:last-child {
+        display: block;
+    }
+
+    main section:last-child button {
+        display: inline-block;
+        width: fit-content;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+        margin: 0 0.46875rem;
+    }
+}
+
+/* iteration 4 - large screens */
+@media screen and (width > 1440px) {
+
+    html {
+        background-color: var(--color-lightgrey);
+    }
+
+    /* To prevent content to strech too much, I set a max-width for the body. Now it has a cool 2010 vibe 8) */
+    body {
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+
+    header {
+        padding: 3.125rem 6.25rem 9.375rem 6.25rem;
+    }
+
+    header h1 {
+        font-size: 5.625rem;
+        margin-bottom: 12rem;
+    }
+
+    header div>div {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    header>div>div button:last-child {
+        padding-right: 0.4375rem;
+    }
+
+    header>div:last-child>img {
+        width: 100%;
+    }
+}

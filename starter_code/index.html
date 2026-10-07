@@ -9,7 +9,18 @@
   <!-- link the Font Awesome stylesheet - CDN -->
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
+  <!-- link fonts -->
+  <!-- added the font-faced fonts with a preload to prevent the brief flickering when reloading the screen -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="preload" href="./fonts/AcuminPro-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AcuminPro-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AcuminProSemiCond-Semibold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AcuminProSemiCond-Semibold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
   <!-- link your styles -->
+  <link rel="stylesheet" href="./stylesheets/modern-normalize.css">
   <link rel="stylesheet" href="./stylesheets/style.css" />
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
@@ -64,13 +75,17 @@
     <div>
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <!-- added an span here to be able to stylize it -->
+      <p><span>Slack is free to try</span> for as long as you'd like.</p>
 
       <div>
         <button>Sign up with email</button>
 
         <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
+          <!-- added a div here to be able to stylize this properly -->
+          <div>
+            <img src="./images/logo-google.png" alt="Google logo" />
+          </div>
           <span>Sign up with Google</span>
         </button>
       </div>
@@ -86,13 +101,14 @@
     <section>
       <p>Trusted by companies all over the world</p>
 
+      <!-- added with and height to all logotypes, since they are the same in all screen sizes, so i dont have to create crazy css selectors for each one -->
       <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+        <img src="./images/logo-airbnb.png" alt="Airbnb logo" width="112px" height="35px"/>
+        <img src="./images/logo-nasa.png" alt="NASA logo" width="65.77px" height="55px" />
+        <img src="./images/logo-uber.png" alt="Uber logo" width="75px" height="26px" />
+        <img src="./images/logo-target.png" alt="Target logo" width="49.29px" height="50px" />
+        <img src="./images/logo-nyt.png" alt="New York Times logo" width="205.62px" height="35px" />
+        <img src="./images/logo-spotify.png" alt="Spotify logo" width="134.86px" height="40px" />
       </div>
 
     </section>
@@ -106,24 +122,21 @@
         <li>
           <p><span>85%</span></p>
           <p>
-            of users say Slack has improved communication
-            <sup>*</sup>
+            of users say Slack has improved communication<sup>*</sup>
           </p>
         </li>
 
         <li>
           <p><span>86%</span></p>
           <p>
-            feel their ability to work remotely has improved has improved
-            <sup>*</sup>
+            feel their ability to work remotely has improved has improved<sup>*</sup>
           </p>
         </li>
 
         <li>
           <p><span>88%</span></p>
           <p>
-            feel more connected to their teams*
-            <sup>*</sup>
+            feel more connected to their teams<sup>*</sup>
           </p>
         </li>
       </ul>
@@ -139,6 +152,9 @@
   </main>
 
   <footer>
+    <!-- moved the hr on top to match the design -->
+    <hr>
+
     <ul>
       <li>Status</li>
       <li>Privacy</li>
@@ -148,8 +164,6 @@
       <li>Change Region</li>
       <li>Download Slack</li>
     </ul>
-
-    <hr>
 
     <ul>
       <li>
