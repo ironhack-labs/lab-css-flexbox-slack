@@ -19,7 +19,7 @@
 <body>
   <!-- NAVBAR -->
   <nav>
-    <div>
+    <div class="nav-links">
       <img src="./images/slack-logo.png" alt="Slack logo" />
 
       <ul>
@@ -38,16 +38,16 @@
       </ul>
     </div>
 
-    <div>
-      <button>
-        <img src="./images/icon-search.png" alt="Search icon">
+    <div class="button-container">
+      <button id="search-button">
+        <img  src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
-        <img src="./images/icon-menu.png" alt="Menu icon">
+      <button hidden id="menu-icon">
+        <img  src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <ul>
         <li>
           <a href="#">Sign in</a>
         </li>
@@ -61,29 +61,29 @@
 
   <!-- HEADER -->
   <header>
-    <div>
+    <div class="title-container">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><span class="hightlight">Slack is free to try </span>for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="text-input">
+        <button class="slack-buttons">SIGN UP WITH EMAIL</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+        <button class="slack-buttons">
+          <img id="logo-google"src="./images/logo-google.png" alt="Google logo" />
+          <span>SIGN UP WITH GOOGLE</span>
         </button>
       </div>
 
     </div>
 
-    <div>
+    <div id="app-screenshot">
       <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
-    <section>
+    <section class = "below-header">
       <p>Trusted by companies all over the world</p>
 
       <div>
@@ -97,14 +97,14 @@
 
     </section>
 
-    <section>
+    <section class="main-section-3">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
 
       <ul>
         <li>
-          <p><span>85%</span></p>
+          <p><span class = "statistics">85%</span></p>
           <p>
             of users say Slack has improved communication
             <sup>*</sup>
@@ -112,7 +112,7 @@
         </li>
 
         <li>
-          <p><span>86%</span></p>
+          <p><span class = "statistics">86%</span></p>
           <p>
             feel their ability to work remotely has improved has improved
             <sup>*</sup>
@@ -120,7 +120,7 @@
         </li>
 
         <li>
-          <p><span>88%</span></p>
+          <p><span class = "statistics">88%</span></p>
           <p>
             feel more connected to their teams*
             <sup>*</sup>
@@ -129,17 +129,19 @@
       </ul>
     </section>
 
-    <section>
+    <section class = "before-footer">
       <h3>Welcome to your new digital HQ</h3>
-
+<div>
       <button>Try for free</button>
       <button>Talk to sales</button>
+      </div>
     </section>
 
   </main>
 
   <footer>
-    <ul>
+    <hr>
+    <ul id="footer-element-1">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
@@ -149,9 +151,9 @@
       <li>Download Slack</li>
     </ul>
 
-    <hr>
+    
 
-    <ul>
+    <ul id="footer-element-2">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
