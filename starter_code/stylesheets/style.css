@@ -1,4 +1,4 @@
-/*
+/* /*
 background purple: #540B51
 background ivory: #F3EAE2
 button blue: #4285F4
@@ -6,5 +6,455 @@ titles black: #191817
 paragraph black: #000000
 paragraph yellow: #ECB12F
 links blue: #2E71A6
-footer links grey: #454245
-*/
+footer links grey: #454245 */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+
+@media (max-width :768px ){
+   
+.nav-bar{
+background-color: #540B51;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.slack-icon{
+    width: 30%;
+}
+.icon-search{
+    position:relative;
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+}
+.nav-icon{
+    background-color: #540B51;
+    border: 0;
+}
+header{
+    background-color: #540B51;
+}
+.title{
+    padding-top: 20px;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+body{
+    margin: 0;
+  
+}
+.main-img {
+  max-width: 135%;
+  height: auto;
+}
+.nav-bar > div:first-child ul {
+  display: none;
+}
+.headerSpan{
+    color: orange;
+}
+#headerSubText{
+    text-align: center;
+    color: white;
+
+}
+.googleButton{
+  position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 0;
+    border-radius: 5px;
+    height: 48px;
+    width: 90%;
+    margin-bottom: 40px;
+    background-color: #4285F4;
+    color: white;
+    align-items: center;
+
+}
+.googleLogo{
+  position: absolute;
+  left: 6px;
+  width: 25px;
+  background-color: white;
+  padding: 5px;
+}
+#headerButtons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button{
+  width: 90%;
+  height: 48px;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 10px;
+  color: #540B51;
+}
+#divCompanies{
+   background-color: #F3EAE2;
+   padding-top: 20px;
+  }
+.companies img {
+  width: 100%;
+  max-height: 36px;
+  object-fit: contain;
+}
+  .companies {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px 8px;
+  align-items: center;
+  justify-items: center;
+  padding: 10px 8px;
+}
+.companies img:nth-child(n + 5) {
+  grid-column: span 2;
+}
+  .textCompany {
+    font-weight: bold ;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+  .title2{
+    text-align: center;
+    color: #540B51;
+    font-size: 30px;
+  }
+  .text{
+    text-align: center;
+  }
+  .porcentages span{
+    color: #540B51;
+    font-size: 65px;
+
+  }
+  .porcentages {
+     list-style: none;
+   text-align: center;
+  }
+  .porcentages p + p{
+    font-weight: bold;
+    padding-right: 20px;
+ 
+  }
+.section1{
+  background-color: #540B51;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.talkToSales{
+  background-color: #540B51;
+  color: white;
+  border: 2px solid white;
+  
+}
+ .listFooter{
+  list-style: none;
+  }
+  .listFooter li{
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .socialMedia{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 40px;
+  }
+  .linksBlue {
+    color: #2E71A6;
+    display: flex;
+    flex-direction: row;
+  }
+  .linksGrey {
+    color: #454245;
+    display: flex;
+    flex-direction: row;
+  }
+  #imgBlueLink{
+    padding-right: 5px;
+    width: 20px;
+    height: 15px;
+  }
+  #imgGreyLink{
+    padding-right: 5px;
+    width: 15px;
+  }
+} 
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .nav-bar {
+    min-height: 58px;
+    padding: 0 4%;
+    box-sizing: border-box;
+    background-color: #540B51;
+  }
+
+  .slack-icon {
+    width: 110px;
+  }
+
+  .nav-bar > div:first-child ul {
+    display: none;
+  }
+
+  .icon-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-icon {
+    padding: 8px;
+    border: 0;
+    background-color: transparent;
+  }
+
+  .nav-icon img {
+    width: 20px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 20px;
+    padding: 32px 4%;
+    box-sizing: border-box;
+    background-color: #540B51;
+    color: white;
+  }
+
+  .title {
+    padding-top: 0;
+    margin: 0;
+    display: block;
+    text-align: left;
+    color: white;
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  #headerSubText {
+    text-align: left;
+    color: white;
+  }
+
+  .headerSpan {
+    color: #ECB12F;
+  }
+
+  #headerButtons {
+    align-items: stretch;
+  }
+
+  .button,
+  .googleButton {
+    width: 100%;
+    max-width: 460px;
+    height: 48px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    border: 0;
+    color: #540B51;
+  }
+
+  .googleButton {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: #4285F4;
+    color: white;
+  }
+
+  .googleLogo {
+    position: absolute;
+    left: 6px;
+    width: 25px;
+    padding: 5px;
+    background-color: white;
+  }
+
+  .main-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #divCompanies {
+    padding: 24px 4%;
+    background-color: #F3EAE2;
+    box-sizing: border-box;
+  }
+
+  .textCompany {
+    margin: 0 0 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .companies {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 12px;
+  }
+
+  .companies img {
+    width: 100%;
+    max-height: 40px;
+    object-fit: contain;
+  }
+
+  .title2,
+  .text {
+    text-align: center;
+  }
+
+  .title2 {
+    color: #540B51;
+    font-size: 30px;
+  }
+
+  .porcentages {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin: 40px 5%;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+
+  .porcentages span {
+    color: #540B51;
+    font-size: 56px;
+  }
+
+  .porcentages p + p {
+    padding-right: 0;
+    font-weight: bold;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 6%;
+    box-sizing: border-box;
+    background-color: #540B51;
+    color: white;
+  }
+
+  .section1 h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .section1 .button {
+    width: 100%;
+    max-width: 820px;
+  }
+
+  .talkToSales {
+    border: 2px solid white;
+    background-color: #540B51;
+    color: white;
+  }
+
+  footer {
+    padding: 0 4%;
+    box-sizing: border-box;
+  }
+
+  .listFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0;
+    padding: 24px 0;
+    list-style: none;
+    font-size: 11px;
+  }
+
+  .listFooter li {
+    margin-bottom: 0;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .linksBlue,
+  .linksGrey {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  #imgBlueLink {
+    width: 20px;
+    height: 15px;
+    padding-right: 5px;
+  }
+
+  #imgGreyLink {
+    width: 15px;
+    padding-right: 5px;
+  }
+
+  .socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 16px 0;
+    list-style: none;
+  }
+}
+
+
