@@ -1,10 +1,685 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
+/* Colors
+Purple: #540B51
+Ivory: #F3EAE2
+Blue: #4285F4
+Black: #191817
+Yellow: #ECB12F
+Links: #2E71A6
+Footer: #454245
 */
+
+
+/* General */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Iteration 1 - Mobile */
+
+
+/* Navbar */
+
+nav {
+  background-color: #540B51;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav div img {
+  width: 100px;
+}
+
+nav ul {
+  display: none;
+}
+
+nav button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+nav button img {
+  width: 20px;
+}
+
+
+/* Header */
+
+header {
+  background-color: #540B51;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 40px;
+  line-height: 1.1;
+  margin: 35px 20px 20px;
+}
+
+header p {
+  font-size: 16px;
+  margin: 10px 15px 20px;
+}
+
+header p span {
+  color: #ECB12F;
+  font-weight: bold;
+}
+
+
+/* Header buttons */
+
+header div div {
+  width: 100%;
+  padding: 0 15px;
+}
+
+header button {
+  width: 100%;
+  height: 55px;
+  margin: 6px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.email {
+  background-color: white;
+  color: #540B51;
+}
+
+.blue {
+  background-color: #4285F4;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.google-logo {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  position: absolute;
+  left: 5px;
+}
+
+.google-text {
+  color: white;
+}
+
+
+/* Header image */
+
+.hero-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 130%;
+  max-width: none;
+  margin-top: 30px;
+  display: block;
+}
+
+
+/* Main */
+
+main section {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+main section h3 {
+  font-size: 30px;
+  color: #540B51;
+  margin: 20px;
+}
+
+main section p {
+  font-size: 18px;
+}
+
+
+/* Companies */
+
+.companies {
+  background-color: #F3EAE2;
+  padding: 40px 20px;
+}
+
+.companies p {
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.companies div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 10px;
+}
+
+.companies img {
+  width: 60px;
+  height: auto;
+  margin: 10px 5px;
+}
+
+
+/* Stats */
+
+.starts {
+  background-color: white;
+  padding: 60px 20px;
+}
+
+.starts h3 {
+  color: #540B51;
+}
+
+.starts p {
+  color: #000000;
+}
+
+.starts ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.starts li {
+  text-align: center;
+  margin: 20px;
+  max-width: 300px;
+}
+
+.starts li p {
+  font-weight: bold;
+}
+
+.starts span {
+  font-size: 50px;
+  color: #540B51;
+  font-weight: bold;
+}
+
+
+/* Stats note */
+
+.stats-note {
+  color: #777777 !important;
+  font-size: 14px !important;
+  font-weight: normal;
+  line-height: 1.6;
+  text-align: center;
+  margin: 50px 10px 0;
+}
+
+.stats-note strong {
+  color: #191817;
+}
+
+
+/* CTA */
+
+.cta {
+  background-color: #540B51;
+  padding: 40px 20px;
+}
+
+.cta h3 {
+  color: white;
+}
+
+.cta button {
+  width: 100%;
+  height: 55px;
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  color: #540B51;
+  background-color: white;
+}
+
+.cta .talk-to-sales {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+
+/* Footer */
+
+footer {
+  padding: 20px;
+  color: #454245;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+footer hr {
+  border: 0;
+  border-top: 1px solid #dddddd;
+}
+
+footer i {
+  font-size: 20px;
+}
+
+footer small {
+  line-height: 25px;
+}
+
+
+/* Footer icons */
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.download {
+  color: #2E71A6;
+}
+
+
+/* Social icons */
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.social-icons li {
+  margin: 0;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: #191817;
+}
+
+
+/* Iteration 2 - Small screens */
+
+@media (min-width: 768px) {
+
+  /* Header */
+
+  header {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  header div {
+    width: 50%;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font-size: 55px;
+    margin: 30px 20px;
+  }
+
+  header p {
+    margin: 10px 20px 20px;
+  }
+
+  header div div {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  header button {
+    width: 100%;
+  }
+
+  .blue {
+    align-items: center;
+  }
+
+
+  /* Header image */
+
+  .hero-image {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .hero-image img {
+    width: 150%;
+    max-width: none;
+    margin-top: 0;
+  }
+
+
+  /* Companies */
+
+  .companies div {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .companies img {
+    width: 12%;
+    margin: 10px 0;
+  }
+
+
+  /* Stats */
+
+  .starts ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .starts li {
+    width: 30%;
+    margin: 10px;
+  }
+
+
+  /* Footer */
+
+  footer ul {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  footer li {
+    margin: 10px;
+  }
+
+}
+
+
+/* Iteration 3 - Medium screens */
+
+@media (min-width: 1024px) {
+
+  /* Navbar */
+
+  nav {
+    padding: 20px 40px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+  }
+
+  nav ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav div img {
+    width: 120px;
+  }
+
+  /* Show hidden navbar links */
+
+  nav ul[hidden] {
+    display: flex;
+  }
+
+
+  /* Header */
+
+  header {
+    padding: 40px;
+  }
+
+  header h1 {
+    font-size: 65px;
+    line-height: 1;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  .hero-image img {
+    width: 140%;
+  }
+
+
+  /* Companies */
+
+  .companies {
+    padding: 30px 40px;
+  }
+
+  .companies img {
+    width: 10%;
+  }
+
+
+  /* Stats */
+
+  .starts {
+    padding: 60px 40px;
+  }
+
+  .starts h3 {
+    font-size: 35px;
+  }
+
+
+  /* CTA */
+
+  .cta {
+    padding: 40px;
+  }
+
+  .cta button {
+    width: 40%;
+    margin: 5px;
+  }
+
+
+  /* Footer */
+
+  footer {
+    padding: 30px 40px;
+  }
+  .social-icons {
+
+    justify-content: flex-start;
+
+    gap: 50px;
+
+  }
+
+}
+
+
+/* Iteration 4 - Large screens */
+
+@media (min-width: 1440px) {
+
+  /* Navbar */
+
+  nav {
+    padding: 25px 60px;
+  }
+
+
+  /* Header */
+
+  header {
+    padding: 50px 60px;
+    align-items: center;
+  }
+
+  header div {
+    width: 50%;
+  }
+
+  header h1 {
+    font-size: 75px;
+    margin: 20px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+
+  /* Header buttons */
+
+  header div div {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  header button {
+    width: 50%;
+    height: 60px;
+    margin: 0;
+  }
+
+
+  /* Header image */
+
+  .hero-image {
+    width: 50%;
+    overflow: visible;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+
+  /* Companies */
+
+  .companies {
+    padding: 40px 60px;
+  }
+
+  .companies img {
+    width: 9%;
+  }
+
+
+  /* Stats */
+
+  .starts {
+    padding: 70px 60px;
+  }
+
+  .starts h3 {
+    font-size: 40px;
+  }
+
+  .starts span {
+    font-size: 60px;
+  }
+
+
+  /* CTA */
+
+  .cta {
+    padding: 50px 60px;
+  }
+
+  .cta button {
+    width: 30%;
+  }
+
+
+  /* Footer */
+
+  footer {
+    padding: 40px 60px;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+}
