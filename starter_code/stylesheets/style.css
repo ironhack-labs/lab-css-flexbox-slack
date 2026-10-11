@@ -1,10 +1,463 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+:root {
+  --background-purple: #540B51;
+  --background-ivory: #F3EAE2;
+  --button-blue: #4285F4;
+  --titles-black: #191817;
+  --paragraph-black: #000000;
+  --paragraph-yellow: #ECB12F;
+  --links-blue: #2E71A6;
+  --footer-links-grey: #454245;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background-ivory);
+  color: var(--titles-black);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+nav,
+header,
+main,
+footer,
+nav > div,
+header > div,
+header > div > div,
+main section > div,
+footer ul {
+  display: flex;
+}
+
+nav,
+header,
+main,
+footer {
+  flex-direction: column;
+}
+
+/* NAVBAR */
+nav {
+  background: var(--background-purple);
+  color: white;
+  padding: 18px 16px;
+  justify-content: space-between;
+}
+
+nav > div {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 110px;
+}
+
+nav ul {
+  display: none; /* hide desktop menu links on mobile */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* HEADER */
+header {
+  background: var(--background-purple);
+  color: white;
+  padding: 20px 16px 0;
+  align-items: center;
+}
+
+header > div {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 12px;
+  font-size: 2.2rem;
+  line-height: 1.1;
+}
+
+header p {
+  margin: 0 0 20px;
+  font-size: 1rem;
+}
+
+header > div > div {
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+}
+
+header button {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+header button:first-child {
+  background: white;
+  color: var(--background-purple);
+}
+
+header button:last-child {
+  background: var(--button-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header button img {
+  width: 22px;
+}
+
+header img[alt="Slack app screenshot"] {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 24px;
+}
+
+/* MAIN CONTENT */
+main section {
+  padding: 24px 16px;
+}
+
+main section:first-child {
+  background: var(--background-ivory);
+}
+
+main section:first-child p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0 0 18px;
+}
+
+main section:first-child > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+main section:first-child img {
+  width: 60px;
+  height: auto;
+  opacity: 0.8;
+}
+
+main section:nth-child(2) {
+  background: white;
+}
+
+main section:nth-child(2) h3 {
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+main section:nth-child(2) > p {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+main section:nth-child(2) ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+main section:nth-child(2) li {
+  text-align: center;
+}
+
+main section:nth-child(2) span {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--background-purple);
+  margin-bottom: 8px;
+}
+
+main section:nth-child(3) {
+  background: var(--background-ivory);
+  text-align: center;
+}
+
+main section:nth-child(3) h3 {
+  margin: 0 0 20px;
+  font-size: 2rem;
+}
+
+main section:nth-child(3) button {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 14px 16px;
+  border: 2px solid var(--background-purple);
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main section:nth-child(3) button:first-of-type {
+  background: var(--background-purple);
+  color: white;
+}
+
+main section:nth-child(3) button:last-of-type {
+  background: transparent;
+  color: var(--background-purple);
+}
+
+/* FOOTER */
+footer {
+  background: white;
+  padding: 20px 16px 40px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--footer-links-grey);
+}
+
+footer li {
+  font-size: 0.95rem;
+}
+
+footer hr {
+  border: 1px solid #e6e6e6;
+  margin: 24px 0;
+}
+
+footer > ul:last-of-type {
+  flex-direction: row;
+  justify-content: center;
+  gap: 18px;
+  font-size: 1.4rem;
+}
+
+/* Mobile styles first */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 18px 32px;
+  }
+
+  nav > div {
+    width: 100%;
+  }
+
+  nav img {
+    width: 130px;
+  }
+
+  header {
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 32px 0;
+    gap: 20px;
+  }
+
+  header > div {
+    width: 50%;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  header > div > div {
+    width: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  header button {
+    width: auto;
+    min-width: 180px;
+  }
+
+  header img[alt="Slack app screenshot"] {
+    max-width: 500px;
+    margin-top: 0;
+  }
+
+  main section:first-child > div {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  main section:first-child img {
+    width: 90px;
+  }
+
+  main section:nth-child(2) ul {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  main section:nth-child(2) li {
+    flex: 1;
+  }
+
+  footer {
+    padding: 24px 32px 40px;
+  }
+
+  footer ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px 20px;
+  }
+
+  footer > ul:last-of-type {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    padding: 18px 64px;
+  }
+
+  nav > div:first-child {
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  nav > div:first-child ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  nav > div:first-child ul a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav > div:last-child button:first-of-type,
+  nav > div:last-child button:nth-of-type(2) {
+    display: none;
+  }
+
+  nav > div:last-child ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav > div:last-child ul a {
+    color: white;
+    text-decoration: none;
+  }
+
+  main section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 16px 48px;
+  }
+
+  main section:nth-child(3) button {
+    width: auto;
+    min-width: 180px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  nav {
+    padding: 18px 96px;
+  }
+
+  nav > div:last-child {
+    width: auto;
+    gap: 16px;
+  }
+
+  header {
+    padding: 48px 96px 0;
+    gap: 48px;
+  }
+
+  header > div {
+    width: 50%;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header > div:last-child {
+    justify-content: center;
+  }
+
+  header img[alt="Slack app screenshot"] {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  main section:nth-child(3) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  main section:nth-child(3) button {
+    min-width: 220px;
+  }
+}
+@media (min-width: 1440px) {
+  header {
+    padding: 48px 96px 0;
+    gap: 48px;
+  }
+
+  header img[alt="Slack app screenshot"] {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  main section:nth-child(3) button {
+    min-width: 220px;
+  }
+}
