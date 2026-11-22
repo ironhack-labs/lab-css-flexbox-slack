@@ -1,10 +1,313 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1d1c1d;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 14px 20px;
+    font-weight: bold;
+  }
+  
+  /* NAVBAR */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  
+  nav div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  nav img {
+    max-width: 100px;
+  }
+  
+  nav ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav button {
+    background: none;
+    padding: 5px;
+  }
+  
+  nav button img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  /* HEADER */
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  
+  header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 38px;
+    line-height: 1.1;
+    margin: 0 0 20px;
+  }
+  
+  header p {
+    font-size: 18px;
+  }
+  
+  header > div > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  
+  header button {
+    width: 100%;
+    background-color: #611f69;
+    color: white;
+  }
+  
+  header button:nth-child(2) {
+    background-color: #4285f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  header button img {
+    width: 20px;
+  }
+  
+  header > div > img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* MAIN SECTIONS */
+  main section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Trusted companies */
+  main section:first-child > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  main section:first-child img {
+    max-width: 100px;
+    max-height: 40px;
+    object-fit: contain;
+  }
+  
+  /* Teams large and small */
+  main section:nth-child(2) ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+  }
+  
+  main section:nth-child(2) li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main section:nth-child(2) li span {
+    font-size: 40px;
+    font-weight: bold;
+    color: #611f69;
+  }
+  
+  /* Welcome section */
+  main section:nth-child(3) {
+    background-color: #f4ede4;
+  }
+  
+  main section:nth-child(3) button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #611f69;
+    color: white;
+  }
+  
+  main section:nth-child(3) button:last-child {
+    background-color: white;
+    color: #611f69;
+    border: 1px solid #611f69;
+  }
+  
+  /* FOOTER */
+  footer {
+    padding: 30px 20px;
+  }
+  
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+  }
+  
+  footer ul li {
+    font-size: 14px;
+  }
+  
+  footer ul:nth-of-type(2) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  footer div {
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
+  
+  /* =========================================
+     ITERATION 2: SMALL SCREENS (768px–1023px)
+  ========================================= */
+  
+  @media (min-width: 768px) {
+  
+    /* Header becomes two columns */
+    header {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    header > div {
+      flex: 1;
+    }
+  
+    /* Company logos in one row */
+    main section:first-child > div {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  
+    main section:first-child img {
+      max-width: 80px;
+    }
+  
+    /* Statistics in horizontal rows */
+    main section:nth-child(2) ul {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    main section:nth-child(2) li {
+      flex: 1;
+    }
+  
+    /* Footer links horizontally */
+    footer > ul:first-child {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  
+  
+  /* =========================================
+     ITERATION 3: MEDIUM SCREENS (1024px–1439px)
+  ========================================= */
+  
+  @media (min-width: 1024px) {
+  
+    /* Show desktop navigation */
+    nav > div:first-child ul {
+      display: flex;
+      gap: 25px;
+    }
+  
+    nav > div:first-child ul a {
+      text-decoration: none;
+      color: #1d1c1d;
+    }
+  
+    /* Hide menu icon */
+    nav button:nth-child(2) {
+      display: none;
+    }
+  
+    /* Hide search icon if needed only if screenshot requires it */
+  
+    /* Welcome buttons side by side */
+    main section:nth-child(3) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  
+    main section:nth-child(3) h3 {
+      width: 100%;
+    }
+  
+    main section:nth-child(3) button {
+      width: auto;
+      min-width: 180px;
+    }
+  }
+  
+  
+  /* =========================================
+     ITERATION 4: LARGE SCREENS (1440px+)
+  ========================================= */
+  
+  @media (min-width: 1440px) {
+  
+    /* Header signup buttons side by side */
+    header > div:first-child > div {
+      flex-direction: row;
+    }
+  
+    /* Centre and fully display hero image */
+    header > div:last-child {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    header > div > img {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      object-fit: contain;
+    }
+  
+  }
